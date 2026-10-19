@@ -32,6 +32,20 @@ sources:
     attribution: 공공데이터포털 · 한국소비자원
     field_map: {}             # probe 워크플로 결과 확인 후 작성
 
+  - id: molit_apt_trade
+    name: 국토교통부 아파트 매매 실거래가 자료
+    status: pending           # field_map 작성 후 live로 전환
+    endpoint: https://apis.data.go.kr/1613000/RTMSDataSvcAptTrade/getRTMSDataSvcAptTrade
+    key_env: DATA_GO_KR_KEY   # data.go.kr은 계정당 인증키 1개를 공용으로 사용
+    license: none             # 이용허락범위 제한 없음 — 2026-10-19 상세페이지 확인
+    approved: 2026-10-19      # 개발계정 자동승인, 만료 2028-10-19
+    traffic: 10000            # 일일 호출 한도
+    format: XML
+    category: 주거
+    attribution: 공공데이터포털 · 국토교통부
+    field_map: {}             # probe 결과 확인 후 작성
+    note: 특정 단지·개인 식별 방식으로 사용하지 않음 (활용목적 신고 내용)
+
   - id: kma_apihub
     name: 기상청 API 허브
     status: pending

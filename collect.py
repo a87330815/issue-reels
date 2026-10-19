@@ -28,8 +28,10 @@ SOURCES = os.path.join(ROOT, "sources.yml")
 OUT_DIR = os.path.join(ROOT, "out")
 SEEN = os.path.join(OUT_DIR, "seen.json")
 
-# 게이트 1 — 공공누리 제1유형만 통과
-ALLOWED_LICENSE = {"1", "1유형", "kogl-1", "type1"}
+# 게이트 1 — 공공누리 제1유형, 또는 "이용허락범위 제한 없음"만 통과.
+# 제한 없음은 1유형보다 넓으므로 상업적 이용·변형 모두 가능.
+# 2유형(상업적 이용 불가)·3유형(변형 불가)·미확인(unknown)은 폐기.
+ALLOWED_LICENSE = {"1", "1유형", "kogl-1", "type1", "none", "제한없음"}
 
 # 언론사 표현 필터 — 기사 문장이 섞여 들어오는 것을 막는다
 PRESS_PATTERNS = [
