@@ -1,0 +1,36 @@
+name: collect
+
+on:
+  schedule:
+    # UTC 23:00 = 한국시간 08:00 (다음날)
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      - name: 소스 점검
+        run: python collect.py --verify
+
+      - name: 수집
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+          KMA_APIHUB_KEY: ${{ secrets.KMA_APIHUB_KEY }}
+          KOSIS_KEY: ${{ secrets.KOSIS_KEY }}
+        run: python collect.py
+
+      - name: 결과 보관
+        uses: actions/upload-artifact@v4
+        with:
+          name: collected
+          path: out/collected.json
+          if-no-files-found: ignore

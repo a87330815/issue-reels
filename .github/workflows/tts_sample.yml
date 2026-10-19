@@ -1,0 +1,37 @@
+name: tts-sample
+
+# 음성 품질 판정용. 수동 실행 → Artifacts에서 mp3를 내려받아 들어보고 채택 여부를 정한다.
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: 읽힐 문장
+        default: "내년 1월부터 자동차세를 한 번에 내면 할인을 받습니다. 할인율은 해마다 달라지니 확인이 필요합니다."
+      voices:
+        description: 쉼표로 구분한 음성 목록
+        default: "ko-KR-SunHiNeural,ko-KR-InJoonNeural,ko-KR-HyunsuMultilingualNeural"
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install edge-tts
+
+      - name: 음성 생성
+        run: |
+          mkdir -p out
+          IFS=',' read -ra VS <<< "${{ inputs.voices }}"
+          for v in "${VS[@]}"; do
+            echo "생성 중: $v"
+            edge-tts --voice "$v" --text "${{ inputs.text }}" --write-media "out/$v.mp3"
+          done
+          ls -la out/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tts-samples
+          path: out/*.mp3

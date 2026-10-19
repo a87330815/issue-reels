@@ -1,0 +1,47 @@
+# 수집 소스 레지스트리
+#
+# status: live | dead | pending
+#   dead    — 폐쇄된 소스. 수집기가 차단한다.
+#   pending — 인증키 미발급. 수집기가 건너뛴다.
+#
+# license: 공공누리 유형. 1유형만 사용 가능.
+#   data.go.kr 데이터셋 상세페이지에서 개별 확인 후 기입할 것.
+#   미확인 상태는 unknown으로 두면 수집기가 폐기한다.
+
+sources:
+  - id: korea_briefing_rss
+    name: 정책브리핑 RSS
+    status: dead
+    reason: 2026-07-01 중단 (저작권 등 권리 보호 사유)
+
+  - id: kma_rss
+    name: 기상청 단기·중기예보 RSS
+    status: dead
+    reason: 2025-03-31 중단. 대체는 kma_apihub
+
+  - id: data_go_kr_price
+    name: 공공데이터포털 - 생활물가
+    status: pending
+    endpoint: https://apis.data.go.kr/
+    key_env: DATA_GO_KR_KEY
+    license: unknown          # 활용신청 후 상세페이지에서 확인
+    category: 물가
+    field_map: {}             # 응답 JSON 샘플 확보 후 작성
+
+  - id: kma_apihub
+    name: 기상청 API 허브
+    status: pending
+    endpoint: https://apihub.kma.go.kr/
+    key_env: KMA_APIHUB_KEY
+    license: unknown
+    category: 안전
+    field_map: {}
+
+  - id: kosis
+    name: 통계청 KOSIS 공유서비스
+    status: pending
+    endpoint: https://kosis.kr/openapi/
+    key_env: KOSIS_KEY
+    license: unknown
+    category: 통계
+    field_map: {}
