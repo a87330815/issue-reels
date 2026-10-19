@@ -1,6 +1,6 @@
 name: tts-sample
 
-# 음성 품질 판정용. 수동 실행 → Artifacts에서 mp3를 내려받아 들어보고 채택 여부를 정한다.
+# 음성 품질 판정용. 수동 실행하면 mp3를 tts-samples 브랜치에 올린다.
 on:
   workflow_dispatch:
     inputs:
@@ -10,6 +10,9 @@ on:
       voices:
         description: 쉼표로 구분한 음성 목록
         default: "ko-KR-SunHiNeural,ko-KR-InJoonNeural,ko-KR-HyunsuMultilingualNeural"
+
+permissions:
+  contents: write
 
 jobs:
   tts:
@@ -23,15 +26,26 @@ jobs:
 
       - name: 음성 생성
         run: |
-          mkdir -p out
+          mkdir -p samples
           IFS=',' read -ra VS <<< "${{ inputs.voices }}"
           for v in "${VS[@]}"; do
             echo "생성 중: $v"
-            edge-tts --voice "$v" --text "${{ inputs.text }}" --write-media "out/$v.mp3"
+            edge-tts --voice "$v" --text "${{ inputs.text }}" --write-media "samples/$v.mp3"
           done
-          ls -la out/
+          ls -la samples/
 
       - uses: actions/upload-artifact@v4
         with:
           name: tts-samples
-          path: out/*.mp3
+          path: samples/*.mp3
+
+      - name: tts-samples 브랜치에 올리기
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan tts-samples
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          find . -maxdepth 1 -mindepth 1 ! -name samples ! -name .git -exec rm -rf {} +
+          git add -f samples/
+          git commit -qm "TTS 샘플 $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f origin tts-samples
