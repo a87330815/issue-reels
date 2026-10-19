@@ -15,7 +15,7 @@ BASE = "https://apis.data.go.kr/B551919/ProductPriceInfoService"
 # .env에서 인증키 로딩 (PC 실행용)
 _env = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
 if os.path.exists(_env):
-    with open(_env) as _f:
+    with open(_env, encoding="utf-8", errors="replace") as _f:
         for _line in _f:
             _line = _line.strip()
             if _line and not _line.startswith("#") and "=" in _line:
