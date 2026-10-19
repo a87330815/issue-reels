@@ -19,14 +19,18 @@ sources:
     status: dead
     reason: 2025-03-31 중단. 대체는 kma_apihub
 
-  - id: data_go_kr_price
-    name: 공공데이터포털 - 생활물가
-    status: pending
-    endpoint: https://apis.data.go.kr/
+  - id: kca_product_price
+    name: 한국소비자원 생필품 가격 정보 (참가격)
+    status: pending           # field_map 작성 후 live로 전환
+    endpoint: https://apis.data.go.kr/B551919/ProductPriceInfoService/getProductPriceInfoSvc
     key_env: DATA_GO_KR_KEY
-    license: unknown          # 활용신청 후 상세페이지에서 확인
+    license: 1                # 공공저작물 출처표시 (제1유형) — 2026-10-19 상세페이지 확인
+    approved: 2026-10-19      # 개발계정 자동승인, 만료 2028-10-19
+    traffic: 2000             # 일일 호출 한도
+    format: XML
     category: 물가
-    field_map: {}             # 응답 JSON 샘플 확보 후 작성
+    attribution: 공공데이터포털 · 한국소비자원
+    field_map: {}             # probe 워크플로 결과 확인 후 작성
 
   - id: kma_apihub
     name: 기상청 API 허브
