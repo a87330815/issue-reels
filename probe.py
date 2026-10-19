@@ -24,6 +24,11 @@ CALLS = [
 ]
 
 
+def redact(text):
+    """인증키가 로그·파일에 남지 않게 지운다. (URL에 키가 들어가는 구조라 필수)"""
+    return text.replace(KEY, "***REDACTED***") if KEY else text
+
+
 def pretty(text):
     try:
         return minidom.parseString(text).toprettyxml(indent="  ")[:8000]
@@ -45,14 +50,15 @@ def main():
         try:
             r = requests.get(url, params=p, timeout=30)
             print(f"HTTP {r.status_code}  {len(r.content)} bytes")
-            body = pretty(r.text)
+            body = redact(pretty(r.text))
             with open(os.path.join(OUT, f"{name}.xml"), "w", encoding="utf-8") as f:
                 f.write(body)
             print(body[:1500])
         except Exception as e:
-            print(f"실패: {type(e).__name__}: {e}")
+            msg = redact(f"{type(e).__name__}: {e}")
+            print(f"실패: {msg}")
             with open(os.path.join(OUT, f"{name}.error.txt"), "w", encoding="utf-8") as f:
-                f.write(f"{type(e).__name__}: {e}")
+                f.write(msg)
     return 0
 
 
