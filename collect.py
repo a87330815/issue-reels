@@ -24,6 +24,24 @@ from datetime import datetime, timezone
 import yaml
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
+
+def load_env():
+    """같은 폴더의 .env에서 인증키를 읽는다. PC 실행용. 이미 환경변수가 있으면 그대로 둔다."""
+    path = os.path.join(ROOT, ".env")
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip())
+
+
+load_env()
+
 SOURCES = os.path.join(ROOT, "sources.yml")
 OUT_DIR = os.path.join(ROOT, "out")
 SEEN = os.path.join(OUT_DIR, "seen.json")
