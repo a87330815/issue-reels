@@ -12,6 +12,16 @@ import xml.dom.minidom as minidom
 import requests
 
 BASE = "https://apis.data.go.kr/B551919/ProductPriceInfoService"
+# .env에서 인증키 로딩 (PC 실행용)
+_env = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+if os.path.exists(_env):
+    with open(_env) as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip())
+
 KEY = os.environ.get("DATA_GO_KR_KEY", "")
 OUT = "probe_out"
 
