@@ -34,7 +34,7 @@ sources:
 
   - id: molit_apt_trade
     name: 국토교통부 아파트 매매 실거래가 자료
-    status: pending           # field_map 작성 후 live로 전환
+    status: live              # 2026-10-19 실응답 확인 (probe4)
     endpoint: https://apis.data.go.kr/1613000/RTMSDataSvcAptTrade/getRTMSDataSvcAptTrade
     key_env: DATA_GO_KR_KEY   # data.go.kr은 계정당 인증키 1개를 공용으로 사용
     license: none             # 이용허락범위 제한 없음 — 2026-10-19 상세페이지 확인
@@ -43,7 +43,29 @@ sources:
     format: XML
     category: 주거
     attribution: 공공데이터포털 · 국토교통부
-    field_map: {}             # probe 결과 확인 후 작성
+    rows: 100
+    # 지역 x 월 조합으로 호출된다. 지역을 늘리면 호출 수가 그만큼 곱해진다.
+    params:
+      LAWD_CD:
+        - "48250"   # 경남 김해시
+        - "11680"   # 서울 강남구
+        - "41135"   # 경기 성남시 분당구
+        - "26350"   # 부산 해운대구
+      DEAL_YMD:
+        - "{this_month}"
+        - "{last_month}"
+    field_map:
+      fields:
+        apt: aptNm           # 단지명
+        dong: umdNm          # 법정동
+        amount: dealAmount   # 거래금액(만원, 콤마 포함)
+        area: excluUseAr     # 전용면적(㎡)
+        floor: floor         # 층
+        build_year: buildYear
+        deal_year: dealYear
+        deal_month: dealMonth
+        deal_day: dealDay
+        deal_type: dealingGbn
     note: 특정 단지·개인 식별 방식으로 사용하지 않음 (활용목적 신고 내용)
 
   - id: kma_apihub

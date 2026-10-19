@@ -82,7 +82,9 @@ def save_seen(seen):
 
 
 def item_key(item):
-    base = f"{item.get('source','')}|{item.get('title','')}|{item.get('date','')}"
+    """중복 판정용 키. 소스마다 필드가 다르므로 값 전체를 정렬해 해시한다."""
+    parts = [f"{k}={item[k]}" for k in sorted(item) if k not in ("key", "attribution")]
+    base = "|".join(parts)
     return hashlib.sha1(base.encode("utf-8")).hexdigest()[:16]
 
 
@@ -103,31 +105,102 @@ def gate(src):
     return True, "통과"
 
 
+def expand_params(src):
+    """소스의 params를 실제 요청 파라미터 조합으로 펼친다.
+
+    리스트 값은 조합으로 펼쳐지고, {last_month}·{this_month}는 실행 시점 기준으로
+    치환된다. 국토부 실거래가처럼 지역·월을 돌면서 여러 번 불러야 하는 API를 위한 것.
+    """
+    import itertools
+
+    raw = src.get("params") or {}
+    if not raw:
+        return [{}]
+
+    now = datetime.now()
+    lm_y, lm_m = (now.year, now.month - 1) if now.month > 1 else (now.year - 1, 12)
+    subs = {
+        "{this_month}": f"{now.year}{now.month:02d}",
+        "{last_month}": f"{lm_y}{lm_m:02d}",
+    }
+
+    keys, choices = [], []
+    for k, v in raw.items():
+        vals = v if isinstance(v, list) else [v]
+        vals = [subs.get(str(x), x) for x in vals]
+        keys.append(k)
+        choices.append([str(x) for x in vals])
+
+    return [dict(zip(keys, combo)) for combo in itertools.product(*choices)]
+
+
+def parse_xml_items(text, fm):
+    """XML 응답에서 item들을 뽑아 field_map대로 평평한 dict 리스트로 만든다.
+
+    응답이 잘려 있어도 온전한 <item> 블록만 건지도록 정규식으로 읽는다.
+    (공공 API 응답이 길면 중간에서 끊겨 오는 경우가 있다.)
+    """
+    fields = fm.get("fields") or {}
+    out = []
+    for blk in re.findall(r"<item>(.*?)</item>", text, re.S):
+        pairs = dict(re.findall(r"<(\w+)>\s*([^<]*?)\s*</\1>", blk))
+        row = {name: pairs.get(tag, "") for name, tag in fields.items()}
+        if any(row.values()):
+            out.append(row)
+    return out
+
+
+def api_error(text):
+    """응답이 에러면 그 메시지를, 정상이면 None을 돌려준다."""
+    if "<item>" in text:
+        return None
+    m = re.search(r"<resultMsg>\s*([^<]*?)\s*</resultMsg>", text)
+    if m and m.group(1).upper() not in ("OK", "NORMAL SERVICE.", "NORMAL_SERVICE"):
+        return m.group(1)
+    m = re.search(r"<returnAuthMsg>\s*([^<]*?)\s*</returnAuthMsg>", text)
+    return m.group(1) if m else None
+
+
 def fetch(src):
-    """실제 호출. field_map이 비어 있으면 아직 매핑 전이므로 수집하지 않는다."""
-    if not src.get("field_map"):
+    """소스 하나를 실제로 호출한다. field_map이 비어 있으면 아직 매핑 전이라 건너뛴다."""
+    fm = src.get("field_map")
+    if not fm:
         return []
     import requests  # 게이트를 통과한 소스에서만 필요
 
-    params = {"serviceKey": os.environ[src["key_env"]], "returnType": "JSON"}
-    r = requests.get(src["endpoint"], params=params, timeout=20)
-    r.raise_for_status()
-    raw = r.json()
+    key = os.environ[src["key_env"]]
+    items, errors = [], []
 
-    fm = src["field_map"]
-    rows = raw
-    for k in fm.get("root", "").split("."):
-        if k:
-            rows = rows.get(k, [])
-    items = []
-    for row in rows:
-        items.append({
-            "source": src["id"],
-            "category": src.get("category", ""),
-            "title": row.get(fm.get("title", ""), ""),
-            "body": row.get(fm.get("body", ""), ""),
-            "date": row.get(fm.get("date", ""), ""),
-        })
+    for extra in expand_params(src):
+        params = {"serviceKey": key, "numOfRows": src.get("rows", 100), "pageNo": 1}
+        params.update(extra)
+
+        try:
+            r = requests.get(src["endpoint"], params=params, timeout=25)
+            r.raise_for_status()
+        except Exception as e:
+            # 예외 메시지에 URL이 실리고 URL에는 인증키가 들어 있다. 반드시 지운다.
+            errors.append(f"{extra}: {type(e).__name__}: {str(e).replace(key, '***')}")
+            continue
+
+        err = api_error(r.text)
+        if err:
+            errors.append(f"{extra}: {err}")
+            continue
+
+        rows = parse_xml_items(r.text, fm)
+        for row in rows:
+            row["source"] = src["id"]
+            row["category"] = src.get("category", "")
+            row["attribution"] = src.get("attribution", "")
+            row.update({f"q_{k}": v for k, v in extra.items()})
+        items.extend(rows)
+
+    if errors:
+        print(f"      경고: {len(errors)}건 실패")
+        for e in errors[:3]:
+            print(f"        {e}")
+
     return items
 
 
@@ -156,7 +229,8 @@ def main():
     collected, dropped = [], 0
     for s in passed:
         for item in fetch(s):
-            if has_press_expression(item["title"]) or has_press_expression(item["body"]):
+            blob = " ".join(str(v) for v in item.values() if isinstance(v, str))
+            if has_press_expression(blob):
                 dropped += 1
                 continue
             k = item_key(item)
