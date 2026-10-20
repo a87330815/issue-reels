@@ -4,3 +4,4 @@ out/
 !out/.gitkeep
 .env
 .env
+out/scripts/
