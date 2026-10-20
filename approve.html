@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>대본 승인</title>
+<style>
+:root {
+  --bg: #0a0a0c;
+  --card: #18181b;
+  --border: #27272a;
+  --text: #fafafa;
+  --sub: #a1a1aa;
+  --accent: #ef4444;
+  --accent-y: #facc15;
+  --green: #22c55e;
+  --blue: #3b82f6;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, 'Pretendard', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 16px;
+}
+header {
+  text-align: center;
+  padding: 24px 0 16px;
+}
+header h1 { font-size: 20px; font-weight: 700; }
+header p { color: var(--sub); font-size: 13px; margin-top: 4px; }
+
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+.controls button, .controls label {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.controls button:hover, .controls label:hover {
+  border-color: var(--sub);
+}
+input[type="file"] { display: none; }
+
+.empty {
+  text-align: center;
+  padding: 80px 16px;
+  color: var(--sub);
+}
+.empty p { margin-top: 8px; font-size: 14px; }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color .2s;
+}
+.card.approved { border-color: var(--green); }
+.card.rejected { border-color: var(--accent); opacity: .5; }
+
+.card-header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header .badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.badge-format { background: var(--blue); color: #fff; }
+
+.cover-preview {
+  background: #111;
+  padding: 24px 20px;
+  text-align: center;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+}
+.cover-line {
+  font-size: 22px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000;
+  line-height: 1.3;
+}
+.cover-line .r { color: var(--accent); }
+.cover-line .y { color: var(--accent-y); }
+.cover-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.scenes {
+  padding: 0 16px 12px;
+}
+.scene {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+.scene:last-child { border-bottom: none; }
+.scene-num {
+  color: var(--sub);
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+.scene-narration { color: var(--text); line-height: 1.5; }
+.scene-subtitle { color: var(--sub); font-size: 12px; margin-top: 2px; }
+
+.card-meta {
+  padding: 8px 16px;
+  font-size: 11px;
+  color: var(--sub);
+  border-top: 1px solid var(--border);
+}
+
+.card-actions {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+.card-actions button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s;
+}
+.btn-approve {
+  background: transparent;
+  color: var(--green);
+}
+.btn-approve:hover { background: rgba(34,197,94,.1); }
+.btn-reject {
+  background: transparent;
+  color: var(--accent);
+  border-left: 1px solid var(--border) !important;
+}
+.btn-reject:hover { background: rgba(239,68,68,.1); }
+
+.summary {
+  max-width: 480px;
+  margin: 24px auto;
+  padding: 16px;
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  text-align: center;
+  display: none;
+}
+.summary h3 { font-size: 16px; margin-bottom: 8px; }
+.summary .count { font-size: 28px; font-weight: 700; color: var(--green); }
+.summary button {
+  margin-top: 12px;
+  background: var(--green);
+  color: #000;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📋 대본 승인</h1>
+  <p>오늘의 릴스 대본을 확인하고 승인해주세요</p>
+</header>
+
+<div class="controls">
+  <label for="fileInput">📂 대본 불러오기</label>
+  <input type="file" id="fileInput" multiple accept=".json">
+  <button onclick="loadDemo()">데모 보기</button>
+</div>
+
+<div id="container">
+  <div class="empty">
+    <p>📂 대본 JSON 파일을 불러와주세요</p>
+    <p>out/scripts/ 폴더의 파일을 선택하면 됩니다</p>
+  </div>
+</div>
+
+<div class="summary" id="summary">
+  <h3>승인 완료</h3>
+  <div class="count" id="approvedCount">0</div>
+  <p style="color:var(--sub);font-size:13px;margin-top:4px">편 승인됨</p>
+  <button onclick="downloadApproved()">승인 대본 다운로드</button>
+</div>
+
+<script>
+let scripts = [];
+let decisions = {};
+
+document.getElementById('fileInput').addEventListener('change', async (e) => {
+  scripts = [];
+  for (const file of e.target.files) {
+    try {
+      const text = await file.text();
+      const data = JSON.parse(text);
+      data._filename = file.name;
+      scripts.push(data);
+    } catch (err) {
+      console.error('파싱 실패:', file.name, err);
+    }
+  }
+  render();
+});
+
+function loadDemo() {
+  scripts = [
+    {
+      _filename: "demo_01_숫자훅.json",
+      title: "23억 아파트",
+      cover: { image: null, lines: ["방금 나온", "<r>23억</r>", "실화입니다"], badge: null },
+      scenes: [
+        { narration: "최근 강남구 삼성동에서 84제곱미터 아파트가 23억원에 거래되었습니다.", subtitle: "삼성동 84㎡ 23억 거래" },
+        { narration: "삼성동 래미안 15층, 중개거래로 확인되었습니다.", subtitle: "래미안 15층 중개거래" },
+        { narration: "프로필 링크를 확인해주세요. 팔로우하시면 매일 알려드립니다.", subtitle: "프로필 링크 확인 · 팔로우" }
+      ],
+      meta: { format: "숫자훅", source: "molit_apt_trade", category: "주거", attribution: "공공데이터포털 · 국토교통부" }
+    },
+    {
+      _filename: "demo_02_지역한정.json",
+      title: "김해 거래 급증",
+      cover: { image: null, lines: ["김해 부원동", "<r>거래 터졌다</r>"], badge: null },
+      scenes: [
+        { narration: "김해시 부원동에서 이번 달 아파트 거래가 급증했습니다.", subtitle: "부원동 거래 급증" },
+        { narration: "부원역센트럴 84제곱미터가 4.1억원에 거래되었습니다.", subtitle: "부원역센트럴 4.1억" },
+        { narration: "프로필 링크를 확인해주세요.", subtitle: "프로필 링크 확인 · 팔로우" }
+      ],
+      meta: { format: "지역한정", source: "molit_apt_trade", category: "주거", attribution: "공공데이터포털 · 국토교통부" }
+    }
+  ];
+  render();
+}
+
+function parseCoverLine(text) {
+  return text
+    .replace(/<r>(.*?)<\/r>/g, '<span class="r">$1</span>')
+    .replace(/<y>(.*?)<\/y>/g, '<span class="y">$1</span>');
+}
+
+function render() {
+  const container = document.getElementById('container');
+  if (!scripts.length) {
+    container.innerHTML = '<div class="empty"><p>대본이 없습니다</p></div>';
+    return;
+  }
+
+  let html = '<div class="cards">';
+  scripts.forEach((sc, idx) => {
+    const status = decisions[idx] || '';
+    const meta = sc.meta || {};
+    html += `
+    <div class="card ${status}" id="card-${idx}">
+      <div class="card-header">
+        <strong>${sc.title || '제목 없음'}</strong>
+        <span class="badge badge-format">${meta.format || '미분류'}</span>
+      </div>
+
+      ${meta.attribution ? `<div class="card-meta">출처: ${meta.attribution}</div>` : ''}
+
+      <div class="cover-preview">
+        ${sc.cover?.badge ? `<span class="cover-badge">${sc.cover.badge}</span>` : ''}
+        ${(sc.cover?.lines || []).map(l => `<div class="cover-line">${parseCoverLine(l)}</div>`).join('')}
+      </div>
+
+      <div class="scenes">
+        ${(sc.scenes || []).map((s, i) => `
+          <div class="scene">
+            <div class="scene-num">장면 ${i + 1}</div>
+            <div class="scene-narration">${s.narration}</div>
+            <div class="scene-subtitle">자막: ${s.subtitle}</div>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="card-actions">
+        <button class="btn-approve" onclick="decide(${idx},'approved')">✓ 승인</button>
+        <button class="btn-reject" onclick="decide(${idx},'rejected')">✕ 거절</button>
+      </div>
+    </div>`;
+  });
+  html += '</div>';
+  container.innerHTML = html;
+  updateSummary();
+}
+
+function decide(idx, status) {
+  decisions[idx] = status;
+  const card = document.getElementById('card-' + idx);
+  card.className = 'card ' + status;
+  updateSummary();
+}
+
+function updateSummary() {
+  const total = scripts.length;
+  const decided = Object.keys(decisions).length;
+  const approved = Object.values(decisions).filter(d => d === 'approved').length;
+
+  const summary = document.getElementById('summary');
+  if (decided === total && total > 0) {
+    summary.style.display = 'block';
+    document.getElementById('approvedCount').textContent = approved;
+  } else {
+    summary.style.display = 'none';
+  }
+}
+
+function downloadApproved() {
+  const approved = scripts.filter((_, i) => decisions[i] === 'approved');
+  if (!approved.length) {
+    alert('승인된 대본이 없습니다');
+    return;
+  }
+  const blob = new Blob([JSON.stringify(approved, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `approved_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>

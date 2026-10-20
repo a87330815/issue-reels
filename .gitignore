@@ -5,3 +5,4 @@ out/
 .env
 .env
 out/scripts/
+out/approved/
