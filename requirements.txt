@@ -1,5 +1,6 @@
 Pillow>=10.0
 PyYAML>=6.0
 requests>=2.31
+boto3>=1.34
 numpy>=1.24
 edge-tts>=6.1

@@ -1,0 +1,107 @@
+name: 발행
+
+# 예약 시각은 UTC다. 한국시간 = UTC + 9시간.
+#   한국 11:00 → 02:00 UTC
+on:
+  schedule:
+    - cron: "0 2 * * *"      # 한국시간 11:00
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "발행 직전까지만 실행"
+        type: boolean
+        default: true
+      limit:
+        description: "발행할 최대 편수"
+        default: "1"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: ffmpeg · 폰트 설치
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk fonts-noto-cjk-extra
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt boto3
+
+      - name: 설정 점검
+        env:
+          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
+          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
+          S3_PUBLIC_BASE: ${{ secrets.S3_PUBLIC_BASE }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          python upload.py --check || echo "::warning::스토리지 미설정"
+          python publish.py --check || echo "::warning::인스타 미설정"
+
+      - name: 수집
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: python collect.py || echo "::warning::수집 실패"
+
+      - name: 대본 생성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scriptgen.py -n 3
+
+      - name: 승인 (미승인 시 에버그린 대체)
+        run: python approve.py
+
+      - name: 렌더
+        run: |
+          mkdir -p out/rendered
+          for f in out/approved/*.json; do
+            [ -e "$f" ] || continue
+            name=$(basename "$f" .json)
+            echo "── 렌더: $name"
+            python render/render.py "$f" -o "out/rendered/$name.mp4" || echo "::warning::$name 렌더 실패"
+          done
+          ls -la out/rendered/ || true
+
+      - name: 스토리지 업로드
+        env:
+          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
+          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
+          S3_PUBLIC_BASE: ${{ secrets.S3_PUBLIC_BASE }}
+        run: python upload.py --batch out/rendered
+
+      - name: 인스타 발행
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          ARGS="--limit ${{ github.event.inputs.limit || '1' }}"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          SCRIPT=$(ls out/approved/*.json 2>/dev/null | head -1)
+          if [ -n "$SCRIPT" ]; then
+            ARGS="$ARGS --script $SCRIPT"
+          fi
+          python publish.py $ARGS
+
+      - name: 산출물 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-${{ github.run_number }}
+          path: |
+            out/scripts/*.json
+            out/approved/*.json
+            out/uploaded.json
+            out/published.json
+          retention-days: 14

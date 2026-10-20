@@ -6,3 +6,4 @@ out/
 .env
 out/scripts/
 out/approved/
+out/rendered/
