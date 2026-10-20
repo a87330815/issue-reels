@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-probe5.py — 참가격 API 가격 데이터 탐색 (최적화 버전)
+probe5.py — 참가격 API 가격 데이터 탐색 (최소 요청 버전)
 
-전략:
-1. 상품 카탈로그에서 첫 페이지(20개) + 랜덤 샘플 가져오기
-2. 각 goodId에 대해 날짜 1개만 시도
-3. entpId(productEntpCode)로도 시도
-4. 날짜 없이도 시도 (혹시 전체 조회 가능한지)
+전략: 요청 수를 최소화 (일일 한도 초과 방지)
+1. 상품 카탈로그 1페이지(5개)만
+2. 각 goodId에 대해 최근 금요일 1개만 시도
+3. 한도 초과 감지 시 즉시 중단
 """
 import os, json, datetime as dt, time
 import xml.etree.ElementTree as ET
@@ -32,12 +31,17 @@ retry = Retry(total=3, backoff_factor=3, status_forcelist=[500, 502, 503, 504])
 sess.mount("https://", HTTPAdapter(max_retries=retry))
 
 def api(op, params, timeout=45):
-    p = {"serviceKey": KEY, "numOfRows": 10, "pageNo": 1, **params}
+    p = {"serviceKey": KEY, "numOfRows": 5, "pageNo": 1, **params}
     try:
         r = sess.get(f"{BASE}/{op}", params=p, timeout=timeout)
         root = ET.fromstring(r.text)
         code = root.findtext(".//resultCode", "")
         msg = root.findtext(".//resultMsg", "")
+        err = root.findtext(".//errMsg", "")
+        ret_msg = root.findtext(".//returnAuthMsg", "")
+        # 한도 초과 감지
+        if "LIMITED_NUMBER" in (err or "") or "요청제한" in (ret_msg or ""):
+            return "LIMIT", "일일 요청 한도 초과", []
         items = []
         for item in root.findall(".//item"):
             d = {}
@@ -52,87 +56,66 @@ def main():
     if not KEY:
         print("DATA_GO_KR_KEY 없음"); return 1
 
-    # 1. 상품 카탈로그 샘플 (페이지 1, 10, 20, 30)
-    print("=== 상품 카탈로그 샘플 ===")
-    sample_products = []
-    for pg in [1, 10, 20, 30]:
-        code, msg, items = api("getProductInfoSvc.do", {"numOfRows": 5, "pageNo": pg})
-        for it in items:
-            sample_products.append(it)
-            print(f"  goodId={it.get('goodId')} entpCode={it.get('productEntpCode')} {it.get('goodName','')[:30]}")
-    print(f"샘플 {len(sample_products)}개\n")
+    # 1. 상품 카탈로그 — 1페이지 5개만
+    print("=== 상품 카탈로그 (5개) ===")
+    code, msg, products = api("getProductInfoSvc.do", {"numOfRows": 5, "pageNo": 1})
+    if code == "LIMIT":
+        print("⚠ 일일 요청 한도 초과! 내일 다시 시도하세요."); return 1
+    for p in products:
+        print(f"  goodId={p.get('goodId')} name={p.get('goodName','')[:40]}")
+    print(f"상품 {len(products)}개\n")
 
-    # 2. 날짜 후보 — 최근 금요일 1개 + 목요일 1개 + 오늘
+    # 2. 최근 금요일 찾기
     today = dt.date.today()
-    dates = [today.strftime("%Y%m%d")]
     d = today
-    for _ in range(14):
+    for _ in range(7):
+        if d.weekday() == 4:  # Friday
+            break
         d -= dt.timedelta(days=1)
-        if d.weekday() == 4 and len(dates) < 3:  # Friday
-            dates.append(d.strftime("%Y%m%d"))
-        if d.weekday() == 3 and len(dates) < 4:  # Thursday
-            dates.append(d.strftime("%Y%m%d"))
-    print(f"날짜 후보: {dates}\n")
+    target_date = d.strftime("%Y%m%d")
+    print(f"조회 날짜: {target_date}\n")
 
-    # 3. goodId × 날짜
-    print("=== goodId × 날짜 ===")
+    # 3. 각 상품 가격 조회 (최대 5건, 한도 초과 시 중단)
+    print("=== 가격 조회 ===")
     hits = []
-    for prod in sample_products:
+    for prod in products[:5]:
         gid = prod.get("goodId", "")
-        for date in dates:
-            code, msg, items = api("getProductPriceInfoSvc", {"goodId": gid, "goodInspectDay": date})
-            if items:
-                print(f"  ✓ goodId={gid} date={date} → {len(items)}건")
-                hits.append({"goodId": gid, "date": date, "items": items[:3], "name": prod.get("goodName","")})
-                break
-            time.sleep(0.3)
-        else:
-            print(f"  ✗ goodId={gid} ({prod.get('goodName','')[:20]})")
-
-    # 4. entpId × 날짜
-    print("\n=== entpId × 날짜 ===")
-    entp_ids = list(set(p.get("productEntpCode","") for p in sample_products if p.get("productEntpCode")))
-    for eid in entp_ids[:10]:
-        for date in dates:
-            code, msg, items = api("getProductPriceInfoSvc", {"entpId": eid, "goodInspectDay": date})
-            if items:
-                print(f"  ✓ entpId={eid} date={date} → {len(items)}건")
-                hits.append({"entpId": eid, "date": date, "items": items[:3]})
-                break
-            time.sleep(0.3)
-        else:
-            print(f"  ✗ entpId={eid}")
-
-    # 5. goodId만 (날짜 없이)
-    print("\n=== goodId만 (날짜 없이) ===")
-    for prod in sample_products[:5]:
-        gid = prod.get("goodId", "")
-        code, msg, items = api("getProductPriceInfoSvc", {"goodId": gid})
-        status = f"✓ {len(items)}건" if items else f"✗ code={code} {msg[:40]}"
-        print(f"  goodId={gid}: {status}")
+        code, msg, items = api("getProductPriceInfoSvc", {"goodId": gid, "goodInspectDay": target_date})
+        if code == "LIMIT":
+            print("⚠ 일일 요청 한도 초과! 중단합니다.")
+            break
         if items:
-            hits.append({"goodId": gid, "date": "none", "items": items[:3], "name": prod.get("goodName","")})
-        time.sleep(0.3)
+            print(f"  ✓ goodId={gid} → {len(items)}건")
+            hits.append({"goodId": gid, "date": target_date, "items": items, "name": prod.get("goodName","")})
+        else:
+            print(f"  ✗ goodId={gid} code={code} msg={msg[:50]}")
+        time.sleep(1)  # 요청 간격 넉넉하게
 
-    # 결과
+    # 4. goodId 없이 날짜만으로도 시도 (1건)
+    if not hits:
+        print("\n=== 날짜만으로 조회 (1건) ===")
+        code, msg, items = api("getProductPriceInfoSvc", {"goodInspectDay": target_date})
+        if items:
+            print(f"  ✓ 날짜만 → {len(items)}건")
+            hits.append({"goodId": "all", "date": target_date, "items": items})
+        else:
+            print(f"  ✗ code={code} msg={msg[:80]}")
+
+    # 5. 결과
     print(f"\n=== 결과 요약: {len(hits)}건 히트 ===")
     if hits:
-        print("\n첫 번째 히트의 필드:")
+        print("\n첫 번째 히트 필드:")
         for k, v in hits[0]["items"][0].items():
             print(f"  {k}: {v}")
-        print("\n모든 히트:")
-        for h in hits:
-            gid = h.get("goodId", h.get("entpId","?"))
-            print(f"  {gid} @ {h['date']} → {len(h['items'])}건 {h.get('name','')[:30]}")
     else:
         print("가격 데이터 없음!")
-        print("\n디버그: 마지막 응답 code/msg 확인")
-        # 한 번 더 raw로 확인
-        gid = sample_products[0].get("goodId","35")
-        p = {"serviceKey": KEY, "numOfRows": 5, "pageNo": 1, "goodId": gid, "goodInspectDay": dates[0]}
-        r = sess.get(f"{BASE}/getProductPriceInfoSvc", params=p, timeout=45)
-        print(f"  raw response ({len(r.text)} bytes):")
-        print(f"  {r.text[:2000]}")
+        # raw 응답 확인 (1건만)
+        if products:
+            gid = products[0].get("goodId","")
+            p = {"serviceKey": KEY, "numOfRows": 5, "pageNo": 1, "goodId": gid, "goodInspectDay": target_date}
+            r = sess.get(f"{BASE}/getProductPriceInfoSvc", params=p, timeout=45)
+            print(f"\n디버그 raw ({len(r.text)} bytes):")
+            print(f"  {r.text[:1500]}")
 
     return 0
 
