@@ -77,11 +77,27 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          EVENT_NAME: ${{ github.event_name }}
+          DRY_RUN_INPUT: ${{ github.event.inputs.dry_run }}
+          PUBLISH_LIVE: ${{ vars.PUBLISH_LIVE }}
         run: |
           ARGS="--limit ${{ github.event.inputs.limit || '1' }}"
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-            ARGS="$ARGS --dry-run"
+
+          # 예약 실행은 기본이 드라이런이다.
+          # 사람이 확인하지 않은 영상이 자동으로 올라가는 것을 막는 안전장치로,
+          # 저장소 변수 PUBLISH_LIVE 를 true 로 둘 때만 실제 발행한다.
+          # 수동 실행은 실행 화면의 체크박스를 따른다.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            if [ "$DRY_RUN_INPUT" = "true" ]; then
+              ARGS="$ARGS --dry-run"
+            fi
+          else
+            if [ "$PUBLISH_LIVE" != "true" ]; then
+              ARGS="$ARGS --dry-run"
+              echo "::notice::PUBLISH_LIVE 가 true 가 아니라 드라이런으로 실행합니다"
+            fi
           fi
+
           SCRIPT=$(ls out/approved/*.json 2>/dev/null | head -1)
           if [ -n "$SCRIPT" ]; then
             ARGS="$ARGS --script $SCRIPT"
