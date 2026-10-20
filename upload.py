@@ -93,6 +93,46 @@ def gh(method, url, token, **kw):
     return r.json() if r.text else {}
 
 
+README = """# issue-reels-media
+
+릴스 영상 호스팅용 공개 저장소입니다.
+
+인스타그램 Graph API는 `video_url`에 적힌 주소에서 **직접 파일을 가져갑니다**.
+비공개 저장소의 릴리스 파일은 인증 없이 받을 수 없어 인스타가 가져가지 못하므로,
+이 저장소만 공개로 둡니다. 파이프라인 코드는 비공개 저장소에 있습니다.
+
+영상은 날짜별 Release(`reels-YYYY-MM-DD`)의 자산으로 올라갑니다.
+사람이 직접 커밋할 일은 없습니다.
+"""
+
+
+def gh_ensure_initialized():
+    """빈 저장소에는 릴리스를 만들 수 없다 (422 Repository is empty).
+
+    릴리스는 커밋을 가리키는 태그가 있어야 만들어지는데, README 없이 만든
+    저장소에는 커밋이 하나도 없다. 첫 커밋이 없으면 README를 넣어 만들어준다.
+    """
+    import base64
+
+    import requests
+
+    headers = {
+        "Authorization": f"Bearer {MEDIA_TOKEN}",
+        "Accept": "application/vnd.github+json",
+    }
+    r = requests.get(f"{GH_API}/repos/{MEDIA_REPO}/commits",
+                     headers=headers, params={"per_page": 1}, timeout=30)
+    if r.status_code == 200 and r.json():
+        return False
+
+    print("  저장소가 비어 있어 README로 초기화합니다")
+    gh("PUT", f"{GH_API}/repos/{MEDIA_REPO}/contents/README.md", MEDIA_TOKEN, json={
+        "message": "저장소 초기화 — 릴리스 생성에는 커밋이 최소 1개 필요",
+        "content": base64.b64encode(README.encode("utf-8")).decode("ascii"),
+    })
+    return True
+
+
 def gh_release(tag):
     """태그에 해당하는 릴리스를 찾고, 없으면 만든다."""
     import requests
@@ -106,6 +146,7 @@ def gh_release(tag):
     if r.status_code == 200:
         return r.json()
 
+    gh_ensure_initialized()
     return gh("POST", f"{GH_API}/repos/{MEDIA_REPO}/releases", MEDIA_TOKEN, json={
         "tag_name": tag,
         "name": tag,
