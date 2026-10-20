@@ -27,6 +27,7 @@ import tempfile
 from PIL import Image, ImageDraw
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import bg  # noqa: E402
 import cover  # noqa: E402
 
 W, H, FPS = cover.W, cover.H, 30
@@ -72,9 +73,18 @@ def audio_duration(path):
         return None
 
 
-def subtitle_frame(bg_path, text):
-    """장면 이미지 위에 자막을 번인. 커버보다 작고 하단에 둔다."""
-    img = cover.cover_crop(bg_path) if bg_path else Image.new("RGB", (W, H), (18, 18, 20))
+def subtitle_frame(bg_path, text, fallback=None):
+    """장면 이미지 위에 자막을 번인. 커버보다 작고 하단에 둔다.
+
+    이미지가 지정되지 않으면 fallback(생성 배경)을 쓴다. 보도사진을 쓸 수 없으므로
+    직접 만든 배경이 기본값이다.
+    """
+    if bg_path:
+        img = cover.cover_crop(bg_path)
+    elif fallback is not None:
+        img = fallback
+    else:
+        img = Image.new("RGB", (W, H), (18, 18, 20))
     draw = ImageDraw.Draw(img)
     if not text:
         return img
@@ -107,15 +117,16 @@ def build(script_path, out_path):
 
     # 1. 커버
     c = sc["cover"]
-    bg = cover.cover_crop(c["image"]) if c.get("image") else Image.new("RGB", (W, H), (18, 18, 20))
-    cov = cover.draw_cover(bg, c["lines"], badge=c.get("badge"))
+    canvas = cover.cover_crop(c["image"]) if c.get("image") else bg.make_for_script(sc)
+    cov = cover.draw_cover(canvas, c["lines"], badge=c.get("badge"))
     cov_png = os.path.join(work, "cover.png")
     cov.save(cov_png)
     segments.append((cov_png, None, COVER_HOLD))
 
     # 2. 장면
     for i, s in enumerate(sc.get("scenes", [])):
-        frame = subtitle_frame(s.get("image"), s.get("subtitle", ""))
+        frame = subtitle_frame(s.get("image"), s.get("subtitle", ""),
+                               fallback=bg.make_for_script(sc, scene_index=i))
         fp = os.path.join(work, f"s{i:02d}.png")
         frame.save(fp)
 

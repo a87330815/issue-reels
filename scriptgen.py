@@ -71,6 +71,22 @@ def hook_fit(text, limit=6):
     return result or text[:limit]
 
 
+def short_subtitle(text, limit=22):
+    """자막을 짧게 줄인다. 숫자나 단어 중간에서 끊기지 않도록 어절 경계를 지킨다.
+
+    릴스 자막은 한눈에 읽혀야 하므로 문장을 그대로 넣지 않는다.
+    """
+    text = (text or "").strip().rstrip(".")
+    if len(text) <= limit:
+        return text
+    out = ""
+    for word in text.split():
+        if len(out) + len(word) + (1 if out else 0) > limit:
+            break
+        out = out + " " + word if out else word
+    return out or text[:limit]
+
+
 def cover_char_count(lines):
     """커버 라인 리스트의 총 글자 수 (태그 제외)."""
     return sum(len(strip_markup(l)) for l in lines)
@@ -147,12 +163,16 @@ def analyze_apt_trade(items):
     all_deals.sort(key=lambda x: x["amount"], reverse=True)
     top = all_deals[0]
     top_억 = top["amount"] / 10000
+    # 커버 배경의 데이터 레이어용 — 상위 5건 금액(억)
+    top_chart = [round(d["amount"] / 10000, 1) for d in all_deals[:5]]
     angles.append({
         "type": "숫자훅",
         "hook": f"{top_억:.0f}억 아파트",
         "data": top,
         "summary": f"{top['region']} {top['apt']} {top['area']}㎡ {top_억:.1f}억 거래",
+        "short": f"{top['region']} {top_억:.1f}억 거래",
         "items": [top],
+        "chart": {"values": top_chart, "style": "bars"},
     })
 
     # 앵글 2: 지역별 평균가 비교
@@ -170,7 +190,12 @@ def analyze_apt_trade(items):
             "hook": f"{diff:.0f}억 차이",
             "data": {"hi": hi_name, "lo": lo_name, "diff_억": round(diff, 1)},
             "summary": f"{hi_name} 평균 {hi_avg/10000:.1f}억 vs {lo_name} 평균 {lo_avg/10000:.1f}억",
+            "short": f"{hi_name} vs {lo_name}",
             "items": all_deals[:5],
+            "chart": {
+                "values": [round(v / 10000, 1) for _, v in sorted_regions[:5]],
+                "style": "bars",
+            },
         })
 
     # 앵글 3: 지역 한정 — 거래 건수 많은 지역
@@ -180,7 +205,12 @@ def analyze_apt_trade(items):
         "hook": f"{busiest[0]} {len(busiest[1])}건 거래",
         "data": {"region": busiest[0], "count": len(busiest[1])},
         "summary": f"{busiest[0]}에서 이번 달 {len(busiest[1])}건 거래",
+        "short": f"{busiest[0]} {len(busiest[1])}건 거래",
         "items": busiest[1][:5],
+        "chart": {
+            "values": [round(d["amount"] / 10000, 1) for d in busiest[1][:5]],
+            "style": "bars",
+        },
     })
 
     return angles
@@ -221,7 +251,7 @@ TEMPLATES = {
             lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "이거 실환가요"],
             lambda a: ["이번 달", f"<r>{hook_fit(a.get('hook',''))}</r>", "거래 떴습니다"],
         ],
-        "narration_pattern": "최근 공공데이터를 분석한 결과, {summary}. 구체적인 수치를 보여드리겠습니다.",
+        "narration_pattern": "{summary}. 수치로 확인해보겠습니다.",
         "scene_count": 3,
     },
     "시행일훅": {
@@ -276,8 +306,7 @@ def _format_item_narration(item):
         else:
             price_str = f"{amount_raw:,}만원"
         narration = f"{region} {apt} {area}제곱미터, {floor}층이 {price_str}에 거래되었습니다."
-        subtitle = f"{region} {apt} {price_str}"
-        return narration, subtitle[:30]
+        return narration, short_subtitle(f"{region} {apt} {price_str}")
 
     # 기타 소스 — key-value 나열
     parts = [f"{v}" for k, v in item.items()
@@ -286,7 +315,7 @@ def _format_item_narration(item):
                           "deal_month", "deal_day", "deal_type",
                           "build_year", "region") and v]
     detail = " ".join(str(p) for p in parts[:4])
-    return detail, detail[:30]
+    return detail, short_subtitle(detail)
 
 
 def template_generate(angle):
@@ -315,7 +344,7 @@ def template_generate(angle):
     scenes.append({
         "image": None,
         "narration": narration_intro,
-        "subtitle": narration_intro[:30],
+        "subtitle": short_subtitle(angle.get("short") or angle.get("summary") or narration_intro),
     })
 
     # 데이터 기반 장면
@@ -366,6 +395,7 @@ def template_generate(angle):
             "source": source_id,
             "category": category,
             "attribution": attribution,
+            "chart": angle.get("chart"),
             "generated_at": datetime.now(timezone.utc).isoformat(),
         },
     }
@@ -482,7 +512,7 @@ def llm_generate(angle, api_key):
         scenes.append({
             "image": None,
             "narration": s["narration"],
-            "subtitle": s.get("subtitle", s["narration"][:30]),
+            "subtitle": short_subtitle(s.get("subtitle") or s["narration"]),
         })
 
     return {
@@ -498,6 +528,7 @@ def llm_generate(angle, api_key):
             "source": source_id,
             "category": category,
             "attribution": attribution,
+            "chart": angle.get("chart"),
             "generated_at": datetime.now(timezone.utc).isoformat(),
         },
     }
