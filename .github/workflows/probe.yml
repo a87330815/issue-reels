@@ -1,12 +1,6 @@
-name: probe
-
-# 오픈API 응답 구조 확인용. 결과를 api-probe 브랜치에 올린다.
+name: 참가격 API 탐색
 on:
   workflow_dispatch:
-
-permissions:
-  contents: write
-
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -14,21 +8,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
       - run: pip install requests
-
-      - name: API 호출
+      - run: python probe4.py
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-        run: python probe.py
-
-      - name: api-probe 브랜치에 올리기
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan api-probe
-          git rm -rf --cached . >/dev/null 2>&1 || true
-          find . -maxdepth 1 -mindepth 1 ! -name probe_out ! -name .git -exec rm -rf {} +
-          git add -f probe_out/
-          git commit -qm "API 응답 샘플 $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push -f origin api-probe
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: probe-results
+          path: probe_out/
