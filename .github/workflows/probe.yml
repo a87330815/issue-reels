@@ -14,15 +14,15 @@ jobs:
           python-version: "3.12"
       - run: pip install requests
       - name: Run probe
-        run: python probe4.py 2>&1 | tee /tmp/probe_log.txt
+        run: python probe5.py 2>&1 | tee /tmp/probe_log.txt
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-      - name: Post results as issue comment
+      - name: Post results as issue
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           BODY="$(head -c 60000 /tmp/probe_log.txt)"
-          gh issue create --title "probe4 결과 $(date +%Y%m%d-%H%M)" --body "\`\`\`
+          gh issue create --title "probe5 결과 $(date +%Y%m%d-%H%M)" --body "\`\`\`
           ${BODY}
           \`\`\`" --repo a87330815/issue-reels
