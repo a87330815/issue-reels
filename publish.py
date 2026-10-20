@@ -297,8 +297,12 @@ def main():
         return 0 if check() else 1
 
     if not IG_ID or not TOKEN:
-        print("[중단] IG_USER_ID / IG_ACCESS_TOKEN 미설정 — --check로 안내를 보세요")
-        return 1
+        if not args.dry_run:
+            print("[중단] IG_USER_ID / IG_ACCESS_TOKEN 미설정 — --check로 안내를 보세요")
+            return 1
+        # 드라이런은 발행 직전까지만 보는 것이므로 인증 없이도 끝까지 돌린다.
+        # 인스타 설정 전에 앞 구간을 검증하려면 이게 돼야 한다.
+        print("[알림] 인스타 인증 정보 미설정 — 드라이런이라 계속 진행합니다")
 
     # 발행 대상 수집
     jobs = []
@@ -330,12 +334,15 @@ def main():
             if not j.get("caption"):
                 j["caption"] = caption
 
-    # 한도 확인
-    left = quota_left()
-    print(f"남은 발행 가능: {left}건")
-    if left <= 0:
-        print("[중단] 24시간 발행 한도 소진")
-        return 1
+    # 한도 확인 — 인증이 필요하므로 드라이런에서 인증이 없으면 건너뛴다
+    if args.dry_run and (not IG_ID or not TOKEN):
+        left = args.limit
+    else:
+        left = quota_left()
+        print(f"남은 발행 가능: {left}건")
+        if left <= 0:
+            print("[중단] 24시간 발행 한도 소진")
+            return 1
 
     jobs = jobs[:min(args.limit, left)]
     print(f"발행 대상: {len(jobs)}건\n")
