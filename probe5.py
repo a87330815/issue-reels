@@ -31,7 +31,7 @@ def raw_call(op, extra_params, timeout=20):
     p = {"serviceKey": KEY, "numOfRows": 5, "pageNo": 1, **extra_params}
     try:
         r = sess.get(f"{BASE}/{op}", params=p, timeout=timeout)
-        return r.status_code, r.text[:1500]
+        return r.status_code, r.text
     except Exception as e:
         return 0, str(e)[:200]
 
@@ -41,8 +41,11 @@ def main():
 
     # 1. 상품 카탈로그에서 첫 상품 가져오기
     print("=== 1. 상품 카탈로그 조회 ===")
-    status, text = raw_call("getProductInfoSvc.do", {"numOfRows": 3, "pageNo": 1})
+    status, text = raw_call("getProductInfoSvc.do", {"numOfRows": 2, "pageNo": 1})
     print(f"  status={status} len={len(text)}")
+    if status != 200:
+        print(f"  카탈로그 조회 실패: {text[:300]}")
+        return 1
 
     root = ET.fromstring(text)
     products = []
