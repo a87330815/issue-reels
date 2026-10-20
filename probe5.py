@@ -6,9 +6,15 @@ probe4에서 getProductInfoSvc.do가 604건을 반환함을 확인.
 getProductPriceInfoSvc는 entpId 또는 goodId가 필수.
 이제 goodId를 순회하며 최근 날짜에 가격 데이터가 있는 상품을 찾는다.
 """
-import os, sys, json, datetime as dt
+import os, sys, json, time, datetime as dt
 import xml.etree.ElementTree as ET
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+sess = requests.Session()
+retry = Retry(total=3, backoff_factor=2, status_forcelist=[500, 502, 503, 504])
+sess.mount("https://", HTTPAdapter(max_retries=retry))
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 _env = os.path.join(ROOT, ".env")
@@ -28,9 +34,9 @@ def get_all_good_ids():
     url = f"{BASE}/getProductInfoSvc.do"
     all_items = []
     for page in range(1, 40):  # 604건, 20건씩 = 최대 31페이지
-        r = requests.get(url, params={
+        r = sess.get(url, params={
             "serviceKey": KEY, "numOfRows": 20, "pageNo": page
-        }, timeout=15)
+        }, timeout=30)
         root = ET.fromstring(r.text)
         items = root.findall(".//item")
         if not items:
@@ -58,10 +64,10 @@ def check_price(good_id, dates):
     url = f"{BASE}/getProductPriceInfoSvc"
     for date in dates:
         try:
-            r = requests.get(url, params={
+            r = sess.get(url, params={
                 "serviceKey": KEY, "numOfRows": 5, "pageNo": 1,
                 "goodInspectDay": date, "goodId": good_id
-            }, timeout=10)
+            }, timeout=30)
             root = ET.fromstring(r.text)
             items = root.findall(".//item")
             if items:
