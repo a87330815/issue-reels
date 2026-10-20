@@ -1,16 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-probe.py — 한국소비자원 참가격 API 구조 탐색
+probe.py — 한국소비자원 참가격 API 구조 확인
 
-목적: `sources.yml`의 kca_product_price에 넣을 field_map을 확정한다.
-지금 field_map이 비어 있어 이 소스는 게이트는 통과하지만 0건을 돌려준다.
-그래서 모든 릴스가 아파트 실거래가 하나로만 만들어지고 있다.
+data.go.kr 명세(데이터 15158701)에서 확인된 사실:
+  - getProductPriceInfoSvc    가격. goodInspectDay(필수, **매주 금요일 날짜**) + entpId·goodId(선택)
+  - getStandardInfoSvc.do     생필품 기준데이터 (상품 ID → 이름)
+  - getStoreInfoSvc.do        판매점 정보 (업체 ID → 이름)
 
-이전 시도(probe3)는 가격 엔드포인트에 ID를 추측해 넣다가 막혔다.
-이번에는 순서를 바꾼다:
-  1. 부가 엔드포인트(업체·상품 목록)로 **실제 존재하는 ID**를 받는다
-  2. 그 ID로 가격을 조회한다
-  3. 성공한 응답의 태그 구조를 그대로 덤프한다
+가격 응답은 ID만 주므로 이름을 붙이려면 기준데이터와 조인해야 한다.
+이 probe는 세 엔드포인트의 실제 태그명과, 데이터가 있는 금요일을 확인한다.
 
 결과는 probe_out/ 에 쌓이고 워크플로가 api-probe 브랜치로 올린다.
 """
@@ -36,53 +34,46 @@ if os.path.exists(_env):
 
 KEY = os.environ.get("DATA_GO_KR_KEY", "")
 
-# 같은 서비스에 붙어 있는 흔한 오퍼레이션들. 어느 것이 열려 있는지 모르니 전부 찔러본다.
-OPERATIONS = [
-    "getEntpInfoSvc",        # 업체 목록
-    "getGoodInfoSvc",        # 상품 목록
-    "getProductPriceInfoSvc",  # 가격 (본체)
-    "getIntlPriceInfoSvc",
-    "getAvgPriceInfoSvc",
-]
+
+def redact(t):
+    return t.replace(KEY, "***REDACTED***") if KEY else t
 
 
-def redact(text):
-    return text.replace(KEY, "***REDACTED***") if KEY else text
-
-
-def pretty(text, limit=12000):
+def pretty(t, limit=14000):
     try:
-        return minidom.parseString(text).toprettyxml(indent="  ")[:limit]
+        return minidom.parseString(t).toprettyxml(indent="  ")[:limit]
     except Exception:
-        return text[:limit]
+        return t[:limit]
 
 
-def tag_of(text, name):
-    m = re.search(rf"<{name}>\s*([^<]*?)\s*</{name}>", text)
+def tag(t, name):
+    m = re.search(rf"<{name}>\s*([^<]*?)\s*</{name}>", t)
     return m.group(1) if m else ""
 
 
-def summarize(text):
-    """응답 한 줄 요약. item이 있으면 태그 목록까지."""
-    if "<item>" in text:
-        block = re.search(r"<item>(.*?)</item>", text, re.S)
-        tags = re.findall(r"<(\w+)>", block.group(1)) if block else []
-        total = tag_of(text, "totalCount")
-        return True, f"item 있음 (총 {total or '?'}건) 태그: {', '.join(dict.fromkeys(tags))}"
-    msg = (tag_of(text, "resultMsg") or tag_of(text, "returnAuthMsg")
-           or tag_of(text, "errMsg") or "(빈 응답)")
-    return False, msg
+def item_tags(t):
+    """첫 item의 태그 이름 목록. field_map을 쓰려면 이게 필요하다."""
+    blk = re.search(r"<item>(.*?)</item>", t, re.S)
+    if not blk:
+        return []
+    return list(dict.fromkeys(re.findall(r"<(\w+)>", blk.group(1))))
+
+
+def summarize(t):
+    if "<item>" in t:
+        return True, f"총 {tag(t,'totalCount') or '?'}건 · 태그: {', '.join(item_tags(t))}"
+    msg = tag(t, "resultMsg") or tag(t, "returnAuthMsg") or tag(t, "errMsg")
+    return False, msg or "(빈 응답)"
 
 
 def call(op, params, label):
-    url = f"{BASE}/{op}"
     try:
-        r = requests.get(url, params=dict(params, serviceKey=KEY), timeout=20)
+        r = requests.get(f"{BASE}/{op}", params=dict(params, serviceKey=KEY), timeout=20)
     except Exception as e:
-        print(f"    {label:<42} 요청실패 {type(e).__name__}")
+        print(f"  {label:<40} 요청실패 {type(e).__name__}")
         return None
     ok, note = summarize(r.text)
-    print(f"    {label:<42} {'OK ' if ok else '-- '}{note}")
+    print(f"  {label:<40} {'OK ' if ok else '-- '}{note}")
     return r.text if ok else None
 
 
@@ -94,87 +85,49 @@ def dump(name, text, params=None):
         shown = {k: v for k, v in params.items() if k != "serviceKey"}
         with open(os.path.join(OUT, f"{name}.params.txt"), "w", encoding="utf-8") as f:
             f.write(repr(shown) + "\n")
-    print(f"      → probe_out/{name}.xml 저장")
+    print(f"    → probe_out/{name}.xml")
 
 
-def ids_from(text, *candidates):
-    """응답에서 ID로 쓸 만한 값을 뽑는다."""
-    for tag in candidates:
-        vals = re.findall(rf"<{tag}>\s*([^<]*?)\s*</{tag}>", text)
-        vals = [v for v in vals if v]
-        if vals:
-            return tag, list(dict.fromkeys(vals))
-    return None, []
-
-
-def recent_days(n=21):
-    today = dt.date.today()
-    return [(today - dt.timedelta(days=i)).strftime("%Y%m%d") for i in range(n)]
+def recent_fridays(n=10):
+    """최근 금요일들. 최신 조사분은 아직 공개 전일 수 있어 여러 주를 본다."""
+    d = dt.date.today()
+    d -= dt.timedelta(days=(d.weekday() - 4) % 7)   # 직전(또는 오늘) 금요일
+    return [(d - dt.timedelta(weeks=i)).strftime("%Y%m%d") for i in range(n)]
 
 
 def main():
     if not KEY:
-        print("DATA_GO_KR_KEY 없음 — 이 probe는 GitHub Actions에서 돌려야 한다")
+        print("DATA_GO_KR_KEY 없음 — GitHub Actions에서 돌릴 것")
         return 1
     os.makedirs(OUT, exist_ok=True)
-    base = {"numOfRows": 50, "pageNo": 1}
+    base = {"numOfRows": 100, "pageNo": 1}
 
-    # ── 1단계: 어떤 오퍼레이션이 열려 있는지 ─────────────────
-    print("=== 1단계: 오퍼레이션 탐색 ===")
-    alive = {}
-    for op in OPERATIONS:
-        text = call(op, base, op)
-        if text:
-            alive[op] = text
-            dump(f"op_{op}", text, base)
+    print("=== 1단계: 기준데이터 (ID → 이름) ===")
+    for op in ("getStandardInfoSvc.do", "getStoreInfoSvc.do",
+               "getStandardInfoSvc", "getStoreInfoSvc"):
+        t = call(op, base, op)
+        if t:
+            dump(f"info_{op.replace('.do','')}", t, base)
 
-    # ── 2단계: 목록 API에서 실제 ID 확보 ────────────────────
-    print("\n=== 2단계: 유효 ID 확보 ===")
-    entp_tag, entp_ids = None, []
-    good_tag, good_ids = None, []
-    if "getEntpInfoSvc" in alive:
-        entp_tag, entp_ids = ids_from(alive["getEntpInfoSvc"], "entpId", "entpCd", "id")
-        print(f"  업체 ID {len(entp_ids)}개 ({entp_tag}): {entp_ids[:8]}")
-    if "getGoodInfoSvc" in alive:
-        good_tag, good_ids = ids_from(alive["getGoodInfoSvc"], "goodId", "goodCd", "id")
-        print(f"  상품 ID {len(good_ids)}개 ({good_tag}): {good_ids[:8]}")
-
-    # 가격 엔드포인트가 조건 없이 바로 열렸으면 그걸로 끝
-    if "getProductPriceInfoSvc" in alive:
-        print("\n가격 엔드포인트가 조건 없이 응답했다. field_map은 op_getProductPriceInfoSvc.xml 참조")
-        return 0
-
-    # ── 3단계: 확보한 ID + 날짜로 가격 조회 ──────────────────
-    print("\n=== 3단계: 가격 조회 ===")
-    dates = recent_days()
-    date_params = ["goodInspectDay", "inspectDay", "baseDe", "examinDay"]
-
-    tried = 0
-    for dparam in date_params:
-        for date in dates[:10]:
-            # 식별자 없이
-            p = dict(base, **{dparam: date})
-            t = call("getProductPriceInfoSvc", p, f"{dparam}={date}")
-            tried += 1
-            if t:
-                dump("price_success", t, p)
-                return 0
-            # 상품 ID를 붙여서
-            for gid in (good_ids or [])[:5]:
-                p = dict(base, **{dparam: date, good_tag or "goodId": gid})
-                t = call("getProductPriceInfoSvc", p, f"{dparam}={date} {good_tag}={gid}")
-                tried += 1
-                if t:
-                    dump("price_success", t, p)
-                    return 0
-            if tried > 120:
-                break
-        if tried > 120:
+    print("\n=== 2단계: 가격 (금요일) ===")
+    fridays = recent_fridays()
+    print(f"  시도할 금요일: {', '.join(fridays[:5])} ...")
+    hit = None
+    for fri in fridays:
+        t = call("getProductPriceInfoSvc", dict(base, goodInspectDay=fri),
+                 f"goodInspectDay={fri}")
+        if t:
+            dump("price_success", t, dict(base, goodInspectDay=fri))
+            hit = fri
             break
 
-    print(f"\n{tried}개 조합을 시도했으나 데이터 없음.")
-    print("probe_out/ 의 응답을 보고 파라미터 이름을 다시 판단할 것.")
-    return 1
+    if not hit:
+        print("\n금요일 10주치 모두 데이터 없음. entpId를 함께 줘야 할 수 있다.")
+        return 1
+
+    print(f"\n데이터 있는 조사일: {hit}")
+    print("field_map 은 probe_out/price_success.xml 의 태그를 그대로 쓰면 된다.")
+    return 0
 
 
 if __name__ == "__main__":
