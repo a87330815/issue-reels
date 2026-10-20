@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-probe5.py — 참가격 API 가격 데이터 탐색 (최소 요청 버전)
+probe5.py — 참가격 API 엔드포인트 탐색
 
-전략: 요청 수를 최소화 (일일 한도 초과 방지)
-1. 상품 카탈로그 1페이지(5개)만
-2. 각 goodId에 대해 최근 금요일 1개만 시도
-3. 한도 초과 감지 시 즉시 중단
+목표: 올바른 가격 조회 엔드포인트와 파라미터 조합을 찾기
 """
-import os, json, datetime as dt, time
+import os, datetime as dt, time
 import xml.etree.ElementTree as ET
 import requests
 from requests.adapters import HTTPAdapter
@@ -27,97 +24,112 @@ KEY = os.environ.get("DATA_GO_KR_KEY", "")
 BASE = "https://apis.data.go.kr/B551919/ProductPriceInfoService"
 
 sess = requests.Session()
-retry = Retry(total=3, backoff_factor=3, status_forcelist=[500, 502, 503, 504])
+retry = Retry(total=2, backoff_factor=2, status_forcelist=[500, 502, 503])
 sess.mount("https://", HTTPAdapter(max_retries=retry))
 
-def api(op, params, timeout=45):
-    p = {"serviceKey": KEY, "numOfRows": 5, "pageNo": 1, **params}
+def raw_call(op, extra_params, timeout=20):
+    p = {"serviceKey": KEY, "numOfRows": 5, "pageNo": 1, **extra_params}
     try:
         r = sess.get(f"{BASE}/{op}", params=p, timeout=timeout)
-        root = ET.fromstring(r.text)
-        code = root.findtext(".//resultCode", "")
-        msg = root.findtext(".//resultMsg", "")
-        err = root.findtext(".//errMsg", "")
-        ret_msg = root.findtext(".//returnAuthMsg", "")
-        # 한도 초과 감지
-        if "LIMITED_NUMBER" in (err or "") or "요청제한" in (ret_msg or ""):
-            return "LIMIT", "일일 요청 한도 초과", []
-        items = []
-        for item in root.findall(".//item"):
-            d = {}
-            for ch in item:
-                d[ch.tag] = ch.text
-            items.append(d)
-        return code, msg, items
+        return r.status_code, r.text[:1500]
     except Exception as e:
-        return "ERR", str(e)[:80], []
+        return 0, str(e)[:200]
 
 def main():
     if not KEY:
         print("DATA_GO_KR_KEY 없음"); return 1
 
-    # 1. 상품 카탈로그 — 1페이지 5개만
-    print("=== 상품 카탈로그 (5개) ===")
-    code, msg, products = api("getProductInfoSvc.do", {"numOfRows": 5, "pageNo": 1})
-    if code == "LIMIT":
-        print("⚠ 일일 요청 한도 초과! 내일 다시 시도하세요."); return 1
-    for p in products:
-        print(f"  goodId={p.get('goodId')} name={p.get('goodName','')[:40]}")
-    print(f"상품 {len(products)}개\n")
+    # 1. 상품 카탈로그에서 첫 상품 가져오기
+    print("=== 1. 상품 카탈로그 조회 ===")
+    status, text = raw_call("getProductInfoSvc.do", {"numOfRows": 3, "pageNo": 1})
+    print(f"  status={status} len={len(text)}")
 
-    # 2. 최근 금요일 찾기
+    root = ET.fromstring(text)
+    products = []
+    for item in root.findall(".//item"):
+        d = {ch.tag: ch.text for ch in item}
+        products.append(d)
+        print(f"  goodId={d.get('goodId')} name={d.get('goodName','')[:30]}")
+        # 모든 필드 출력 (첫 번째만)
+        if len(products) == 1:
+            print("  === 전체 필드 ===")
+            for k, v in d.items():
+                print(f"    {k}: {v}")
+
+    if not products:
+        print("카탈로그 조회 실패!")
+        print(f"  raw: {text[:500]}")
+        return 1
+
+    gid = products[0].get("goodId", "35")
+
+    # 최근 금요일
     today = dt.date.today()
     d = today
     for _ in range(7):
-        if d.weekday() == 4:  # Friday
-            break
+        if d.weekday() == 4: break
         d -= dt.timedelta(days=1)
-    target_date = d.strftime("%Y%m%d")
-    print(f"조회 날짜: {target_date}\n")
+    friday = d.strftime("%Y%m%d")
 
-    # 3. 각 상품 가격 조회 (최대 5건, 한도 초과 시 중단)
-    print("=== 가격 조회 ===")
-    hits = []
-    for prod in products[:5]:
-        gid = prod.get("goodId", "")
-        code, msg, items = api("getProductPriceInfoSvc", {"goodId": gid, "goodInspectDay": target_date})
-        if code == "LIMIT":
-            print("⚠ 일일 요청 한도 초과! 중단합니다.")
+    # 2. 가격 조회 엔드포인트 변형 테스트
+    print(f"\n=== 2. 가격 엔드포인트 탐색 (goodId={gid}, date={friday}) ===")
+
+    endpoints = [
+        ("getProductPriceInfoSvc", {"goodId": gid, "goodInspectDay": friday}),
+        ("getProductPriceInfoSvc.do", {"goodId": gid, "goodInspectDay": friday}),
+        ("getProductPriceInfo", {"goodId": gid, "goodInspectDay": friday}),
+        ("getProductPriceInfo.do", {"goodId": gid, "goodInspectDay": friday}),
+        # goodInspectDay 없이
+        ("getProductPriceInfoSvc", {"goodId": gid}),
+        ("getProductPriceInfoSvc.do", {"goodId": gid}),
+        # 다른 파라미터명 시도
+        ("getProductPriceInfoSvc", {"goodId": gid, "inspectDay": friday}),
+        ("getProductPriceInfoSvc.do", {"goodId": gid, "inspectDay": friday}),
+        ("getProductPriceInfoSvc", {"goodId": gid, "searchDate": friday}),
+        # entpId로
+        ("getProductPriceInfoSvc", {"entpId": products[0].get("productEntpCode",""), "goodInspectDay": friday}),
+        ("getProductPriceInfoSvc.do", {"entpId": products[0].get("productEntpCode",""), "goodInspectDay": friday}),
+    ]
+
+    for ep, params in endpoints:
+        status, text = raw_call(ep, params)
+        has_items = "<item>" in text
+        has_limit = "LIMITED_NUMBER" in text or "요청제한" in text
+
+        if has_limit:
+            print(f"  ⚠ {ep} params={params}: 일일 한도 초과! 중단")
             break
-        if items:
-            print(f"  ✓ goodId={gid} → {len(items)}건")
-            hits.append({"goodId": gid, "date": target_date, "items": items, "name": prod.get("goodName","")})
-        else:
-            print(f"  ✗ goodId={gid} code={code} msg={msg[:50]}")
-        time.sleep(1)  # 요청 간격 넉넉하게
 
-    # 4. goodId 없이 날짜만으로도 시도 (1건)
-    if not hits:
-        print("\n=== 날짜만으로 조회 (1건) ===")
-        code, msg, items = api("getProductPriceInfoSvc", {"goodInspectDay": target_date})
-        if items:
-            print(f"  ✓ 날짜만 → {len(items)}건")
-            hits.append({"goodId": "all", "date": target_date, "items": items})
-        else:
-            print(f"  ✗ code={code} msg={msg[:80]}")
+        print(f"  {ep} params={list(params.keys())}: status={status} items={has_items} len={len(text)}")
+        if has_items:
+            print(f"  ✓✓✓ 히트! 응답:")
+            print(f"  {text[:800]}")
+            # 파싱
+            r = ET.fromstring(text)
+            for it in r.findall(".//item"):
+                print("  === 가격 필드 ===")
+                for ch in it:
+                    print(f"    {ch.tag}: {ch.text}")
+                break
+            return 0
+        elif status != 200:
+            print(f"  raw: {text[:200]}")
 
-    # 5. 결과
-    print(f"\n=== 결과 요약: {len(hits)}건 히트 ===")
-    if hits:
-        print("\n첫 번째 히트 필드:")
-        for k, v in hits[0]["items"][0].items():
-            print(f"  {k}: {v}")
-    else:
-        print("가격 데이터 없음!")
-        # raw 응답 확인 (1건만)
-        if products:
-            gid = products[0].get("goodId","")
-            p = {"serviceKey": KEY, "numOfRows": 5, "pageNo": 1, "goodId": gid, "goodInspectDay": target_date}
-            r = sess.get(f"{BASE}/getProductPriceInfoSvc", params=p, timeout=45)
-            print(f"\n디버그 raw ({len(r.text)} bytes):")
-            print(f"  {r.text[:1500]}")
+        time.sleep(1)
 
-    return 0
+    # 3. 서비스 목록 자체를 조회
+    print(f"\n=== 3. 서비스 루트 탐색 ===")
+    for path in ["", "/", "?type=json"]:
+        try:
+            r = sess.get(f"{BASE}{path}", params={"serviceKey": KEY}, timeout=15)
+            print(f"  path='{path}': status={r.status_code} len={len(r.text)}")
+            print(f"  {r.text[:500]}")
+        except Exception as e:
+            print(f"  path='{path}': ERROR {e}")
+        time.sleep(0.5)
+
+    print("\n가격 데이터를 찾지 못했습니다.")
+    return 1
 
 if __name__ == "__main__":
     raise SystemExit(main())
