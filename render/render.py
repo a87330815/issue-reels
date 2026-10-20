@@ -30,7 +30,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import cover  # noqa: E402
 
 W, H, FPS = cover.W, cover.H, 30
-VOICE = "ko-KR-SunHiNeural"
+# 음성 — 2026-10-20 샘플 3종 청취 후 SunHi(여성) 채택.
+# 환경변수로 덮어쓸 수 있게 두되, 바꾸면 반드시 다시 들어보고 판단할 것.
+VOICE = os.environ.get("TTS_VOICE", "ko-KR-SunHiNeural")
+TTS_RATE = os.environ.get("TTS_RATE", "+8%")    # 뉴스 톤은 약간 빠른 쪽이 낫다
+TTS_PITCH = os.environ.get("TTS_PITCH", "+0Hz")
 
 COVER_HOLD = 2.0          # 커버 노출 시간
 CHARS_PER_SEC = 6.5       # TTS 실패 시 길이 추정용
@@ -43,7 +47,7 @@ def estimate_duration(text):
 
 async def _tts(text, path):
     import edge_tts
-    await edge_tts.Communicate(text, VOICE).save(path)
+    await edge_tts.Communicate(text, VOICE, rate=TTS_RATE, pitch=TTS_PITCH).save(path)
 
 
 def synth(text, path):
