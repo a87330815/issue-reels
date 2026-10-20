@@ -148,7 +148,11 @@ def build(script_path, out_path):
         part = os.path.join(work, f"p{idx:02d}.mp4")
         cmd = ["ffmpeg", "-y", "-loop", "1", "-t", f"{dur:.3f}", "-i", img]
         if audio:
-            cmd += ["-i", audio, "-c:a", "aac", "-b:a", "128k", "-shortest"]
+            # 라우드니스 정규화 — TTS 원본이 0dBFS까지 치솟아 클리핑이 난다.
+            # I=-16 LUFS / TP=-1.5dB 는 소셜 영상 표준값이다.
+            cmd += ["-i", audio,
+                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+                    "-c:a", "aac", "-b:a", "128k", "-shortest"]
         else:
             cmd += ["-f", "lavfi", "-t", f"{dur:.3f}", "-i",
                     "anullsrc=channel_layout=stereo:sample_rate=44100", "-c:a", "aac"]
