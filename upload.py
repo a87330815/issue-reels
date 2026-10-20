@@ -23,8 +23,10 @@ upload.py — 영상 공개 호스팅
 import argparse
 import glob
 import json
+import hashlib
 import mimetypes
 import os
+import re
 import sys
 from datetime import datetime
 
@@ -133,6 +135,22 @@ def gh_ensure_initialized():
     return True
 
 
+def safe_asset_name(name):
+    """릴리스 자산 이름을 ASCII로 정리한다.
+
+    GitHub은 자산 이름의 비ASCII 문자를 임의로 바꾼다. 그래서 한글 파일명을
+    그대로 올리면 실제 자산 이름이 달라지고, 조립한 주소가 404가 난다.
+    인스타가 가져갈 주소이기도 하니 애초에 ASCII로 맞춘다.
+    """
+    stem, ext = os.path.splitext(name)
+    ascii_stem = re.sub(r"[^A-Za-z0-9._-]+", "_", stem).strip("_")
+    # 한글만으로 된 이름이면 통째로 날아가므로 해시를 붙여 구분을 남긴다
+    if len(ascii_stem.replace("_", "")) < 4:
+        digest = hashlib.sha1(stem.encode("utf-8")).hexdigest()[:8]
+        ascii_stem = f"{ascii_stem}_{digest}" if ascii_stem else digest
+    return ascii_stem + ext.lower()
+
+
 def gh_release(tag):
     """태그에 해당하는 릴리스를 찾고, 없으면 만든다."""
     import requests
@@ -157,7 +175,7 @@ def gh_release(tag):
 def gh_upload(path, tag):
     """파일을 릴리스 자산으로 올리고 공개 URL을 돌려준다."""
     rel = gh_release(tag)
-    name = os.path.basename(path)
+    name = safe_asset_name(os.path.basename(path))
 
     # 같은 이름이 이미 있으면 지우고 다시 올린다 (재실행 대비)
     for asset in rel.get("assets", []):
@@ -169,10 +187,15 @@ def gh_upload(path, tag):
     upload_url = rel["upload_url"].split("{")[0]
     ctype = mimetypes.guess_type(path)[0] or "application/octet-stream"
     with open(path, "rb") as f:
-        gh("POST", f"{upload_url}?name={name}", MEDIA_TOKEN,
-           headers={"Content-Type": ctype}, data=f)
+        res = gh("POST", f"{upload_url}?name={name}", MEDIA_TOKEN,
+                 headers={"Content-Type": ctype}, data=f)
 
-    return f"https://github.com/{MEDIA_REPO}/releases/download/{tag}/{name}"
+    # 주소를 조립하지 말고 API가 돌려준 것을 쓴다.
+    # GitHub이 자산 이름을 바꿔도 이 주소는 항상 맞다.
+    url = res.get("browser_download_url")
+    if url:
+        return url
+    return f"https://github.com/{MEDIA_REPO}/releases/download/{tag}/{res.get('name', name)}"
 
 
 def gh_check():
