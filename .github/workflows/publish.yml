@@ -31,19 +31,16 @@ jobs:
           sudo apt-get install -y -qq ffmpeg fonts-noto-cjk fonts-noto-cjk-extra
 
       - name: 의존성 설치
-        run: pip install -r requirements.txt boto3
+        run: pip install -r requirements.txt
 
       - name: 설정 점검
         env:
-          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
-          S3_BUCKET: ${{ secrets.S3_BUCKET }}
-          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
-          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
-          S3_PUBLIC_BASE: ${{ secrets.S3_PUBLIC_BASE }}
+          MEDIA_REPO: ${{ vars.MEDIA_REPO || 'a87330815/issue-reels-media' }}
+          MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: |
-          python upload.py --check || echo "::warning::스토리지 미설정"
+          python upload.py --check || echo "::warning::저장소 미설정"
           python publish.py --check || echo "::warning::인스타 미설정"
 
       - name: 수집
@@ -72,11 +69,8 @@ jobs:
 
       - name: 스토리지 업로드
         env:
-          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
-          S3_BUCKET: ${{ secrets.S3_BUCKET }}
-          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
-          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
-          S3_PUBLIC_BASE: ${{ secrets.S3_PUBLIC_BASE }}
+          MEDIA_REPO: ${{ vars.MEDIA_REPO || 'a87330815/issue-reels-media' }}
+          MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
         run: python upload.py --batch out/rendered
 
       - name: 인스타 발행

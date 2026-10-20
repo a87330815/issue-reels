@@ -1,30 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-upload.py — 오브젝트 스토리지 업로더
+upload.py — 영상 공개 호스팅
 
-렌더된 mp4와 커버 jpg를 공개 URL로 올린다.
-인스타그램 Graph API가 video_url·cover_url에서 파일을 가져가므로
-**공개 접근 가능한 URL이 필수**다. 서명 URL은 쓰지 않는다
-(인스타 측 처리 지연으로 만료되는 사고가 난다).
+인스타그램 Graph API는 video_url·cover_url에서 **직접 파일을 가져간다**.
+그래서 발행 전에 공개 접근 가능한 주소에 올려둬야 한다.
 
-백엔드: S3 호환 API 하나로 R2·S3·B2를 모두 커버한다.
-  Cloudflare R2  — 권장. 이그레스 무료, 10GB 무료
-  AWS S3         — endpoint 비우면 자동
-  Backblaze B2   — S3 호환 엔드포인트 사용
+백엔드 2종 (STORAGE_BACKEND로 선택, 기본 github):
 
-환경변수:
-  S3_ENDPOINT      https://<account>.r2.cloudflarestorage.com  (S3면 비움)
-  S3_BUCKET        버킷 이름
-  S3_ACCESS_KEY    액세스 키
-  S3_SECRET_KEY    시크릿 키
-  S3_PUBLIC_BASE   공개 URL 베이스 (예: https://pub-xxxx.r2.dev)
-  S3_REGION        리전 (R2는 auto)
+  github  — 공개 저장소의 Release에 올린다. 추가 가입·요금 없음.
+            주소: https://github.com/<repo>/releases/download/<tag>/<파일>
+            MEDIA_REPO     a87330815/issue-reels-media
+            MEDIA_TOKEN    해당 저장소 Contents 쓰기 권한 토큰
+
+  s3      — S3 호환 오브젝트 스토리지 (Cloudflare R2·AWS S3·B2).
+            S3_ENDPOINT / S3_BUCKET / S3_ACCESS_KEY / S3_SECRET_KEY / S3_PUBLIC_BASE
 
 사용:
-  python upload.py out/reel.mp4                      # 파일 1개
+  python upload.py --check
+  python upload.py --batch out/rendered
   python upload.py out/reel.mp4 --cover out/cover.jpg
-  python upload.py --batch out/rendered              # 폴더 전체
-  python upload.py --check                           # 설정 점검
 """
 import argparse
 import glob
@@ -40,7 +34,6 @@ MANIFEST = os.path.join(OUT_DIR, "uploaded.json")
 
 
 def load_env():
-    """같은 폴더의 .env에서 키를 읽는다. PC 실행용."""
     path = os.path.join(ROOT, ".env")
     if not os.path.exists(path):
         return
@@ -55,6 +48,13 @@ def load_env():
 
 load_env()
 
+BACKEND = os.environ.get("STORAGE_BACKEND", "github").lower()
+
+# github 백엔드
+MEDIA_REPO = os.environ.get("MEDIA_REPO", "a87330815/issue-reels-media")
+MEDIA_TOKEN = os.environ.get("MEDIA_TOKEN", "")
+
+# s3 백엔드
 ENDPOINT = os.environ.get("S3_ENDPOINT", "").rstrip("/")
 BUCKET = os.environ.get("S3_BUCKET", "")
 ACCESS_KEY = os.environ.get("S3_ACCESS_KEY", "")
@@ -63,39 +63,112 @@ PUBLIC_BASE = os.environ.get("S3_PUBLIC_BASE", "").rstrip("/")
 REGION = os.environ.get("S3_REGION", "auto")
 
 
-def check_config():
-    """설정 점검. 빠진 항목을 알려준다."""
-    required = {
-        "S3_BUCKET": BUCKET,
-        "S3_ACCESS_KEY": ACCESS_KEY,
-        "S3_SECRET_KEY": SECRET_KEY,
-        "S3_PUBLIC_BASE": PUBLIC_BASE,
+def scrub(text):
+    """에러 메시지에 토큰이 실려 나가는 것을 막는다."""
+    for secret in (MEDIA_TOKEN, SECRET_KEY, ACCESS_KEY):
+        if secret:
+            text = text.replace(secret, "***")
+    return text
+
+
+# ═══════════════════════════════════════════════════════════
+#  github 백엔드 — 공개 저장소 Release
+# ═══════════════════════════════════════════════════════════
+
+GH_API = "https://api.github.com"
+
+
+def gh(method, url, token, **kw):
+    import requests
+
+    headers = kw.pop("headers", {})
+    headers.update({
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    })
+    r = requests.request(method, url, headers=headers, timeout=120, **kw)
+    if r.status_code >= 400:
+        raise RuntimeError(f"HTTP {r.status_code}: {scrub(r.text[:300])}")
+    return r.json() if r.text else {}
+
+
+def gh_release(tag):
+    """태그에 해당하는 릴리스를 찾고, 없으면 만든다."""
+    import requests
+
+    url = f"{GH_API}/repos/{MEDIA_REPO}/releases/tags/{tag}"
+    headers = {
+        "Authorization": f"Bearer {MEDIA_TOKEN}",
+        "Accept": "application/vnd.github+json",
     }
-    missing = [k for k, v in required.items() if not v]
+    r = requests.get(url, headers=headers, timeout=30)
+    if r.status_code == 200:
+        return r.json()
 
-    print("스토리지 설정:")
-    print(f"  엔드포인트  {ENDPOINT or '(AWS S3 기본)'}")
-    print(f"  버킷        {BUCKET or '(미설정)'}")
-    print(f"  공개 베이스 {PUBLIC_BASE or '(미설정)'}")
-    print(f"  리전        {REGION}")
-    print(f"  액세스 키   {'설정됨' if ACCESS_KEY else '(미설정)'}")
-    print(f"  시크릿 키   {'설정됨' if SECRET_KEY else '(미설정)'}")
+    return gh("POST", f"{GH_API}/repos/{MEDIA_REPO}/releases", MEDIA_TOKEN, json={
+        "tag_name": tag,
+        "name": tag,
+        "body": "릴스 영상 호스팅. 인스타그램이 이 주소에서 파일을 가져갑니다.",
+    })
 
-    if missing:
-        print(f"\n[미설정] {', '.join(missing)}")
-        print("\nCloudflare R2 설정 순서:")
-        print("  1. dash.cloudflare.com → R2 → 버킷 생성")
-        print("  2. 버킷 Settings → Public Access → r2.dev 도메인 활성화")
-        print("  3. R2 → Manage API Tokens → 토큰 생성 (Object Read & Write)")
-        print("  4. 발급된 값을 GitHub Secrets에 등록")
+
+def gh_upload(path, tag):
+    """파일을 릴리스 자산으로 올리고 공개 URL을 돌려준다."""
+    rel = gh_release(tag)
+    name = os.path.basename(path)
+
+    # 같은 이름이 이미 있으면 지우고 다시 올린다 (재실행 대비)
+    for asset in rel.get("assets", []):
+        if asset["name"] == name:
+            gh("DELETE", f"{GH_API}/repos/{MEDIA_REPO}/releases/assets/{asset['id']}",
+               MEDIA_TOKEN)
+            break
+
+    upload_url = rel["upload_url"].split("{")[0]
+    ctype = mimetypes.guess_type(path)[0] or "application/octet-stream"
+    with open(path, "rb") as f:
+        gh("POST", f"{upload_url}?name={name}", MEDIA_TOKEN,
+           headers={"Content-Type": ctype}, data=f)
+
+    return f"https://github.com/{MEDIA_REPO}/releases/download/{tag}/{name}"
+
+
+def gh_check():
+    print("저장소 백엔드: GitHub Release")
+    print(f"  미디어 저장소  {MEDIA_REPO}")
+    print(f"  토큰           {'설정됨' if MEDIA_TOKEN else '(미설정)'}")
+
+    if not MEDIA_TOKEN:
+        print("\n[미설정] MEDIA_TOKEN")
+        print("\n발급 순서:")
+        print("  1. github.com/settings/personal-access-tokens/new")
+        print(f"  2. Repository access → Only select repositories → {MEDIA_REPO}")
+        print("  3. Permissions → Contents: Read and write")
+        print("  4. 발급된 토큰을 issue-reels 저장소 Secrets에 MEDIA_TOKEN으로 등록")
+        return False
+
+    try:
+        info = gh("GET", f"{GH_API}/repos/{MEDIA_REPO}", MEDIA_TOKEN)
+        vis = "공개" if not info.get("private") else "비공개"
+        print(f"  저장소 확인    {info['full_name']} ({vis})")
+        if info.get("private"):
+            print("\n[경고] 저장소가 비공개입니다. 비공개 저장소의 릴리스 파일은")
+            print("       인증 없이 접근할 수 없어 인스타가 영상을 가져가지 못합니다.")
+            return False
+    except Exception as e:
+        print(f"\n[실패] 저장소 접근: {e}")
         return False
 
     print("\n설정 완료")
     return True
 
 
-def client():
-    """S3 호환 클라이언트. boto3가 R2·S3·B2를 모두 처리한다."""
+# ═══════════════════════════════════════════════════════════
+#  s3 백엔드
+# ═══════════════════════════════════════════════════════════
+
+def s3_client():
     import boto3
     from botocore.config import Config
 
@@ -103,7 +176,7 @@ def client():
         "aws_access_key_id": ACCESS_KEY,
         "aws_secret_access_key": SECRET_KEY,
         "region_name": REGION,
-        # R2는 체크섬 헤더를 거부한다. 레거시 방식으로 고정.
+        # R2는 체크섬 헤더를 거부한다
         "config": Config(
             signature_version="s3v4",
             request_checksum_calculation="when_required",
@@ -115,87 +188,83 @@ def client():
     return boto3.client("s3", **kwargs)
 
 
-def object_key(path, prefix=None):
-    """업로드 경로. 날짜 폴더로 나눠 덮어쓰기를 막는다."""
-    name = os.path.basename(path)
-    day = datetime.now().strftime("%Y/%m/%d")
-    return f"{prefix or 'reels'}/{day}/{name}"
-
-
-def public_url(key):
+def s3_upload(path, tag, client=None):
+    client = client or s3_client()
+    key = f"reels/{tag}/{os.path.basename(path)}"
+    ctype = mimetypes.guess_type(path)[0] or "application/octet-stream"
+    with open(path, "rb") as f:
+        client.put_object(Bucket=BUCKET, Key=key, Body=f, ContentType=ctype,
+                          CacheControl="public, max-age=86400")
     return f"{PUBLIC_BASE}/{key}"
 
 
-def upload_one(s3, path, prefix=None):
-    """파일 하나를 올리고 공개 URL을 돌려준다."""
-    if not os.path.exists(path):
-        raise FileNotFoundError(path)
+def s3_check():
+    print("저장소 백엔드: S3 호환")
+    print(f"  엔드포인트   {ENDPOINT or '(AWS S3 기본)'}")
+    print(f"  버킷         {BUCKET or '(미설정)'}")
+    print(f"  공개 베이스  {PUBLIC_BASE or '(미설정)'}")
+    missing = [k for k, v in {
+        "S3_BUCKET": BUCKET, "S3_ACCESS_KEY": ACCESS_KEY,
+        "S3_SECRET_KEY": SECRET_KEY, "S3_PUBLIC_BASE": PUBLIC_BASE,
+    }.items() if not v]
+    if missing:
+        print(f"\n[미설정] {', '.join(missing)}")
+        return False
+    print("\n설정 완료")
+    return True
 
-    key = object_key(path, prefix)
-    ctype = mimetypes.guess_type(path)[0] or "application/octet-stream"
-    size = os.path.getsize(path)
 
-    with open(path, "rb") as f:
-        s3.put_object(
-            Bucket=BUCKET,
-            Key=key,
-            Body=f,
-            ContentType=ctype,
-            # 인스타가 가져갈 때까지는 캐시를 길게 둘 이유가 없다
-            CacheControl="public, max-age=86400",
-        )
-
-    url = public_url(key)
-    print(f"  {os.path.basename(path)}  {size/1024/1024:.1f}MB  →  {url}")
-    return url
-
+# ═══════════════════════════════════════════════════════════
+#  공통
+# ═══════════════════════════════════════════════════════════
 
 def verify(url):
-    """올린 URL이 실제로 공개 접근되는지 확인한다.
+    """인스타가 가져갈 주소가 실제로 공개 접근되는지 확인한다.
 
-    인스타는 이 주소에서 파일을 가져간다. 여기서 403이 나면
-    발행 단계에서 원인을 찾기 어려운 실패가 난다. 미리 잡는다.
+    여기서 막히면 발행 단계에서 원인 찾기 어려운 실패가 난다. 미리 잡는다.
     """
     import requests
 
     try:
-        r = requests.head(url, timeout=15, allow_redirects=True)
+        r = requests.get(url, timeout=20, stream=True, allow_redirects=True)
+        r.close()
         if r.status_code == 200:
-            return True, f"{r.status_code} {r.headers.get('content-type','')}"
+            return True, f"200 {r.headers.get('content-type','')}"
         return False, f"HTTP {r.status_code}"
     except Exception as e:
-        return False, f"{type(e).__name__}: {e}"
+        return False, f"{type(e).__name__}: {scrub(str(e))}"
 
 
 def save_manifest(entries):
-    """업로드 결과를 기록한다. 발행 단계가 이 파일을 읽는다."""
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(MANIFEST, "w", encoding="utf-8") as f:
         json.dump({
             "uploaded_at": datetime.now().astimezone().isoformat(),
+            "backend": BACKEND,
             "items": entries,
         }, f, ensure_ascii=False, indent=2)
     print(f"\n매니페스트: {MANIFEST}")
 
 
 def main():
-    ap = argparse.ArgumentParser(description="오브젝트 스토리지 업로더")
+    ap = argparse.ArgumentParser(description="영상 공개 호스팅 업로더")
     ap.add_argument("files", nargs="*", help="올릴 파일")
-    ap.add_argument("--cover", help="커버 이미지 (단일 업로드 시)")
-    ap.add_argument("--batch", help="폴더 전체 업로드 (mp4 + 같은 이름 jpg)")
-    ap.add_argument("--prefix", default="reels", help="오브젝트 키 프리픽스")
+    ap.add_argument("--cover", help="커버 이미지 (단건)")
+    ap.add_argument("--batch", help="폴더 전체 (mp4 + 같은 이름 jpg)")
+    ap.add_argument("--tag", help="릴리스 태그 / 경로 (기본: reels-YYYY-MM-DD)")
     ap.add_argument("--check", action="store_true", help="설정만 점검")
     ap.add_argument("--no-verify", action="store_true", help="공개 접근 확인 건너뜀")
     args = ap.parse_args()
 
+    checker = gh_check if BACKEND == "github" else s3_check
     if args.check:
-        return 0 if check_config() else 1
-
-    if not check_config():
-        print("\n[중단] 스토리지 설정이 끝나야 업로드할 수 있습니다")
+        return 0 if checker() else 1
+    if not checker():
+        print("\n[중단] 저장소 설정이 끝나야 업로드할 수 있습니다")
         return 1
 
-    # 올릴 대상 수집
+    tag = args.tag or f"reels-{datetime.now().strftime('%Y-%m-%d')}"
+
     targets = []
     if args.batch:
         for mp4 in sorted(glob.glob(os.path.join(args.batch, "*.mp4"))):
@@ -209,22 +278,24 @@ def main():
         print("[알림] 올릴 파일이 없습니다")
         return 1
 
-    s3 = client()
-    print(f"\n업로드 {len(targets)}건:")
+    put = gh_upload if BACKEND == "github" else s3_upload
+    print(f"\n업로드 {len(targets)}건 (태그 {tag}):")
 
     entries, failed = [], 0
     for video, cover in targets:
         try:
-            entry = {"name": os.path.splitext(os.path.basename(video))[0]}
-            entry["video_url"] = upload_one(s3, video, args.prefix)
+            e = {"name": os.path.splitext(os.path.basename(video))[0]}
+            e["video_url"] = put(video, tag)
+            print(f"  {os.path.basename(video)}  "
+                  f"{os.path.getsize(video)/1024/1024:.1f}MB  →  {e['video_url']}")
             if cover:
-                entry["cover_url"] = upload_one(s3, cover, args.prefix)
-            entries.append(entry)
-        except Exception as e:
-            print(f"  [실패] {os.path.basename(video)}: {type(e).__name__}: {e}")
+                e["cover_url"] = put(cover, tag)
+                print(f"  {os.path.basename(cover)}  →  {e['cover_url']}")
+            entries.append(e)
+        except Exception as ex:
+            print(f"  [실패] {os.path.basename(video)}: {scrub(str(ex))}")
             failed += 1
 
-    # 공개 접근 확인
     if entries and not args.no_verify:
         print("\n공개 접근 확인:")
         for e in entries:
@@ -232,8 +303,7 @@ def main():
                 if field not in e:
                     continue
                 ok, why = verify(e[field])
-                mark = "OK " if ok else "-- "
-                print(f"  {mark} {field}: {why}")
+                print(f"  {'OK ' if ok else '-- '} {field}: {why}")
                 if not ok:
                     e["verify_failed"] = True
 
@@ -243,8 +313,8 @@ def main():
     print(f"\n완료: 성공 {len(entries)}건 / 실패 {failed}건")
     blocked = [e for e in entries if e.get("verify_failed")]
     if blocked:
-        print(f"[경고] 공개 접근 실패 {len(blocked)}건 — 버킷 Public Access 설정을 확인하세요")
-        print("       이 상태로 발행하면 인스타가 파일을 가져가지 못합니다")
+        print(f"[경고] 공개 접근 실패 {len(blocked)}건 — 이 상태로 발행하면")
+        print("       인스타가 영상을 가져가지 못합니다")
         return 1
     return 0 if not failed else 1
 
