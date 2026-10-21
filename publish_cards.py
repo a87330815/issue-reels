@@ -235,9 +235,13 @@ def main():
     a = ap.parse_args()
 
     if a.check:
-        P.check()
+        ok_ig = P.check()
         print()
-        U.gh_check()
+        ok_media = U.gh_check()
+        # 점검이 실패했는데 단계가 성공으로 보이면, 뒤 단계에서 원인 모를
+        # 실패가 난다. 여기서 바로 멈춘다.
+        if ok_ig is False or ok_media is False:
+            raise SystemExit("[중단] 설정 점검 실패 — 위 안내를 확인하세요")
         return
 
     if not a.card_dir or not a.script:
