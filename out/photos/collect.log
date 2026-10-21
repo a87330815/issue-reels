@@ -1,4 +1,4 @@
-run: 39538204153  2026-10-21T03:22:54Z
+run: 39541553032  2026-10-21T03:59:49Z
 unsplash key: 없음
 
 
@@ -79,15 +79,18 @@ unsplash key: 없음
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "smartphone train ticket app"
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "smartphone train ticket"
     [openverse] 7건 후보
     [wikimedia] 6건 후보
     ✓ scene1 ← flickr (BY)
   [scene2] '예매 기간 2개월로 확대' → "calendar planning desk"
-    [openverse] 7건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 2건 후보
+    ↻ 재시도: "calendar planning"
+    [openverse] 12건 후보
+    [wikimedia] 8건 후보
     ✓ scene2 ← flickr (BY)
   [scene3] '좌석 공급도 대폭 확대' → "train interior seats aisle"
     [openverse] 8건 후보

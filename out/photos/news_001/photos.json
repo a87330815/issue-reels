@@ -19,17 +19,17 @@
       "slot": "scene1",
       "query": "smartphone train ticket app hand",
       "source": "flickr",
-      "creator": "Office of Governor Dan Malloy",
+      "creator": "transitpeople",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/57939039@N08/28447926464"
+      "page": "https://www.flickr.com/photos/36217981@N02/13154067205"
     },
     {
       "slot": "scene2",
       "query": "calendar planning desk",
       "source": "flickr",
-      "creator": "Generationbass.com",
+      "creator": "Nicole Beauchamp",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/46959536@N04/4827013488"
+      "page": "https://www.flickr.com/photos/48932385@N07/29825472461"
     },
     {
       "slot": "scene3",
@@ -49,5 +49,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-21T03:23:46Z"
+  "fetched_at": "2026-10-21T04:02:45Z"
 }
