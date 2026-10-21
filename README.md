@@ -17,8 +17,49 @@
 | `render/cover.py` | 커버 렌더러. 커버 문법(150pt 고정, 외곽선, 포인트 컬러, 세이프존) |
 | `render/render.py` | 대본 JSON → 1080x1920 릴스. 자막 번인 + TTS |
 | `render/_mockbg.py` | 샘플용 가짜 배경. 운영에서는 실제 이미지로 교체 |
+| `cardnews.py` | 대본 JSON → 1080x1350(4:5) 인스타 카드뉴스 PNG |
+| `photos.py` | 카드 배경 사진 수집. 상업적 이용 가능 라이선스만 |
 | `.github/workflows/collect.yml` | 예약 수집. `0 23 * * *` = 한국시간 08:00 |
+| `.github/workflows/cards.yml` | 사진 수집 → 카드뉴스 생성 → 커밋 |
 | `.github/workflows/tts_sample.yml` | 음성 품질 판정용 샘플 생성 (수동 실행) |
+
+## 카드뉴스 배경 사진
+
+카드마다 실사 배경을 깐다. 사진 위에 아래로 갈수록 짙어지는 그래디언트를 덮어
+본문 대비를 확보하고, 본문 슬라이드는 약한 블러를 더해 글이 주인공이 되게 한다.
+사진을 못 받은 슬라이드는 카테고리별 그래디언트 배경으로 자동 폴백한다.
+
+### 수집 소스 (우선순위)
+
+| 순위 | 소스 | 키 | 비고 |
+|---|---|---|---|
+| 1 | Unsplash | `UNSPLASH_ACCESS_KEY` (선택) | 적합도 최상. 무료 등록, 시간당 50건 |
+| 2 | Openverse | 불필요 | CC0·PDM·CC BY만 |
+| 3 | Wikimedia Commons | 불필요 | 최후 폴백 |
+
+키를 넣지 않아도 2·3번으로 동작한다. 다만 **무료 CC 풀은 적합도가 떨어지므로**
+사진 품질이 중요하면 Unsplash 키를 등록하는 쪽이 낫다
+(unsplash.com/oauth/applications → Access Key → 저장소 Secrets에 `UNSPLASH_ACCESS_KEY`).
+
+### 라이선스 정책
+
+상업적 이용이 가능하고 2차 저작물에 조건이 전염되지 않는 것만 받는다.
+**허용**: Public Domain · CC0 · PDM · CC BY
+**제외**: CC BY-SA(share-alike) · NC(비상업) · ND(변경금지) · GFDL
+
+CC BY는 표기가 조건이므로 카드 하단에 `사진 <저작자> / <출처> / <라이선스>`를 자동으로 찍는다.
+표기 의무가 없는 PD·CC0는 화면을 깨끗하게 두려고 생략한다.
+
+### 검색어
+
+적합도는 검색어가 좌우한다. 대본 생성 단계에서 장면별 영문 `photo_query`를 함께 만들고,
+없으면 `photos.py`의 한국어 키워드 매핑으로 폴백한다. 추상 개념이 아니라
+"한 장의 사진으로 찍힐 장면"을 써야 한다 (`정책 혜택` ✗ → `tax documents calculator` ○).
+
+### 진단
+
+러너 로그와 아티팩트는 외부에서 받기 어려워, 수집 로그를 `out/photos/collect.log`로
+남겨 저장소에 함께 커밋한다. 어떤 공급자가 몇 건을 줬고 무엇이 걸러졌는지 여기서 본다.
 
 ## 커버 문법
 
