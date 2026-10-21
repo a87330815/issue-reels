@@ -60,10 +60,18 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         continue-on-error: true
         run: |
-          python photos.py out/scripts/*.json -o out/photos
-          echo "--- 수집 결과 ---"
-          find out/photos -name '*.jpg' | sort
-          find out/photos -name 'photos.json' -exec sh -c 'echo "== $1"; cat "$1"' _ {} \;
+          mkdir -p out/photos
+          # 러너 로그는 외부에서 받기 어려우므로 저장소로 함께 커밋해 진단에 쓴다
+          {
+            echo "run: ${{ github.run_id }}  $(date -u +%FT%TZ)"
+            echo "unsplash key: $([ -n "$UNSPLASH_ACCESS_KEY" ] && echo 있음 || echo 없음)"
+            echo
+          } > out/photos/collect.log
+          set -o pipefail
+          python -u photos.py out/scripts/*.json -o out/photos 2>&1 \
+            | tee -a out/photos/collect.log
+          echo "--- 수집된 파일 ---" | tee -a out/photos/collect.log
+          find out/photos -name '*.jpg' | sort | tee -a out/photos/collect.log
 
       - name: 카드뉴스 생성
         run: |

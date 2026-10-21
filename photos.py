@@ -131,10 +131,15 @@ def search_openverse(query, n=12):
     cc0/pdm(표기 불필요) + by(표기만 하면 상업적 이용 자유)까지 받아 후보 풀을 넓힌다.
     share-alike·비상업·변경금지는 제외. 비율 제한은 두지 않는다 (cover 크롭으로 흡수)."""
     url = "https://api.openverse.org/v1/images/"
-    params = {"q": query, "license": "cc0,pdm,by", "page_size": n,
-              "mature": "false"}
-    r = requests.get(url, params=params, timeout=TIMEOUT,
-                     headers={"User-Agent": UA, "Accept": "application/json"})
+    hdr = {"User-Agent": UA, "Accept": "application/json"}
+    r = requests.get(url, timeout=TIMEOUT, headers=hdr,
+                     params={"q": query, "license": "cc0,pdm,by",
+                             "page_size": n, "mature": "false"})
+    if r.status_code == 400:
+        # license 조합을 거부하는 경우 표기 불필요 라이선스로만 재시도
+        r = requests.get(url, timeout=TIMEOUT, headers=hdr,
+                         params={"q": query, "license": "cc0,pdm",
+                                 "page_size": n, "mature": "false"})
     r.raise_for_status()
     out = []
     for it in r.json().get("results", []):
@@ -153,14 +158,16 @@ def search_openverse(query, n=12):
 
 # 상업적 이용이 가능하고 share-alike 전염성이 없는 라이선스만 허용
 _OK_LICENSE = re.compile(
-    r"^(public domain|pd|cc0|cc pd|no restrictions|"
-    r"cc by( \d|-\d|$)|attribution( \d|$))", re.I)
+    r"^(public[ -]domain|pd|pdm|cc0|cc[ -]pd|no[ -]restrictions|"
+    r"cc[ -]by([ -]\d|$)|attribution([ -]\d|$))", re.I)
 
 def _license_ok(name):
     n = (name or "").strip()
     if not n:
         return False
-    if re.search(r"(-sa|share.?alike|-nc|noncommercial|-nd|noderiv)", n, re.I):
+    # share-alike(전염성), 비상업, 변경금지는 제외
+    if re.search(r"([ -]sa\b|share.?alike|[ -]nc\b|noncommercial|non-commercial|"
+                 r"[ -]nd\b|noderiv)", n, re.I):
         return False
     return bool(_OK_LICENSE.match(n))
 
@@ -302,10 +309,12 @@ def fetch_for_script(script_path, out_dir):
             print(f"    ✗ {slot}: 다운로드 전부 실패")
         time.sleep(0.4)  # 공용 API 예의
 
+    manifest["wanted"] = len(targets)
+    manifest["fetched_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     mpath = os.path.join(out_dir, "photos.json")
     with open(mpath, "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
-    print(f"  → {len(manifest['photos'])}장 저장, 매니페스트: {mpath}")
+    print(f"  → {len(manifest['photos'])}/{len(targets)}장 저장, 매니페스트: {mpath}")
     return manifest
 
 
@@ -316,11 +325,19 @@ if __name__ == "__main__":
     ap.add_argument("-o", "--out", default="out/photos", help="저장 루트")
     a = ap.parse_args()
 
-    total = 0
+    total, wanted = 0, 0
     for s in a.scripts:
         stem = os.path.splitext(os.path.basename(s))[0]
         print(f"\n=== {stem} ===")
-        m = fetch_for_script(s, os.path.join(a.out, stem))
-        total += len(m["photos"])
-    print(f"\n총 {total}장 수집 완료")
-    sys.exit(0 if total else 1)
+        try:
+            m = fetch_for_script(s, os.path.join(a.out, stem))
+            total += len(m["photos"])
+            wanted += m.get("wanted", 0)
+        except Exception as e:
+            print(f"  ✗ {stem} 처리 실패: {e}")
+
+    print(f"\n총 {total}/{wanted}장 수집")
+    # 일부만 받아져도 카드 생성은 진행한다 (사진 없는 슬라이드는 그래디언트 폴백)
+    if total == 0:
+        print("경고: 한 장도 받지 못했습니다. 그래디언트 배경으로 생성됩니다.")
+    sys.exit(0)
