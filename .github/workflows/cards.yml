@@ -1,0 +1,93 @@
+name: 카드뉴스 생성
+
+on:
+  workflow_run:
+    workflows: ["대본 생성"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      skip_photos:
+        description: "사진 수집 건너뛰기 (그래디언트 배경만)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 한글 폰트 · 컬러 이모지 설치
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji
+          ls /usr/share/fonts/opentype/noto/NotoSansCJK-*.ttc
+          ls /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+
+      - name: 의존성 설치
+        run: pip install -q Pillow numpy requests
+
+      - name: 대본 내려받기
+        uses: actions/download-artifact@v4
+        with:
+          name: scripts
+          path: out/scripts/
+        continue-on-error: true
+
+      - name: 대본 확인
+        id: scripts
+        run: |
+          mkdir -p out/scripts
+          COUNT=$(ls out/scripts/*.json 2>/dev/null | wc -l)
+          echo "대본 $COUNT 건"
+          if [ "$COUNT" -eq 0 ]; then
+            echo "대본이 없습니다. 저장소에 커밋된 대본을 사용합니다."
+            COUNT=$(ls out/scripts/*.json 2>/dev/null | wc -l)
+          fi
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: 배경 사진 수집
+        if: ${{ inputs.skip_photos != true }}
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        continue-on-error: true
+        run: |
+          python photos.py out/scripts/*.json -o out/photos
+          echo "--- 수집 결과 ---"
+          find out/photos -name '*.jpg' | sort
+          find out/photos -name 'photos.json' -exec sh -c 'echo "== $1"; cat "$1"' _ {} \;
+
+      - name: 카드뉴스 생성
+        run: |
+          for f in out/scripts/*.json; do
+            stem=$(basename "$f" .json)
+            echo "=== $stem ==="
+            python cardnews.py "$f" -o "out/cards_${stem#news_}" -p "out/photos/$stem"
+          done
+          echo "--- 생성 결과 ---"
+          find out -name '*.png' -path '*cards*' | sort
+
+      - name: 카드뉴스 업로드
+        uses: actions/upload-artifact@v4
+        with:
+          name: cardnews
+          path: |
+            out/cards_*/**
+            out/photos/**
+          retention-days: 30
+
+      - name: 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f out/cards_* out/photos 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "카드뉴스 생성 $(date +%Y-%m-%d)"
+          git push || echo "push 실패 (권한 확인 필요)"

@@ -8,15 +8,36 @@ cardnews.py — 인스타그램 카드뉴스 생성기 v5
 """
 import argparse, json, math, os, sys, random
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 
 W, H = 1080, 1350
 
-FONT_BLACK = "/usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc"
-FONT_BOLD  = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
-FONT_MED   = "/usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc"
-FONT_REG   = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
-FONT_EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
+def _pick_font(*names):
+    """설치 위치가 배포판마다 달라서 후보 경로를 순서대로 탐색한다."""
+    roots = ["/usr/share/fonts/opentype/noto", "/usr/share/fonts/truetype/noto",
+             "/usr/share/fonts/opentype", "/usr/share/fonts/truetype",
+             "/usr/local/share/fonts", os.path.expanduser("~/.fonts")]
+    for n in names:
+        if os.path.isabs(n) and os.path.exists(n):
+            return n
+        for r in roots:
+            p = os.path.join(r, n)
+            if os.path.exists(p):
+                return p
+    return None
+
+FONT_BLACK = _pick_font("NotoSansCJK-Black.ttc", "NotoSansCJKkr-Black.otf", "NotoSansCJK-Bold.ttc")
+FONT_BOLD  = _pick_font("NotoSansCJK-Bold.ttc", "NotoSansCJKkr-Bold.otf")
+FONT_MED   = _pick_font("NotoSansCJK-Medium.ttc", "NotoSansCJKkr-Medium.otf", "NotoSansCJK-Regular.ttc")
+FONT_REG   = _pick_font("NotoSansCJK-Regular.ttc", "NotoSansCJKkr-Regular.otf")
+FONT_EMOJI = _pick_font("NotoColorEmoji.ttf")
+
+_missing = [n for n, v in [("Black", FONT_BLACK), ("Bold", FONT_BOLD),
+                           ("Medium", FONT_MED), ("Regular", FONT_REG)] if not v]
+if _missing:
+    sys.exit("한글 폰트를 찾을 수 없습니다 (%s). "
+             "apt-get install fonts-noto-cjk fonts-noto-cjk-extra 로 설치하세요."
+             % ", ".join(_missing))
 
 def font(path, size):
     return ImageFont.truetype(path, size, index=1)
@@ -25,6 +46,8 @@ _emoji_cache = {}
 
 def render_emoji(emoji, size):
     """컬러 이모지를 RGBA 이미지로 렌더링 (NotoColorEmoji는 109px 고정 → 리사이즈)"""
+    if not FONT_EMOJI:
+        return None
     key = (emoji, size)
     if key in _emoji_cache:
         return _emoji_cache[key]
@@ -133,6 +156,63 @@ def gradient_bg(c1, c2, direction="vertical"):
             arr[i, :, c] = int(c1[c] * (1 - t2) + c2[c] * t2)
     return Image.fromarray(arr)
 
+def load_photos(photo_dir):
+    """photos.json 매니페스트를 읽어 슬롯→경로 매핑 반환."""
+    if not photo_dir:
+        return {}
+    mpath = os.path.join(photo_dir, "photos.json")
+    if not os.path.exists(mpath):
+        return {}
+    try:
+        with open(mpath, encoding="utf-8") as f:
+            man = json.load(f)
+    except Exception:
+        return {}
+    out = {}
+    for slot, fname in (man.get("photos") or {}).items():
+        p = os.path.join(photo_dir, fname)
+        if os.path.exists(p):
+            out[slot] = p
+    return out
+
+def photo_bg(path, t, darken_top=70, darken_bottom=215):
+    """사진을 풀블리드 배경으로 깔고, 아래로 갈수록 진해지는 어두운 그래디언트를 덮는다.
+    텍스트 가독성을 확보하면서 사진이 그대로 보이게 한다."""
+    im = Image.open(path).convert("RGB")
+    if im.size != (W, H):
+        # cover 크롭 (photos.py에서 이미 맞춰 오지만 방어적으로)
+        sr, dr = im.width/im.height, W/H
+        if sr > dr:
+            nh, nw = H, max(W, int(round(H*sr)))
+        else:
+            nw, nh = W, max(H, int(round(W/sr)))
+        im = im.resize((nw, nh), Image.LANCZOS)
+        im = im.crop(((nw-W)//2, (nh-H)//2, (nw-W)//2+W, (nh-H)//2+H))
+
+    # 살짝 채도를 올려 색을 또렷하게
+    im = ImageEnhance.Color(im).enhance(1.15)
+    im = ImageEnhance.Contrast(im).enhance(1.05)
+
+    # 세로 어두움 그래디언트 (위는 약하게, 아래는 강하게)
+    ramp = np.linspace(darken_top, darken_bottom, H).astype(np.float32)
+    # 아래쪽 55% 구간을 더 빠르게 어둡게
+    xs = np.linspace(0.0, 1.0, H)
+    ease = xs ** 1.6
+    ramp = (darken_top + (darken_bottom - darken_top) * ease).astype(np.uint8)
+    alpha = np.repeat(ramp[:, None], W, axis=1)
+
+    # 테마 색조를 살짝 섞은 어두운 오버레이
+    tint = np.zeros((H, W, 3), dtype=np.uint8)
+    base = tuple(int(v*0.35) for v in t["grad1"])
+    for c in range(3):
+        tint[:, :, c] = base[c]
+
+    ov = np.dstack([tint, alpha])
+    overlay = Image.fromarray(ov, mode="RGBA")
+    out = im.convert("RGBA")
+    out.alpha_composite(overlay)
+    return out.convert("RGB")
+
 def gradient_bg_diagonal(c1, c2):
     """대각선 그래디언트"""
     arr = np.zeros((H, W, 3), dtype=np.uint8)
@@ -213,17 +293,19 @@ def draw_big_emoji(draw, emoji, cx, cy, size):
         pass
 
 # ── 커버 ────────────────────────
-def make_cover(sc, t):
-    img = gradient_bg_diagonal(t["grad1"], t["grad2"])
+def make_cover(sc, t, photo=None):
+    if photo:
+        # 사진 배경: 위는 비교적 밝게, 아래는 진하게 깔아 타이틀 가독성 확보
+        img = photo_bg(photo, t, darken_top=60, darken_bottom=225)
+    else:
+        img = gradient_bg_diagonal(t["grad1"], t["grad2"])
+        layer, ld = overlay_layer()
+        draw_glow_circles(ld, seed=42)
+        img = composite(img, layer)
 
-    # 1단계: 반투명 장식을 오버레이 레이어에 그려 1회 합성
-    layer, ld = overlay_layer()
-    draw_glow_circles(ld, seed=42)
-    img = composite(img, layer)
-
-    # 2단계: 이모지 붙이기
+    # 이모지 붙이기 (사진 배경일 땐 조금 작게)
     main_emoji = t.get("emojis", ["📌"])[0]
-    paste_emoji(img, main_emoji, W//2, 300, 190)
+    paste_emoji(img, main_emoji, W//2, 300, 150 if photo else 190)
 
     # 3단계: 불투명 요소 직접 그리기
     d = ImageDraw.Draw(img, "RGBA")
@@ -285,15 +367,18 @@ def make_cover(sc, t):
     return img
 
 # ── 본문 슬라이드 ────────────────
-def make_scene(sc, idx, total, t):
+def make_scene(sc, idx, total, t, photo=None):
     scene = sc["scenes"][idx]
 
-    # 슬라이드마다 색조를 살짝 변형
-    r = random.Random(idx * 31 + 7)
-    shift = r.randint(-20, 20)
-    c1 = tuple(max(0, min(255, v + shift)) for v in t["grad1"])
-    c2 = tuple(max(0, min(255, v - shift)) for v in t["grad2"])
-    img = gradient_bg(c1, c2)
+    if photo:
+        img = photo_bg(photo, t, darken_top=55, darken_bottom=230)
+    else:
+        # 슬라이드마다 색조를 살짝 변형
+        r = random.Random(idx * 31 + 7)
+        shift = r.randint(-20, 20)
+        c1 = tuple(max(0, min(255, v + shift)) for v in t["grad1"])
+        c2 = tuple(max(0, min(255, v - shift)) for v in t["grad2"])
+        img = gradient_bg(c1, c2)
 
     # 본문 준비 (카드 높이 계산용)
     body = scene.get("body", "")
@@ -322,20 +407,24 @@ def make_scene(sc, idx, total, t):
 
     # 1단계: 반투명 요소(장식 + 숫자 + 카드)를 한 레이어에 그려 1회 합성
     layer, ld = overlay_layer()
-    draw_glow_circles(ld, seed=idx*17 + 3)
+    if not photo:
+        draw_glow_circles(ld, seed=idx*17 + 3)
 
     num = f"{idx+1:02d}"
     nf = font(FONT_BLACK, 300)
     nb = ld.textbbox((0,0), num, font=nf)
-    ld.text((W - (nb[2]-nb[0]) - 40, 10), num, font=nf, fill=(255, 255, 255, 46))
+    ld.text((W - (nb[2]-nb[0]) - 40, 10), num, font=nf,
+            fill=(255, 255, 255, 60 if photo else 46))
 
-    rounded_rect(ld, (card_margin, card_y, W-card_margin, card_bottom), 32, (0, 0, 0, 115))
+    # 사진 위에서는 카드를 더 진하게 깔아 본문 대비를 확보
+    card_alpha = 165 if photo else 115
+    rounded_rect(ld, (card_margin, card_y, W-card_margin, card_bottom), 32, (0, 0, 0, card_alpha))
     img = composite(img, layer)
 
     # 2단계: 상단 큰 이모지
     emoji = scene.get("emoji", "")
     if emoji:
-        paste_emoji(img, emoji, W//2 - 70, card_y//2 + 30, 240)
+        paste_emoji(img, emoji, W//2 - 70, card_y//2 + 30, 190 if photo else 240)
 
     # 3단계: 불투명 요소
     d = ImageDraw.Draw(img, "RGBA")
@@ -416,7 +505,7 @@ def make_outro(sc, t, total):
     return img
 
 # ── 메인 ────────────────────────
-def generate(script_path, out_dir):
+def generate(script_path, out_dir, photo_dir=None):
     with open(script_path, encoding="utf-8") as f:
         sc = json.load(f)
     os.makedirs(out_dir, exist_ok=True)
@@ -425,13 +514,19 @@ def generate(script_path, out_dir):
     total = len(sc.get("scenes", [])) + 2
     pages = []
 
+    photos = load_photos(photo_dir)
+    if photos:
+        print(f"  사진 {len(photos)}장 적용: {', '.join(sorted(photos))}")
+    elif photo_dir:
+        print("  사진 없음 — 그래디언트 배경으로 생성")
+
     p = os.path.join(out_dir, "01_cover.png")
-    make_cover(sc, t).save(p, quality=95)
+    make_cover(sc, t, photos.get("cover")).save(p, quality=95)
     pages.append(p)
 
     for i in range(len(sc.get("scenes", []))):
         p = os.path.join(out_dir, f"{i+2:02d}_scene.png")
-        make_scene(sc, i, total, t).save(p, quality=95)
+        make_scene(sc, i, total, t, photos.get(f"scene{i+1}")).save(p, quality=95)
         pages.append(p)
 
     p = os.path.join(out_dir, f"{total:02d}_outro.png")
@@ -445,5 +540,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("script")
     ap.add_argument("-o", "--out", default="out/cards")
+    ap.add_argument("-p", "--photos", default=None,
+                    help="photos.json이 있는 사진 디렉터리 (없으면 그래디언트 배경)")
     a = ap.parse_args()
-    generate(a.script, a.out)
+    generate(a.script, a.out, a.photos)
