@@ -1,4 +1,4 @@
-run: 39537839814  2026-10-21T03:18:53Z
+run: 39538204153  2026-10-21T03:22:54Z
 unsplash key: 없음
 
 
@@ -71,11 +71,20 @@ unsplash key: 없음
   [cover] 'KTX 예매 2개월 전부터' → "korea ktx high speed train station platform"
     [openverse] 0건 후보
     [wikimedia] 1건 후보
+    ↻ 재시도: "korea ktx high speed train station"
+    [openverse] 1건 후보
+    [wikimedia] 2건 후보
     ✓ cover ← Wikimedia Commons (CC BY 2.0)
   [scene1] 'KTX·SRT 통합 앱 출시' → "smartphone train ticket app hand"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ✗ scene1: 후보 없음
+    ↻ 재시도: "smartphone train ticket app"
+    [openverse] 2건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "smartphone train ticket"
+    [openverse] 7건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
   [scene2] '예매 기간 2개월로 확대' → "calendar planning desk"
     [openverse] 7건 후보
     [wikimedia] 2건 후보
@@ -87,8 +96,11 @@ unsplash key: 없음
   [scene4] '코레일플러스 꼭 설치하세요' → "hand holding smartphone station"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ✗ scene4: 후보 없음
-  → 3/5장 저장, 매니페스트: out/photos/news_001/photos.json
+    ↻ 재시도: "hand holding smartphone"
+    [openverse] 12건 후보
+    [wikimedia] 9건 후보
+    ✓ scene4 ← flickr (CC0)
+  → 5/5장 저장, 매니페스트: out/photos/news_001/photos.json
 
 === news_002 ===
   [cover] '암표 거래 전면 금지' → "concert audience crowd stage lights"
@@ -99,9 +111,12 @@ unsplash key: 없음
     [openverse] 12건 후보
     [wikimedia] 2건 후보
     ✓ scene1 ← flickr (BY)
-  [scene2] '판매 금액 50배 과징금' → "cash banknotes wallet payment"
-    [openverse] 1건 후보
+  [scene2] '판매 금액 50배 과징금' → "calculator receipt paperwork"
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
+    ↻ 재시도: "calculator receipt"
+    [openverse] 10건 후보 (부적합 2건 제외)
+    [wikimedia] 4건 후보
     ✓ scene2 ← flickr (BY)
   [scene3] '신고하면 포상금 지급' → "person using smartphone at night"
     [openverse] 1건 후보
@@ -114,18 +129,18 @@ unsplash key: 없음
   → 5/5장 저장, 매니페스트: out/photos/news_002/photos.json
 
 === news_003 ===
-  [cover] '노란우산공제 한도 확대' → "small shop owner storefront korea"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ✗ cover: 후보 없음
-  [scene1] '납입 한도 연 1800만원' → "coins savings jar desk"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ✗ scene1: 후보 없음
+  [cover] '노란우산공제 한도 확대' → "small shop owner store"
+    [openverse] 12건 후보
+    [wikimedia] 3건 후보 (부적합 1건 제외)
+    ✓ cover ← flickr (PDM)
+  [scene1] '납입 한도 연 1800만원' → "coins savings"
+    [openverse] 12건 후보
+    [wikimedia] 8건 후보 (부적합 3건 제외)
+    ✓ scene1 ← flickr (BY)
   [scene2] '소득공제로 절세 효과' → "tax documents calculator desk"
     [openverse] 3건 후보
     [wikimedia] 0건 후보
-    ✗ scene2: 다운로드 전부 실패
+    ✓ scene2 ← flickr (BY)
   [scene3] '사업자 퇴직금 역할' → "bank building finance"
     [openverse] 12건 후보
     [wikimedia] 2건 후보
@@ -134,9 +149,9 @@ unsplash key: 없음
     [openverse] 8건 후보 (부적합 1건 제외)
     [wikimedia] 6건 후보 (부적합 1건 제외)
     ✓ scene4 ← flickr (BY)
-  → 2/5장 저장, 매니페스트: out/photos/news_003/photos.json
+  → 5/5장 저장, 매니페스트: out/photos/news_003/photos.json
 
-총 24/29장 수집
+총 29/29장 수집
 --- 수집된 파일 ---
 out/photos/20261020_01_숫자훅/cover.jpg
 out/photos/20261020_01_숫자훅/scene1.jpg

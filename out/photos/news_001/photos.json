@@ -1,8 +1,10 @@
 {
   "photos": {
     "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
-    "scene3": "scene3.jpg"
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg"
   },
   "credits": [
     {
@@ -12,6 +14,14 @@
       "creator": "LWYang",
       "license": "CC BY 2.0",
       "page": "https://commons.wikimedia.org/wiki/File:KTX_high_speed_rail.jpg"
+    },
+    {
+      "slot": "scene1",
+      "query": "smartphone train ticket app hand",
+      "source": "flickr",
+      "creator": "Office of Governor Dan Malloy",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/57939039@N08/28447926464"
     },
     {
       "slot": "scene2",
@@ -28,8 +38,16 @@
       "creator": "shankar s.",
       "license": "BY",
       "page": "https://www.flickr.com/photos/77742560@N06/7144573913"
+    },
+    {
+      "slot": "scene4",
+      "query": "hand holding smartphone station",
+      "source": "flickr",
+      "creator": "Artem Beliaikin",
+      "license": "CC0",
+      "page": "https://www.flickr.com/photos/157635012@N07/50237687643"
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-21T03:19:50Z"
+  "fetched_at": "2026-10-21T03:23:46Z"
 }

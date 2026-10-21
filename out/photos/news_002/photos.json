@@ -25,11 +25,11 @@
     },
     {
       "slot": "scene2",
-      "query": "cash banknotes wallet payment",
+      "query": "calculator receipt paperwork",
       "source": "flickr",
-      "creator": "frankieleon",
+      "creator": "Wonderlane",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/23307937@N04/3714583594"
+      "page": "https://www.flickr.com/photos/71401718@N00/6773873411"
     },
     {
       "slot": "scene3",
@@ -49,5 +49,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-21T03:20:25Z"
+  "fetched_at": "2026-10-21T03:24:06Z"
 }
