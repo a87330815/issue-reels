@@ -124,6 +124,19 @@ DEF_THEME = {
 WHITE = (255, 255, 255)
 DARK  = (20, 20, 25)
 
+# ── 고정 문구 ──────────────────────
+# 계정 말투가 경상도 사투리라, 이름만 사투리고 본문·안내가 표준어면
+# 간판과 속이 따로 논다. 고정 문구도 같은 말투로 맞춘다.
+# 핸들은 계정이 바뀔 수 있으므로 환경변수로 뺀다.
+HANDLE = os.environ.get("IG_HANDLE", "@richup_bm_sw")
+UI = {
+    "swipe":    "옆으로 쫌 봐봐",
+    "outro1":   "도움 됐으면",
+    "outro2":   "팔로우하고 저장해두이소",
+    "outro_s1": "세상 돌아가는 이야기",
+    "outro_s2": "매일 쫌 봐봐",
+}
+
 def get_t(cat):
     return THEMES.get(cat, DEF_THEME)
 
@@ -462,7 +475,7 @@ def make_cover(sc, t, photo=None, credit=None):
 
     # 스와이프 안내 (이모지 + 텍스트 분리 렌더)
     sf = font(FONT_BOLD, 28)
-    swipe = "밀어서 자세히 보기"
+    swipe = UI["swipe"]
     bb = d.textbbox((0,0), swipe, font=sf)
     sx = (W - (bb[2]-bb[0]) - 46)//2
     paste_emoji(img, "👉", sx + 17, H-82, 34)
@@ -586,21 +599,21 @@ def make_outro(sc, t, total):
 
     y = cy + cr + 64
     f1 = font(FONT_BLACK, 54)
-    for txt, col in [("도움이 되셨다면", WHITE), ("팔로우 & 저장 해주세요!", t["accent"])]:
+    for txt, col in [(UI["outro1"], WHITE), (UI["outro2"], t["accent"])]:
         bb = d.textbbox((0,0), txt, font=f1)
         d.text(((W-(bb[2]-bb[0]))//2, y), txt, font=f1, fill=col)
         y += 80
 
     y += 24
     f2 = font(FONT_MED, 32)
-    for txt in ["매일 알아두면 좋은 생활 정보를", "카드뉴스로 전해드립니다"]:
+    for txt in [UI["outro_s1"], UI["outro_s2"]]:
         bb = d.textbbox((0,0), txt, font=f2)
         d.text(((W-(bb[2]-bb[0]))//2, y), txt, font=f2, fill=(255, 255, 255, 210))
         y += 50
 
     # 핸들
     hf = font(FONT_BOLD, 38)
-    handle = "@richup_bm_sw"
+    handle = HANDLE
     hb = d.textbbox((0,0), handle, font=hf)
     d.text(((W-(hb[2]-hb[0]))//2, handle_y+24), handle, font=hf, fill=t["accent"])
 
