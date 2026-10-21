@@ -1,0 +1,42 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "concert crowd stage",
+      "source": "flickr",
+      "creator": "US Embassy Canada",
+      "license": "PDM",
+      "page": "https://www.flickr.com/photos/38144472@N04/8493797386"
+    },
+    {
+      "slot": "scene1",
+      "query": "concert crowd stage",
+      "source": "flickr",
+      "creator": "US Embassy Canada",
+      "license": "PDM",
+      "page": "https://www.flickr.com/photos/38144472@N04/8493797386"
+    },
+    {
+      "slot": "scene2",
+      "query": "money fine penalty",
+      "source": "Wikimedia Commons",
+      "creator": "\nThe Portable Antiquities Scheme, Stuart Wyatt, 2017-10-17 1",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:A_complete_English_Post-Medieval_copper-alloy_farthing_trade_token,_issued_by_Corporation_of_Newbury,_dating_to_AD_1657._Williamson_(1889,28,_no.51)._(FindID_869761).jpg"
+    },
+    {
+      "slot": "scene3",
+      "query": "cash reward money",
+      "source": "Wikimedia Commons",
+      "creator": "Infrogmation of New Orleans",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:EsplanadeLost500DobermansCash.jpg"
+    }
+  ]
+}

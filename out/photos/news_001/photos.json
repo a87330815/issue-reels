@@ -1,0 +1,42 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "ktx high speed train station",
+      "source": "Wikimedia Commons",
+      "creator": "MNXANL",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:202403_SRT_Yard_of_PyeongtaekJije_Station.jpg"
+    },
+    {
+      "slot": "scene1",
+      "query": "ktx high speed train station",
+      "source": "Wikimedia Commons",
+      "creator": "MNXANL",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:202403_SRT_Yard_of_PyeongtaekJije_Station.jpg"
+    },
+    {
+      "slot": "scene3",
+      "query": "train seats interior",
+      "source": "flickr",
+      "creator": "w_lemay",
+      "license": "CC0",
+      "page": "https://www.flickr.com/photos/59081381@N03/32765961478"
+    },
+    {
+      "slot": "scene4",
+      "query": "korea train station platform",
+      "source": "Wikimedia Commons",
+      "creator": "Himuka tachibana",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ilgwang_Station_Platform_20170311_172319.jpg"
+    }
+  ]
+}

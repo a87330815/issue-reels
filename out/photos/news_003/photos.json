@@ -1,0 +1,42 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "small business owner shop",
+      "source": "flickr",
+      "creator": "USDAgov",
+      "license": "PDM",
+      "page": "https://www.flickr.com/photos/41284017@N08/38068402991"
+    },
+    {
+      "slot": "scene1",
+      "query": "money savings bank",
+      "source": "flickr",
+      "creator": "Great Sand Dunes National Park and Preserve",
+      "license": "PDM",
+      "page": "https://www.flickr.com/photos/94707653@N06/14955788929"
+    },
+    {
+      "slot": "scene2",
+      "query": "tax form calculator",
+      "source": "Wikimedia Commons",
+      "creator": "MoneyBlogNewz",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Form_4868,_2010,_with_pen_glasses_phone.jpg"
+    },
+    {
+      "slot": "scene3",
+      "query": "retirement savings money",
+      "source": "Wikimedia Commons",
+      "creator": "Bob Peterson from North Palm Beach, Florida, Planet Earth!",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Honey_Bee_Retirement_Plan_(6561705789).jpg"
+    }
+  ]
+}
