@@ -194,16 +194,36 @@ def ensure_ig_id():
 
     for host in hosts:
         _use_host(host)
-        for field in ("user_id", "id"):
+
+        if host == "graph.facebook.com":
+            # /me 는 페이스북 사용자 ID를 준다. 발행에 필요한 건 그게 아니라
+            # 연결된 페이지의 인스타그램 비즈니스 계정 ID라서 한 단계 더 들어간다.
             try:
-                res = P.api("GET", "me", fields=field)
-                v = res.get(field) or res.get("id")
-                if v:
-                    P.IG_ID = str(v)
-                    print(f"  IG_USER_ID 조회 성공 ({host}): {P.IG_ID}")
-                    return P.IG_ID
+                res = P.api("GET", "me/accounts",
+                            fields="name,instagram_business_account{id,username}")
+                for page in res.get("data", []):
+                    iba = page.get("instagram_business_account") or {}
+                    if iba.get("id"):
+                        P.IG_ID = str(iba["id"])
+                        print(f"  IG 비즈니스 계정 조회 성공 ({host}): "
+                              f"@{iba.get('username','?')} / {P.IG_ID} "
+                              f"← 페이지 '{page.get('name','?')}'")
+                        return P.IG_ID
+                print(f"  [{host}] 연결된 인스타 비즈니스 계정이 없습니다 "
+                      f"(페이지 {len(res.get('data', []))}개 확인)")
             except Exception as e:
-                print(f"  [{host}] {field} 조회 실패: {e}")
+                print(f"  [{host}] me/accounts 조회 실패: {e}")
+            continue
+
+        try:
+            res = P.api("GET", "me", fields="user_id")
+            v = res.get("user_id") or res.get("id")
+            if v:
+                P.IG_ID = str(v)
+                print(f"  IG_USER_ID 조회 성공 ({host}): {P.IG_ID}")
+                return P.IG_ID
+        except Exception as e:
+            print(f"  [{host}] 조회 실패: {e}")
     return ""
 
 

@@ -120,13 +120,21 @@ def check():
         print("  4. 장기 토큰 발급 후 GitHub Secrets에 등록")
         return False
 
-    try:
-        me = api("GET", IG_ID, fields="id,username,account_type,media_count")
-        print(f"\n계정 확인: @{me.get('username')} "
-              f"({me.get('account_type','?')}) · 게시물 {me.get('media_count','?')}개")
-    except Exception as e:
-        print(f"\n[실패] 계정 조회: {e}")
+    # account_type은 인스타 로그인 API에만 있는 필드다. Meta 앱 경유
+    # (graph.facebook.com)로 받은 토큰에서는 없는 필드라 오류가 나므로,
+    # 실패하면 공통 필드만으로 한 번 더 시도한다.
+    me = None
+    for fields in ("id,username,account_type,media_count", "id,username,media_count"):
+        try:
+            me = api("GET", IG_ID, fields=fields)
+            break
+        except Exception as e:
+            err = e
+    if me is None:
+        print(f"\n[실패] 계정 조회: {err}")
         return False
+    print(f"\n계정 확인: @{me.get('username')} "
+          f"({me.get('account_type', '비즈니스')}) · 게시물 {me.get('media_count','?')}개")
 
     try:
         lim = api("GET", f"{IG_ID}/content_publishing_limit",
