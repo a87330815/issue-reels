@@ -118,6 +118,7 @@ def search_unsplash(query, key, n=8):
             continue
         out.append({
             "url": u,
+            "title": (it.get("description") or it.get("alt_description") or ""),
             "source": "Unsplash",
             "creator": ((it.get("user") or {}).get("name") or ""),
             "license": "Unsplash License",
@@ -148,6 +149,7 @@ def search_openverse(query, n=12):
             continue
         out.append({
             "url": u,
+            "title": it.get("title") or "",
             "source": it.get("source") or "Openverse",
             "creator": it.get("creator") or "",
             "license": (it.get("license") or "").upper(),
@@ -196,12 +198,26 @@ def search_wikimedia(query, n=12):
             continue
         out.append({
             "url": u,
+            "title": p.get("title") or "",
             "source": "Wikimedia Commons",
             "creator": re.sub(r"<[^>]+>", "", (meta.get("Artist") or {}).get("value", ""))[:60],
             "license": lic,
             "page": ii.get("descriptionurl") or "",
         })
     return out
+
+
+# 한국 소비자 대상 카드뉴스에 실리면 곤란한 소재를 제목·출처 URL에서 걸러낸다.
+# (예: "korean won" 검색에 북한 원화 지폐가 걸려 김일성 초상이 배경으로 깔린 사례)
+_BLOCK_RE = re.compile(
+    r"(north[ _-]?korea|dprk|democratic[ _-]people|pyongyang|kim[ _-]il[ _-]sung|"
+    r"kim[ _-]jong|juche|nazi|swastika|hitler|isis|taliban|"
+    r"corpse|autopsy|funeral|grave|cemetery|protest|riot|war|weapon|gun|rifle)",
+    re.I)
+
+def _content_ok(cand):
+    hay = " ".join(str(cand.get(k, "")) for k in ("title", "page", "url", "creator"))
+    return not _BLOCK_RE.search(hay)
 
 
 def search_all(query, n=12):
@@ -218,8 +234,10 @@ def search_all(query, n=12):
     for name, fn in providers:
         try:
             res = fn()
-            print(f"    [{name}] {len(res)}건 후보")
-            merged.extend(res)
+            kept = [c for c in res if _content_ok(c)]
+            dropped = len(res) - len(kept)
+            print(f"    [{name}] {len(kept)}건 후보" + (f" (부적합 {dropped}건 제외)" if dropped else ""))
+            merged.extend(kept)
         except Exception as e:
             print(f"    [{name}] 실패: {e}")
         # 충분히 모였고 선두 공급자(유료키)면 더 찾지 않는다

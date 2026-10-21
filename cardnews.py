@@ -275,6 +275,59 @@ def wrap_char(draw, text, fnt, max_w):
         lines.append(cur)
     return lines
 
+# ── 본문 강조 마크업 ──────────────────
+# 본문에 <y>…</y> 를 쓰면 그 구간만 포인트 컬러로 찍어 핵심 수치가 먼저 읽히게 한다.
+_MARK_RE = re.compile(r"<(/?)([yr])>")
+
+def parse_marked(text):
+    """'<y>1800만원</y>까지' → [('1800만원', True), ('까지', False)]"""
+    runs, buf, on = [], "", False
+    pos = 0
+    for m in _MARK_RE.finditer(text or ""):
+        buf += text[pos:m.start()]
+        closing = m.group(1) == "/"
+        if (not closing) != on:
+            if buf:
+                runs.append((buf, on))
+                buf = ""
+            on = not closing
+        pos = m.end()
+    buf += (text or "")[pos:]
+    if buf:
+        runs.append((buf, on))
+    return runs
+
+# 숫자·영문은 한 덩어리로 묶어 줄 끝에서 쪼개지지 않게 한다.
+# 숫자 뒤에 붙는 한글 단위까지 포함해 "10만원", "12월", "2개월"이 통째로 넘어가게 한다.
+_TOKEN_RE = re.compile(
+    r"[0-9][0-9,.·]*%?[가-힣]*|[A-Za-z][A-Za-z.'-]*|.", re.S)
+
+def wrap_marked(draw, runs, fnt, max_w):
+    """강조 구간을 유지한 채 줄바꿈. 줄마다 [(조각, 강조여부)] 반환."""
+    lines, cur, cur_w = [], [], 0
+    for txt, mark in runs:
+        for tok in _TOKEN_RE.findall(txt):
+            tw = draw.textlength(tok, font=fnt)
+            if cur_w + tw > max_w and cur:
+                lines.append(cur)
+                cur, cur_w = [], 0
+                if tok == " ":      # 줄머리 공백은 버린다
+                    continue
+            if cur and cur[-1][1] == mark:
+                cur[-1] = (cur[-1][0] + tok, mark)
+            else:
+                cur.append((tok, mark))
+            cur_w += tw
+    if cur:
+        lines.append(cur)
+    return lines
+
+def draw_marked_line(draw, line, x, y, fnt, normal, accent):
+    """한 줄을 강조 구간별 색으로 이어 그린다."""
+    for seg, mark in line:
+        draw.text((x, y), seg, font=fnt, fill=accent if mark else normal)
+        x += draw.textlength(seg, font=fnt)
+
 def wrap_words(draw, text, fnt, max_w):
     words = text.split()
     lines, cur = [], ""
@@ -351,7 +404,7 @@ def make_cover(sc, t, photo=None, credit=None):
 
     # 메인 타이틀 — 매우 큰 텍스트
     y = 480
-    tf_big = font(FONT_BLACK, 86)
+    tf_big = font(FONT_BLACK, 94)
     for line in lines:
         clean = line.replace("<r>","").replace("</r>","").replace("<y>","").replace("</y>","")
         is_acc = "<r>" in line or "<y>" in line
@@ -360,12 +413,12 @@ def make_cover(sc, t, photo=None, credit=None):
         color = t["accent"] if is_acc else WHITE
         d.text((x+3, y+4), clean, font=tf_big, fill=(0, 0, 0, 90))
         d.text((x, y), clean, font=tf_big, fill=color)
-        y += 108
+        y += 116
 
     # 부제
     sub = sc.get("title", "")
     if sub:
-        sf = font(FONT_MED, 34)
+        sf = font(FONT_MED, 38)
         y += 26
         bb = d.textbbox((0,0), sub, font=sf)
         d.text(((W-(bb[2]-bb[0]))//2, y), sub, font=sf, fill=(255, 255, 255, 215))
@@ -419,14 +472,15 @@ def make_scene(sc, idx, total, t, photo=None, credit=None):
         body = (narration + " " if narration else "") + " ".join(scene.get("details", []))
 
     measure = ImageDraw.Draw(img)
-    body_f = font(FONT_REG, 38)
+    # 한눈에 들어오게: 본문을 키우고 핵심 수치는 포인트 컬러로 분리
+    body_f = font(FONT_MED, 46)
     subtitle = scene.get("subtitle", "")
-    tag_f = font(FONT_BOLD, 38)
+    tag_f = font(FONT_BOLD, 42)
 
     card_margin = 50
     body_max_w = W - card_margin*2 - 90
-    body_lh = 60
-    body_lines = wrap_char(measure, body, body_f, body_max_w)
+    body_lh = 70
+    body_lines = wrap_marked(measure, parse_marked(body), body_f, body_max_w)
 
     tag_bb = measure.textbbox((0,0), subtitle, font=tag_f)
     tag_w = tag_bb[2]-tag_bb[0] + 56
@@ -471,7 +525,7 @@ def make_scene(sc, idx, total, t, photo=None, credit=None):
     for line in body_lines:
         if body_y > card_bottom - 70:
             break
-        d.text((body_x, body_y), line, font=body_f, fill=WHITE)
+        draw_marked_line(d, line, body_x, body_y, body_f, WHITE, t["accent"])
         body_y += body_lh
 
     # 출처 (+ 사진 크레딧)
