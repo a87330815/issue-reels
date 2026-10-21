@@ -64,15 +64,17 @@ jobs:
             --script "$SCRIPT" --photos "$PHOTOS" \
             ${{ inputs.publish && '--publish' || '' }} 2>&1 | tee out/publish_cards.log
 
+      # 아티팩트·러너 로그는 이 환경에서 받기 어려워 저장소로 남긴다.
+      # 실패했을 때야말로 로그가 필요하므로 always()로 둔다.
       - name: 발행 기록 커밋
-        if: ${{ inputs.publish }}
+        if: always()
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -Af out/published_cards.json out/publish_cards.log
+          git add -Af out/published_cards.json out/publish_cards.log 2>/dev/null || true
           git diff --cached --quiet && exit 0
-          git commit -m "카드뉴스 발행 기록 $(date +%Y-%m-%d)"
+          git commit -m "카드뉴스 발행 로그 $(date +%Y-%m-%d)"
           for i in 1 2 3; do
             git pull --rebase --autostash origin main && git push origin main && exit 0
             sleep 5

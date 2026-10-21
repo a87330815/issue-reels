@@ -486,8 +486,61 @@ JSON만 출력하세요. 설명도 코드블록도 붙이지 마세요.
 badge는 시행일처럼 날짜를 박아야 할 때만 문자열로, 아니면 null."""
 
 
-def llm_generate(angle, api_key):
-    """Anthropic API로 대본을 생성한다."""
+def _call_anthropic(api_key, prompt, model=None):
+    import requests as req
+    resp = req.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={"x-api-key": api_key,
+                 "anthropic-version": "2023-06-01",
+                 "content-type": "application/json"},
+        json={"model": model or os.environ.get("LLM_MODEL", "claude-haiku-5-5"),
+              "max_tokens": 1024,
+              "system": LLM_SYSTEM,
+              "messages": [{"role": "user", "content": prompt}]},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    return resp.json()["content"][0]["text"].strip()
+
+
+def _call_openai(api_key, prompt, model=None):
+    """OpenAI(ChatGPT) 계정으로도 돌릴 수 있게 한다.
+    대본 JSON만 받아야 하므로 response_format을 json_object로 고정한다."""
+    import requests as req
+    resp = req.post(
+        "https://api.openai.com/v1/chat/completions",
+        headers={"Authorization": f"Bearer {api_key}",
+                 "content-type": "application/json"},
+        json={"model": model or os.environ.get("LLM_MODEL", "gpt-4o-mini"),
+              "max_tokens": 1024,
+              "response_format": {"type": "json_object"},
+              "messages": [{"role": "system", "content": LLM_SYSTEM},
+                           {"role": "user", "content": prompt}]},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    return resp.json()["choices"][0]["message"]["content"].strip()
+
+
+def llm_provider():
+    """어느 API를 쓸지 고른다.
+    LLM_PROVIDER로 못박을 수 있고, 없으면 설정된 키를 보고 정한다."""
+    forced = os.environ.get("LLM_PROVIDER", "").strip().lower()
+    anth = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    oai = os.environ.get("OPENAI_API_KEY", "").strip()
+    if forced == "openai" and oai:
+        return "openai", oai
+    if forced == "anthropic" and anth:
+        return "anthropic", anth
+    if anth:
+        return "anthropic", anth
+    if oai:
+        return "openai", oai
+    return None, None
+
+
+def llm_generate(angle, api_key, provider="anthropic"):
+    """LLM으로 대본을 생성한다. provider는 anthropic | openai."""
     import requests as req
 
     prompt = f"""아래 공공데이터로 릴스 대본 1편을 써주세요.
@@ -502,23 +555,10 @@ def llm_generate(angle, api_key):
 커버는 24자 이내입니다. 이 수치를 보고 사람들이 무엇을 손해 본다고 느낄지,
 또는 무엇을 놓치고 있다고 느낄지에서 출발하세요."""
 
-    resp = req.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        json={
-            "model": "claude-haiku-5-5",
-            "max_tokens": 1024,
-            "system": LLM_SYSTEM,
-            "messages": [{"role": "user", "content": prompt}],
-        },
-        timeout=30,
-    )
-    resp.raise_for_status()
-    text = resp.json()["content"][0]["text"].strip()
+    if provider == "openai":
+        text = _call_openai(api_key, prompt)
+    else:
+        text = _call_anthropic(api_key, prompt)
 
     # JSON 추출 (코드블록 감싸져 있을 수도 있음)
     if text.startswith("```"):
@@ -600,11 +640,14 @@ def main():
     for i, a in enumerate(angles):
         print(f"  {i+1}. [{a['type']}] {a['hook']}")
 
-    # LLM API 키 확인
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    use_llm = not args.template and api_key
-    if not args.template and not api_key:
-        print("[알림] ANTHROPIC_API_KEY 없음 → 템플릿 모드로 전환")
+    # LLM 공급자 결정 (Anthropic / OpenAI 중 설정된 쪽)
+    provider, api_key = llm_provider()
+    use_llm = not args.template and bool(api_key)
+    if use_llm:
+        model = os.environ.get("LLM_MODEL", "기본값")
+        print(f"[LLM] {provider} (모델: {model})")
+    elif not args.template:
+        print("[알림] ANTHROPIC_API_KEY / OPENAI_API_KEY 없음 → 템플릿 모드로 전환")
 
     # 생성
     scripts = []
@@ -614,7 +657,7 @@ def main():
         script = None
         if use_llm:
             try:
-                script = llm_generate(angle, api_key)
+                script = llm_generate(angle, api_key, provider)
                 if script:
                     print("  ✓ LLM 생성 완료")
             except Exception as e:

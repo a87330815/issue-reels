@@ -40,7 +40,11 @@ jobs:
 
       - name: 대본 생성
         env:
+          # 둘 중 설정된 쪽을 쓴다. 둘 다 있으면 LLM_PROVIDER로 고른다.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: |
           python scriptgen.py -n 3
           ls -la out/scripts/
