@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T05:11:29.194402+00:00",
+  "updated_at": "2026-10-21T05:13:06.174607+00:00",
   "items": [
     {
       "published_at": "2026-10-21T04:58:30.063157+00:00",
@@ -15,6 +15,14 @@
       "card_dir": "out/cards_001",
       "script": "out/scripts/news_001.json",
       "title": "KTX 예매 2개월 전부터",
+      "count": 6
+    },
+    {
+      "published_at": "2026-10-21T05:13:06.173980+00:00",
+      "media_id": "18074312924768298",
+      "card_dir": "out/cards_003",
+      "script": "out/scripts/news_003.json",
+      "title": "노란우산공제 한도 확대",
       "count": 6
     }
   ]
