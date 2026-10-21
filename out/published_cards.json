@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T04:58:30.063583+00:00",
+  "updated_at": "2026-10-21T05:11:29.194402+00:00",
   "items": [
     {
       "published_at": "2026-10-21T04:58:30.063157+00:00",
@@ -7,6 +7,14 @@
       "card_dir": "out/cards_002",
       "script": "out/scripts/news_002.json",
       "title": "암표 거래 전면 금지",
+      "count": 6
+    },
+    {
+      "published_at": "2026-10-21T05:11:29.193764+00:00",
+      "media_id": "18127552027876062",
+      "card_dir": "out/cards_001",
+      "script": "out/scripts/news_001.json",
+      "title": "KTX 예매 2개월 전부터",
       "count": 6
     }
   ]

@@ -6,8 +6,8 @@
   계정 ID     17841400632362290
   액세스 토큰 설정됨
 
-계정 확인: @richup_bm_sw (비즈니스) · 게시물 7개
-발행 한도: 24시간 기준 0/100건 사용
+계정 확인: @richup_bm_sw (비즈니스) · 게시물 8개
+발행 한도: 24시간 기준 1/100건 사용
 
 설정 완료
 
@@ -18,48 +18,49 @@
 
 설정 완료
 
-대상: out/cards_002  (6장)
-대본: out/scripts/news_002.json
+대상: out/cards_001  (6장)
+대본: out/scripts/news_001.json
 
 --- 캡션 ---
-암표 거래 전면 금지
+KTX 예매 2개월 전부터
 
-· 판매 금액 50배 과징금
-· 신고하면 포상금 지급
-· 정가 예매 시대 시작
+· KTX·SRT 통합 앱 출시
+· 예매 기간 2개월로 확대
+· 좌석 공급도 대폭 확대
+· 코레일플러스 미리 깔아둬라
 
 저장해두고 필요할 때 꺼내 보세요.
 
 출처: 기획재정부 · 2026 하반기 달라지는 제도
 
-#생활 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
-사진: Incase. (flickr, BY) / inov8d (flickr, BY) / Wonderlane (flickr, BY) / Tiomax80 (flickr, BY) / kalleboo (flickr, BY)
+#교통 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
+사진: LWYang (Wikimedia Commons, CC BY 2.0) / transitpeople (flickr, BY) / Nicole Beauchamp (flickr, BY) / shankar s. (flickr, BY)
 --- 캡션 끝 ---
 
   [graph.instagram.com] 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
   IG 비즈니스 계정 조회 성공 (graph.facebook.com): @richup_bm_sw / 17841400632362290 ← 페이지 '로컬픽'
-남은 발행 가능: 100건
+남은 발행 가능: 99건
 
 1) 이미지 공개 호스팅
-  ✓ [1/6] 01_cover.jpg  275KB  200 application/octet-stream
-  ✓ [2/6] 02_scene.jpg  402KB  200 application/octet-stream
-  ✓ [3/6] 03_scene.jpg  286KB  200 application/octet-stream
-  ✓ [4/6] 04_scene.jpg  348KB  200 application/octet-stream
-  ✓ [5/6] 05_scene.jpg  313KB  200 application/octet-stream
+  ✓ [1/6] 01_cover.jpg  369KB  200 application/octet-stream
+  ✓ [2/6] 02_scene.jpg  275KB  200 application/octet-stream
+  ✓ [3/6] 03_scene.jpg  313KB  200 application/octet-stream
+  ✓ [4/6] 04_scene.jpg  342KB  200 application/octet-stream
+  ✓ [5/6] 05_scene.jpg  202KB  200 application/octet-stream
   ✓ [6/6] 06_outro.jpg  93KB  200 application/octet-stream
 
 2) 장별 컨테이너 생성
-  [1/6] 컨테이너 18641984023021079
-  [2/6] 컨테이너 18641984050021079
-  [3/6] 컨테이너 18641984083021079
-  [4/6] 컨테이너 18641984104021079
-  [5/6] 컨테이너 18641984128021079
-  [6/6] 컨테이너 18641984161021079
+  [1/6] 컨테이너 18641986009021079
+  [2/6] 컨테이너 18641986027021079
+  [3/6] 컨테이너 18641986045021079
+  [4/6] 컨테이너 18641986075021079
+  [5/6] 컨테이너 18641986093021079
+  [6/6] 컨테이너 18641986114021079
 
 3) 캐러셀 컨테이너 생성
-  캐러셀 18641984182021079
+  캐러셀 18641986162021079
       0초  FINISHED
 
 4) 발행
-  발행 완료: media_id=18449592178126141
+  발행 완료: media_id=18127552027876062
 발행 기록: out/published_cards.json
