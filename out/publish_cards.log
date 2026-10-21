@@ -1,14 +1,15 @@
-  [graph.instagram.com] user_id 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
-  [graph.instagram.com] id 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
-  [graph.facebook.com] user_id 조회 실패: [100/-] (#100) Tried accessing nonexisting field (user_id)
-  IG_USER_ID 조회 성공 (graph.facebook.com): 28703767189322837
+  [graph.instagram.com] 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
+  IG 비즈니스 계정 조회 성공 (graph.facebook.com): @richup_bm_sw / 17841400632362290 ← 페이지 '로컬픽'
 인스타 발행 설정:
   호스트      graph.facebook.com
   API 버전    v26.0
-  계정 ID     28703767189322837
+  계정 ID     17841400632362290
   액세스 토큰 설정됨
 
-[실패] 계정 조회: [100/-] (#100) Tried accessing nonexisting field (account_type)
+계정 확인: @richup_bm_sw (비즈니스) · 게시물 7개
+발행 한도: 24시간 기준 0/100건 사용
+
+설정 완료
 
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
@@ -16,7 +17,6 @@
   저장소 확인    a87330815/issue-reels-media (공개)
 
 설정 완료
-[중단] 설정 점검 실패 — 위 안내를 확인하세요
 
 대상: out/cards_002  (6장)
 대본: out/scripts/news_002.json
@@ -36,11 +36,9 @@
 사진: Incase. (flickr, BY) / inov8d (flickr, BY) / Wonderlane (flickr, BY) / Tiomax80 (flickr, BY) / kalleboo (flickr, BY)
 --- 캡션 끝 ---
 
-  [graph.instagram.com] user_id 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
-  [graph.instagram.com] id 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
-  [graph.facebook.com] user_id 조회 실패: [100/-] (#100) Tried accessing nonexisting field (user_id)
-  IG_USER_ID 조회 성공 (graph.facebook.com): 28703767189322837
-남은 발행 가능: 10건
+  [graph.instagram.com] 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
+  IG 비즈니스 계정 조회 성공 (graph.facebook.com): @richup_bm_sw / 17841400632362290 ← 페이지 '로컬픽'
+남은 발행 가능: 100건
 
 1) 이미지 공개 호스팅
   ✓ [1/6] 01_cover.jpg  275KB  200 application/octet-stream
@@ -51,17 +49,16 @@
   ✓ [6/6] 06_outro.jpg  93KB  200 application/octet-stream
 
 2) 장별 컨테이너 생성
-Traceback (most recent call last):
-  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 299, in <module>
-    main()
-  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 295, in main
-    run(a.card_dir, a.script, a.photos, a.publish)
-  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 242, in run
-    children = create_items(urls)
-               ^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 140, in create_items
-    res = P.api("POST", f"{P.IG_ID}/media", image_url=u, is_carousel_item="true")
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/issue-reels/issue-reels/publish.py", line 99, in api
-    raise RuntimeError(
-RuntimeError: [100/33] Unsupported post request. Object with ID '28703767189322837' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api
+  [1/6] 컨테이너 18641983516021079
+  [2/6] 컨테이너 18641983543021079
+  [3/6] 컨테이너 18641983561021079
+  [4/6] 컨테이너 18641983582021079
+  [5/6] 컨테이너 18641983603021079
+  [6/6] 컨테이너 18641983627021079
+
+3) 캐러셀 컨테이너 생성
+  캐러셀 18641983648021079
+      0초  FINISHED
+
+준비 완료. 실제 발행은 하지 않았습니다 (--publish 를 주면 올라갑니다).
+  캐러셀 컨테이너: 18641983648021079
