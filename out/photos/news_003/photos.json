@@ -1,42 +1,35 @@
 {
   "photos": {
-    "cover": "cover.jpg",
     "scene1": "scene1.jpg",
-    "scene2": "scene2.jpg",
-    "scene3": "scene3.jpg"
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg"
   },
   "credits": [
     {
-      "slot": "cover",
-      "query": "small business owner shop",
-      "source": "flickr",
-      "creator": "USDAgov",
-      "license": "PDM",
-      "page": "https://www.flickr.com/photos/41284017@N08/38068402991"
-    },
-    {
       "slot": "scene1",
-      "query": "money savings bank",
+      "query": "coins stacked savings",
       "source": "flickr",
-      "creator": "Great Sand Dunes National Park and Preserve",
-      "license": "PDM",
-      "page": "https://www.flickr.com/photos/94707653@N06/14955788929"
-    },
-    {
-      "slot": "scene2",
-      "query": "tax form calculator",
-      "source": "Wikimedia Commons",
-      "creator": "MoneyBlogNewz",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Form_4868,_2010,_with_pen_glasses_phone.jpg"
+      "creator": "Images_of_Money",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/59937401@N07/5930116778"
     },
     {
       "slot": "scene3",
-      "query": "retirement savings money",
-      "source": "Wikimedia Commons",
-      "creator": "Bob Peterson from North Palm Beach, Florida, Planet Earth!",
-      "license": "CC BY-SA 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Honey_Bee_Retirement_Plan_(6561705789).jpg"
+      "query": "bank building finance",
+      "source": "flickr",
+      "creator": "epicharmus",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8256808@N02/1481122250"
+    },
+    {
+      "slot": "scene4",
+      "query": "signing documents pen contract",
+      "source": "flickr",
+      "creator": "chrismear",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/89536127@N00/4132167000"
     }
-  ]
+  ],
+  "wanted": 5,
+  "fetched_at": "2026-10-21T03:09:42Z"
 }

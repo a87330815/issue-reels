@@ -1,42 +1,35 @@
 {
   "photos": {
     "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
-    "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg"
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg"
   },
   "credits": [
     {
       "slot": "cover",
-      "query": "ktx high speed train station",
+      "query": "korea ktx high speed train station platform",
       "source": "Wikimedia Commons",
-      "creator": "MNXANL",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:202403_SRT_Yard_of_PyeongtaekJije_Station.jpg"
+      "creator": "LWYang",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:KTX_high_speed_rail.jpg"
     },
     {
-      "slot": "scene1",
-      "query": "ktx high speed train station",
-      "source": "Wikimedia Commons",
-      "creator": "MNXANL",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:202403_SRT_Yard_of_PyeongtaekJije_Station.jpg"
+      "slot": "scene2",
+      "query": "calendar planning desk",
+      "source": "flickr",
+      "creator": "Generationbass.com",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/46959536@N04/4827013488"
     },
     {
       "slot": "scene3",
-      "query": "train seats interior",
+      "query": "train interior seats aisle",
       "source": "flickr",
-      "creator": "w_lemay",
-      "license": "CC0",
-      "page": "https://www.flickr.com/photos/59081381@N03/32765961478"
-    },
-    {
-      "slot": "scene4",
-      "query": "korea train station platform",
-      "source": "Wikimedia Commons",
-      "creator": "Himuka tachibana",
-      "license": "CC BY-SA 4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Ilgwang_Station_Platform_20170311_172319.jpg"
+      "creator": "shankar s.",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/77742560@N06/7144573913"
     }
-  ]
+  ],
+  "wanted": 5,
+  "fetched_at": "2026-10-21T03:08:25Z"
 }
