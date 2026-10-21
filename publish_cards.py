@@ -166,6 +166,19 @@ def record(entry):
     print(f"발행 기록: {PUBLISHED}")
 
 
+# 토큰 발급 경로에 따라 호출할 호스트가 다르다.
+#   Instagram 비즈니스 로그인 → graph.instagram.com
+#   Meta(페이스북) 앱 경유    → graph.facebook.com
+# 어느 쪽인지 밖에서 알기 어려우므로 순서대로 시도한다. 호스트가 어긋나면
+# "Cannot parse access token"처럼 토큰이 잘못된 것처럼 보이는 오류가 난다.
+API_HOSTS = ("graph.instagram.com", "graph.facebook.com")
+
+
+def _use_host(host):
+    P.HOST = host
+    P.BASE = f"https://{host}/{P.VERSION}"
+
+
 def ensure_ig_id():
     """IG_USER_ID가 없으면 토큰으로 조회해 채운다.
 
@@ -175,16 +188,22 @@ def ensure_ig_id():
         return P.IG_ID
     if not P.TOKEN:
         return ""
-    for field in ("user_id", "id"):
-        try:
-            res = P.api("GET", "me", fields=field)
-            v = res.get(field) or res.get("id")
-            if v:
-                P.IG_ID = str(v)
-                print(f"  IG_USER_ID 미설정 → 토큰에서 조회함: {P.IG_ID}")
-                return P.IG_ID
-        except Exception as e:
-            print(f"  IG_USER_ID 조회 실패 ({field}): {e}")
+
+    forced = os.environ.get("IG_API_HOST", "").strip()
+    hosts = (forced,) if forced else API_HOSTS
+
+    for host in hosts:
+        _use_host(host)
+        for field in ("user_id", "id"):
+            try:
+                res = P.api("GET", "me", fields=field)
+                v = res.get(field) or res.get("id")
+                if v:
+                    P.IG_ID = str(v)
+                    print(f"  IG_USER_ID 조회 성공 ({host}): {P.IG_ID}")
+                    return P.IG_ID
+            except Exception as e:
+                print(f"  [{host}] {field} 조회 실패: {e}")
     return ""
 
 

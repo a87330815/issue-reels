@@ -54,7 +54,7 @@ jobs:
           # 계정 ID는 비밀값이 아니라서 변수로도 받는다. 둘 다 없으면 토큰으로 조회한다.
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          MEDIA_REPO: ${{ secrets.MEDIA_REPO }}
+          MEDIA_REPO: ${{ secrets.MEDIA_REPO || vars.MEDIA_REPO || 'a87330815/issue-reels-media' }}
           MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
         run: |
           mkdir -p out
@@ -65,7 +65,7 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          MEDIA_REPO: ${{ secrets.MEDIA_REPO }}
+          MEDIA_REPO: ${{ secrets.MEDIA_REPO || vars.MEDIA_REPO || 'a87330815/issue-reels-media' }}
           MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
         run: |
           set -o pipefail
