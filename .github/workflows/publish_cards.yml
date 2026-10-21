@@ -1,0 +1,89 @@
+name: 카드뉴스 발행
+
+# 실제 계정에 올라가는 단계라 자동 실행하지 않는다. 수동 실행 전용.
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "대본 이름 (out/scripts/<이름>.json)"
+        type: string
+        required: true
+        default: "news_002"
+      publish:
+        description: "실제로 발행 (끄면 컨테이너까지만 만들고 멈춤)"
+        type: boolean
+        default: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install -q Pillow requests
+
+      - name: 입력 확인
+        run: |
+          STEM="${{ inputs.script }}"
+          SCRIPT="out/scripts/${STEM}.json"
+          CARDS="out/cards_${STEM#news_}"
+          PHOTOS="out/photos/${STEM}"
+          for p in "$SCRIPT" "$CARDS"; do
+            [ -e "$p" ] || { echo "::error::없습니다: $p"; exit 1; }
+          done
+          echo "SCRIPT=$SCRIPT" >> "$GITHUB_ENV"
+          echo "CARDS=$CARDS"   >> "$GITHUB_ENV"
+          echo "PHOTOS=$PHOTOS" >> "$GITHUB_ENV"
+          echo "대본: $SCRIPT"
+          echo "카드: $CARDS ($(ls "$CARDS"/*.png | wc -l)장)"
+          echo "발행 여부: ${{ inputs.publish }}"
+
+      - name: 설정 점검
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          MEDIA_REPO: ${{ secrets.MEDIA_REPO }}
+          MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+        run: python publish_cards.py --check
+
+      - name: 발행
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          MEDIA_REPO: ${{ secrets.MEDIA_REPO }}
+          MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+        run: |
+          set -o pipefail
+          mkdir -p out
+          python -u publish_cards.py "$CARDS" \
+            --script "$SCRIPT" --photos "$PHOTOS" \
+            ${{ inputs.publish && '--publish' || '' }} 2>&1 | tee out/publish_cards.log
+
+      - name: 발행 기록 커밋
+        if: ${{ inputs.publish }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -Af out/published_cards.json out/publish_cards.log
+          git diff --cached --quiet && exit 0
+          git commit -m "카드뉴스 발행 기록 $(date +%Y-%m-%d)"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin main && exit 0
+            sleep 5
+          done
+          echo "::error::발행 기록 푸시 실패"
+          exit 1
+
+      - name: 로그 업로드
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publish-log
+          path: out/publish_cards.log
+          retention-days: 30
