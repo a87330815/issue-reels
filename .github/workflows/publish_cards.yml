@@ -72,8 +72,12 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -Af out/published_cards.json out/publish_cards.log 2>/dev/null || true
-          git diff --cached --quiet && exit 0
+          # 한 경로라도 없으면 git add 전체가 실패해 아무것도 스테이징되지 않는다.
+          # 드라이런에서는 published_cards.json이 없으므로 하나씩 더한다.
+          for p in out/publish_cards.log out/published_cards.json; do
+            [ -f "$p" ] && git add -f "$p"
+          done
+          git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
           git commit -m "카드뉴스 발행 로그 $(date +%Y-%m-%d)"
           for i in 1 2 3; do
             git pull --rebase --autostash origin main && git push origin main && exit 0
