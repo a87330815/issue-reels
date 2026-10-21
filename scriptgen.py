@@ -457,6 +457,14 @@ LLM_SYSTEM = """당신은 이슈 릴스 계정의 대본 작가입니다.
 - 특정 개인·단지를 지목해 투자 판단을 유도하는 것
 - 데이터에 없는 수치를 지어내는 것. 받은 값만 쓰세요
 
+## 사진 검색어 (photo_query)
+카드 배경으로 깔 사진을 무료 사진 사이트에서 찾는 데 쓰는 **영문 검색어**입니다.
+- 2~4개 영단어. 명사 위주 (예: "high speed train station", "tax documents calculator")
+- 그 장면을 한 장의 사진으로 보여준다면 무엇이 찍혀 있을지를 쓰세요
+- 추상 개념(policy, benefit, increase)은 사진으로 안 찍힙니다. 눈에 보이는 사물·장소·행동으로 바꾸세요
+- 한국적 맥락이 중요하면 korea/korean을 넣으세요 (예: "korea train station platform")
+- 인물 얼굴이 크게 나오는 검색어는 피하세요
+
 ## 응답 형식
 JSON만 출력하세요. 설명도 코드블록도 붙이지 마세요.
 
@@ -465,12 +473,13 @@ JSON만 출력하세요. 설명도 코드블록도 붙이지 마세요.
   "format": "숫자훅",
   "cover": {
     "lines": ["방금 나온", "<r>23억</r>", "실화입니다"],
-    "badge": null
+    "badge": null,
+    "photo_query": "seoul apartment buildings skyline"
   },
   "scenes": [
-    {"narration": "...", "subtitle": "..."},
-    {"narration": "...", "subtitle": "..."},
-    {"narration": "...", "subtitle": "..."}
+    {"narration": "...", "subtitle": "...", "photo_query": "..."},
+    {"narration": "...", "subtitle": "...", "photo_query": "..."},
+    {"narration": "...", "subtitle": "...", "photo_query": "..."}
   ]
 }
 
@@ -530,12 +539,21 @@ def llm_generate(angle, api_key):
     category = first_item.get("category", "") if isinstance(first_item, dict) else ""
     attribution = first_item.get("attribution", "") if isinstance(first_item, dict) else ""
 
+    def _pq(d):
+        """photo_query 정리 — 영문 2~6단어만 통과시킨다 (없으면 None → 키워드 매핑 폴백)."""
+        q = (d.get("photo_query") or "").strip()
+        if not q or not re.fullmatch(r"[A-Za-z0-9 ,'-]{3,60}", q):
+            return None
+        words = q.split()
+        return " ".join(words[:6]) if 2 <= len(words) else None
+
     scenes = []
     for s in result.get("scenes", []):
         scenes.append({
             "image": None,
             "narration": s["narration"],
             "subtitle": short_subtitle(s.get("subtitle") or s["narration"]),
+            "photo_query": _pq(s),
         })
 
     return {
@@ -544,6 +562,7 @@ def llm_generate(angle, api_key):
             "image": None,
             "lines": lines,
             "badge": result["cover"].get("badge"),
+            "photo_query": _pq(result.get("cover", {})),
         },
         "scenes": scenes,
         "meta": {

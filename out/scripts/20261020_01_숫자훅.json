@@ -1,0 +1,46 @@
+{
+  "title": "23억 아파트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "방금 나온",
+      "<r>23억</r>",
+      "실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "삼성동 래미안 84.99㎡ 23.0억 거래. 수치로 확인해보겠습니다.",
+      "subtitle": "삼성동 23.0억 거래"
+    },
+    {
+      "image": null,
+      "narration": "삼성동 래미안 84.99제곱미터, 15층이 23.0억원에 거래되었습니다.",
+      "subtitle": "삼성동 래미안 23.0억원"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 내용은 프로필 링크를 확인해주세요. 팔로우하시면 매일 알려드립니다.",
+      "subtitle": "프로필 링크 확인 · 팔로우"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        23.0,
+        18.0,
+        12.0,
+        5.2,
+        4.1
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-20T03:21:54.195624+00:00"
+  }
+}
