@@ -25,11 +25,11 @@
     },
     {
       "slot": "scene2",
-      "query": "korean won banknotes money",
+      "query": "cash banknotes wallet payment",
       "source": "flickr",
-      "creator": "panaxy",
+      "creator": "frankieleon",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/33035471@N03/3796655925"
+      "page": "https://www.flickr.com/photos/23307937@N04/3714583594"
     },
     {
       "slot": "scene3",
@@ -49,5 +49,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-21T03:09:11Z"
+  "fetched_at": "2026-10-21T03:20:25Z"
 }

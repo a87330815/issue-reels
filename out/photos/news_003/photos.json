@@ -1,18 +1,9 @@
 {
   "photos": {
-    "scene1": "scene1.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg"
   },
   "credits": [
-    {
-      "slot": "scene1",
-      "query": "coins stacked savings",
-      "source": "flickr",
-      "creator": "Images_of_Money",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/59937401@N07/5930116778"
-    },
     {
       "slot": "scene3",
       "query": "bank building finance",
@@ -31,5 +22,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-21T03:09:42Z"
+  "fetched_at": "2026-10-21T03:20:49Z"
 }
