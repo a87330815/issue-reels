@@ -49,16 +49,21 @@ jobs:
           echo "발행 여부: ${{ inputs.publish }}"
 
       - name: 설정 점검
+        continue-on-error: true
         env:
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          # 계정 ID는 비밀값이 아니라서 변수로도 받는다. 둘 다 없으면 토큰으로 조회한다.
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           MEDIA_REPO: ${{ secrets.MEDIA_REPO }}
           MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
-        run: python publish_cards.py --check
+        run: |
+          mkdir -p out
+          # 점검 결과도 저장소에 남겨야 무엇이 빠졌는지 밖에서 알 수 있다
+          python -u publish_cards.py --check 2>&1 | tee out/publish_cards.log
 
       - name: 발행
         env:
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           MEDIA_REPO: ${{ secrets.MEDIA_REPO }}
           MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
@@ -67,7 +72,7 @@ jobs:
           mkdir -p out
           python -u publish_cards.py "$CARDS" \
             --script "$SCRIPT" --photos "$PHOTOS" \
-            ${{ inputs.publish && '--publish' || '' }} 2>&1 | tee out/publish_cards.log
+            ${{ inputs.publish && '--publish' || '' }} 2>&1 | tee -a out/publish_cards.log
 
       # 아티팩트·러너 로그는 이 환경에서 받기 어려워 저장소로 남긴다.
       # 실패했을 때야말로 로그가 필요하므로 always()로 둔다.

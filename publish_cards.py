@@ -166,6 +166,28 @@ def record(entry):
     print(f"발행 기록: {PUBLISHED}")
 
 
+def ensure_ig_id():
+    """IG_USER_ID가 없으면 토큰으로 조회해 채운다.
+
+    계정 ID는 비밀값이 아니라 토큰에서 바로 얻을 수 있는 공개 식별자다.
+    Secret 등록을 기다릴 이유가 없어 자동으로 해결한다."""
+    if P.IG_ID:
+        return P.IG_ID
+    if not P.TOKEN:
+        return ""
+    for field in ("user_id", "id"):
+        try:
+            res = P.api("GET", "me", fields=field)
+            v = res.get(field) or res.get("id")
+            if v:
+                P.IG_ID = str(v)
+                print(f"  IG_USER_ID 미설정 → 토큰에서 조회함: {P.IG_ID}")
+                return P.IG_ID
+        except Exception as e:
+            print(f"  IG_USER_ID 조회 실패 ({field}): {e}")
+    return ""
+
+
 def run(card_dir, script_path, photo_dir=None, do_publish=False):
     with open(script_path, encoding="utf-8") as f:
         script = json.load(f)
@@ -182,8 +204,11 @@ def run(card_dir, script_path, photo_dir=None, do_publish=False):
     print(caption)
     print("--- 캡션 끝 ---\n")
 
-    if not P.IG_ID or not P.TOKEN:
-        raise SystemExit("[중단] IG_USER_ID / IG_ACCESS_TOKEN 미설정")
+    if not P.TOKEN:
+        raise SystemExit("[중단] IG_ACCESS_TOKEN 미설정 — 이 값은 비밀이라 직접 등록해야 합니다")
+    if not ensure_ig_id():
+        raise SystemExit("[중단] IG_USER_ID를 토큰으로 조회하지 못했습니다 "
+                         "(토큰 만료이거나 권한 부족일 수 있습니다)")
 
     left = P.quota_left()
     print(f"남은 발행 가능: {left}건")
@@ -235,6 +260,7 @@ def main():
     a = ap.parse_args()
 
     if a.check:
+        ensure_ig_id()
         ok_ig = P.check()
         print()
         ok_media = U.gh_check()
