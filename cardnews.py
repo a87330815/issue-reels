@@ -6,7 +6,7 @@ cardnews.py — 인스타그램 카드뉴스 생성기 v5
 - 강렬한 그래디언트 배경 + 큰 이모지 아이콘
 - 굵고 큰 텍스트 + 눈에 띄는 색상 조합
 """
-import argparse, json, math, os, sys, random
+import argparse, json, math, os, re, sys, random
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 
@@ -175,9 +175,35 @@ def load_photos(photo_dir):
             out[slot] = p
     return out
 
-def photo_bg(path, t, darken_top=70, darken_bottom=215):
+def load_credits(photo_dir):
+    """슬롯 → 사진 출처 문구. CC BY 계열은 표기가 라이선스 조건이라 카드에 찍는다."""
+    if not photo_dir:
+        return {}
+    mpath = os.path.join(photo_dir, "photos.json")
+    if not os.path.exists(mpath):
+        return {}
+    try:
+        with open(mpath, encoding="utf-8") as f:
+            man = json.load(f)
+    except Exception:
+        return {}
+    out = {}
+    for c in (man.get("credits") or []):
+        lic = (c.get("license") or "").strip()
+        creator = (c.get("creator") or "").strip()
+        src = (c.get("source") or "").strip()
+        # 퍼블릭도메인/CC0는 표기 의무가 없어 생략 (화면을 깨끗하게)
+        if re.match(r"^(public domain|pd|cc0|pdm|no restrictions)", lic, re.I):
+            continue
+        parts = [p for p in (creator, src, lic) if p]
+        if parts:
+            out[c.get("slot", "")] = "사진 " + " / ".join(parts)
+    return out
+
+def photo_bg(path, t, darken_top=70, darken_bottom=215, blur=0):
     """사진을 풀블리드 배경으로 깔고, 아래로 갈수록 진해지는 어두운 그래디언트를 덮는다.
-    텍스트 가독성을 확보하면서 사진이 그대로 보이게 한다."""
+    텍스트 가독성을 확보하면서 사진이 그대로 보이게 한다.
+    blur를 주면 배경이 차분해져 적합도가 낮은 사진도 덜 튄다."""
     im = Image.open(path).convert("RGB")
     if im.size != (W, H):
         # cover 크롭 (photos.py에서 이미 맞춰 오지만 방어적으로)
@@ -189,13 +215,14 @@ def photo_bg(path, t, darken_top=70, darken_bottom=215):
         im = im.resize((nw, nh), Image.LANCZOS)
         im = im.crop(((nw-W)//2, (nh-H)//2, (nw-W)//2+W, (nh-H)//2+H))
 
+    if blur:
+        im = im.filter(ImageFilter.GaussianBlur(blur))
+
     # 살짝 채도를 올려 색을 또렷하게
     im = ImageEnhance.Color(im).enhance(1.15)
     im = ImageEnhance.Contrast(im).enhance(1.05)
 
-    # 세로 어두움 그래디언트 (위는 약하게, 아래는 강하게)
-    ramp = np.linspace(darken_top, darken_bottom, H).astype(np.float32)
-    # 아래쪽 55% 구간을 더 빠르게 어둡게
+    # 세로 어두움 그래디언트 (위는 약하게, 아래로 갈수록 강하게)
     xs = np.linspace(0.0, 1.0, H)
     ease = xs ** 1.6
     ramp = (darken_top + (darken_bottom - darken_top) * ease).astype(np.uint8)
@@ -293,10 +320,10 @@ def draw_big_emoji(draw, emoji, cx, cy, size):
         pass
 
 # ── 커버 ────────────────────────
-def make_cover(sc, t, photo=None):
+def make_cover(sc, t, photo=None, credit=None):
     if photo:
-        # 사진 배경: 위는 비교적 밝게, 아래는 진하게 깔아 타이틀 가독성 확보
-        img = photo_bg(photo, t, darken_top=60, darken_bottom=225)
+        # 커버는 사진을 가장 잘 보여주는 자리 — 블러 없이, 아래만 진하게
+        img = photo_bg(photo, t, darken_top=85, darken_bottom=235)
     else:
         img = gradient_bg_diagonal(t["grad1"], t["grad2"])
         layer, ld = overlay_layer()
@@ -346,13 +373,17 @@ def make_cover(sc, t, photo=None):
     # 하단 구분선
     d.line([(W*0.25, H-180), (W*0.75, H-180)], fill=(255, 255, 255, 90), width=2)
 
-    # 출처
+    # 출처 (+ 사진 크레딧)
     attr = sc.get("meta", {}).get("attribution", "")
     if attr:
         af = font(FONT_REG, 22)
         txt = f"출처: {attr}"
         bb = d.textbbox((0,0), txt, font=af)
         d.text(((W-(bb[2]-bb[0]))//2, H-145), txt, font=af, fill=(255, 255, 255, 150))
+    if credit:
+        cf = font(FONT_REG, 16)
+        bb = d.textbbox((0,0), credit, font=cf)
+        d.text(((W-(bb[2]-bb[0]))//2, H-118), credit, font=cf, fill=(255, 255, 255, 110))
 
     # 스와이프 안내 (이모지 + 텍스트 분리 렌더)
     sf = font(FONT_BOLD, 28)
@@ -367,11 +398,12 @@ def make_cover(sc, t, photo=None):
     return img
 
 # ── 본문 슬라이드 ────────────────
-def make_scene(sc, idx, total, t, photo=None):
+def make_scene(sc, idx, total, t, photo=None, credit=None):
     scene = sc["scenes"][idx]
 
     if photo:
-        img = photo_bg(photo, t, darken_top=55, darken_bottom=230)
+        # 본문은 글이 주인공 — 배경을 살짝 흐려 텍스트 대비를 확보
+        img = photo_bg(photo, t, darken_top=105, darken_bottom=238, blur=4)
     else:
         # 슬라이드마다 색조를 살짝 변형
         r = random.Random(idx * 31 + 7)
@@ -442,11 +474,16 @@ def make_scene(sc, idx, total, t, photo=None):
         d.text((body_x, body_y), line, font=body_f, fill=WHITE)
         body_y += body_lh
 
-    # 출처
+    # 출처 (+ 사진 크레딧)
     attr = sc.get("meta", {}).get("attribution", "")
     if attr:
         af = font(FONT_REG, 20)
         d.text((card_margin+45, card_bottom-38), f"출처: {attr}", font=af, fill=(255, 255, 255, 135))
+    if credit:
+        cf = font(FONT_REG, 15)
+        bb = d.textbbox((0,0), credit, font=cf)
+        d.text((W - card_margin - 45 - (bb[2]-bb[0]), card_bottom-34), credit,
+               font=cf, fill=(255, 255, 255, 100))
 
     dots(d, idx+2, total, t)
     return img
@@ -515,18 +552,20 @@ def generate(script_path, out_dir, photo_dir=None):
     pages = []
 
     photos = load_photos(photo_dir)
+    credits = load_credits(photo_dir)
     if photos:
         print(f"  사진 {len(photos)}장 적용: {', '.join(sorted(photos))}")
     elif photo_dir:
         print("  사진 없음 — 그래디언트 배경으로 생성")
 
     p = os.path.join(out_dir, "01_cover.png")
-    make_cover(sc, t, photos.get("cover")).save(p, quality=95)
+    make_cover(sc, t, photos.get("cover"), credits.get("cover")).save(p, quality=95)
     pages.append(p)
 
     for i in range(len(sc.get("scenes", []))):
+        slot = f"scene{i+1}"
         p = os.path.join(out_dir, f"{i+2:02d}_scene.png")
-        make_scene(sc, i, total, t, photos.get(f"scene{i+1}")).save(p, quality=95)
+        make_scene(sc, i, total, t, photos.get(slot), credits.get(slot)).save(p, quality=95)
         pages.append(p)
 
     p = os.path.join(out_dir, f"{total:02d}_outro.png")

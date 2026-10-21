@@ -126,11 +126,13 @@ def search_unsplash(query, key, n=8):
     return out
 
 
-def search_openverse(query, n=8):
-    """Openverse — 키 불필요. CC0/PDM만 받아 출처표기 의무를 없앤다."""
+def search_openverse(query, n=12):
+    """Openverse — 키 불필요.
+    cc0/pdm(표기 불필요) + by(표기만 하면 상업적 이용 자유)까지 받아 후보 풀을 넓힌다.
+    share-alike·비상업·변경금지는 제외. 비율 제한은 두지 않는다 (cover 크롭으로 흡수)."""
     url = "https://api.openverse.org/v1/images/"
-    params = {"q": query, "license": "cc0,pdm", "page_size": n,
-              "mature": "false", "aspect_ratio": "tall,square"}
+    params = {"q": query, "license": "cc0,pdm,by", "page_size": n,
+              "mature": "false"}
     r = requests.get(url, params=params, timeout=TIMEOUT,
                      headers={"User-Agent": UA, "Accept": "application/json"})
     r.raise_for_status()
@@ -149,13 +151,28 @@ def search_openverse(query, n=8):
     return out
 
 
-def search_wikimedia(query, n=8):
-    """Wikimedia Commons — 키 불필요. 최후 폴백."""
+# 상업적 이용이 가능하고 share-alike 전염성이 없는 라이선스만 허용
+_OK_LICENSE = re.compile(
+    r"^(public domain|pd|cc0|cc pd|no restrictions|"
+    r"cc by( \d|-\d|$)|attribution( \d|$))", re.I)
+
+def _license_ok(name):
+    n = (name or "").strip()
+    if not n:
+        return False
+    if re.search(r"(-sa|share.?alike|-nc|noncommercial|-nd|noderiv)", n, re.I):
+        return False
+    return bool(_OK_LICENSE.match(n))
+
+
+def search_wikimedia(query, n=12):
+    """Wikimedia Commons — 키 불필요. 최후 폴백.
+    share-alike/비상업/변경금지 라이선스는 제외한다."""
     url = "https://commons.wikimedia.org/w/api.php"
     params = {
         "action": "query", "generator": "search", "gsrsearch": f"{query} filetype:bitmap",
         "gsrnamespace": "6", "gsrlimit": str(n), "prop": "imageinfo",
-        "iiprop": "url|extmetadata", "iiurlwidth": "1200", "format": "json",
+        "iiprop": "url|extmetadata", "iiurlwidth": "1400", "format": "json",
     }
     r = requests.get(url, params=params, timeout=TIMEOUT, headers={"User-Agent": UA})
     r.raise_for_status()
@@ -167,18 +184,22 @@ def search_wikimedia(query, n=8):
         if not u:
             continue
         meta = ii.get("extmetadata") or {}
+        lic = (meta.get("LicenseShortName") or {}).get("value", "")
+        if not _license_ok(lic):
+            continue
         out.append({
             "url": u,
             "source": "Wikimedia Commons",
             "creator": re.sub(r"<[^>]+>", "", (meta.get("Artist") or {}).get("value", ""))[:60],
-            "license": (meta.get("LicenseShortName") or {}).get("value", ""),
+            "license": lic,
             "page": ii.get("descriptionurl") or "",
         })
     return out
 
 
-def search_all(query, n=8):
-    """공급자를 순서대로 시도해 후보 목록을 만든다."""
+def search_all(query, n=12):
+    """공급자를 순서대로 시도해 후보 목록을 만든다.
+    앞 공급자 결과가 적으면 뒤 공급자 결과를 이어 붙여 중복 회피 여지를 남긴다."""
     key = os.environ.get("UNSPLASH_ACCESS_KEY", "").strip()
     providers = []
     if key:
@@ -186,16 +207,18 @@ def search_all(query, n=8):
     providers.append(("openverse", lambda: search_openverse(query, n)))
     providers.append(("wikimedia", lambda: search_wikimedia(query, n)))
 
+    merged = []
     for name, fn in providers:
         try:
             res = fn()
-            if res:
-                print(f"    [{name}] {len(res)}건 후보")
-                return res
-            print(f"    [{name}] 결과 없음")
+            print(f"    [{name}] {len(res)}건 후보")
+            merged.extend(res)
         except Exception as e:
             print(f"    [{name}] 실패: {e}")
-    return []
+        # 충분히 모였고 선두 공급자(유료키)면 더 찾지 않는다
+        if len(merged) >= n and name == "unsplash":
+            break
+    return merged
 
 
 # ── 다운로드 & 크롭 ──────────────────────────
@@ -216,9 +239,13 @@ def cover_crop(im, w=CARD_W, h=CARD_H):
     return im.crop((left, top, left + w, top + h))
 
 
-def download_photo(candidates, out_path, min_px=600):
-    """후보를 순서대로 받아 첫 성공분을 저장. 성공 시 메타 dict 반환."""
+def download_photo(candidates, out_path, min_px=600, used=None):
+    """후보를 순서대로 받아 첫 성공분을 저장. 성공 시 메타 dict 반환.
+    used에 이미 쓴 URL을 담아두면 슬라이드 간 사진 중복을 피한다."""
+    used = used if used is not None else set()
     for c in candidates:
+        if c["url"] in used:
+            continue
         try:
             r = requests.get(c["url"], timeout=TIMEOUT,
                              headers={"User-Agent": UA}, stream=True)
@@ -230,6 +257,7 @@ def download_photo(candidates, out_path, min_px=600):
             if min(im.size) < min_px:
                 continue
             cover_crop(im).save(out_path, "JPEG", quality=88)
+            used.add(c["url"])
             meta = dict(c)
             meta["file"] = out_path
             return meta
@@ -253,6 +281,7 @@ def fetch_for_script(script_path, out_dir):
     for i, scene in enumerate(sc.get("scenes", [])):
         targets.append((f"scene{i+1}", scene.get("subtitle", ""), scene.get("photo_query")))
 
+    used = set()  # 같은 대본 안에서 사진 중복 방지
     for slot, text, explicit in targets:
         q = explicit or build_query(text, category)
         print(f"  [{slot}] '{text}' → \"{q}\"")
@@ -261,7 +290,7 @@ def fetch_for_script(script_path, out_dir):
             print(f"    ✗ {slot}: 후보 없음")
             continue
         path = os.path.join(out_dir, f"{slot}.jpg")
-        meta = download_photo(cands, path)
+        meta = download_photo(cands, path, used=used)
         if meta:
             manifest["photos"][slot] = os.path.basename(path)
             manifest["credits"].append({
