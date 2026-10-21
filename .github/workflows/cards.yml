@@ -74,6 +74,10 @@ jobs:
           find out/photos -name '*.jpg' | sort | tee -a out/photos/collect.log
 
       - name: 카드뉴스 생성
+        env:
+          # 계정을 옮길 땐 저장소 Variables에서 이 둘만 바꾸면 된다
+          IG_HANDLE: ${{ vars.IG_HANDLE }}
+          IG_BRAND: ${{ vars.IG_BRAND }}
         run: |
           for f in out/scripts/*.json; do
             stem=$(basename "$f" .json)
