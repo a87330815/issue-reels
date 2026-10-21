@@ -129,12 +129,15 @@ DARK  = (20, 20, 25)
 # 간판과 속이 따로 논다. 고정 문구도 같은 말투로 맞춘다.
 # 핸들은 계정이 바뀔 수 있으므로 환경변수로 뺀다.
 HANDLE = os.environ.get("IG_HANDLE", "@richup_bm_sw")
+BRAND  = os.environ.get("IG_BRAND", "쫌봐봐")
+# 브랜드명은 띄어쓰기 없이 그대로 박는다. "쫌 봐봐"로 띄우면 평범한 말이 되고,
+# "쫌봐봐"로 붙여야 매 장마다 계정 이름이 그대로 각인된다.
 UI = {
-    "swipe":    "옆으로 쫌 봐봐",
+    "swipe":    f"옆으로 {BRAND}",
     "outro1":   "도움 됐으면",
     "outro2":   "팔로우하고 저장해두이소",
     "outro_s1": "세상 돌아가는 이야기",
-    "outro_s2": "매일 쫌 봐봐",
+    "outro_s2": f"매일 {BRAND}",
 }
 
 def get_t(cat):
@@ -411,13 +414,25 @@ def make_cover(sc, t, photo=None, credit=None):
     cat = sc.get("meta", {}).get("category", "")
     lines = sc.get("cover", {}).get("lines", [sc.get("title", "")])
 
+    # 브랜드 워드마크 — 캐러셀 첫 장마다 계정 이름을 각인시킨다
+    if BRAND:
+        bf = font(FONT_BLACK, 38)
+        bb = d.textbbox((0,0), BRAND, font=bf)
+        bx = (W-(bb[2]-bb[0]))//2
+        if photo:
+            d.text((bx, 62), BRAND, font=bf, fill=t["accent"],
+                   stroke_width=4, stroke_fill=(0, 0, 0))
+        else:
+            d.text((bx+2, 65), BRAND, font=bf, fill=(0, 0, 0, 80))
+            d.text((bx, 62), BRAND, font=bf, fill=t["accent"])
+
     # 상단 카테고리 뱃지
     if cat:
         tf = font(FONT_BOLD, 30)
         bb = d.textbbox((0,0), cat, font=tf)
         tw, th = bb[2]-bb[0]+56, bb[3]-bb[1]+30
         bx = (W-tw)//2
-        by = 120
+        by = 136
         rounded_rect(d, (bx, by, bx+tw, by+th), 25, t["tag_bg"])
         d.text((bx+28, by+9), cat, font=tf, fill=t["tag_fg"])
 
