@@ -217,10 +217,15 @@ def photo_bg(path, t, darken_top=70, darken_bottom=215, blur=0):
 
     if blur:
         im = im.filter(ImageFilter.GaussianBlur(blur))
+    else:
+        # 무료 소스는 해상도가 낮아 1080x1350으로 확대하면 물러진다.
+        # 언샤프 마스크로 윤곽을 살려 선명하게 보이게 한다.
+        im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=125, threshold=3))
 
-    # 살짝 채도를 올려 색을 또렷하게
-    im = ImageEnhance.Color(im).enhance(1.15)
-    im = ImageEnhance.Contrast(im).enhance(1.05)
+    # 채도·대비를 올려 색을 또렷하게
+    im = ImageEnhance.Color(im).enhance(1.12)
+    im = ImageEnhance.Contrast(im).enhance(1.12)
+    im = ImageEnhance.Sharpness(im).enhance(1.3)
 
     # 세로 어두움 그래디언트 (위는 약하게, 아래로 갈수록 강하게)
     xs = np.linspace(0.0, 1.0, H)
@@ -375,8 +380,9 @@ def draw_big_emoji(draw, emoji, cx, cy, size):
 # ── 커버 ────────────────────────
 def make_cover(sc, t, photo=None, credit=None):
     if photo:
-        # 커버는 사진을 가장 잘 보여주는 자리 — 블러 없이, 아래만 진하게
-        img = photo_bg(photo, t, darken_top=85, darken_bottom=235)
+        # 커버는 사진을 가장 잘 보여주는 자리. 전체를 어둡게 덮는 대신
+        # 제목에 부드러운 그림자를 깔아 대비를 확보한다 (아래 shadow 레이어)
+        img = photo_bg(photo, t, darken_top=30, darken_bottom=190)
     else:
         img = gradient_bg_diagonal(t["grad1"], t["grad2"])
         layer, ld = overlay_layer()
@@ -403,17 +409,33 @@ def make_cover(sc, t, photo=None, credit=None):
         d.text((bx+28, by+9), cat, font=tf, fill=t["tag_fg"])
 
     # 메인 타이틀 — 매우 큰 텍스트
-    y = 480
+    # 사진을 밝게 두기 위해, 전체 농도를 올리는 대신 글자 뒤에만
+    # 부드러운 그림자를 깔아 어떤 배경에서도 읽히게 한다.
     tf_big = font(FONT_BLACK, 94)
+    title_y = 480
+    placed = []
     for line in lines:
         clean = line.replace("<r>","").replace("</r>","").replace("<y>","").replace("</y>","")
         is_acc = "<r>" in line or "<y>" in line
         bb = d.textbbox((0,0), clean, font=tf_big)
-        x = (W-(bb[2]-bb[0]))//2
-        color = t["accent"] if is_acc else WHITE
-        d.text((x+3, y+4), clean, font=tf_big, fill=(0, 0, 0, 90))
-        d.text((x, y), clean, font=tf_big, fill=color)
-        y += 116
+        placed.append(((W-(bb[2]-bb[0]))//2, title_y, clean, is_acc))
+        title_y += 116
+
+    if photo:
+        sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        sd = ImageDraw.Draw(sh)
+        for x, yy, clean, _ in placed:
+            sd.text((x, yy + 6), clean, font=tf_big, fill=(0, 0, 0, 190))
+        sh = sh.filter(ImageFilter.GaussianBlur(14))
+        img = composite(img, sh)
+        d = ImageDraw.Draw(img, "RGBA")
+
+    # 외곽선: 사진이 밝거나 포인트 컬러와 색이 겹쳐도 글자가 묻히지 않게 한다
+    stroke = dict(stroke_width=5, stroke_fill=(0, 0, 0)) if photo else {}
+    for x, yy, clean, is_acc in placed:
+        d.text((x, yy), clean, font=tf_big,
+               fill=t["accent"] if is_acc else WHITE, **stroke)
+    y = title_y
 
     # 부제
     sub = sc.get("title", "")
@@ -455,8 +477,9 @@ def make_scene(sc, idx, total, t, photo=None, credit=None):
     scene = sc["scenes"][idx]
 
     if photo:
-        # 본문은 글이 주인공 — 배경을 살짝 흐려 텍스트 대비를 확보
-        img = photo_bg(photo, t, darken_top=105, darken_bottom=238, blur=4)
+        # 본문 글자는 아래 카드 안에 들어가므로 사진 자체는 어둡게 할 이유가 없다.
+        # 블러를 빼고 농도를 낮춰 사진이 선명하게 보이게 한다.
+        img = photo_bg(photo, t, darken_top=30, darken_bottom=150, blur=0)
     else:
         # 슬라이드마다 색조를 살짝 변형
         r = random.Random(idx * 31 + 7)
@@ -502,8 +525,8 @@ def make_scene(sc, idx, total, t, photo=None, credit=None):
     ld.text((W - (nb[2]-nb[0]) - 40, 10), num, font=nf,
             fill=(255, 255, 255, 60 if photo else 46))
 
-    # 사진 위에서는 카드를 더 진하게 깔아 본문 대비를 확보
-    card_alpha = 165 if photo else 115
+    # 배경을 밝게 둔 만큼 카드는 더 진하게 깔아 본문 대비를 지킨다
+    card_alpha = 195 if photo else 115
     rounded_rect(ld, (card_margin, card_y, W-card_margin, card_bottom), 32, (0, 0, 0, card_alpha))
     img = composite(img, layer)
 
