@@ -246,6 +246,25 @@ def search_all(query, n=12):
     return merged
 
 
+def search_with_fallback(query, n=12, min_needed=3):
+    """무료 CC 풀은 어휘가 얕아 4단어짜리 구체적 검색어가 0건을 내기 쉽다.
+    결과가 모자라면 뒤 단어부터 떼어내며 점점 넓은 검색어로 재시도한다."""
+    words = query.split()
+    tried = set()
+    out = []
+    for k in range(len(words), 0, -1):
+        q = " ".join(words[:k])
+        if q in tried:
+            continue
+        tried.add(q)
+        if k < len(words):
+            print(f"    ↻ 재시도: \"{q}\"")
+        out.extend(c for c in search_all(q, n) if c["url"] not in {x["url"] for x in out})
+        if len(out) >= min_needed:
+            break
+    return out
+
+
 # ── 다운로드 & 크롭 ──────────────────────────
 def cover_crop(im, w=CARD_W, h=CARD_H):
     """비율 유지하며 중앙 기준 'cover' 크롭."""
@@ -264,7 +283,7 @@ def cover_crop(im, w=CARD_W, h=CARD_H):
     return im.crop((left, top, left + w, top + h))
 
 
-def download_photo(candidates, out_path, min_px=600, used=None):
+def download_photo(candidates, out_path, min_px=500, used=None):
     """후보를 순서대로 받아 첫 성공분을 저장. 성공 시 메타 dict 반환.
     used에 이미 쓴 URL을 담아두면 슬라이드 간 사진 중복을 피한다."""
     used = used if used is not None else set()
@@ -276,7 +295,7 @@ def download_photo(candidates, out_path, min_px=600, used=None):
                              headers={"User-Agent": UA}, stream=True)
             r.raise_for_status()
             data = r.content
-            if len(data) < 8000:
+            if len(data) < 5000:
                 continue
             im = Image.open(io.BytesIO(data))
             if min(im.size) < min_px:
@@ -310,7 +329,7 @@ def fetch_for_script(script_path, out_dir):
     for slot, text, explicit in targets:
         q = explicit or build_query(text, category)
         print(f"  [{slot}] '{text}' → \"{q}\"")
-        cands = search_all(q)
+        cands = search_with_fallback(q)
         if not cands:
             print(f"    ✗ {slot}: 후보 없음")
             continue
