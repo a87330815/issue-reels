@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T05:13:06.174607+00:00",
+  "updated_at": "2026-10-22T06:35:25.360854+00:00",
   "items": [
     {
       "published_at": "2026-10-21T04:58:30.063157+00:00",
@@ -23,6 +23,14 @@
       "card_dir": "out/cards_003",
       "script": "out/scripts/news_003.json",
       "title": "노란우산공제 한도 확대",
+      "count": 6
+    },
+    {
+      "published_at": "2026-10-22T06:35:25.360377+00:00",
+      "media_id": "18169688812463966",
+      "card_dir": "out/cards_002",
+      "script": "out/scripts/news_002.json",
+      "title": "암표 거래 전면 금지",
       "count": 6
     }
   ]
