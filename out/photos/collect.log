@@ -1,4 +1,4 @@
-run: 39541553032  2026-10-21T03:59:49Z
+run: 39737845396  2026-10-22T07:03:48Z
 unsplash key: 없음
 
 
@@ -67,6 +67,209 @@ unsplash key: 없음
     ✓ scene4 ← flickr (BY)
   → 5/5장 저장, 매니페스트: out/photos/20261020_03_지역한정/photos.json
 
+=== 20261022_01_숫자훅 ===
+  [cover] '120억 아파트' → "apartment building"
+    [openverse] 12건 후보
+    [wikimedia] 5건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '반포동 120.0억 거래' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '반포동 래미안원베일리 120.0억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  → 4/4장 저장, 매니페스트: out/photos/20261022_01_숫자훅/photos.json
+
+=== 20261022_02_숫자훅 ===
+  [cover] '70억 차이' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '압구정동 vs 명석면 우수리' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '반포동 래미안원베일리 120.0억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '압구정동 신현대12차 100.0억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene4 ← flickr (BY)
+  → 5/5장 저장, 매니페스트: out/photos/20261022_02_숫자훅/photos.json
+
+=== 20261022_03_지역한정 ===
+  [cover] '명지동 149건 거래' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '명지동 149건 거래' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '명지동 명지오션시티한신휴플러스 3.8억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '명지동 부산명지중흥S-클래스프라디움' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene4 ← flickr (BY)
+  → 5/5장 저장, 매니페스트: out/photos/20261022_03_지역한정/photos.json
+
+=== 20261022_04_지역한정 ===
+  [cover] '송도동 최고 24억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '송도동 최고 24.0억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '송도동 인천송도힐스테이트5단지' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '송도동 송도더샵파크애비뉴 16.6억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene4 ← flickr (BY)
+  → 5/5장 저장, 매니페스트: out/photos/20261022_04_지역한정/photos.json
+
+=== 20261022_05_지역한정 ===
+  [cover] '좌동 최고 8억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '좌동 최고 7.5억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '좌동 삼성 7.5억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '좌동 두산2 6.9억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene4 ← flickr (BY)
+  → 5/5장 저장, 매니페스트: out/photos/20261022_05_지역한정/photos.json
+
+=== 20261022_06_지역한정 ===
+  [cover] '서초동 최고 37억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '서초동 최고 37.0억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '서초동 서초푸르지오써밋 37.0억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '서초동 롯데캐슬클래식 35.5억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene4 ← flickr (BY)
+  → 5/5장 저장, 매니페스트: out/photos/20261022_06_지역한정/photos.json
+
+=== 20261022_07_지역한정 ===
+  [cover] '반여동 최고 8억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '반여동 최고 7.5억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '반여동 센텀KCC스위첸 7.5억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '반여동 센텀KCC스위첸 7.4억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene4 ← flickr (BY)
+  → 5/5장 저장, 매니페스트: out/photos/20261022_07_지역한정/photos.json
+
+=== 20261022_08_지역한정 ===
+  [cover] '마두동 최고 9억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '마두동 최고 9.2억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '마두동 강촌마을(우방) 9.2억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '마두동 백마마을(삼성) 8.4억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene4 ← flickr (BY)
+  → 5/5장 저장, 매니페스트: out/photos/20261022_08_지역한정/photos.json
+
+=== 20261022_09_지역한정 ===
+  [cover] '우동 최고 21억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '우동 최고 21.0억' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '우동 경남마리나 21.0억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '우동 해운대경동제이드 20.0억원' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
+    [openverse] 12건 후보
+    [wikimedia] 6건 후보
+    ✓ scene4 ← flickr (BY)
+  → 5/5장 저장, 매니페스트: out/photos/20261022_09_지역한정/photos.json
+
 === news_001 ===
   [cover] 'KTX 예매 2개월 전부터' → "korea ktx high speed train station platform"
     [openverse] 0건 후보
@@ -79,24 +282,21 @@ unsplash key: 없음
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "smartphone train ticket app"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "smartphone train ticket"
     [openverse] 7건 후보
     [wikimedia] 6건 후보
     ✓ scene1 ← flickr (BY)
   [scene2] '예매 기간 2개월로 확대' → "calendar planning desk"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 7건 후보
     [wikimedia] 2건 후보
-    ↻ 재시도: "calendar planning"
-    [openverse] 12건 후보
-    [wikimedia] 8건 후보
     ✓ scene2 ← flickr (BY)
   [scene3] '좌석 공급도 대폭 확대' → "train interior seats aisle"
     [openverse] 8건 후보
     [wikimedia] 1건 후보
     ✓ scene3 ← flickr (BY)
-  [scene4] '코레일플러스 꼭 설치하세요' → "hand holding smartphone station"
+  [scene4] '코레일플러스 미리 깔아둬라' → "hand holding smartphone station"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "hand holding smartphone"
@@ -146,15 +346,15 @@ unsplash key: 없음
     ✓ scene2 ← flickr (BY)
   [scene3] '사업자 퇴직금 역할' → "bank building finance"
     [openverse] 12건 후보
-    [wikimedia] 2건 후보
+    [wikimedia] 3건 후보
     ✓ scene3 ← flickr (BY)
-  [scene4] '지금 가입하면 올해분 공제' → "signing documents pen contract"
+  [scene4] '지금 넣어야 올해분 공제' → "signing documents pen contract"
     [openverse] 8건 후보 (부적합 1건 제외)
     [wikimedia] 6건 후보 (부적합 1건 제외)
     ✓ scene4 ← flickr (BY)
   → 5/5장 저장, 매니페스트: out/photos/news_003/photos.json
 
-총 29/29장 수집
+총 73/73장 수집
 --- 수집된 파일 ---
 out/photos/20261020_01_숫자훅/cover.jpg
 out/photos/20261020_01_숫자훅/scene1.jpg
@@ -170,6 +370,50 @@ out/photos/20261020_03_지역한정/scene1.jpg
 out/photos/20261020_03_지역한정/scene2.jpg
 out/photos/20261020_03_지역한정/scene3.jpg
 out/photos/20261020_03_지역한정/scene4.jpg
+out/photos/20261022_01_숫자훅/cover.jpg
+out/photos/20261022_01_숫자훅/scene1.jpg
+out/photos/20261022_01_숫자훅/scene2.jpg
+out/photos/20261022_01_숫자훅/scene3.jpg
+out/photos/20261022_02_숫자훅/cover.jpg
+out/photos/20261022_02_숫자훅/scene1.jpg
+out/photos/20261022_02_숫자훅/scene2.jpg
+out/photos/20261022_02_숫자훅/scene3.jpg
+out/photos/20261022_02_숫자훅/scene4.jpg
+out/photos/20261022_03_지역한정/cover.jpg
+out/photos/20261022_03_지역한정/scene1.jpg
+out/photos/20261022_03_지역한정/scene2.jpg
+out/photos/20261022_03_지역한정/scene3.jpg
+out/photos/20261022_03_지역한정/scene4.jpg
+out/photos/20261022_04_지역한정/cover.jpg
+out/photos/20261022_04_지역한정/scene1.jpg
+out/photos/20261022_04_지역한정/scene2.jpg
+out/photos/20261022_04_지역한정/scene3.jpg
+out/photos/20261022_04_지역한정/scene4.jpg
+out/photos/20261022_05_지역한정/cover.jpg
+out/photos/20261022_05_지역한정/scene1.jpg
+out/photos/20261022_05_지역한정/scene2.jpg
+out/photos/20261022_05_지역한정/scene3.jpg
+out/photos/20261022_05_지역한정/scene4.jpg
+out/photos/20261022_06_지역한정/cover.jpg
+out/photos/20261022_06_지역한정/scene1.jpg
+out/photos/20261022_06_지역한정/scene2.jpg
+out/photos/20261022_06_지역한정/scene3.jpg
+out/photos/20261022_06_지역한정/scene4.jpg
+out/photos/20261022_07_지역한정/cover.jpg
+out/photos/20261022_07_지역한정/scene1.jpg
+out/photos/20261022_07_지역한정/scene2.jpg
+out/photos/20261022_07_지역한정/scene3.jpg
+out/photos/20261022_07_지역한정/scene4.jpg
+out/photos/20261022_08_지역한정/cover.jpg
+out/photos/20261022_08_지역한정/scene1.jpg
+out/photos/20261022_08_지역한정/scene2.jpg
+out/photos/20261022_08_지역한정/scene3.jpg
+out/photos/20261022_08_지역한정/scene4.jpg
+out/photos/20261022_09_지역한정/cover.jpg
+out/photos/20261022_09_지역한정/scene1.jpg
+out/photos/20261022_09_지역한정/scene2.jpg
+out/photos/20261022_09_지역한정/scene3.jpg
+out/photos/20261022_09_지역한정/scene4.jpg
 out/photos/news_001/cover.jpg
 out/photos/news_001/scene1.jpg
 out/photos/news_001/scene2.jpg

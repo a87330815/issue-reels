@@ -1,0 +1,53 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "apartment building residential",
+      "source": "flickr",
+      "creator": "seier+seier",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/94852245@N00/2565057817"
+    },
+    {
+      "slot": "scene1",
+      "query": "apartment building residential",
+      "source": "flickr",
+      "creator": "Bogdan Suditu",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8726888@N08/2377843417"
+    },
+    {
+      "slot": "scene2",
+      "query": "apartment building residential",
+      "source": "flickr",
+      "creator": "NNECAPA",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/23163410@N02/2830785109"
+    },
+    {
+      "slot": "scene3",
+      "query": "apartment building residential",
+      "source": "flickr",
+      "creator": "psiaki",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/55723329@N00/3758676511"
+    },
+    {
+      "slot": "scene4",
+      "query": "apartment building residential",
+      "source": "flickr",
+      "creator": "psiaki",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/55723329@N00/5106822907"
+    }
+  ],
+  "wanted": 5,
+  "fetched_at": "2026-10-22T07:04:27Z"
+}
