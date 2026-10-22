@@ -1,4 +1,4 @@
-run: 39771801284  2026-10-22T11:41:45Z
+run: 39829455379  2026-10-22T18:14:03Z
 unsplash key: 없음
 
 
@@ -12,59 +12,59 @@ unsplash key: 없음
     [wikimedia] 6건 후보
     ✓ scene1 ← Wikimedia Commons (CC0)
   [scene2] '삼성동 래미안 23.0억원' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene2 ← Wikimedia Commons (CC0)
+    ✓ scene2 ← flickr (BY)
   [scene3] '프로필 링크 확인 · 팔로우' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene3 ← Wikimedia Commons (CC0)
+    ✓ scene3 ← flickr (BY)
   → 4/4장 저장, 매니페스트: out/photos/20261020_01_숫자훅/photos.json
 
 === 20261020_02_숫자훅 ===
   [cover] '17억 차이' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ cover ← Wikimedia Commons (CC0)
+    ✓ cover ← flickr (BY)
   [scene1] '삼성동 vs 부원동' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene1 ← Wikimedia Commons (CC0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '삼성동 래미안 23.0억원' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene2 ← Wikimedia Commons (CC0)
+    ✓ scene2 ← flickr (BY)
   [scene3] '삼성동 파크뷰 18.0억원' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene3 ← Wikimedia Commons (CC BY 3.0)
+    ✓ scene3 ← flickr (BY)
   [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene4 ← Wikimedia Commons (CC0)
+    ✓ scene4 ← flickr (BY)
   → 5/5장 저장, 매니페스트: out/photos/20261020_02_숫자훅/photos.json
 
 === 20261020_03_지역한정 ===
   [cover] '삼성동 2건 거래' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ cover ← Wikimedia Commons (CC0)
+    ✓ cover ← flickr (BY)
   [scene1] '삼성동 2건 거래' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene1 ← Wikimedia Commons (CC0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '삼성동 래미안 23.0억원' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene2 ← Wikimedia Commons (CC0)
+    ✓ scene2 ← flickr (BY)
   [scene3] '삼성동 파크뷰 18.0억원' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene3 ← Wikimedia Commons (CC BY 3.0)
+    ✓ scene3 ← flickr (BY)
   [scene4] '프로필 링크 확인 · 팔로우' → "apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 6건 후보
-    ✓ scene4 ← Wikimedia Commons (CC0)
+    ✓ scene4 ← flickr (BY)
   → 5/5장 저장, 매니페스트: out/photos/20261020_03_지역한정/photos.json
 
 === 20261022_01_숫자훅 ===
@@ -76,56 +76,56 @@ unsplash key: 없음
     [wikimedia] 9건 후보
     ✓ cover ← Wikimedia Commons (CC BY 4.0)
   [scene1] '반포동 120.0억 거래' → "luxury apartment building korea"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "luxury apartment building"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 9건 후보
-    ✓ scene1 ← Wikimedia Commons (CC BY 4.0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '반포동 래미안원베일리 120.0억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene2 ← Wikimedia Commons (CC BY 2.0)
-  [scene3] '팔로우 · 매일 업데이트' → "팔로우 구독 부동산"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    ✓ scene2 ← flickr (BY)
+  [scene3] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "팔로우 구독"
+    ↻ 재시도: "follow subscribe social media"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 6건 후보
-    ✓ scene3 ← Wikimedia Commons (CC BY 2.0)
+    [wikimedia] 7건 후보
+    ✓ scene3 ← Wikimedia Commons (No restrictions)
   → 4/4장 저장, 매니페스트: out/photos/20261022_01_숫자훅/photos.json
 
 === 20261022_02_숫자훅 ===
   [cover] '70억 차이' → "luxury apartment building korea"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "luxury apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 9건 후보
-    ✓ cover ← Wikimedia Commons (CC BY 4.0)
+    ✓ cover ← flickr (BY)
   [scene1] '압구정동 vs 명석면 우수리' → "luxury apartment building korea"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "luxury apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 9건 후보
-    ✓ scene1 ← Wikimedia Commons (CC BY 4.0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '반포동 래미안원베일리 120.0억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene2 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene2 ← flickr (BY)
   [scene3] '압구정동 신현대12차 100.0억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene3 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene3 ← flickr (BY)
   [scene4] '반포동 래미안원베일리 94.0억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene4 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene4 ← flickr (BY)
   [scene5] '압구정동 신현대11차 93.0억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene5 ← Wikimedia Commons (Public domain)
+    ✓ scene5 ← flickr (BY)
   [scene6] '이번에 확인된 5건의 거래에서 가격' → "housing price comparison chart"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
@@ -136,36 +136,36 @@ unsplash key: 없음
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 6건 후보 (부적합 5건 제외)
     ✓ scene6 ← Wikimedia Commons (CC0)
-  [scene7] '팔로우 · 매일 업데이트' → "팔로우 구독 부동산"
+  [scene7] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "팔로우 구독"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 6건 후보
-    ✓ scene7 ← Wikimedia Commons (CC BY 2.0)
+    ↻ 재시도: "follow subscribe social media"
+    [openverse] 12건 후보
+    [wikimedia] 7건 후보
+    ✓ scene7 ← flickr (BY)
   → 8/8장 저장, 매니페스트: out/photos/20261022_02_숫자훅/photos.json
 
 === 20261022_03_지역한정 ===
   [cover] '명지동 149건 거래' → "korea apartment complex aerial view"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex aerial"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 5건 후보
     ✓ cover ← Wikimedia Commons (CC0)
   [scene1] '명지동 149건 거래' → "korea apartment complex aerial view"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex aerial"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 5건 후보
-    ✓ scene1 ← Wikimedia Commons (CC BY 4.0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '명지동 명지오션시티한신휴플러스 3.8억원' → "modern apartment building residential"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 4건 후보
@@ -175,74 +175,74 @@ unsplash key: 없음
     [wikimedia] 4건 후보
     ✓ scene3 ← Wikimedia Commons (CC BY 2.0)
   [scene4] '명지동 명지두산위브포세이돈 3.0억원' → "modern apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 11건 후보 (부적합 1건 제외)
     [wikimedia] 4건 후보
-    ✓ scene4 ← Wikimedia Commons (CC BY 3.0)
+    ✓ scene4 ← flickr (BY)
   [scene5] '명지동 롯데캐슬 3.1억원' → "modern apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 11건 후보 (부적합 1건 제외)
     [wikimedia] 4건 후보
-    ✓ scene5 ← Wikimedia Commons (CC BY 4.0)
+    ✓ scene5 ← flickr (BY)
   [scene6] '명지동 이번 달 거래를 종합하면, 평균' → "real estate price chart graph"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 4건 후보
     ✓ scene6 ← Wikimedia Commons (CC0)
-  [scene7] '팔로우 · 매일 업데이트' → "팔로우 구독 부동산"
+  [scene7] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "팔로우 구독"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 6건 후보
-    ✓ scene7 ← Wikimedia Commons (CC BY 2.0)
+    ↻ 재시도: "follow subscribe social media"
+    [openverse] 12건 후보
+    [wikimedia] 7건 후보
+    ✓ scene7 ← flickr (BY)
   → 8/8장 저장, 매니페스트: out/photos/20261022_03_지역한정/photos.json
 
 === 20261022_04_지역한정 ===
   [cover] '송도동 최고 24억' → "korea apartment complex aerial view"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex aerial"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 5건 후보
     ✓ cover ← Wikimedia Commons (CC0)
   [scene1] '송도동 최고 24.0억' → "korea apartment complex aerial view"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex aerial"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 5건 후보
-    ✓ scene1 ← Wikimedia Commons (CC BY 4.0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '송도동 인천송도힐스테이트5단지' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene2 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene2 ← flickr (BY)
   [scene3] '송도동 송도더샵파크애비뉴 16.6억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene3 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene3 ← flickr (BY)
   [scene4] '송도동 송도더샵퍼스트파크F15BL' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene4 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene4 ← flickr (BY)
   [scene5] '송도동 송도자이하버뷰2단지 14.2억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene5 ← Wikimedia Commons (Public domain)
+    ✓ scene5 ← flickr (BY)
   [scene6] '송도동 이번 달 거래를 종합하면, 평균' → "real estate price chart graph"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 1건 후보
     [wikimedia] 4건 후보
     ✓ scene6 ← Wikimedia Commons (CC0)
-  [scene7] '팔로우 · 매일 업데이트' → "팔로우 구독 부동산"
+  [scene7] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "팔로우 구독"
-    [openverse] 0건 후보
-    [wikimedia] 6건 후보
-    ✓ scene7 ← Wikimedia Commons (CC BY 2.0)
+    ↻ 재시도: "follow subscribe social media"
+    [openverse] 12건 후보
+    [wikimedia] 7건 후보
+    ✓ scene7 ← flickr (BY)
   → 8/8장 저장, 매니페스트: out/photos/20261022_04_지역한정/photos.json
 
 === 20261022_05_지역한정 ===
@@ -253,9 +253,9 @@ unsplash key: 없음
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 5건 후보
-    ✓ cover ← Wikimedia Commons (CC0)
+    ✓ cover ← flickr (BY)
   [scene1] '좌동 최고 7.5억' → "korea apartment complex aerial view"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
@@ -263,36 +263,36 @@ unsplash key: 없음
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 5건 후보
-    ✓ scene1 ← Wikimedia Commons (CC BY 4.0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '좌동 삼성 7.5억원' → "modern apartment building residential"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 4건 후보
     ✓ scene2 ← Wikimedia Commons (CC0)
   [scene3] '좌동 두산2 6.9억원' → "modern apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 11건 후보 (부적합 1건 제외)
     [wikimedia] 4건 후보
-    ✓ scene3 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene3 ← flickr (BY)
   [scene4] '좌동 현대 6.8억원' → "modern apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 11건 후보 (부적합 1건 제외)
     [wikimedia] 4건 후보
-    ✓ scene4 ← Wikimedia Commons (CC BY 3.0)
+    ✓ scene4 ← flickr (BY)
   [scene5] '좌동 동부 6.8억원' → "modern apartment building residential"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 11건 후보 (부적합 1건 제외)
     [wikimedia] 4건 후보
-    ✓ scene5 ← Wikimedia Commons (CC BY 4.0)
+    ✓ scene5 ← flickr (BY)
   [scene6] '좌동 이번 달 거래를 종합하면, 평균' → "real estate price chart graph"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 1건 후보
     [wikimedia] 4건 후보
     ✓ scene6 ← Wikimedia Commons (CC0)
-  [scene7] '팔로우 · 매일 업데이트' → "팔로우 구독 부동산"
+  [scene7] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "팔로우 구독"
-    [openverse] 0건 후보
-    [wikimedia] 6건 후보
-    ✓ scene7 ← Wikimedia Commons (CC BY 2.0)
+    ↻ 재시도: "follow subscribe social media"
+    [openverse] 12건 후보
+    [wikimedia] 7건 후보
+    ✓ scene7 ← flickr (BY)
   → 8/8장 저장, 매니페스트: out/photos/20261022_05_지역한정/photos.json
 
 === 20261022_06_지역한정 ===
@@ -303,9 +303,9 @@ unsplash key: 없음
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 5건 후보
-    ✓ cover ← Wikimedia Commons (CC0)
+    ✓ cover ← flickr (BY)
   [scene1] '서초동 최고 37.0억' → "korea apartment complex aerial view"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
@@ -313,41 +313,88 @@ unsplash key: 없음
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "korea apartment complex"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 5건 후보
-    ✓ scene1 ← Wikimedia Commons (CC BY 4.0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '서초동 서초푸르지오써밋 37.0억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene2 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene2 ← flickr (BY)
   [scene3] '서초동 롯데캐슬클래식 35.5억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene3 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene3 ← flickr (BY)
   [scene4] '서초동 서초그랑자이 32.2억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene4 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene4 ← flickr (BY)
   [scene5] '서초동 아크로비스타 32.0억원' → "luxury high rise apartment building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene5 ← Wikimedia Commons (Public domain)
+    ✓ scene5 ← flickr (BY)
   [scene6] '서초동 이번 달 거래를 종합하면, 평균' → "real estate price chart graph"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 1건 후보
     [wikimedia] 4건 후보
     ✓ scene6 ← Wikimedia Commons (CC0)
-  [scene7] '팔로우 · 매일 업데이트' → "팔로우 구독 부동산"
+  [scene7] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "팔로우 구독"
-    [openverse] 0건 후보
-    [wikimedia] 6건 후보
-    ✓ scene7 ← Wikimedia Commons (CC BY 2.0)
+    ↻ 재시도: "follow subscribe social media"
+    [openverse] 12건 후보
+    [wikimedia] 7건 후보
+    ✓ scene7 ← flickr (BY)
   → 8/8장 저장, 매니페스트: out/photos/20261022_06_지역한정/photos.json
+
+=== 20261022_07_숫자훅 ===
+  [cover] '평당 3.0억' → "luxury apartment building korea"
+    [openverse] 2건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "luxury apartment building"
+    [openverse] 12건 후보
+    [wikimedia] 9건 후보
+    ✓ cover ← flickr (BY)
+  [scene1] '반포동 평당 3.0억' → "luxury apartment building korea"
+    [openverse] 2건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "luxury apartment building"
+    [openverse] 12건 후보
+    [wikimedia] 9건 후보
+    ✓ scene1 ← flickr (BY)
+  [scene2] '반포동 래미안원베일리 120.0억원' → "luxury high rise apartment building"
+    [openverse] 12건 후보
+    [wikimedia] 4건 후보
+    ✓ scene2 ← flickr (BY)
+  [scene3] '반포동 래미안원베일리 48.5억원' → "luxury high rise apartment building"
+    [openverse] 12건 후보
+    [wikimedia] 4건 후보
+    ✓ scene3 ← flickr (BY)
+  [scene4] '반포동 래미안원베일리 94.0억원' → "luxury high rise apartment building"
+    [openverse] 12건 후보
+    [wikimedia] 4건 후보
+    ✓ scene4 ← flickr (BY)
+  [scene5] '반포동 래미안원베일리 48.0억원' → "luxury high rise apartment building"
+    [openverse] 12건 후보
+    [wikimedia] 4건 후보
+    ✓ scene5 ← flickr (BY)
+  [scene6] '이번에 확인된 5건의 거래에서 가격' → "housing price comparison chart"
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "housing price comparison"
+    [openverse] 9건 후보 (부적합 3건 제외)
+    [wikimedia] 0건 후보
+    ✓ scene6 ← flickr (BY)
+  [scene7] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "follow subscribe social media"
+    [openverse] 12건 후보
+    [wikimedia] 7건 후보
+    ✓ scene7 ← flickr (BY)
+  → 8/8장 저장, 매니페스트: out/photos/20261022_07_숫자훅/photos.json
 
 === news_001 ===
   [cover] 'KTX 예매 2개월 전부터' → "korea ktx high speed train station platform"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 1건 후보
     ↻ 재시도: "korea ktx high speed train station"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
@@ -357,7 +404,7 @@ unsplash key: 없음
     [wikimedia] 4건 후보
     ✓ cover ← Wikimedia Commons (CC BY 2.0)
   [scene1] 'KTX·SRT 통합 앱 출시' → "smartphone train ticket app hand"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "smartphone train ticket app"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
@@ -391,18 +438,18 @@ unsplash key: 없음
 
 === news_002 ===
   [cover] '암표 거래 전면 금지' → "concert audience crowd stage lights"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 7건 후보
-    ✓ cover ← Wikimedia Commons (CC BY 2.0)
+    ✓ cover ← flickr (BY)
   [scene1] '암표 거래 전면 금지' → "empty theater seats auditorium"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 2건 후보
     ↻ 재시도: "empty theater seats"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 7건 후보
+    [wikimedia] 8건 후보
     ✓ scene1 ← Wikimedia Commons (PDM-owner)
   [scene2] '판매 금액 50배 과징금' → "calculator receipt paperwork"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "calculator receipt"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
@@ -427,33 +474,27 @@ unsplash key: 없음
     [wikimedia] 3건 후보 (부적합 1건 제외)
     ✓ cover ← Wikimedia Commons (Public domain)
   [scene1] '납입 한도 연 1800만원' → "coins savings"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 8건 후보 (부적합 3건 제외)
-    ✓ scene1 ← Wikimedia Commons (CC BY 2.0)
+    ✓ scene1 ← flickr (BY)
   [scene2] '소득공제로 절세 효과' → "tax documents calculator desk"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "tax documents calculator"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "tax documents"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 10건 후보
-    ✓ scene2 ← Wikimedia Commons (Public domain)
+    ✓ scene2 ← flickr (BY)
   [scene3] '사업자 퇴직금 역할' → "bank building finance"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 2건 후보
-    ↻ 재시도: "bank building"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 3건 후보
-    ✓ scene3 ← Wikimedia Commons (CC0)
+    ✓ scene3 ← flickr (BY)
   [scene4] '지금 넣어야 올해분 공제' → "signing documents pen contract"
     [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 6건 후보 (부적합 1건 제외)
     ✓ scene4 ← Wikimedia Commons (Public domain)
   → 5/5장 저장, 매니페스트: out/photos/news_003/photos.json
 
-총 72/73장 수집
+총 80/81장 수집
 --- 수집된 파일 ---
 out/photos/20261020_01_숫자훅/cover.jpg
 out/photos/20261020_01_숫자훅/scene1.jpg
@@ -513,6 +554,14 @@ out/photos/20261022_06_지역한정/scene4.jpg
 out/photos/20261022_06_지역한정/scene5.jpg
 out/photos/20261022_06_지역한정/scene6.jpg
 out/photos/20261022_06_지역한정/scene7.jpg
+out/photos/20261022_07_숫자훅/cover.jpg
+out/photos/20261022_07_숫자훅/scene1.jpg
+out/photos/20261022_07_숫자훅/scene2.jpg
+out/photos/20261022_07_숫자훅/scene3.jpg
+out/photos/20261022_07_숫자훅/scene4.jpg
+out/photos/20261022_07_숫자훅/scene5.jpg
+out/photos/20261022_07_숫자훅/scene6.jpg
+out/photos/20261022_07_숫자훅/scene7.jpg
 out/photos/20261022_07_지역한정/cover.jpg
 out/photos/20261022_07_지역한정/scene1.jpg
 out/photos/20261022_07_지역한정/scene2.jpg

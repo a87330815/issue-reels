@@ -21,10 +21,10 @@
     {
       "slot": "scene1",
       "query": "korea apartment complex aerial view",
-      "source": "Wikimedia Commons",
-      "creator": "고려",
-      "license": "CC BY 4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Burim_Middle_School,_Photographed_from_Daran-dong_Saetbyeol_Hanyang_Apartment_Complex_6.jpg"
+      "source": "flickr",
+      "creator": "Stephen Hucker",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/97371213@N00/87004725"
     },
     {
       "slot": "scene2",
@@ -45,18 +45,18 @@
     {
       "slot": "scene4",
       "query": "modern apartment building residential",
-      "source": "Wikimedia Commons",
-      "creator": "\nFrancisco Anzola",
-      "license": "CC BY 3.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Residential_Building_(216845175).jpeg"
+      "source": "flickr",
+      "creator": "NNECAPA",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/23163410@N02/2830785109"
     },
     {
       "slot": "scene5",
       "query": "modern apartment building residential",
-      "source": "Wikimedia Commons",
-      "creator": "Dale Cruse - 10M views from San Francisco, CA, USA",
-      "license": "CC BY 4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Tiled_Mid-Century_Apartment_Building_with_Balconies_in_Porto,_Portugal_(54821673190).jpg"
+      "source": "flickr",
+      "creator": "seier+seier",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/94852245@N00/4484083618"
     },
     {
       "slot": "scene6",
@@ -68,13 +68,13 @@
     },
     {
       "slot": "scene7",
-      "query": "팔로우 구독 부동산",
-      "source": "Wikimedia Commons",
-      "creator": "Steven Falconer from Niagara Falls, Canada",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:FESC-23_(31319933915).jpg"
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-22T11:57:15Z"
+  "fetched_at": "2026-10-22T18:19:21Z"
 }

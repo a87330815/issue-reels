@@ -25,20 +25,20 @@
     {
       "slot": "scene2",
       "query": "apartment building residential",
-      "source": "Wikimedia Commons",
-      "creator": "TylerMascola",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Apartment_Complex_Parking_Lot_1.png"
+      "source": "flickr",
+      "creator": "seier+seier",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/94852245@N00/2565057817"
     },
     {
       "slot": "scene3",
       "query": "apartment building residential",
-      "source": "Wikimedia Commons",
-      "creator": "TylerMascola",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Apartment_Complex_Recreational_Area_1.png"
+      "source": "flickr",
+      "creator": "Bogdan Suditu",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8726888@N08/2377843417"
     }
   ],
   "wanted": 4,
-  "fetched_at": "2026-10-22T11:43:09Z"
+  "fetched_at": "2026-10-22T18:15:02Z"
 }

@@ -13,50 +13,50 @@
     {
       "slot": "cover",
       "query": "luxury apartment building korea",
-      "source": "Wikimedia Commons",
-      "creator": "Haoreima",
-      "license": "CC BY 4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Pond_%26_luxury_buildings_in_the_Joysana_Retreat,_a_resort_in_Oinam_town,_near_Nambol_town,_in_Manipur_state_(Kangleipak)_01.jpg"
+      "source": "flickr",
+      "creator": "準建築人手札網站 Forgemind ArchiMedia",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/44343967@N00/6490804987"
     },
     {
       "slot": "scene1",
       "query": "luxury apartment building korea",
-      "source": "Wikimedia Commons",
-      "creator": "Haoreima",
-      "license": "CC BY 4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Pond_%26_luxury_buildings_in_the_Joysana_Retreat,_a_resort_in_Oinam_town,_near_Nambol_town,_in_Manipur_state_(Kangleipak)_02.jpg"
+      "source": "flickr",
+      "creator": "準建築人手札網站 Forgemind ArchiMedia",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/44343967@N00/6490806297"
     },
     {
       "slot": "scene2",
       "query": "luxury high rise apartment building",
-      "source": "Wikimedia Commons",
-      "creator": "Jeramey Jannene from Milwaukee, WI, United States of America",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Blatz_Luxury_Apartments_and_Offices.jpg"
+      "source": "flickr",
+      "creator": "on1stsite.",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/7539060@N06/3386231629"
     },
     {
       "slot": "scene3",
       "query": "luxury high rise apartment building",
-      "source": "Wikimedia Commons",
-      "creator": "Paul Sableman",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Luxury_Leasing_(31310215274).jpg"
+      "source": "flickr",
+      "creator": "Sydney Heritage",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/72079496@N04/6914463871"
     },
     {
       "slot": "scene4",
       "query": "luxury high rise apartment building",
-      "source": "Wikimedia Commons",
-      "creator": "Paul Sableman",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Luxury_Leasing_(31972162881).jpg"
+      "source": "flickr",
+      "creator": "dalecruse",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/91873384@N04/53809138976"
     },
     {
       "slot": "scene5",
       "query": "luxury high rise apartment building",
-      "source": "Wikimedia Commons",
-      "creator": "Carol M. Highsmith",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Museum_Tower,_a_luxury_high-rise_apartment_building_in_the_Arts_District_of_Dallas,_Texas_LCCN2015630823.tif"
+      "source": "flickr",
+      "creator": "dalecruse",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/91873384@N04/53809465484"
     },
     {
       "slot": "scene6",
@@ -68,13 +68,13 @@
     },
     {
       "slot": "scene7",
-      "query": "팔로우 구독 부동산",
-      "source": "Wikimedia Commons",
-      "creator": "Steven Falconer from Niagara Falls, Canada",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:FESC-23_(31319933915).jpg"
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-22T11:53:07Z"
+  "fetched_at": "2026-10-22T18:17:40Z"
 }

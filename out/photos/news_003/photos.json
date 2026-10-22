@@ -18,26 +18,26 @@
     {
       "slot": "scene1",
       "query": "coins savings",
-      "source": "Wikimedia Commons",
-      "creator": "Free Images",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:-finance_-wealth_-savings_-security_-coin.jpg"
+      "source": "flickr",
+      "creator": "Images_of_Money",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/59937401@N07/5929488411"
     },
     {
       "slot": "scene2",
       "query": "tax documents calculator desk",
-      "source": "Wikimedia Commons",
-      "creator": "Judgefloro",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:9999Community_Tax_Certificate.jpg"
+      "source": "flickr",
+      "creator": "Images_of_Money",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/59937401@N07/5856725357"
     },
     {
       "slot": "scene3",
       "query": "bank building finance",
-      "source": "Wikimedia Commons",
-      "creator": "BasieeG MIEE",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:HK_Admiralty_footbridge_view_office_buildings_facade_Far_East_Finance_n_Bank_of_America_May_2025_R12S.jpg"
+      "source": "flickr",
+      "creator": "epicharmus",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8256808@N02/1481122250"
     },
     {
       "slot": "scene4",
@@ -49,5 +49,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-22T12:15:21Z"
+  "fetched_at": "2026-10-22T18:28:01Z"
 }
