@@ -22,8 +22,14 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      # 인증키 없이 점검하면 멀쩡한 소스가 "인증키 없음"으로 찍혀
+      # 막힌 것처럼 보인다. 수집과 같은 환경에서 점검해야 실태가 나온다.
       - name: 소스 점검
         continue-on-error: true
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+          KMA_APIHUB_KEY: ${{ secrets.KMA_APIHUB_KEY }}
+          KOSIS_KEY: ${{ secrets.KOSIS_KEY }}
         run: |
           mkdir -p out
           python -u collect.py --verify 2>&1 | tee out/collect.log
@@ -53,7 +59,11 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f out/collect.log || true
+          # 수집물도 저장소에 남긴다. 아티팩트로만 두면 다음 단계인
+          # 대본 생성이 집어갈 수 없다.
+          for p in out/collect.log out/collected.json out/seen.json; do
+            [ -f "$p" ] && git add -f "$p" || true
+          done
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
           git commit -m "수집 로그 $(date +%Y-%m-%d\ %H:%M)"
           for i in 1 2 3; do
