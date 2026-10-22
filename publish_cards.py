@@ -299,6 +299,10 @@ def run(card_dir, script_path, photo_dir=None, do_publish=False):
         "published_at": datetime.now(timezone.utc).isoformat(),
         "media_id": media_id, "card_dir": card_dir, "script": script_path,
         "title": script.get("title"), "count": len(files),
+        # 계정을 바꾸면 같은 대본을 새 계정에 다시 올려야 한다. 어느 계정에
+        # 올렸는지 적어두지 않으면 대기열이 이전 계정 발행분까지 "완료"로 세고
+        # 건너뛴다.
+        "ig_id": P.IG_ID,
     }
     record(entry)
     return {"status": "published", "media_id": media_id}

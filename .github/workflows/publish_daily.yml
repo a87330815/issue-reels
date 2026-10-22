@@ -1,0 +1,117 @@
+name: 자동 발행 (하루 3건)
+
+# 하루 3건을 시간 간격을 두고 올린다. 한 번에 몰아 올리면 노출이 분산되고
+# 피드가 도배돼 역효과가 난다.
+on:
+  schedule:
+    # 한국시간 기준 08:00 / 12:30 / 19:00 (UTC는 -9시간)
+    - cron: "0 23 * * *"     # KST 08:00 (다음날)
+    - cron: "30 3 * * *"     # KST 12:30
+    - cron: "0 10 * * *"     # KST 19:00
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "드라이런 (발행하지 않고 대상만 확인)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+# 슬롯이 겹쳐 같은 대본이 두 번 올라가는 일이 없도록 한 번에 하나만 돈다.
+concurrency:
+  group: publish-daily
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -q Pillow requests
+
+      # 예약 발행은 사람이 보지 않는 사이에 계정에 글을 올린다.
+      # 변수 하나로 즉시 멈출 수 있어야 한다.
+      - name: 자동 발행 스위치 확인
+        id: gate
+        env:
+          AUTO_PUBLISH: ${{ vars.AUTO_PUBLISH }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT" = "schedule" ] && [ "$AUTO_PUBLISH" != "on" ]; then
+            echo "자동 발행이 꺼져 있습니다 (AUTO_PUBLISH=$AUTO_PUBLISH). 올리지 않고 끝냅니다."
+            echo "run=no" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$EVENT" = "schedule" ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          elif [ "$DRY_RUN" = "true" ]; then
+            echo "publish=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "run=yes" >> "$GITHUB_OUTPUT"
+
+      - name: 대상 선정
+        if: steps.gate.outputs.run == 'yes'
+        id: pick
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
+        run: |
+          python -u queue_next.py --list
+          STEM="$(python -u queue_next.py)" || {
+            echo "::warning::대기열이 비었습니다 — 이번 슬롯은 건너뜁니다"
+            echo "stem=" >> "$GITHUB_OUTPUT"; exit 0
+          }
+          echo "stem=$STEM" >> "$GITHUB_OUTPUT"
+          echo "이번 슬롯 대상: $STEM"
+
+      - name: 발행
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_HOST: ${{ vars.IG_API_HOST }}
+          MEDIA_REPO: ${{ secrets.MEDIA_REPO || vars.MEDIA_REPO || 'a87330815/issue-reels-media' }}
+          MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+          STEM: ${{ steps.pick.outputs.stem }}
+          DO_PUBLISH: ${{ steps.gate.outputs.publish }}
+        run: |
+          set -o pipefail
+          mkdir -p out
+          SCRIPT="out/scripts/${STEM}.json"
+          CARDS="out/cards_${STEM#news_}"
+          PHOTOS="out/photos/${STEM}"
+          FLAG=""
+          if [ "$DO_PUBLISH" = "true" ]; then
+            FLAG="--publish"
+            echo "::warning::실제 발행 — $STEM 이(가) 계정에 올라갑니다"
+          else
+            echo "드라이런 — 올리지 않습니다"
+          fi
+          python -u publish_cards.py "$CARDS" \
+            --script "$SCRIPT" --photos "$PHOTOS" \
+            $FLAG 2>&1 | tee -a out/publish_cards.log
+
+      - name: 발행 기록 커밋
+        if: always() && steps.gate.outputs.run == 'yes'
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for p in out/publish_cards.log out/published_cards.json; do
+            [ -f "$p" ] && git add -f "$p" || true
+          done
+          git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
+          git commit -m "자동 발행 기록 $(date +%Y-%m-%d\ %H:%M)"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin main && exit 0
+            sleep 5
+          done
+          echo "::error::발행 기록 푸시 실패"; exit 1

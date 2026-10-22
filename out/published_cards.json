@@ -31,7 +31,8 @@
       "card_dir": "out/cards_002",
       "script": "out/scripts/news_002.json",
       "title": "암표 거래 전면 금지",
-      "count": 6
+      "count": 6,
+      "ig_id": "17841459210979722"
     },
     {
       "published_at": "2026-10-22T06:36:44.651573+00:00",
