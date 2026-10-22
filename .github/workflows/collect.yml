@@ -2,8 +2,14 @@ name: collect
 
 on:
   schedule:
-    # UTC 23:00 = 한국시간 08:00 (다음날)
-    - cron: "0 23 * * *"
+    # 한국 공공 API가 해외 IP를 간헐적으로 막는다. 러너 IP 대역에 따라
+    # 통째로 막히는 날이 있어 하루 한 번이면 운에 맡기는 꼴이 된다.
+    # 하루 네 번 시도해 뚫리는 창을 잡고, 성공한 날 많이 받아 버퍼로 쌓는다.
+    # 수집이 0건이면 기존 수집물을 덮어쓰지 않으므로 헛돌아도 손해가 없다.
+    - cron: "0 23 * * *"     # KST 08:00 (다음날)
+    - cron: "0 3 * * *"      # KST 12:00
+    - cron: "0 8 * * *"      # KST 17:00
+    - cron: "0 14 * * *"     # KST 23:00
   workflow_dispatch:
 
 # 수집 로그를 저장소에 커밋하므로 쓰기 권한이 필요하다.
@@ -52,6 +58,18 @@ jobs:
           KOSIS_KEY: ${{ secrets.KOSIS_KEY }}
         run: python -u collect.py 2>&1 | tee -a out/collect.log
 
+      # 차단이 간헐적이라 "며칠 돌려보고 판단"하려면 성공/실패가 쌓여야 한다.
+      # 성공률이 낮으면 한국 IP 경유로 전환할 근거가 된다.
+      - name: 수집 성적 기록
+        if: always()
+        run: |
+          mkdir -p out
+          CNT=$(python -c "import json;print(len(json.load(open('out/collected.json')).get('items',[])))" 2>/dev/null || echo 0)
+          REACH=$(grep -c '→ 000' out/collect.log 2>/dev/null || echo 0)
+          if [ "$REACH" -ge 4 ]; then R="차단"; else R="연결"; fi
+          echo "$(date -u +%Y-%m-%dT%H:%MZ)  $R  보유 ${CNT}건" >> out/collect_history.log
+          echo "최근 성적:"; tail -10 out/collect_history.log
+
       # 아티팩트는 이 환경에서 받기 어려워 로그를 저장소로 남긴다.
       - name: 수집 로그 커밋
         if: always()
@@ -61,7 +79,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # 수집물도 저장소에 남긴다. 아티팩트로만 두면 다음 단계인
           # 대본 생성이 집어갈 수 없다.
-          for p in out/collect.log out/collected.json out/seen.json; do
+          for p in out/collect.log out/collected.json out/seen.json out/collect_history.log; do
             [ -f "$p" ] && git add -f "$p" || true
           done
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
