@@ -353,7 +353,7 @@ TEMPLATES = {
             lambda a: ["이번 달", f"<r>{hook_fit(a.get('hook',''))}</r>", "거래 떴습니다"],
         ],
         "narration_pattern": "{summary}. 수치로 확인해보겠습니다.",
-        "scene_count": 3,
+        "scene_count": 6,
     },
     "시행일훅": {
         "cover_pattern": [
@@ -361,7 +361,7 @@ TEMPLATES = {
             lambda a: ["다음 달부터", "<r>이게 바뀝니다</r>"],
         ],
         "narration_pattern": "{summary}. 시행일 전에 꼭 확인하세요.",
-        "scene_count": 3,
+        "scene_count": 6,
     },
     "오해정정": {
         "cover_pattern": [
@@ -369,14 +369,14 @@ TEMPLATES = {
             lambda a: ["이거 반대로", "<y>알고 계셨죠</y>"],
         ],
         "narration_pattern": "많은 분들이 {summary}에 대해 잘못 알고 계십니다. 사실은 이렇습니다.",
-        "scene_count": 3,
+        "scene_count": 6,
     },
     "체크리스트": {
         "cover_pattern": [
             lambda a: ["반드시 확인", f"<r>{hook_fit(a.get('hook',''))}</r>"],
         ],
         "narration_pattern": "{summary}와 관련해서 꼭 체크해야 할 사항들을 정리했습니다.",
-        "scene_count": 4,
+        "scene_count": 6,
     },
     # 실거래가는 그 동네 주민만 해당하는 정보가 아니라 누구나 보는 시세다.
     # "주민만 해당"은 사실과 어긋나고, 같은 문구가 연달아 나오면 피드가
@@ -390,29 +390,217 @@ TEMPLATES = {
             lambda a: [f"{hook_fit(a.get('hook',''))}", "<y>실거래가 공개</y>"],
         ],
         "narration_pattern": "{summary}. 국토교통부에 신고된 실제 거래 금액입니다.",
-        "scene_count": 3,
+        "scene_count": 6,
     },
 }
 
 
-def _format_item_narration(item):
-    """수집 항목을 자연스러운 내레이션 문장으로 변환한다."""
+def _scene_image_keyword(angle, scene_type="intro"):
+    """앵글에 맞는 이미지 검색 키워드를 반환한다 (영문 — Openverse/Wikimedia용)."""
+    fmt = angle.get("type", "")
+
+    if fmt == "지역한정":
+        if scene_type == "intro":
+            return "korea apartment complex aerial view"
+        return "real estate price chart graph"
+    elif fmt == "숫자훅":
+        if scene_type == "intro":
+            return "luxury apartment building korea"
+        return "housing price comparison chart"
+    elif fmt == "오해정정":
+        if scene_type == "intro":
+            return "new apartment building modern korea"
+        return "old vs new apartment building"
+    elif fmt == "체크리스트":
+        return "checklist document pen"
+    elif fmt == "시행일훅":
+        return "government policy law document"
+    return "apartment building city skyline"
+
+
+def _scene_image_keyword_item(item):
+    """개별 거래 항목에 맞는 이미지 키워드를 반환한다 (영문)."""
+    amount = item.get("amount", 0)
+    if isinstance(amount, str):
+        amount = int(amount.replace(",", "").strip() or 0)
+
+    # 고가 아파트 vs 일반 아파트
+    if amount >= 100000:  # 10억 이상
+        return "luxury high rise apartment building"
+    elif amount >= 30000:  # 3억 이상
+        return "modern apartment building residential"
+    return "apartment building korea residential"
+
+
+def _build_context_scene(angle):
+    """앵글의 전체 데이터를 분석하는 맥락 요약 문장을 만든다."""
+    items = angle.get("items", [])
+    fmt = angle.get("type", "")
+
+    if not items or not isinstance(items[0], dict):
+        return None
+
+    src = items[0].get("source", "")
+    if src != "molit_apt_trade":
+        return None
+
+    # 평균가 계산
+    amounts = []
+    for item in items:
+        a = item.get("amount", 0)
+        if isinstance(a, str):
+            a = int(a.replace(",", "").strip() or 0)
+        if a > 0:
+            amounts.append(a)
+
+    if not amounts:
+        return None
+
+    avg = sum(amounts) / len(amounts)
+    hi = max(amounts)
+    lo = min(amounts)
+
+    def _price(v):
+        if v >= 10000:
+            return f"{v/10000:.1f}억원"
+        return f"{v:,.0f}만원"
+
+    region = items[0].get("region", "")
+
+    if fmt == "지역한정":
+        return (
+            f"{region} 이번 달 거래를 종합하면, "
+            f"평균 거래가는 {_price(avg)}, "
+            f"최고가 {_price(hi)}, 최저가 {_price(lo)}입니다. "
+            f"총 {len(amounts)}건이 신고되었습니다."
+        )
+    elif fmt == "숫자훅":
+        if len(amounts) >= 2:
+            return (
+                f"이번에 확인된 {len(amounts)}건의 거래에서 "
+                f"가격 차이가 {_price(hi - lo)}까지 벌어졌습니다. "
+                f"평균 {_price(avg)} 수준입니다."
+            )
+    elif fmt == "오해정정":
+        # 신축 vs 구축 비교 맥락
+        new_prices = []
+        old_prices = []
+        import datetime
+        cur_year = datetime.datetime.now().year
+        for item in items:
+            by = item.get("build_year", 0)
+            try:
+                by = int(by)
+            except (TypeError, ValueError):
+                continue
+            a = item.get("amount", 0)
+            if isinstance(a, str):
+                a = int(a.replace(",", "").strip() or 0)
+            if by >= cur_year - 5:
+                new_prices.append(a)
+            else:
+                old_prices.append(a)
+        if new_prices and old_prices:
+            diff = sum(new_prices)/len(new_prices) - sum(old_prices)/len(old_prices)
+            return (
+                f"신축(5년 이내)과 구축의 평균 가격 차이는 {_price(abs(int(diff)))}입니다. "
+                f"신축 평균 {_price(int(sum(new_prices)/len(new_prices)))}, "
+                f"구축 평균 {_price(int(sum(old_prices)/len(old_prices)))}."
+            )
+
+    # 기본 맥락
+    if len(amounts) >= 2:
+        return (
+            f"총 {len(amounts)}건 거래 중 평균가는 {_price(avg)}, "
+            f"최고 {_price(hi)}에서 최저 {_price(lo)}까지 분포합니다."
+        )
+    return None
+
+
+def _format_item_narration(item, idx=0, total=0, angle_data=None):
+    """수집 항목을 자연스러운 내레이션 문장으로 변환한다.
+
+    idx: 이 항목이 장면에서 몇 번째인지 (0-based)
+    total: 같은 앵글의 전체 항목 수
+    angle_data: 앵글의 data dict (맥락 비교용)
+    """
     src = item.get("source", "")
 
     if src == "molit_apt_trade":
         region = item.get("region", item.get("dong", ""))
         apt = item.get("apt", "")
-        area = item.get("area", "")
+        area_raw = item.get("area", "")
         amount_raw = item.get("amount", 0)
         if isinstance(amount_raw, str):
             amount_raw = int(amount_raw.replace(",", "").strip() or 0)
         억 = amount_raw / 10000
         floor = item.get("floor", "")
+        build_year = item.get("build_year", "")
+
         if 억 >= 1:
             price_str = f"{억:.1f}억원"
         else:
             price_str = f"{amount_raw:,}만원"
-        narration = f"{region} {apt} {area}제곱미터, {floor}층이 {price_str}에 거래되었습니다."
+
+        # 면적을 평수로도 표시 (더 직관적)
+        try:
+            area_m2 = float(area_raw)
+            py = area_m2 / 3.3058
+            area_desc = f"전용 {area_m2:.0f}㎡({py:.0f}평)"
+        except (TypeError, ValueError):
+            area_desc = f"전용 {area_raw}㎡"
+
+        # 평당가 계산
+        per_py_str = ""
+        try:
+            area_m2 = float(area_raw)
+            if area_m2 > 10:
+                per_py = amount_raw / (area_m2 / 3.3058)
+                if per_py >= 10000:
+                    per_py_str = f" 평당 {per_py/10000:.1f}억"
+                else:
+                    per_py_str = f" 평당 {per_py:,.0f}만원"
+        except (TypeError, ValueError):
+            pass
+
+        # 건축연도 표시
+        age_str = ""
+        try:
+            if build_year and int(build_year) > 0:
+                import datetime
+                age = datetime.datetime.now().year - int(build_year)
+                if age <= 5:
+                    age_str = f" {int(build_year)}년 준공 신축"
+                elif age <= 15:
+                    age_str = f" {int(build_year)}년 준공({age}년차)"
+                else:
+                    age_str = f" {int(build_year)}년 준공"
+        except (TypeError, ValueError):
+            pass
+
+        # 장면 순서에 따라 톤을 달리한다
+        if idx == 0:
+            narration = (
+                f"{region} {apt}, {area_desc} {floor}층이 "
+                f"{price_str}에 실거래 신고됐습니다.{per_py_str}.{age_str}"
+            )
+        elif idx == 1:
+            narration = (
+                f"같은 동네 {apt}도 주목할 만합니다. "
+                f"{area_desc} {floor}층, 거래가 {price_str}.{per_py_str}"
+            )
+        else:
+            narration = (
+                f"{apt} {area_desc} {floor}층 — {price_str} 거래.{per_py_str}"
+            )
+
+        # 마침표 정리 (연속 마침표, 빈 정보 제거)
+        narration = narration.replace("..", ".").replace(". .", ".").strip()
+        if narration.endswith("."):
+            pass
+        else:
+            narration += "."
+
         return narration, short_subtitle(f"{region} {apt} {price_str}")
 
     # 기타 소스 — key-value 나열
@@ -459,30 +647,50 @@ def template_generate(angle):
 
     # 장면 구성
     scenes = []
+
+    # 인트로 — 주제 이미지
+    intro_keyword = _scene_image_keyword(angle, "intro")
     scenes.append({
         "image": None,
+        "photo_query": intro_keyword,
         "narration": narration_intro,
         "subtitle": short_subtitle(angle.get("short") or angle.get("summary") or narration_intro),
     })
 
-    # 데이터 기반 장면
-    for i, item in enumerate(angle.get("items", [])[:tpl["scene_count"] - 1]):
+    # 데이터 기반 장면 (scene_count - 2: 인트로 1장 + CTA 1장 제외)
+    items = angle.get("items", [])
+    max_data_scenes = tpl["scene_count"] - 2
+    for i, item in enumerate(items[:max_data_scenes]):
         if isinstance(item, dict):
-            narration, subtitle = _format_item_narration(item)
+            narration, subtitle = _format_item_narration(item, idx=i, total=len(items), angle_data=angle.get("data"))
+            img_kw = _scene_image_keyword_item(item)
         else:
             narration = str(item)
             subtitle = narration[:30]
+            img_kw = "부동산 아파트"
         scenes.append({
             "image": None,
+            "photo_query": img_kw,
             "narration": narration,
             "subtitle": subtitle,
+        })
+
+    # 맥락 요약 장면 — 전체 데이터를 한 문장으로 분석
+    context_narration = _build_context_scene(angle)
+    if context_narration:
+        scenes.append({
+            "image": None,
+            "photo_query": _scene_image_keyword(angle, "context"),
+            "narration": context_narration,
+            "subtitle": short_subtitle(context_narration),
         })
 
     # 마무리 장면
     scenes.append({
         "image": None,
-        "narration": "더 자세한 내용은 프로필 링크를 확인해주세요. 팔로우하시면 매일 알려드립니다.",
-        "subtitle": "프로필 링크 확인 · 팔로우",
+        "photo_query": "follow subscribe social media phone",
+        "narration": "오늘 내용이 도움이 되셨다면 팔로우 부탁드립니다. 매일 부동산 이슈를 정리해드립니다.",
+        "subtitle": "팔로우 · 매일 업데이트",
     })
 
     # badge
@@ -504,6 +712,7 @@ def template_generate(angle):
         "title": angle.get("hook", "이슈"),
         "cover": {
             "image": None,
+            "photo_query": _scene_image_keyword(angle, "intro"),
             "lines": cover_lines,
             "badge": badge,
         },
