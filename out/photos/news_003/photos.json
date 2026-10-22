@@ -10,44 +10,44 @@
     {
       "slot": "cover",
       "query": "small shop owner store",
-      "source": "flickr",
-      "creator": "USDAgov",
-      "license": "PDM",
-      "page": "https://www.flickr.com/photos/41284017@N08/38068402991"
+      "source": "Wikimedia Commons",
+      "creator": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:John_Re,_first_shop,_1930s_(01).jpg"
     },
     {
       "slot": "scene1",
       "query": "coins savings",
-      "source": "flickr",
-      "creator": "Images_of_Money",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/59937401@N07/5929488411"
+      "source": "Wikimedia Commons",
+      "creator": "Free Images",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:-finance_-wealth_-savings_-security_-coin.jpg"
     },
     {
       "slot": "scene2",
       "query": "tax documents calculator desk",
-      "source": "flickr",
-      "creator": "Homedust",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/159630537@N08/40924421560"
+      "source": "Wikimedia Commons",
+      "creator": "Judgefloro",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:9999Community_Tax_Certificate.jpg"
     },
     {
       "slot": "scene3",
       "query": "bank building finance",
-      "source": "flickr",
-      "creator": "epicharmus",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/8256808@N02/1481122250"
+      "source": "Wikimedia Commons",
+      "creator": "BasieeG MIEE",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:HK_Admiralty_footbridge_view_office_buildings_facade_Far_East_Finance_n_Bank_of_America_May_2025_R12S.jpg"
     },
     {
       "slot": "scene4",
       "query": "signing documents pen contract",
-      "source": "flickr",
-      "creator": "chrismear",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/89536127@N00/4132167000"
+      "source": "Wikimedia Commons",
+      "creator": "Government of California",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Gavin_Newsom_signs_SB206_on_The_Shop_03.jpg"
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-22T07:06:19Z"
+  "fetched_at": "2026-10-22T12:15:21Z"
 }

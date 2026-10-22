@@ -4,50 +4,77 @@
     "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg"
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
+    "scene7": "scene7.jpg"
   },
   "credits": [
     {
       "slot": "cover",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "seier+seier",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/94852245@N00/2565057817"
+      "query": "luxury apartment building korea",
+      "source": "Wikimedia Commons",
+      "creator": "Haoreima",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Pond_%26_luxury_buildings_in_the_Joysana_Retreat,_a_resort_in_Oinam_town,_near_Nambol_town,_in_Manipur_state_(Kangleipak)_01.jpg"
     },
     {
       "slot": "scene1",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "Bogdan Suditu",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/8726888@N08/2377843417"
+      "query": "luxury apartment building korea",
+      "source": "Wikimedia Commons",
+      "creator": "Haoreima",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Pond_%26_luxury_buildings_in_the_Joysana_Retreat,_a_resort_in_Oinam_town,_near_Nambol_town,_in_Manipur_state_(Kangleipak)_02.jpg"
     },
     {
       "slot": "scene2",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "NNECAPA",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/23163410@N02/2830785109"
+      "query": "luxury high rise apartment building",
+      "source": "Wikimedia Commons",
+      "creator": "Jeramey Jannene from Milwaukee, WI, United States of America",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Blatz_Luxury_Apartments_and_Offices.jpg"
     },
     {
       "slot": "scene3",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "psiaki",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/55723329@N00/3758676511"
+      "query": "luxury high rise apartment building",
+      "source": "Wikimedia Commons",
+      "creator": "Paul Sableman",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Luxury_Leasing_(31310215274).jpg"
     },
     {
       "slot": "scene4",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "psiaki",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/55723329@N00/5106822907"
+      "query": "luxury high rise apartment building",
+      "source": "Wikimedia Commons",
+      "creator": "Paul Sableman",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Luxury_Leasing_(31972162881).jpg"
+    },
+    {
+      "slot": "scene5",
+      "query": "luxury high rise apartment building",
+      "source": "Wikimedia Commons",
+      "creator": "Carol M. Highsmith",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Museum_Tower,_a_luxury_high-rise_apartment_building_in_the_Arts_District_of_Dallas,_Texas_LCCN2015630823.tif"
+    },
+    {
+      "slot": "scene6",
+      "query": "housing price comparison chart",
+      "source": "Wikimedia Commons",
+      "creator": "Wikideas1",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Housing_prices_to_personal_income_ratios.webp"
+    },
+    {
+      "slot": "scene7",
+      "query": "팔로우 구독 부동산",
+      "source": "Wikimedia Commons",
+      "creator": "Steven Falconer from Niagara Falls, Canada",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:FESC-23_(31319933915).jpg"
     }
   ],
-  "wanted": 5,
-  "fetched_at": "2026-10-22T07:04:12Z"
+  "wanted": 8,
+  "fetched_at": "2026-10-22T11:53:07Z"
 }

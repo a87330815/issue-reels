@@ -2,7 +2,6 @@
   "photos": {
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
-    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg"
   },
@@ -10,44 +9,36 @@
     {
       "slot": "cover",
       "query": "concert audience crowd stage lights",
-      "source": "flickr",
-      "creator": "Incase.",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/62021300@N00/2720494170"
+      "source": "Wikimedia Commons",
+      "creator": "Shixart1985",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Live_band_performance_at_an_outdoor_concert_with_lights_and_energetic_crowd_during_nighttime.jpg"
     },
     {
       "slot": "scene1",
       "query": "empty theater seats auditorium",
-      "source": "flickr",
-      "creator": "inov8d",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/107743954@N05/14010104872"
-    },
-    {
-      "slot": "scene2",
-      "query": "calculator receipt paperwork",
-      "source": "flickr",
-      "creator": "Wonderlane",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/71401718@N00/6773873411"
+      "source": "Wikimedia Commons",
+      "creator": "Giacomo Brogi",
+      "license": "PDM-owner",
+      "page": "https://commons.wikimedia.org/wiki/File:Pompei-_Anfiteatro,_No._5076_(SM_stf1822).png"
     },
     {
       "slot": "scene3",
       "query": "person using smartphone at night",
-      "source": "flickr",
-      "creator": "Tiomax80",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/69062568@N02/51945449417"
+      "source": "Wikimedia Commons",
+      "creator": "LiCheng Shih",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:An_entomologist_in_a_guided_tour_explaining_to_people,_in_Jiji,_Taiwan_2023-05-13.jpg"
     },
     {
       "slot": "scene4",
       "query": "event tickets paper",
-      "source": "flickr",
-      "creator": "kalleboo",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/82365211@N00/6623636385"
+      "source": "Wikimedia Commons",
+      "creator": "anntinomy from Kyiv, Ukraine",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Kyiv_Opera_tickets_2007_(16264583247).jpg"
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-22T07:05:42Z"
+  "fetched_at": "2026-10-22T12:12:35Z"
 }

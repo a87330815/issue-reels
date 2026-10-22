@@ -4,50 +4,77 @@
     "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg"
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
+    "scene7": "scene7.jpg"
   },
   "credits": [
     {
       "slot": "cover",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "seier+seier",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/94852245@N00/2565057817"
+      "query": "korea apartment complex aerial view",
+      "source": "Wikimedia Commons",
+      "creator": "LandAndTree",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Anseong_City_Oksan-dong_Complex_Mall_20250101_01.jpg"
     },
     {
       "slot": "scene1",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "Bogdan Suditu",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/8726888@N08/2377843417"
+      "query": "korea apartment complex aerial view",
+      "source": "Wikimedia Commons",
+      "creator": "고려",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Burim_Middle_School,_Photographed_from_Daran-dong_Saetbyeol_Hanyang_Apartment_Complex_6.jpg"
     },
     {
       "slot": "scene2",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "NNECAPA",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/23163410@N02/2830785109"
+      "query": "modern apartment building residential",
+      "source": "Wikimedia Commons",
+      "creator": "Tercprojects",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:AI-generated_image_of_a_modern_apartment_living_room_with_a_rolled_floor_plan_and_calculator_on_a_coffee_table.png"
     },
     {
       "slot": "scene3",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "psiaki",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/55723329@N00/3758676511"
+      "query": "modern apartment building residential",
+      "source": "Wikimedia Commons",
+      "creator": "Charles from Port Chester, New York",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Brand_new_Park_Modern_residential_building_in_Bayswater,_London,_England_(U.K.)_(53331134057).jpg"
     },
     {
       "slot": "scene4",
-      "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "psiaki",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/55723329@N00/5106822907"
+      "query": "modern apartment building residential",
+      "source": "Wikimedia Commons",
+      "creator": "\nFrancisco Anzola",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Residential_Building_(216845175).jpeg"
+    },
+    {
+      "slot": "scene5",
+      "query": "modern apartment building residential",
+      "source": "Wikimedia Commons",
+      "creator": "Dale Cruse - 10M views from San Francisco, CA, USA",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Tiled_Mid-Century_Apartment_Building_with_Balconies_in_Porto,_Portugal_(54821673190).jpg"
+    },
+    {
+      "slot": "scene6",
+      "query": "real estate price chart graph",
+      "source": "Wikimedia Commons",
+      "creator": "Wikideas1",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Chinese_real_residential_property_prices.webp"
+    },
+    {
+      "slot": "scene7",
+      "query": "팔로우 구독 부동산",
+      "source": "Wikimedia Commons",
+      "creator": "Steven Falconer from Niagara Falls, Canada",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:FESC-23_(31319933915).jpg"
     }
   ],
-  "wanted": 5,
-  "fetched_at": "2026-10-22T07:04:17Z"
+  "wanted": 8,
+  "fetched_at": "2026-10-22T11:57:15Z"
 }

@@ -10,44 +10,44 @@
     {
       "slot": "cover",
       "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "seier+seier",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/94852245@N00/2565057817"
+      "source": "Wikimedia Commons",
+      "creator": "TylerMascola",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Apartment_Complex_Child_Playground_1.png"
     },
     {
       "slot": "scene1",
       "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "Bogdan Suditu",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/8726888@N08/2377843417"
+      "source": "Wikimedia Commons",
+      "creator": "TylerMascola",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Apartment_Complex_Parking_Lot_1.png"
     },
     {
       "slot": "scene2",
       "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "NNECAPA",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/23163410@N02/2830785109"
+      "source": "Wikimedia Commons",
+      "creator": "TylerMascola",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Apartment_Complex_Recreational_Area_1.png"
     },
     {
       "slot": "scene3",
       "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "psiaki",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/55723329@N00/3758676511"
+      "source": "Wikimedia Commons",
+      "creator": "Pryshutova Viktoria",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Burned_residential_apartment_building_in_Lysychansk,_July_28,_2014.jpg"
     },
     {
       "slot": "scene4",
       "query": "apartment building residential",
-      "source": "flickr",
-      "creator": "psiaki",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/55723329@N00/5106822907"
+      "source": "Wikimedia Commons",
+      "creator": "Syced",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Construction_of_a_new_residential_building_in_Ebisu.jpg"
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-22T07:03:59Z"
+  "fetched_at": "2026-10-22T11:44:53Z"
 }
