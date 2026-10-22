@@ -19,6 +19,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 
 import yaml
@@ -175,12 +176,22 @@ def fetch(src):
         params = {"serviceKey": key, "numOfRows": src.get("rows", 100), "pageNo": 1}
         params.update(extra)
 
-        try:
-            r = requests.get(src["endpoint"], params=params, timeout=25)
-            r.raise_for_status()
-        except Exception as e:
-            # 예외 메시지에 URL이 실리고 URL에는 인증키가 들어 있다. 반드시 지운다.
-            errors.append(f"{extra}: {type(e).__name__}: {str(e).replace(key, '***')}")
+        # 해외 IP 차단이 간헐적이라 같은 호출이 한 번은 막히고 한 번은 뚫린다.
+        # 한 번 실패로 포기하면 수집 전체가 빈손이 되므로 간격을 두고 재시도한다.
+        r, last = None, None
+        for attempt in range(3):
+            try:
+                r = requests.get(src["endpoint"], params=params, timeout=25)
+                r.raise_for_status()
+                break
+            except Exception as e:
+                # 예외 메시지에 URL이 실리고 URL에는 인증키가 들어 있다. 반드시 지운다.
+                last = f"{type(e).__name__}: {str(e).replace(key, '***')}"
+                r = None
+                if attempt < 2:
+                    time.sleep(3 * (attempt + 1))
+        if r is None:
+            errors.append(f"{extra}: {last}")
             continue
 
         err = api_error(r.text)
@@ -242,6 +253,22 @@ def main():
 
     os.makedirs(OUT_DIR, exist_ok=True)
     out = os.path.join(OUT_DIR, "collected.json")
+
+    # 한국 공공 API는 해외 IP를 간헐적으로 막는다. 러너 IP 대역에 따라
+    # 전부 타임아웃이 나는 날이 있고, 그때 빈 결과로 덮어쓰면 멀쩡히 받아둔
+    # 수집물이 날아간다. 실제로 685건이 0건으로 지워졌다.
+    # 수집이 0건이면 기존 파일을 건드리지 않는다.
+    if not collected and os.path.exists(out):
+        try:
+            with open(out, encoding="utf-8") as f:
+                prev = json.load(f).get("items", [])
+        except Exception:
+            prev = []
+        if prev:
+            print(f"\n수집 0건 — 기존 {len(prev)}건을 유지합니다 "
+                  f"(API 접속 실패로 보입니다. 덮어쓰지 않습니다)")
+            return 0
+
     with open(out, "w", encoding="utf-8") as f:
         json.dump({
             "collected_at": datetime.now(timezone.utc).isoformat(),
