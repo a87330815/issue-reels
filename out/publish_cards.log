@@ -105,3 +105,46 @@
 
 준비 완료. 실제 발행은 하지 않았습니다 (--publish 를 주면 올라갑니다).
   캐러셀 컨테이너: 17970258095973700
+
+대상: out/cards_20261020_01_숫자훅  (5장)
+대본: out/scripts/20261020_01_숫자훅.json
+
+--- 캡션 ---
+23억 아파트
+
+· 삼성동 23.0억 거래
+· 삼성동 래미안 23.0억원
+
+저장해두고 필요할 때 꺼내 보세요.
+
+출처: 공공데이터포털 · 국토교통부
+
+#주거 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
+사진: seier+seier (flickr, BY) / Bogdan Suditu (flickr, BY) / NNECAPA (flickr, BY)
+--- 캡션 끝 ---
+
+  [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
+  API 호스트 확정: graph.facebook.com
+남은 발행 가능: 98건
+
+1) 이미지 공개 호스팅
+  ✓ [1/5] 01_cover.jpg  312KB  200 application/octet-stream
+  ✓ [2/5] 02_scene.jpg  357KB  200 application/octet-stream
+  ✓ [3/5] 03_scene.jpg  275KB  200 application/octet-stream
+  ✓ [4/5] 04_scene.jpg  510KB  200 application/octet-stream
+  ✓ [5/5] 05_outro.jpg  92KB  200 application/octet-stream
+
+2) 장별 컨테이너 생성
+  [1/5] 컨테이너 17970258392973700
+  [2/5] 컨테이너 17970258422973700
+  [3/5] 컨테이너 17970258443973700
+  [4/5] 컨테이너 17970258536973700
+  [5/5] 컨테이너 17970258557973700
+
+3) 캐러셀 컨테이너 생성
+  캐러셀 17970258578973700
+      0초  FINISHED
+
+4) 발행
+  발행 완료: media_id=18122854097514302
+발행 기록: out/published_cards.json
