@@ -184,12 +184,28 @@ def ensure_ig_id():
 
     계정 ID는 비밀값이 아니라 토큰에서 바로 얻을 수 있는 공개 식별자다.
     Secret 등록을 기다릴 이유가 없어 자동으로 해결한다."""
+    forced = os.environ.get("IG_API_HOST", "").strip()
+
     if P.IG_ID:
+        # ID를 미리 받아두면 조회 단계를 건너뛰는데, 그러면 호스트가 기본값
+        # (graph.instagram.com)에 머문다. 페이지 토큰은 그 호스트에서 파싱되지
+        # 않으므로, 어느 호스트가 이 토큰을 받아주는지 여기서 정해둔다.
+        if forced:
+            _use_host(forced)
+        elif P.TOKEN:
+            for host in API_HOSTS:
+                _use_host(host)
+                try:
+                    P.api("GET", f"{P.IG_ID}", fields="id")
+                    print(f"  API 호스트 확정: {host}")
+                    break
+                except Exception as e:
+                    print(f"  [{host}] 사용 불가: {e}")
         return P.IG_ID
+
     if not P.TOKEN:
         return ""
 
-    forced = os.environ.get("IG_API_HOST", "").strip()
     hosts = (forced,) if forced else API_HOSTS
 
     for host in hosts:
