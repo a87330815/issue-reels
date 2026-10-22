@@ -1,5 +1,5 @@
   [graph.instagram.com] 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
-  [graph.facebook.com] me/accounts 조회 실패: [190/463] Error validating access token: Session has expired on Wednesday, 21-Oct-26 22:00:00 PDT. The current time is Wednesday, 21-Oct-26 23:22:41 PDT.
+  [graph.facebook.com] me/accounts 조회 실패: [100/-] (#100) Tried accessing nonexisting field (accounts)
 인스타 발행 설정:
   호스트      graph.facebook.com
   API 버전    v26.0
@@ -22,25 +22,24 @@
 설정 완료
 [중단] 설정 점검 실패 — 위 안내를 확인하세요
 
-대상: out/cards_001  (6장)
-대본: out/scripts/news_001.json
+대상: out/cards_002  (6장)
+대본: out/scripts/news_002.json
 
 --- 캡션 ---
-KTX 예매 2개월 전부터
+암표 거래 전면 금지
 
-· KTX·SRT 통합 앱 출시
-· 예매 기간 2개월로 확대
-· 좌석 공급도 대폭 확대
-· 코레일플러스 미리 깔아둬라
+· 판매 금액 50배 과징금
+· 신고하면 포상금 지급
+· 정가 예매 시대 시작
 
 저장해두고 필요할 때 꺼내 보세요.
 
 출처: 기획재정부 · 2026 하반기 달라지는 제도
 
-#교통 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
-사진: LWYang (Wikimedia Commons, CC BY 2.0) / transitpeople (flickr, BY) / Nicole Beauchamp (flickr, BY) / shankar s. (flickr, BY)
+#생활 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
+사진: Incase. (flickr, BY) / inov8d (flickr, BY) / Wonderlane (flickr, BY) / Tiomax80 (flickr, BY) / kalleboo (flickr, BY)
 --- 캡션 끝 ---
 
   [graph.instagram.com] 조회 실패: [190/-] Invalid OAuth access token - Cannot parse access token
-  [graph.facebook.com] me/accounts 조회 실패: [190/463] Error validating access token: Session has expired on Wednesday, 21-Oct-26 22:00:00 PDT. The current time is Wednesday, 21-Oct-26 23:22:42 PDT.
+  [graph.facebook.com] me/accounts 조회 실패: [100/-] (#100) Tried accessing nonexisting field (accounts)
 [중단] IG_USER_ID를 토큰으로 조회하지 못했습니다 (토큰 만료이거나 권한 부족일 수 있습니다)
