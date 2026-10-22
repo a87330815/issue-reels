@@ -7,7 +7,7 @@
   액세스 토큰 설정됨
 
 계정 확인: @jjombwabwa (비즈니스) · 게시물 1개
-발행 한도: 24시간 기준 1/100건 사용
+발행 한도: 24시간 기준 3/100건 사용
 
 설정 완료
 
@@ -18,133 +18,45 @@
 
 설정 완료
 
-대상: out/cards_002  (6장)
-대본: out/scripts/news_002.json
+대상: out/cards_20261022_01_숫자훅  (5장)
+대본: out/scripts/20261022_01_숫자훅.json
 
 --- 캡션 ---
-암표 거래 전면 금지
+120억 아파트
 
-· 판매 금액 50배 과징금
-· 신고하면 포상금 지급
-· 정가 예매 시대 시작
-
-저장해두고 필요할 때 꺼내 보세요.
-
-출처: 기획재정부 · 2026 하반기 달라지는 제도
-
-#생활 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
-사진: Incase. (flickr, BY) / inov8d (flickr, BY) / Wonderlane (flickr, BY) / Tiomax80 (flickr, BY) / kalleboo (flickr, BY)
---- 캡션 끝 ---
-
-  [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
-  API 호스트 확정: graph.facebook.com
-남은 발행 가능: 99건
-
-1) 이미지 공개 호스팅
-  ✓ [1/6] 01_cover.jpg  280KB  200 application/octet-stream
-  ✓ [2/6] 02_scene.jpg  388KB  200 application/octet-stream
-  ✓ [3/6] 03_scene.jpg  284KB  200 application/octet-stream
-  ✓ [4/6] 04_scene.jpg  349KB  200 application/octet-stream
-  ✓ [5/6] 05_scene.jpg  312KB  200 application/octet-stream
-  ✓ [6/6] 06_outro.jpg  85KB  200 application/octet-stream
-
-2) 장별 컨테이너 생성
-  [1/6] 컨테이너 17970243785973700
-  [2/6] 컨테이너 17970243827973700
-  [3/6] 컨테이너 17970243875973700
-  [4/6] 컨테이너 17970243923973700
-  [5/6] 컨테이너 17970243944973700
-  [6/6] 컨테이너 17970244004973700
-
-3) 캐러셀 컨테이너 생성
-  캐러셀 17970244031973700
-      0초  FINISHED
-
-4) 발행
-  발행 완료: media_id=18132036466684313
-발행 기록: out/published_cards.json
-
-대상: out/cards_20261020_01_숫자훅  (5장)
-대본: out/scripts/20261020_01_숫자훅.json
-
---- 캡션 ---
-23억 아파트
-
-· 삼성동 23.0억 거래
-· 삼성동 래미안 23.0억원
+· 반포동 120.0억 거래
+· 반포동 래미안원베일리 120.0억원
 
 저장해두고 필요할 때 꺼내 보세요.
 
 출처: 공공데이터포털 · 국토교통부
 
 #주거 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
-사진: seier+seier (flickr, BY) / Bogdan Suditu (flickr, BY) / NNECAPA (flickr, BY)
+사진: Haoreima (Wikimedia Commons, CC BY 4.0) / Jeramey Jannene from Milwaukee, WI, United States of America (Wikimedia Commons, CC BY 2.0) / Steven Falconer from Niagara Falls, Canada (Wikimedia Commons, CC BY 2.0)
 --- 캡션 끝 ---
 
   [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
   API 호스트 확정: graph.facebook.com
-남은 발행 가능: 98건
+남은 발행 가능: 97건
 
 1) 이미지 공개 호스팅
-  ✓ [1/5] 01_cover.jpg  312KB  200 application/octet-stream
-  ✓ [2/5] 02_scene.jpg  357KB  200 application/octet-stream
-  ✓ [3/5] 03_scene.jpg  275KB  200 application/octet-stream
-  ✓ [4/5] 04_scene.jpg  510KB  200 application/octet-stream
+  ✓ [1/5] 01_cover.jpg  431KB  200 application/octet-stream
+  ✓ [2/5] 02_scene.jpg  449KB  200 application/octet-stream
+  ✓ [3/5] 03_scene.jpg  368KB  200 application/octet-stream
+  ✓ [4/5] 04_scene.jpg  378KB  200 application/octet-stream
   ✓ [5/5] 05_outro.jpg  92KB  200 application/octet-stream
 
 2) 장별 컨테이너 생성
-  [1/5] 컨테이너 17970257798973700
-  [2/5] 컨테이너 17970257819973700
-  [3/5] 컨테이너 17970257885973700
-  [4/5] 컨테이너 17970258014973700
-  [5/5] 컨테이너 17970258071973700
+  [1/5] 컨테이너 17970310442973700
+  [2/5] 컨테이너 17970310484973700
+  [3/5] 컨테이너 17970310505973700
+  [4/5] 컨테이너 17970310544973700
+  [5/5] 컨테이너 17970310568973700
 
 3) 캐러셀 컨테이너 생성
-  캐러셀 17970258095973700
-      0초  FINISHED
-
-준비 완료. 실제 발행은 하지 않았습니다 (--publish 를 주면 올라갑니다).
-  캐러셀 컨테이너: 17970258095973700
-
-대상: out/cards_20261020_01_숫자훅  (5장)
-대본: out/scripts/20261020_01_숫자훅.json
-
---- 캡션 ---
-23억 아파트
-
-· 삼성동 23.0억 거래
-· 삼성동 래미안 23.0억원
-
-저장해두고 필요할 때 꺼내 보세요.
-
-출처: 공공데이터포털 · 국토교통부
-
-#주거 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
-사진: seier+seier (flickr, BY) / Bogdan Suditu (flickr, BY) / NNECAPA (flickr, BY)
---- 캡션 끝 ---
-
-  [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
-  API 호스트 확정: graph.facebook.com
-남은 발행 가능: 98건
-
-1) 이미지 공개 호스팅
-  ✓ [1/5] 01_cover.jpg  312KB  200 application/octet-stream
-  ✓ [2/5] 02_scene.jpg  357KB  200 application/octet-stream
-  ✓ [3/5] 03_scene.jpg  275KB  200 application/octet-stream
-  ✓ [4/5] 04_scene.jpg  510KB  200 application/octet-stream
-  ✓ [5/5] 05_outro.jpg  92KB  200 application/octet-stream
-
-2) 장별 컨테이너 생성
-  [1/5] 컨테이너 17970258392973700
-  [2/5] 컨테이너 17970258422973700
-  [3/5] 컨테이너 17970258443973700
-  [4/5] 컨테이너 17970258536973700
-  [5/5] 컨테이너 17970258557973700
-
-3) 캐러셀 컨테이너 생성
-  캐러셀 17970258578973700
+  캐러셀 17970310613973700
       0초  FINISHED
 
 4) 발행
-  발행 완료: media_id=18122854097514302
+  발행 완료: media_id=17961576579236448
 발행 기록: out/published_cards.json
