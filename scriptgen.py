@@ -32,6 +32,7 @@ render.py가 소비하는 대본 JSON 3편을 생성한다.
 }
 """
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -60,15 +61,24 @@ def strip_markup(text):
     return re.sub(r"</?[ry]>", "", text)
 
 
-def hook_fit(text, limit=6):
-    """단어 경계를 지키면서 limit자 이내로 자른다."""
+def hook_fit(text, limit=10):
+    """단어 경계를 지키면서 limit자 이내로 자른다.
+
+    기본값이 6자였을 때 "평당 3.0억"이 "평당"으로 잘려 숫자가 사라졌다.
+    숫자가 카드의 핵심이라 그러면 카드 자체가 무의미해진다. 커버 총량은
+    validate_cover가 24자로 막으므로 여기서까지 좁게 자를 이유가 없다.
+    """
     words = text.split()
     result = ""
     for w in words:
         if len(result) + len(w) + (1 if result else 0) > limit:
             break
         result = result + " " + w if result else w
-    return result or text[:limit]
+    if result:
+        return result
+    # 첫 단어부터 limit을 넘으면 통째로 돌려준다. 잘라서 뜻을 잃느니
+    # 길게 두고 validate_cover가 거르게 한다.
+    return text
 
 
 def short_subtitle(text, limit=22):
@@ -148,6 +158,9 @@ def analyze_apt_trade(items):
             "category": "주거", "attribution": "공공데이터포털 · 국토교통부",
             "deal_year": it.get("deal_year", ""),
             "deal_month": it.get("deal_month", ""),
+            # 신축·구축 비교 앵글이 이 값을 본다. 빠져 있어서 그 앵글이
+            # 한 번도 만들어지지 않았다.
+            "build_year": it.get("build_year", ""),
         })
 
     if not by_region:
@@ -220,12 +233,18 @@ def analyze_apt_trade(items):
     # 앵글 4: 동네별 최고가 — "우리 동네 제일 비싼 집"은 지역마다 다른 이야기다
     # 앞 앵글이 이미 쓴 동네는 건너뛴다. 같은 동네 이야기가 연달아 올라가면
     # 하루치를 벌어놓고도 피드가 똑같아 보인다.
+    # 같은 유형이 과반이면 피드가 단조로워진다. 동네별 최고가는 3개까지만
+    # 쓰고, 나머지 자리는 아래의 성격이 다른 앵글에 넘긴다.
     used_regions = {top.get("region"), busiest[0]}
     by_count = sorted(by_region.items(), key=lambda x: len(x[1]), reverse=True)
+    region_angles = 0
     for region, deals in by_count[:8]:
+        if region_angles >= 3:
+            break
         if len(deals) < 5 or region in used_regions:
             continue
         used_regions.add(region)
+        region_angles += 1
         best = max(deals, key=lambda d: d["amount"])
         top5 = sorted(deals, key=lambda d: d["amount"], reverse=True)[:5]
         angles.append({
@@ -279,9 +298,11 @@ def analyze_apt_trade(items):
             old_b.append(d["amount"])
     if len(new_b) >= 5 and len(old_b) >= 5:
         na, oa = sum(new_b)/len(new_b), sum(old_b)/len(old_b)
-        if na > oa:
+        # 차이가 작으면 "신축이 0억 비싸"처럼 뜻 없는 카드가 된다.
+        # 1억 이상 벌어질 때만 이야기가 된다.
+        if na - oa >= 10000:
             angles.append({
-                "type": "숫자훅",
+                "type": "오해정정",
                 "hook": f"신축이 {(na-oa)/10000:.0f}억 비싸",
                 "data": {"new_avg": round(na/10000, 1), "old_avg": round(oa/10000, 1),
                          "new_n": len(new_b), "old_n": len(old_b)},
@@ -357,12 +378,18 @@ TEMPLATES = {
         "narration_pattern": "{summary}와 관련해서 꼭 체크해야 할 사항들을 정리했습니다.",
         "scene_count": 4,
     },
+    # 실거래가는 그 동네 주민만 해당하는 정보가 아니라 누구나 보는 시세다.
+    # "주민만 해당"은 사실과 어긋나고, 같은 문구가 연달아 나오면 피드가
+    # 복사본처럼 보인다. 동네 이름이 들어간 문구를 여러 개 두고 돌려 쓴다.
     "지역한정": {
         "cover_pattern": [
-            lambda a: [f"{hook_fit(a.get('hook',''))}", "<r>주민만 해당</r>"],
-            lambda a: [f"{hook_fit(a.get('hook',''))}", "<y>확인하세요</y>"],
+            lambda a: [f"{hook_fit(a.get('hook',''))}", "<y>얼마에 팔렸나</y>"],
+            lambda a: ["우리 동네", f"<r>{hook_fit(a.get('hook',''))}</r>"],
+            lambda a: [f"{hook_fit(a.get('hook',''))}", "<r>이번 달 기록</r>"],
+            lambda a: ["이 동네 지금", f"<r>{hook_fit(a.get('hook',''))}</r>"],
+            lambda a: [f"{hook_fit(a.get('hook',''))}", "<y>실거래가 공개</y>"],
         ],
-        "narration_pattern": "{summary}. 해당 지역에 거주하시는 분들은 꼭 확인하세요.",
+        "narration_pattern": "{summary}. 국토교통부에 신고된 실제 거래 금액입니다.",
         "scene_count": 3,
     },
 }
@@ -404,9 +431,20 @@ def template_generate(angle):
     tpl = TEMPLATES.get(fmt, TEMPLATES["숫자훅"])
 
     # 커버 카피 생성 — 제약 통과할 때까지 시도
+    #
+    # 앞서는 항상 0번 패턴에서 멈춰서, 패턴을 여러 개 둬도 모든 카드가 같은
+    # 문구로 나왔다. 하루 3건씩 올리면 피드가 복사본처럼 보인다.
+    # 훅에서 뽑은 고정 값으로 시작 위치를 돌려 카드마다 다른 문구가 걸리게
+    # 하되, 같은 앵글은 늘 같은 문구가 나오도록 해시를 쓴다(재생성해도 동일).
+    patterns = tpl["cover_pattern"]
+    start = 0
+    if len(patterns) > 1:
+        seed = hashlib.md5(angle.get("hook", "").encode("utf-8")).hexdigest()
+        start = int(seed[:8], 16) % len(patterns)
+
     cover_lines = None
-    for pattern_fn in tpl["cover_pattern"]:
-        candidate = pattern_fn(angle)
+    for i in range(len(patterns)):
+        candidate = patterns[(start + i) % len(patterns)](angle)
         v = validate_cover(candidate)
         if v is True:
             cover_lines = candidate
