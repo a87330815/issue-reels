@@ -2,7 +2,9 @@ name: 대본 생성
 
 on:
   workflow_run:
-    workflows: ["수집"]
+    # 이름이 정확히 같아야 걸린다. 수집 워크플로의 name은 "collect"이고
+    # 여기에 "수집"이라고 적혀 있어서 체인이 한 번도 이어지지 않았다.
+    workflows: ["collect"]
     types: [completed]
   workflow_dispatch:
 
@@ -20,14 +22,15 @@ jobs:
       - name: 의존성 설치
         run: pip install PyYAML requests anthropic
 
-      - name: 수집 데이터 다운로드
-        uses: actions/download-artifact@v4
-        with:
-          name: collected
-          path: out/
-        continue-on-error: true
-
+      # 수집 워크플로가 collected.json을 저장소에 커밋하므로 체크아웃만으로
+      # 이미 들어와 있다. 다른 런의 아티팩트는 run-id 없이는 집히지 않아
+      # 늘 조용히 실패했다. 남은 경우를 위해 아래 확인 단계가 직접 수집한다.
       - name: 수집 데이터 확인
+        env:
+          # 폴백으로 직접 수집할 때 인증키가 없으면 그대로 빈손이 된다.
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+          KMA_APIHUB_KEY: ${{ secrets.KMA_APIHUB_KEY }}
+          KOSIS_KEY: ${{ secrets.KOSIS_KEY }}
         run: |
           if [ ! -f out/collected.json ]; then
             echo "수집 데이터 없음 — 직접 수집 실행"
