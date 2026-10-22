@@ -69,12 +69,24 @@ jobs:
           IG_API_HOST: ${{ vars.IG_API_HOST }}
           MEDIA_REPO: ${{ secrets.MEDIA_REPO || vars.MEDIA_REPO || 'a87330815/issue-reels-media' }}
           MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+          # GitHub Actions에서 체크 해제된 boolean 입력은 문자열 "false"로 들어온다.
+          # 빈 문자열이 아니라서 ${{ inputs.publish && ... }}는 참으로 평가되고,
+          # 드라이런으로 돌려도 --publish가 붙어 실제로 게시돼 버린다.
+          # 그래서 식(expression)이 아니라 셸에서 문자열로 엄격히 비교한다.
+          PUBLISH_INPUT: ${{ inputs.publish }}
         run: |
           set -o pipefail
           mkdir -p out
+          FLAG=""
+          if [ "$PUBLISH_INPUT" = "true" ]; then
+            FLAG="--publish"
+            echo "::warning::실제 발행 모드입니다 — 계정에 게시됩니다"
+          else
+            echo "드라이런 — 컨테이너까지만 만들고 발행하지 않습니다 (publish=$PUBLISH_INPUT)"
+          fi
           python -u publish_cards.py "$CARDS" \
             --script "$SCRIPT" --photos "$PHOTOS" \
-            ${{ inputs.publish && '--publish' || '' }} 2>&1 | tee -a out/publish_cards.log
+            $FLAG 2>&1 | tee -a out/publish_cards.log
 
       # 아티팩트·러너 로그는 이 환경에서 받기 어려워 저장소로 남긴다.
       # 실패했을 때야말로 로그가 필요하므로 always()로 둔다.
