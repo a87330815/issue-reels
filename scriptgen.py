@@ -213,6 +213,86 @@ def analyze_apt_trade(items):
         },
     })
 
+    # 아래 앵글들은 버퍼 때문에 있다. 해외 IP 차단이 간헐적이라 뚫린 날
+    # 며칠치를 만들어둬야 하는데, 위 3개만으로는 하루치밖에 안 나온다.
+    # 같은 데이터에서 성격이 다른 이야기를 뽑아 대기열을 채운다.
+
+    # 앵글 4: 동네별 최고가 — "우리 동네 제일 비싼 집"은 지역마다 다른 이야기다
+    # 앞 앵글이 이미 쓴 동네는 건너뛴다. 같은 동네 이야기가 연달아 올라가면
+    # 하루치를 벌어놓고도 피드가 똑같아 보인다.
+    used_regions = {top.get("region"), busiest[0]}
+    by_count = sorted(by_region.items(), key=lambda x: len(x[1]), reverse=True)
+    for region, deals in by_count[:8]:
+        if len(deals) < 5 or region in used_regions:
+            continue
+        used_regions.add(region)
+        best = max(deals, key=lambda d: d["amount"])
+        top5 = sorted(deals, key=lambda d: d["amount"], reverse=True)[:5]
+        angles.append({
+            "type": "지역한정",
+            "hook": f"{region} 최고 {best['amount']/10000:.0f}억",
+            "data": best,
+            "summary": f"{region} 최고가 {best['apt']} {best['area']}㎡ "
+                       f"{best['amount']/10000:.1f}억",
+            "short": f"{region} 최고 {best['amount']/10000:.1f}억",
+            "items": top5,
+            "chart": {"values": [round(d["amount"]/10000, 1) for d in top5],
+                      "style": "bars"},
+        })
+
+    # 앵글 5: 평당가 — 총액이 아니라 면적당 가격. 작은 집이 더 비쌀 수 있다는
+    # 점이 직관과 어긋나서 반응이 온다.
+    per_area = []
+    for d in all_deals:
+        try:
+            a = float(d.get("area") or 0)
+        except (TypeError, ValueError):
+            a = 0
+        if a > 10:                      # 면적 이상치 제외
+            # 1평 = 3.3058㎡
+            per_area.append((d["amount"] / (a / 3.3058), d))
+    if per_area:
+        per_area.sort(key=lambda x: x[0], reverse=True)
+        pv, pd_ = per_area[0]
+        angles.append({
+            "type": "숫자훅",
+            "hook": f"평당 {pv/10000:.1f}억",
+            "data": pd_,
+            "summary": f"{pd_['region']} {pd_['apt']} 평당 {pv/10000:.2f}억 "
+                       f"(전용 {pd_['area']}㎡)",
+            "short": f"{pd_['region']} 평당 {pv/10000:.1f}억",
+            "items": [d for _, d in per_area[:5]],
+            "chart": {"values": [round(v/10000, 2) for v, _ in per_area[:5]],
+                      "style": "bars"},
+        })
+
+    # 앵글 6: 신축 프리미엄 — 건축연도로 갈리는 가격 차
+    new_b, old_b = [], []
+    for d in all_deals:
+        try:
+            y = int(d.get("build_year") or 0)
+        except (TypeError, ValueError):
+            continue
+        if y >= 2020:
+            new_b.append(d["amount"])
+        elif 0 < y <= 2005:
+            old_b.append(d["amount"])
+    if len(new_b) >= 5 and len(old_b) >= 5:
+        na, oa = sum(new_b)/len(new_b), sum(old_b)/len(old_b)
+        if na > oa:
+            angles.append({
+                "type": "숫자훅",
+                "hook": f"신축이 {(na-oa)/10000:.0f}억 비싸",
+                "data": {"new_avg": round(na/10000, 1), "old_avg": round(oa/10000, 1),
+                         "new_n": len(new_b), "old_n": len(old_b)},
+                "summary": f"2020년 이후 신축 평균 {na/10000:.1f}억 vs "
+                           f"2005년 이전 평균 {oa/10000:.1f}억",
+                "short": f"신축 {na/10000:.1f}억 vs 구축 {oa/10000:.1f}억",
+                "items": all_deals[:5],
+                "chart": {"values": [round(na/10000, 1), round(oa/10000, 1)],
+                          "style": "bars"},
+            })
+
     return angles
 
 
