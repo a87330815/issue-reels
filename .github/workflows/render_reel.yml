@@ -37,18 +37,32 @@ jobs:
         with:
           python-version: "3.11"
 
-      # ffmpeg는 ubuntu-latest 러너에 이미 들어 있다. apt로 다시 받으면
-      # 의존 트리가 커서 설치가 멈춘 것처럼 오래 걸린다.
       - name: 의존성 설치
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
+          set -e
           pip install -q Pillow numpy requests edge-tts
           sudo apt-get update -qq
-          sudo apt-get install -y -qq --no-install-recommends \
-            fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji
-          ffmpeg -version | head -1
-          ffprobe -version | head -1
+          # 러너에 ffmpeg가 없을 때가 있다. apt가 느리게 걸리는 일이 있어
+          # 시간을 끊고, 실패하면 정적 빌드를 받아 쓴다.
+          sudo timeout 600 apt-get install -y -qq --no-install-recommends \
+            ffmpeg fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji \
+            || echo "::warning::apt 설치 실패 — 정적 빌드로 넘어갑니다"
+
+          if ! command -v ffprobe >/dev/null; then
+            echo "ffprobe 없음 — 정적 빌드 설치"
+            curl -fsSL -o /tmp/ff.tar.xz \
+              https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+            mkdir -p /tmp/ff && tar -xJf /tmp/ff.tar.xz -C /tmp/ff --strip-components=1
+            sudo install -m755 /tmp/ff/ffmpeg /tmp/ff/ffprobe /usr/local/bin/
+          fi
+
+          # 앞서 '| head'가 종료코드를 가려 없는 걸 통과시켰다. 여기서 끊는다.
+          command -v ffmpeg
+          command -v ffprobe
+          ffmpeg -hide_banner -version | head -1
+          ffprobe -hide_banner -version | head -1
 
       # push로 들어오면 가장 최근에 바뀐 대본을 고른다.
       - name: 대상 결정
