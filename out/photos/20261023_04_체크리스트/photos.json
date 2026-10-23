@@ -1,19 +1,10 @@
 {
   "photos": {
-    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene6": "scene6.jpg"
   },
   "credits": [
-    {
-      "slot": "scene1",
-      "query": "checklist document pen desk",
-      "source": "flickr",
-      "creator": "Ivan Radic",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/26344495@N05/51404235122"
-    },
     {
       "slot": "scene2",
       "query": "Korea city apartment building",
@@ -40,5 +31,5 @@
     }
   ],
   "wanted": 7,
-  "fetched_at": "2026-10-23T14:19:40Z"
+  "fetched_at": "2026-10-23T18:10:13Z"
 }

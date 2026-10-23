@@ -8,10 +8,10 @@
     {
       "slot": "scene2",
       "query": "Korean elderly couple caring for grandchildren family",
-      "source": "Wikimedia Commons",
-      "creator": "Gene Putnam; Harry S. Truman Library &amp; Museum.",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Elderly_Korean_Man.jpg"
+      "source": "flickr",
+      "creator": "shankar s.",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/77742560@N06/31801547445"
     },
     {
       "slot": "scene3",
@@ -31,5 +31,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-23T14:33:02Z"
+  "fetched_at": "2026-10-23T18:23:35Z"
 }

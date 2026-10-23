@@ -1,17 +1,26 @@
 {
   "photos": {
+    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg"
   },
   "credits": [
     {
+      "slot": "scene2",
+      "query": "Banpo Seoul luxury high rise apartment",
+      "source": "flickr",
+      "creator": "Terrazzo",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
+    },
+    {
       "slot": "scene3",
       "query": "follow subscribe social media phone",
-      "source": "Wikimedia Commons",
-      "creator": "Exey Panteleev from Moscow, Russia",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Follow_Button_(35075355691).jpg"
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
     }
   ],
   "wanted": 4,
-  "fetched_at": "2026-10-23T14:12:53Z"
+  "fetched_at": "2026-10-23T18:04:20Z"
 }

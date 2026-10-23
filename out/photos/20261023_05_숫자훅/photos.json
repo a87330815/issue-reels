@@ -1,26 +1,44 @@
 {
   "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
-    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
     "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
     {
-      "slot": "scene2",
-      "query": "Banpo Seoul luxury high rise apartment",
+      "slot": "cover",
+      "query": "Banpo Seoul luxury apartment",
       "source": "flickr",
       "creator": "Terrazzo",
       "license": "BY",
       "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
     },
     {
-      "slot": "scene4",
-      "query": "Banpo Seoul luxury high rise apartment",
+      "slot": "scene1",
+      "query": "Banpo Seoul luxury apartment",
       "source": "flickr",
       "creator": "IchStyle",
       "license": "BY",
       "page": "https://www.flickr.com/photos/66172503@N00/17274635675"
+    },
+    {
+      "slot": "scene2",
+      "query": "Banpo Seoul luxury high rise apartment",
+      "source": "flickr",
+      "creator": "Terrazzo",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8249050@N02/44721044781"
+    },
+    {
+      "slot": "scene5",
+      "query": "Apgujeong Seoul luxury high rise apartment",
+      "source": "flickr",
+      "creator": "IchStyle",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/66172503@N00/17044710447"
     },
     {
       "slot": "scene6",
@@ -40,5 +58,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T14:22:28Z"
+  "fetched_at": "2026-10-23T18:13:11Z"
 }

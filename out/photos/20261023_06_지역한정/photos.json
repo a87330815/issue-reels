@@ -1,8 +1,6 @@
 {
   "photos": {
     "cover": "cover.jpg",
-    "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
@@ -15,22 +13,6 @@
       "page": "https://commons.wikimedia.org/wiki/File:Korea-Andong-Apartment_blocks_at_dawn-01.jpg"
     },
     {
-      "slot": "scene3",
-      "query": "Korea city luxury high rise apartment",
-      "source": "flickr",
-      "creator": "USAG-Humphreys",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/31687107@N07/9081533712"
-    },
-    {
-      "slot": "scene4",
-      "query": "Korea city luxury high rise apartment",
-      "source": "flickr",
-      "creator": "USAG-Humphreys",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/31687107@N07/9079319923"
-    },
-    {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
       "source": "flickr",
@@ -40,5 +22,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T14:25:34Z"
+  "fetched_at": "2026-10-23T18:18:48Z"
 }
