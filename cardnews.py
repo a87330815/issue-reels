@@ -372,7 +372,13 @@ def text_center_white(draw, text, y, fnt, max_w=W-120):
         y += lh
     return y
 
+# 릴스 모드. 영상에서는 넘겨볼 수 없으니 캐러셀용 안내(스와이프 문구·
+# 페이지 점)를 그리지 않는다.
+REELS = False
+
 def dots(draw, cur, total, t):
+    if REELS:
+        return
     r = 7
     gap = 18
     tw = total * r*2 + (total-1)*gap
@@ -489,13 +495,14 @@ def make_cover(sc, t, photo=None, credit=None):
         d.text(((W-(bb[2]-bb[0]))//2, H-118), credit, font=cf, fill=(255, 255, 255, 110))
 
     # 스와이프 안내 (이모지 + 텍스트 분리 렌더)
-    sf = font(FONT_BOLD, 28)
-    swipe = UI["swipe"]
-    bb = d.textbbox((0,0), swipe, font=sf)
-    sx = (W - (bb[2]-bb[0]) - 46)//2
-    paste_emoji(img, "👉", sx + 17, H-82, 34)
-    d = ImageDraw.Draw(img, "RGBA")
-    d.text((sx + 46, H-95), swipe, font=sf, fill=t["accent"])
+    if not REELS:
+        sf = font(FONT_BOLD, 28)
+        swipe = UI["swipe"]
+        bb = d.textbbox((0,0), swipe, font=sf)
+        sx = (W - (bb[2]-bb[0]) - 46)//2
+        paste_emoji(img, "👉", sx + 17, H-82, 34)
+        d = ImageDraw.Draw(img, "RGBA")
+        d.text((sx + 46, H-95), swipe, font=sf, fill=t["accent"])
 
     dots(d, 1, len(sc.get("scenes", []))+2, t)
     return img
@@ -686,5 +693,8 @@ if __name__ == "__main__":
     ap.add_argument("-o", "--out", default="out/cards")
     ap.add_argument("-p", "--photos", default=None,
                     help="photos.json이 있는 사진 디렉터리 (없으면 그래디언트 배경)")
+    ap.add_argument("--reels", action="store_true",
+                    help="릴스용. 스와이프 안내와 페이지 점을 빼고 그린다")
     a = ap.parse_args()
+    REELS = a.reels
     generate(a.script, a.out, a.photos)

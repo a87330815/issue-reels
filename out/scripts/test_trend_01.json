@@ -1,0 +1,47 @@
+{
+  "title": "손주 봐주면 월 30만원 준다카이",
+  "cover": {
+    "image": null,
+    "photo_query": "Korean grandmother playing with grandchild toddler",
+    "lines": [
+      "손주 봐주면",
+      "<r>월 30만원</r>",
+      "준다카이"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "happy Korean grandmother with baby grandchild",
+      "narration": "이거 모르고 지나가면 손해다. 서울시가 24~36개월 손주 돌봐주는 조부모한테 월 30만원씩 주는 제도 시작했다카이.",
+      "subtitle": "조부모 손주돌봄수당 시작"
+    },
+    {
+      "image": null,
+      "photo_query": "Korean elderly couple caring for grandchildren family",
+      "narration": "1명 봐주면 30만원, 2명이면 45만원, 3명이면 60만원. 중위소득 150% 이하 맞벌이·한부모 가정이면 된다. 매달 40시간 이상 돌봄 인정돼야 한다.",
+      "subtitle": "1명 30만 · 2명 45만 · 3명 60만"
+    },
+    {
+      "image": null,
+      "photo_query": "Korean government welfare office application form",
+      "narration": "신청은 매월 1~15일 서울시 탄생육아 몽땅정보통에서 하면 된다. 가족관계증명서하고 아이돌봄서비스 자격판정 결과 있으면 된다카이.",
+      "subtitle": "매월 1~15일 온라인 신청"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "체크리스트",
+    "source": "google_trends_kr",
+    "source_id": "trend_grandchild_care",
+    "category": "생활·지원금·제도",
+    "attribution": "서울시 · 탄생육아 몽땅정보통",
+    "trend_keyword": "손주 돌봄 수당"
+  }
+}

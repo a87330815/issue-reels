@@ -1,0 +1,108 @@
+name: 릴스 렌더 (사진 + 음성)
+
+# 클라우드 작업환경은 프록시가 외부 이미지·TTS 서버를 막는다.
+# 사진 수집과 edge-tts는 인터넷이 열린 러너에서 돌리고,
+# 완성된 mp4를 레포로 되돌려 커밋한다.
+on:
+  workflow_dispatch:
+    inputs:
+      stem:
+        description: "대본 이름 (out/scripts/<stem>.json)"
+        type: string
+        required: true
+      voice:
+        description: "TTS 음성"
+        type: string
+        default: "ko-KR-HyunsuMultilingualNeural"
+  push:
+    paths:
+      - "out/scripts/**.json"
+      - ".github/workflows/render_reel.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-reel
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: |
+          pip install -q Pillow requests edge-tts
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk fonts-noto-color-emoji
+
+      # push로 들어오면 가장 최근에 바뀐 대본을 고른다.
+      - name: 대상 결정
+        id: pick
+        env:
+          IN_STEM: ${{ inputs.stem }}
+        run: |
+          if [ -n "$IN_STEM" ]; then
+            STEM="$IN_STEM"
+          else
+            STEM="$(git log -1 --name-only --pretty=format: \
+              | grep '^out/scripts/.*\.json$' | head -1 \
+              | xargs -r basename | sed 's/\.json$//')"
+          fi
+          if [ -z "$STEM" ] || [ ! -f "out/scripts/${STEM}.json" ]; then
+            echo "::error::대본을 찾을 수 없습니다: '${STEM}'"; exit 1
+          fi
+          echo "stem=$STEM" >> "$GITHUB_OUTPUT"
+          echo "대상: $STEM"
+
+      - name: 1) 사진 수집
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          STEM: ${{ steps.pick.outputs.stem }}
+        run: python -u photos.py "out/scripts/${STEM}.json"
+
+      - name: 2) 카드 생성 (사진 반영)
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
+        run: |
+          python -u cardnews.py "out/scripts/${STEM}.json" \
+            -o "out/cards_${STEM}" -p "out/photos/${STEM}" --reels
+
+      - name: 3) 릴스 합성 (TTS 음성)
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
+          VOICE: ${{ inputs.voice || 'ko-KR-HyunsuMultilingualNeural' }}
+        run: |
+          python -u render_reels.py "out/scripts/${STEM}.json" \
+            --cards "out/cards_${STEM}" --voice "$VOICE"
+          ls -lh "out/reels/${STEM}.mp4"
+
+      - name: 결과 커밋
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f "out/reels/${STEM}.mp4" \
+                     "out/cards_${STEM}" \
+                     "out/photos/${STEM}" || true
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "릴스 렌더 완료: ${STEM} (사진 + 음성)"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main \
+              && git push origin main && exit 0
+            sleep 5
+          done
+          echo "::error::푸시 실패"; exit 1
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reel-${{ steps.pick.outputs.stem }}
+          path: out/reels/*.mp4
