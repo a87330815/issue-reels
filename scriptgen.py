@@ -1150,17 +1150,31 @@ def main():
     elif not args.template:
         print("[알림] ANTHROPIC_API_KEY / OPENAI_API_KEY 없음 → 템플릿 모드로 전환")
 
-    # 앵글 다양화: 같은 type이 연속되지 않도록 섞어서 선택한다.
-    # 예: [숫자훅, 숫자훅, 지역한정, 숫자훅, 지역한정, 오해정정]
-    #   → [숫자훅, 지역한정, 오해정정] (서로 다른 type 우선)
+    # 앵글 다양화: type(포맷)과 source(소스/카테고리) 모두 겹치지 않게 선택.
+    # 3개 게시물이 전부 아파트 같은 중복을 방지한다.
     selected_angles = []
     used_types = set()
+    used_sources = set()
+    # 1차: type + source 모두 새로운 것 우선
     for angle in angles:
         if len(selected_angles) >= args.count:
             break
-        if angle["type"] not in used_types:
+        src = angle.get("data", {}).get("source", angle.get("source", ""))
+        if angle["type"] not in used_types and src not in used_sources:
             selected_angles.append(angle)
             used_types.add(angle["type"])
+            if src:
+                used_sources.add(src)
+    # 2차: source만이라도 새로운 것
+    for angle in angles:
+        if len(selected_angles) >= args.count:
+            break
+        src = angle.get("data", {}).get("source", angle.get("source", ""))
+        if angle not in selected_angles and src not in used_sources:
+            selected_angles.append(angle)
+            if src:
+                used_sources.add(src)
+    # 3차: 그래도 모자라면 남은 것에서 채움
     for angle in angles:
         if len(selected_angles) >= args.count:
             break
