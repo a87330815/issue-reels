@@ -1,0 +1,75 @@
+{
+  "title": "72억 차이",
+  "cover": {
+    "image": null,
+    "photo_query": "Banpo Seoul luxury apartment",
+    "lines": [
+      "이번 달",
+      "<r>72억 차이</r>",
+      "거래 떴습니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury apartment",
+      "narration": "압구정동 평균 72.1억 vs 명석면 우수리 평균 0.5억. 수치로 확인해볼기다.",
+      "subtitle": "압구정동 vs 명석면 우수리"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "반포동 래미안원베일리, 전용 134㎡(41평) 22층이 120.0억원에 실거래 신고됐다. 평당 3.0억. 2023년 준공 신축.",
+      "subtitle": "반포동 래미안원베일리 120.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Apgujeong Seoul luxury high rise apartment",
+      "narration": "같은 동네 신현대12차도 주목할 만한다. 전용 183㎡(55평) 3층, 거래가 100.0억원. 평당 1.8억.",
+      "subtitle": "압구정동 신현대12차 100.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "래미안원베일리 전용 117㎡(35평) 21층 — 94.0억원 거래. 평당 2.7억.",
+      "subtitle": "반포동 래미안원베일리 94.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Apgujeong Seoul luxury high rise apartment",
+      "narration": "신현대11차 전용 183㎡(55평) 4층 — 93.0억원 거래. 평당 1.7억.",
+      "subtitle": "압구정동 신현대11차 93.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 28.0억원까지 벌어졌다. 평균 99.8억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        72.1,
+        54.8,
+        33.6,
+        30.9,
+        30.1
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-23T08:21:43.814187+00:00"
+  }
+}

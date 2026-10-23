@@ -1,0 +1,59 @@
+{
+  "title": "이번 주 장바구니 물가",
+  "cover": {
+    "image": null,
+    "photo_query": "checklist document pen desk",
+    "lines": [
+      "반드시 확인",
+      "<r>이번 주 장바구니</r>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "checklist document pen desk",
+      "narration": "대파 평균 3,432원, 배추 평균 10,127원, 삼겹살 평균 4,132원, 삼양라면 평균 3,154원, 신라면 평균 4,205원, 우유 평균 3,127원와 관련해서 꼭 체크해야 할 사항들을 정리했다.",
+      "subtitle": "생필품 6종 평균가"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "20261009 47 246 3300",
+      "subtitle": "20261009 47 246 3300"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "20261009 156 246 3180",
+      "subtitle": "20261009 156 246 3180"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "20261009 1948 246 6500",
+      "subtitle": "20261009 1948 246 6500"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "20261009 1787 246 3980",
+      "subtitle": "20261009 1787 246 3980"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "체크리스트",
+    "source": "kca_product_price",
+    "category": "물가",
+    "attribution": "공공데이터포털 · 한국소비자원",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-23T08:21:43.599068+00:00"
+  }
+}

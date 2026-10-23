@@ -1,0 +1,59 @@
+{
+  "title": "배추 가격차 6,065원",
+  "cover": {
+    "image": null,
+    "photo_query": "napa cabbage korean market",
+    "lines": [
+      "<r>배추 가격차</r>",
+      "이거 실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "napa cabbage korean market",
+      "narration": "배추 최저 4,935원 ~ 최고 11,000원 (조사 17곳, 차이 6,065원). 한국소비자원 참가격 조사 결과이다.",
+      "subtitle": "배추 4,935~11,000원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "20261009 47 246 3300",
+      "subtitle": "20261009 47 246 3300"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "20261009 156 246 3180",
+      "subtitle": "20261009 156 246 3180"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "20261009 1948 246 6500",
+      "subtitle": "20261009 1948 246 6500"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "20261009 1787 246 3980",
+      "subtitle": "20261009 1787 246 3980"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "물가",
+    "source": "kca_product_price",
+    "category": "물가",
+    "attribution": "공공데이터포털 · 한국소비자원",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-23T08:21:43.389082+00:00"
+  }
+}

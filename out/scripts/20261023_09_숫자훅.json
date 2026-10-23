@@ -1,0 +1,75 @@
+{
+  "title": "평당 3.0억",
+  "cover": {
+    "image": null,
+    "photo_query": "Banpo Seoul luxury apartment",
+    "lines": [
+      "이번 달",
+      "<r>평당 3.0억</r>",
+      "거래 떴습니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury apartment",
+      "narration": "반포동 래미안원베일리 평당 2.96억 (전용 133.95㎡). 수치로 확인해볼기다.",
+      "subtitle": "반포동 평당 3.0억"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "반포동 래미안원베일리, 전용 134㎡(41평) 22층이 120.0억원에 실거래 신고됐다. 평당 3.0억. 2023년 준공 신축.",
+      "subtitle": "반포동 래미안원베일리 120.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "같은 동네 래미안원베일리도 주목할 만한다. 전용 60㎡(18평) 9층, 거래가 48.5억원. 평당 2.7억.",
+      "subtitle": "반포동 래미안원베일리 48.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "래미안원베일리 전용 117㎡(35평) 21층 — 94.0억원 거래. 평당 2.7억.",
+      "subtitle": "반포동 래미안원베일리 94.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "래미안원베일리 전용 60㎡(18평) 9층 — 48.0억원 거래. 평당 2.6억.",
+      "subtitle": "반포동 래미안원베일리 48.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 72.0억원까지 벌어졌다. 평균 74.7억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        2.96,
+        2.67,
+        2.66,
+        2.65,
+        2.44
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-23T08:21:44.681778+00:00"
+  }
+}
