@@ -3,9 +3,6 @@
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
-    "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg",
-    "scene5": "scene5.jpg",
     "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
@@ -14,57 +11,33 @@
       "slot": "cover",
       "query": "Banpo Seoul luxury apartment",
       "source": "flickr",
-      "creator": "sunbeams879",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/126817823@N08/15994218482"
-    },
-    {
-      "slot": "scene1",
-      "query": "Banpo Seoul luxury apartment",
-      "source": "flickr",
-      "creator": "sunbeams879",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/126817823@N08/14956233718"
-    },
-    {
-      "slot": "scene2",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "flickr",
-      "creator": "MK Photo Tacoma",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/127738559@N08/17537835144"
-    },
-    {
-      "slot": "scene3",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "flickr",
-      "creator": "MK Photo Tacoma",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/127738559@N08/18160422985"
-    },
-    {
-      "slot": "scene4",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "flickr",
       "creator": "Terrazzo",
       "license": "BY",
       "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
     },
     {
-      "slot": "scene5",
-      "query": "Banpo Seoul luxury high rise apartment",
+      "slot": "scene1",
+      "query": "Banpo Seoul luxury apartment",
       "source": "flickr",
       "creator": "IchStyle",
       "license": "BY",
       "page": "https://www.flickr.com/photos/66172503@N00/17274635675"
     },
     {
+      "slot": "scene2",
+      "query": "Banpo Seoul luxury high rise apartment",
+      "source": "flickr",
+      "creator": "Terrazzo",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8249050@N02/44721044781"
+    },
+    {
       "slot": "scene6",
       "query": "real estate market price chart",
-      "source": "Wikimedia Commons",
-      "creator": "The original uploader was Snow storm in Eastern Asia at Engl",
-      "license": "CC BY 3.0",
-      "page": "https://commons.wikimedia.org/wiki/File:PIIGS_Mk_4_map.png"
+      "source": "flickr",
+      "creator": "scherknoah",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/151673005@N07/31801870474"
     },
     {
       "slot": "scene7",
@@ -76,5 +49,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T08:37:52Z"
+  "fetched_at": "2026-10-23T14:27:43Z"
 }

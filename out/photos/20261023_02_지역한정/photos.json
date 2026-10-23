@@ -1,35 +1,8 @@
 {
   "photos": {
-    "cover": "cover.jpg",
-    "scene2": "scene2.jpg",
-    "scene3": "scene3.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
-    {
-      "slot": "cover",
-      "query": "Myeongji Busan apartment skyline",
-      "source": "Wikimedia Commons",
-      "creator": "오모군",
-      "license": "CC BY 3.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Ulju_Myeongji_Elementary_School.jpg"
-    },
-    {
-      "slot": "scene2",
-      "query": "Myeongji Busan modern apartment residential",
-      "source": "wikimedia",
-      "creator": "오모군",
-      "license": "BY",
-      "page": "https://commons.wikimedia.org/w/index.php?curid=72072830"
-    },
-    {
-      "slot": "scene3",
-      "query": "Myeongji Busan modern apartment residential",
-      "source": "wordpress",
-      "creator": "Jiwoon Kim",
-      "license": "CC0",
-      "page": "https://wordpress.org/photos/photo/22868b467b/"
-    },
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
@@ -40,5 +13,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T08:26:43Z"
+  "fetched_at": "2026-10-23T14:16:15Z"
 }

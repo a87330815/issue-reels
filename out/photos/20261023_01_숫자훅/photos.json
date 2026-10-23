@@ -1,44 +1,17 @@
 {
   "photos": {
-    "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
-    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg"
   },
   "credits": [
     {
-      "slot": "cover",
-      "query": "Banpo Seoul luxury apartment",
-      "source": "flickr",
-      "creator": "sunbeams879",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/126817823@N08/15994218482"
-    },
-    {
-      "slot": "scene1",
-      "query": "Banpo Seoul luxury apartment",
-      "source": "wikimedia",
-      "creator": "Rosemania",
-      "license": "BY",
-      "page": "https://commons.wikimedia.org/w/index.php?curid=10571155"
-    },
-    {
-      "slot": "scene2",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "flickr",
-      "creator": "sunbeams879",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/126817823@N08/14956233718"
-    },
-    {
       "slot": "scene3",
       "query": "follow subscribe social media phone",
       "source": "Wikimedia Commons",
-      "creator": "Internet Archive Book Images",
-      "license": "No restrictions",
-      "page": "https://commons.wikimedia.org/wiki/File:American_homes_and_gardens_(1911)_(18157123091).jpg"
+      "creator": "Exey Panteleev from Moscow, Russia",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Follow_Button_(35075355691).jpg"
     }
   ],
   "wanted": 4,
-  "fetched_at": "2026-10-23T08:24:48Z"
+  "fetched_at": "2026-10-23T14:12:53Z"
 }

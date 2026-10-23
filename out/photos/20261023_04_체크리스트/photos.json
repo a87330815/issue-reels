@@ -1,22 +1,11 @@
 {
   "photos": {
-    "cover": "cover.jpg",
     "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg",
-    "scene5": "scene5.jpg",
     "scene6": "scene6.jpg"
   },
   "credits": [
-    {
-      "slot": "cover",
-      "query": "checklist document pen desk",
-      "source": "Wikimedia Commons",
-      "creator": "Darbee, Jeffrey T; Recchie, Nancy A",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Checklist_for_Change_-_DPLA_-_e01b3c08aab86e07e7775c93c07a2b38_(page_16).jpg"
-    },
     {
       "slot": "scene1",
       "query": "checklist document pen desk",
@@ -29,33 +18,17 @@
       "slot": "scene2",
       "query": "Korea city apartment building",
       "source": "flickr",
-      "creator": "USAG-Humphreys",
+      "creator": "Francisco Anzola",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/31687107@N07/8261592183"
+      "page": "https://www.flickr.com/photos/10345599@N03/1509272335"
     },
     {
       "slot": "scene3",
       "query": "Korea city apartment building",
-      "source": "flickr",
-      "creator": "USAG-Humphreys",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/31687107@N07/8262663018"
-    },
-    {
-      "slot": "scene4",
-      "query": "Korea city apartment building",
-      "source": "flickr",
-      "creator": "D-Stanley",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/79721788@N00/5063726586"
-    },
-    {
-      "slot": "scene5",
-      "query": "Korea city apartment building",
-      "source": "flickr",
-      "creator": "sunbeams879",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/126817823@N08/14965100650"
+      "source": "Wikimedia Commons",
+      "creator": "Robert at Picasa",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Korea-Andong-Apartment_blocks_at_dawn-01.jpg"
     },
     {
       "slot": "scene6",
@@ -67,5 +40,5 @@
     }
   ],
   "wanted": 7,
-  "fetched_at": "2026-10-23T08:29:34Z"
+  "fetched_at": "2026-10-23T14:19:40Z"
 }

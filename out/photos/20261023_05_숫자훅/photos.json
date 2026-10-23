@@ -1,70 +1,34 @@
 {
   "photos": {
-    "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
-    "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
-    "scene5": "scene5.jpg",
     "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
     {
-      "slot": "cover",
-      "query": "Banpo Seoul luxury apartment",
-      "source": "flickr",
-      "creator": "sunbeams879",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/126817823@N08/15994218482"
-    },
-    {
-      "slot": "scene1",
-      "query": "Banpo Seoul luxury apartment",
-      "source": "flickr",
-      "creator": "sunbeams879",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/126817823@N08/14956233718"
-    },
-    {
       "slot": "scene2",
       "query": "Banpo Seoul luxury high rise apartment",
       "source": "flickr",
-      "creator": "MK Photo Tacoma",
+      "creator": "Terrazzo",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/127738559@N08/17537835144"
-    },
-    {
-      "slot": "scene3",
-      "query": "Apgujeong Seoul luxury high rise apartment",
-      "source": "Wikimedia Commons",
-      "creator": "Marcopolis at English Wikipedia",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Apgujeong_Station_7483.jpg"
+      "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
     },
     {
       "slot": "scene4",
       "query": "Banpo Seoul luxury high rise apartment",
       "source": "flickr",
-      "creator": "MK Photo Tacoma",
+      "creator": "IchStyle",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/127738559@N08/18160422985"
-    },
-    {
-      "slot": "scene5",
-      "query": "Apgujeong Seoul luxury high rise apartment",
-      "source": "flickr",
-      "creator": "jgmarcelino",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/28755382@N00/4652511875"
+      "page": "https://www.flickr.com/photos/66172503@N00/17274635675"
     },
     {
       "slot": "scene6",
       "query": "real estate market price chart",
       "source": "Wikimedia Commons",
-      "creator": "The original uploader was Snow storm in Eastern Asia at Engl",
-      "license": "CC BY 3.0",
-      "page": "https://commons.wikimedia.org/wiki/File:PIIGS_Mk_4_map.png"
+      "creator": "Internet Archive Book Images",
+      "license": "No restrictions",
+      "page": "https://commons.wikimedia.org/wiki/File:Polk%27s_real_estate_register_and_directory_of_the_United_States_and_Canada_(1911)_(14580904249).jpg"
     },
     {
       "slot": "scene7",
@@ -76,5 +40,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T08:31:40Z"
+  "fetched_at": "2026-10-23T14:22:28Z"
 }
