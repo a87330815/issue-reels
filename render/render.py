@@ -5,7 +5,7 @@ render.py — 대본 JSON → 1080x1920 릴스
 - 커버 프레임은 cover.py의 커버 문법을 그대로 쓴다
 - 자막은 번인(인스타 자동자막 미사용)
 - 장면 길이는 내레이션 글자 수로 산출하되, TTS 음성이 있으면 실제 길이를 쓴다
-- TTS는 edge-tts(ko-KR-SunHiNeural). 실패하면 무음으로 떨어지고 경고를 남긴다
+- TTS는 edge-tts(ko-KR-HyunsuNeural). 실패하면 무음으로 떨어지고 경고를 남긴다
 
 대본 JSON:
 {
@@ -31,11 +31,12 @@ import bg  # noqa: E402
 import cover  # noqa: E402
 
 W, H, FPS = cover.W, cover.H, 30
-# 음성 — 2026-10-20 샘플 3종 청취 후 SunHi(여성) 채택.
+# 음성 — 2026-10-23 양상국(개그맨) 스타일로 변경.
+# HyunsuNeural(남성) + 빠른 속도 + 높은 피치 → 에너지 넘치는 예능 톤.
 # 환경변수로 덮어쓸 수 있게 두되, 바꾸면 반드시 다시 들어보고 판단할 것.
-VOICE = os.environ.get("TTS_VOICE", "ko-KR-SunHiNeural")
-TTS_RATE = os.environ.get("TTS_RATE", "+8%")    # 뉴스 톤은 약간 빠른 쪽이 낫다
-TTS_PITCH = os.environ.get("TTS_PITCH", "+0Hz")
+VOICE = os.environ.get("TTS_VOICE", "ko-KR-HyunsuNeural")
+TTS_RATE = os.environ.get("TTS_RATE", "+20%")   # 양상국 스타일: 빠르고 경쾌하게
+TTS_PITCH = os.environ.get("TTS_PITCH", "+15Hz")  # 톤 올려서 활기차게
 
 COVER_HOLD = 2.0          # 커버 노출 시간
 CHARS_PER_SEC = 6.5       # TTS 실패 시 길이 추정용
