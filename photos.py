@@ -220,6 +220,29 @@ def _content_ok(cand):
     return not _BLOCK_RE.search(hay)
 
 
+# 검색어를 줄여가며 재시도하다 보면 "Korean" 한 단어까지 내려가고,
+# 그러면 무료 풀은 "Korean War 군번줄" 같은 걸 내준다. 주제와 겹치는
+# 말이 거의 없는 후보는 배경으로 깔리면 안 되므로 점수로 걸러낸다.
+_STOP = {"a", "an", "the", "of", "in", "on", "at", "with", "and", "or",
+         "for", "to", "by", "from", "about"}
+
+
+def _terms(query):
+    return [w for w in re.findall(r"[a-z]+", query.lower())
+            if w not in _STOP and len(w) > 2]
+
+
+def relevance(cand, terms):
+    """후보 설명에 원래 검색어의 낱말이 몇 개나 나오는지."""
+    hay = " ".join(str(cand.get(k, "")) for k in ("title", "page", "url")).lower()
+    hit = set()
+    for t in terms:
+        # 복수형까지 느슨하게 본다 (grandchild / grandchildren)
+        if t in hay or t.rstrip("s") in hay:
+            hit.add(t)
+    return len(hit)
+
+
 def search_all(query, n=12):
     """공급자를 순서대로 시도해 후보 목록을 만든다.
     앞 공급자 결과가 적으면 뒤 공급자 결과를 이어 붙여 중복 회피 여지를 남긴다."""
@@ -250,19 +273,34 @@ def search_with_fallback(query, n=12, min_needed=3):
     """무료 CC 풀은 어휘가 얕아 4단어짜리 구체적 검색어가 0건을 내기 쉽다.
     결과가 모자라면 뒤 단어부터 떼어내며 점점 넓은 검색어로 재시도한다."""
     words = query.split()
+    terms = _terms(query)
+    # 낱말 하나까지 줄이면 주제를 잃는다. 최소 두 낱말은 남긴다.
+    floor = 2 if len(words) > 2 else 1
     tried = set()
     out = []
-    for k in range(len(words), 0, -1):
+    for k in range(len(words), floor - 1, -1):
         q = " ".join(words[:k])
         if q in tried:
             continue
         tried.add(q)
         if k < len(words):
             print(f"    ↻ 재시도: \"{q}\"")
-        out.extend(c for c in search_all(q, n) if c["url"] not in {x["url"] for x in out})
+        seen = {x["url"] for x in out}
+        out.extend(c for c in search_all(q, n) if c["url"] not in seen)
         if len(out) >= min_needed:
             break
-    return out
+
+    # 주제와 겹치는 말이 둘 미만이면 버린다. 엉뚱한 사진이 깔리느니
+    # 그래디언트 배경이 낫다. (검색어가 짧으면 한 개로 완화)
+    need = 2 if len(terms) >= 3 else 1
+    scored = sorted(((relevance(c, terms), c) for c in out),
+                    key=lambda p: -p[0])
+    kept = [c for s, c in scored if s >= need]
+    if not kept:
+        print(f"    ✗ 적합한 후보 없음 (기준 {need}낱말 이상 일치) — 사진 없이 진행")
+    elif len(kept) < len(out):
+        print(f"    적합도 통과 {len(kept)}/{len(out)}건")
+    return kept
 
 
 # ── 다운로드 & 크롭 ──────────────────────────
