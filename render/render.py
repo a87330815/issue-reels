@@ -31,12 +31,13 @@ import bg  # noqa: E402
 import cover  # noqa: E402
 
 W, H, FPS = cover.W, cover.H, 30
-# 음성 — 2026-10-23 양상국(개그맨) 스타일로 변경.
-# HyunsuNeural(남성) + 빠른 속도 + 높은 피치 → 에너지 넘치는 예능 톤.
+# 음성 — 2026-10-23 경상도 사투리 컨셉.
+# HyunsuNeural(남성) + 약간 빠른 속도 + 살짝 높은 피치 → 활기찬 동네형 톤.
+# 양상국 스타일은 대본(사투리 말투)으로 구현하고, 목소리는 자연스럽게 유지.
 # 환경변수로 덮어쓸 수 있게 두되, 바꾸면 반드시 다시 들어보고 판단할 것.
 VOICE = os.environ.get("TTS_VOICE", "ko-KR-HyunsuNeural")
-TTS_RATE = os.environ.get("TTS_RATE", "+20%")   # 양상국 스타일: 빠르고 경쾌하게
-TTS_PITCH = os.environ.get("TTS_PITCH", "+15Hz")  # 톤 올려서 활기차게
+TTS_RATE = os.environ.get("TTS_RATE", "+12%")    # 약간 빠르게 (경쾌한 톤)
+TTS_PITCH = os.environ.get("TTS_PITCH", "+8Hz")   # 살짝 높여서 활기차게
 
 COVER_HOLD = 2.0          # 커버 노출 시간
 CHARS_PER_SEC = 6.5       # TTS 실패 시 길이 추정용
