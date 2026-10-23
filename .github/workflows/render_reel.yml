@@ -38,9 +38,10 @@ jobs:
 
       - name: 의존성 설치
         run: |
-          pip install -q Pillow requests edge-tts
+          pip install -q Pillow numpy requests edge-tts
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk fonts-noto-color-emoji
+          sudo apt-get install -y -qq ffmpeg \
+            fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji
 
       # push로 들어오면 가장 최근에 바뀐 대본을 고른다.
       - name: 대상 결정
@@ -61,40 +62,58 @@ jobs:
           echo "stem=$STEM" >> "$GITHUB_OUTPUT"
           echo "대상: $STEM"
 
+      # 러너 로그는 blob 호스트에 있어 작업환경에서 받을 수 없다.
+      # 진단에 쓰도록 레포로 함께 커밋한다 (cards.yml과 같은 방식).
       - name: 1) 사진 수집
         env:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           STEM: ${{ steps.pick.outputs.stem }}
-        run: python -u photos.py "out/scripts/${STEM}.json"
+        run: |
+          set -o pipefail
+          mkdir -p out/reels
+          echo "run ${{ github.run_id }} $(date -u +%FT%TZ)" > out/reels/render.log
+          python -u photos.py "out/scripts/${STEM}.json" 2>&1 \
+            | tee -a out/reels/render.log
 
       - name: 2) 카드 생성 (사진 반영)
         env:
           STEM: ${{ steps.pick.outputs.stem }}
+          IG_HANDLE: ${{ vars.IG_HANDLE }}
+          IG_BRAND: ${{ vars.IG_BRAND }}
         run: |
+          set -o pipefail
           python -u cardnews.py "out/scripts/${STEM}.json" \
-            -o "out/cards_${STEM}" -p "out/photos/${STEM}" --reels
+            -o "out/cards_${STEM}" -p "out/photos/${STEM}" --reels 2>&1 \
+            | tee -a out/reels/render.log
 
       - name: 3) 릴스 합성 (TTS 음성)
         env:
           STEM: ${{ steps.pick.outputs.stem }}
           VOICE: ${{ inputs.voice || 'ko-KR-HyunsuMultilingualNeural' }}
         run: |
+          set -o pipefail
           python -u render_reels.py "out/scripts/${STEM}.json" \
-            --cards "out/cards_${STEM}" --voice "$VOICE"
-          ls -lh "out/reels/${STEM}.mp4"
+            --cards "out/cards_${STEM}" --voice "$VOICE" --require-tts 2>&1 \
+            | tee -a out/reels/render.log
+          ls -lh "out/reels/${STEM}.mp4" | tee -a out/reels/render.log
 
+      # 실패해도 돌린다. 로그가 올라와야 원인을 볼 수 있다.
       - name: 결과 커밋
+        if: always() && steps.pick.outputs.stem != ''
         env:
           STEM: ${{ steps.pick.outputs.stem }}
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f "out/reels/${STEM}.mp4" \
-                     "out/cards_${STEM}" \
-                     "out/photos/${STEM}" || true
+          git add -Af out/reels out/cards_${STEM} out/photos || true
           git diff --cached --quiet && { echo "변경 없음"; exit 0; }
-          git commit -m "릴스 렌더 완료: ${STEM} (사진 + 음성)"
+          if [ -f "out/reels/${STEM}.mp4" ]; then
+            MSG="릴스 렌더 완료: ${STEM} (사진 + 음성)"
+          else
+            MSG="릴스 렌더 실패 로그: ${STEM}"
+          fi
+          git commit -m "$MSG"
           for i in 1 2 3; do
             git pull --rebase --autostash origin main \
               && git push origin main && exit 0

@@ -148,6 +148,8 @@ def main():
     ap.add_argument("--cards", help="카드 이미지 디렉터리 (미지정 시 자동 추론)")
     ap.add_argument("--voice", default=DEFAULT_VOICE, help="TTS 음성")
     ap.add_argument("--no-tts", action="store_true", help="TTS 없이 무음 영상")
+    ap.add_argument("--require-tts", action="store_true",
+                    help="TTS가 실패하면 무음으로 넘어가지 않고 중단한다")
     ap.add_argument("-o", "--out", help="출력 mp4 경로")
     a = ap.parse_args()
 
@@ -179,9 +181,15 @@ def main():
             try:
                 tts_results = asyncio.run(generate_tts(texts, a.voice, tmp))
             except Exception as e:
+                # 무음으로 조용히 넘어가면 음성 없는 영상이 완성본처럼 나온다.
+                if a.require_tts:
+                    raise SystemExit(f"[중단] TTS 실패: {e}")
                 print(f"  [경고] TTS 실패: {e}")
                 print("  → 무음 영상으로 전환")
                 tts_results = None
+            else:
+                if a.require_tts and not any(tts_results or []):
+                    raise SystemExit("[중단] TTS 결과가 비었습니다")
 
         # 영상 합성
         print(f"\n{'2' if not a.no_tts else '1'}) 영상 합성")
