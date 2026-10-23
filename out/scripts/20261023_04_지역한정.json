@@ -1,0 +1,73 @@
+{
+  "title": "송도동 최고 24억",
+  "cover": {
+    "image": null,
+    "photo_query": "korea apartment complex aerial view",
+    "lines": [
+      "송도동 최고 24억",
+      "<y>실거래가 공개</y>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "korea apartment complex aerial view",
+      "narration": "송도동 최고가 인천송도힐스테이트5단지 239.7201㎡ 24.0억. 국토교통부에 신고된 실제 거래 금액입니다.",
+      "subtitle": "송도동 최고 24.0억"
+    },
+    {
+      "image": null,
+      "photo_query": "luxury high rise apartment building",
+      "narration": "송도동 인천송도힐스테이트5단지, 전용 240㎡(73평) 20층이 24.0억원에 실거래 신고됐습니다. 평당 3,310만원. 2011년 준공(15년차).",
+      "subtitle": "송도동 인천송도힐스테이트5단지"
+    },
+    {
+      "image": null,
+      "photo_query": "luxury high rise apartment building",
+      "narration": "같은 동네 송도더샵파크애비뉴도 주목할 만합니다. 전용 108㎡(33평) 41층, 거래가 16.6억원. 평당 5,063만원.",
+      "subtitle": "송도동 송도더샵파크애비뉴 16.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "luxury high rise apartment building",
+      "narration": "송도더샵퍼스트파크F15BL 전용 108㎡(33평) 33층 — 15.6억원 거래. 평당 4,772만원.",
+      "subtitle": "송도동 송도더샵퍼스트파크F15BL"
+    },
+    {
+      "image": null,
+      "photo_query": "luxury high rise apartment building",
+      "narration": "송도자이하버뷰2단지 전용 136㎡(41평) 14층 — 14.2억원 거래. 평당 3,460만원.",
+      "subtitle": "송도동 송도자이하버뷰2단지 14.2억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate price chart graph",
+      "narration": "송도동 이번 달 거래를 종합하면, 평균 거래가는 16.8억원, 최고가 24.0억원, 최저가 13.6억원입니다. 총 5건이 신고되었습니다.",
+      "subtitle": "송도동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 되셨다면 팔로우 부탁드립니다. 매일 부동산 이슈를 정리해드립니다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        24.0,
+        16.6,
+        15.6,
+        14.2,
+        13.6
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-23T01:58:28.848489+00:00"
+  }
+}
