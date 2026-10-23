@@ -17,7 +17,6 @@ on:
   push:
     paths:
       - "out/scripts/**.json"
-      - ".github/workflows/render_reel.yml"
 
 permissions:
   contents: write
@@ -29,6 +28,8 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
+    # 한 단계가 멈춰도 러너를 오래 붙잡지 않게 한다.
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -36,12 +37,18 @@ jobs:
         with:
           python-version: "3.11"
 
+      # ffmpeg는 ubuntu-latest 러너에 이미 들어 있다. apt로 다시 받으면
+      # 의존 트리가 커서 설치가 멈춘 것처럼 오래 걸린다.
       - name: 의존성 설치
+        env:
+          DEBIAN_FRONTEND: noninteractive
         run: |
           pip install -q Pillow numpy requests edge-tts
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg \
+          sudo apt-get install -y -qq --no-install-recommends \
             fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
 
       # push로 들어오면 가장 최근에 바뀐 대본을 고른다.
       - name: 대상 결정
