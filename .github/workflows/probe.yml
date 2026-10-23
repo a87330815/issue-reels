@@ -14,7 +14,7 @@ jobs:
           python-version: "3.12"
       - run: pip install requests
       - name: Run probe
-        run: python probe5.py 2>&1 | tee /tmp/probe_log.txt
+        run: python probe6.py 2>&1 | tee /tmp/probe_log.txt
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
       - name: Post results as issue
