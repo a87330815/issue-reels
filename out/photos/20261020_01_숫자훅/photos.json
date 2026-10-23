@@ -9,21 +9,13 @@
     {
       "slot": "cover",
       "query": "apartment building",
-      "source": "Wikimedia Commons",
-      "creator": "Syced",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Apartment_building_facing_the_Eiffel_Tower.jpg"
+      "source": "flickr",
+      "creator": "seier+seier",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/94852245@N00/6941331593"
     },
     {
       "slot": "scene1",
-      "query": "apartment building residential",
-      "source": "Wikimedia Commons",
-      "creator": "TylerMascola",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Apartment_Complex_Child_Playground_1.png"
-    },
-    {
-      "slot": "scene2",
       "query": "apartment building residential",
       "source": "flickr",
       "creator": "seier+seier",
@@ -31,14 +23,22 @@
       "page": "https://www.flickr.com/photos/94852245@N00/2565057817"
     },
     {
-      "slot": "scene3",
+      "slot": "scene2",
       "query": "apartment building residential",
       "source": "flickr",
       "creator": "Bogdan Suditu",
       "license": "BY",
       "page": "https://www.flickr.com/photos/8726888@N08/2377843417"
+    },
+    {
+      "slot": "scene3",
+      "query": "apartment building residential",
+      "source": "flickr",
+      "creator": "NNECAPA",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/23163410@N02/2830785109"
     }
   ],
   "wanted": 4,
-  "fetched_at": "2026-10-22T18:15:02Z"
+  "fetched_at": "2026-10-23T01:59:13Z"
 }

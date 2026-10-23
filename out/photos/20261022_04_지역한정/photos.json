@@ -13,10 +13,10 @@
     {
       "slot": "cover",
       "query": "korea apartment complex aerial view",
-      "source": "Wikimedia Commons",
-      "creator": "LandAndTree",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Anseong_City_Oksan-dong_Complex_Mall_20250101_01.jpg"
+      "source": "flickr",
+      "creator": "Stephen Hucker",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/97371213@N00/87004725"
     },
     {
       "slot": "scene1",
@@ -24,7 +24,7 @@
       "source": "flickr",
       "creator": "Stephen Hucker",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/97371213@N00/87004725"
+      "page": "https://www.flickr.com/photos/97371213@N00/87004522"
     },
     {
       "slot": "scene2",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-22T18:19:47Z"
+  "fetched_at": "2026-10-23T01:59:41Z"
 }

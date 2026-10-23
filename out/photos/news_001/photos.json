@@ -18,36 +18,36 @@
     {
       "slot": "scene1",
       "query": "smartphone train ticket app hand",
-      "source": "Wikimedia Commons",
-      "creator": "Bambizoe from Dresden, Germany",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Blick_von_Schaftreppe_Pirna_nach_Dresden_aif_Innenstadt_2018.jpg"
+      "source": "flickr",
+      "creator": "Office of Governor Dan Malloy",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/57939039@N08/28447926464"
     },
     {
       "slot": "scene2",
       "query": "calendar planning desk",
-      "source": "Wikimedia Commons",
-      "creator": "NASA's Scientific Visualization Studio - Marit Jentoft-Nilse",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:2025_NASA_Science_Calendar_(SVS31319_-_02_Planetary_Dinkinesh_16x9).png"
+      "source": "flickr",
+      "creator": "Generationbass.com",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/46959536@N04/4827013488"
     },
     {
       "slot": "scene3",
       "query": "train interior seats aisle",
-      "source": "Wikimedia Commons",
-      "creator": "Jplahti",
-      "license": "CC BY 4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:VR_Eil_interior_20230731.jpg"
+      "source": "flickr",
+      "creator": "shankar s.",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/77742560@N06/7144573913"
     },
     {
       "slot": "scene4",
       "query": "hand holding smartphone station",
-      "source": "Wikimedia Commons",
-      "creator": "Dennis Cortés cortes",
+      "source": "flickr",
+      "creator": "Artem Beliaikin",
       "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Black_smartphone_in_hand_(Unsplash).jpg"
+      "page": "https://www.flickr.com/photos/157635012@N07/50237687643"
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-22T18:23:57Z"
+  "fetched_at": "2026-10-23T02:00:52Z"
 }

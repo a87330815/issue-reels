@@ -61,10 +61,10 @@
     {
       "slot": "scene6",
       "query": "housing price comparison chart",
-      "source": "Wikimedia Commons",
-      "creator": "Wikideas1",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Housing_prices_to_personal_income_ratios.webp"
+      "source": "flickr",
+      "creator": "Karen Roe",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/28752865@N08/8584745259"
     },
     {
       "slot": "scene7",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-22T18:17:40Z"
+  "fetched_at": "2026-10-23T01:59:29Z"
 }

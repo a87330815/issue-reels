@@ -13,10 +13,10 @@
     {
       "slot": "cover",
       "query": "korea apartment complex aerial view",
-      "source": "Wikimedia Commons",
-      "creator": "LandAndTree",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Anseong_City_Oksan-dong_Complex_Mall_20250101_01.jpg"
+      "source": "flickr",
+      "creator": "Stephen Hucker",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/97371213@N00/87004725"
     },
     {
       "slot": "scene1",
@@ -24,26 +24,10 @@
       "source": "flickr",
       "creator": "Stephen Hucker",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/97371213@N00/87004725"
+      "page": "https://www.flickr.com/photos/97371213@N00/87004522"
     },
     {
       "slot": "scene2",
-      "query": "modern apartment building residential",
-      "source": "Wikimedia Commons",
-      "creator": "Tercprojects",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:AI-generated_image_of_a_modern_apartment_living_room_with_a_rolled_floor_plan_and_calculator_on_a_coffee_table.png"
-    },
-    {
-      "slot": "scene3",
-      "query": "modern apartment building residential",
-      "source": "Wikimedia Commons",
-      "creator": "Charles from Port Chester, New York",
-      "license": "CC BY 2.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Brand_new_Park_Modern_residential_building_in_Bayswater,_London,_England_(U.K.)_(53331134057).jpg"
-    },
-    {
-      "slot": "scene4",
       "query": "modern apartment building residential",
       "source": "flickr",
       "creator": "NNECAPA",
@@ -51,12 +35,28 @@
       "page": "https://www.flickr.com/photos/23163410@N02/2830785109"
     },
     {
-      "slot": "scene5",
+      "slot": "scene3",
       "query": "modern apartment building residential",
       "source": "flickr",
       "creator": "seier+seier",
       "license": "BY",
       "page": "https://www.flickr.com/photos/94852245@N00/4484083618"
+    },
+    {
+      "slot": "scene4",
+      "query": "modern apartment building residential",
+      "source": "flickr",
+      "creator": "seier+seier",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/94852245@N00/4464959521"
+    },
+    {
+      "slot": "scene5",
+      "query": "modern apartment building residential",
+      "source": "flickr",
+      "creator": "Brokentaco",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/92024986@N00/4399677164"
     },
     {
       "slot": "scene6",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-22T18:19:21Z"
+  "fetched_at": "2026-10-23T01:59:36Z"
 }

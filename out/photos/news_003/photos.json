@@ -10,10 +10,10 @@
     {
       "slot": "cover",
       "query": "small shop owner store",
-      "source": "Wikimedia Commons",
-      "creator": "Unknown authorUnknown author",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:John_Re,_first_shop,_1930s_(01).jpg"
+      "source": "flickr",
+      "creator": "USDAgov",
+      "license": "PDM",
+      "page": "https://www.flickr.com/photos/41284017@N08/38068402991"
     },
     {
       "slot": "scene1",
@@ -27,9 +27,9 @@
       "slot": "scene2",
       "query": "tax documents calculator desk",
       "source": "flickr",
-      "creator": "Images_of_Money",
+      "creator": "Homedust",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/59937401@N07/5856725357"
+      "page": "https://www.flickr.com/photos/159630537@N08/40924421560"
     },
     {
       "slot": "scene3",
@@ -42,12 +42,12 @@
     {
       "slot": "scene4",
       "query": "signing documents pen contract",
-      "source": "Wikimedia Commons",
-      "creator": "Government of California",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Gavin_Newsom_signs_SB206_on_The_Shop_03.jpg"
+      "source": "flickr",
+      "creator": "chrismear",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/89536127@N00/4132167000"
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-22T18:28:01Z"
+  "fetched_at": "2026-10-23T02:01:01Z"
 }

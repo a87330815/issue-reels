@@ -9,10 +9,10 @@
     {
       "slot": "cover",
       "query": "luxury apartment building korea",
-      "source": "Wikimedia Commons",
-      "creator": "Haoreima",
-      "license": "CC BY 4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Pond_%26_luxury_buildings_in_the_Joysana_Retreat,_a_resort_in_Oinam_town,_near_Nambol_town,_in_Manipur_state_(Kangleipak)_01.jpg"
+      "source": "flickr",
+      "creator": "準建築人手札網站 Forgemind ArchiMedia",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/44343967@N00/6490804987"
     },
     {
       "slot": "scene1",
@@ -20,7 +20,7 @@
       "source": "flickr",
       "creator": "準建築人手札網站 Forgemind ArchiMedia",
       "license": "BY",
-      "page": "https://www.flickr.com/photos/44343967@N00/6490804987"
+      "page": "https://www.flickr.com/photos/44343967@N00/6490806297"
     },
     {
       "slot": "scene2",
@@ -33,12 +33,12 @@
     {
       "slot": "scene3",
       "query": "follow subscribe social media phone",
-      "source": "Wikimedia Commons",
-      "creator": "Internet Archive Book Images",
-      "license": "No restrictions",
-      "page": "https://commons.wikimedia.org/wiki/File:American_homes_and_gardens_(1911)_(18157123091).jpg"
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
     }
   ],
   "wanted": 4,
-  "fetched_at": "2026-10-22T18:16:53Z"
+  "fetched_at": "2026-10-23T01:59:24Z"
 }

@@ -1,0 +1,44 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "luxury apartment building korea",
+      "source": "flickr",
+      "creator": "準建築人手札網站 Forgemind ArchiMedia",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/44343967@N00/6490804987"
+    },
+    {
+      "slot": "scene1",
+      "query": "luxury apartment building korea",
+      "source": "flickr",
+      "creator": "準建築人手札網站 Forgemind ArchiMedia",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/44343967@N00/6490806297"
+    },
+    {
+      "slot": "scene2",
+      "query": "luxury high rise apartment building",
+      "source": "flickr",
+      "creator": "on1stsite.",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/7539060@N06/3386231629"
+    },
+    {
+      "slot": "scene3",
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+    }
+  ],
+  "wanted": 4,
+  "fetched_at": "2026-10-23T01:59:59Z"
+}

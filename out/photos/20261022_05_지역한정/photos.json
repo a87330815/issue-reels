@@ -29,21 +29,13 @@
     {
       "slot": "scene2",
       "query": "modern apartment building residential",
-      "source": "Wikimedia Commons",
-      "creator": "Tercprojects",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:AI-generated_image_of_a_modern_apartment_living_room_with_a_rolled_floor_plan_and_calculator_on_a_coffee_table.png"
-    },
-    {
-      "slot": "scene3",
-      "query": "modern apartment building residential",
       "source": "flickr",
       "creator": "NNECAPA",
       "license": "BY",
       "page": "https://www.flickr.com/photos/23163410@N02/2830785109"
     },
     {
-      "slot": "scene4",
+      "slot": "scene3",
       "query": "modern apartment building residential",
       "source": "flickr",
       "creator": "seier+seier",
@@ -51,12 +43,20 @@
       "page": "https://www.flickr.com/photos/94852245@N00/4484083618"
     },
     {
-      "slot": "scene5",
+      "slot": "scene4",
       "query": "modern apartment building residential",
       "source": "flickr",
       "creator": "seier+seier",
       "license": "BY",
       "page": "https://www.flickr.com/photos/94852245@N00/4464959521"
+    },
+    {
+      "slot": "scene5",
+      "query": "modern apartment building residential",
+      "source": "flickr",
+      "creator": "Brokentaco",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/92024986@N00/4399677164"
     },
     {
       "slot": "scene6",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-22T18:20:27Z"
+  "fetched_at": "2026-10-23T01:59:46Z"
 }
