@@ -1,4 +1,4 @@
-run 39937541243 2026-10-23T10:13:58Z
+run 39938664256 2026-10-23T10:23:31Z
 
 === test_trend_01 ===
   [cover] '손주 봐주면 월 30만원 준다카이' → "Korean grandmother playing with grandchild toddler"
@@ -34,12 +34,12 @@ run 39937541243 2026-10-23T10:13:58Z
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korean elderly couple"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 1건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korean elderly"
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 4건 후보
-    ✓ scene2 ← Wikimedia Commons (Public domain)
+    ✓ scene2 ← flickr (BY)
   [scene3] '매월 1~15일 온라인 신청' → "Korean government welfare office application form"
     [openverse] 0건 후보
     [wikimedia] 0건 후보
@@ -67,4 +67,20 @@ run 39937541243 2026-10-23T10:13:58Z
 음성: ko-KR-HyunsuMultilingualNeural
 
 1) TTS 생성
-[중단] TTS 실패: [Errno 2] No such file or directory: 'ffprobe'
+  TTS [1/5] 3.5초  손주 봐주면 월 30만원 준다카이...
+  TTS [2/5] 11.4초  이거 모르고 지나가면 손해다. 서울시가 24~36개월 ...
+  TTS [3/5] 15.4초  1명 봐주면 30만원, 2명이면 45만원, 3명이면 6...
+  TTS [4/5] 12.2초  신청은 매월 1~15일 서울시 탄생육아 몽땅정보통에서 ...
+  TTS [5/5] 6.3초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈...
+
+2) 영상 합성
+  세그먼트 [1/6] 4.3초
+  세그먼트 [2/6] 12.2초
+  세그먼트 [3/6] 16.2초
+  세그먼트 [4/6] 13.0초
+  세그먼트 [5/6] 7.1초
+  세그먼트 [6/6] 4.0초
+
+  ✓ 릴스 완성: out/reels/test_trend_01.mp4
+    길이: 96.9초  /  크기: 3.1MB
+-rw-r--r-- 1 runner runner 3.2M Oct 23 10:24 out/reels/test_trend_01.mp4
