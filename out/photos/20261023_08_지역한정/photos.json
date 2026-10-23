@@ -1,0 +1,80 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
+    "scene7": "scene7.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Seocho Seoul apartment skyline",
+      "source": "wikimedia",
+      "creator": "장길산",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=31280913"
+    },
+    {
+      "slot": "scene1",
+      "query": "Seocho Seoul apartment skyline",
+      "source": "flickr",
+      "creator": "Kai Hendry",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/16105436@N00/140114446"
+    },
+    {
+      "slot": "scene2",
+      "query": "Seocho Seoul luxury high rise apartment",
+      "source": "wikimedia",
+      "creator": "Hyeonjunchoe909",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=163908142"
+    },
+    {
+      "slot": "scene3",
+      "query": "Seocho Seoul luxury high rise apartment",
+      "source": "flickr",
+      "creator": "MDGovpics",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/64018555@N03/52378605788"
+    },
+    {
+      "slot": "scene4",
+      "query": "Seocho Seoul luxury high rise apartment",
+      "source": "flickr",
+      "creator": "lazy fri13th",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/73479994@N00/46747291175"
+    },
+    {
+      "slot": "scene5",
+      "query": "Seocho Seoul luxury high rise apartment",
+      "source": "wikimedia",
+      "creator": "Neoalpha",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=49636336"
+    },
+    {
+      "slot": "scene6",
+      "query": "Seocho Seoul residential area aerial",
+      "source": "wikimedia",
+      "creator": "Surgeonkang",
+      "license": "BY",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=187461685"
+    },
+    {
+      "slot": "scene7",
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+    }
+  ],
+  "wanted": 8,
+  "fetched_at": "2026-10-23T08:37:30Z"
+}

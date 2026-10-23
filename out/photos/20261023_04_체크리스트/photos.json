@@ -1,0 +1,71 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "checklist document pen desk",
+      "source": "Wikimedia Commons",
+      "creator": "Darbee, Jeffrey T; Recchie, Nancy A",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Checklist_for_Change_-_DPLA_-_e01b3c08aab86e07e7775c93c07a2b38_(page_16).jpg"
+    },
+    {
+      "slot": "scene1",
+      "query": "checklist document pen desk",
+      "source": "flickr",
+      "creator": "Ivan Radic",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/26344495@N05/51404235122"
+    },
+    {
+      "slot": "scene2",
+      "query": "Korea city apartment building",
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/8261592183"
+    },
+    {
+      "slot": "scene3",
+      "query": "Korea city apartment building",
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/8262663018"
+    },
+    {
+      "slot": "scene4",
+      "query": "Korea city apartment building",
+      "source": "flickr",
+      "creator": "D-Stanley",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/79721788@N00/5063726586"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city apartment building",
+      "source": "flickr",
+      "creator": "sunbeams879",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/126817823@N08/14965100650"
+    },
+    {
+      "slot": "scene6",
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+    }
+  ],
+  "wanted": 7,
+  "fetched_at": "2026-10-23T08:29:34Z"
+}

@@ -1,0 +1,71 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene6": "scene6.jpg",
+    "scene7": "scene7.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Korea city apartment skyline",
+      "source": "Wikimedia Commons",
+      "creator": "LandAndTree",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Anseong_City_Seokjeong-dong_Seokjeong_2-gil_20250101_(01).jpg"
+    },
+    {
+      "slot": "scene1",
+      "query": "Korea city apartment skyline",
+      "source": "Wikimedia Commons",
+      "creator": "LandAndTree",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Anseong_City_Seokjeong-dong_Seokjeong_2-gil_20250101_(02).jpg"
+    },
+    {
+      "slot": "scene2",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Wikimedia Commons",
+      "creator": "Pedro Ribeiro Simões from Lisboa, Portugal",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:PACKARD_120_CONVERTIBLE_COUPE_(1939)_(50072477626).jpg"
+    },
+    {
+      "slot": "scene3",
+      "query": "Korea city luxury high rise apartment",
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/9081533712"
+    },
+    {
+      "slot": "scene4",
+      "query": "Korea city luxury high rise apartment",
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/9079319923"
+    },
+    {
+      "slot": "scene6",
+      "query": "Korea city residential area aerial",
+      "source": "Wikimedia Commons",
+      "creator": "Garam",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Gwangandaegyo_in_2019_-_1.jpg"
+    },
+    {
+      "slot": "scene7",
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+    }
+  ],
+  "wanted": 8,
+  "fetched_at": "2026-10-23T08:34:29Z"
+}

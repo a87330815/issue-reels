@@ -1,0 +1,80 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
+    "scene7": "scene7.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Korea city apartment skyline",
+      "source": "flickr",
+      "creator": "sunbeams879",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/126817823@N08/14965100650"
+    },
+    {
+      "slot": "scene1",
+      "query": "Korea city apartment skyline",
+      "source": "flickr",
+      "creator": "Kimmo Räisänen",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/78756325@N06/6944724976"
+    },
+    {
+      "slot": "scene2",
+      "query": "Korea city modern apartment residential",
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/8261592183"
+    },
+    {
+      "slot": "scene3",
+      "query": "Korea city modern apartment residential",
+      "source": "flickr",
+      "creator": "D-Stanley",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/79721788@N00/5063726586"
+    },
+    {
+      "slot": "scene4",
+      "query": "Korea city modern apartment residential",
+      "source": "flickr",
+      "creator": "istolethetv",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/44124401641@N01/8746385789"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city modern apartment residential",
+      "source": "flickr",
+      "creator": "istolethetv",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/44124401641@N01/8746386099"
+    },
+    {
+      "slot": "scene6",
+      "query": "Korea city residential area aerial",
+      "source": "Wikimedia Commons",
+      "creator": "Garam",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Gwangandaegyo_in_2019_-_1.jpg"
+    },
+    {
+      "slot": "scene7",
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+    }
+  ],
+  "wanted": 8,
+  "fetched_at": "2026-10-23T08:35:33Z"
+}
