@@ -1,10 +1,10 @@
 {
-  "title": "좌동 최고 8억",
+  "title": "송도동 최고 24억",
   "cover": {
     "image": null,
     "photo_query": "Korea city apartment skyline",
     "lines": [
-      "좌동 최고 8억",
+      "송도동 최고 24억",
       "<y>실거래가 공개</y>"
     ],
     "badge": null
@@ -13,38 +13,38 @@
     {
       "image": null,
       "photo_query": "Korea city apartment skyline",
-      "narration": "좌동 최고가 삼성 134.97㎡ 7.5억. 국토교통부에 신고된 실제 거래 금액이다.",
-      "subtitle": "좌동 최고 7.5억"
+      "narration": "이거 모르고 지나가면 손해다. 송도동 최고가 인천송도힐스테이트5단지 239.7201㎡ 24.0억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "송도동 최고 24.0억"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "좌동 삼성, 전용 135㎡(41평) 13층이 7.5억원에 실거래 신고됐다. 평당 1,837만원. 1997년 준공.",
-      "subtitle": "좌동 삼성 7.5억원"
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "송도동 인천송도힐스테이트5단지, 전용 240㎡(73평) 20층이 24.0억원에 실거래 신고됐다카이. 평당 3,310만원. 2011년 준공(15년차).",
+      "subtitle": "송도동 인천송도힐스테이트5단지"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "같은 동네 두산2도 주목할 만한다. 전용 135㎡(41평) 12층, 거래가 6.9억원. 평당 1,690만원.",
-      "subtitle": "좌동 두산2 6.9억원"
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "같은 동네 송도더샵파크애비뉴도 주목할 만한다. 전용 108㎡(33평) 41층, 거래가 16.6억원. 평당 5,063만원.",
+      "subtitle": "송도동 송도더샵파크애비뉴 16.6억원"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "현대 전용 134㎡(41평) 10층 — 6.8억원 거래. 평당 1,678만원.",
-      "subtitle": "좌동 현대 6.8억원"
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "송도더샵퍼스트파크F15BL 전용 108㎡(33평) 33층 — 15.6억원 거래. 평당 4,772만원.",
+      "subtitle": "송도동 송도더샵퍼스트파크F15BL"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "동부 전용 100㎡(30평) 15층 — 6.8억원 거래. 평당 2,243만원.",
-      "subtitle": "좌동 동부 6.8억원"
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "송도자이하버뷰2단지 전용 136㎡(41평) 14층 — 14.2억원 거래. 평당 3,460만원.",
+      "subtitle": "송도동 송도자이하버뷰2단지 14.2억원"
     },
     {
       "image": null,
       "photo_query": "Korea city residential area aerial",
-      "narration": "좌동 이번 달 거래를 종합하면, 평균 거래가는 6.9억원, 최고가 7.5억원, 최저가 6.5억원이다. 총 5건이 신고됐다.",
-      "subtitle": "좌동 이번 달 거래를 종합하면, 평균"
+      "narration": "송도동 이번 달 거래를 종합하면, 평균 거래가는 16.8억원, 최고가 24.0억원, 최저가 13.6억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "송도동 이번 달 거래를 종합하면, 평균"
     },
     {
       "image": null,
@@ -60,15 +60,15 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        7.5,
-        6.9,
-        6.8,
-        6.8,
-        6.5
+        24.0,
+        16.6,
+        15.6,
+        14.2,
+        13.6
       ],
       "style": "bars"
     },
     "tone": "경상도",
-    "generated_at": "2026-10-23T08:21:44.259765+00:00"
+    "generated_at": "2026-10-23T12:58:10.620365+00:00"
   }
 }

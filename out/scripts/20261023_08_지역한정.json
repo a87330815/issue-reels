@@ -1,50 +1,50 @@
 {
-  "title": "서초동 최고 37억",
+  "title": "좌동 최고 8억",
   "cover": {
     "image": null,
-    "photo_query": "Seocho Seoul apartment skyline",
+    "photo_query": "Korea city apartment skyline",
     "lines": [
-      "서초동 최고 37억",
-      "<r>이번 달 기록</r>"
+      "좌동 최고 8억",
+      "<y>실거래가 공개</y>"
     ],
     "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Seocho Seoul apartment skyline",
-      "narration": "서초동 최고가 서초푸르지오써밋 84.95㎡ 37.0억. 국토교통부에 신고된 실제 거래 금액이다.",
-      "subtitle": "서초동 최고 37.0억"
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 좌동 최고가 삼성 134.97㎡ 7.5억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "좌동 최고 7.5억"
     },
     {
       "image": null,
-      "photo_query": "Seocho Seoul luxury high rise apartment",
-      "narration": "서초동 서초푸르지오써밋, 전용 85㎡(26평) 13층이 37.0억원에 실거래 신고됐다. 평당 1.4억. 2017년 준공(9년차).",
-      "subtitle": "서초동 서초푸르지오써밋 37.0억원"
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "좌동 삼성, 전용 135㎡(41평) 13층이 7.5억원에 실거래 신고됐다카이. 평당 1,837만원. 1997년 준공.",
+      "subtitle": "좌동 삼성 7.5억원"
     },
     {
       "image": null,
-      "photo_query": "Seocho Seoul luxury high rise apartment",
-      "narration": "같은 동네 롯데캐슬클래식도 주목할 만한다. 전용 133㎡(40평) 7층, 거래가 35.5억원. 평당 8,794만원.",
-      "subtitle": "서초동 롯데캐슬클래식 35.5억원"
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 두산2도 주목할 만한다. 전용 135㎡(41평) 12층, 거래가 6.9억원. 평당 1,690만원.",
+      "subtitle": "좌동 두산2 6.9억원"
     },
     {
       "image": null,
-      "photo_query": "Seocho Seoul luxury high rise apartment",
-      "narration": "서초그랑자이 전용 60㎡(18평) 28층 — 32.2억원 거래. 평당 1.8억.",
-      "subtitle": "서초동 서초그랑자이 32.2억원"
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "현대 전용 134㎡(41평) 10층 — 6.8억원 거래. 평당 1,678만원.",
+      "subtitle": "좌동 현대 6.8억원"
     },
     {
       "image": null,
-      "photo_query": "Seocho Seoul luxury high rise apartment",
-      "narration": "아크로비스타 전용 149㎡(45평) 17층 — 32.0억원 거래. 평당 7,096만원.",
-      "subtitle": "서초동 아크로비스타 32.0억원"
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "동부 전용 100㎡(30평) 15층 — 6.8억원 거래. 평당 2,243만원.",
+      "subtitle": "좌동 동부 6.8억원"
     },
     {
       "image": null,
-      "photo_query": "Seocho Seoul residential area aerial",
-      "narration": "서초동 이번 달 거래를 종합하면, 평균 거래가는 33.5억원, 최고가 37.0억원, 최저가 30.7억원이다. 총 5건이 신고됐다.",
-      "subtitle": "서초동 이번 달 거래를 종합하면, 평균"
+      "photo_query": "Korea city residential area aerial",
+      "narration": "좌동 이번 달 거래를 종합하면, 평균 거래가는 6.9억원, 최고가 7.5억원, 최저가 6.5억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "좌동 이번 달 거래를 종합하면, 평균"
     },
     {
       "image": null,
@@ -60,15 +60,15 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        37.0,
-        35.5,
-        32.2,
-        32.0,
-        30.7
+        7.5,
+        6.9,
+        6.8,
+        6.8,
+        6.5
       ],
       "style": "bars"
     },
     "tone": "경상도",
-    "generated_at": "2026-10-23T08:21:44.464221+00:00"
+    "generated_at": "2026-10-23T12:58:10.851222+00:00"
   }
 }
