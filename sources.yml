@@ -21,7 +21,7 @@ sources:
 
   - id: kca_product_price
     name: 한국소비자원 생필품 가격 정보 (참가격)
-    status: pending           # field_map 작성 후 live로 전환
+    status: live
     endpoint: https://apis.data.go.kr/B551919/ProductPriceInfoService/getProductPriceInfoSvc
     key_env: DATA_GO_KR_KEY
     license: 1                # 공공저작물 출처표시 (제1유형) — 2026-10-19 상세페이지 확인
@@ -30,7 +30,23 @@ sources:
     format: XML
     category: 물가
     attribution: 공공데이터포털 · 한국소비자원
-    field_map: {}             # probe 워크플로 결과 확인 후 작성
+    # 조사일은 격주 금요일(biweekly). collect.py가 최근 금요일을 스캔해 자동 결정.
+    # XML 태그가 <item> 대신 <iros.openapi.service.vo.goodPriceVO>를 쓴다.
+    xml_item_tag: iros.openapi.service.vo.goodPriceVO
+    goods:
+      - { id: "246", name: "삼겹살" }
+      - { id: "224", name: "우유" }
+      - { id: "553", name: "신라면" }
+      - { id: "302", name: "배추" }
+      - { id: "935", name: "대파" }
+      - { id: "237", name: "삼양라면" }
+    field_map:
+      fields:
+        inspect_day: goodInspectDay   # 조사일 (YYYYMMDD)
+        store_id: entpId              # 판매점 ID
+        good_id: goodId               # 상품 ID
+        price: goodPrice              # 가격(원)
+        input_time: inputDttm         # 입력 시각
 
   - id: molit_apt_trade
     name: 국토교통부 아파트 매매 실거래가 자료

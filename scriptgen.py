@@ -322,14 +322,63 @@ def analyze_price(items):
     price_items = [it for it in items if it.get("source") == "kca_product_price"]
     if not price_items:
         return []
-    # 가격 데이터가 들어오면 여기서 앵글 추출
-    return [{
-        "type": "숫자훅",
-        "hook": "생필품 가격",
-        "data": {},
-        "summary": f"생필품 가격 데이터 {len(price_items)}건",
-        "items": price_items[:5],
-    }]
+
+    # 상품별 가격 집계
+    from collections import defaultdict
+    by_good = defaultdict(list)
+    for it in price_items:
+        name = it.get("good_name", "")
+        try:
+            p = int(it["price"])
+        except (ValueError, KeyError):
+            continue
+        if name and p > 0:
+            by_good[name].append(p)
+
+    if not by_good:
+        return []
+
+    angles = []
+
+    # 1) 상품별 최저/최고 가격차 — 가장 차이 큰 상품으로 숫자훅
+    best_spread = None
+    for name, prices in by_good.items():
+        if len(prices) < 3:
+            continue
+        lo, hi = min(prices), max(prices)
+        spread = hi - lo
+        if best_spread is None or spread > best_spread[0]:
+            best_spread = (spread, name, lo, hi, len(prices))
+
+    if best_spread:
+        spread, name, lo, hi, n = best_spread
+        angles.append({
+            "type": "물가",
+            "hook": f"{name} 가격차 {spread:,}원",
+            "data": {"good": name, "min": lo, "max": hi, "count": n,
+                     "avg": round(sum(by_good[name]) / n)},
+            "summary": f"{name} 최저 {lo:,}원 ~ 최고 {hi:,}원 "
+                       f"(조사 {n}곳, 차이 {spread:,}원)",
+            "short": f"{name} {lo:,}~{hi:,}원",
+            "items": price_items[:5],
+        })
+
+    # 2) 전체 상품 평균가 요약 — 체크리스트 형태
+    summary_lines = []
+    for name, prices in sorted(by_good.items()):
+        avg = round(sum(prices) / len(prices))
+        summary_lines.append(f"{name} 평균 {avg:,}원")
+    if len(summary_lines) >= 3:
+        angles.append({
+            "type": "체크리스트",
+            "hook": "이번 주 장바구니 물가",
+            "data": {name: round(sum(ps)/len(ps)) for name, ps in by_good.items()},
+            "summary": ", ".join(summary_lines),
+            "short": f"생필품 {len(summary_lines)}종 평균가",
+            "items": price_items[:5],
+        })
+
+    return angles
 
 
 def extract_angles(items):
@@ -376,6 +425,15 @@ TEMPLATES = {
             lambda a: ["반드시 확인", f"<r>{hook_fit(a.get('hook',''))}</r>"],
         ],
         "narration_pattern": "{summary}와 관련해서 꼭 체크해야 할 사항들을 정리했습니다.",
+        "scene_count": 6,
+    },
+    "물가": {
+        "cover_pattern": [
+            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "어디서 사야 할까"],
+            lambda a: ["장보기 전에", f"<r>{hook_fit(a.get('hook',''))}</r>", "확인하세요"],
+            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "이거 실화입니다"],
+        ],
+        "narration_pattern": "{summary}. 한국소비자원 참가격 조사 결과입니다.",
         "scene_count": 6,
     },
     # 실거래가는 그 동네 주민만 해당하는 정보가 아니라 누구나 보는 시세다.
@@ -453,6 +511,21 @@ def _scene_image_keyword(angle, scene_type="intro"):
         return "checklist document pen desk"
     elif fmt == "시행일훅":
         return "government building law document korea"
+    elif fmt == "물가":
+        good = angle.get("data", {}).get("good", "")
+        kw_map = {
+            "삼겹살": "korean pork belly meat market",
+            "우유": "milk bottles dairy store",
+            "신라면": "korean ramen noodles grocery",
+            "배추": "napa cabbage korean market",
+            "대파": "green onion scallion market",
+            "삼양라면": "korean instant noodles grocery store",
+        }
+        if good in kw_map:
+            return kw_map[good]
+        if scene_type == "intro":
+            return "korean grocery market fresh food"
+        return "supermarket shopping cart groceries"
     return f"{region_en} apartment building"
 
 

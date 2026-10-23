@@ -135,25 +135,29 @@ def expand_params(src):
     return [dict(zip(keys, combo)) for combo in itertools.product(*choices)]
 
 
-def parse_xml_items(text, fm):
+def parse_xml_items(text, fm, xml_item_tag=None):
     """XML 응답에서 item들을 뽑아 field_map대로 평평한 dict 리스트로 만든다.
 
-    응답이 잘려 있어도 온전한 <item> 블록만 건지도록 정규식으로 읽는다.
-    (공공 API 응답이 길면 중간에서 끊겨 오는 경우가 있다.)
+    응답이 잘려 있어도 온전한 블록만 건지도록 정규식으로 읽는다.
+    xml_item_tag: 참가격처럼 <item> 대신 다른 태그를 쓰는 경우 지정.
     """
     fields = fm.get("fields") or {}
+    tag = xml_item_tag or "item"
+    # 태그에 점(.)이 있으면 정규식에서 이스케이프
+    tag_re = re.escape(tag)
     out = []
-    for blk in re.findall(r"<item>(.*?)</item>", text, re.S):
+    for blk in re.findall(rf"<{tag_re}>(.*?)</{tag_re}>", text, re.S):
         pairs = dict(re.findall(r"<(\w+)>\s*([^<]*?)\s*</\1>", blk))
-        row = {name: pairs.get(tag, "") for name, tag in fields.items()}
+        row = {name: pairs.get(tag_v, "") for name, tag_v in fields.items()}
         if any(row.values()):
             out.append(row)
     return out
 
 
-def api_error(text):
+def api_error(text, xml_item_tag=None):
     """응답이 에러면 그 메시지를, 정상이면 None을 돌려준다."""
-    if "<item>" in text:
+    tag = xml_item_tag or "item"
+    if f"<{tag}>" in text or "<item>" in text:
         return None
     m = re.search(r"<resultMsg>\s*([^<]*?)\s*</resultMsg>", text)
     if m and m.group(1).upper() not in ("OK", "NORMAL SERVICE.", "NORMAL_SERVICE"):
@@ -162,50 +166,110 @@ def api_error(text):
     return m.group(1) if m else None
 
 
+def _find_latest_survey_date(endpoint, key, xml_item_tag):
+    """참가격 API의 최신 조사일을 찾는다. 최근 금요일을 역순으로 시도."""
+    import requests
+    from datetime import timedelta
+    today = datetime.now().date()
+    # 최근 60일의 금요일을 역순으로
+    d = today
+    while d.weekday() != 4:  # 4 = Friday
+        d -= timedelta(days=1)
+    for _ in range(8):  # 최대 8주 전까지
+        ds = d.strftime("%Y%m%d")
+        try:
+            r = requests.get(endpoint, params={
+                "serviceKey": key, "numOfRows": 1, "pageNo": 1,
+                "goodId": "246", "goodInspectDay": ds,
+            }, timeout=15)
+            if f"<{xml_item_tag}>" in r.text or "<item>" in r.text:
+                print(f"      조사일 발견: {ds}")
+                return ds
+        except Exception:
+            pass
+        d -= timedelta(days=7)
+        time.sleep(0.3)
+    return None
+
+
+def _api_call(endpoint, params, key):
+    """단일 API 호출 + 재시도. 성공 시 Response, 실패 시 None과 에러 메시지."""
+    import requests
+    r, last = None, None
+    for attempt in range(3):
+        try:
+            r = requests.get(endpoint, params=params, timeout=25)
+            r.raise_for_status()
+            return r, None
+        except Exception as e:
+            last = f"{type(e).__name__}: {str(e).replace(key, '***')}"
+            r = None
+            if attempt < 2:
+                time.sleep(3 * (attempt + 1))
+    return None, last
+
+
 def fetch(src):
     """소스 하나를 실제로 호출한다. field_map이 비어 있으면 아직 매핑 전이라 건너뛴다."""
     fm = src.get("field_map")
     if not fm:
         return []
-    import requests  # 게이트를 통과한 소스에서만 필요
 
     key = os.environ[src["key_env"]]
+    xml_item_tag = src.get("xml_item_tag")
     items, errors = [], []
 
-    for extra in expand_params(src):
-        params = {"serviceKey": key, "numOfRows": src.get("rows", 100), "pageNo": 1}
-        params.update(extra)
-
-        # 해외 IP 차단이 간헐적이라 같은 호출이 한 번은 막히고 한 번은 뚫린다.
-        # 한 번 실패로 포기하면 수집 전체가 빈손이 되므로 간격을 두고 재시도한다.
-        r, last = None, None
-        for attempt in range(3):
-            try:
-                r = requests.get(src["endpoint"], params=params, timeout=25)
-                r.raise_for_status()
-                break
-            except Exception as e:
-                # 예외 메시지에 URL이 실리고 URL에는 인증키가 들어 있다. 반드시 지운다.
-                last = f"{type(e).__name__}: {str(e).replace(key, '***')}"
-                r = None
-                if attempt < 2:
-                    time.sleep(3 * (attempt + 1))
-        if r is None:
-            errors.append(f"{extra}: {last}")
-            continue
-
-        err = api_error(r.text)
-        if err:
-            errors.append(f"{extra}: {err}")
-            continue
-
-        rows = parse_xml_items(r.text, fm)
-        for row in rows:
-            row["source"] = src["id"]
-            row["category"] = src.get("category", "")
-            row["attribution"] = src.get("attribution", "")
-            row.update({f"q_{k}": v for k, v in extra.items()})
-        items.extend(rows)
+    # 참가격처럼 goods 리스트 + 조사일 스캔이 필요한 소스
+    goods = src.get("goods")
+    if goods:
+        inspect_day = _find_latest_survey_date(src["endpoint"], key, xml_item_tag or "item")
+        if not inspect_day:
+            errors.append("조사일을 찾지 못했습니다 (최근 8주)")
+        else:
+            for g in goods:
+                params = {
+                    "serviceKey": key,
+                    "numOfRows": src.get("rows", 100),
+                    "pageNo": 1,
+                    "goodId": g["id"],
+                    "goodInspectDay": inspect_day,
+                }
+                r, err_msg = _api_call(src["endpoint"], params, key)
+                if r is None:
+                    errors.append(f"goodId={g['id']}: {err_msg}")
+                    continue
+                err = api_error(r.text, xml_item_tag)
+                if err:
+                    errors.append(f"goodId={g['id']}: {err}")
+                    continue
+                rows = parse_xml_items(r.text, fm, xml_item_tag)
+                for row in rows:
+                    row["source"] = src["id"]
+                    row["category"] = src.get("category", "")
+                    row["attribution"] = src.get("attribution", "")
+                    row["good_name"] = g["name"]
+                items.extend(rows)
+                time.sleep(0.3)
+    else:
+        # 일반 소스 (아파트 실거래가 등)
+        for extra in expand_params(src):
+            params = {"serviceKey": key, "numOfRows": src.get("rows", 100), "pageNo": 1}
+            params.update(extra)
+            r, err_msg = _api_call(src["endpoint"], params, key)
+            if r is None:
+                errors.append(f"{extra}: {err_msg}")
+                continue
+            err = api_error(r.text, xml_item_tag)
+            if err:
+                errors.append(f"{extra}: {err}")
+                continue
+            rows = parse_xml_items(r.text, fm, xml_item_tag)
+            for row in rows:
+                row["source"] = src["id"]
+                row["category"] = src.get("category", "")
+                row["attribution"] = src.get("attribution", "")
+                row.update({f"q_{k}": v for k, v in extra.items()})
+            items.extend(rows)
 
     if errors:
         print(f"      경고: {len(errors)}건 실패")
