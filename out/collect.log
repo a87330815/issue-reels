@@ -6,15 +6,19 @@
   --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
 
 통과 2 / 전체 6
-apis.data.go.kr → 400
-www.korea.kr → 200
+apis.data.go.kr → 000연결실패
+www.korea.kr → 000연결실패
 apihub.kma.go.kr → 200
-kosis.kr → 302
+kosis.kr → 000연결실패
   --  korea_briefing_rss  차단(dead): 2026-07-01 중단 (저작권 등 권리 보호 사유)
   --  kma_rss             차단(dead): 2025-03-31 중단. 대체는 kma_apihub
   OK  kca_product_price   통과
   OK  molit_apt_trade     통과
   --  kma_apihub          폐기(공공누리 미확인/비1유형): license=unknown
   --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
+      경고: 24건 실패
+        {'LAWD_CD': '48250', 'DEAL_YMD': '202610'}: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1613000/RTMSDataSvcAptTrade/getRTMSDataSvcAptTrade?serviceKey=***&numOfRows=100&pageNo=1&LAWD_CD=48250&DEAL_YMD=202610 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7f2a918b2250>, 'Connection to apis.data.go.kr timed out. (connect timeout=25)'))
+        {'LAWD_CD': '48250', 'DEAL_YMD': '202609'}: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1613000/RTMSDataSvcAptTrade/getRTMSDataSvcAptTrade?serviceKey=***&numOfRows=100&pageNo=1&LAWD_CD=48250&DEAL_YMD=202609 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7f2a918cbed0>, 'Connection to apis.data.go.kr timed out. (connect timeout=25)'))
+        {'LAWD_CD': '48170', 'DEAL_YMD': '202610'}: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1613000/RTMSDataSvcAptTrade/getRTMSDataSvcAptTrade?serviceKey=***&numOfRows=100&pageNo=1&LAWD_CD=48170&DEAL_YMD=202610 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7f2a918c9dd0>, 'Connection to apis.data.go.kr timed out. (connect timeout=25)'))
 
 수집 0건 — 기존 2009건을 유지합니다 (API 접속 실패로 보입니다. 덮어쓰지 않습니다)
