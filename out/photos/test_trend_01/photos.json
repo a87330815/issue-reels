@@ -1,0 +1,53 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Korean grandmother playing with grandchild toddler",
+      "source": "Wikimedia Commons",
+      "creator": "U.S. Army",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Photographers_expand_horizons_in_2010_Army_Digital_Photography_Contest_110311_(5546845675).jpg"
+    },
+    {
+      "slot": "scene1",
+      "query": "happy Korean grandmother with baby grandchild",
+      "source": "Wikimedia Commons",
+      "creator": "U.S. Army",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Photographers_expand_horizons_in_2010_Army_Digital_Photography_Contest_110311_(5546844665).jpg"
+    },
+    {
+      "slot": "scene2",
+      "query": "Korean elderly couple caring for grandchildren family",
+      "source": "Wikimedia Commons",
+      "creator": "Gene Putnam; Harry S. Truman Library &amp; Museum.",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Elderly_Korean_Man.jpg"
+    },
+    {
+      "slot": "scene3",
+      "query": "Korean government welfare office application form",
+      "source": "Wikimedia Commons",
+      "creator": "Ministry of Health and Welfare of South Korea in Seoul, Kore",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Brian_King_Keynote_Global_Tobacco_Control_Policy_Forum.jpg"
+    },
+    {
+      "slot": "scene4",
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+    }
+  ],
+  "wanted": 5,
+  "fetched_at": "2026-10-23T10:12:09Z"
+}
