@@ -2,10 +2,11 @@
   --  kma_rss             차단(dead): 2025-03-31 중단. 대체는 kma_apihub
   OK  kca_product_price   통과
   OK  molit_apt_trade     통과
+  OK  google_trends_kr    통과
   --  kma_apihub          폐기(공공누리 미확인/비1유형): license=unknown
   --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
 
-통과 2 / 전체 6
+통과 3 / 전체 7
 apis.data.go.kr → 400
 www.korea.kr → 200
 apihub.kma.go.kr → 200
@@ -14,8 +15,15 @@ kosis.kr → 302
   --  kma_rss             차단(dead): 2025-03-31 중단. 대체는 kma_apihub
   OK  kca_product_price   통과
   OK  molit_apt_trade     통과
+  OK  google_trends_kr    통과
   --  kma_apihub          폐기(공공누리 미확인/비1유형): license=unknown
   --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
       조사일 발견: 20261009
 
-수집 3173건 · 언론사표현 폐기 0건 → /home/runner/work/issue-reels/issue-reels/out/collected.json
+수집 0건 — 기존 3173건을 유지합니다 (API 접속 실패로 보입니다. 덮어쓰지 않습니다)
+트렌드 수집 시작
+  Google Trends: 10건
+  네이버 DataLab: 0건
+
+트렌드 수집 10건 · 제외 0건 → /home/runner/work/issue-reels/issue-reels/out/trends.json
+  당일 화제 이슈: 10건
