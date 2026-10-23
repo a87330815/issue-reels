@@ -390,6 +390,63 @@ def extract_angles(items):
     return angles
 
 
+def load_trends(path=None):
+    """트렌드 데이터(out/trends.json)를 로드한다."""
+    if path is None:
+        path = os.path.join(ROOT, "out", "trends.json")
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    items = data.get("items", [])
+    print(f"트렌드 데이터 로드: {len(items)}건 ({data.get('collected_at', '?')})")
+    return items
+
+
+def trends_to_angles(trend_items):
+    """트렌드 아이템을 스토리 앵글로 변환한다.
+
+    트렌드는 키워드만 있으므로 LLM이 사실을 확인하고 새 문장을 써야 한다.
+    여기서는 LLM에 넘길 앵글 구조만 만든다.
+    """
+    angles = []
+    for item in trend_items:
+        keyword = item["keyword"]
+        category = item.get("category", "당일 화제 이슈")
+        snippet = item.get("snippet", "")
+        news_title = item.get("news_title", "")
+
+        # 카테고리별 포맷 매핑
+        fmt_map = {
+            "생활·지원금·제도": "체크리스트",
+            "경제·부동산": "숫자훅",
+            "놀라운 사건·화제": "오해정정",
+            "당일 화제 이슈": "숫자훅",
+        }
+        fmt = fmt_map.get(category, "숫자훅")
+
+        summary = f"'{keyword}' 관련 트렌드"
+        if news_title:
+            summary += f" — {news_title}"
+
+        angles.append({
+            "type": fmt,
+            "hook": keyword[:10],
+            "summary": summary,
+            "source": "google_trends",
+            "category": category,
+            "items": [],  # 트렌드는 원본 데이터가 없음 — LLM이 사실을 직접 구성
+            "trend_keyword": keyword,
+            "trend_snippet": snippet,
+            "trend_news_title": news_title,
+            "data": {
+                "source": "google_trends",
+                "category": category,
+            },
+        })
+    return angles
+
+
 # ═══════════════════════════════════════════════════════════
 #  템플릿 모드 — 규칙 기반 대본 생성
 # ═══════════════════════════════════════════════════════════
@@ -1071,11 +1128,45 @@ def llm_provider():
     return None, None
 
 
+def _build_trend_prompt(angle):
+    """트렌드 키워드 기반 LLM 프롬프트를 생성한다."""
+    keyword = angle.get("trend_keyword", angle.get("hook", ""))
+    snippet = angle.get("trend_snippet", "")
+    news_title = angle.get("trend_news_title", "")
+    category = angle.get("category", "당일 화제 이슈")
+
+    context_parts = [f"키워드: {keyword}"]
+    if news_title:
+        context_parts.append(f"관련 뉴스 제목: {news_title}")
+    if snippet:
+        context_parts.append(f"관련 요약: {snippet}")
+
+    return f"""아래 트렌드 키워드로 릴스 대본 1편을 써주세요.
+
+{chr(10).join(context_parts)}
+카테고리: {category}
+추천 포맷: {angle['type']}
+
+**중요: 사실 확인 및 저작권 규칙**
+1. 키워드에서 핵심 사실(누가, 무엇을, 언제, 얼마)만 추출하세요
+2. 뉴스 기사의 문장을 그대로 쓰지 마세요. 완전히 새로운 문장으로 작성하세요
+3. 확인되지 않은 사실은 쓰지 마세요. 모르면 일반적인 사실로 대체하세요
+4. 사진은 직접 촬영한 것만 사용합니다. photo_query에 영문 키워드를 넣어주세요
+5. 출처 표시: "Google Trends"
+
+커버는 24자 이내입니다. 이 키워드를 보고 사람들이 무엇을 알아야 한다고 느낄지,
+무엇을 놓치고 있다고 느낄지에서 출발하세요."""
+
+
 def llm_generate(angle, api_key, provider="anthropic"):
     """LLM으로 대본을 생성한다. provider는 anthropic | openai."""
     import requests as req
 
-    prompt = f"""아래 공공데이터로 릴스 대본 1편을 써주세요.
+    # 트렌드 키워드 기반인지 공공데이터 기반인지에 따라 프롬프트 분기
+    if angle.get("trend_keyword"):
+        prompt = _build_trend_prompt(angle)
+    else:
+        prompt = f"""아래 공공데이터로 릴스 대본 1편을 써주세요.
 
 분석 요약: {angle['summary']}
 추천 포맷: {angle['type']} (데이터에 더 맞는 포맷이 있으면 바꿔도 됩니다)
@@ -1106,10 +1197,15 @@ def llm_generate(angle, api_key, provider="anthropic"):
         return None
 
     # render.py 호환 포맷으로 변환
-    first_item = angle.get("items", [{}])[0] if angle.get("items") else {}
-    source_id = first_item.get("source", "") if isinstance(first_item, dict) else ""
-    category = first_item.get("category", "") if isinstance(first_item, dict) else ""
-    attribution = first_item.get("attribution", "") if isinstance(first_item, dict) else ""
+    if angle.get("trend_keyword"):
+        source_id = "google_trends"
+        category = angle.get("category", "당일 화제 이슈")
+        attribution = "Google Trends"
+    else:
+        first_item = angle.get("items", [{}])[0] if angle.get("items") else {}
+        source_id = first_item.get("source", "") if isinstance(first_item, dict) else ""
+        category = first_item.get("category", "") if isinstance(first_item, dict) else ""
+        attribution = first_item.get("attribution", "") if isinstance(first_item, dict) else ""
 
     def _pq(d):
         """photo_query 정리 — 영문 2~6단어만 통과시킨다 (없으면 None → 키워드 매핑 폴백)."""
@@ -1159,10 +1255,27 @@ def main():
     ap.add_argument("--input", default=COLLECTED, help="수집 데이터 경로")
     ap.add_argument("--out", default=SCRIPT_DIR, help="출력 디렉토리")
     ap.add_argument("--dry-run", action="store_true", help="생성만 하고 파일 저장 안 함")
+    ap.add_argument("--trends", default=os.path.join(ROOT, "out", "trends.json"),
+                    help="트렌드 데이터 경로 (없으면 무시)")
+    ap.add_argument("--trends-only", action="store_true",
+                    help="트렌드 데이터만으로 생성 (수집 데이터 불필요)")
     args = ap.parse_args()
 
-    items = load_collected(args.input)
-    angles = extract_angles(items)
+    # 수집 데이터 + 트렌드 데이터 합산
+    angles = []
+    if not args.trends_only:
+        if os.path.exists(args.input):
+            items = load_collected(args.input)
+            angles.extend(extract_angles(items))
+        else:
+            print(f"[알림] 수집 데이터 없음: {args.input}")
+
+    # 트렌드 앵글 추가
+    trend_items = load_trends(args.trends)
+    if trend_items:
+        trend_angles = trends_to_angles(trend_items)
+        angles.extend(trend_angles)
+        print(f"트렌드 앵글 {len(trend_angles)}개 추가")
 
     if not angles:
         print("[오류] 스토리 앵글 추출 실패 — 수집 데이터에 분석 가능한 항목 없음")

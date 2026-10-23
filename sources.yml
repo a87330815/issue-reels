@@ -95,6 +95,18 @@ sources:
         deal_type: dealingGbn
     note: 특정 단지·개인 식별 방식으로 사용하지 않음 (활용목적 신고 내용)
 
+  - id: google_trends_kr
+    name: Google Trends Korea (일간 인기 검색어)
+    status: live
+    endpoint: https://trends.google.co.kr/trending/rss?geo=KR
+    key_env: null              # API 키 불필요
+    license: none              # RSS 피드 — 키워드만 수집, 기사 내용 미사용
+    format: RSS/XML
+    category: 트렌드
+    attribution: Google Trends
+    note: 키워드만 추출. 뉴스 본문은 수집하지 않음. LLM이 사실만 뽑아 완전히 새 문장으로 대본 생성.
+    collector: collect_trends.py
+
   - id: kma_apihub
     name: 기상청 API 허브
     status: pending

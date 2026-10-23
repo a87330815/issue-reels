@@ -50,13 +50,17 @@ jobs:
             echo "$h → $code" | tee -a out/collect.log
           done
 
-      - name: 수집
+      - name: 수집 (공공데이터)
         continue-on-error: true
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
           KMA_APIHUB_KEY: ${{ secrets.KMA_APIHUB_KEY }}
           KOSIS_KEY: ${{ secrets.KOSIS_KEY }}
         run: python -u collect.py 2>&1 | tee -a out/collect.log
+
+      - name: 수집 (트렌드)
+        continue-on-error: true
+        run: python -u collect_trends.py 2>&1 | tee -a out/collect.log
 
       # 차단이 간헐적이라 "며칠 돌려보고 판단"하려면 성공/실패가 쌓여야 한다.
       # 성공률이 낮으면 한국 IP 경유로 전환할 근거가 된다.
@@ -79,7 +83,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # 수집물도 저장소에 남긴다. 아티팩트로만 두면 다음 단계인
           # 대본 생성이 집어갈 수 없다.
-          for p in out/collect.log out/collected.json out/seen.json out/collect_history.log; do
+          for p in out/collect.log out/collected.json out/seen.json out/collect_history.log out/trends.json out/seen_trends.json; do
             [ -f "$p" ] && git add -f "$p" || true
           done
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }

@@ -62,7 +62,13 @@ jobs:
         run: |
           # 해외 IP 차단이 간헐적이라 수집이 뚫린 날 며칠치를 만들어둔다.
           # 하루 3건 발행이므로 9편이면 사흘치다.
-          python scriptgen.py -n "${COUNT:-9}"
+          # 트렌드 데이터가 없으면 직접 수집
+          if [ ! -f out/trends.json ]; then
+            echo "트렌드 데이터 없음 — 직접 수집"
+            python collect_trends.py || echo "트렌드 수집 실패 (비필수)"
+          fi
+          # --trends 옵션으로 트렌드 앵글도 포함
+          python scriptgen.py -n "${COUNT:-9}" --trends out/trends.json
           ls -la out/scripts/
 
       - name: 대본 업로드

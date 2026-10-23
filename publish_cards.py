@@ -295,10 +295,13 @@ def run(card_dir, script_path, photo_dir=None, do_publish=False):
     media_id = res.get("id")
     print(f"  발행 완료: media_id={media_id}")
 
+    meta = script.get("meta") or {}
     entry = {
         "published_at": datetime.now(timezone.utc).isoformat(),
         "media_id": media_id, "card_dir": card_dir, "script": script_path,
         "title": script.get("title"), "count": len(files),
+        "category": meta.get("category", ""),
+        "source": meta.get("source", ""),
         # 계정을 바꾸면 같은 대본을 새 계정에 다시 올려야 한다. 어느 계정에
         # 올렸는지 적어두지 않으면 대기열이 이전 계정 발행분까지 "완료"로 세고
         # 건너뛴다.
