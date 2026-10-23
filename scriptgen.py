@@ -399,11 +399,18 @@ def _region_to_en(region):
     """지역명을 영문 키워드로 변환한다."""
     mapping = {
         "강남": "Gangnam Seoul", "서초": "Seocho Seoul",
-        "해운대": "Haeundae Busan", "분당": "Bundang Seongnam",
+        "반포": "Banpo Seoul", "압구정": "Apgujeong Seoul",
+        "잠실": "Jamsil Seoul", "송파": "Songpa Seoul",
+        "용산": "Yongsan Seoul", "성수": "Seongsu Seoul",
+        "여의도": "Yeouido Seoul", "목동": "Mokdong Seoul",
+        "해운대": "Haeundae Busan", "명지": "Myeongji Busan",
+        "수영": "Suyeong Busan", "부산진": "Busanjin Busan",
+        "분당": "Bundang Seongnam", "판교": "Pangyo Seongnam",
         "수성": "Suseong Daegu", "마포": "Mapo Seoul",
         "연수": "Yeonsu Incheon", "유성": "Yuseong Daejeon",
         "김해": "Gimhae city", "진주": "Jinju city",
         "강서": "Gangseo Busan", "덕양": "Goyang city",
+        "세종": "Sejong city", "광교": "Gwanggyo Suwon",
     }
     for kr, en in mapping.items():
         if kr in region:
