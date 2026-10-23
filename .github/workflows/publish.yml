@@ -1,13 +1,15 @@
 name: 발행
 
 # 예약 시각은 UTC다. 한국시간 = UTC + 9시간.
-#   한국 11:00 → 02:00 UTC
+# 조회수 피크: 출근 08:00 / 점심 12:30 / 퇴근후 19:00
 on:
   push:
     paths:
       - "trigger.txt"         # 이 파일 push 시 즉시 실행
   schedule:
-    - cron: "0 2 * * *"      # 한국시간 11:00
+    - cron: "0 23 * * *"     # KST 08:00 (다음날)
+    - cron: "30 3 * * *"     # KST 12:30
+    - cron: "0 10 * * *"     # KST 19:00
   workflow_dispatch:
     inputs:
       dry_run:
