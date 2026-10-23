@@ -395,27 +395,58 @@ TEMPLATES = {
 }
 
 
+def _region_to_en(region):
+    """지역명을 영문 키워드로 변환한다."""
+    mapping = {
+        "강남": "Gangnam Seoul", "서초": "Seocho Seoul",
+        "해운대": "Haeundae Busan", "분당": "Bundang Seongnam",
+        "수성": "Suseong Daegu", "마포": "Mapo Seoul",
+        "연수": "Yeonsu Incheon", "유성": "Yuseong Daejeon",
+        "김해": "Gimhae city", "진주": "Jinju city",
+        "강서": "Gangseo Busan", "덕양": "Goyang city",
+    }
+    for kr, en in mapping.items():
+        if kr in region:
+            return en
+    return "Korea city"
+
+
+def _angle_region(angle):
+    """앵글에서 지역명을 추출한다."""
+    data = angle.get("data", {})
+    if isinstance(data, dict):
+        r = data.get("region", "")
+        if r:
+            return r
+    items = angle.get("items", [])
+    if items and isinstance(items[0], dict):
+        return items[0].get("region", items[0].get("dong", ""))
+    return ""
+
+
 def _scene_image_keyword(angle, scene_type="intro"):
     """앵글에 맞는 이미지 검색 키워드를 반환한다 (영문 — Openverse/Wikimedia용)."""
     fmt = angle.get("type", "")
+    region = _angle_region(angle)
+    region_en = _region_to_en(region)
 
     if fmt == "지역한정":
         if scene_type == "intro":
-            return "korea apartment complex aerial view"
-        return "real estate price chart graph"
+            return f"{region_en} apartment skyline"
+        return f"{region_en} residential area aerial"
     elif fmt == "숫자훅":
         if scene_type == "intro":
-            return "luxury apartment building korea"
-        return "housing price comparison chart"
+            return f"{region_en} luxury apartment"
+        return "real estate market price chart"
     elif fmt == "오해정정":
         if scene_type == "intro":
-            return "new apartment building modern korea"
-        return "old vs new apartment building"
+            return "new vs old apartment building korea"
+        return "construction crane building site korea"
     elif fmt == "체크리스트":
-        return "checklist document pen"
+        return "checklist document pen desk"
     elif fmt == "시행일훅":
-        return "government policy law document"
-    return "apartment building city skyline"
+        return "government building law document korea"
+    return f"{region_en} apartment building"
 
 
 def _scene_image_keyword_item(item):
@@ -423,13 +454,14 @@ def _scene_image_keyword_item(item):
     amount = item.get("amount", 0)
     if isinstance(amount, str):
         amount = int(amount.replace(",", "").strip() or 0)
+    region = item.get("region", item.get("dong", ""))
+    region_en = _region_to_en(region)
 
-    # 고가 아파트 vs 일반 아파트
     if amount >= 100000:  # 10억 이상
-        return "luxury high rise apartment building"
+        return f"{region_en} luxury high rise apartment"
     elif amount >= 30000:  # 3억 이상
-        return "modern apartment building residential"
-    return "apartment building korea residential"
+        return f"{region_en} modern apartment residential"
+    return f"{region_en} apartment building"
 
 
 def _build_context_scene(angle):
@@ -613,6 +645,51 @@ def _format_item_narration(item, idx=0, total=0, angle_data=None):
     return detail, short_subtitle(detail)
 
 
+# ═══════════════════════════════════════════════════════════
+#  사투리 변환 — 경상도 말투 후처리
+# ═══════════════════════════════════════════════════════════
+
+def _to_dialect(text):
+    """표준어 내레이션을 경상도 사투리로 변환한다.
+
+    규칙 (LLM_SYSTEM 776~787행과 동일):
+    - 어미만 바꾸고, 숫자·날짜·기관명·제도명은 그대로
+    - "~다 아이가", "~제" 표현은 전체 텍스트에서 최대 한 번
+    - 비아냥·반말 명령조 금지. 친한 동네 형 톤
+    """
+    # 어미 변환 (긴 패턴 먼저)
+    replacements = [
+        ("되었습니다", "됐다"),
+        ("신고됐습니다", "신고됐다"),
+        ("됐습니다", "됐다"),
+        ("었습니다", "었다"),
+        ("였습니다", "였다"),
+        ("하겠습니다", "할기다"),
+        ("드리겠습니다", "드릴기다"),
+        ("보겠습니다", "볼기다"),
+        ("겠습니다", "겠다"),
+        ("부탁드립니다", "해주이소"),
+        ("드립니다", "드린다"),
+        ("됩니다", "된다"),
+        ("옵니다", "온다"),
+        ("갑니다", "간다"),
+        ("봅니다", "본다"),
+        ("습니다", "다"),
+        ("합니다", "한다"),
+        ("입니다", "이다"),
+        ("확인하세요", "확인해봐라"),
+        ("해보세요", "해봐라"),
+        ("하세요", "해라"),
+        ("보세요", "봐라"),
+    ]
+
+    result = text
+    for old, new in replacements:
+        result = result.replace(old, new)
+
+    return result
+
+
 def template_generate(angle):
     """템플릿 기반으로 대본 하나를 만든다."""
     fmt = angle["type"]
@@ -685,13 +762,17 @@ def template_generate(angle):
             "subtitle": short_subtitle(context_narration),
         })
 
-    # 마무리 장면
+    # 마무리 장면 (사투리 적용)
     scenes.append({
         "image": None,
         "photo_query": "follow subscribe social media phone",
-        "narration": "오늘 내용이 도움이 되셨다면 팔로우 부탁드립니다. 매일 부동산 이슈를 정리해드립니다.",
+        "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
         "subtitle": "팔로우 · 매일 업데이트",
     })
+
+    # 사투리 후처리 — 마무리 장면 제외한 나머지 (마무리는 위에서 직접 적용)
+    for scene in scenes[:-1]:
+        scene["narration"] = _to_dialect(scene["narration"])
 
     # badge
     badge = None
@@ -723,6 +804,7 @@ def template_generate(angle):
             "category": category,
             "attribution": attribution,
             "chart": angle.get("chart"),
+            "tone": "경상도",
             "generated_at": datetime.now(timezone.utc).isoformat(),
         },
     }
@@ -988,9 +1070,26 @@ def main():
     elif not args.template:
         print("[알림] ANTHROPIC_API_KEY / OPENAI_API_KEY 없음 → 템플릿 모드로 전환")
 
+    # 앵글 다양화: 같은 type이 연속되지 않도록 섞어서 선택한다.
+    # 예: [숫자훅, 숫자훅, 지역한정, 숫자훅, 지역한정, 오해정정]
+    #   → [숫자훅, 지역한정, 오해정정] (서로 다른 type 우선)
+    selected_angles = []
+    used_types = set()
+    for angle in angles:
+        if len(selected_angles) >= args.count:
+            break
+        if angle["type"] not in used_types:
+            selected_angles.append(angle)
+            used_types.add(angle["type"])
+    for angle in angles:
+        if len(selected_angles) >= args.count:
+            break
+        if angle not in selected_angles:
+            selected_angles.append(angle)
+
     # 생성
     scripts = []
-    for i, angle in enumerate(angles[:args.count]):
+    for i, angle in enumerate(selected_angles):
         print(f"\n── 대본 {i+1}/{min(args.count, len(angles))} [{angle['type']}] {angle['hook']}")
 
         script = None
