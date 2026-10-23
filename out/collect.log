@@ -1,0 +1,21 @@
+  --  korea_briefing_rss  차단(dead): 2026-07-01 중단 (저작권 등 권리 보호 사유)
+  --  kma_rss             차단(dead): 2025-03-31 중단. 대체는 kma_apihub
+  OK  kca_product_price   통과
+  OK  molit_apt_trade     통과
+  --  kma_apihub          폐기(공공누리 미확인/비1유형): license=unknown
+  --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
+
+통과 2 / 전체 6
+apis.data.go.kr → 400
+www.korea.kr → 200
+apihub.kma.go.kr → 200
+kosis.kr → 302
+  --  korea_briefing_rss  차단(dead): 2026-07-01 중단 (저작권 등 권리 보호 사유)
+  --  kma_rss             차단(dead): 2025-03-31 중단. 대체는 kma_apihub
+  OK  kca_product_price   통과
+  OK  molit_apt_trade     통과
+  --  kma_apihub          폐기(공공누리 미확인/비1유형): license=unknown
+  --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
+      조사일 발견: 20261009
+
+수집 3173건 · 언론사표현 폐기 0건 → /home/runner/work/issue-reels/issue-reels/out/collected.json
