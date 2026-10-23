@@ -1,11 +1,12 @@
 {
-  "title": "погода зав",
+  "title": "롤",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>погода зав</r>",
-      "이거 실환가요"
+      "이번 달",
+      "<r>롤</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -13,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'погода завтра' 관련 트렌드 — Прогноз погоды на ближайшие два дня: в регионах пройдут дожди, в горах выпадет град. 수치로 확인해보자.",
-      "subtitle": "'погода завтра' 관련 트렌드"
+      "narration": "이거 모르고 지나가면 손해다. '롤' 관련 트렌드 — [오!쎈 인터뷰] &quot;목표는 8강 진출&quot;… &apos;칸나&apos; 김창동이 꿈꾸는 2026 롤드컵. 수치로 확인해보자.",
+      "subtitle": "'롤' 관련 트렌드 — [오!쎈 인터뷰]"
     },
     {
       "image": null,
@@ -30,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-23T12:58:10.377518+00:00"
+    "generated_at": "2026-10-23T18:01:44.946486+00:00"
   }
 }
