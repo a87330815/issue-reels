@@ -1,11 +1,12 @@
 {
-  "title": "삼성 갤럭시 s26",
+  "title": "mlb",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>삼성 갤럭시 s26</r>",
-      "이거 실환가요"
+      "이번 달",
+      "<r>mlb</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -13,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '삼성 갤럭시 s26' 관련 트렌드 — 삼성 One UI 9.5 베타 프로그램, 11월 중 시작되나…멤버스 앱서 새 단서 포착. 수치로 확인해보자.",
-      "subtitle": "'삼성 갤럭시 s26' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. 'mlb' 관련 트렌드 — Brewers reach World Series after 44 years as Misierowski fans five and Yelich drives early run - CHOSUNBIZ. 수치로 확인해보자.",
+      "subtitle": "'mlb' 관련 트렌드 — Brewers"
     },
     {
       "image": null,
@@ -30,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-24T01:29:22.936546+00:00"
+    "generated_at": "2026-10-24T07:58:33.765675+00:00"
   }
 }
