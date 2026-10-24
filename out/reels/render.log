@@ -1,86 +1,31 @@
-run 39938664256 2026-10-23T10:23:31Z
+run 40047433228 2026-10-24T01:06:52Z
 
 === test_trend_01 ===
   [cover] '손주 봐주면 월 30만원 준다카이' → "Korean grandmother playing with grandchild toddler"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korean grandmother playing with grandchild"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korean grandmother playing with"
-    [openverse] 0건 후보
-    [wikimedia] 12건 후보
-    ✓ cover ← Wikimedia Commons (CC BY 2.0)
+    [unsplash] 12건 후보
+    ✗ 적합한 후보 없음 (기준 2낱말 이상 일치) — 사진 없이 진행
+    ✗ cover: 후보 없음
   [scene1] '조부모 손주돌봄수당 시작' → "happy Korean grandmother with baby grandchild"
+    [unsplash] 3건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "happy Korean grandmother with baby"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "happy Korean grandmother with"
-    [openverse] 0건 후보
-    [wikimedia] 12건 후보
-    ✓ scene1 ← Wikimedia Commons (CC BY 2.0)
+    적합도 통과 1/3건
+    ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '1명 30만 · 2명 45만 · 3명 60만' → "Korean elderly couple caring for grandchildren family"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korean elderly couple caring for grandchildren"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korean elderly couple caring for"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korean elderly couple caring"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korean elderly couple"
-    [openverse] 1건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korean elderly"
-    [openverse] 12건 후보
-    [wikimedia] 4건 후보
-    ✓ scene2 ← flickr (BY)
+    [unsplash] 12건 후보
+    ✗ 적합한 후보 없음 (기준 2낱말 이상 일치) — 사진 없이 진행
+    ✗ scene2: 후보 없음
   [scene3] '매월 1~15일 온라인 신청' → "Korean government welfare office application form"
+    [unsplash] 10건 후보 (부적합 2건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "Korean government welfare office application"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korean government welfare office"
-    [openverse] 0건 후보
-    [wikimedia] 9건 후보 (부적합 1건 제외)
-    ✓ scene3 ← Wikimedia Commons (Public domain)
+    ✗ 적합한 후보 없음 (기준 2낱말 이상 일치) — 사진 없이 진행
+    ✗ scene3: 후보 없음
   [scene4] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "follow subscribe social media"
-    [openverse] 12건 후보
-    [wikimedia] 7건 후보
-    ✓ scene4 ← flickr (BY)
-  → 5/5장 저장, 매니페스트: out/photos/test_trend_01/photos.json
+    [unsplash] 12건 후보
+    적합도 통과 2/12건
+    ✓ scene4 ← Unsplash (Unsplash License)
+  → 2/5장 저장, 매니페스트: out/photos/test_trend_01/photos.json
 
-총 5/5장 수집
-  사진 5장 적용: cover, scene1, scene2, scene3, scene4
-카드뉴스 6장 생성 → out/cards_test_trend_01
-대본: out/scripts/test_trend_01.json
-카드: out/cards_test_trend_01 (6장)
-음성: ko-KR-HyunsuMultilingualNeural
-
-1) TTS 생성
-  TTS [1/5] 3.5초  손주 봐주면 월 30만원 준다카이...
-  TTS [2/5] 11.4초  이거 모르고 지나가면 손해다. 서울시가 24~36개월 ...
-  TTS [3/5] 15.4초  1명 봐주면 30만원, 2명이면 45만원, 3명이면 6...
-  TTS [4/5] 12.2초  신청은 매월 1~15일 서울시 탄생육아 몽땅정보통에서 ...
-  TTS [5/5] 6.3초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈...
-
-2) 영상 합성
-  세그먼트 [1/6] 4.3초
-  세그먼트 [2/6] 12.2초
-  세그먼트 [3/6] 16.2초
-  세그먼트 [4/6] 13.0초
-  세그먼트 [5/6] 7.1초
-  세그먼트 [6/6] 4.0초
-
-  ✓ 릴스 완성: out/reels/test_trend_01.mp4
-    길이: 96.9초  /  크기: 3.1MB
--rw-r--r-- 1 runner runner 3.2M Oct 23 10:24 out/reels/test_trend_01.mp4
+총 2/5장 수집
+한글 폰트를 찾을 수 없습니다 (Black, Bold, Medium, Regular). apt-get install fonts-noto-cjk fonts-noto-cjk-extra 로 설치하세요.
