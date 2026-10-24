@@ -1,0 +1,47 @@
+{
+  "title": "저스틴 비버 깜짝 내한",
+  "cover": {
+    "image": null,
+    "photo_query": "Seoul Seongsu-dong street pop up store",
+    "lines": [
+      "저스틴 비버",
+      "<r>깜짝 내한</r>",
+      "성수동 난리남"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "celebrity arrival airport Korea fans",
+      "narration": "이거 모르고 지나가면 손해다. 저스틴 비버가 와이프 헤일리랑 같이 서울 왔다 아이가.",
+      "subtitle": "저스틴 비버 부부 서울 입국"
+    },
+    {
+      "image": null,
+      "photo_query": "Seoul Seongsu pop up store fashion brand",
+      "narration": "자기 브랜드 스카이라크 팝업스토어 때매 온 건데, 성수동에서 22일부터 25일까지 한다카이. 서울 한정 상품도 나온다.",
+      "subtitle": "성수동 팝업스토어 22~25일"
+    },
+    {
+      "image": null,
+      "photo_query": "Justin Bieber fashion brand streetwear",
+      "narration": "SNS에 서울 도착했다고 직접 인증까지 했거든. 비버가 직접 팝업에 올지는 아직 모르지만 팬들 벌써 줄 섰다 아이가.",
+      "subtitle": "SNS 직접 인증 + 팬 대기줄"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media notification",
+      "narration": "이런 소식 빨리 알고 싶으면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "연예",
+    "source": "starnews",
+    "category": "연예·화제",
+    "attribution": "스타뉴스",
+    "tone": "경상도",
+    "generated_at": "2026-10-24T01:27:00+09:00"
+  }
+}

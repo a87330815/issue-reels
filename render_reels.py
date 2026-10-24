@@ -56,10 +56,9 @@ def post_process_voice(src, dst):
     """TTS 출력에 양상국 스타일 후처리: 피치 +2반음, 속도 1.05배, 중고음 강조."""
     # asetrate로 피치 올리고 atempo로 속도 보정, equalizer로 톤 조정
     af = (
-        "asetrate=44100*1.122,aresample=44100,"   # +2반음 (2^(2/12)≈1.122)
-        "atempo=1.05,"                              # 약간 빠르게
-        "equalizer=f=2500:t=h:w=1000:g=3,"         # 중고음 강조
-        "equalizer=f=200:t=h:w=100:g=-2,"          # 저음 살짝 줄임
+        "asetrate=44100*1.059,aresample=44100,"   # +1반음 (2^(1/12)≈1.059) 자연스럽게
+        "equalizer=f=2800:t=h:w=1200:g=2,"        # 중고음 살짝 강조
+        "equalizer=f=180:t=h:w=80:g=-1,"           # 저음 미세 조정
         "loudnorm=I=-16:TP=-1.5:LRA=11"            # 음량 정규화
     )
     subprocess.run(
