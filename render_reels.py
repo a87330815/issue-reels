@@ -52,7 +52,23 @@ def narrations(script):
     return texts
 
 
-async def generate_tts(texts, voice, out_dir):
+def post_process_voice(src, dst):
+    """TTS 출력에 양상국 스타일 후처리: 피치 +2반음, 속도 1.05배, 중고음 강조."""
+    # asetrate로 피치 올리고 atempo로 속도 보정, equalizer로 톤 조정
+    af = (
+        "asetrate=44100*1.122,aresample=44100,"   # +2반음 (2^(2/12)≈1.122)
+        "atempo=1.05,"                              # 약간 빠르게
+        "equalizer=f=2500:t=h:w=1000:g=3,"         # 중고음 강조
+        "equalizer=f=200:t=h:w=100:g=-2,"          # 저음 살짝 줄임
+        "loudnorm=I=-16:TP=-1.5:LRA=11"            # 음량 정규화
+    )
+    subprocess.run(
+        ["ffmpeg", "-y", "-i", src, "-af", af, "-c:a", "libmp3lame", "-q:a", "2", dst],
+        capture_output=True, check=True
+    )
+
+
+async def generate_tts(texts, voice, out_dir, style=True):
     """edge-tts로 각 장면 나레이션 mp3 생성. 파일 경로와 길이를 반환."""
     import edge_tts
 
@@ -61,9 +77,20 @@ async def generate_tts(texts, voice, out_dir):
         if not text.strip():
             results.append(None)
             continue
+        raw_mp3 = os.path.join(out_dir, f"narr_raw_{i:02d}.mp3")
         mp3 = os.path.join(out_dir, f"narr_{i:02d}.mp3")
         comm = edge_tts.Communicate(text, voice)
-        await comm.save(mp3)
+        await comm.save(raw_mp3)
+        # 양상국 스타일 후처리
+        if style:
+            try:
+                post_process_voice(raw_mp3, mp3)
+                print(f"  후처리 적용 [{i+1}/{len(texts)}]")
+            except Exception as e:
+                print(f"  후처리 실패, 원본 사용: {e}")
+                os.replace(raw_mp3, mp3)
+        else:
+            os.replace(raw_mp3, mp3)
         # 길이 측정
         dur = get_duration(mp3)
         results.append({"path": mp3, "duration": dur})
@@ -148,6 +175,8 @@ def main():
     ap.add_argument("--cards", help="카드 이미지 디렉터리 (미지정 시 자동 추론)")
     ap.add_argument("--voice", default=DEFAULT_VOICE, help="TTS 음성")
     ap.add_argument("--no-tts", action="store_true", help="TTS 없이 무음 영상")
+    ap.add_argument("--no-style", action="store_true",
+                    help="양상국 스타일 후처리 없이 원본 TTS 사용")
     ap.add_argument("--require-tts", action="store_true",
                     help="TTS가 실패하면 무음으로 넘어가지 않고 중단한다")
     ap.add_argument("-o", "--out", help="출력 mp4 경로")
@@ -179,7 +208,8 @@ def main():
             print("\n1) TTS 생성")
             texts = narrations(script)
             try:
-                tts_results = asyncio.run(generate_tts(texts, a.voice, tmp))
+                tts_results = asyncio.run(generate_tts(texts, a.voice, tmp,
+                                                       style=not a.no_style))
             except Exception as e:
                 # 무음으로 조용히 넘어가면 음성 없는 영상이 완성본처럼 나온다.
                 if a.require_tts:
