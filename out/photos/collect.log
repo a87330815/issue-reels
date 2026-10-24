@@ -1,4 +1,4 @@
-run: 40076230974  2026-10-24T07:59:25Z
+run: 40093545364  2026-10-24T12:21:22Z
 unsplash key: 있음
 
 
@@ -85,9 +85,8 @@ unsplash key: 있음
     [wikimedia] 0건 후보
     ↻ 재시도: "napa cabbage korean"
     [unsplash] 1건 후보
-    [openverse] 6건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 4건 후보
-    적합도 통과 9/10건 (Openverse/Wikimedia)
     Unsplash 1건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '배추 4,935~11,000원' → "napa cabbage korean market"
@@ -642,8 +641,23 @@ unsplash key: 있음
     ✓ scene7 ← Unsplash (Unsplash License)
   → 8/8장 저장, 매니페스트: out/photos/20261024_04_숫자훅/photos.json
 
+=== 20261024_04_체크리스트 ===
+  [cover] '교통 사고' → "checklist document pen desk"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] ''교통 사고' 관련 트렌드 — 김종철' → "checklist document pen desk"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene2 ← Unsplash (Unsplash License)
+  → 3/3장 저장, 매니페스트: out/photos/20261024_04_체크리스트/photos.json
+
 === 20261024_05_숫자훅 ===
-  [cover] 'mlb' → "Korea city luxury apartment"
+  [cover] '26억 차이' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -652,7 +666,7 @@ unsplash key: 있음
     적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''mlb' 관련 트렌드 — Brewers' → "Korea city luxury apartment"
+  [scene1] '개포동 vs 반여동' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -661,11 +675,31 @@ unsplash key: 있음
     적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+  [scene2] '개포동 디에이치아너힐즈 34.8억원' → "Korea city luxury high rise apartment"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene2 ← Unsplash (Unsplash License)
-  → 3/3장 저장, 매니페스트: out/photos/20261024_05_숫자훅/photos.json
+  [scene3] '일원동 푸른마을아파트101동~111동' → "Korea city luxury high rise apartment"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '서교동 메세나폴리스 24.6억원' → "Korea city luxury high rise apartment"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '개포동 래미안블레스티지 24.5억원' → "Korea city luxury high rise apartment"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene5 ← Unsplash (Unsplash License)
+  [scene6] '이번에 확인된 5건의 거래에서 가격' → "real estate market price chart"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene6 ← Unsplash (Unsplash License)
+  [scene7] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene7 ← Unsplash (Unsplash License)
+  → 8/8장 저장, 매니페스트: out/photos/20261024_05_숫자훅/photos.json
 
 === 20261024_06_지역한정 ===
   [cover] '장유동 최고 6억' → "Korea city apartment skyline"
@@ -799,7 +833,7 @@ unsplash key: 있음
   → 8/8장 저장, 매니페스트: out/photos/20261024_08_숫자훅/photos.json
 
 === 20261024_09_숫자훅 ===
-  [cover] 'jtbc' → "Korea city luxury apartment"
+  [cover] 'แอสตันวิลล' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -808,7 +842,7 @@ unsplash key: 있음
     적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''jtbc' 관련 트렌드 —' → "Korea city luxury apartment"
+  [scene1] ''แอสตันวิลลา พบ' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -850,7 +884,7 @@ unsplash key: 있음
     ✓ scene4 ← Unsplash (Unsplash License)
   → 5/5장 저장, 매니페스트: out/photos/test_trend_01/photos.json
 
-총 145/145장 수집
+총 153/153장 수집
 --- 수집된 파일 ---
 out/photos/20261023_01_숫자훅/cover.jpg
 out/photos/20261023_01_숫자훅/scene1.jpg
@@ -962,9 +996,17 @@ out/photos/20261024_04_숫자훅/scene4.jpg
 out/photos/20261024_04_숫자훅/scene5.jpg
 out/photos/20261024_04_숫자훅/scene6.jpg
 out/photos/20261024_04_숫자훅/scene7.jpg
+out/photos/20261024_04_체크리스트/cover.jpg
+out/photos/20261024_04_체크리스트/scene1.jpg
+out/photos/20261024_04_체크리스트/scene2.jpg
 out/photos/20261024_05_숫자훅/cover.jpg
 out/photos/20261024_05_숫자훅/scene1.jpg
 out/photos/20261024_05_숫자훅/scene2.jpg
+out/photos/20261024_05_숫자훅/scene3.jpg
+out/photos/20261024_05_숫자훅/scene4.jpg
+out/photos/20261024_05_숫자훅/scene5.jpg
+out/photos/20261024_05_숫자훅/scene6.jpg
+out/photos/20261024_05_숫자훅/scene7.jpg
 out/photos/20261024_06_지역한정/cover.jpg
 out/photos/20261024_06_지역한정/scene1.jpg
 out/photos/20261024_06_지역한정/scene2.jpg
