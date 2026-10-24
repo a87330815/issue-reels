@@ -1,6 +1,12 @@
 {
   "photos": {
     "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
@@ -8,9 +14,57 @@
       "slot": "cover",
       "query": "Seocho Seoul apartment skyline",
       "source": "Unsplash",
-      "creator": "dawun choi",
+      "creator": "IRa Kang",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/sun-setting-over-a-hazy-cityscape-with-apartment-buildings-q8jL2CvjTf0"
+      "page": "https://unsplash.com/photos/city-skyline-with-tall-buildings-at-dusk-PMbC_2dUExA"
+    },
+    {
+      "slot": "scene1",
+      "query": "Seocho Seoul apartment skyline",
+      "source": "Unsplash",
+      "creator": "zero take",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+    },
+    {
+      "slot": "scene2",
+      "query": "Seocho Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Ethan Brooke",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+    },
+    {
+      "slot": "scene3",
+      "query": "Seocho Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Minku Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
+    },
+    {
+      "slot": "scene4",
+      "query": "Seocho Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Ethan Brooke",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-bridge-over-a-body-of-water-with-a-city-in-the-background-QhQuFHZ9ApE"
+    },
+    {
+      "slot": "scene5",
+      "query": "Seocho Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Minku Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-very-tall-building-towering-over-a-city-Q3-ty1LCtvk"
+    },
+    {
+      "slot": "scene6",
+      "query": "Seocho Seoul residential area aerial",
+      "source": "Unsplash",
+      "creator": "Vincent Yap",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-walking-along-narrow-street-LmnJuerofaQ"
     },
     {
       "slot": "scene7",
@@ -22,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-24T00:50:21Z"
+  "fetched_at": "2026-10-24T01:32:58Z"
 }
