@@ -1,12 +1,11 @@
 {
-  "title": "26억 차이",
+  "title": "chelsea vs",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "이번 달",
-      "<r>26억 차이</r>",
-      "거래 떴습니다"
+      "<r>chelsea vs</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,38 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 개포동 평균 26.5억 vs 반여동 평균 0.6억. 수치로 확인해보자.",
-      "subtitle": "개포동 vs 반여동"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "개포동 디에이치아너힐즈, 전용 84㎡(26평) 5층이 34.8억원에 실거래 신고됐다카이. 평당 1.4억. 2019년 준공(7년차).",
-      "subtitle": "개포동 디에이치아너힐즈 34.8억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "같은 동네 푸른마을아파트101동~111동도 주목할 만한다. 전용 85㎡(26평) 2층, 거래가 24.6억원. 평당 9,595만원.",
-      "subtitle": "일원동 푸른마을아파트101동~111동"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "메세나폴리스 전용 123㎡(37평) 5층 — 24.6억원 거래. 평당 6,619만원.",
-      "subtitle": "서교동 메세나폴리스 24.6억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "래미안블레스티지 전용 50㎡(15평) 10층 — 24.5억원 거래. 평당 1.6억.",
-      "subtitle": "개포동 래미안블레스티지 24.5억원"
-    },
-    {
-      "image": null,
-      "photo_query": "real estate market price chart",
-      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 11.8억원까지 벌어졌다. 평균 26.3억원 수준이다.",
-      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+      "narration": "이거 모르고 지나가면 손해다. 'chelsea vs spurs' 관련 트렌드 — Premier League predictions &amp; Jones Knows&apos; best bets: Tottenham vs Chelsea, Brighton vs Liverpool, Man Utd vs Bournemouth and much more!. 수치로 확인해보자.",
+      "subtitle": "'chelsea vs spurs' 관련"
     },
     {
       "image": null,
@@ -56,20 +25,11 @@
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        26.5,
-        24.6,
-        24.6,
-        20.6,
-        18.4
-      ],
-      "style": "bars"
-    },
+    "source": "",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-24T12:20:38.933896+00:00"
+    "generated_at": "2026-10-24T17:06:01.782719+00:00"
   }
 }
