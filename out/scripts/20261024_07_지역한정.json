@@ -1,0 +1,74 @@
+{
+  "title": "평거동 최고 7억",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment skyline",
+    "lines": [
+      "평거동 최고 7억",
+      "<r>이번 달 기록</r>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 평거동 최고가 엠코타운더프라하 119.7937㎡ 7.3억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "평거동 최고 7.3억"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "평거동 엠코타운더프라하, 전용 120㎡(36평) 34층이 7.3억원에 실거래 신고됐다카이. 평당 2,009만원. 2014년 준공(12년차).",
+      "subtitle": "평거동 엠코타운더프라하 7.3억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 진주평거우방아이유쉘스카이팰리스도 주목할 만한다. 전용 84㎡(25평) 13층, 거래가 5.0억원. 평당 1,967만원.",
+      "subtitle": "평거동 진주평거우방아이유쉘스카이팰리스"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "엠코타운더프라하 전용 67㎡(20평) 30층 — 4.6억원 거래. 평당 2,286만원.",
+      "subtitle": "평거동 엠코타운더프라하 4.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "평거휴먼시아4단지 전용 60㎡(18평) 5층 — 3.7억원 거래. 평당 2,039만원.",
+      "subtitle": "평거동 평거휴먼시아4단지 3.7억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city residential area aerial",
+      "narration": "평거동 이번 달 거래를 종합하면, 평균 거래가는 4.2억원, 최고가 7.3억원, 최저가 5,250만원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "평거동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        7.3,
+        5.0,
+        4.6,
+        3.7,
+        0.5
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-24T01:29:23.309148+00:00"
+  }
+}

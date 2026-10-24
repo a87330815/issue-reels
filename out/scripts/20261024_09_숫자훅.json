@@ -1,0 +1,36 @@
+{
+  "title": "운전",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city luxury apartment",
+    "lines": [
+      "이번 달",
+      "<r>운전</r>",
+      "거래 떴습니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. '운전' 관련 트렌드 — 운전대 놨더니 슥~ 얌체운전…테슬라X FSD 타보니[시승기] - 머니투데이. 수치로 확인해보자.",
+      "subtitle": "'운전' 관련 트렌드 — 운전대 놨더니"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-24T01:29:23.678864+00:00"
+  }
+}

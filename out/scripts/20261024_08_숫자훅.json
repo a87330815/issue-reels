@@ -1,0 +1,75 @@
+{
+  "title": "평당 1.6억",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city luxury apartment",
+    "lines": [
+      "방금 나온",
+      "<r>평당 1.6억</r>",
+      "실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 개포동 래미안블레스티지 평당 1.62억 (전용 49.909㎡). 수치로 확인해보자.",
+      "subtitle": "개포동 평당 1.6억"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "개포동 래미안블레스티지, 전용 50㎡(15평) 10층이 24.5억원에 실거래 신고됐다카이. 평당 1.6억. 2019년 준공(7년차).",
+      "subtitle": "개포동 래미안블레스티지 24.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "같은 동네 삼성동힐스테이트 1단지도 주목할 만한다. 전용 31㎡(9평) 7층, 거래가 15.0억원. 평당 1.6억.",
+      "subtitle": "삼성동 삼성동힐스테이트 1단지"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "디에이치아너힐즈 전용 84㎡(26평) 5층 — 34.8억원 거래. 평당 1.4억.",
+      "subtitle": "개포동 디에이치아너힐즈 34.8억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "성원대치2단지아파트 전용 50㎡(15평) 9층 — 20.2억원 거래. 평당 1.3억.",
+      "subtitle": "개포동 성원대치2단지아파트 20.2억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 21.9억원까지 벌어졌다. 평균 21.5억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        1.62,
+        1.58,
+        1.36,
+        1.34,
+        1.07
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-24T01:29:23.484868+00:00"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "title": "장유동 최고 6억",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment skyline",
+    "lines": [
+      "장유동 최고 6억",
+      "<y>얼마에 팔렸나</y>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 장유동 최고가 원메이저힐스테이트 119.4105㎡ 5.9억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "장유동 최고 5.9억"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "장유동 원메이저힐스테이트, 전용 119㎡(36평) 5층이 5.9억원에 실거래 신고됐다카이. 평당 1,633만원. 2018년 준공(8년차).",
+      "subtitle": "장유동 원메이저힐스테이트 5.9억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 원메이저푸르지오도 주목할 만한다. 전용 85㎡(26평) 20층, 거래가 5.1억원. 평당 1,977만원.",
+      "subtitle": "장유동 원메이저푸르지오 5.1억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "원메이저힐스테이트 전용 85㎡(26평) 8층 — 4.6억원 거래. 평당 1,790만원.",
+      "subtitle": "장유동 원메이저힐스테이트 4.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "원메이저힐스테이트 전용 85㎡(26평) 4층 — 4.6억원 거래. 평당 1,781만원.",
+      "subtitle": "장유동 원메이저힐스테이트 4.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city residential area aerial",
+      "narration": "장유동 이번 달 거래를 종합하면, 평균 거래가는 4.7억원, 최고가 5.9억원, 최저가 3.4억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "장유동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        5.9,
+        5.1,
+        4.6,
+        4.6,
+        3.4
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-24T01:29:23.127718+00:00"
+  }
+}
