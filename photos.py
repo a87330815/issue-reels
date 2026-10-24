@@ -245,21 +245,24 @@ def relevance(cand, terms):
 
 def search_all(query, n=12):
     """공급자를 순서대로 시도해 후보 목록을 만든다.
-    앞 공급자 결과가 적으면 뒤 공급자 결과를 이어 붙여 중복 회피 여지를 남긴다."""
+    앞 공급자 결과가 적으면 뒤 공급자 결과를 이어 붙여 중복 회피 여지를 남긴다.
+    Unsplash 결과는 trusted=True로 표시해 적합도 필터를 건너뛴다."""
     key = os.environ.get("UNSPLASH_ACCESS_KEY", "").strip()
     providers = []
     if key:
-        providers.append(("unsplash", lambda: search_unsplash(query, key, n)))
-    providers.append(("openverse", lambda: search_openverse(query, n)))
-    providers.append(("wikimedia", lambda: search_wikimedia(query, n)))
+        providers.append(("unsplash", lambda: search_unsplash(query, key, n), True))
+    providers.append(("openverse", lambda: search_openverse(query, n), False))
+    providers.append(("wikimedia", lambda: search_wikimedia(query, n), False))
 
     merged = []
-    for name, fn in providers:
+    for name, fn, trusted in providers:
         try:
             res = fn()
             kept = [c for c in res if _content_ok(c)]
             dropped = len(res) - len(kept)
             print(f"    [{name}] {len(kept)}건 후보" + (f" (부적합 {dropped}건 제외)" if dropped else ""))
+            for c in kept:
+                c["_trusted"] = trusted
             merged.extend(kept)
         except Exception as e:
             print(f"    [{name}] 실패: {e}")
@@ -290,16 +293,26 @@ def search_with_fallback(query, n=12, min_needed=3):
         if len(out) >= min_needed:
             break
 
-    # 주제와 겹치는 말이 둘 미만이면 버린다. 엉뚱한 사진이 깔리느니
-    # 그래디언트 배경이 낫다. (검색어가 짧으면 한 개로 완화)
+    # Unsplash 결과는 자체 검색 품질이 높으므로 적합도 필터 건너뜀.
+    # Openverse/Wikimedia 결과만 키워드 일치 필터 적용.
+    trusted = [c for c in out if c.get("_trusted")]
+    untrusted = [c for c in out if not c.get("_trusted")]
+
     need = 2 if len(terms) >= 3 else 1
-    scored = sorted(((relevance(c, terms), c) for c in out),
-                    key=lambda p: -p[0])
-    kept = [c for s, c in scored if s >= need]
+    if untrusted:
+        scored = sorted(((relevance(c, terms), c) for c in untrusted),
+                        key=lambda p: -p[0])
+        filtered = [c for s, c in scored if s >= need]
+        if len(filtered) < len(untrusted):
+            print(f"    적합도 통과 {len(filtered)}/{len(untrusted)}건 (Openverse/Wikimedia)")
+    else:
+        filtered = []
+
+    kept = trusted + filtered
+    if trusted:
+        print(f"    Unsplash {len(trusted)}건 (적합도 필터 생략)")
     if not kept:
-        print(f"    ✗ 적합한 후보 없음 (기준 {need}낱말 이상 일치) — 사진 없이 진행")
-    elif len(kept) < len(out):
-        print(f"    적합도 통과 {len(kept)}/{len(out)}건")
+        print(f"    ✗ 적합한 후보 없음 — 사진 없이 진행")
     return kept
 
 

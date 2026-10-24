@@ -47,8 +47,10 @@ jobs:
           # 러너에 ffmpeg가 없을 때가 있다. apt가 느리게 걸리는 일이 있어
           # 시간을 끊고, 실패하면 정적 빌드를 받아 쓴다.
           sudo timeout 600 apt-get install -y -qq --no-install-recommends \
-            ffmpeg fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji \
-            || echo "::warning::apt 설치 실패 — 정적 빌드로 넘어갑니다"
+            fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji \
+            || echo "::warning::폰트 apt 설치 실패"
+          sudo timeout 300 apt-get install -y -qq --no-install-recommends ffmpeg \
+            || echo "::warning::ffmpeg apt 설치 실패 — 정적 빌드로 넘어갑니다"
 
           if ! command -v ffprobe >/dev/null; then
             echo "ffprobe 없음 — 정적 빌드 설치"

@@ -13,7 +13,9 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 W, H = 1080, 1350
 
 def _pick_font(*names):
-    """설치 위치가 배포판마다 달라서 후보 경로를 순서대로 탐색한다."""
+    """설치 위치가 배포판마다 달라서 후보 경로를 순서대로 탐색한다.
+    못 찾으면 fc-match 로 시스템 전체를 탐색한다."""
+    import subprocess, glob as _glob
     roots = ["/usr/share/fonts/opentype/noto", "/usr/share/fonts/truetype/noto",
              "/usr/share/fonts/opentype", "/usr/share/fonts/truetype",
              "/usr/local/share/fonts", os.path.expanduser("~/.fonts")]
@@ -24,6 +26,19 @@ def _pick_font(*names):
             p = os.path.join(r, n)
             if os.path.exists(p):
                 return p
+        # 하위 디렉터리까지 재귀 탐색
+        for r in ["/usr/share/fonts", "/usr/local/share/fonts"]:
+            for p in _glob.glob(os.path.join(r, "**", n), recursive=True):
+                if os.path.exists(p):
+                    return p
+    # fc-match 로 Noto Sans CJK 계열 폴백
+    try:
+        r = subprocess.run(["fc-match", "-f", "%{file}", "Noto Sans CJK KR"],
+                           capture_output=True, text=True, timeout=5)
+        if r.returncode == 0 and r.stdout.strip() and os.path.exists(r.stdout.strip()):
+            return r.stdout.strip()
+    except Exception:
+        pass
     return None
 
 FONT_BLACK = _pick_font("NotoSansCJK-Black.ttc", "NotoSansCJKkr-Black.otf", "NotoSansCJK-Bold.ttc")
