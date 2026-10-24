@@ -1,11 +1,11 @@
 {
-  "title": "jtbc",
+  "title": "แอสตันวิลล",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
       "이번 달",
-      "<r>jtbc</r>",
+      "<r>แอสตันวิลล</r>",
       "거래 떴습니다"
     ],
     "badge": null
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'jtbc' 관련 트렌드 — [Photo] Hong Hwa-Yeon invites you to ‘The Final Table’. 수치로 확인해보자.",
-      "subtitle": "'jtbc' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. 'แอสตันวิลลา พบ แมนซิตี' 관련 트렌드 — การทำนายผลการแข่งขันระหว่างแอสตันวิลล่ากับแมนเชสเตอร์ซิตี้: การปะทะกันระหว่างสองทีมที่อยู่ในฟอร์มที่ดี. 수치로 확인해보자.",
+      "subtitle": "'แอสตันวิลลา พบ"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-24T07:58:34.585870+00:00"
+    "generated_at": "2026-10-24T12:20:39.826575+00:00"
   }
 }
