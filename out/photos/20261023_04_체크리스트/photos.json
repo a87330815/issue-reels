@@ -1,35 +1,62 @@
 {
   "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
     "scene6": "scene6.jpg"
   },
   "credits": [
     {
+      "slot": "cover",
+      "query": "checklist document pen desk",
+      "source": "Unsplash",
+      "creator": "Markus Spiske",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/white-printer-paper-beside-black-pen-IqVqS1V1ch8"
+    },
+    {
+      "slot": "scene1",
+      "query": "checklist document pen desk",
+      "source": "Unsplash",
+      "creator": "Ryunosuke Kikuno",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-pen-sitting-on-top-of-a-notebook-on-a-desk-viEzuL1ouDs"
+    },
+    {
       "slot": "scene2",
       "query": "Korea city apartment building",
-      "source": "flickr",
-      "creator": "Francisco Anzola",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/10345599@N03/1509272335"
+      "source": "Unsplash",
+      "creator": "Sean Lee",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-large-group-of-tall-buildings-in-a-city-PMjiXaJ5LYM"
     },
     {
       "slot": "scene3",
       "query": "Korea city apartment building",
-      "source": "Wikimedia Commons",
-      "creator": "Robert at Picasa",
-      "license": "CC BY 3.0",
-      "page": "https://commons.wikimedia.org/wiki/File:Korea-Andong-Apartment_blocks_at_dawn-01.jpg"
+      "source": "Unsplash",
+      "creator": "Maximilian Jaenicke",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/white-and-blue-concrete-building-cxBQiwb3wkA"
+    },
+    {
+      "slot": "scene4",
+      "query": "Korea city apartment building",
+      "source": "Unsplash",
+      "creator": "Clark Gu",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-street-filled-with-lots-of-tall-buildings-hV0B1hpQcQw"
     },
     {
       "slot": "scene6",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 7,
-  "fetched_at": "2026-10-23T18:10:13Z"
+  "fetched_at": "2026-10-24T00:49:10Z"
 }

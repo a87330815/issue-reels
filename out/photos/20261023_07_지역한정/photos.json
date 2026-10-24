@@ -1,35 +1,62 @@
 {
   "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
+    "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
     {
+      "slot": "cover",
+      "query": "Korea city apartment skyline",
+      "source": "Unsplash",
+      "creator": "dawun choi",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/sun-setting-over-a-hazy-cityscape-with-apartment-buildings-q8jL2CvjTf0"
+    },
+    {
+      "slot": "scene1",
+      "query": "Korea city apartment skyline",
+      "source": "Unsplash",
+      "creator": "IRa Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/city-skyline-with-tall-buildings-at-dusk-PMbC_2dUExA"
+    },
+    {
       "slot": "scene2",
       "query": "Korea city luxury high rise apartment",
-      "source": "flickr",
-      "creator": "USAG-Humphreys",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/31687107@N07/9081533712"
+      "source": "Unsplash",
+      "creator": "Seungyun Oh",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/cityscape-with-high-rise-apartment-buildings-JXLLHi-7dy0"
     },
     {
       "slot": "scene3",
       "query": "Korea city luxury high rise apartment",
-      "source": "flickr",
-      "creator": "USAG-Humphreys",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/31687107@N07/9079319923"
+      "source": "Unsplash",
+      "creator": "Nurulloh A.A",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-city-with-tall-buildings-and-mountains-in-the-background-mA2gxPzS2IM"
+    },
+    {
+      "slot": "scene6",
+      "query": "Korea city residential area aerial",
+      "source": "Unsplash",
+      "creator": "Seungyun Oh",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/cityscape-with-high-rise-apartment-buildings-JXLLHi-7dy0"
     },
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T18:19:12Z"
+  "fetched_at": "2026-10-24T00:50:09Z"
 }

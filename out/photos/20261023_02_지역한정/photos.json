@@ -6,12 +6,12 @@
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T18:06:59Z"
+  "fetched_at": "2026-10-24T00:48:57Z"
 }

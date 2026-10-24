@@ -1,17 +1,26 @@
 {
   "photos": {
+    "cover": "cover.jpg",
     "scene2": "scene2.jpg"
   },
   "credits": [
     {
+      "slot": "cover",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "Nurulloh A.A",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-city-with-tall-buildings-and-mountains-in-the-background-mA2gxPzS2IM"
+    },
+    {
       "slot": "scene2",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 3,
-  "fetched_at": "2026-10-23T18:14:13Z"
+  "fetched_at": "2026-10-24T00:49:57Z"
 }

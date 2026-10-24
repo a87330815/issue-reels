@@ -1,26 +1,17 @@
 {
   "photos": {
-    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg"
   },
   "credits": [
     {
-      "slot": "scene2",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "flickr",
-      "creator": "Terrazzo",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
-    },
-    {
       "slot": "scene3",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 4,
-  "fetched_at": "2026-10-23T18:04:20Z"
+  "fetched_at": "2026-10-24T00:48:54Z"
 }

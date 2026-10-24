@@ -1,35 +1,71 @@
 {
   "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
     {
+      "slot": "cover",
+      "query": "Korea city apartment skyline",
+      "source": "Unsplash",
+      "creator": "dawun choi",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/sun-setting-over-a-hazy-cityscape-with-apartment-buildings-q8jL2CvjTf0"
+    },
+    {
+      "slot": "scene1",
+      "query": "Korea city apartment skyline",
+      "source": "Unsplash",
+      "creator": "IRa Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/city-skyline-with-tall-buildings-at-dusk-PMbC_2dUExA"
+    },
+    {
       "slot": "scene2",
       "query": "Korea city modern apartment residential",
-      "source": "Wikimedia Commons",
-      "creator": "Unknown authorUnknown author",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Church_School_Builds_Modern_Christian_City_in_the_Jersey_Journal_of_Jersey_City,_New_Jersey_on_August_2,_1932.jpg"
+      "source": "Unsplash",
+      "creator": "Looie Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
     },
     {
       "slot": "scene3",
       "query": "Korea city modern apartment residential",
-      "source": "Wikimedia Commons",
-      "creator": "AnonymousUnknown author",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Church_School_Builds_Modern_Christian_City_in_the_Jersey_Journal_on_August_2,_1932.png"
+      "source": "Unsplash",
+      "creator": "Vincent Yap",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-crossing-street-in-south-korea-zyiKGkIpBNw"
+    },
+    {
+      "slot": "scene4",
+      "query": "Korea city modern apartment residential",
+      "source": "Unsplash",
+      "creator": "dawun choi",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/sun-setting-over-a-hazy-cityscape-with-apartment-buildings-q8jL2CvjTf0"
+    },
+    {
+      "slot": "scene6",
+      "query": "Korea city residential area aerial",
+      "source": "Unsplash",
+      "creator": "Seungyun Oh",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/cityscape-with-high-rise-apartment-buildings-JXLLHi-7dy0"
     },
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T18:20:22Z"
+  "fetched_at": "2026-10-24T00:50:15Z"
 }

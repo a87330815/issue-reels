@@ -1,80 +1,26 @@
 {
   "photos": {
     "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
-    "scene2": "scene2.jpg",
-    "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg",
-    "scene5": "scene5.jpg",
-    "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
     {
       "slot": "cover",
       "query": "Seocho Seoul apartment skyline",
-      "source": "Wikimedia Commons",
-      "creator": "장길산",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Seocho-Seoul-jp.png"
-    },
-    {
-      "slot": "scene1",
-      "query": "Seocho Seoul apartment skyline",
-      "source": "Wikimedia Commons",
-      "creator": "장길산",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Seoul-seocho-map.png"
-    },
-    {
-      "slot": "scene2",
-      "query": "Seocho Seoul luxury high rise apartment",
-      "source": "wikimedia",
-      "creator": "장길산",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/w/index.php?curid=31280913"
-    },
-    {
-      "slot": "scene3",
-      "query": "Seocho Seoul luxury high rise apartment",
-      "source": "wikimedia",
-      "creator": "Hyeonjunchoe909",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/w/index.php?curid=163908142"
-    },
-    {
-      "slot": "scene4",
-      "query": "Seocho Seoul luxury high rise apartment",
-      "source": "wikimedia",
-      "creator": "Neoalpha",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/w/index.php?curid=49636336"
-    },
-    {
-      "slot": "scene5",
-      "query": "Seocho Seoul luxury high rise apartment",
-      "source": "Wikimedia Commons",
-      "creator": "Neoalpha",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Seoul_Seocho_Police_Station_Seocho3_Police_Box.jpg"
-    },
-    {
-      "slot": "scene6",
-      "query": "Seocho Seoul residential area aerial",
-      "source": "Wikimedia Commons",
-      "creator": "Neoalpha",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Seoul_Seocho_Police_Station_Seocho_Police_Box.jpg"
+      "source": "Unsplash",
+      "creator": "dawun choi",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/sun-setting-over-a-hazy-cityscape-with-apartment-buildings-q8jL2CvjTf0"
     },
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-23T18:23:28Z"
+  "fetched_at": "2026-10-24T00:50:21Z"
 }
