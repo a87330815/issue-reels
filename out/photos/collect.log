@@ -1,4 +1,4 @@
-run: 40050023483  2026-10-24T01:29:55Z
+run: 40076230974  2026-10-24T07:59:25Z
 unsplash key: 있음
 
 
@@ -413,8 +413,9 @@ unsplash key: 있음
 === 20261023_09_지역한정 ===
   [cover] '서초동 최고 37억' → "Seocho Seoul apartment skyline"
     [unsplash] 3건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 1건 후보
     [wikimedia] 0건 후보
+    적합도 통과 0/1건 (Openverse/Wikimedia)
     Unsplash 3건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '서초동 최고 37.0억' → "Seocho Seoul apartment skyline"
@@ -642,7 +643,7 @@ unsplash key: 있음
   → 8/8장 저장, 매니페스트: out/photos/20261024_04_숫자훅/photos.json
 
 === 20261024_05_숫자훅 ===
-  [cover] '삼성 갤럭시 s26' → "Korea city luxury apartment"
+  [cover] 'mlb' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -651,7 +652,7 @@ unsplash key: 있음
     적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''삼성 갤럭시 s26' 관련 트렌드 —' → "Korea city luxury apartment"
+  [scene1] ''mlb' 관련 트렌드 — Brewers' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -798,7 +799,7 @@ unsplash key: 있음
   → 8/8장 저장, 매니페스트: out/photos/20261024_08_숫자훅/photos.json
 
 === 20261024_09_숫자훅 ===
-  [cover] '운전' → "Korea city luxury apartment"
+  [cover] 'jtbc' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -807,7 +808,7 @@ unsplash key: 있음
     적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''운전' 관련 트렌드 — 운전대 놨더니' → "Korea city luxury apartment"
+  [scene1] ''jtbc' 관련 트렌드 —' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
