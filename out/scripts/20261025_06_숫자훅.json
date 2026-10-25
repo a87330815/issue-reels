@@ -1,11 +1,11 @@
 {
-  "title": "중앙일보",
+  "title": "이동욱",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
       "방금 나온",
-      "<r>중앙일보</r>",
+      "<r>이동욱</r>",
       "실화입니다"
     ],
     "badge": null
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '중앙일보' 관련 트렌드 — 다우키움 vs CJ, 중앙일보 사주 쟁취는 &apos;다음 세대&apos;의 전쟁. 수치로 확인해보자.",
-      "subtitle": "'중앙일보' 관련 트렌드 — 다우키움"
+      "narration": "이거 모르고 지나가면 손해다. '이동욱' 관련 트렌드 — 배우 이동욱, ‘맥캘란 셰리 저니 익스피리언스’ 팝업 방문…셰리 캐스크 여정 체험. 수치로 확인해보자.",
+      "subtitle": "'이동욱' 관련 트렌드 — 배우 이동욱,"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T01:00:48.863702+00:00"
+    "generated_at": "2026-10-25T08:14:40.016352+00:00"
   }
 }

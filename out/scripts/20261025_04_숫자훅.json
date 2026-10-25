@@ -1,12 +1,11 @@
 {
-  "title": "9억 차이",
+  "title": "차",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "이번 달",
-      "<r>9억 차이</r>",
-      "거래 떴습니다"
+      "<r>차</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,38 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 장항동 평균 12.0억 vs 중산동 평균 3.0억. 수치로 확인해보자.",
-      "subtitle": "장항동 vs 중산동"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "장항동 킨텍스원시티2블럭, 전용 84㎡(26평) 3층이 12.0억원에 실거래 신고됐다카이. 평당 4,684만원. 2019년 준공(7년차).",
-      "subtitle": "장항동 킨텍스원시티2블럭 12.0억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "같은 동네 위시티일산자이1단지도 주목할 만한다. 전용 85㎡(26평) 30층, 거래가 5.7억원. 평당 2,220만원.",
-      "subtitle": "식사동 위시티일산자이1단지 5.7억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "메가센텀한화꿈에그린 전용 101㎡(31평) 20층 — 5.6억원 거래. 평당 1,833만원.",
-      "subtitle": "반여동 메가센텀한화꿈에그린 5.6억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "백송마을(선경) 전용 85㎡(26평) 4층 — 4.7억원 거래. 평당 1,817만원.",
-      "subtitle": "백석동 백송마을(선경) 4.7억원"
-    },
-    {
-      "image": null,
-      "photo_query": "real estate market price chart",
-      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 7.3억원까지 벌어졌다. 평균 6.5억원 수준이다.",
-      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+      "narration": "이거 모르고 지나가면 손해다. '차' 관련 트렌드 — 매일 마시는 차 “잘못 고르면 독 된다”…심장에 좋은 차는. 수치로 확인해보자.",
+      "subtitle": "'차' 관련 트렌드 — 매일 마시는 차"
     },
     {
       "image": null,
@@ -56,20 +25,11 @@
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        12.0,
-        5.7,
-        5.6,
-        4.7,
-        3.8
-      ],
-      "style": "bars"
-    },
+    "source": "",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T01:00:48.428910+00:00"
+    "generated_at": "2026-10-25T08:14:39.616717+00:00"
   }
 }

@@ -1,11 +1,12 @@
 {
-  "title": "김천김밥축제",
+  "title": "부산항 국제여객터미",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>김천김밥축제</r>",
-      "이거 실환가요"
+      "이번 달",
+      "<r>부산항 국제여객터미</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -13,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '김천김밥축제' 관련 트렌드 — 이번 주말 김천김밥축제 간다면…줄서지 말고 &apos;카맵&apos; 봐라 - 머니투데이. 수치로 확인해보자.",
-      "subtitle": "'김천김밥축제' 관련 트렌드 — 이번"
+      "narration": "이거 모르고 지나가면 손해다. '부산항 국제여객터미널' 관련 트렌드 — [속보]이틀간 사라졌던 ‘부캉이’ 다시 나타나…최종 목격지점서 2㎞ 떨어진 곳서 유영. 수치로 확인해보자.",
+      "subtitle": "'부산항 국제여객터미널' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -30,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T01:00:49.082700+00:00"
+    "generated_at": "2026-10-25T08:14:40.223902+00:00"
   }
 }

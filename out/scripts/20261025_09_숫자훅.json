@@ -1,11 +1,11 @@
 {
-  "title": "문가비",
+  "title": "중고",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
       "방금 나온",
-      "<r>문가비</r>",
+      "<r>중고</r>",
       "실화입니다"
     ],
     "badge": null
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '문가비' 관련 트렌드 — Shiyu, who boasted about her son, Kim Hyun-jung&apos;s illegitimate child, faces backlash over privacy concerns: &quot;He has an outstanding appearance&quot; [Star Issue]. 수치로 확인해보자.",
-      "subtitle": "'문가비' 관련 트렌드 — Shiyu,"
+      "narration": "이거 모르고 지나가면 손해다. '중고' 관련 트렌드 — 시댁에 준 선물, 반값에 중고 거래 등장…판매자 알고 보니 &apos;형님네&apos;. 수치로 확인해보자.",
+      "subtitle": "'중고' 관련 트렌드 — 시댁에 준"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T01:00:49.503800+00:00"
+    "generated_at": "2026-10-25T08:14:40.619986+00:00"
   }
 }
