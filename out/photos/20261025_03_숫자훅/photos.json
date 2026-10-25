@@ -1,0 +1,80 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
+    "scene7": "scene7.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
+    },
+    {
+      "slot": "scene1",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "Ann Danilina",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+    },
+    {
+      "slot": "scene2",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Trac Vu",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
+    },
+    {
+      "slot": "scene3",
+      "query": "Korea city modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Looie Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
+    },
+    {
+      "slot": "scene4",
+      "query": "Korea city modern apartment residential",
+      "source": "Unsplash",
+      "creator": "zero take",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city modern apartment residential",
+      "source": "Unsplash",
+      "creator": "ulziibayar badamdorj",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
+    },
+    {
+      "slot": "scene6",
+      "query": "real estate market price chart",
+      "source": "Unsplash",
+      "creator": "Arturo Añez",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/stock-market-graph-shows-fluctuating-trends-9rz5x8LGBb8"
+    },
+    {
+      "slot": "scene7",
+      "query": "follow subscribe social media phone",
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+    }
+  ],
+  "wanted": 8,
+  "fetched_at": "2026-10-25T08:17:28Z"
+}
