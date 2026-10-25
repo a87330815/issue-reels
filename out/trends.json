@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-25T08:14:11.844576+00:00",
+  "collected_at": "2026-10-25T12:51:46.944223+00:00",
   "items": [
     {
-      "keyword": "차",
-      "traffic": "500+",
-      "news_title": "매일 마시는 차 “잘못 고르면 독 된다”…심장에 좋은 차는",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "9e4bb560ba94ddb5"
-    },
-    {
-      "keyword": "이동욱",
-      "traffic": "500+",
-      "news_title": "배우 이동욱, ‘맥캘란 셰리 저니 익스피리언스’ 팝업 방문…셰리 캐스크 여정 체험",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "4763d9d7cf3a4bc5"
-    },
-    {
-      "keyword": "부산항 국제여객터미널",
-      "traffic": "5000+",
-      "news_title": "[속보]이틀간 사라졌던 ‘부캉이’ 다시 나타나…최종 목격지점서 2㎞ 떨어진 곳서 유영",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "8d57954499d71ca5"
-    },
-    {
-      "keyword": "전영현",
-      "traffic": "500+",
-      "news_title": "[2027 정기 인사] 4대 그룹 “미래 핵심 사업 전략 역량에 방점”",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "a2d041ec2fb2524d"
-    },
-    {
-      "keyword": "중고",
-      "traffic": "2000+",
-      "news_title": "시댁에 준 선물, 반값에 중고 거래 등장…판매자 알고 보니 &apos;형님네&apos;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "37d1d79081677e68"
-    },
-    {
-      "keyword": "염소",
+      "keyword": "inter vs fiorentina",
       "traffic": "200+",
-      "news_title": "일본 도심에 나타난 염소 두 마리…제초 작업 임무 부여",
+      "news_title": "Inter Milan vs Fiorentina: Lineups, Prediction, Odds &amp; Bet Builder Tip",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "2a0b5890b46a6855"
+      "key": "1fecc4308222066c"
     },
     {
-      "keyword": "kbo리그",
+      "keyword": "국민연금공단",
+      "traffic": "2000+",
+      "news_title": "전업주부·무소득 청년 등 667만 명, 국민연금 편입 추진",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "생활·지원금·제도",
+      "key": "dbebce440f1d08c6"
+    },
+    {
+      "keyword": "건강",
       "traffic": "5000+",
-      "news_title": "KIA 때문에 KBO 9개 구단 바빠졌다… 명단 한번 화려하네, ‘방출 신화’로 KIA 겨눌까",
+      "news_title": "부천시‘다시 함께 더 큰’민생행보 100일",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "97d314feb3f5f72d"
+      "key": "9ec14632f5e7372f"
     },
     {
-      "keyword": "정준하",
-      "traffic": "1000+",
-      "news_title": "‘놀면 뭐하니?’ 유재석·정준하, 주우재·곽범에 발끈…‘먹쪄 모임’ 뒤집은 막내들의 반란",
+      "keyword": "mma",
+      "traffic": "100+",
+      "news_title": "UFC 333: Alexander Volkanovski stops Movsar Evloev for record with ninth featherweight title win",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "02e3b6b3805c7e41"
+      "key": "eabefb9963420517"
     },
     {
-      "keyword": "프랑스",
-      "traffic": "5000+",
-      "news_title": "프랑스 반정부 시위가 남의 일이 아닌 이유 [연금 구조개혁]⑨",
+      "keyword": "도핑",
+      "traffic": "200+",
+      "news_title": "도쿄올림픽 여자 마라톤 우승자, 도핑 적발…잠정 자격 정지",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "1e48802bad650701"
+      "key": "513eabbb752e93b0"
+    },
+    {
+      "keyword": "한국여자프로골프협회",
+      "traffic": "200+",
+      "news_title": "임오경 의원 &quot;KLPGA·KLPGT 임원 겸직, 이해 상충 우려&quot;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "880ef71d8288a815"
+    },
+    {
+      "keyword": "닥터x: 하얀 마피아의 시대",
+      "traffic": "10000+",
+      "news_title": "5·18 다룬 ‘닥터X’에 방영 중단 청원… 제작 CP는 “두려움 없다”",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "5ac95f3e6a892454"
+    },
+    {
+      "keyword": "브라질 대선",
+      "traffic": "100+",
+      "news_title": "초박빙 전망 브라질 대선…예측시장선 보우소나루 승리 확률 81%",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2787d1e8a78eb5c7"
+    },
+    {
+      "keyword": "충주시",
+      "traffic": "200+",
+      "news_title": "",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "09cdc0bd1dd369b6"
     }
   ]
 }
