@@ -1,0 +1,75 @@
+{
+  "title": "평당 0.5억",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city luxury apartment",
+    "lines": [
+      "방금 나온",
+      "<r>평당 0.5억</r>",
+      "실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 장항동 킨텍스원시티2블럭 평당 0.47억 (전용 84.4811㎡). 수치로 확인해보자.",
+      "subtitle": "장항동 평당 0.5억"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "장항동 킨텍스원시티2블럭, 전용 84㎡(26평) 3층이 12.0억원에 실거래 신고됐다카이. 평당 4,684만원. 2019년 준공(7년차).",
+      "subtitle": "장항동 킨텍스원시티2블럭 12.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 위시티일산자이1단지도 주목할 만한다. 전용 85㎡(26평) 30층, 거래가 5.7억원. 평당 2,220만원.",
+      "subtitle": "식사동 위시티일산자이1단지 5.7억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "메가센텀한화꿈에그린 전용 101㎡(31평) 20층 — 5.6억원 거래. 평당 1,833만원.",
+      "subtitle": "반여동 메가센텀한화꿈에그린 5.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "숲속마을8단지 전용 60㎡(18평) 11층 — 3.3억원 거래. 평당 1,827만원.",
+      "subtitle": "풍동 숲속마을8단지 3.3억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 8.7억원까지 벌어졌다. 평균 6.2억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        0.47,
+        0.22,
+        0.18,
+        0.18,
+        0.18
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-25T01:00:48.659635+00:00"
+  }
+}

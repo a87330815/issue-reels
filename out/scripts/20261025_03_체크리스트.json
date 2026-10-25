@@ -1,0 +1,35 @@
+{
+  "title": "하이브리드 전기 자",
+  "cover": {
+    "image": null,
+    "photo_query": "checklist document pen desk",
+    "lines": [
+      "반드시 확인",
+      "<r>하이브리드 전기 자</r>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "checklist document pen desk",
+      "narration": "이거 모르고 지나가면 손해다. '하이브리드 전기 자동차' 관련 트렌드 — &quot;전기차는 잘 나가는데&quot;…中BYD 첫 PHEV &apos;씨라이언 6&apos;는 주춤 왜? 꼭 체크해야 할 거 정리해봤다.",
+      "subtitle": "'하이브리드 전기 자동차' 관련 트렌드"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "체크리스트",
+    "source": "",
+    "category": "생활·지원금·제도",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-25T01:00:48.231074+00:00"
+  }
+}

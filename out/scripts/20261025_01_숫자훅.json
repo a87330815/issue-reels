@@ -1,0 +1,50 @@
+{
+  "title": "12억 아파트",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city luxury apartment",
+    "lines": [
+      "<r>12억 아파트</r>",
+      "이거 실환가요"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 장항동 킨텍스원시티2블럭 84.4811㎡ 12.0억 거래. 수치로 확인해보자.",
+      "subtitle": "장항동 12.0억 거래"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "장항동 킨텍스원시티2블럭, 전용 84㎡(26평) 3층이 12.0억원에 실거래 신고됐다카이. 평당 4,684만원. 2019년 준공(7년차).",
+      "subtitle": "장항동 킨텍스원시티2블럭 12.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        12.0,
+        5.7,
+        5.6,
+        4.7,
+        4.6
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-25T01:00:47.789149+00:00"
+  }
+}

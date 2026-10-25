@@ -1,0 +1,36 @@
+{
+  "title": "중앙일보",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city luxury apartment",
+    "lines": [
+      "방금 나온",
+      "<r>중앙일보</r>",
+      "실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. '중앙일보' 관련 트렌드 — 다우키움 vs CJ, 중앙일보 사주 쟁취는 &apos;다음 세대&apos;의 전쟁. 수치로 확인해보자.",
+      "subtitle": "'중앙일보' 관련 트렌드 — 다우키움"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-25T01:00:48.863702+00:00"
+  }
+}
