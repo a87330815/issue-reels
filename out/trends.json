@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-10-25T01:00:12.520466+00:00",
+  "collected_at": "2026-10-25T08:14:11.844576+00:00",
   "items": [
     {
-      "keyword": "중앙일보",
-      "traffic": "1000+",
-      "news_title": "다우키움 vs CJ, 중앙일보 사주 쟁취는 &apos;다음 세대&apos;의 전쟁",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "6056bc48004e13f9"
-    },
-    {
-      "keyword": "김천김밥축제",
-      "traffic": "100+",
-      "news_title": "이번 주말 김천김밥축제 간다면…줄서지 말고 &apos;카맵&apos; 보세요 - 머니투데이",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "c5e1266d03f66262"
-    },
-    {
-      "keyword": "이규한",
+      "keyword": "차",
       "traffic": "500+",
-      "news_title": "&quot;20년 전부터 솔비 좋아했다, 세상에서 가장 아름다운 분&quot; 이규한 고백",
+      "news_title": "매일 마시는 차 “잘못 고르면 독 된다”…심장에 좋은 차는",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "2125f4842205b670"
+      "key": "9e4bb560ba94ddb5"
     },
     {
-      "keyword": "문가비",
-      "traffic": "100+",
-      "news_title": "Shiyu, who boasted about her son, Kim Hyun-jung&apos;s illegitimate child, faces backlash over privacy concerns: &quot;He has an outstanding appearance&quot; [Star Issue]",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "f9b79c47fc6be65b"
-    },
-    {
-      "keyword": "신현송",
-      "traffic": "100+",
-      "news_title": "신현송 “과거 같은 초저금리 시대 돌아가기 어려워…고성장·고금리 대비해 정책 펼 것”",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "eb669a481e483355"
-    },
-    {
-      "keyword": "필라데피아 대 밀워키",
+      "keyword": "이동욱",
       "traffic": "500+",
-      "news_title": "Nick Nurse says that while Joel Embiid will play …",
+      "news_title": "배우 이동욱, ‘맥캘란 셰리 저니 익스피리언스’ 팝업 방문…셰리 캐스크 여정 체험",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "f68e0577d799e78c"
+      "key": "4763d9d7cf3a4bc5"
     },
     {
-      "keyword": "김태형",
+      "keyword": "부산항 국제여객터미널",
+      "traffic": "5000+",
+      "news_title": "[속보]이틀간 사라졌던 ‘부캉이’ 다시 나타나…최종 목격지점서 2㎞ 떨어진 곳서 유영",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "8d57954499d71ca5"
+    },
+    {
+      "keyword": "전영현",
+      "traffic": "500+",
+      "news_title": "[2027 정기 인사] 4대 그룹 “미래 핵심 사업 전략 역량에 방점”",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "a2d041ec2fb2524d"
+    },
+    {
+      "keyword": "중고",
       "traffic": "2000+",
-      "news_title": "김태형 감독, 롯데와 3년 동행 마침표…재계약 불발로 새 출발 불가피",
+      "news_title": "시댁에 준 선물, 반값에 중고 거래 등장…판매자 알고 보니 &apos;형님네&apos;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "29d392044ffc5e76"
+      "key": "37d1d79081677e68"
     },
     {
-      "keyword": "킴 카다시안",
-      "traffic": "100+",
-      "news_title": "킴 카다시안, 화이트 드레스 뚫고 나온 볼륨감…탄탄한 몸매 관리 비결은",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "1034a9c6fd35af32"
-    },
-    {
-      "keyword": "배당",
-      "traffic": "2000+",
-      "news_title": "삼성전자, 내년 역대급 배당 준다는데…주당 1만2000원 받을 수 있을까",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "98287fa1e7362c9c"
-    },
-    {
-      "keyword": "하이브리드 전기 자동차",
+      "keyword": "염소",
       "traffic": "200+",
-      "news_title": "&quot;전기차는 잘 나가는데&quot;…中BYD 첫 PHEV &apos;씨라이언 6&apos;는 주춤 왜?",
+      "news_title": "일본 도심에 나타난 염소 두 마리…제초 작업 임무 부여",
       "snippet": "",
       "source_type": "google_trends",
-      "category": "생활·지원금·제도",
-      "key": "fc8ac6298b3da80e"
+      "category": "당일 화제 이슈",
+      "key": "2a0b5890b46a6855"
+    },
+    {
+      "keyword": "kbo리그",
+      "traffic": "5000+",
+      "news_title": "KIA 때문에 KBO 9개 구단 바빠졌다… 명단 한번 화려하네, ‘방출 신화’로 KIA 겨눌까",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "97d314feb3f5f72d"
+    },
+    {
+      "keyword": "정준하",
+      "traffic": "1000+",
+      "news_title": "‘놀면 뭐하니?’ 유재석·정준하, 주우재·곽범에 발끈…‘먹쪄 모임’ 뒤집은 막내들의 반란",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "02e3b6b3805c7e41"
+    },
+    {
+      "keyword": "프랑스",
+      "traffic": "5000+",
+      "news_title": "프랑스 반정부 시위가 남의 일이 아닌 이유 [연금 구조개혁]⑨",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "1e48802bad650701"
     }
   ]
 }

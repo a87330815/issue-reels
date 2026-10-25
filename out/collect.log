@@ -20,11 +20,10 @@ kosis.kr → 302
   --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
       조사일 발견: 20261009
 
-수집 9건 · 언론사표현 폐기 0건 → /home/runner/work/issue-reels/issue-reels/out/collected.json
+수집 0건 — 기존 9건을 유지합니다 (API 접속 실패로 보입니다. 덮어쓰지 않습니다)
 트렌드 수집 시작
   Google Trends: 10건
   네이버 DataLab: 0건
 
-트렌드 수집 10건 · 제외 0건 → /home/runner/work/issue-reels/issue-reels/out/trends.json
+트렌드 수집 9건 · 제외 0건 → /home/runner/work/issue-reels/issue-reels/out/trends.json
   당일 화제 이슈: 9건
-  생활·지원금·제도: 1건
