@@ -1,0 +1,35 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "new vs old apartment building korea",
+      "source": "Unsplash",
+      "creator": "WooSang Lee",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-RSuP39oXrZA"
+    },
+    {
+      "slot": "scene1",
+      "query": "new vs old apartment building korea",
+      "source": "Unsplash",
+      "creator": "rawkkim",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/high-rise-buildings-during-daytime-8RN751rleDo"
+    },
+    {
+      "slot": "scene2",
+      "query": "follow subscribe social media phone",
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+    }
+  ],
+  "wanted": 3,
+  "fetched_at": "2026-10-25T18:11:37Z"
+}
