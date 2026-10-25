@@ -1,12 +1,12 @@
 {
-  "title": "건강",
+  "title": "분만",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "이번 달",
-      "<r>건강</r>",
-      "거래 떴습니다"
+      "방금 나온",
+      "<r>분만</r>",
+      "실화입니다"
     ],
     "badge": null
   },
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '건강' 관련 트렌드 — 부천시‘다시 함께 더 큰’민생행보 100일. 수치로 확인해보자.",
-      "subtitle": "'건강' 관련 트렌드 — 부천시‘다시"
+      "narration": "이거 모르고 지나가면 손해다. '분만' 관련 트렌드 — 고위험 산모 치료 정부 지원에도…응급시 정작 받아줄 병원·의사는 부족. 수치로 확인해보자.",
+      "subtitle": "'분만' 관련 트렌드 — 고위험 산모"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T12:52:22.203065+00:00"
+    "generated_at": "2026-10-25T17:20:23.730778+00:00"
   }
 }

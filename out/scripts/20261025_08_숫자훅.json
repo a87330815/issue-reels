@@ -1,12 +1,11 @@
 {
-  "title": "mma",
+  "title": "pl",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>mma</r>",
-      "실화입니다"
+      "<r>pl</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,8 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'mma' 관련 트렌드 — UFC 333: Alexander Volkanovski stops Movsar Evloev for record with ninth featherweight title win. 수치로 확인해보자.",
-      "subtitle": "'mma' 관련 트렌드 — UFC"
+      "narration": "이거 모르고 지나가면 손해다. 'pl' 관련 트렌드 — Polska wróciła do walki o ETS2. Chce wykorzystać rewizję unijnych przepisów. 수치로 확인해보자.",
+      "subtitle": "'pl' 관련 트렌드 — Polska"
     },
     {
       "image": null,
@@ -31,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T12:52:22.389485+00:00"
+    "generated_at": "2026-10-25T17:20:23.928035+00:00"
   }
 }
