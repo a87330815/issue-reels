@@ -1,11 +1,11 @@
 {
-  "title": "하이브리드 전기 자",
+  "title": "국민연금공단",
   "cover": {
     "image": null,
     "photo_query": "checklist document pen desk",
     "lines": [
       "반드시 확인",
-      "<r>하이브리드 전기 자</r>"
+      "<r>국민연금공단</r>"
     ],
     "badge": null
   },
@@ -13,8 +13,8 @@
     {
       "image": null,
       "photo_query": "checklist document pen desk",
-      "narration": "이거 모르고 지나가면 손해다. '하이브리드 전기 자동차' 관련 트렌드 — &quot;전기차는 잘 나가는데&quot;…中BYD 첫 PHEV &apos;씨라이언 6&apos;는 주춤 왜? 꼭 체크해야 할 거 정리해봤다.",
-      "subtitle": "'하이브리드 전기 자동차' 관련 트렌드"
+      "narration": "이거 모르고 지나가면 손해다. '국민연금공단' 관련 트렌드 — 전업주부·무소득 청년 등 667만 명, 국민연금 편입 추진 꼭 체크해야 할 거 정리해봤다.",
+      "subtitle": "'국민연금공단' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -30,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T01:00:48.231074+00:00"
+    "generated_at": "2026-10-25T12:52:21.471744+00:00"
   }
 }

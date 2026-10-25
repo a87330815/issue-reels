@@ -1,12 +1,11 @@
 {
-  "title": "중고",
+  "title": "도핑",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>중고</r>",
-      "실화입니다"
+      "<r>도핑</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,8 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '중고' 관련 트렌드 — 시댁에 준 선물, 반값에 중고 거래 등장…판매자 알고 보니 &apos;형님네&apos;. 수치로 확인해보자.",
-      "subtitle": "'중고' 관련 트렌드 — 시댁에 준"
+      "narration": "이거 모르고 지나가면 손해다. '도핑' 관련 트렌드 — 도쿄올림픽 여자 마라톤 우승자, 도핑 적발…잠정 자격 정지. 수치로 확인해보자.",
+      "subtitle": "'도핑' 관련 트렌드 — 도쿄올림픽 여자"
     },
     {
       "image": null,
@@ -31,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T08:14:40.619986+00:00"
+    "generated_at": "2026-10-25T12:52:22.575996+00:00"
   }
 }

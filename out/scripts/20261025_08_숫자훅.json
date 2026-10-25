@@ -1,11 +1,12 @@
 {
-  "title": "전영현",
+  "title": "mma",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>전영현</r>",
-      "이거 실환가요"
+      "방금 나온",
+      "<r>mma</r>",
+      "실화입니다"
     ],
     "badge": null
   },
@@ -13,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '전영현' 관련 트렌드 — [2027 정기 인사] 4대 그룹 “미래 핵심 사업 전략 역량에 방점”. 수치로 확인해보자.",
-      "subtitle": "'전영현' 관련 트렌드 — [2027"
+      "narration": "이거 모르고 지나가면 손해다. 'mma' 관련 트렌드 — UFC 333: Alexander Volkanovski stops Movsar Evloev for record with ninth featherweight title win. 수치로 확인해보자.",
+      "subtitle": "'mma' 관련 트렌드 — UFC"
     },
     {
       "image": null,
@@ -30,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-25T08:14:40.414284+00:00"
+    "generated_at": "2026-10-25T12:52:22.389485+00:00"
   }
 }
