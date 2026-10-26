@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-10-26T08:39:51.151980+00:00",
+  "collected_at": "2026-10-26T14:40:57.901806+00:00",
   "items": [
     {
-      "keyword": "로또",
+      "keyword": "군인",
       "traffic": "2000+",
-      "news_title": "1247회 로또, 제주시 연동서 1명 2등 당첨...6553만원 행운",
+      "news_title": "단독 국방부, &apos;지뢰부상&apos; 전상 입증 책임 덜어준다...법안 마련 착수",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "0e1dcf49c08b68c3"
+      "key": "ef962c1cc97b2d78"
     },
     {
-      "keyword": "안경",
-      "traffic": "200+",
-      "news_title": "’AI 안경’ 쓰고 수능 풀어보니…10초 만에 정답",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "36fd982f1433e4c5"
-    },
-    {
-      "keyword": "전도연",
+      "keyword": "기소",
       "traffic": "100+",
-      "news_title": "&quot;전도연, 오스카 주연상 후보 가능성&quot;‥외신 &apos;가능한 사랑&apos; 주목",
+      "news_title": "조국혁신당, &apos;조희대 탄핵&apos; 5당 원내대표 회담 제안",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "05b2ea6c36beeeb2"
+      "key": "f94dbeef777b22ef"
     },
     {
-      "keyword": "하태경",
-      "traffic": "500+",
-      "news_title": "&quot;보험·금융권 대변인 자처&quot;… 하태경 보험연수원장, &apos;정책 제언&apos; 칼럼 직접 펜 든다",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "cb4ddc80a62ab7de"
-    },
-    {
-      "keyword": "안세영",
-      "traffic": "10000+",
-      "news_title": "승률 98.5%, ‘50연승’ 안세영···‘전설’ 기록 머지않았다 [플랫]",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ec207c57a869e09e"
-    },
-    {
-      "keyword": "리디아 고",
+      "keyword": "여행경보",
       "traffic": "1000+",
-      "news_title": "주진우 &quot;김혜경 여사, 프로골퍼와 레슨&quot;‥여당 &quot;황당무계 소설&quot;",
+      "news_title": "&quot;혼자 가지 마세요&quot;... 여행경보 국가 한국인 피해 폭증 [자막뉴스]",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "2bf9dc5495ba6f9b"
+      "key": "c1edc0712e5acada"
     },
     {
-      "keyword": "미래에셋생명",
+      "keyword": "jyp 엔터테인먼트",
+      "traffic": "1000+",
+      "news_title": "일본계 투자사 &quot;JYP 지분 25∼50% 인수추진&quot;…JYP &quot;제안 無&quot;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2dcdab50aada56f9"
+    },
+    {
+      "keyword": "ballon d&apos;or",
       "traffic": "200+",
-      "news_title": "미래에셋생명, 사이버 침해사고로 개인정보 유출... “전사적 비상대응 가동”",
+      "news_title": "Ballon d&apos;Or predictions: Will Lamine Yamal, Harry Kane, Kylian Mbappe or Lionel Messi win?",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "23ef7d1deae346ac"
+      "key": "c9fae1b803acd453"
     },
     {
-      "keyword": "이창호",
-      "traffic": "100+",
-      "news_title": "‘돌부처’ 이창호, 세계 바둑 첫 2000승",
+      "keyword": "persija jakarta vs persik",
+      "traffic": "200+",
+      "news_title": "Persija vs Persik Kediri Final Score 3-1: Rizky Ridho Leads Macan Kemayoran Comeback",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "dabd23d14b2086c1"
+      "key": "f16a911a9351e7bd"
     },
     {
-      "keyword": "대전광역시",
-      "traffic": "2000+",
-      "news_title": "",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ed9208b51013b716"
-    },
-    {
-      "keyword": "임영웅 아임 히어로 더 스타디움",
+      "keyword": "ai 버블",
       "traffic": "500+",
-      "news_title": "임영웅 콘서트 실황 영화 내달 개봉…고양 스타디움 공연 담아",
+      "news_title": "[단독] &quot;AI 꺾이면 반도체 수출 1천억弗 타격&quot;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "d6613991ee7547dc"
+      "key": "1cd92caf4be4f971"
+    },
+    {
+      "keyword": "대한전선",
+      "traffic": "200+",
+      "news_title": "김대헌 의장·송종민 대표 &apos;투트랙&apos;...호반건설, 정비사업서 반등 해법 찾는다",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "5ac124a8e44a655d"
+    },
+    {
+      "keyword": "보스턴 다이내믹스",
+      "traffic": "500+",
+      "news_title": "보스턴다이내믹스 내부도 ’반발’, 美 ICE 스팟 공급 두고 로봇 윤리 논란 확산 By The Guru",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "5e687d5510b58e66"
     }
   ]
 }
