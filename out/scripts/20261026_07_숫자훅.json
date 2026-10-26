@@ -1,11 +1,12 @@
 {
-  "title": "전도연",
+  "title": "여행경보",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>전도연</r>",
-      "이거 실환가요"
+      "방금 나온",
+      "<r>여행경보</r>",
+      "실화입니다"
     ],
     "badge": null
   },
@@ -13,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '전도연' 관련 트렌드 — &quot;전도연, 오스카 주연상 후보 가능성&quot;‥외신 &apos;가능한 사랑&apos; 주목. 수치로 확인해보자.",
-      "subtitle": "'전도연' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. '여행경보' 관련 트렌드 — &quot;혼자 가지 마세요&quot;... 여행경보 국가 한국인 피해 폭증 [자막뉴스]. 수치로 확인해보자.",
+      "subtitle": "'여행경보' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -30,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T08:40:40.362715+00:00"
+    "generated_at": "2026-10-26T14:41:34.803544+00:00"
   }
 }

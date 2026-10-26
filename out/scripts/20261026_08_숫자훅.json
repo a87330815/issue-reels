@@ -1,12 +1,12 @@
 {
-  "title": "하태경",
+  "title": "jyp 엔터테인먼트",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>하태경</r>",
-      "실화입니다"
+      "이번 달",
+      "<r>jyp 엔터테인먼트</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '하태경' 관련 트렌드 — &quot;보험·금융권 대변인 자처&quot;… 하태경 보험연수원장, &apos;정책 제언&apos; 칼럼 직접 펜 든다. 수치로 확인해보자.",
-      "subtitle": "'하태경' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. 'jyp 엔터테인먼트' 관련 트렌드 — 일본계 투자사 &quot;JYP 지분 25∼50% 인수추진&quot;…JYP &quot;제안 無&quot;. 수치로 확인해보자.",
+      "subtitle": "'jyp 엔터테인먼트' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T08:40:40.593137+00:00"
+    "generated_at": "2026-10-26T14:41:35.116764+00:00"
   }
 }

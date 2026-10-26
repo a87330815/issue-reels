@@ -1,12 +1,12 @@
 {
-  "title": "안경",
+  "title": "기소",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>안경</r>",
-      "실화입니다"
+      "이번 달",
+      "<r>기소</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '안경' 관련 트렌드 — ’AI 안경’ 쓰고 수능 풀어보니…10초 만에 정답. 수치로 확인해보자.",
-      "subtitle": "'안경' 관련 트렌드 — ’AI 안경’"
+      "narration": "이거 모르고 지나가면 손해다. '기소' 관련 트렌드 — 조국혁신당, &apos;조희대 탄핵&apos; 5당 원내대표 회담 제안. 수치로 확인해보자.",
+      "subtitle": "'기소' 관련 트렌드 — 조국혁신당,"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T08:40:39.940734+00:00"
+    "generated_at": "2026-10-26T14:41:34.558278+00:00"
   }
 }

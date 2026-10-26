@@ -1,12 +1,12 @@
 {
-  "title": "로또",
+  "title": "군인",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>로또</r>",
-      "실화입니다"
+      "이번 달",
+      "<r>군인</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '로또' 관련 트렌드 — 1247회 로또, 제주시 연동서 1명 2등 당첨...6553만원 행운. 수치로 확인해보자.",
-      "subtitle": "'로또' 관련 트렌드 — 1247회"
+      "narration": "이거 모르고 지나가면 손해다. '군인' 관련 트렌드 — 단독 국방부, &apos;지뢰부상&apos; 전상 입증 책임 덜어준다...법안 마련 착수. 수치로 확인해보자.",
+      "subtitle": "'군인' 관련 트렌드 — 단독 국방부,"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T08:40:39.491253+00:00"
+    "generated_at": "2026-10-26T14:41:34.079269+00:00"
   }
 }
