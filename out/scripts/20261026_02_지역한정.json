@@ -1,0 +1,73 @@
+{
+  "title": "풍동 4건 거래",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment skyline",
+    "lines": [
+      "풍동 4건 거래",
+      "<y>얼마에 팔렸나</y>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 풍동에서 이번 달 4건 거래. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "풍동 4건 거래"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "풍동 숲속마을2단지, 전용 85㎡(26평) 17층이 4.6억원에 실거래 신고됐다카이. 평당 1,799만원. 2006년 준공.",
+      "subtitle": "풍동 숲속마을2단지 4.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 숲속마을(7단지)도 주목할 만한다. 전용 85㎡(26평) 12층, 거래가 3.8억원. 평당 1,493만원.",
+      "subtitle": "풍동 숲속마을(7단지) 3.8억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "숲속마을8단지 전용 60㎡(18평) 11층 — 3.3억원 거래. 평당 1,827만원.",
+      "subtitle": "풍동 숲속마을8단지 3.3억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "백마역중앙하이츠빌 전용 85㎡(26평) 15층 — 3.4억원 거래. 평당 1,327만원.",
+      "subtitle": "풍동 백마역중앙하이츠빌 3.4억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city residential area aerial",
+      "narration": "풍동 이번 달 거래를 종합하면, 평균 거래가는 3.8억원, 최고가 4.6억원, 최저가 3.3억원이다. 총 4건이 신고됐다 아이가.",
+      "subtitle": "풍동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        4.6,
+        3.8,
+        3.3,
+        3.4
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-26T01:06:46.595633+00:00"
+  }
+}

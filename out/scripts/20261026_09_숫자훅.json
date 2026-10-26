@@ -1,0 +1,36 @@
+{
+  "title": "네이버",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city luxury apartment",
+    "lines": [
+      "방금 나온",
+      "<r>네이버</r>",
+      "실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. '네이버' 관련 트렌드 — 인스파이어 아레나, &apos;네이버 아레나&apos;로 바뀐다. 수치로 확인해보자.",
+      "subtitle": "'네이버' 관련 트렌드 — 인스파이어"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-26T01:06:47.973218+00:00"
+  }
+}
