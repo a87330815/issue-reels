@@ -1,95 +1,95 @@
 {
-  "collected_at": "2026-10-25T17:19:45.771675+00:00",
+  "collected_at": "2026-10-26T01:06:02.858100+00:00",
   "items": [
     {
-      "keyword": "sc 프라이부르크 대 바이에른",
-      "traffic": "2000+",
-      "news_title": "부상 김민재, 프라이부르크전 못 뛴다…뮌헨 &quot;큰 문제 아니지만&quot;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "9a558bbb78aeb1e0"
-    },
-    {
-      "keyword": "30호 태풍 참피",
+      "keyword": "트럭",
       "traffic": "1000+",
-      "news_title": "참피 대만 앞 &apos;한 바퀴 회전&apos;‥&apos;커진 피해&apos; 日 할퀴고 북진",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "놀라운 사건·화제",
-      "key": "0b71fbf01ae19434"
-    },
-    {
-      "keyword": "분만",
-      "traffic": "500+",
-      "news_title": "고위험 산모 치료 정부 지원에도…응급시 정작 받아줄 병원·의사는 부족",
+      "news_title": "중부내륙고속도로서 추돌뒤 화재…20대 남녀 사망",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "5106830bb4f99c46"
+      "key": "8ac48855bcdc61d0"
     },
     {
-      "keyword": "pl",
+      "keyword": "lula",
       "traffic": "200+",
-      "news_title": "Polska wróciła do walki o ETS2. Chce wykorzystać rewizję unijnych przepisów",
+      "news_title": "Lula vira em Minas e mantém tradição de vencer no estado e ser eleito",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "f437cb078acc7c6d"
+      "key": "f8449a28b3d63c3e"
     },
     {
-      "keyword": "셀타 비고 대 레알 베티스",
-      "traffic": "500+",
-      "news_title": "Celta - Betis LIVE. LALIGA EA Sports latest updates",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "eb6d08b703a6877b"
-    },
-    {
-      "keyword": "남양주시",
-      "traffic": "200+",
-      "news_title": "가을 수놓은 남양주 &apos;주민 화합의 장&apos;…문화·체육으로 묶인 ‘이웃의 정’",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "5de9adc26e97c038"
-    },
-    {
-      "keyword": "ngoại hạng anh",
+      "keyword": "brazil election",
       "traffic": "100+",
-      "news_title": "Trực tiếp bóng đá Liverpool - Brighton: Ăn miếng trả miếng (Ngoại hạng Anh)",
+      "news_title": "Kim visits China ahead of possible Trump summit",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "143112baae275f37"
+      "key": "97b2f530a6507aec"
     },
     {
-      "keyword": "epl",
-      "traffic": "2000+",
-      "news_title": "Alex Iwobi: From Arsenal prodigy to Premier League mainstay",
+      "keyword": "부산은행",
+      "traffic": "200+",
+      "news_title": "BNK부산은행 창립 59주년 기념식",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "47982c14445a5b7b"
+      "key": "48706dc41f6c5bec"
     },
     {
-      "keyword": "리버풀",
-      "traffic": "1000+",
-      "news_title": "프리미어 리그 리버풀 대 브라이튼 축구 예측",
+      "keyword": "네이버",
+      "traffic": "50000+",
+      "news_title": "인스파이어 아레나, &apos;네이버 아레나&apos;로 바뀐다",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "e927495d0c18fc6b"
+      "key": "4c2122fb6ed35d50"
     },
     {
-      "keyword": "premier league",
-      "traffic": "500+",
-      "news_title": "Premier League LIVE: Sunderland host Leeds after Michael Carrick&apos;s Man Utd lose to Bournemouth",
+      "keyword": "조선일보",
+      "traffic": "200+",
+      "news_title": "[단독] 한미 관계, 민간까지 삐걱… 4명 중 1명 비자 거부 당해",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "f5c88cd7690c8812"
+      "key": "794ee7ebfbf527c8"
+    },
+    {
+      "keyword": "다음",
+      "traffic": "10000+",
+      "news_title": "“삼전닉스 다음은 여기” ‘시총 3위’ 후보 나왔다…증권사가 뽑은 내년 주도주 4곳",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "854c76f3bcc6c6e2"
+    },
+    {
+      "keyword": "구광모",
+      "traffic": "200+",
+      "news_title": "[2027 산업] 반도체만 웃는다…불확실성 증폭에 업종기상도 &apos;극과 극&apos;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "4a46e01e0860ad9b"
+    },
+    {
+      "keyword": "brazil election 2026",
+      "traffic": "200+",
+      "news_title": "Brazil Election Live Updates: Lula Wins Re-Election, Fending Off Flávio Bolsonaro",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "1efaa52c366a51e1"
+    },
+    {
+      "keyword": "폭죽",
+      "traffic": "200+",
+      "news_title": "“아버지 향해 쏴”…강릉 해변서 남성들 쏜 폭죽에 父 화상 ‘분통’",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "31582b8a09009c93"
     }
   ]
 }
