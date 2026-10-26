@@ -1,12 +1,12 @@
 {
-  "title": "네이버",
+  "title": "안세영",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>네이버</r>",
-      "실화입니다"
+      "이번 달",
+      "<r>안세영</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '네이버' 관련 트렌드 — 인스파이어 아레나, &apos;네이버 아레나&apos;로 바뀐다. 수치로 확인해보자.",
-      "subtitle": "'네이버' 관련 트렌드 — 인스파이어"
+      "narration": "이거 모르고 지나가면 손해다. '안세영' 관련 트렌드 — 승률 98.5%, ‘50연승’ 안세영···‘전설’ 기록 머지않았다 [플랫]. 수치로 확인해보자.",
+      "subtitle": "'안세영' 관련 트렌드 — 승률"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T01:06:47.973218+00:00"
+    "generated_at": "2026-10-26T08:40:40.814075+00:00"
   }
 }

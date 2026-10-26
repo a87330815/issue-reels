@@ -1,12 +1,11 @@
 {
-  "title": "brazil ele",
+  "title": "전도연",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>brazil ele</r>",
-      "실화입니다"
+      "<r>전도연</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,8 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'brazil election' 관련 트렌드 — Kim visits China ahead of possible Trump summit. 수치로 확인해보자.",
-      "subtitle": "'brazil election' 관련"
+      "narration": "이거 모르고 지나가면 손해다. '전도연' 관련 트렌드 — &quot;전도연, 오스카 주연상 후보 가능성&quot;‥외신 &apos;가능한 사랑&apos; 주목. 수치로 확인해보자.",
+      "subtitle": "'전도연' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -31,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T01:06:47.574332+00:00"
+    "generated_at": "2026-10-26T08:40:40.362715+00:00"
   }
 }

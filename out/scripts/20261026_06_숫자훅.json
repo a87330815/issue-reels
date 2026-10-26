@@ -1,11 +1,11 @@
 {
-  "title": "lula",
+  "title": "안경",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
       "방금 나온",
-      "<r>lula</r>",
+      "<r>안경</r>",
       "실화입니다"
     ],
     "badge": null
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'lula' 관련 트렌드 — Lula vira em Minas e mantém tradição de vencer no estado e ser eleito. 수치로 확인해보자.",
-      "subtitle": "'lula' 관련 트렌드 — Lula"
+      "narration": "이거 모르고 지나가면 손해다. '안경' 관련 트렌드 — ’AI 안경’ 쓰고 수능 풀어보니…10초 만에 정답. 수치로 확인해보자.",
+      "subtitle": "'안경' 관련 트렌드 — ’AI 안경’"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T01:06:47.381046+00:00"
+    "generated_at": "2026-10-26T08:40:39.940734+00:00"
   }
 }
