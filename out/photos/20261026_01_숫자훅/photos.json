@@ -8,27 +8,27 @@
   "credits": [
     {
       "slot": "cover",
-      "query": "Korea city luxury apartment",
-      "source": "Unsplash",
-      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
-    },
-    {
-      "slot": "scene1",
-      "query": "Korea city luxury apartment",
+      "query": "Banpo Seoul luxury apartment",
       "source": "Unsplash",
       "creator": "Ann Danilina",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
     },
     {
-      "slot": "scene2",
-      "query": "Korea city luxury high rise apartment",
+      "slot": "scene1",
+      "query": "Banpo Seoul luxury apartment",
       "source": "Unsplash",
-      "creator": "Trac Vu",
+      "creator": "Ming Han Low",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-5YHqhCBiCz4"
+    },
+    {
+      "slot": "scene2",
+      "query": "Banpo Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Ethan Brooke",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
     },
     {
       "slot": "scene3",
@@ -40,5 +40,5 @@
     }
   ],
   "wanted": 4,
-  "fetched_at": "2026-10-26T14:54:17Z"
+  "fetched_at": "2026-10-26T19:49:45Z"
 }

@@ -12,22 +12,38 @@
   "credits": [
     {
       "slot": "cover",
-      "query": "Korea city luxury apartment",
-      "source": "Unsplash",
-      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
-    },
-    {
-      "slot": "scene1",
-      "query": "Korea city luxury apartment",
+      "query": "Banpo Seoul luxury apartment",
       "source": "Unsplash",
       "creator": "Ann Danilina",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
     },
     {
+      "slot": "scene1",
+      "query": "Banpo Seoul luxury apartment",
+      "source": "Unsplash",
+      "creator": "Ming Han Low",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-5YHqhCBiCz4"
+    },
+    {
       "slot": "scene2",
+      "query": "Banpo Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Ethan Brooke",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+    },
+    {
+      "slot": "scene3",
+      "query": "Apgujeong Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Ethan Brooke",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+    },
+    {
+      "slot": "scene4",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Trac Vu",
@@ -35,28 +51,12 @@
       "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
     },
     {
-      "slot": "scene3",
-      "query": "Korea city modern apartment residential",
-      "source": "Unsplash",
-      "creator": "Looie Kang",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
-    },
-    {
-      "slot": "scene4",
-      "query": "Korea city modern apartment residential",
-      "source": "Unsplash",
-      "creator": "Carl Kho",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/white-concrete-building-near-trees-during-daytime-2f18NO5bPfw"
-    },
-    {
       "slot": "scene5",
-      "query": "Korea city modern apartment residential",
+      "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "zero take",
+      "creator": "Jéan Béller",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
     },
     {
       "slot": "scene6",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-26T14:55:08Z"
+  "fetched_at": "2026-10-26T19:49:56Z"
 }

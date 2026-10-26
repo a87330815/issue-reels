@@ -22,9 +22,9 @@
       "slot": "scene1",
       "query": "Korea city luxury apartment",
       "source": "Unsplash",
-      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
+      "creator": "Ann Danilina",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
+      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
     },
     {
       "slot": "scene2",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-26T14:53:50Z"
+  "fetched_at": "2026-10-26T19:49:02Z"
 }
