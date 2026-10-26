@@ -1,0 +1,44 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
+    },
+    {
+      "slot": "scene1",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "Ann Danilina",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+    },
+    {
+      "slot": "scene2",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Trac Vu",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
+    },
+    {
+      "slot": "scene3",
+      "query": "follow subscribe social media phone",
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+    }
+  ],
+  "wanted": 4,
+  "fetched_at": "2026-10-26T01:10:37Z"
+}
