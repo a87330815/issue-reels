@@ -1,11 +1,11 @@
 {
-  "title": "군인",
+  "title": "2026 롤드컵",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
       "이번 달",
-      "<r>군인</r>",
+      "<r>2026 롤드컵</r>",
       "거래 떴습니다"
     ],
     "badge": null
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '군인' 관련 트렌드 — 단독 국방부, &apos;지뢰부상&apos; 전상 입증 책임 덜어준다...법안 마련 착수. 수치로 확인해보자.",
-      "subtitle": "'군인' 관련 트렌드 — 단독 국방부,"
+      "narration": "이거 모르고 지나가면 손해다. '2026 롤드컵' 관련 트렌드 — [롤드컵]젠지·DK 8강 직행…T1은 1승 남아, 한화생명 벼랑 끝. 수치로 확인해보자.",
+      "subtitle": "'2026 롤드컵' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T14:41:34.079269+00:00"
+    "generated_at": "2026-10-26T19:39:39.585997+00:00"
   }
 }

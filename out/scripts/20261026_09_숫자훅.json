@@ -1,12 +1,11 @@
 {
-  "title": "ballon d&a",
+  "title": "t1",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>ballon d&a</r>",
-      "실화입니다"
+      "<r>t1</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,8 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'ballon d&apos;or' 관련 트렌드 — Ballon d&apos;Or predictions: Will Lamine Yamal, Harry Kane, Kylian Mbappe or Lionel Messi win?. 수치로 확인해보자.",
-      "subtitle": "'ballon d&apos;or' 관련"
+      "narration": "이거 모르고 지나가면 손해다. 't1' 관련 트렌드 — T1 Defeat CFO Behind Bot Duo&apos;s Performance to Reach 2 Wins. 수치로 확인해보자.",
+      "subtitle": "'t1' 관련 트렌드 — T1"
     },
     {
       "image": null,
@@ -31,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-26T14:41:35.375241+00:00"
+    "generated_at": "2026-10-26T19:39:40.529358+00:00"
   }
 }

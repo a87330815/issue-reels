@@ -1,11 +1,11 @@
 {
-  "title": "9억 차이",
+  "title": "55억 차이",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
+    "photo_query": "Banpo Seoul luxury apartment",
     "lines": [
       "이번 달",
-      "<r>9억 차이</r>",
+      "<r>55억 차이</r>",
       "거래 떴습니다"
     ],
     "badge": null
@@ -13,38 +13,38 @@
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 장항동 평균 12.0억 vs 중산동 평균 3.0억. 수치로 확인해보자.",
-      "subtitle": "장항동 vs 중산동"
+      "photo_query": "Banpo Seoul luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 평균 55.9억 vs 진영읍 죽곡리 평균 0.6억. 수치로 확인해보자.",
+      "subtitle": "압구정동 vs 진영읍 죽곡리"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "반포동 반포자이, 전용 165㎡(50평) 23층이 60.0억원에 실거래 신고됐다카이. 평당 1.2억. 2009년 준공.",
+      "subtitle": "반포동 반포자이 60.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Apgujeong Seoul luxury high rise apartment",
+      "narration": "같은 동네 신현대9차도 주목할 만한다. 전용 111㎡(34평) 6층, 거래가 55.9억원. 평당 1.7억.",
+      "subtitle": "압구정동 신현대9차 55.9억원"
     },
     {
       "image": null,
       "photo_query": "Korea city luxury high rise apartment",
-      "narration": "장항동 킨텍스원시티2블럭, 전용 84㎡(26평) 3층이 12.0억원에 실거래 신고됐다카이. 평당 4,684만원. 2019년 준공(7년차).",
-      "subtitle": "장항동 킨텍스원시티2블럭 12.0억원"
+      "narration": "선경1차(1동-7동) 전용 137㎡(41평) 7층 — 48.5억원 거래. 평당 1.2억.",
+      "subtitle": "대치동 선경1차(1동-7동) 48.5억원"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "같은 동네 위시티일산자이1단지도 주목할 만한다. 전용 85㎡(26평) 30층, 거래가 5.7억원. 평당 2,220만원.",
-      "subtitle": "식사동 위시티일산자이1단지 5.7억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "메가센텀한화꿈에그린 전용 101㎡(31평) 20층 — 5.6억원 거래. 평당 1,833만원.",
-      "subtitle": "반여동 메가센텀한화꿈에그린 5.6억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "백송마을(선경) 전용 85㎡(26평) 4층 — 4.7억원 거래. 평당 1,817만원.",
-      "subtitle": "백석동 백송마을(선경) 4.7억원"
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "신반포4 전용 96㎡(29평) 6층 — 40.1억원 거래. 평당 1.4억.",
+      "subtitle": "잠원동 신반포4 40.1억원"
     },
     {
       "image": null,
       "photo_query": "real estate market price chart",
-      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 7.3억원까지 벌어졌다. 평균 6.5억원 수준이다.",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 22.0억원까지 벌어졌다. 평균 48.5억원 수준이다.",
       "subtitle": "이번에 확인된 5건의 거래에서 가격"
     },
     {
@@ -61,15 +61,15 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        12.0,
-        5.7,
-        5.6,
-        4.7,
-        3.8
+        55.9,
+        48.5,
+        44.8,
+        40.1,
+        37.0
       ],
       "style": "bars"
     },
     "tone": "경상도",
-    "generated_at": "2026-10-26T14:41:33.773122+00:00"
+    "generated_at": "2026-10-26T19:39:39.388312+00:00"
   }
 }
