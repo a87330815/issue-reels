@@ -1,0 +1,54 @@
+{
+  "title": "윤하 정산금 9억",
+  "cover": {
+    "image": null,
+    "photo_query": "music concert stage singer",
+    "lines": [
+      "윤하가",
+      "<r>9억 못 받고</r>",
+      "소속사 고소했다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "legal document lawsuit court",
+      "narration": "야 이거 진짜 대박이다. 가수 윤하가 전 소속사 시나이니NT를 상대로 정산금 9억 5천만 원 소송을 걸었다 아이가.",
+      "subtitle": "윤하, 소속사에 9.5억 소송"
+    },
+    {
+      "image": null,
+      "photo_query": "contract signing document pen",
+      "narration": "오래전부터 정산금 안 줬다고 시정 요구했는데 소속사가 안 들어줬다 카더라. 결국 9월에 전속계약 해지를 통보했고, 소속사도 해지 효력을 인정했다.",
+      "subtitle": "정산금 시정 요구 → 계약 해지"
+    },
+    {
+      "image": null,
+      "photo_query": "court hearing judge gavel",
+      "narration": "10월 26일 법원에서 가처분 심문이 열렸고, 본안 소송은 아직 시작 전이다. 윤하 측은 활동은 계속한다고 밝혔다.",
+      "subtitle": "가처분 심문 진행 중"
+    },
+    {
+      "image": null,
+      "photo_query": "K-pop idol singer microphone",
+      "narration": "연예계 정산금 분쟁이 이번이 처음도 아니고. 이승기, 김다현도 비슷한 소송을 했었다 아이가. 아티스트 권리가 점점 중요해지고 있다.",
+      "subtitle": "이승기·김다현도 정산금 소송"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐으면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "starnewskorea",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-27T11:20:00+09:00"
+  }
+}

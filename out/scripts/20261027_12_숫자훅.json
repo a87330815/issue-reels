@@ -1,0 +1,48 @@
+{
+  "title": "나연 솔로 컴백",
+  "cover": {
+    "image": null,
+    "photo_query": "K-pop stage concert performance",
+    "lines": [
+      "나연",
+      "<r>2년 5개월 만에</r>",
+      "솔로 컴백한다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "K-pop female idol solo stage",
+      "narration": "트와이스 나연이 2년 5개월 만에 솔로로 컴백한다 아이가. 첫 솔로 앨범 POP이 대박 났었는데 이번에도 기대 크다.",
+      "subtitle": "트와이스 나연, 2년 5개월 만 솔로"
+    },
+    {
+      "image": null,
+      "photo_query": "music album release pop",
+      "narration": "첫 솔로 앨범이 빌보드 200에서 7위까지 올라갔었다. K팝 솔로 여성 아티스트로는 역대급 성적이었다 아이가.",
+      "subtitle": "빌보드 200 7위 기록"
+    },
+    {
+      "image": null,
+      "photo_query": "fans concert audience cheering",
+      "narration": "이번 컴백도 벌써 팬들 사이에서 난리다. 타이틀곡이 뭔지, 콘셉트가 뭔지 추측이 쏟아지고 있다.",
+      "subtitle": "팬들 컴백 기대감 폭발"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐으면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "trendar",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-27T11:20:00+09:00"
+  }
+}

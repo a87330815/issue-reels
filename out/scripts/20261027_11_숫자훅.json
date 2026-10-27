@@ -1,0 +1,48 @@
+{
+  "title": "김수현 김새론 사건",
+  "cover": {
+    "image": null,
+    "photo_query": "breaking news headline",
+    "lines": [
+      "김수현",
+      "<r>누명 벗었다</r>",
+      "진짜 공범은 따로"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "korean drama actor celebrity",
+      "narration": "야 이거 반전이다. 김새론 유족 측 변호사가 피의자로 전환됐다 아이가. 김수현 측은 매우 이례적이라고 반응했다.",
+      "subtitle": "유족 측 변호사 피의자 전환"
+    },
+    {
+      "image": null,
+      "photo_query": "court trial legal justice",
+      "narration": "원래 유족 측이 김수현을 미성년자 교제 혐의로 주장했는데, 수사 과정에서 상황이 뒤집힌 기다. 김수현 측은 연인관계가 아니었다고 줄곧 반박해왔다.",
+      "subtitle": "미성년자 교제 주장 → 수사 반전"
+    },
+    {
+      "image": null,
+      "photo_query": "news media press conference",
+      "narration": "지금 실시간 검색어에서 난리다. 가족 공범이라는 키워드까지 올라오면서 관심이 폭발하고 있다.",
+      "subtitle": "실검 '가족 공범' 급상승"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐으면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "newsis",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-27T11:20:00+09:00"
+  }
+}
