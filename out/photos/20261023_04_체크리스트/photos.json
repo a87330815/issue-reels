@@ -12,10 +12,10 @@
     {
       "slot": "cover",
       "query": "checklist document pen desk",
-      "source": "Unsplash",
-      "creator": "Jakub Żerdzicki",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/someone-is-writing-in-a-notebook-with-checkboxes-50comlI_39U"
+      "source": "flickr",
+      "creator": "Ivan Radic",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/26344495@N05/51404235122"
     },
     {
       "slot": "scene1",
@@ -36,36 +36,36 @@
     {
       "slot": "scene3",
       "query": "Korea city apartment building",
-      "source": "Unsplash",
-      "creator": "rawkkim",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/city-skyline-during-sunset-with-orange-sky-0ys-mRabV44"
+      "source": "flickr",
+      "creator": "Francisco Anzola",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/10345599@N03/1509272335"
     },
     {
       "slot": "scene4",
       "query": "Korea city apartment building",
-      "source": "Unsplash",
-      "creator": "rawkkim",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/city-skyline-during-golden-hour-FDdolKrW1nY"
+      "source": "Wikimedia Commons",
+      "creator": "Robert at Picasa",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Korea-Andong-Apartment_blocks_at_dawn-01.jpg"
     },
     {
       "slot": "scene5",
       "query": "Korea city apartment building",
       "source": "Unsplash",
-      "creator": "Minha Baek",
+      "creator": "rawkkim",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/man-in-black-jacket-standing-beside-brown-wooden-table-iPUAXWCqXnQ"
+      "page": "https://unsplash.com/photos/white-concrete-building-during-sunset-X7lRu5ED7Aw"
     },
     {
       "slot": "scene6",
       "query": "follow subscribe social media phone",
-      "source": "Unsplash",
-      "creator": "Berke Citak",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
     }
   ],
   "wanted": 7,
-  "fetched_at": "2026-10-27T04:15:04Z"
+  "fetched_at": "2026-10-27T04:28:15Z"
 }

@@ -1,7 +1,5 @@
 {
   "photos": {
-    "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
@@ -10,22 +8,6 @@
     "scene7": "scene7.jpg"
   },
   "credits": [
-    {
-      "slot": "cover",
-      "query": "Korea city luxury apartment",
-      "source": "Unsplash",
-      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
-    },
-    {
-      "slot": "scene1",
-      "query": "Korea city luxury apartment",
-      "source": "Unsplash",
-      "creator": "Jean Carlo Emer",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/traditional-korean-houses-with-a-tower-in-the-distance-Ds0_4JCFGfQ"
-    },
     {
       "slot": "scene2",
       "query": "Korea city luxury high rise apartment",
@@ -38,33 +20,33 @@
       "slot": "scene3",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Trac Vu",
+      "creator": "Jéan Béller",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
+      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
     },
     {
       "slot": "scene4",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Jéan Béller",
+      "creator": "Yujin Seo",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
+      "page": "https://unsplash.com/photos/a-city-skyline-with-a-bridge-over-a-river-Haq3tXiVjEQ"
     },
     {
       "slot": "scene5",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Jéan Béller",
+      "creator": "Ryoo Geon Uk",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
+      "page": "https://unsplash.com/photos/a-large-group-of-tall-buildings-in-a-city-cWFyd9ROJC8"
     },
     {
       "slot": "scene6",
       "query": "real estate market price chart",
-      "source": "Unsplash",
-      "creator": "Arturo Añez",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/stock-market-graph-shows-fluctuating-trends-9rz5x8LGBb8"
+      "source": "flickr",
+      "creator": "scherknoah",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/151673005@N07/31801870474"
     },
     {
       "slot": "scene7",
@@ -76,5 +58,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T04:16:17Z"
+  "fetched_at": "2026-10-27T04:29:49Z"
 }

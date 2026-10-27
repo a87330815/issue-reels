@@ -9,26 +9,26 @@
     {
       "slot": "cover",
       "query": "Banpo Seoul luxury apartment",
-      "source": "Unsplash",
-      "creator": "Ann Danilina",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+      "source": "flickr",
+      "creator": "Terrazzo",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
     },
     {
       "slot": "scene1",
       "query": "Banpo Seoul luxury apartment",
-      "source": "Unsplash",
-      "creator": "Ann Danilina",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+      "source": "flickr",
+      "creator": "IchStyle",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/66172503@N00/17274635675"
     },
     {
       "slot": "scene2",
       "query": "Banpo Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Ethan Brooke",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+      "source": "flickr",
+      "creator": "Terrazzo",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8249050@N02/44721044781"
     },
     {
       "slot": "scene3",
@@ -40,5 +40,5 @@
     }
   ],
   "wanted": 4,
-  "fetched_at": "2026-10-27T04:16:55Z"
+  "fetched_at": "2026-10-27T04:30:22Z"
 }

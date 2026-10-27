@@ -8,18 +8,18 @@
     {
       "slot": "cover",
       "query": "new vs old apartment building korea",
-      "source": "Unsplash",
-      "creator": "rawkkim",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/high-rise-buildings-during-daytime-8RN751rleDo"
+      "source": "flickr",
+      "creator": "Ian Sane",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31246066@N04/6808934288"
     },
     {
       "slot": "scene1",
       "query": "new vs old apartment building korea",
-      "source": "Unsplash",
-      "creator": "Ian Bae",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-brick-building-with-a-unique-tiled-facade-9J5RHZNVQyw"
+      "source": "flickr",
+      "creator": "shankar s.",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/77742560@N06/7637744518"
     },
     {
       "slot": "scene2",
@@ -31,5 +31,5 @@
     }
   ],
   "wanted": 3,
-  "fetched_at": "2026-10-27T04:16:33Z"
+  "fetched_at": "2026-10-27T04:30:03Z"
 }

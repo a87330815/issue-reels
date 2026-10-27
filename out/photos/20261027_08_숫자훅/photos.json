@@ -1,8 +1,6 @@
 {
   "photos": {
     "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
-    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
     "scene5": "scene5.jpg",
@@ -13,26 +11,10 @@
     {
       "slot": "cover",
       "query": "Apgujeong Seoul luxury apartment",
-      "source": "Unsplash",
-      "creator": "Andrea De Santis",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/black-and-white-concrete-building-OKjI-M5r3KM"
-    },
-    {
-      "slot": "scene1",
-      "query": "Apgujeong Seoul luxury apartment",
-      "source": "Unsplash",
-      "creator": "Stéphan Valentin",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/neon-street-in-seoul-at-night-wepDTOWs4d0"
-    },
-    {
-      "slot": "scene2",
-      "query": "Apgujeong Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Ethan Brooke",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+      "source": "flickr",
+      "creator": "IchStyle",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/66172503@N00/17044710447"
     },
     {
       "slot": "scene3",
@@ -45,26 +27,26 @@
     {
       "slot": "scene4",
       "query": "Banpo Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Ethan Brooke",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+      "source": "flickr",
+      "creator": "Terrazzo",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
     },
     {
       "slot": "scene5",
       "query": "Banpo Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Minku Kang",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
+      "source": "flickr",
+      "creator": "IchStyle",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/66172503@N00/17274635675"
     },
     {
       "slot": "scene6",
       "query": "real estate market price chart",
-      "source": "Unsplash",
-      "creator": "Arturo Añez",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/stock-market-graph-shows-fluctuating-trends-9rz5x8LGBb8"
+      "source": "flickr",
+      "creator": "scherknoah",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/151673005@N07/31801870474"
     },
     {
       "slot": "scene7",
@@ -76,5 +58,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T04:18:07Z"
+  "fetched_at": "2026-10-27T04:31:38Z"
 }

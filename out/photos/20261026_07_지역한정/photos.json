@@ -6,7 +6,6 @@
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
     "scene5": "scene5.jpg",
-    "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
@@ -30,17 +29,17 @@
       "slot": "scene2",
       "query": "Korea city modern apartment residential",
       "source": "Unsplash",
-      "creator": "zero take",
+      "creator": "Looie Kang",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
     },
     {
       "slot": "scene3",
       "query": "Korea city modern apartment residential",
       "source": "Unsplash",
-      "creator": "Looie Kang",
+      "creator": "zero take",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
+      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
     },
     {
       "slot": "scene4",
@@ -59,14 +58,6 @@
       "page": "https://unsplash.com/photos/ornate-archway-entrance-with-cars-and-buildings-behind-jR5x8fSHWCc"
     },
     {
-      "slot": "scene6",
-      "query": "Korea city residential area aerial",
-      "source": "Unsplash",
-      "creator": "Nate Holland",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/expansive-cityscape-with-distant-skyscrapers-under-a-cloudy-sky-FR2B3b1PtYY"
-    },
-    {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
       "source": "Unsplash",
@@ -76,5 +67,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T04:17:26Z"
+  "fetched_at": "2026-10-27T04:30:52Z"
 }

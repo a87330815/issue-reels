@@ -1,43 +1,25 @@
 {
   "photos": {
-    "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg"
   },
   "credits": [
     {
-      "slot": "cover",
-      "query": "Korean grandmother playing with grandchild toddler",
-      "source": "Unsplash",
-      "creator": "DOKYUNG KIM",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/grandmother-holding-a-baby-wearing-an-orange-hat-WUqkIwnok9A"
-    },
-    {
-      "slot": "scene1",
-      "query": "happy Korean grandmother with baby grandchild",
-      "source": "Unsplash",
-      "creator": "Evgeniya Pron",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-man-pushing-a-stroller-with-a-dog-in-it-dFUIZPcQCUM"
-    },
-    {
       "slot": "scene2",
       "query": "Korean elderly couple caring for grandchildren family",
-      "source": "Unsplash",
-      "creator": "Aditiya Nugroho",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-man-in-a-wheel-chair-with-a-woman-in-a-face-mask-LAr-RgPEs2g"
+      "source": "flickr",
+      "creator": "shankar s.",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/77742560@N06/31801547445"
     },
     {
       "slot": "scene3",
       "query": "Korean government welfare office application form",
-      "source": "Unsplash",
-      "creator": "Le Thanh Huyen",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-sign-on-the-side-of-a-building-ppPMCvHEzs8"
+      "source": "Wikimedia Commons",
+      "creator": "Press Information Department\n",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:South_Korean_Ambassador_Kim_Ji-Joon_meets_with_Minister_of_Health_and_Family_Welfare_Sardar_Md._Sakhawat_Hossain_at_the_Ministry_office,_2026-08-25.jpg"
     },
     {
       "slot": "scene4",
@@ -49,5 +31,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-27T04:18:34Z"
+  "fetched_at": "2026-10-27T04:32:03Z"
 }

@@ -6,7 +6,6 @@
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
     "scene5": "scene5.jpg",
-    "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
@@ -38,33 +37,25 @@
       "slot": "scene3",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Jéan Béller",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
-    },
-    {
-      "slot": "scene4",
-      "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Yujin Seo",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-city-skyline-with-a-bridge-over-a-river-Haq3tXiVjEQ"
-    },
-    {
-      "slot": "scene5",
-      "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
       "creator": "Trac Vu",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
     },
     {
-      "slot": "scene6",
-      "query": "Korea city residential area aerial",
+      "slot": "scene4",
+      "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Nate Holland",
+      "creator": "Jéan Béller",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/expansive-cityscape-with-distant-skyscrapers-under-a-cloudy-sky-FR2B3b1PtYY"
+      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Yujin Seo",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-skyline-with-a-bridge-over-a-river-Haq3tXiVjEQ"
     },
     {
       "slot": "scene7",
@@ -76,5 +67,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T04:15:21Z"
+  "fetched_at": "2026-10-27T04:28:38Z"
 }
