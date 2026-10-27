@@ -6,8 +6,8 @@
   계정 ID     17841459210979722
   액세스 토큰 설정됨
 
-계정 확인: @jjombwabwa (비즈니스) · 게시물 6개
-발행 한도: 24시간 기준 1/100건 사용
+계정 확인: @jjombwabwa (비즈니스) · 게시물 7개
+발행 한도: 24시간 기준 2/100건 사용
 
 설정 완료
 
@@ -18,15 +18,16 @@
 
 설정 완료
 
-대상: out/cards_20261027_12_숫자훅  (6장)
-대본: out/scripts/20261027_12_숫자훅.json
+대상: out/cards_20261027_10_숫자훅  (7장)
+대본: out/scripts/20261027_10_숫자훅.json
 
 --- 캡션 ---
-나연 솔로 컴백
+윤하 정산금 9억
 
-· 트와이스 나연, 2년 5개월 만 솔로
-· 빌보드 200 7위 기록
-· 팬들 컴백 기대감 폭발
+· 윤하, 소속사에 9.5억 소송
+· 정산금 시정 요구 → 계약 해지
+· 가처분 심문 진행 중
+· 이승기·김다현도 정산금 소송
 
 저장해두고 필요할 때 꺼내 보세요.
 
@@ -36,28 +37,30 @@
 
   [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
   API 호스트 확정: graph.facebook.com
-남은 발행 가능: 99건
+남은 발행 가능: 98건
 
 1) 이미지 공개 호스팅
-  ✓ [1/6] 01_cover.jpg  182KB  200 application/octet-stream
-  ✓ [2/6] 02_scene.jpg  170KB  200 application/octet-stream
-  ✓ [3/6] 03_scene.jpg  146KB  200 application/octet-stream
-  ✓ [4/6] 04_scene.jpg  134KB  200 application/octet-stream
-  ✓ [5/6] 05_scene.jpg  119KB  200 application/octet-stream
-  ✓ [6/6] 06_outro.jpg  93KB  200 application/octet-stream
+  ✓ [1/7] 01_cover.jpg  275KB  200 application/octet-stream
+  ✓ [2/7] 02_scene.jpg  152KB  200 application/octet-stream
+  ✓ [3/7] 03_scene.jpg  151KB  200 application/octet-stream
+  ✓ [4/7] 04_scene.jpg  206KB  200 application/octet-stream
+  ✓ [5/7] 05_scene.jpg  137KB  200 application/octet-stream
+  ✓ [6/7] 06_scene.jpg  119KB  200 application/octet-stream
+  ✓ [7/7] 07_outro.jpg  94KB  200 application/octet-stream
 
 2) 장별 컨테이너 생성
-  [1/6] 컨테이너 17971826483973700
-  [2/6] 컨테이너 17971826513973700
-  [3/6] 컨테이너 17971826543973700
-  [4/6] 컨테이너 17971826570973700
-  [5/6] 컨테이너 17971826669973700
-  [6/6] 컨테이너 17971826708973700
+  [1/7] 컨테이너 17971826987973700
+  [2/7] 컨테이너 17971827011973700
+  [3/7] 컨테이너 17971827044973700
+  [4/7] 컨테이너 17971827080973700
+  [5/7] 컨테이너 17971827101973700
+  [6/7] 컨테이너 17971827128973700
+  [7/7] 컨테이너 17971827155973700
 
 3) 캐러셀 컨테이너 생성
-  캐러셀 17971826768973700
+  캐러셀 17971827179973700
       0초  FINISHED
 
 4) 발행
-  발행 완료: media_id=18024306449712971
+  발행 완료: media_id=18146262895587562
 발행 기록: out/published_cards.json
