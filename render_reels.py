@@ -12,6 +12,7 @@ import asyncio
 import json
 import glob
 import os
+import random
 import subprocess
 import sys
 import tempfile
@@ -144,6 +145,48 @@ def voice_profile(voice, preset=None):
     return VOICE_PROFILES["female" if voice in FEMALE_VOICES else "male"]
 
 
+def parse_preset_pool(spec):
+    """쉼표로 묶인 프리셋 목록을 리스트로. 빈 값이면 None."""
+    if not spec:
+        return None
+    names = [n.strip() for n in spec.split(",") if n.strip()]
+    unknown = [n for n in names if n not in PRESETS]
+    if unknown:
+        raise SystemExit(f"없는 프리셋: {', '.join(unknown)}\n"
+                         f"가능: {', '.join(PRESETS)}")
+    return names or None
+
+
+def pick_preset(pool, stem):
+    """목록에서 하나를 고른다.
+
+    대본 이름으로 난수를 고정한다. 같은 대본을 다시 렌더해도 같은 목소리가
+    나와야 수정본을 올릴 때 목소리가 바뀌어 당황하는 일이 없다. 대본이
+    달라지면 자연히 다른 목소리가 걸린다.
+    """
+    if not pool:
+        return None
+    if len(pool) == 1:
+        return pool[0]
+    return random.Random(stem).choice(pool)
+
+
+def scene_presets(pool, stem, count, alternate):
+    """장면마다 쓸 프리셋을 정한다.
+
+    alternate면 목록을 번갈아 돌려 한 영상 안에서 목소리가 교대한다.
+    두 사람이 주고받는 느낌이 나서 이슈 전달에 리듬이 생긴다.
+    아니면 영상 전체가 한 목소리다.
+    """
+    if not pool:
+        return [None] * count
+    if not alternate:
+        return [pick_preset(pool, stem)] * count
+    # 시작 목소리도 대본에 따라 달라지게 해서 영상마다 첫인상이 바뀌도록 한다.
+    offset = random.Random(stem).randrange(len(pool))
+    return [pool[(i + offset) % len(pool)] for i in range(count)]
+
+
 def audio_rate(path):
     """오디오의 실제 샘플레이트. asetrate에 이 값을 써야 한다."""
     r = subprocess.run(
@@ -184,8 +227,12 @@ def post_process_voice(src, dst, voice=DEFAULT_VOICE, preset=None):
 
 
 async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
-                       preset=None):
-    """edge-tts로 각 장면 나레이션 mp3 생성. 파일 경로와 길이를 반환."""
+                       preset=None, presets=None):
+    """edge-tts로 각 장면 나레이션 mp3 생성. 파일 경로와 길이를 반환.
+
+    presets를 주면 장면마다 다른 프리셋을 쓴다. 목소리가 바뀌면 음성과
+    속도도 그 프리셋 값을 따라가야 해서 매 장면 다시 집어 온다.
+    """
     import edge_tts
 
     results = []
@@ -193,15 +240,20 @@ async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
         if not text.strip():
             results.append(None)
             continue
+        # 장면별 프리셋이 있으면 음성·속도까지 그 설정으로 바꾼다.
+        cur = (presets[i] if presets and i < len(presets) else None) or preset
+        p = PRESETS.get(cur, {})
+        cur_voice = p.get("voice", voice)
+        cur_rate = p.get("rate", rate)
+
         raw_mp3 = os.path.join(out_dir, f"narr_raw_{i:02d}.mp3")
         mp3 = os.path.join(out_dir, f"narr_{i:02d}.mp3")
-        comm = edge_tts.Communicate(text, voice, rate=rate)
+        comm = edge_tts.Communicate(text, cur_voice, rate=cur_rate)
         await comm.save(raw_mp3)
-        # 양상국 스타일 후처리
+        # 성우 톤 후처리
         if style:
             try:
-                post_process_voice(raw_mp3, mp3, voice, preset)
-                print(f"  후처리 적용 [{i+1}/{len(texts)}]")
+                post_process_voice(raw_mp3, mp3, cur_voice, cur)
             except Exception as e:
                 print(f"  후처리 실패, 원본 사용: {e}")
                 os.replace(raw_mp3, mp3)
@@ -210,7 +262,8 @@ async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
         # 길이 측정
         dur = get_duration(mp3)
         results.append({"path": mp3, "duration": dur})
-        print(f"  TTS [{i+1}/{len(texts)}] {dur:.1f}초  {text[:30]}...")
+        tag = f" [{cur}]" if cur else ""
+        print(f"  TTS [{i+1}/{len(texts)}]{tag} {dur:.1f}초  {text[:28]}...")
     return results
 
 
@@ -292,9 +345,13 @@ def main():
     ap.add_argument("--voice", default=None, help="TTS 음성 (프리셋보다 우선)")
     ap.add_argument("--rate", default=None,
                     help="발화 속도 (예: -10%%, +20%%). 프리셋보다 우선")
-    ap.add_argument("--preset", choices=sorted(PRESETS), default=None,
-                    help="음성 프리셋: " + " / ".join(
-                        f"{k}={v['desc']}" for k, v in PRESETS.items()))
+    ap.add_argument("--preset", default=None,
+                    help="음성 프리셋. 쉼표로 여럿 주면 대본마다 하나를 "
+                         "골라 쓴다 (예: 앵커,발랄녀). 가능: "
+                         + ", ".join(PRESETS))
+    ap.add_argument("--alternate", action="store_true",
+                    help="--preset을 여럿 줬을 때 한 영상 안에서 장면마다 "
+                         "번갈아 쓴다 (남녀 교대 진행 느낌)")
     ap.add_argument("--list-presets", action="store_true",
                     help="프리셋 목록만 출력하고 끝낸다")
     ap.add_argument("--no-tts", action="store_true", help="TTS 없이 무음 영상")
@@ -311,8 +368,15 @@ def main():
                   f"속도 {v['rate']:>5s}  {v['desc']}")
         return
 
+    if not a.script:
+        ap.error("대본 JSON 경로가 필요합니다")
+
+    pool = parse_preset_pool(a.preset)
+    stem0 = os.path.splitext(os.path.basename(a.script))[0]
+    chosen = pick_preset(pool, stem0)
+
     # 프리셋이 음성·속도를 정하고, 따로 준 값이 있으면 그쪽을 쓴다.
-    prof = PRESETS.get(a.preset, {})
+    prof = PRESETS.get(chosen, {})
     a.voice = a.voice or prof.get("voice", DEFAULT_VOICE)
     a.rate = a.rate or prof.get("rate", DEFAULT_RATE)
 
@@ -328,7 +392,12 @@ def main():
     cards = card_images(card_dir)
     print(f"대본: {a.script}")
     print(f"카드: {card_dir} ({len(cards)}장)")
-    print(f"음성: {a.voice} (속도 {a.rate}{', 프리셋 ' + a.preset if a.preset else ''})")
+    if pool and len(pool) > 1:
+        mode = "장면마다 번갈아" if a.alternate else f"이 대본은 {chosen}"
+        print(f"음성: 프리셋 {'/'.join(pool)} 중 {mode}")
+    else:
+        tag = f", 프리셋 {chosen}" if chosen else ""
+        print(f"음성: {a.voice} (속도 {a.rate}{tag})")
 
     # 출력 경로
     out_dir = os.path.join("out", "reels")
@@ -341,11 +410,13 @@ def main():
         if not a.no_tts:
             print("\n1) TTS 생성")
             texts = narrations(script)
+            per_scene = scene_presets(pool, stem, len(texts), a.alternate)
             try:
                 tts_results = asyncio.run(generate_tts(texts, a.voice, tmp,
                                                        style=not a.no_style,
                                                        rate=a.rate,
-                                                       preset=a.preset))
+                                                       preset=chosen,
+                                                       presets=per_scene))
             except Exception as e:
                 # 무음으로 조용히 넘어가면 음성 없는 영상이 완성본처럼 나온다.
                 if a.require_tts:

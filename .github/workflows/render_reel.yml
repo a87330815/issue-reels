@@ -10,10 +10,18 @@ on:
         description: "대본 이름 (out/scripts/<stem>.json)"
         type: string
         required: true
-      voice:
-        description: "TTS 음성"
+      preset:
+        description: "음성 프리셋 (쉼표로 여럿 주면 대본마다 하나를 고름)"
         type: string
-        default: "ko-KR-HyunsuMultilingualNeural"
+        default: "앵커,발랄녀"
+      alternate:
+        description: "한 영상 안에서 장면마다 목소리 교대 (남녀 번갈아)"
+        type: boolean
+        default: false
+      voice:
+        description: "TTS 음성 직접 지정 (비우면 프리셋이 정함)"
+        type: string
+        default: ""
   push:
     paths:
       - "out/scripts/**.json"
@@ -112,11 +120,19 @@ jobs:
       - name: 3) 릴스 합성 (TTS 음성)
         env:
           STEM: ${{ steps.pick.outputs.stem }}
-          VOICE: ${{ inputs.voice || 'ko-KR-HyunsuMultilingualNeural' }}
+          # push로 들어오면 inputs가 비어 있다. 그때도 남녀가 섞이도록
+          # 기본 프리셋 묶음을 둔다.
+          PRESET: ${{ inputs.preset || '앵커,발랄녀' }}
+          VOICE: ${{ inputs.voice }}
+          ALTERNATE: ${{ inputs.alternate }}
         run: |
           set -o pipefail
+          ARGS=""
+          [ -n "$PRESET" ] && ARGS="$ARGS --preset $PRESET"
+          [ -n "$VOICE" ]  && ARGS="$ARGS --voice $VOICE"
+          [ "$ALTERNATE" = "true" ] && ARGS="$ARGS --alternate"
           python -u render_reels.py "out/scripts/${STEM}.json" \
-            --cards "out/cards_${STEM}" --voice "$VOICE" --require-tts 2>&1 \
+            --cards "out/cards_${STEM}" $ARGS --require-tts 2>&1 \
             | tee -a out/reels/render.log
           ls -lh "out/reels/${STEM}.mp4" | tee -a out/reels/render.log
 
