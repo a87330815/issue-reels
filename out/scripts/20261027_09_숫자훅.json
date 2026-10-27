@@ -1,12 +1,12 @@
 {
-  "title": "pak vs sl",
+  "title": "충주시장",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>pak vs sl</r>",
-      "실화입니다"
+      "이번 달",
+      "<r>충주시장</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'pak vs sl' 관련 트렌드 — Win-from-anywhere Pakistan face 430-conquerors Sri Lanka at high-scoring Lahore. 수치로 확인해보자.",
-      "subtitle": "'pak vs sl' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. '충주시장' 관련 트렌드 — “충북도청 충주로” 도보 행진까지…충북도·타 시군 ‘난색’. 수치로 확인해보자.",
+      "subtitle": "'충주시장' 관련 트렌드 — “충북도청"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-27T08:46:42.118988+00:00"
+    "generated_at": "2026-10-27T13:45:27.178387+00:00"
   }
 }

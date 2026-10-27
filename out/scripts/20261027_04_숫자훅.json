@@ -1,11 +1,12 @@
 {
-  "title": "정종철",
+  "title": "단발",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>정종철</r>",
-      "이거 실환가요"
+      "이번 달",
+      "<r>단발</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -13,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '정종철' 관련 트렌드 — &quot;강남 작은 집이라도 가자&quot;…정종철, 일산 70평 아파트 던진 사연. 수치로 확인해보자.",
-      "subtitle": "'정종철' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. '단발' 관련 트렌드 — ‘우아’ 김지원 vs ‘러블리’ 장원영, 같은 옷 다른 매력 ‘미모 쌍벽’. 수치로 확인해보자.",
+      "subtitle": "'단발' 관련 트렌드 — ‘우아’ 김지원"
     },
     {
       "image": null,
@@ -30,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-27T08:46:41.102051+00:00"
+    "generated_at": "2026-10-27T13:45:25.959186+00:00"
   }
 }
