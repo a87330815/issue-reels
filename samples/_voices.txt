@@ -1,0 +1,3 @@
+ko-KR-HyunsuMultilingualNeural     Male      General                Friendly, Positive
+ko-KR-InJoonNeural                 Male      General                Friendly, Positive
+ko-KR-SunHiNeural                  Female    General                Friendly, Positive
