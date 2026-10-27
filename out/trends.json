@@ -1,68 +1,95 @@
 {
-  "collected_at": "2026-10-26T19:38:57.484460+00:00",
+  "collected_at": "2026-10-27T01:58:39.214668+00:00",
   "items": [
     {
-      "keyword": "2026 롤드컵",
-      "traffic": "1000+",
-      "news_title": "[롤드컵]젠지·DK 8강 직행…T1은 1승 남아, 한화생명 벼랑 끝",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "f71e1c0228840f5f"
-    },
-    {
-      "keyword": "t1",
+      "keyword": "충청타임즈",
       "traffic": "200+",
-      "news_title": "T1 Defeat CFO Behind Bot Duo&apos;s Performance to Reach 2 Wins",
+      "news_title": "",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "e5353879bd69bfdd"
+      "key": "9702606c5a974ec5"
     },
     {
-      "keyword": "cfo",
-      "traffic": "1000+",
-      "news_title": "FedEx appoints Jamere Jackson as chief financial officer By Reuters",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "e5b7445ec8ea22ef"
-    },
-    {
-      "keyword": "학습",
-      "traffic": "200+",
-      "news_title": "남양주시 유튜브 학습동아리 ‘N크레인’, 전국 평생학습 경연 최우수상",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "4429fec48072ebf0"
-    },
-    {
-      "keyword": "세르비아",
+      "keyword": "로켓",
       "traffic": "100+",
-      "news_title": "&apos;14년 권좌&apos; 부치치 끌어내린 학생들…유럽 시위 파장 주목",
+      "news_title": "전투기로 12시간 걸리는 거리… 미군, 우주 거쳐 1시간 ‘로켓 배송’",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "b0ae8a68a2c7f00c"
+      "key": "82a5a06adf64fbfc"
     },
     {
-      "keyword": "블리치",
+      "keyword": "node.js 취약점",
+      "traffic": "500+",
+      "news_title": "&quot;서버 생태계 전반 위협&quot;...PHP 이어 노드.js서도 보안 취약점 발견",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "f23c956d037b65e3"
+    },
+    {
+      "keyword": "al 탈락",
       "traffic": "200+",
-      "news_title": "‘블리치: 천년혈전 편 - 상극담’의 최종 예고편 공개",
+      "news_title": "[롤드컵] &apos;369 특급 캐리&apos; 中 TES, &apos;유럽 맹주&apos; G2 꺾고 2승 1패 조 합류",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "afc518eebdd8be4b"
+      "key": "0fb9c6594fb9f6df"
     },
     {
-      "keyword": "베식타시 대 이스탄불 바샥셰히르",
-      "traffic": "2000+",
-      "news_title": "Israeli forces kill at least five people in Gaza, including 7-year-old girl",
+      "keyword": "특수부대",
+      "traffic": "200+",
+      "news_title": "레쑤언 티엔, 마란도, 꾸옥안은 모두 &quot;삭숲 특수부대&quot;에 출연했습니다.",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "59f51488d2d930f2"
+      "key": "37283116d92d2ffd"
+    },
+    {
+      "keyword": "삼성역",
+      "traffic": "500+",
+      "news_title": "GTX-A 운정중앙-서울, 평일 승객 6.4만명…예측 대비 128% [PICK]",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "f21a9e5cd6bf276f"
+    },
+    {
+      "keyword": "브루어스 대 레이스",
+      "traffic": "10000+",
+      "news_title": "‘역전의 명수’ 밀워키, WS 2연승",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "f7a24a00da88b2ff"
+    },
+    {
+      "keyword": "배드민턴",
+      "traffic": "20000+",
+      "news_title": "안세영, 시즌 10번째 우승…프랑스오픈 3연패",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "493c7c99ac6de1a3"
+    },
+    {
+      "keyword": "군의관",
+      "traffic": "200+",
+      "news_title": "“36개월 군의관보단 18개월 현역병”…의대생 현역병 입영 4년새 13배로 증가",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "d005efdcdc681b60"
+    },
+    {
+      "keyword": "이지훈",
+      "traffic": "200+",
+      "news_title": "&apos;이지훈♥&apos; 아야네, 둘째 만삭 화보 공개…딸 루희까지 &apos;비주얼가족&apos;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "307a77221f0fb47d"
     }
   ]
 }
