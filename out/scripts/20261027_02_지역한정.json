@@ -1,0 +1,74 @@
+{
+  "title": "송도동 12건 거래",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment skyline",
+    "lines": [
+      "이 동네 지금",
+      "<r>송도동 12건 거래</r>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 송도동에서 이번 달 12건 거래. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "송도동 12건 거래"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "송도동 랜드마크시티센트럴더샵, 전용 85㎡(26평) 39층이 6.8억원에 실거래 신고됐다카이. 평당 2,625만원. 2020년 준공(6년차).",
+      "subtitle": "송도동 랜드마크시티센트럴더샵 6.8억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 송도SKVIEW도 주목할 만한다. 전용 85㎡(26평) 12층, 거래가 7.1억원. 평당 2,774만원.",
+      "subtitle": "송도동 송도SKVIEW 7.1억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "힐스테이트레이크송도2차 전용 85㎡(26평) 14층 — 7.0억원 거래. 평당 2,716만원.",
+      "subtitle": "송도동 힐스테이트레이크송도2차 7.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "송도더샵그린워크3차(18-1블럭) 전용 85㎡(26평) 10층 — 8.8억원 거래. 평당 3,422만원.",
+      "subtitle": "송도동 송도더샵그린워크3차(18-1블럭)"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city residential area aerial",
+      "narration": "송도동 이번 달 거래를 종합하면, 평균 거래가는 7.7억원, 최고가 8.8억원, 최저가 6.8억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "송도동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        6.8,
+        7.1,
+        7.0,
+        8.8,
+        8.7
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-27T01:59:16.123643+00:00"
+  }
+}

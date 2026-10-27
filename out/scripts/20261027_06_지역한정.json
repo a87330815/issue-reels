@@ -1,0 +1,74 @@
+{
+  "title": "우동 최고 11억",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment skyline",
+    "lines": [
+      "우동 최고 11억",
+      "<y>실거래가 공개</y>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 우동 최고가 해운대 I PARK 92.152㎡ 10.9억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "우동 최고 10.9억"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "우동 해운대 I PARK, 전용 92㎡(28평) 56층이 10.9억원에 실거래 신고됐다카이. 평당 3,910만원. 2011년 준공(15년차).",
+      "subtitle": "우동 해운대 I PARK 10.9억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 해운대동백두산위브더제니스도 주목할 만한다. 전용 85㎡(26평) 37층, 거래가 9.7억원. 평당 3,789만원.",
+      "subtitle": "우동 해운대동백두산위브더제니스 9.7억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "해운대경동리인뷰2차 전용 84㎡(26평) 6층 — 8.5억원 거래. 평당 3,328만원.",
+      "subtitle": "우동 해운대경동리인뷰2차 8.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "해운대동백두산위브더제니스 전용 85㎡(26평) 15층 — 7.7억원 거래. 평당 3,011만원.",
+      "subtitle": "우동 해운대동백두산위브더제니스 7.7억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city residential area aerial",
+      "narration": "우동 이번 달 거래를 종합하면, 평균 거래가는 8.8억원, 최고가 10.9억원, 최저가 7.1억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "우동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        10.9,
+        9.7,
+        8.5,
+        7.7,
+        7.1
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-27T01:59:16.845048+00:00"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "title": "반여동 최고 5억",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment skyline",
+    "lines": [
+      "우리 동네",
+      "<r>반여동 최고 5억</r>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 반여동 최고가 아시아선수촌아파트 101.55㎡ 4.8억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "반여동 최고 4.8억"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "반여동 아시아선수촌아파트, 전용 102㎡(31평) 3층이 4.8억원에 실거래 신고됐다카이. 평당 1,563만원. 2002년 준공.",
+      "subtitle": "반여동 아시아선수촌아파트 4.8억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 해운대센텀트루엘1단지도 주목할 만한다. 전용 85㎡(26평) 6층, 거래가 4.4억원. 평당 1,720만원.",
+      "subtitle": "반여동 해운대센텀트루엘1단지 4.4억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "아시아선수촌아파트 전용 60㎡(18평) 16층 — 3.8억원 거래. 평당 2,069만원.",
+      "subtitle": "반여동 아시아선수촌아파트 3.8억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "아시아선수촌아파트 전용 60㎡(18평) 8층 — 3.7억원 거래. 평당 2,041만원.",
+      "subtitle": "반여동 아시아선수촌아파트 3.7억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city residential area aerial",
+      "narration": "반여동 이번 달 거래를 종합하면, 평균 거래가는 3.8억원, 최고가 4.8억원, 최저가 2.2억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "반여동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        4.8,
+        4.4,
+        3.8,
+        3.7,
+        2.2
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-27T01:59:17.031104+00:00"
+  }
+}
