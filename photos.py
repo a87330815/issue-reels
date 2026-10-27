@@ -334,6 +334,22 @@ def cover_crop(im, w=CARD_W, h=CARD_H):
     return im.crop((left, top, left + w, top + h))
 
 
+# 카드 크기로 미리 잘라 저장하면 원본 해상도를 버리게 된다. 매거진 레이아웃은
+# 얼굴 위치를 찾아 당겨 자르므로 원본 화소가 남아 있어야 한다. 저장은 원본
+# 비율 그대로 두고, 긴 변만 제한해 용량을 잡는다. 크롭은 cardnews.py가 한다.
+KEEP_MAX = 2000
+
+def keep_original(im, max_edge=KEEP_MAX):
+    """비율을 유지한 채 긴 변만 제한한다. 확대는 하지 않는다."""
+    im = im.convert("RGB")
+    long_edge = max(im.size)
+    if long_edge > max_edge:
+        s = max_edge / long_edge
+        im = im.resize((max(1, int(round(im.width * s))),
+                        max(1, int(round(im.height * s)))), Image.LANCZOS)
+    return im
+
+
 def download_photo(candidates, out_path, min_px=500, used=None):
     """후보를 순서대로 받아 첫 성공분을 저장. 성공 시 메타 dict 반환.
     used에 이미 쓴 URL을 담아두면 슬라이드 간 사진 중복을 피한다."""
@@ -351,7 +367,7 @@ def download_photo(candidates, out_path, min_px=500, used=None):
             im = Image.open(io.BytesIO(data))
             if min(im.size) < min_px:
                 continue
-            cover_crop(im).save(out_path, "JPEG", quality=88)
+            keep_original(im).save(out_path, "JPEG", quality=90)
             used.add(c["url"])
             meta = dict(c)
             meta["file"] = out_path
@@ -373,7 +389,7 @@ def download_custom_url(url, out_path):
             print(f"    ✗ 너무 작은 파일 ({len(data)}B)")
             return False
         im = Image.open(io.BytesIO(data))
-        cover_crop(im).save(out_path, "JPEG", quality=88)
+        keep_original(im).save(out_path, "JPEG", quality=90)
         return True
     except Exception as e:
         print(f"    ✗ 커스텀 URL 다운로드 실패: {e}")

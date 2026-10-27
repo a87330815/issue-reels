@@ -436,10 +436,10 @@ _CASCADE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 _cascade = None
 _face_cache = {}
 
-def face_center(path):
-    """사진에서 얼굴을 찾아 가장 큰 얼굴의 중심 y를 0~1 비율로 돌려준다.
-    못 찾으면 None. 보도사진을 가로 밴드로 자를 때 얼굴이 잘리는 걸 막는 용도라
-    실패해도 치명적이지 않다 — 호출부가 기본값으로 넘어간다."""
+def face_box(path):
+    """가장 큰 얼굴의 (중심x, 중심y, 높이)를 원본 대비 0~1 비율로 돌려준다.
+    못 찾으면 None. 보도사진을 가로 밴드로 자를 때 얼굴이 잘리거나 너무 작게
+    나오는 걸 막는 용도라, 실패해도 치명적이지 않다 — 호출부가 기본값으로 넘어간다."""
     if path in _face_cache:
         return _face_cache[path]
     result = None
@@ -458,35 +458,49 @@ def face_center(path):
                                               minSize=(40, 40))
             if len(faces):
                 x, y, fw, fh = max(faces, key=lambda f: f[2] * f[3])
-                result = (y + fh / 2) / img.shape[0]
+                oh, ow = img.shape[0], img.shape[1]
+                result = ((x + fw / 2) / ow, (y + fh / 2) / oh, fh / oh)
     except Exception:
         result = None
     _face_cache[path] = result
     return result
 
+# 얼굴이 밴드 높이의 이 비율은 되도록 당겨 자른다. 전신 샷을 그대로 쓰면
+# 피드에서 인물이 누군지 안 보여 카드가 밋밋해진다.
+FACE_TARGET = 0.30
+FACE_MAX_ZOOM = 2.3      # 원본 해상도가 버티는 선까지만. 넘으면 뭉개진다.
+FACE_ANCHOR = 0.40       # 얼굴 중심이 밴드에서 차지할 세로 위치
+
 def photo_band(path, w, h, sharpen=True, bias=0.5, face_aware=False):
     """사진을 w×h로 크롭. 어둡게 덮지 않고 밝기를 그대로 둔다.
-    face_aware면 얼굴을 찾아 그 위치가 밴드 안에 들어오도록 크롭 지점을 잡는다.
-    세로로 긴 보도사진을 가로 밴드로 자를 때 중앙 크롭을 쓰면 머리가 잘린다."""
+    face_aware면 얼굴을 찾아 (1) 얼굴이 너무 작으면 당겨 자르고
+    (2) 얼굴이 밴드 안에 들어오도록 크롭 지점을 잡는다."""
     im = Image.open(path).convert("RGB")
-    sr, dr = im.width / im.height, w / h
-    if sr > dr:
-        nh, nw = h, max(w, int(round(h * sr)))
-    else:
-        nw, nh = w, max(h, int(round(w / sr)))
+    ow, oh = im.size
+    fb = face_box(path) if face_aware else None
+
+    # 기본 배율 — 밴드를 꽉 채우는 cover 스케일
+    s = max(w / ow, h / oh)
+
+    if fb:
+        fcx, fcy, fh_r = fb
+        face_px = fh_r * oh
+        want = (FACE_TARGET * h) / face_px      # 얼굴을 목표 크기로 만드는 배율
+        s = max(s, min(want, s * FACE_MAX_ZOOM))
+
+    nw, nh = max(w, int(round(ow * s))), max(h, int(round(oh * s)))
     im = im.resize((nw, nh), Image.LANCZOS)
 
-    if face_aware and nh > h:
-        fy = face_center(path)
-        if fy is not None:
-            # 얼굴이 밴드 위쪽 38%에 오도록. 얼굴 위 여백은 남기고 아래로 몸이 이어진다.
-            top = int(round(fy * nh - h * 0.38))
-        else:
-            top = int(round((nh - h) * bias))
+    if fb:
+        fcx, fcy, _ = fb
+        left = int(round(fcx * nw - w / 2))
+        top = int(round(fcy * nh - h * FACE_ANCHOR))
     else:
+        left = (nw - w) // 2
         top = int(round((nh - h) * bias))
+    left = max(0, min(nw - w, left))
     top = max(0, min(nh - h, top))
-    im = im.crop(((nw - w) // 2, top, (nw - w) // 2 + w, top + h))
+    im = im.crop((left, top, left + w, top + h))
     if sharpen:
         im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=120, threshold=3))
     im = ImageEnhance.Color(im).enhance(1.06)
