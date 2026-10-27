@@ -17,19 +17,19 @@
       "slot": "scene1",
       "query": "checklist document pen desk",
       "source": "Unsplash",
-      "creator": "Jakub Żerdzicki",
+      "creator": "Markus Spiske",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/someone-is-writing-in-a-notebook-with-checkboxes-50comlI_39U"
+      "page": "https://unsplash.com/photos/white-printer-paper-beside-black-pen-IqVqS1V1ch8"
     },
     {
       "slot": "scene2",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 3,
-  "fetched_at": "2026-10-27T04:29:34Z"
+  "fetched_at": "2026-10-27T13:48:58Z"
 }

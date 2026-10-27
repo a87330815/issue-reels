@@ -6,6 +6,7 @@
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
     "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
@@ -37,25 +38,33 @@
       "slot": "scene3",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Trac Vu",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
-    },
-    {
-      "slot": "scene4",
-      "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
       "creator": "Jéan Béller",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
     },
     {
-      "slot": "scene5",
+      "slot": "scene4",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Yujin Seo",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/a-city-skyline-with-a-bridge-over-a-river-Haq3tXiVjEQ"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Ryoo Geon Uk",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-large-group-of-tall-buildings-in-a-city-cWFyd9ROJC8"
+    },
+    {
+      "slot": "scene6",
+      "query": "Korea city residential area aerial",
+      "source": "Unsplash",
+      "creator": "Nate Holland",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/expansive-cityscape-with-distant-skyscrapers-under-a-cloudy-sky-FR2B3b1PtYY"
     },
     {
       "slot": "scene7",
@@ -67,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T04:28:38Z"
+  "fetched_at": "2026-10-27T13:47:23Z"
 }

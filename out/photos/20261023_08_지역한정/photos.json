@@ -3,7 +3,10 @@
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
   },
   "credits": [
@@ -19,9 +22,9 @@
       "slot": "scene1",
       "query": "Korea city apartment skyline",
       "source": "Unsplash",
-      "creator": "zero take",
+      "creator": "ulziibayar badamdorj",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+      "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
     },
     {
       "slot": "scene2",
@@ -32,7 +35,7 @@
       "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
     },
     {
-      "slot": "scene4",
+      "slot": "scene3",
       "query": "Korea city modern apartment residential",
       "source": "Unsplash",
       "creator": "ulziibayar badamdorj",
@@ -40,14 +43,38 @@
       "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
     },
     {
+      "slot": "scene4",
+      "query": "Korea city modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Bundo Kim",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/ornate-archway-entrance-with-cars-and-buildings-behind-jR5x8fSHWCc"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Vincent Yap",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-crossing-street-in-south-korea-zyiKGkIpBNw"
+    },
+    {
+      "slot": "scene6",
+      "query": "Korea city residential area aerial",
+      "source": "Unsplash",
+      "creator": "Nate Holland",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/expansive-cityscape-with-distant-skyscrapers-under-a-cloudy-sky-FR2B3b1PtYY"
+    },
+    {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T04:28:43Z"
+  "fetched_at": "2026-10-27T13:47:27Z"
 }

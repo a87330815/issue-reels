@@ -22,28 +22,12 @@
       "slot": "scene1",
       "query": "Banpo Seoul luxury apartment",
       "source": "Unsplash",
-      "creator": "Ann Danilina",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
-    },
-    {
-      "slot": "scene2",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "Unsplash",
       "creator": "Ming Han Low",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-5YHqhCBiCz4"
     },
     {
-      "slot": "scene3",
-      "query": "Apgujeong Seoul luxury high rise apartment",
-      "source": "flickr",
-      "creator": "IchStyle",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/66172503@N00/17044710447"
-    },
-    {
-      "slot": "scene4",
+      "slot": "scene2",
       "query": "Banpo Seoul luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Ethan Brooke",
@@ -51,12 +35,28 @@
       "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
     },
     {
-      "slot": "scene5",
+      "slot": "scene3",
       "query": "Apgujeong Seoul luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Ethan Brooke",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+    },
+    {
+      "slot": "scene4",
+      "query": "Banpo Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Minku Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
+    },
+    {
+      "slot": "scene5",
+      "query": "Apgujeong Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Minku Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
     },
     {
       "slot": "scene6",
@@ -69,12 +69,12 @@
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T04:28:25Z"
+  "fetched_at": "2026-10-27T13:47:12Z"
 }

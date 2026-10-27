@@ -13,18 +13,18 @@
     {
       "slot": "cover",
       "query": "Banpo Seoul luxury apartment",
-      "source": "flickr",
-      "creator": "Terrazzo",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
+      "source": "Unsplash",
+      "creator": "Ann Danilina",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
     },
     {
       "slot": "scene1",
       "query": "Banpo Seoul luxury apartment",
-      "source": "flickr",
-      "creator": "IchStyle",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/66172503@N00/17274635675"
+      "source": "Unsplash",
+      "creator": "Ming Han Low",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-5YHqhCBiCz4"
     },
     {
       "slot": "scene2",
@@ -56,15 +56,15 @@
       "source": "Unsplash",
       "creator": "Ethan Brooke",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+      "page": "https://unsplash.com/photos/a-bridge-over-a-body-of-water-with-a-city-in-the-background-QhQuFHZ9ApE"
     },
     {
       "slot": "scene6",
       "query": "real estate market price chart",
-      "source": "flickr",
-      "creator": "scherknoah",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/151673005@N07/31801870474"
+      "source": "Unsplash",
+      "creator": "Arturo Añez",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/stock-market-graph-shows-fluctuating-trends-9rz5x8LGBb8"
     },
     {
       "slot": "scene7",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T04:28:50Z"
+  "fetched_at": "2026-10-27T13:47:32Z"
 }
