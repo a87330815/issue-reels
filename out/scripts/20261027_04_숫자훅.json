@@ -1,10 +1,10 @@
 {
-  "title": "충청타임즈",
+  "title": "정종철",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>충청타임즈</r>",
+      "<r>정종철</r>",
       "이거 실환가요"
     ],
     "badge": null
@@ -13,8 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '충청타임즈' 관련 트렌드. 수치로 확인해보자.",
-      "subtitle": "'충청타임즈' 관련 트렌드"
+      "narration": "이거 모르고 지나가면 손해다. '정종철' 관련 트렌드 — &quot;강남 작은 집이라도 가자&quot;…정종철, 일산 70평 아파트 던진 사연. 수치로 확인해보자.",
+      "subtitle": "'정종철' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -30,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-27T01:59:16.492131+00:00"
+    "generated_at": "2026-10-27T08:46:41.102051+00:00"
   }
 }

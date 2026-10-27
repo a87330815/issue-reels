@@ -1,11 +1,12 @@
 {
-  "title": "로켓",
+  "title": "pak vs sl",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>로켓</r>",
-      "이거 실환가요"
+      "방금 나온",
+      "<r>pak vs sl</r>",
+      "실화입니다"
     ],
     "badge": null
   },
@@ -13,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '로켓' 관련 트렌드 — 전투기로 12시간 걸리는 거리… 미군, 우주 거쳐 1시간 ‘로켓 배송’. 수치로 확인해보자.",
-      "subtitle": "'로켓' 관련 트렌드 — 전투기로"
+      "narration": "이거 모르고 지나가면 손해다. 'pak vs sl' 관련 트렌드 — Win-from-anywhere Pakistan face 430-conquerors Sri Lanka at high-scoring Lahore. 수치로 확인해보자.",
+      "subtitle": "'pak vs sl' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -30,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-27T01:59:17.391960+00:00"
+    "generated_at": "2026-10-27T08:46:42.118988+00:00"
   }
 }
