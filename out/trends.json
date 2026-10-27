@@ -1,95 +1,95 @@
 {
-  "collected_at": "2026-10-27T01:58:39.214668+00:00",
+  "collected_at": "2026-10-27T08:46:15.147136+00:00",
   "items": [
     {
-      "keyword": "충청타임즈",
+      "keyword": "정종철",
+      "traffic": "2000+",
+      "news_title": "&quot;강남 작은 집이라도 가자&quot;…정종철, 일산 70평 아파트 던진 사연",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "3c0b04684ad826a7"
+    },
+    {
+      "keyword": "pak vs sl",
       "traffic": "200+",
-      "news_title": "",
+      "news_title": "Win-from-anywhere Pakistan face 430-conquerors Sri Lanka at high-scoring Lahore",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "9702606c5a974ec5"
+      "key": "76691684f844ad8f"
     },
     {
-      "keyword": "로켓",
-      "traffic": "100+",
-      "news_title": "전투기로 12시간 걸리는 거리… 미군, 우주 거쳐 1시간 ‘로켓 배송’",
+      "keyword": "상장폐지",
+      "traffic": "200+",
+      "news_title": "형지글로벌, ‘동전주’ 상장폐지 가처분 신청…거래소 상폐 유예 ‘정책 실효성’ 논란",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "82a5a06adf64fbfc"
+      "key": "0f62d38e1ed5bfb1"
     },
     {
-      "keyword": "node.js 취약점",
+      "keyword": "몸매",
+      "traffic": "200+",
+      "news_title": "티아라 효민, 과감 숏팬츠 숨은 노력 있었다…군살 없는 몸매",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2a5a538c298987e0"
+    },
+    {
+      "keyword": "박승수",
       "traffic": "500+",
-      "news_title": "&quot;서버 생태계 전반 위협&quot;...PHP 이어 노드.js서도 보안 취약점 발견",
+      "news_title": "&quot;정신 못 차렸냐?&quot; &apos;환상적인 골 넣었는데 욕설·조롱 폭발&apos; 박승수, 뉴캐슬 팬들 앞에서 존재감 증명...한국 팬들은 여전히 &apos;전역모 논란&apos; 비판 - 머니투데이",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "f23c956d037b65e3"
+      "key": "37649d248fc4f5ed"
     },
     {
-      "keyword": "al 탈락",
-      "traffic": "200+",
-      "news_title": "[롤드컵] &apos;369 특급 캐리&apos; 中 TES, &apos;유럽 맹주&apos; G2 꺾고 2승 1패 조 합류",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "0fb9c6594fb9f6df"
-    },
-    {
-      "keyword": "특수부대",
-      "traffic": "200+",
-      "news_title": "레쑤언 티엔, 마란도, 꾸옥안은 모두 &quot;삭숲 특수부대&quot;에 출연했습니다.",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "37283116d92d2ffd"
-    },
-    {
-      "keyword": "삼성역",
+      "keyword": "닛케이 평균주가",
       "traffic": "500+",
-      "news_title": "GTX-A 운정중앙-서울, 평일 승객 6.4만명…예측 대비 128% [PICK]",
+      "news_title": "[유미&apos;s 픽] &apos;AI 재앙&apos; 경고한 앤트로픽, 삼성·SK HBM 의존 안고 상장 도전",
       "snippet": "",
       "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "f21a9e5cd6bf276f"
+      "category": "경제·부동산",
+      "key": "da81fdc829526f9a"
     },
     {
-      "keyword": "브루어스 대 레이스",
+      "keyword": "구룡마을",
       "traffic": "10000+",
-      "news_title": "‘역전의 명수’ 밀워키, WS 2연승",
+      "news_title": "[속보] 서울 강남 구룡마을서 불‥소방, 대응 1단계 발령",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "f7a24a00da88b2ff"
+      "key": "608bd607a123fb0e"
     },
     {
-      "keyword": "배드민턴",
-      "traffic": "20000+",
-      "news_title": "안세영, 시즌 10번째 우승…프랑스오픈 3연패",
+      "keyword": "전현무계획",
+      "traffic": "500+",
+      "news_title": "“방송 나가면 나 죽어” 74세 사장 호소에도..‘전현무계획4’ 리얼 강조하려다 ‘역풍’ [Oh!쎈 이슈]",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "493c7c99ac6de1a3"
+      "key": "2f95ec4e66b27c9d"
     },
     {
-      "keyword": "군의관",
-      "traffic": "200+",
-      "news_title": "“36개월 군의관보단 18개월 현역병”…의대생 현역병 입영 4년새 13배로 증가",
+      "keyword": "데스티니 차일드",
+      "traffic": "500+",
+      "news_title": "컴투스, ‘데스티니 차일드: 어셈블’ 공개…2027년 상반기 출시",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "d005efdcdc681b60"
+      "key": "ff532c6868d8b4ea"
     },
     {
-      "keyword": "이지훈",
-      "traffic": "200+",
-      "news_title": "&apos;이지훈♥&apos; 아야네, 둘째 만삭 화보 공개…딸 루희까지 &apos;비주얼가족&apos;",
+      "keyword": "국민 총소득",
+      "traffic": "1000+",
+      "news_title": "3분기 경제성장률 1.0%…올해 3% 중반 성장 가능성 높아져",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "307a77221f0fb47d"
+      "key": "27bf9ab7138e1b4a"
     }
   ]
 }
