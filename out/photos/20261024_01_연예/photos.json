@@ -1,7 +1,6 @@
 {
   "photos": {
     "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg"
@@ -10,34 +9,26 @@
     {
       "slot": "cover",
       "query": "Seoul Seongsu-dong street pop up store",
-      "source": "Unsplash",
-      "creator": "Ming Han Low",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-5YHqhCBiCz4"
-    },
-    {
-      "slot": "scene1",
-      "query": "celebrity arrival airport Korea fans",
-      "source": "Unsplash",
-      "creator": "Bùi Hoàng Long",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-woman-standing-in-front-of-a-white-wall-HamxCsoSPdE"
+      "source": "wikimedia",
+      "creator": "티비텐 TV10",
+      "license": "BY",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=173190651"
     },
     {
       "slot": "scene2",
       "query": "Seoul Seongsu pop up store fashion brand",
-      "source": "Unsplash",
-      "creator": "HANVIN CHEONG",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-store-front-with-signs-iG64LuXyPaI"
+      "source": "wikimedia",
+      "creator": "NINE STARS",
+      "license": "BY",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=110120374"
     },
     {
       "slot": "scene3",
       "query": "Justin Bieber fashion brand streetwear",
-      "source": "Unsplash",
-      "creator": "Tusik Only",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/person-wearing-hoodie-facing-the-mountain--OnAYsRJyOQ"
+      "source": "flickr",
+      "creator": "JOnasIsMyMiddleName:)",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/41605671@N08/4209355839"
     },
     {
       "slot": "scene4",
@@ -49,5 +40,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-27T02:49:36Z"
+  "fetched_at": "2026-10-27T03:20:06Z"
 }

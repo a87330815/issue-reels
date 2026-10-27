@@ -1,16 +1,43 @@
 {
   "photos": {
     "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
     "scene4": "scene4.jpg"
   },
   "credits": [
     {
       "slot": "cover",
-      "query": "K-pop stage concert performance",
-      "source": "Wikimedia Commons",
-      "creator": "FeklaIvanova16",
-      "license": "CC0",
-      "page": "https://commons.wikimedia.org/wiki/File:Close_Your_Eyes_Kpop_duo_stage_performance_concert_2026_3.jpg"
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://img.tenasia.co.kr/photo/202406/BF.37022823.1.jpg"
+    },
+    {
+      "slot": "scene1",
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://img.tenasia.co.kr/photo/202406/BF.37022826.1.jpg"
+    },
+    {
+      "slot": "scene2",
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://img.tenasia.co.kr/photo/202406/BF.37022820.1.jpg"
+    },
+    {
+      "slot": "scene3",
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://img.tenasia.co.kr/photo/202406/BF.37022828.1.jpg"
     },
     {
       "slot": "scene4",
@@ -22,5 +49,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-27T02:52:58Z"
+  "fetched_at": "2026-10-27T03:26:01Z"
 }

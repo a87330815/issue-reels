@@ -1,25 +1,43 @@
 {
   "photos": {
     "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg"
   },
   "credits": [
     {
       "slot": "cover",
-      "query": "breaking news headline",
-      "source": "Wikimedia Commons",
-      "creator": "The HindenTimes",
-      "license": "CC BY 4.0",
-      "page": "https://commons.wikimedia.org/wiki/File:HindenTimes_Global_Headlines,_Insightful_Analysis,_and_Breaking_Stories.png"
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://images.khan.co.kr/article/2026/07/15/news-p.v1.20260715.72fcb73ef5b742b296043c3a0c331097_P1.png"
+    },
+    {
+      "slot": "scene1",
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://images.khan.co.kr/article/2026/07/15/news-p.v1.20260715.ac60e92d4d554e419748144e7d2e3555_P1.png"
+    },
+    {
+      "slot": "scene2",
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://images.khan.co.kr/article/2026/07/15/news-p.v1.20260715.4edef91b96c44b118c4e78366bfe656c_P1.png"
     },
     {
       "slot": "scene3",
-      "query": "news media press conference",
-      "source": "Wikimedia Commons",
-      "creator": "Cherie Cullen",
-      "license": "Public domain",
-      "page": "https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_100809-D-7203C-016_-_Secretary_of_Defense_Robert_M._Gates_conducts_a_press_conference_in_the_Pentagon_on_Aug._9,_2010.jpg"
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://images.khan.co.kr/article/2026/07/15/news-p.v1.20260715.156f7f959b724c52ab0e5dbd25225040_P1.png"
     },
     {
       "slot": "scene4",
@@ -31,5 +49,5 @@
     }
   ],
   "wanted": 5,
-  "fetched_at": "2026-10-27T02:52:47Z"
+  "fetched_at": "2026-10-27T03:25:56Z"
 }

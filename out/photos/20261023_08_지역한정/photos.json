@@ -2,6 +2,7 @@
   "photos": {
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
     "scene5": "scene5.jpg",
@@ -21,9 +22,17 @@
       "slot": "scene1",
       "query": "Korea city apartment skyline",
       "source": "Unsplash",
-      "creator": "zero take",
+      "creator": "ulziibayar badamdorj",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+      "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
+    },
+    {
+      "slot": "scene2",
+      "query": "Korea city modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Looie Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
     },
     {
       "slot": "scene3",
@@ -37,17 +46,17 @@
       "slot": "scene4",
       "query": "Korea city modern apartment residential",
       "source": "Unsplash",
-      "creator": "ulziibayar badamdorj",
+      "creator": "Looie Kang",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
+      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
     },
     {
       "slot": "scene5",
       "query": "Korea city modern apartment residential",
       "source": "Unsplash",
-      "creator": "Bundo Kim",
+      "creator": "ulziibayar badamdorj",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/ornate-archway-entrance-with-cars-and-buildings-behind-jR5x8fSHWCc"
+      "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
     },
     {
       "slot": "scene6",
@@ -67,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:48:53Z"
+  "fetched_at": "2026-10-27T03:14:54Z"
 }

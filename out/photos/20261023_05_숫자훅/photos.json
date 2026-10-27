@@ -54,9 +54,9 @@
       "slot": "scene5",
       "query": "Apgujeong Seoul luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Minku Kang",
+      "creator": "Ethan Brooke",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
     },
     {
       "slot": "scene6",
@@ -69,12 +69,12 @@
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "flickr",
-      "creator": "kentbye",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:48:34Z"
+  "fetched_at": "2026-10-27T03:14:07Z"
 }

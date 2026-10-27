@@ -1,25 +1,16 @@
 {
   "photos": {
     "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg"
   },
   "credits": [
     {
       "slot": "cover",
       "query": "checklist document pen desk",
-      "source": "Unsplash",
-      "creator": "Jakub Żerdzicki",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/someone-is-writing-in-a-notebook-with-checkboxes-50comlI_39U"
-    },
-    {
-      "slot": "scene1",
-      "query": "checklist document pen desk",
-      "source": "Unsplash",
-      "creator": "Markus Spiske",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/white-printer-paper-beside-black-pen-IqVqS1V1ch8"
+      "source": "flickr",
+      "creator": "Ivan Radic",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/26344495@N05/51404235122"
     },
     {
       "slot": "scene2",
@@ -31,5 +22,5 @@
     }
   ],
   "wanted": 3,
-  "fetched_at": "2026-10-27T02:50:47Z"
+  "fetched_at": "2026-10-27T03:23:09Z"
 }

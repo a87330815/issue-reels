@@ -13,18 +13,18 @@
     {
       "slot": "cover",
       "query": "new vs old apartment building korea",
-      "source": "Unsplash",
-      "creator": "WooSang Lee",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-RSuP39oXrZA"
+      "source": "flickr",
+      "creator": "Ian Sane",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31246066@N04/6808934288"
     },
     {
       "slot": "scene1",
       "query": "new vs old apartment building korea",
-      "source": "Unsplash",
-      "creator": "WooSang Lee",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-RSuP39oXrZA"
+      "source": "flickr",
+      "creator": "shankar s.",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/77742560@N06/7637744518"
     },
     {
       "slot": "scene2",
@@ -37,34 +37,34 @@
     {
       "slot": "scene3",
       "query": "Korea city luxury high rise apartment",
-      "source": "flickr",
-      "creator": "USAG-Humphreys",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/31687107@N07/9081533712"
-    },
-    {
-      "slot": "scene4",
-      "query": "Korea city luxury high rise apartment",
-      "source": "flickr",
-      "creator": "USAG-Humphreys",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/31687107@N07/9079319923"
-    },
-    {
-      "slot": "scene5",
-      "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Jéan Béller",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
     },
     {
+      "slot": "scene4",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Yujin Seo",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-skyline-with-a-bridge-over-a-river-Haq3tXiVjEQ"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Ryoo Geon Uk",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-large-group-of-tall-buildings-in-a-city-cWFyd9ROJC8"
+    },
+    {
       "slot": "scene6",
       "query": "construction crane building site korea",
-      "source": "Unsplash",
-      "creator": "JAEMAN JUNG",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/construction-workers-are-on-a-building-site-with-a-crane-PYBm7NBl6mA"
+      "source": "flickr",
+      "creator": "Amsterdam free photos & pictures of the Dutch city",
+      "license": "CC0",
+      "page": "https://www.flickr.com/photos/104736837@N03/10574456115"
     },
     {
       "slot": "scene7",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:49:48Z"
+  "fetched_at": "2026-10-27T03:21:12Z"
 }

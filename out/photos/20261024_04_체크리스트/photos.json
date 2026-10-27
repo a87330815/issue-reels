@@ -16,10 +16,10 @@
     {
       "slot": "scene1",
       "query": "checklist document pen desk",
-      "source": "Unsplash",
-      "creator": "Jakub Żerdzicki",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/someone-is-writing-in-a-notebook-with-checkboxes-50comlI_39U"
+      "source": "flickr",
+      "creator": "Ivan Radic",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/26344495@N05/51404235122"
     },
     {
       "slot": "scene2",
@@ -31,5 +31,5 @@
     }
   ],
   "wanted": 3,
-  "fetched_at": "2026-10-27T02:49:56Z"
+  "fetched_at": "2026-10-27T03:22:01Z"
 }

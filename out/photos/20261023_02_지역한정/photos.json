@@ -2,7 +2,9 @@
   "photos": {
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
     "scene5": "scene5.jpg",
     "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
@@ -25,7 +27,23 @@
       "page": "https://unsplash.com/photos/a-sprawling-cityscape-with-distant-mountains-under-blue-sky-iPZnynCgm6g"
     },
     {
+      "slot": "scene2",
+      "query": "Myeongji Busan modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Trac Vu",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/tall-modern-hotel-building-with-signs-DEXCktT5M6A"
+    },
+    {
       "slot": "scene3",
+      "query": "Myeongji Busan modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Trac Vu",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/tall-modern-hotel-building-with-signs-DEXCktT5M6A"
+    },
+    {
+      "slot": "scene4",
       "query": "Myeongji Busan modern apartment residential",
       "source": "Unsplash",
       "creator": "Trac Vu",
@@ -58,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:48:09Z"
+  "fetched_at": "2026-10-27T03:13:32Z"
 }

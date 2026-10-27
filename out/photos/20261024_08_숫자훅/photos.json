@@ -1,7 +1,6 @@
 {
   "photos": {
     "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
@@ -19,14 +18,6 @@
       "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
     },
     {
-      "slot": "scene1",
-      "query": "Korea city luxury apartment",
-      "source": "Unsplash",
-      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
-    },
-    {
       "slot": "scene2",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
@@ -37,26 +28,26 @@
     {
       "slot": "scene3",
       "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Jéan Béller",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/9081533712"
     },
     {
       "slot": "scene4",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Yujin Seo",
+      "creator": "Trac Vu",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-city-skyline-with-a-bridge-over-a-river-Haq3tXiVjEQ"
+      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
     },
     {
       "slot": "scene5",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Ryoo Geon Uk",
+      "creator": "Jéan Béller",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-large-group-of-tall-buildings-in-a-city-cWFyd9ROJC8"
+      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
     },
     {
       "slot": "scene6",
@@ -76,5 +67,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:50:13Z"
+  "fetched_at": "2026-10-27T03:22:51Z"
 }
