@@ -417,6 +417,222 @@ def draw_big_emoji(draw, emoji, cx, cy, size):
     except:
         pass
 
+# ══════════════════════════════════════════════════════
+# 매거진 레이아웃 (이슈 매거진 스타일)
+#
+# 기존 레이아웃은 사진을 어둡게 덮고 그 위에 흰 글씨를 얹는다. 피드에서
+# 축소돼 보일 때 사진도 글자도 함께 죽는 구조다. 매거진 레이아웃은 둘을
+# 분리한다 — 위는 사진만, 아래는 흰 바탕에 검은 글씨. 사진은 보정 없이
+# 밝게 두고, 글자는 최대 대비로 읽힌다.
+# ══════════════════════════════════════════════════════
+
+MAG_INK   = (17, 17, 17)         # 본문 먹색
+MAG_BAND  = (168, 240, 232)      # 형광펜 민트
+MAG_BAND2 = (255, 235, 59)       # 형광펜 옐로우 (커버 라벨)
+PHOTO_H   = 756                  # 본문 슬라이드 사진 밴드 높이
+
+_CASCADE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "assets", "cv", "haarcascade_frontalface_default.xml")
+_cascade = None
+_face_cache = {}
+
+def face_center(path):
+    """사진에서 얼굴을 찾아 가장 큰 얼굴의 중심 y를 0~1 비율로 돌려준다.
+    못 찾으면 None. 보도사진을 가로 밴드로 자를 때 얼굴이 잘리는 걸 막는 용도라
+    실패해도 치명적이지 않다 — 호출부가 기본값으로 넘어간다."""
+    if path in _face_cache:
+        return _face_cache[path]
+    result = None
+    try:
+        global _cascade
+        import cv2
+        if _cascade is None:
+            if not os.path.exists(_CASCADE_PATH):
+                _face_cache[path] = None
+                return None
+            _cascade = cv2.CascadeClassifier(_CASCADE_PATH)
+        img = cv2.imread(path)
+        if img is not None:
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            faces = _cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5,
+                                              minSize=(40, 40))
+            if len(faces):
+                x, y, fw, fh = max(faces, key=lambda f: f[2] * f[3])
+                result = (y + fh / 2) / img.shape[0]
+    except Exception:
+        result = None
+    _face_cache[path] = result
+    return result
+
+def photo_band(path, w, h, sharpen=True, bias=0.5, face_aware=False):
+    """사진을 w×h로 크롭. 어둡게 덮지 않고 밝기를 그대로 둔다.
+    face_aware면 얼굴을 찾아 그 위치가 밴드 안에 들어오도록 크롭 지점을 잡는다.
+    세로로 긴 보도사진을 가로 밴드로 자를 때 중앙 크롭을 쓰면 머리가 잘린다."""
+    im = Image.open(path).convert("RGB")
+    sr, dr = im.width / im.height, w / h
+    if sr > dr:
+        nh, nw = h, max(w, int(round(h * sr)))
+    else:
+        nw, nh = w, max(h, int(round(w / sr)))
+    im = im.resize((nw, nh), Image.LANCZOS)
+
+    if face_aware and nh > h:
+        fy = face_center(path)
+        if fy is not None:
+            # 얼굴이 밴드 위쪽 38%에 오도록. 얼굴 위 여백은 남기고 아래로 몸이 이어진다.
+            top = int(round(fy * nh - h * 0.38))
+        else:
+            top = int(round((nh - h) * bias))
+    else:
+        top = int(round((nh - h) * bias))
+    top = max(0, min(nh - h, top))
+    im = im.crop(((nw - w) // 2, top, (nw - w) // 2 + w, top + h))
+    if sharpen:
+        im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=120, threshold=3))
+    im = ImageEnhance.Color(im).enhance(1.06)
+    im = ImageEnhance.Contrast(im).enhance(1.05)
+    return im
+
+def center_marked(draw, line, cy_x, y, fnt, normal, accent):
+    """강조 구간을 유지한 채 한 줄을 중앙정렬로 그린다."""
+    total = sum(draw.textlength(seg, font=fnt) for seg, _ in line)
+    x = cy_x - total / 2
+    for seg, mark in line:
+        draw.text((x, y), seg, font=fnt, fill=accent if mark else normal)
+        x += draw.textlength(seg, font=fnt)
+
+def highlight_text(d, text, cx, y, fnt, band_color, pad_x=22, pad_y=10, ink=MAG_INK):
+    """형광펜으로 그은 듯한 밴드를 깔고 그 위에 검은 글씨를 올린다."""
+    bb = d.textbbox((0, 0), text, font=fnt)
+    tw, th = bb[2] - bb[0], bb[3] - bb[1]
+    x0 = cx - tw / 2 - pad_x
+    x1 = cx + tw / 2 + pad_x
+    rounded_rect(d, (x0, y - pad_y, x1, y + th + bb[1] + pad_y), 12, band_color)
+    d.text((cx - tw / 2 - bb[0], y - bb[1] + bb[1]), text, font=fnt, fill=ink)
+    return th + pad_y * 2
+
+def make_cover_mag(sc, t, photo=None, credit=None):
+    """커버 — 사진 전면, 하단에 큰 제목. 사진을 가리지 않는다."""
+    if photo:
+        img = photo_band(photo, W, H).convert("RGB")
+        # 글자가 앉을 아래쪽만 어둡게. 위쪽 사진은 건드리지 않는다.
+        xs = np.linspace(0.0, 1.0, H)
+        ramp = np.clip((xs - 0.46) / 0.54, 0, 1) ** 1.35 * 205
+        alpha = np.repeat(ramp.astype(np.uint8)[:, None], W, axis=1)
+        tint = np.zeros((H, W, 3), dtype=np.uint8)
+        ov = Image.fromarray(np.dstack([tint, alpha]), mode="RGBA")
+        base = img.convert("RGBA")
+        base.alpha_composite(ov)
+        img = base.convert("RGB")
+    else:
+        img = gradient_bg_diagonal(t["grad1"], t["grad2"])
+
+    d = ImageDraw.Draw(img, "RGBA")
+    lines = sc.get("cover", {}).get("lines", [sc.get("title", "")])
+    cat = sc.get("meta", {}).get("category", "")
+
+    # 제목을 아래에서부터 쌓아 올린다 — 바닥 여백 고정
+    tf = font(FONT_BLACK, 92)
+    lh = 112
+    clean = [l.replace("<r>", "").replace("</r>", "").replace("<y>", "").replace("</y>", "")
+             for l in lines]
+    acc = ["<r>" in l or "<y>" in l for l in lines]
+    bottom = H - 128
+    top = bottom - len(clean) * lh
+
+    # 카테고리 라벨 — 제목 바로 위에 작은 형광 밴드
+    if cat:
+        lf = font(FONT_BOLD, 32)
+        highlight_text(d, cat, W // 2, top - 74, lf, MAG_BAND2, pad_x=20, pad_y=9)
+
+    y = top
+    for txt, is_acc in zip(clean, acc):
+        bb = d.textbbox((0, 0), txt, font=tf)
+        x = (W - (bb[2] - bb[0])) // 2 - bb[0]
+        d.text((x, y), txt, font=tf,
+               fill=t["accent"] if is_acc else WHITE,
+               stroke_width=7, stroke_fill=(0, 0, 0))
+        y += lh
+
+    # 브랜드 워드마크 — 좌상단에 작게. 사진을 가리지 않는다.
+    if BRAND:
+        bf = font(FONT_BLACK, 34)
+        d.text((48, 46), BRAND, font=bf, fill=WHITE,
+               stroke_width=5, stroke_fill=(0, 0, 0))
+
+    if not REELS:
+        sf = font(FONT_BOLD, 27)
+        swipe = UI["swipe"]
+        bb = d.textbbox((0, 0), swipe, font=sf)
+        sx = (W - (bb[2] - bb[0]) - 44) // 2
+        paste_emoji(img, "👉", sx + 16, H - 62, 32)
+        d = ImageDraw.Draw(img, "RGBA")
+        d.text((sx + 44, H - 76), swipe, font=sf, fill=WHITE,
+               stroke_width=4, stroke_fill=(0, 0, 0))
+    return img
+
+def make_scene_mag(sc, idx, total, t, photo=None, credit=None):
+    """본문 — 위는 사진 밴드, 아래는 흰 바탕에 검은 글씨."""
+    scene = sc["scenes"][idx]
+    img = Image.new("RGB", (W, H), (255, 255, 255))
+
+    if photo:
+        # 얼굴을 못 찾으면(옆모습·뒷모습) 위쪽을 남기는 쪽으로 기운다.
+        # 보도사진은 인물이 위쪽에 서 있어 중앙 크롭은 거의 항상 머리를 자른다.
+        img.paste(photo_band(photo, W, PHOTO_H, bias=0.12, face_aware=True), (0, 0))
+    else:
+        band = gradient_bg(t["grad1"], t["grad2"]).crop((0, 0, W, PHOTO_H))
+        img.paste(band, (0, 0))
+
+    d = ImageDraw.Draw(img, "RGBA")
+
+    body = scene.get("body", "")
+    if not body:
+        narration = scene.get("narration", "")
+        body = (narration + " " if narration else "") + " ".join(scene.get("details", []))
+
+    subtitle = scene.get("subtitle", "")
+    cx = W // 2
+
+    # 소제목 — 형광펜 밴드. 길면 줄여서 한 줄에 맞춘다.
+    sf = bb_sub = None
+    if subtitle:
+        size = 44
+        while size > 30:
+            sf = font(FONT_BLACK, size)
+            if d.textlength(subtitle, font=sf) <= W - 150:
+                break
+            size -= 2
+        sf = font(FONT_BLACK, size)
+        bb_sub = d.textbbox((0, 0), subtitle, font=sf)
+
+    # 본문 — 검은 굵은 글씨, 중앙정렬. 흰 영역에 맞춰 크기를 자동 조절한다.
+    avail = H - PHOTO_H - 80
+    sub_h = (bb_sub[3] - bb_sub[1] + 46 + 18) if bb_sub else 0
+    for size, lh in ((48, 66), (45, 62), (42, 58), (39, 54), (36, 50), (33, 46)):
+        bf = font(FONT_BOLD, size)
+        lines = wrap_marked(d, parse_marked(body), bf, W - 130)
+        if sub_h + len(lines) * lh <= avail:
+            break
+
+    # 글 덩어리를 흰 영역 세로 중앙에 앉힌다 — 아래가 휑하게 비지 않도록
+    block_h = sub_h + len(lines) * lh
+    y = PHOTO_H + max(40, (H - PHOTO_H - block_h) // 2)
+
+    if subtitle:
+        tw, th = bb_sub[2] - bb_sub[0], bb_sub[3] - bb_sub[1]
+        rounded_rect(d, (cx - tw / 2 - 24, y - 6, cx + tw / 2 + 24, y + th + bb_sub[1] + 12),
+                     14, MAG_BAND)
+        d.text((cx - tw / 2 - bb_sub[0], y), subtitle, font=sf, fill=MAG_INK)
+        y += th + 46
+
+    for line in lines:
+        if y + lh > H - 30:
+            break
+        center_marked(d, line, cx, y, bf, MAG_INK, (210, 35, 45))
+        y += lh
+    return img
+
 # ── 커버 ────────────────────────
 def make_cover(sc, t, photo=None, credit=None):
     if photo:
@@ -672,10 +888,12 @@ def make_outro(sc, t, total):
     return img
 
 # ── 메인 ────────────────────────
-def generate(script_path, out_dir, photo_dir=None):
+def generate(script_path, out_dir, photo_dir=None, layout="magazine"):
     with open(script_path, encoding="utf-8") as f:
         sc = json.load(f)
     os.makedirs(out_dir, exist_ok=True)
+    cover_fn = make_cover_mag if layout == "magazine" else make_cover
+    scene_fn = make_scene_mag if layout == "magazine" else make_scene
     cat = sc.get("meta", {}).get("category", "")
     t = get_t(cat)
     total = len(sc.get("scenes", [])) + 2
@@ -689,13 +907,13 @@ def generate(script_path, out_dir, photo_dir=None):
         print("  사진 없음 — 그래디언트 배경으로 생성")
 
     p = os.path.join(out_dir, "01_cover.png")
-    make_cover(sc, t, photos.get("cover"), credits.get("cover")).save(p, quality=95)
+    cover_fn(sc, t, photos.get("cover"), credits.get("cover")).save(p, quality=95)
     pages.append(p)
 
     for i in range(len(sc.get("scenes", []))):
         slot = f"scene{i+1}"
         p = os.path.join(out_dir, f"{i+2:02d}_scene.png")
-        make_scene(sc, i, total, t, photos.get(slot), credits.get(slot)).save(p, quality=95)
+        scene_fn(sc, i, total, t, photos.get(slot), credits.get(slot)).save(p, quality=95)
         pages.append(p)
 
     p = os.path.join(out_dir, f"{total:02d}_outro.png")
@@ -713,6 +931,8 @@ if __name__ == "__main__":
                     help="photos.json이 있는 사진 디렉터리 (없으면 그래디언트 배경)")
     ap.add_argument("--reels", action="store_true",
                     help="릴스용. 스와이프 안내와 페이지 점을 빼고 그린다")
+    ap.add_argument("--layout", choices=["magazine", "classic"], default="magazine",
+                    help="magazine=사진 밴드+흰 바탕 검은 글씨 (기본), classic=기존 어두운 오버레이")
     a = ap.parse_args()
     REELS = a.reels
-    generate(a.script, a.out, a.photos)
+    generate(a.script, a.out, a.photos, a.layout)

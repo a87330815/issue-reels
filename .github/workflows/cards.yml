@@ -33,7 +33,9 @@ jobs:
           ls /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
 
       - name: 의존성 설치
-        run: pip install -q Pillow numpy requests
+        # opencv-python-headless: 매거진 레이아웃에서 얼굴 위치를 찾아
+        # 사진 밴드를 자를 때 쓴다. 없어도 기본 크롭으로 동작한다.
+        run: pip install -q Pillow numpy requests opencv-python-headless
 
       - name: 대본 내려받기
         uses: actions/download-artifact@v4
