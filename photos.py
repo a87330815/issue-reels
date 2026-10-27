@@ -362,6 +362,39 @@ def download_photo(candidates, out_path, min_px=500, used=None):
     return None
 
 
+def download_custom_url(url, out_path):
+    """커스텀 URL에서 직접 다운로드. 성공 시 True."""
+    try:
+        r = requests.get(url, timeout=TIMEOUT,
+                         headers={"User-Agent": UA}, stream=True)
+        r.raise_for_status()
+        data = r.content
+        if len(data) < 5000:
+            print(f"    ✗ 너무 작은 파일 ({len(data)}B)")
+            return False
+        im = Image.open(io.BytesIO(data))
+        cover_crop(im).save(out_path, "JPEG", quality=88)
+        return True
+    except Exception as e:
+        print(f"    ✗ 커스텀 URL 다운로드 실패: {e}")
+        return False
+
+
+def load_custom_urls(script_path):
+    """out/photos/custom_urls.json에서 이 대본의 커스텀 URL 매핑을 찾는다."""
+    stem = os.path.splitext(os.path.basename(script_path))[0]
+    # custom_urls.json은 대본 디렉터리의 부모 또는 out/photos/에 위치
+    for candidate in [
+        os.path.join(os.path.dirname(os.path.dirname(script_path)), "photos", "custom_urls.json"),
+        os.path.join("out", "photos", "custom_urls.json"),
+    ]:
+        if os.path.isfile(candidate):
+            with open(candidate, encoding="utf-8") as f:
+                data = json.load(f)
+            return data.get(stem, {})
+    return {}
+
+
 def fetch_for_script(script_path, out_dir):
     """대본 JSON을 읽어 커버 + 각 씬의 배경 사진을 받는다."""
     with open(script_path, encoding="utf-8") as f:
@@ -371,6 +404,11 @@ def fetch_for_script(script_path, out_dir):
     category = (sc.get("meta") or {}).get("category", "")
     manifest = {"photos": {}, "credits": []}
 
+    # 커스텀 URL 매핑 로드 (뉴스 기사 실제 사진)
+    custom_urls = load_custom_urls(script_path)
+    if custom_urls:
+        print(f"  📸 커스텀 URL {len(custom_urls)}건 발견 — 우선 다운로드")
+
     # 커버: 제목 기준
     targets = [("cover", sc.get("title", ""), (sc.get("cover") or {}).get("photo_query"))]
     for i, scene in enumerate(sc.get("scenes", [])):
@@ -378,6 +416,19 @@ def fetch_for_script(script_path, out_dir):
 
     used = set()  # 같은 대본 안에서 사진 중복 방지
     for slot, text, explicit in targets:
+        # 커스텀 URL이 있으면 우선 사용
+        if slot in custom_urls:
+            path = os.path.join(out_dir, f"{slot}.jpg")
+            print(f"  [{slot}] 커스텀 URL → {custom_urls[slot][:60]}...")
+            if download_custom_url(custom_urls[slot], path):
+                manifest["photos"][slot] = os.path.basename(path)
+                manifest["credits"].append({
+                    "slot": slot, "query": "custom_url", "source": "news_article",
+                    "creator": "뉴스기사", "license": "editorial", "page": custom_urls[slot],
+                })
+                print(f"    ✓ {slot} ← 뉴스기사 사진")
+                continue
+            print(f"    ✗ 커스텀 URL 실패, 폴백 검색으로 전환")
         q = explicit or build_query(text, category)
         print(f"  [{slot}] '{text}' → \"{q}\"")
         cands = search_with_fallback(q)
