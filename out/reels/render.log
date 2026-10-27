@@ -1,4 +1,4 @@
-run 40528209775 2026-10-27T15:10:20Z
+run 40528524085 2026-10-27T15:27:05Z
 
 === 20261027_12_숫자훅 ===
   📸 커스텀 URL 4건 발견 — 우선 다운로드
@@ -18,26 +18,39 @@ run 40528209775 2026-10-27T15:10:20Z
 
 총 5/5장 수집
   사진 5장 적용: cover, scene1, scene2, scene3, scene4
-카드뉴스 6장 생성 → out/cards_20261027_12_숫자훅
-대본: out/scripts/20261027_12_숫자훅.json
-카드: out/cards_20261027_12_숫자훅 (6장)
-음성: 프리셋 앵커/발랄녀 중 장면마다 번갈아
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 891, in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 888, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 302, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: invalid argument
 
-1) TTS 생성
-  TTS [1/5] [발랄녀] 1.9초  나연 솔로 컴백...
-  TTS [2/5] [앵커] 11.8초  트와이스 나연이 2년 5개월 만에 솔로로 나온다카더...
-  TTS [3/5] [발랄녀] 7.4초  첫 앨범이 빌보드 200에서 7위까지 올라갔데이. ...
-  TTS [4/5] [앵커] 9.2초  이번 컴백 소식에 팬들이 벌써 난리났다. 타이틀곡이...
-  TTS [5/5] [발랄녀] 6.2초  오늘 내용 괜찮았으면 팔로우 한번 눌러주이소. 매일...
+During handling of the above exception, another exception occurred:
 
-2) 영상 합성
-  세그먼트 [1/6] 3.0초
-  세그먼트 [2/6] 12.6초
-  세그먼트 [3/6] 8.2초
-  세그먼트 [4/6] 10.0초
-  세그먼트 [5/6] 7.0초
-  세그먼트 [6/6] 4.0초
-
-  ✓ 릴스 완성: out/reels/20261027_12_숫자훅.mp4
-    길이: 40.3초  /  크기: 1.3MB
--rw-r--r-- 1 runner runner 1.3M Oct 27 15:11 out/reels/20261027_12_숫자훅.mp4
+Traceback (most recent call last):
+  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 952, in <module>
+    generate(a.script, a.out, a.photos, a.layout)
+  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 924, in generate
+    cover_fn(sc, t, photos.get("cover"), credits.get("cover")).save(p, quality=95)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 549, in make_cover_mag
+    tf = font(FONT_BLACK, 92)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 58, in font
+    return ImageFont.truetype(path, size, index=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 934, in truetype
+    return freetype(os.path.join(walkroot, walkfilename))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 888, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 302, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: invalid argument
