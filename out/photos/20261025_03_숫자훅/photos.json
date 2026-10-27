@@ -1,5 +1,7 @@
 {
   "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
@@ -8,6 +10,22 @@
     "scene7": "scene7.jpg"
   },
   "credits": [
+    {
+      "slot": "cover",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
+    },
+    {
+      "slot": "scene1",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "Ann Danilina",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+    },
     {
       "slot": "scene2",
       "query": "Korea city luxury high rise apartment",
@@ -28,25 +46,25 @@
       "slot": "scene4",
       "query": "Korea city modern apartment residential",
       "source": "Unsplash",
-      "creator": "zero take",
+      "creator": "Carl Kho",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+      "page": "https://unsplash.com/photos/white-concrete-building-near-trees-during-daytime-2f18NO5bPfw"
     },
     {
       "slot": "scene5",
       "query": "Korea city modern apartment residential",
       "source": "Unsplash",
-      "creator": "ulziibayar badamdorj",
+      "creator": "zero take",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
+      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
     },
     {
       "slot": "scene6",
       "query": "real estate market price chart",
-      "source": "flickr",
-      "creator": "scherknoah",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/151673005@N07/31801870474"
+      "source": "Unsplash",
+      "creator": "Arturo Añez",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/stock-market-graph-shows-fluctuating-trends-9rz5x8LGBb8"
     },
     {
       "slot": "scene7",
@@ -58,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T03:23:04Z"
+  "fetched_at": "2026-10-27T03:36:55Z"
 }

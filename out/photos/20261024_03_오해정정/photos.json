@@ -13,18 +13,18 @@
     {
       "slot": "cover",
       "query": "new vs old apartment building korea",
-      "source": "flickr",
-      "creator": "Ian Sane",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/31246066@N04/6808934288"
+      "source": "Unsplash",
+      "creator": "WooSang Lee",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-RSuP39oXrZA"
     },
     {
       "slot": "scene1",
       "query": "new vs old apartment building korea",
-      "source": "flickr",
-      "creator": "shankar s.",
-      "license": "BY",
-      "page": "https://www.flickr.com/photos/77742560@N06/7637744518"
+      "source": "Unsplash",
+      "creator": "rawkkim",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/high-rise-buildings-during-daytime-8RN751rleDo"
     },
     {
       "slot": "scene2",
@@ -61,10 +61,10 @@
     {
       "slot": "scene6",
       "query": "construction crane building site korea",
-      "source": "flickr",
-      "creator": "Amsterdam free photos & pictures of the Dutch city",
-      "license": "CC0",
-      "page": "https://www.flickr.com/photos/104736837@N03/10574456115"
+      "source": "Unsplash",
+      "creator": "JAEMAN JUNG",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/construction-workers-are-on-a-building-site-with-a-crane-PYBm7NBl6mA"
     },
     {
       "slot": "scene7",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T03:21:12Z"
+  "fetched_at": "2026-10-27T03:36:14Z"
 }

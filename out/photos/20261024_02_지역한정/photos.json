@@ -2,6 +2,7 @@
   "photos": {
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
     "scene5": "scene5.jpg",
@@ -26,6 +27,14 @@
       "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
     },
     {
+      "slot": "scene2",
+      "query": "Korea city modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Looie Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
+    },
+    {
       "slot": "scene3",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
@@ -37,9 +46,9 @@
       "slot": "scene4",
       "query": "Korea city modern apartment residential",
       "source": "Unsplash",
-      "creator": "Looie Kang",
+      "creator": "Carl Kho",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
+      "page": "https://unsplash.com/photos/white-concrete-building-near-trees-during-daytime-2f18NO5bPfw"
     },
     {
       "slot": "scene5",
@@ -67,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T03:20:39Z"
+  "fetched_at": "2026-10-27T03:36:09Z"
 }

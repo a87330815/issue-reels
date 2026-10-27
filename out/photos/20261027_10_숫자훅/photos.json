@@ -22,7 +22,7 @@
       "source": "news_article",
       "creator": "뉴스기사",
       "license": "editorial",
-      "page": "https://images.khan.co.kr/article/2026/07/17/news-p.v1.20260717.7594d34257f54ae5b7534514fa9bdab6_P1.jpg"
+      "page": "https://isp.edailystatic.com/data/isp/image/2025/03/05/isp20250305000249.620x.0.jpg"
     },
     {
       "slot": "scene2",
@@ -30,7 +30,7 @@
       "source": "news_article",
       "creator": "뉴스기사",
       "license": "editorial",
-      "page": "https://images.khan.co.kr/article/2026/07/17/news-p.v1.20260717.7594d34257f54ae5b7534514fa9bdab6_P1.jpg"
+      "page": "https://image.xportsnews.com/contents/images/upload/article/2019/0702/1561997032303436.jpg"
     },
     {
       "slot": "scene3",
@@ -38,7 +38,7 @@
       "source": "news_article",
       "creator": "뉴스기사",
       "license": "editorial",
-      "page": "https://images.khan.co.kr/article/2026/07/17/news-p.v1.20260717.7594d34257f54ae5b7534514fa9bdab6_P1.jpg"
+      "page": "https://isp.edailystatic.com/data/isp/image/2023/01/19/isp20230119000380.800x.8.jpg"
     },
     {
       "slot": "scene4",
@@ -46,7 +46,7 @@
       "source": "news_article",
       "creator": "뉴스기사",
       "license": "editorial",
-      "page": "https://images.khan.co.kr/article/2026/07/17/news-p.v1.20260717.7594d34257f54ae5b7534514fa9bdab6_P1.jpg"
+      "page": "https://image.xportsnews.com/contents/images/upload/article/2019/0702/1561997041059542.jpg"
     },
     {
       "slot": "scene5",
@@ -58,5 +58,5 @@
     }
   ],
   "wanted": 6,
-  "fetched_at": "2026-10-27T03:25:52Z"
+  "fetched_at": "2026-10-27T03:39:22Z"
 }
