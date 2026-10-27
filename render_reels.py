@@ -21,9 +21,10 @@ import tempfile
 # InJoon을 성우 목소리로 골랐다가 오히려 높아졌다.
 DEFAULT_VOICE = "ko-KR-HyunsuMultilingualNeural"
 # 대안: ko-KR-InJoonNeural(남, 더 높음), ko-KR-SunHiNeural(여)
-# edge-tts 기본 발화 속도는 한국어 나레이션으로는 빠르다. 측정해보니
-# 10자/초 가까이 나와 알아듣기 어려웠다. 자연스러운 구간은 6~7자/초다.
-DEFAULT_RATE = "-18%"
+# 앞서 -18%를 걸었던 건 샘플레이트 버그로 음성이 1.8배 빨라져 있어서였다.
+# 버그를 고치고 나니 -18%는 오히려 느려(5자/초) 릴스가 53초까지 늘어졌다.
+# 기본 속도가 한국어 나레이션에 6자/초 정도로 적당하다.
+DEFAULT_RATE = "+0%"
 # 장면당 기본 표시 시간 (TTS 없을 때)
 DEFAULT_DURATION = 4.0
 # 커버·아웃트로 최소 표시 시간
