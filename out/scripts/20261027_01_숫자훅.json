@@ -1,12 +1,11 @@
 {
-  "title": "60억 아파트",
+  "title": "50억 아파트",
   "cover": {
     "image": null,
     "photo_query": "Banpo Seoul luxury apartment",
     "lines": [
-      "이번 달",
-      "<r>60억 아파트</r>",
-      "거래 떴습니다"
+      "<r>50억 아파트</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,14 +13,14 @@
     {
       "image": null,
       "photo_query": "Banpo Seoul luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 반포동 반포자이 165.446㎡ 60.0억 거래. 수치로 확인해보자.",
-      "subtitle": "반포동 60.0억 거래"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지 84.93㎡ 49.5억 거래. 수치로 확인해보자.",
+      "subtitle": "반포동 49.5억 거래"
     },
     {
       "image": null,
       "photo_query": "Banpo Seoul luxury high rise apartment",
-      "narration": "반포동 반포자이, 전용 165㎡(50평) 23층이 60.0억원에 실거래 신고됐다카이. 평당 1.2억. 2009년 준공.",
-      "subtitle": "반포동 반포자이 60.0억원"
+      "narration": "반포동 래미안퍼스티지, 전용 85㎡(26평) 11층이 49.5억원에 실거래 신고됐다카이. 평당 1.9억. 2009년 준공.",
+      "subtitle": "반포동 래미안퍼스티지 49.5억원"
     },
     {
       "image": null,
@@ -37,15 +36,15 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        60.0,
-        55.9,
-        48.5,
-        40.1,
-        38.0
+        49.5,
+        37.2,
+        29.0,
+        26.0,
+        25.0
       ],
       "style": "bars"
     },
     "tone": "경상도",
-    "generated_at": "2026-10-27T13:45:25.260731+00:00"
+    "generated_at": "2026-10-27T19:04:20.668921+00:00"
   }
 }

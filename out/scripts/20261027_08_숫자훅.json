@@ -1,11 +1,11 @@
 {
-  "title": "평당 1.7억",
+  "title": "청송군",
   "cover": {
     "image": null,
-    "photo_query": "Apgujeong Seoul luxury apartment",
+    "photo_query": "Korea city luxury apartment",
     "lines": [
       "이번 달",
-      "<r>평당 1.7억</r>",
+      "<r>청송군</r>",
       "거래 떴습니다"
     ],
     "badge": null
@@ -13,39 +13,9 @@
   "scenes": [
     {
       "image": null,
-      "photo_query": "Apgujeong Seoul luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차 평당 1.66억 (전용 111.38㎡). 수치로 확인해보자.",
-      "subtitle": "압구정동 평당 1.7억"
-    },
-    {
-      "image": null,
-      "photo_query": "Apgujeong Seoul luxury high rise apartment",
-      "narration": "압구정동 신현대9차, 전용 111㎡(34평) 6층이 55.9억원에 실거래 신고됐다카이. 평당 1.7억. 1982년 준공.",
-      "subtitle": "압구정동 신현대9차 55.9억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "같은 동네 성원대치2단지아파트도 주목할 만한다. 전용 33㎡(10평) 11층, 거래가 14.9억원. 평당 1.5억.",
-      "subtitle": "개포동 성원대치2단지아파트 14.9억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Banpo Seoul luxury high rise apartment",
-      "narration": "반포리체 전용 85㎡(26평) 10층 — 38.0억원 거래. 평당 1.5억.",
-      "subtitle": "반포동 반포리체 38.0억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Banpo Seoul luxury high rise apartment",
-      "narration": "반포써밋 전용 85㎡(26평) 5층 — 36.5억원 거래. 평당 1.4억.",
-      "subtitle": "반포동 반포써밋 36.5억원"
-    },
-    {
-      "image": null,
-      "photo_query": "real estate market price chart",
-      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 41.0억원까지 벌어졌다. 평균 36.2억원 수준이다.",
-      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. '청송군' 관련 트렌드 — 청송황금사과 맛봐라…서울 주요 거점서 판매 행사. 수치로 확인해보자.",
+      "subtitle": "'청송군' 관련 트렌드 — 청송황금사과"
     },
     {
       "image": null,
@@ -56,20 +26,11 @@
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        1.66,
-        1.49,
-        1.48,
-        1.42,
-        1.39
-      ],
-      "style": "bars"
-    },
+    "source": "",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-27T13:45:26.885281+00:00"
+    "generated_at": "2026-10-27T19:04:22.151215+00:00"
   }
 }

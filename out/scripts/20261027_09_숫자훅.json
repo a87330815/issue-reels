@@ -1,11 +1,11 @@
 {
-  "title": "충주시장",
+  "title": "크랙",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
       "이번 달",
-      "<r>충주시장</r>",
+      "<r>크랙</r>",
       "거래 떴습니다"
     ],
     "badge": null
@@ -14,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '충주시장' 관련 트렌드 — “충북도청 충주로” 도보 행진까지…충북도·타 시군 ‘난색’. 수치로 확인해보자.",
-      "subtitle": "'충주시장' 관련 트렌드 — “충북도청"
+      "narration": "이거 모르고 지나가면 손해다. '크랙' 관련 트렌드 — “330만 원짜리가 이 모양?”…돈값 못하는 아이폰 듀오 굴욕 [이코노픽]. 수치로 확인해보자.",
+      "subtitle": "'크랙' 관련 트렌드 — “330만"
     },
     {
       "image": null,
@@ -31,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-27T13:45:27.178387+00:00"
+    "generated_at": "2026-10-27T19:04:22.354711+00:00"
   }
 }
