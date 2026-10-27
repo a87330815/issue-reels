@@ -13,7 +13,7 @@ on:
       voice:
         description: "TTS 음성"
         type: string
-        default: "ko-KR-InJoonNeural"
+        default: "ko-KR-HyunsuMultilingualNeural"
   push:
     paths:
       - "out/scripts/**.json"
@@ -112,7 +112,7 @@ jobs:
       - name: 3) 릴스 합성 (TTS 음성)
         env:
           STEM: ${{ steps.pick.outputs.stem }}
-          VOICE: ${{ inputs.voice || 'ko-KR-InJoonNeural' }}
+          VOICE: ${{ inputs.voice || 'ko-KR-HyunsuMultilingualNeural' }}
         run: |
           set -o pipefail
           python -u render_reels.py "out/scripts/${STEM}.json" \

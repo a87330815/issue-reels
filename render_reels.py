@@ -16,11 +16,11 @@ import subprocess
 import sys
 import tempfile
 
-# 남자 성우 톤. InJoon은 뉴스·내레이션용 정통 남성 목소리로,
-# Hyunsu보다 낮고 차분해 이슈 전달에 맞는다.
-DEFAULT_VOICE = "ko-KR-InJoonNeural"
-# 참고용 대안: ko-KR-HyunsuMultilingualNeural(젊은 남성),
-#              ko-KR-BongJinNeural, ko-KR-GookMinNeural
+# edge-tts의 한국어 음성은 셋뿐이고 남성은 둘이다. 실제로 재보니
+# Hyunsu가 142Hz, InJoon이 168Hz로 Hyunsu 쪽이 낮다. 이름만 보고
+# InJoon을 성우 목소리로 골랐다가 오히려 높아졌다.
+DEFAULT_VOICE = "ko-KR-HyunsuMultilingualNeural"
+# 대안: ko-KR-InJoonNeural(남, 더 높음), ko-KR-SunHiNeural(여)
 # edge-tts 기본 발화 속도는 한국어 나레이션으로는 빠르다. 측정해보니
 # 10자/초 가까이 나와 알아듣기 어려웠다. 자연스러운 구간은 6~7자/초다.
 DEFAULT_RATE = "-18%"
@@ -58,9 +58,22 @@ def narrations(script):
     return texts
 
 
-# 피치 배수. 1보다 작으면 낮아진다. 앞서는 1.059로 올려 써서 목소리가
-# 얇고 가벼워졌다. 성우 톤은 반대로 살짝 낮춰야 묵직하게 들린다.
-PITCH = 0.97
+# 피치 배수. 1보다 작으면 낮아진다. Hyunsu 원본이 142Hz인데 0.88을
+# 걸면 125Hz가 되어 남자 성우 구간(110~130Hz)에 들어온다.
+PITCH = 0.88
+
+
+def audio_rate(path):
+    """오디오의 실제 샘플레이트. asetrate에 이 값을 써야 한다."""
+    r = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "a",
+         "-show_entries", "stream=sample_rate", "-of", "csv=p=0", path],
+        capture_output=True, text=True,
+    )
+    try:
+        return int(r.stdout.strip())
+    except ValueError:
+        return 24000          # edge-tts 기본값
 
 
 def post_process_voice(src, dst):
@@ -70,16 +83,19 @@ def post_process_voice(src, dst):
     일정하며(컴프레서), 셋째 중저음에 두께가 있고 말소리는 또렷하다.
     피치만 만지면 어린 목소리를 억지로 낮춘 소리가 나므로 함께 잡는다.
     """
-    # asetrate는 피치와 속도를 함께 바꾼다. atempo로 속도만 되돌린다.
+    # asetrate는 "이 파일을 이 샘플레이트로 읽으라"는 뜻이라, 원본 레이트를
+    # 그대로 넣어야 의도한 배수만큼만 바뀐다. 앞서 24kHz 파일에 44100을
+    # 박아 넣어 피치가 1.8배로 치솟았고, 그래서 목소리가 얇게 들렸다.
+    sr = audio_rate(src)
     af = (
-        f"asetrate=44100*{PITCH},aresample=44100,"    # 피치 낮춤 (속도도 함께 느려짐)
-        f"atempo={1 / PITCH:.4f},"                     # 속도는 원래대로
-        "equalizer=f=120:t=h:w=100:g=2.5,"             # 저음 두께 — 성우의 울림
-        "equalizer=f=300:t=h:w=200:g=1.5,"             # 중저음 바디감
-        "equalizer=f=1000:t=h:w=600:g=-1.5,"           # 답답한 중음 덜어내기
-        "equalizer=f=4000:t=h:w=1500:g=2,"             # 자음 또렷하게 (딕션)
+        f"asetrate={sr}*{PITCH},aresample={sr},"       # 피치 낮춤 (속도도 함께 느려짐)
+        f"atempo={1 / PITCH:.4f},"                      # 속도는 원래대로
+        "equalizer=f=120:t=h:w=100:g=2.5,"              # 저음 두께 — 성우의 울림
+        "equalizer=f=300:t=h:w=200:g=1.5,"              # 중저음 바디감
+        "equalizer=f=1000:t=h:w=600:g=-1.5,"            # 답답한 중음 덜어내기
+        "equalizer=f=4000:t=h:w=1500:g=2,"              # 자음 또렷하게 (딕션)
         "acompressor=threshold=-18dB:ratio=3:attack=8:release=180:makeup=2,"
-        "loudnorm=I=-15:TP=-1.5:LRA=9"                 # 방송 수준 음량·다이내믹
+        "loudnorm=I=-15:TP=-1.5:LRA=9"                  # 방송 수준 음량·다이내믹
     )
     subprocess.run(
         ["ffmpeg", "-y", "-i", src, "-af", af, "-c:a", "libmp3lame", "-q:a", "2", dst],
