@@ -226,6 +226,9 @@ def load_credits(photo_dir):
         # 퍼블릭도메인/CC0는 표기 의무가 없어 생략 (화면을 깨끗하게)
         if re.match(r"^(public domain|pd|cc0|pdm|no restrictions)", lic, re.I):
             continue
+        # 뉴스 기사 보도사진은 카드 하단에 출처 줄을 따로 찍지 않는다
+        if src == "news_article":
+            continue
         parts = [p for p in (creator, src, lic) if p]
         if parts:
             out[c.get("slot", "")] = "사진 " + " / ".join(parts)
