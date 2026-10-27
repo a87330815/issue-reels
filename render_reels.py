@@ -18,6 +18,9 @@ import tempfile
 
 # 양상국 스타일 남성 목소리 (기본)
 DEFAULT_VOICE = "ko-KR-HyunsuMultilingualNeural"
+# edge-tts 기본 발화 속도는 한국어 나레이션으로는 빠르다. 측정해보니
+# 10자/초 가까이 나와 알아듣기 어려웠다. 자연스러운 구간은 6~7자/초다.
+DEFAULT_RATE = "-18%"
 # 장면당 기본 표시 시간 (TTS 없을 때)
 DEFAULT_DURATION = 4.0
 # 커버·아웃트로 최소 표시 시간
@@ -73,7 +76,7 @@ def post_process_voice(src, dst):
     )
 
 
-async def generate_tts(texts, voice, out_dir, style=True):
+async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE):
     """edge-tts로 각 장면 나레이션 mp3 생성. 파일 경로와 길이를 반환."""
     import edge_tts
 
@@ -84,7 +87,7 @@ async def generate_tts(texts, voice, out_dir, style=True):
             continue
         raw_mp3 = os.path.join(out_dir, f"narr_raw_{i:02d}.mp3")
         mp3 = os.path.join(out_dir, f"narr_{i:02d}.mp3")
-        comm = edge_tts.Communicate(text, voice)
+        comm = edge_tts.Communicate(text, voice, rate=rate)
         await comm.save(raw_mp3)
         # 양상국 스타일 후처리
         if style:
@@ -179,6 +182,8 @@ def main():
     ap.add_argument("script", help="대본 JSON")
     ap.add_argument("--cards", help="카드 이미지 디렉터리 (미지정 시 자동 추론)")
     ap.add_argument("--voice", default=DEFAULT_VOICE, help="TTS 음성")
+    ap.add_argument("--rate", default=DEFAULT_RATE,
+                    help="발화 속도 (예: -18%%, +5%%). 느리게 하려면 음수")
     ap.add_argument("--no-tts", action="store_true", help="TTS 없이 무음 영상")
     ap.add_argument("--no-style", action="store_true",
                     help="양상국 스타일 후처리 없이 원본 TTS 사용")
@@ -199,7 +204,7 @@ def main():
     cards = card_images(card_dir)
     print(f"대본: {a.script}")
     print(f"카드: {card_dir} ({len(cards)}장)")
-    print(f"음성: {a.voice}")
+    print(f"음성: {a.voice} (속도 {a.rate})")
 
     # 출력 경로
     out_dir = os.path.join("out", "reels")
@@ -214,7 +219,8 @@ def main():
             texts = narrations(script)
             try:
                 tts_results = asyncio.run(generate_tts(texts, a.voice, tmp,
-                                                       style=not a.no_style))
+                                                       style=not a.no_style,
+                                                       rate=a.rate))
             except Exception as e:
                 # 무음으로 조용히 넘어가면 음성 없는 영상이 완성본처럼 나온다.
                 if a.require_tts:
