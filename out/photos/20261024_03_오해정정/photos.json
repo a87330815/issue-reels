@@ -14,17 +14,17 @@
       "slot": "cover",
       "query": "new vs old apartment building korea",
       "source": "Unsplash",
-      "creator": "WooSang Lee",
+      "creator": "rawkkim",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-RSuP39oXrZA"
+      "page": "https://unsplash.com/photos/high-rise-buildings-during-daytime-8RN751rleDo"
     },
     {
       "slot": "scene1",
       "query": "new vs old apartment building korea",
       "source": "Unsplash",
-      "creator": "rawkkim",
+      "creator": "Ian Bae",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/high-rise-buildings-during-daytime-8RN751rleDo"
+      "page": "https://unsplash.com/photos/a-brick-building-with-a-unique-tiled-facade-9J5RHZNVQyw"
     },
     {
       "slot": "scene2",
@@ -54,9 +54,9 @@
       "slot": "scene5",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Ryoo Geon Uk",
+      "creator": "Trac Vu",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-large-group-of-tall-buildings-in-a-city-cWFyd9ROJC8"
+      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
     },
     {
       "slot": "scene6",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T03:36:14Z"
+  "fetched_at": "2026-10-27T04:15:54Z"
 }

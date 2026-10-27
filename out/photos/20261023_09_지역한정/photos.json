@@ -22,9 +22,9 @@
       "slot": "scene1",
       "query": "Seocho Seoul apartment skyline",
       "source": "Unsplash",
-      "creator": "zero take",
+      "creator": "IRa Kang",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+      "page": "https://unsplash.com/photos/city-skyline-with-tall-buildings-at-dusk-PMbC_2dUExA"
     },
     {
       "slot": "scene2",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T03:35:56Z"
+  "fetched_at": "2026-10-27T04:15:36Z"
 }

@@ -1,14 +1,14 @@
-run: 40444877049  2026-10-27T03:34:49Z
+run: 40448603084  2026-10-27T04:14:47Z
 unsplash key: 있음
 
 
 === 20261023_01_숫자훅 ===
   [cover] '120억 아파트' → "Banpo Seoul luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul"
@@ -16,11 +16,11 @@ unsplash key: 있음
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '반포동 120.0억 거래' → "Banpo Seoul luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul"
@@ -63,7 +63,7 @@ unsplash key: 있음
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene5 ← Unsplash (Unsplash License)
   [scene6] '명지동 이번 달 거래를 종합하면, 평균' → "Myeongji Busan residential area aerial"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Myeongji+Busan+residential+area+aerial&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Myeongji Busan residential area"
@@ -102,34 +102,26 @@ unsplash key: 있음
     Unsplash 1건 (적합도 필터 생략)
     ✓ scene1 ← wikimedia (BY)
   [scene2] '20261009 47 246 3300' → "Korea city apartment building"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+apartment+building&per_page=12&orientation=portrait&content_filter=high
-    [openverse] 10건 후보 (부적합 2건 제외)
-    [wikimedia] 8건 후보
-    적합도 통과 2/18건 (Openverse/Wikimedia)
-    ✓ scene2 ← flickr (BY)
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene2 ← Unsplash (Unsplash License)
   [scene3] '20261009 156 246 3180' → "Korea city apartment building"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+apartment+building&per_page=12&orientation=portrait&content_filter=high
-    [openverse] 10건 후보 (부적합 2건 제외)
-    [wikimedia] 8건 후보
-    적합도 통과 2/18건 (Openverse/Wikimedia)
-    ✓ scene3 ← Wikimedia Commons (CC BY 3.0)
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene3 ← Unsplash (Unsplash License)
   [scene4] '20261009 1948 246 6500' → "Korea city apartment building"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+apartment+building&per_page=12&orientation=portrait&content_filter=high
-    [openverse] 10건 후보 (부적합 2건 제외)
-    [wikimedia] 8건 후보
-    적합도 통과 2/18건 (Openverse/Wikimedia)
-    ✗ scene4: 다운로드 전부 실패
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene4 ← Unsplash (Unsplash License)
   [scene5] '20261009 1787 246 3980' → "Korea city apartment building"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+apartment+building&per_page=12&orientation=portrait&content_filter=high
-    [openverse] 10건 후보 (부적합 2건 제외)
-    [wikimedia] 8건 후보
-    적합도 통과 2/18건 (Openverse/Wikimedia)
-    ✗ scene5: 다운로드 전부 실패
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene5 ← Unsplash (Unsplash License)
   [scene6] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene6 ← Unsplash (Unsplash License)
-  → 5/7장 저장, 매니페스트: out/photos/20261023_03_물가/photos.json
+  → 7/7장 저장, 매니페스트: out/photos/20261023_03_물가/photos.json
 
 === 20261023_04_체크리스트 ===
   [cover] '이번 주 장바구니 물가' → "checklist document pen desk"
@@ -141,42 +133,34 @@ unsplash key: 있음
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '20261009 47 246 3300' → "Korea city apartment building"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+apartment+building&per_page=12&orientation=portrait&content_filter=high
-    [openverse] 10건 후보 (부적합 2건 제외)
-    [wikimedia] 8건 후보
-    적합도 통과 2/18건 (Openverse/Wikimedia)
-    ✓ scene2 ← flickr (BY)
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene2 ← Unsplash (Unsplash License)
   [scene3] '20261009 156 246 3180' → "Korea city apartment building"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+apartment+building&per_page=12&orientation=portrait&content_filter=high
-    [openverse] 10건 후보 (부적합 2건 제외)
-    [wikimedia] 8건 후보
-    적합도 통과 2/18건 (Openverse/Wikimedia)
-    ✓ scene3 ← Wikimedia Commons (CC BY 3.0)
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene3 ← Unsplash (Unsplash License)
   [scene4] '20261009 1948 246 6500' → "Korea city apartment building"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+apartment+building&per_page=12&orientation=portrait&content_filter=high
-    [openverse] 10건 후보 (부적합 2건 제외)
-    [wikimedia] 8건 후보
-    적합도 통과 2/18건 (Openverse/Wikimedia)
-    ✗ scene4: 다운로드 전부 실패
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene4 ← Unsplash (Unsplash License)
   [scene5] '20261009 1787 246 3980' → "Korea city apartment building"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+apartment+building&per_page=12&orientation=portrait&content_filter=high
-    [openverse] 10건 후보 (부적합 2건 제외)
-    [wikimedia] 8건 후보
-    적합도 통과 2/18건 (Openverse/Wikimedia)
-    ✗ scene5: 다운로드 전부 실패
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene5 ← Unsplash (Unsplash License)
   [scene6] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene6 ← Unsplash (Unsplash License)
-  → 5/7장 저장, 매니페스트: out/photos/20261023_04_체크리스트/photos.json
+  → 7/7장 저장, 매니페스트: out/photos/20261023_04_체크리스트/photos.json
 
 === 20261023_05_숫자훅 ===
   [cover] '72억 차이' → "Banpo Seoul luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul"
@@ -184,11 +168,11 @@ unsplash key: 있음
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '압구정동 vs 명석면 우수리' → "Banpo Seoul luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul"
@@ -223,7 +207,7 @@ unsplash key: 있음
 
 === 20261023_06_숫자훅 ===
   [cover] '롤' → "Korea city luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
@@ -232,7 +216,7 @@ unsplash key: 있음
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''롤' 관련 트렌드 — [오!쎈 인터뷰]' → "Korea city luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
@@ -377,11 +361,11 @@ unsplash key: 있음
 
 === 20261023_09_숫자훅 ===
   [cover] '평당 3.0억' → "Banpo Seoul luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul"
@@ -389,11 +373,11 @@ unsplash key: 있음
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '반포동 평당 3.0억' → "Banpo Seoul luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Banpo+Seoul+luxury&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul"
@@ -1580,9 +1564,9 @@ unsplash key: 있음
     [wikimedia] 0건 후보
     ↻ 재시도: "Apgujeong Seoul"
     [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 12건 후보
     [wikimedia] 1건 후보
-    적합도 통과 0/1건 (Openverse/Wikimedia)
+    적합도 통과 1/13건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '압구정동 평당 1.7억' → "Apgujeong Seoul luxury apartment"
@@ -1940,7 +1924,7 @@ unsplash key: 있음
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Apgujeong Seoul luxury"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Apgujeong+Seoul+luxury&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 1건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Apgujeong Seoul"
@@ -1948,14 +1932,14 @@ unsplash key: 있음
     [openverse] 12건 후보
     [wikimedia] 1건 후보
     적합도 통과 1/13건 (Openverse/Wikimedia)
-    Unsplash 11건 (적합도 필터 생략)
+    Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '압구정동 평당 1.7억' → "Apgujeong Seoul luxury apartment"
     [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Apgujeong Seoul luxury"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Apgujeong+Seoul+luxury&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 1건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Apgujeong Seoul"
@@ -1963,7 +1947,7 @@ unsplash key: 있음
     [openverse] 12건 후보
     [wikimedia] 1건 후보
     적합도 통과 1/13건 (Openverse/Wikimedia)
-    Unsplash 11건 (적합도 필터 생략)
+    Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '압구정동 신현대9차 55.9억원' → "Apgujeong Seoul luxury high rise apartment"
     [unsplash] 12건 후보
@@ -1993,7 +1977,7 @@ unsplash key: 있음
 
 === 20261027_09_숫자훅 ===
   [cover] '로켓' → "Korea city luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
@@ -2002,7 +1986,7 @@ unsplash key: 있음
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''로켓' 관련 트렌드 — 전투기로' → "Korea city luxury apartment"
-    [unsplash] 실패: 403 Client Error: Forbidden for url: https://api.unsplash.com/search/photos?query=Korea+city+luxury+apartment&per_page=12&orientation=portrait&content_filter=high
+    [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
@@ -2093,7 +2077,7 @@ unsplash key: 있음
     ✓ scene4 ← Unsplash (Unsplash License)
   → 5/5장 저장, 매니페스트: out/photos/test_trend_01/photos.json
 
-총 344/348장 수집
+총 348/348장 수집
 --- 수집된 파일 ---
 out/photos/20261023_01_숫자훅/cover.jpg
 out/photos/20261023_01_숫자훅/scene1.jpg
