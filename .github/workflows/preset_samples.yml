@@ -1,0 +1,70 @@
+name: 음성 프리셋 샘플
+
+# 프리셋별 음성을 후처리까지 걸어 뽑는다. 들어보고 쓸 것만 남기면 된다.
+# 결과는 tts-samples 브랜치의 presets/ 아래에 올린다.
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: 읽힐 문장
+        default: "트와이스 나연이 2년 5개월 만에 솔로로 나온다카더라. 첫 앨범이 빌보드 200에서 7위까지 올라갔데이. 참말로 대단한기라."
+      only:
+        description: "뽑을 프리셋 (쉼표 구분, 비우면 전체)"
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: |
+          pip install -q edge-tts
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends ffmpeg
+          ffmpeg -hide_banner -version | head -1
+
+      - name: 샘플 생성
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          ARGS=""
+          [ -n "$ONLY" ] && ARGS="--only $ONLY"
+          python -u preset_samples.py --text "${{ inputs.text }}" \
+            --out samples/presets $ARGS
+          ls -la samples/presets/
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preset-samples
+          path: samples/presets/*
+
+      # 작업환경에서 아티팩트를 받을 수 없어 브랜치로 올린다.
+      # tts-sample 워크플로우와 같은 브랜치를 쓰되 서로 덮지 않게 폴더를 나눈다.
+      - name: tts-samples 브랜치에 올리기
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 기존 샘플을 지우지 않도록 브랜치가 있으면 받아서 그 위에 얹는다.
+          if git ls-remote --exit-code --heads origin tts-samples >/dev/null 2>&1; then
+            git fetch -q origin tts-samples
+            cp -r samples /tmp/new-samples
+            git checkout -q -B tts-samples origin/tts-samples
+            cp -r /tmp/new-samples/presets samples/
+          else
+            git checkout -q --orphan tts-samples
+            git rm -rf --cached . >/dev/null 2>&1 || true
+            find . -maxdepth 1 -mindepth 1 ! -name samples ! -name .git -exec rm -rf {} +
+          fi
+          git add -f samples/presets/
+          git commit -qm "프리셋 샘플 $(date -u +%Y-%m-%dT%H:%MZ)" || {
+            echo "변경 없음"; exit 0; }
+          git push -f origin tts-samples

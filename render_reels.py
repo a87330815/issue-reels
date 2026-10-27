@@ -83,8 +83,64 @@ VOICE_PROFILES = {
 # 음성 이름으로 프로필을 고른다. edge-tts 한국어는 셋뿐이다.
 FEMALE_VOICES = {"ko-KR-SunHiNeural"}
 
+# ── 프리셋 ───────────────────────────────────────────────────────────
+# 음성 3개뿐이라도 피치·속도·EQ 조합을 바꾸면 성격이 달라진다.
+# 이름을 붙여두면 매번 코드를 고치지 않고 골라 쓸 수 있다.
+#
+# 한계를 분명히 해둔다. edge-tts는 감정 연기를 하지 않는 평탄한 낭독이다.
+# 다큐·앵커처럼 차분한 톤은 잘 나오지만, 만화 캐릭터처럼 연기가 필요한
+# 목소리는 피치를 올려도 "빨라진 낭독"이 될 뿐 캐릭터가 되지 않는다.
+# 그쪽이 필요하면 감정 표현을 지원하는 유료 엔진을 써야 한다.
+PRESETS = {
+    "이슈남": {   # 현재 기본값. 또렷하고 빠른 이슈 전달
+        "voice": "ko-KR-HyunsuMultilingualNeural", "pitch": 0.88, "rate": "+20%",
+        "eq": ("equalizer=f=120:t=h:w=100:g=2.5,equalizer=f=300:t=h:w=200:g=1.5,"
+               "equalizer=f=1000:t=h:w=600:g=-1.5,equalizer=f=4000:t=h:w=1500:g=2,"),
+        "desc": "또렷하고 빠른 남성 — 이슈 전달용 (기본)",
+    },
+    "다큐": {     # TV 다큐멘터리 내레이션. 낮고 느리게
+        "voice": "ko-KR-HyunsuMultilingualNeural", "pitch": 0.80, "rate": "-5%",
+        "eq": ("equalizer=f=100:t=h:w=90:g=4,equalizer=f=250:t=h:w=200:g=2,"
+               "equalizer=f=1200:t=h:w=800:g=-2,equalizer=f=3500:t=h:w=1200:g=1.5,"),
+        "desc": "낮고 묵직한 다큐 내레이션 — TV 자연다큐 톤",
+    },
+    "앵커": {     # 뉴스 앵커. 중간 음높이에 딕션 강조
+        "voice": "ko-KR-InJoonNeural", "pitch": 0.90, "rate": "+10%",
+        "eq": ("equalizer=f=150:t=h:w=120:g=1.5,equalizer=f=1000:t=h:w=600:g=-1,"
+               "equalizer=f=4500:t=h:w=1500:g=3,"),
+        "desc": "뉴스 앵커 — 또박또박한 전달",
+    },
+    "예고편": {   # 영화 예고편. 아주 낮고 울림 크게
+        "voice": "ko-KR-HyunsuMultilingualNeural", "pitch": 0.72, "rate": "-10%",
+        "eq": ("equalizer=f=85:t=h:w=80:g=5,equalizer=f=200:t=h:w=180:g=3,"
+               "equalizer=f=1500:t=h:w=1000:g=-3,equalizer=f=3000:t=h:w=1000:g=1,"),
+        "desc": "영화 예고편 — 아주 낮고 극적인 울림",
+    },
+    "차분녀": {   # 차분한 여성 내레이션
+        "voice": "ko-KR-SunHiNeural", "pitch": 0.97, "rate": "+15%",
+        "eq": ("equalizer=f=250:t=h:w=150:g=2,equalizer=f=800:t=h:w=500:g=-1,"
+               "equalizer=f=3500:t=h:w=1200:g=1.5,equalizer=f=7000:t=h:w=2000:g=1,"),
+        "desc": "차분한 여성 성우 — 정보 전달용",
+    },
+    "발랄녀": {   # 밝고 빠른 리포터
+        "voice": "ko-KR-SunHiNeural", "pitch": 1.06, "rate": "+25%",
+        "eq": ("equalizer=f=400:t=h:w=300:g=1,equalizer=f=3000:t=h:w=1500:g=2,"
+               "equalizer=f=8000:t=h:w=2500:g=2,"),
+        "desc": "밝고 빠른 여성 리포터 — 가벼운 이슈용",
+    },
+    "캐릭터": {   # 만화풍. 한계가 뚜렷하니 샘플로 판단할 것
+        "voice": "ko-KR-SunHiNeural", "pitch": 1.18, "rate": "+30%",
+        "eq": ("equalizer=f=500:t=h:w=400:g=2,equalizer=f=2500:t=h:w=1500:g=3,"
+               "equalizer=f=9000:t=h:w=3000:g=2,"),
+        "desc": "만화풍 높은 톤 — 연기가 아니라 음높이만 올린 것이라 한계가 있음",
+    },
+}
 
-def voice_profile(voice):
+
+def voice_profile(voice, preset=None):
+    """프리셋이 있으면 그 설정을, 없으면 음성 성별에 맞는 기본값을 쓴다."""
+    if preset and preset in PRESETS:
+        return PRESETS[preset]
     return VOICE_PROFILES["female" if voice in FEMALE_VOICES else "male"]
 
 
@@ -101,14 +157,14 @@ def audio_rate(path):
         return 24000          # edge-tts 기본값
 
 
-def post_process_voice(src, dst, voice=DEFAULT_VOICE):
+def post_process_voice(src, dst, voice=DEFAULT_VOICE, preset=None):
     """성우 톤 후처리.
 
     성우 목소리는 세 가지가 다르다. 첫째 음높이가 제자리에 있고, 둘째
     소리 크기가 일정하며(컴프레서), 셋째 울림에 두께가 있고 말소리는
     또렷하다. 피치만 만지면 억지로 눌러 놓은 소리가 나므로 함께 잡는다.
     """
-    prof = voice_profile(voice)
+    prof = voice_profile(voice, preset)
     pitch = prof["pitch"]
     # asetrate는 "이 파일을 이 샘플레이트로 읽으라"는 뜻이라, 원본 레이트를
     # 그대로 넣어야 의도한 배수만큼만 바뀐다. 앞서 24kHz 파일에 44100을
@@ -127,7 +183,8 @@ def post_process_voice(src, dst, voice=DEFAULT_VOICE):
     )
 
 
-async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE):
+async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
+                       preset=None):
     """edge-tts로 각 장면 나레이션 mp3 생성. 파일 경로와 길이를 반환."""
     import edge_tts
 
@@ -143,7 +200,7 @@ async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE):
         # 양상국 스타일 후처리
         if style:
             try:
-                post_process_voice(raw_mp3, mp3, voice)
+                post_process_voice(raw_mp3, mp3, voice, preset)
                 print(f"  후처리 적용 [{i+1}/{len(texts)}]")
             except Exception as e:
                 print(f"  후처리 실패, 원본 사용: {e}")
@@ -230,11 +287,16 @@ def build_video(card_files, tts_results, output_path, tmp_dir):
 
 def main():
     ap = argparse.ArgumentParser(description="카드뉴스 → 릴스 영상 합성")
-    ap.add_argument("script", help="대본 JSON")
+    ap.add_argument("script", nargs="?", help="대본 JSON")
     ap.add_argument("--cards", help="카드 이미지 디렉터리 (미지정 시 자동 추론)")
-    ap.add_argument("--voice", default=DEFAULT_VOICE, help="TTS 음성")
-    ap.add_argument("--rate", default=DEFAULT_RATE,
-                    help="발화 속도 (예: -18%%, +5%%). 느리게 하려면 음수")
+    ap.add_argument("--voice", default=None, help="TTS 음성 (프리셋보다 우선)")
+    ap.add_argument("--rate", default=None,
+                    help="발화 속도 (예: -10%%, +20%%). 프리셋보다 우선")
+    ap.add_argument("--preset", choices=sorted(PRESETS), default=None,
+                    help="음성 프리셋: " + " / ".join(
+                        f"{k}={v['desc']}" for k, v in PRESETS.items()))
+    ap.add_argument("--list-presets", action="store_true",
+                    help="프리셋 목록만 출력하고 끝낸다")
     ap.add_argument("--no-tts", action="store_true", help="TTS 없이 무음 영상")
     ap.add_argument("--no-style", action="store_true",
                     help="양상국 스타일 후처리 없이 원본 TTS 사용")
@@ -242,6 +304,17 @@ def main():
                     help="TTS가 실패하면 무음으로 넘어가지 않고 중단한다")
     ap.add_argument("-o", "--out", help="출력 mp4 경로")
     a = ap.parse_args()
+
+    if a.list_presets:
+        for k, v in PRESETS.items():
+            print(f"  {k:6s} {v['voice']:34s} 피치 {v['pitch']:.2f}  "
+                  f"속도 {v['rate']:>5s}  {v['desc']}")
+        return
+
+    # 프리셋이 음성·속도를 정하고, 따로 준 값이 있으면 그쪽을 쓴다.
+    prof = PRESETS.get(a.preset, {})
+    a.voice = a.voice or prof.get("voice", DEFAULT_VOICE)
+    a.rate = a.rate or prof.get("rate", DEFAULT_RATE)
 
     script = load_script(a.script)
     stem = os.path.splitext(os.path.basename(a.script))[0]
@@ -255,7 +328,7 @@ def main():
     cards = card_images(card_dir)
     print(f"대본: {a.script}")
     print(f"카드: {card_dir} ({len(cards)}장)")
-    print(f"음성: {a.voice} (속도 {a.rate})")
+    print(f"음성: {a.voice} (속도 {a.rate}{', 프리셋 ' + a.preset if a.preset else ''})")
 
     # 출력 경로
     out_dir = os.path.join("out", "reels")
@@ -271,7 +344,8 @@ def main():
             try:
                 tts_results = asyncio.run(generate_tts(texts, a.voice, tmp,
                                                        style=not a.no_style,
-                                                       rate=a.rate))
+                                                       rate=a.rate,
+                                                       preset=a.preset))
             except Exception as e:
                 # 무음으로 조용히 넘어가면 음성 없는 영상이 완성본처럼 나온다.
                 if a.require_tts:
