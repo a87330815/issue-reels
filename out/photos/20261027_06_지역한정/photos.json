@@ -28,11 +28,11 @@
     },
     {
       "slot": "scene2",
-      "query": "Korea city luxury high rise apartment",
+      "query": "Korea city modern apartment residential",
       "source": "Unsplash",
-      "creator": "Trac Vu",
+      "creator": "Looie Kang",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
+      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
     },
     {
       "slot": "scene3",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T13:50:44Z"
+  "fetched_at": "2026-10-27T19:41:25Z"
 }

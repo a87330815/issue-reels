@@ -1,0 +1,80 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
+    "scene7": "scene7.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "new vs old apartment building korea",
+      "source": "Unsplash",
+      "creator": "WooSang Lee",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-RSuP39oXrZA"
+    },
+    {
+      "slot": "scene1",
+      "query": "new vs old apartment building korea",
+      "source": "Unsplash",
+      "creator": "rawkkim",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/high-rise-buildings-during-daytime-8RN751rleDo"
+    },
+    {
+      "slot": "scene2",
+      "query": "Banpo Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Ethan Brooke",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+    },
+    {
+      "slot": "scene3",
+      "query": "Banpo Seoul luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Minku Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
+    },
+    {
+      "slot": "scene4",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Trac Vu",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Jéan Béller",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
+    },
+    {
+      "slot": "scene6",
+      "query": "construction crane building site korea",
+      "source": "Unsplash",
+      "creator": "JAEMAN JUNG",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/construction-workers-are-on-a-building-site-with-a-crane-PYBm7NBl6mA"
+    },
+    {
+      "slot": "scene7",
+      "query": "follow subscribe social media phone",
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+    }
+  ],
+  "wanted": 8,
+  "fetched_at": "2026-10-27T19:41:09Z"
+}
