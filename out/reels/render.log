@@ -1,4 +1,4 @@
-run 40049986922 2026-10-24T01:39:43Z
+run 40438333413 2026-10-27T02:26:28Z
 
 === test_trend_01 ===
   [cover] '손주 봐주면 월 30만원 준다카이' → "Korean grandmother playing with grandchild toddler"
@@ -29,39 +29,31 @@ run 40049986922 2026-10-24T01:39:43Z
 
 총 5/5장 수집
   사진 5장 적용: cover, scene1, scene2, scene3, scene4
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 891, in truetype
-    return freetype(font)
-           ^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 888, in freetype
-    return FreeTypeFont(font, size, index, encoding, layout_engine)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 302, in __init__
-    self.font = core.getfont(
-                ^^^^^^^^^^^^^
-OSError: invalid argument
+카드뉴스 6장 생성 → out/cards_test_trend_01
+대본: out/scripts/test_trend_01.json
+카드: out/cards_test_trend_01 (6장)
+음성: ko-KR-HyunsuMultilingualNeural
 
-During handling of the above exception, another exception occurred:
+1) TTS 생성
+  후처리 적용 [1/5]
+  TTS [1/5] 1.8초  손주 봐주면 월 30만원 준다카이...
+  후처리 적용 [2/5]
+  TTS [2/5] 5.9초  이거 모르고 지나가면 손해다. 서울시가 24~36개월 ...
+  후처리 적용 [3/5]
+  TTS [3/5] 7.9초  1명 봐주면 30만원, 2명이면 45만원, 3명이면 6...
+  후처리 적용 [4/5]
+  TTS [4/5] 6.3초  신청은 매월 1~15일 서울시 탄생육아 몽땅정보통에서 ...
+  후처리 적용 [5/5]
+  TTS [5/5] 3.3초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈...
 
-Traceback (most recent call last):
-  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 715, in <module>
-    generate(a.script, a.out, a.photos)
-  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 689, in generate
-    make_cover(sc, t, photos.get("cover"), credits.get("cover")).save(p, quality=95)
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 440, in make_cover
-    bf = font(FONT_BLACK, 38)
-         ^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 58, in font
-    return ImageFont.truetype(path, size, index=1)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 934, in truetype
-    return freetype(os.path.join(walkroot, walkfilename))
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 888, in freetype
-    return FreeTypeFont(font, size, index, encoding, layout_engine)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 302, in __init__
-    self.font = core.getfont(
-                ^^^^^^^^^^^^^
-OSError: invalid argument
+2) 영상 합성
+  세그먼트 [1/6] 3.0초
+  세그먼트 [2/6] 6.7초
+  세그먼트 [3/6] 8.7초
+  세그먼트 [4/6] 7.1초
+  세그먼트 [5/6] 4.1초
+  세그먼트 [6/6] 4.0초
+
+  ✓ 릴스 완성: out/reels/test_trend_01.mp4
+    길이: 29.1초  /  크기: 2.0MB
+-rw-r--r-- 1 runner runner 2.0M Oct 27 02:27 out/reels/test_trend_01.mp4
