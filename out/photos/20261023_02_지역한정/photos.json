@@ -2,9 +2,7 @@
   "photos": {
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
-    "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg",
     "scene5": "scene5.jpg",
     "scene6": "scene6.jpg",
     "scene7": "scene7.jpg"
@@ -22,17 +20,9 @@
       "slot": "scene1",
       "query": "Myeongji Busan apartment skyline",
       "source": "Unsplash",
-      "creator": "Jake Mullins",
+      "creator": "Rina Kemppainen",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-body-of-water-at-sunset-Tw7Mp9OSUn4"
-    },
-    {
-      "slot": "scene2",
-      "query": "Myeongji Busan modern apartment residential",
-      "source": "Unsplash",
-      "creator": "Trac Vu",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/tall-modern-hotel-building-with-signs-DEXCktT5M6A"
+      "page": "https://unsplash.com/photos/a-sprawling-cityscape-with-distant-mountains-under-blue-sky-iPZnynCgm6g"
     },
     {
       "slot": "scene3",
@@ -43,20 +33,12 @@
       "page": "https://unsplash.com/photos/tall-modern-hotel-building-with-signs-DEXCktT5M6A"
     },
     {
-      "slot": "scene4",
+      "slot": "scene5",
       "query": "Myeongji Busan modern apartment residential",
       "source": "Unsplash",
       "creator": "Jake Mullins",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/a-view-of-a-body-of-water-at-sunset-Tw7Mp9OSUn4"
-    },
-    {
-      "slot": "scene5",
-      "query": "Myeongji Busan modern apartment residential",
-      "source": "Unsplash",
-      "creator": "Sam Balye",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-photo-of-high-rise-buildings-jWq6PCSWDnY"
     },
     {
       "slot": "scene6",
@@ -76,5 +58,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:00:21Z"
+  "fetched_at": "2026-10-27T02:48:09Z"
 }

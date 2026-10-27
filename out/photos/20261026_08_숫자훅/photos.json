@@ -1,7 +1,6 @@
 {
   "photos": {
     "cover": "cover.jpg",
-    "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
     "scene3": "scene3.jpg",
     "scene4": "scene4.jpg",
@@ -13,18 +12,10 @@
     {
       "slot": "cover",
       "query": "Apgujeong Seoul luxury apartment",
-      "source": "Unsplash",
-      "creator": "Andrea De Santis",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/black-and-white-concrete-building-OKjI-M5r3KM"
-    },
-    {
-      "slot": "scene1",
-      "query": "Apgujeong Seoul luxury apartment",
-      "source": "Unsplash",
-      "creator": "Stéphan Valentin",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/neon-street-in-seoul-at-night-wepDTOWs4d0"
+      "source": "flickr",
+      "creator": "IchStyle",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/66172503@N00/17044710447"
     },
     {
       "slot": "scene2",
@@ -37,26 +28,26 @@
     {
       "slot": "scene3",
       "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Trac Vu",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/9081533712"
     },
     {
       "slot": "scene4",
       "query": "Banpo Seoul luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Ethan Brooke",
+      "creator": "Ann Danilina",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
     },
     {
       "slot": "scene5",
       "query": "Banpo Seoul luxury high rise apartment",
       "source": "Unsplash",
-      "creator": "Minku Kang",
+      "creator": "Ethan Brooke",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
     },
     {
       "slot": "scene6",
@@ -69,12 +60,12 @@
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "Unsplash",
-      "creator": "Berke Citak",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:03:36Z"
+  "fetched_at": "2026-10-27T02:51:55Z"
 }

@@ -1,0 +1,35 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "breaking news headline",
+      "source": "Wikimedia Commons",
+      "creator": "The HindenTimes",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:HindenTimes_Global_Headlines,_Insightful_Analysis,_and_Breaking_Stories.png"
+    },
+    {
+      "slot": "scene3",
+      "query": "news media press conference",
+      "source": "Wikimedia Commons",
+      "creator": "Cherie Cullen",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_100809-D-7203C-016_-_Secretary_of_Defense_Robert_M._Gates_conducts_a_press_conference_in_the_Pentagon_on_Aug._9,_2010.jpg"
+    },
+    {
+      "slot": "scene4",
+      "query": "follow subscribe social media phone",
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
+    }
+  ],
+  "wanted": 5,
+  "fetched_at": "2026-10-27T02:52:47Z"
+}

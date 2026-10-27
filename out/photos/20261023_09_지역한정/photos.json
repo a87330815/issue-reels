@@ -29,26 +29,26 @@
     {
       "slot": "scene2",
       "query": "Seocho Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Ethan Brooke",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+      "source": "wikimedia",
+      "creator": "장길산",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=31280913"
     },
     {
       "slot": "scene3",
       "query": "Seocho Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Minku Kang",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
+      "source": "wikimedia",
+      "creator": "Hyeonjunchoe909",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=163908142"
     },
     {
       "slot": "scene4",
       "query": "Seocho Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Minku Kang",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-very-tall-building-towering-over-a-city-Q3-ty1LCtvk"
+      "source": "wikimedia",
+      "creator": "Neoalpha",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=49636336"
     },
     {
       "slot": "scene5",
@@ -56,25 +56,25 @@
       "source": "Unsplash",
       "creator": "Ethan Brooke",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-bridge-over-a-body-of-water-with-a-city-in-the-background-QhQuFHZ9ApE"
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
     },
     {
       "slot": "scene6",
       "query": "Seocho Seoul residential area aerial",
-      "source": "Unsplash",
-      "creator": "Vincent Yap",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-along-narrow-street-LmnJuerofaQ"
+      "source": "Wikimedia Commons",
+      "creator": "장길산",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Seocho-Seoul-jp.png"
     },
     {
       "slot": "scene7",
       "query": "follow subscribe social media phone",
-      "source": "Unsplash",
-      "creator": "Berke Citak",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:01:22Z"
+  "fetched_at": "2026-10-27T02:49:15Z"
 }

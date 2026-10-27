@@ -1,0 +1,26 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene4": "scene4.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "K-pop stage concert performance",
+      "source": "Wikimedia Commons",
+      "creator": "FeklaIvanova16",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Close_Your_Eyes_Kpop_duo_stage_performance_concert_2026_3.jpg"
+    },
+    {
+      "slot": "scene4",
+      "query": "follow subscribe social media phone",
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+    }
+  ],
+  "wanted": 5,
+  "fetched_at": "2026-10-27T02:52:58Z"
+}

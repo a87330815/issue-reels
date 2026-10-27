@@ -13,26 +13,26 @@
     {
       "slot": "cover",
       "query": "Banpo Seoul luxury apartment",
+      "source": "flickr",
+      "creator": "Terrazzo",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/8249050@N02/44721043821"
+    },
+    {
+      "slot": "scene1",
+      "query": "Banpo Seoul luxury apartment",
       "source": "Unsplash",
       "creator": "Ann Danilina",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
     },
     {
-      "slot": "scene1",
-      "query": "Banpo Seoul luxury apartment",
+      "slot": "scene2",
+      "query": "Banpo Seoul luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Ming Han Low",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-5YHqhCBiCz4"
-    },
-    {
-      "slot": "scene2",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Ethan Brooke",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
     },
     {
       "slot": "scene3",
@@ -45,26 +45,26 @@
     {
       "slot": "scene4",
       "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Trac Vu",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/9081533712"
     },
     {
       "slot": "scene5",
       "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Jéan Béller",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/9079319923"
     },
     {
       "slot": "scene6",
       "query": "real estate market price chart",
-      "source": "Unsplash",
-      "creator": "Arturo Añez",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/stock-market-graph-shows-fluctuating-trends-9rz5x8LGBb8"
+      "source": "flickr",
+      "creator": "scherknoah",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/151673005@N07/31801870474"
     },
     {
       "slot": "scene7",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:03:49Z"
+  "fetched_at": "2026-10-27T02:52:14Z"
 }

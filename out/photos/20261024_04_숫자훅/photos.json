@@ -22,12 +22,28 @@
       "slot": "scene1",
       "query": "Korea city luxury apartment",
       "source": "Unsplash",
-      "creator": "Ann Danilina",
+      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
     },
     {
       "slot": "scene2",
+      "query": "Korea city luxury high rise apartment",
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/9081533712"
+    },
+    {
+      "slot": "scene3",
+      "query": "Korea city luxury high rise apartment",
+      "source": "flickr",
+      "creator": "USAG-Humphreys",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/31687107@N07/9079319923"
+    },
+    {
+      "slot": "scene4",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Trac Vu",
@@ -35,28 +51,12 @@
       "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
     },
     {
-      "slot": "scene3",
+      "slot": "scene5",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Jéan Béller",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
-    },
-    {
-      "slot": "scene4",
-      "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Yujin Seo",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-city-skyline-with-a-bridge-over-a-river-Haq3tXiVjEQ"
-    },
-    {
-      "slot": "scene5",
-      "query": "Korea city luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Ryoo Geon Uk",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-large-group-of-tall-buildings-in-a-city-cWFyd9ROJC8"
     },
     {
       "slot": "scene6",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:01:42Z"
+  "fetched_at": "2026-10-27T02:49:54Z"
 }

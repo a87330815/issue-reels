@@ -17,19 +17,19 @@
       "slot": "scene1",
       "query": "Korea city luxury apartment",
       "source": "Unsplash",
-      "creator": "Ann Danilina",
+      "creator": "Jean Carlo Emer",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+      "page": "https://unsplash.com/photos/traditional-korean-houses-with-a-tower-in-the-distance-Ds0_4JCFGfQ"
     },
     {
       "slot": "scene2",
       "query": "follow subscribe social media phone",
-      "source": "Unsplash",
-      "creator": "Berke Citak",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+      "source": "flickr",
+      "creator": "kentbye",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/45366949@N00/1215052987"
     }
   ],
   "wanted": 3,
-  "fetched_at": "2026-10-27T02:04:11Z"
+  "fetched_at": "2026-10-27T02:52:40Z"
 }

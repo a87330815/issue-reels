@@ -22,9 +22,9 @@
       "slot": "scene1",
       "query": "Korea city luxury apartment",
       "source": "Unsplash",
-      "creator": "Ann Danilina",
+      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
     },
     {
       "slot": "scene2",
@@ -61,10 +61,10 @@
     {
       "slot": "scene6",
       "query": "real estate market price chart",
-      "source": "Unsplash",
-      "creator": "Arturo Añez",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/stock-market-graph-shows-fluctuating-trends-9rz5x8LGBb8"
+      "source": "flickr",
+      "creator": "scherknoah",
+      "license": "BY",
+      "page": "https://www.flickr.com/photos/151673005@N07/31801870474"
     },
     {
       "slot": "scene7",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-27T02:01:59Z"
+  "fetched_at": "2026-10-27T02:50:13Z"
 }
