@@ -52,14 +52,20 @@ def narrations(script):
     return texts
 
 
+# 피치 올림 배수 (+1반음 = 2^(1/12) ≈ 1.059)
+PITCH = 1.059
+
+
 def post_process_voice(src, dst):
-    """TTS 출력에 양상국 스타일 후처리: 피치 +2반음, 속도 1.05배, 중고음 강조."""
-    # asetrate로 피치 올리고 atempo로 속도 보정, equalizer로 톤 조정
+    """TTS 출력에 양상국 스타일 후처리: 피치만 올리고 속도는 그대로 둔다."""
+    # asetrate는 피치와 속도를 함께 올린다. atempo로 속도를 되돌리지 않으면
+    # 말이 빨라져 부자연스러워진다. 앞서 이 보정이 빠져 있었다.
     af = (
-        "asetrate=44100*1.059,aresample=44100,"   # +1반음 (2^(1/12)≈1.059) 자연스럽게
-        "equalizer=f=2800:t=h:w=1200:g=2,"        # 중고음 살짝 강조
-        "equalizer=f=180:t=h:w=80:g=-1,"           # 저음 미세 조정
-        "loudnorm=I=-16:TP=-1.5:LRA=11"            # 음량 정규화
+        f"asetrate=44100*{PITCH},aresample=44100,"   # 피치 +1반음 (속도도 함께 빨라짐)
+        f"atempo={1 / PITCH:.4f},"                    # 빨라진 속도를 원래대로 되돌림
+        "equalizer=f=2800:t=h:w=1200:g=1.5,"          # 중고음 살짝 강조
+        "equalizer=f=180:t=h:w=80:g=-1,"              # 저음 미세 조정
+        "loudnorm=I=-16:TP=-1.5:LRA=11"               # 음량 정규화
     )
     subprocess.run(
         ["ffmpeg", "-y", "-i", src, "-af", af, "-c:a", "libmp3lame", "-q:a", "2", dst],
