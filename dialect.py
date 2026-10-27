@@ -105,7 +105,11 @@ DIALECT_SYSTEM = """너는 부산·경남 토박이다. 주어진 표준어 문�
    명사형 종결은 표준어 신문 문체다. 말하듯이 풀어 써라.
 6. 고유명사(사람 이름, 그룹명, 숫자, 날짜)는 절대 바꾸지 마라.
 7. <r>, </r>, <y>, </y> 같은 태그는 위치 그대로 유지해라.
-8. 반드시 부산·경남 사투리로만 써라. 경북(대구·안동) 형태를 섞지 마라.
+8. 보조어미는 앞말에 붙여 써라. 띄우면 서울 사람이 또박또박 읽는
+   소리가 나고, 음성으로 읽을 때 그 자리에서 끊긴다.
+   O: 없었다카이 / 대단한기라 / 있다아이가 / 나온다카더라
+   X: 없었다 카이 / 대단한 기라 / 있다 아이가 / 나온다 카더라
+9. 반드시 부산·경남 사투리로만 써라. 경북(대구·안동) 형태를 섞지 마라.
    쓰지 말 것: ~니더 / ~니껴 / ~이껴 / ~ㄷ시더 / ~래요(아이래요) /
                ~이로? ~이라?(안동식 의문) / ~니꺼
    이것들은 경북 어미라 부산·경남 사람이 들으면 바로 어색하다.
@@ -143,6 +147,31 @@ def _extract_json(text):
     return json.loads(text[start:end + 1])
 
 
+# ── 붙여쓰기 ─────────────────────────────────────────────────────────
+# 사투리 보조어미는 앞말에 붙여 쓴다. 띄우면 TTS가 그 자리에서 끊어 읽어
+# 서울 사람이 또박또박 읽는 소리가 난다. "없었다 카이" → "없었다카이"
+GLUE = [
+    "카더라", "카드라", "카이", "카데", "카는데", "카나", "카노",
+    "아이가", "아이라", "아이고", "아인가",
+    "기라", "인기라", "는기라", "기다", "긴기라",
+    "데이", "대이", "라예", "라고예", "맞나", "맞제",
+]
+# 앞말이 한글로 끝나고 공백 뒤에 보조어미가 오면 붙인다.
+_GLUE_RE = re.compile(r"(?<=[가-힣])\s+(" + "|".join(GLUE) + r")(?=[\s.,!?]|$)")
+
+
+def fix_spacing(text):
+    """사투리 보조어미를 앞말에 붙인다."""
+    if not text:
+        return text
+    prev = None
+    # "없었다 카이 아이가"처럼 연달아 나오면 한 번에 다 붙지 않는다.
+    while prev != text:
+        prev = text
+        text = _GLUE_RE.sub(r"\1", text)
+    return text
+
+
 def rule_convert(text):
     """LLM 없이 쓰는 폴백. 어휘와 어미를 기계적으로 바꾼다.
 
@@ -156,7 +185,7 @@ def rule_convert(text):
         out = re.sub(rf"(?<![가-힣]){re.escape(std)}(?![가-힣])", dia, out)
     for pat, rep in ENDINGS:
         out = re.sub(pat, rep, out)
-    return out
+    return fix_spacing(out)
 
 
 def collect_targets(script):
@@ -179,10 +208,10 @@ def apply_result(script, converted):
     """LLM이 돌려준 사투리 텍스트를 원본 대본에 써넣는다."""
     lines = converted.get("cover_lines")
     if lines and isinstance(lines, list):
-        script.setdefault("cover", {})["lines"] = lines
+        script.setdefault("cover", {})["lines"] = [fix_spacing(l) for l in lines]
     for sc, new in zip(script.get("scenes", []), converted.get("scenes", [])):
         for key in ("subtitle", "narration", "body"):
-            val = new.get(key)
+            val = fix_spacing(new.get(key))
             # 원래 비어 있던 필드를 LLM이 채워 넣으면 레이아웃이 틀어진다.
             if val and sc.get(key, ""):
                 sc[key] = val
