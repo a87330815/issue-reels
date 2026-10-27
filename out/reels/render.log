@@ -1,48 +1,67 @@
-run 40475983134 2026-10-27T08:48:51Z
+run 40476853468 2026-10-27T09:10:17Z
 
-=== 20261027_12_숫자훅 ===
-  📸 커스텀 URL 4건 발견 — 우선 다운로드
-  [cover] 커스텀 URL → https://img.tenasia.co.kr/photo/202406/BF.37022823.1.jpg...
-    ✓ cover ← 뉴스기사 사진
-  [scene1] 커스텀 URL → https://img.tenasia.co.kr/photo/202406/BF.37022826.1.jpg...
-    ✓ scene1 ← 뉴스기사 사진
-  [scene2] 커스텀 URL → https://img.tenasia.co.kr/photo/202406/BF.37022820.1.jpg...
-    ✓ scene2 ← 뉴스기사 사진
-  [scene3] 커스텀 URL → https://img.tenasia.co.kr/photo/202406/BF.37022828.1.jpg...
-    ✓ scene3 ← 뉴스기사 사진
+=== test_trend_01 ===
+  [cover] '손주 봐주면 월 30만원 준다카이' → "Korean grandmother playing with grandchild toddler"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] '조부모 손주돌봄수당 시작' → "happy Korean grandmother with baby grandchild"
+    [unsplash] 3건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 3건 (적합도 필터 생략)
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '1명 30만 · 2명 45만 · 3명 60만' → "Korean elderly couple caring for grandchildren family"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '매월 1~15일 온라인 신청' → "Korean government welfare office application form"
+    [unsplash] 10건 후보 (부적합 2건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 10건 (적합도 필터 생략)
+    ✓ scene3 ← Unsplash (Unsplash License)
   [scene4] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene4 ← Unsplash (Unsplash License)
-  → 5/5장 저장, 매니페스트: out/photos/20261027_12_숫자훅/photos.json
+  → 5/5장 저장, 매니페스트: out/photos/test_trend_01/photos.json
 
 총 5/5장 수집
   사진 5장 적용: cover, scene1, scene2, scene3, scene4
-카드뉴스 6장 생성 → out/cards_20261027_12_숫자훅
-대본: out/scripts/20261027_12_숫자훅.json
-카드: out/cards_20261027_12_숫자훅 (6장)
-음성: ko-KR-HyunsuMultilingualNeural (속도 -18%)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 891, in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 888, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 302, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: invalid argument
 
-1) TTS 생성
-  후처리 적용 [1/5]
-  TTS [1/5] 1.3초  나연 솔로 컴백...
-  후처리 적용 [2/5]
-  TTS [2/5] 7.8초  트와이스 나연이 2년 5개월 만에 솔로로 나온다 카더라...
-  후처리 적용 [3/5]
-  TTS [3/5] 7.1초  첫 앨범이 빌보드 200에서 7위까지 올라갔데이. K팝...
-  후처리 적용 [4/5]
-  TTS [4/5] 6.2초  이번 컴백 소식에 팬들이 벌써 난리났다. 타이틀곡이 먼...
-  후처리 적용 [5/5]
-  TTS [5/5] 4.8초  오늘 내용 괜찮았으면 팔로우 한번 눌러주이소. 매일매일...
+During handling of the above exception, another exception occurred:
 
-2) 영상 합성
-  세그먼트 [1/6] 3.0초
-  세그먼트 [2/6] 8.6초
-  세그먼트 [3/6] 7.9초
-  세그먼트 [4/6] 7.0초
-  세그먼트 [5/6] 5.6초
-  세그먼트 [6/6] 4.0초
-
-  ✓ 릴스 완성: out/reels/20261027_12_숫자훅.mp4
-    길이: 31.1초  /  크기: 1.0MB
--rw-r--r-- 1 runner runner 1.0M Oct 27 08:49 out/reels/20261027_12_숫자훅.mp4
+Traceback (most recent call last):
+  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 952, in <module>
+    generate(a.script, a.out, a.photos, a.layout)
+  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 924, in generate
+    cover_fn(sc, t, photos.get("cover"), credits.get("cover")).save(p, quality=95)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 549, in make_cover_mag
+    tf = font(FONT_BLACK, 92)
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 58, in font
+    return ImageFont.truetype(path, size, index=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 934, in truetype
+    return freetype(os.path.join(walkroot, walkfilename))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 888, in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/PIL/ImageFont.py", line 302, in __init__
+    self.font = core.getfont(
+                ^^^^^^^^^^^^^
+OSError: invalid argument
