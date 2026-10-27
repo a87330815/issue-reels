@@ -58,9 +58,34 @@ def narrations(script):
     return texts
 
 
-# 피치 배수. 1보다 작으면 낮아진다. Hyunsu 원본이 142Hz인데 0.88을
-# 걸면 125Hz가 되어 남자 성우 구간(110~130Hz)에 들어온다.
-PITCH = 0.88
+# 음성마다 원래 음높이가 다르다. 실측치는 Hyunsu 142Hz, InJoon 168Hz,
+# SunHi 201Hz다. 성우 구간은 남성 110~130Hz, 여성 180~220Hz이므로
+# 남성은 피치를 내려야 하고 여성은 이미 범위 안이라 거의 손대지 않는다.
+# EQ도 음역이 달라 그대로 쓸 수 없다. 남성용 120Hz 보강은 여성 기본
+# 주파수 아래라 울림이 아니라 잡음만 키운다.
+VOICE_PROFILES = {
+    "male": {
+        "pitch": 0.88,                    # 142Hz → 125Hz
+        "eq": ("equalizer=f=120:t=h:w=100:g=2.5,"     # 저음 두께 — 성우의 울림
+               "equalizer=f=300:t=h:w=200:g=1.5,"     # 중저음 바디감
+               "equalizer=f=1000:t=h:w=600:g=-1.5,"   # 답답한 중음 덜어내기
+               "equalizer=f=4000:t=h:w=1500:g=2,"),   # 자음 또렷하게
+    },
+    "female": {
+        "pitch": 0.97,                    # 201Hz → 195Hz, 살짝만 눌러 차분하게
+        "eq": ("equalizer=f=250:t=h:w=150:g=2,"       # 가슴 울림 — 여성 성우의 두께
+               "equalizer=f=800:t=h:w=500:g=-1,"      # 먹먹한 중음만 살짝
+               "equalizer=f=3500:t=h:w=1200:g=1.5,"   # 딕션 (남성보다 약하게)
+               "equalizer=f=7000:t=h:w=2000:g=1,"),   # 공기감
+    },
+}
+
+# 음성 이름으로 프로필을 고른다. edge-tts 한국어는 셋뿐이다.
+FEMALE_VOICES = {"ko-KR-SunHiNeural"}
+
+
+def voice_profile(voice):
+    return VOICE_PROFILES["female" if voice in FEMALE_VOICES else "male"]
 
 
 def audio_rate(path):
@@ -76,26 +101,25 @@ def audio_rate(path):
         return 24000          # edge-tts 기본값
 
 
-def post_process_voice(src, dst):
-    """남자 성우 톤 후처리.
+def post_process_voice(src, dst, voice=DEFAULT_VOICE):
+    """성우 톤 후처리.
 
-    성우 목소리는 세 가지가 다르다. 첫째 음이 낮고, 둘째 소리 크기가
-    일정하며(컴프레서), 셋째 중저음에 두께가 있고 말소리는 또렷하다.
-    피치만 만지면 어린 목소리를 억지로 낮춘 소리가 나므로 함께 잡는다.
+    성우 목소리는 세 가지가 다르다. 첫째 음높이가 제자리에 있고, 둘째
+    소리 크기가 일정하며(컴프레서), 셋째 울림에 두께가 있고 말소리는
+    또렷하다. 피치만 만지면 억지로 눌러 놓은 소리가 나므로 함께 잡는다.
     """
+    prof = voice_profile(voice)
+    pitch = prof["pitch"]
     # asetrate는 "이 파일을 이 샘플레이트로 읽으라"는 뜻이라, 원본 레이트를
     # 그대로 넣어야 의도한 배수만큼만 바뀐다. 앞서 24kHz 파일에 44100을
     # 박아 넣어 피치가 1.8배로 치솟았고, 그래서 목소리가 얇게 들렸다.
     sr = audio_rate(src)
     af = (
-        f"asetrate={sr}*{PITCH},aresample={sr},"       # 피치 낮춤 (속도도 함께 느려짐)
-        f"atempo={1 / PITCH:.4f},"                      # 속도는 원래대로
-        "equalizer=f=120:t=h:w=100:g=2.5,"              # 저음 두께 — 성우의 울림
-        "equalizer=f=300:t=h:w=200:g=1.5,"              # 중저음 바디감
-        "equalizer=f=1000:t=h:w=600:g=-1.5,"            # 답답한 중음 덜어내기
-        "equalizer=f=4000:t=h:w=1500:g=2,"              # 자음 또렷하게 (딕션)
+        f"asetrate={sr}*{pitch},aresample={sr},"        # 피치 조정 (속도도 함께 변함)
+        f"atempo={1 / pitch:.4f},"                       # 속도는 원래대로
+        + prof["eq"] +
         "acompressor=threshold=-18dB:ratio=3:attack=8:release=180:makeup=2,"
-        "loudnorm=I=-15:TP=-1.5:LRA=9"                  # 방송 수준 음량·다이내믹
+        "loudnorm=I=-15:TP=-1.5:LRA=9"                   # 방송 수준 음량·다이내믹
     )
     subprocess.run(
         ["ffmpeg", "-y", "-i", src, "-af", af, "-c:a", "libmp3lame", "-q:a", "2", dst],
@@ -119,7 +143,7 @@ async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE):
         # 양상국 스타일 후처리
         if style:
             try:
-                post_process_voice(raw_mp3, mp3)
+                post_process_voice(raw_mp3, mp3, voice)
                 print(f"  후처리 적용 [{i+1}/{len(texts)}]")
             except Exception as e:
                 print(f"  후처리 실패, 원본 사용: {e}")
