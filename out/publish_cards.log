@@ -1,0 +1,63 @@
+  [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
+  API 호스트 확정: graph.facebook.com
+인스타 발행 설정:
+  호스트      graph.facebook.com
+  API 버전    v26.0
+  계정 ID     17841459210979722
+  액세스 토큰 설정됨
+
+계정 확인: @jjombwabwa (비즈니스) · 게시물 5개
+발행 한도: 24시간 기준 0/100건 사용
+
+설정 완료
+
+저장소 백엔드: GitHub Release
+  미디어 저장소  a87330815/issue-reels-media
+  토큰           설정됨
+  저장소 확인    a87330815/issue-reels-media (공개)
+
+설정 완료
+
+대상: out/cards_20261027_11_숫자훅  (6장)
+대본: out/scripts/20261027_11_숫자훅.json
+
+--- 캡션 ---
+김수현 김새론 사건
+
+· 유족 측 변호사 피의자 전환
+· 미성년자 교제 주장 → 수사 반전
+· 실검 '가족 공범' 급상승
+
+저장해두고 필요할 때 꺼내 보세요.
+
+#당일화제이슈 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
+사진: 뉴스기사 (news_article, editorial) / Berke Citak (Unsplash, Unsplash License)
+--- 캡션 끝 ---
+
+  [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
+  API 호스트 확정: graph.facebook.com
+남은 발행 가능: 100건
+
+1) 이미지 공개 호스팅
+  ✓ [1/6] 01_cover.jpg  247KB  200 application/octet-stream
+  ✓ [2/6] 02_scene.jpg  248KB  200 application/octet-stream
+  ✓ [3/6] 03_scene.jpg  266KB  200 application/octet-stream
+  ✓ [4/6] 04_scene.jpg  190KB  200 application/octet-stream
+  ✓ [5/6] 05_scene.jpg  164KB  200 application/octet-stream
+  ✓ [6/6] 06_outro.jpg  93KB  200 application/octet-stream
+
+2) 장별 컨테이너 생성
+  [1/6] 컨테이너 17971769129973700
+  [2/6] 컨테이너 17971769150973700
+  [3/6] 컨테이너 17971769174973700
+  [4/6] 컨테이너 17971769195973700
+  [5/6] 컨테이너 17971769216973700
+  [6/6] 컨테이너 17971769234973700
+
+3) 캐러셀 컨테이너 생성
+  캐러셀 17971769273973700
+      0초  FINISHED
+
+4) 발행
+  발행 완료: media_id=17867021166678215
+발행 기록: out/published_cards.json
