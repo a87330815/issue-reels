@@ -1,54 +1,50 @@
 {
-  "title": "유재석 문화훈장",
+  "title": "50억 아파트",
   "cover": {
     "image": null,
-    "photo_query": "Korean entertainer MC award ceremony",
+    "photo_query": "Banpo Seoul luxury apartment",
     "lines": [
-      "유재석",
-      "<r>데뷔 35년 만에</r>",
-      "나라가 상을 준다카더라"
+      "<r>50억 아파트</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korean TV host smiling portrait",
-      "narration": "유재석이 29일에 문화훈장을 받는다카더라. 대중문화예술상에서 제일 높은 훈격인데, 27일 국무회의에서 대통령 재가까지 다 떨어진기라.",
-      "subtitle": "29일 문화훈장 받는다카더라"
+      "photo_query": "Banpo Seoul luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지 84.93㎡ 49.5억 거래. 수치로 확인해보자.",
+      "subtitle": "반포동 49.5억 거래"
     },
     {
       "image": null,
-      "photo_query": "Korean comedian stage microphone",
-      "narration": "1991년에 대학개그제로 나와가 올해로 딱 35년째다. 무한도전에 런닝맨에 놀면 뭐하니에 유 퀴즈까지, 쎄가 빠지게 달려온 세월아이가.",
-      "subtitle": "1991년 데뷔, 35년 달려왔데이"
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "반포동 래미안퍼스티지, 전용 85㎡(26평) 11층이 49.5억원에 실거래 신고됐다카이. 평당 1.9억. 2009년 준공.",
+      "subtitle": "반포동 래미안퍼스티지 49.5억원"
     },
     {
       "image": null,
-      "photo_query": "award medal ceremony korea",
-      "narration": "개그맨 중에는 이경규가 2017년에, 임하룡이 2020년에 보관문화훈장을 받았데이. 작년에는 고 전유성한테 옥관문화훈장이 추서됐고. 유재석이 그 뒤를 잇는기라.",
-      "subtitle": "이경규 임하룡 뒤를 잇는다"
-    },
-    {
-      "image": null,
-      "photo_query": "celebration congratulation korea entertainment",
-      "narration": "올해는 네 개 훈격에 서른한 점쯤 뽑는다카는데, 실력에 인성까지 챙겨온 사람이라 다들 받을 만하다카더라. 참말로 억수로 잘됐다.",
-      "subtitle": "실력에 인성까지, 다들 인정한다"
-    },
-    {
-      "image": null,
-      "photo_query": "smartphone social media follow",
-      "narration": "오늘 내용 괜찮았으면 팔로우 한번 눌러주이소. 매일매일 이슈 퍼뜩 정리해드릴게예.",
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
       "subtitle": "팔로우 · 매일 업데이트"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "tenasia",
-    "category": "당일 화제 이슈",
-    "attribution": "",
-    "chart": null,
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        49.5,
+        37.2,
+        29.0,
+        26.0,
+        25.0
+      ],
+      "style": "bars"
+    },
     "tone": "경상도",
-    "generated_at": "2026-10-28T13:50:00+09:00"
+    "generated_at": "2026-10-28T09:26:44.875740+00:00"
   }
 }

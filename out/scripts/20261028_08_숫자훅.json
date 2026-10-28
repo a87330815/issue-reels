@@ -1,12 +1,11 @@
 {
-  "title": "디에이치 반포124",
+  "title": "레버리지",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "이번 달",
-      "<r>디에이치 반포124</r>",
-      "거래 떴습니다"
+      "<r>레버리지</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,8 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '디에이치 반포124' 관련 트렌드 — 11월 전국 아파트 5.6만가구...지난해 比 89.1% 급증. 수치로 확인해보자.",
-      "subtitle": "'디에이치 반포124' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. '레버리지' 관련 트렌드 — 국장 급등락에 곱버스·레버리지 ETF 쏠림…7개 상품이 거래량 91%. 수치로 확인해보자.",
+      "subtitle": "'레버리지' 관련 트렌드 — 국장"
     },
     {
       "image": null,
@@ -31,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-28T02:07:25.285556+00:00"
+    "generated_at": "2026-10-28T09:26:46.062614+00:00"
   }
 }

@@ -1,51 +1,20 @@
 {
-  "title": "43억 차이",
+  "title": "태양광 발전",
   "cover": {
     "image": null,
-    "photo_query": "Banpo Seoul luxury apartment",
+    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>43억 차이</r>",
-      "실화입니다"
+      "<r>태양광 발전</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Banpo Seoul luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 반포동 평균 43.4억 vs 반여동 평균 0.4억. 수치로 확인해보자.",
-      "subtitle": "반포동 vs 반여동"
-    },
-    {
-      "image": null,
-      "photo_query": "Banpo Seoul luxury high rise apartment",
-      "narration": "반포동 래미안퍼스티지, 전용 85㎡(26평) 11층이 49.5억원에 실거래 신고됐다카이. 평당 1.9억. 2009년 준공.",
-      "subtitle": "반포동 래미안퍼스티지 49.5억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Banpo Seoul luxury high rise apartment",
-      "narration": "같은 동네 반포자이도 주목할 만한다. 전용 60㎡(18평) 26층, 거래가 37.2억원. 평당 2.1억.",
-      "subtitle": "반포동 반포자이 37.2억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "개포자이프레지던스 전용 60㎡(18평) 14층 — 29.0억원 거래. 평당 1.6억.",
-      "subtitle": "개포동 개포자이프레지던스 29.0억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "동현아파트1~6 전용 85㎡(26평) 6층 — 26.0억원 거래. 평당 1.0억.",
-      "subtitle": "논현동 동현아파트1~6 26.0억원"
-    },
-    {
-      "image": null,
-      "photo_query": "real estate market price chart",
-      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 24.5억원까지 벌어졌다. 평균 33.3억원 수준이다.",
-      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. '태양광 발전' 관련 트렌드 — 中 풍력·태양광 설비용량 20억㎾ 돌파, 세계 절반 차지. 수치로 확인해보자.",
+      "subtitle": "'태양광 발전' 관련 트렌드 — 中"
     },
     {
       "image": null,
@@ -56,20 +25,11 @@
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        43.4,
-        29.0,
-        26.0,
-        25.0,
-        23.2
-      ],
-      "style": "bars"
-    },
+    "source": "",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-28T02:07:24.628400+00:00"
+    "generated_at": "2026-10-28T09:26:45.582457+00:00"
   }
 }
