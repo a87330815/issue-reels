@@ -3,42 +3,60 @@
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
-    "scene3": "scene3.jpg"
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg"
   },
   "credits": [
     {
       "slot": "cover",
-      "query": "Banpo Seoul luxury apartment",
-      "source": "Unsplash",
-      "creator": "Ann Danilina",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://img.tenasia.co.kr/photo/202610/BF.46210118.1.jpg"
     },
     {
       "slot": "scene1",
-      "query": "Banpo Seoul luxury apartment",
-      "source": "Unsplash",
-      "creator": "Ming Han Low",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-5YHqhCBiCz4"
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://img.insight.co.kr/static/2026/10/28/1200/img_20261028093121_q5epan3n.jpg"
     },
     {
       "slot": "scene2",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Ethan Brooke",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://img.tenasia.co.kr/photo/202610/BF.46177264.1.jpg"
     },
     {
       "slot": "scene3",
-      "query": "follow subscribe social media phone",
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://cdnweb01.wikitree.co.kr/webdata/editor/202610/27/202610272139578400.jpg"
+    },
+    {
+      "slot": "scene4",
+      "query": "custom_url",
+      "source": "news_article",
+      "creator": "뉴스기사",
+      "license": "editorial",
+      "page": "https://cdnweb01.wikitree.co.kr/webdata/editor/202610/27/img_20261027213606_6505dead.webp"
+    },
+    {
+      "slot": "scene5",
+      "query": "smartphone social media follow",
       "source": "Unsplash",
       "creator": "Berke Citak",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
-  "wanted": 4,
-  "fetched_at": "2026-10-28T02:12:45Z"
+  "wanted": 6,
+  "fetched_at": "2026-10-28T04:49:18Z"
 }
