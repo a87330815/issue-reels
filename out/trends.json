@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-10-28T14:41:59.982295+00:00",
+  "collected_at": "2026-10-28T19:12:23.298283+00:00",
   "items": [
     {
-      "keyword": "신진 서",
-      "traffic": "2000+",
-      "news_title": "신진서 9단, 한국바둑리그 1억 4천만 원에 GS칼텍스 지명",
+      "keyword": "sc 프라이부르크 대 볼프스부르크",
+      "traffic": "200+",
+      "news_title": "Freiburg vs Wolfsburg: German DFB Pokal stats &amp; head-to-head",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "b4415c518fafd95d"
+      "key": "46d0de38f14abeca"
     },
     {
-      "keyword": "하림",
+      "keyword": "apple",
+      "traffic": "200+",
+      "news_title": "Apple Unveils Its First Touch-Screen Laptop Computer",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "d0be2dc421be4fcd"
+    },
+    {
+      "keyword": "은지원",
+      "traffic": "200+",
+      "news_title": "&apos;집돌이&apos; 은지원, 재혼 후 변했다..&quot;♥9살 연하 아내와 캠핑 즐겨&quot; 깜짝",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "a90b0d3f250a1b4a"
+    },
+    {
+      "keyword": "lg에너지솔루션",
+      "traffic": "200+",
+      "news_title": "LG화학, LG엔솔 지분 2.5조 처분…자사주 3천억원 매입·소각",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "fc409f1e6eaba98b"
+    },
+    {
+      "keyword": "노바크 조코비치",
+      "traffic": "1000+",
+      "news_title": "",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "28ddceb2430790f2"
+    },
+    {
+      "keyword": "한겨레",
       "traffic": "100+",
-      "news_title": "[오늘Who] 김홍국 왜 하림산업 부동산·식품 나누나, &apos;양재 개발·식품 적자&apos; 핀포인트로 돌파구 찾기",
+      "news_title": "이 대통령 ‘외국인노동자 경제에 크게 도움 안 돼’ 발언 논란…전문가들 “맥락 고려해도 정당화 안돼”",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "37c078e8b35aed73"
+      "key": "6fc74601752fcace"
     },
     {
-      "keyword": "노원구",
-      "traffic": "500+",
-      "news_title": "서울 노원구 아파트서 불‥70대 남성 숨져",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ecc0bf2d26a40993"
-    },
-    {
-      "keyword": "acl two",
-      "traffic": "500+",
-      "news_title": "AFC Champions League 2: Al Rayyan Aim to Return to Winning Ways Against Oman&apos;s Al Nahda",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "74a41ca657a14328"
-    },
-    {
-      "keyword": "주거",
+      "keyword": "일본 지진",
       "traffic": "200+",
-      "news_title": "&quot;목숨만 건졌어&quot; 마지막 터전마저 &apos;잿더미&apos;‥구룡마을 가보니",
+      "news_title": "일본 지바현 지바시 동쪽서 규모 5.4 지진 발생",
       "snippet": "",
       "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "a95fec86c2aa5791"
+      "category": "놀라운 사건·화제",
+      "key": "ea02bb97d8ba85ec"
     },
     {
-      "keyword": "마약",
+      "keyword": "서울반도체",
       "traffic": "200+",
-      "news_title": "[단독] &apos;마약 운전&apos; 안산 버스기사와 함께 투약...지인 3명도 송치",
+      "news_title": "서울반도체, &apos;희토류 필요없는&apos; 초소형 백색 LED 최초 개발 - 머니투데이",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "35d8a097c0e1205b"
+      "key": "a17a814efa247808"
     },
     {
-      "keyword": "3 일치 식량",
-      "traffic": "2000+",
-      "news_title": "&quot;남은 시간 딱 1000일&quot;…물 9리터·비상식량 쓸어 담아라 경고 나왔다",
+      "keyword": "김민",
+      "traffic": "100+",
+      "news_title": "김민, ‘나혼산’ 출연 후 아찔한 사생활 고충...&quot;사람들이 집에 너무 찾아온다&quot; (&apos;라스&apos;)",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "5402c1d4cf2a9c42"
-    },
-    {
-      "keyword": "삼성",
-      "traffic": "10000+",
-      "news_title": "중장년 여행도 간편하게 ‘갤럭시 하나면 해외 결제 끝’",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "1d9554f4e6e9e6ce"
-    },
-    {
-      "keyword": "오윤아",
-      "traffic": "2000+",
-      "news_title": "오윤아 아들 민이, 프로 수영선수 됐다…&quot;기적 같은 일&quot; - 머니투데이",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "72ba0aa1824e0624"
-    },
-    {
-      "keyword": "대한 광통신",
-      "traffic": "500+",
-      "news_title": "대한광통신 주가, 10월 28일 14,980원 9.34% 상승",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "생활·지원금·제도",
-      "key": "4ce3b507edb32fad"
+      "key": "6ffb6c97140fd83a"
     }
   ]
 }
