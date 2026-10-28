@@ -33,9 +33,11 @@
 ── 1/1  20261028_01_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261028_01.mp4
   캡션: 유재석 문화훈장
-  컨테이너: 17972085218973700
+  컨테이너: 17972085509973700
       0초  IN_PROGRESS
-     54초  FINISHED
-  [실패] [-1/2207085] Fatal
+     51초  FINISHED
+  발행 완료: 18110591447225722
 
-완료: 발행 0건 / 실패 1건
+
+발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
+완료: 발행 1건 / 실패 0건
