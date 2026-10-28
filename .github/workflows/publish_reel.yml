@@ -71,6 +71,11 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          # publish.py는 호스트 기본값이 graph.instagram.com인데, 이 계정의
+          # 토큰은 페이지 토큰이라 그 호스트에서 파싱되지 않는다
+          # ("Cannot parse access token"). 카드뉴스 발행 쪽은 호스트를
+          # 자동으로 찾지만 여기는 기본값에 머물러 실패했다.
+          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
           # 체크 해제된 boolean은 문자열 "false"로 들어온다. 빈 문자열이 아니라서
           # ${{ inputs.publish && ... }}는 참이 되어 드라이런이 실제 발행이 된다.
           # 식이 아니라 셸에서 문자열로 엄격히 비교한다.
