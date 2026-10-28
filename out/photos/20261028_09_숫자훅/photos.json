@@ -1,0 +1,35 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
+    },
+    {
+      "slot": "scene1",
+      "query": "Korea city luxury apartment",
+      "source": "Unsplash",
+      "creator": "Jean Carlo Emer",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/traditional-korean-houses-with-a-tower-in-the-distance-Ds0_4JCFGfQ"
+    },
+    {
+      "slot": "scene2",
+      "query": "follow subscribe social media phone",
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+    }
+  ],
+  "wanted": 3,
+  "fetched_at": "2026-10-28T02:13:13Z"
+}
