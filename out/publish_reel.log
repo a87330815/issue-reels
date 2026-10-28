@@ -19,7 +19,7 @@
 설정 완료
 
 업로드 1건 (태그 reels-2026-10-28):
-  20261028_01_숫자훅.mp4  2.3MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261028_01.mp4
+  20261027_12_숫자훅.mp4  1.2MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261027_12.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -27,16 +27,16 @@
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 98건
+남은 발행 가능: 97건
 발행 대상: 1건
 
-── 1/1  20261028_01_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261028_01.mp4
-  캡션: 유재석 문화훈장
-  컨테이너: 17972085509973700
+── 1/1  20261027_12_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261027_12.mp4
+  캡션: 나연 솔로 컴백
+  컨테이너: 17972085947973700
       0초  IN_PROGRESS
-     51초  FINISHED
-  발행 완료: 18110591447225722
+     84초  FINISHED
+  발행 완료: 18125543686687317
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
