@@ -1,10 +1,10 @@
 {
-  "title": "50억 아파트",
+  "title": "69억 아파트",
   "cover": {
     "image": null,
-    "photo_query": "Banpo Seoul luxury apartment",
+    "photo_query": "Apgujeong Seoul luxury apartment",
     "lines": [
-      "<r>50억 아파트</r>",
+      "<r>69억 아파트</r>",
       "이거 실환가요"
     ],
     "badge": null
@@ -12,15 +12,15 @@
   "scenes": [
     {
       "image": null,
-      "photo_query": "Banpo Seoul luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지 84.93㎡ 49.5억 거래. 수치로 확인해보자.",
-      "subtitle": "반포동 49.5억 거래"
+      "photo_query": "Apgujeong Seoul luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차 152.39㎡ 69.0억 거래. 수치로 확인해보자.",
+      "subtitle": "압구정동 69.0억 거래"
     },
     {
       "image": null,
-      "photo_query": "Banpo Seoul luxury high rise apartment",
-      "narration": "반포동 래미안퍼스티지, 전용 85㎡(26평) 11층이 49.5억원에 실거래 신고됐다카이. 평당 1.9억. 2009년 준공.",
-      "subtitle": "반포동 래미안퍼스티지 49.5억원"
+      "photo_query": "Apgujeong Seoul luxury high rise apartment",
+      "narration": "압구정동 신현대9차, 전용 152㎡(46평) 4층이 69.0억원에 실거래 신고됐다카이. 평당 1.5억. 1982년 준공.",
+      "subtitle": "압구정동 신현대9차 69.0억원"
     },
     {
       "image": null,
@@ -36,15 +36,15 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        49.5,
-        37.2,
-        29.0,
-        26.0,
-        25.0
+        69.0,
+        39.0,
+        38.5,
+        38.0,
+        33.8
       ],
       "style": "bars"
     },
     "tone": "경상도",
-    "generated_at": "2026-10-28T14:42:39.451278+00:00"
+    "generated_at": "2026-10-28T19:13:23.171851+00:00"
   }
 }

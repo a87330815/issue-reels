@@ -1,11 +1,11 @@
 {
-  "title": "송도동 최고 9억",
+  "title": "삼계동 최고 2억",
   "cover": {
     "image": null,
     "photo_query": "Korea city apartment skyline",
     "lines": [
-      "송도동 최고 9억",
-      "<r>이번 달 기록</r>"
+      "이 동네 지금",
+      "<r>삼계동 최고 2억</r>"
     ],
     "badge": null
   },
@@ -13,38 +13,38 @@
     {
       "image": null,
       "photo_query": "Korea city apartment skyline",
-      "narration": "이거 모르고 지나가면 손해다. 송도동 최고가 송도웰카운티1단지 101.99㎡ 8.8억. 국토부에 신고된 실거래 금액이다.",
-      "subtitle": "송도동 최고 8.8억"
+      "narration": "이거 모르고 지나가면 손해다. 삼계동 최고가 삼계이안 84.9523㎡ 2.3억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "삼계동 최고 2.3억"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "송도동 송도웰카운티1단지, 전용 102㎡(31평) 8층이 8.8억원에 실거래 신고됐다카이. 평당 2,862만원. 2008년 준공.",
-      "subtitle": "송도동 송도웰카운티1단지 8.8억원"
+      "photo_query": "Korea city apartment building",
+      "narration": "삼계동 삼계이안, 전용 85㎡(26평) 12층이 2.3억원에 실거래 신고됐다카이. 평당 887만원. 2007년 준공.",
+      "subtitle": "삼계동 삼계이안 2.3억원"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "같은 동네 송도코오롱더프라우2단지도 주목할 만한다. 전용 148㎡(45평) 17층, 거래가 8.2억원. 평당 1,817만원.",
-      "subtitle": "송도동 송도코오롱더프라우2단지 8.2억원"
+      "photo_query": "Korea city apartment building",
+      "narration": "같은 동네 김해북부7차부영도 주목할 만한다. 전용 85㎡(26평) 16층, 거래가 1.9억원. 평당 749만원.",
+      "subtitle": "삼계동 김해북부7차부영 1.9억원"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "더샵센트럴파크1 전용 96㎡(29평) 27층 — 8.1억원 거래. 평당 2,780만원.",
-      "subtitle": "송도동 더샵센트럴파크1 8.1억원"
+      "photo_query": "Korea city apartment building",
+      "narration": "분성마을5단지푸르지오 전용 60㎡(18평) 9층 — 1.8억원 거래. 평당 987만원.",
+      "subtitle": "삼계동 분성마을5단지푸르지오 1.8억원"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "더샵그린워크2차 전용 85㎡(26평) 4층 — 8.0억원 거래. 평당 3,124만원.",
-      "subtitle": "송도동 더샵그린워크2차 8.0억원"
+      "photo_query": "Korea city apartment building",
+      "narration": "화정마을1단지 전용 85㎡(26평) 15층 — 1.6억원 거래. 평당 622만원.",
+      "subtitle": "삼계동 화정마을1단지 1.6억원"
     },
     {
       "image": null,
       "photo_query": "Korea city residential area aerial",
-      "narration": "송도동 이번 달 거래를 종합하면, 평균 거래가는 7.9억원, 최고가 8.8억원, 최저가 6.3억원이다. 총 5건이 신고됐다 아이가.",
-      "subtitle": "송도동 이번 달 거래를 종합하면, 평균"
+      "narration": "삼계동 이번 달 거래를 종합하면, 평균 거래가는 1.7억원, 최고가 2.3억원, 최저가 8,200만원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "삼계동 이번 달 거래를 종합하면, 평균"
     },
     {
       "image": null,
@@ -60,15 +60,15 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        8.8,
-        8.2,
-        8.1,
-        8.0,
-        6.3
+        2.3,
+        1.9,
+        1.8,
+        1.6,
+        0.8
       ],
       "style": "bars"
     },
     "tone": "경상도",
-    "generated_at": "2026-10-28T14:42:40.590494+00:00"
+    "generated_at": "2026-10-28T19:13:24.274499+00:00"
   }
 }

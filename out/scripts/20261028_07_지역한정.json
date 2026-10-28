@@ -1,0 +1,74 @@
+{
+  "title": "연수동 최고 4억",
+  "cover": {
+    "image": null,
+    "photo_query": "Yeonsu Incheon apartment skyline",
+    "lines": [
+      "연수동 최고 4억",
+      "<y>실거래가 공개</y>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Yeonsu Incheon apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 연수동 최고가 대림 84.795㎡ 4.5억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "연수동 최고 4.5억"
+    },
+    {
+      "image": null,
+      "photo_query": "Yeonsu Incheon modern apartment residential",
+      "narration": "연수동 대림, 전용 85㎡(26평) 12층이 4.5억원에 실거래 신고됐다카이. 평당 1,735만원. 1993년 준공.",
+      "subtitle": "연수동 대림 4.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Yeonsu Incheon modern apartment residential",
+      "narration": "같은 동네 풍림1도 주목할 만한다. 전용 70㎡(21평) 11층, 거래가 3.2억원. 평당 1,517만원.",
+      "subtitle": "연수동 풍림1 3.2억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Yeonsu Incheon apartment building",
+      "narration": "연수주공2차 전용 50㎡(15평) 4층 — 2.0억원 거래. 평당 1,357만원.",
+      "subtitle": "연수동 연수주공2차 2.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Yeonsu Incheon apartment building",
+      "narration": "승기마을,연수1차시영 전용 44㎡(13평) 4층 — 2.0억원 거래. 평당 1,495만원.",
+      "subtitle": "연수동 승기마을,연수1차시영 2.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Yeonsu Incheon residential area aerial",
+      "narration": "연수동 이번 달 거래를 종합하면, 평균 거래가는 2.7억원, 최고가 4.5억원, 최저가 1.7억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "연수동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        4.5,
+        3.2,
+        2.0,
+        2.0,
+        1.7
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-28T19:13:24.483607+00:00"
+  }
+}

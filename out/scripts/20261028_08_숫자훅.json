@@ -1,10 +1,10 @@
 {
-  "title": "신진 서",
+  "title": "평당 1.5억",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
+    "photo_query": "Apgujeong Seoul luxury apartment",
     "lines": [
-      "<r>신진 서</r>",
+      "<r>평당 1.5억</r>",
       "이거 실환가요"
     ],
     "badge": null
@@ -12,9 +12,39 @@
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '신진 서' 관련 트렌드 — 신진서 9단, 한국바둑리그 1억 4천만 원에 GS칼텍스 지명. 수치로 확인해보자.",
-      "subtitle": "'신진 서' 관련 트렌드 — 신진서"
+      "photo_query": "Apgujeong Seoul luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차 평당 1.50억 (전용 152.39㎡). 수치로 확인해보자.",
+      "subtitle": "압구정동 평당 1.5억"
+    },
+    {
+      "image": null,
+      "photo_query": "Apgujeong Seoul luxury high rise apartment",
+      "narration": "압구정동 신현대9차, 전용 152㎡(46평) 4층이 69.0억원에 실거래 신고됐다카이. 평당 1.5억. 1982년 준공.",
+      "subtitle": "압구정동 신현대9차 69.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "같은 동네 은마도 주목할 만한다. 전용 77㎡(23평) 11층, 거래가 31.9억원. 평당 1.4억.",
+      "subtitle": "대치동 은마 31.9억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "방배그랑자이 전용 85㎡(26평) 8층 — 33.8억원 거래. 평당 1.3억.",
+      "subtitle": "방배동 방배그랑자이 33.8억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Seocho Seoul luxury high rise apartment",
+      "narration": "래미안서초스위트 전용 96㎡(29평) 15층 — 31.6억원 거래. 평당 1.1억.",
+      "subtitle": "서초동 래미안서초스위트 31.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 37.4억원까지 벌어졌다. 평균 41.0억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
     },
     {
       "image": null,
@@ -25,11 +55,20 @@
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "",
-    "category": "당일 화제 이슈",
-    "attribution": "",
-    "chart": null,
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        1.5,
+        1.37,
+        1.31,
+        1.09,
+        1.04
+      ],
+      "style": "bars"
+    },
     "tone": "경상도",
-    "generated_at": "2026-10-28T14:42:41.074178+00:00"
+    "generated_at": "2026-10-28T19:13:24.690889+00:00"
   }
 }

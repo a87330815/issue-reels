@@ -1,11 +1,11 @@
 {
-  "title": "좌동 6건 거래",
+  "title": "송도동 9건 거래",
   "cover": {
     "image": null,
     "photo_query": "Korea city apartment skyline",
     "lines": [
-      "이 동네 지금",
-      "<r>좌동 6건 거래</r>"
+      "송도동 9건 거래",
+      "<y>얼마에 팔렸나</y>"
     ],
     "badge": null
   },
@@ -13,38 +13,38 @@
     {
       "image": null,
       "photo_query": "Korea city apartment skyline",
-      "narration": "이거 모르고 지나가면 손해다. 좌동에서 이번 달 6건 거래. 국토부에 신고된 실거래 금액이다.",
-      "subtitle": "좌동 6건 거래"
+      "narration": "이거 모르고 지나가면 손해다. 송도동에서 이번 달 9건 거래. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "송도동 9건 거래"
     },
     {
       "image": null,
       "photo_query": "Korea city modern apartment residential",
-      "narration": "좌동 롯데3차, 전용 60㎡(18평) 1층이 3.4억원에 실거래 신고됐다카이. 평당 1,853만원. 1997년 준공.",
-      "subtitle": "좌동 롯데3차 3.4억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city apartment building",
-      "narration": "같은 동네 LH뜨란채아파트도 주목할 만한다. 전용 50㎡(15평) 22층, 거래가 2.0억원. 평당 1,337만원.",
-      "subtitle": "좌동 LH뜨란채아파트 2.0억원"
+      "narration": "송도동 해모로월드뷰, 전용 85㎡(26평) 7층이 7.1억원에 실거래 신고됐다카이. 평당 2,766만원. 2012년 준공(14년차).",
+      "subtitle": "송도동 해모로월드뷰 7.1억원"
     },
     {
       "image": null,
       "photo_query": "Korea city modern apartment residential",
-      "narration": "삼환 전용 121㎡(37평) 12층 — 5.2억원 거래. 평당 1,424만원.",
-      "subtitle": "좌동 삼환 5.2억원"
+      "narration": "같은 동네 더샵송도마리나베이도 주목할 만한다. 전용 75㎡(23평) 16층, 거래가 6.3억원. 평당 2,777만원.",
+      "subtitle": "송도동 더샵송도마리나베이 6.3억원"
     },
     {
       "image": null,
       "photo_query": "Korea city modern apartment residential",
-      "narration": "벽산2 전용 60㎡(18평) 8층 — 3.2억원 거래. 평당 1,799만원.",
-      "subtitle": "좌동 벽산2 3.2억원"
+      "narration": "송도아메리칸타운아이파크 전용 84㎡(26평) 39층 — 8.6억원 거래. 평당 3,366만원.",
+      "subtitle": "송도동 송도아메리칸타운아이파크 8.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "송도더샵센트럴시티 전용 60㎡(18평) 22층 — 6.9억원 거래. 평당 3,802만원.",
+      "subtitle": "송도동 송도더샵센트럴시티 6.9억원"
     },
     {
       "image": null,
       "photo_query": "Korea city residential area aerial",
-      "narration": "좌동 이번 달 거래를 종합하면, 평균 거래가는 3.7억원, 최고가 5.2억원, 최저가 2.0억원이다. 총 5건이 신고됐다 아이가.",
-      "subtitle": "좌동 이번 달 거래를 종합하면, 평균"
+      "narration": "송도동 이번 달 거래를 종합하면, 평균 거래가는 7.5억원, 최고가 8.6억원, 최저가 6.3억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "송도동 이번 달 거래를 종합하면, 평균"
     },
     {
       "image": null,
@@ -60,15 +60,15 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        3.4,
-        2.0,
-        5.2,
-        3.2,
-        4.5
+        7.1,
+        6.3,
+        8.6,
+        6.9,
+        8.6
       ],
       "style": "bars"
     },
     "tone": "경상도",
-    "generated_at": "2026-10-28T14:42:39.671236+00:00"
+    "generated_at": "2026-10-28T19:13:23.393290+00:00"
   }
 }
