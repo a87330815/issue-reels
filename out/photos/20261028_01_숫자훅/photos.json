@@ -3,9 +3,7 @@
     "cover": "cover.jpg",
     "scene1": "scene1.jpg",
     "scene2": "scene2.jpg",
-    "scene3": "scene3.jpg",
-    "scene4": "scene4.jpg",
-    "scene5": "scene5.jpg"
+    "scene3": "scene3.jpg"
   },
   "credits": [
     {
@@ -39,24 +37,8 @@
       "creator": "뉴스기사",
       "license": "editorial",
       "page": "https://cdnweb01.wikitree.co.kr/webdata/editor/202610/27/202610272139578400.jpg"
-    },
-    {
-      "slot": "scene4",
-      "query": "custom_url",
-      "source": "news_article",
-      "creator": "뉴스기사",
-      "license": "editorial",
-      "page": "https://cdnweb01.wikitree.co.kr/webdata/editor/202610/27/img_20261027213606_6505dead.webp"
-    },
-    {
-      "slot": "scene5",
-      "query": "smartphone social media follow",
-      "source": "Unsplash",
-      "creator": "Berke Citak",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
     }
   ],
-  "wanted": 6,
-  "fetched_at": "2026-10-28T04:49:18Z"
+  "wanted": 4,
+  "fetched_at": "2026-10-28T09:38:57Z"
 }
