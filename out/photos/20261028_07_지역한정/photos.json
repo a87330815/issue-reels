@@ -1,0 +1,80 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg",
+    "scene6": "scene6.jpg",
+    "scene7": "scene7.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Yeonsu Incheon apartment skyline",
+      "source": "Unsplash",
+      "creator": "Wuan Le",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-building-that-has-a-sign-on-the-side-of-it-YNTaCTY5skM"
+    },
+    {
+      "slot": "scene1",
+      "query": "Yeonsu Incheon apartment skyline",
+      "source": "Unsplash",
+      "creator": "Daesun Kim",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/an-aerial-view-of-a-city-with-tall-buildings-6c-mVj_d_rk"
+    },
+    {
+      "slot": "scene2",
+      "query": "Yeonsu Incheon modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Wuan Le",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-building-that-has-a-sign-on-the-side-of-it-YNTaCTY5skM"
+    },
+    {
+      "slot": "scene3",
+      "query": "Yeonsu Incheon modern apartment residential",
+      "source": "Unsplash",
+      "creator": "Daniel Bernard",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-couple-of-people-that-are-walking-down-some-steps-1YRs1xmy7kg"
+    },
+    {
+      "slot": "scene4",
+      "query": "Yeonsu Incheon apartment building",
+      "source": "Unsplash",
+      "creator": "Wuan Le",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-building-that-has-a-sign-on-the-side-of-it-YNTaCTY5skM"
+    },
+    {
+      "slot": "scene5",
+      "query": "Yeonsu Incheon apartment building",
+      "source": "Unsplash",
+      "creator": "Daesun Kim",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/an-aerial-view-of-a-city-with-tall-buildings-6c-mVj_d_rk"
+    },
+    {
+      "slot": "scene6",
+      "query": "Yeonsu Incheon residential area aerial",
+      "source": "Unsplash",
+      "creator": "Looie Kang",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-street-lined-with-buildings-and-power-lines-cJlfpAU8Zdg"
+    },
+    {
+      "slot": "scene7",
+      "query": "follow subscribe social media phone",
+      "source": "Unsplash",
+      "creator": "Berke Citak",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-smart-phone-with-social-media-on-the-screen-0cpyFsSUiSc"
+    }
+  ],
+  "wanted": 8,
+  "fetched_at": "2026-10-28T19:56:58Z"
+}

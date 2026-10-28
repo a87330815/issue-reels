@@ -22,9 +22,9 @@
       "slot": "scene1",
       "query": "Korea city luxury apartment",
       "source": "Unsplash",
-      "creator": "Jean Carlo Emer",
+      "creator": "(っ◔◡◔)っ Clement 🇰🇷",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/traditional-korean-houses-with-a-tower-in-the-distance-Ds0_4JCFGfQ"
+      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-ozwuhSnFaiM"
     },
     {
       "slot": "scene2",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-28T14:45:36Z"
+  "fetched_at": "2026-10-28T19:36:32Z"
 }

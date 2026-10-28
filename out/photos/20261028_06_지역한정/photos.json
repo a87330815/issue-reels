@@ -28,35 +28,35 @@
     },
     {
       "slot": "scene2",
-      "query": "Korea city modern apartment residential",
+      "query": "Korea city apartment building",
       "source": "Unsplash",
-      "creator": "zero take",
+      "creator": "rawkkim",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/modern-skyscrapers-against-a-cloudy-blue-sky-do7MzuKLY30"
+      "page": "https://unsplash.com/photos/city-skyline-during-sunset-with-orange-sky-0ys-mRabV44"
     },
     {
       "slot": "scene3",
-      "query": "Korea city modern apartment residential",
+      "query": "Korea city apartment building",
       "source": "Unsplash",
-      "creator": "ulziibayar badamdorj",
+      "creator": "rawkkim",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/cars-on-a-road-with-tall-buildings-in-background-715pq9uVBlo"
+      "page": "https://unsplash.com/photos/white-concrete-building-during-sunset-X7lRu5ED7Aw"
     },
     {
       "slot": "scene4",
-      "query": "Korea city modern apartment residential",
+      "query": "Korea city apartment building",
       "source": "Unsplash",
-      "creator": "Bundo Kim",
+      "creator": "Minha Baek",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/ornate-archway-entrance-with-cars-and-buildings-behind-jR5x8fSHWCc"
+      "page": "https://unsplash.com/photos/man-in-black-jacket-standing-beside-brown-wooden-table-iPUAXWCqXnQ"
     },
     {
       "slot": "scene5",
-      "query": "Korea city modern apartment residential",
+      "query": "Korea city apartment building",
       "source": "Unsplash",
-      "creator": "Vincent Yap",
+      "creator": "rawkkim",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-crossing-street-in-south-korea-zyiKGkIpBNw"
+      "page": "https://unsplash.com/photos/city-skyline-during-golden-hour-FDdolKrW1nY"
     },
     {
       "slot": "scene6",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-28T14:52:20Z"
+  "fetched_at": "2026-10-28T19:52:23Z"
 }

@@ -12,23 +12,23 @@
   "credits": [
     {
       "slot": "cover",
-      "query": "Banpo Seoul luxury apartment",
+      "query": "Apgujeong Seoul luxury apartment",
       "source": "Unsplash",
-      "creator": "Ann Danilina",
+      "creator": "Andrea De Santis",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-Y2JQGXUM1iU"
+      "page": "https://unsplash.com/photos/black-and-white-concrete-building-OKjI-M5r3KM"
     },
     {
       "slot": "scene1",
-      "query": "Banpo Seoul luxury apartment",
+      "query": "Apgujeong Seoul luxury apartment",
       "source": "Unsplash",
-      "creator": "Ming Han Low",
+      "creator": "Stéphan Valentin",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/people-walking-on-street-during-daytime-5YHqhCBiCz4"
+      "page": "https://unsplash.com/photos/neon-street-in-seoul-at-night-wepDTOWs4d0"
     },
     {
       "slot": "scene2",
-      "query": "Banpo Seoul luxury high rise apartment",
+      "query": "Apgujeong Seoul luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Ethan Brooke",
       "license": "Unsplash License",
@@ -36,14 +36,6 @@
     },
     {
       "slot": "scene3",
-      "query": "Banpo Seoul luxury high rise apartment",
-      "source": "Unsplash",
-      "creator": "Minku Kang",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/a-view-of-a-very-tall-building-in-the-distance-xMCOre_qv_8"
-    },
-    {
-      "slot": "scene4",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Trac Vu",
@@ -51,12 +43,20 @@
       "page": "https://unsplash.com/photos/modern-buildings-overlooking-a-harbor-at-sunrise-4MH7n8PFyiU"
     },
     {
-      "slot": "scene5",
+      "slot": "scene4",
       "query": "Korea city luxury high rise apartment",
       "source": "Unsplash",
       "creator": "Jéan Béller",
       "license": "Unsplash License",
       "page": "https://unsplash.com/photos/modern-city-skyline-with-distant-mountains-under-a-blue-sky-KZUSoVOzQfI"
+    },
+    {
+      "slot": "scene5",
+      "query": "Korea city luxury high rise apartment",
+      "source": "Unsplash",
+      "creator": "Yujin Seo",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-city-skyline-with-a-bridge-over-a-river-Haq3tXiVjEQ"
     },
     {
       "slot": "scene6",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-28T14:52:07Z"
+  "fetched_at": "2026-10-28T19:52:05Z"
 }
