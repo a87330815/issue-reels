@@ -1,0 +1,38 @@
+저장소 백엔드: GitHub Release
+  미디어 저장소  a87330815/issue-reels-media
+  토큰           설정됨
+  저장소 확인    a87330815/issue-reels-media (공개)
+
+설정 완료
+인스타 발행 설정:
+  호스트      graph.instagram.com
+  API 버전    v26.0
+  계정 ID     17841459210979722
+  액세스 토큰 설정됨
+
+[실패] 계정 조회: [190/-] Invalid OAuth access token - Cannot parse access token
+저장소 백엔드: GitHub Release
+  미디어 저장소  a87330815/issue-reels-media
+  토큰           설정됨
+  저장소 확인    a87330815/issue-reels-media (공개)
+
+설정 완료
+
+업로드 1건 (태그 reels-2026-10-28):
+  20261028_01_숫자훅.mp4  2.3MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261028_01.mp4
+
+공개 접근 확인:
+  OK  video_url: 200 application/octet-stream
+
+매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
+
+완료: 성공 1건 / 실패 0건
+남은 발행 가능: 10건
+발행 대상: 1건
+
+── 1/1  20261028_01_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261028_01.mp4
+  캡션: 유재석 문화훈장
+  [드라이런] 컨테이너 생성하지 않음
+
+완료: 발행 0건 / 실패 0건
