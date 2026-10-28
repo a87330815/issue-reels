@@ -33,6 +33,6 @@
 ── 1/1  20261028_01_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261028_01.mp4
   캡션: 유재석 문화훈장
-  [드라이런] 컨테이너 생성하지 않음
+  [실패] [190/-] Invalid OAuth access token - Cannot parse access token
 
-완료: 발행 0건 / 실패 0건
+완료: 발행 0건 / 실패 1건
