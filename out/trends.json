@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-10-28T02:06:52.570386+00:00",
+  "collected_at": "2026-10-28T09:26:10.410398+00:00",
   "items": [
     {
-      "keyword": "디에이치 반포124",
-      "traffic": "100+",
-      "news_title": "11월 전국 아파트 5.6만가구...지난해 比 89.1% 급증",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "4eef02b6c7fdd717"
-    },
-    {
-      "keyword": "골든 조이스틱 어워드",
-      "traffic": "100+",
-      "news_title": "펄어비스 &apos;붉은사막&apos;, 골든 조이스틱 어워드 최고상 후보에",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "d75ec892f53769fd"
-    },
-    {
-      "keyword": "그랜드 테프트 오토 vi",
-      "traffic": "200+",
-      "news_title": "“게임 하나 때문에 150만명 결근?”…1조원 손실 전망까지 나온 美, 무슨 일",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ac74793083bb708b"
-    },
-    {
-      "keyword": "sk하이닉스 ir",
-      "traffic": "200+",
-      "news_title": "블룸버그 &quot;솔리다임, 미국에 60조원 낸드공장 추진&quot;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "4c398cdbc7d2b833"
-    },
-    {
-      "keyword": "대신증권",
+      "keyword": "태양광 발전",
       "traffic": "500+",
-      "news_title": "[속보]빗썸 사내 시스템 해킹으로 개인정보 유출",
+      "news_title": "中 풍력·태양광 설비용량 20억㎾ 돌파, 세계 절반 차지",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "2fa5cc10ab64c448"
+      "key": "9ffb60fdf73a5c01"
     },
     {
-      "keyword": "도박",
-      "traffic": "200+",
-      "news_title": "4900억 불법도박사이트 운영진 단합대회 사진",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "4af73934a5f55fd4"
-    },
-    {
-      "keyword": "아주대 소아 응급실",
+      "keyword": "레버리지",
       "traffic": "5000+",
-      "news_title": "&quot;극심한 무력감·분노&quot;…경찰 &apos;압수수색 사과 거부&apos;에 아주대병원 소아응급센터 교수 7명 사직",
+      "news_title": "국장 급등락에 곱버스·레버리지 ETF 쏠림…7개 상품이 거래량 91%",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "cddf9acc239e2329"
+      "key": "ed858baeba050ff9"
     },
     {
-      "keyword": "국민연금",
+      "keyword": "김연경",
+      "traffic": "2000+",
+      "news_title": "‘신인감독2’ 김연경 “다시는 안 해, 시즌3 거부 …속지 말자”…좌중 폭소",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "837138408aba8f41"
+    },
+    {
+      "keyword": "인형",
       "traffic": "1000+",
-      "news_title": "복지장관, 10대 마약 병상 부족 문제에 &quot;치료 인프라 확충 추진&quot;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "생활·지원금·제도",
-      "key": "5e3f7f4dc5bd1d7c"
-    },
-    {
-      "keyword": "어닝콜",
-      "traffic": "200+",
-      "news_title": "주가는 떨어지는데 팔 수가 없다?…소수점 거래의 사각지대",
+      "news_title": "&quot;블핑 리사도 열광&quot; 1초에 3개씩 팔리더니…1년 만에 &apos;굴욕&apos;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "e7c77f09a3c1d504"
+      "key": "ecea2b4101b2a514"
     },
     {
-      "keyword": "아버지",
+      "keyword": "코트",
+      "traffic": "500+",
+      "news_title": "일교차 15도, 출근길 아우터 대체 뭐 입냐면요",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "d6e75fdc9f3873aa"
+    },
+    {
+      "keyword": "000660",
       "traffic": "5000+",
-      "news_title": "&quot;아버지 장례비 750만 원 혼자 냈는데&quot;…부의금 싹 달라는 작은아버지",
+      "news_title": "SK Hynix shares jump 11% after record quarterly profit, outperforming broader market",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "7e3ccf684e2d550c"
+      "key": "996eeaf9ebbe7a87"
+    },
+    {
+      "keyword": "여자",
+      "traffic": "1000+",
+      "news_title": "20년 만에 재회해 청혼했더니…&quot;임신만 원했다&quot;며 사라진 첫사랑",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "e75d4ba8379aeafc"
+    },
+    {
+      "keyword": "정구범",
+      "traffic": "500+",
+      "news_title": "프로야구 NC 좌투수 정구범, 어깨 통증으로 은퇴",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2857746609f5122c"
+    },
+    {
+      "keyword": "한국수력원자력",
+      "traffic": "200+",
+      "news_title": "멈췄던 고리 3·4호기, 10년 더 돌린다",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "596aa6943ca67afb"
     }
   ]
 }
