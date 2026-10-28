@@ -1,0 +1,36 @@
+{
+  "title": "골든 조이스틱 어워",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city luxury apartment",
+    "lines": [
+      "이번 달",
+      "<r>골든 조이스틱 어워</r>",
+      "거래 떴습니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. '골든 조이스틱 어워드' 관련 트렌드 — 펄어비스 &apos;붉은사막&apos;, 골든 조이스틱 어워드 최고상 후보에. 수치로 확인해보자.",
+      "subtitle": "'골든 조이스틱 어워드' 관련 트렌드 —"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "",
+    "category": "당일 화제 이슈",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-28T02:07:25.514786+00:00"
+  }
+}

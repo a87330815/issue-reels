@@ -1,0 +1,71 @@
+{
+  "title": "신축이 2억 비싸",
+  "cover": {
+    "image": null,
+    "photo_query": "new vs old apartment building korea",
+    "lines": [
+      "신축이 2억 비싸",
+      "<y>다 틀렸습니다</y>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "new vs old apartment building korea",
+      "narration": "이거 모르고 지나가면 손해다. 2020년 이후 신축 평균 9.1억 vs 2005년 이전 평균 6.9억 다들 잘못 알고 있다. 사실은 이렇다.",
+      "subtitle": "신축 9.1억 vs 구축 6.9억"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "반포동 래미안퍼스티지, 전용 85㎡(26평) 11층이 49.5억원에 실거래 신고됐다카이. 평당 1.9억. 2009년 준공.",
+      "subtitle": "반포동 래미안퍼스티지 49.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "같은 동네 반포자이도 주목할 만한다. 전용 60㎡(18평) 26층, 거래가 37.2억원. 평당 2.1억.",
+      "subtitle": "반포동 반포자이 37.2억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "개포자이프레지던스 전용 60㎡(18평) 14층 — 29.0억원 거래. 평당 1.6억.",
+      "subtitle": "개포동 개포자이프레지던스 29.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "동현아파트1~6 전용 85㎡(26평) 6층 — 26.0억원 거래. 평당 1.0억.",
+      "subtitle": "논현동 동현아파트1~6 26.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "construction crane building site korea",
+      "narration": "신축(5년 이내)과 구축의 평균 가격 차이는 5.4억원이다. 신축 평균 29.0억원, 구축 평균 34.4억원.",
+      "subtitle": "신축(5년 이내)과 구축의 평균 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "오해정정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        9.1,
+        6.9
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-28T02:07:24.193485+00:00"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "title": "평당 2.1억",
+  "cover": {
+    "image": null,
+    "photo_query": "Banpo Seoul luxury apartment",
+    "lines": [
+      "이번 달",
+      "<r>평당 2.1억</r>",
+      "거래 떴습니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 반포동 반포자이 평당 2.05억 (전용 59.98㎡). 수치로 확인해보자.",
+      "subtitle": "반포동 평당 2.1억"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "반포동 반포자이, 전용 60㎡(18평) 26층이 37.2억원에 실거래 신고됐다카이. 평당 2.1억. 2009년 준공.",
+      "subtitle": "반포동 반포자이 37.2억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "같은 동네 래미안퍼스티지도 주목할 만한다. 전용 85㎡(26평) 11층, 거래가 49.5억원. 평당 1.9억.",
+      "subtitle": "반포동 래미안퍼스티지 49.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "개포자이프레지던스 전용 60㎡(18평) 14층 — 29.0억원 거래. 평당 1.6억.",
+      "subtitle": "개포동 개포자이프레지던스 29.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "신반포27 전용 53㎡(16평) 2층 — 25.0억원 거래. 평당 1.5억.",
+      "subtitle": "잠원동 신반포27 25.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 26.6억원까지 벌어졌다. 평균 32.7억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        2.05,
+        1.93,
+        1.6,
+        1.55,
+        1.26
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-28T02:07:25.073925+00:00"
+  }
+}
