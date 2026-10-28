@@ -20,10 +20,10 @@
     {
       "slot": "scene1",
       "query": "napa cabbage korean market",
-      "source": "Unsplash",
-      "creator": "Zoshua Colah",
-      "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/kimchi-jars-line-up-on-a-shelf-FyYxTxMO1Xg"
+      "source": "wikimedia",
+      "creator": "naotakem",
+      "license": "BY",
+      "page": "https://commons.wikimedia.org/w/index.php?curid=83010913"
     },
     {
       "slot": "scene2",
@@ -67,5 +67,5 @@
     }
   ],
   "wanted": 7,
-  "fetched_at": "2026-10-28T09:30:22Z"
+  "fetched_at": "2026-10-28T14:43:53Z"
 }

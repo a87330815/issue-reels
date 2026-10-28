@@ -22,9 +22,9 @@
       "slot": "scene1",
       "query": "Apgujeong Seoul luxury apartment",
       "source": "Unsplash",
-      "creator": "Andrea De Santis",
+      "creator": "Stéphan Valentin",
       "license": "Unsplash License",
-      "page": "https://unsplash.com/photos/black-and-white-concrete-building-OKjI-M5r3KM"
+      "page": "https://unsplash.com/photos/neon-street-in-seoul-at-night-wepDTOWs4d0"
     },
     {
       "slot": "scene2",
@@ -76,5 +76,5 @@
     }
   ],
   "wanted": 8,
-  "fetched_at": "2026-10-28T09:37:37Z"
+  "fetched_at": "2026-10-28T14:49:10Z"
 }

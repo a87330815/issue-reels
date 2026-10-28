@@ -1,4 +1,4 @@
-run: 40664304602  2026-10-28T09:27:41Z
+run: 40708661722  2026-10-28T14:43:33Z
 unsplash key: 있음
 
 
@@ -9,7 +9,7 @@ unsplash key: 있음
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul"
     [unsplash] 12건 후보
@@ -21,7 +21,7 @@ unsplash key: 있음
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul"
     [unsplash] 12건 후보
@@ -68,7 +68,7 @@ unsplash key: 있음
     [wikimedia] 0건 후보
     ↻ 재시도: "Myeongji Busan residential area"
     [unsplash] 10건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     Unsplash 10건 (적합도 필터 생략)
     ✓ scene6 ← Unsplash (Unsplash License)
@@ -81,12 +81,13 @@ unsplash key: 있음
 === 20261023_03_물가 ===
   [cover] '배추 가격차 6,065원' → "napa cabbage korean market"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 1건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "napa cabbage korean"
     [unsplash] 1건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 6건 후보
     [wikimedia] 4건 후보
+    적합도 통과 9/10건 (Openverse/Wikimedia)
     Unsplash 1건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '배추 4,935~11,000원' → "napa cabbage korean market"
@@ -95,10 +96,11 @@ unsplash key: 있음
     [wikimedia] 0건 후보
     ↻ 재시도: "napa cabbage korean"
     [unsplash] 1건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 6건 후보
     [wikimedia] 4건 후보
+    적합도 통과 9/10건 (Openverse/Wikimedia)
     Unsplash 1건 (적합도 필터 생략)
-    ✓ scene1 ← Unsplash (Unsplash License)
+    ✓ scene1 ← wikimedia (BY)
   [scene2] '20261009 47 246 3300' → "Korea city apartment building"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
@@ -206,18 +208,20 @@ unsplash key: 있음
 === 20261023_06_숫자훅 ===
   [cover] '롤' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''롤' 관련 트렌드 — [오!쎈 인터뷰]' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
@@ -229,14 +233,16 @@ unsplash key: 있음
 === 20261023_06_지역한정 ===
   [cover] '송도동 최고 24억' → "Korea city apartment skyline"
     [unsplash] 4건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 10건 후보 (부적합 2건 제외)
     [wikimedia] 0건 후보
+    적합도 통과 0/10건 (Openverse/Wikimedia)
     Unsplash 4건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '송도동 최고 24.0억' → "Korea city apartment skyline"
     [unsplash] 4건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 10건 후보 (부적합 2건 제외)
     [wikimedia] 0건 후보
+    적합도 통과 0/10건 (Openverse/Wikimedia)
     Unsplash 4건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '송도동 인천송도힐스테이트5단지' → "Korea city luxury high rise apartment"
@@ -257,7 +263,7 @@ unsplash key: 있음
     ✓ scene5 ← Unsplash (Unsplash License)
   [scene6] '송도동 이번 달 거래를 종합하면, 평균' → "Korea city residential area aerial"
     [unsplash] 8건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     Unsplash 8건 (적합도 필터 생략)
     ✓ scene6 ← Unsplash (Unsplash License)
@@ -270,8 +276,9 @@ unsplash key: 있음
 === 20261023_07_지역한정 ===
   [cover] '송도동 최고 24억' → "Korea city apartment skyline"
     [unsplash] 4건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 10건 후보 (부적합 2건 제외)
     [wikimedia] 0건 후보
+    적합도 통과 0/10건 (Openverse/Wikimedia)
     Unsplash 4건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '송도동 최고 24.0억' → "Korea city apartment skyline"
@@ -406,14 +413,16 @@ unsplash key: 있음
 === 20261023_09_지역한정 ===
   [cover] '서초동 최고 37억' → "Seocho Seoul apartment skyline"
     [unsplash] 3건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 1건 후보
     [wikimedia] 0건 후보
+    적합도 통과 0/1건 (Openverse/Wikimedia)
     Unsplash 3건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '서초동 최고 37.0억' → "Seocho Seoul apartment skyline"
     [unsplash] 3건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 1건 후보
     [wikimedia] 0건 후보
+    적합도 통과 0/1건 (Openverse/Wikimedia)
     Unsplash 3건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '서초동 서초푸르지오써밋 37.0억원' → "Seocho Seoul luxury high rise apartment"
@@ -451,18 +460,20 @@ unsplash key: 있음
 === 20261024_01_숫자훅 ===
   [cover] '35억 아파트' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '개포동 34.8억 거래' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '개포동 디에이치아너힐즈 34.8억원' → "Korea city luxury high rise apartment"
@@ -494,7 +505,7 @@ unsplash key: 있음
     ✓ scene2 ← Unsplash (Unsplash License)
   [scene3] 'SNS 직접 인증 + 팬 대기줄' → "Justin Bieber fashion brand streetwear"
     [unsplash] 2건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Justin Bieber fashion brand"
     [unsplash] 2건 후보
@@ -1434,9 +1445,8 @@ unsplash key: 있음
 === 20261026_06_지역한정 ===
   [cover] '우동 최고 11억' → "Korea city apartment skyline"
     [unsplash] 4건 후보
-    [openverse] 10건 후보 (부적합 2건 제외)
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
-    적합도 통과 0/10건 (Openverse/Wikimedia)
     Unsplash 4건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '우동 최고 10.9억' → "Korea city apartment skyline"
@@ -1477,11 +1487,10 @@ unsplash key: 있음
 === 20261026_07_숫자훅 ===
   [cover] '여행경보' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''여행경보' 관련 트렌드 —' → "Korea city luxury apartment"
@@ -1502,9 +1511,8 @@ unsplash key: 있음
 === 20261026_07_지역한정 ===
   [cover] '반여동 최고 5억' → "Korea city apartment skyline"
     [unsplash] 4건 후보
-    [openverse] 10건 후보 (부적합 2건 제외)
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
-    적합도 통과 0/10건 (Openverse/Wikimedia)
     Unsplash 4건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '반여동 최고 4.8억' → "Korea city apartment skyline"
@@ -1532,7 +1540,7 @@ unsplash key: 있음
     ✓ scene5 ← Unsplash (Unsplash License)
   [scene6] '반여동 이번 달 거래를 종합하면, 평균' → "Korea city residential area aerial"
     [unsplash] 8건 후보
-    [openverse] 0건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     Unsplash 8건 (적합도 필터 생략)
     ✓ scene6 ← Unsplash (Unsplash License)
@@ -1545,7 +1553,7 @@ unsplash key: 있음
 === 20261026_08_숫자훅 ===
   [cover] '평당 1.7억' → "Apgujeong Seoul luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 0건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Apgujeong Seoul luxury"
     [unsplash] 1건 후보
@@ -1553,14 +1561,14 @@ unsplash key: 있음
     [wikimedia] 0건 후보
     ↻ 재시도: "Apgujeong Seoul"
     [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 12건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 1건 후보
-    적합도 통과 1/13건 (Openverse/Wikimedia)
+    적합도 통과 0/1건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '압구정동 평당 1.7억' → "Apgujeong Seoul luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 0건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Apgujeong Seoul luxury"
     [unsplash] 1건 후보
@@ -1602,11 +1610,10 @@ unsplash key: 있음
 === 20261026_09_숫자훅 ===
   [cover] 't1' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''t1' 관련 트렌드 — T1' → "Korea city luxury apartment"
@@ -1639,7 +1646,7 @@ unsplash key: 있음
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '반포동 49.5억 거래' → "Banpo Seoul luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 0건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
     [unsplash] 0건 후보
@@ -1669,9 +1676,8 @@ unsplash key: 있음
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] '좌동 6건 거래' → "Korea city apartment skyline"
     [unsplash] 4건 후보
-    [openverse] 10건 후보 (부적합 2건 제외)
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
-    적합도 통과 0/10건 (Openverse/Wikimedia)
     Unsplash 4건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '좌동 롯데3차 3.4억원' → "Korea city modern apartment residential"
@@ -1705,7 +1711,7 @@ unsplash key: 있음
 === 20261027_03_숫자훅 ===
   [cover] '55억 차이' → "Banpo Seoul luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 0건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Banpo Seoul luxury"
     [unsplash] 0건 후보
@@ -2286,11 +2292,11 @@ unsplash key: 있음
   → 8/8장 저장, 매니페스트: out/photos/20261028_04_숫자훅/photos.json
 
 === 20261028_04_체크리스트 ===
-  [cover] '국민연금' → "checklist document pen desk"
+  [cover] '대한 광통신' → "checklist document pen desk"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''국민연금' 관련 트렌드 — 복지장관,' → "checklist document pen desk"
+  [scene1] ''대한 광통신' 관련 트렌드 —' → "checklist document pen desk"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
@@ -2301,29 +2307,55 @@ unsplash key: 있음
   → 3/3장 저장, 매니페스트: out/photos/20261028_04_체크리스트/photos.json
 
 === 20261028_05_숫자훅 ===
-  [cover] '태양광 발전' → "Korea city luxury apartment"
+  [cover] '43억 차이' → "Banpo Seoul luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "Korea city luxury"
+    ↻ 재시도: "Banpo Seoul luxury"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Banpo Seoul"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''태양광 발전' 관련 트렌드 — 中' → "Korea city luxury apartment"
+  [scene1] '반포동 vs 반여동' → "Banpo Seoul luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "Korea city luxury"
+    ↻ 재시도: "Banpo Seoul luxury"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Banpo Seoul"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+  [scene2] '반포동 래미안퍼스티지 49.5억원' → "Banpo Seoul luxury high rise apartment"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene2 ← Unsplash (Unsplash License)
-  → 3/3장 저장, 매니페스트: out/photos/20261028_05_숫자훅/photos.json
+  [scene3] '반포동 반포자이 37.2억원' → "Banpo Seoul luxury high rise apartment"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '개포동 개포자이프레지던스 29.0억원' → "Korea city luxury high rise apartment"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '논현동 동현아파트1~6 26.0억원' → "Korea city luxury high rise apartment"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene5 ← Unsplash (Unsplash License)
+  [scene6] '이번에 확인된 5건의 거래에서 가격' → "real estate market price chart"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene6 ← Unsplash (Unsplash License)
+  [scene7] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene7 ← Unsplash (Unsplash License)
+  → 8/8장 저장, 매니페스트: out/photos/20261028_05_숫자훅/photos.json
 
 === 20261028_06_지역한정 ===
   [cover] '송도동 최고 9억' → "Korea city apartment skyline"
@@ -2420,7 +2452,7 @@ unsplash key: 있음
   → 8/8장 저장, 매니페스트: out/photos/20261028_07_숫자훅/photos.json
 
 === 20261028_08_숫자훅 ===
-  [cover] '레버리지' → "Korea city luxury apartment"
+  [cover] '신진 서' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -2429,7 +2461,7 @@ unsplash key: 있음
     적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''레버리지' 관련 트렌드 — 국장' → "Korea city luxury apartment"
+  [scene1] ''신진 서' 관련 트렌드 — 신진서' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -2445,7 +2477,7 @@ unsplash key: 있음
   → 3/3장 저장, 매니페스트: out/photos/20261028_08_숫자훅/photos.json
 
 === 20261028_09_숫자훅 ===
-  [cover] '김연경' → "Korea city luxury apartment"
+  [cover] '하림' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -2454,7 +2486,7 @@ unsplash key: 있음
     적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''김연경' 관련 트렌드 — ‘신인감독2’' → "Korea city luxury apartment"
+  [scene1] ''하림' 관련 트렌드 — [오늘Who]' → "Korea city luxury apartment"
     [unsplash] 0건 후보
     [openverse] 2건 후보
     [wikimedia] 0건 후보
@@ -2496,7 +2528,7 @@ unsplash key: 있음
     ✓ scene4 ← Unsplash (Unsplash License)
   → 5/5장 저장, 매니페스트: out/photos/test_trend_01/photos.json
 
-총 423/423장 수집
+총 428/428장 수집
 --- 수집된 파일 ---
 out/photos/20261023_01_숫자훅/cover.jpg
 out/photos/20261023_01_숫자훅/scene1.jpg
