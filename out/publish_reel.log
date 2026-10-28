@@ -27,12 +27,15 @@
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 10건
+남은 발행 가능: 98건
 발행 대상: 1건
 
 ── 1/1  20261028_01_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-28/20261028_01.mp4
   캡션: 유재석 문화훈장
-  [실패] [190/-] Invalid OAuth access token - Cannot parse access token
+  컨테이너: 17972085218973700
+      0초  IN_PROGRESS
+     54초  FINISHED
+  [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
