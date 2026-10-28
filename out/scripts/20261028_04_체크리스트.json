@@ -1,11 +1,11 @@
 {
-  "title": "국민연금",
+  "title": "대한 광통신",
   "cover": {
     "image": null,
     "photo_query": "checklist document pen desk",
     "lines": [
       "반드시 확인",
-      "<r>국민연금</r>"
+      "<r>대한 광통신</r>"
     ],
     "badge": null
   },
@@ -13,8 +13,8 @@
     {
       "image": null,
       "photo_query": "checklist document pen desk",
-      "narration": "이거 모르고 지나가면 손해다. '국민연금' 관련 트렌드 — 복지장관, 10대 마약 병상 부족 문제에 &quot;치료 인프라 확충 추진&quot; 꼭 체크해야 할 거 정리해봤다.",
-      "subtitle": "'국민연금' 관련 트렌드 — 복지장관,"
+      "narration": "이거 모르고 지나가면 손해다. '대한 광통신' 관련 트렌드 — 대한광통신 주가, 10월 28일 14,980원 9.34% 상승 꼭 체크해야 할 거 정리해봤다.",
+      "subtitle": "'대한 광통신' 관련 트렌드 —"
     },
     {
       "image": null,
@@ -30,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-28T02:07:24.406896+00:00"
+    "generated_at": "2026-10-28T14:42:40.144186+00:00"
   }
 }

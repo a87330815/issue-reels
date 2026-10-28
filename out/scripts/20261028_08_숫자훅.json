@@ -1,10 +1,10 @@
 {
-  "title": "레버리지",
+  "title": "신진 서",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>레버리지</r>",
+      "<r>신진 서</r>",
       "이거 실환가요"
     ],
     "badge": null
@@ -13,8 +13,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '레버리지' 관련 트렌드 — 국장 급등락에 곱버스·레버리지 ETF 쏠림…7개 상품이 거래량 91%. 수치로 확인해보자.",
-      "subtitle": "'레버리지' 관련 트렌드 — 국장"
+      "narration": "이거 모르고 지나가면 손해다. '신진 서' 관련 트렌드 — 신진서 9단, 한국바둑리그 1억 4천만 원에 GS칼텍스 지명. 수치로 확인해보자.",
+      "subtitle": "'신진 서' 관련 트렌드 — 신진서"
     },
     {
       "image": null,
@@ -30,6 +30,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-28T09:26:46.062614+00:00"
+    "generated_at": "2026-10-28T14:42:41.074178+00:00"
   }
 }

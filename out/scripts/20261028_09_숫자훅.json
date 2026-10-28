@@ -1,11 +1,12 @@
 {
-  "title": "김연경",
+  "title": "하림",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>김연경</r>",
-      "이거 실환가요"
+      "이번 달",
+      "<r>하림</r>",
+      "거래 떴습니다"
     ],
     "badge": null
   },
@@ -13,8 +14,8 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '김연경' 관련 트렌드 — ‘신인감독2’ 김연경 “다시는 안 해, 시즌3 거부 …속지 말자”…좌중 폭소. 수치로 확인해보자.",
-      "subtitle": "'김연경' 관련 트렌드 — ‘신인감독2’"
+      "narration": "이거 모르고 지나가면 손해다. '하림' 관련 트렌드 — [오늘Who] 김홍국 왜 하림산업 부동산·식품 나누나, &apos;양재 개발·식품 적자&apos; 핀포인트로 돌파구 찾기. 수치로 확인해보자.",
+      "subtitle": "'하림' 관련 트렌드 — [오늘Who]"
     },
     {
       "image": null,
@@ -30,6 +31,6 @@
     "attribution": "",
     "chart": null,
     "tone": "경상도",
-    "generated_at": "2026-10-28T09:26:46.221679+00:00"
+    "generated_at": "2026-10-28T14:42:41.288005+00:00"
   }
 }
