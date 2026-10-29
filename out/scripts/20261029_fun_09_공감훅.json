@@ -1,46 +1,45 @@
 {
-  "title": "편의점 우산의 법칙",
+  "title": "삼각김밥 뜯는 법",
   "cover": {
     "image": null,
     "lines": [
-      "편의점에서",
-      "<r>우산 사면</r>",
-      "그날 꼭",
-      "비 그친다"
+      "삼각김밥 뜯다가",
+      "<r>김 다 찢어본</r>",
+      "사람들"
     ],
     "badge": null,
-    "photo_query": "convenience store umbrella rain"
+    "photo_query": "convenience store kimbap triangle"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "아 진짜 어제 내렸던 비. 우산 없이 나갔다가 흠뻑 젖었지 뭐.",
-      "subtitle": "우산을 놓쳤나봐",
-      "photo_query": "wet person rain umbrella lost"
+      "narration": "편의점 삼각김밥. 밥도 맛있고 김도 맛있지만, 뜯는 순간이 핵심이다 아이가.",
+      "subtitle": "순서가 중요한 그것",
+      "photo_query": "triangle kimbap packaging"
     },
     {
       "image": null,
-      "narration": "오늘 아침 편의점 가서 새 우산 사는 거야. 3000원짜리. 근데 나가는 순간 생각해봐.",
-      "subtitle": "근데 하늘이 맑네?",
-      "photo_query": "convenience store checkout umbrella purchase"
+      "narration": "김부터 떨어낼라고 우악 뜯었는데... 와 대박. 김이 반만 떨어지고 밥이랑 짜벽.",
+      "subtitle": "이미 늦었다",
+      "photo_query": "seaweed torn ripped paper"
     },
     {
       "image": null,
-      "narration": "비가 뚝 그쳤다고! 유리창으로 봤을 때 구름도 없고. 이게 뭐 하는 짓이냐니까.",
-      "subtitle": "우산만 사면 안 내리더라",
-      "photo_query": "clear sky blue weather sunshine"
+      "narration": "그럼 비닐끝을 먼저 떨어내고, 밥을 조금 들어내고, 그다음 김을 떨어내야 된다거든.",
+      "subtitle": "정석은 이거다",
+      "photo_query": "hands unwrapping food carefully"
     },
     {
       "image": null,
-      "narration": "근데 화난다고 해도 버릴 수 없지. 어차피 또 비 올 거고. 그리고 내일 또 잃어버릴 거 뻔해.",
-      "subtitle": "반복되는 운명",
-      "photo_query": "folded umbrella corner room"
+      "narration": "근데 누가 이 순서를 알려줘? 아무도 안 알려준다. 그냥 삐뚤거리면서 배운다.",
+      "subtitle": "시행착오의 연속",
+      "photo_query": "person frustrated learning"
     },
     {
       "image": null,
-      "narration": "너도 이런 거 있제? 댓글로 얘기해봐. 우산 사는 순간 비가 나타나는 기분 말이야.",
-      "subtitle": "이런 공감 더 보고 싶음",
-      "photo_query": "friends talking laughing together"
+      "narration": "맞는 사람? 댓글로 자랑해 봐라 아이. 우리 다 김 찢어봤다.",
+      "subtitle": "공감해줄 준비 됨",
+      "photo_query": "friends eating snack together"
     }
   ],
   "meta": {
@@ -49,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T03:38:28.499675+00:00"
+    "generated_at": "2026-10-29T03:58:02.900569+00:00"
   }
 }

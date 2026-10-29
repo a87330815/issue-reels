@@ -1,0 +1,52 @@
+{
+  "title": "만 나이 통일됐는데 왜 자꾸 헷갈리냐고",
+  "cover": {
+    "image": null,
+    "lines": [
+      "만 나이 통일됐는데",
+      "<r>아직도 헷갈린다</r>"
+    ],
+    "badge": null,
+    "photo_query": "calendar confused calculation"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "\"올해 만 나이 몇이세요?\" \"아 내가... 만으로는 33인데\" 이렇게 대답하는 거 봐봐. 이미 헷갈려 버렸다.",
+      "subtitle": "만 나이로 일관되려다 자동으로 환산 모드",
+      "photo_query": "woman thinking confused age"
+    },
+    {
+      "image": null,
+      "narration": "엄마한테 \"엄마 올해 몇이야?\" 물어보면 \"어 나 올해 생일 지나니까 육십셋\" 이러는데, 이건 이제 뭐냐고. 아직도 빼먹는 거야.",
+      "subtitle": "기성세대는 여전히 한국식 나이로 계산 중",
+      "photo_query": "elderly woman thinking confused"
+    },
+    {
+      "image": null,
+      "narration": "\"2000년생이니까 올해 25?\" 아니다, 1월~4월생은 24고, 5월~12월생이 25다. 이런 식으로 매번 계산기 켜야 된다.",
+      "subtitle": "생일 기준으로 또 나뉘는 상황",
+      "photo_query": "smartphone calculator app born"
+    },
+    {
+      "image": null,
+      "narration": "외국인한테 나이 물어지는데 \"I'm 33\" 이러고 나니 자꾸 \"아 한국식이면 35네\" 이렇게 머릿속으로 다시 계산하는 나.",
+      "subtitle": "국제화 시대, 하지만 뇌는 여전히",
+      "photo_query": "conversation international couple talking"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우 눌러. 나이만 해도 이 정도 헷갈리니까 요즘 세상 얼마나 복잡한지 알지?",
+      "subtitle": "팔로우는 세대를 초월한 공감의 시작",
+      "photo_query": "social media follow button phone"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:58:17.279399+00:00"
+  }
+}

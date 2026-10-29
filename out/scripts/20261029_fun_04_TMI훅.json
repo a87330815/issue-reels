@@ -1,0 +1,53 @@
+{
+  "title": "엘리베이터 닫힘 버튼의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "엘리베이터 닫힘",
+      "<r>버튼 누른 적</r>",
+      "있냐고?"
+    ],
+    "badge": null,
+    "photo_query": "elevator buttons close door"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 엘리베이터 타고 누구는 닫힘 버튼을 맨날 누르제. 자, 근데 말이다. 그 버튼이 대부분 가짜라니까.",
+      "subtitle": "닫힘 버튼은 작동 안 함",
+      "photo_query": "person pressing elevator button frustrated"
+    },
+    {
+      "image": null,
+      "narration": "한국 건축법상 일반인한테는 안 된다고 카더라. 응급용이거나 관리사만 쓸 수 있다는 거네. 그럼 우리가 누르는 게 뭐하는 짓인데?",
+      "subtitle": "법으로 금지된 버튼",
+      "photo_query": "elevator door closing automatically"
+    },
+    {
+      "image": null,
+      "narration": "그냥 문 닫히는 시간을 미리 설정해뒀다고 하네. 우리가 버튼 누르든 안 누르든 그 시간 되면 닫힌다는 거지.",
+      "subtitle": "이미 정해진 타이밍",
+      "photo_query": "elevator timer mechanism"
+    },
+    {
+      "image": null,
+      "narration": "에이, 지금까지 누르던 게 다 플라세보? 심지어 일부 건물은 버튼도 가짜라니까. 아 진짜 웃기네.",
+      "subtitle": "그동안 누른 게 전부 무용지물",
+      "photo_query": "person realizing pressing fake button"
+    },
+    {
+      "image": null,
+      "narration": "이런 식으로 사람들이 안심하게 하는 거래. '내가 뭔가 한다'는 느낌을 주려고. 똑같은 거 더 궁금하면 팔로우해봐.",
+      "subtitle": "심리 트릭이었던 거다",
+      "photo_query": "elevator waiting psychology"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:57:25.570758+00:00"
+  }
+}

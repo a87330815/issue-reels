@@ -1,0 +1,53 @@
+{
+  "title": "냉장고 칸별 정리법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "냉장고 이렇게",
+      "<r>정리하면</r>",
+      "식재료 2배 오래간다"
+    ],
+    "badge": null,
+    "photo_query": "organized refrigerator compartments"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 냉장고 정리 제대로 알아? 칸마다 온도가 다르다는 거 알고 있나? 이걸 모르면 음식이 금방 버려져.",
+      "subtitle": "냉장고 칸별 온도 다르다",
+      "photo_query": "refrigerator temperature zones"
+    },
+    {
+      "image": null,
+      "narration": "맨 위칸은 4도 정도로 제일 찬데, 유제품·남은 반찬 같은 상할 맛한 것 놓거라. 아래칸은 8도 정도라서 계란·버터 같은 게 딱이다.",
+      "subtitle": "위칸: 유제품, 아래칸: 계란·버터",
+      "photo_query": "dairy products eggs butter storage"
+    },
+    {
+      "image": null,
+      "narration": "문짝은 제일 따뜻해서 간장·소스 같은 데 쓰고, 야채칸은 습도를 제때 맞춰줘야 오래간다. 이렇게만 해도 기간이 <r>3배까지 늘어난다</r>.",
+      "subtitle": "문짝: 소스류, 야채칸: 습도 관리",
+      "photo_query": "vegetable crisper drawer organization"
+    },
+    {
+      "image": null,
+      "narration": "투명한 용기에 담아서 한눈에 뭐가 있는지 보이게 해야 중복 구매도 안 되고, 버리는 음식도 줄어든다.",
+      "subtitle": "투명 용기로 통일 = 낭비 방지",
+      "photo_query": "clear storage containers refrigerator"
+    },
+    {
+      "image": null,
+      "narration": "이 방법만으로 한 달에 2~3만 원 정도 버린다던 음식을 확 줄일 수 있어. 이런 살림 꿀팁 더 보고 싶으면 팔로우!",
+      "subtitle": "월 2~3만 원 절약 효과",
+      "photo_query": "fresh vegetables fruits storage"
+    }
+  ],
+  "meta": {
+    "format": "살림팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:58:33.710537+00:00"
+  }
+}

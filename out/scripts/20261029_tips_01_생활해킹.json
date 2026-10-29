@@ -1,0 +1,53 @@
+{
+  "title": "옷 관리 꿀팁",
+  "cover": {
+    "image": null,
+    "lines": [
+      "니트 보풀부터",
+      "<r>흰옷 누런때까지</r>",
+      "5분만에 해결"
+    ],
+    "badge": null,
+    "photo_query": "sweater fabric care lint"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "니트 보풀 이거 진짜 짜증나지? 가정용 면도기 하나면 깔끔하게 제거된다. 보풀이 날린 부분 위에 가볍게 문질러주면 돼. 섬유질이 손상 안 되는 이유는 날이 아주 짧거든.",
+      "subtitle": "가정용 면도기로 니트 보풀 제거",
+      "photo_query": "razor remove sweater pilling"
+    },
+    {
+      "image": null,
+      "narration": "흰옷 누런때? 드라이클리닝 갈 필요 없다. 산소계 표백제 한 스푼에 미지근한 물 1리터 섞어서, 옷을 2시간 불려놔. 산소 기포가 때를 떠내니까 효과가 장난 아니야.",
+      "subtitle": "산소계 표백제 2시간 침수",
+      "photo_query": "oxygen bleach white shirt stain"
+    },
+    {
+      "image": null,
+      "narration": "옷 냄새? 드라이코스 대신 소주 한 스푼을 분무기에 섞어서 뿌려놓으면 된다. 알코올이 박테리아를 죽이니까 냄새가 사라진다. 하루 밤이면 충분해.",
+      "subtitle": "소주 분무액으로 냄새 제거",
+      "photo_query": "fabric freshener spray clothes"
+    },
+    {
+      "image": null,
+      "narration": "색깔 옷은 중성세제 물에 30분만 불려놨다가 찬바람에 헹궈. 뜨거운 물은 색까지 빠져나간다. 이것만으로도 옷 수명이 두 배는 간다 아이가.",
+      "subtitle": "찬물로 중성세제 침수 세탁",
+      "photo_query": "cold water laundry delicate clothes"
+    },
+    {
+      "image": null,
+      "narration": "이런 옷 관리 꿀팁 더 보고 싶으면 팔로우 해봐. 매일 아침 새로운 살림팁으로 깨워드린다니까.",
+      "subtitle": "더 많은 꿀팁은 팔로우에서",
+      "photo_query": "organized closet wardrobe"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:58:26.201083+00:00"
+  }
+}

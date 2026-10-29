@@ -1,0 +1,53 @@
+{
+  "title": "자판기 잔돈의 비밀",
+  "cover": {
+    "image": null,
+    "lines": [
+      "자판기가",
+      "<r>동전을 안 뱉는</r>",
+      "이유 있다고?"
+    ],
+    "badge": null,
+    "photo_query": "vending machine coins return"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "자판기에서 음료수 사고 잔돈이 나와야 되는데, 동전이 자꾸 안 나오잖아. '어? 뭐지?' 이러면서 자판기 치게 된다 아이가.",
+      "subtitle": "동전은 왜 안 나올까?",
+      "photo_query": "frustrated person vending machine"
+    },
+    {
+      "image": null,
+      "narration": "근데 알고 봤더니 자판기가 똑똑하다고 카더라. 우리가 남긴 동전 무게를 계산해서, 무거우면 동전이라고 인식하고 분류한다는 거다.",
+      "subtitle": "자판기는 무게로 판단한다",
+      "photo_query": "vending machine coin mechanism"
+    },
+    {
+      "image": null,
+      "narration": "그래서 얇고 가벼운 동전부터는 '이건 뭐 이상한데?' 하면서 안 뱉는 거다. 특히 낡은 동전은 더 말이다.",
+      "subtitle": "낡은 동전은 기계가 거른다",
+      "photo_query": "worn out coins old money"
+    },
+    {
+      "image": null,
+      "narration": "그다음에 자판기 내부 경로가 막혀 있으면? 이미 넣은 잔돈도 못 나온다. 그래서 가끔 \"이 자판기는 동전을 안 뱉는 자판기\"가 되는 거지.",
+      "subtitle": "기계 고장도 영향을 미친다",
+      "photo_query": "vending machine malfunction"
+    },
+    {
+      "image": null,
+      "narration": "다음부터 자판기에서 동전이 안 나오면, 자판기한테 화낼 게 아니라 동전을 의심해 봐라. 이런 거 더 보고 싶으면 팔로우해.",
+      "subtitle": "자판기도 할 말이 많다",
+      "photo_query": "vending machine coins falling"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:57:33.083623+00:00"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "title": "수박 고르기의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "수박 두드려도",
+      "<r>다 똑같은 소리</r>"
+    ],
+    "badge": null,
+    "photo_query": "selecting watermelon tapping"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 마트에서 수박 고르는 사람들 봤지? 두드려보면서 '어어어' 하는 거.",
+      "subtitle": "두드려 봅시다",
+      "photo_query": "man tapping watermelon listening"
+    },
+    {
+      "image": null,
+      "narration": "근데 실제로 물어본 농수산물 전문가 말이 웃기더라. 그게 다 똑같은 소리라고 한다니까!",
+      "subtitle": "사실 구분 안 됨",
+      "photo_query": "watermelons market selection"
+    },
+    {
+      "image": null,
+      "narration": "진짜 잘 익은 수박은 아래 노란 부분이랑 무게감으로 고르는 게 맞다더라. 귀는 그냥... 눈곱 떨어진 거다.",
+      "subtitle": "봐야 맞음",
+      "photo_query": "ripe watermelon yellow spot bottom"
+    },
+    {
+      "image": null,
+      "narration": "그래도 자존심 때문에 계속 두드려본다 아이가. 주변에 '나 잘 안다'는 티 내려고.",
+      "subtitle": "그래도 두드려봄",
+      "photo_query": "pretending expert choosing fruit"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우! 우리 다 속고 산다니까.",
+      "subtitle": "팔로우 눌러봐",
+      "photo_query": "follow like subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:58:09.107791+00:00"
+  }
+}

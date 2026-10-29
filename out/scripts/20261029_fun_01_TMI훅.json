@@ -1,0 +1,52 @@
+{
+  "title": "핸드폰 배터리 1%의 마법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "1%에서",
+      "<r>더 오래 버틴다</r>"
+    ],
+    "badge": null,
+    "photo_query": "smartphone battery low warning red"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "99%에서 90%까지? 30초면 떨어진다. 근데 1%에서는 어떻게 돼냐.",
+      "subtitle": "99% → 90% 순식간",
+      "photo_query": "phone battery percentage drop fast"
+    },
+    {
+      "image": null,
+      "narration": "1%에서 2분, 3분 버티는 거 다 봤제? 아이고 이게 뭐하는 짓인가 싶지만 그 1%가 진짜 기적이다 아이가.",
+      "subtitle": "1%에서 2-3분 버팀",
+      "photo_query": "smartphone low battery 1 percent screen"
+    },
+    {
+      "image": null,
+      "narration": "과학적으로는 배터리 전압이 1%에서 뚝 떨어지기 때문에 폰이 극한으로 버티는 거라고 카더라. 응급 모드 같은 거 있잖아.",
+      "subtitle": "극한 전압 생존 모드",
+      "photo_query": "battery voltage meter technical"
+    },
+    {
+      "image": null,
+      "narration": "그래서 유명한 말이 있다. 1% 배터리보다 믿을 게 없다. 충전기는 거짓말을 해도 1%는 진짜다.",
+      "subtitle": "1%는 거짓말 안 함",
+      "photo_query": "phone charger cable trust"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 알고 싶으면 팔로우해봐. 우리는 매일 이런 거 따져본다니까.",
+      "subtitle": "팔로우 하고가~",
+      "photo_query": "smartphone follow notification icon"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:57:06.199481+00:00"
+  }
+}

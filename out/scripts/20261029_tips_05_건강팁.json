@@ -1,0 +1,53 @@
+{
+  "title": "30초 손 씻기로 감기 예방률 50% 올리기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "30초 손 씻기면",
+      "<r>감기 예방률</r>",
+      "50% 올린다"
+    ],
+    "badge": null,
+    "photo_query": "handwashing soap water"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 손 씻기 제대로 안 하면 바이러스가 손에 붙어 얼굴만 10번 이상 만져도 감기 걸린다고 한다. 근데 30초만 제대로 씻으면 예방률이 50%까지 올라간다니까 와 대박 아이가.",
+      "subtitle": "손에 묻은 바이러스 제거율",
+      "photo_query": "virus bacteria hands microscope"
+    },
+    {
+      "image": null,
+      "narration": "먼저 따뜻한 물에 손을 적신다. 그리고 비누를 충분히 낸 다음, 손가락 사이사이를 문질러야 한다. 여기가 핵심이지. 손톱 밑, 손가락 사이, 손등까지 구석구석.",
+      "subtitle": "손가락 사이·손톱 밑 20초",
+      "photo_query": "washing hands fingers soap bubbles"
+    },
+    {
+      "image": null,
+      "narration": "이렇게 총 30초를 꽉 채워야 한다. 10초는 부족하고, 20초도 모자란다. 비누 성분이 박테리아 껍질을 녹이는 데 30초가 필요하거든.",
+      "subtitle": "비누가 박테리아 껍질을 녹이는 시간",
+      "photo_query": "washing hands rinse clean water"
+    },
+    {
+      "image": null,
+      "narration": "마지막으로 흐르는 물에 깨끗이 헹구면 끝이다. 외출하고 돌아온 직후, 밥 먹기 전, 화장실 다녀온 후 이 세 번만 30초씩 해도 감기를 절반 이상 줄일 수 있다.",
+      "subtitle": "하루 3번, 30초씩 손 씻기",
+      "photo_query": "hand hygiene routine daily"
+    },
+    {
+      "image": null,
+      "narration": "이런 생활 꿀팁 더 보고 싶으면 팔로우해 두셨어. 야야야, 손 씻기부터 시작하면 올겨울 감기 안 걸린다고 봐.",
+      "subtitle": "팔로우하면 더 많은 팁을 만날 수 있어요",
+      "photo_query": "healthy lifestyle prevention"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:59:05.491028+00:00"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "title": "라면 물 양 계산 실패",
+  "cover": {
+    "image": null,
+    "lines": [
+      "라면 물",
+      "<r>이렇게</r>",
+      "틀렸다고?"
+    ],
+    "badge": null,
+    "photo_query": "instant noodle pot water"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "물 이거 정도면 딱이겠지? 하면서 대충 부었는데... 라면 완성 후 국물이 어마어마하다.",
+      "subtitle": "국물 폭주 라면",
+      "photo_query": "ramen bowl too much broth"
+    },
+    {
+      "image": null,
+      "narration": "다음엔 반대로 물을 적게 부었다. 그럼 이번엔 면이 자르르 익고... 국물이 시어떄기처럼 줄어든다.",
+      "subtitle": "국물 부족 라면",
+      "photo_query": "ramen noodle dry sparse"
+    },
+    {
+      "image": null,
+      "narration": "보니까 라면은 내 조절 능력을 테스트하는 거 같아. 물의 정확함... 그게 요리 아니냐고.",
+      "subtitle": "라면의 까다로움",
+      "photo_query": "cooking concentration measuring water"
+    },
+    {
+      "image": null,
+      "narration": "결국 매번 다시 물을 부었다 덜었다를 반복한다. 이런 거 더 보고 싶으면 팔로우해봐.",
+      "subtitle": "라면과의 전쟁",
+      "photo_query": "ramen cooking struggle patience"
+    }
+  ],
+  "meta": {
+    "format": "음식공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:57:56.613858+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "환절기 감기 안 걸리는 3가지 습관",
+  "cover": {
+    "image": null,
+    "lines": [
+      "환절기마다",
+      "감기 걸리는 사람",
+      "<r>놓치는 습관 3가지</r>"
+    ],
+    "badge": null,
+    "photo_query": "autumn season temperature change"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "환절기 감기는 갑자기 오는 거 아니다. 습관으로 막는 거다. 첫 번째, 하루에 2리터 물을 마셔야 한다. 목 점막이 건조해지면 바이러스가 달라붙기 좋아진다.",
+      "subtitle": "하루 2리터 물 마시기",
+      "photo_query": "drinking water glass hydration"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 새벽 5~6시에 잠 깨고 1분 스트레칭을 해봐. 체온이 올라가면서 면역력이 확 살아난다. 체온 1도 오르면 면역력은 30% 상승한다고 한다.",
+      "subtitle": "새벽 1분 스트레칭",
+      "photo_query": "morning stretching bedroom sunrise"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 외출 후엔 무조건 30초 이상 양치질을 해야 한다. 목에 붙은 바이러스를 씻어내는 거다. 이 세 가지만 해도 감기 걸릴 확률이 70% 줄어든다.",
+      "subtitle": "귀가 후 30초 양치질",
+      "photo_query": "brushing teeth bathroom mirror"
+    },
+    {
+      "image": null,
+      "narration": "물도 충분히 마시고, 아침에 스트레칭도 하고, 귀가 후 양치질도 하는 거다. 이 세 가지 습관만으로 환절기를 건강하게 넘어간다.",
+      "subtitle": "세 가지 습관의 효과",
+      "photo_query": "healthy lifestyle daily routine"
+    },
+    {
+      "image": null,
+      "narration": "이런 생활 꿀팁이 더 필요하면 팔로우 눌러 두고 봐. 우리 함께 환절기 건강하게 지내자.",
+      "subtitle": "팔로우로 더 보기",
+      "photo_query": "smartphone follow button social media"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:58:57.106551+00:00"
+  }
+}
