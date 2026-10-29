@@ -43,6 +43,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 COLLECTED = os.path.join(ROOT, "out", "collected.json")
 SCRIPT_DIR = os.path.join(ROOT, "out", "scripts")
 FUN_TOPICS = os.path.join(ROOT, "fun_topics.yml")
+TIPS_TOPICS = os.path.join(ROOT, "tips_topics.yml")
 
 # ── 커버 제약 ──────────────────────────────────────────────
 MAX_COVER_CHARS = 24          # 커버 전체 글자 수
@@ -54,6 +55,9 @@ FORMATS = ["시행일훅", "숫자훅", "오해정정", "체크리스트", "지�
 
 # ── 재미·공감 포맷 5종 ────────────────────────────────────
 FUN_FORMATS = ["공감훅", "TMI훅", "세대공감", "음식공감", "생활공감"]
+
+# ── 생활·꿀팁 포맷 5종 ───────────────────────────────────
+TIPS_FORMATS = ["절약팁", "생활해킹", "계절팁", "건강팁", "살림팁"]
 
 
 # ═══════════════════════════════════════════════════════════
@@ -1209,6 +1213,78 @@ JSON만 출력하세요. 설명도 코드블록도 붙이지 마세요.
 badge는 null로 두세요 (재미·공감에는 날짜 배지 불필요)."""
 
 
+# ── 생활·꿀팁 LLM 시스템 프롬프트 ──────────────────────────
+TIPS_LLM_SYSTEM = """당신은 인스타그램 릴스 계정 "쫌봐봐"의 대본 작가입니다.
+실용적인 **생활·꿀팁** 콘텐츠를 씁니다.
+
+## 핵심 — "와 이거 진짜 되네!" 하는 순간을 만드세요
+사람들이 저장하는 이유는 "나중에 써먹어야지"입니다.
+- 당장 오늘부터 쓸 수 있는 구체적인 방법을 알려주세요
+- 금액·시간·횟수 등 숫자로 효과를 보여주세요
+- 왜 효과가 있는지 한 줄로 이유를 붙이면 신뢰도가 올라갑니다
+
+## 커버 제약 — 반드시 지킬 것
+- 태그 제외 **전체 24자 이내**
+- 한 줄 약 6자, **최대 4줄**
+- `<r>빨강</r>` 또는 `<y>노랑</y>` 강조를 **최소 1개** 넣되, 가장 센 부분 하나에만
+- 핵심 효과(금액, 기간 등)를 강조하면 클릭률이 높습니다
+
+## 포맷 5종
+- `절약팁` — 돈 아끼는 구체적인 방법 (월 ○만 원 절약)
+- `생활해킹` — 일상을 편하게 바꾸는 방법
+- `계절팁` — 계절별로 알아두면 좋은 것
+- `건강팁` — 간단한 건강·위생 관리
+- `살림팁` — 집안일·청소·정리 노하우
+
+## 내레이션
+- 장면당 1~2문장. 짧게 끊으세요
+- 전체 **3~5장면**
+- 첫 장면은 커버의 훅을 바로 받아야 합니다
+- 구체적인 방법을 순서대로 알려주세요
+- 마지막 장면은 팔로우 유도 ("이런 꿀팁 더 보고 싶으면 팔로우")
+
+## 말투 — 양상국(개그맨) 스타일 경상도 사투리
+- 에너지 넘치는 경상도 말투. 친한 동네 형이 같이 웃으면서 얘기하는 톤
+- "~다 아이가" (강조), "~카더라" (전해들은 것), "~거든" (설명) — 각 전체에서 최대 1회
+- "야야야" "이거 봐봐" "와 대박" 같은 감탄사 자연스럽게
+- 어미: "~입니다" → "~이다", "~됩니다" → "~된다"
+- 난해한 방언 어휘는 금지. 어미와 리듬으로 경상도를 냅니다
+
+## 자막
+- **22자 이내**. 핵심 명사구만
+
+## 절대 금지
+- 정치, 연예, 스포츠
+- 특정 브랜드 비교·광고
+- 가짜 통계나 지어낸 수치
+- "꼭 병원 가세요" 같은 의료 진단·처방
+
+## 사진 검색어 (photo_query)
+- 2~4개 영단어. 명사 위주
+- 그 장면을 한 장의 사진으로 보여준다면 무엇이 찍혀 있을지
+- 인물 얼굴이 크게 나오는 검색어는 피하세요
+
+## 응답 형식
+JSON만 출력하세요. 설명도 코드블록도 붙이지 마세요.
+
+{
+  "title": "제목",
+  "format": "절약팁",
+  "cover": {
+    "lines": ["이것만 하면", "<r>월 3만원</r>", "절약"],
+    "badge": null,
+    "photo_query": "electricity bill meter"
+  },
+  "scenes": [
+    {"narration": "...", "subtitle": "...", "photo_query": "..."},
+    {"narration": "...", "subtitle": "...", "photo_query": "..."},
+    {"narration": "...", "subtitle": "...", "photo_query": "..."}
+  ]
+}
+
+badge는 null로 두세요 (생활·꿀팁에는 날짜 배지 불필요)."""
+
+
 def load_fun_topics(path=None):
     """fun_topics.yml에서 재미·공감 주제 시드를 로드한다."""
     path = path or FUN_TOPICS
@@ -1291,6 +1367,88 @@ def _build_fun_prompt(angle):
 카테고리: 재미·공감"""
 
 
+# ── 생활·꿀팁 주제 로드/변환 ──────────────────────────────
+def load_tips_topics(path=None):
+    """tips_topics.yml에서 생활·꿀팁 주제 시드를 로드한다."""
+    path = path or TIPS_TOPICS
+    if not os.path.exists(path):
+        print(f"[오류] 생활·꿀팁 주제 파일 없음: {path}")
+        return []
+    try:
+        import yaml
+    except ImportError:
+        return _load_tips_topics_simple(path)
+    with open(path, encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    seeds = data.get("seeds", [])
+    print(f"생활·꿀팁 주제 로드: {len(seeds)}개")
+    return seeds
+
+
+def _load_tips_topics_simple(path):
+    """PyYAML 없을 때 간단하게 시드만 파싱한다."""
+    seeds = []
+    current = {}
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            stripped = line.strip()
+            if stripped.startswith("- topic:"):
+                if current.get("topic"):
+                    seeds.append(current)
+                current = {"topic": stripped.split(":", 1)[1].strip().strip('"')}
+            elif stripped.startswith("angle:") and current:
+                current["angle"] = stripped.split(":", 1)[1].strip().strip('"')
+            elif stripped.startswith("format:") and current:
+                current["format"] = stripped.split(":", 1)[1].strip().strip('"')
+    if current.get("topic"):
+        seeds.append(current)
+    print(f"생활·꿀팁 주제 로드: {len(seeds)}개 (simple parser)")
+    return seeds
+
+
+def tips_to_angles(seeds):
+    """생활·꿀팁 시드를 앵글 리스트로 변환한다."""
+    import random
+    angles = []
+    for seed in seeds:
+        angles.append({
+            "type": seed.get("format", "절약팁"),
+            "hook": seed.get("angle", seed["topic"]),
+            "summary": seed.get("angle", seed["topic"]),
+            "short": seed["topic"],
+            "tip_topic": seed["topic"],
+            "tip_angle": seed.get("angle", ""),
+            "category": "생활·꿀팁",
+            "source": "tips_topics",
+            "items": [],
+        })
+    random.shuffle(angles)
+    return angles
+
+
+def _build_tips_prompt(angle):
+    """생활·꿀팁 주제 기반 LLM 프롬프트를 생성한다."""
+    topic = angle.get("tip_topic", angle.get("hook", ""))
+    hint = angle.get("tip_angle", "")
+    fmt = angle.get("type", "절약팁")
+
+    return f"""아래 주제로 **생활·꿀팁** 릴스 대본 1편을 써주세요.
+
+주제: {topic}
+앵글 힌트: {hint}
+추천 포맷: {fmt}
+
+**규칙:**
+1. 당장 써먹을 수 있는 구체적인 방법을 알려주세요
+2. 금액·시간·횟수 등 숫자로 효과를 보여주세요
+3. 왜 효과가 있는지 한 줄 이유를 붙이세요
+4. 커버는 24자 이내. 핵심 효과(금액, 기간 등)를 강조하세요
+5. 사투리 톤으로 써주세요
+6. photo_query에 영문 키워드를 넣어주세요
+
+카테고리: 생활·꿀팁"""
+
+
 def _build_trend_prompt(angle):
     """트렌드 키워드 기반 LLM 프롬프트를 생성한다."""
     keyword = angle.get("trend_keyword", angle.get("hook", ""))
@@ -1325,11 +1483,14 @@ def llm_generate(angle, api_key, provider="anthropic"):
     """LLM으로 대본을 생성한다. provider는 anthropic | openai."""
     import requests as req
 
-    # 재미·공감 / 트렌드 / 공공데이터에 따라 프롬프트·시스템 분기
+    # 재미·공감 / 생활·꿀팁 / 트렌드 / 공공데이터에 따라 프롬프트·시스템 분기
     is_fun = bool(angle.get("fun_topic"))
+    is_tips = bool(angle.get("tip_topic"))
 
     if is_fun:
         prompt = _build_fun_prompt(angle)
+    elif is_tips:
+        prompt = _build_tips_prompt(angle)
     elif angle.get("trend_keyword"):
         prompt = _build_trend_prompt(angle)
     else:
@@ -1345,7 +1506,7 @@ def llm_generate(angle, api_key, provider="anthropic"):
 커버는 24자 이내입니다. 이 수치를 보고 사람들이 무엇을 손해 본다고 느낄지,
 또는 무엇을 놓치고 있다고 느낄지에서 출발하세요."""
 
-    system = FUN_LLM_SYSTEM if is_fun else LLM_SYSTEM
+    system = TIPS_LLM_SYSTEM if is_tips else (FUN_LLM_SYSTEM if is_fun else LLM_SYSTEM)
     if provider == "openai":
         text = _call_openai(api_key, prompt, system=system)
     else:
@@ -1368,6 +1529,10 @@ def llm_generate(angle, api_key, provider="anthropic"):
     if is_fun:
         source_id = "fun_topics"
         category = "재미·공감"
+        attribution = "자체 제작"
+    elif is_tips:
+        source_id = "tips_topics"
+        category = "생활·꿀팁"
         attribution = "자체 제작"
     elif angle.get("trend_keyword"):
         source_id = "google_trends"
@@ -1435,6 +1600,10 @@ def main():
                     help="재미·공감 콘텐츠 생성 (fun_topics.yml 기반, LLM 필수)")
     ap.add_argument("--fun-topics", default=FUN_TOPICS,
                     help="재미·공감 주제 시드 파일 경로")
+    ap.add_argument("--tips", action="store_true",
+                    help="생활·꿀팁 콘텐츠 생성 (tips_topics.yml 기반, LLM 필수)")
+    ap.add_argument("--tips-topics", default=TIPS_TOPICS,
+                    help="생활·꿀팁 주제 시드 파일 경로")
     args = ap.parse_args()
 
     # 재미·공감 모드: fun_topics.yml만 사용
@@ -1445,6 +1614,13 @@ def main():
             sys.exit(1)
         angles = fun_topics_to_angles(seeds)
         print(f"재미·공감 앵글 {len(angles)}개 준비")
+    elif args.tips:
+        seeds = load_tips_topics(args.tips_topics)
+        if not seeds:
+            print("[오류] 생활·꿀팁 주제가 없습니다")
+            sys.exit(1)
+        angles = tips_to_angles(seeds)
+        print(f"생활·꿀팁 앵글 {len(angles)}개 준비")
     else:
         # 수집 데이터 + 트렌드 데이터 합산
         angles = []
@@ -1480,8 +1656,9 @@ def main():
     if use_llm:
         model = os.environ.get("LLM_MODEL", "기본값")
         print(f"[LLM] {provider} (모델: {model})")
-    elif args.fun:
-        print("[오류] 재미·공감 모드는 LLM이 필수입니다 (ANTHROPIC_API_KEY 또는 OPENAI_API_KEY 설정 필요)")
+    elif args.fun or args.tips:
+        label = "재미·공감" if args.fun else "생활·꿀팁"
+        print(f"[오류] {label} 모드는 LLM이 필수입니다 (ANTHROPIC_API_KEY 또는 OPENAI_API_KEY 설정 필요)")
         sys.exit(1)
     elif not args.template:
         print("[알림] ANTHROPIC_API_KEY / OPENAI_API_KEY 없음 → 템플릿 모드로 전환")
@@ -1532,8 +1709,9 @@ def main():
                 print(f"  [경고] LLM 실패: {e}")
 
         if not script:
-            if angle.get("fun_topic"):
-                print("  [건너뜀] 재미·공감은 LLM 전용 — 템플릿 폴백 불가")
+            if angle.get("fun_topic") or angle.get("tip_topic"):
+                label = "재미·공감" if angle.get("fun_topic") else "생활·꿀팁"
+                print(f"  [건너뜀] {label}은 LLM 전용 — 템플릿 폴백 불가")
                 continue
             script = template_generate(angle)
             print("  ✓ 템플릿 생성 완료")
@@ -1559,7 +1737,7 @@ def main():
     if not args.dry_run:
         os.makedirs(args.out, exist_ok=True)
         today = datetime.now().strftime("%Y%m%d")
-        prefix = "fun_" if args.fun else ""
+        prefix = "fun_" if args.fun else ("tips_" if args.tips else "")
         for i, sc in enumerate(scripts):
             fname = f"{today}_{prefix}{i+1:02d}_{sc['meta']['format']}.json"
             path = os.path.join(args.out, fname)

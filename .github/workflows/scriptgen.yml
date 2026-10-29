@@ -16,6 +16,10 @@ on:
         description: "재미·공감 대본 수 (0이면 생략)"
         type: string
         default: "5"
+      tips_count:
+        description: "생활·꿀팁 대본 수 (0이면 생략)"
+        type: string
+        default: "3"
 
 # 생성한 대본을 저장소에 커밋하므로 쓰기 권한이 필요하다.
 # 빠져 있으면 GITHUB_TOKEN이 읽기 전용이라 push가 거부된다.
@@ -79,6 +83,13 @@ jobs:
           if [ "${FUN_COUNT}" != "0" ]; then
             echo "재미·공감 대본 ${FUN_COUNT}편 생성"
             python scriptgen.py --fun -n "${FUN_COUNT}"
+          fi
+
+          # 생활·꿀팁 대본 생성 (tips_topics.yml 기반)
+          TIPS_COUNT="${{ inputs.tips_count || '3' }}"
+          if [ "${TIPS_COUNT}" != "0" ]; then
+            echo "생활·꿀팁 대본 ${TIPS_COUNT}편 생성"
+            python scriptgen.py --tips -n "${TIPS_COUNT}"
           fi
           ls -la out/scripts/
 
