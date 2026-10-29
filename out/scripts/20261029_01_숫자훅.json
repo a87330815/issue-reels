@@ -1,0 +1,50 @@
+{
+  "title": "69억 아파트",
+  "cover": {
+    "image": null,
+    "photo_query": "Apgujeong Seoul luxury apartment",
+    "lines": [
+      "<r>69억 아파트</r>",
+      "이거 실환가요"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Apgujeong Seoul luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차 152.39㎡ 69.0억 거래. 수치로 확인해보자.",
+      "subtitle": "압구정동 69.0억 거래"
+    },
+    {
+      "image": null,
+      "photo_query": "Apgujeong Seoul luxury high rise apartment",
+      "narration": "압구정동 신현대9차, 전용 152㎡(46평) 4층이 69.0억원에 실거래 신고됐다카이. 평당 1.5억. 1982년 준공.",
+      "subtitle": "압구정동 신현대9차 69.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        69.0,
+        39.0,
+        38.5,
+        38.0,
+        33.8
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-29T02:19:09.055689+00:00"
+  }
+}

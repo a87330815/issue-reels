@@ -1,0 +1,75 @@
+{
+  "title": "68억 차이",
+  "cover": {
+    "image": null,
+    "photo_query": "Apgujeong Seoul luxury apartment",
+    "lines": [
+      "이번 달",
+      "<r>68억 차이</r>",
+      "거래 떴습니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Apgujeong Seoul luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 평균 69.0억 vs 하대동 평균 0.6억. 수치로 확인해보자.",
+      "subtitle": "압구정동 vs 하대동"
+    },
+    {
+      "image": null,
+      "photo_query": "Apgujeong Seoul luxury high rise apartment",
+      "narration": "압구정동 신현대9차, 전용 152㎡(46평) 4층이 69.0억원에 실거래 신고됐다카이. 평당 1.5억. 1982년 준공.",
+      "subtitle": "압구정동 신현대9차 69.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "같은 동네 롯데캐슬갤럭시도 주목할 만한다. 전용 133㎡(40평) 10층, 거래가 39.0억원. 평당 9,664만원.",
+      "subtitle": "잠원동 롯데캐슬갤럭시 39.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "롯데캐슬프레미어 전용 122㎡(37평) 2층 — 38.5억원 거래. 평당 1.0억.",
+      "subtitle": "삼성동 롯데캐슬프레미어 38.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "래미안 개포 루체하임 전용 122㎡(37평) 19층 — 38.0억원 거래. 평당 1.0억.",
+      "subtitle": "일원동 래미안 개포 루체하임 38.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 35.2억원까지 벌어졌다. 평균 43.6억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        69.0,
+        39.0,
+        38.5,
+        38.0,
+        33.0
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-29T02:19:09.472358+00:00"
+  }
+}

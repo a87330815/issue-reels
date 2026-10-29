@@ -1,0 +1,74 @@
+{
+  "title": "우동 최고 17억",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment skyline",
+    "lines": [
+      "우동 최고 17억",
+      "<y>얼마에 팔렸나</y>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 우동 최고가 현대카멜리아 150.09㎡ 17.0억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "우동 최고 17.0억"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "우동 현대카멜리아, 전용 150㎡(45평) 17층이 17.0억원에 실거래 신고됐다카이. 평당 3,744만원. 2001년 준공.",
+      "subtitle": "우동 현대카멜리아 17.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "같은 동네 대우마리나1도 주목할 만한다. 전용 84㎡(25평) 2층, 거래가 10.5억원. 평당 4,121만원.",
+      "subtitle": "우동 대우마리나1 10.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "대우마리나3 전용 85㎡(26평) 1층 — 9.7억원 거래. 평당 3,775만원.",
+      "subtitle": "우동 대우마리나3 9.7억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "해운대동백두산위브더제니스 전용 84㎡(25평) 24층 — 8.6억원 거래. 평당 3,378만원.",
+      "subtitle": "우동 해운대동백두산위브더제니스 8.6억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city residential area aerial",
+      "narration": "우동 이번 달 거래를 종합하면, 평균 거래가는 10.5억원, 최고가 17.0억원, 최저가 6.7억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "우동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        17.0,
+        10.5,
+        9.7,
+        8.6,
+        6.7
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-29T02:19:09.903721+00:00"
+  }
+}
