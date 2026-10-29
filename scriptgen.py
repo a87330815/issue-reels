@@ -1462,6 +1462,10 @@ def main():
             angles.extend(trend_angles)
             print(f"트렌드 앵글 {len(trend_angles)}개 추가")
 
+    if args.count == 0:
+        print("생성 수 0 — 건너뜀")
+        return 0
+
     if not angles:
         print("[오류] 스토리 앵글 추출 실패 — 수집 데이터에 분석 가능한 항목 없음")
         sys.exit(1)
