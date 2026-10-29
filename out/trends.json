@@ -1,95 +1,59 @@
 {
-  "collected_at": "2026-10-29T15:22:20.608294+00:00",
+  "collected_at": "2026-10-29T19:20:43.539159+00:00",
   "items": [
     {
-      "keyword": "성과급",
-      "traffic": "2000+",
-      "news_title": "(단독)삼성전자 성과급 합의 무효 넘어 &apos;부존재&apos; 다툰다…주주단체 소송 추진",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "4e633fe62719c2d7"
-    },
-    {
-      "keyword": "장경수",
+      "keyword": "최준희",
       "traffic": "500+",
-      "news_title": "조용필 ‘상처’·송대관 ‘정 때문에’ 작사가 장경수 별세",
+      "news_title": "최준희, 11살 연상 남편에 &quot;나 두고 먼저 죽으면 죽여버릴 거야&quot;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "bbec23cb8522730a"
+      "key": "7c77d1eb282473e9"
     },
     {
-      "keyword": "인공지능",
-      "traffic": "1000+",
-      "news_title": "강원정보문화산업진흥원·강릉과학산업진흥원, AI 헬스케어 글로벌 거점 조성 추진",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "d9b24810f322fc84"
-    },
-    {
-      "keyword": "이상미",
+      "keyword": "신구",
       "traffic": "100+",
-      "news_title": "&apos;전원일기 개똥엄마&apos; 이상미, 2년 전 이별 슬픔",
+      "news_title": "",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "fad5de7ebacd4c05"
+      "key": "f7f402eb57e64969"
     },
     {
-      "keyword": "유해진",
-      "traffic": "2000+",
-      "news_title": "‘대통령 표창’ 유해진 “‘왕사남’ 덕분…좋은 영화로 보답”",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "29554a9282bf27b6"
-    },
-    {
-      "keyword": "진에어",
-      "traffic": "500+",
-      "news_title": "대한항공·아시아나항공 이어···진에어, 해킹공격으로 1454명 개인회원 정보 유출",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "2654093a82dbe341"
-    },
-    {
-      "keyword": "사토시",
-      "traffic": "500+",
-      "news_title": "팀 드레이퍼 &quot;비트코인 채택 확대시 은행 대규모 뱅크런 현실로&quot;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "f0b73266c03c3b20"
-    },
-    {
-      "keyword": "김헌곤",
+      "keyword": "설인아",
       "traffic": "200+",
-      "news_title": "[사진] 김헌곤, 안타 성공",
+      "news_title": "[방송소식] tvN &apos;무쇠소녀단3&apos; 내달 첫선…쇼트트랙 계주 도전",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "ee8432773899db8a"
+      "key": "7c50368e1eb25546"
     },
     {
-      "keyword": "슈퍼맨이 돌아왔다",
-      "traffic": "200+",
-      "news_title": "‘비트코인 대박’ 기욤, 양평 별장→서울대공원뷰 ‘서울 집’ 공개 (‘슈돌’)",
+      "keyword": "서울경제",
+      "traffic": "5000+",
+      "news_title": "체코 협상 결렬에 원전 프리미엄 걷힌 건설주…대우·현대·GS건설 급락",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "b9b209b84e7b2744"
+      "key": "117f5fa4288eb551"
     },
     {
-      "keyword": "지하철",
-      "traffic": "2000+",
-      "news_title": "수도권 후속대책 7.67만 호 공급‥&quot;교통 해결 선행돼야&quot;",
+      "keyword": "최불암",
+      "traffic": "20000+",
+      "news_title": "‘국민 아버지’ 배우 최불암 별세",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "14f8a04bab190fe1"
+      "key": "f96a2a22b788746e"
+    },
+    {
+      "keyword": "이병헌",
+      "traffic": "500+",
+      "news_title": "한국인이 꼽은 대표 배우 1위는 이병헌…연기력보다 ‘이것’ 중요",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "d079dfa2616493ae"
     }
   ]
 }
