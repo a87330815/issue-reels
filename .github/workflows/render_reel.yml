@@ -50,7 +50,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           set -e
-          pip install -q Pillow numpy requests edge-tts
+          pip install -q Pillow numpy requests edge-tts elevenlabs
           sudo apt-get update -qq || sudo apt-get update -qq
           # 러너에 ffmpeg가 없을 때가 있다. apt가 느리게 걸리는 일이 있어
           # 시간을 끊고, 실패하면 정적 빌드를 받아 쓴다.
@@ -140,6 +140,8 @@ jobs:
       - name: 3) 릴스 합성 (TTS 음성)
         env:
           STEM: ${{ steps.pick.outputs.stem }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
           # push로 들어오면 inputs가 비어 있다. 그때도 남녀가 섞이도록
           # 기본 프리셋 묶음을 둔다.
           PRESET: ${{ inputs.preset || '앵커,발랄녀' }}

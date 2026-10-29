@@ -226,14 +226,63 @@ def post_process_voice(src, dst, voice=DEFAULT_VOICE, preset=None):
     )
 
 
+def _synth_elevenlabs(text, path):
+    """ElevenLabs API로 음성 생성. 성공 True / 실패 False."""
+    api_key = os.environ.get("ELEVENLABS_API_KEY", "")
+    voice_id = os.environ.get("ELEVENLABS_VOICE_ID", "")
+    if not api_key or not voice_id:
+        return False
+    try:
+        from elevenlabs.client import ElevenLabs
+        client = ElevenLabs(api_key=api_key)
+        model = os.environ.get("ELEVENLABS_MODEL", "eleven_v3")
+        audio_iter = client.text_to_speech.convert(
+            text=text,
+            voice_id=voice_id,
+            model_id=model,
+            output_format="mp3_44100_128",
+        )
+        with open(path, "wb") as f:
+            for chunk in audio_iter:
+                f.write(chunk)
+        return os.path.exists(path) and os.path.getsize(path) > 1000
+    except Exception as e:
+        print(f"  [경고] ElevenLabs TTS 실패: {e}")
+        return False
+
+
+_el_available = None
+
+def _check_elevenlabs():
+    """ElevenLabs 사용 가능 여부 (세션 내 캐시)."""
+    global _el_available
+    if _el_available is not None:
+        return _el_available
+    api_key = os.environ.get("ELEVENLABS_API_KEY", "")
+    voice_id = os.environ.get("ELEVENLABS_VOICE_ID", "")
+    if api_key and voice_id:
+        try:
+            from elevenlabs.client import ElevenLabs  # noqa: F401
+            _el_available = True
+            print("[TTS] ElevenLabs 엔진 사용")
+            return True
+        except ImportError:
+            print("[TTS] elevenlabs 패키지 미설치 → edge-tts 폴백")
+    else:
+        reason = "API_KEY" if not api_key else "VOICE_ID"
+        print(f"[TTS] ELEVENLABS_{reason} 미설정 → edge-tts 폴백")
+    _el_available = False
+    return False
+
+
 async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
                        preset=None, presets=None):
-    """edge-tts로 각 장면 나레이션 mp3 생성. 파일 경로와 길이를 반환.
+    """TTS 나레이션 mp3 생성. ElevenLabs 우선, 실패 시 edge-tts 폴백.
 
     presets를 주면 장면마다 다른 프리셋을 쓴다. 목소리가 바뀌면 음성과
     속도도 그 프리셋 값을 따라가야 해서 매 장면 다시 집어 온다.
     """
-    import edge_tts
+    use_el = _check_elevenlabs()
 
     results = []
     for i, text in enumerate(texts):
@@ -248,21 +297,35 @@ async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
 
         raw_mp3 = os.path.join(out_dir, f"narr_raw_{i:02d}.mp3")
         mp3 = os.path.join(out_dir, f"narr_{i:02d}.mp3")
-        comm = edge_tts.Communicate(text, cur_voice, rate=cur_rate)
-        await comm.save(raw_mp3)
-        # 성우 톤 후처리
-        if style:
-            try:
-                post_process_voice(raw_mp3, mp3, cur_voice, cur)
-            except Exception as e:
-                print(f"  후처리 실패, 원본 사용: {e}")
+
+        el_ok = False
+        if use_el:
+            # ElevenLabs는 자체적으로 자연스러우므로 후처리 불필요
+            el_ok = _synth_elevenlabs(text, mp3)
+            if el_ok:
+                tag = f" [EL]" if not cur else f" [EL·{cur}]"
+            else:
+                print(f"  [폴백] ElevenLabs 실패 → edge-tts 시도")
+
+        if not el_ok:
+            # edge-tts 폴백
+            import edge_tts
+            comm = edge_tts.Communicate(text, cur_voice, rate=cur_rate)
+            await comm.save(raw_mp3)
+            # 성우 톤 후처리 (edge-tts만 — ElevenLabs는 이미 자연스러움)
+            if style:
+                try:
+                    post_process_voice(raw_mp3, mp3, cur_voice, cur)
+                except Exception as e:
+                    print(f"  후처리 실패, 원본 사용: {e}")
+                    os.replace(raw_mp3, mp3)
+            else:
                 os.replace(raw_mp3, mp3)
-        else:
-            os.replace(raw_mp3, mp3)
+            tag = f" [{cur}]" if cur else ""
+
         # 길이 측정
         dur = get_duration(mp3)
         results.append({"path": mp3, "duration": dur})
-        tag = f" [{cur}]" if cur else ""
         print(f"  TTS [{i+1}/{len(texts)}]{tag} {dur:.1f}초  {text[:28]}...")
     return results
 

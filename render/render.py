@@ -5,7 +5,9 @@ render.py — 대본 JSON → 1080x1920 릴스
 - 커버 프레임은 cover.py의 커버 문법을 그대로 쓴다
 - 자막은 번인(인스타 자동자막 미사용)
 - 장면 길이는 내레이션 글자 수로 산출하되, TTS 음성이 있으면 실제 길이를 쓴다
-- TTS는 edge-tts(ko-KR-HyunsuNeural). 실패하면 무음으로 떨어지고 경고를 남긴다
+- TTS 엔진: ElevenLabs(우선) → edge-tts(폴백)
+  - ELEVENLABS_API_KEY 환경변수가 있으면 ElevenLabs 사용
+  - 없거나 실패하면 edge-tts로 자동 폴백
 
 대본 JSON:
 {
@@ -31,36 +33,95 @@ import bg  # noqa: E402
 import cover  # noqa: E402
 
 W, H, FPS = cover.W, cover.H, 30
-# 음성 — 2026-10-23 경상도 사투리 컨셉.
-# HyunsuNeural(남성) + 약간 빠른 속도 + 살짝 높은 피치 → 활기찬 동네형 톤.
-# 양상국 스타일은 대본(사투리 말투)으로 구현하고, 목소리는 자연스럽게 유지.
-# 환경변수로 덮어쓸 수 있게 두되, 바꾸면 반드시 다시 들어보고 판단할 것.
-VOICE = os.environ.get("TTS_VOICE", "ko-KR-HyunsuNeural")
-TTS_RATE = os.environ.get("TTS_RATE", "+12%")    # 약간 빠르게 (경쾌한 톤)
-TTS_PITCH = os.environ.get("TTS_PITCH", "+8Hz")   # 살짝 높여서 활기차게
+
+# ── TTS 설정 ─────────────────────────────────────────────
+# ElevenLabs (자연스러운 사람 목소리) — API 키가 있으면 우선 사용
+ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY", "")
+# 한국어 남성 음성 — ElevenLabs Voice Library에서 선택
+# 환경변수 ELEVENLABS_VOICE_ID로 교체 가능
+ELEVENLABS_VOICE_ID = os.environ.get("ELEVENLABS_VOICE_ID", "")
+ELEVENLABS_MODEL = os.environ.get("ELEVENLABS_MODEL", "eleven_v3")
+
+# edge-tts 폴백 설정 (ElevenLabs 실패 시)
+EDGE_VOICE = os.environ.get("TTS_VOICE", "ko-KR-HyunsuNeural")
+TTS_RATE = os.environ.get("TTS_RATE", "+12%")
+TTS_PITCH = os.environ.get("TTS_PITCH", "+8Hz")
 
 COVER_HOLD = 2.0          # 커버 노출 시간
 CHARS_PER_SEC = 6.5       # TTS 실패 시 길이 추정용
 MIN_SCENE, MAX_SCENE = 1.8, 9.0
+
+_tts_engine = None  # 캐시: "elevenlabs" | "edge" | None
+
+
+def _get_tts_engine():
+    """사용 가능한 TTS 엔진 판별 (세션 내 캐시)."""
+    global _tts_engine
+    if _tts_engine is not None:
+        return _tts_engine
+    if ELEVENLABS_API_KEY and ELEVENLABS_VOICE_ID:
+        try:
+            from elevenlabs.client import ElevenLabs  # noqa: F401
+            _tts_engine = "elevenlabs"
+            print("[TTS] ElevenLabs 엔진 사용")
+            return _tts_engine
+        except ImportError:
+            print("[TTS] elevenlabs 패키지 미설치 → edge-tts 폴백")
+    _tts_engine = "edge"
+    if not ELEVENLABS_API_KEY:
+        print("[TTS] ELEVENLABS_API_KEY 미설정 → edge-tts 폴백")
+    elif not ELEVENLABS_VOICE_ID:
+        print("[TTS] ELEVENLABS_VOICE_ID 미설정 → edge-tts 폴백")
+    return _tts_engine
 
 
 def estimate_duration(text):
     return max(MIN_SCENE, min(MAX_SCENE, len(text or "") / CHARS_PER_SEC))
 
 
-async def _tts(text, path):
+def _synth_elevenlabs(text, path):
+    """ElevenLabs API로 음성 생성. 성공 True / 실패 False."""
+    try:
+        from elevenlabs.client import ElevenLabs
+        client = ElevenLabs(api_key=ELEVENLABS_API_KEY)
+        audio_iter = client.text_to_speech.convert(
+            text=text,
+            voice_id=ELEVENLABS_VOICE_ID,
+            model_id=ELEVENLABS_MODEL,
+            output_format="mp3_44100_128",
+        )
+        with open(path, "wb") as f:
+            for chunk in audio_iter:
+                f.write(chunk)
+        return os.path.exists(path) and os.path.getsize(path) > 1000
+    except Exception as e:
+        print(f"  [경고] ElevenLabs TTS 실패: {e}")
+        return False
+
+
+async def _tts_edge(text, path):
     import edge_tts
-    await edge_tts.Communicate(text, VOICE, rate=TTS_RATE, pitch=TTS_PITCH).save(path)
+    await edge_tts.Communicate(text, EDGE_VOICE, rate=TTS_RATE, pitch=TTS_PITCH).save(path)
+
+
+def _synth_edge(text, path):
+    """edge-tts로 음성 생성. 성공 True / 실패 False."""
+    try:
+        asyncio.run(_tts_edge(text, path))
+        return os.path.exists(path) and os.path.getsize(path) > 1000
+    except Exception as e:
+        print(f"  [경고] edge-tts 실패: {e}")
+        return False
 
 
 def synth(text, path):
-    """성공하면 True. 네트워크가 막혀 있으면 False로 떨어진다."""
-    try:
-        asyncio.run(_tts(text, path))
-        return os.path.exists(path) and os.path.getsize(path) > 1000
-    except Exception as e:
-        print(f"  [경고] TTS 실패: {e}")
-        return False
+    """TTS 합성. ElevenLabs 우선, 실패 시 edge-tts 폴백."""
+    engine = _get_tts_engine()
+    if engine == "elevenlabs":
+        if _synth_elevenlabs(text, path):
+            return True
+        print("  [폴백] ElevenLabs 실패 → edge-tts 시도")
+    return _synth_edge(text, path)
 
 
 def audio_duration(path):
