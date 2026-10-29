@@ -1,48 +1,68 @@
-run 40634374629 2026-10-28T04:49:09Z
+run 40799380961 2026-10-29T01:16:53Z
 
-=== 20261028_01_숫자훅 ===
-  📸 커스텀 URL 5건 발견 — 우선 다운로드
-  [cover] 커스텀 URL → https://img.tenasia.co.kr/photo/202610/BF.46210118.1.jpg...
-    ✓ cover ← 뉴스기사 사진
-  [scene1] 커스텀 URL → https://img.insight.co.kr/static/2026/10/28/1200/img_2026102...
-    ✓ scene1 ← 뉴스기사 사진
-  [scene2] 커스텀 URL → https://img.tenasia.co.kr/photo/202610/BF.46177264.1.jpg...
-    ✓ scene2 ← 뉴스기사 사진
-  [scene3] 커스텀 URL → https://cdnweb01.wikitree.co.kr/webdata/editor/202610/27/202...
-    ✓ scene3 ← 뉴스기사 사진
-  [scene4] 커스텀 URL → https://cdnweb01.wikitree.co.kr/webdata/editor/202610/27/img...
-    ✓ scene4 ← 뉴스기사 사진
-  [scene5] '팔로우 · 매일 업데이트' → "smartphone social media follow"
+=== 20261024_04_체크리스트 ===
+  [cover] '교통 사고' → "checklist document pen desk"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
-    ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261028_01_숫자훅/photos.json
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] ''교통 사고' 관련 트렌드 — 김종철' → "checklist document pen desk"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene2 ← Unsplash (Unsplash License)
+  → 3/3장 저장, 매니페스트: out/photos/20261024_04_체크리스트/photos.json
 
-총 6/6장 수집
-  사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261028_01_숫자훅
-대본: out/scripts/20261028_01_숫자훅.json
-카드: out/cards_20261028_01_숫자훅 (8장)
-음성: 프리셋 앵커/발랄녀 중 이 대본은 발랄녀
+총 3/3장 수집
+  사진 3장 적용: cover, scene1, scene2
+카드뉴스 4장 생성 → out/cards_20261024_04_체크리스트
+대본: out/scripts/20261024_04_체크리스트.json
+카드: out/cards_20261024_04_체크리스트 (4장)
+음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
-  TTS [1/6] [발랄녀] 2.0초  유재석 문화훈장...
-  TTS [2/6] [발랄녀] 9.6초  유재석이 29일에 문화훈장을 받는다카더라. 대중문화...
-  TTS [3/6] [발랄녀] 9.8초  1991년에 대학개그제로 나와가 올해로 딱 35년째...
-  TTS [4/6] [발랄녀] 11.0초  개그맨 중에는 이경규가 2017년에, 임하룡이 20...
-  TTS [5/6] [발랄녀] 8.8초  올해는 네 개 훈격에 서른한 점쯤 뽑는다카는데, 실...
-  TTS [6/6] [발랄녀] 6.2초  오늘 내용 괜찮았으면 팔로우 한번 눌러주이소. 매일...
+  TTS [1/3] [발랄녀] 1.9초  교통 사고...
+  TTS [2/3] [발랄녀] 11.5초  이거 모르고 지나가면 손해다. '교통 사고' 관련 ...
+  TTS [3/3] [발랄녀] 5.3초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
 
 2) 영상 합성
-  세그먼트 [1/8] 3.0초
-  세그먼트 [2/8] 10.4초
-  세그먼트 [3/8] 10.6초
-  세그먼트 [4/8] 11.8초
-  세그먼트 [5/8] 9.6초
-  세그먼트 [6/8] 7.0초
-  세그먼트 [7/8] 4.0초
-  세그먼트 [8/8] 4.0초
+  세그먼트 [1/4] 3.0초
+  세그먼트 [2/4] 12.3초
+  세그먼트 [3/4] 6.1초
+  세그먼트 [4/4] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261028_01_숫자훅.mp4
-    길이: 55.1초  /  크기: 2.3MB
--rw-r--r-- 1 runner runner 2.3M Oct 28 04:50 out/reels/20261028_01_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261024_04_체크리스트.mp4
+    길이: 22.6초  /  크기: 1.0MB
+-rw-r--r-- 1 runner runner 1000K Oct 29 01:17 out/reels/20261024_04_체크리스트.mp4
+codec_name=h264
+width=1080
+height=1920
+codec_name=aac
+duration=22.600000
+저장소 백엔드: GitHub Release
+  미디어 저장소  a87330815/issue-reels-media
+  토큰           설정됨
+  저장소 확인    a87330815/issue-reels-media (공개)
+
+설정 완료
+
+업로드 1건 (태그 reels-2026-10-29):
+  20261024_04_체크리스트.mp4  1.0MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-29/20261024_04.mp4
+
+공개 접근 확인:
+  OK  video_url: 200 application/octet-stream
+
+매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
+
+완료: 성공 1건 / 실패 0건
+남은 발행 가능: 97건
+발행 대상: 1건
+
+── 1/1  20261024_04_체크리스트
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-29/20261024_04.mp4
+  캡션: 교통 사고
+  [드라이런] 컨테이너 생성하지 않음
+
+완료: 발행 0건 / 실패 0건
