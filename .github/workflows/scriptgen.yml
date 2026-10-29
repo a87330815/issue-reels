@@ -12,6 +12,10 @@ on:
         description: "생성할 대본 수 (버퍼용으로 넉넉히)"
         type: string
         default: "9"
+      fun_count:
+        description: "재미·공감 대본 수 (0이면 생략)"
+        type: string
+        default: "5"
 
 # 생성한 대본을 저장소에 커밋하므로 쓰기 권한이 필요하다.
 # 빠져 있으면 GITHUB_TOKEN이 읽기 전용이라 push가 거부된다.
@@ -69,6 +73,13 @@ jobs:
           fi
           # --trends 옵션으로 트렌드 앵글도 포함
           python scriptgen.py -n "${COUNT:-9}" --trends out/trends.json
+
+          # 재미·공감 대본 생성 (fun_topics.yml 기반)
+          FUN_COUNT="${{ inputs.fun_count || '5' }}"
+          if [ "${FUN_COUNT}" != "0" ]; then
+            echo "재미·공감 대본 ${FUN_COUNT}편 생성"
+            python scriptgen.py --fun -n "${FUN_COUNT}"
+          fi
           ls -la out/scripts/
 
       - name: 대본 업로드
