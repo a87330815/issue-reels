@@ -1,56 +1,45 @@
 {
-  "title": "송도동 9건 거래",
+  "title": "송도동 10월 아파트 거래",
   "cover": {
     "image": null,
-    "photo_query": "Korea city apartment skyline",
     "lines": [
-      "송도동 9건 거래",
-      "<y>얼마에 팔렸나</y>"
+      "송도동",
+      "<r>9건</r> 거래",
+      "6억~8억대"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "incheon songdo apartment complex modern buildings"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city apartment skyline",
-      "narration": "이거 모르고 지나가면 손해다. 송도동에서 이번 달 9건 거래. 국토부에 신고된 실거래 금액이다.",
-      "subtitle": "송도동 9건 거래"
+      "narration": "이거 모르고 지나가면 손해다. 송도동. 이번 달 아파트 거래 이렇게 났다. 한 달에 9건. 가격대 보니까 6억부터 8억까지다.",
+      "subtitle": "송도동 10월 아파트 거래",
+      "photo_query": "incheon songdo apartment complex modern buildings"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "송도동 해모로월드뷰, 전용 85㎡(26평) 7층이 7.1억원에 실거래 신고됐다카이. 평당 2,766만원. 2012년 준공(14년차).",
-      "subtitle": "송도동 해모로월드뷰 7.1억원"
+      "narration": "가장 싼 게 뭐냐고? 더샵송도마리나베이. 63억이다. 2020년식이고.",
+      "subtitle": "가장 저가: 63억",
+      "photo_query": "modern apartment building riverside view"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "같은 동네 더샵송도마리나베이도 주목할 만한다. 전용 75㎡(23평) 16층, 거래가 6.3억원. 평당 2,777만원.",
-      "subtitle": "송도동 더샵송도마리나베이 6.3억원"
+      "narration": "그럼 비싼 건? 송도아메리칸타운아이파크. 86억. 이것도 중형 평수다 아이가.",
+      "subtitle": "최고가: 86억",
+      "photo_query": "luxury apartment building high floor view"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "송도아메리칸타운아이파크 전용 84㎡(26평) 39층 — 8.6억원 거래. 평당 3,366만원.",
-      "subtitle": "송도동 송도아메리칸타운아이파크 8.6억원"
+      "narration": "뭐라카더라. 송도는 여름·겨울 비수기 제외하고 계속 나온다고. 지금 이 시즌에 사려고 했다면 이 정도 시세는 봐둬야 한다.",
+      "subtitle": "송도동 시세 범위",
+      "photo_query": "apartment price comparison real estate market"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "송도더샵센트럴시티 전용 60㎡(18평) 22층 — 6.9억원 거래. 평당 3,802만원.",
-      "subtitle": "송도동 송도더샵센트럴시티 6.9억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city residential area aerial",
-      "narration": "송도동 이번 달 거래를 종합하면, 평균 거래가는 7.5억원, 최고가 8.6억원, 최저가 6.3억원이다. 총 5건이 신고됐다 아이가.",
-      "subtitle": "송도동 이번 달 거래를 종합하면, 평균"
-    },
-    {
-      "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "더 자세한 거래 정보는 댓글에 물어봐라. 우리 팔로우하고 송도 정보 받아갈래?",
+      "subtitle": "팔로우하면 지역 정보 매일",
+      "photo_query": "real estate agent showing apartment documents"
     }
   ],
   "meta": {
@@ -68,7 +57,6 @@
       ],
       "style": "bars"
     },
-    "tone": "경상도",
-    "generated_at": "2026-10-29T03:09:49.952762+00:00"
+    "generated_at": "2026-10-29T09:36:53.464022+00:00"
   }
 }

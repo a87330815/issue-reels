@@ -1,56 +1,45 @@
 {
-  "title": "삼계동 최고 2억",
+  "title": "삼계동 최고가 아파트",
   "cover": {
     "image": null,
-    "photo_query": "Korea city apartment skyline",
     "lines": [
-      "이 동네 지금",
-      "<r>삼계동 최고 2억</r>"
+      "삼계동",
+      "<r>2.3억</r>",
+      "이게 최고가?"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "korean apartment complex residential area"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city apartment skyline",
-      "narration": "이거 모르고 지나가면 손해다. 삼계동 최고가 삼계이안 84.9523㎡ 2.3억. 국토부에 신고된 실거래 금액이다.",
-      "subtitle": "삼계동 최고 2.3억"
+      "narration": "이거 모르고 지나가면 손해다. 삼계동 아파트 시장 지금 어떻게 되는지 알아둬라.",
+      "subtitle": "삼계동 10월 실거래",
+      "photo_query": "apartment building entrance korea"
     },
     {
       "image": null,
-      "photo_query": "Korea city apartment building",
-      "narration": "삼계동 삼계이안, 전용 85㎡(26평) 12층이 2.3억원에 실거래 신고됐다카이. 평당 887만원. 2007년 준공.",
-      "subtitle": "삼계동 삼계이안 2.3억원"
+      "narration": "10월에 나온 최고가. 삼계이안. 84제곱미터에 2억 3천만원. 평당 2천 7백만원이다.",
+      "subtitle": "삼계이안 84㎡ 2.3억",
+      "photo_query": "apartment price tag sale sign"
     },
     {
       "image": null,
-      "photo_query": "Korea city apartment building",
-      "narration": "같은 동네 김해북부7차부영도 주목할 만한다. 전용 85㎡(26평) 16층, 거래가 1.9억원. 평당 749만원.",
-      "subtitle": "삼계동 김해북부7차부영 1.9억원"
+      "narration": "야야야. 같은 크기 다른 단지는 1억 6천에서 1억 9천이다. 차이가 장난 아니다.",
+      "subtitle": "같은 크기 1.6~1.9억",
+      "photo_query": "real estate comparison price analysis"
     },
     {
       "image": null,
-      "photo_query": "Korea city apartment building",
-      "narration": "분성마을5단지푸르지오 전용 60㎡(18평) 9층 — 1.8억원 거래. 평당 987만원.",
-      "subtitle": "삼계동 분성마을5단지푸르지오 1.8억원"
+      "narration": "삼계동에서 땅을 잡으려면 이 단지들 실거래가를 꼭 봐둬라. 나중에 후회 없다.",
+      "subtitle": "삼계동 주요 단지 체크",
+      "photo_query": "real estate market data chart"
     },
     {
       "image": null,
-      "photo_query": "Korea city apartment building",
-      "narration": "화정마을1단지 전용 85㎡(26평) 15층 — 1.6억원 거래. 평당 622만원.",
-      "subtitle": "삼계동 화정마을1단지 1.6억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city residential area aerial",
-      "narration": "삼계동 이번 달 거래를 종합하면, 평균 거래가는 1.7억원, 최고가 2.3억원, 최저가 8,200만원이다. 총 5건이 신고됐다 아이가.",
-      "subtitle": "삼계동 이번 달 거래를 종합하면, 평균"
-    },
-    {
-      "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "더 자세한 아파트 시세는 팔로우 눌러. 우리가 계속 띄울기다.",
+      "subtitle": "팔로우 눌러",
+      "photo_query": "mobile phone real estate app screen"
     }
   ],
   "meta": {
@@ -68,7 +57,6 @@
       ],
       "style": "bars"
     },
-    "tone": "경상도",
-    "generated_at": "2026-10-29T02:19:10.110351+00:00"
+    "generated_at": "2026-10-29T09:37:19.989665+00:00"
   }
 }

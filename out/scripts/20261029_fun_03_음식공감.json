@@ -1,0 +1,53 @@
+{
+  "title": "국밥 한 그릇의 위력",
+  "cover": {
+    "image": null,
+    "lines": [
+      "국밥 한 그릇",
+      "<r>먹으면 인생</r>",
+      "다 해결된다"
+    ],
+    "badge": null,
+    "photo_query": "bowl rice soup steam hot"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아침에 일어났는데 왠지 모르게 기분이 꿀꿀하다. 그럼 국밥 한 그릇이다. 밥 위에 국물 자르르 부어지는 순간.",
+      "subtitle": "국물이 내리는 그 순간",
+      "photo_query": "pouring broth rice bowl"
+    },
+    {
+      "image": null,
+      "narration": "젓가락으로 밥을 슥슥 저으면서 국물이 스며드는 거 있지? 그게 바로 내 마음을 적시는 거다.",
+      "subtitle": "밥과 국물이 하나 되는 순간",
+      "photo_query": "mixing rice soup chopsticks"
+    },
+    {
+      "image": null,
+      "narration": "한 숟갈 떠서 입에 넣는 순간. '어? 이게 뭐야? 내 마음이 왜 이렇게 따뜻해지지?' 이 느낌이다 아이가.",
+      "subtitle": "세상이 다 괜찮아지는 맛",
+      "photo_query": "eating soup spoon comfort food"
+    },
+    {
+      "image": null,
+      "narration": "국밥은 비싸지 않지만, 그 값어치는 금값이다. 밥 한 술에 국물 한 술. 반복. 반복. 그럼 우리는 또 버틴다.",
+      "subtitle": "가성비 최강 위로",
+      "photo_query": "korean rice soup bowl comfort"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우 누르고 가! 쫌봐봐에선 매일 이런 공감이 기다리고 있다고.",
+      "subtitle": "국밥보다 맛있는 공감",
+      "photo_query": "follow subscribe notification bell"
+    }
+  ],
+  "meta": {
+    "format": "음식공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T09:37:58.568461+00:00"
+  }
+}

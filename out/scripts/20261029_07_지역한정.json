@@ -1,56 +1,39 @@
 {
-  "title": "연수동 최고 4억",
+  "title": "연수동 10월 실거래가",
   "cover": {
     "image": null,
-    "photo_query": "Yeonsu Incheon apartment skyline",
     "lines": [
-      "연수동 최고 4억",
-      "<y>실거래가 공개</y>"
+      "연수동",
+      "<r>4.5억</r>",
+      "최고가 공개"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "Incheon apartment complex neighborhood"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Yeonsu Incheon apartment skyline",
-      "narration": "이거 모르고 지나가면 손해다. 연수동 최고가 대림 84.795㎡ 4.5억. 국토부에 신고된 실거래 금액이다.",
-      "subtitle": "연수동 최고 4.5억"
+      "narration": "이거 모르고 지나가면 손해다. 연수동. 10월에 나온 실거래가 봤냐고. 최고가가 4억 5천만원이다.",
+      "subtitle": "연수동 최고가 4.5억",
+      "photo_query": "real estate transaction documents"
     },
     {
       "image": null,
-      "photo_query": "Yeonsu Incheon modern apartment residential",
-      "narration": "연수동 대림, 전용 85㎡(26평) 12층이 4.5억원에 실거래 신고됐다카이. 평당 1,735만원. 1993년 준공.",
-      "subtitle": "연수동 대림 4.5억원"
+      "narration": "대림이라고. 84제곱미터 12층. 이 정도 사이즈에서 이 가격이다. 기억해둬라.",
+      "subtitle": "대림 84㎡ 12층",
+      "photo_query": "apartment building floor plan layout"
     },
     {
       "image": null,
-      "photo_query": "Yeonsu Incheon modern apartment residential",
-      "narration": "같은 동네 풍림1도 주목할 만한다. 전용 70㎡(21평) 11층, 거래가 3.2억원. 평당 1,517만원.",
-      "subtitle": "연수동 풍림1 3.2억원"
+      "narration": "다른 단지들 봐봐. 풍림1은 3억 2천만원. 연수주공2차는 2억 5백만원. 진짜 다르다.",
+      "subtitle": "단지별 가격 편차 큼",
+      "photo_query": "seoul apartment comparison"
     },
     {
       "image": null,
-      "photo_query": "Yeonsu Incheon apartment building",
-      "narration": "연수주공2차 전용 50㎡(15평) 4층 — 2.0억원 거래. 평당 1,357만원.",
-      "subtitle": "연수동 연수주공2차 2.0억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Yeonsu Incheon apartment building",
-      "narration": "승기마을,연수1차시영 전용 44㎡(13평) 4층 — 2.0억원 거래. 평당 1,495만원.",
-      "subtitle": "연수동 승기마을,연수1차시영 2.0억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Yeonsu Incheon residential area aerial",
-      "narration": "연수동 이번 달 거래를 종합하면, 평균 거래가는 2.7억원, 최고가 4.5억원, 최저가 1.7억원이다. 총 5건이 신고됐다 아이가.",
-      "subtitle": "연수동 이번 달 거래를 종합하면, 평균"
-    },
-    {
-      "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "연수동 아파트 찾고 있으면. 이 수치들 꼭 체크해라. 같은 동네도 얼마나 차이 나는지 알아야 똑똑하게 산다.",
+      "subtitle": "연수동 실거래가 확인 필수",
+      "photo_query": "family searching apartment online"
     }
   ],
   "meta": {
@@ -68,7 +51,6 @@
       ],
       "style": "bars"
     },
-    "tone": "경상도",
-    "generated_at": "2026-10-29T02:19:10.355575+00:00"
+    "generated_at": "2026-10-29T09:37:25.472170+00:00"
   }
 }

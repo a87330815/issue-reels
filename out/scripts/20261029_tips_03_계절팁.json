@@ -1,0 +1,53 @@
+{
+  "title": "겨울 결로 5분 해결법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "창문 물방울",
+      "<r>5분마다 닦기</r>",
+      "곰팡이 끝"
+    ],
+    "badge": null,
+    "photo_query": "window condensation water droplets"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "겨울만 되면 창문에 물이 맺지? 이거 방치하면 진짜 곰팡이 판친다고. 초간단하게 해결하는 방법 보여줄게.",
+      "subtitle": "결로가 생기는 이유",
+      "photo_query": "condensation on window glass"
+    },
+    {
+      "image": null,
+      "narration": "매일 아침 일어나자마자 창문 물방울을 마른 타올로 닦기만 하면 된다. 5분이면 충분해. 습도를 떨어뜨리니까 곰팡이가 못 산다고.",
+      "subtitle": "매일 아침 5분 닦기",
+      "photo_query": "wiping window dry cloth"
+    },
+    {
+      "image": null,
+      "narration": "더 편하려면 창문을 조금만 열어두는 것도 좋아. 밤새 통풍만 되어도 습도가 30~40% 내려간다니까.",
+      "subtitle": "또는 창문 조금 열기",
+      "photo_query": "open window ventilation winter"
+    },
+    {
+      "image": null,
+      "narration": "창틀 곰팡이 청소하는 데만 월 1시간 이상 걸린다고. 이렇게 간단하게 예방하는 게 진짜 효율이다.",
+      "subtitle": "곰팡이 청소 시간 절약",
+      "photo_query": "window mold cleanup cleaning"
+    },
+    {
+      "image": null,
+      "narration": "이런 겨울 살림 꿀팁 더 알고 싶으면 팔로우해 봐. 다음에도 좋은 거 많이 보여줄게.",
+      "subtitle": "팔로우하고 더 보기",
+      "photo_query": "cozy winter home comfort"
+    }
+  ],
+  "meta": {
+    "format": "계절팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T09:38:34.223949+00:00"
+  }
+}

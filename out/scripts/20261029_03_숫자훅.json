@@ -1,57 +1,45 @@
 {
-  "title": "68억 차이",
+  "title": "압구정 vs 하대동, 115배 차이",
   "cover": {
     "image": null,
-    "photo_query": "Apgujeong Seoul luxury apartment",
     "lines": [
-      "이번 달",
-      "<r>68억 차이</r>",
-      "거래 떴습니다"
+      "같은 서울인데",
+      "<r>115배</r>",
+      "차이 난다"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "seoul apartment comparison wealthy district poor"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Apgujeong Seoul luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 평균 69.0억 vs 하대동 평균 0.6억. 수치로 확인해보자.",
-      "subtitle": "압구정동 vs 하대동"
+      "narration": "이거 모르고 지나가면 손해다. 같은 서울 땅인데 아파트값이 어딨냐에 따라 115배까지 난다고.",
+      "subtitle": "같은 서울도 이렇게 다르다",
+      "photo_query": "seoul cityscape district contrast skyline"
     },
     {
       "image": null,
-      "photo_query": "Apgujeong Seoul luxury high rise apartment",
-      "narration": "압구정동 신현대9차, 전용 152㎡(46평) 4층이 69.0억원에 실거래 신고됐다카이. 평당 1.5억. 1982년 준공.",
-      "subtitle": "압구정동 신현대9차 69.0억원"
+      "narration": "압구정동 평균은 69억이다. 한 채 사는 돈이 남은 동네는 채 1억을 못 넘긴다.",
+      "subtitle": "압구정동 69억 vs 하대동 0.6억",
+      "photo_query": "luxury apartment building high-rise gangnam"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "같은 동네 롯데캐슬갤럭시도 주목할 만한다. 전용 133㎡(40평) 10층, 거래가 39.0억원. 평당 9,664만원.",
-      "subtitle": "잠원동 롯데캐슬갤럭시 39.0억원"
+      "narration": "부자동네는 30년 된 낡은 아파트도 69억. 서민동네는 새 아파트 지어도 1억도 안 된다. 이거 뭐 하는 짓인가.",
+      "subtitle": "같은 집인데 값이 다르다",
+      "photo_query": "old apartment building maintenance renovation"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "롯데캐슬프레미어 전용 122㎡(37평) 2층 — 38.5억원 거래. 평당 1.0억.",
-      "subtitle": "삼성동 롯데캐슬프레미어 38.5억원"
+      "narration": "이게 현실이다. 서울에서 내 집 마련이 왜 꿈인지 알겠지? 지역에 따라 하늘과 땅 차이다.",
+      "subtitle": "서울은 지역이 곧 계급이다",
+      "photo_query": "real estate market sign apartment for"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "래미안 개포 루체하임 전용 122㎡(37평) 19층 — 38.0억원 거래. 평당 1.0억.",
-      "subtitle": "일원동 래미안 개포 루체하임 38.0억원"
-    },
-    {
-      "image": null,
-      "photo_query": "real estate market price chart",
-      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 35.2억원까지 벌어졌다. 평균 43.6억원 수준이다.",
-      "subtitle": "이번에 확인된 5건의 거래에서 가격"
-    },
-    {
-      "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "이런 데이터들 우리가 모아놓고 있다. 구독해라. 손해 보지 말고.",
+      "subtitle": "쫌봐봐와 함께하기",
+      "photo_query": "mobile phone app data analytics dashboard"
     }
   ],
   "meta": {
@@ -69,7 +57,6 @@
       ],
       "style": "bars"
     },
-    "tone": "경상도",
-    "generated_at": "2026-10-29T03:09:50.123466+00:00"
+    "generated_at": "2026-10-29T09:37:00.473433+00:00"
   }
 }

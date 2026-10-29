@@ -1,56 +1,45 @@
 {
-  "title": "평당 1.5억",
+  "title": "압구정동 신현대9차 평당 1.50억",
   "cover": {
     "image": null,
-    "photo_query": "Apgujeong Seoul luxury apartment",
     "lines": [
-      "<r>평당 1.5억</r>",
-      "이거 실환가요"
+      "압구정동",
+      "<r>평당 1.50억</r>",
+      "이게 뭐지?"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "luxury apartment building gangnam seoul"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Apgujeong Seoul luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차 평당 1.50억 (전용 152.39㎡). 수치로 확인해보자.",
-      "subtitle": "압구정동 평당 1.5억"
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차. 10월에 팔린 아파트다. 평당 1억 50만 원. 와 대박.",
+      "subtitle": "평당 1억 50만원",
+      "photo_query": "apartment sales contract documents"
     },
     {
       "image": null,
-      "photo_query": "Apgujeong Seoul luxury high rise apartment",
-      "narration": "압구정동 신현대9차, 전용 152㎡(46평) 4층이 69.0억원에 실거래 신고됐다카이. 평당 1.5억. 1982년 준공.",
-      "subtitle": "압구정동 신현대9차 69.0억원"
+      "narration": "근데 이게 뭐 하는 값이냐고. 강남 아파트 평균이 얼마인데 이렇게 나왔을까. 다른 지역과 비교해 봐라.",
+      "subtitle": "다른 강남권 아파트와 비교",
+      "photo_query": "gangnam district map seoul korea"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "같은 동네 은마도 주목할 만한다. 전용 77㎡(23평) 11층, 거래가 31.9억원. 평당 1.4억.",
-      "subtitle": "대치동 은마 31.9억원"
+      "narration": "대치동 은마. 평당 41만 원. 방배동 그랑자이. 평당 40만 원. 삼성동 롯데캐슬도 평당 31만 원이다.",
+      "subtitle": "은마·그랑자이·롯데캐슬",
+      "photo_query": "apartment price comparison chart"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "방배그랑자이 전용 85㎡(26평) 8층 — 33.8억원 거래. 평당 1.3억.",
-      "subtitle": "방배동 방배그랑자이 33.8억원"
+      "narration": "같은 강남인데 평당 가격이 3배 이상 난다. 신현대9차는 뭐가 특별한 거냐고. 위치? 래비탄? 뭔가 있어야 한다.",
+      "subtitle": "강남 내 가격차 3배 이상",
+      "photo_query": "apartment building comparison prices"
     },
     {
       "image": null,
-      "photo_query": "Seocho Seoul luxury high rise apartment",
-      "narration": "래미안서초스위트 전용 96㎡(29평) 15층 — 31.6억원 거래. 평당 1.1억.",
-      "subtitle": "서초동 래미안서초스위트 31.6억원"
-    },
-    {
-      "image": null,
-      "photo_query": "real estate market price chart",
-      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 37.4억원까지 벌어졌다. 평균 41.0억원 수준이다.",
-      "subtitle": "이번에 확인된 5건의 거래에서 가격"
-    },
-    {
-      "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "이런 데이터들이 계속 떨어진다. 팔로우해 봐라. 놓치면 기회 잃는다.",
+      "subtitle": "실시간 아파트 거래 정보",
+      "photo_query": "real estate market trending data"
     }
   ],
   "meta": {
@@ -68,7 +57,6 @@
       ],
       "style": "bars"
     },
-    "tone": "경상도",
-    "generated_at": "2026-10-29T02:19:10.593803+00:00"
+    "generated_at": "2026-10-29T09:37:32.002017+00:00"
   }
 }

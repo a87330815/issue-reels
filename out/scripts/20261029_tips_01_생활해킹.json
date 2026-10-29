@@ -1,45 +1,45 @@
 {
-  "title": "옷 관리 꿀팁",
+  "title": "스마트폰 배터리 수명 3배 늘리는 충전 습관",
   "cover": {
     "image": null,
     "lines": [
-      "니트 보풀부터",
-      "<r>흰옷 누런때까지</r>",
-      "5분만에 해결"
+      "배터리 수명",
+      "<r>3배</r> 늘리는",
+      "충전법 3가지"
     ],
     "badge": null,
-    "photo_query": "sweater fabric care lint"
+    "photo_query": "smartphone battery charging cable"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "니트 보풀 이거 진짜 짜증나지? 가정용 면도기 하나면 깔끔하게 제거된다. 보풀이 날린 부분 위에 가볍게 문질러주면 돼. 섬유질이 손상 안 되는 이유는 날이 아주 짧거든.",
-      "subtitle": "가정용 면도기로 니트 보풀 제거",
-      "photo_query": "razor remove sweater pilling"
+      "narration": "야야야, 스마트폰 배터리가 금방 죽지 않냐고? 충전 습관만 고치면 수명이 3배까지 늘어난다니까. 첫 번째, 0%까지 다 써버리지 말고 20% 이상에서 충전해야 된다.",
+      "subtitle": "배터리 0%까지 방전 금지",
+      "photo_query": "low battery warning phone screen"
     },
     {
       "image": null,
-      "narration": "흰옷 누런때? 드라이클리닝 갈 필요 없다. 산소계 표백제 한 스푼에 미지근한 물 1리터 섞어서, 옷을 2시간 불려놔. 산소 기포가 때를 떠내니까 효과가 장난 아니야.",
-      "subtitle": "산소계 표백제 2시간 침수",
-      "photo_query": "oxygen bleach white shirt stain"
+      "narration": "왜냐면 배터리가 완전히 방전되면 화학 반응이 손상되거든. 그 다음엔 80% 이상 충전하지 마 아이가. 매일 100%까지 채우면 배터리가 빨리 노후화된다.",
+      "subtitle": "20~80% 범위에서만 충전",
+      "photo_query": "battery percentage 80 percent full"
     },
     {
       "image": null,
-      "narration": "옷 냄새? 드라이코스 대신 소주 한 스푼을 분무기에 섞어서 뿌려놓으면 된다. 알코올이 박테리아를 죽이니까 냄새가 사라진다. 하루 밤이면 충분해.",
-      "subtitle": "소주 분무액으로 냄새 제거",
-      "photo_query": "fabric freshener spray clothes"
+      "narration": "밤새 충전기에 꽂아두는 것도 끝내줘야 한다. 30분만 충전하고 빼 아이가. 과충전되면 배터리 수명이 6개월에서 2년까지 줄어든다고 카더라.",
+      "subtitle": "30분 충전 후 분리 필수",
+      "photo_query": "smartphone fast charging 30 minutes"
     },
     {
       "image": null,
-      "narration": "색깔 옷은 중성세제 물에 30분만 불려놨다가 찬바람에 헹궈. 뜨거운 물은 색까지 빠져나간다. 이것만으로도 옷 수명이 두 배는 간다 아이가.",
-      "subtitle": "찬물로 중성세제 침수 세탁",
-      "photo_query": "cold water laundry delicate clothes"
+      "narration": "이 3가지만 지키면 2년짜리 배터리가 5~6년까지 간다. 진짜 뭐 하는 거냐고, 오늘부터 시작해봐라.",
+      "subtitle": "배터리 수명 5~6년까지 연장",
+      "photo_query": "durable smartphone battery health"
     },
     {
       "image": null,
-      "narration": "이런 옷 관리 꿀팁 더 보고 싶으면 팔로우 해봐. 매일 아침 새로운 살림팁으로 깨워드린다니까.",
-      "subtitle": "더 많은 꿀팁은 팔로우에서",
-      "photo_query": "organized closet wardrobe"
+      "narration": "이런 쌀알 같은 꿀팁들이 자꾸 보고 싶으면 팔로우 박아라. 저 쫌봐봐에서 날마다 터지는 해킹법들을 알려준다니까.",
+      "subtitle": "팔로우로 꿀팁 더 받기",
+      "photo_query": "follow button social media subscribe"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T03:58:26.201083+00:00"
+    "generated_at": "2026-10-29T09:38:20.830404+00:00"
   }
 }

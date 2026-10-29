@@ -1,32 +1,45 @@
 {
-  "title": "69억 아파트",
+  "title": "압구정동 신현대9차 69억 거래",
   "cover": {
     "image": null,
-    "photo_query": "Apgujeong Seoul luxury apartment",
     "lines": [
-      "<r>69억 아파트</r>",
-      "이거 실환가요"
+      "압구정동",
+      "<r>69억</r>",
+      "4층에 떴다"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "seoul gangnam apartment building 1980s"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Apgujeong Seoul luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차 152.39㎡ 69.0억 거래. 수치로 확인해보자.",
-      "subtitle": "압구정동 69.0억 거래"
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차. 40년 된 아파트가 69억에 팔렸다. 4층이다.",
+      "subtitle": "40년 된 아파트 69억",
+      "photo_query": "apartment building floor numbers sign"
     },
     {
       "image": null,
-      "photo_query": "Apgujeong Seoul luxury high rise apartment",
-      "narration": "압구정동 신현대9차, 전용 152㎡(46평) 4층이 69.0억원에 실거래 신고됐다카이. 평당 1.5억. 1982년 준공.",
-      "subtitle": "압구정동 신현대9차 69.0억원"
+      "narration": "152제곱미터. 그럼 평수로 따지면 46평이다. 46평에 69억. 이거 현실이다.",
+      "subtitle": "152㎡ = 약 46평",
+      "photo_query": "apartment floor plan measurement tape"
     },
     {
       "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "압구정은 강남권이고. 신현대라는 단지 자체가 이름값을 한다. 나이가 나이인데도 이 가격대가 나온다는 건.",
+      "subtitle": "강남권 프리미엄 유지",
+      "photo_query": "gangnam seoul luxury apartment complex"
+    },
+    {
+      "image": null,
+      "narration": "로또 같은 위치다. 이런 거 한두 건씩 나오는데. 놓치면 또 몇 개월을 기다려야 한다.",
+      "subtitle": "거래 기회 놓치지 마",
+      "photo_query": "real estate property listing search"
+    },
+    {
+      "image": null,
+      "narration": "압구정 아파트 매매 정보는 쫌봐봐 채널 팔로우하고 있으면 절대 놓친다. 구독해라.",
+      "subtitle": "정보 선점이 곧 자산",
+      "photo_query": "notification bell subscribe follow button"
     }
   ],
   "meta": {
@@ -44,7 +57,6 @@
       ],
       "style": "bars"
     },
-    "tone": "경상도",
-    "generated_at": "2026-10-29T03:09:49.783609+00:00"
+    "generated_at": "2026-10-29T09:36:46.269691+00:00"
   }
 }

@@ -1,36 +1,48 @@
 {
-  "title": "삼성전자 컨퍼런스콜",
+  "title": "삼척 대이리 동굴지대, 강원도 지질명소 선정",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>삼성전자 컨퍼런스콜</r>",
-      "실화입니다"
+      "강원도가",
+      "인정한",
+      "<r>동굴</r>",
+      "가볼 만한 곳"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "cave entrance rock formation natural"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '삼성전자 컨퍼런스콜' 관련 트렌드 — 내일 삼성전자 컨퍼런스콜 &apos;이것&apos; 만큼은 꼭 주의해라. 수치로 확인해보자.",
-      "subtitle": "'삼성전자 컨퍼런스콜' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. 강원도가 올해 11월 지질 생태명소로 선정한 곳이 있다. 바로 삼척 대이리 동굴지대. 이제 당당하게 가도 된다는 얘기다.",
+      "subtitle": "강원도 지질 생태명소 선정",
+      "photo_query": "cave stalactite mineral formation"
     },
     {
       "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "이 지역은 수백만 년 동안 자연이 만든 지질 구조가 살아있는 곳이다. 동굴 안에서 지구의 역사가 그냥 눈에 띈다.",
+      "subtitle": "수백만 년 자연이 만든 지형",
+      "photo_query": "geology cave formation layers"
+    },
+    {
+      "image": null,
+      "narration": "공식 인정을 받으니 접근성도 좋아지고, 생태 보존도 체계적으로 된다. 강원도 여행 리스트에 추가해 놓고 가면 딱이다.",
+      "subtitle": "올해 새로 주목받는 당일 여행지",
+      "photo_query": "hiking trail cave destination tourists"
+    },
+    {
+      "image": null,
+      "narration": "이런 명소들이 생기는 건 실은 더 많은 사람이 우리 땅을 알아야 한다는 뜻이다. 강원도 여행 계획 중이라면 팔로우하고 알림 켜 둬라.",
+      "subtitle": "강원도 당일 여행지 새로 추가",
+      "photo_query": "korea nature travel destination cave"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "",
+    "source": "google_trends",
     "category": "당일 화제 이슈",
-    "attribution": "",
+    "attribution": "Google Trends",
     "chart": null,
-    "tone": "경상도",
-    "generated_at": "2026-10-29T02:19:10.816855+00:00"
+    "generated_at": "2026-10-29T09:37:38.382648+00:00"
   }
 }

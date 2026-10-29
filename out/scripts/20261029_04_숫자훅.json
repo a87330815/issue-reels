@@ -1,35 +1,53 @@
 {
-  "title": "삼전 실적발표",
+  "title": "삼성 vs KIA 3차전, 승자 독점할 팀은?",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>삼전 실적발표</r>",
-      "이거 실환가요"
+      "3차전 승리하면",
+      "<r>우승까지</r>",
+      "한 발 더"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "baseball game championship final match"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '삼전 실적발표' 관련 트렌드 — ‘총선 과반 실패’ 네타냐후의 운명, 아랍계 정당 손에 달렸다. 수치로 확인해보자.",
-      "subtitle": "'삼전 실적발표' 관련 트렌드 — ‘총선"
+      "narration": "이거 모르고 지나가면 손해다. 지금 삼성과 KIA가 맞붙고 있다. 한국시리즈 3차전. 여긴 진짜 분수령이다.",
+      "subtitle": "한국시리즈 3차전 진행 중",
+      "photo_query": "baseball stadium crowd fans cheering"
     },
     {
       "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "현재 1대1. 누가 3차전 승리를 잡으냐에 따라 판도가 확 바뀐다. 3차전 우승팀은 우승 트로피까지 한 발 남는다.",
+      "subtitle": "1대1 동점 상황, 3차전이 우승 결정",
+      "photo_query": "baseball pitcher throwing ball stadium"
+    },
+    {
+      "image": null,
+      "narration": "양팀 최고의 투수들이 맞대결한다. 이 경기가 끝나고 나면 한쪽은 절망, 한쪽은 환희다.",
+      "subtitle": "에이스 투수들의 최강 대결",
+      "photo_query": "baseball pitcher wind up throwing"
+    },
+    {
+      "image": null,
+      "narration": "팬들의 응원이 하늘을 찌른다. 이 순간을 놓치면 후회한다.",
+      "subtitle": "스타디움 가득한 응원 열기",
+      "photo_query": "baseball fans stadium cheering excitement"
+    },
+    {
+      "image": null,
+      "narration": "지금 바로 경기 결과를 확인하고 우리 팀 응원해라. 더 자세한 경기 분석은 팔로우하고 계속 봐야 한다.",
+      "subtitle": "지금 라이브 진행 중",
+      "photo_query": "smartphone sports app live score"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "",
+    "source": "google_trends",
     "category": "당일 화제 이슈",
-    "attribution": "",
+    "attribution": "Google Trends",
     "chart": null,
-    "tone": "경상도",
-    "generated_at": "2026-10-29T02:19:09.681532+00:00"
+    "generated_at": "2026-10-29T09:37:07.343352+00:00"
   }
 }

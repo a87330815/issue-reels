@@ -1,45 +1,45 @@
 {
-  "title": "주차장에서의 희망과 절망",
+  "title": "편의점 우산의 저주",
   "cover": {
     "image": null,
     "lines": [
-      "좋은 자리",
-      "<r>찾다가</r>",
-      "결국 제일 먼 데"
+      "편의점에서",
+      "<r>우산 사는 순간</r>",
+      "비가 그친다"
     ],
     "badge": null,
-    "photo_query": "parking lot shopping mall"
+    "photo_query": "convenience store umbrella display rain"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "마트 들어가기 전부터 기대에 부풀어있다. '오늘은 운이 좋을 듯한데?' 주차장 진입.",
-      "subtitle": "설렘 가득한 그 시각",
-      "photo_query": "car entering parking garage"
+      "narration": "아 진짜 빗줄기가 장난 아니네. 편의점 들어가서 우산 고르는 중이다.",
+      "subtitle": "우산 고르는 중",
+      "photo_query": "convenience store aisle umbrella shopping"
     },
     {
       "image": null,
-      "narration": "아 저기! 자리 보여! 가까운 데 있네! 악셀 밟는다. 그런데... 오토바이다. 우리 차 안 들어간다.",
-      "subtitle": "희망 → 절망 0.5초",
-      "photo_query": "motorcycle parking space small"
+      "narration": "4,500원? 뭐 어때. 2천 원대도 있네. 어라? 비가... 그쳤나?",
+      "subtitle": "계산대 가는 길",
+      "photo_query": "checkout counter convenience store payment"
     },
     {
       "image": null,
-      "narration": "다시 돈다. 또 다른 좋은 자리 발견! 달려간다. 그 순간 앞에서 차가 백업을 한다. 진짜 아 진짜.",
-      "subtitle": "매번 이런 식이야",
-      "photo_query": "parking lot car backing up"
+      "narration": "야야야 이거 봐봐. 나가니까 하늘 맑아졌네. 우산 사는 거 아까운데? 이거 왜 매번 이래?",
+      "subtitle": "우산 산 직후 날씨",
+      "photo_query": "sunny sky after rain clearing weather"
     },
     {
       "image": null,
-      "narration": "포기했다. 이제 그냥 끝 지점으로 간다. 저 멀리 한적한 곳에 혼자 세운다. 차 문 열고 한숨.",
-      "subtitle": "결국 여긴 내 자리",
-      "photo_query": "empty parking space far away lot"
+      "narration": "결국 우산은 집에 두고... 근데 내일 또 빌 거 같은데. 진짜 우산은 절대 필요 없는 날에만 챙긴다니까.",
+      "subtitle": "버려지는 우산의 운명",
+      "photo_query": "umbrella forgotten at home corner"
     },
     {
       "image": null,
-      "narration": "돌아올 땐 차를 못 찾는다. 리모컨 누르면서 한참을 헤맨다. 이게 진짜 주차의 현실이다.",
-      "subtitle": "쫌봐봐에서 더 웃다 가!",
-      "photo_query": "person looking lost parking garage"
+      "narration": "이런 우산 소품 공감 더 보고 싶으면 팔로우 눌러. 우리 함께 우산 산 날씨 운수 짐 벗자.",
+      "subtitle": "팔로우 해줄래?",
+      "photo_query": "follow subscribe button interface"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T03:37:49.421810+00:00"
+    "generated_at": "2026-10-29T09:38:05.133375+00:00"
   }
 }

@@ -1,56 +1,45 @@
 {
-  "title": "우동 최고 17억",
+  "title": "우동 아파트 최고가 17억",
   "cover": {
     "image": null,
-    "photo_query": "Korea city apartment skyline",
     "lines": [
-      "우동 최고 17억",
-      "<y>얼마에 팔렸나</y>"
+      "우동서",
+      "<r>17억</r>",
+      "나왔습니다"
     ],
-    "badge": null
+    "badge": "2026년 10월",
+    "photo_query": "busan udong apartment building modern"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city apartment skyline",
-      "narration": "이거 모르고 지나가면 손해다. 우동 최고가 현대카멜리아 150.09㎡ 17.0억. 국토부에 신고된 실거래 금액이다.",
-      "subtitle": "우동 최고 17.0억"
+      "narration": "이거 모르고 지나가면 손해다. 우동 부산에서 10월에 터진 거래다. 현대카멜리아. 17억이라고 하카더라.",
+      "subtitle": "현대카멜리아 17억",
+      "photo_query": "apartment real estate transaction contract"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "우동 현대카멜리아, 전용 150㎡(45평) 17층이 17.0억원에 실거래 신고됐다카이. 평당 3,744만원. 2001년 준공.",
-      "subtitle": "우동 현대카멜리아 17.0억원"
+      "narration": "150제곱미터다. 17층 지었다. 그런데 이게 우동서는 최고가라니깐.",
+      "subtitle": "150㎡ 17층 최고가",
+      "photo_query": "modern apartment complex facade"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "같은 동네 대우마리나1도 주목할 만한다. 전용 84㎡(25평) 2층, 거래가 10.5억원. 평당 4,121만원.",
-      "subtitle": "우동 대우마리나1 10.5억원"
+      "narration": "나머지는 봐라. 대우마리나 1. 105억 받을 정도. 3은 97억. 해운대동백 86억. 센텀마티안 67억.",
+      "subtitle": "다른 단지들 105~67억",
+      "photo_query": "apartment price comparison chart"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "대우마리나3 전용 85㎡(26평) 1층 — 9.7억원 거래. 평당 3,775만원.",
-      "subtitle": "우동 대우마리나3 9.7억원"
+      "narration": "우동 살 생각이면 이 숫자들 꼭 봐야 한다. 시세 비교 안 하고 들어가면 대박 손본다.",
+      "subtitle": "우동 아파트 시세 비교",
+      "photo_query": "real estate market analysis document"
     },
     {
       "image": null,
-      "photo_query": "Korea city modern apartment residential",
-      "narration": "해운대동백두산위브더제니스 전용 84㎡(25평) 24층 — 8.6억원 거래. 평당 3,378만원.",
-      "subtitle": "우동 해운대동백두산위브더제니스 8.6억원"
-    },
-    {
-      "image": null,
-      "photo_query": "Korea city residential area aerial",
-      "narration": "우동 이번 달 거래를 종합하면, 평균 거래가는 10.5억원, 최고가 17.0억원, 최저가 6.7억원이다. 총 5건이 신고됐다 아이가.",
-      "subtitle": "우동 이번 달 거래를 종합하면, 평균"
-    },
-    {
-      "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "더 알아야 할 우동 정보는 우리 팔로우하고 봐라. 쫌봐봐에서 계속 터진다.",
+      "subtitle": "팔로우 필수",
+      "photo_query": "person checking mobile phone real estate"
     }
   ],
   "meta": {
@@ -68,7 +57,6 @@
       ],
       "style": "bars"
     },
-    "tone": "경상도",
-    "generated_at": "2026-10-29T02:19:09.903721+00:00"
+    "generated_at": "2026-10-29T09:37:13.837618+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "냉장고 칸별 정리법",
+  "title": "배수구 냄새 5분 해결법",
   "cover": {
     "image": null,
     "lines": [
-      "냉장고 이렇게",
-      "<r>정리하면</r>",
-      "식재료 2배 오래간다"
+      "배수구 냄새는",
+      "<r>5분이면</r>",
+      "끝난다"
     ],
     "badge": null,
-    "photo_query": "organized refrigerator compartments"
+    "photo_query": "kitchen sink drain"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 냉장고 정리 제대로 알아? 칸마다 온도가 다르다는 거 알고 있나? 이걸 모르면 음식이 금방 버려져.",
-      "subtitle": "냉장고 칸별 온도 다르다",
-      "photo_query": "refrigerator temperature zones"
+      "narration": "싱크대나 욕실 배수구에서 나는 냄새, 진짜 짜증나지? 이거 한 가지만 하면 완전히 사라진다.",
+      "subtitle": "배수구 악취의 원인은?",
+      "photo_query": "sink drain smell unpleasant"
     },
     {
       "image": null,
-      "narration": "맨 위칸은 4도 정도로 제일 찬데, 유제품·남은 반찬 같은 상할 맛한 것 놓거라. 아래칸은 8도 정도라서 계란·버터 같은 게 딱이다.",
-      "subtitle": "위칸: 유제품, 아래칸: 계란·버터",
-      "photo_query": "dairy products eggs butter storage"
+      "narration": "베이킹소다 반 컵을 배수구에 붓고, 식초 한 컵을 쏟아 부어라. 그럼 거품이 마구 일어난다.",
+      "subtitle": "베이킹소다+식초로 시작",
+      "photo_query": "baking soda vinegar drain cleaning"
     },
     {
       "image": null,
-      "narration": "문짝은 제일 따뜻해서 간장·소스 같은 데 쓰고, 야채칸은 습도를 제때 맞춰줘야 오래간다. 이렇게만 해도 기간이 <r>3배까지 늘어난다</r>.",
-      "subtitle": "문짝: 소스류, 야채칸: 습도 관리",
-      "photo_query": "vegetable crisper drawer organization"
+      "narration": "그대로 3분 동안 기다려. 이 거품이 배수구 안의 음식물 찌꺼기고 박테리아를 다 밀어낸다. 화학 작용이니까 강력하다.",
+      "subtitle": "3분 거품 방치, 박테리아 제거",
+      "photo_query": "fizzing chemical reaction drain"
     },
     {
       "image": null,
-      "narration": "투명한 용기에 담아서 한눈에 뭐가 있는지 보이게 해야 중복 구매도 안 되고, 버리는 음식도 줄어든다.",
-      "subtitle": "투명 용기로 통일 = 낭비 방지",
-      "photo_query": "clear storage containers refrigerator"
+      "narration": "3분 뒤에 뜨거운 물을 팍팍 붓고, 마지막에 찬바람으로 5초만 돌려라. 냄새 없는 깨끗한 배수구가 완성된다.",
+      "subtitle": "뜨거운 물로 마무리",
+      "photo_query": "hot water pouring sink drain"
     },
     {
       "image": null,
-      "narration": "이 방법만으로 한 달에 2~3만 원 정도 버린다던 음식을 확 줄일 수 있어. 이런 살림 꿀팁 더 보고 싶으면 팔로우!",
-      "subtitle": "월 2~3만 원 절약 효과",
-      "photo_query": "fresh vegetables fruits storage"
+      "narration": "이건 재료 비용도 겨우 천 원대고, 매달 한 번씩만 해도 냄새는 안 난다. 이런 꿀팁 더 보려면 팔로우해 봐.",
+      "subtitle": "월 1회, 천 원대로 해결",
+      "photo_query": "clean fresh kitchen sink"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T03:58:33.710537+00:00"
+    "generated_at": "2026-10-29T09:38:27.581245+00:00"
   }
 }

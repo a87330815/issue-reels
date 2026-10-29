@@ -1,44 +1,44 @@
 {
-  "title": "편의점 우산의 법칙",
+  "title": "배송완료 문자 왔는데 없다",
   "cover": {
     "image": null,
     "lines": [
-      "편의점서 우산 사면",
-      "<r>그날 꼭 해 그친다</r>"
+      "배송완료",
+      "<r>문 앞에 없네</r>"
     ],
     "badge": null,
-    "photo_query": "convenience store umbrella rain"
+    "photo_query": "empty doorstep package delivery"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "비 오는데 우산을 잃어버렸다. 그럼 편의점 우산을 산다. 2,000원짜리 싸구려.",
-      "subtitle": "절대 못 쓸 우산 구매",
-      "photo_query": "convenience store checkout umbrella"
+      "narration": "휴대폰 울렸다. '택배 배송이 완료되었습니다' 문자가 들어온다. 아 맞다, 오늘 내가 기다리던 그거다!",
+      "subtitle": "배송완료 알림",
+      "photo_query": "phone notification message excited"
     },
     {
       "image": null,
-      "narration": "계산도 안 끝났는데 휴대폰을 보니 기상청 알림이 띡. \"현재 비 그침\"",
-      "subtitle": "그날 꼭 비가 그친다",
-      "photo_query": "phone weather notification rain stop"
+      "narration": "벌떡 일어나서 현관 열고 나간다. 어? 어라? 없네? 뭐 이게... 문 앞에 아무것도 없다.",
+      "subtitle": "현관 텅 비어있음",
+      "photo_query": "empty doorstep confused looking"
     },
     {
       "image": null,
-      "narration": "결국 집에 돌아가면서 그 우산 한 번도 못 쓴다. 그리고 그 우산은 영원히 집에 방치된다.",
-      "subtitle": "그리곤 영원히 버려진다",
-      "photo_query": "umbrella stand home forgotten unused"
+      "narration": "문자 확인. 배송완료 13분 전. 그 사이 누가 가져갔다는 뜻이다. 아니면... 주인이 잘못 붙였거나?",
+      "subtitle": "멘붕 상태",
+      "photo_query": "man panic worried door"
     },
     {
       "image": null,
-      "narration": "다음번 비 올 때도 우산을 못 찾는다. 그래서 또 편의점에 가서 산다. 이 악순환.",
-      "subtitle": "근데 다음엔 또 산다",
-      "photo_query": "person confused looking for umbrella"
+      "narration": "배송업체에 전화했다 안 받고, 결국 판매자에게 메시지만 보낸다. 며칠은 이 상태로 묵혀 있을 거다. 와 진짜... 이게 왜 이렇게 스트레스냐.",
+      "subtitle": "답답함",
+      "photo_query": "frustrated waiting phone call"
     },
     {
       "image": null,
-      "narration": "이런 거 더 보고 싶으면 팔로우해 봐. 우리 일상이 다 여기 있다.",
-      "subtitle": "맞아 이거지",
-      "photo_query": "people nodding agreement laugh"
+      "narration": "이런 거 더 겪으면서 공감하고 싶으면 팔로우 눌러버려라 아이가!",
+      "subtitle": "팔로우 해주세요",
+      "photo_query": "subscribe follow button click"
     }
   ],
   "meta": {
@@ -47,6 +47,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T03:57:12.378733+00:00"
+    "generated_at": "2026-10-29T09:37:51.537038+00:00"
   }
 }
