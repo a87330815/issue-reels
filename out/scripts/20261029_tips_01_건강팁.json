@@ -1,0 +1,53 @@
+{
+  "title": "자는 자세만 바꿔도 허리 통증이 사라진다",
+  "cover": {
+    "image": null,
+    "lines": [
+      "자는 자세만",
+      "<r>바꾸면</r>",
+      "허리 통증 뚝"
+    ],
+    "badge": null,
+    "photo_query": "sleeping position pillow support"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "허리 아픈 사람들 많이 있지? 자는 자세 하나만 바꿔도 일주일 안에 효과를 본다고 카더라.",
+      "subtitle": "허리 통증의 원인은 자세",
+      "photo_query": "back pain person lying bed"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째, 옆으로 누워서 자. 무릎 사이에 베개나 쿠션을 끼워. 척추가 일직선으로 펴지면서 디스크 압력이 50% 줄어난다.",
+      "subtitle": "옆으로 누워 무릎사이 베개",
+      "photo_query": "side sleeping position pillow between knees"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 반드시 누워서 자야 한다면 무릎 아래 베개를 놓아. 허리와 무릎이 자연스러운 각도가 되니까 허리 근육이 긴장 안 한다.",
+      "subtitle": "누우면 무릎 아래 베개",
+      "photo_query": "back sleeping pillow under knees"
+    },
+    {
+      "image": null,
+      "narration": "엎드려서 자는 건 절대 금지야. 목과 척추가 꺾여서 더 안 된다고 이거야.",
+      "subtitle": "엎드려 자기는 피하기",
+      "photo_query": "bad sleeping position prone laying"
+    },
+    {
+      "image": null,
+      "narration": "이런 꿀팁 더 궁금하면 팔로우 눌러. 쫌봐봐에서 생활 해킹을 매일 풀어준다니까!",
+      "subtitle": "매일 업로드되는 생활 꿀팁",
+      "photo_query": "follow button notification"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:52:05.958934+00:00"
+  }
+}

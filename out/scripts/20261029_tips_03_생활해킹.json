@@ -1,0 +1,53 @@
+{
+  "title": "스마트폰 배터리 수명 2배 늘리는 충전 습관 3가지",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배터리 수명",
+      "<r>2배 늘리는</r>",
+      "충전 습관 3가지"
+    ],
+    "badge": null,
+    "photo_query": "smartphone battery charging cable"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "스마트폰 배터리, 자꾸만 빨리 닳지 않냐고? 충전 습관 세 가지만 바꾸면 배터리 수명이 2배까지 늘어난다니까.",
+      "subtitle": "배터리 수명 2배까지",
+      "photo_query": "phone battery health degradation"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째, 20%에서 80% 사이에서만 충전하기. 0%까지 완전 방전했다가 100%까지 충전하는 것 반복하면 배터리가 금방 죽어. 리튬이온 배터리는 극단적인 충방전이 가장 큰 스트레스거든.",
+      "subtitle": "20~80% 범위에서만 충전",
+      "photo_query": "battery charge level indicator"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 밤새 충전 금지. 자는 동안 100% 상태로 방치하면 열이 계속 쌓여서 배터리가 빨리 노화돼. 자기 1시간 전에 충전 마치고 끝내는 게 정석이다.",
+      "subtitle": "밤새 충전은 절대 금지",
+      "photo_query": "smartphone overcharging overnight"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 뜨거운 환경에서 충전하지 않기. 햇빛이 따가운 날씨나 차 안에서는 절대 충전하지 마. 배터리 온도가 올라가면 화학반응이 빨라져서 수명이 확 줄어든다.",
+      "subtitle": "고온 환경에서 충전 금지",
+      "photo_query": "heat affecting phone battery"
+    },
+    {
+      "image": null,
+      "narration": "이 세 가지만 지켜도 배터리가 3년을 거뜬하게 간다니까. 이런 살림 꿀팁 더 보고 싶으면 팔로우 하고 가이.",
+      "subtitle": "배터리 3년 이상 사용 가능",
+      "photo_query": "long lasting phone battery"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:52:22.075995+00:00"
+  }
+}
