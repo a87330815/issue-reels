@@ -64,3 +64,41 @@
 4) 발행
   발행 완료: media_id=18146262895587562
 발행 기록: out/published_cards.json
+
+대상: out/cards_20261024_04_체크리스트  (4장)
+대본: out/scripts/20261024_04_체크리스트.json
+
+--- 캡션 ---
+교통 사고
+
+· '교통 사고' 관련 트렌드 — 김종철
+
+저장해두고 필요할 때 꺼내 보세요.
+
+#생활지원금제도 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
+사진: Jakub Żerdzicki (Unsplash, Unsplash License) / Markus Spiske (Unsplash, Unsplash License) / Berke Citak (Unsplash, Unsplash License)
+--- 캡션 끝 ---
+
+  [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
+  API 호스트 확정: graph.facebook.com
+남은 발행 가능: 98건
+
+1) 이미지 공개 호스팅
+  ✓ [1/4] 01_cover.jpg  221KB  200 application/octet-stream
+  ✓ [2/4] 02_scene.jpg  261KB  200 application/octet-stream
+  ✓ [3/4] 03_scene.jpg  119KB  200 application/octet-stream
+  ✓ [4/4] 04_outro.jpg  93KB  200 application/octet-stream
+
+2) 장별 컨테이너 생성
+  [1/4] 컨테이너 17972379059973700
+  [2/4] 컨테이너 17972379083973700
+  [3/4] 컨테이너 17972379101973700
+  [4/4] 컨테이너 17972379125973700
+
+3) 캐러셀 컨테이너 생성
+  캐러셀 17972379143973700
+      0초  FINISHED
+
+4) 발행
+  발행 완료: media_id=17954577555271704
+발행 기록: out/published_cards.json
