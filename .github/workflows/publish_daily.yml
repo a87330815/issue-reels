@@ -4,10 +4,13 @@ name: 자동 발행 (하루 3건)
 # 피드가 도배돼 역효과가 난다.
 on:
   schedule:
-    # 한국시간 기준 08:00 / 12:30 / 19:00 (UTC는 -9시간)
-    - cron: "0 23 * * *"     # KST 08:00 (다음날)
-    - cron: "30 3 * * *"     # KST 12:30
-    - cron: "0 10 * * *"     # KST 19:00
+    # 한국시간 기준 08:00 / 12:30 / 19:00 을 노린다 (UTC는 -9시간).
+    # 정시와 30분은 전 세계 워크플로우가 몰려 GitHub 큐가 몇 시간씩 밀린다.
+    # 실제로 10/28에는 세 슬롯이 3~6시간 늦게 돌았다. 한산한 분으로 옮기고
+    # 20분쯤 앞당겨 둔다. 그래도 지연은 GitHub 쪽 사정이라 완전히는 못 막는다.
+    - cron: "37 22 * * *"    # KST 07:37 (다음날)
+    - cron: "7 3 * * *"      # KST 12:07
+    - cron: "37 9 * * *"     # KST 18:37
   workflow_dispatch:
     inputs:
       dry_run:
@@ -35,8 +38,10 @@ jobs:
 
       - run: pip install -q Pillow requests
 
-      # 예약 발행은 사람이 보지 않는 사이에 계정에 글을 올린다.
-      # 변수 하나로 즉시 멈출 수 있어야 한다.
+      # 예약 발행은 사람이 보지 않는 사이에 계정에 글을 올린다. 멈출 방법이
+      # 반드시 있어야 하므로 저장소 변수 AUTO_PUBLISH 를 off 로 두면 즉시
+      # 선다. 기본값은 발행이다. 앞서 이 변수를 on 일 때만 올리게 두었더니,
+      # 변수를 설정한 적이 없어 10/26~10/29 예약 발행이 통째로 건너뛰어졌다.
       - name: 자동 발행 스위치 확인
         id: gate
         env:
@@ -44,8 +49,8 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run }}
           EVENT: ${{ github.event_name }}
         run: |
-          if [ "$EVENT" = "schedule" ] && [ "$AUTO_PUBLISH" != "on" ]; then
-            echo "자동 발행이 꺼져 있습니다 (AUTO_PUBLISH=$AUTO_PUBLISH). 올리지 않고 끝냅니다."
+          if [ "$EVENT" = "schedule" ] && [ "$AUTO_PUBLISH" = "off" ]; then
+            echo "자동 발행이 꺼져 있습니다 (AUTO_PUBLISH=off). 올리지 않고 끝냅니다."
             echo "run=no" >> "$GITHUB_OUTPUT"
             exit 0
           fi
