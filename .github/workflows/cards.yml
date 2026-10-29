@@ -1,9 +1,14 @@
 name: 카드뉴스 생성
 
+# 2026-10-29: 대본이 생길 때마다 자동으로 돌던 연결을 끊었다.
+# 팔로워가 없는 동안 카드뉴스는 게시하지 않기로 했고, 릴스는 발행 직전에
+# 필요한 카드만 그때 만든다(publish_daily.yml). 미리 전량 만들어 커밋하면
+# 쓰지도 않는 PNG로 저장소만 불어난다.
+# 팔로워가 붙어 카드뉴스를 다시 올리게 되면 아래 workflow_run을 되살린다.
 on:
-  workflow_run:
-    workflows: ["대본 생성"]
-    types: [completed]
+  # workflow_run:
+  #   workflows: ["대본 생성"]
+  #   types: [completed]
   workflow_dispatch:
     inputs:
       skip_photos:
@@ -16,7 +21,7 @@ permissions:
 
 jobs:
   cards:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
