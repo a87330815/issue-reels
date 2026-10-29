@@ -1,0 +1,53 @@
+{
+  "title": "퇴근 후 침대의 행복",
+  "cover": {
+    "image": null,
+    "lines": [
+      "퇴근 후 침대는",
+      "<r>세상에서 가장</r>",
+      "편한 곳이지"
+    ],
+    "badge": null,
+    "photo_query": "tired person bed after work"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "회사에서 나오는 순간부터 한 가지만 생각난다. 침대다. 저거 뛰어누우면 얼마나 행복할까.",
+      "subtitle": "침대만 생각나는 퇴근길",
+      "photo_query": "commute home tired office worker"
+    },
+    {
+      "image": null,
+      "narration": "문을 열고 침대에 쓰러지는 그 순간. 야야야, 이게 뭐하는 짓인가 싶을 정도로 편하다니까.",
+      "subtitle": "침대에 누우면 모든 게 해결된다",
+      "photo_query": "person lying bed comfortable relaxed"
+    },
+    {
+      "image": null,
+      "narration": "혼자만 그런 게 아니다. 심지어 과학적으로도 침대는 뇌를 진정시키는 신호를 보낸다고 카더라.",
+      "subtitle": "침대는 과학적 치유",
+      "photo_query": "neuroscience brain relaxation sleep science"
+    },
+    {
+      "image": null,
+      "narration": "그 다음부턴 휴대폰은 하나의 조각상이 되고, 세상은 차단된다. 침대 위에서만 시간이 멈춘다.",
+      "subtitle": "침대 위에서만 시간이 멈춰",
+      "photo_query": "person phone bed scrolling relaxed"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 공감되면? 우리 채널 팔로우하고 함께 침대에서 웃자.",
+      "subtitle": "일상의 소소한 행복",
+      "photo_query": "cozy bedroom peaceful comfort"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:37:35.886039+00:00"
+  }
+}

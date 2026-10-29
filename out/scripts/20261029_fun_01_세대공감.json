@@ -1,0 +1,53 @@
+{
+  "title": "알람 5분 더 맞춰놓고 전부 끄고 자는 사람",
+  "cover": {
+    "image": null,
+    "lines": [
+      "알람 5개",
+      "<r>맞춰놓고</r>",
+      "다 끄고 자는 거"
+    ],
+    "badge": null,
+    "photo_query": "smartphone alarm clock snooze"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "밤 11시. 내일 7시에 일어나야 한다고 맘먹고 알람을 딱 5분 간격으로 5개 맞춰놓는다. 이거 보면 내가 시간관리 뭐 하는 사람처럼 느껴진다.",
+      "subtitle": "알람 설정의 희열",
+      "photo_query": "setting phone alarm time"
+    },
+    {
+      "image": null,
+      "narration": "아침 6시 55분. 첫 번째 알람 울린다. '오 뭐 했어?' 하고 딱 끈다. 7시 알람도 끈다. 7시 5분, 7시 10분… 다 끈다.",
+      "subtitle": "기계처럼 스와이프",
+      "photo_query": "hand dismissing phone alarm morning"
+    },
+    {
+      "image": null,
+      "narration": "마지막 7시 15분 알람도 끄고 나면 기분이 좋다. '아 나 시간 있네.' 하고 다시 누우면 3초 안 에 깊게 잠든다. 이미 알람을 다 처리했다는 안도감이 있거든.",
+      "subtitle": "알람 도둑질된 시간",
+      "photo_query": "person sleeping peacefully in bed"
+    },
+    {
+      "image": null,
+      "narration": "그리고 나서 정신 차니까 벌써 7시 30분이다. 야 미쳤나. 이제 진짜 일어나야 하는데 이미 피곤하다.",
+      "subtitle": "현실로 깨어남",
+      "photo_query": "shocked wake up alarm clock late"
+    },
+    {
+      "image": null,
+      "narration": "근데 이 패턴을 매일 반복한다. 왜 나는 배우질 못하나. 아무튼 이거 공감하는 사람이라면 팔로우 해야 한다.",
+      "subtitle": "내일도 같은 일을 하겠지",
+      "photo_query": "tired frustrated morning rush"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:37:29.741913+00:00"
+  }
+}

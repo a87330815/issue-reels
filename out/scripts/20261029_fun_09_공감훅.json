@@ -1,0 +1,54 @@
+{
+  "title": "편의점 우산의 법칙",
+  "cover": {
+    "image": null,
+    "lines": [
+      "편의점에서",
+      "<r>우산 사면</r>",
+      "그날 꼭",
+      "비 그친다"
+    ],
+    "badge": null,
+    "photo_query": "convenience store umbrella rain"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아 진짜 어제 내렸던 비. 우산 없이 나갔다가 흠뻑 젖었지 뭐.",
+      "subtitle": "우산을 놓쳤나봐",
+      "photo_query": "wet person rain umbrella lost"
+    },
+    {
+      "image": null,
+      "narration": "오늘 아침 편의점 가서 새 우산 사는 거야. 3000원짜리. 근데 나가는 순간 생각해봐.",
+      "subtitle": "근데 하늘이 맑네?",
+      "photo_query": "convenience store checkout umbrella purchase"
+    },
+    {
+      "image": null,
+      "narration": "비가 뚝 그쳤다고! 유리창으로 봤을 때 구름도 없고. 이게 뭐 하는 짓이냐니까.",
+      "subtitle": "우산만 사면 안 내리더라",
+      "photo_query": "clear sky blue weather sunshine"
+    },
+    {
+      "image": null,
+      "narration": "근데 화난다고 해도 버릴 수 없지. 어차피 또 비 올 거고. 그리고 내일 또 잃어버릴 거 뻔해.",
+      "subtitle": "반복되는 운명",
+      "photo_query": "folded umbrella corner room"
+    },
+    {
+      "image": null,
+      "narration": "너도 이런 거 있제? 댓글로 얘기해봐. 우산 사는 순간 비가 나타나는 기분 말이야.",
+      "subtitle": "이런 공감 더 보고 싶음",
+      "photo_query": "friends talking laughing together"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:38:28.499675+00:00"
+  }
+}

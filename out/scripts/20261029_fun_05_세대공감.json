@@ -1,0 +1,52 @@
+{
+  "title": "만 나이 통일됐는데 왜 자꾸 헷갈려",
+  "cover": {
+    "image": null,
+    "lines": [
+      "만 나이 통일됐는데",
+      "<r>자꾸 헷갈린다</r>"
+    ],
+    "badge": null,
+    "photo_query": "confused person thinking calculation"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "2023년부터 만 나이 통일됐잖아. 그런데 이게 진짜 헷갈린다니까.",
+      "subtitle": "만 나이 통일 이후",
+      "photo_query": "calendar 2023 new year"
+    },
+    {
+      "image": null,
+      "narration": "\"올해 나이가 몇이세요?\" 물어봐도 \"1월 생이라 이제 만 ○○\" 이러고, 12월 생은 \"아직 만 ○○\" 이러고... 야야야, 진짜 복잡하네.",
+      "subtitle": "같은 해 생인데 계속 달라",
+      "photo_query": "people birthday calendar months"
+    },
+    {
+      "image": null,
+      "narration": "그리고 어르신들은 \"그 애 생일 안 지나갔으니까 아직 살 덜 먹었어\" 이러고, 우리는 \"아니다 만 나이다\" 이러고... 세대별로 다 달라진다 아이가.",
+      "subtitle": "세대마다 기준이 다름",
+      "photo_query": "family generations different ages"
+    },
+    {
+      "image": null,
+      "narration": "결국 나이 묻고 답하는 거 자체가 이제 더 어려워졌다. 아무도 모르겠다.",
+      "subtitle": "오히려 더 복잡해짐",
+      "photo_query": "frustrated confused calculation numbers"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우해봐! 🎂",
+      "subtitle": "일상 공감 계속됨",
+      "photo_query": "follow subscribe button like"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:37:56.032532+00:00"
+  }
+}

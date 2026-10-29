@@ -1,0 +1,53 @@
+{
+  "title": "배달앱 30분 고민의 정석",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배달앱 30분",
+      "<r>고민하고</r>",
+      "결국 항상 것"
+    ],
+    "badge": null,
+    "photo_query": "delivery app phone scrolling"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "배달앱 켜는 순간. '오늘은 뭔가 새로운 걸 먹어야지' 이러면서 이것저것 훑어본다.",
+      "subtitle": "새로운 음식 모색 중",
+      "photo_query": "smartphone delivery app menu"
+    },
+    {
+      "image": null,
+      "narration": "신메뉴, 핫플, 별점 높은 곳까지 다 봤다. 그런데 마음이 자꾸 한 곳으로 간다.",
+      "subtitle": "고민의 시간",
+      "photo_query": "confused person thinking decision"
+    },
+    {
+      "image": null,
+      "narration": "결국 30분 후. 스마트폰 들었다 놨다 반복하고 있는 자신을 발견한다.",
+      "subtitle": "시간만 낭비 중",
+      "photo_query": "tired person phone frustration"
+    },
+    {
+      "image": null,
+      "narration": "그리고 손가락은 이미 결정했다. '아 몰라, 항상 먹던 그 집으로!'",
+      "subtitle": "결국 항상 거기",
+      "photo_query": "order confirmation smartphone"
+    },
+    {
+      "image": null,
+      "narration": "배달 왔을 때도 '다음엔 진짜 다른 거 먹어야지' 했는데, 그거 뻥이다.",
+      "subtitle": "팔로우하면 더 웃길 일상이 기다린다!",
+      "photo_query": "delivery food door entrance"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:38:40.430249+00:00"
+  }
+}

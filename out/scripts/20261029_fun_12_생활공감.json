@@ -1,0 +1,53 @@
+{
+  "title": "겨울 이불 밖은 정말 위험하다",
+  "cover": {
+    "image": null,
+    "lines": [
+      "겨울 아침",
+      "<r>이불 밖</r>",
+      "= 위험지역"
+    ],
+    "badge": null,
+    "photo_query": "winter bed warm blanket"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "알람이 울린다. 하지만 손가락 하나만 튀어나와도 확 차갑다. 이거 진짜 과학이다.",
+      "subtitle": "손가락도 감히 못 내민다",
+      "photo_query": "hand reaching out cold blanket"
+    },
+    {
+      "image": null,
+      "narration": "겨울에 이불 밖 온도는 10도 이하인데, 이불 안은 30도 이상이다. 온도 차이가 20도야. 그럼 당연히 못 나가지.",
+      "subtitle": "온도 차이 20도의 공포",
+      "photo_query": "thermometer cold warm temperature"
+    },
+    {
+      "image": null,
+      "narration": "더 무서운 건 나가면 몸의 열을 빼앗긴다는 거다. 뇌도 \"어? 위험한데?\"라고 신호를 보낸다. 그래서 더 움직이고 싶지 않은 거야.",
+      "subtitle": "뇌가 위험신호를 보낸다",
+      "photo_query": "person shivering under blanket morning"
+    },
+    {
+      "image": null,
+      "narration": "결국 이불 밖으로 나가는 건 생물학적으로도 본능에 반하는 행동이다. 우린 이불과 싸우면서 이기고 있는 거다.",
+      "subtitle": "이불과의 생존 게임",
+      "photo_query": "struggle getting out of bed winter"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 알고 싶으면 팔로우하고, 댓글로 \"나도 이불 못 나가\" 해봐.",
+      "subtitle": "팔로우하고 공감해봐",
+      "photo_query": "cozy bed winter morning comfort"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:38:59.799873+00:00"
+  }
+}

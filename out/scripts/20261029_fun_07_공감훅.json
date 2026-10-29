@@ -1,0 +1,47 @@
+{
+  "title": "삼각김밥 뜯는 순서 전쟁",
+  "cover": {
+    "image": null,
+    "lines": [
+      "삼각김밥",
+      "<r>뜯는 순서</r>",
+      "틀렸다가"
+    ],
+    "badge": null,
+    "photo_query": "onigiri rice triangle packaging"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야 편의점 삼각김밥 집으면 한 번쯤 있지? 위에 있는 그 까만 띠를 뜯어야 되는데.",
+      "subtitle": "까만 띠부터 뜯기",
+      "photo_query": "triangle rice ball packaging strip"
+    },
+    {
+      "image": null,
+      "narration": "근데 순서를 잘못 알았어. 옆에 있는 플라스틱 날개부터 뜯어 버렸어. 그럼 어떻게 되냐면.",
+      "subtitle": "순서 틀리는 순간",
+      "photo_query": "torn packaging mistake hands"
+    },
+    {
+      "image": null,
+      "narration": "김이 우르르르 떨어져 나간다 아이가. 손가락에 김 가루 묻고, 밥은 흩어지고. 대박 난장판이지.",
+      "subtitle": "김이 산산조각",
+      "photo_query": "nori seaweed torn crumbled mess"
+    },
+    {
+      "image": null,
+      "narration": "그래도 먹긴 먹어. 뜯는 방법 배웠으니까 다음에는 된다고 생각하면서. 근데 다음번에도 또 틀려 버린다 진짜.",
+      "subtitle": "매번 실패하는 악순환",
+      "photo_query": "eating rice ball casual moment"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:38:15.171520+00:00"
+  }
+}

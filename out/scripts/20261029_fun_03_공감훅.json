@@ -1,0 +1,53 @@
+{
+  "title": "세탁기 주머니의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "세탁기 돌린 후",
+      "<r>주머니</r>에서",
+      "나오는 것들"
+    ],
+    "badge": null,
+    "photo_query": "laundry machine pocket contents"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "세탁기 끝나고 뿌듯하게 옷 꺼내는데, 어? 주머니에서 뭔가 툭툭 떨어진다.",
+      "subtitle": "세탁기 주머니 악수의 시작",
+      "photo_query": "laundry basket clothes lint"
+    },
+    {
+      "image": null,
+      "narration": "동전, 초콜릿, 휴지, 심지어 손톱깎이까지. 아, 혹시 내가 좀 더렸나? 아니다 거기가 맞다.",
+      "subtitle": "매번 의외의 물건들이 쏟아짐",
+      "photo_query": "coins lint tissue pocket items"
+    },
+    {
+      "image": null,
+      "narration": "근데 진짜 웃긴 게, 세탁 전에 확인했는데 또 나온다니까. 주머니 주머니 속 주머니가 있나?",
+      "subtitle": "확인했는데 또 나오네",
+      "photo_query": "empty pockets washing clothes"
+    },
+    {
+      "image": null,
+      "narration": "저 동전이랑 휴지는 뭐고, 누가 초콜릿을 주머니에? 아 진짜 이게 세탁기 주머니의 매력이지.",
+      "subtitle": "매번 보물찾기가 된다",
+      "photo_query": "discover pocket treasures money"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우 누르고, 너도 세탁기 주머니에서 뭘 나왔는지 댓글로 알려줘!",
+      "subtitle": "공감하면 팔로우!",
+      "photo_query": "washing machine laundry routine"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:37:42.416577+00:00"
+  }
+}

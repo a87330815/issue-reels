@@ -1,0 +1,52 @@
+{
+  "title": "배터리 1%의 기적",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배터리 1%에서",
+      "<r>30분은 버틴다</r>"
+    ],
+    "badge": null,
+    "photo_query": "phone battery low percentage"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "99%에서 90%까지 얼마나 걸리냐? 보통 20~30분이다. 근데 1%에서? 얘는 30분 이상 멀쩡하다고.",
+      "subtitle": "배터리 시간의 역설",
+      "photo_query": "smartphone charging percentage display"
+    },
+    {
+      "image": null,
+      "narration": "이게 실제로 벌어지는 일이다. 1%일 때 집에 걸어갈 시간이 충분하고, 90% 이상일 땐 자꾸 줄어든다.",
+      "subtitle": "1%의 끈질김",
+      "photo_query": "woman walking holding phone"
+    },
+    {
+      "image": null,
+      "narration": "과학적으로 배터리는 숫자가 낮을수록 전압이 불안정해진다고 한다. 그래서 폰이 자기 방어로 전력을 아껴버린다더라.",
+      "subtitle": "폰도 생존본능이 있다",
+      "photo_query": "phone battery low mode activated"
+    },
+    {
+      "image": null,
+      "narration": "그니까 1%일 때 화면 밝기도 다 내려가고, 불필요한 앱들이 다 죽는 거다. 폰이 알아서 극한 모드 들어가는 셈이지.",
+      "subtitle": "극한의 에너지 절약",
+      "photo_query": "phone low battery mode screen dim"
+    },
+    {
+      "image": null,
+      "narration": "다음번에 배터리 1%에서 오래 버티는 거 보면, 폰이 \"나 아직 살아있다\" 외치는 거다. 팔로우하면 이런 몰랐던 거 자주 알려줄 거야.",
+      "subtitle": "폰도 버티는 생명력",
+      "photo_query": "phone surviving low battery"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T03:38:22.125437+00:00"
+  }
+}
