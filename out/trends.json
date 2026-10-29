@@ -1,86 +1,95 @@
 {
-  "collected_at": "2026-10-28T19:12:23.298283+00:00",
+  "collected_at": "2026-10-29T02:18:38.654627+00:00",
   "items": [
     {
-      "keyword": "sc 프라이부르크 대 볼프스부르크",
-      "traffic": "200+",
-      "news_title": "Freiburg vs Wolfsburg: German DFB Pokal stats &amp; head-to-head",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "46d0de38f14abeca"
-    },
-    {
-      "keyword": "apple",
-      "traffic": "200+",
-      "news_title": "Apple Unveils Its First Touch-Screen Laptop Computer",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "d0be2dc421be4fcd"
-    },
-    {
-      "keyword": "은지원",
-      "traffic": "200+",
-      "news_title": "&apos;집돌이&apos; 은지원, 재혼 후 변했다..&quot;♥9살 연하 아내와 캠핑 즐겨&quot; 깜짝",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "a90b0d3f250a1b4a"
-    },
-    {
-      "keyword": "lg에너지솔루션",
-      "traffic": "200+",
-      "news_title": "LG화학, LG엔솔 지분 2.5조 처분…자사주 3천억원 매입·소각",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "fc409f1e6eaba98b"
-    },
-    {
-      "keyword": "노바크 조코비치",
-      "traffic": "1000+",
-      "news_title": "",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "28ddceb2430790f2"
-    },
-    {
-      "keyword": "한겨레",
+      "keyword": "삼전 실적발표",
       "traffic": "100+",
-      "news_title": "이 대통령 ‘외국인노동자 경제에 크게 도움 안 돼’ 발언 논란…전문가들 “맥락 고려해도 정당화 안돼”",
+      "news_title": "‘총선 과반 실패’ 네타냐후의 운명, 아랍계 정당 손에 달렸다",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "6fc74601752fcace"
+      "key": "029ea889d718b61e"
     },
     {
-      "keyword": "일본 지진",
+      "keyword": "삼성전자 컨퍼런스콜",
       "traffic": "200+",
-      "news_title": "일본 지바현 지바시 동쪽서 규모 5.4 지진 발생",
+      "news_title": "내일 삼성전자 컨퍼런스콜 &apos;이것&apos; 만큼은 꼭 주의하세요",
       "snippet": "",
       "source_type": "google_trends",
-      "category": "놀라운 사건·화제",
-      "key": "ea02bb97d8ba85ec"
+      "category": "당일 화제 이슈",
+      "key": "233411a6047aaa2b"
     },
     {
-      "keyword": "서울반도체",
+      "keyword": "대우건설",
+      "traffic": "2000+",
+      "news_title": "[속보] 27조 체코 원전 수주한 ‘팀코리아’ 갈라섰다…한수원, 시공계약 협상 종료",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "d3714090ae4aaec4"
+    },
+    {
+      "keyword": "삼성전자 ir",
       "traffic": "200+",
-      "news_title": "서울반도체, &apos;희토류 필요없는&apos; 초소형 백색 LED 최초 개발 - 머니투데이",
+      "news_title": "[오늘의 IR] 삼성전자ㆍ현대자동차ㆍ두산로보틱스 등",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "a17a814efa247808"
+      "key": "5e65714b74610f56"
     },
     {
-      "keyword": "김민",
-      "traffic": "100+",
-      "news_title": "김민, ‘나혼산’ 출연 후 아찔한 사생활 고충...&quot;사람들이 집에 너무 찾아온다&quot; (&apos;라스&apos;)",
+      "keyword": "마이리얼트립",
+      "traffic": "500+",
+      "news_title": "여권번호까지 털렸다…마이리얼트립, 이용자 개인정보 유출",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "6ffb6c97140fd83a"
+      "key": "d090267f4466cf98"
+    },
+    {
+      "keyword": "티앤이코리아",
+      "traffic": "200+",
+      "news_title": "인텔리빅스·크리에이츠 등 코스닥 신규상장…30일 거래 개시",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "55dd707eacbf41a9"
+    },
+    {
+      "keyword": "김영옥",
+      "traffic": "2000+",
+      "news_title": "‘88세’ 김영옥, 하루·이루네에 “나 죽을 때까지 활동해 줘, 난 잊을까 겁나”",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "1c2c36029bf1b1cf"
+    },
+    {
+      "keyword": "inter miami vs cincinnati",
+      "traffic": "500+",
+      "news_title": "Lionel Messi goes scoreless, Inter Miami needs late goal to tie Cincinnati 2-2",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "0922bcef7613cccc"
+    },
+    {
+      "keyword": "운수",
+      "traffic": "200+",
+      "news_title": "[오늘의 운세] 2026년 10월 29일 띠별 운세",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "bbe11654094a4ece"
+    },
+    {
+      "keyword": "충청권 광역철도",
+      "traffic": "500+",
+      "news_title": "충청권 광역철도 1단계 총사업비 5716억 확정",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "750b21d591cace29"
     }
   ]
 }
