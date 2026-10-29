@@ -1,0 +1,53 @@
+{
+  "title": "옷 관리 완벽 정복",
+  "cover": {
+    "image": null,
+    "lines": [
+      "니트 보풀",
+      "<r>5분만에</r>",
+      "싹 제거"
+    ],
+    "badge": null,
+    "photo_query": "sweater pilling fabric"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "옷장의 니트들, 보풀 때문에 못 입다니 아깝지 않냐고. 전기면도기 있으면 5분이면 된다.",
+      "subtitle": "전기면도기로 부드럽게",
+      "photo_query": "electric razor shaver"
+    },
+    {
+      "image": null,
+      "narration": "니트를 탁 펴서 놓고, 전기면도기를 한 방향으로만 천천히 밀어내. 보풀이 죄다 걸려 나온다.",
+      "subtitle": "한 방향으로 부드럽게 밀기",
+      "photo_query": "sweater grooming care technique"
+    },
+    {
+      "image": null,
+      "narration": "어? 근데 흰옷이 누래져 있다고? 그럼 이거 해봐. 산소계 표백제 2큰술에 따뜻한 물 1L 섞어서 옷을 1시간 불리면 끝이다.",
+      "subtitle": "산소계 표백제 1시간 불리기",
+      "photo_query": "oxygen bleach white clothes soaking"
+    },
+    {
+      "image": null,
+      "narration": "왜 먹히냐고? 산소계 표백제는 색깔 옷에도 안 물드는데, 누런 때만 쏙 빼낸다. 그게 매직이다.",
+      "subtitle": "색감 손상 없이 누런 때 제거",
+      "photo_query": "whitening laundry treatment result"
+    },
+    {
+      "image": null,
+      "narration": "이런 꿀팁들 자주 보고 싶으면 팔로우해 봐. 옷 관리부터 살림까지, 이 채널이면 다 된다.",
+      "subtitle": "팔로우하고 더 보기",
+      "photo_query": "organized wardrobe closet clothes"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T15:24:41.278192+00:00"
+  }
+}

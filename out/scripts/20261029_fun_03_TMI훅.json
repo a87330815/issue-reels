@@ -1,0 +1,54 @@
+{
+  "title": "비닐봉지 한 손 묶기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "비닐봉지",
+      "<r>한 손으로</r>",
+      "묶는 법 알면",
+      "인생 바뀐다"
+    ],
+    "badge": null,
+    "photo_query": "plastic bag tie knot"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "지금까지 양손으로 비틀고 비틀어서 묶었지? 근데 이거 알면 진짜 달라진다.",
+      "subtitle": "한 손 묶기의 세계",
+      "photo_query": "hands tying plastic bag"
+    },
+    {
+      "image": null,
+      "narration": "봉지 양쪽을 한 손으로 잡고 엄지손가락으로 한 번 비틀면 끝이다. 이게 왜 안 됐냐고 후회할 정도다.",
+      "subtitle": "엄지손가락이 핵심",
+      "photo_query": "thumb twist bag technique"
+    },
+    {
+      "image": null,
+      "narration": "장을 보고 올 때 짐이 많아도 이제는 한 손으로 자유다. 다른 손으로 휴대폰도 들고 다닐 수 있게 됨.",
+      "subtitle": "양손이 자유로워진다",
+      "photo_query": "woman holding shopping bags free hand"
+    },
+    {
+      "image": null,
+      "narration": "이 기술은 할머니들이 이미 다 알고 있었던 거다. 우리가 늦게 배웠을 뿐.",
+      "subtitle": "할머니의 지혜",
+      "photo_query": "grandmother shopping market bags"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 알고 싶으면 팔로우해. 일상이 한 단계 업그레이드 되는 느낌 있어.",
+      "subtitle": "이제 시작이다",
+      "photo_query": "satisfied woman life hack"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T15:24:11.475284+00:00"
+  }
+}

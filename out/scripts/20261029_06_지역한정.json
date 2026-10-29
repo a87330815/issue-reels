@@ -1,45 +1,45 @@
 {
-  "title": "삼계동 최고가 아파트",
+  "title": "삼계동 10월 실거래 TOP",
   "cover": {
     "image": null,
     "lines": [
-      "삼계동",
+      "삼계동 최고가",
       "<r>2.3억</r>",
-      "이게 최고가?"
+      "떴다"
     ],
     "badge": null,
-    "photo_query": "korean apartment complex residential area"
+    "photo_query": "kimhae apartment complex residential area"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 삼계동 아파트 시장 지금 어떻게 되는지 알아둬라.",
-      "subtitle": "삼계동 10월 실거래",
-      "photo_query": "apartment building entrance korea"
+      "narration": "이거 모르고 지나가면 손해다. 삼계동에서 10월에 나온 실거래. 최고가가 2.3억이다.",
+      "subtitle": "삼계동 10월 최고가",
+      "photo_query": "apartment building entrance sign"
     },
     {
       "image": null,
-      "narration": "10월에 나온 최고가. 삼계이안. 84제곱미터에 2억 3천만원. 평당 2천 7백만원이다.",
+      "narration": "삼계이안. 84제곱미터. 12층. 2.3억에 팔렸다. 19년 된 아파트인데 말이다.",
       "subtitle": "삼계이안 84㎡ 2.3억",
-      "photo_query": "apartment price tag sale sign"
+      "photo_query": "apartment window view middle floor"
     },
     {
       "image": null,
-      "narration": "야야야. 같은 크기 다른 단지는 1억 6천에서 1억 9천이다. 차이가 장난 아니다.",
-      "subtitle": "같은 크기 1.6~1.9억",
-      "photo_query": "real estate comparison price analysis"
+      "narration": "그 다음이 김해북부7차부영. 19.2억이다. 최고가와 격차가 크지 않네.",
+      "subtitle": "김해북부7차 1.92억",
+      "photo_query": "residential complex building exterior daytime"
     },
     {
       "image": null,
-      "narration": "삼계동에서 땅을 잡으려면 이 단지들 실거래가를 꼭 봐둬라. 나중에 후회 없다.",
-      "subtitle": "삼계동 주요 단지 체크",
-      "photo_query": "real estate market data chart"
+      "narration": "이거. 삼계동 살펴야 할 땐 이 정도가 시장가라는 거다. 지금이 기회인지 체크해봐.",
+      "subtitle": "2억대 중심 형성됨",
+      "photo_query": "real estate market analysis documents"
     },
     {
       "image": null,
-      "narration": "더 자세한 아파트 시세는 팔로우 눌러. 우리가 계속 띄울기다.",
-      "subtitle": "팔로우 눌러",
-      "photo_query": "mobile phone real estate app screen"
+      "narration": "더 자세한 실거래 정보는 팔로우 누르고 다음 영상에서 봐라.",
+      "subtitle": "쫌봐봐에서 계속",
+      "photo_query": "mobile phone screen apartment search"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T09:37:19.989665+00:00"
+    "generated_at": "2026-10-29T15:23:33.201055+00:00"
   }
 }

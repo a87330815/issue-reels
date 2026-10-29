@@ -3,43 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "송도동",
-      "<r>9건</r> 거래",
-      "6억~8억대"
+      "송도동에서",
+      "<r>9건</r>",
+      "거래 났다"
     ],
     "badge": null,
-    "photo_query": "incheon songdo apartment complex modern buildings"
+    "photo_query": "incheon songdo apartment buildings waterfront"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 송도동. 이번 달 아파트 거래 이렇게 났다. 한 달에 9건. 가격대 보니까 6억부터 8억까지다.",
-      "subtitle": "송도동 10월 아파트 거래",
-      "photo_query": "incheon songdo apartment complex modern buildings"
+      "narration": "이거 모르고 지나가면 손해다. 송도동에서 이번 달 9건 거래가 떴다. 중개소 안 들어가고도 흐름이 보인다.",
+      "subtitle": "송도동 10월 거래",
+      "photo_query": "korean apartment real estate sign transaction"
     },
     {
       "image": null,
-      "narration": "가장 싼 게 뭐냐고? 더샵송도마리나베이. 63억이다. 2020년식이고.",
-      "subtitle": "가장 저가: 63억",
-      "photo_query": "modern apartment building riverside view"
+      "narration": "가장 비싼 데가 8억6천만원이다. 아메리칸타운아이파크 39층. 84제곱미터짜리 말이야.",
+      "subtitle": "최고가 86억원",
+      "photo_query": "luxury apartment high floor balcony view"
     },
     {
       "image": null,
-      "narration": "그럼 비싼 건? 송도아메리칸타운아이파크. 86억. 이것도 중형 평수다 아이가.",
-      "subtitle": "최고가: 86억",
-      "photo_query": "luxury apartment building high floor view"
+      "narration": "근데 같은 면적도 6천만원대부터 시작한다. 송도더샵센트럴시티 22층, 69억원이다. 차이가 크지 않나.",
+      "subtitle": "면적별로 가격 편차 큼",
+      "photo_query": "apartment floor plan 60 square meter"
     },
     {
       "image": null,
-      "narration": "뭐라카더라. 송도는 여름·겨울 비수기 제외하고 계속 나온다고. 지금 이 시즌에 사려고 했다면 이 정도 시세는 봐둬야 한다.",
-      "subtitle": "송도동 시세 범위",
-      "photo_query": "apartment price comparison real estate market"
+      "narration": "송도는 지금 건설이 한창이다. 신축과 기존 아파트가 섞여 있으니까, 매물 고를 때 건년도를 반드시 봐라.",
+      "subtitle": "신축 vs 기존, 건년도 확인",
+      "photo_query": "korea construction site apartment building crane"
     },
     {
       "image": null,
-      "narration": "더 자세한 거래 정보는 댓글에 물어봐라. 우리 팔로우하고 송도 정보 받아갈래?",
-      "subtitle": "팔로우하면 지역 정보 매일",
-      "photo_query": "real estate agent showing apartment documents"
+      "narration": "송도에 눈이 있으면 지금이 매물 보기 딱 좋은 시점이다. 이런 정보들 더 궁금하면 팔로우해라.",
+      "subtitle": "송도 부동산 정보 더보기",
+      "photo_query": "real estate agent showing apartment to"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T09:36:53.464022+00:00"
+    "generated_at": "2026-10-29T15:23:08.146356+00:00"
   }
 }

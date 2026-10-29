@@ -1,45 +1,45 @@
 {
-  "title": "압구정동 신현대9차 69억 거래",
+  "title": "압구정동 69억 거래 - 이 정도면 뭐하는 돈일까",
   "cover": {
     "image": null,
     "lines": [
       "압구정동",
       "<r>69억</r>",
-      "4층에 떴다"
+      "이 정도면"
     ],
     "badge": null,
-    "photo_query": "seoul gangnam apartment building 1980s"
+    "photo_query": "luxury apartment building gangnam seoul"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차. 40년 된 아파트가 69억에 팔렸다. 4층이다.",
-      "subtitle": "40년 된 아파트 69억",
-      "photo_query": "apartment building floor numbers sign"
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차. 4층. 69억에 떴다.",
+      "subtitle": "압구정동 69억 거래",
+      "photo_query": "apartment transaction contract documents"
     },
     {
       "image": null,
-      "narration": "152제곱미터. 그럼 평수로 따지면 46평이다. 46평에 69억. 이거 현실이다.",
-      "subtitle": "152㎡ = 약 46평",
-      "photo_query": "apartment floor plan measurement tape"
+      "narration": "152제곱미터. 4베드 정도되는 크기다. 1982년 지은 건물이거든.",
+      "subtitle": "152㎡, 44년 된 건물",
+      "photo_query": "old apartment building korea 1980s"
     },
     {
       "image": null,
-      "narration": "압구정은 강남권이고. 신현대라는 단지 자체가 이름값을 한다. 나이가 나이인데도 이 가격대가 나온다는 건.",
-      "subtitle": "강남권 프리미엄 유지",
-      "photo_query": "gangnam seoul luxury apartment complex"
+      "narration": "평당으로 쳐보면 4600만원대. 이게 강남 압구정이다.",
+      "subtitle": "평당 4,600만원대",
+      "photo_query": "gangnam street shopping district"
     },
     {
       "image": null,
-      "narration": "로또 같은 위치다. 이런 거 한두 건씩 나오는데. 놓치면 또 몇 개월을 기다려야 한다.",
-      "subtitle": "거래 기회 놓치지 마",
-      "photo_query": "real estate property listing search"
+      "narration": "옛날 현대아파트 브랜드인데도 이 가격. 강남이 뭐하는 시장인지 보이지 않냐.",
+      "subtitle": "강남 부동산 시장의 현주소",
+      "photo_query": "seoul real estate market graph chart"
     },
     {
       "image": null,
-      "narration": "압구정 아파트 매매 정보는 쫌봐봐 채널 팔로우하고 있으면 절대 놓친다. 구독해라.",
-      "subtitle": "정보 선점이 곧 자산",
-      "photo_query": "notification bell subscribe follow button"
+      "narration": "더 알고 싶으면 팔로우. 매일 강남 거래 데이터 까발린다.",
+      "subtitle": "쫌봐봐 구독하기",
+      "photo_query": "follow subscribe button notification"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T09:36:46.269691+00:00"
+    "generated_at": "2026-10-29T15:23:01.389633+00:00"
   }
 }

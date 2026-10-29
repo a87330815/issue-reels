@@ -1,40 +1,38 @@
 {
-  "title": "삼척 대이리 동굴지대, 강원도 지질명소 선정",
+  "title": "작사가 장경수 별세",
   "cover": {
     "image": null,
     "lines": [
-      "강원도가",
-      "인정한",
-      "<r>동굴</r>",
-      "가볼 만한 곳"
+      "<r>50년</r>간 우린 그의",
+      "노래를 부르고 있었다"
     ],
     "badge": null,
-    "photo_query": "cave entrance rock formation natural"
+    "photo_query": "vintage microphone vinyl records music studio"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 강원도가 올해 11월 지질 생태명소로 선정한 곳이 있다. 바로 삼척 대이리 동굴지대. 이제 당당하게 가도 된다는 얘기다.",
-      "subtitle": "강원도 지질 생태명소 선정",
-      "photo_query": "cave stalactite mineral formation"
+      "narration": "이거 모르고 지나가면 손해다. 우리가 알고 있는 수많은 노래. 그 뒤에 한 명의 손이 있었다.",
+      "subtitle": "작사가 장경수 별세",
+      "photo_query": "korean songwriter music manuscript pen"
     },
     {
       "image": null,
-      "narration": "이 지역은 수백만 년 동안 자연이 만든 지질 구조가 살아있는 곳이다. 동굴 안에서 지구의 역사가 그냥 눈에 띈다.",
-      "subtitle": "수백만 년 자연이 만든 지형",
-      "photo_query": "geology cave formation layers"
+      "narration": "조용필의 '상처'. 송대관의 '정 때문에'. 이런 국민 노래들을 다 썼다. 반세기를 음악으로 살아간 거다.",
+      "subtitle": "조용필·송대관 등 수많은 명곡 작사",
+      "photo_query": "classic korean music concert stage spotlight"
     },
     {
       "image": null,
-      "narration": "공식 인정을 받으니 접근성도 좋아지고, 생태 보존도 체계적으로 된다. 강원도 여행 리스트에 추가해 놓고 가면 딱이다.",
-      "subtitle": "올해 새로 주목받는 당일 여행지",
-      "photo_query": "hiking trail cave destination tourists"
+      "narration": "우리가 버스에서 흥얼거리던 그 멜로디. TV에서 울면서 봤던 그 드라마 OST. 장경수가 없었으면 그냥 빈 화면이었던 거다.",
+      "subtitle": "50년의 작사 경력",
+      "photo_query": "music production equipment recording studio"
     },
     {
       "image": null,
-      "narration": "이런 명소들이 생기는 건 실은 더 많은 사람이 우리 땅을 알아야 한다는 뜻이다. 강원도 여행 계획 중이라면 팔로우하고 알림 켜 둬라.",
-      "subtitle": "강원도 당일 여행지 새로 추가",
-      "photo_query": "korea nature travel destination cave"
+      "narration": "이제 그의 펜은 멈췄지만. 우리가 계속 부를 노래들은 영원하다. 그렇게 기억된다.",
+      "subtitle": "추모 물결 잇따르는 중",
+      "photo_query": "memorial flowers music hall tribute"
     }
   ],
   "meta": {
@@ -43,6 +41,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-29T09:37:38.382648+00:00"
+    "generated_at": "2026-10-29T15:23:50.555805+00:00"
   }
 }

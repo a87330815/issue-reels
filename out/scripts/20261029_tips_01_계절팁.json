@@ -1,0 +1,53 @@
+{
+  "title": "겨울 결로 초간단 해결법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "창문 물방울",
+      "<r>30초</r> 닦기",
+      "곰팡이 끝"
+    ],
+    "badge": null,
+    "photo_query": "window condensation water droplets"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "겨울 아침마다 창문에 물방울이 줄줄줄 흐르지? 이거 방치하면 3주 안에 검은 곰팡이가 생긴다고 한다.",
+      "subtitle": "결로가 곰팡이를 만든다",
+      "photo_query": "window frost condensation morning"
+    },
+    {
+      "image": null,
+      "narration": "해결법은 초간단하다. 아침에 일어나서 30초만 투자해봐. 신문지나 마른 타올로 창틀의 물기를 쓱쓱 닦아주면 된다.",
+      "subtitle": "아침 30초 닦기 습관",
+      "photo_query": "wiping window dry towel"
+    },
+    {
+      "image": null,
+      "narration": "왜냐면 곰팡이는 습기가 있을 때만 자란다고. 물기를 없애버리면 아무리 추워도 생길 수가 없다는 거다.",
+      "subtitle": "습기 제거 = 곰팡이 예방",
+      "photo_query": "mold prevention humidity control"
+    },
+    {
+      "image": null,
+      "narration": "이렇게 매일 닦으면 청소비 0원, 방충제도 안 써도 된다. 겨울 내내 창문이 깨끗하게 유지된다.",
+      "subtitle": "비용 0원, 청소 끝",
+      "photo_query": "clean window clear glass"
+    },
+    {
+      "image": null,
+      "narration": "이런 계절별 꿀팁들, 더 알고 싶으면 팔로우해봐. 쫌봐봐에서 겨울을 따뜻하고 쾌적하게 나는 법을 알려줄 거다.",
+      "subtitle": "팔로우하고 겨울 준비",
+      "photo_query": "cozy winter home comfortable"
+    }
+  ],
+  "meta": {
+    "format": "계절팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T15:24:33.765336+00:00"
+  }
+}

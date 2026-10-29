@@ -1,0 +1,53 @@
+{
+  "title": "점심 메뉴 고민",
+  "cover": {
+    "image": null,
+    "lines": [
+      "점심 뭐 먹지",
+      "<r>업무보다</r>",
+      "길다"
+    ],
+    "badge": null,
+    "photo_query": "office worker confused thinking desk"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아침 9시 출근. 벌써 생각한다. '점심을 뭘 먹지?' 회의 중에도 슬쩍 카톡으로 점심 장소 검색 중이다.",
+      "subtitle": "아직 4시간 남았는데",
+      "photo_query": "office meeting thinking distracted"
+    },
+    {
+      "image": null,
+      "narration": "11시쯤 된다. 동료들과 대화 시작. '카레 먹을까', '근데 어제 카레 먹었잖아', '그럼 회전초밥?', '근데 그거 배탈 난다더만'",
+      "subtitle": "결정 불가 상태",
+      "photo_query": "coworkers discussing eating lunch options"
+    },
+    {
+      "image": null,
+      "narration": "12시 5분 전. 아직도 못 정했다. '그냥 우동 먹자' '좋아' 했다가 '아니다 라면이 나을 듯' 30초 뒤 바뀐다.",
+      "subtitle": "시간은 자꾸 간다",
+      "photo_query": "anxious person choosing food confused"
+    },
+    {
+      "image": null,
+      "narration": "결국 12시 정각. 엘리베이터 탄다. 여전히 못 정했다. '가면서 정하자'는 말로 시간을 벌며 내려간다.",
+      "subtitle": "마지막 순간까지",
+      "photo_query": "people entering elevator office building"
+    },
+    {
+      "image": null,
+      "narration": "1층 로비 도착. 결국 지난주에 먹은 그 식당을 간다. 이거 봐봐. 우리 뇌는 업무는 못하면서 점심 메뉴 같은 건 왜 이리 복잡한지.",
+      "subtitle": "또 같은 곳",
+      "photo_query": "restaurant street lunch crowd busy"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T15:24:26.568557+00:00"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "title": "충전기 자리싸움",
+  "cover": {
+    "image": null,
+    "lines": [
+      "집에 충전기",
+      "<r>하나만</r>",
+      "있는 집의",
+      "특징"
+    ],
+    "badge": null,
+    "photo_query": "phone charger cable family"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "엄마가 핸드폰 집어 들었어. 아 씨, 내 충전기다 하면서 슬쩍 가져가는 거여.",
+      "subtitle": "말 없이 가져가기",
+      "photo_query": "mother taking phone charger"
+    },
+    {
+      "image": null,
+      "narration": "아빠는 \"야, 충전기 어디 갔냐\"고 묻는데 형이 내 가방 속 집어넣어 버렸어. 눈치 싸움이 시작되는 거지.",
+      "subtitle": "몰래 숨기기 시작",
+      "photo_query": "person hiding charger bag secretly"
+    },
+    {
+      "image": null,
+      "narration": "그럼 나는? 밤에 다 자고 나서 조용히 거실 충전기 집어 들고 방으로 들어가. 아무도 모르게.",
+      "subtitle": "심야 충전기 작전",
+      "photo_query": "person sneaking phone charger night"
+    },
+    {
+      "image": null,
+      "narration": "다음 날 아침, 또 똑같아. \"어? 충전기?\" 누가 가져갔냐고 서로 눈치만 본다고.",
+      "subtitle": "매일 반복되는 싸움",
+      "photo_query": "family looking for charger confused"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 많으면 팔로우해야지! 우리 집도 이래? 댓글로 공감해 봐봐.",
+      "subtitle": "팔로우는 필수다",
+      "photo_query": "family bonding home together"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T15:23:57.387928+00:00"
+  }
+}

@@ -1,45 +1,39 @@
 {
-  "title": "압구정 vs 하대동, 115배 차이",
+  "title": "서울 강남 vs 강북, 집값 격차 115배",
   "cover": {
     "image": null,
     "lines": [
-      "같은 서울인데",
-      "<r>115배</r>",
-      "차이 난다"
+      "압구정 69억",
+      "vs",
+      "<r>강북 6천만</r>"
     ],
     "badge": null,
-    "photo_query": "seoul apartment comparison wealthy district poor"
+    "photo_query": "seoul apartment complex comparison luxury vs"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 같은 서울 땅인데 아파트값이 어딨냐에 따라 115배까지 난다고.",
-      "subtitle": "같은 서울도 이렇게 다르다",
-      "photo_query": "seoul cityscape district contrast skyline"
+      "narration": "이거 모르고 지나가면 손해다. 같은 서울인데 집값이 <r>115배</r> 차이난다. 압구정동은 평균 69억. 강북은 6천만원이다.",
+      "subtitle": "같은 서울, 집값 115배 차이",
+      "photo_query": "seoul skyline han river bridge apartment"
     },
     {
       "image": null,
-      "narration": "압구정동 평균은 69억이다. 한 채 사는 돈이 남은 동네는 채 1억을 못 넘긴다.",
-      "subtitle": "압구정동 69억 vs 하대동 0.6억",
-      "photo_query": "luxury apartment building high-rise gangnam"
+      "narration": "압구정은 신현대, 롯데캐슬 같은 브랜드 아파트. 다 30년 넘은 건데 69억이다.",
+      "subtitle": "압구정동 평균 69억원",
+      "photo_query": "luxury apartment building seoul gangnam high"
     },
     {
       "image": null,
-      "narration": "부자동네는 30년 된 낡은 아파트도 69억. 서민동네는 새 아파트 지어도 1억도 안 된다. 이거 뭐 하는 짓인가.",
-      "subtitle": "같은 집인데 값이 다르다",
-      "photo_query": "old apartment building maintenance renovation"
+      "narration": "강북은요. 6천만원짜리도 있다. 가성비 찾는 사람들은 이런 거 봐야 한다.",
+      "subtitle": "강북 하대동 평균 6천만원",
+      "photo_query": "affordable housing apartment korea residential area"
     },
     {
       "image": null,
-      "narration": "이게 현실이다. 서울에서 내 집 마련이 왜 꿈인지 알겠지? 지역에 따라 하늘과 땅 차이다.",
-      "subtitle": "서울은 지역이 곧 계급이다",
-      "photo_query": "real estate market sign apartment for"
-    },
-    {
-      "image": null,
-      "narration": "이런 데이터들 우리가 모아놓고 있다. 구독해라. 손해 보지 말고.",
-      "subtitle": "쫌봐봐와 함께하기",
-      "photo_query": "mobile phone app data analytics dashboard"
+      "narration": "야야야. 이게 같은 서울이다. 지금 집 살 계획 있으면? 팔로우하고 다음 편에서 확인해라.",
+      "subtitle": "집값 고르는 것도 전략이다",
+      "photo_query": "real estate house keys calculator korea"
     }
   ],
   "meta": {
@@ -57,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T09:37:00.473433+00:00"
+    "generated_at": "2026-10-29T15:23:14.063910+00:00"
   }
 }

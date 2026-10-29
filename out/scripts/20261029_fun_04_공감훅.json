@@ -1,45 +1,46 @@
 {
-  "title": "편의점 우산의 저주",
+  "title": "미용실 '조금만' 마법",
   "cover": {
     "image": null,
     "lines": [
-      "편의점에서",
-      "<r>우산 사는 순간</r>",
-      "비가 그친다"
+      "'조금만",
+      "다듬어주세요'",
+      "<r>했는데</r>",
+      "왜 다른 사람?"
     ],
     "badge": null,
-    "photo_query": "convenience store umbrella display rain"
+    "photo_query": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "아 진짜 빗줄기가 장난 아니네. 편의점 들어가서 우산 고르는 중이다.",
-      "subtitle": "우산 고르는 중",
-      "photo_query": "convenience store aisle umbrella shopping"
+      "narration": "손님: '조금만 다듬어주세요, 지금 이 정도 길이 유지할래요.' 미용사는 고개를 끄덕인다.",
+      "subtitle": "조금만 다듬어 달라는 인사",
+      "photo_query": "woman asking hairdresser request"
     },
     {
       "image": null,
-      "narration": "4,500원? 뭐 어때. 2천 원대도 있네. 어라? 비가... 그쳤나?",
-      "subtitle": "계산대 가는 길",
-      "photo_query": "checkout counter convenience store payment"
+      "narration": "근데 30분 뒤… 거울에 비친 자신은 완전 딴 사람이다. 무릎까지 있던 머리가 어깨까지 사라졌다. 이게 뭐하는 짓이냐고.",
+      "subtitle": "거울 보는 순간의 충격",
+      "photo_query": "woman shocked hair salon mirror"
     },
     {
       "image": null,
-      "narration": "야야야 이거 봐봐. 나가니까 하늘 맑아졌네. 우산 사는 거 아까운데? 이거 왜 매번 이래?",
-      "subtitle": "우산 산 직후 날씨",
-      "photo_query": "sunny sky after rain clearing weather"
+      "narration": "미용사: '어? 조금만 다듬은 거 맞는데요?' 아니다, 이건 '조금'이 아니다. 이건 '완전 새로 자른 거'다.",
+      "subtitle": "미용사와 손님의 기준 차이",
+      "photo_query": "hairdresser with scissors smiling"
     },
     {
       "image": null,
-      "narration": "결국 우산은 집에 두고... 근데 내일 또 빌 거 같은데. 진짜 우산은 절대 필요 없는 날에만 챙긴다니까.",
-      "subtitle": "버려지는 우산의 운명",
-      "photo_query": "umbrella forgotten at home corner"
+      "narration": "사실 미용사가 '조금'의 기준을 매일 리셋한다는 게 함정이다. 어제 자른 사람의 '조금'이랑 나의 '조금'이 다르다고.",
+      "subtitle": "'조금'의 정의는 미용사마다 다르다",
+      "photo_query": "hair before after transformation"
     },
     {
       "image": null,
-      "narration": "이런 우산 소품 공감 더 보고 싶으면 팔로우 눌러. 우리 함께 우산 산 날씨 운수 짐 벗자.",
-      "subtitle": "팔로우 해줄래?",
-      "photo_query": "follow subscribe button interface"
+      "narration": "그래서 지금부턴 미용실 가면 '1센치'라고 말한다. 조금은 위험하니까. 당신도 나처럼 자른 머리로 후회하지 말고 팔로우 해봐!",
+      "subtitle": "다음부턴 센치 단위로 말하자",
+      "photo_query": "measurement ruler centimeter"
     }
   ],
   "meta": {
@@ -48,6 +49,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T09:38:05.133375+00:00"
+    "generated_at": "2026-10-29T15:24:18.904140+00:00"
   }
 }

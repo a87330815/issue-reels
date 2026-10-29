@@ -1,45 +1,45 @@
 {
-  "title": "우동 아파트 최고가 17억",
+  "title": "우동 최고가 아파트",
   "cover": {
     "image": null,
     "lines": [
-      "우동서",
+      "우동 최고가",
       "<r>17억</r>",
-      "나왔습니다"
+      "알고 계셨어요?"
     ],
-    "badge": "2026년 10월",
-    "photo_query": "busan udong apartment building modern"
+    "badge": null,
+    "photo_query": "busan apartment building modern architecture"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 우동 부산에서 10월에 터진 거래다. 현대카멜리아. 17억이라고 하카더라.",
-      "subtitle": "현대카멜리아 17억",
-      "photo_query": "apartment real estate transaction contract"
+      "narration": "이거 모르고 지나가면 손해다. 우동 아파트 시장. 지금 뭐가 일어나고 있는지 알아야 한다.",
+      "subtitle": "우동 최고가 아파트 17억",
+      "photo_query": "busan apartment market real estate"
     },
     {
       "image": null,
-      "narration": "150제곱미터다. 17층 지었다. 그런데 이게 우동서는 최고가라니깐.",
-      "subtitle": "150㎡ 17층 최고가",
-      "photo_query": "modern apartment complex facade"
+      "narration": "현대카멜리아. 150제곱미터에 17억이다. 2001년생 건물인데도 말이다.",
+      "subtitle": "현대카멜리아 150㎡ 17억",
+      "photo_query": "modern apartment building entrance facade"
     },
     {
       "image": null,
-      "narration": "나머지는 봐라. 대우마리나 1. 105억 받을 정도. 3은 97억. 해운대동백 86억. 센텀마티안 67억.",
-      "subtitle": "다른 단지들 105~67억",
-      "photo_query": "apartment price comparison chart"
+      "narration": "같은 우동 신축 아파트는 9천만원대에서 시작한다. 그 차이가 얼마인지 알겠나.",
+      "subtitle": "신축 아파트는 9천만원대",
+      "photo_query": "new construction apartment complex korea"
     },
     {
       "image": null,
-      "narration": "우동 살 생각이면 이 숫자들 꼭 봐야 한다. 시세 비교 안 하고 들어가면 대박 손본다.",
-      "subtitle": "우동 아파트 시세 비교",
-      "photo_query": "real estate market analysis document"
+      "narration": "위치. 평면. 조망. 이런 걸 따져서 사는 놈들이 있다는 뜻이다.",
+      "subtitle": "위치가 전부를 결정한다",
+      "photo_query": "apartment window view cityscape balcony"
     },
     {
       "image": null,
-      "narration": "더 알아야 할 우동 정보는 우리 팔로우하고 봐라. 쫌봐봐에서 계속 터진다.",
-      "subtitle": "팔로우 필수",
-      "photo_query": "person checking mobile phone real estate"
+      "narration": "우동 아파트 사려면. 지금이 기회다. 더 알아보려면 팔로우 해라.",
+      "subtitle": "우동 실거래 정보 팔로우하기",
+      "photo_query": "follow subscribe button social media"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T09:37:13.837618+00:00"
+    "generated_at": "2026-10-29T15:23:27.031254+00:00"
   }
 }

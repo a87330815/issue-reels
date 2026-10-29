@@ -1,39 +1,39 @@
 {
-  "title": "연수동 10월 실거래가",
+  "title": "연수동 10월 최고가 공개",
   "cover": {
     "image": null,
     "lines": [
-      "연수동",
-      "<r>4.5억</r>",
-      "최고가 공개"
+      "연수동 최고가",
+      "<r>4억5천</r>",
+      "대림입니다"
     ],
     "badge": null,
-    "photo_query": "Incheon apartment complex neighborhood"
+    "photo_query": "incheon yeonsu dong apartment complex"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 연수동. 10월에 나온 실거래가 봤냐고. 최고가가 4억 5천만원이다.",
-      "subtitle": "연수동 최고가 4.5억",
-      "photo_query": "real estate transaction documents"
+      "narration": "이거 모르고 지나가면 손해다. 연수동 10월 아파트 거래 나왔다. 최고가가 4억 5천만원이다.",
+      "subtitle": "연수동 10월 최고가",
+      "photo_query": "apartment building entrance yeonsu"
     },
     {
       "image": null,
-      "narration": "대림이라고. 84제곱미터 12층. 이 정도 사이즈에서 이 가격이다. 기억해둬라.",
-      "subtitle": "대림 84㎡ 12층",
-      "photo_query": "apartment building floor plan layout"
+      "narration": "대림. 84제곱미터. 12층. 이거. 진짜 중요하다. 같은 크기 다른 단지는 3억 2천부터 시작된다.",
+      "subtitle": "대림 84㎡ 4.5억",
+      "photo_query": "apartment floor size comparison"
     },
     {
       "image": null,
-      "narration": "다른 단지들 봐봐. 풍림1은 3억 2천만원. 연수주공2차는 2억 5백만원. 진짜 다르다.",
-      "subtitle": "단지별 가격 편차 큼",
-      "photo_query": "seoul apartment comparison"
+      "narration": "같은 동네인데 1억 이상 차이다. 뭐가 다르냐고? 준공년도, 입지, 관리. 이 정도면 봐야지.",
+      "subtitle": "같은 동네 1억 차이",
+      "photo_query": "korean apartment building age comparison"
     },
     {
       "image": null,
-      "narration": "연수동 아파트 찾고 있으면. 이 수치들 꼭 체크해라. 같은 동네도 얼마나 차이 나는지 알아야 똑똑하게 산다.",
-      "subtitle": "연수동 실거래가 확인 필수",
-      "photo_query": "family searching apartment online"
+      "narration": "연수동에서 집 사려고 하면 이 정도는 봐야 한다. 쫌봐봐 팔로우해서 이런 거 놓치지 마라.",
+      "subtitle": "연수동 매물 다 봤나요",
+      "photo_query": "real estate search online listing"
     }
   ],
   "meta": {
@@ -51,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T09:37:25.472170+00:00"
+    "generated_at": "2026-10-29T15:23:38.781071+00:00"
   }
 }

@@ -5,7 +5,7 @@
     "lines": [
       "압구정동",
       "<r>평당 1.50억</r>",
-      "이게 뭐지?"
+      "실화다"
     ],
     "badge": null,
     "photo_query": "luxury apartment building gangnam seoul"
@@ -13,33 +13,33 @@
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차. 10월에 팔린 아파트다. 평당 1억 50만 원. 와 대박.",
-      "subtitle": "평당 1억 50만원",
-      "photo_query": "apartment sales contract documents"
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차. 지금 평당 1억 5천만 원이다.",
+      "subtitle": "압구정동 신현대9차 평당 1.50억",
+      "photo_query": "seoul gangnam real estate market"
     },
     {
       "image": null,
-      "narration": "근데 이게 뭐 하는 값이냐고. 강남 아파트 평균이 얼마인데 이렇게 나왔을까. 다른 지역과 비교해 봐라.",
-      "subtitle": "다른 강남권 아파트와 비교",
-      "photo_query": "gangnam district map seoul korea"
+      "narration": "전용 152제곱미터면 총 23억이 나온다. 44년 된 건물인데 가격이 미친 거 아닌가.",
+      "subtitle": "4층 152㎡ 총 23억 원",
+      "photo_query": "apartment price calculator spreadsheet"
     },
     {
       "image": null,
-      "narration": "대치동 은마. 평당 41만 원. 방배동 그랑자이. 평당 40만 원. 삼성동 롯데캐슬도 평당 31만 원이다.",
-      "subtitle": "은마·그랑자이·롯데캐슬",
-      "photo_query": "apartment price comparison chart"
+      "narration": "강남 다른 데 보면 어떤가. 방배동은 평당 4천만 원대. 서초동도 3천만 원대다.",
+      "subtitle": "강남 다른 지역과 비교",
+      "photo_query": "seoul district apartment comparison map"
     },
     {
       "image": null,
-      "narration": "같은 강남인데 평당 가격이 3배 이상 난다. 신현대9차는 뭐가 특별한 거냐고. 위치? 래비탄? 뭔가 있어야 한다.",
-      "subtitle": "강남 내 가격차 3배 이상",
-      "photo_query": "apartment building comparison prices"
+      "narration": "압구정은 따로다. 이 정도면 거의 매물이 안 나온다. 나오면 끝이다.",
+      "subtitle": "압구정은 따로다",
+      "photo_query": "apgujeong korea luxury neighborhood street"
     },
     {
       "image": null,
-      "narration": "이런 데이터들이 계속 떨어진다. 팔로우해 봐라. 놓치면 기회 잃는다.",
-      "subtitle": "실시간 아파트 거래 정보",
-      "photo_query": "real estate market trending data"
+      "narration": "우리 채널 계속 따라와. 강남 땅값 변화는 매주 여기서 얻고 가.",
+      "subtitle": "팔로우 구독 눌러라",
+      "photo_query": "mobile phone social media follow button"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T09:37:32.002017+00:00"
+    "generated_at": "2026-10-29T15:23:44.822292+00:00"
   }
 }

@@ -1,0 +1,53 @@
+{
+  "title": "장보기 전 5분이 식비를 바꾼다",
+  "cover": {
+    "image": null,
+    "lines": [
+      "장보기 전",
+      "<r>이것만 5분</r>",
+      "식비 30% 줄어든다"
+    ],
+    "badge": null,
+    "photo_query": "grocery shopping list planning"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "장 보러 가기 전에 냉장고랑 냉동실을 스마트폰으로 사진 찍어 두는 거야. 그럼 뭐가 있는지 다 알고 장을 보니까 중복 구매가 확 줄어든다.",
+      "subtitle": "냉장고 사진 미리 촬영",
+      "photo_query": "refrigerator contents photos"
+    },
+    {
+      "image": null,
+      "narration": "다음으로 이번 주 식탁 메뉴를 종이에 딱 3~4가지만 정해. 이거 때문에 본인도 모르게 사는 '필요 없는 음식'이 없어진다니까.",
+      "subtitle": "주간 메뉴 미리 정하기",
+      "photo_query": "weekly meal planning notebook"
+    },
+    {
+      "image": null,
+      "narration": "마지막으로 그 메뉴에 필요한 재료만 리스트를 써서 들고 장 보러 가. 이거 하나만으로도 월 식비가 20~30만 원은 줄어든다고 카더라.",
+      "subtitle": "필요한 재료만 리스트화",
+      "photo_query": "shopping list pen paper market"
+    },
+    {
+      "image": null,
+      "narration": "충동 구매를 막는 게 식비 절약의 핵심이거든. 이 세 가지 습관, 이번 주부터 시작해 봐.",
+      "subtitle": "충동 구매가 식비의 적",
+      "photo_query": "woman holding shopping bags decision"
+    },
+    {
+      "image": null,
+      "narration": "이런 생활 꿀팁들 더 보고 싶으면 팔로우 눌러. 우린 계속 돈 아끼는 방법을 가져올 거다.",
+      "subtitle": "팔로우해서 더 보기",
+      "photo_query": "phone follow button social media"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T15:24:48.388590+00:00"
+  }
+}
