@@ -1,45 +1,45 @@
 {
-  "title": "이사 준비, 버리기 아까운 물건 처리법",
+  "title": "스마트폰 배터리 수명 2배 늘리는 충전 습관 3가지",
   "cover": {
     "image": null,
     "lines": [
-      "버리기 아까운 것들",
-      "<y>하루 30분</y>",
-      "돈으로 바꾼다"
+      "배터리 수명",
+      "<r>2배 늘리는</r>",
+      "충전 습관 3가지"
     ],
     "badge": null,
-    "photo_query": "moving boxes packed items"
+    "photo_query": "smartphone battery charging cable"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이사 준비할 때 가장 힘든 게 뭐냐고? 버리기 아까운 물건 처리다. 이거 봐봐, 그냥 버리면 돈 낭비고 팔면 이삿짐도 줄고 용돈도 생긴다.",
-      "subtitle": "버리기 아까운 물건, 팔면 일석삼조",
-      "photo_query": "person looking at old items decluttering"
+      "narration": "야야야, 스마트폰 배터리 얼마 안 가서 짜증나지? 이거 충전 습관만 바꿔도 배터리 수명이 진짜 2배까지 늘어난다니까!",
+      "subtitle": "배터리 수명 2배",
+      "photo_query": "phone battery percentage low warning"
     },
     {
       "image": null,
-      "narration": "첫 번째, 당근마켓 같은 지역 앱에 올려. 이사 간다고 하면 보통 3일 안에 반값 정도로 팔린다. 옷 30개라도 한 묶음에 올리면 깔끔해.",
-      "subtitle": "당근마켓·번개장터에 한 묶음으로 올리기",
-      "photo_query": "smartphone carrot market app listing"
+      "narration": "첫 번째, 80% 이상 충전하지 마. 100%까지 자주 충전하면 배터리가 빨리 닳는데, 20~80% 사이에서 충전하면 화학 반응이 덜 일어나서 오래간다.",
+      "subtitle": "80% 이상 충전 금지",
+      "photo_query": "smartphone charging to 80 percent"
     },
     {
       "image": null,
-      "narration": "두 번째, 책이나 교과서는 중고책 앱에 따로 올려. 책은 상태가 좋으면 정가의 40~60% 받는다. 이사 2주 전에 시작하면 다 처리된다.",
-      "subtitle": "책은 알라딘·오늘의책에 따로 판매",
-      "photo_query": "stacked textbooks notebooks for sale"
+      "narration": "두 번째, 밤새 충전하지 마. 100% 도달한 후에도 계속 충전하면 배터리가 열받아서 손상된다. 아침에 100%인 상태가 문제다.",
+      "subtitle": "밤새 충전 피하기",
+      "photo_query": "phone plugged in overnight charging"
     },
     {
       "image": null,
-      "narration": "세 번째, 팔기 어려운 것들은 수거 업체에 부담금 내고 받게 해. 보통 3~5만 원에 다 가져가니까, 이삿짐 비용도 아끼고 환경도 살린다.",
-      "subtitle": "안 팔린 것은 폐기 업체 이용",
-      "photo_query": "junk removal truck loading furniture"
+      "narration": "세 번째, 배터리가 0%까지 떨어지기 전에 충전해. 완전 방전은 배터리한테 진짜 스트레스고, 10~20% 남았을 때 충전하는 게 가장 오래 간다.",
+      "subtitle": "완전 방전 피하기",
+      "photo_query": "phone battery healthy charging habits"
     },
     {
       "image": null,
-      "narration": "이렇게 하면 말이야, 안 쓰는 것들 20~50만 원정도 건지고 이사 비용도 줄일 수 있다. 이런 생활 꿀팁 더 보고 싶으면 팔로우해!",
-      "subtitle": "월 20~50만원 절감 효과",
-      "photo_query": "successful moving day organized clean"
+      "narration": "이 세 가지만 기억해도 배터리가 진짜 오래 간다니까! 이런 생활 꿀팁 더 보고 싶으면 팔로우 눌러두고 가봐!",
+      "subtitle": "지금부터 시작하기",
+      "photo_query": "happy person smartphone full battery"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T03:58:42.677237+00:00"
+    "generated_at": "2026-10-29T19:23:16.378070+00:00"
   }
 }

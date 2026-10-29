@@ -1,0 +1,62 @@
+{
+  "title": "압구정동 신현대11차 9억 2천만원",
+  "cover": {
+    "image": null,
+    "lines": [
+      "압구정동",
+      "<r>평당 1.66억</r>",
+      "실화다"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building seoul gangnam"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대11차가 9억 2천만원에 나왔다. 평당 1억 66백만원이다.",
+      "subtitle": "신현대11차 9억 2천만원",
+      "photo_query": "apartment building sold sign real estate"
+    },
+    {
+      "image": null,
+      "narration": "전용 183제곱미터. 강남 압구정 한복판이다 아이가. 이 정도면 뭐 특별한 이유가 있단 거야.",
+      "subtitle": "전용 183제곱미터",
+      "photo_query": "korea apartment floor plan layout"
+    },
+    {
+      "image": null,
+      "narration": "올 10월 거래. 12층이다. 지금 압구정 시세 흐름을 놓쳤으면 이거 봐봐. 다른 지역이랑 비교가 안 된다.",
+      "subtitle": "2026년 10월 거래, 12층",
+      "photo_query": "high rise apartment windows city view"
+    },
+    {
+      "image": null,
+      "narration": "평당 1억 6천. 강남 명물 단지들 중에도 손에 꼽힌다. 요즘 이 정도 시세면 시장이 뭔가 달라졌단 얘기다.",
+      "subtitle": "강남 평당 시세 변화",
+      "photo_query": "seoul gangnam skyline buildings"
+    },
+    {
+      "image": null,
+      "narration": "압구정, 대치, 서현. 강남 권역 실거래 지금 흐름을 놓치지 마라. 우리 채널 팔로우하면 매주 터진다.",
+      "subtitle": "강남권 실거래 정보 구독",
+      "photo_query": "real estate market data analysis chart"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        1.66,
+        1.3,
+        1.27,
+        1.14,
+        1.12
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-29T19:21:59.367425+00:00"
+  }
+}

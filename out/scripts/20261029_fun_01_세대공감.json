@@ -1,45 +1,46 @@
 {
-  "title": "알람 5분 더 맞춰놓고 전부 끄고 자는 사람",
+  "title": "선풍기 바람의 신비",
   "cover": {
     "image": null,
     "lines": [
-      "알람 5개",
-      "<r>맞춰놓고</r>",
-      "다 끄고 자는 거"
+      "선풍기 바람",
+      "<r>아~</r>",
+      "하는 거",
+      "한국인 DNA다"
     ],
     "badge": null,
-    "photo_query": "smartphone alarm clock snooze"
+    "photo_query": "fan wind summer heat relief"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "밤 11시. 내일 7시에 일어나야 한다고 맘먹고 알람을 딱 5분 간격으로 5개 맞춰놓는다. 이거 보면 내가 시간관리 뭐 하는 사람처럼 느껴진다.",
-      "subtitle": "알람 설정의 희열",
-      "photo_query": "setting phone alarm time"
+      "narration": "여름날 에어컨 없던 시절, 할머니 할아버지도 선풍기 바람 맞으면서 '아~' 했다고 한다. 그럼 우리도 자연스럽게 '아~' 한다.",
+      "subtitle": "세대를 넘어 이어진 선풍기 의식",
+      "photo_query": "electric fan spinning summer"
     },
     {
       "image": null,
-      "narration": "아침 6시 55분. 첫 번째 알람 울린다. '오 뭐 했어?' 하고 딱 끈다. 7시 알람도 끈다. 7시 5분, 7시 10분… 다 끈다.",
-      "subtitle": "기계처럼 스와이프",
-      "photo_query": "hand dismissing phone alarm morning"
+      "narration": "선풍기는 바람을 내보내는 게 아니라, 뜨거운 공기를 흩뿌리는 거다. 그래도 그 바람에 얼굴 맞히면서 '아~' 하는 순간, 왜 이렇게 시원한지 모르겠다.",
+      "subtitle": "물리학적으로도 신기한 현상",
+      "photo_query": "man fan air circulation heat"
     },
     {
       "image": null,
-      "narration": "마지막 7시 15분 알람도 끄고 나면 기분이 좋다. '아 나 시간 있네.' 하고 다시 누우면 3초 안 에 깊게 잠든다. 이미 알람을 다 처리했다는 안도감이 있거든.",
-      "subtitle": "알람 도둑질된 시간",
-      "photo_query": "person sleeping peacefully in bed"
+      "narration": "밤 11시쯤 선풍기 켜고 누워있으면, 어느 순간 '아 이거지' 하면서 뒹굴뒹굴거린다. 에어컨도 있는데 왜 자꾸 선풍기를 찾는지 모르겠다.",
+      "subtitle": "선풍기만 되는 그 느낌",
+      "photo_query": "fan bedroom night summer sleep"
     },
     {
       "image": null,
-      "narration": "그리고 나서 정신 차니까 벌써 7시 30분이다. 야 미쳤나. 이제 진짜 일어나야 하는데 이미 피곤하다.",
-      "subtitle": "현실로 깨어남",
-      "photo_query": "shocked wake up alarm clock late"
+      "narration": "엄마는 요즘도 말씀하신다. '에어컨은 몸 차게 하니까 선풍기 켜.' 30년을 들어도 웃긴데, 왠지 틀린 말은 아닌 것 같다.",
+      "subtitle": "엄마의 선풍기 신앙",
+      "photo_query": "mother pointing fan cooling"
     },
     {
       "image": null,
-      "narration": "근데 이 패턴을 매일 반복한다. 왜 나는 배우질 못하나. 아무튼 이거 공감하는 사람이라면 팔로우 해야 한다.",
-      "subtitle": "내일도 같은 일을 하겠지",
-      "photo_query": "tired frustrated morning rush"
+      "narration": "이런 거 더 보고 싶으면 팔로우해. 우리 일상의 그 이상한데 맞는 순간들, 계속 찾아올게.",
+      "subtitle": "공감의 온도를 맞춰주는 채널",
+      "photo_query": "summer fan relief happiness"
     }
   ],
   "meta": {
@@ -48,6 +49,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T03:37:29.741913+00:00"
+    "generated_at": "2026-10-29T19:22:27.828508+00:00"
   }
 }

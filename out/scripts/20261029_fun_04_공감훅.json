@@ -1,46 +1,44 @@
 {
-  "title": "미용실 '조금만' 마법",
+  "title": "배송완료 문자 왔는데 없다",
   "cover": {
     "image": null,
     "lines": [
-      "'조금만",
-      "다듬어주세요'",
-      "<r>했는데</r>",
-      "왜 다른 사람?"
+      "배송완료",
+      "<r>문 앞에 없음</r>"
     ],
     "badge": null,
-    "photo_query": null
+    "photo_query": "empty doorstep package"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "손님: '조금만 다듬어주세요, 지금 이 정도 길이 유지할래요.' 미용사는 고개를 끄덕인다.",
-      "subtitle": "조금만 다듬어 달라는 인사",
-      "photo_query": "woman asking hairdresser request"
+      "narration": "휴~ 드디어 왔구나. 배송완료 문자 띡!",
+      "subtitle": "기대에 설레는 마음",
+      "photo_query": "phone notification text message"
     },
     {
       "image": null,
-      "narration": "근데 30분 뒤… 거울에 비친 자신은 완전 딴 사람이다. 무릎까지 있던 머리가 어깨까지 사라졌다. 이게 뭐하는 짓이냐고.",
-      "subtitle": "거울 보는 순간의 충격",
-      "photo_query": "woman shocked hair salon mirror"
+      "narration": "어? 어? 어디갔어? 문 앞에 없잖아!",
+      "subtitle": "공황 모드 진입",
+      "photo_query": "empty door step confused looking"
     },
     {
       "image": null,
-      "narration": "미용사: '어? 조금만 다듬은 거 맞는데요?' 아니다, 이건 '조금'이 아니다. 이건 '완전 새로 자른 거'다.",
-      "subtitle": "미용사와 손님의 기준 차이",
-      "photo_query": "hairdresser with scissors smiling"
+      "narration": "관리사무소, CCTV, 택배사에 전화… 30분 동안 내 인생이 멘붕이 됐다.",
+      "subtitle": "택배 행방수사 시작",
+      "photo_query": "woman on phone stressed worried"
     },
     {
       "image": null,
-      "narration": "사실 미용사가 '조금'의 기준을 매일 리셋한다는 게 함정이다. 어제 자른 사람의 '조금'이랑 나의 '조금'이 다르다고.",
-      "subtitle": "'조금'의 정의는 미용사마다 다르다",
-      "photo_query": "hair before after transformation"
+      "narration": "알고 보니 이웃집 앞에 놔뒀대. 와 이 기분 아냐?",
+      "subtitle": "결국 행복한 결말",
+      "photo_query": "package delivery neighbor door"
     },
     {
       "image": null,
-      "narration": "그래서 지금부턴 미용실 가면 '1센치'라고 말한다. 조금은 위험하니까. 당신도 나처럼 자른 머리로 후회하지 말고 팔로우 해봐!",
-      "subtitle": "다음부턴 센치 단위로 말하자",
-      "photo_query": "measurement ruler centimeter"
+      "narration": "이런 거 더 공감하고 싶으면 팔로우! 우리 함께 웃자.",
+      "subtitle": "쫌봐봐와 함께",
+      "photo_query": "friends laughing together"
     }
   ],
   "meta": {
@@ -49,6 +47,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T15:24:18.904140+00:00"
+    "generated_at": "2026-10-29T19:22:46.359450+00:00"
   }
 }

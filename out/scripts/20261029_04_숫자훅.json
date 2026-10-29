@@ -1,45 +1,40 @@
 {
-  "title": "성과급 분쟁",
+  "title": "최준희 부부 나이 차 논란",
   "cover": {
     "image": null,
     "lines": [
-      "성과급",
-      "<r>없다</r>고",
-      "싸운다"
+      "11살 차이",
+      "부부의",
+      "<r>솔직한</r>",
+      "대화가 화제다"
     ],
     "badge": null,
-    "photo_query": "office workers contract documents dispute"
+    "photo_query": "couple age difference talking living room"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 삼성전자 성과급 분쟁이다. 합의가 무효라는 데서 끝나지 않고 아예 '성과급이 존재하지 않는다'고까지 싸우고 있다.",
-      "subtitle": "성과급 합의 효력 놓고 대립",
-      "photo_query": "samsung office building exterior korea"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 연령차 부부들이 어떻게 생각하는지 알 수 있는 대화가 SNS에 떴다.",
+      "subtitle": "연령차 부부 대화가 화제",
+      "photo_query": "couple conversation sofa candid"
     },
     {
       "image": null,
-      "narration": "노사 간 주장이 완전히 반대다. 한쪽은 성과급을 받아야 한다고 하고. 다른 한쪽은 원래 그런 게 없었다고 한다.",
-      "subtitle": "노사 주장 정면 충돌",
-      "photo_query": "negotiation meeting table business discussion"
+      "narration": "11살 연상인 남편과의 솔직한 마음을 터놨다. 부부가 나누는 대화가 많은 사람들의 공감을 샀다.",
+      "subtitle": "남편과의 나이 차이 이야기",
+      "photo_query": "mature couple talking intimately"
     },
     {
       "image": null,
-      "narration": "주주단체가 법정까지 나가기로 했다. 이게 뭔지 아냐면. 기업 경영에 직접 영향을 미치는 싸움이란 뜻이다.",
-      "subtitle": "주주단체 소송 추진",
-      "photo_query": "courthouse law building exterior"
+      "narration": "연령차가 있는 부부들도 이렇게 서로를 생각한다는 게 드러났다. 사실은 누구나 상대방을 소중히 여기는 거다.",
+      "subtitle": "나이는 숫자일 뿐이다",
+      "photo_query": "couple holding hands together"
     },
     {
       "image": null,
-      "narration": "성과급 같은 보수 체계는 직원 입장에선 중요하다. 하지만 이렇게 싸우면 결국 누가 손해 볼까.",
-      "subtitle": "보수 체계 분쟁의 영향",
-      "photo_query": "workers calculation salary income"
-    },
-    {
-      "image": null,
-      "narration": "이런 분쟁의 결말이 다른 회사에도 영향을 미친다. 지금 이 싸움에서 눈을 떼면 안 된다. 자세한 내용은 댓글에 남겨뒀으니 봐라.",
-      "subtitle": "기업 보수 정책의 분수령",
-      "photo_query": "business news report analytics"
+      "narration": "팔로우하면 이런 일상 속 사람 이야기들을 계속 볼 수 있다. 쫌 봐봐에서 놓치지 마라.",
+      "subtitle": "더 많은 화제의 이야기",
+      "photo_query": "people scrolling social media phone"
     }
   ],
   "meta": {
@@ -48,6 +43,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-29T15:23:21.124074+00:00"
+    "generated_at": "2026-10-29T19:21:45.937440+00:00"
   }
 }

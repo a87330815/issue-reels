@@ -1,45 +1,45 @@
 {
-  "title": "압구정동 69억 거래 - 이 정도면 뭐하는 돈일까",
+  "title": "압구정동 신현대11차 92억 거래",
   "cover": {
     "image": null,
     "lines": [
       "압구정동",
-      "<r>69억</r>",
-      "이 정도면"
+      "<r>92억</r>",
+      "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building gangnam seoul"
+    "photo_query": "luxury apartment Seoul Apgujeong high-rise"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차. 4층. 69억에 떴다.",
-      "subtitle": "압구정동 69억 거래",
-      "photo_query": "apartment transaction contract documents"
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대11차. 지금 92억에 거래되고 있다.",
+      "subtitle": "92억 거래 나왔다",
+      "photo_query": "apartment transaction contract signing"
     },
     {
       "image": null,
-      "narration": "152제곱미터. 4베드 정도되는 크기다. 1982년 지은 건물이거든.",
-      "subtitle": "152㎡, 44년 된 건물",
-      "photo_query": "old apartment building korea 1980s"
+      "narration": "183제곱미터짜리. 40년된 건물인데 이 정도다. 서울 집값이 얼마나 미쳤는지 보여주는 거다.",
+      "subtitle": "40년 건물, 183㎡",
+      "photo_query": "older apartment building exterior Seoul"
     },
     {
       "image": null,
-      "narration": "평당으로 쳐보면 4600만원대. 이게 강남 압구정이다.",
-      "subtitle": "평당 4,600만원대",
-      "photo_query": "gangnam street shopping district"
+      "narration": "야야야. 이게 부자들의 현실이다. 강남 구석 낡은 아파트도 90억대다. 이 정도면 전국에 방 몇 개짜리 집을 쟁여도 남는다.",
+      "subtitle": "강남은 차원이 다르다",
+      "photo_query": "wealthy lifestyle luxury apartment interior"
     },
     {
       "image": null,
-      "narration": "옛날 현대아파트 브랜드인데도 이 가격. 강남이 뭐하는 시장인지 보이지 않냐.",
-      "subtitle": "강남 부동산 시장의 현주소",
-      "photo_query": "seoul real estate market graph chart"
+      "narration": "압구정동. 계속 주목해야 하는 이유. 이 지역 추세가 전국 집값의 신호탄이 된다. 우리 동네는 아직 쌌나? 따뜻하게 지켜봐야 한다.",
+      "subtitle": "압구정이 신호탄이다",
+      "photo_query": "Seoul real estate market chart graph"
     },
     {
       "image": null,
-      "narration": "더 알고 싶으면 팔로우. 매일 강남 거래 데이터 까발린다.",
-      "subtitle": "쫌봐봐 구독하기",
-      "photo_query": "follow subscribe button notification"
+      "narration": "이런 실제 거래 데이터. 매주 우리가 알려준다. 채널 팔로우해라. 손해 안 본다.",
+      "subtitle": "매주 실거래 정보",
+      "photo_query": "notification bell subscribe follow"
     }
   ],
   "meta": {
@@ -49,14 +49,14 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        69.0,
-        39.0,
-        38.5,
-        38.0,
-        33.8
+        92.0,
+        33.5,
+        21.5,
+        20.5,
+        20.0
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T15:23:01.389633+00:00"
+    "generated_at": "2026-10-29T19:21:26.729266+00:00"
   }
 }

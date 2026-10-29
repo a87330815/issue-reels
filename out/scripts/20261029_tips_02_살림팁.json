@@ -1,45 +1,45 @@
 {
-  "title": "배수구 냄새 5분 해결법",
+  "title": "옷장 터질 때 써먹는 안 입는 옷 판별법",
   "cover": {
     "image": null,
     "lines": [
-      "배수구 냄새는",
-      "<r>5분이면</r>",
-      "끝난다"
+      "안 입는 옷",
+      "<r>1개월 기준</r>",
+      "딱 판별하기"
     ],
     "badge": null,
-    "photo_query": "kitchen sink drain"
+    "photo_query": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "싱크대나 욕실 배수구에서 나는 냄새, 진짜 짜증나지? 이거 한 가지만 하면 완전히 사라진다.",
-      "subtitle": "배수구 악취의 원인은?",
-      "photo_query": "sink drain smell unpleasant"
+      "narration": "옷장이 터지는데 뭐가 없다고 할 때가 있지? 그건 안 입는 옷들이 자리를 차지하고 있기 때문이다. 오늘 알려줄 방법 하나면 명확하게 판별된다.",
+      "subtitle": "옷장 폭발의 원인은 죽은 옷들",
+      "photo_query": "overflowing wardrobe closet"
     },
     {
       "image": null,
-      "narration": "베이킹소다 반 컵을 배수구에 붓고, 식초 한 컵을 쏟아 부어라. 그럼 거품이 마구 일어난다.",
-      "subtitle": "베이킹소다+식초로 시작",
-      "photo_query": "baking soda vinegar drain cleaning"
+      "narration": "지금부터 입는 옷들을 전부 뒤로 돌려놓는다. 옷걸이 방향을 이렇게 하는 거야. 그 다음 1개월 동안 입은 옷만 원래대로 돌려놔.",
+      "subtitle": "옷걸이 방향으로 착용 여부 체크",
+      "photo_query": "hangers reversed clothes direction"
     },
     {
       "image": null,
-      "narration": "그대로 3분 동안 기다려. 이 거품이 배수구 안의 음식물 찌꺼기고 박테리아를 다 밀어낸다. 화학 작용이니까 강력하다.",
-      "subtitle": "3분 거품 방치, 박테리아 제거",
-      "photo_query": "fizzing chemical reaction drain"
+      "narration": "1개월이 지났을 때 뒤로 돌아있는 옷들이 있을 거다. 그게 넌 진짜 안 입는 옷이다. 그 옷들은 치워버려. 이 방법이 확실한 이유는 계절·기분·체형까지 다 반영되기 때문이야.",
+      "subtitle": "1개월 후 뒤로 남은 옷 = 버릴 옷",
+      "photo_query": "closet organization sorting clothes"
     },
     {
       "image": null,
-      "narration": "3분 뒤에 뜨거운 물을 팍팍 붓고, 마지막에 찬바람으로 5초만 돌려라. 냄새 없는 깨끗한 배수구가 완성된다.",
-      "subtitle": "뜨거운 물로 마무리",
-      "photo_query": "hot water pouring sink drain"
+      "narration": "보통 옷장의 30~50%를 줄일 수 있다. 그럼 진짜 입는 옷들이 눈에 띄니까 아침에 옷 고르는 시간도 줄고, 옷장도 깔끔해진다.",
+      "subtitle": "옷장 공간 30~50% 확보",
+      "photo_query": "organized tidy wardrobe"
     },
     {
       "image": null,
-      "narration": "이건 재료 비용도 겨우 천 원대고, 매달 한 번씩만 해도 냄새는 안 난다. 이런 꿀팁 더 보려면 팔로우해 봐.",
-      "subtitle": "월 1회, 천 원대로 해결",
-      "photo_query": "clean fresh kitchen sink"
+      "narration": "이런 생활 꿀팁들 더 궁금하면 팔로우해 둬. 옷장뿐 아니라 살림 전체를 편하게 만드는 팁들을 매일 올린다니까.",
+      "subtitle": "더 많은 살림팁은 팔로우에서",
+      "photo_query": "follow subscribe button"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T09:38:27.581245+00:00"
+    "generated_at": "2026-10-29T19:23:09.040535+00:00"
   }
 }

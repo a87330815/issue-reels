@@ -3,43 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "송도동에서",
+      "송도동",
       "<r>9건</r>",
-      "거래 났다"
+      "거래 떴다"
     ],
     "badge": null,
-    "photo_query": "incheon songdo apartment buildings waterfront"
+    "photo_query": "incheon songdo apartment complex waterfront"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 송도동에서 이번 달 9건 거래가 떴다. 중개소 안 들어가고도 흐름이 보인다.",
-      "subtitle": "송도동 10월 거래",
-      "photo_query": "korean apartment real estate sign transaction"
+      "narration": "이거 모르고 지나가면 손해다. 송도동에서 이번 달 9건 아파트 거래 나왔다. 대부분 5억대 중반에서 8억까지 움직였어.",
+      "subtitle": "송도동 10월 거래 9건",
+      "photo_query": "apartment transaction contract signing"
     },
     {
       "image": null,
-      "narration": "가장 비싼 데가 8억6천만원이다. 아메리칸타운아이파크 39층. 84제곱미터짜리 말이야.",
-      "subtitle": "최고가 86억원",
-      "photo_query": "luxury apartment high floor balcony view"
+      "narration": "제일 비싼 게 더샵그린워크2차. 80억 8천만 원이다. 84제곱미터짜리 말이다.",
+      "subtitle": "더샵그린워크2차 80억 8천",
+      "photo_query": "modern apartment building facade incheon"
     },
     {
       "image": null,
-      "narration": "근데 같은 면적도 6천만원대부터 시작한다. 송도더샵센트럴시티 22층, 69억원이다. 차이가 크지 않나.",
-      "subtitle": "면적별로 가격 편차 큼",
-      "photo_query": "apartment floor plan 60 square meter"
+      "narration": "반대로 가장 저가는 e편한세상송도였어. 58억 9천에 70제곱미터다. 거래 타이밍과 방향이 중요하다는 뜻이지.",
+      "subtitle": "최저가 58억 9천 vs 최고가 80억",
+      "photo_query": "apartment price comparison chart"
     },
     {
       "image": null,
-      "narration": "송도는 지금 건설이 한창이다. 신축과 기존 아파트가 섞여 있으니까, 매물 고를 때 건년도를 반드시 봐라.",
-      "subtitle": "신축 vs 기존, 건년도 확인",
-      "photo_query": "korea construction site apartment building crane"
+      "narration": "송도 지역에서 움직임이 있다는 건 신호다. 요즘 같은 시기에 거래가 활발하다는 건 뭔가 기대하는 게 있다는 뜻이거든.",
+      "subtitle": "송도는 개발 기대감 높은 지역",
+      "photo_query": "incheon songdo development construction site"
     },
     {
       "image": null,
-      "narration": "송도에 눈이 있으면 지금이 매물 보기 딱 좋은 시점이다. 이런 정보들 더 궁금하면 팔로우해라.",
-      "subtitle": "송도 부동산 정보 더보기",
-      "photo_query": "real estate agent showing apartment to"
+      "narration": "너 송도 관심 있냐? 그럼 우리 채널 팔로우 해라. 이런 거래 정보들 매일 쏜다.",
+      "subtitle": "매일 거래 정보 우리 채널에서",
+      "photo_query": "real estate agent showing apartment model"
     }
   ],
   "meta": {
@@ -49,14 +49,14 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        7.1,
-        6.3,
-        8.6,
-        6.9,
-        8.6
+        5.9,
+        8.1,
+        5.9,
+        6.1,
+        6.2
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T15:23:08.146356+00:00"
+    "generated_at": "2026-10-29T19:21:33.610685+00:00"
   }
 }

@@ -1,0 +1,53 @@
+{
+  "title": "읽씹이 예의인 세대 vs 무례인 세대",
+  "cover": {
+    "image": null,
+    "lines": [
+      "카톡 읽고",
+      "<r>답 안 하는 게</r>",
+      "예의라고?"
+    ],
+    "badge": null,
+    "photo_query": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "30대 위: \"아 지금 바쁜데 나중에 답할래.\" 읽음처리 하고 한 시간, 반나절 지나감.",
+      "subtitle": "읽고 잠수",
+      "photo_query": "person reading phone busy"
+    },
+    {
+      "image": null,
+      "narration": "20대: \"어? 읽은 지 10분인데 왜 아직 답이 없어?\" 불안감 장착.",
+      "subtitle": "불안 상태 돌입",
+      "photo_query": "worried young person checking phone"
+    },
+    {
+      "image": null,
+      "narration": "사실 30대 기준으로는, 읽고 답 안 하는 게 \"생각할 시간을 주는 배려\"다 아이가.",
+      "subtitle": "배려의 차이",
+      "photo_query": "different generations talking phone"
+    },
+    {
+      "image": null,
+      "narration": "근데 20대는 \"읽음처리는 응답 시작이고, 빨리 답해야 예의\"라고 생각함.",
+      "subtitle": "예의의 기준 다름",
+      "photo_query": "fast texting typing hands"
+    },
+    {
+      "image": null,
+      "narration": "결론: 세대 전쟁이 아니라 그냥 문화 차이다. 너도 나도 맞는 거야. 이런 거 더 공감하고 싶으면 팔로우 쫌 해봐.",
+      "subtitle": "문화 차이일 뿐",
+      "photo_query": "two people understanding agreement"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-29T19:22:41.332827+00:00"
+  }
+}

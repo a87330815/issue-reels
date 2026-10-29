@@ -3,43 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "점심 뭐 먹지",
-      "<r>업무보다</r>",
-      "길다"
+      "점심 뭐 먹을지",
+      "<r>고민하는 시간</r>",
+      "이 업무보다 길어"
     ],
     "badge": null,
-    "photo_query": "office worker confused thinking desk"
+    "photo_query": "office worker thinking lunch"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "아침 9시 출근. 벌써 생각한다. '점심을 뭘 먹지?' 회의 중에도 슬쩍 카톡으로 점심 장소 검색 중이다.",
-      "subtitle": "아직 4시간 남았는데",
-      "photo_query": "office meeting thinking distracted"
+      "narration": "아침 9시 출근. 벌써 점심이 뭐할지 생각하고 있다 아이가. 업무는? 손도 안 댔는데.",
+      "subtitle": "점심 고민은 8시간 전부터 시작",
+      "photo_query": "stressed office worker desk morning"
     },
     {
       "image": null,
-      "narration": "11시쯤 된다. 동료들과 대화 시작. '카레 먹을까', '근데 어제 카레 먹었잖아', '그럼 회전초밥?', '근데 그거 배탈 난다더만'",
-      "subtitle": "결정 불가 상태",
-      "photo_query": "coworkers discussing eating lunch options"
+      "narration": "11시쯤 되면 동료들이 슬슬 모인다. '어제 뭐 먹었어?' '오늘 뭐 할래?' 이거 회의인가 싶을 정도다.",
+      "subtitle": "점심 회의가 더 오래 걸린다",
+      "photo_query": "coworkers discussing lunch office"
     },
     {
       "image": null,
-      "narration": "12시 5분 전. 아직도 못 정했다. '그냥 우동 먹자' '좋아' 했다가 '아니다 라면이 나을 듯' 30초 뒤 바뀐다.",
-      "subtitle": "시간은 자꾸 간다",
-      "photo_query": "anxious person choosing food confused"
+      "narration": "한 놈은 '한식', 한 놈은 '일식', 한 놈은 '다이어트' 한다며 샐러드. 합의점을 찾는데 30분. 실화냐.",
+      "subtitle": "의견이 4개면 회의는 1시간",
+      "photo_query": "group people choosing restaurant menu"
     },
     {
       "image": null,
-      "narration": "결국 12시 정각. 엘리베이터 탄다. 여전히 못 정했다. '가면서 정하자'는 말로 시간을 벌며 내려간다.",
-      "subtitle": "마지막 순간까지",
-      "photo_query": "people entering elevator office building"
+      "narration": "결국 \"어제 먹은 데 말고 새로운 데\" 하다가 다시 어제 가던 데 간다. 이게 인생의 반복이지.",
+      "subtitle": "모든 고민은 이미 결정된 결론",
+      "photo_query": "friends eating lunch together restaurant"
     },
     {
       "image": null,
-      "narration": "1층 로비 도착. 결국 지난주에 먹은 그 식당을 간다. 이거 봐봐. 우리 뇌는 업무는 못하면서 점심 메뉴 같은 건 왜 이리 복잡한지.",
-      "subtitle": "또 같은 곳",
-      "photo_query": "restaurant street lunch crowd busy"
+      "narration": "이런 거 공감되면 팔로우 누르고, 점심 메뉴 고민 릴스도 더 봐봐. 같이 고민하는 게 맛이니까.",
+      "subtitle": "우리 함께 메뉴판 넘기자",
+      "photo_query": "follow subscribe button social media"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T15:24:26.568557+00:00"
+    "generated_at": "2026-10-29T19:22:53.446844+00:00"
   }
 }

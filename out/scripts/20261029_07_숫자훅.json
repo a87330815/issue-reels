@@ -1,0 +1,53 @@
+{
+  "title": "신구 트렌드 급상승",
+  "cover": {
+    "image": null,
+    "lines": [
+      "검색량",
+      "<r>급상승</r>",
+      "뭐 터졌나"
+    ],
+    "badge": null,
+    "photo_query": "trending search graph analytics"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 요즘 '신구'가 검색 랭킹 박스에서 크게 터졌다. Google Trends에 따르면 관심도가 확 올라왔다.",
+      "subtitle": "신구 검색량 급증",
+      "photo_query": "search trending keywords chart"
+    },
+    {
+      "image": null,
+      "narration": "신구는 새것과 낡은 것을 섞는 '올드앤뉴' 트렌드를 말한다. 패션, 인테리어, 라이프스타일까지 영역이 넓다.",
+      "subtitle": "새것과 낡은 것의 조화",
+      "photo_query": "vintage modern style interior design"
+    },
+    {
+      "image": null,
+      "narration": "왜 갑자기 뜬 거냐고? 계절이 바뀌면서 옷장 정리하는 사람들이 늘었기도 하고, 명품 중고 시장이 불어나면서 섞어 쓰는 게 멋있어 보이는 거다.",
+      "subtitle": "계절 변화와 중고 시장",
+      "photo_query": "secondhand fashion vintage clothing store"
+    },
+    {
+      "image": null,
+      "narration": "핵심은 이거. 새 물건만 사기보다 가진 것을 재해석해서 입고 배치하는 게 더 개성 있다는 인식이 퍼지고 있다는 뜻이다.",
+      "subtitle": "재해석의 가치 상승",
+      "photo_query": "fashion styling old new mixed wardrobe"
+    },
+    {
+      "image": null,
+      "narration": "당신도 옷장 깊숙이 있는 그 옛날 옷, 다시 꺼내 봐라. 지금이 딱 때다. 더 알고 싶으면 팔로우해라.",
+      "subtitle": "지금이 기회의 때",
+      "photo_query": "wardrobe closet style refresh"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-10-29T19:22:07.050547+00:00"
+  }
+}

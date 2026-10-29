@@ -1,62 +1,46 @@
 {
-  "title": "압구정동 신현대9차 평당 1.50억",
+  "title": "설인아, 무쇠소녀단3 쇼트트랙 계주 도전",
   "cover": {
     "image": null,
     "lines": [
-      "압구정동",
-      "<r>평당 1.50억</r>",
-      "실화다"
+      "설인아 <r>계주</r>",
+      "도전한다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building gangnam seoul"
+    "photo_query": "short track speed skating relay team"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대9차. 지금 평당 1억 5천만 원이다.",
-      "subtitle": "압구정동 신현대9차 평당 1.50억",
-      "photo_query": "seoul gangnam real estate market"
+      "narration": "이거 모르고 지나가면 손해다. 설인아가 새 시즌에 계주 종목으로 돌아온다. 개인 경기에서 단체 경기로 바뀌는 거다.",
+      "subtitle": "설인아 계주 도전 시작",
+      "photo_query": "short track speed skating athlete"
     },
     {
       "image": null,
-      "narration": "전용 152제곱미터면 총 23억이 나온다. 44년 된 건물인데 가격이 미친 거 아닌가.",
-      "subtitle": "4층 152㎡ 총 23억 원",
-      "photo_query": "apartment price calculator spreadsheet"
+      "narration": "무쇠소녀단3 얘기다. 이거 봐봐. 쇼트트랙 팀들의 전략이 확 달라진다. 한 선수 의존에서 팀 플레이로 넘어가는 거지.",
+      "subtitle": "단체 경기 전략 변화",
+      "photo_query": "speed skating team synchronization training"
     },
     {
       "image": null,
-      "narration": "강남 다른 데 보면 어떤가. 방배동은 평당 4천만 원대. 서초동도 3천만 원대다.",
-      "subtitle": "강남 다른 지역과 비교",
-      "photo_query": "seoul district apartment comparison map"
+      "narration": "계주는 결국 팀 완성도가 전부다. 릴레이 바턴 받는 타이밍, 빠른 턴, 회전 예측. 모든 게 밀리초 단위로 판난다.",
+      "subtitle": "밀리초 단위 팀 플레이",
+      "photo_query": "relay race baton handoff close up"
     },
     {
       "image": null,
-      "narration": "압구정은 따로다. 이 정도면 거의 매물이 안 나온다. 나오면 끝이다.",
-      "subtitle": "압구정은 따로다",
-      "photo_query": "apgujeong korea luxury neighborhood street"
-    },
-    {
-      "image": null,
-      "narration": "우리 채널 계속 따라와. 강남 땅값 변화는 매주 여기서 얻고 가.",
-      "subtitle": "팔로우 구독 눌러라",
-      "photo_query": "mobile phone social media follow button"
+      "narration": "다음 달 첫선이다. 새로운 포메이션, 새로운 도전. 설인아의 계주 무대, 꼭 챙겨 봐라.",
+      "subtitle": "다음 달 첫 경기",
+      "photo_query": "winter sports competition starting line"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        1.5,
-        1.37,
-        1.31,
-        1.09,
-        1.04
-      ],
-      "style": "bars"
-    },
-    "generated_at": "2026-10-29T15:23:44.822292+00:00"
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-10-29T19:22:13.038390+00:00"
   }
 }

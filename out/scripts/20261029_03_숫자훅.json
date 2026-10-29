@@ -1,39 +1,45 @@
 {
-  "title": "서울 강남 vs 강북, 집값 격차 115배",
+  "title": "압구정 vs 시골 아파트 가격 격차",
   "cover": {
     "image": null,
     "lines": [
-      "압구정 69억",
-      "vs",
-      "<r>강북 6천만</r>"
+      "압구정은",
+      "<r>920억</r>",
+      "시골은 4천"
     ],
     "badge": null,
-    "photo_query": "seoul apartment complex comparison luxury vs"
+    "photo_query": "luxury apartment building seoul gangnam"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 같은 서울인데 집값이 <r>115배</r> 차이난다. 압구정동은 평균 69억. 강북은 6천만원이다.",
-      "subtitle": "같은 서울, 집값 115배 차이",
-      "photo_query": "seoul skyline han river bridge apartment"
+      "narration": "이거 모르고 지나가면 손해다. 같은 아파트인데 지역만 달라도 가격이 이 정도 난다.",
+      "subtitle": "압구정 평균 92억 vs 시골 4천만",
+      "photo_query": "apartment price comparison chart"
     },
     {
       "image": null,
-      "narration": "압구정은 신현대, 롯데캐슬 같은 브랜드 아파트. 다 30년 넘은 건데 69억이다.",
-      "subtitle": "압구정동 평균 69억원",
-      "photo_query": "luxury apartment building seoul gangnam high"
+      "narration": "압구정동 신현대 11차. 92억. 30년 된 건물인데 말이다. 평수는 183제곱미터. 이거 봐봐.",
+      "subtitle": "압구정 92억 / 183제곱미터",
+      "photo_query": "old luxury apartment building korea"
     },
     {
       "image": null,
-      "narration": "강북은요. 6천만원짜리도 있다. 가성비 찾는 사람들은 이런 거 봐야 한다.",
-      "subtitle": "강북 하대동 평균 6천만원",
-      "photo_query": "affordable housing apartment korea residential area"
+      "narration": "한 동네만 바뀌어도 이렇게 난다. 같은 조건이면 위치가 전부다.",
+      "subtitle": "위치가 가격을 결정한다",
+      "photo_query": "korea real estate market district"
     },
     {
       "image": null,
-      "narration": "야야야. 이게 같은 서울이다. 지금 집 살 계획 있으면? 팔로우하고 다음 편에서 확인해라.",
-      "subtitle": "집값 고르는 것도 전략이다",
-      "photo_query": "real estate house keys calculator korea"
+      "narration": "내 집 살 때 이 차이 모르면 돈을 잘못 쓴다. 어디 사는지. 그게 핵심이다.",
+      "subtitle": "부동산은 위치 선택이 먼저",
+      "photo_query": "choosing neighborhood real estate decision"
+    },
+    {
+      "image": null,
+      "narration": "더 많은 거래 데이터가 궁금하면 팔로우 해라. 쫌봐봐에서 매일 업데이트된다.",
+      "subtitle": "쫌봐봐 팔로우",
+      "photo_query": "subscribe follow button digital"
     }
   ],
   "meta": {
@@ -43,14 +49,14 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        69.0,
-        39.0,
-        38.5,
-        38.0,
-        33.0
+        92.0,
+        21.5,
+        20.5,
+        17.9,
+        17.5
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-29T15:23:14.063910+00:00"
+    "generated_at": "2026-10-29T19:21:40.136572+00:00"
   }
 }

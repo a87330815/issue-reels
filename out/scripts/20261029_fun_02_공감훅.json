@@ -1,44 +1,45 @@
 {
-  "title": "배송완료 문자 왔는데 없다",
+  "title": "퇴근 후 침대의 행복",
   "cover": {
     "image": null,
     "lines": [
-      "배송완료",
-      "<r>문 앞에 없네</r>"
+      "퇴근하고",
+      "침대 누우면",
+      "<r>세상 끝</r>"
     ],
     "badge": null,
-    "photo_query": "empty doorstep package delivery"
+    "photo_query": "tired person lying on bed"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "휴대폰 울렸다. '택배 배송이 완료되었습니다' 문자가 들어온다. 아 맞다, 오늘 내가 기다리던 그거다!",
-      "subtitle": "배송완료 알림",
-      "photo_query": "phone notification message excited"
+      "narration": "야 퇴근하고 집에 도착하는 그 순간. 신발 벗고 침대로 쓰러지는데 이 느낌 어디서 났나 싶잖아.",
+      "subtitle": "신발 벗고 침대까지 3초",
+      "photo_query": "man exhausted lying bed work tired"
     },
     {
       "image": null,
-      "narration": "벌떡 일어나서 현관 열고 나간다. 어? 어라? 없네? 뭐 이게... 문 앞에 아무것도 없다.",
-      "subtitle": "현관 텅 비어있음",
-      "photo_query": "empty doorstep confused looking"
+      "narration": "그 침대가 세상에서 가장 편한 침대가 되는 거다. 아까는 불편했던 베개도, 뻣뻣한 이불도 다 좋아 보여.",
+      "subtitle": "침대의 부활",
+      "photo_query": "comfortable bed pillows soft bedroom"
     },
     {
       "image": null,
-      "narration": "문자 확인. 배송완료 13분 전. 그 사이 누가 가져갔다는 뜻이다. 아니면... 주인이 잘못 붙였거나?",
-      "subtitle": "멘붕 상태",
-      "photo_query": "man panic worried door"
+      "narration": "핸드폰 켰다 껐다 하면서 천장만 바라보는데, 이게 왜 이렇게 행복한지. 밥도 안 먹고 싶고 뭐도 안 하고 싶어.",
+      "subtitle": "침대에서는 모든 게 해결돼",
+      "photo_query": "relaxed person phone in bed ceiling"
     },
     {
       "image": null,
-      "narration": "배송업체에 전화했다 안 받고, 결국 판매자에게 메시지만 보낸다. 며칠은 이 상태로 묵혀 있을 거다. 와 진짜... 이게 왜 이렇게 스트레스냐.",
-      "subtitle": "답답함",
-      "photo_query": "frustrated waiting phone call"
+      "narration": "엄마가 '밥 묵어라' 하는데도 안 들리고, 아무것도 신경 안 쓰여. 이 침대가 내 우주, 내 낙원이다.",
+      "subtitle": "침대 = 세상 밖",
+      "photo_query": "cozy bed sanctuary escape rest"
     },
     {
       "image": null,
-      "narration": "이런 거 더 겪으면서 공감하고 싶으면 팔로우 눌러버려라 아이가!",
-      "subtitle": "팔로우 해주세요",
-      "photo_query": "subscribe follow button click"
+      "narration": "내일도 또 퇴근하고 이 침대에 눕겠지. 그래 이 맛에 산다니까. 팔로우하면 이런 공감 영상 더 봐!",
+      "subtitle": "침대가 있어서 다행이다",
+      "photo_query": "happy person bed peaceful sleep"
     }
   ],
   "meta": {
@@ -47,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-29T09:37:51.537038+00:00"
+    "generated_at": "2026-10-29T19:22:35.128144+00:00"
   }
 }

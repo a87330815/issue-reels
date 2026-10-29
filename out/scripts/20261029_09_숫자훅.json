@@ -1,38 +1,45 @@
 {
-  "title": "작사가 장경수 별세",
+  "title": "원전 프리미엄 걷히며 건설주 급락",
   "cover": {
     "image": null,
     "lines": [
-      "<r>50년</r>간 우린 그의",
-      "노래를 부르고 있었다"
+      "체코 협상 깨지니",
+      "<r>건설주</r>",
+      "한 시간에 떨어졌다"
     ],
     "badge": null,
-    "photo_query": "vintage microphone vinyl records music studio"
+    "photo_query": "construction company stock market trading screen"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 우리가 알고 있는 수많은 노래. 그 뒤에 한 명의 손이 있었다.",
-      "subtitle": "작사가 장경수 별세",
-      "photo_query": "korean songwriter music manuscript pen"
+      "narration": "이거 모르고 지나가면 손해다. 체코 원전 수주 협상이 깨졌다. 그럼 뭐가 문제냐 하면. 우리 건설사들이 수십조 규모 프로젝트를 기대했거든.",
+      "subtitle": "체코 원전 협상 결렬",
+      "photo_query": "nuclear power plant cooling tower"
     },
     {
       "image": null,
-      "narration": "조용필의 '상처'. 송대관의 '정 때문에'. 이런 국민 노래들을 다 썼다. 반세기를 음악으로 살아간 거다.",
-      "subtitle": "조용필·송대관 등 수많은 명곡 작사",
-      "photo_query": "classic korean music concert stage spotlight"
+      "narration": "대우건설, 현대건설, GS건설. 이 회사들이 있잖아. 원전 건설 기대감으로 주가가 쭉 올라와 있던 거다.",
+      "subtitle": "건설사들의 기대감",
+      "photo_query": "korea construction company office building"
     },
     {
       "image": null,
-      "narration": "우리가 버스에서 흥얼거리던 그 멜로디. TV에서 울면서 봤던 그 드라마 OST. 장경수가 없었으면 그냥 빈 화면이었던 거다.",
-      "subtitle": "50년의 작사 경력",
-      "photo_query": "music production equipment recording studio"
+      "narration": "근데 협상이 깨지면서 그 '프리미엄'이 한 번에 벗겨져 버렸다. 이거. 주식 투자한 사람들은 진짜 아팠을기다.",
+      "subtitle": "원전 프리미엄 증발",
+      "photo_query": "stock market red decline chart"
     },
     {
       "image": null,
-      "narration": "이제 그의 펜은 멈췄지만. 우리가 계속 부를 노래들은 영원하다. 그렇게 기억된다.",
-      "subtitle": "추모 물결 잇따르는 중",
-      "photo_query": "memorial flowers music hall tribute"
+      "narration": "대기업 대형 프로젝트가 정책에 얼마나 달려 있는지 보여주는 사건이다. 국제 협상 뉴스도 이제 놓쳤다가는 손해 본다.",
+      "subtitle": "정책이 주가를 움직인다",
+      "photo_query": "international negotiation meeting discussion"
+    },
+    {
+      "image": null,
+      "narration": "쫌봐봐 채널 팔로우하면. 이런 정책 변수들을 먼저 잡을 수 있다. 구독 눌러라.",
+      "subtitle": "정책 뉴스는 쫌봐봐",
+      "photo_query": "follow button subscribe notification icon"
     }
   ],
   "meta": {
@@ -41,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-29T15:23:50.555805+00:00"
+    "generated_at": "2026-10-29T19:22:20.594014+00:00"
   }
 }
