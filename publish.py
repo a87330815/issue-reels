@@ -262,9 +262,20 @@ def build_caption(script):
     tags = ["#이슈", "#뉴스", "#정보"]
     cat = meta.get("category")
     if cat:
-        tags.insert(0, "#" + cat.replace("·", " #"))
+        # 카테고리를 태그로 쪼갠다. 가운뎃점과 공백 둘 다 끊어야 한다.
+        # "당일 화제 이슈"를 그대로 붙이면 인스타가 "#당일"까지만 태그로
+        # 읽고 "화제 이슈"는 맨 글자로 남는다.
+        for w in reversed(cat.replace("·", " ").split()):
+            tags.insert(0, "#" + w)
+    # 카테고리에서 쪼갠 태그가 기본 태그와 겹칠 수 있다
+    # ("당일 화제 이슈" → #이슈). 순서를 지키면서 중복만 지운다.
+    seen, uniq = set(), []
+    for t in tags:
+        if t not in seen:
+            seen.add(t)
+            uniq.append(t)
     lines.append("")
-    lines.append(" ".join(tags))
+    lines.append(" ".join(uniq))
 
     return "\n".join(lines)
 
