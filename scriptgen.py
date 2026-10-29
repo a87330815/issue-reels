@@ -42,6 +42,7 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.abspath(__file__))
 COLLECTED = os.path.join(ROOT, "out", "collected.json")
 SCRIPT_DIR = os.path.join(ROOT, "out", "scripts")
+FUN_TOPICS = os.path.join(ROOT, "fun_topics.yml")
 
 # ── 커버 제약 ──────────────────────────────────────────────
 MAX_COVER_CHARS = 24          # 커버 전체 글자 수
@@ -50,6 +51,9 @@ CHARS_PER_LINE = 6            # 줄당 권장 글자 수 (150pt 기준)
 
 # ── 릴스 포맷 5종 ──────────────────────────────────────────
 FORMATS = ["시행일훅", "숫자훅", "오해정정", "체크리스트", "지역한정"]
+
+# ── 재미·공감 포맷 5종 ────────────────────────────────────
+FUN_FORMATS = ["공감훅", "TMI훅", "세대공감", "음식공감", "생활공감"]
 
 
 # ═══════════════════════════════════════════════════════════
@@ -1075,7 +1079,7 @@ JSON만 출력하세요. 설명도 코드블록도 붙이지 마세요.
 badge는 시행일처럼 날짜를 박아야 할 때만 문자열로, 아니면 null."""
 
 
-def _call_anthropic(api_key, prompt, model=None):
+def _call_anthropic(api_key, prompt, model=None, system=None):
     import requests as req
     resp = req.post(
         "https://api.anthropic.com/v1/messages",
@@ -1084,7 +1088,7 @@ def _call_anthropic(api_key, prompt, model=None):
                  "content-type": "application/json"},
         json={"model": model or os.environ.get("LLM_MODEL", "claude-haiku-5-5"),
               "max_tokens": 1024,
-              "system": LLM_SYSTEM,
+              "system": system or LLM_SYSTEM,
               "messages": [{"role": "user", "content": prompt}]},
         timeout=60,
     )
@@ -1092,7 +1096,7 @@ def _call_anthropic(api_key, prompt, model=None):
     return resp.json()["content"][0]["text"].strip()
 
 
-def _call_openai(api_key, prompt, model=None):
+def _call_openai(api_key, prompt, model=None, system=None):
     """OpenAI(ChatGPT) 계정으로도 돌릴 수 있게 한다.
     대본 JSON만 받아야 하므로 response_format을 json_object로 고정한다."""
     import requests as req
@@ -1103,7 +1107,7 @@ def _call_openai(api_key, prompt, model=None):
         json={"model": model or os.environ.get("LLM_MODEL", "gpt-4o-mini"),
               "max_tokens": 1024,
               "response_format": {"type": "json_object"},
-              "messages": [{"role": "system", "content": LLM_SYSTEM},
+              "messages": [{"role": "system", "content": system or LLM_SYSTEM},
                            {"role": "user", "content": prompt}]},
         timeout=60,
     )
@@ -1126,6 +1130,162 @@ def llm_provider():
     if oai:
         return "openai", oai
     return None, None
+
+
+# ═══════════════════════════════════════════════════════════
+#  재미·공감 모드 — fun_topics.yml 로드 + LLM 프롬프트
+# ═══════════════════════════════════════════════════════════
+
+FUN_LLM_SYSTEM = """당신은 인스타그램 릴스 계정 "쫌봐봐"의 대본 작가입니다.
+일상 공감, 흥미로운 사실(TMI), 세대 공감 등 **재미·공감** 콘텐츠를 씁니다.
+
+## 핵심 — 공감이 전부입니다
+"맞아 맞아 나도 그래!" 하는 순간 저장·공유가 일어납니다.
+- 누구나 한 번쯤 겪었을 일상의 순간을 포착하세요
+- 의외의 사실(TMI)은 "몰랐는데 알고 보니" 놀라움을 주세요
+- 가르치려 들지 마세요. 같이 웃고 공감하는 톤입니다
+
+## 커버 제약 — 반드시 지킬 것
+- 태그 제외 **전체 24자 이내**
+- 한 줄 약 6자, **최대 4줄**
+- `<r>빨강</r>` 또는 `<y>노랑</y>` 강조를 **최소 1개** 넣되, 가장 센 부분 하나에만
+- 짧을수록 강합니다. "나만 그래?" "실화냐" 같은 짧은 훅이 좋습니다
+
+## 포맷 5종
+- `공감훅` — "나만 그런 거 아니지?" 공유 유발형
+- `TMI훅` — "이거 알면 쓸데없이 똑똑해짐" 의외의 사실
+- `세대공감` — 세대를 넘어 "맞아 맞아" 하는 공통 경험
+- `음식공감` — 먹는 것 관련 공감 포인트
+- `생활공감` — 일상 속 "아 맞아 이거!" 포인트
+
+## 내레이션
+- 장면당 1~2문장. 짧게 끊으세요
+- 전체 **3~5장면**
+- 첫 장면은 커버의 훅을 바로 받아야 합니다
+- 마지막 장면은 팔로우 유도 ("이런 거 더 보고 싶으면 팔로우")
+
+## 말투 — 양상국(개그맨) 스타일 경상도 사투리
+- 에너지 넘치는 경상도 말투. 친한 동네 형이 같이 웃으면서 얘기하는 톤
+- "~다 아이가" (강조), "~카더라" (전해들은 것), "~거든" (설명) — 각 전체에서 최대 1회
+- "야야야" "이거 봐봐" "와 대박" 같은 감탄사 자연스럽게
+- 어미: "~입니다" → "~이다", "~됩니다" → "~된다"
+- 난해한 방언 어휘는 금지. 어미와 리듬으로 경상도를 냅니다
+
+## 자막
+- **22자 이내**. 핵심 명사구만
+
+## 절대 금지
+- 정치, 연예, 스포츠
+- 특정 브랜드 비교·광고
+- 가짜 통계나 지어낸 수치
+- 너무 교훈적이거나 설교조
+
+## 사진 검색어 (photo_query)
+- 2~4개 영단어. 명사 위주
+- 그 장면을 한 장의 사진으로 보여준다면 무엇이 찍혀 있을지
+- 인물 얼굴이 크게 나오는 검색어는 피하세요
+
+## 응답 형식
+JSON만 출력하세요. 설명도 코드블록도 붙이지 마세요.
+
+{
+  "title": "제목",
+  "format": "공감훅",
+  "cover": {
+    "lines": ["나만", "<r>이러나</r>"],
+    "badge": null,
+    "photo_query": "alarm clock morning bed"
+  },
+  "scenes": [
+    {"narration": "...", "subtitle": "...", "photo_query": "..."},
+    {"narration": "...", "subtitle": "...", "photo_query": "..."},
+    {"narration": "...", "subtitle": "...", "photo_query": "..."}
+  ]
+}
+
+badge는 null로 두세요 (재미·공감에는 날짜 배지 불필요)."""
+
+
+def load_fun_topics(path=None):
+    """fun_topics.yml에서 재미·공감 주제 시드를 로드한다."""
+    path = path or FUN_TOPICS
+    if not os.path.exists(path):
+        print(f"[오류] 재미·공감 주제 파일 없음: {path}")
+        return []
+    try:
+        import yaml
+    except ImportError:
+        # PyYAML 없으면 간단한 파서로 대체
+        return _load_fun_topics_simple(path)
+    with open(path, encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    seeds = data.get("seeds", [])
+    print(f"재미·공감 주제 로드: {len(seeds)}개")
+    return seeds
+
+
+def _load_fun_topics_simple(path):
+    """PyYAML 없을 때 간단하게 시드만 파싱한다."""
+    seeds = []
+    current = {}
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            stripped = line.strip()
+            if stripped.startswith("- topic:"):
+                if current.get("topic"):
+                    seeds.append(current)
+                current = {"topic": stripped.split(":", 1)[1].strip().strip('"')}
+            elif stripped.startswith("angle:") and current:
+                current["angle"] = stripped.split(":", 1)[1].strip().strip('"')
+            elif stripped.startswith("format:") and current:
+                current["format"] = stripped.split(":", 1)[1].strip().strip('"')
+    if current.get("topic"):
+        seeds.append(current)
+    print(f"재미·공감 주제 로드: {len(seeds)}개 (simple parser)")
+    return seeds
+
+
+def fun_topics_to_angles(seeds):
+    """재미·공감 시드를 앵글 리스트로 변환한다."""
+    import random
+    angles = []
+    for seed in seeds:
+        angles.append({
+            "type": seed.get("format", "공감훅"),
+            "hook": seed.get("angle", seed["topic"]),
+            "summary": seed.get("angle", seed["topic"]),
+            "short": seed["topic"],
+            "fun_topic": seed["topic"],
+            "fun_angle": seed.get("angle", ""),
+            "category": "재미·공감",
+            "source": "fun_topics",
+            "items": [],
+        })
+    random.shuffle(angles)
+    return angles
+
+
+def _build_fun_prompt(angle):
+    """재미·공감 주제 기반 LLM 프롬프트를 생성한다."""
+    topic = angle.get("fun_topic", angle.get("hook", ""))
+    hint = angle.get("fun_angle", "")
+    fmt = angle.get("type", "공감훅")
+
+    return f"""아래 주제로 **재미·공감** 릴스 대본 1편을 써주세요.
+
+주제: {topic}
+앵글 힌트: {hint}
+추천 포맷: {fmt}
+
+**규칙:**
+1. 이 주제에서 사람들이 "맞아 맞아!" 할 포인트를 찾으세요
+2. TMI훅이면 의외의 사실을 하나 넣되, 지어내지 마세요
+3. 공감훅이면 누구나 겪어봤을 구체적인 상황을 묘사하세요
+4. 커버는 24자 이내. "나만 그래?" "실화냐" 같은 짧은 공감 훅이 좋습니다
+5. 사투리 톤으로 써주세요
+6. photo_query에 영문 키워드를 넣어주세요
+
+카테고리: 재미·공감"""
 
 
 def _build_trend_prompt(angle):
@@ -1162,8 +1322,12 @@ def llm_generate(angle, api_key, provider="anthropic"):
     """LLM으로 대본을 생성한다. provider는 anthropic | openai."""
     import requests as req
 
-    # 트렌드 키워드 기반인지 공공데이터 기반인지에 따라 프롬프트 분기
-    if angle.get("trend_keyword"):
+    # 재미·공감 / 트렌드 / 공공데이터에 따라 프롬프트·시스템 분기
+    is_fun = bool(angle.get("fun_topic"))
+
+    if is_fun:
+        prompt = _build_fun_prompt(angle)
+    elif angle.get("trend_keyword"):
         prompt = _build_trend_prompt(angle)
     else:
         prompt = f"""아래 공공데이터로 릴스 대본 1편을 써주세요.
@@ -1178,10 +1342,11 @@ def llm_generate(angle, api_key, provider="anthropic"):
 커버는 24자 이내입니다. 이 수치를 보고 사람들이 무엇을 손해 본다고 느낄지,
 또는 무엇을 놓치고 있다고 느낄지에서 출발하세요."""
 
+    system = FUN_LLM_SYSTEM if is_fun else LLM_SYSTEM
     if provider == "openai":
-        text = _call_openai(api_key, prompt)
+        text = _call_openai(api_key, prompt, system=system)
     else:
-        text = _call_anthropic(api_key, prompt)
+        text = _call_anthropic(api_key, prompt, system=system)
 
     # JSON 추출 (코드블록 감싸져 있을 수도 있음)
     if text.startswith("```"):
@@ -1197,7 +1362,11 @@ def llm_generate(angle, api_key, provider="anthropic"):
         return None
 
     # render.py 호환 포맷으로 변환
-    if angle.get("trend_keyword"):
+    if is_fun:
+        source_id = "fun_topics"
+        category = "재미·공감"
+        attribution = "자체 제작"
+    elif angle.get("trend_keyword"):
         source_id = "google_trends"
         category = angle.get("category", "당일 화제 이슈")
         attribution = "Google Trends"
@@ -1259,23 +1428,36 @@ def main():
                     help="트렌드 데이터 경로 (없으면 무시)")
     ap.add_argument("--trends-only", action="store_true",
                     help="트렌드 데이터만으로 생성 (수집 데이터 불필요)")
+    ap.add_argument("--fun", action="store_true",
+                    help="재미·공감 콘텐츠 생성 (fun_topics.yml 기반, LLM 필수)")
+    ap.add_argument("--fun-topics", default=FUN_TOPICS,
+                    help="재미·공감 주제 시드 파일 경로")
     args = ap.parse_args()
 
-    # 수집 데이터 + 트렌드 데이터 합산
-    angles = []
-    if not args.trends_only:
-        if os.path.exists(args.input):
-            items = load_collected(args.input)
-            angles.extend(extract_angles(items))
-        else:
-            print(f"[알림] 수집 데이터 없음: {args.input}")
+    # 재미·공감 모드: fun_topics.yml만 사용
+    if args.fun:
+        seeds = load_fun_topics(args.fun_topics)
+        if not seeds:
+            print("[오류] 재미·공감 주제가 없습니다")
+            sys.exit(1)
+        angles = fun_topics_to_angles(seeds)
+        print(f"재미·공감 앵글 {len(angles)}개 준비")
+    else:
+        # 수집 데이터 + 트렌드 데이터 합산
+        angles = []
+        if not args.trends_only:
+            if os.path.exists(args.input):
+                items = load_collected(args.input)
+                angles.extend(extract_angles(items))
+            else:
+                print(f"[알림] 수집 데이터 없음: {args.input}")
 
-    # 트렌드 앵글 추가
-    trend_items = load_trends(args.trends)
-    if trend_items:
-        trend_angles = trends_to_angles(trend_items)
-        angles.extend(trend_angles)
-        print(f"트렌드 앵글 {len(trend_angles)}개 추가")
+        # 트렌드 앵글 추가
+        trend_items = load_trends(args.trends)
+        if trend_items:
+            trend_angles = trends_to_angles(trend_items)
+            angles.extend(trend_angles)
+            print(f"트렌드 앵글 {len(trend_angles)}개 추가")
 
     if not angles:
         print("[오류] 스토리 앵글 추출 실패 — 수집 데이터에 분석 가능한 항목 없음")
@@ -1291,6 +1473,9 @@ def main():
     if use_llm:
         model = os.environ.get("LLM_MODEL", "기본값")
         print(f"[LLM] {provider} (모델: {model})")
+    elif args.fun:
+        print("[오류] 재미·공감 모드는 LLM이 필수입니다 (ANTHROPIC_API_KEY 또는 OPENAI_API_KEY 설정 필요)")
+        sys.exit(1)
     elif not args.template:
         print("[알림] ANTHROPIC_API_KEY / OPENAI_API_KEY 없음 → 템플릿 모드로 전환")
 
@@ -1364,8 +1549,9 @@ def main():
     if not args.dry_run:
         os.makedirs(args.out, exist_ok=True)
         today = datetime.now().strftime("%Y%m%d")
+        prefix = "fun_" if args.fun else ""
         for i, sc in enumerate(scripts):
-            fname = f"{today}_{i+1:02d}_{sc['meta']['format']}.json"
+            fname = f"{today}_{prefix}{i+1:02d}_{sc['meta']['format']}.json"
             path = os.path.join(args.out, fname)
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(sc, f, ensure_ascii=False, indent=2)
