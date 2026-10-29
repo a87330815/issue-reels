@@ -1081,18 +1081,21 @@ badge는 시행일처럼 날짜를 박아야 할 때만 문자열로, 아니면 
 
 def _call_anthropic(api_key, prompt, model=None, system=None):
     import requests as req
+    model_id = model or os.environ.get("LLM_MODEL", "") or "claude-3-5-haiku-20241022"
     resp = req.post(
         "https://api.anthropic.com/v1/messages",
         headers={"x-api-key": api_key,
                  "anthropic-version": "2023-06-01",
                  "content-type": "application/json"},
-        json={"model": model or os.environ.get("LLM_MODEL", "claude-haiku-5-5"),
-              "max_tokens": 1024,
+        json={"model": model_id,
+              "max_tokens": 2048,
               "system": system or LLM_SYSTEM,
               "messages": [{"role": "user", "content": prompt}]},
-        timeout=60,
+        timeout=90,
     )
-    resp.raise_for_status()
+    if not resp.ok:
+        body = resp.text[:500]
+        raise RuntimeError(f"{resp.status_code} {resp.reason}: {body}")
     return resp.json()["content"][0]["text"].strip()
 
 
@@ -1525,6 +1528,9 @@ def main():
                 print(f"  [경고] LLM 실패: {e}")
 
         if not script:
+            if angle.get("fun_topic"):
+                print("  [건너뜀] 재미·공감은 LLM 전용 — 템플릿 폴백 불가")
+                continue
             script = template_generate(angle)
             print("  ✓ 템플릿 생성 완료")
 
