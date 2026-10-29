@@ -1,69 +1,61 @@
-run 40848085908 2026-10-29T09:15:20Z
+run 40902656014 2026-10-29T15:33:41Z
 
-=== 20261024_01_연예 ===
-  [cover] '저스틴 비버 깜짝 내한' → "Seoul Seongsu-dong street pop up store"
+=== 20261029_03_정치 ===
+  [cover] '세제개편안 공청회' → "Korean National Assembly government building"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '저스틴 비버 부부 서울 입국' → "celebrity arrival airport Korea fans"
+  [scene1] '여야 세제개편 공청회 개최' → "Korean parliament legislative session"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '성수동 팝업스토어 22~25일' → "Seoul Seongsu pop up store fashion brand"
-    [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Seoul Seongsu pop up store fashion"
+  [scene2] '1주택자 보유세 완화 방향' → "property tax calculation documents"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] 'SNS 직접 인증 + 팬 대기줄' → "Justin Bieber fashion brand streetwear"
-    [unsplash] 2건 후보
-    [openverse] 0건 후보
+  [scene3] '장특공제 확대 · 연말 확정' → "tax reform bill documents Korea"
+    [unsplash] 10건 후보 (부적합 2건 제외)
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
-    ↻ 재시도: "Justin Bieber fashion brand"
-    [unsplash] 2건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 4건 (적합도 필터 생략)
+    Unsplash 10건 (적합도 필터 생략)
     ✓ scene3 ← Unsplash (Unsplash License)
   [scene4] '팔로우 · 매일 업데이트' → "follow subscribe social media notification"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene4 ← Unsplash (Unsplash License)
-  → 5/5장 저장, 매니페스트: out/photos/20261024_01_연예/photos.json
+  → 5/5장 저장, 매니페스트: out/photos/20261029_03_정치/photos.json
 
 총 5/5장 수집
   사진 5장 적용: cover, scene1, scene2, scene3, scene4
-카드뉴스 6장 생성 → out/cards_20261024_01_연예
-대본: out/scripts/20261024_01_연예.json
-카드: out/cards_20261024_01_연예 (6장)
+카드뉴스 6장 생성 → out/cards_20261029_03_정치
+대본: out/scripts/20261029_03_정치.json
+카드: out/cards_20261029_03_정치 (6장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/5] [EL·발랄녀] 1.6초  저스틴 비버 깜짝 내한...
-  TTS [2/5] [EL·발랄녀] 4.9초  이거 모르고 지나가면 손해다. 저스틴 비버가 와이프...
-  TTS [3/5] [EL·발랄녀] 8.4초  자기 브랜드 스카이라크 팝업스토어 때매 온 건데, ...
-  TTS [4/5] [EL·발랄녀] 8.8초  SNS에 서울 도착했다고 직접 인증까지 했거든. 비...
-  TTS [5/5] [EL·발랄녀] 4.6초  이런 소식 빨리 알고 싶으면 팔로우 해주이소. 매일...
+  TTS [1/5] [EL·발랄녀] 1.4초  세제개편안 공청회...
+  TTS [2/5] [EL·발랄녀] 7.5초  이거 모르면 손해다. 여야가 세제개편안 공청회를 연...
+  TTS [3/5] [EL·발랄녀] 6.8초  집 가진 사람들 귀 쫑긋해야 된다. 보유세 부담을 ...
+  TTS [4/5] [EL·발랄녀] 8.2초  장기보유특별공제도 확대 검토 중이라 10년 이상 보...
+  TTS [5/5] [EL·발랄녀] 4.6초  정치 경제 소식 빠르게 받고 싶으면 팔로우 해주이소...
 
 2) 영상 합성
   세그먼트 [1/6] 3.0초
-  세그먼트 [2/6] 5.7초
-  세그먼트 [3/6] 9.2초
-  세그먼트 [4/6] 9.6초
+  세그먼트 [2/6] 8.3초
+  세그먼트 [3/6] 7.6초
+  세그먼트 [4/6] 9.0초
   세그먼트 [5/6] 5.4초
   세그먼트 [6/6] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261024_01_연예.mp4
-    길이: 32.2초  /  크기: 1.5MB
--rw-r--r-- 1 runner runner 1.6M Oct 29 09:16 out/reels/20261024_01_연예.mp4
+  ✓ 릴스 완성: out/reels/20261029_03_정치.mp4
+    길이: 32.3초  /  크기: 1.5MB
+-rw-r--r-- 1 runner runner 1.6M Oct 29 15:34 out/reels/20261029_03_정치.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=32.200272
+duration=32.280272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -72,7 +64,7 @@ duration=32.200272
 설정 완료
 
 업로드 1건 (태그 reels-2026-10-29):
-  20261024_01_연예.mp4  1.5MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-29/20261024_01.mp4
+  20261029_03_정치.mp4  1.5MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-29/20261029_03.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -80,16 +72,16 @@ duration=32.200272
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 98건
+남은 발행 가능: 97건
 발행 대상: 1건
 
-── 1/1  20261024_01_연예
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-29/20261024_01.mp4
-  캡션: 저스틴 비버 깜짝 내한
-  컨테이너: 17972498597973700
+── 1/1  20261029_03_정치
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-29/20261029_03.mp4
+  캡션: 세제개편안 공청회
+  컨테이너: 17972606900973700
       0초  IN_PROGRESS
-     32초  FINISHED
-  발행 완료: 18118483018789533
+     73초  FINISHED
+  발행 완료: 18134403436741546
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json

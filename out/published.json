@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T09:17:50.619021+00:00",
+  "updated_at": "2026-10-29T15:36:20.283588+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -37,6 +37,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-29/20261024_01.mp4",
       "ig_id": "17841459210979722",
       "category": "연예·화제",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261029_03_정치",
+      "media_id": "18134403436741546",
+      "published_at": "2026-10-29T15:36:20.100429+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-29/20261029_03.mp4",
+      "ig_id": "17841459210979722",
+      "category": "정치·시사",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
