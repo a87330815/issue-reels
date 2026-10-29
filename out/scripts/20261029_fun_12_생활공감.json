@@ -1,0 +1,36 @@
+{
+  "title": "미세먼지 나쁨인데 창문 열어야 하나 말아야 하나",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment building",
+    "lines": [
+      "방금 나온",
+      "<r>미세먼지 나쁨인데</r>",
+      "실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "이거 모르고 지나가면 손해다. 미세먼지 나쁨인데 창문 열어야 하나 말아야 하나. 수치로 확인해보자.",
+      "subtitle": "봄 미세먼지"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "",
+    "category": "",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-29T03:09:52.303929+00:00"
+  }
+}

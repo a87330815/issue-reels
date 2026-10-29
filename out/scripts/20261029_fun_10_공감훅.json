@@ -1,0 +1,35 @@
+{
+  "title": "마트에서 필요한 거 3개만 사러 갔는데 카트 가득 채우고 나옴",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment building",
+    "lines": [
+      "<r>마트에서 필요한 거</r>",
+      "이거 실환가요"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "이거 모르고 지나가면 손해다. 마트에서 필요한 거 3개만 사러 갔는데 카트 가득 채우고 나옴. 수치로 확인해보자.",
+      "subtitle": "장볼 때 계산"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "",
+    "category": "",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-29T03:09:51.962463+00:00"
+  }
+}

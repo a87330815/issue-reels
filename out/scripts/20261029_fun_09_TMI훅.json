@@ -1,0 +1,36 @@
+{
+  "title": "수박 두드려보면서 고르는데 사실 아무 소리나 다 똑같은 거",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city apartment building",
+    "lines": [
+      "방금 나온",
+      "<r>수박 두드려보면서</r>",
+      "실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city apartment building",
+      "narration": "이거 모르고 지나가면 손해다. 수박 두드려보면서 고르는데 사실 아무 소리나 다 똑같은 거. 수치로 확인해보자.",
+      "subtitle": "과일 고르기"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "",
+    "category": "",
+    "attribution": "",
+    "chart": null,
+    "tone": "경상도",
+    "generated_at": "2026-10-29T03:09:51.796441+00:00"
+  }
+}
