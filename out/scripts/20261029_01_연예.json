@@ -1,0 +1,47 @@
+{
+  "title": "닥터X 시청률 폭발",
+  "cover": {
+    "image": null,
+    "photo_query": "Korean drama hospital surgery scene",
+    "lines": [
+      "김지원 신작",
+      "<r>닥터X</r>",
+      "시청률 터졌다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korean drama doctor white coat actress",
+      "narration": "야야야 이거 봐봐. 김지원 새 드라마 닥터X 진짜 난리났다 아이가. SBS 금토드라마로 나왔는데 첫 방부터 시청률 쭉쭉 올라간다.",
+      "subtitle": "김지원 닥터X 첫방 화제"
+    },
+    {
+      "image": null,
+      "photo_query": "hospital drama power struggle scene",
+      "narration": "내용이 뭐냐면, 천재 외과의가 병원 권력 구조를 통째로 뒤집는 이야기다. 손현주 이정은까지 캐스팅돼가 연기 앙상블이 장난 아니거든.",
+      "subtitle": "천재 외과의 vs 병원 권력"
+    },
+    {
+      "image": null,
+      "photo_query": "Korean drama viewing ratings chart",
+      "narration": "유연석 서현진 라이어도 같은 시간대인데, 이번 10월은 진짜 드라마 전쟁이다. 뭐 볼지 고민되면 일단 닥터X부터 보이소.",
+      "subtitle": "10월 드라마 전쟁 시작"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media notification",
+      "narration": "연예 소식 빠르게 받고 싶으면 팔로우 해주이소. 매일 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "연예",
+    "source": "google_trends",
+    "category": "연예·화제",
+    "attribution": "Google Trends",
+    "tone": "경상도",
+    "generated_at": "2026-10-29T09:00:00+09:00"
+  }
+}

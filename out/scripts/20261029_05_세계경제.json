@@ -1,0 +1,47 @@
+{
+  "title": "무역전쟁 경기침체 경고",
+  "cover": {
+    "image": null,
+    "photo_query": "global economy trade war shipping containers",
+    "lines": [
+      "세계경제",
+      "<r>침체 경고</r>",
+      "한국도 영향"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "World Bank IMF headquarters building",
+      "narration": "이거 진짜 중요하다. 세계은행이 올해 글로벌 성장률을 대폭 하향 조정했다 아이가. 무역전쟁 때문에 17년 만에 최저 성장이라카이.",
+      "subtitle": "세계은행 성장률 대폭 하향"
+    },
+    {
+      "image": null,
+      "photo_query": "US China trade war tariffs economy",
+      "narration": "미국이 관세를 올리면서 글로벌 공급망이 흔들리고 있다. 신흥국이 제일 타격이 크고 한국 수출도 영향 받는다.",
+      "subtitle": "관세 인상 → 글로벌 공급망 흔들"
+    },
+    {
+      "image": null,
+      "photo_query": "Korean stock market KOSPI exchange rate",
+      "narration": "IMF는 올해 세계 성장률 3.3%로 전망했는데, 하반기에 더 낮아질 수 있다카더라. 한국 증시하고 환율도 민감하게 반응 중이다.",
+      "subtitle": "IMF 3.3% 전망 · 하반기 추가 하향"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media notification",
+      "narration": "세계경제 소식 빠르게 받고 싶으면 팔로우 해주이소. 매일 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "세계경제",
+    "attribution": "Google Trends · IMF · World Bank",
+    "tone": "경상도",
+    "generated_at": "2026-10-29T09:00:00+09:00"
+  }
+}

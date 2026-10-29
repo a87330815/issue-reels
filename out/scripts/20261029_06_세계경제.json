@@ -1,0 +1,46 @@
+{
+  "title": "AI 투자 붐 글로벌 경제",
+  "cover": {
+    "image": null,
+    "photo_query": "AI artificial intelligence data center",
+    "lines": [
+      "AI 투자 붐",
+      "<r>글로벌 판 바꾼다</r>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "tech companies AI investment growth",
+      "narration": "야야야 이거 봐봐. IMF가 올해 성장률 전망을 올렸는데 이유가 뭔 줄 아나. AI 투자 붐 덕분이다 아이가.",
+      "subtitle": "IMF 성장률 상향 · AI 투자 효과"
+    },
+    {
+      "image": null,
+      "photo_query": "semiconductor chip factory production",
+      "narration": "미국 빅테크들이 데이터센터에 수백조를 쏟아붓고 있다. 반도체 수요가 폭발하면서 한국 삼성 SK도 직접 수혜거든.",
+      "subtitle": "빅테크 데이터센터 수백조 투자"
+    },
+    {
+      "image": null,
+      "photo_query": "global economy growth chart 2026",
+      "narration": "근데 무역전쟁이 발목을 잡는다. AI 투자가 경기를 밀어올리는데 관세가 다시 깎아내리는 형국이다. 올해 하반기가 진짜 중요하다.",
+      "subtitle": "AI 성장 vs 관세 역풍"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media notification",
+      "narration": "경제 소식 빠르게 받고 싶으면 팔로우 해주이소. 매일 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "세계경제",
+    "attribution": "Google Trends · IMF",
+    "tone": "경상도",
+    "generated_at": "2026-10-29T09:00:00+09:00"
+  }
+}

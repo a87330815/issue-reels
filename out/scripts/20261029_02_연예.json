@@ -1,0 +1,47 @@
+{
+  "title": "100일의 거짓말 화제",
+  "cover": {
+    "image": null,
+    "photo_query": "1930s Korea Gyeongseong period drama",
+    "lines": [
+      "김유정 신작",
+      "<r>경성 스파이물</r>",
+      "벌써 난리남"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korean actress historical drama costume",
+      "narration": "이거 봐봐. 김유정이 이번에 사극 도전했다 아이가. tvN 100일의 거짓말이라고 1932년 경성 배경이다.",
+      "subtitle": "김유정 사극 도전 화제"
+    },
+    {
+      "image": null,
+      "photo_query": "1930s colonial era Korea spy undercover",
+      "narration": "소매치기 출신이 일제 총독부에 잠입하는 건데, 박진영이랑 케미가 장난 아니라카더라. 10월 10일에 첫방 나왔는데 반응 폭발이다.",
+      "subtitle": "소매치기 → 총독부 잠입"
+    },
+    {
+      "image": null,
+      "photo_query": "Korean drama period costume romance scene",
+      "narration": "사극인데 로맨스도 있고 첩보도 있고. 요즘 드라마 중에 독보적인 세계관이라 빠져든다 아이가.",
+      "subtitle": "로맨스 + 첩보 독보적 세계관"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media notification",
+      "narration": "연예 소식 빨리 받고 싶으면 팔로우 눌러주이소. 매일 정리해드립니다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "연예",
+    "source": "google_trends",
+    "category": "연예·화제",
+    "attribution": "Google Trends",
+    "tone": "경상도",
+    "generated_at": "2026-10-29T09:00:00+09:00"
+  }
+}

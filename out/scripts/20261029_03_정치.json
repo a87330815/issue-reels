@@ -1,0 +1,47 @@
+{
+  "title": "세제개편안 공청회",
+  "cover": {
+    "image": null,
+    "photo_query": "Korean National Assembly government building",
+    "lines": [
+      "보유세 개편",
+      "<r>내 세금</r>",
+      "얼마나 바뀌나"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korean parliament legislative session",
+      "narration": "이거 모르면 손해다. 여야가 세제개편안 공청회를 연다 아이가. 보유세하고 장기보유특별공제 손본다카이.",
+      "subtitle": "여야 세제개편 공청회 개최"
+    },
+    {
+      "image": null,
+      "photo_query": "property tax calculation documents",
+      "narration": "집 가진 사람들 귀 쫑긋해야 된다. 보유세 부담을 줄이는 쪽으로 가는데, 1주택자한테 유리한 방향이라카더라.",
+      "subtitle": "1주택자 보유세 완화 방향"
+    },
+    {
+      "image": null,
+      "photo_query": "tax reform bill documents Korea",
+      "narration": "장기보유특별공제도 확대 검토 중이라 10년 이상 보유하면 양도세 부담이 확 줄 수 있다. 연말까지 확정된다카이.",
+      "subtitle": "장특공제 확대 · 연말 확정"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media notification",
+      "narration": "정치 경제 소식 빠르게 받고 싶으면 팔로우 해주이소. 매일 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "정치·시사",
+    "attribution": "Google Trends",
+    "tone": "경상도",
+    "generated_at": "2026-10-29T09:00:00+09:00"
+  }
+}
