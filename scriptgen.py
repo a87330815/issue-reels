@@ -1081,7 +1081,7 @@ badge는 시행일처럼 날짜를 박아야 할 때만 문자열로, 아니면 
 
 def _call_anthropic(api_key, prompt, model=None, system=None):
     import requests as req
-    model_id = model or os.environ.get("LLM_MODEL", "") or "claude-3-5-haiku-20241022"
+    model_id = model or os.environ.get("LLM_MODEL", "") or "claude-haiku-4-5"
     resp = req.post(
         "https://api.anthropic.com/v1/messages",
         headers={"x-api-key": api_key,
