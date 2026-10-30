@@ -1,45 +1,45 @@
 {
-  "title": "자산 관련 당 지도부 발언",
+  "title": "혈당 관리, 러닝 유형별로 다르다",
   "cover": {
     "image": null,
     "lines": [
-      "한국인 절반이",
-      "<r>3억</r>",
-      "못 모았다"
+      "혈당 떨어지는",
+      "러닝 방식",
+      "<r>4가지</r>"
     ],
     "badge": null,
-    "photo_query": "korean family financial planning calculator"
+    "photo_query": "runner jogging outdoor morning"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 최근 자산 문제가 핫이슈다. 국민 대다수가 자산 형성에 진짜 어려워하고 있다는 거다.",
-      "subtitle": "자산 형성의 현실",
-      "photo_query": "person worried financial stress documents"
+      "narration": "이거 모르고 지나가면 손해다. 같은 러닝도 혈당 관리하는 방식이 완전 다르다는 거 알고 있나.",
+      "subtitle": "혈당 관리, 달라진다",
+      "photo_query": "blood sugar glucose meter testing"
     },
     {
       "image": null,
-      "narration": "뭐라카노. 평균 자산 목표액하고 현실하고 차이가 크다. 우리가 생각하는 것만큼 모으기 힘들다는 거다.",
-      "subtitle": "목표 vs 현실의 격차",
-      "photo_query": "gap between expectations reality chart"
+      "narration": "천천히 오래 달리는 사람이 있고. 빠르게 짧게 터뜨리는 사람이 있다. 각자 혈당이 내려가는 패턴이 다르다.",
+      "subtitle": "러닝 유형마다 혈당 반응이 달라",
+      "photo_query": "runners different pace tempo speed"
     },
     {
       "image": null,
-      "narration": "이런 이슈들 때문에 정치권에서도 말이 많다. 자산 불평등, 세대 간 부의 격차가 주요 쟁점이 되고 있다.",
-      "subtitle": "정책 논쟁으로 확대",
-      "photo_query": "politics debate policy discussion"
+      "narration": "혈당 관리해야 되는 사람이라면. 자기 러닝 스타일에 맞춰서 식사 타이밍이랑 운동량을 조절해야 한다.",
+      "subtitle": "유형에 맞춘 식사 시간 조정",
+      "photo_query": "healthy meal salad bowl timing"
     },
     {
       "image": null,
-      "narration": "개인이 할 수 있는 건 뭘까. 작은 금액이라도 꾸준히 자산을 늘리는 습관이 중요하다.",
-      "subtitle": "작은 것부터 시작",
-      "photo_query": "saving money piggy bank coins"
+      "narration": "야야야. 당뇨 있거나 혈당 관리하는 사람들은 이거 제대로 알고 운동해야 혈당 스파이크를 피할 수 있다.",
+      "subtitle": "혈당 스파이크 방지가 핵심",
+      "photo_query": "diabetes management health monitoring"
     },
     {
       "image": null,
-      "narration": "자산 형성 전략, 꼭 필요한 시대다. 쫌봐봐를 팔로우 해라. 돈 되는 정보 계속 올린다.",
-      "subtitle": "지금 시작이 답다",
-      "photo_query": "young adult planning financial future"
+      "narration": "자기 러닝 유형을 먼저 파악하고. 그에 맞춘 혈당 관리법을 따라가라. 이거가 중요하다.",
+      "subtitle": "유형별 맞춤 관리가 필수",
+      "photo_query": "fitness tracking app health data"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T09:46:13.680462+00:00"
+    "generated_at": "2026-10-30T14:42:44.521073+00:00"
   }
 }

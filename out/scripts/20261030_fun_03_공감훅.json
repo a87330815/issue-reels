@@ -1,45 +1,45 @@
 {
-  "title": "주차장에서의 선택과 집중",
+  "title": "주차장 극과극",
   "cover": {
     "image": null,
     "lines": [
-      "자리 찾다가",
-      "<r>제일 멀리</r>",
-      "세우는 거 뭐냐"
+      "좋은 자리 있나",
+      "<r>10분 돌다가</r>",
+      "제일 먼 데 댐"
     ],
     "badge": null,
-    "photo_query": "parking lot car searching"
+    "photo_query": "parking lot car spaces"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "마트 가는데 자리가 없다 아이가. 앞으로 쭉 가보면 있겠지 하면서 한 바퀴.",
-      "subtitle": "자리 찾기 시작",
-      "photo_query": "car driving parking lot entrance"
+      "narration": "마트 들어가기 전 주차장 입구. '어? 저기 비는 자리 있네' 하면서 시작한다니까.",
+      "subtitle": "오늘은 운 좋은 날",
+      "photo_query": "parking lot entrance car"
     },
     {
       "image": null,
-      "narration": "어? 이 자리 누가 빼내려나? 아니다 사람이 있네. 그 다음 자리도 짐칸 열려있네. 아 이건 휠체어 자리네.",
-      "subtitle": "선택지 없음",
-      "photo_query": "parking space empty occupied car"
+      "narration": "근데 가보니 이미 차가 기다리고 있고, 다음 자리도 그렇고... 결국 10분을 헤맨다.",
+      "subtitle": "어? 여긴? 저긴? 뭐 다 차네",
+      "photo_query": "crowded parking lot full"
     },
     {
       "image": null,
-      "narration": "결국 한 바퀴 돌고 또 돌다 보니 입구에서 제일 먼 자리에 세우게 된다. 와 짜증 난다.",
-      "subtitle": "최종 목적지",
-      "photo_query": "far parking spot distant empty"
+      "narration": "그렇게 돌다 돌다 결국 건물에서 제일 멀리 있는 자리에 둔다. 혼자만 당한 게 아닌데?",
+      "subtitle": "먼 데가 최고의 자리다",
+      "photo_query": "car parked far away parking lot"
     },
     {
       "image": null,
-      "narration": "마트 들어가려고 걸으면서 생각한다. 그냥 처음부터 여기 올걸. 10분을 헤맸네.",
-      "subtitle": "후회의 시간",
-      "photo_query": "person walking parking lot tired"
+      "narration": "그런데 돌아올 때 보니 처음에 있던 자리들이 다 비어있다. 이거 뭐 하는 짓이냐고.",
+      "subtitle": "운명 같은 거 있잖아",
+      "photo_query": "empty parking spaces outdoor"
     },
     {
       "image": null,
-      "narration": "근데 다음에 또 가면? 또 자리 찾다가 제일 멀리 세운다. 이게 우리 인생이다.",
-      "subtitle": "반복되는 일상",
-      "photo_query": "car parking lot cycle routine"
+      "narration": "이런 거 매번 반복돼는데, 혼자만 이래? 아니지 우리 다 이것 같은데. 팔로우해서 함께 웃자니까.",
+      "subtitle": "나만 이런 거 아니지?",
+      "photo_query": "shopping mall parking lot"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-30T02:32:38.520647+00:00"
+    "generated_at": "2026-10-30T14:43:34.809008+00:00"
   }
 }

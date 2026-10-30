@@ -1,45 +1,39 @@
 {
-  "title": "국가유공자 지원금 놓치고 있나요",
+  "title": "이예원 KLPGA 2라운드 단독 선두",
   "cover": {
     "image": null,
     "lines": [
-      "국가유공자",
-      "월 <r>최대</r>",
-      "지원받고 있나"
+      "2라운드만에",
+      "<r>단독선두</r>",
+      "탈진했다"
     ],
     "badge": null,
-    "photo_query": "korean war memorial veterans"
+    "photo_query": "female golfer swinging club championship"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 국가유공자 자격이 있는데 신청을 안 한 사람. 진짜 많다.",
-      "subtitle": "국가유공자 신청률 낮음",
-      "photo_query": "veteran benefits application form"
+      "narration": "이거 모르고 지나가면 손해다. KLPGA 에쓰오일 대회. 2라운드 끝났는데 벌써 한 명이 따로 튀어나갔다.",
+      "subtitle": "KLPGA 에쓰오일 대회 2라운드",
+      "photo_query": "korea golf tournament leaderboard"
     },
     {
       "image": null,
-      "narration": "국가유공자는 매달 보상금 받을 수 있다. 여기다 의료비 지원, 교육비 지원도 따라온다.",
-      "subtitle": "매월 보상금·의료비·교육비",
-      "photo_query": "person reviewing financial documents"
+      "narration": "이예원이다. 현재 단독 선두 자리를 잡아뒀다. 뒤따르는 선수들과는 거리가 벌어진 상태다.",
+      "subtitle": "이예원 단독 선두",
+      "photo_query": "professional golfer winner celebration"
     },
     {
       "image": null,
-      "narration": "자격이 있으면 신청해야 받는다. 자동으로 들어오는 게 아니다.",
-      "subtitle": "신청 필수, 자동 지급 안 됨",
-      "photo_query": "korean veterans honor ceremony"
+      "narration": "골프는 18홀을 다 쳐야 끝난다. 아직 멀었다는 뜻이다. 여기서 얼마나 버티느냐가 관건이다.",
+      "subtitle": "남은 라운드가 관건",
+      "photo_query": "golf course green fairway"
     },
     {
       "image": null,
-      "narration": "전쟁에 참전했거나 공상 입은 분들. 그 유족들. 혹시 신청 안 했나.",
-      "subtitle": "참전자·공상자·유족 확인",
-      "photo_query": "family gathering memorial"
-    },
-    {
-      "image": null,
-      "narration": "국가보훈처 홈페이지 가서 자격 확인해봐라. 놓친 돈 꽤 크다.",
-      "subtitle": "국가보훈처에서 확인하기",
-      "photo_query": "computer laptop office desk"
+      "narration": "앞서가는 선수도, 뒤따르는 선수도 다 눈독 들이고 있을 거다. 마지막까지 긴장할 수밖에 없다.",
+      "subtitle": "최종 우승까지 숨 고르기",
+      "photo_query": "golfers competing on course pressure"
     }
   ],
   "meta": {
@@ -48,6 +42,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T09:45:59.864671+00:00"
+    "generated_at": "2026-10-30T14:42:32.663461+00:00"
   }
 }

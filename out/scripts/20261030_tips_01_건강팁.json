@@ -1,45 +1,45 @@
 {
-  "title": "하루 2리터는 거짓? 물 마시기 진짜 법칙",
+  "title": "환절기 감기 예방 3가지 습관",
   "cover": {
     "image": null,
     "lines": [
-      "2리터는 거짓이다",
-      "<r>체중의 2~3%</r>",
-      "마셔야 한다"
+      "환절기마다 감기 걸리는",
+      "사람이 놓치는 것",
+      "<r>3가지</r>"
     ],
     "badge": null,
-    "photo_query": "drinking water glass hydration"
+    "photo_query": "autumn weather changing season"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 다들 하루 2리터 물 마셔야 한다고 알지? 근데 이게 다 거짓이다. 사람마다 필요한 양이 다르거든.",
-      "subtitle": "2리터 신화는 과학이 아니다",
-      "photo_query": "water bottle 2 liters myth"
+      "narration": "야, 환절기 되면 왜 자꾸 감기 걸리냐고? 그건 습관을 놓쳤기 때문이다 아이가. 오늘은 의사도 추천하는 감기 예방법 3가지를 알려줄 겐데, 이거 지키면 진짜 달라진다.",
+      "subtitle": "환절기 감기 예방법",
+      "photo_query": "sick person bed fever"
     },
     {
       "image": null,
-      "narration": "정답은 체중의 2~3%다. 예를 들어 60kg 사람이면 하루 1.2~1.8리터면 충분하다. 본인 체중에 0.03을 곱해 봐.",
-      "subtitle": "자기 체중 × 0.03 = 적정량",
-      "photo_query": "weight scale calculation math"
+      "narration": "첫 번째는 하루 2리터 물 마시기다. 콧속 점막이 건조하면 바이러스가 달라붙기 좋은데, 물을 자주 마시면 점막을 촉촉하게 유지해서 감기 예방이 된다 거다.",
+      "subtitle": "하루 2L 물 마시기",
+      "photo_query": "water glass drinking hydration"
     },
     {
       "image": null,
-      "narration": "근데 이렇게 마셔도 효과가 없으면? 한 번에 쭉 마시지 말고, 2시간마다 200ml씩 자주 자주 마셔봐. 소화도 잘되고 피부도 개선된다.",
-      "subtitle": "2시간마다 200ml 자주 마시기",
-      "photo_query": "regular water drinking schedule timer"
+      "narration": "두 번째, 자기 전에 베개 높이를 10cm 높이는 거다. 낮게 누우면 콧구멍이 눌려서 점액이 고여 감염되기 쉬운데, 높이를 주면 자연스럽게 배출되면서 감기가 덜 걸린다.",
+      "subtitle": "베개 높이 +10cm",
+      "photo_query": "pillow bed sleeping angle"
     },
     {
       "image": null,
-      "narration": "그리고 물 대신 차, 우유, 과일 이런 것도 수분이다. 무조건 물만 마셔야 한다고 스트레스받지 말고, 편하게 마셔.",
-      "subtitle": "모든 음료가 다 수분이다",
-      "photo_query": "herbal tea milk fruit juice beverages"
+      "narration": "세 번째는 하루에 3번, 30초씩 손과 팔을 20도 정도 따뜻한 물로 씻는 거다. 찬바람에 노출된 부분을 따뜻하게 데워주면 체온이 올라가고, 그럼 면역력이 생긴다.",
+      "subtitle": "하루 3회 따뜻한 물로 씻기",
+      "photo_query": "hands washing warm water"
     },
     {
       "image": null,
-      "narration": "이런 식으로 마시니까 탈진도 없고, 살도 빠졌다고 하니까, 이 꿀팁 더 궁금하면 팔로우해 봐.",
-      "subtitle": "팔로우하고 꿀팁 더 받기",
-      "photo_query": "healthy lifestyle before after"
+      "narration": "이 3가지만 해도 환절기 감기 확률이 확 줄어든다 카더라. 이런 꿀팁 더 보고 싶으면 팔로우 눌러 가. 우리 다음에 또 봐!",
+      "subtitle": "환절기 감기 예방은 습관",
+      "photo_query": "follow button subscribe channel"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-30T09:47:19.815619+00:00"
+    "generated_at": "2026-10-30T14:43:55.919915+00:00"
   }
 }

@@ -1,45 +1,44 @@
 {
-  "title": "삼각김밥 뜯는 순서",
+  "title": "점심메뉴 고민",
   "cover": {
     "image": null,
     "lines": [
-      "삼각김밥",
-      "<r>뜯는 순서</r>",
-      "틀린 사람"
+      "점심 뭐 먹지?",
+      "<r>이게 업무다</r>"
     ],
     "badge": null,
-    "photo_query": "kimbap triangle convenience store"
+    "photo_query": "office lunch time thinking"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야 이거 봐봐. 삼각김밥 사 가지고 뜯을라 했는데.",
-      "subtitle": "어디서부터 뜯지?",
-      "photo_query": "triangle kimbap packaging hand"
+      "narration": "11시 50분. 아직도 안 먹었는데 벌써 손 나가고 있다. 점심 메뉴 선택이 제일 어려운 업무가 돼버렸지 이거.",
+      "subtitle": "점심은 남은 문제",
+      "photo_query": null
     },
     {
       "image": null,
-      "narration": "아 맞다, 옆에 있는 이 작은 띠부터 떼는 거지. 우르르 씩.",
-      "subtitle": "띠를 먼저 뜯고",
-      "photo_query": "plastic strip rice ball"
+      "narration": "어제는 라면이고, 그 전날은 김밥이고, 그 전전날도 뭐였지? 매일 똑같은 골목에서 맨날 같은 메뉴 앞에서만 선다. 결정장애 왔다.",
+      "subtitle": "매일 같은 선택지",
+      "photo_query": "restaurant menu board choices"
     },
     {
       "image": null,
-      "narration": "어? 어? 잠깐만. 김이 왜 이래? 으아악 다 찢어졌다.",
-      "subtitle": "순서를 잘못했다",
-      "photo_query": "torn seaweed wrapping damage"
+      "narration": "\"어제 뭐 먹었어?\" 이 질문이 제일 답답하다. 난 그 대답을 2분마다 바꾼다. 3초마다 마음 바뀐다.",
+      "subtitle": "매번 다른 대답",
+      "photo_query": "coworkers talking lunch decision"
     },
     {
       "image": null,
-      "narration": "알고 보니 저 띠는 그다음에 떼는 거라고 한다. 헐.",
-      "subtitle": "정상인들은 알고 있었다",
-      "photo_query": "correct unwrap method tutorial"
+      "narration": "결국 같은 자리에서 같은 메뉴 사먹고 돌아온다. 고민한 30분은 어디 갔니? 이게 직장 문화인가 싶더라.",
+      "subtitle": "결국 어제 것",
+      "photo_query": "office lunch eating at desk"
     },
     {
       "image": null,
-      "narration": "나만 이러나 싶으면 팔로우하고 또 다음 편에서 봐봐.",
-      "subtitle": "당신도 같은 실수",
-      "photo_query": "frustrated eating snack convenience store"
+      "narration": "이런 고민이 매일 반복되는 거 보니까 내가 장난 아니구나 싶어. 너도 이러지? 그럼 맞아, 우린 정상이다.",
+      "subtitle": "우린 정상",
+      "photo_query": "people lunch room together"
     }
   ],
   "meta": {
@@ -48,6 +47,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-30T02:32:50.333107+00:00"
+    "generated_at": "2026-10-30T14:43:47.363923+00:00"
   }
 }

@@ -1,0 +1,53 @@
+{
+  "title": "봄 미세먼지 창문 딜레마",
+  "cover": {
+    "image": null,
+    "lines": [
+      "창문 열까",
+      "<r>말까</r>",
+      "봄의 고민"
+    ],
+    "badge": null,
+    "photo_query": "window spring dilemma"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "봄이 왔는데 미세먼지가 '나쁨'이라고 뜨네. 갈팡질팡이다 아이가.",
+      "subtitle": "창문 열어야 하나",
+      "photo_query": "hazy window spring morning"
+    },
+    {
+      "image": null,
+      "narration": "창문 안 열면 실내 공기가 묵직해진다. 숨이 막혀. 근데 열면 미세먼지 들어온다고 경고가 울려댄다.",
+      "subtitle": "어느 쪽도 답이 없는데",
+      "photo_query": "air purifier running indoor"
+    },
+    {
+      "image": null,
+      "narration": "결국 환풍기 다 켜고, 에어컨 필터 돌리고, 공기청정기까지 풀가동한다. 전기료 폭탄이지만 어쩔 수 없다.",
+      "subtitle": "봄은 전기료의 계절",
+      "photo_query": "appliances running power consumption"
+    },
+    {
+      "image": null,
+      "narration": "그리고 자기 전에 몰래 창문 살짝 열어본다. 아무도 모르게.",
+      "subtitle": "조용히 환기하기",
+      "photo_query": "window cracked open at night"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 쫌봐봐 팔로우하고 가세요!",
+      "subtitle": "봄이 이래야 제맛이지",
+      "photo_query": "follow subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T14:43:41.027383+00:00"
+  }
+}

@@ -1,45 +1,45 @@
 {
-  "title": "삼성전자 주가의 함정",
+  "title": "김은지 수협은행배 우승",
   "cover": {
     "image": null,
     "lines": [
-      "삼성전자",
-      "배당만 <r>3%</r>?",
-      "주가는 왜"
+      "한국 바둑에",
+      "<r>새로운</r>",
+      "여왕이 나타났다"
     ],
     "badge": null,
-    "photo_query": "samsung electronics stock market chart"
+    "photo_query": "baduk board game professional player"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 삼성전자. 배당이 3%인데, 지금 주식 시장에서 뭐라고 할까? 수익성 낮은 기업 취급한다. 그런데 이게 말이 되나.",
-      "subtitle": "배당 수익률 3%의 의미",
-      "photo_query": "dividends payment stock certificate"
+      "narration": "이거 모르고 지나가면 손해다. 어제 바둑계 뒤집었다. 한국 여자 선수가 일본 간판을 꺾고 국제대회 첫 우승했다.",
+      "subtitle": "김은지, 초대 대회 우승",
+      "photo_query": "baduk championship trophy award"
     },
     {
       "image": null,
-      "narration": "삼성은 엄청난 현금 보유하고 있다. 그런데도 배당으로 못 풀어준단 말이다. 왜? 보수적이다. 너무 보수적이다.",
-      "subtitle": "현금 보유만 많고 배당 아껴",
-      "photo_query": "cash reserve money stack financial"
+      "narration": "스미레. 일본 최강자다. 세계 랭킹 1위인 선수를 이겼다는 거. 이게 얼마나 큰 일인지 알겠지.",
+      "subtitle": "세계 랭킹 1위 스미레와의 경기",
+      "photo_query": "professional baduk players competition"
     },
     {
       "image": null,
-      "narration": "투자자들은 지금 뭘 원할까? 현금 돌려달라는 거다. 지금 이 상황에서는 현금이 수익 기회보다 크다는 신호다.",
-      "subtitle": "투자자들의 요구",
-      "photo_query": "investor meeting boardroom discussion"
+      "narration": "수협은행배는 한국, 일본, 중국이 한판 겨루는 대회다. 첫 해에 한국 선수가 우승. 이거 대박이다.",
+      "subtitle": "국제 바둑 대회 초대 우승",
+      "photo_query": "international baduk tournament asia"
     },
     {
       "image": null,
-      "narration": "삼성이 보수 정책을 안 바꾸면? 주가는 계속 내린다. 이게 바로 시장의 신호다. Google Trends에서도 지금 뜨는 이유가 이거다.",
-      "subtitle": "보수 정책의 대가",
-      "photo_query": "stock market decline downward arrow"
+      "narration": "여자 바둑에서 한국이 세계 주도권을 잡는 거 아니냐는 얘기까지 나온다. 김은지. 이름 기억해 둬라.",
+      "subtitle": "한국 여자 바둑의 미래",
+      "photo_query": "korean woman baduk player concentration"
     },
     {
       "image": null,
-      "narration": "주식 투자할 때, 배당률만 보면 틀린다. 회사의 현금 정책. 뭘 안 하고 있는지를 봐야 한다. 쫌봐봐. 팔로우하고 이런 숨겨진 신호 놓치지 마라.",
-      "subtitle": "현금 정책이 주가를 좌우한다",
-      "photo_query": "financial analysis investment strategy"
+      "narration": "이런 스포츠 뉴스부터 정책까지. 놓칠 일이 없으려면 우리 채널 팔로우해. 쫌봐봐와 함께.",
+      "subtitle": "더 많은 화제 이슈",
+      "photo_query": "mobile phone social media notification"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T09:46:41.114402+00:00"
+    "generated_at": "2026-10-30T14:43:13.038600+00:00"
   }
 }

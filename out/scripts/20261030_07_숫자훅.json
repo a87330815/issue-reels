@@ -1,45 +1,45 @@
 {
-  "title": "기초생활보장 사각지대 137만명",
+  "title": "KBO 포수 캠프, 차세대 스타 찾는다",
   "cover": {
     "image": null,
     "lines": [
-      "137만 명이",
-      "<r>한 푼도</r>",
-      "못받는다"
+      "중3 포수",
+      "<r>10명</r>",
+      "선발된다"
     ],
     "badge": null,
-    "photo_query": "empty wallet poverty struggling"
+    "photo_query": "baseball catcher youth training camp"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 지금 기초생활보장을 못받는 사람들이 137만 명이다. 뭐가 문제냐고?",
-      "subtitle": "기초생활보장 사각지대 137만명",
-      "photo_query": "person sitting alone dark room"
+      "narration": "이거 모르고 지나가면 손해다. KBO가 중학교 3학년 포수들을 모아서 특별 캠프를 한다고 했다. 들어보니 강민호, 양의지 같은 스타급 포수들 키워낸 감독들이 직접 지도한다카더라.",
+      "subtitle": "KBO 차세대 포수 캠프 개최",
+      "photo_query": "young baseball player training coaching"
     },
     {
       "image": null,
-      "narration": "소득 기준이 있거든. 중위소득의 35% 이하만 생계급여를 받는데, 이 기준이 너무 낮다는 거야.",
-      "subtitle": "중위소득 35% 이하만 수급 기준",
-      "photo_query": "income chart graph declining"
+      "narration": "야야야. 이만수, 이성우, 강성우, 차일목. 이거 다 KBO 레전드 코치진이다. 포수 키우는 데 전문가들만 모았다는 소리다.",
+      "subtitle": "초호화 지도자 진용",
+      "photo_query": "professional baseball coach training session"
     },
     {
       "image": null,
-      "narration": "월급이 조금 넘으면? 떨어진다. 일을 조금이라도 하면? 떨어진다. 사실상 일할 수 없는 사람만 받는 거다.",
-      "subtitle": "소득 기준 조금만 넘어도 탈락",
-      "photo_query": "person checking mobile phone bills"
+      "narration": "우리나라 포수 자원이 부족하다고 야구계가 계속 얘기했다. 그래서 이번엔 중학생 때부터 체계적으로 키우기로 한 거다.",
+      "subtitle": "차세대 포수 육성 전략",
+      "photo_query": "baseball youth development program"
     },
     {
       "image": null,
-      "narration": "정부가 이 기준을 올리겠다고 했는데, 정말로 될지 지켜봐야 한다. 혹시 당신 주변에 이런 상황인 사람 있나?",
-      "subtitle": "기준 인상 여부가 관건",
-      "photo_query": "government building korea official"
+      "narration": "만약 여기서 뽑혀가면 프로 무대까지 가는 길이 확 줄어든다. 포수는 야구에서 가장 중요한 포지션이니까다.",
+      "subtitle": "포수는 야구의 핵심",
+      "photo_query": "baseball catcher position strategy game"
     },
     {
       "image": null,
-      "narration": "더 자세한 내용은 우리 채널 팔로우. 생활 정보, 매일 올린다.",
-      "subtitle": "더 많은 정보는 팔로우로",
-      "photo_query": "smartphone notification bell alert"
+      "narration": "야구 좋아하는 우리 아이, 혹시 포수 적성 있으면 이런 기회 놓치지 말아야 한다. 쫌봐봐 채널 팔로우해서 스포츠 뉴스 먼저 받아봐라.",
+      "subtitle": "차세대 야구 스타의 시작",
+      "photo_query": "young athlete baseball aspirations future"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T09:46:27.699224+00:00"
+    "generated_at": "2026-10-30T14:42:58.682362+00:00"
   }
 }

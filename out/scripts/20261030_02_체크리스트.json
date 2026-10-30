@@ -3,43 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "요즘 이것들",
-      "<r>얼마까지</r>",
-      "올랐는지 아나"
+      "요즘 물가",
+      "<r>다 올랐다</r>",
+      "확인해봐"
     ],
     "badge": null,
-    "photo_query": "korean grocery store prices vegetables meat"
+    "photo_query": "korean grocery store vegetables meat prices"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 요즘 장 보다가 깜놀한 분들 많을 기다. 이 물가들 진짜 얼마나 올랐는지 봐봐.",
-      "subtitle": "장 본 지 얼마 됐어요?",
-      "photo_query": "person shopping at korean market with"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 물가. 진짜 많이 올랐다. 장 보러 가기 전에 꼭 확인해야 한다.",
+      "subtitle": "물가 올랐다. 확인 필수",
+      "photo_query": "shopping bag groceries korea"
     },
     {
       "image": null,
-      "narration": "삼겹살. 100그램에 4천 원대다. 소짓값이랑 비슷해졌네. 한우는 뭐하냐고.",
-      "subtitle": "삼겹살 100g 약 4,189원",
-      "photo_query": "korean pork belly meat display counter"
+      "narration": "삼겹살. 100그램에 4천 원대다. 한 판에 5만 원 넘는다. 고기값 보고 놀랄기다.",
+      "subtitle": "삼겹살 ₩4,189",
+      "photo_query": "korean pork belly meat bbq"
     },
     {
       "image": null,
-      "narration": "배추는 8천 원 중후반. 김장철 생각하면 한숨 나온다. 대파도 3천 원 중반이고.",
-      "subtitle": "배추 4,900~5,500원대 흘러",
-      "photo_query": "fresh korean cabbage and green onions"
+      "narration": "배추. 8천 원대다. 김장철 앞인데 벌써 이 정도다. 겨울 나기 전에 미리 사야 한다.",
+      "subtitle": "배추 ₩8,898",
+      "photo_query": "fresh cabbage korean vegetable market"
     },
     {
       "image": null,
-      "narration": "라면도 3~4천 원대. 우유도 3천 원을 넘었다. 다 올랐다 아이가.",
-      "subtitle": "라면·우유도 3천 원대 이상",
-      "photo_query": "instant ramen noodles milk cartons store"
+      "narration": "라면도 마찬가지다. 신라면 4천 원, 삼양라면 3천 원대. 편의점에선 더 비싸다.",
+      "subtitle": "라면 ₩3,153~4,202",
+      "photo_query": "korean instant ramen noodles packages"
     },
     {
       "image": null,
-      "narration": "이거 체크하고 장 보면 손해 안 본다. 요즘 물가 현황 알아야 맞다. 더 알아야 할 게 있으면 팔로우 해라.",
-      "subtitle": "장 보기 전에 꼭 체크하세요",
-      "photo_query": "woman checking shopping list at store"
+      "narration": "우유, 대파도 올랐다. 장 볼 때 꼼꼼히 따져봐야 한다. 쫌봐봐 구독하고 물가 소식 받아봐.",
+      "subtitle": "매주 물가 체크. 팔로우해",
+      "photo_query": "milk dairy products fresh vegetables"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "물가",
     "attribution": "공공데이터포털 · 한국소비자원",
     "chart": null,
-    "generated_at": "2026-10-30T09:45:53.873170+00:00"
+    "generated_at": "2026-10-30T14:42:27.159403+00:00"
   }
 }

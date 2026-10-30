@@ -1,39 +1,39 @@
 {
-  "title": "삼겹살 같은 고기도 가게마다 2배 차이",
+  "title": "삼겹살 가격차이",
   "cover": {
     "image": null,
     "lines": [
       "같은 삼겹살",
-      "가게마다",
-      "<r>2배</r> 차이 난다"
+      "<r>2배 이상</r>",
+      "차이 난다"
     ],
     "badge": null,
-    "photo_query": "korean pork belly meat butcher shop"
+    "photo_query": "pork belly meat price comparison shopping"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 요즘 삼겹살. 같은 고기인데 가게마다 가격이 미친 듯이 다르다.",
-      "subtitle": "삼겹살 가격차 심각",
-      "photo_query": "price comparison chart supermarket"
+      "narration": "이거 모르고 지나가면 손해다. 같은 날 같은 삼겹살인데 싼 데는 3천원, 비싼 데는 7천원. 뭐라카노.",
+      "subtitle": "최저 3,150원 ~ 최고 6,900원",
+      "photo_query": "korean butcher shop meat counter display"
     },
     {
       "image": null,
-      "narration": "최저 3천 원대부터 최고 6천 원대까지. 가장 싼 데서 비싼 데로 가면 거의 두 배 가까이 떨어진다.",
-      "subtitle": "최저 3천원 vs 최고 6천원",
-      "photo_query": "korean meat market display counter"
+      "narration": "한 끼에 3천원 이상 차이 난다. 한 달이면 10만원 가까이 날아간다.",
+      "subtitle": "같은 상품 다른 가격",
+      "photo_query": "family cooking korean barbecue grilling meat"
     },
     {
       "image": null,
-      "narration": "이건 뭐 같은 고기가 아니다. 어느 가게가 싼지 미리 알고 가야 장 본다.",
-      "subtitle": "미리 알고 가야 한다",
-      "photo_query": "woman shopping groceries market bags"
+      "narration": "그러니 삼겹살 사러 갈 때. 무조건 비교하고 가라. 당신 지갑이 울고 있다.",
+      "subtitle": "물가 비교로 절약하기",
+      "photo_query": "person checking phone price comparison shopping"
     },
     {
       "image": null,
-      "narration": "쫌봐봐 채널에서 매주 최신 물가 정보 올라온다. 지금 바로 팔로우해라.",
-      "subtitle": "쫌봐봐 팔로우 필수",
-      "photo_query": "phone notification follow subscribe"
+      "narration": "쫌봐봐에서 계속 알려줄 테니까. 팔로우 해둬라.",
+      "subtitle": "더 많은 물가정보는 쫌봐봐에서",
+      "photo_query": "notification bell follow subscribe hand"
     }
   ],
   "meta": {
@@ -42,6 +42,6 @@
     "category": "물가",
     "attribution": "공공데이터포털 · 한국소비자원",
     "chart": null,
-    "generated_at": "2026-10-30T09:45:46.475616+00:00"
+    "generated_at": "2026-10-30T14:42:20.175515+00:00"
   }
 }
