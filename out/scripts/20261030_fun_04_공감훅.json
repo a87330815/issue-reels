@@ -1,0 +1,54 @@
+{
+  "title": "퇴근 후 침대의 마법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "퇴근하고",
+      "침대 누우면",
+      "<r>세상이</r>",
+      "달라진다"
+    ],
+    "badge": null,
+    "photo_query": "tired person lying on bed after"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야 근데 말이야. 퇴근하고 침대 누우면 진짜 다르다니까.",
+      "subtitle": "침대의 마법",
+      "photo_query": "exhausted worker coming home"
+    },
+    {
+      "image": null,
+      "narration": "아침에 일어날 때는 침대가 지옥인데, 퇴근 후에는 천국이 돼버린다. 이거 왜 그런 거여?",
+      "subtitle": "같은 침대인데 왜?",
+      "photo_query": "man lying down on bed relaxing"
+    },
+    {
+      "image": null,
+      "narration": "아! 퇴근하고 누우면 뭐든 용서된다. 간식 먹으면서 유튜브 봐도 되고, 휴대폰을 3시간 봐도 아무도 안 본다.",
+      "subtitle": "자유의 느낌",
+      "photo_query": "person in bed with phone snacks"
+    },
+    {
+      "image": null,
+      "narration": "근데 여긴데 가만히 누워있기만 해도 치유가 된다고 카더라. 그래서 우리는 자꾸만 침대로 돌아가는 거 아이가.",
+      "subtitle": "침대는 구원",
+      "photo_query": "peaceful relaxed person in bed"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우해. 우리 함께 공감하자고.",
+      "subtitle": "팔로우 고고",
+      "photo_query": "follow subscribe button social media"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T02:32:44.710766+00:00"
+  }
+}

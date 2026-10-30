@@ -1,0 +1,47 @@
+{
+  "title": "삼성중공업 3분기 실적 급상승",
+  "cover": {
+    "image": null,
+    "lines": [
+      "삼성중공업",
+      "<r>42%</r> 뛰었다",
+      "뭐 때문일까"
+    ],
+    "badge": null,
+    "photo_query": "shipyard industrial construction crane"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 삼성중공업 3분기 실적이 터졌다. 영업이익이 작년 같은 기간 대비 42퍼센트 올랐다고 한다.",
+      "subtitle": "3분기 영업이익 42% 증가",
+      "photo_query": "financial chart upward trend graph"
+    },
+    {
+      "image": null,
+      "narration": "이거. 3천384억원이다. 그게 뭐냐고? 지난해 같은 시기에는 이것보다 훨씬 적었다는 뜻이다.",
+      "subtitle": "3천384억원 기록",
+      "photo_query": "calculator money korean won bills"
+    },
+    {
+      "image": null,
+      "narration": "중공업이 왜 이러냐. 조선업 호황이라는 거다. 반도체, 배터리 다음으로 떠오르는 게 바로 이거다.",
+      "subtitle": "조선업 시황 개선",
+      "photo_query": "large container ship ocean maritime"
+    },
+    {
+      "image": null,
+      "narration": "앞으로 중공업주 뜬다는 건가. 아직 모른다. 하지만 이 흐름은 봐둬야 한다. 자기 포트폴리오도 한 번 점검해봐라.",
+      "subtitle": "중공업 관심 필수",
+      "photo_query": "stock market trading screen investment"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-10-30T02:32:11.236763+00:00"
+  }
+}

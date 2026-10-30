@@ -1,0 +1,62 @@
+{
+  "title": "동천동 10월 아파트 실거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "동천동 최고가",
+      "<r>3.1억</r>",
+      "칠곡네스빌"
+    ],
+    "badge": null,
+    "photo_query": "apartment complex exterior modern building"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 동천동. 10월에 칠곡네스빌이 3억 1천만 원에 팔렸다. 84제곱미터. 가장 비싼 거다.",
+      "subtitle": "칠곡네스빌 3.1억",
+      "photo_query": "apartment building entrance lobby"
+    },
+    {
+      "image": null,
+      "narration": "같은 면적대 다른 단지들은 어때냐고? 칠곡3화성타운은 2억 5천500만 원. 약 5천500만 원 싸다.",
+      "subtitle": "칠곡3화성타운 2.5억",
+      "photo_query": "apartment complex exterior daytime"
+    },
+    {
+      "image": null,
+      "narration": "60제곱미터대는 더 싼다. 부영그린타운 2단지가 2억 4천200만 원. 화성센트럴파크는 1억 9천만 원까지 내려간다.",
+      "subtitle": "60㎡대 1.9~2.4억",
+      "photo_query": "real estate price comparison chart"
+    },
+    {
+      "image": null,
+      "narration": "동천동 집 사려면 이거 체크해라. 면적 먼저 보고. 건축연도. 층수까지 따져야 가격 예상이 된다.",
+      "subtitle": "면적·연도·층수가 결정다",
+      "photo_query": "apartment building specifications checklist"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 거래 데이터는 쫌봐봐에서 계속 올라온다. 팔로우 해라. 놓치지 말고.",
+      "subtitle": "쫌봐봐 팔로우 필수",
+      "photo_query": "smartphone notification bell icon"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        3.1,
+        2.5,
+        2.4,
+        1.9,
+        1.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-30T02:31:51.586781+00:00"
+  }
+}

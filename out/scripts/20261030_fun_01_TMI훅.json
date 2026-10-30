@@ -1,0 +1,53 @@
+{
+  "title": "한국 지하철이 정확한 이유",
+  "cover": {
+    "image": null,
+    "lines": [
+      "한국 지하철",
+      "<r>왜 이렇게</r>",
+      "정확한지 알어?"
+    ],
+    "badge": null,
+    "photo_query": "subway train platform Seoul"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "한국 지하철은 세계에서 가장 정확하기로 유명하다. 근데 왜 그럴까?",
+      "subtitle": "평균 지연 30초 이하",
+      "photo_query": "digital clock subway station"
+    },
+    {
+      "image": null,
+      "narration": "바로 신호 간격이 엄격하기 때문이다. 앞 열차와의 거리를 초 단위로 계산해서 운행한다고 한다.",
+      "subtitle": "차량 간 거리를 초 단위로 관리",
+      "photo_query": "train conductor control panel"
+    },
+    {
+      "image": null,
+      "narration": "게다가 기관사들은 매일 정시성 평가를 받는다. 한 번에 몇 초 늦으면 기록된다고.",
+      "subtitle": "기관사 개인 평가로 관리",
+      "photo_query": "worker performance evaluation"
+    },
+    {
+      "image": null,
+      "narration": "그래서 한국 사람들은 지하철 시간을 정확히 계산해서 출발한다. 왜냐하면 정말 그 시간에 온다니까.",
+      "subtitle": "우린 믿고 탄다",
+      "photo_query": "commuter waiting subway platform"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 궁금하면 팔로우! 일상 속 숨은 사실들을 계속 파헤쳐 본다.",
+      "subtitle": "팔로우하고 같이 웃자",
+      "photo_query": "follow button subscribe"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T02:32:24.960845+00:00"
+  }
+}

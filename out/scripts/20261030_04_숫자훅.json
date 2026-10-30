@@ -1,0 +1,53 @@
+{
+  "title": "재판 개입 논란",
+  "cover": {
+    "image": null,
+    "lines": [
+      "국조에",
+      "<r>재판</r>",
+      "튀어나왔다"
+    ],
+    "badge": null,
+    "photo_query": "korean court building law gavel"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 요즘 국정조사 얘기 나오는데. 거기 재판 사건이 들어간다는 거야. 이게 왜 문제냐면. 재판이랑 국조는 원래 따로 봐야 한다는 게 법의 기본이다.",
+      "subtitle": "국조에 재판 사건 포함",
+      "photo_query": "korea national assembly hearing"
+    },
+    {
+      "image": null,
+      "narration": "국정조사는 뭐냐. 국회가 국정 전반을 감시하는 거다. 그런데 거기다 재판 사건까지 넣는다? 이러면 재판부에 압력이 생긴다는 얘기야.",
+      "subtitle": "국회의 감시 권한 vs 재판의 독립성",
+      "photo_query": "courtroom judge bench legal documents"
+    },
+    {
+      "image": null,
+      "narration": "쉽게 말해서. 재판 중인 사건을 국회에서 먼저 건드리면. 판사가 눈치 본다는 거지. 이게 재판 개입이 아니냐는 논란이 터진 거다.",
+      "subtitle": "재판 판단에 영향 미칠 수 있어",
+      "photo_query": "gavel judge decision courtroom"
+    },
+    {
+      "image": null,
+      "narration": "법치주의. 그거 뭐냐. 국회든 뭐든 법 앞에서는 다 같다는 뜻이다. 재판은 재판. 국조는 국조. 따로 봐야 한다는 게 법의 정신이다.",
+      "subtitle": "법의 독립성 논쟁",
+      "photo_query": "scales of justice balance law"
+    },
+    {
+      "image": null,
+      "narration": "요즘 이 문제가 뜨거운 이유. 정치 권력이 사법까지 영향 미치는 게 아닌가 하는 불안감 때문이다. 쫌봐봐에서 따라가면서 이거 왜 중요한지 꼭 알아가라.",
+      "subtitle": "권력 분립의 위기?",
+      "photo_query": "government building separation powers concept"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-10-30T02:31:44.669239+00:00"
+  }
+}

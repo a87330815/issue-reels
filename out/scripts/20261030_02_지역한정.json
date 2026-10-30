@@ -1,0 +1,56 @@
+{
+  "title": "송도동 10월 아파트 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "송도동",
+      "<r>9건</r> 거래",
+      "평균 6억 2천"
+    ],
+    "badge": null,
+    "photo_query": "incheon songdo apartment complex modern buildings"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 송도동. 이번 달에 9건이 거래됐다. 평균이 6억 2천이다.",
+      "subtitle": "송도동 10월 거래 9건",
+      "photo_query": "real estate transaction contract documents"
+    },
+    {
+      "image": null,
+      "narration": "가장 비싼 게 8억 800만원. 가장 쌌던 게 5억 8천 900만원. 가격대가 좀 크다.",
+      "subtitle": "최고가 8억 → 최저가 5억 8천",
+      "photo_query": "apartment price comparison numbers"
+    },
+    {
+      "image": null,
+      "narration": "평수별로 봐도 70제곱미터대부터 85제곱미터 상품까지. 폭넓은 규모가 한 달에 다 나왔다.",
+      "subtitle": "70~85평형대 모두 거래",
+      "photo_query": "floor plan apartment layouts size"
+    },
+    {
+      "image": null,
+      "narration": "송도 시세 흐름을 놓치고 싶지 않으면 우리 팔로우. 매달 거래 데이터 싹 챙겨준다.",
+      "subtitle": "송도 시세 매달 체크하기",
+      "photo_query": "incheon songdo waterfront marina bay view"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        5.9,
+        8.1,
+        5.9,
+        6.1,
+        6.2
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-30T02:31:30.128356+00:00"
+  }
+}

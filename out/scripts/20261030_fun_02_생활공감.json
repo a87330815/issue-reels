@@ -1,0 +1,53 @@
+{
+  "title": "봄 미세먼지 딜레마",
+  "cover": {
+    "image": null,
+    "lines": [
+      "창문 열어?",
+      "<r>닫아?</r>",
+      "봄이 고민이네"
+    ],
+    "badge": null,
+    "photo_query": "window spring haze pollution"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "날씨 좋은 봄날. 근데 핸드폰에 미세먼지 '나쁨' 뜨는 순간이다. 야야, 이 기분 알지?",
+      "subtitle": "미세먼지 앱 체크",
+      "photo_query": "smartphone air quality app alert"
+    },
+    {
+      "image": null,
+      "narration": "답답한 방 안. 환기하고 싶은데 밖은 미세먼지 폭탄이고. 한숨 나온다.",
+      "subtitle": "답답해도 창문을 못 열고",
+      "photo_query": "closed window indoor living room"
+    },
+    {
+      "image": null,
+      "narration": "그러다 결국 3시간마다 \"에이, 모르겠다\" 하면서 창문 사악 열었다가 5분 만에 닫는 짓을 반복한다 이거야.",
+      "subtitle": "3시간마다 반복되는 악순환",
+      "photo_query": "opening window spring breeze"
+    },
+    {
+      "image": null,
+      "narration": "결국 공기청정기만 믿고 산다. 이놈이 진짜 벌어지는 비용인데 봄이 되면 필수장비가 되는 거 이상하지 않나?",
+      "subtitle": "공기청정기에만 의존",
+      "photo_query": "air purifier running home"
+    },
+    {
+      "image": null,
+      "narration": "이런 고민 하는 거 나만 아니지? 댓글로 어떻게 이겨내고 있는지 알려봐. 쫌봐봐와 함께!",
+      "subtitle": "봄맞이 필수공감",
+      "photo_query": "spring day window view city"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T02:32:32.155752+00:00"
+  }
+}

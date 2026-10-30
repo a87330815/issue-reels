@@ -1,0 +1,56 @@
+{
+  "title": "압구정 92억 vs 진영 4천만원, 같은 대한민국",
+  "cover": {
+    "image": null,
+    "lines": [
+      "압구정 <r>92억</r>",
+      "진영 4천만원",
+      "차이가 뭘까"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building vs rural countryside"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 같은 대한민국 아파트인데 가격이 230배 차이 난다. 뭐라카노.",
+      "subtitle": "압구정동 92억 vs 진영읍 4천만원",
+      "photo_query": "apartment price comparison two regions korea"
+    },
+    {
+      "image": null,
+      "narration": "압구정동은 신현대11차가 92억. 1983년 지은 낡은 건물인데도 이 가격이다.",
+      "subtitle": "압구정동 신현대11차 92억",
+      "photo_query": "gangnam district apgujeong luxury apartments"
+    },
+    {
+      "image": null,
+      "narration": "진영읍 좌곤리는 똑같은 아파트가 4천만원. 같은 나라 맞나 싶을 정도다.",
+      "subtitle": "진영읍 좌곤리 4천만원",
+      "photo_query": "rural countryside small town korea houses"
+    },
+    {
+      "image": null,
+      "narration": "이거 아는 거하고 모르는 거가 부동산 선택에서 크게 달라진다. 팔로우 해라. 계속 알려주겠다.",
+      "subtitle": "지역마다 가격 격차 심각",
+      "photo_query": "korea real estate market analysis data"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        92.0,
+        21.5,
+        20.5,
+        17.9,
+        17.5
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-30T02:31:36.048426+00:00"
+  }
+}

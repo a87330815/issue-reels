@@ -1,0 +1,53 @@
+{
+  "title": "흰 운동화 새것처럼 복원하기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "흰 운동화",
+      "<y>베이킹소다 한 숟가락</y>",
+      "새것처럼 복원"
+    ],
+    "badge": null,
+    "photo_query": "white sneaker cleaning"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "운동화 노래진 거 때문에 자꾸 신기 꺼려지지? 집에 있는 재료로 30분 안에 새것처럼 만들어버린다.",
+      "subtitle": "베이킹소다+물+칫솔",
+      "photo_query": "white sneaker stain close up"
+    },
+    {
+      "image": null,
+      "narration": "먼저 베이킹소다 3큰술에 물 2큰술을 섞어서 반죽 만든다. 이걸 노랗게 변한 부분에 골골 문질러주는 거야.",
+      "subtitle": "베이킹소다 반죽 만들기",
+      "photo_query": "baking soda paste mixing"
+    },
+    {
+      "image": null,
+      "narration": "낡은 칫솔로 5분 정도 문질러주면, 산 성분이 때를 분해해버려서 하얀 색이 살아난다.",
+      "subtitle": "칫솔로 5분 문질러주기",
+      "photo_query": "toothbrush cleaning white shoe"
+    },
+    {
+      "image": null,
+      "narration": "물로 헹궈서 신문지 위에 놔두고 하루 말리면 끝. 비용은 0원, 버릴 재료만 썼다.",
+      "subtitle": "물로 헹굼 후 말리기",
+      "photo_query": "wet shoes drying sunlight"
+    },
+    {
+      "image": null,
+      "narration": "이런 일상 꿀팁들이 더 알고 싶으면 팔로우해 봐. 인생 편하게 만드는 것들만 모아놨거든.",
+      "subtitle": "팔로우하고 저장하세요",
+      "photo_query": "satisfied person thumbs up"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T02:33:14.106859+00:00"
+  }
+}

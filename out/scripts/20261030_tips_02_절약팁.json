@@ -1,0 +1,53 @@
+{
+  "title": "대기전력만 잡아도 월 1만원 절약",
+  "cover": {
+    "image": null,
+    "lines": [
+      "대기전력 잡으면",
+      "<r>월 1만원</r>",
+      "절약된다"
+    ],
+    "badge": null,
+    "photo_query": "power strip standby consumption"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 니가 모르는 전기 도둑이 집에 있다고? 바로 대기전력이다. TV, 에어컨, 냉장고 이런 게 꺼져 있어도 계속 먹고사는 전기들이지.",
+      "subtitle": "대기전력 = 콘센트 꽂혀있는데도 버려지는",
+      "photo_query": "electronics plugged in standby"
+    },
+    {
+      "image": null,
+      "narration": "자, 이거 봐봐. 멀티탭 사서 TV, 모니터, 프린터, 공기청정기 이런 거 몰아서 꽂아라. 하루에 2~3번, 자기 전이랑 아침에 멀티탭 스위치만 껐다 켜는 거다.",
+      "subtitle": "멀티탭 1개 + 하루 2회 스위치 온오프",
+      "photo_query": "power strip switch control"
+    },
+    {
+      "image": null,
+      "narration": "이렇게만 해도 한 달에 평균 전자제품 5~6개가 대기전력으로 날리던 거 싹 차단된다. 왜냐? 진짜 안 쓸 때 콘센트를 뽑거든.",
+      "subtitle": "대기전력 차단 = 실제 접근 불가능한",
+      "photo_query": "unplugged devices home"
+    },
+    {
+      "image": null,
+      "narration": "와 대박, 이거 진짜 쉽지 아이가. 멀티탭 하나에 2천 원, 한두 달이면 전기세로 돌려받는다. 냉장고, 세탁기 같은 항상 켜야 하는 거 빼고는 다 내려놔.",
+      "subtitle": "멀티탭 투자 = 1~2개월만에 회수",
+      "photo_query": "budget friendly power strip"
+    },
+    {
+      "image": null,
+      "narration": "이런 꿀팁 더 알고 싶으면 팔로우 눌러. 우리 함께 월급 지켜보자고.",
+      "subtitle": "팔로우 → 더 많은 절약팁",
+      "photo_query": "save money tips daily"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T02:33:06.938172+00:00"
+  }
+}

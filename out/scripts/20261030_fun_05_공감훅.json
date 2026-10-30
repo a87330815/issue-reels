@@ -1,0 +1,53 @@
+{
+  "title": "삼각김밥 뜯는 순서",
+  "cover": {
+    "image": null,
+    "lines": [
+      "삼각김밥",
+      "<r>뜯는 순서</r>",
+      "틀린 사람"
+    ],
+    "badge": null,
+    "photo_query": "kimbap triangle convenience store"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야 이거 봐봐. 삼각김밥 사 가지고 뜯을라 했는데.",
+      "subtitle": "어디서부터 뜯지?",
+      "photo_query": "triangle kimbap packaging hand"
+    },
+    {
+      "image": null,
+      "narration": "아 맞다, 옆에 있는 이 작은 띠부터 떼는 거지. 우르르 씩.",
+      "subtitle": "띠를 먼저 뜯고",
+      "photo_query": "plastic strip rice ball"
+    },
+    {
+      "image": null,
+      "narration": "어? 어? 잠깐만. 김이 왜 이래? 으아악 다 찢어졌다.",
+      "subtitle": "순서를 잘못했다",
+      "photo_query": "torn seaweed wrapping damage"
+    },
+    {
+      "image": null,
+      "narration": "알고 보니 저 띠는 그다음에 떼는 거라고 한다. 헐.",
+      "subtitle": "정상인들은 알고 있었다",
+      "photo_query": "correct unwrap method tutorial"
+    },
+    {
+      "image": null,
+      "narration": "나만 이러나 싶으면 팔로우하고 또 다음 편에서 봐봐.",
+      "subtitle": "당신도 같은 실수",
+      "photo_query": "frustrated eating snack convenience store"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T02:32:50.333107+00:00"
+  }
+}

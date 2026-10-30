@@ -1,0 +1,62 @@
+{
+  "title": "압구정동 신현대11차 평당 1.66억",
+  "cover": {
+    "image": null,
+    "lines": [
+      "압구정동",
+      "<r>평당 1.66억</r>",
+      "이거 현실이다"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment gangnam seoul high rise"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대11차가 방금 실거래가 나왔다. 평당 1.66억이다.",
+      "subtitle": "압구정동 신현대11차 거래가 공개",
+      "photo_query": "gangnam apartment building exterior"
+    },
+    {
+      "image": null,
+      "narration": "183제곱미터에 92억. 40년 된 건물인데 말이다. 여기가 왜 이 가격일까. 압구정이니까다.",
+      "subtitle": "92억원 / 1983년 준공",
+      "photo_query": "apartment price tags real estate market"
+    },
+    {
+      "image": null,
+      "narration": "같은 달 다른 지역 거래를 봐라. 대치동은 평당 3400만, 정자동은 3380만이다. 압구정은 5배다.",
+      "subtitle": "지역별 평당가 격차 심각",
+      "photo_query": "seoul map districts comparison"
+    },
+    {
+      "image": null,
+      "narration": "강남의 명품 동네. 여기서는 건물 나이도 상관없다. 위치가 전부다.",
+      "subtitle": "위치가 가격을 결정한다",
+      "photo_query": "street view gangnam luxury shops"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 거래 정보는 우리 채널에서 계속 공개한다. 팔로우 해둬라.",
+      "subtitle": "공공데이터로 확인하세요",
+      "photo_query": "data analytics dashboard chart"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        1.66,
+        1.3,
+        1.27,
+        1.14,
+        1.12
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-30T02:31:58.228146+00:00"
+  }
+}
