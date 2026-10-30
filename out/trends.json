@@ -1,59 +1,95 @@
 {
-  "collected_at": "2026-10-29T19:20:43.539159+00:00",
+  "collected_at": "2026-10-30T02:30:44.764056+00:00",
   "items": [
     {
-      "keyword": "최준희",
+      "keyword": "재판",
       "traffic": "500+",
-      "news_title": "최준희, 11살 연상 남편에 &quot;나 두고 먼저 죽으면 죽여버릴 거야&quot;",
+      "news_title": "與, ‘조희대 국조’에 李 파기환송 사건 포함 시사… 재판 개입 논란",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "7c77d1eb282473e9"
+      "key": "594a231a5ef31f80"
     },
     {
-      "keyword": "신구",
-      "traffic": "100+",
-      "news_title": "",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "f7f402eb57e64969"
-    },
-    {
-      "keyword": "설인아",
+      "keyword": "어쌔신 크리드",
       "traffic": "200+",
-      "news_title": "[방송소식] tvN &apos;무쇠소녀단3&apos; 내달 첫선…쇼트트랙 계주 도전",
+      "news_title": "[해외 캠페인] 유비소프트, ‘블랙 플래그 리싱크드’ 뉴 게임 플러스 추가",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "7c50368e1eb25546"
+      "key": "72b29c0ccf4a0a3d"
     },
     {
-      "keyword": "서울경제",
-      "traffic": "5000+",
-      "news_title": "체코 협상 결렬에 원전 프리미엄 걷힌 건설주…대우·현대·GS건설 급락",
+      "keyword": "중공업",
+      "traffic": "1000+",
+      "news_title": "삼성중공업, 3분기 영업이익 3천384억원…작년보다 42%↑(종합)",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "117f5fa4288eb551"
+      "key": "c2649179a4cedf8c"
     },
     {
-      "keyword": "최불암",
-      "traffic": "20000+",
-      "news_title": "‘국민 아버지’ 배우 최불암 별세",
+      "keyword": "비트코인 시세",
+      "traffic": "100+",
+      "news_title": "비트코인 3.7% 하락해 7만8000달러대…이더리움·리플도 급락",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "f96a2a22b788746e"
+      "key": "750252f81c59f6cf"
     },
     {
-      "keyword": "이병헌",
+      "keyword": "binance",
+      "traffic": "100+",
+      "news_title": "Crypto worth billions frozen after suspected Binance hack",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "e58605c14a76ff98"
+    },
+    {
+      "keyword": "카드뉴스",
+      "traffic": "100+",
+      "news_title": "[카드뉴스] &quot;냉장고 문 열었더니 인터넷 털렸다?&quot;… 스마트 가전 노린 &apos;홈 네트워크 해킹&apos; 실태",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "4f7241d464c1e657"
+    },
+    {
+      "keyword": "항공대",
+      "traffic": "100+",
+      "news_title": "한국항공대, 동아리 문화 한마당서 진로·취업 지원 사업 홍보 활동",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "9b7658e95c758bb7"
+    },
+    {
+      "keyword": "보안뉴스",
       "traffic": "500+",
-      "news_title": "한국인이 꼽은 대표 배우 1위는 이병헌…연기력보다 ‘이것’ 중요",
+      "news_title": "[단독] 미래에셋생명 유출사고, ‘웹셸’ 업로드 취약점 때문이었다",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "d079dfa2616493ae"
+      "key": "46e3abd07d7615b7"
+    },
+    {
+      "keyword": "cve-2026-98432",
+      "traffic": "200+",
+      "news_title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "670b264eb2f6b8cd"
+    },
+    {
+      "keyword": "미래에셋증권",
+      "traffic": "100+",
+      "news_title": "[게시판] 미래에셋투자와연금센터, 연금투자자 절세 안내서 발간",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "450703b4fb41e773"
     }
   ]
 }
