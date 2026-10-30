@@ -1,86 +1,59 @@
 {
-  "collected_at": "2026-10-30T14:41:42.762537+00:00",
+  "collected_at": "2026-10-30T18:56:18.285661+00:00",
   "items": [
     {
-      "keyword": "박현경",
+      "keyword": "트위치",
+      "traffic": "200+",
+      "news_title": "넥슨 ‘빈딕투스’, 트위치콘과 크리에이터로 출시 전 서구권 눈도장",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "da87a789853f459e"
+    },
+    {
+      "keyword": "르아브르 ac 대 psg",
+      "traffic": "2000+",
+      "news_title": "Le Havre - Paris Saint-Germain LIVE. Ligue 1 latest updates",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "9ab9240b058fe168"
+    },
+    {
+      "keyword": "핼러윈",
       "traffic": "1000+",
-      "news_title": "이예원, KLPGA 에쓰오일 대회 2라운드서 단독 선두(종합)",
+      "news_title": "안전한 핼러윈, 소방이 함께합니다 - 카드/한컷 | 멀티미디어",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "c15321060d04a770"
+      "key": "fbdc04be9ea6b255"
     },
     {
-      "keyword": "gs25",
-      "traffic": "200+",
-      "news_title": "",
+      "keyword": "김혜자",
+      "traffic": "10000+",
+      "news_title": "최불암 영정앞에 선 김혜자 &quot;너무 그리운 사람…곧 만나자&quot;(종합2보)",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "791cd7b61bd6f898"
+      "key": "aa3feeb7ab8db8d2"
     },
     {
-      "keyword": "혈당",
-      "traffic": "500+",
-      "news_title": "러닝에도 MBTI가 있다?…HLB라이프케어, 러닝 유형별 운동법 제안",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "6e63e114e89c5cd4"
-    },
-    {
-      "keyword": "현대",
-      "traffic": "200+",
-      "news_title": "[컨콜] 현대제철 “美서 H형강 가격 주 단위로 매주 인상 중” By 투데이코리아",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "71b62f906980b372"
-    },
-    {
-      "keyword": "kbo 리그",
-      "traffic": "500+",
-      "news_title": "제2의 강민호 양의지 키운다! KBO 중3 대상 포수 캠프 개최…이만수 이성우 강성우 차일목 초호화 지도자 총출동",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "e1d54c28d4f43eee"
-    },
-    {
-      "keyword": "기아",
-      "traffic": "200+",
-      "news_title": "&quot;역대 최대 실적인데, 왜?&quot;...현대차그룹 주가 &apos;주르륵&apos;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "407b1e67aee0ebef"
-    },
-    {
-      "keyword": "김은지",
+      "keyword": "trick or treat",
       "traffic": "100+",
-      "news_title": "김은지, 스미레 꺾고 수협은행배 여자바둑 초대 우승",
+      "news_title": "Here’s Where Rain Could Dampen Your Spirits This Halloween",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "ef1a3e80b2bdaf56"
+      "key": "871df97a2f59c12f"
     },
     {
-      "keyword": "에버랜드 판다월드",
+      "keyword": "한화시스템",
       "traffic": "200+",
-      "news_title": "머뭇머뭇 나오더니 ‘발라당’…막내 판다 ‘슈바오’의 바깥 구경 [현장영상]",
+      "news_title": "&quot;K-위성 경쟁력 높인다&quot;…한화, 초소형 군집위성 수주",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "1068fdaaf99f18e5"
-    },
-    {
-      "keyword": "전상현",
-      "traffic": "500+",
-      "news_title": "역투 조상우",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "09f4463b62eaa961"
+      "key": "9289c695a2dcc67c"
     }
   ]
 }
