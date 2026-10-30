@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-10-30T02:30:44.764056+00:00",
+  "collected_at": "2026-10-30T09:45:03.298049+00:00",
   "items": [
     {
-      "keyword": "재판",
+      "keyword": "국가유공자",
       "traffic": "500+",
-      "news_title": "與, ‘조희대 국조’에 李 파기환송 사건 포함 시사… 재판 개입 논란",
+      "news_title": "보성군, ‘스무 해의 감사’… 제20회 보훈가족 한마음 행사 개최",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "594a231a5ef31f80"
+      "key": "33bda7a1c3231830"
     },
     {
-      "keyword": "어쌔신 크리드",
+      "keyword": "꿀알바",
       "traffic": "200+",
-      "news_title": "[해외 캠페인] 유비소프트, ‘블랙 플래그 리싱크드’ 뉴 게임 플러스 추가",
+      "news_title": "[사진]넷플릭스 &apos;꿀알바&apos; 기대하세요!",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "72b29c0ccf4a0a3d"
+      "key": "c36604aac8153bef"
     },
     {
-      "keyword": "중공업",
+      "keyword": "자산",
+      "traffic": "2000+",
+      "news_title": "발언하는 김민석 당대표",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "40ce1366f193ea40"
+    },
+    {
+      "keyword": "극한 직업",
+      "traffic": "200+",
+      "news_title": "[EBS 극한직업] 9000원에 40가지 음식 무제한…홍성 가성비 뷔페의 비밀",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "ae0a2c3c03d49b60"
+    },
+    {
+      "keyword": "생계",
+      "traffic": "500+",
+      "news_title": "기초생활보장 못받는 빈곤층 137만… 생계급여 기준 ‘중위소득 35%’ 확대",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "25f0f828e2a34d91"
+    },
+    {
+      "keyword": "보안 취약점",
+      "traffic": "200+",
+      "news_title": "[PHP 파장] 패치 공개 일주일, 국내 서버 적용률 5.5%... 94% 무방비",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "98b4fc5f5ec53a59"
+    },
+    {
+      "keyword": "009150",
       "traffic": "1000+",
-      "news_title": "삼성중공업, 3분기 영업이익 3천384억원…작년보다 42%↑(종합)",
+      "news_title": "Breakingviews - COMMENTARY: Samsung&apos;s returns conservatism is self-defeating",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "c2649179a4cedf8c"
+      "key": "763fa1182766288b"
     },
     {
-      "keyword": "비트코인 시세",
-      "traffic": "100+",
-      "news_title": "비트코인 3.7% 하락해 7만8000달러대…이더리움·리플도 급락",
+      "keyword": "김하성",
+      "traffic": "2000+",
+      "news_title": "[오피셜] 2000만 달러 계약 종료→김하성 FA 시장 나온다…&quot;KIM과 결별 반길만해&quot; 이렇게까지 기뻐하다니",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "750252f81c59f6cf"
+      "key": "64a8f2f19d03a7ba"
     },
     {
-      "keyword": "binance",
-      "traffic": "100+",
-      "news_title": "Crypto worth billions frozen after suspected Binance hack",
+      "keyword": "오산대",
+      "traffic": "1000+",
+      "news_title": "오산대, 2027학년도 산업체 위탁교육 신입생 200명 모집…9개 학과 선발",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "e58605c14a76ff98"
-    },
-    {
-      "keyword": "카드뉴스",
-      "traffic": "100+",
-      "news_title": "[카드뉴스] &quot;냉장고 문 열었더니 인터넷 털렸다?&quot;… 스마트 가전 노린 &apos;홈 네트워크 해킹&apos; 실태",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "4f7241d464c1e657"
-    },
-    {
-      "keyword": "항공대",
-      "traffic": "100+",
-      "news_title": "한국항공대, 동아리 문화 한마당서 진로·취업 지원 사업 홍보 활동",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "9b7658e95c758bb7"
-    },
-    {
-      "keyword": "보안뉴스",
-      "traffic": "500+",
-      "news_title": "[단독] 미래에셋생명 유출사고, ‘웹셸’ 업로드 취약점 때문이었다",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "46e3abd07d7615b7"
-    },
-    {
-      "keyword": "cve-2026-98432",
-      "traffic": "200+",
-      "news_title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "670b264eb2f6b8cd"
-    },
-    {
-      "keyword": "미래에셋증권",
-      "traffic": "100+",
-      "news_title": "[게시판] 미래에셋투자와연금센터, 연금투자자 절세 안내서 발간",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "450703b4fb41e773"
+      "key": "b47302c665877da5"
     }
   ]
 }
