@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T02:11:00.527099+00:00",
+  "updated_at": "2026-10-30T09:57:31.330535+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -70,6 +70,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-30/20261024_04.mp4",
       "ig_id": "17841459210979722",
       "category": "생활·지원금·제도",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261023_06_숫자훅",
+      "media_id": "17917586853526647",
+      "published_at": "2026-10-30T09:57:31.163194+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-30/20261023_06.mp4",
+      "ig_id": "17841459210979722",
+      "category": "당일 화제 이슈",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
