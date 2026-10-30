@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T09:57:31.330535+00:00",
+  "updated_at": "2026-10-30T15:23:23.613314+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -81,6 +81,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-30/20261023_06.mp4",
       "ig_id": "17841459210979722",
       "category": "당일 화제 이슈",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261029_fun_01_공감훅",
+      "media_id": "18120537656054118",
+      "published_at": "2026-10-30T15:23:23.314174+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-30/20261029_fun_01.mp4",
+      "ig_id": "17841459210979722",
+      "category": "재미·공감",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }

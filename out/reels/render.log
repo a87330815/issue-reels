@@ -1,57 +1,67 @@
-run 41036829578 2026-10-30T09:55:21Z
+run 41079747181 2026-10-30T15:21:11Z
 
-=== 20261023_06_숫자훅 ===
-  [cover] '롤' → "Korea city luxury apartment"
-    [unsplash] 0건 후보
-    [openverse] 2건 후보
+=== 20261029_fun_01_공감훅 ===
+  [cover] '세탁기 주머니에서 나오는 것들' → "washing machine mesh laundry bag"
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
-    ↻ 재시도: "Korea city luxury"
-    [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
-    Unsplash 12건 (적합도 필터 생략)
+    Unsplash 11건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''롤' 관련 트렌드 — [오!쎈 인터뷰]' → "Korea city luxury apartment"
-    [unsplash] 0건 후보
-    [openverse] 2건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Korea city luxury"
+  [scene1] '매번 다르다' → "open laundry bag surprise"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+  [scene2] '뭐가 나올지 몰라 설렌다' → "lost coins socks button mesh bag"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene2 ← Unsplash (Unsplash License)
-  → 3/3장 저장, 매니페스트: out/photos/20261023_06_숫자훅/photos.json
+  [scene3] '주머니가 생산한다' → "laundry bag lint coins mysterious"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '과학이다' → "washing machine mystery lint"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '팔로우 하면 더 웃긴다' → "happy laundry day doing laundry"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene5 ← Unsplash (Unsplash License)
+  → 6/6장 저장, 매니페스트: out/photos/20261029_fun_01_공감훅/photos.json
 
-총 3/3장 수집
-  사진 3장 적용: cover, scene1, scene2
-카드뉴스 4장 생성 → out/cards_20261023_06_숫자훅
-대본: out/scripts/20261023_06_숫자훅.json
-카드: out/cards_20261023_06_숫자훅 (4장)
+총 6/6장 수집
+  사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
+카드뉴스 7장 생성 → out/cards_20261029_fun_01_공감훅
+대본: out/scripts/20261029_fun_01_공감훅.json
+카드: out/cards_20261029_fun_01_공감훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/3] [EL·발랄녀] 0.7초  롤...
-  TTS [2/3] [EL·발랄녀] 11.4초  이거 모르고 지나가면 손해다. '롤' 관련 트렌드 ...
-  TTS [3/3] [EL·발랄녀] 4.0초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
+  TTS [1/6] [EL·발랄녀] 2.0초  세탁기 주머니에서 나오는 것들...
+  TTS [2/6] [EL·발랄녀] 6.7초  세탁기 돌리고 나서 주머니 열어보는 그 순간. 뭐가...
+  TTS [3/6] [EL·발랄녀] 5.7초  어떨 땐 양말이 3개, 어떨 땐 동전 5천 원, 또...
+  TTS [4/6] [EL·발랄녀] 6.5초  그런데 진짜 미스터리인 건 분명히 바지 주머니에서 ...
+  TTS [5/6] [EL·발랄녀] 6.3초  친구 말론 세탁기 주머니가 우주고 거기선 새로운 물...
+  TTS [6/6] [EL·발랄녀] 4.2초  이런 소소한 놀람 있어야 빨래가 재밌지 않냐고. 너...
 
 2) 영상 합성
-  세그먼트 [1/4] 3.0초
-  세그먼트 [2/4] 12.2초
-  세그먼트 [3/4] 4.8초
-  세그먼트 [4/4] 4.0초
+  세그먼트 [1/7] 3.0초
+  세그먼트 [2/7] 7.5초
+  세그먼트 [3/7] 6.5초
+  세그먼트 [4/7] 7.3초
+  세그먼트 [5/7] 7.1초
+  세그먼트 [6/7] 5.0초
+  세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261023_06_숫자훅.mp4
-    길이: 20.0초  /  크기: 1.4MB
--rw-r--r-- 1 runner runner 1.4M Oct 30 09:55 out/reels/20261023_06_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261029_fun_01_공감훅.mp4
+    길이: 35.3초  /  크기: 1.4MB
+-rw-r--r-- 1 runner runner 1.5M Oct 30 15:22 out/reels/20261029_fun_01_공감훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=20.040272
+duration=35.320272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -60,7 +70,7 @@ duration=20.040272
 설정 완료
 
 업로드 1건 (태그 reels-2026-10-30):
-  20261023_06_숫자훅.mp4  1.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-30/20261023_06.mp4
+  20261029_fun_01_공감훅.mp4  1.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-30/20261029_fun_01.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -68,16 +78,16 @@ duration=20.040272
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 97건
+남은 발행 가능: 96건
 발행 대상: 1건
 
-── 1/1  20261023_06_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-30/20261023_06.mp4
-  캡션: 롤
-  컨테이너: 17972844251973700
+── 1/1  20261029_fun_01_공감훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-30/20261029_fun_01.mp4
+  캡션: 세탁기 주머니에서 나오는 것들
+  컨테이너: 17972930816973700
       0초  IN_PROGRESS
-     83초  FINISHED
-  발행 완료: 17917586853526647
+     44초  FINISHED
+  발행 완료: 18120537656054118
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
