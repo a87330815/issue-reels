@@ -8,38 +8,32 @@
       "시작된다고?"
     ],
     "badge": null,
-    "photo_query": "sunday evening anxiety tired"
+    "photo_query": "sunday evening couch anxiety"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "일요일 오후 3시. 아직 몸은 편한데 머릿속부터 불안해진다. 월요일이 자꾸만 떠오른다.",
-      "subtitle": "벌써? 아직 하루 남았잖아",
-      "photo_query": "worried person thinking clock"
+      "narration": "일요일 오후 3시쯤부터 뭔가 답답하지? 그게 바로 '소메스타', 즉 '일요일 저녁 신경증'이라고 한다 아이가.",
+      "subtitle": "일요일 저녁 신경증",
+      "photo_query": "sunday afternoon window sadness"
     },
     {
       "image": null,
-      "narration": "과학적으로 이건 '선데이 스크루프' 또는 '블루 먼데이'라고 부른다고 한다. 일요일 저녁부터 월요일 압박이 신체 스트레스 호르몬을 올린다는 뜻이다.",
-      "subtitle": "과학이 나를 증명했다",
-      "photo_query": "stress hormone cortisol science study"
+      "narration": "월요일이 다가올수록 스트레스 호르몬이 나오는데, 이게 일요일 저녁부터 이미 시작된다는 과학적 증거가 있다고 카더라.",
+      "subtitle": "스트레스 호르몬이 벌써?",
+      "photo_query": "stress hormone cortisol rising"
     },
     {
       "image": null,
-      "narration": "그래서 일요일 밤 10시면 이미 우리 몸은 준비 중이다. 자는데도 제대로 못 자고, 밥 먹어도 뭔가 불편하고, 휴대폰만 자꾸 든다.",
-      "subtitle": "벌써 월요 모드 풀가동",
-      "photo_query": "insomnia restless night Sunday"
+      "narration": "그래서 일요일 밤 10시쯤 되면 저절로 한숨이 나오고, 아무것도 하기 싫어진다. 이미 월요병이 시작된 거지.",
+      "subtitle": "일요일 밤 10시의 절망",
+      "photo_query": "late sunday night bed restless"
     },
     {
       "image": null,
-      "narration": "월요일 아침에 '왜 이렇게 힘들지' 하는데, 사실 월요병은 아침이 아니라 일요일 저녁부터 이미 시작된 거다.",
-      "subtitle": "넌 월요일이 아니라 어제부터 피곤한 거야",
-      "photo_query": "Monday morning exhausted bed"
-    },
-    {
-      "image": null,
-      "narration": "이제 알았지? 일요일 저녁이 바로 진짜 적이다. 월요일 아침은 그냥 그 결과일 뿐이다. 이런 거 더 알고 싶으면 팔로우 해봐.",
-      "subtitle": "일요일 밤이 진짜 전쟁",
-      "photo_query": "Sunday night preparation work week"
+      "narration": "월요일 아침까지 기다릴 필요도 없다. 일요일 저녁부터 이미 당신은 월요병 환자인 거다. 이제 알지?",
+      "subtitle": "월요일 전날부터 시작",
+      "photo_query": "monday morning alarm clock dread"
     }
   ],
   "meta": {
@@ -48,6 +42,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-30T14:43:28.196372+00:00"
+    "generated_at": "2026-10-30T18:58:20.094777+00:00"
   }
 }

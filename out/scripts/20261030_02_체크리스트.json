@@ -1,45 +1,40 @@
 {
-  "title": "요즘 물가 체크리스트",
+  "title": "10월 물가 체크리스트",
   "cover": {
     "image": null,
     "lines": [
-      "요즘 물가",
-      "<r>다 올랐다</r>",
-      "확인해봐"
+      "이거 모르고",
+      "장을 보면",
+      "<r>손해</r>",
+      "본다"
     ],
     "badge": null,
-    "photo_query": "korean grocery store vegetables meat prices"
+    "photo_query": "grocery shopping receipt market"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 요즘 물가. 진짜 많이 올랐다. 장 보러 가기 전에 꼭 확인해야 한다.",
-      "subtitle": "물가 올랐다. 확인 필수",
-      "photo_query": "shopping bag groceries korea"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 물가. 정확히 얼마인 줄 알아야 장을 본다.",
+      "subtitle": "요즘 물가가 얼마길래",
+      "photo_query": "supermarket shopping cart vegetables"
     },
     {
       "image": null,
-      "narration": "삼겹살. 100그램에 4천 원대다. 한 판에 5만 원 넘는다. 고기값 보고 놀랄기다.",
-      "subtitle": "삼겹살 ₩4,189",
-      "photo_query": "korean pork belly meat bbq"
+      "narration": "삼겹살 100그램에 4천원. 라면 한 상자 3~4천원. 우유 한 팩 3천원. 다 3천원대다.",
+      "subtitle": "삼겹살·라면·우유 모두 3천원대",
+      "photo_query": "korean beef meat pork belly"
     },
     {
       "image": null,
-      "narration": "배추. 8천 원대다. 김장철 앞인데 벌써 이 정도다. 겨울 나기 전에 미리 사야 한다.",
-      "subtitle": "배추 ₩8,898",
-      "photo_query": "fresh cabbage korean vegetable market"
+      "narration": "배추는 9천원. 대파는 3천원. 반찬값이 메인 반찬값이다. 밑반찬 사 먹을 형편 아니다.",
+      "subtitle": "배추 9천원·대파 3천원",
+      "photo_query": "korean vegetables napa cabbage green onion"
     },
     {
       "image": null,
-      "narration": "라면도 마찬가지다. 신라면 4천 원, 삼양라면 3천 원대. 편의점에선 더 비싸다.",
-      "subtitle": "라면 ₩3,153~4,202",
-      "photo_query": "korean instant ramen noodles packages"
-    },
-    {
-      "image": null,
-      "narration": "우유, 대파도 올랐다. 장 볼 때 꼼꼼히 따져봐야 한다. 쫌봐봐 구독하고 물가 소식 받아봐.",
-      "subtitle": "매주 물가 체크. 팔로우해",
-      "photo_query": "milk dairy products fresh vegetables"
+      "narration": "야야야. 이거 알고 쇼핑 리스트 만들어야 집에서 터질 일이 없다. 우리 채널에서 물가 정보 놓치지 마라.",
+      "subtitle": "물가 확인 후 장을 보자",
+      "photo_query": "family cooking kitchen preparing meal"
     }
   ],
   "meta": {
@@ -48,6 +43,6 @@
     "category": "물가",
     "attribution": "공공데이터포털 · 한국소비자원",
     "chart": null,
-    "generated_at": "2026-10-30T14:42:27.159403+00:00"
+    "generated_at": "2026-10-30T18:57:24.181162+00:00"
   }
 }

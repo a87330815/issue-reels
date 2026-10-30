@@ -1,35 +1,47 @@
 {
-  "title": "gs25",
+  "title": "르아브르 vs PSG 라이브",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>gs25</r>",
-      "이거 실환가요"
+      "PSG 또 졌다",
+      "<r>1위</r>",
+      "흔들린다"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "football match stadium crowd cheering"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'gs25' 관련 트렌드. 수치로 확인해보자.",
-      "subtitle": "'gs25' 관련 트렌드"
+      "narration": "이거 모르고 지나가면 손해다. PSG가 르아브르한테 졌다. 프랑스 프로축구에서 가장 비싼 팀인데 1위 자리가 흔들리고 있다.",
+      "subtitle": "PSG 또 경기 떨어진다",
+      "photo_query": "paris saint-germain players on field"
     },
     {
       "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "요즘 PSG 상황이 진짜 심각하다. 스타 선수들 많으면서도 계속 떨어지니까. 팬들이랑 구단이 뭐가 문제냐고 난리다.",
+      "subtitle": "리그 1 우승 경쟁 달아난다",
+      "photo_query": "french football ligue 1 scoreboard"
+    },
+    {
+      "image": null,
+      "narration": "이 정도면 시즌 흐름이 완전히 바뀐 거다. 앞으로 PSG가 다시 일어설 수 있을지가 관전 포인트 되는 거고.",
+      "subtitle": "시즌 판도 뒤바뀔 수도",
+      "photo_query": "football stadium night lights match"
+    },
+    {
+      "image": null,
+      "narration": "자. 이제 너는 알았다. PSG가 힘들어지고 있다는 거. 앞으로 이 경기들 어떻게 될지 봐야지. 우리 채널 팔로우해라. 계속 알려줄 거다.",
+      "subtitle": "팔로우하고 경기 결과 먼저 받아봐",
+      "photo_query": "football fans watching match live"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "",
+    "source": "google_trends",
     "category": "당일 화제 이슈",
-    "attribution": "",
+    "attribution": "Google Trends",
     "chart": null,
-    "tone": "경상도",
-    "generated_at": "2026-10-30T14:42:37.714413+00:00"
+    "generated_at": "2026-10-30T18:57:38.196269+00:00"
   }
 }

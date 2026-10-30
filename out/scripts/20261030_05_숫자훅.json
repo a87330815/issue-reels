@@ -1,45 +1,45 @@
 {
-  "title": "혈당 관리, 러닝 유형별로 다르다",
+  "title": "핼러윈 당일, 이것만 챙겨라",
   "cover": {
     "image": null,
     "lines": [
-      "혈당 떨어지는",
-      "러닝 방식",
-      "<r>4가지</r>"
+      "핼러윈 당일",
+      "<r>화재·사고</r>",
+      "확 늘어난다"
     ],
     "badge": null,
-    "photo_query": "runner jogging outdoor morning"
+    "photo_query": "halloween costume party crowd safety"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 같은 러닝도 혈당 관리하는 방식이 완전 다르다는 거 알고 있나.",
-      "subtitle": "혈당 관리, 달라진다",
-      "photo_query": "blood sugar glucose meter testing"
+      "narration": "이거 모르고 지나가면 손해다. 핼러윈 밤. 술 취한 사람들이 몰려다니고 복장도 복잡하고. 그 와중에 화재하고 압사 사고가 얼마나 많이 터지는지 알아?",
+      "subtitle": "핼러윈 당일 안전사고 급증",
+      "photo_query": "halloween crowd night street party"
     },
     {
       "image": null,
-      "narration": "천천히 오래 달리는 사람이 있고. 빠르게 짧게 터뜨리는 사람이 있다. 각자 혈당이 내려가는 패턴이 다르다.",
-      "subtitle": "러닝 유형마다 혈당 반응이 달라",
-      "photo_query": "runners different pace tempo speed"
+      "narration": "불장난 금지. 이거야. 코스튬 소품이 불에 타기 쉽다고. 양초는 꺼두고, 좁은 골목길도 피해라.",
+      "subtitle": "코스튬·소품 화재 위험",
+      "photo_query": "halloween costume flammable fabric close up"
     },
     {
       "image": null,
-      "narration": "혈당 관리해야 되는 사람이라면. 자기 러닝 스타일에 맞춰서 식사 타이밍이랑 운동량을 조절해야 한다.",
-      "subtitle": "유형에 맞춘 식사 시간 조정",
-      "photo_query": "healthy meal salad bowl timing"
+      "narration": "더 중요한 건 군중 속 압사다. 큰 거리는 한 번에 물려 들어가지 마. 피난로 위치 먼저 확인하고 다녀야 한다.",
+      "subtitle": "혼잡한 장소 압사 위험",
+      "photo_query": "crowded street crowd control safety barriers"
     },
     {
       "image": null,
-      "narration": "야야야. 당뇨 있거나 혈당 관리하는 사람들은 이거 제대로 알고 운동해야 혈당 스파이크를 피할 수 있다.",
-      "subtitle": "혈당 스파이크 방지가 핵심",
-      "photo_query": "diabetes management health monitoring"
+      "narration": "핸드폰 배터리도 미리 충전해두고, 술은 적당히 해라. 응급 상황 때 판단이 늦으면 진짜 위험하다.",
+      "subtitle": "핸드폰 충전·절주 필수",
+      "photo_query": "phone battery charging cable power bank"
     },
     {
       "image": null,
-      "narration": "자기 러닝 유형을 먼저 파악하고. 그에 맞춘 혈당 관리법을 따라가라. 이거가 중요하다.",
-      "subtitle": "유형별 맞춤 관리가 필수",
-      "photo_query": "fitness tracking app health data"
+      "narration": "즐기되 안전하게. 이것만 기억해두고 다녀라. 더 자세한 안전수칙은 우리 계정 팔로우해서 확인해 봐.",
+      "subtitle": "안전한 핼러윈 즐기기",
+      "photo_query": "halloween celebration safe fun family costume"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T14:42:44.521073+00:00"
+    "generated_at": "2026-10-30T18:57:46.280719+00:00"
   }
 }

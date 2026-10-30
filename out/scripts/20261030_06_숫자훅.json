@@ -1,45 +1,45 @@
 {
-  "title": "현대제철 H형강 가격 인상",
+  "title": "김혜자 최불암 추도식",
   "cover": {
     "image": null,
     "lines": [
-      "미국에서",
-      "<r>매주</r>",
-      "가격 올린다"
+      "연기 인생 <r>50년</r>",
+      "함께했던",
+      "그 배우 떠났다"
     ],
     "badge": null,
-    "photo_query": "steel factory production industrial"
+    "photo_query": "korean actor memorial tribute"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 현대제철이 미국에서 H형강 가격을 매주 인상하고 있다. 건설 자재 얘기니까 남는 거 있다.",
-      "subtitle": "현대제철 미국서 주단위 가격 인상",
-      "photo_query": "construction steel beam building site"
+      "narration": "이거 모르고 지나가면 손해다. 한 배우가 세상을 떠났다. 아이고, 진짜 큰 배우 하나 가버렸다.",
+      "subtitle": "연기 거장 별세",
+      "photo_query": "korean television actor legacy"
     },
     {
       "image": null,
-      "narration": "H형강은 뭐냐. 건물, 다리, 산업용 구조물에 들어가는 핵심 자재다. 이게 매주 올라간다는 건 건설비 전체가 오른다는 뜻이다.",
-      "subtitle": "건설자재 H형강의 역할",
-      "photo_query": "structural steel h-beam construction"
+      "narration": "50년을 연기했다. 그 시간을 함께한 후배들이 다 모여 인사했다.",
+      "subtitle": "반세기의 연기인생",
+      "photo_query": "korean drama awards ceremony gathering"
     },
     {
       "image": null,
-      "narration": "미국 시장 전체가 가격을 올리고 있다는 신호다. 우리나라 건설사도 영향받는다. 수입 자재비가 오르니까.",
-      "subtitle": "미국 시장 영향으로 비용 증가",
-      "photo_query": "cargo shipping containers port"
+      "narration": "그중 한 배우는 앞에 선 영정 앞에서 이렇게 중얼거렸다. '너무 그리운 사람. 곧 만나자' 하고.",
+      "subtitle": "후배의 마지막 인사",
+      "photo_query": "memorial portrait flowers respect"
     },
     {
       "image": null,
-      "narration": "건설사, 설계사무소 일하는 사람들은 이 움직임을 놓쳤으면 안 된다. 지금부터 원가 관리 타이트하게 해야 한다.",
-      "subtitle": "건설비 상승세 주시 필요",
-      "photo_query": "construction project planning documents"
+      "narration": "연기판에 한 시대가 정말 가버렸다. 이 배우가 어떤 작품들을 남겼는지 다시 찾아보는 사람들이 많더라.",
+      "subtitle": "세대를 위로한 배우",
+      "photo_query": "korean classic television series"
     },
     {
       "image": null,
-      "narration": "쫌봐봐 채널에서 놓치면 안 될 경제 이슈, 계속 알려주겠다. 팔로우 하고 저장해 둬라.",
-      "subtitle": "매주 업데이트되는 경제 정보",
-      "photo_query": "smartphone notifications social media feed"
+      "narration": "당신이 본 그 드라마. 그 영화. 어쩌면 이 배우가 만든 것일 수도 있다. 더 알고 싶으면 팔로우해라. 쫌봐봐에서 계속 챙겨준다.",
+      "subtitle": "추억 속의 배우들",
+      "photo_query": "korean cinema golden age"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T14:42:50.780617+00:00"
+    "generated_at": "2026-10-30T18:57:53.058605+00:00"
   }
 }

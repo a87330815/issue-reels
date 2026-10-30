@@ -1,0 +1,53 @@
+{
+  "title": "허리 통증 잡는 수면 자세",
+  "cover": {
+    "image": null,
+    "lines": [
+      "자는 자세만 바꿔도",
+      "<r>허리 통증 30%</r>",
+      "줄어든다"
+    ],
+    "badge": null,
+    "photo_query": "person sleeping on side pillow"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 아침마다 허리가 끈기는 사람? 그거 자는 자세 때문이다.\n척추가 자연스러운 S자 곡선을 유지해야 하는데, 잘못된 자세로 자면 디스크에 자꾸 압력이 가해진다고.",
+      "subtitle": "척추에 압력 가하면 통증 발생",
+      "photo_query": "lower back pain morning"
+    },
+    {
+      "image": null,
+      "narration": "그래서 이거다. 옆으로 누워서 자되, 무릎 사이에 베개 하나 끼워놓는 거다.\n이렇게 하면 골반이 틀어지지 않고 척추가 일직선으로 유지된다.",
+      "subtitle": "옆으로 누워 무릎 사이 베개",
+      "photo_query": "sleeping side position knee pillow"
+    },
+    {
+      "image": null,
+      "narration": "등으로 누워서 자는 사람은 무릎 밑에 베개 넣고, 목 아래엔 작은 베개를 받혀야 한다.\n이 자세가 척추의 자연스러운 곡선을 가장 잘 지켜낸다.",
+      "subtitle": "누워 자는 경우 무릎·목 베개",
+      "photo_query": "sleeping back position pillow support"
+    },
+    {
+      "image": null,
+      "narration": "이 자세로 2주만 지켜보면 대부분 아침에 일어났을 때 허리 뻣뻣함이 한결 나아져 있다.\n척추 압력이 줄어드니까 자는 동안 디스크가 회복될 시간을 갖는 거지.",
+      "subtitle": "2주 후부터 허리 개운함 느낌",
+      "photo_query": "morning stretching neck massage"
+    },
+    {
+      "image": null,
+      "narration": "엎드려 자는 건 피하는 게 좋다. 목이랑 허리가 꼬이기 쉽거든.\n이런 수면 꿀팁 더 알고 싶으면 팔로우하고 저장해 둬.",
+      "subtitle": "엎드려 자는 자세는 금지",
+      "photo_query": "sleeping prone position bad posture"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T18:58:56.854946+00:00"
+  }
+}

@@ -4,36 +4,36 @@
     "image": null,
     "lines": [
       "같은 삼겹살",
-      "<r>2배 이상</r>",
-      "차이 난다"
+      "<r>2배 가격</r>",
+      "차이 났다"
     ],
     "badge": null,
-    "photo_query": "pork belly meat price comparison shopping"
+    "photo_query": "korean pork belly meat market store"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 같은 날 같은 삼겹살인데 싼 데는 3천원, 비싼 데는 7천원. 뭐라카노.",
-      "subtitle": "최저 3,150원 ~ 최고 6,900원",
-      "photo_query": "korean butcher shop meat counter display"
+      "narration": "이거 모르고 지나가면 손해다. 똑같은 삼겹살인데 한 곳은 3천원. 다른 곳은 7천원. 뭐라카노.",
+      "subtitle": "최저가 3,150원 vs 최고가",
+      "photo_query": "supermarket meat counter display"
     },
     {
       "image": null,
-      "narration": "한 끼에 3천원 이상 차이 난다. 한 달이면 10만원 가까이 날아간다.",
-      "subtitle": "같은 상품 다른 가격",
-      "photo_query": "family cooking korean barbecue grilling meat"
+      "narration": "같은 날 같은 품질 조사했다. 18곳 다 봤다. 그런데 가격 차이가 3천 5백원이다.",
+      "subtitle": "조사 18곳 | 차이 3,750원",
+      "photo_query": "shopping bags groceries receipt"
     },
     {
       "image": null,
-      "narration": "그러니 삼겹살 사러 갈 때. 무조건 비교하고 가라. 당신 지갑이 울고 있다.",
-      "subtitle": "물가 비교로 절약하기",
-      "photo_query": "person checking phone price comparison shopping"
+      "narration": "같은 거 사는데. 비싼 곳에서 사면 싼 곳보다 두 배를 낸다. 이거 진짜다.",
+      "subtitle": "현명한 쇼핑, 가격 비교 필수",
+      "photo_query": "comparing prices mobile phone shopping app"
     },
     {
       "image": null,
-      "narration": "쫌봐봐에서 계속 알려줄 테니까. 팔로우 해둬라.",
-      "subtitle": "더 많은 물가정보는 쫌봐봐에서",
-      "photo_query": "notification bell follow subscribe hand"
+      "narration": "여름철 고기는 특히 더하다. 어디서 사느냐가 지갑을 결정한다.",
+      "subtitle": "우리 채널 따라와. 꿀팁 더 있다",
+      "photo_query": "korean bbq grill preparation"
     }
   ],
   "meta": {
@@ -42,6 +42,6 @@
     "category": "물가",
     "attribution": "공공데이터포털 · 한국소비자원",
     "chart": null,
-    "generated_at": "2026-10-30T14:42:20.175515+00:00"
+    "generated_at": "2026-10-30T18:57:18.131043+00:00"
   }
 }

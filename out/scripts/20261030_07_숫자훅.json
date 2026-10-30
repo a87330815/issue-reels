@@ -1,45 +1,45 @@
 {
-  "title": "KBO 포수 캠프, 차세대 스타 찾는다",
+  "title": "할로윈 날씨 확인 필수",
   "cover": {
     "image": null,
     "lines": [
-      "중3 포수",
-      "<r>10명</r>",
-      "선발된다"
+      "할로윈 밤",
+      "<r>비</r>",
+      "올 확률 체크해라"
     ],
     "badge": null,
-    "photo_query": "baseball catcher youth training camp"
+    "photo_query": "halloween trick or treat rain weather"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. KBO가 중학교 3학년 포수들을 모아서 특별 캠프를 한다고 했다. 들어보니 강민호, 양의지 같은 스타급 포수들 키워낸 감독들이 직접 지도한다카더라.",
-      "subtitle": "KBO 차세대 포수 캠프 개최",
-      "photo_query": "young baseball player training coaching"
+      "narration": "이거 모르고 지나가면 손해다. 할로윈 날, 일부 지역에 빗소식이 떨어져 있다. 아이들 트릭오어트릿 계획 세웠으면 날씨부터 봐야 한다.",
+      "subtitle": "할로윈 날씨 미리 확인",
+      "photo_query": "children halloween costume trick or treat"
     },
     {
       "image": null,
-      "narration": "야야야. 이만수, 이성우, 강성우, 차일목. 이거 다 KBO 레전드 코치진이다. 포수 키우는 데 전문가들만 모았다는 소리다.",
-      "subtitle": "초호화 지도자 진용",
-      "photo_query": "professional baseball coach training session"
+      "narration": "우산 챙길지, 우비 입힐지를 지금부터 결정해야 한다. 지역마다 강수 확률이 다르다.",
+      "subtitle": "지역별 강수 확률 체크",
+      "photo_query": "weather forecast rain umbrella"
     },
     {
       "image": null,
-      "narration": "우리나라 포수 자원이 부족하다고 야구계가 계속 얘기했다. 그래서 이번엔 중학생 때부터 체계적으로 키우기로 한 거다.",
-      "subtitle": "차세대 포수 육성 전략",
-      "photo_query": "baseball youth development program"
+      "narration": "혹시나 해서 야외 활동 계획이 있으면 근처 기상청 날씨를 이제부터 매일 들어가서 봐라. 변수가 생길 수 있다.",
+      "subtitle": "날씨는 계속 업데이트",
+      "photo_query": "mobile weather app forecast check"
     },
     {
       "image": null,
-      "narration": "만약 여기서 뽑혀가면 프로 무대까지 가는 길이 확 줄어든다. 포수는 야구에서 가장 중요한 포지션이니까다.",
-      "subtitle": "포수는 야구의 핵심",
-      "photo_query": "baseball catcher position strategy game"
+      "narration": "할로윈 즐겨야 하는데 비 때문에 망치면 아까운 거다. 지금 한 번 더 챙기고 가자.",
+      "subtitle": "준비물 미리 체크",
+      "photo_query": "halloween preparation planning checklist"
     },
     {
       "image": null,
-      "narration": "야구 좋아하는 우리 아이, 혹시 포수 적성 있으면 이런 기회 놓치지 말아야 한다. 쫌봐봐 채널 팔로우해서 스포츠 뉴스 먼저 받아봐라.",
-      "subtitle": "차세대 야구 스타의 시작",
-      "photo_query": "young athlete baseball aspirations future"
+      "narration": "이런 정보들을 먼저 알아두면 당일날 밤에 안 울상한다. 팔로우해서 생활 정보 하나하나 놓치지 말아라.",
+      "subtitle": "생활 정보 미리 받기",
+      "photo_query": "family halloween night celebration"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T14:42:58.682362+00:00"
+    "generated_at": "2026-10-30T18:58:00.022342+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "기아 실적 사상 최대인데 주가는 왜 떨어졌나",
+  "title": "한화시스템 초소형 군집위성 수주",
   "cover": {
     "image": null,
     "lines": [
-      "실적 역대 최고",
-      "근데 주가는",
-      "<r>곤두박질</r>"
+      "한화가 또",
+      "<r>우주</r>",
+      "먹었다"
     ],
     "badge": null,
-    "photo_query": "car factory production line workers"
+    "photo_query": "satellite in space earth orbit"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 기아가 실적을 사상 최대로 냈다. 매출도 늘고 수익도 늘었다. 그런데 주가는 떨어졌다.",
-      "subtitle": "역대 최고 실적 기록",
-      "photo_query": "business profit chart growth"
+      "narration": "이거 모르고 지나가면 손해다. 한화시스템이 초소형 군집위성을 수주했다. 정부 주도로 추진하는 사업이다.",
+      "subtitle": "한화가 초소형 군집위성 수주",
+      "photo_query": "korean aerospace defense technology"
     },
     {
       "image": null,
-      "narration": "이거 봐봐. 돈을 많이 버는데 주가가 왜 떨어질까. 투자자들은 '앞으로가 더 중요하다'고 본다는 거다.",
-      "subtitle": "실적 좋아도 전망이 문제",
-      "photo_query": "stock market trading floor screens"
+      "narration": "군집위성. 뭔지 알아? 작은 위성 여러 개가 한 떼처럼 움직이며 지표면을 감시한다. 이거. 진짜 첨단 기술이다.",
+      "subtitle": "여러 위성이 떼로 움직이며 감시",
+      "photo_query": "satellite constellation network space"
     },
     {
       "image": null,
-      "narration": "글로벌 경제가 흔들리고 있다. 전기차 시장도 불확실하고 경쟁도 심해진다. 좋은 과거보다 불안한 미래가 더 크게 다가온다는 뜻이다.",
-      "subtitle": "불확실한 앞으로가 위험",
-      "photo_query": "electric vehicle charging station"
+      "narration": "왜 한화가? 국방·항공우주 분야에서 이미 검증됐거든. 이번 수주로 우리나라도 우주 기술에서 한 발 앞선다.",
+      "subtitle": "K-위성 경쟁력 강화",
+      "photo_query": "korean flag space technology innovation"
     },
     {
       "image": null,
-      "narration": "이게 주식 시장의 원리다. 지금 잘나가는 게 앞으로도 잘나간다는 보장은 없다. 투자자들은 항상 앞을 본다.",
-      "subtitle": "주식은 미래를 산다",
-      "photo_query": "investors analyzing financial data"
+      "narration": "위성 기술. 앞으로 국방은 물론 통신·기상·재난까지 영향을 미친다. 한화 같은 기업들이 이 영역을 주도하면 국가 경쟁력도 올라간다.",
+      "subtitle": "우주 기술이 국방·생활에 영향",
+      "photo_query": "satellite technology communication network"
     },
     {
       "image": null,
-      "narration": "당신도 뉴스는 봤겠지만 속사정까진 몰랐을 거다. 우리 채널 팔로우 하면 이런 거 매일 캐치할 수 있다.",
-      "subtitle": "쫌봐봐에서 매일 배우기",
-      "photo_query": "smartphone notification alert screen"
+      "narration": "쫌봐봐 채널에서 놓치면 안 될 산업 뉴스. 지금 팔로우해라. 내일의 투자는 오늘의 정보에서 시작된다.",
+      "subtitle": "산업 뉴스는 쫌봐봐에서",
+      "photo_query": "person watching tablet news technology"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T14:43:06.159997+00:00"
+    "generated_at": "2026-10-30T18:58:07.252757+00:00"
   }
 }

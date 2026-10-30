@@ -1,0 +1,53 @@
+{
+  "title": "교통비 반으로 줄이는 환승 할인 꿀팁",
+  "cover": {
+    "image": null,
+    "lines": [
+      "환승 할인",
+      "<r>월 6만원</r>",
+      "절약하는 법"
+    ],
+    "badge": null,
+    "photo_query": "public transportation card payment"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 대중교통 타면서 돈 버리고 있었어? 환승 할인 제대로 알면 월 6만원을 확 줄일 수 있다니까.",
+      "subtitle": "환승 할인이 뭔데?",
+      "photo_query": "bus metro transfer ticket"
+    },
+    {
+      "image": null,
+      "narration": "같은 노선 버스 두 번 타면 1,250원인데, 환승으로 하면 450원만 내면 된다. 한 번에 800원이 줄어난다는 얘기다.",
+      "subtitle": "왕복 버스 = 800원 절약",
+      "photo_query": "bus transportation fare card"
+    },
+    {
+      "image": null,
+      "narration": "버스에서 지하철로, 지하철에서 버스로 타는 것도 마찬가지. 1시간 안에 환승하면 환승 요금이 적용되니까, 외출할 때 무조건 카드 하나로 쭉 타야 한다.",
+      "subtitle": "1시간 안에 환승 = 할인",
+      "photo_query": "transportation card transit system"
+    },
+    {
+      "image": null,
+      "narration": "매일 왕복 이동 시 하루에 1,600원씩 절약되고, 한 달이면 6만원이 되는 거다. 왜냐? 환승할 때마다 요금이 초기화되기 때문이다.",
+      "subtitle": "월 6만원 절약 효과",
+      "photo_query": "transportation cost savings chart"
+    },
+    {
+      "image": null,
+      "narration": "더 이상 다른 카드로 갈아타지 마. 같은 카드, 한 번의 터치로 쭉 이동하면 된다. 이런 꿀팁 더 보고 싶으면 팔로우해 봐.",
+      "subtitle": "한 장의 카드로 쭉 이동",
+      "photo_query": "commuter holding transportation card"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T18:58:48.255303+00:00"
+  }
+}

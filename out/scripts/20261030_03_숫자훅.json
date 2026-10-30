@@ -1,39 +1,45 @@
 {
-  "title": "이예원 KLPGA 2라운드 단독 선두",
+  "title": "넥슨 신작 게임, 트위치로 출시 전 글로벌 공략",
   "cover": {
     "image": null,
     "lines": [
-      "2라운드만에",
-      "<r>단독선두</r>",
-      "탈진했다"
+      "트위치에서",
+      "<r>출시 전부터</r>",
+      "글로벌 마케팅"
     ],
     "badge": null,
-    "photo_query": "female golfer swinging club championship"
+    "photo_query": "twitch streaming gaming broadcast"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. KLPGA 에쓰오일 대회. 2라운드 끝났는데 벌써 한 명이 따로 튀어나갔다.",
-      "subtitle": "KLPGA 에쓰오일 대회 2라운드",
-      "photo_query": "korea golf tournament leaderboard"
+      "narration": "이거 모르고 지나가면 손해다. 넥슨의 신작 게임이 아직 안 나왔는데 벌써 트위치에서 난리다. 출시 전에 이미 서구권 크리에이터들을 모아가지고 마케팅을 시작했다.",
+      "subtitle": "출시 전 글로벌 마케팅 전략",
+      "photo_query": "streaming creator gaming computer setup"
     },
     {
       "image": null,
-      "narration": "이예원이다. 현재 단독 선두 자리를 잡아뒀다. 뒤따르는 선수들과는 거리가 벌어진 상태다.",
-      "subtitle": "이예원 단독 선두",
-      "photo_query": "professional golfer winner celebration"
+      "narration": "왜 이러냐고? 모바일 게임 시장이 이제 글로벌다 아이가. 한국에서만 팔면 안 된다.",
+      "subtitle": "모바일 게임의 글로벌 경쟁",
+      "photo_query": "mobile gaming worldwide market"
     },
     {
       "image": null,
-      "narration": "골프는 18홀을 다 쳐야 끝난다. 아직 멀었다는 뜻이다. 여기서 얼마나 버티느냐가 관건이다.",
-      "subtitle": "남은 라운드가 관건",
-      "photo_query": "golf course green fairway"
+      "narration": "트위치콘이라는 스트리밍 이벤트에 참여시키고 유명 크리에이터들을 통해 미리 알리는 거야. 이게 바로 요새 게임 출시 방식이다.",
+      "subtitle": "크리에이터 마케팅의 표준화",
+      "photo_query": "twitch con convention gaming event"
     },
     {
       "image": null,
-      "narration": "앞서가는 선수도, 뒤따르는 선수도 다 눈독 들이고 있을 거다. 마지막까지 긴장할 수밖에 없다.",
-      "subtitle": "최종 우승까지 숨 고르기",
-      "photo_query": "golfers competing on course pressure"
+      "narration": "결국 뭐냐면. 게임 하나 나온다고 해도 이제는 한국만 봐서는 안 된다. 글로벌로 한 번에 뜨려면 스트리머들이 얼마나 도와주냐가 중요하다.",
+      "subtitle": "스트리머 영향력의 중요성",
+      "photo_query": "gaming influencer streaming audience"
+    },
+    {
+      "image": null,
+      "narration": "앞으로 게임 출시 소식은 유튜브나 트위치에서 먼저 터지는 시대다. 팔로우하고 있으면 다른 사람들보다 한 발 빠르게 알 수 있다.",
+      "subtitle": "팔로우해야 할 이유",
+      "photo_query": "gaming news streaming platform notification"
     }
   ],
   "meta": {
@@ -42,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-30T14:42:32.663461+00:00"
+    "generated_at": "2026-10-30T18:57:31.844012+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "주차장 극과극",
+  "title": "냉동실 보물 실종사건",
   "cover": {
     "image": null,
     "lines": [
-      "좋은 자리 있나",
-      "<r>10분 돌다가</r>",
-      "제일 먼 데 댐"
+      "숨겨둔",
+      "<r>아이스크림</r>",
+      "누가 먹었냐고"
     ],
     "badge": null,
-    "photo_query": "parking lot car spaces"
+    "photo_query": "freezer ice cream hidden"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "마트 들어가기 전 주차장 입구. '어? 저기 비는 자리 있네' 하면서 시작한다니까.",
-      "subtitle": "오늘은 운 좋은 날",
-      "photo_query": "parking lot entrance car"
+      "narration": "야야야, 냉동실 맨 뒤에 몰래 숨겨뒀던 그 아이스크림 있잖아. 일주일을 기다렸다고.",
+      "subtitle": "몰래 숨긴 보물",
+      "photo_query": "freezer back corner popsicle"
     },
     {
       "image": null,
-      "narration": "근데 가보니 이미 차가 기다리고 있고, 다음 자리도 그렇고... 결국 10분을 헤맨다.",
-      "subtitle": "어? 여긴? 저긴? 뭐 다 차네",
-      "photo_query": "crowded parking lot full"
+      "narration": "오늘 저녁, 피곤한데 그거 꺼내 먹으려고 냉동실 열었어. 어? 없네? 뭐가 없어?",
+      "subtitle": "그 느낌, 알지?",
+      "photo_query": "shocked surprised empty freezer"
     },
     {
       "image": null,
-      "narration": "그렇게 돌다 돌다 결국 건물에서 제일 멀리 있는 자리에 둔다. 혼자만 당한 게 아닌데?",
-      "subtitle": "먼 데가 최고의 자리다",
-      "photo_query": "car parked far away parking lot"
+      "narration": "\"누가 먹었어?\" 물어도 다들 모른대. 근데 젤 웃기는 건, 집에는 나밖에 안 있었다니까.",
+      "subtitle": "범인은 바로",
+      "photo_query": "confused frustrated person thinking"
     },
     {
       "image": null,
-      "narration": "그런데 돌아올 때 보니 처음에 있던 자리들이 다 비어있다. 이거 뭐 하는 짓이냐고.",
-      "subtitle": "운명 같은 거 있잖아",
-      "photo_query": "empty parking spaces outdoor"
+      "narration": "결국 어제 밤 나 자신이 먹었고, 깜빡했던 거다. 아 이 배신감. 나한테 배신당했네.",
+      "subtitle": "범인은 나였다",
+      "photo_query": "regret disappointed hand face"
     },
     {
       "image": null,
-      "narration": "이런 거 매번 반복돼는데, 혼자만 이래? 아니지 우리 다 이것 같은데. 팔로우해서 함께 웃자니까.",
-      "subtitle": "나만 이런 거 아니지?",
-      "photo_query": "shopping mall parking lot"
+      "narration": "이런 거 또 겪으면 팔로우해. 같이 울어주께.",
+      "subtitle": "공감의 힘",
+      "photo_query": "comfort friend laugh together"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-30T14:43:34.809008+00:00"
+    "generated_at": "2026-10-30T18:58:26.248120+00:00"
   }
 }

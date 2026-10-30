@@ -1,45 +1,45 @@
 {
-  "title": "허리 통증을 확 줄이는 수면 자세",
+  "title": "30초 손 씻기로 감기 예방률 50% 올리기",
   "cover": {
     "image": null,
     "lines": [
-      "자세만 바꿔도",
-      "<r>허리 통증 80% 완화</r>",
-      "2주 안에"
+      "30초 손 씻기로",
+      "<r>감기 50% 예방</r>",
+      "된다"
     ],
     "badge": null,
-    "photo_query": "person sleeping back posture"
+    "photo_query": "handwashing soap bubbles"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "허리 통증이 있다면 지금부터 알려줄 자세 하나만 바꿔봐라. 이거 진짜 효과 있다.",
-      "subtitle": "허리 통증 있을 때 수면 자세",
-      "photo_query": "back pain sleeping"
+      "narration": "야 임마, 손 씻기 진짜 대충 하는 거 아냐? 30초만 제대로 하면 감기 예방률이 50%까지 올라간다고 한다.",
+      "subtitle": "30초 손 씻기 = 감기 50% 예방",
+      "photo_query": "washing hands sink timer"
     },
     {
       "image": null,
-      "narration": "일단 옆으로 누우면 안 된다. 척추가 휘어져서 통증이 더 심해진다. 반드시 <r>누운 자세</r>로 자야 한다.",
-      "subtitle": "옆으로 누우면 척추 변형",
-      "photo_query": "woman sleeping side position"
+      "narration": "먼저 미지근한 물에 손을 적신 다음, 비누를 충분히 낸다. 손가락 사이사이, 손목, 손톱 밑을 집중적으로 비벼야 한다.",
+      "subtitle": "손가락·손목·손톱 밑 집중",
+      "photo_query": "hand washing technique fingers palms"
     },
     {
       "image": null,
-      "narration": "허리 아래에 베개나 쿠션을 받친다. 이렇게 하면 척추의 자연스러운 S자 곡선이 유지되거든.",
-      "subtitle": "허리 아래 베개 받치기",
-      "photo_query": "pillow under lower back support"
+      "narration": "여기가 핵심이다. 세균은 물로만 헹굼질해선 안 떨어진다. 비누거품이 세균 막을 녹여버린다고 생각하면 된다. 20초 이상은 비벼야 한다.",
+      "subtitle": "비누거품이 세균 막 파괴",
+      "photo_query": "soap bubbles antimicrobial washing"
     },
     {
       "image": null,
-      "narration": "무릎 아래도 쿠션을 하나 더 받친다. 이 두 지점을 받치면 척추 전체가 균형 잡혀서 야간 통증이 줄어든다.",
-      "subtitle": "무릎 아래 쿠션 추가",
-      "photo_query": "knees pillow support sleeping position"
+      "narration": "마지막으로 흐르는 물에 깨끗하게 헹구고, 수건이나 종이타올로 닦는다. 손을 완전히 말리지 않으면 세균이 또 번식한다.",
+      "subtitle": "흐르는 물 헹굼 + 완전히 말리기",
+      "photo_query": "drying hands paper towel"
     },
     {
       "image": null,
-      "narration": "이 자세로 2주만 꾸준히 자 봐라. 아침에 일어날 때 허리 통증이 훨씬 가벼워진 자신을 느낄 거다. 이런 꿀팁 더 보고 싶으면 팔로우 해라.",
-      "subtitle": "2주 후 통증 개선 체감",
-      "photo_query": "person waking up refreshed morning"
+      "narration": "외출 후, 밥 먹기 전, 화장실 다녀온 뒤 꼭 이렇게 30초씩 씻어라. 감기뿐만 아니라 장염도 예방된다. 이런 꿀팁 더 보고 싶으면 팔로우.",
+      "subtitle": "하루 5회 이상 실천하기",
+      "photo_query": "healthy habits daily routine"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-30T14:44:09.412220+00:00"
+    "generated_at": "2026-10-30T18:59:04.143812+00:00"
   }
 }
