@@ -1,0 +1,53 @@
+{
+  "title": "카톡 읽씹 세대 전쟁",
+  "cover": {
+    "image": null,
+    "lines": [
+      "카톡 읽고",
+      "<r>안 읽은 척</r>",
+      "하는 게 예의다"
+    ],
+    "badge": null,
+    "photo_query": "mobile phone message notification"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "어? 카톡이 왔네. 읽어봤는데 답할 말이 없다. 이럼 어떻게 하나?",
+      "subtitle": "읽은 티 내면 안 되지",
+      "photo_query": "smartphone kakao message read"
+    },
+    {
+      "image": null,
+      "narration": "3초 생각했는데 뭐라 답해야 할지 모르겠고. 아 이거 읽씹하는 게 맞아. 상대방 기분 안 좋게 하지 않으려고.",
+      "subtitle": "읽씹이 진짜 배려다",
+      "photo_query": "person thinking phone confused"
+    },
+    {
+      "image": null,
+      "narration": "근데 요즘 젊은 세대는 뭐라 카데? '읽고 답 안 하면 무례다'고? 야 미쳤나. 다 답할 수야 없지.",
+      "subtitle": "세대가 다르면 문화도 다르다",
+      "photo_query": "generation gap communication conflict"
+    },
+    {
+      "image": null,
+      "narration": "결국 카톡은 문자기도 하고 대화기도 한 거지. 뭐가 정답은 아니고. 그냥 마음으로 통하면 되는 거다.",
+      "subtitle": "상대방 기분만 생각하면 된다",
+      "photo_query": "friends laughing mobile phone together"
+    },
+    {
+      "image": null,
+      "narration": "이런 공감 콘텐츠 더 보고 싶으면 팔로우! 우리 같이 웃자.",
+      "subtitle": "쫌봐봐를 팔로우하세요",
+      "photo_query": "follow button subscribe notification"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T09:46:53.071604+00:00"
+  }
+}

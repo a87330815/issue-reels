@@ -1,0 +1,53 @@
+{
+  "title": "라면 물 양 실수의 진짜 이유",
+  "cover": {
+    "image": null,
+    "lines": [
+      "라면 끓일 때",
+      "<r>물 양 맞춘</r>",
+      "적 없지?"
+    ],
+    "badge": null,
+    "photo_query": "ramen pot water cooking"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "봐봐, 라면 끓이는데 물 딱 맞춘다고 해도 매번 틀린다니까. 국물이 뚝 떨어졌거나 국물이 넘쳐가지고.",
+      "subtitle": "물 양이 왜 매번 달라?",
+      "photo_query": "noodle pot boiling"
+    },
+    {
+      "image": null,
+      "narration": "사실 이게 라면 때문이 아니라 우리 눈 때문이다 아이가. 라면을 불려서 무를수록 부풀어 오른다고. 그럼 당연히 국물은 줄어든다고.",
+      "subtitle": "라면이 팽창하면서 국물이 줄어든다",
+      "photo_query": "ramen noodles swelling expanding"
+    },
+    {
+      "image": null,
+      "narration": "그래서 물을 넉넉히 부으면 국물이 많고, 적게 부으면 타버린다. 이게 라면의 숙명이다. 우리가 잘못한 게 아니라니까.",
+      "subtitle": "결국 물 양으로 승부나는 것",
+      "photo_query": "bowl ramen noodles soup"
+    },
+    {
+      "image": null,
+      "narration": "그 다음부턴 계속 물을 넣고 빼고 조절하다가 결국 적당한 국물이 되는 거지. 이게 라면 끓이기의 진짜 원리다 아이가.",
+      "subtitle": "조절하면서 결국 맞춰진다",
+      "photo_query": "adding water to pot cooking"
+    },
+    {
+      "image": null,
+      "narration": "이런 꿀팁들이 더 궁금하면 팔로우 해봐. 라면도 물론 맛있어진다니까.",
+      "subtitle": "팔로우로 라면 완성",
+      "photo_query": "steaming ramen bowl chopsticks"
+    }
+  ],
+  "meta": {
+    "format": "음식공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T09:47:06.119287+00:00"
+  }
+}

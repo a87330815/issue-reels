@@ -1,62 +1,53 @@
 {
-  "title": "압구정동 신현대11차 평당 1.66억",
+  "title": "9000원에 40가지 무제한 뷔페",
   "cover": {
     "image": null,
     "lines": [
-      "압구정동",
-      "<r>평당 1.66억</r>",
-      "이거 현실이다"
+      "9000원에",
+      "<r>40가지</r>",
+      "무제한이라고?"
     ],
     "badge": null,
-    "photo_query": "luxury apartment gangnam seoul high rise"
+    "photo_query": "korean buffet restaurant food variety"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 압구정동 신현대11차가 방금 실거래가 나왔다. 평당 1.66억이다.",
-      "subtitle": "압구정동 신현대11차 거래가 공개",
-      "photo_query": "gangnam apartment building exterior"
+      "narration": "이거 모르고 지나가면 손해다. 충청남도 홍성에 가성비 뷔페가 있대. 9000원에 40가지 음식을 무제한으로 먹을 수 있다고 한다.",
+      "subtitle": "9000원에 40가지 무제한",
+      "photo_query": "buffet restaurant diverse food plates"
     },
     {
       "image": null,
-      "narration": "183제곱미터에 92억. 40년 된 건물인데 말이다. 여기가 왜 이 가격일까. 압구정이니까다.",
-      "subtitle": "92억원 / 1983년 준공",
-      "photo_query": "apartment price tags real estate market"
+      "narration": "이게 가능한 이유가 뭘까. 현지 식재료를 직접 조달하고, 주방 운영을 효율적으로 한다고 한다. 지역 농산물을 바로 사용하니까 유통비가 확 줄어드는 거다.",
+      "subtitle": "지역 식재료 직접 조달",
+      "photo_query": "fresh local vegetables market korea"
     },
     {
       "image": null,
-      "narration": "같은 달 다른 지역 거래를 봐라. 대치동은 평당 3400만, 정자동은 3380만이다. 압구정은 5배다.",
-      "subtitle": "지역별 평당가 격차 심각",
-      "photo_query": "seoul map districts comparison"
+      "narration": "밥, 국, 반찬, 구이, 튀김, 면 요리까지. 종류가 진짜 많다. 한 끼 식사로는 충분한 구성이다.",
+      "subtitle": "밥·국·반찬·구이·튀김·면",
+      "photo_query": "korean rice soup side dishes composition"
     },
     {
       "image": null,
-      "narration": "강남의 명품 동네. 여기서는 건물 나이도 상관없다. 위치가 전부다.",
-      "subtitle": "위치가 가격을 결정한다",
-      "photo_query": "street view gangnam luxury shops"
+      "narration": "요즘 뷔페 물가를 생각해보면 이 정도 가격은 정말 드물다. 홍성 근처 사람들이나 이 정보를 아는 사람들은 자주 찾는다고 한다.",
+      "subtitle": "가성비 핫플레이스",
+      "photo_query": "korea local restaurant busy customers"
     },
     {
       "image": null,
-      "narration": "더 자세한 거래 정보는 우리 채널에서 계속 공개한다. 팔로우 해둬라.",
-      "subtitle": "공공데이터로 확인하세요",
-      "photo_query": "data analytics dashboard chart"
+      "narration": "이런 핫플레이스 정보는 계속 올라온다. 쫌봐봐 팔로우해서 손해 보는 가성비 맛집 정보를 먼저 받아봐라.",
+      "subtitle": "팔로우하고 핫플 정보 받기",
+      "photo_query": "smartphone social media follow notification"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        1.66,
-        1.3,
-        1.27,
-        1.14,
-        1.12
-      ],
-      "style": "bars"
-    },
-    "generated_at": "2026-10-30T02:31:58.228146+00:00"
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-10-30T09:46:21.252940+00:00"
   }
 }

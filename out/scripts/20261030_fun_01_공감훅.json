@@ -1,0 +1,46 @@
+{
+  "title": "배달앱 30분 고민의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배달앱 30분",
+      "<r>고민하고</r>"
+    ],
+    "badge": null,
+    "photo_query": "smartphone food delivery app scrolling"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "어제 뭐 먹었지? 오늘은 다른 거 먹어야겠다. 배달앱 켜고 휘리릭 넘겨본다.",
+      "subtitle": "새로운 메뉴 찾기 시작",
+      "photo_query": "hand scrolling phone restaurant menu"
+    },
+    {
+      "image": null,
+      "narration": "와 이거 괜찮을 것 같은데? 이거는? 저거는 어떤데... 30분이 지나간다. 아 미치겠네.",
+      "subtitle": "무한 고민의 루프",
+      "photo_query": "confused person thinking difficult choice"
+    },
+    {
+      "image": null,
+      "narration": "결국 다시 위로 스크롤. 아 그냥 항상 먹던 거 시킬까.",
+      "subtitle": "결국 단골로 돌아가기",
+      "photo_query": "person ordering favorite food familiar restaurant"
+    },
+    {
+      "image": null,
+      "narration": "뭐 새로운 거 먹고 싶다고 했는데, 손가락은 자동으로 단골 가게를 누르고 있다 아이가.",
+      "subtitle": "우리 모두 같은 사람",
+      "photo_query": "delivery confirmation order notification"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T09:46:46.388421+00:00"
+  }
+}

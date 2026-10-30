@@ -1,0 +1,53 @@
+{
+  "title": "요즘 물가 체크리스트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "요즘 이것들",
+      "<r>얼마까지</r>",
+      "올랐는지 아나"
+    ],
+    "badge": null,
+    "photo_query": "korean grocery store prices vegetables meat"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 요즘 장 보다가 깜놀한 분들 많을 기다. 이 물가들 진짜 얼마나 올랐는지 봐봐.",
+      "subtitle": "장 본 지 얼마 됐어요?",
+      "photo_query": "person shopping at korean market with"
+    },
+    {
+      "image": null,
+      "narration": "삼겹살. 100그램에 4천 원대다. 소짓값이랑 비슷해졌네. 한우는 뭐하냐고.",
+      "subtitle": "삼겹살 100g 약 4,189원",
+      "photo_query": "korean pork belly meat display counter"
+    },
+    {
+      "image": null,
+      "narration": "배추는 8천 원 중후반. 김장철 생각하면 한숨 나온다. 대파도 3천 원 중반이고.",
+      "subtitle": "배추 4,900~5,500원대 흘러",
+      "photo_query": "fresh korean cabbage and green onions"
+    },
+    {
+      "image": null,
+      "narration": "라면도 3~4천 원대. 우유도 3천 원을 넘었다. 다 올랐다 아이가.",
+      "subtitle": "라면·우유도 3천 원대 이상",
+      "photo_query": "instant ramen noodles milk cartons store"
+    },
+    {
+      "image": null,
+      "narration": "이거 체크하고 장 보면 손해 안 본다. 요즘 물가 현황 알아야 맞다. 더 알아야 할 게 있으면 팔로우 해라.",
+      "subtitle": "장 보기 전에 꼭 체크하세요",
+      "photo_query": "woman checking shopping list at store"
+    }
+  ],
+  "meta": {
+    "format": "체크리스트",
+    "source": "kca_product_price",
+    "category": "물가",
+    "attribution": "공공데이터포털 · 한국소비자원",
+    "chart": null,
+    "generated_at": "2026-10-30T09:45:53.873170+00:00"
+  }
+}

@@ -1,45 +1,45 @@
 {
-  "title": "흰 운동화 새것처럼 복원하기",
+  "title": "옷 관리 꿀팁",
   "cover": {
     "image": null,
     "lines": [
-      "흰 운동화",
-      "<y>베이킹소다 한 숟가락</y>",
-      "새것처럼 복원"
+      "니트 보풀부터",
+      "<r>흰옷 누런때까지</r>",
+      "5분 해결"
     ],
     "badge": null,
-    "photo_query": "white sneaker cleaning"
+    "photo_query": "clothing care sweater lint"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "운동화 노래진 거 때문에 자꾸 신기 꺼려지지? 집에 있는 재료로 30분 안에 새것처럼 만들어버린다.",
-      "subtitle": "베이킹소다+물+칫솔",
-      "photo_query": "white sneaker stain close up"
+      "narration": "야야야, 니트 입고 나면 보풀이 올라오잖아. 이거 손톱으로 까면 안 돼, 옷을 죽인다.",
+      "subtitle": "니트 보풀 제거법",
+      "photo_query": "sweater pilling fuzzy fabric"
     },
     {
       "image": null,
-      "narration": "먼저 베이킹소다 3큰술에 물 2큰술을 섞어서 반죽 만든다. 이걸 노랗게 변한 부분에 골골 문질러주는 거야.",
-      "subtitle": "베이킹소다 반죽 만들기",
-      "photo_query": "baking soda paste mixing"
+      "narration": "면도기를 들고 가만히 밀어내려. 약한 압력으로 30초면 깨끗이 떨어진다. 섬유 손상이 없거든.",
+      "subtitle": "면도기로 부드럽게 톱톱톱",
+      "photo_query": "razor removing fabric pilling"
     },
     {
       "image": null,
-      "narration": "낡은 칫솔로 5분 정도 문질러주면, 산 성분이 때를 분해해버려서 하얀 색이 살아난다.",
-      "subtitle": "칫솔로 5분 문질러주기",
-      "photo_query": "toothbrush cleaning white shoe"
+      "narration": "이제 흰옷 누런때 얘기야. 산소계 표백제를 뜨거운 물에 녹여서 옷을 30분 불리면 된다.",
+      "subtitle": "산소계 표백제 30분 불리기",
+      "photo_query": "white shirt soaking bleach solution"
     },
     {
       "image": null,
-      "narration": "물로 헹궈서 신문지 위에 놔두고 하루 말리면 끝. 비용은 0원, 버릴 재료만 썼다.",
-      "subtitle": "물로 헹굼 후 말리기",
-      "photo_query": "wet shoes drying sunlight"
+      "narration": "화학 반응이라 자연스럽게 때가 떠올라온다. 그담엔 세탁기 돌리고 말이야.",
+      "subtitle": "때가 저절로 떠올라온다",
+      "photo_query": "stain removal whitening process"
     },
     {
       "image": null,
-      "narration": "이런 일상 꿀팁들이 더 알고 싶으면 팔로우해 봐. 인생 편하게 만드는 것들만 모아놨거든.",
-      "subtitle": "팔로우하고 저장하세요",
-      "photo_query": "satisfied person thumbs up"
+      "narration": "이 두 가지 팁만 해도 옷이 새것처럼 살아난다. 이런 꿀팁 더 보고 싶으면 팔로우해.",
+      "subtitle": "새것처럼 부활한 옷",
+      "photo_query": "clean fresh clothes folded"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-30T02:33:14.106859+00:00"
+    "generated_at": "2026-10-30T09:47:33.474620+00:00"
   }
 }

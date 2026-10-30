@@ -1,35 +1,53 @@
 {
-  "title": "비트코인 시세",
+  "title": "삼성전자 주가의 함정",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>비트코인 시세</r>",
-      "이거 실환가요"
+      "삼성전자",
+      "배당만 <r>3%</r>?",
+      "주가는 왜"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "samsung electronics stock market chart"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '비트코인 시세' 관련 트렌드 — 비트코인 3.7% 하락해 7만8000달러대…이더리움·리플도 급락. 수치로 확인해보자.",
-      "subtitle": "'비트코인 시세' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. 삼성전자. 배당이 3%인데, 지금 주식 시장에서 뭐라고 할까? 수익성 낮은 기업 취급한다. 그런데 이게 말이 되나.",
+      "subtitle": "배당 수익률 3%의 의미",
+      "photo_query": "dividends payment stock certificate"
     },
     {
       "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "삼성은 엄청난 현금 보유하고 있다. 그런데도 배당으로 못 풀어준단 말이다. 왜? 보수적이다. 너무 보수적이다.",
+      "subtitle": "현금 보유만 많고 배당 아껴",
+      "photo_query": "cash reserve money stack financial"
+    },
+    {
+      "image": null,
+      "narration": "투자자들은 지금 뭘 원할까? 현금 돌려달라는 거다. 지금 이 상황에서는 현금이 수익 기회보다 크다는 신호다.",
+      "subtitle": "투자자들의 요구",
+      "photo_query": "investor meeting boardroom discussion"
+    },
+    {
+      "image": null,
+      "narration": "삼성이 보수 정책을 안 바꾸면? 주가는 계속 내린다. 이게 바로 시장의 신호다. Google Trends에서도 지금 뜨는 이유가 이거다.",
+      "subtitle": "보수 정책의 대가",
+      "photo_query": "stock market decline downward arrow"
+    },
+    {
+      "image": null,
+      "narration": "주식 투자할 때, 배당률만 보면 틀린다. 회사의 현금 정책. 뭘 안 하고 있는지를 봐야 한다. 쫌봐봐. 팔로우하고 이런 숨겨진 신호 놓치지 마라.",
+      "subtitle": "현금 정책이 주가를 좌우한다",
+      "photo_query": "financial analysis investment strategy"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "",
+    "source": "google_trends",
     "category": "당일 화제 이슈",
-    "attribution": "",
+    "attribution": "Google Trends",
     "chart": null,
-    "tone": "경상도",
-    "generated_at": "2026-10-30T02:32:18.592576+00:00"
+    "generated_at": "2026-10-30T09:46:41.114402+00:00"
   }
 }

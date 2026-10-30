@@ -1,62 +1,53 @@
 {
-  "title": "동천동 10월 아파트 실거래",
+  "title": "자산 관련 당 지도부 발언",
   "cover": {
     "image": null,
     "lines": [
-      "동천동 최고가",
-      "<r>3.1억</r>",
-      "칠곡네스빌"
+      "한국인 절반이",
+      "<r>3억</r>",
+      "못 모았다"
     ],
     "badge": null,
-    "photo_query": "apartment complex exterior modern building"
+    "photo_query": "korean family financial planning calculator"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 동천동. 10월에 칠곡네스빌이 3억 1천만 원에 팔렸다. 84제곱미터. 가장 비싼 거다.",
-      "subtitle": "칠곡네스빌 3.1억",
-      "photo_query": "apartment building entrance lobby"
+      "narration": "이거 모르고 지나가면 손해다. 최근 자산 문제가 핫이슈다. 국민 대다수가 자산 형성에 진짜 어려워하고 있다는 거다.",
+      "subtitle": "자산 형성의 현실",
+      "photo_query": "person worried financial stress documents"
     },
     {
       "image": null,
-      "narration": "같은 면적대 다른 단지들은 어때냐고? 칠곡3화성타운은 2억 5천500만 원. 약 5천500만 원 싸다.",
-      "subtitle": "칠곡3화성타운 2.5억",
-      "photo_query": "apartment complex exterior daytime"
+      "narration": "뭐라카노. 평균 자산 목표액하고 현실하고 차이가 크다. 우리가 생각하는 것만큼 모으기 힘들다는 거다.",
+      "subtitle": "목표 vs 현실의 격차",
+      "photo_query": "gap between expectations reality chart"
     },
     {
       "image": null,
-      "narration": "60제곱미터대는 더 싼다. 부영그린타운 2단지가 2억 4천200만 원. 화성센트럴파크는 1억 9천만 원까지 내려간다.",
-      "subtitle": "60㎡대 1.9~2.4억",
-      "photo_query": "real estate price comparison chart"
+      "narration": "이런 이슈들 때문에 정치권에서도 말이 많다. 자산 불평등, 세대 간 부의 격차가 주요 쟁점이 되고 있다.",
+      "subtitle": "정책 논쟁으로 확대",
+      "photo_query": "politics debate policy discussion"
     },
     {
       "image": null,
-      "narration": "동천동 집 사려면 이거 체크해라. 면적 먼저 보고. 건축연도. 층수까지 따져야 가격 예상이 된다.",
-      "subtitle": "면적·연도·층수가 결정다",
-      "photo_query": "apartment building specifications checklist"
+      "narration": "개인이 할 수 있는 건 뭘까. 작은 금액이라도 꾸준히 자산을 늘리는 습관이 중요하다.",
+      "subtitle": "작은 것부터 시작",
+      "photo_query": "saving money piggy bank coins"
     },
     {
       "image": null,
-      "narration": "더 자세한 거래 데이터는 쫌봐봐에서 계속 올라온다. 팔로우 해라. 놓치지 말고.",
-      "subtitle": "쫌봐봐 팔로우 필수",
-      "photo_query": "smartphone notification bell icon"
+      "narration": "자산 형성 전략, 꼭 필요한 시대다. 쫌봐봐를 팔로우 해라. 돈 되는 정보 계속 올린다.",
+      "subtitle": "지금 시작이 답다",
+      "photo_query": "young adult planning financial future"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        3.1,
-        2.5,
-        2.4,
-        1.9,
-        1.9
-      ],
-      "style": "bars"
-    },
-    "generated_at": "2026-10-30T02:31:51.586781+00:00"
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-10-30T09:46:13.680462+00:00"
   }
 }

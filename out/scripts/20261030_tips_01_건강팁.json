@@ -1,0 +1,53 @@
+{
+  "title": "하루 2리터는 거짓? 물 마시기 진짜 법칙",
+  "cover": {
+    "image": null,
+    "lines": [
+      "2리터는 거짓이다",
+      "<r>체중의 2~3%</r>",
+      "마셔야 한다"
+    ],
+    "badge": null,
+    "photo_query": "drinking water glass hydration"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 다들 하루 2리터 물 마셔야 한다고 알지? 근데 이게 다 거짓이다. 사람마다 필요한 양이 다르거든.",
+      "subtitle": "2리터 신화는 과학이 아니다",
+      "photo_query": "water bottle 2 liters myth"
+    },
+    {
+      "image": null,
+      "narration": "정답은 체중의 2~3%다. 예를 들어 60kg 사람이면 하루 1.2~1.8리터면 충분하다. 본인 체중에 0.03을 곱해 봐.",
+      "subtitle": "자기 체중 × 0.03 = 적정량",
+      "photo_query": "weight scale calculation math"
+    },
+    {
+      "image": null,
+      "narration": "근데 이렇게 마셔도 효과가 없으면? 한 번에 쭉 마시지 말고, 2시간마다 200ml씩 자주 자주 마셔봐. 소화도 잘되고 피부도 개선된다.",
+      "subtitle": "2시간마다 200ml 자주 마시기",
+      "photo_query": "regular water drinking schedule timer"
+    },
+    {
+      "image": null,
+      "narration": "그리고 물 대신 차, 우유, 과일 이런 것도 수분이다. 무조건 물만 마셔야 한다고 스트레스받지 말고, 편하게 마셔.",
+      "subtitle": "모든 음료가 다 수분이다",
+      "photo_query": "herbal tea milk fruit juice beverages"
+    },
+    {
+      "image": null,
+      "narration": "이런 식으로 마시니까 탈진도 없고, 살도 빠졌다고 하니까, 이 꿀팁 더 궁금하면 팔로우해 봐.",
+      "subtitle": "팔로우하고 꿀팁 더 받기",
+      "photo_query": "healthy lifestyle before after"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T09:47:19.815619+00:00"
+  }
+}

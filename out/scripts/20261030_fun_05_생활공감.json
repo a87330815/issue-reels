@@ -1,0 +1,53 @@
+{
+  "title": "충전기 자리싸움",
+  "cover": {
+    "image": null,
+    "lines": [
+      "가족 충전기",
+      "<r>하나</r>로",
+      "눈치싸움하는 집"
+    ],
+    "badge": null,
+    "photo_query": "family phone charger cable"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "엄마가 먼저 폰을 들었다. 아빠는 눈치를 본다. '충전기 어딨지?' 아무도 말 안 한다.",
+      "subtitle": "침묵의 긴장 감도는 거실",
+      "photo_query": "living room family sitting tension"
+    },
+    {
+      "image": null,
+      "narration": "아빠가 조심스레 충전기를 집어 든다. 엄마가 고개를 젖힌다. 전쟁은 이미 시작됐다.",
+      "subtitle": "배터리 0%의 공포",
+      "photo_query": "hand reaching charger phone battery"
+    },
+    {
+      "image": null,
+      "narration": "결국 맏형이 나타난다. 둘 다 충전기를 포기한다. 맏형의 위력 앞에선 모두 평등하다.",
+      "subtitle": "집안의 순서는 배터리로 정해진다",
+      "photo_query": "oldest sibling phone priority"
+    },
+    {
+      "image": null,
+      "narration": "밤새 누군가는 충전을 못 하고 잔다. 내일 또 이 눈치싸움이 반복된다. 아 진짜.",
+      "subtitle": "매일 반복되는 충전기 전쟁",
+      "photo_query": "phone low battery notification night"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 또 있으면 팔로우하고 봐봐! 우리 집만 이런 게 아니니까.",
+      "subtitle": "같은 환경 같은 공감",
+      "photo_query": "family bonding laughing together"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T09:47:12.272213+00:00"
+  }
+}

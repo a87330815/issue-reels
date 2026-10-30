@@ -1,0 +1,53 @@
+{
+  "title": "하품 전염의 비밀",
+  "cover": {
+    "image": null,
+    "lines": [
+      "옆사람 하품하면",
+      "<r>나도 따라 하품</r>",
+      "이거 왜 그럴까"
+    ],
+    "badge": null,
+    "photo_query": "yawning contagious people"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야, 이거 봐봐. 옆 사람이 하품하는데 나도 모르게 따라 하품 나온다 아이가.",
+      "subtitle": "공감 100%",
+      "photo_query": "two people yawning office"
+    },
+    {
+      "image": null,
+      "narration": "근데 이거 뇌가 상대방을 따라한다는 거 아냐. 공감 능력이랑 연결된 거다.",
+      "subtitle": "뇌 과학 이야기",
+      "photo_query": "brain neural network mirror"
+    },
+    {
+      "image": null,
+      "narration": "그래서 친한 사람일수록 하품이 더 잘 전염된다고 카더라. 공감이 클수록 따라한다는 뜻이지.",
+      "subtitle": "친함 = 하품 전염률",
+      "photo_query": "close friends laughing together"
+    },
+    {
+      "image": null,
+      "narration": "근데 진짜 재밌는 건 이거다. 정신병 있는 사람들은 하품이 잘 안 전염된다고 한다.",
+      "subtitle": "공감 능력의 증거",
+      "photo_query": "empathy psychology research"
+    },
+    {
+      "image": null,
+      "narration": "그러니까 너가 옆 사람 하품하면 따라한다는 건 너가 공감 능력 좋다는 증거다. 자랑해도 된다.",
+      "subtitle": "너 공감 능력 뛰어남",
+      "photo_query": "happy person thumbs up confident"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-30T09:46:58.758377+00:00"
+  }
+}
