@@ -236,11 +236,18 @@ def _synth_elevenlabs(text, path):
         from elevenlabs.client import ElevenLabs
         client = ElevenLabs(api_key=api_key)
         model = os.environ.get("ELEVENLABS_MODEL", "eleven_v3")
+        from elevenlabs import VoiceSettings
         audio_iter = client.text_to_speech.convert(
             text=text,
             voice_id=voice_id,
             model_id=model,
             output_format="mp3_44100_128",
+            voice_settings=VoiceSettings(
+                stability=0.3,           # 낮을수록 억양·감정 변화 큼 (사투리 살림)
+                similarity_boost=0.9,    # 높을수록 원본 음성 특성(경상 억양) 보존
+                style=0.6,               # 스타일 강도
+                use_speaker_boost=True,
+            ),
         )
         with open(path, "wb") as f:
             for chunk in audio_iter:
