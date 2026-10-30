@@ -242,6 +242,7 @@ def _synth_elevenlabs(text, path):
             voice_id=voice_id,
             model_id=model,
             output_format="mp3_44100_128",
+            language_code="ko",          # 한국어 강제 → 음성 원래 억양(경상) 보존
             voice_settings=VoiceSettings(
                 stability=0.3,           # 낮을수록 억양·감정 변화 큼 (사투리 살림)
                 similarity_boost=0.9,    # 높을수록 원본 음성 특성(경상 억양) 보존
