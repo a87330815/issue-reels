@@ -1,0 +1,53 @@
+{
+  "title": "여름 밥 상온 방치 한계 + 보관 꿀팁",
+  "cover": {
+    "image": null,
+    "lines": [
+      "여름 밥은",
+      "<r>2시간</r>이 한계",
+      "이후 냉장고로"
+    ],
+    "badge": null,
+    "photo_query": "rice bowl summer heat"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "여름엔 밥을 상온에 두면 2시간 안에 식중독균이 증식한다. 세균이 빠르게 번식하는 거거든.",
+      "subtitle": "상온 2시간 = 위험",
+      "photo_query": "cooked rice room temperature"
+    },
+    {
+      "image": null,
+      "narration": "밥을 지은 지 1시간 30분 안에 냉동실에 담으면 된다. 식혀서 밥알이 퍼지지도 않고 보관 기간도 2주까지 늘어난다.",
+      "subtitle": "1시간 30분 내 냉동",
+      "photo_query": "rice freezer container"
+    },
+    {
+      "image": null,
+      "narration": "냉동 밥은 전자레인지에 2분 데우면 새 밥처럼 돼. 밥이 딱딱해지지 않으려면 한 번씩 물 한 숟가락만 위에 뿌리고 랩 덮고 돌려.",
+      "subtitle": "랩+물 한 숟가락 비결",
+      "photo_query": "microwave heating frozen rice"
+    },
+    {
+      "image": null,
+      "narration": "냉장고에 넣으면 3일, 냉동실 2주까지 먹을 수 있다. 여름엔 냉동이 답이다.",
+      "subtitle": "냉동실 2주 보관 가능",
+      "photo_query": "food storage fridge freezer"
+    },
+    {
+      "image": null,
+      "narration": "이런 여름 생활 꿀팁 더 알고 싶으면 팔로우해 봐. 매일 하나씩 올려줄게.",
+      "subtitle": "팔로우하고 더 받기",
+      "photo_query": "follow subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "계절팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T02:15:52.574527+00:00"
+  }
+}

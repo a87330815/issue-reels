@@ -1,0 +1,62 @@
+{
+  "title": "서초동 최고가 아파트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "서초동 최고가",
+      "<r>40.7억</r>",
+      "이게 뭔데"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building gangnam seoul"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 서초동. 지금 최고가 거래가 떴다. 40.7억이다. 100제곱미터 좀 되는 평에 4천만 원 중후반대 될까 하는데. 이게 뭔데 이 정도냐.",
+      "subtitle": "서초그랑자이 40.7억",
+      "photo_query": "seoul apartment market price expensive"
+    },
+    {
+      "image": null,
+      "narration": "일단 이 건물이 2021년 지어진 신축이다. 25층. 좋긴 좋네. 근데 이 가격이. 서울 어디든 100억 대급이다 아이가.",
+      "subtitle": "2021년 신축, 25층",
+      "photo_query": "modern luxury apartment interior design"
+    },
+    {
+      "image": null,
+      "narration": "서초동 평균은 이것보다 훨씬 싸다. 다음 매물이 22억. 그 다음이 14억. 40억대는 정말 예외다.",
+      "subtitle": "다른 매물: 22억, 14억",
+      "photo_query": "apartment building comparison different prices"
+    },
+    {
+      "image": null,
+      "narration": "아파트값 이렇게 튀는 데 있을까. 평수도 딱 100제곱미터. 뭐가 다르길래 3배 넘게 나왔는지. 위치가 다르거나 특별한 뭔가가 있다는 뜻이다.",
+      "subtitle": "같은 평수도 가격 3배 차이",
+      "photo_query": "hangang river view apartment seoul"
+    },
+    {
+      "image": null,
+      "narration": "서초동 부동산 움직임이 요즘 심하다. 쫌봐봐 팔로우 해서 이런 정보 놓치지 마라.",
+      "subtitle": "서초동 아파트 거래 주시",
+      "photo_query": "real estate agent showing apartment"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        40.7,
+        22.0,
+        13.9,
+        4.0,
+        3.2
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-31T02:14:47.602750+00:00"
+  }
+}

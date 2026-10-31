@@ -1,0 +1,53 @@
+{
+  "title": "겨울 이불 밖은 위험지역",
+  "cover": {
+    "image": null,
+    "lines": [
+      "겨울 아침",
+      "<r>이불 밖</r>",
+      "= 위험지역"
+    ],
+    "badge": null,
+    "photo_query": "winter morning bed cold"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "알람이 울린다. 근데 이불 밖 기온이 영하고 침대 위는 따뜻한 천국이라니까. 이거 과학이다 아이가.",
+      "subtitle": "이불 안팎 온도차 10도 이상",
+      "photo_query": "thermometer winter bedroom"
+    },
+    {
+      "image": null,
+      "narration": "뇌는 \"나가\" 하는데 몸은 \"안 나가\" 하고 있다. 신경쓰지 말고 3초만 더 있으면 되니까.",
+      "subtitle": "생체시계 vs 쾌적함",
+      "photo_query": "person struggling bed morning"
+    },
+    {
+      "image": null,
+      "narration": "발이 이불 밖으로 나간다 하자마자 \"아악!\" 이미 늦었다. 온몸이 강직되고 몸은 속았다고 생각한다.",
+      "subtitle": "피부 온도 급락 = 쇼크",
+      "photo_query": "cold feet under blanket"
+    },
+    {
+      "image": null,
+      "narration": "겨울에만 나타나는 이 현상. 과학자들도 \"이거 봐봐, 이불이 최고의 단열재\" 이래서 인정한다니까.",
+      "subtitle": "따뜻한 공기는 위로 올라간다",
+      "photo_query": "cozy winter bedding warm"
+    },
+    {
+      "image": null,
+      "narration": "결론: 겨울 아침 이불 밖은 진짜 위험지역이다. 이런 거 더 궁금하면 우리 팔로우하고 같이 알아보자!",
+      "subtitle": "과학적 근거 있는 공감",
+      "photo_query": "winter morning window frost"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T02:15:14.333708+00:00"
+  }
+}

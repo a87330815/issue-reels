@@ -1,0 +1,62 @@
+{
+  "title": "반포동 vs 덕암동 아파트값 격차",
+  "cover": {
+    "image": null,
+    "lines": [
+      "같은 서울인데",
+      "<r>860배</r>",
+      "차이난다"
+    ],
+    "badge": null,
+    "photo_query": "seoul apartment buildings contrast luxury"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 반포동 평균 60억. 덕암동 평균 7천만원. 같은 서울 땅인데 아파트값이 860배 차이난다.",
+      "subtitle": "반포동 60억 vs 덕암동 7천만원",
+      "photo_query": "luxury apartment building modern Seoul"
+    },
+    {
+      "image": null,
+      "narration": "반포동은 뭐 말 필요 없다. 래미안 원베일리. 23년 신축. 78억에 팔렸다.",
+      "subtitle": "반포동 래미안원베일리 78억",
+      "photo_query": "new luxury apartment development Seoul"
+    },
+    {
+      "image": null,
+      "narration": "근데 이게 왜 중요한지 알아? 같은 돈으로 살 수 있는 집이 다르다는 얘기다. 서울 남부와 북부. 강남과 강북. 지역만 달라도 완전 다른 세상이다.",
+      "subtitle": "지역에 따라 집값 격차 극심",
+      "photo_query": "seoul city district neighborhood streets"
+    },
+    {
+      "image": null,
+      "narration": "투자하려고? 집 살려고? 이 숫자 알고 시작해야 한다. 같은 땅이라도 위치가 전부다.",
+      "subtitle": "위치가 집값을 결정한다",
+      "photo_query": "real estate investment property documents"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 거래 데이터, 우리 계정에서 매주 업데이트된다. 팔로우 해라.",
+      "subtitle": "공공데이터로 보는 실제 거래가",
+      "photo_query": "data analytics charts growth statistics"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        60.0,
+        41.2,
+        26.6,
+        24.9,
+        24.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-31T02:14:32.655180+00:00"
+  }
+}

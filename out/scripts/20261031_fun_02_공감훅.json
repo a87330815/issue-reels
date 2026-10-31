@@ -1,0 +1,53 @@
+{
+  "title": "양말 한 짝의 비밀",
+  "cover": {
+    "image": null,
+    "lines": [
+      "빨래 돌린 지",
+      "<r>30초 만에</r>",
+      "양말 한 짝이"
+    ],
+    "badge": null,
+    "photo_query": "washing machine socks laundry"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "요즘 세탁기 돌린다고 하면, 부모님들 첫 마디가 뭔지 알아? '양말 짝 잘 잃어버리지 말고.' 이거 진짜 미스터리다.",
+      "subtitle": "부모님의 첫 우려사항",
+      "photo_query": "parent warning serious face"
+    },
+    {
+      "image": null,
+      "narration": "세탁기에서 꺼낼 때는 멀쩡한 양말 쌍이 있었어. 근데 옷장 정리할 때? 한 짝만 남아있어. 어디 갔냐고.",
+      "subtitle": "어디서 사라지는가",
+      "photo_query": "laundry basket socks disappearing"
+    },
+    {
+      "image": null,
+      "narration": "그래서 사람들은 '양말 무덤'이라고 부르는 이상한 상자를 만든다니까. 짝 없는 양말들만 모아두는 거야. 나중에 쌍을 맞추겠다면서.",
+      "subtitle": "희망의 상자",
+      "photo_query": "drawer mismatched socks collection"
+    },
+    {
+      "image": null,
+      "narration": "근데 알아? 그 상자는 절대 열려본 적이 없다. 그냥 한두 달 지나면 새 양말을 또 사는 거지. 이게 반복이다.",
+      "subtitle": "악순환의 시작",
+      "photo_query": "shopping new socks store"
+    },
+    {
+      "image": null,
+      "narration": "이런 공감 콘텐츠 더 보고 싶으면 팔로우! 우리 함께 양말 미스터리 풀어보자.",
+      "subtitle": "팔로우 해봐",
+      "photo_query": "follow button click subscribe"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T02:15:20.637896+00:00"
+  }
+}

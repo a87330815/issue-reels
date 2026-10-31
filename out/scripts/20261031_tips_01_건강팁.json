@@ -1,0 +1,54 @@
+{
+  "title": "허리 통증 수면 자세",
+  "cover": {
+    "image": null,
+    "lines": [
+      "자는 자세만",
+      "<r>바꿔도</r>",
+      "허리 통증",
+      "1주일 완화"
+    ],
+    "badge": null,
+    "photo_query": "sleeping position pillow support"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 허리 아픈 사람들 봐봐. 약 먹고 병원 가기 전에 자는 자세부터 바꿔야 한다니까.",
+      "subtitle": "자세가 통증의 원인",
+      "photo_query": "person sleeping with back pain"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째, 옆으로 누워 자. 무릎 사이에 베개나 쿠션 딱 끼워넣고.",
+      "subtitle": "옆으로 누워 + 무릎 베개",
+      "photo_query": "side sleeping position with pillow between"
+    },
+    {
+      "image": null,
+      "narration": "이렇게 하면 척추가 일직선이 되면서 허리 디스크 압박이 50% 줄어든다고 한다. 척추 정렬이 되니까.",
+      "subtitle": "척추 정렬 = 압박 완화",
+      "photo_query": "spine alignment correct sleeping"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 똑바로 누워야 하면 무릎 아래 두툼한 베개 받쳐. 이것도 똑같은 원리지.",
+      "subtitle": "바로 누워 + 무릎 아래 베개",
+      "photo_query": "back sleeping position pillow support"
+    },
+    {
+      "image": null,
+      "narration": "이 자세로 1주일만 해봐. 아침에 일어날 때 허리 뻣뻣함이 줄어들면 당첨이다. 이런 생활해킹 더 알고 싶으면 팔로우해 봐.",
+      "subtitle": "1주일 후 변화 감지",
+      "photo_query": "waking up morning stretching relief"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T02:15:45.843613+00:00"
+  }
+}

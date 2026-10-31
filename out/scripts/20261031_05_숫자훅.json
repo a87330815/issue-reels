@@ -1,0 +1,53 @@
+{
+  "title": "월 350만원 수익률 ETF의 함정",
+  "cover": {
+    "image": null,
+    "lines": [
+      "월 <r>350만원</r>",
+      "받는다더니",
+      "함정 있다"
+    ],
+    "badge": null,
+    "photo_query": "investment portfolio chart analysis"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 요즘 월 350만원 번다는 ETF 엄청 뜨고 있거든. 근데 말이야. 그게 다가 아니다.",
+      "subtitle": "높은 수익률 ETF 화제",
+      "photo_query": "stock market trading screen numbers"
+    },
+    {
+      "image": null,
+      "narration": "고수익 상품은 항상 고위험이다. 수익률만 봐선 절대 안 된다. 배당금이 높으면 원금이 깎여가는 경우가 많다.",
+      "subtitle": "높은 배당 = 원금 감소",
+      "photo_query": "money flowing downward financial loss"
+    },
+    {
+      "image": null,
+      "narration": "1억을 넣어서 월 350만원을 받는다? 그건 년 42% 수익률이란 얘기다. 그 정도 수익률은 매년 원금이 줄어든다는 뜻이다.",
+      "subtitle": "고배당 상품의 구조",
+      "photo_query": "calculator percentage symbol math"
+    },
+    {
+      "image": null,
+      "narration": "가만. 원금이 깎여가는데 계속 같은 배당금을 받을 수 있을까? 언젠가는 무너진다. 그게 고수익 상품의 진짜 모습이다.",
+      "subtitle": "지속 불가능한 구조",
+      "photo_query": "house of cards falling collapse"
+    },
+    {
+      "image": null,
+      "narration": "수익률만 크면 다 좋은 게 아니다. 원금이 살아있는지. 지속 가능한지. 이걸 봐야 한다. 더 알고 싶으면 팔로우해라.",
+      "subtitle": "원금 안전성 확인 필수",
+      "photo_query": "financial advisor consultation meeting"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-10-31T02:14:39.804107+00:00"
+  }
+}

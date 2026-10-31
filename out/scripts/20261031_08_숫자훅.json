@@ -1,0 +1,62 @@
+{
+  "title": "반포동 래미안원베일리 평당 2.53억",
+  "cover": {
+    "image": null,
+    "lines": [
+      "반포동",
+      "<r>평당 2.53억</r>",
+      "실제 거래가"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building modern korean residential"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 평당 2억 5천이 나왔다. 올해 10월 실거래가다.",
+      "subtitle": "반포동 래미안원베일리 평당 2.53억",
+      "photo_query": "seoul banpo apartment complex modern building"
+    },
+    {
+      "image": null,
+      "narration": "101제곱미터 기준인데. 7억 8천에 팔렸다. 32층 고층까지 나왔다. 이건 진짜 핫한 거다.",
+      "subtitle": "101㎡ 7.8억원 / 32층 실거래",
+      "photo_query": "apartment high floor city view window"
+    },
+    {
+      "image": null,
+      "narration": "2023년 신축 아파트다. 강남구 최신 주거지로 몰리는 자본이 실시간으로 보인다.",
+      "subtitle": "2023년 신축 / 강남구 인기 물종",
+      "photo_query": "new apartment construction 2023 modern korea"
+    },
+    {
+      "image": null,
+      "narration": "같은 단지 작은 평형은 5억 7천에 거래됐다. 층과 평수에 따라 천차만별이다.",
+      "subtitle": "84㎡ 5.7억원 / 층별 편차 큼",
+      "photo_query": "apartment building different unit sizes floors"
+    },
+    {
+      "image": null,
+      "narration": "반포, 도곡, 방배동 최신 거래 데이터. 궁금하면 팔로우. 매주 올려준다.",
+      "subtitle": "강남 아파트 실거래 매주 업데이트",
+      "photo_query": "real estate transaction analysis data chart"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        2.53,
+        2.22,
+        1.75,
+        1.58,
+        1.42
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-31T02:15:01.853078+00:00"
+  }
+}

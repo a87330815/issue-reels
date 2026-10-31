@@ -1,0 +1,47 @@
+{
+  "title": "30% 폭등한 주식의 함정",
+  "cover": {
+    "image": null,
+    "lines": [
+      "<r>30%</r> 폭등",
+      "근데 왜",
+      "또 떨어질까"
+    ],
+    "badge": null,
+    "photo_query": "stock market chart graph rising falling"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 어떤 주식이 하루에 30% 폭등했다. 모두 환호했는데 정작 매도한 사람들은 울고 있다.",
+      "subtitle": "30% 폭등 후 떨어지는 패턴",
+      "photo_query": "trader watching stock market screen shocked"
+    },
+    {
+      "image": null,
+      "narration": "이게 왜 일어나냐. 급등이 시작되면 먼저 들어온 투자자들이 이익을 챙기려고 팔아버린다. 그럼 뒤따라온 사람들은 비싼 값에 매수하는 셈이다.",
+      "subtitle": "먼저 나간 사람이 이기는 구조",
+      "photo_query": "money flowing out wallet hands"
+    },
+    {
+      "image": null,
+      "narration": "결국 급등은 기회가 아니라 함정이다. 화면에서 빨간 수字를 보고 덤볐다간 나중에 후회한다.",
+      "subtitle": "급등 = 매도 신호일 수 있다",
+      "photo_query": "person regret frustrated computer screen"
+    },
+    {
+      "image": null,
+      "narration": "투자는 남 따라 하는 게 아니다. 기초부터 배우고 나만의 전략을 세워야 한다. 더 많은 투자 정보는 쫌봐봐 채널에서 확인해라.",
+      "subtitle": "투자의 정답은 인내심",
+      "photo_query": "investor analyzing financial documents notebook planning"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-10-31T02:15:07.451320+00:00"
+  }
+}

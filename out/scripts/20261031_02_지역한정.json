@@ -1,0 +1,62 @@
+{
+  "title": "송도동 10월 아파트 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "송도동",
+      "<r>9억</r>대",
+      "실거래가 떴다"
+    ],
+    "badge": null,
+    "photo_query": "songdo incheon apartment complex modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 송도동. 이번 달 10월에 아파트 거래가 막 떴다. 9억 대부터 시작하는데.",
+      "subtitle": "송도동 10월 거래 공개",
+      "photo_query": "incheon songdo skyline tall buildings"
+    },
+    {
+      "image": null,
+      "narration": "가장 비싼 게 9억 3천. 59제곱미터. 뭐라카더라면 송도더샵퍼스트파크다.",
+      "subtitle": "최고가 9억 3천만원",
+      "photo_query": "luxury apartment interior modern design"
+    },
+    {
+      "image": null,
+      "narration": "그 다음이 8억 8천. 롯데캐슬캠퍼스타운. 101제곱미터짜리. 40층까지 있다.",
+      "subtitle": "대규모 단지도 거래",
+      "photo_query": "apartment building lobby entrance"
+    },
+    {
+      "image": null,
+      "narration": "65억부터 75억까지. 송도 프리미엄 아파트들이 움직이고 있다. 이 타이밍을 노린 사람들이 있다.",
+      "subtitle": "65억~93억 거래 다수",
+      "photo_query": "real estate transaction documents paperwork"
+    },
+    {
+      "image": null,
+      "narration": "송도 아파트 사려고 한다면? 이 시기 시세 체크는 필수다. 우리 채널에서 계속 업데이트해주니까 팔로우해라.",
+      "subtitle": "송도 시세 트렌드 확인",
+      "photo_query": "person checking mobile phone real estate"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        9.3,
+        7.5,
+        6.5,
+        7.2,
+        8.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-31T02:14:18.307786+00:00"
+  }
+}

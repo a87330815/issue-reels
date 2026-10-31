@@ -1,0 +1,47 @@
+{
+  "title": "퇴근 후 침대의 마법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "퇴근하고",
+      "침대 누우면",
+      "<r>세상 끝</r>"
+    ],
+    "badge": null,
+    "photo_query": "tired man falling on bed"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야 근데 진짜 이거 봐봐. 퇴근하고 침대에 누우면 그 느낌 아이가? 마치 왕이 옥좌에 앉는 거 같은 그런 기분이더라고.",
+      "subtitle": "침대=최고의 보상",
+      "photo_query": "man relaxing bed afterwork"
+    },
+    {
+      "image": null,
+      "narration": "아까 회의에서 휘청거렸던 정신도 풀려 버리고, 상사 말도 귀에 안 들렸던 피로도 싹 사라진다고 카더라.",
+      "subtitle": "모든 게 깨끗이 정리됨",
+      "photo_query": "stress relief lying down"
+    },
+    {
+      "image": null,
+      "narration": "야 대박이지. 침대가 약인 줄 알았는데 침대가 답이었네. 내일도 버틸 수 있는 힘 이거에서 나온다니까.",
+      "subtitle": "침대=생존장비",
+      "photo_query": "cozy bedroom lamp evening"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 공감하면서 웃고 싶으면 팔로우하고, 댓글로 너희도 퇴근 후 침대 느낌 지를 나눠봐요!",
+      "subtitle": "함께 공감하기",
+      "photo_query": "happy person in bed morning"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T02:15:25.894819+00:00"
+  }
+}

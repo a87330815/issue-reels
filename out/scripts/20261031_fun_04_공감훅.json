@@ -1,0 +1,53 @@
+{
+  "title": "마트 3개 사러 갔다가",
+  "cover": {
+    "image": null,
+    "lines": [
+      "필요한 거",
+      "<r>3개만</r>",
+      "사러 갔는데"
+    ],
+    "badge": null,
+    "photo_query": "shopping cart full groceries"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아 우유, 계란, 식빵. 이 3개만 사면 돼. 왔다 갔다 하기 싫으니까.",
+      "subtitle": "목표: 정확한 쇼핑",
+      "photo_query": "grocery list paper pen"
+    },
+    {
+      "image": null,
+      "narration": "우유 코너 가는데 우와, 요거트 세일이네? 한두 개 사야지. 아 계란도 있네, 이건 샀는데 또 필요하네?",
+      "subtitle": "계획 흐트러짐",
+      "photo_query": "store shelf sale discount milk"
+    },
+    {
+      "image": null,
+      "narration": "어? 이 라면도 요즘 가성비 좋던데. 과자도 보이네. 우리집 카트 한 번 봐봐. 야야야, 벌써 이 정도네?",
+      "subtitle": "카트 실시간 변화",
+      "photo_query": "shopping cart full items"
+    },
+    {
+      "image": null,
+      "narration": "결국 카트 가득이다 아이가. 처음 목표는 어디 갔고, 이제 계산대에서 카드 들렸다 놨다 반복한다.",
+      "subtitle": "충동 쇼핑의 결말",
+      "photo_query": "checkout register payment card"
+    },
+    {
+      "image": null,
+      "narration": "이런 쇼핑의 즐거움을 더 보고 싶으면? 팔로우 꾹 눌러봐.",
+      "subtitle": "다음 편도 기대해",
+      "photo_query": "store shopping bag leaving"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T02:15:32.770249+00:00"
+  }
+}

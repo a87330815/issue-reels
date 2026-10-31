@@ -1,0 +1,59 @@
+{
+  "title": "환절기 감기 예방 3가지 생활습관",
+  "cover": {
+    "image": null,
+    "lines": [
+      "환절기마다",
+      "감기 걸리는 사람",
+      "<r>놓치는 습관 3가지</r>"
+    ],
+    "badge": null,
+    "photo_query": "person sneezing autumn"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "환절기 되면 감기 걸리는 사람 있지? 그게 면역력이 떨어져서가 아니라 생활습관 문제다 이거봐봐. 첫 번째, 실내 습도 관리를 안 하는 거다.",
+      "subtitle": "실내 습도 40~60% 유지",
+      "photo_query": "humidifier bedroom autumn"
+    },
+    {
+      "image": null,
+      "narration": "아침에 일어났을 때 목이 칼칼하면 습도가 떨어진 거 맞다. 가습기를 하루 6시간 이상 틀어두면 호흡기 점막이 건조해지지 않아서 바이러스 침투가 확 줄어든다.",
+      "subtitle": "하루 6시간 가습기 운전",
+      "photo_query": "humidity meter winter room"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 찬바람 맞고 온 후 손을 안 씻는 거. 손 씻을 때 30초 이상 흐르는 물에 비누로 씻어야 한다.",
+      "subtitle": "돌아와서 30초 손씻기",
+      "photo_query": "washing hands soap water"
+    },
+    {
+      "image": null,
+      "narration": "왜냐면 환절기 바이러스는 손에 묻어서 눈코 입으로 들어가거든. 이것만 해도 감기 확률이 40% 떨어진다고 한다.",
+      "subtitle": "감기 확률 40% 감소",
+      "photo_query": "handwashing technique hygiene"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 자기 전에 따뜻한 물로 목을 헹굼질 안 하는 것다. 미온수로 한 번만 헹궈도 충분하다.",
+      "subtitle": "자기 전 미온수 가글",
+      "photo_query": "gargling water throat care"
+    },
+    {
+      "image": null,
+      "narration": "목에 붙어 있는 바이러스와 세균을 씻어내는 거지. 이 3가지만 하면 환절기도 끄덕없다. 이런 꿀팁 더 보고 싶으면 팔로우해야지!",
+      "subtitle": "바이러스 물리적 제거",
+      "photo_query": "healthy person autumn season"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T02:16:01.282186+00:00"
+  }
+}
