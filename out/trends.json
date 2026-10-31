@@ -1,86 +1,95 @@
 {
-  "collected_at": "2026-10-31T09:24:13.796662+00:00",
+  "collected_at": "2026-10-31T14:37:50.778938+00:00",
   "items": [
     {
-      "keyword": "하남시",
-      "traffic": "100+",
-      "news_title": "‘서울 경계 5km 이내’ 김포·구리 등 7만여 호 신규택지 발표",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ee7e7bdfde8cb9f7"
-    },
-    {
-      "keyword": "jtbc 서울 마라톤",
+      "keyword": "김유정",
       "traffic": "500+",
-      "news_title": "월치, 11월1일 JTBC 마라톤서 스포츠 케어 제품 체험 부스 운영",
+      "news_title": "천재 의사 김지원·밀정 김유정…흥행 이끄는 열연",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "a47c56852dbd589a"
+      "key": "037d38c9f2b4ca6d"
     },
     {
-      "keyword": "aim-120 암람",
+      "keyword": "levante vs atlético",
       "traffic": "200+",
-      "news_title": "&quot;일본서 미사일 공동 생산&quot; 중국 코앞 군수거점‥무기 생산도 &apos;한 몸&apos;",
+      "news_title": "🚨 Julián in, Cuti out of Levante-Atlético de Madrid starting XIs",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "77df814563e5dff9"
+      "key": "1c0b5fda844b98df"
     },
     {
-      "keyword": "김가영",
+      "keyword": "w",
+      "traffic": "200+",
+      "news_title": "Remembering Robert W. Liehr of Southampton",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "aff024fe4ab0fece"
+    },
+    {
+      "keyword": "원샷한솔",
+      "traffic": "200+",
+      "news_title": "“같은 도움, 전혀 다른 반응” 시각장애인 유튜버 원샷한솔이 대전에서 준 울림",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "6dd13c64a913be17"
+    },
+    {
+      "keyword": "레반테 대 아틀레티코",
+      "traffic": "20000+",
+      "news_title": "&quot;이강인 선발 출격&quot; 시메오네의 선택 받았다...아틀레티코, &apos;선두 바르셀로나 추격&apos; 레반테전 6연승 도전 - 머니투데이",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "54f5bf3b746aca64"
+    },
+    {
+      "keyword": "로또1248",
+      "traffic": "1000+",
+      "news_title": "로또 1248회 당첨번호 ‘16·18·27·36·38·42’…1등 당첨금 19억",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "0f8ed17c005fb7f0"
+    },
+    {
+      "keyword": "스토크 시티 대 프레스턴 노스 엔드",
       "traffic": "500+",
-      "news_title": "[김용일의 당구인사이트] ‘김가영 천하’가 역설적으로 만든 LPBA 춘추전국시대",
+      "news_title": "Stoke City v Preston North End: Championship stats &amp; head-to-head",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "d38af1d47c571a1d"
+      "key": "4fd7f81dbe545e2c"
     },
     {
-      "keyword": "sri lanka vs pakistan",
-      "traffic": "1000+",
-      "news_title": "Pakistan seek perfect finish",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "7f4a465a3e496b62"
-    },
-    {
-      "keyword": "수원삼성",
-      "traffic": "1000+",
-      "news_title": "갈길 바쁜 서울E, 발목 잡혔다! &apos;가브리엘 멀티골&apos; 용인에 2-4 패, 다만 다득점으로 2위 점프...화성도 경남에 0-1 덜미",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "edb693d27efd0a66"
-    },
-    {
-      "keyword": "sri lanka national cricket team vs pakistan national cricket team match scorecard",
+      "keyword": "dewa united vs persija jakarta",
       "traffic": "200+",
-      "news_title": "~$!【PAK vs SL】 Watch Pakistan vs Sri Lanka Live ODI Tri-Series final match",
+      "news_title": "",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "164665511989ba3d"
+      "key": "8d3988e61a7b2702"
     },
     {
-      "keyword": "현대이지웰",
-      "traffic": "200+",
-      "news_title": "340만명 사용 복지포인트 쇼핑몰 ‘현대이지웰’, 해킹으로 개인정보 유출",
+      "keyword": "금",
+      "traffic": "20000+",
+      "news_title": "[오늘 금시세] 10월 30일 순금 1돈 얼마?",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "08b00ea09bbfb688"
+      "key": "cf5632c7ab52501a"
     },
     {
-      "keyword": "농협",
-      "traffic": "200+",
-      "news_title": "강원농협, &apos;2026 강원농협인 소통·공감 포럼&apos; 원주서 개최",
+      "keyword": "chelsea đấu với man utd",
+      "traffic": "500+",
+      "news_title": "Chelsea 1-0 Man United: Morgan Rogers &quot;gieo sầu&quot; cho MU",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "fa001d151b38734e"
+      "key": "587dd4d8f9a8380a"
     }
   ]
 }

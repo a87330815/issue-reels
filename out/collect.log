@@ -7,10 +7,10 @@
   --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
 
 통과 3 / 전체 7
-apis.data.go.kr → 400
-www.korea.kr → 200
-apihub.kma.go.kr → 200
-kosis.kr → 302
+apis.data.go.kr → 000연결실패
+www.korea.kr → 000연결실패
+apihub.kma.go.kr → 000연결실패
+kosis.kr → 000연결실패
   --  korea_briefing_rss  차단(dead): 2026-07-01 중단 (저작권 등 권리 보호 사유)
   --  kma_rss             차단(dead): 2025-03-31 중단. 대체는 kma_apihub
   OK  kca_product_price   통과
@@ -18,12 +18,17 @@ kosis.kr → 302
   OK  google_trends_kr    통과
   --  kma_apihub          폐기(공공누리 미확인/비1유형): license=unknown
   --  kosis               폐기(공공누리 미확인/비1유형): license=unknown
-      조사일 발견: 20261023
+      경고: 1건 실패
+        조사일을 찾지 못했습니다 (최근 8주)
+      경고: 24건 실패
+        {'LAWD_CD': '48250', 'DEAL_YMD': '202610'}: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1613000/RTMSDataSvcAptTrade/getRTMSDataSvcAptTrade?serviceKey=***&numOfRows=100&pageNo=1&LAWD_CD=48250&DEAL_YMD=202610 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7ff254775a10>, 'Connection to apis.data.go.kr timed out. (connect timeout=25)'))
+        {'LAWD_CD': '48250', 'DEAL_YMD': '202609'}: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1613000/RTMSDataSvcAptTrade/getRTMSDataSvcAptTrade?serviceKey=***&numOfRows=100&pageNo=1&LAWD_CD=48250&DEAL_YMD=202609 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7ff2546e8e90>, 'Connection to apis.data.go.kr timed out. (connect timeout=25)'))
+        {'LAWD_CD': '48170', 'DEAL_YMD': '202610'}: ConnectTimeout: HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1613000/RTMSDataSvcAptTrade/getRTMSDataSvcAptTrade?serviceKey=***&numOfRows=100&pageNo=1&LAWD_CD=48170&DEAL_YMD=202610 (Caused by ConnectTimeoutError(<HTTPSConnection(host='apis.data.go.kr', port=443) at 0x7ff254762fd0>, 'Connection to apis.data.go.kr timed out. (connect timeout=25)'))
 
 수집 0건 — 기존 112건을 유지합니다 (API 접속 실패로 보입니다. 덮어쓰지 않습니다)
 트렌드 수집 시작
   Google Trends: 10건
   네이버 DataLab: 0건
 
-트렌드 수집 9건 · 제외 0건 → /home/runner/work/issue-reels/issue-reels/out/trends.json
-  당일 화제 이슈: 9건
+트렌드 수집 10건 · 제외 0건 → /home/runner/work/issue-reels/issue-reels/out/trends.json
+  당일 화제 이슈: 10건
