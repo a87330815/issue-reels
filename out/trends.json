@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-10-31T02:13:35.975002+00:00",
+  "collected_at": "2026-10-31T09:24:13.796662+00:00",
   "items": [
     {
-      "keyword": "수익률",
-      "traffic": "500+",
-      "news_title": "“1억 넣고 월 350만원 받는다”…수익률 1등, 그 ETF의 진실",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "fb64df0cb9ef3b5f"
-    },
-    {
-      "keyword": "주식",
-      "traffic": "10000+",
-      "news_title": "매도 사이드카 울렸는데…&quot;또 털렸대&quot; 30% 폭등한 주식 - 머니투데이",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "e861734b49bb96d3"
-    },
-    {
-      "keyword": "필라데피아 대 뉴욕",
-      "traffic": "1000+",
-      "news_title": "Live updates: Sixers take a nine-point lead over the Knicks into the fourth quarter",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "e335f92feedd646b"
-    },
-    {
-      "keyword": "sk 사장단 인사",
-      "traffic": "200+",
-      "news_title": "SK, 에너지 수장 교체…빨라진 재계 인사 시계",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ac82a5b32e97f630"
-    },
-    {
-      "keyword": "미세먼지",
-      "traffic": "200+",
-      "news_title": "오늘 밤 서쪽 지방 미세먼지 주의…한낮에 포근",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "2ffcbcd358d85f86"
-    },
-    {
-      "keyword": "우주선",
-      "traffic": "200+",
-      "news_title": "美정보국 &quot;中, 위성요격무기 배치할듯…美동맹 위성도 공격대상&quot;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "2156dc61070b259d"
-    },
-    {
-      "keyword": "샌디스크",
-      "traffic": "200+",
-      "news_title": "키옥시아 NAND 가격 경고에 샌디스크 주가 11% 급락",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "1e4b63ac7e5a76e6"
-    },
-    {
-      "keyword": "lcs",
+      "keyword": "하남시",
       "traffic": "100+",
-      "news_title": "Anyone&apos;s Legend vs. Team Liquid: Game 2 First Blood",
+      "news_title": "‘서울 경계 5km 이내’ 김포·구리 등 7만여 호 신규택지 발표",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "0a91335534ee5567"
+      "key": "ee7e7bdfde8cb9f7"
     },
     {
-      "keyword": "직장폐쇄",
+      "keyword": "jtbc 서울 마라톤",
+      "traffic": "500+",
+      "news_title": "월치, 11월1일 JTBC 마라톤서 스포츠 케어 제품 체험 부스 운영",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "a47c56852dbd589a"
+    },
+    {
+      "keyword": "aim-120 암람",
       "traffic": "200+",
-      "news_title": "WS 우승 기쁨도 잠시… 밀워키, 직장폐쇄 위기",
+      "news_title": "&quot;일본서 미사일 공동 생산&quot; 중국 코앞 군수거점‥무기 생산도 &apos;한 몸&apos;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "4214b6828c84cfa5"
+      "key": "77df814563e5dff9"
     },
     {
-      "keyword": "테슬라",
-      "traffic": "1000+",
-      "news_title": "&apos;고래&apos; 스페이스X-테슬라 합병 추진에 부담 커진 &apos;새우&apos; 미래에셋",
+      "keyword": "김가영",
+      "traffic": "500+",
+      "news_title": "[김용일의 당구인사이트] ‘김가영 천하’가 역설적으로 만든 LPBA 춘추전국시대",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "cfe918b6b78e7b52"
+      "key": "d38af1d47c571a1d"
+    },
+    {
+      "keyword": "sri lanka vs pakistan",
+      "traffic": "1000+",
+      "news_title": "Pakistan seek perfect finish",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "7f4a465a3e496b62"
+    },
+    {
+      "keyword": "수원삼성",
+      "traffic": "1000+",
+      "news_title": "갈길 바쁜 서울E, 발목 잡혔다! &apos;가브리엘 멀티골&apos; 용인에 2-4 패, 다만 다득점으로 2위 점프...화성도 경남에 0-1 덜미",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "edb693d27efd0a66"
+    },
+    {
+      "keyword": "sri lanka national cricket team vs pakistan national cricket team match scorecard",
+      "traffic": "200+",
+      "news_title": "~$!【PAK vs SL】 Watch Pakistan vs Sri Lanka Live ODI Tri-Series final match",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "164665511989ba3d"
+    },
+    {
+      "keyword": "현대이지웰",
+      "traffic": "200+",
+      "news_title": "340만명 사용 복지포인트 쇼핑몰 ‘현대이지웰’, 해킹으로 개인정보 유출",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "08b00ea09bbfb688"
+    },
+    {
+      "keyword": "농협",
+      "traffic": "200+",
+      "news_title": "강원농협, &apos;2026 강원농협인 소통·공감 포럼&apos; 원주서 개최",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "fa001d151b38734e"
     }
   ]
 }
