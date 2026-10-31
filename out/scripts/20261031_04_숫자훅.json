@@ -1,45 +1,45 @@
 {
-  "title": "반포동 vs 덕암동 아파트값 격차",
+  "title": "반포동 vs 덕암동, 같은 서울 다른 세상",
   "cover": {
     "image": null,
     "lines": [
-      "같은 서울인데",
-      "<r>860배</r>",
-      "차이난다"
+      "반포동 <r>60억</r>",
+      "덕암동 7천만",
+      "860배 차이다"
     ],
     "badge": null,
-    "photo_query": "seoul apartment buildings contrast luxury"
+    "photo_query": "seoul apartment building contrast wealthy neighborhood"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 평균 60억. 덕암동 평균 7천만원. 같은 서울 땅인데 아파트값이 860배 차이난다.",
-      "subtitle": "반포동 60억 vs 덕암동 7천만원",
-      "photo_query": "luxury apartment building modern Seoul"
+      "narration": "이거 모르고 지나가면 손해다. 같은 서울 아파트인데 이 정도 차이가 난다고?",
+      "subtitle": "반포동 평균값 vs 덕암동",
+      "photo_query": "seoul gangnam apartment complex modern buildings"
     },
     {
       "image": null,
-      "narration": "반포동은 뭐 말 필요 없다. 래미안 원베일리. 23년 신축. 78억에 팔렸다.",
-      "subtitle": "반포동 래미안원베일리 78억",
-      "photo_query": "new luxury apartment development Seoul"
+      "narration": "반포동. 래미안원베일리 32층은 7억8천. 25층 자이는 4억5천. 평균 60억이다.",
+      "subtitle": "반포동 아파트 시세",
+      "photo_query": "luxury apartment interior modern design"
     },
     {
       "image": null,
-      "narration": "근데 이게 왜 중요한지 알아? 같은 돈으로 살 수 있는 집이 다르다는 얘기다. 서울 남부와 북부. 강남과 강북. 지역만 달라도 완전 다른 세상이다.",
-      "subtitle": "지역에 따라 집값 격차 극심",
-      "photo_query": "seoul city district neighborhood streets"
+      "narration": "덕암동은 어? 평균이 7천만이다. 뭐라카더라. 860배 차이가 난다는 거다.",
+      "subtitle": "같은 서울, 다른 부동산",
+      "photo_query": "seoul neighborhood older residential area buildings"
     },
     {
       "image": null,
-      "narration": "투자하려고? 집 살려고? 이 숫자 알고 시작해야 한다. 같은 땅이라도 위치가 전부다.",
-      "subtitle": "위치가 집값을 결정한다",
-      "photo_query": "real estate investment property documents"
+      "narration": "이건 단순 시세 차이가 아니다. 같은 도시에서 사는 형태 자체가 다르다는 것이다.",
+      "subtitle": "부동산은 위치가 전부",
+      "photo_query": "real estate investment property value comparison"
     },
     {
       "image": null,
-      "narration": "더 자세한 거래 데이터, 우리 계정에서 매주 업데이트된다. 팔로우 해라.",
-      "subtitle": "공공데이터로 보는 실제 거래가",
-      "photo_query": "data analytics charts growth statistics"
+      "narration": "더 알고 싶으면 팔로우해라. 쫌봐봐에서 이런 데이터 매일 던진다.",
+      "subtitle": "매일 새로운 데이터 공개",
+      "photo_query": "person checking real estate data on"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T02:14:32.655180+00:00"
+    "generated_at": "2026-10-31T09:25:12.434774+00:00"
   }
 }

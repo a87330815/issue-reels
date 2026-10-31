@@ -1,45 +1,44 @@
 {
-  "title": "양말 한 짝의 비밀",
+  "title": "배송완료 문자 왔는데 없음",
   "cover": {
     "image": null,
     "lines": [
-      "빨래 돌린 지",
-      "<r>30초 만에</r>",
-      "양말 한 짝이"
+      "배송완료",
+      "<r>문 앞에 없음</r>"
     ],
     "badge": null,
-    "photo_query": "washing machine socks laundry"
+    "photo_query": "empty doorstep package missing"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "요즘 세탁기 돌린다고 하면, 부모님들 첫 마디가 뭔지 알아? '양말 짝 잘 잃어버리지 말고.' 이거 진짜 미스터리다.",
-      "subtitle": "부모님의 첫 우려사항",
-      "photo_query": "parent warning serious face"
+      "narration": "야야야 배송완료 문자 왔다! 드디어다 이거 봐봐.",
+      "subtitle": "배송완료 알림",
+      "photo_query": "smartphone notification message received"
     },
     {
       "image": null,
-      "narration": "세탁기에서 꺼낼 때는 멀쩡한 양말 쌍이 있었어. 근데 옷장 정리할 때? 한 짝만 남아있어. 어디 갔냐고.",
-      "subtitle": "어디서 사라지는가",
-      "photo_query": "laundry basket socks disappearing"
+      "narration": "문 앞으로 슈우웅 나간다. 어? 어어? 뭐가 없어?",
+      "subtitle": "빈 현관 앞",
+      "photo_query": "empty apartment doorway entrance"
     },
     {
       "image": null,
-      "narration": "그래서 사람들은 '양말 무덤'이라고 부르는 이상한 상자를 만든다니까. 짝 없는 양말들만 모아두는 거야. 나중에 쌍을 맞추겠다면서.",
-      "subtitle": "희망의 상자",
-      "photo_query": "drawer mismatched socks collection"
+      "narration": "배송 완료했다면서 왜 없냐고. 혹시 내가 잘못된 주소 줬나 싶고, 혹시 누가 훔쳐갔나 싶고, 진짜 멘붕이다 이거.",
+      "subtitle": "헤맨다",
+      "photo_query": "confused person looking around worried"
     },
     {
       "image": null,
-      "narration": "근데 알아? 그 상자는 절대 열려본 적이 없다. 그냥 한두 달 지나면 새 양말을 또 사는 거지. 이게 반복이다.",
-      "subtitle": "악순환의 시작",
-      "photo_query": "shopping new socks store"
+      "narration": "결국 30분 뒤에 택배기사한테 전화. 그 다음에 야 정말 왔는데 왜 안 받아 하는데, 누가 받냐고!",
+      "subtitle": "택배기사와의 대화",
+      "photo_query": "man on phone frustrated angry"
     },
     {
       "image": null,
-      "narration": "이런 공감 콘텐츠 더 보고 싶으면 팔로우! 우리 함께 양말 미스터리 풀어보자.",
-      "subtitle": "팔로우 해봐",
-      "photo_query": "follow button click subscribe"
+      "narration": "이런 거 매번 겪지 않냐고. 더 보고 싶으면 팔로우해 봐.",
+      "subtitle": "팔로우 유도",
+      "photo_query": "delivery box package arrival home"
     }
   ],
   "meta": {
@@ -48,6 +47,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-31T02:15:20.637896+00:00"
+    "generated_at": "2026-10-31T09:25:58.795478+00:00"
   }
 }

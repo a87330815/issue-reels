@@ -1,45 +1,45 @@
 {
-  "title": "월 350만원 수익률 ETF의 함정",
+  "title": "하남시 신규택지 7만호 발표",
   "cover": {
     "image": null,
     "lines": [
-      "월 <r>350만원</r>",
-      "받는다더니",
-      "함정 있다"
+      "서울 옆",
+      "<r>7만호</r>",
+      "한 번에 풀린다"
     ],
     "badge": null,
-    "photo_query": "investment portfolio chart analysis"
+    "photo_query": "new residential construction site korea"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 요즘 월 350만원 번다는 ETF 엄청 뜨고 있거든. 근데 말이야. 그게 다가 아니다.",
-      "subtitle": "높은 수익률 ETF 화제",
-      "photo_query": "stock market trading screen numbers"
+      "narration": "이거 모르고 지나가면 손해다. 서울 가까운 곳에 7만호가 한 번에 풀렸다. 김포, 하남, 구리 이 정도 규모면 대박이다.",
+      "subtitle": "서울 경계 5km 이내 신규택지",
+      "photo_query": "suburban residential development korea"
     },
     {
       "image": null,
-      "narration": "고수익 상품은 항상 고위험이다. 수익률만 봐선 절대 안 된다. 배당금이 높으면 원금이 깎여가는 경우가 많다.",
-      "subtitle": "높은 배당 = 원금 감소",
-      "photo_query": "money flowing downward financial loss"
+      "narration": "여기가 왜 중요하냐면. 서울에서 통근 가능하면서 신규 공급이 나온다는 뜻이다. 집값이 낮으면서도 최신 시설이 들어온다는 거지.",
+      "subtitle": "서울 통근권 신규 공급",
+      "photo_query": "apartment complex modern buildings"
     },
     {
       "image": null,
-      "narration": "1억을 넣어서 월 350만원을 받는다? 그건 년 42% 수익률이란 얘기다. 그 정도 수익률은 매년 원금이 줄어든다는 뜻이다.",
-      "subtitle": "고배당 상품의 구조",
-      "photo_query": "calculator percentage symbol math"
+      "narration": "당장은 공사 중이겠지만, 이게 준공되면 주변 지가도 영향을 받는다. 투자자들이 벌써 눈여겨본다 카더라.",
+      "subtitle": "지역 발전 신호 켜졌다",
+      "photo_query": "real estate investment analysis"
     },
     {
       "image": null,
-      "narration": "가만. 원금이 깎여가는데 계속 같은 배당금을 받을 수 있을까? 언젠가는 무너진다. 그게 고수익 상품의 진짜 모습이다.",
-      "subtitle": "지속 불가능한 구조",
-      "photo_query": "house of cards falling collapse"
+      "narration": "내 집 마련 생각 있으면 이제라도 이 지역들 체크해봐라. 시간이 지날수록 차이난다.",
+      "subtitle": "지금이 관찰 시점이다",
+      "photo_query": "korean apartment neighborhood walkthrough"
     },
     {
       "image": null,
-      "narration": "수익률만 크면 다 좋은 게 아니다. 원금이 살아있는지. 지속 가능한지. 이걸 봐야 한다. 더 알고 싶으면 팔로우해라.",
-      "subtitle": "원금 안전성 확인 필수",
-      "photo_query": "financial advisor consultation meeting"
+      "narration": "더 자세한 정보는 팔로우해서 받아라. 쫌봐봐에서 매일 실시간 트렌드를 풀어낸다.",
+      "subtitle": "팔로우하고 놓치지 마",
+      "photo_query": "city skyline development construction"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-31T02:14:39.804107+00:00"
+    "generated_at": "2026-10-31T09:25:19.522337+00:00"
   }
 }

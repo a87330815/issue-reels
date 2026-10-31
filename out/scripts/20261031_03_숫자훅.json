@@ -1,46 +1,45 @@
 {
-  "title": "신축 vs 구축 아파트 가격차",
+  "title": "신축 vs 구축 가격차",
   "cover": {
     "image": null,
     "lines": [
-      "신축은",
-      "<r>24억</r>",
-      "구축은 8억",
-      "3배 차이네"
+      "신축 아파트",
+      "<r>3배</r>",
+      "비싼 거 알았나"
     ],
     "badge": null,
-    "photo_query": "new apartment construction vs old building"
+    "photo_query": "new apartment building construction vs old"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 신축 아파트 평균이 24억 6천 정도인데. 2005년 이전 구축은 8억이다. 3배 차이 난다.",
-      "subtitle": "신축 24.6억 vs 구축 8.0억",
-      "photo_query": "luxury new apartment interior modern design"
+      "narration": "이거 모르고 지나가면 손해다. 신축 아파트. 2020년 이후 지어진 데 평균 24억 6천이다. 뭐라카노!",
+      "subtitle": "신축(2020년 이후) 평균 24.6억",
+      "photo_query": "modern new apartment building completion shiny"
     },
     {
       "image": null,
-      "narration": "뭐라카노. 똑같은 강남 땅인데. 지은 지 얼마나 됐는지로 가격이 확 달라진다고.",
-      "subtitle": "지역 같아도 건축년도가 결과",
-      "photo_query": "seoul gangnam district apartment buildings mixed"
+      "narration": "그런데 2005년 이전 구축은? 평균 8억이다. 무려 3배 차이다 아이가.",
+      "subtitle": "구축(2005년 이전) 평균 8억",
+      "photo_query": "old apartment building aged korea vintage"
     },
     {
       "image": null,
-      "narration": "신축이면 16억을 더 주는 거다. 그 돈이면 근처 구축 아파트 2개를 살 수 있다.",
-      "subtitle": "신축 프리미엄 16억대",
-      "photo_query": "apartment price tags money calculation documents"
+      "narration": "신축이라고 다 같은 게 아니다. 똑같은 100제곱미터 주고도 신축은 7억 8천, 구축은 5억 1천. 3천만 원 차이다 거든.",
+      "subtitle": "같은 면적인데 신축이 3천만 원 비쌈",
+      "photo_query": "apartment price comparison chart numbers"
     },
     {
       "image": null,
-      "narration": "관심 가진 아파트 있다면. 건축년도를 먼저 봐라. 이게 가격을 확 좌우한다.",
-      "subtitle": "아파트 선택 전 건축년도 체크",
-      "photo_query": "person checking apartment documents details"
+      "narration": "요새 신축 사면 자산 가치 유지는 쉬운데, 구축은 년마다 떨어진다. 이거. 정말 중요하다.",
+      "subtitle": "신축 선택 vs 구축 선택",
+      "photo_query": "investment property real estate value chart"
     },
     {
       "image": null,
-      "narration": "이런 데이터가 매주 올라온다. 쫌봐봐 채널 팔로우해라. 다음 주에 또 놀라운 수치들이 떨어진다.",
-      "subtitle": "더 많은 부동산 데이터 매주 업데이트",
-      "photo_query": "scrolling mobile phone social media feed"
+      "narration": "집 사기 전에 이 데이터 한 번 더 봐라. 우리 채널에서 더 자세히 본다.",
+      "subtitle": "팔로우 하고 가!",
+      "photo_query": "person looking at apartment listings tablet"
     }
   ],
   "meta": {
@@ -55,6 +54,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T02:14:25.630503+00:00"
+    "generated_at": "2026-10-31T09:25:06.114557+00:00"
   }
 }

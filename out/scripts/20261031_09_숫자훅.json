@@ -1,39 +1,39 @@
 {
-  "title": "30% 폭등한 주식의 함정",
+  "title": "JTBC 서울 마라톤 11월 1일 개최",
   "cover": {
     "image": null,
     "lines": [
-      "<r>30%</r> 폭등",
-      "근데 왜",
-      "또 떨어질까"
+      "11월 1일",
+      "서울 마라톤",
+      "<r>5만명</r> 몰린다"
     ],
-    "badge": null,
-    "photo_query": "stock market chart graph rising falling"
+    "badge": "11.1",
+    "photo_query": "marathon race crowd running event"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 어떤 주식이 하루에 30% 폭등했다. 모두 환호했는데 정작 매도한 사람들은 울고 있다.",
-      "subtitle": "30% 폭등 후 떨어지는 패턴",
-      "photo_query": "trader watching stock market screen shocked"
+      "narration": "이거 모르고 지나가면 손해다. 11월 1일 JTBC 서울 마라톤이 터진다. 해마다 수만 명이 모이는데, 이번엔 뭔가 다르다.",
+      "subtitle": "11월 1일 JTBC 마라톤",
+      "photo_query": "seoul marathon event banner"
     },
     {
       "image": null,
-      "narration": "이게 왜 일어나냐. 급등이 시작되면 먼저 들어온 투자자들이 이익을 챙기려고 팔아버린다. 그럼 뒤따라온 사람들은 비싼 값에 매수하는 셈이다.",
-      "subtitle": "먼저 나간 사람이 이기는 구조",
-      "photo_query": "money flowing out wallet hands"
+      "narration": "스포츠 제품 체험 부스가 딱 펼쳐진다. 실제로 써보고 고를 기회다. 마라톤 참가자들이 기다리던 부분이다.",
+      "subtitle": "스포츠 케어 제품 체험",
+      "photo_query": "sports equipment booth expo display"
     },
     {
       "image": null,
-      "narration": "결국 급등은 기회가 아니라 함정이다. 화면에서 빨간 수字를 보고 덤볐다간 나중에 후회한다.",
-      "subtitle": "급등 = 매도 신호일 수 있다",
-      "photo_query": "person regret frustrated computer screen"
+      "narration": "신발, 압박복, 회복용품까지. 진짜 쓸 거 직접 만져보고 고르는 거지. 온라인에서 못 하는 게 여기서 다 된다.",
+      "subtitle": "현장에서 직접 체험하고 구매",
+      "photo_query": "athletic shoes compression gear display"
     },
     {
       "image": null,
-      "narration": "투자는 남 따라 하는 게 아니다. 기초부터 배우고 나만의 전략을 세워야 한다. 더 많은 투자 정보는 쫌봐봐 채널에서 확인해라.",
-      "subtitle": "투자의 정답은 인내심",
-      "photo_query": "investor analyzing financial documents notebook planning"
+      "narration": "마라톤 참가하거나, 안 해도 구경 가볼 만하다. 11월 1일 일정 비워놔라.",
+      "subtitle": "11월 1일 서울 마라톤",
+      "photo_query": "marathon finish line celebration event"
     }
   ],
   "meta": {
@@ -42,6 +42,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-31T02:15:07.451320+00:00"
+    "generated_at": "2026-10-31T09:25:47.231082+00:00"
   }
 }

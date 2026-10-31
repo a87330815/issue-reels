@@ -1,0 +1,47 @@
+{
+  "title": "라면 물 양 계산 실패",
+  "cover": {
+    "image": null,
+    "lines": [
+      "라면 끓일 때",
+      "<r>물 양 계산</r>",
+      "왜 이렇게 어렵노"
+    ],
+    "badge": null,
+    "photo_query": "ramen pot water cooking"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "물을 넣는다. '딱 이 정도면 될 거 같은데' 하면서 넣는다.",
+      "subtitle": "딱 이 정도면 될 거 같은데",
+      "photo_query": "pouring water into pot"
+    },
+    {
+      "image": null,
+      "narration": "끓어오른다. 어? 벌써 불어나왔다. 국물이 없네. 또 너무 많으면 국물이 처 쩍할 때도 있고.",
+      "subtitle": "국물 많으면 처쩍, 없으면 자극적",
+      "photo_query": "ramen noodles boiling overflow"
+    },
+    {
+      "image": null,
+      "narration": "그래서 라면은 매번 도박이다 아이가. 이번엔 대박 나게 국물 시원한데, 다음엔 또 꼭 뭔가 부족하네.",
+      "subtitle": "매번 도박이야 솔직히",
+      "photo_query": "spoon tasting ramen broth"
+    },
+    {
+      "image": null,
+      "narration": "결국 물을 자꾸 못 맞춰서 최고 수준의 라면을 먹어본 적 없는 거 아니냐 이 말이야.",
+      "subtitle": "최고 수준의 라면은 언제나",
+      "photo_query": "perfect ramen bowl noodles soup"
+    }
+  ],
+  "meta": {
+    "format": "음식공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T09:25:53.027450+00:00"
+  }
+}

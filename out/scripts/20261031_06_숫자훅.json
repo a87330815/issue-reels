@@ -5,41 +5,41 @@
     "lines": [
       "서초동 최고가",
       "<r>40.7억</r>",
-      "이게 뭔데"
+      "어디 건가요"
     ],
-    "badge": null,
-    "photo_query": "luxury apartment building gangnam seoul"
+    "badge": "2026년 10월",
+    "photo_query": "luxury apartment building Seoul Seocho"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서초동. 지금 최고가 거래가 떴다. 40.7억이다. 100제곱미터 좀 되는 평에 4천만 원 중후반대 될까 하는데. 이게 뭔데 이 정도냐.",
-      "subtitle": "서초그랑자이 40.7억",
-      "photo_query": "seoul apartment market price expensive"
+      "narration": "이거 모르고 지나가면 손해다. 서초동에서 가장 비싼 아파트가 팔렸다. 40억 7천만 원. 서초그랑자이다.",
+      "subtitle": "서초동 최고가 40.7억",
+      "photo_query": "apartment sales transaction document korea"
     },
     {
       "image": null,
-      "narration": "일단 이 건물이 2021년 지어진 신축이다. 25층. 좋긴 좋네. 근데 이 가격이. 서울 어디든 100억 대급이다 아이가.",
-      "subtitle": "2021년 신축, 25층",
-      "photo_query": "modern luxury apartment interior design"
+      "narration": "100제곱미터, 25층. 진짜 대박 가격이다. 근데 이거. 당신 동네 집값이 떨어졌다는 신호일 수도 있다.",
+      "subtitle": "100㎡ 25층 신축",
+      "photo_query": "high rise apartment building windows city"
     },
     {
       "image": null,
-      "narration": "서초동 평균은 이것보다 훨씬 싸다. 다음 매물이 22억. 그 다음이 14억. 40억대는 정말 예외다.",
-      "subtitle": "다른 매물: 22억, 14억",
-      "photo_query": "apartment building comparison different prices"
+      "narration": "같은 시간. 바로 옆 서초센트럴은 22억. 삼환바우스는 13억 9천. 가격대가 완전 다르다.",
+      "subtitle": "단지마다 가격 편차 큼",
+      "photo_query": "apartment complex comparison different buildings"
     },
     {
       "image": null,
-      "narration": "아파트값 이렇게 튀는 데 있을까. 평수도 딱 100제곱미터. 뭐가 다르길래 3배 넘게 나왔는지. 위치가 다르거나 특별한 뭔가가 있다는 뜻이다.",
-      "subtitle": "같은 평수도 가격 3배 차이",
-      "photo_query": "hangang river view apartment seoul"
+      "narration": "여기가 왜 비쌀까. 신축. 입지. 평수. 이런 거 다 본다는 건데. 당신 집은 어디다. 우리 동네도 확인해봐라.",
+      "subtitle": "신축 여부·입지 영향",
+      "photo_query": "seoul apartment buildings neighborhood district"
     },
     {
       "image": null,
-      "narration": "서초동 부동산 움직임이 요즘 심하다. 쫌봐봐 팔로우 해서 이런 정보 놓치지 마라.",
-      "subtitle": "서초동 아파트 거래 주시",
-      "photo_query": "real estate agent showing apartment"
+      "narration": "쫌봐봐에서 매달 공개하는 실거래가. 팔로우하고 당신 동네 집값 트렌드를 놓치지 마라.",
+      "subtitle": "매달 실거래가 공개",
+      "photo_query": "real estate data analytics chart housing"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T02:14:47.602750+00:00"
+    "generated_at": "2026-10-31T09:25:26.845704+00:00"
   }
 }

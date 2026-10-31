@@ -1,51 +1,45 @@
 {
-  "title": "환절기 감기 예방 3가지 생활습관",
+  "title": "30초 손 씻기",
   "cover": {
     "image": null,
     "lines": [
-      "환절기마다",
-      "감기 걸리는 사람",
-      "<r>놓치는 습관 3가지</r>"
+      "30초만 씻으면",
+      "<r>감기 예방률</r>",
+      "50% 높아진다"
     ],
     "badge": null,
-    "photo_query": "person sneezing autumn"
+    "photo_query": "handwashing timer seconds"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "환절기 되면 감기 걸리는 사람 있지? 그게 면역력이 떨어져서가 아니라 생활습관 문제다 이거봐봐. 첫 번째, 실내 습도 관리를 안 하는 거다.",
-      "subtitle": "실내 습도 40~60% 유지",
-      "photo_query": "humidifier bedroom autumn"
+      "narration": "손만 제대로 씻어도 감기 걸릴 확률이 절반으로 떨어진다고 아이가. 근데 왜일까?",
+      "subtitle": "손가락 사이 세균 증식",
+      "photo_query": "hands bacteria virus close up"
     },
     {
       "image": null,
-      "narration": "아침에 일어났을 때 목이 칼칼하면 습도가 떨어진 거 맞다. 가습기를 하루 6시간 이상 틀어두면 호흡기 점막이 건조해지지 않아서 바이러스 침투가 확 줄어든다.",
-      "subtitle": "하루 6시간 가습기 운전",
-      "photo_query": "humidity meter winter room"
+      "narration": "바이러스는 15초론 못 씻겨난다. 30초를 풀면서 손가락 사이, 손등, 손톱 밑을 비비는 게 핵심이다.",
+      "subtitle": "15초 vs 30초 차이",
+      "photo_query": "washing hands under running water"
     },
     {
       "image": null,
-      "narration": "두 번째, 찬바람 맞고 온 후 손을 안 씻는 거. 손 씻을 때 30초 이상 흐르는 물에 비누로 씻어야 한다.",
-      "subtitle": "돌아와서 30초 손씻기",
-      "photo_query": "washing hands soap water"
+      "narration": "따뜻한 물에 비누 묻혀서 30초. 엄지, 손등, 손가락 사이, 손톱 밑 순서로 꼼꼼히 비비는 거다.",
+      "subtitle": "4단계 30초 씻기법",
+      "photo_query": "proper handwashing technique steps"
     },
     {
       "image": null,
-      "narration": "왜냐면 환절기 바이러스는 손에 묻어서 눈코 입으로 들어가거든. 이것만 해도 감기 확률이 40% 떨어진다고 한다.",
-      "subtitle": "감기 확률 40% 감소",
-      "photo_query": "handwashing technique hygiene"
+      "narration": "외출 다녀와서, 밥 먹기 전에, 화장실 다녀온 후 이 세 번만 해도 호흡기 질환 예방률이 50% 올라간다고 카더라.",
+      "subtitle": "하루 3번 30초 씻기",
+      "photo_query": "daily handwashing routine hygiene"
     },
     {
       "image": null,
-      "narration": "세 번째, 자기 전에 따뜻한 물로 목을 헹굼질 안 하는 것다. 미온수로 한 번만 헹궈도 충분하다.",
-      "subtitle": "자기 전 미온수 가글",
-      "photo_query": "gargling water throat care"
-    },
-    {
-      "image": null,
-      "narration": "목에 붙어 있는 바이러스와 세균을 씻어내는 거지. 이 3가지만 하면 환절기도 끄덕없다. 이런 꿀팁 더 보고 싶으면 팔로우해야지!",
-      "subtitle": "바이러스 물리적 제거",
-      "photo_query": "healthy person autumn season"
+      "narration": "이런 생활 건강팁 더 알고 싶으면 팔로우 눌러 봐! 자기야.",
+      "subtitle": "팔로우해주세요",
+      "photo_query": "follow button social media"
     }
   ],
   "meta": {
@@ -54,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-31T02:16:01.282186+00:00"
+    "generated_at": "2026-10-31T09:26:40.802880+00:00"
   }
 }

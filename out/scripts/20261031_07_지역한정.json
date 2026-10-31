@@ -1,46 +1,45 @@
 {
-  "title": "반여동 최고가 6.4억",
+  "title": "반여동 최고가 공개",
   "cover": {
     "image": null,
     "lines": [
       "반여동",
       "<r>6.4억</r>",
-      "이 가격인데",
-      "알았나?"
+      "이게 최고가다"
     ],
     "badge": null,
-    "photo_query": "busan haeundae centum city apartment buildings"
+    "photo_query": "busan haeundae apartment buildings modern"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 부산 반여동. 딱 이 동네 살고 있는 사람은 봐라. 지난달 센텀KCC스위첸이 6억 4천만 원에 팔렸다.",
-      "subtitle": "센텀KCC스위첸 84㎡ 6.4억 원에",
-      "photo_query": "apartment building entrance korea centum"
+      "narration": "이거 모르고 지나가면 손해다. 반여동. 10월에 나온 실거래가. 최고가가 뭔지 알아야 제값 쓰지.",
+      "subtitle": "반여동 10월 실거래가 공개",
+      "photo_query": "busan apartment transaction documents"
     },
     {
       "image": null,
-      "narration": "2022년 신축이지 않나. 16층 좋은 위치. 이게 최고가다.",
-      "subtitle": "2022년 신축\n16층 프리미엄 위치",
-      "photo_query": "modern apartment building facade high floor"
+      "narration": "센텀KCC스위첸. 84제곱미터. 6억 4천만원이다. 2022년 준공한 새 아파트 중에서 가장 비싼 거다 아이가.",
+      "subtitle": "센텀KCC스위첸 6.4억",
+      "photo_query": "luxury apartment modern building entrance"
     },
     {
       "image": null,
-      "narration": "이 지역 평균이 얼마인지 봤나? 메가센텀한화는 5억 6천만 원. 트루엘은 3억 원 대. 쫌봐봐. 같은 동네인데 큰 차이다.",
-      "subtitle": "같은 동네 아파트\n가격 편차 3배 이상",
-      "photo_query": "apartment comparison price difference chart"
+      "narration": "그다음이 메가센텀한화꿈에그린 5억 6천만원. 같은 크기 아파트인데 8천만원 차이다. 빌딩마다 가격이 이렇게 난다.",
+      "subtitle": "메가센텀 5.6억 vs 센텀KCC",
+      "photo_query": "seoul apartments price comparison real estate"
     },
     {
       "image": null,
-      "narration": "신축 여부, 층수, 평수. 이 셋을 제대로 봐야 니 돈이 벌린다. 반여동서 집 보려면 반드시 체크해라.",
-      "subtitle": "신축 여부·층수·평수 가격 결정 요소",
-      "photo_query": "apartment viewing checklist document pen"
+      "narration": "반여동 살려고 한다면? 최고가부터 알아야 시장 감각이 생긴다. 6억. 이 기준 잊지 마라.",
+      "subtitle": "반여동 최고가 6.4억 기억하기",
+      "photo_query": "real estate market analysis documents"
     },
     {
       "image": null,
-      "narration": "부산 반여동 최신 거래 데이터. 팔로우해서 매달 업데이트받고, 니 주변이 얼마짜리인지 늘 알아둬라. 이게 똑똑한 주인의 기본이다.",
-      "subtitle": "쫌봐봐에서\n지역별 최신 거래 확인",
-      "photo_query": "smartphone real estate app notification update"
+      "narration": "우리 계정 팔로우해라. 매달 나오는 실거래가 놓치지 말고. 손해 보는 일 없게.",
+      "subtitle": "매달 실거래가 업데이트",
+      "photo_query": "follow button notification bell"
     }
   ],
   "meta": {
@@ -58,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T02:14:55.329752+00:00"
+    "generated_at": "2026-10-31T09:25:33.799246+00:00"
   }
 }

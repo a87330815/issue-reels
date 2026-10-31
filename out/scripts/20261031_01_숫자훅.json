@@ -1,9 +1,9 @@
 {
-  "title": "서울 강남 아파트 78억 거래",
+  "title": "반포동 래미안원베일리 78억 거래 - 서울 강남 아파트 시장",
   "cover": {
     "image": null,
     "lines": [
-      "반포동",
+      "반포동 신축",
       "<r>78억</r>",
       "이게 현실이다"
     ],
@@ -13,33 +13,27 @@
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리 101제곱미터가 78억에 팔렸다. 2023년에 지은 신축인데. 와 대박.",
-      "subtitle": "반포동 래미안원베일리 78억",
-      "photo_query": "new apartment building luxury korea"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 2023년에 지은 따끈따끈한 신축. 이게 지난달에 78억에 팔렸다.",
+      "subtitle": "반포동 신축 78억 거래",
+      "photo_query": "modern apartment building construction completion"
     },
     {
       "image": null,
-      "narration": "32층에 있으니까 뷰가 장난 아니다. 거기다 올해 10월 거래라카더라. 강남은 이제 진짜 다른 세계다.",
-      "subtitle": "32층 고층 신축",
-      "photo_query": "high floor apartment window city view"
+      "narration": "101제곱미터짜리다. 3룸 정도 되는 크기. 32층까지 올라가는 고급 단지. 이 동네 시세를 보면 이거 절대 낮은 가격 아니다.",
+      "subtitle": "101㎡ 32층 고급 단지",
+      "photo_query": "apartment floor plan 3 bedroom layout"
     },
     {
       "image": null,
-      "narration": "면적이 101제곱미터다. 3룸 기준으로 더 크지도 작지도 않다. 이 사이즈가 78억이라는 게 현실이다.",
-      "subtitle": "101제곱미터 거래",
-      "photo_query": "apartment floor plan layout living room"
+      "narration": "서울 강남권에서 신축이 이 정도 가격대로 거래된다는 건. 시장이 꽤 뜨겁다는 증거다. 반포동 실거래가. 이거 봐봐.",
+      "subtitle": "강남권 신축 시장 현황",
+      "photo_query": "seoul gangnam neighborhood street view"
     },
     {
       "image": null,
-      "narration": "저 가격대는 서울 강남권에서 평범한 거다. 근데 지방에선? 생각해보니 무섭지 아니가.",
-      "subtitle": "서울 강남 시세",
-      "photo_query": "seoul skyline gangnam district buildings"
-    },
-    {
-      "image": null,
-      "narration": "이런 실거래가들을 날마다 업뎃한다. 팔로우하고 서울 강남 부동산 정보 놓치지 말아라.",
-      "subtitle": "매일 업뎃되는 실거래",
-      "photo_query": "real estate market data analysis charts"
+      "narration": "당신 지역은 어떨까. 우리 계정에서 계속 확인해라. 손해 보지 말고.",
+      "subtitle": "지역별 실거래가 확인하기",
+      "photo_query": "real estate transaction data chart statistics"
     }
   ],
   "meta": {
@@ -57,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T02:14:11.894377+00:00"
+    "generated_at": "2026-10-31T09:24:51.631331+00:00"
   }
 }

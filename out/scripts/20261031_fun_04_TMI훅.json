@@ -1,0 +1,53 @@
+{
+  "title": "일요일 저녁부터 시작되는 월요병",
+  "cover": {
+    "image": null,
+    "lines": [
+      "월요일 아침이",
+      "<r>일요일 저녁에</r>",
+      "이미 시작된다?"
+    ],
+    "badge": null,
+    "photo_query": "sunday evening sad mood"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "일요일 저녁 6시. 하루가 남았는데도 자꾸만 기분이 다운되지 않나. 이거 그냥 마음이 약해서 그런 거 아니다.",
+      "subtitle": "일요일 저녁의 우울함",
+      "photo_query": "sunday evening window sunset"
+    },
+    {
+      "image": null,
+      "narration": "과학적으로 증명된 거다. '선데이 스쿠프'라고 불리는 현상인데, 일요일 저녁부터 세로토닌이 뚝 떨어진다고 카더라.",
+      "subtitle": "세로토닌 감소 = 기분 저하",
+      "photo_query": "brain chemistry serotonin illustration"
+    },
+    {
+      "image": null,
+      "narration": "월요일을 앞두고 뇌가 스트레스 호르몬을 미리 분비하는 거야. 그래서 일요일 밤이 제일 길게 느껴지는 거다.",
+      "subtitle": "월요일 스트레스 미리 시작",
+      "photo_query": "person stressed worried night"
+    },
+    {
+      "image": null,
+      "narration": "결국 월요일 아침이 힘든 게 아니라, 일요일 저녁부터 이미 너는 월요일을 살고 있던 거야. 과학이 증명했으니까 이제 편해야지.",
+      "subtitle": "선데이 스쿠프, 알고 보니 다 맞았네",
+      "photo_query": "monday morning alarm clock tired"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 궁금하면 팔로우 누르고, 월요일도 우리 함께 버텨보자.",
+      "subtitle": "팔로우해서 일상 과학 배우기",
+      "photo_query": "follow button social media"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T09:26:12.367622+00:00"
+  }
+}

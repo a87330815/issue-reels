@@ -1,45 +1,45 @@
 {
-  "title": "송도동 10월 아파트 거래",
+  "title": "송도동 10월 아파트 거래 분석",
   "cover": {
     "image": null,
     "lines": [
       "송도동",
-      "<r>9억</r>대",
-      "실거래가 떴다"
+      "이번 달 <r>9억</r>",
+      "팔렸다"
     ],
     "badge": null,
-    "photo_query": "songdo incheon apartment complex modern"
+    "photo_query": "incheon songdo apartment complex modern building"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 송도동. 이번 달 10월에 아파트 거래가 막 떴다. 9억 대부터 시작하는데.",
-      "subtitle": "송도동 10월 거래 공개",
-      "photo_query": "incheon songdo skyline tall buildings"
+      "narration": "이거 모르고 지나가면 손해다. 송도동. 이번 달 10건 거래 났다. 뭐가 나왔냐고? 9억대부터 7억대까지. 왕창 팔렸다.",
+      "subtitle": "송도동 10월 거래 10건 분석",
+      "photo_query": "incheon songdo real estate transaction documents"
     },
     {
       "image": null,
-      "narration": "가장 비싼 게 9억 3천. 59제곱미터. 뭐라카더라면 송도더샵퍼스트파크다.",
-      "subtitle": "최고가 9억 3천만원",
-      "photo_query": "luxury apartment interior modern design"
+      "narration": "제일 비싼 게 뭔지 봐봐. 송도더샵퍼스트파크. 93200만원이다. 60제곱미터 짜리가 9억이 넘는다.",
+      "subtitle": "최고가: 9억3200만원",
+      "photo_query": "luxury apartment high floor city view"
     },
     {
       "image": null,
-      "narration": "그 다음이 8억 8천. 롯데캐슬캠퍼스타운. 101제곱미터짜리. 40층까지 있다.",
-      "subtitle": "대규모 단지도 거래",
-      "photo_query": "apartment building lobby entrance"
+      "narration": "그 다음이 롯데캐슬. 88700만원. 100제곱미터 넘는 걸 8억 넘게 팔았다. 송도. 왜 이렇게 뜨겁냐고?",
+      "subtitle": "대형평수 8억대 중후반",
+      "photo_query": "apartment building construction crane development site"
     },
     {
       "image": null,
-      "narration": "65억부터 75억까지. 송도 프리미엄 아파트들이 움직이고 있다. 이 타이밍을 노린 사람들이 있다.",
-      "subtitle": "65억~93억 거래 다수",
-      "photo_query": "real estate transaction documents paperwork"
+      "narration": "2010년에서 2020년 사이 지은 건물들이다. 준신축부터 신축까지. 송도는 지금도 뜨겁다.",
+      "subtitle": "준신축·신축 물량 활발",
+      "photo_query": "apartment price trend chart graph increase"
     },
     {
       "image": null,
-      "narration": "송도 아파트 사려고 한다면? 이 시기 시세 체크는 필수다. 우리 채널에서 계속 업데이트해주니까 팔로우해라.",
-      "subtitle": "송도 시세 트렌드 확인",
-      "photo_query": "person checking mobile phone real estate"
+      "narration": "송도동 최신 거래. 이거 빠지면 안 된다. 우리 채널 팔로우하면 매일 따끈따끈한 데이터가 온다. 놓치지 마라.",
+      "subtitle": "매달 최신 거래 업데이트",
+      "photo_query": "mobile phone notification real estate alert"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T02:14:18.307786+00:00"
+    "generated_at": "2026-10-31T09:24:59.052801+00:00"
   }
 }

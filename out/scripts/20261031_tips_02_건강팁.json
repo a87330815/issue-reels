@@ -1,0 +1,65 @@
+{
+  "title": "환절기 감기 예방 3가지 생활습관",
+  "cover": {
+    "image": null,
+    "lines": [
+      "환절기 감기",
+      "<r>3주 안 걸리는</r>",
+      "생활습관"
+    ],
+    "badge": null,
+    "photo_query": "person sneezing autumn"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "환절기마다 감기 걸리는 사람들 있잖아. 근데 이거 다 생활습관 때문이다 이거야. 첫 번째, 자기 전에 따뜻한 물로 양치하고 자야 한다.",
+      "subtitle": "자기 전 따뜻한 물 양치",
+      "photo_query": "warm water gargling night"
+    },
+    {
+      "image": null,
+      "narration": "목은 감기 바이러스의 입구거든. 하루 종일 묻었던 바이러스를 따뜻한 물로 씻어내면 수면 중에 번식 못한다 이거지. 아침에 일어났을 때 목이 훨씬 편하다.",
+      "subtitle": "따뜻한 물이 바이러스 번식 억제",
+      "photo_query": "throat care warm water"
+    },
+    {
+      "image": null,
+      "narration": "두 번째는 실내 습도를 50~60% 유지하는 거다. 가습기 틀든지, 아니면 젖은 수건 걸어놔도 된다.",
+      "subtitle": "실내 습도 50~60% 유지",
+      "photo_query": "humidifier bedroom"
+    },
+    {
+      "image": null,
+      "narration": "건조한 환경에서는 바이러스가 공중에 떠다니는 시간이 2배 이상 길어진다고 한다. 습도만 유지해도 감염 확률이 확 떨어진다.",
+      "subtitle": "습도 높으면 바이러스 생존 시간 단축",
+      "photo_query": "dry air moisture meter"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 외출 후에 콧속 세척을 해야 한다. 식염수로 하루 1~2번만 해도 돼. 이게 제일 효과 좋다.",
+      "subtitle": "외출 후 식염수 콧속 세척",
+      "photo_query": "saline nasal spray"
+    },
+    {
+      "image": null,
+      "narration": "감기 바이러스 70%는 코로 들어온다고 한다. 콧속이 바이러스 번식지가 되는 걸 식염수로 미리 막아버리는 거야. 이것만 해도 감기 확 줄어든다니까 해봐라.",
+      "subtitle": "콧속은 바이러스의 첫 번식 장소",
+      "photo_query": "nasal hygiene prevention"
+    },
+    {
+      "image": null,
+      "narration": "이 세 가지만 지키면 환절기를 건강하게 넘긴다. 이런 꿀팁 더 보고 싶으면 팔로우해라야 한다.",
+      "subtitle": "환절기 건강하게 보내기",
+      "photo_query": "healthy autumn season"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T09:26:34.407335+00:00"
+  }
+}

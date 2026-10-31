@@ -1,0 +1,53 @@
+{
+  "title": "옷장 정리",
+  "cover": {
+    "image": null,
+    "lines": [
+      "안 입는 옷",
+      "<r>3개월 기준</r>",
+      "버려야 하는 이유"
+    ],
+    "badge": null,
+    "photo_query": "cluttered wardrobe closet"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "옷장이 터지는 사람들 봤지? 근데 정신 차려보면 진짜 입는 옷은 20% 정도다 아이가.",
+      "subtitle": "옷장의 80%는 죽은 옷",
+      "photo_query": "full clothing rack hangers"
+    },
+    {
+      "image": null,
+      "narration": "기준은 간단하다. 지난 3개월 동안 손도 안 댄 옷들이다. 그게 바로 너가 절대 안 입을 옷이다.",
+      "subtitle": "3개월 = 계절 한 번",
+      "photo_query": "calendar seasons change"
+    },
+    {
+      "image": null,
+      "narration": "이것만 버려도 옷장 공간 30~40% 생긴다. 왜냐? 죽은 옷이 사라지니까 남은 옷들이 눈에 띄거든.",
+      "subtitle": "보이는 옷 = 입는 옷",
+      "photo_query": "organized closet clean space"
+    },
+    {
+      "image": null,
+      "narration": "게다가 이렇게 정리하면 사고 싶은 마음도 줄어든다. 내가 뭘 입는지 알게 되거든.",
+      "subtitle": "옷 관리 시간 절반으로",
+      "photo_query": "woman choosing outfit wardrobe"
+    },
+    {
+      "image": null,
+      "narration": "이런 꿀팁 더 보고 싶으면 팔로우해 두고, 댓글로 너는 옷장에 뭐가 제일 많냐고 말해 봐.",
+      "subtitle": "지금 바로 3개월 체크!",
+      "photo_query": "follow subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "살림팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T09:26:24.629426+00:00"
+  }
+}
