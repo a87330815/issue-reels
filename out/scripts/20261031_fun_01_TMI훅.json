@@ -1,0 +1,53 @@
+{
+  "title": "한국 지하철이 세계에서 가장 정확한 이유",
+  "cover": {
+    "image": null,
+    "lines": [
+      "한국 지하철",
+      "<r>30초 늦어도</r>",
+      "뉴스 나간다고?"
+    ],
+    "badge": null,
+    "photo_query": "subway train station clock"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "한국 지하철은 세계에서 가장 정확하기로 유명하거든. 평균 30초 오차밖에 없다고 카더라. 그게 왜 그럴까?",
+      "subtitle": "정확성이 한국 지하철의 정체성",
+      "photo_query": "subway platform passengers waiting"
+    },
+    {
+      "image": null,
+      "narration": "일단 한국 사람들 특성상 5분만 늦어도 'XX 지하철 7호선 5분 연착' 이렇게 뉴스 나거든. 그래서 더 열심히 맞춘다는 거야.",
+      "subtitle": "국민의 시간관념이 국력",
+      "photo_query": "news broadcast announcement"
+    },
+    {
+      "image": null,
+      "narration": "거기다 신호 체계가 말도 안 되게 정교해. 각 역마다 시간 간격을 밀리초 단위로 조절한다니까. 기술력 봐봐.",
+      "subtitle": "밀리초 단위의 조절",
+      "photo_query": "subway control room technology"
+    },
+    {
+      "image": null,
+      "narration": "그래서 한국 지하철 타보면 정확함이 이상할 정도가 되는 거다. 다른 나라는 5분 늦는 게 일상인데.",
+      "subtitle": "한국만의 특이한 경험",
+      "photo_query": "international subway comparison"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 알고 싶으면 팔로우하시고, 다음 편도 봐봐. 우리나라 대박이지?",
+      "subtitle": "팔로우하고 더 보기",
+      "photo_query": "follow subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T14:39:31.097703+00:00"
+  }
+}

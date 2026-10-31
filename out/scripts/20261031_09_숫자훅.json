@@ -1,39 +1,45 @@
 {
-  "title": "JTBC 서울 마라톤 11월 1일 개최",
+  "title": "레반테 vs 아틀레티코 마드리드 선발 라인업 변화",
   "cover": {
     "image": null,
     "lines": [
-      "11월 1일",
-      "서울 마라톤",
-      "<r>5만명</r> 몰린다"
+      "둘 다 빠졌다",
+      "<r>레반테</r>",
+      "vs 아틀레티코"
     ],
-    "badge": "11.1",
-    "photo_query": "marathon race crowd running event"
+    "badge": null,
+    "photo_query": "football soccer match lineup announcement"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 11월 1일 JTBC 서울 마라톤이 터진다. 해마다 수만 명이 모이는데, 이번엔 뭔가 다르다.",
-      "subtitle": "11월 1일 JTBC 마라톤",
-      "photo_query": "seoul marathon event banner"
+      "narration": "이거 모르고 지나가면 손해다. 방금 나온 선발 라인업. 레반테는 핵심 선수 둘이 빠졌다.",
+      "subtitle": "레반테 선발라인업 공개",
+      "photo_query": "soccer team formation tactics board"
     },
     {
       "image": null,
-      "narration": "스포츠 제품 체험 부스가 딱 펼쳐진다. 실제로 써보고 고를 기회다. 마라톤 참가자들이 기다리던 부분이다.",
-      "subtitle": "스포츠 케어 제품 체험",
-      "photo_query": "sports equipment booth expo display"
+      "narration": "줄리안이 투입되고. 쿠티는 벤치다. 두 선수가 동시에 움직인 거 봤나.",
+      "subtitle": "줄리안 선발, 쿠티 제외",
+      "photo_query": "football player substitution decision"
     },
     {
       "image": null,
-      "narration": "신발, 압박복, 회복용품까지. 진짜 쓸 거 직접 만져보고 고르는 거지. 온라인에서 못 하는 게 여기서 다 된다.",
-      "subtitle": "현장에서 직접 체험하고 구매",
-      "photo_query": "athletic shoes compression gear display"
+      "narration": "아틀레티코도 마찬가지. 선발 인원이 예상과 달랐다. 양팀 모두 변수가 생겼다.",
+      "subtitle": "아틀레티코도 선발진 변경",
+      "photo_query": "football match between two professional teams"
     },
     {
       "image": null,
-      "narration": "마라톤 참가하거나, 안 해도 구경 가볼 만하다. 11월 1일 일정 비워놔라.",
-      "subtitle": "11월 1일 서울 마라톤",
-      "photo_query": "marathon finish line celebration event"
+      "narration": "이런 변화가 경기 흐름을 좌우한다. 베팅하는 사람들 보면 환장한다.",
+      "subtitle": "선발 변화 = 전술 변경",
+      "photo_query": "soccer match intensity live action"
+    },
+    {
+      "image": null,
+      "narration": "당신도 라이브 중계 보기 전에 선발 확인해야 한다. 팔로우해라. 이런 거 다 알려준다.",
+      "subtitle": "선발 정보 미리 알아두기",
+      "photo_query": "football fans watching live broadcast"
     }
   ],
   "meta": {
@@ -42,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-31T09:25:47.231082+00:00"
+    "generated_at": "2026-10-31T14:39:23.888082+00:00"
   }
 }

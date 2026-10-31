@@ -1,45 +1,45 @@
 {
-  "title": "반포동 vs 덕암동, 같은 서울 다른 세상",
+  "title": "반포동 vs 덕암동, 같은 아파트인데 86배 차이",
   "cover": {
     "image": null,
     "lines": [
-      "반포동 <r>60억</r>",
-      "덕암동 7천만",
-      "860배 차이다"
+      "같은 아파트",
+      "<r>86배</r>",
+      "가격 차이"
     ],
     "badge": null,
-    "photo_query": "seoul apartment building contrast wealthy neighborhood"
+    "photo_query": "seoul apartment building exterior modern"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 같은 서울 아파트인데 이 정도 차이가 난다고?",
-      "subtitle": "반포동 평균값 vs 덕암동",
-      "photo_query": "seoul gangnam apartment complex modern buildings"
+      "narration": "이거 모르고 지나가면 손해다. 이번 10월 서울 아파트 거래. 반포동은 60억. 덕암동은 0.7억이다. 같은 아파트인데 86배 차이다.",
+      "subtitle": "반포동 평균 60억 vs 덕암동 평균",
+      "photo_query": "seoul apartment price comparison"
     },
     {
       "image": null,
-      "narration": "반포동. 래미안원베일리 32층은 7억8천. 25층 자이는 4억5천. 평균 60억이다.",
-      "subtitle": "반포동 아파트 시세",
-      "photo_query": "luxury apartment interior modern design"
+      "narration": "반포동 래미안원베일리. 2023년 신축. 펜트하우스급 층에서 7억 8천만 원. 같은 단지 7층은 5억 7천만 원이다.",
+      "subtitle": "반포동 래미안원베일리 7억 8천~5억",
+      "photo_query": "luxury apartment building high rise"
     },
     {
       "image": null,
-      "narration": "덕암동은 어? 평균이 7천만이다. 뭐라카더라. 860배 차이가 난다는 거다.",
-      "subtitle": "같은 서울, 다른 부동산",
-      "photo_query": "seoul neighborhood older residential area buildings"
+      "narration": "층수가 뭐 하는 건데 이렇게까지 다를까. 이거. 강남구의 위력이다.",
+      "subtitle": "같은 단지, 층수만 다르면",
+      "photo_query": "seoul gangnam district skyline view"
     },
     {
       "image": null,
-      "narration": "이건 단순 시세 차이가 아니다. 같은 도시에서 사는 형태 자체가 다르다는 것이다.",
-      "subtitle": "부동산은 위치가 전부",
-      "photo_query": "real estate investment property value comparison"
+      "narration": "덕암동 0.7억은 뭐냐. 여긴 아파트 거래 자체가 드물다. 투자 대상이 아니라 거주 대상이다. 자기 집 필요한 사람들만 산다.",
+      "subtitle": "거래량 격차는 더 크다",
+      "photo_query": "korea residential apartment neighborhood"
     },
     {
       "image": null,
-      "narration": "더 알고 싶으면 팔로우해라. 쫌봐봐에서 이런 데이터 매일 던진다.",
-      "subtitle": "매일 새로운 데이터 공개",
-      "photo_query": "person checking real estate data on"
+      "narration": "야야야. 같은 서울이지만 이렇게 다르다. 내가 어디 동네에 살고 있는지 이제 알지 않냐. 더 자세히 알고 싶으면 팔로우 해라.",
+      "subtitle": "지역이 모든 걸 결정한다",
+      "photo_query": "seoul map districts neighborhoods"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T09:25:12.434774+00:00"
+    "generated_at": "2026-10-31T14:38:50.380920+00:00"
   }
 }

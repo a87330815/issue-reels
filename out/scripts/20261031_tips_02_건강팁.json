@@ -1,57 +1,45 @@
 {
-  "title": "환절기 감기 예방 3가지 생활습관",
+  "title": "스마트폰 눈 피로 30초 스트레칭",
   "cover": {
     "image": null,
     "lines": [
-      "환절기 감기",
-      "<r>3주 안 걸리는</r>",
-      "생활습관"
+      "하루 <r>30초</r>",
+      "눈 피로",
+      "싹 사라진다"
     ],
     "badge": null,
-    "photo_query": "person sneezing autumn"
+    "photo_query": "eye strain smartphone fatigue"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "환절기마다 감기 걸리는 사람들 있잖아. 근데 이거 다 생활습관 때문이다 이거야. 첫 번째, 자기 전에 따뜻한 물로 양치하고 자야 한다.",
-      "subtitle": "자기 전 따뜻한 물 양치",
-      "photo_query": "warm water gargling night"
+      "narration": "스마트폰 봐서 눈이 뻑뻑하고 침침한 사람들 많지 아이가. 근데 이거 30초면 된다.",
+      "subtitle": "하루 30초면 충분",
+      "photo_query": "person tired eyes phone screen"
     },
     {
       "image": null,
-      "narration": "목은 감기 바이러스의 입구거든. 하루 종일 묻었던 바이러스를 따뜻한 물로 씻어내면 수면 중에 번식 못한다 이거지. 아침에 일어났을 때 목이 훨씬 편하다.",
-      "subtitle": "따뜻한 물이 바이러스 번식 억제",
-      "photo_query": "throat care warm water"
+      "narration": "먼저 양손 엄지손가락을 세운 다음 눈높이에 놔. 한 엄지는 코 앞에, 한 엄지는 팔 끝까지 쭉 뻗어서.",
+      "subtitle": "엄지를 코→팔끝 왕복",
+      "photo_query": "thumb eye focus distance exercise"
     },
     {
       "image": null,
-      "narration": "두 번째는 실내 습도를 50~60% 유지하는 거다. 가습기 틀든지, 아니면 젖은 수건 걸어놔도 된다.",
-      "subtitle": "실내 습도 50~60% 유지",
-      "photo_query": "humidifier bedroom"
+      "narration": "이제 눈알만 움직여서 가까운 엄지, 먼 엄지 왕복으로 봐. 15초 동안 10회 정도 반복해.",
+      "subtitle": "15초×2세트 하루 두 번",
+      "photo_query": "eye focus near far distance training"
     },
     {
       "image": null,
-      "narration": "건조한 환경에서는 바이러스가 공중에 떠다니는 시간이 2배 이상 길어진다고 한다. 습도만 유지해도 감염 확률이 확 떨어진다.",
-      "subtitle": "습도 높으면 바이러스 생존 시간 단축",
-      "photo_query": "dry air moisture meter"
+      "narration": "이렇게 하면 눈 초점 근육이 풀려. 스마트폰만 봐서 굳어진 거를 자극하는 거거든.",
+      "subtitle": "초점 근육 유연성 회복",
+      "photo_query": "eye muscle accommodation lens focus"
     },
     {
       "image": null,
-      "narration": "세 번째, 외출 후에 콧속 세척을 해야 한다. 식염수로 하루 1~2번만 해도 돼. 이게 제일 효과 좋다.",
-      "subtitle": "외출 후 식염수 콧속 세척",
-      "photo_query": "saline nasal spray"
-    },
-    {
-      "image": null,
-      "narration": "감기 바이러스 70%는 코로 들어온다고 한다. 콧속이 바이러스 번식지가 되는 걸 식염수로 미리 막아버리는 거야. 이것만 해도 감기 확 줄어든다니까 해봐라.",
-      "subtitle": "콧속은 바이러스의 첫 번식 장소",
-      "photo_query": "nasal hygiene prevention"
-    },
-    {
-      "image": null,
-      "narration": "이 세 가지만 지키면 환절기를 건강하게 넘긴다. 이런 꿀팁 더 보고 싶으면 팔로우해라야 한다.",
-      "subtitle": "환절기 건강하게 보내기",
-      "photo_query": "healthy autumn season"
+      "narration": "이런 눈 건강 꿀팁 더 알고 싶으면 팔로우해. 계속 도움 되는 거 가져올게.",
+      "subtitle": "팔로우로 더 많은 꿀팁",
+      "photo_query": "healthy eyes bright vision comfort"
     }
   ],
   "meta": {
@@ -60,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-31T09:26:34.407335+00:00"
+    "generated_at": "2026-10-31T14:40:11.293858+00:00"
   }
 }

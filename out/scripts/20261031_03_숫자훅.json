@@ -1,45 +1,45 @@
 {
-  "title": "신축 vs 구축 가격차",
+  "title": "신축 vs 구축, 가격 차이가 미쳤다",
   "cover": {
     "image": null,
     "lines": [
-      "신축 아파트",
-      "<r>3배</r>",
-      "비싼 거 알았나"
+      "신축은 24억",
+      "<r>구축은 8억</r>",
+      "3배 차이다"
     ],
     "badge": null,
-    "photo_query": "new apartment building construction vs old"
+    "photo_query": "new vs old apartment buildings comparison"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 신축 아파트. 2020년 이후 지어진 데 평균 24억 6천이다. 뭐라카노!",
+      "narration": "이거 모르고 지나가면 손해다. 요즘 아파트 사는데 건축연도가 얼마나 중요한지 알아야 한다.",
+      "subtitle": "신축 vs 구축 가격 차이",
+      "photo_query": "apartment price comparison chart"
+    },
+    {
+      "image": null,
+      "narration": "2020년 이후 새로 지은 신축 아파트. 평균 24억 6천만원이다. 와 대박.",
       "subtitle": "신축(2020년 이후) 평균 24.6억",
-      "photo_query": "modern new apartment building completion shiny"
+      "photo_query": "modern new apartment building exterior"
     },
     {
       "image": null,
-      "narration": "그런데 2005년 이전 구축은? 평균 8억이다. 무려 3배 차이다 아이가.",
+      "narration": "반면 2005년 이전 구축 아파트는 평균 8억원. 거의 3배 차이 난다 아이가.",
       "subtitle": "구축(2005년 이전) 평균 8억",
-      "photo_query": "old apartment building aged korea vintage"
+      "photo_query": "old apartment building residential area"
     },
     {
       "image": null,
-      "narration": "신축이라고 다 같은 게 아니다. 똑같은 100제곱미터 주고도 신축은 7억 8천, 구축은 5억 1천. 3천만 원 차이다 거든.",
-      "subtitle": "같은 면적인데 신축이 3천만 원 비쌈",
-      "photo_query": "apartment price comparison chart numbers"
+      "narration": "같은 면적, 같은 강남권인데 건축연도만 달라도 16억이 차이 난다. 이거 생각하고 집 봐야 한다.",
+      "subtitle": "같은 지역도 16억 차이",
+      "photo_query": "seoul gangnam apartment complex"
     },
     {
       "image": null,
-      "narration": "요새 신축 사면 자산 가치 유지는 쉬운데, 구축은 년마다 떨어진다. 이거. 정말 중요하다.",
-      "subtitle": "신축 선택 vs 구축 선택",
-      "photo_query": "investment property real estate value chart"
-    },
-    {
-      "image": null,
-      "narration": "집 사기 전에 이 데이터 한 번 더 봐라. 우리 채널에서 더 자세히 본다.",
-      "subtitle": "팔로우 하고 가!",
-      "photo_query": "person looking at apartment listings tablet"
+      "narration": "집 살 때 연도 확인은 필수다. 더 자세한 단지별 데이터는 우리 채널에서. 팔로우해라.",
+      "subtitle": "건축연도 필수 확인 항목",
+      "photo_query": "real estate agent pointing at documents"
     }
   ],
   "meta": {
@@ -54,6 +54,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T09:25:06.114557+00:00"
+    "generated_at": "2026-10-31T14:38:42.784281+00:00"
   }
 }

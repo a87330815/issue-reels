@@ -1,45 +1,39 @@
 {
-  "title": "하남시 신규택지 7만호 발표",
+  "title": "김유정 화제 이유",
   "cover": {
     "image": null,
     "lines": [
-      "서울 옆",
-      "<r>7만호</r>",
-      "한 번에 풀린다"
+      "요즘 핫한",
+      "<r>김유정</r>",
+      "왜 자꾸 뜨는데"
     ],
     "badge": null,
-    "photo_query": "new residential construction site korea"
+    "photo_query": "korean actress on screen drama performance"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서울 가까운 곳에 7만호가 한 번에 풀렸다. 김포, 하남, 구리 이 정도 규모면 대박이다.",
-      "subtitle": "서울 경계 5km 이내 신규택지",
-      "photo_query": "suburban residential development korea"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 김유정이 자꾸 뜨거든. 드라마 하나로 화제 씹어먹고 있다.",
+      "subtitle": "드라마 열연으로 화제",
+      "photo_query": "korean drama scene filming"
     },
     {
       "image": null,
-      "narration": "여기가 왜 중요하냐면. 서울에서 통근 가능하면서 신규 공급이 나온다는 뜻이다. 집값이 낮으면서도 최신 시설이 들어온다는 거지.",
-      "subtitle": "서울 통근권 신규 공급",
-      "photo_query": "apartment complex modern buildings"
+      "narration": "천재 의사 역할 하는 배우들이 여럿인데, 그 와중에 김유정이가 또 다른 캐릭터로 주목받고 있다니까. 연기력이 다르다는 거야.",
+      "subtitle": "연기력으로 인정받는 중",
+      "photo_query": "actress character transformation acting"
     },
     {
       "image": null,
-      "narration": "당장은 공사 중이겠지만, 이게 준공되면 주변 지가도 영향을 받는다. 투자자들이 벌써 눈여겨본다 카더라.",
-      "subtitle": "지역 발전 신호 켜졌다",
-      "photo_query": "real estate investment analysis"
+      "narration": "요즘 드라마 시즌마다 한두 명씩은 떠오르는 배우가 있는데, 올해는 김유정이가 그 자리라고 봐도 된다.",
+      "subtitle": "올시즌 주목 배우",
+      "photo_query": "korean tv drama popular trending"
     },
     {
       "image": null,
-      "narration": "내 집 마련 생각 있으면 이제라도 이 지역들 체크해봐라. 시간이 지날수록 차이난다.",
-      "subtitle": "지금이 관찰 시점이다",
-      "photo_query": "korean apartment neighborhood walkthrough"
-    },
-    {
-      "image": null,
-      "narration": "더 자세한 정보는 팔로우해서 받아라. 쫌봐봐에서 매일 실시간 트렌드를 풀어낸다.",
-      "subtitle": "팔로우하고 놓치지 마",
-      "photo_query": "city skyline development construction"
+      "narration": "다음엔 드라마 공략표 보고 봐라. 누가 떠오른다고 하는지 확인하고. 팔로우해 두면 트렌드 먼저 캐치할 수 있다.",
+      "subtitle": "팔로우하고 트렌드 먼저 캐치",
+      "photo_query": "social media feed trending notifications"
     }
   ],
   "meta": {
@@ -48,6 +42,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-31T09:25:19.522337+00:00"
+    "generated_at": "2026-10-31T14:38:56.152841+00:00"
   }
 }

@@ -5,41 +5,41 @@
     "lines": [
       "반포동",
       "<r>평당 2.53억</r>",
-      "이게 뭐하는 가격인가"
+      "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building banpo seoul han"
+    "photo_query": "luxury apartment building seoul gangnam"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 32층 펜트하우스급이 7억8천에 나왔다. 평당 2억5천이다.",
-      "subtitle": "래미안원베일리 32층 7억8천만원, 평당",
-      "photo_query": "luxury penthouse apartment view high floor"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 신축 아파트 평당 가격이 2.53억까지 올라왔다. 겨우 100제곱미터, 그러니까 30평 조금 넘는 크기가 25억대라니.",
+      "subtitle": "반포동 신축 아파트의 현주소",
+      "photo_query": "seoul apartment real estate price sign"
     },
     {
       "image": null,
-      "narration": "와. 대박. 같은 건물 7층은 5억7천. 평당이 비슷하지만 높이 차이가 3억을 먹었다.",
-      "subtitle": "같은 건물 7층\n5억7천만원",
-      "photo_query": "apartment building floors comparison perspective"
+      "narration": "이거. 래미안원베일리 32층이 7.8억에 팔렸다. 2023년에 지은 건데 벌써 이 정도다. 32층 101제곱미터가 이 가격이야.",
+      "subtitle": "래미안원베일리 32층 7.8억",
+      "photo_query": "high rise apartment building floor window"
     },
     {
       "image": null,
-      "narration": "강남 반포권에서 평당 2억대는 신축이 장악했다. 옆 동네 반포자이는 평당 5천 싼데도 4억5천이다.",
-      "subtitle": "반포자이 평당 약 5천만 저렴",
-      "photo_query": "seoul apartment buildings comparison neighborhood"
+      "narration": "같은 단지 7층은 5.7억이다. 층수 차이가 2억이다 아이가. 반포동이면 이게 일상이다.",
+      "subtitle": "같은 단지 층수 차이 2억",
+      "photo_query": "apartment floor difference low high level"
     },
     {
       "image": null,
-      "narration": "결국 신축 여부가 값을 좌우한다는 거. 2023년생 래미안과 2009년생 반포자이. 그 차이가 3억이다.",
-      "subtitle": "건설년도의 차이 = 3억원 격차",
-      "photo_query": "new vs old apartment building comparison"
+      "narration": "이게 강남권 현실이다. 집을 봐야 하는 사람은 반드시 알아야 한다. 지금 시점의 매물이 어디에 있고 어떤 가격인지.",
+      "subtitle": "강남권 실거래가 체크 필수",
+      "photo_query": "korea real estate contract documents signing"
     },
     {
       "image": null,
-      "narration": "강남권 아파트 투자 계획 있으면 이 데이터 팔로우. 매월 실거래가 업데이트해서 올려준다. 놓치지 마.",
-      "subtitle": "매월 강남권 실거래 데이터 확인",
-      "photo_query": "real estate market data chart analysis"
+      "narration": "우리 계정에서는 매주 이런 실제 거래 데이터를 가져온다. 팔로우하고 놓치지 말아라.",
+      "subtitle": "매주 업데이트되는 실거래 정보",
+      "photo_query": "smartphone notification bell follow button"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T09:25:41.292432+00:00"
+    "generated_at": "2026-10-31T14:39:17.475692+00:00"
   }
 }

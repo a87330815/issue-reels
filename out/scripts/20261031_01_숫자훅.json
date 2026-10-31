@@ -1,39 +1,39 @@
 {
-  "title": "반포동 래미안원베일리 78억 거래 - 서울 강남 아파트 시장",
+  "title": "반포 래미안원베일리 78억 거래",
   "cover": {
     "image": null,
     "lines": [
-      "반포동 신축",
+      "반포동",
       "<r>78억</r>",
       "이게 현실이다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building seoul gangnam"
+    "photo_query": "luxury apartment building Seoul Banpo"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 2023년에 지은 따끈따끈한 신축. 이게 지난달에 78억에 팔렸다.",
-      "subtitle": "반포동 신축 78억 거래",
-      "photo_query": "modern apartment building construction completion"
+      "narration": "이거 모르고 지나가면 손해다. 방금 터진 거다. 서울 반포동 래미안원베일리. 78억에 거래됐다.",
+      "subtitle": "반포동 래미안원베일리 78억 거래",
+      "photo_query": "apartment price tag real estate transaction"
     },
     {
       "image": null,
-      "narration": "101제곱미터짜리다. 3룸 정도 되는 크기. 32층까지 올라가는 고급 단지. 이 동네 시세를 보면 이거 절대 낮은 가격 아니다.",
-      "subtitle": "101㎡ 32층 고급 단지",
-      "photo_query": "apartment floor plan 3 bedroom layout"
+      "narration": "100제곱미터 남짓한 평수다. 3년 전에 지어진 신축이다. 이게 뭐 하는 거냐고. 가격이다 아이가.",
+      "subtitle": "101.97㎡, 2023년 신축",
+      "photo_query": "new apartment building construction korea"
     },
     {
       "image": null,
-      "narration": "서울 강남권에서 신축이 이 정도 가격대로 거래된다는 건. 시장이 꽤 뜨겁다는 증거다. 반포동 실거래가. 이거 봐봐.",
-      "subtitle": "강남권 신축 시장 현황",
-      "photo_query": "seoul gangnam neighborhood street view"
+      "narration": "32층에 있다. 고층이다. 반포동이다. 요즘 강남 집값을 보여주는 거 아닌가 싶다.",
+      "subtitle": "32층 반포동 고층",
+      "photo_query": "high floor apartment window city view"
     },
     {
       "image": null,
-      "narration": "당신 지역은 어떨까. 우리 계정에서 계속 확인해라. 손해 보지 말고.",
-      "subtitle": "지역별 실거래가 확인하기",
-      "photo_query": "real estate transaction data chart statistics"
+      "narration": "이 수치. 놓치지 마라. 여러분 지역의 집값이 어디까지 올라가 있는지. 확인해야 한다.",
+      "subtitle": "여러분 지역은 어디까?",
+      "photo_query": "korea apartment building skyline neighborhoods"
     }
   ],
   "meta": {
@@ -51,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T09:24:51.631331+00:00"
+    "generated_at": "2026-10-31T14:38:29.136057+00:00"
   }
 }

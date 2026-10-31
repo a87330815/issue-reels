@@ -1,0 +1,53 @@
+{
+  "title": "옷 관리 완벽 가이드",
+  "cover": {
+    "image": null,
+    "lines": [
+      "니트 보풀부터",
+      "<r>흰옷 누런때까지</r>",
+      "5분에 해결"
+    ],
+    "badge": null,
+    "photo_query": "sweater care clothing maintenance"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 니트 보풀 때문에 옷 버리고 있어? 이건 진짜 쉬워. 면도기로 살살 밀면 된다.",
+      "subtitle": "면도기로 보풀 제거",
+      "photo_query": "fuzzy sweater pilling"
+    },
+    {
+      "image": null,
+      "narration": "방향을 한 방향으로만 밀어야 한다. 왕복하면 옷감이 손상된다. 이렇게 2~3분이면 새 옷 같아진다.",
+      "subtitle": "일정 방향으로 2~3분",
+      "photo_query": "razor removing fabric pilling"
+    },
+    {
+      "image": null,
+      "narration": "이제 흰옷 누런때. 산소계 표백제 2큰술에 따뜻한 물 2리터 섞어서 옷을 30분 불리면 된다. 산소가 때를 산화시켜서 떨어진다고.",
+      "subtitle": "산소계 표백제 30분 불리기",
+      "photo_query": "white shirt yellow stain soaking"
+    },
+    {
+      "image": null,
+      "narration": "30분 뒤에 손으로 살살 비벼서 헹궈내면, 와 이거 진짜 된다. 딱 새것처럼 하얗게 올라온다.",
+      "subtitle": "헹굼 후 세탁 완료",
+      "photo_query": "clean white fabric washing result"
+    },
+    {
+      "image": null,
+      "narration": "이 두 가지만 알면 옷 관리는 끝이다. 이런 살림 꿀팁이 더 궁금하면 팔로우해야 한다.",
+      "subtitle": "팔로우로 더 보기",
+      "photo_query": "organized clothing closet wardrobe"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T14:40:04.224109+00:00"
+  }
+}

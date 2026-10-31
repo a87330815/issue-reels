@@ -1,0 +1,62 @@
+{
+  "title": "반여동 아파트 최고가",
+  "cover": {
+    "image": null,
+    "lines": [
+      "반여동서",
+      "<r>6.4억</r>",
+      "나왔다"
+    ],
+    "badge": null,
+    "photo_query": "busan centum city apartment buildings modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 반여동 최신 거래 데이터 떴다. 10월에 센텀KCC스위첸이 6억 4천만 원에 팔렸다.",
+      "subtitle": "센텀KCC스위첸 6.4억",
+      "photo_query": "luxury apartment interior modern design"
+    },
+    {
+      "image": null,
+      "narration": "그런데 같은 달 메가센텀한화꿈에그린은 5억 6천만 원. 8천만 원 차이다. 같은 85제곱미터인데 말이다.",
+      "subtitle": "가격차 8천만원 차이",
+      "photo_query": "apartment price comparison chart"
+    },
+    {
+      "image": null,
+      "narration": "건축연도가 다르긴 했다. 스위첸은 2022년이고 한화꿈에그린은 2008년이다. 14년 격차가 8천만 원이라는 거다.",
+      "subtitle": "신축과 중고 가격격차",
+      "photo_query": "new vs old apartment building comparison"
+    },
+    {
+      "image": null,
+      "narration": "반여동 땅이 워낙 비싼데다가 센텀 신축이 계속 나오니까 가격대도 천지차다. 작은 건 2천만 원대, 큰 신축은 6억이다.",
+      "subtitle": "반여동 가격대폭 차이",
+      "photo_query": "busan real estate market price range"
+    },
+    {
+      "image": null,
+      "narration": "우리 채널 팔로우해라. 매달 최신 거래 데이터 빨리빨리 알려준다.",
+      "subtitle": "더 알고 싶으면 팔로우",
+      "photo_query": "real estate data analysis report"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        6.4,
+        5.6,
+        3.0,
+        2.0,
+        1.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-10-31T14:39:10.107696+00:00"
+  }
+}

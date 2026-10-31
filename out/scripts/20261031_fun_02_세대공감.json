@@ -1,0 +1,54 @@
+{
+  "title": "알람 5분 더의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "알람 5개",
+      "<r>다 끄고</r>",
+      "다시 자는",
+      "사람 특징"
+    ],
+    "badge": null,
+    "photo_query": "alarm clock snooze multiple"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아침 6시. 알람 울린다. 손가락이 저절로 움직여서 '5분 더'를 누른다.",
+      "subtitle": "6시 첫 알람",
+      "photo_query": "hand snooze button alarm"
+    },
+    {
+      "image": null,
+      "narration": "근데 아침 사람들은 알잖아. 5분은 거짓이다. 그래서 6시 5분, 6시 10분, 6시 15분 알람까지 미리 맞춰논다.",
+      "subtitle": "예방차원의 다중 알람",
+      "photo_query": "phone multiple alarms preset"
+    },
+    {
+      "image": null,
+      "narration": "그리고 그 알람들도 다 끈다. 의식 없이 툭툭툭 누르다가 어느 순간 '어? 이거 언제 끈 거야?' 할 때쯤 이미 30분이 지나있다.",
+      "subtitle": "자동으로 끄는 손가락",
+      "photo_query": "tired person bed morning sleepy"
+    },
+    {
+      "image": null,
+      "narration": "결국 늦는다. 근데 우리는 안다. 내일도 똑같이 할 거라는 걸.",
+      "subtitle": "내일도 5분 더",
+      "photo_query": "rushing morning late work hurry"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 공감하고 싶으면 팔로우 누르고 가! 우린 다 같은 거다.",
+      "subtitle": "팔로우해야 된다",
+      "photo_query": "follow button subscribe social media"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T14:39:44.492273+00:00"
+  }
+}

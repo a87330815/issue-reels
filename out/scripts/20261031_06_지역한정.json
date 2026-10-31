@@ -1,0 +1,74 @@
+{
+  "title": "서초동 최고 41억",
+  "cover": {
+    "image": null,
+    "photo_query": "Seocho Seoul apartment skyline",
+    "lines": [
+      "서초동 최고 41억",
+      "<y>얼마에 팔렸나</y>"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Seocho Seoul apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 서초동 최고가 서초그랑자이 100.31㎡ 40.7억. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "서초동 최고 40.7억"
+    },
+    {
+      "image": null,
+      "photo_query": "Seocho Seoul luxury high rise apartment",
+      "narration": "서초동 서초그랑자이, 전용 100㎡(30평) 25층이 40.7억원에 실거래 신고됐다카이. 평당 1.3억. 2021년 준공 신축.",
+      "subtitle": "서초동 서초그랑자이 40.7억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Seocho Seoul luxury high rise apartment",
+      "narration": "같은 동네 서초센트럴IPARK도 주목할 만한다. 전용 81㎡(24평) 29층, 거래가 22.0억원. 평당 9,033만원.",
+      "subtitle": "서초동 서초센트럴IPARK 22.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Seocho Seoul luxury high rise apartment",
+      "narration": "삼환바우스 전용 85㎡(26평) 14층 — 13.9억원 거래. 평당 5,423만원.",
+      "subtitle": "서초동 삼환바우스 13.9억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Seocho Seoul modern apartment residential",
+      "narration": "래미안서초유니빌 전용 34㎡(10평) 10층 — 4.0억원 거래. 평당 3,874만원.",
+      "subtitle": "서초동 래미안서초유니빌 4.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Seocho Seoul residential area aerial",
+      "narration": "서초동 이번 달 거래를 종합하면, 평균 거래가는 16.8억원, 최고가 40.7억원, 최저가 3.2억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "서초동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        40.7,
+        22.0,
+        13.9,
+        4.0,
+        3.2
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-10-31T14:39:03.261984+00:00"
+  }
+}
