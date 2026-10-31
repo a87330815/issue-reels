@@ -1,4 +1,4 @@
-run 41211544196 2026-10-31T14:46:02Z
+run 41218546150 2026-10-31T16:13:11Z
 
 === 20261024_05_숫자훅 ===
   [cover] 'chelsea vs' → "Korea city luxury apartment"
@@ -32,14 +32,14 @@ run 41211544196 2026-10-31T14:46:02Z
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/3] [EL·발랄녀] 1.1초  chelsea vs...
-  TTS [2/3] [EL·발랄녀] 16.4초  이거 모르고 지나가면 손해다. 'chelsea vs...
-  TTS [3/3] [EL·발랄녀] 4.0초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
+  TTS [1/3] [EL·발랄녀] 1.3초  chelsea vs...
+  TTS [2/3] [EL·발랄녀] 16.0초  이거 모르고 지나가면 손해다. 'chelsea vs...
+  TTS [3/3] [EL·발랄녀] 4.5초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
 
 2) 영상 합성
   세그먼트 [1/10] 3.0초
-  세그먼트 [2/10] 17.2초
-  세그먼트 [3/10] 4.8초
+  세그먼트 [2/10] 16.8초
+  세그먼트 [3/10] 5.3초
   세그먼트 [4/10] 4.0초
   세그먼트 [5/10] 4.0초
   세그먼트 [6/10] 4.0초
@@ -49,13 +49,13 @@ run 41211544196 2026-10-31T14:46:02Z
   세그먼트 [10/10] 4.0초
 
   ✓ 릴스 완성: out/reels/20261024_05_숫자훅.mp4
-    길이: 49.5초  /  크기: 3.0MB
--rw-r--r-- 1 runner runner 3.1M Oct 31 14:47 out/reels/20261024_05_숫자훅.mp4
+    길이: 49.8초  /  크기: 3.0MB
+-rw-r--r-- 1 runner runner 3.1M Oct 31 16:14 out/reels/20261024_05_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=49.480272
+duration=49.800272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -72,15 +72,15 @@ duration=49.480272
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 96건
+남은 발행 가능: 97건
 발행 대상: 1건
 
 ── 1/1  20261024_05_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-31/20261024_05.mp4
   캡션: chelsea vs
-  컨테이너: 17973199295973700
+  컨테이너: 17973222392973700
       0초  IN_PROGRESS
-     75초  FINISHED
+     54초  FINISHED
   [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
