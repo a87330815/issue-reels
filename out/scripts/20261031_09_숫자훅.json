@@ -1,45 +1,45 @@
 {
-  "title": "레반테 vs 아틀레티코 마드리드 선발 라인업 변화",
+  "title": "미국 서머타임 해제, 한국과 시차 변함",
   "cover": {
     "image": null,
     "lines": [
-      "둘 다 빠졌다",
-      "<r>레반테</r>",
-      "vs 아틀레티코"
+      "내달 1일부터",
+      "한미 시차가",
+      "<r>13시간→14시간</r>"
     ],
     "badge": null,
-    "photo_query": "football soccer match lineup announcement"
+    "photo_query": "clock time change daylight saving"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 방금 나온 선발 라인업. 레반테는 핵심 선수 둘이 빠졌다.",
-      "subtitle": "레반테 선발라인업 공개",
-      "photo_query": "soccer team formation tactics board"
+      "narration": "이거 모르고 지나가면 손해다. 미국 친구랑 영상통화 시간 약속했으면 벌써부터 조정해야 한다.",
+      "subtitle": "3월 1일부터 미국 시간 변함",
+      "photo_query": "video call laptop screen international"
     },
     {
       "image": null,
-      "narration": "줄리안이 투입되고. 쿠티는 벤치다. 두 선수가 동시에 움직인 거 봤나.",
-      "subtitle": "줄리안 선발, 쿠티 제외",
-      "photo_query": "football player substitution decision"
+      "narration": "지금은 한국이 13시간 앞서지. 근데 내달 1일부터는 14시간 차이가 난다.",
+      "subtitle": "한국 자정 = 미국 오전 10시",
+      "photo_query": "world clock timezone display"
     },
     {
       "image": null,
-      "narration": "아틀레티코도 마찬가지. 선발 인원이 예상과 달랐다. 양팀 모두 변수가 생겼다.",
-      "subtitle": "아틀레티코도 선발진 변경",
-      "photo_query": "football match between two professional teams"
+      "narration": "미국이 서머타임을 끝낸다고. 서머타임 중엔 미국이 한 시간 뒤로 가니까 우리 기준으로는 한 시간 더 멀어지는 거다.",
+      "subtitle": "3월 1일 서머타임 해제",
+      "photo_query": "usa map time zone regions"
     },
     {
       "image": null,
-      "narration": "이런 변화가 경기 흐름을 좌우한다. 베팅하는 사람들 보면 환장한다.",
-      "subtitle": "선발 변화 = 전술 변경",
-      "photo_query": "soccer match intensity live action"
+      "narration": "미국 출장 있거나 온라인 수업 들으면 시간표 다시 짜야 한다. 지금부터 리마인더 설정해라.",
+      "subtitle": "출장·화상회의 시간 재확인",
+      "photo_query": "business meeting calendar planning"
     },
     {
       "image": null,
-      "narration": "당신도 라이브 중계 보기 전에 선발 확인해야 한다. 팔로우해라. 이런 거 다 알려준다.",
-      "subtitle": "선발 정보 미리 알아두기",
-      "photo_query": "football fans watching live broadcast"
+      "narration": "쫌봐봐 팔로우하고 매번 놓치는 시간 변화 정보 받아라. 항상 한발 앞서간다.",
+      "subtitle": "팔로우하고 시간 변화 체크",
+      "photo_query": "smartphone notification reminder app"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-10-31T14:39:23.888082+00:00"
+    "generated_at": "2026-10-31T18:03:01.102146+00:00"
   }
 }

@@ -1,44 +1,39 @@
 {
-  "title": "배송완료 문자 왔는데 없음",
+  "title": "편의점 우산 사면 그날 비 그친다는 법칙",
   "cover": {
     "image": null,
     "lines": [
-      "배송완료",
-      "<r>문 앞에 없음</r>"
+      "편의점서",
+      "<r>우산 사면</r>",
+      "그날 비 그친다"
     ],
     "badge": null,
-    "photo_query": "empty doorstep package missing"
+    "photo_query": "convenience store umbrella display"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야 배송완료 문자 왔다! 드디어다 이거 봐봐.",
-      "subtitle": "배송완료 알림",
-      "photo_query": "smartphone notification message received"
+      "narration": "아 진짜 비 오네. 우산을 잃어버렸어? 괜찮아. 편의점 우산 2,000원짜리 사면 돼. 이거는 투자다 진짜.",
+      "subtitle": "편의점 가는 길",
+      "photo_query": "rain umbrella convenience store"
     },
     {
       "image": null,
-      "narration": "문 앞으로 슈우웅 나간다. 어? 어어? 뭐가 없어?",
-      "subtitle": "빈 현관 앞",
-      "photo_query": "empty apartment doorway entrance"
+      "narration": "우산 사 가지고 나왔습니다! 이제 안심이다. 앗 근데 뭐야? 벌써 비가 그치고 있다고?",
+      "subtitle": "나와서 5분 후",
+      "photo_query": "clear sky after rain person umbrella"
     },
     {
       "image": null,
-      "narration": "배송 완료했다면서 왜 없냐고. 혹시 내가 잘못된 주소 줬나 싶고, 혹시 누가 훔쳐갔나 싶고, 진짜 멘붕이다 이거.",
-      "subtitle": "헤맨다",
-      "photo_query": "confused person looking around worried"
+      "narration": "진짜야 진짜! 편의점 우산을 장만하는 순간 하늘이 갈라진다니까! 이거는 법칙이야 법칙.",
+      "subtitle": "2,000원 우산 사주는 비의 은혜",
+      "photo_query": "sunny weather clearing clouds"
     },
     {
       "image": null,
-      "narration": "결국 30분 뒤에 택배기사한테 전화. 그 다음에 야 정말 왔는데 왜 안 받아 하는데, 누가 받냐고!",
-      "subtitle": "택배기사와의 대화",
-      "photo_query": "man on phone frustrated angry"
-    },
-    {
-      "image": null,
-      "narration": "이런 거 매번 겪지 않냐고. 더 보고 싶으면 팔로우해 봐.",
-      "subtitle": "팔로우 유도",
-      "photo_query": "delivery box package arrival home"
+      "narration": "그래서 우리는 알게 됐다. 편의점 우산이 진짜 비 구름을 쫓는 신물질이라는 걸. 너도 이 경험 있지?",
+      "subtitle": "이 현상 왜 이럴까",
+      "photo_query": "person holding umbrella sunny day"
     }
   ],
   "meta": {
@@ -47,6 +42,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-31T09:25:58.795478+00:00"
+    "generated_at": "2026-10-31T18:03:13.333293+00:00"
   }
 }

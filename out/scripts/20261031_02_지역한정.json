@@ -1,45 +1,56 @@
 {
-  "title": "송도동 10월 아파트 거래 분석",
+  "title": "송도동 10건 거래",
   "cover": {
     "image": null,
+    "photo_query": "Korea city apartment skyline",
     "lines": [
-      "송도동",
-      "이번 달 <r>9억</r>",
-      "팔렸다"
+      "송도동 10건 거래",
+      "<r>이번 달 기록</r>"
     ],
-    "badge": null,
-    "photo_query": "incheon songdo apartment complex modern building"
+    "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 송도동. 이번 달 10건 거래 났다. 뭐가 나왔냐고? 9억대부터 7억대까지. 왕창 팔렸다.",
-      "subtitle": "송도동 10월 거래 10건 분석",
-      "photo_query": "incheon songdo real estate transaction documents"
+      "photo_query": "Korea city apartment skyline",
+      "narration": "이거 모르고 지나가면 손해다. 송도동에서 이번 달 10건 거래. 국토부에 신고된 실거래 금액이다.",
+      "subtitle": "송도동 10건 거래"
     },
     {
       "image": null,
-      "narration": "제일 비싼 게 뭔지 봐봐. 송도더샵퍼스트파크. 93200만원이다. 60제곱미터 짜리가 9억이 넘는다.",
-      "subtitle": "최고가: 9억3200만원",
-      "photo_query": "luxury apartment high floor city view"
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "송도동 송도더샵퍼스트파크F14BL, 전용 60㎡(18평) 29층이 9.3억원에 실거래 신고됐다카이. 평당 5,144만원. 2017년 준공(9년차).",
+      "subtitle": "송도동 송도더샵퍼스트파크F14BL"
     },
     {
       "image": null,
-      "narration": "그 다음이 롯데캐슬. 88700만원. 100제곱미터 넘는 걸 8억 넘게 팔았다. 송도. 왜 이렇게 뜨겁냐고?",
-      "subtitle": "대형평수 8억대 중후반",
-      "photo_query": "apartment building construction crane development site"
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "같은 동네 송도SKVIEW도 주목할 만한다. 전용 85㎡(26평) 38층, 거래가 7.5억원. 평당 2,929만원.",
+      "subtitle": "송도동 송도SKVIEW 7.5억원"
     },
     {
       "image": null,
-      "narration": "2010년에서 2020년 사이 지은 건물들이다. 준신축부터 신축까지. 송도는 지금도 뜨겁다.",
-      "subtitle": "준신축·신축 물량 활발",
-      "photo_query": "apartment price trend chart graph increase"
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "힐스테이트레이크송도2차 전용 85㎡(26평) 7층 — 6.5억원 거래. 평당 2,548만원.",
+      "subtitle": "송도동 힐스테이트레이크송도2차 6.5억원"
     },
     {
       "image": null,
-      "narration": "송도동 최신 거래. 이거 빠지면 안 된다. 우리 채널 팔로우하면 매일 따끈따끈한 데이터가 온다. 놓치지 마라.",
-      "subtitle": "매달 최신 거래 업데이트",
-      "photo_query": "mobile phone notification real estate alert"
+      "photo_query": "Korea city modern apartment residential",
+      "narration": "송도푸르지오월드마크2단지 전용 127㎡(38평) 10층 — 7.2억원 거래. 평당 1,873만원.",
+      "subtitle": "송도동 송도푸르지오월드마크2단지"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city residential area aerial",
+      "narration": "송도동 이번 달 거래를 종합하면, 평균 거래가는 7.9억원, 최고가 9.3억원, 최저가 6.5억원이다. 총 5건이 신고됐다 아이가.",
+      "subtitle": "송도동 이번 달 거래를 종합하면, 평균"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
     }
   ],
   "meta": {
@@ -57,6 +68,7 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T09:24:59.052801+00:00"
+    "tone": "경상도",
+    "generated_at": "2026-10-31T18:02:13.140228+00:00"
   }
 }

@@ -3,43 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "반포동",
+      "반포동 새 아파트",
       "<r>평당 2.53억</r>",
-      "이게 현실입니다"
+      "이거 봐봐"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building seoul gangnam"
+    "photo_query": "luxury apartment building Seoul banpo district"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 신축 아파트 평당 가격이 2.53억까지 올라왔다. 겨우 100제곱미터, 그러니까 30평 조금 넘는 크기가 25억대라니.",
-      "subtitle": "반포동 신축 아파트의 현주소",
-      "photo_query": "seoul apartment real estate price sign"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 2023년 지어진 따끈따끈한 신축이다. 평당 2.53억. 와 대박.",
+      "subtitle": "반포동 래미안원베일리 평당 2.53억",
+      "photo_query": "new luxury apartment complex building facade"
     },
     {
       "image": null,
-      "narration": "이거. 래미안원베일리 32층이 7.8억에 팔렸다. 2023년에 지은 건데 벌써 이 정도다. 32층 101제곱미터가 이 가격이야.",
-      "subtitle": "래미안원베일리 32층 7.8억",
-      "photo_query": "high rise apartment building floor window"
+      "narration": "같은 건물인데 층 차이가 미친다. 32층은 7억8천만 원. 7층은 5억7천만 원. 같은 평수인데 2억 넘게 난다.",
+      "subtitle": "고층과 저층 차이 2억 원대",
+      "photo_query": "apartment building high floor low floor"
     },
     {
       "image": null,
-      "narration": "같은 단지 7층은 5.7억이다. 층수 차이가 2억이다 아이가. 반포동이면 이게 일상이다.",
-      "subtitle": "같은 단지 층수 차이 2억",
-      "photo_query": "apartment floor difference low high level"
+      "narration": "근데 이게 진짜 포인트다. 옆 반포자이는 같은 85제곱미터인데 4억5천만 원이다. 신축 vs 17년 된 건물. 가격이 다르지.",
+      "subtitle": "신축 vs 기존건물 가격차 심함",
+      "photo_query": "old apartment building versus new apartment"
     },
     {
       "image": null,
-      "narration": "이게 강남권 현실이다. 집을 봐야 하는 사람은 반드시 알아야 한다. 지금 시점의 매물이 어디에 있고 어떤 가격인지.",
-      "subtitle": "강남권 실거래가 체크 필수",
-      "photo_query": "korea real estate contract documents signing"
+      "narration": "반포·도곡·방배. 이 동네들이 지금 뭐가 되고 있는지 봐야 한다. 신축이 올라올수록 기존 건물들은 상대적으로 떨어진다.",
+      "subtitle": "강남 남부 신축 영향 미치는 중",
+      "photo_query": "Seoul Gangnam district apartment blocks cityscape"
     },
     {
       "image": null,
-      "narration": "우리 계정에서는 매주 이런 실제 거래 데이터를 가져온다. 팔로우하고 놓치지 말아라.",
-      "subtitle": "매주 업데이트되는 실거래 정보",
-      "photo_query": "smartphone notification bell follow button"
+      "narration": "우리 채널에서 매주 이런 데이터를 쫌 더 쉽게 풀어낸다. 팔로우하면 손해 없다.",
+      "subtitle": "매주 부동산 시장 데이터 업데이트",
+      "photo_query": "real estate market analysis charts numbers"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T14:39:17.475692+00:00"
+    "generated_at": "2026-10-31T18:02:55.277774+00:00"
   }
 }

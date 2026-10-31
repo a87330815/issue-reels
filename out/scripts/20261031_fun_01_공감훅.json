@@ -1,0 +1,52 @@
+{
+  "title": "배송완료 문자 온 후 문 앞 핑계 찾기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배송완료",
+      "<r>문 앞에 없네</r>"
+    ],
+    "badge": null,
+    "photo_query": "delivery notification phone panic"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "배송완료 문자 왔다. 좋아, 이제 받으러 가지 뭐. 어? 어어? 문 앞에 없네?",
+      "subtitle": "배송완료 문자 온 그 순간",
+      "photo_query": "empty doorstep front door"
+    },
+    {
+      "image": null,
+      "narration": "혹시 옆 집? 아니야. 경비실? 안 갔다더라. 야 잠깐, 진짜 배송완료가 맞나? 문자 다시 읽어봐야겠다.",
+      "subtitle": "어디갔지 어디갔지",
+      "photo_query": "confused looking around searching"
+    },
+    {
+      "image": null,
+      "narration": "배송완료 문자는 왔는데 물건은 없고, 택배기사한테 전화도 끊겨. 이게 뭐하는 짓이냐 진짜.",
+      "subtitle": "멘붕의 악순환",
+      "photo_query": "frustrated man phone call stress"
+    },
+    {
+      "image": null,
+      "narration": "아 잠깐, 혹시 문 옆? 화분 뒤? 혹시 CCTV에 떨어뜨린 거 안 보였나? 진짜 영화처럼 찾고 있네.",
+      "subtitle": "보물찾기 모드 진입",
+      "photo_query": "searching looking around building entrance"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우해. 우리 다 같은 멘붕을 살고 있다니까.",
+      "subtitle": "팔로우",
+      "photo_query": "follow button subscribe notification"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T18:03:07.545850+00:00"
+  }
+}

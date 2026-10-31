@@ -1,0 +1,53 @@
+{
+  "title": "대기전력 잡는 법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "대기전력만 잡아도",
+      "<r>월 1만원</r>",
+      "절약된다니"
+    ],
+    "badge": null,
+    "photo_query": "power outlet plugs standby"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 집에 있는 콘센트 봤어? TV·냉장고·공기청정기 같은 것들 꺼도 계속 전기를 빨아먹고 있다고. 이게 바로 대기전력이다.",
+      "subtitle": "대기전력이란?",
+      "photo_query": "household electronics standby power"
+    },
+    {
+      "image": null,
+      "narration": "이것만 해 봐. 자주 안 쓰는 기계들은 멀티탭에 꽂아 놓고, 밤에 자기 전에 멀티탭 전원 꺼 버려. 근데 냉장고·밥솥은 꺼면 안 된다 아이가.",
+      "subtitle": "멀티탭 끄기로 해결",
+      "photo_query": "power strip switch off night"
+    },
+    {
+      "image": null,
+      "narration": "우리 집에서 대기전력이 하루 24시간 돌아가면 월 전기료의 10~15%를 그냥 버리는 거다. 멀티탭만으로도 1만 원은 기본이다.",
+      "subtitle": "월 1만원 절약 이유",
+      "photo_query": "electricity meter reading saving"
+    },
+    {
+      "image": null,
+      "narration": "TV 뒤, 컴퓨터 옆, 공기청정기 주변 같은 곳마다 멀티탭 하나씩 달아 놔. 자기 전·외출할 때 쓱 눌렀다 와야 효과 본다.",
+      "subtitle": "주요 위치에 멀티탭 설치",
+      "photo_query": "living room entertainment setup power"
+    },
+    {
+      "image": null,
+      "narration": "이런 생활 꿀팁들이 자주 보고 싶으면 팔로우 눌러 줘. 우리 함께 년 수십만 원 아껴 보자고!",
+      "subtitle": "팔로우로 더 보기",
+      "photo_query": "follow button click social media"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-10-31T18:03:47.808580+00:00"
+  }
+}

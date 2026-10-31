@@ -1,45 +1,51 @@
 {
-  "title": "옷장 정리",
+  "title": "냉장고 칸별 보관법",
   "cover": {
     "image": null,
     "lines": [
-      "안 입는 옷",
-      "<r>3개월 기준</r>",
-      "버려야 하는 이유"
+      "냉장고 칸별로",
+      "<r>2배 오래</r> 보관하는",
+      "법"
     ],
     "badge": null,
-    "photo_query": "cluttered wardrobe closet"
+    "photo_query": "organized refrigerator shelves"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "옷장이 터지는 사람들 봤지? 근데 정신 차려보면 진짜 입는 옷은 20% 정도다 아이가.",
-      "subtitle": "옷장의 80%는 죽은 옷",
-      "photo_query": "full clothing rack hangers"
+      "narration": "야야야, 냉장고 정리가 반이다 아이가. 같은 자리에 넣되 칸마다 온도가 다르다는 거, 알고 있었나?",
+      "subtitle": "냉장고 칸별 온도가 다르다",
+      "photo_query": "refrigerator temperature zones"
     },
     {
       "image": null,
-      "narration": "기준은 간단하다. 지난 3개월 동안 손도 안 댄 옷들이다. 그게 바로 너가 절대 안 입을 옷이다.",
-      "subtitle": "3개월 = 계절 한 번",
-      "photo_query": "calendar seasons change"
+      "narration": "맨 위 선반은 3도씨. 여기엔 남은 반찬, 먹다 만 음식 넣어라. 2~3일 안에 먹을 거 말이다.",
+      "subtitle": "위층: 3℃ 반찬·밥·국",
+      "photo_query": "cooked food leftovers refrigerator"
     },
     {
       "image": null,
-      "narration": "이것만 버려도 옷장 공간 30~40% 생긴다. 왜냐? 죽은 옷이 사라지니까 남은 옷들이 눈에 띄거든.",
-      "subtitle": "보이는 옷 = 입는 옷",
-      "photo_query": "organized closet clean space"
+      "narration": "가운데는 0도씨 냉기 실어 나르는 자리다. 계란, 우유, 두부 같은 거. 일주일은 거뜬하다.",
+      "subtitle": "중층: 0℃ 계란·우유·두부",
+      "photo_query": "dairy products eggs milk"
     },
     {
       "image": null,
-      "narration": "게다가 이렇게 정리하면 사고 싶은 마음도 줄어든다. 내가 뭘 입는지 알게 되거든.",
-      "subtitle": "옷 관리 시간 절반으로",
-      "photo_query": "woman choosing outfit wardrobe"
+      "narration": "맨 아래는 가장 찬 1도씨. 고기, 생선 여기 넣어. 냉기가 아래로 떨어지거든. 10일까지 버틴다.",
+      "subtitle": "아래층: 1℃ 고기·생선·해산물",
+      "photo_query": "raw meat fish storage drawer"
     },
     {
       "image": null,
-      "narration": "이런 꿀팁 더 보고 싶으면 팔로우해 두고, 댓글로 너는 옷장에 뭐가 제일 많냐고 말해 봐.",
-      "subtitle": "지금 바로 3개월 체크!",
-      "photo_query": "follow subscribe button"
+      "narration": "문짝에는 절대 고기 고기 반찬 넣지 말고, 소스나 버터 정도만 넣어라. 온도가 가장 높거든 말이다.",
+      "subtitle": "문짝: 가장 따뜻함 소스·버터",
+      "photo_query": "refrigerator door condiments sauces"
+    },
+    {
+      "image": null,
+      "narration": "이거 제대로만 하면 식재료가 2배 오래 간다니까. 오늘부터 해 봐라. 이런 꿀팁 더 궁금하면 팔로우.",
+      "subtitle": "냉장고 온도별 분류로 2배 오래",
+      "photo_query": "well organized refrigerator interior"
     }
   ],
   "meta": {
@@ -48,6 +54,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-10-31T09:26:24.629426+00:00"
+    "generated_at": "2026-10-31T18:03:40.052700+00:00"
   }
 }

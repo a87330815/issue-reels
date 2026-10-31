@@ -5,35 +5,41 @@
     "lines": [
       "반포동",
       "<r>78억</r>",
-      "이게 현실이다"
+      "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building Seoul Banpo"
+    "photo_query": "luxury apartment building seoul gangnam"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 방금 터진 거다. 서울 반포동 래미안원베일리. 78억에 거래됐다.",
-      "subtitle": "반포동 래미안원베일리 78억 거래",
-      "photo_query": "apartment price tag real estate transaction"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 서울 강남 아파트 시장이 어디까지 갔는지 봐봐. 반포동 래미안원베일리. 30년대 아파트 하나가 78억에 거래됐다.",
+      "subtitle": "반포동 래미안원베일리 78억",
+      "photo_query": "luxury apartment building seoul gangnam"
     },
     {
       "image": null,
-      "narration": "100제곱미터 남짓한 평수다. 3년 전에 지어진 신축이다. 이게 뭐 하는 거냐고. 가격이다 아이가.",
-      "subtitle": "101.97㎡, 2023년 신축",
-      "photo_query": "new apartment building construction korea"
+      "narration": "이거 뭐냐면. 2023년에 지어진 신축이야. 아직 3년도 안 됐다. 101제곱미터. 흔한 크기다.",
+      "subtitle": "신축 3년차, 101제곱미터",
+      "photo_query": "modern apartment interior living room"
     },
     {
       "image": null,
-      "narration": "32층에 있다. 고층이다. 반포동이다. 요즘 강남 집값을 보여주는 거 아닌가 싶다.",
-      "subtitle": "32층 반포동 고층",
-      "photo_query": "high floor apartment window city view"
+      "narration": "78억이면 대체 어떤 사람이 사는 아파트냐 이거지. 강남 최정상급 단지고. 32층에 끼워져 있는 세 자리 가격대다.",
+      "subtitle": "강남 최정상급 단지의 현주소",
+      "photo_query": "seoul skyline han river view apartments"
     },
     {
       "image": null,
-      "narration": "이 수치. 놓치지 마라. 여러분 지역의 집값이 어디까지 올라가 있는지. 확인해야 한다.",
-      "subtitle": "여러분 지역은 어디까?",
-      "photo_query": "korea apartment building skyline neighborhoods"
+      "narration": "야야야. 서울 집값이 이 정도 수준이라는 걸 알아야 한다. 당신의 집, 당신의 꿈은 어디 수준일까.",
+      "subtitle": "서울 집값의 현실을 마주하다",
+      "photo_query": "person looking at apartment price list"
+    },
+    {
+      "image": null,
+      "narration": "더 많은 실거래가 분석이 궁금하면 팔로우해라. 이런 데이터 계속 풀어낸다.",
+      "subtitle": "팔로우하면 더 알 수 있습니다",
+      "photo_query": "phone notification follow subscribe"
     }
   ],
   "meta": {
@@ -51,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-10-31T14:38:29.136057+00:00"
+    "generated_at": "2026-10-31T18:02:07.050717+00:00"
   }
 }
