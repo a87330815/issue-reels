@@ -1,65 +1,66 @@
-run 41157028240 2026-10-31T01:48:24Z
+run 41189043476 2026-10-31T09:32:17Z
 
-=== 20261029_04_정치 ===
-  [cover] '조작기소 특검법 재추진' → "Korean National Assembly debate session"
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 11건 (적합도 필터 생략)
+=== 20261029_06_세계경제 ===
+  [cover] 'AI 투자 붐 글로벌 경제' → "AI artificial intelligence data center"
+    [unsplash] 9건 후보 (부적합 3건 제외)
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [wikimedia] 12건 후보
+    적합도 통과 10/12건 (Openverse/Wikimedia)
+    Unsplash 9건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '민주당 조작기소 특검법 재추진' → "Korean parliament ruling party lawmakers"
+  [scene1] 'IMF 성장률 상향 · AI 투자 효과' → "tech companies AI investment growth"
     [unsplash] 11건 후보 (부적합 1건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     Unsplash 11건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '검찰 무리 기소 별도 조사' → "Korean prosecution reform justice scales"
-    [unsplash] 12건 후보
-    Unsplash 12건 (적합도 필터 생략)
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '야당 반발 vs 여당 사법정의' → "Korean politics opposition ruling party debate"
-    [unsplash] 11건 후보 (부적합 1건 제외)
+  [scene2] '빅테크 데이터센터 수백조 투자' → "semiconductor chip factory production"
+    [unsplash] 10건 후보 (부적합 2건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 11건 (적합도 필터 생략)
+    Unsplash 10건 (적합도 필터 생략)
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] 'AI 성장 vs 관세 역풍' → "global economy growth chart 2026"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
     ✓ scene3 ← Unsplash (Unsplash License)
   [scene4] '팔로우 · 매일 업데이트' → "follow subscribe social media notification"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene4 ← Unsplash (Unsplash License)
-  → 5/5장 저장, 매니페스트: out/photos/20261029_04_정치/photos.json
+  → 5/5장 저장, 매니페스트: out/photos/20261029_06_세계경제/photos.json
 
 총 5/5장 수집
   사진 5장 적용: cover, scene1, scene2, scene3, scene4
-카드뉴스 6장 생성 → out/cards_20261029_04_정치
-대본: out/scripts/20261029_04_정치.json
-카드: out/cards_20261029_04_정치 (6장)
+카드뉴스 6장 생성 → out/cards_20261029_06_세계경제
+대본: out/scripts/20261029_06_세계경제.json
+카드: out/cards_20261029_06_세계경제 (6장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/5] [EL·발랄녀] 1.8초  조작기소 특검법 재추진...
-  TTS [2/5] [EL·발랄녀] 6.4초  이거 봐봐. 민주당이 조작기소 특검법을 다음 주에 ...
-  TTS [3/5] [EL·발랄녀] 8.0초  조작기소가 뭐냐면, 검찰이 무리하게 기소한 사건을 ...
-  TTS [4/5] [EL·발랄녀] 6.9초  야당은 정치 보복이라고 반발하고, 여당은 사법 정의...
-  TTS [5/5] [EL·발랄녀] 4.2초  정치 소식 빠르게 받고 싶으면 팔로우 눌러주이소. ...
+  TTS [1/5] [EL·발랄녀] 2.0초  AI 투자 붐 글로벌 경제...
+  TTS [2/5] [EL·발랄녀] 7.8초  야야야 이거 봐봐. IMF가 올해 성장률 전망을 올...
+  TTS [3/5] [EL·발랄녀] 8.4초  미국 빅테크들이 데이터센터에 수백조를 쏟아붓고 있다...
+  TTS [4/5] [EL·발랄녀] 10.4초  근데 무역전쟁이 발목을 잡는다. AI 투자가 경기를...
+  TTS [5/5] [EL·발랄녀] 4.7초  경제 소식 빠르게 받고 싶으면 팔로우 해주이소. 매...
 
 2) 영상 합성
   세그먼트 [1/6] 3.0초
-  세그먼트 [2/6] 7.2초
-  세그먼트 [3/6] 8.8초
-  세그먼트 [4/6] 7.7초
-  세그먼트 [5/6] 5.0초
+  세그먼트 [2/6] 8.6초
+  세그먼트 [3/6] 9.2초
+  세그먼트 [4/6] 11.2초
+  세그먼트 [5/6] 5.5초
   세그먼트 [6/6] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261029_04_정치.mp4
-    길이: 31.2초  /  크기: 1.8MB
--rw-r--r-- 1 runner runner 1.9M Oct 31 01:49 out/reels/20261029_04_정치.mp4
+  ✓ 릴스 완성: out/reels/20261029_06_세계경제.mp4
+    길이: 37.1초  /  크기: 2.1MB
+-rw-r--r-- 1 runner runner 2.2M Oct 31 09:33 out/reels/20261029_06_세계경제.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=31.160272
+duration=37.080272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -68,7 +69,7 @@ duration=31.160272
 설정 완료
 
 업로드 1건 (태그 reels-2026-10-31):
-  20261029_04_정치.mp4  1.8MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-31/20261029_04.mp4
+  20261029_06_세계경제.mp4  2.1MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-31/20261029_06.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -79,13 +80,13 @@ duration=31.160272
 남은 발행 가능: 96건
 발행 대상: 1건
 
-── 1/1  20261029_04_정치
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-31/20261029_04.mp4
-  캡션: 조작기소 특검법 재추진
-  컨테이너: 17973040982973700
+── 1/1  20261029_06_세계경제
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-31/20261029_06.mp4
+  캡션: AI 투자 붐 글로벌 경제
+  컨테이너: 17973123812973700
       0초  IN_PROGRESS
-     41초  FINISHED
-  발행 완료: 18128636713916983
+     31초  FINISHED
+  발행 완료: 17910091647482382
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json

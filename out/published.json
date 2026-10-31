@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T01:50:30.296989+00:00",
+  "updated_at": "2026-10-31T09:34:39.070905+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -114,6 +114,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-31/20261029_04.mp4",
       "ig_id": "17841459210979722",
       "category": "정치·시사",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261029_06_세계경제",
+      "media_id": "17910091647482382",
+      "published_at": "2026-10-31T09:34:38.935289+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-10-31/20261029_06.mp4",
+      "ig_id": "17841459210979722",
+      "category": "세계경제",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
