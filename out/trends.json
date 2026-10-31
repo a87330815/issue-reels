@@ -1,59 +1,95 @@
 {
-  "collected_at": "2026-10-30T18:56:18.285661+00:00",
+  "collected_at": "2026-10-31T02:13:35.975002+00:00",
   "items": [
     {
-      "keyword": "트위치",
-      "traffic": "200+",
-      "news_title": "넥슨 ‘빈딕투스’, 트위치콘과 크리에이터로 출시 전 서구권 눈도장",
+      "keyword": "수익률",
+      "traffic": "500+",
+      "news_title": "“1억 넣고 월 350만원 받는다”…수익률 1등, 그 ETF의 진실",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "da87a789853f459e"
+      "key": "fb64df0cb9ef3b5f"
     },
     {
-      "keyword": "르아브르 ac 대 psg",
-      "traffic": "2000+",
-      "news_title": "Le Havre - Paris Saint-Germain LIVE. Ligue 1 latest updates",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "9ab9240b058fe168"
-    },
-    {
-      "keyword": "핼러윈",
-      "traffic": "1000+",
-      "news_title": "안전한 핼러윈, 소방이 함께합니다 - 카드/한컷 | 멀티미디어",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "fbdc04be9ea6b255"
-    },
-    {
-      "keyword": "김혜자",
+      "keyword": "주식",
       "traffic": "10000+",
-      "news_title": "최불암 영정앞에 선 김혜자 &quot;너무 그리운 사람…곧 만나자&quot;(종합2보)",
+      "news_title": "매도 사이드카 울렸는데…&quot;또 털렸대&quot; 30% 폭등한 주식 - 머니투데이",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "aa3feeb7ab8db8d2"
+      "key": "e861734b49bb96d3"
     },
     {
-      "keyword": "trick or treat",
-      "traffic": "100+",
-      "news_title": "Here’s Where Rain Could Dampen Your Spirits This Halloween",
+      "keyword": "필라데피아 대 뉴욕",
+      "traffic": "1000+",
+      "news_title": "Live updates: Sixers take a nine-point lead over the Knicks into the fourth quarter",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "871df97a2f59c12f"
+      "key": "e335f92feedd646b"
     },
     {
-      "keyword": "한화시스템",
+      "keyword": "sk 사장단 인사",
       "traffic": "200+",
-      "news_title": "&quot;K-위성 경쟁력 높인다&quot;…한화, 초소형 군집위성 수주",
+      "news_title": "SK, 에너지 수장 교체…빨라진 재계 인사 시계",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "9289c695a2dcc67c"
+      "key": "ac82a5b32e97f630"
+    },
+    {
+      "keyword": "미세먼지",
+      "traffic": "200+",
+      "news_title": "오늘 밤 서쪽 지방 미세먼지 주의…한낮에 포근",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2ffcbcd358d85f86"
+    },
+    {
+      "keyword": "우주선",
+      "traffic": "200+",
+      "news_title": "美정보국 &quot;中, 위성요격무기 배치할듯…美동맹 위성도 공격대상&quot;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2156dc61070b259d"
+    },
+    {
+      "keyword": "샌디스크",
+      "traffic": "200+",
+      "news_title": "키옥시아 NAND 가격 경고에 샌디스크 주가 11% 급락",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "1e4b63ac7e5a76e6"
+    },
+    {
+      "keyword": "lcs",
+      "traffic": "100+",
+      "news_title": "Anyone&apos;s Legend vs. Team Liquid: Game 2 First Blood",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "0a91335534ee5567"
+    },
+    {
+      "keyword": "직장폐쇄",
+      "traffic": "200+",
+      "news_title": "WS 우승 기쁨도 잠시… 밀워키, 직장폐쇄 위기",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "4214b6828c84cfa5"
+    },
+    {
+      "keyword": "테슬라",
+      "traffic": "1000+",
+      "news_title": "&apos;고래&apos; 스페이스X-테슬라 합병 추진에 부담 커진 &apos;새우&apos; 미래에셋",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "cfe918b6b78e7b52"
     }
   ]
 }
