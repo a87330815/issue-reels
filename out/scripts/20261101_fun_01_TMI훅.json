@@ -1,0 +1,47 @@
+{
+  "title": "배터리 1%의 기적",
+  "cover": {
+    "image": null,
+    "lines": [
+      "1%에서",
+      "<r>이렇게</r>",
+      "오래 가냐고?"
+    ],
+    "badge": null,
+    "photo_query": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "배터리 99%에서 90%까지 가는 데 한 30분 걸린다고 치자. 근데 1%에서 죽을 때까지는 진짜 한 시간도 간다니까. 이거 뭔 마법이냐고.",
+      "subtitle": "99→90%는 빠르고 1%는 오래 버틴다",
+      "photo_query": "smartphone battery drain fast"
+    },
+    {
+      "image": null,
+      "narration": "핸드폰이 1% 뜨면 마치 '아직 살아있다'는 신호 같은 거야. 화면을 아예 안 켜면, 배터리가 마치 시간을 멈춰버린 듯이 느껴진다니까.",
+      "subtitle": "1%에서의 신비한 버티기",
+      "photo_query": "phone low battery warning red screen"
+    },
+    {
+      "image": null,
+      "narration": "그래서 집까지 남은 거리를 계산하면서 '이 정도면 유튜브는 못 보지만 길 찾기는 간다' 이렇게 기도하게 되는 거지. 1%의 주인공은 진짜 배터리 갱생자다.",
+      "subtitle": "1%로 버티는 사람들의 전략",
+      "photo_query": "navigation maps battery low"
+    },
+    {
+      "image": null,
+      "narration": "이런 공감 더 보고 싶으면 팔로우해 봐. 우리 같이 웃자고야.",
+      "subtitle": "팔로우 해줘 형!",
+      "photo_query": "follow button subscribe icon"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T10:15:26.832644+00:00"
+  }
+}

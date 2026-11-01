@@ -8,38 +8,38 @@
       "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building seoul gangnam"
+    "photo_query": "luxury apartment building entrance korea"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리 평당 2.53억. 2023년 신축 아파트가 벌써 이 가격대다.",
-      "subtitle": "반포동 신축 평당 2.53억",
-      "photo_query": "new luxury apartment interior modern"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 평당 2억 50 떨어졌다. 올해 10월에 나온 따끈따끈한 실거래가다.",
+      "subtitle": "반포동 래미안원베일리 평당 2.53억",
+      "photo_query": "apartment price real estate market korea"
     },
     {
       "image": null,
-      "narration": "같은 단지에도 층수가 다르면 달라진다. 32층은 7.8억, 7층은 5.7억. 층 하나 올라갈 때마다 억 단위로 차이 난다.",
-      "subtitle": "같은 단지, 층수로 2억 차이",
-      "photo_query": "apartment building high floor city view"
+      "narration": "같은 건물인데 32층은 7억 8천만 원이고. 7층은 5억 7천만 원이다. 층수 차이로 2억 1천만 원이 난다. 이거 봐봐.",
+      "subtitle": "같은 건물, 층수 차이 2억 1천만원",
+      "photo_query": "apartment high floor window view city"
     },
     {
       "image": null,
-      "narration": "반포자이는 평당 5.3억. 2009년 건축인데 신축보다 2배 비싸다. 강남은 아파트가 아니라 위치를 사는 거다.",
-      "subtitle": "같은 동네 구축 평당 5.3억",
-      "photo_query": "apartment building construction year comparison"
+      "narration": "2023년에 지었는데 벌써 이 가격이다. 신축 프리미엄이 얼마나 센지 보인다 아이가.",
+      "subtitle": "신축 건물 프리미엄",
+      "photo_query": "new apartment building construction korea"
     },
     {
       "image": null,
-      "narration": "신축이어도 위치면 가격이 엄청 달라진다. 도곡동은 평당 4.8억, 방배동은 평당 4.3억. 동네 차이가 8000만원이다.",
-      "subtitle": "동네만 달라도 평당 8천만원",
-      "photo_query": "seoul different districts neighborhood comparison map"
+      "narration": "같은 반포동 반포자이는 평당 5억 3천만 원. 2009년 건물인데 역전당했다. 위치가 전부라는 거다.",
+      "subtitle": "위치에 따라 평당 5억대 격차",
+      "photo_query": "seoul apartment neighborhood comparison"
     },
     {
       "image": null,
-      "narration": "강남권 아파트 사려면 이 정도는 알고 봐야 한다. 더 많은 데이터는 저 팔로우 해서 받아봐라.",
-      "subtitle": "강남 부동산, 자세히 알고 사세요",
-      "photo_query": "person apartment viewing documents calculator"
+      "narration": "이 정보 모르면 매물 볼 때 판단이 못 선다. 지금 바로 팔로우해서 반포동 실시간 거래가를 자동으로 받아봐라.",
+      "subtitle": "매월 업데이트되는 실거래가 정보",
+      "photo_query": "real estate market data analysis chart"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T02:05:13.043565+00:00"
+    "generated_at": "2026-11-01T10:15:13.684722+00:00"
   }
 }

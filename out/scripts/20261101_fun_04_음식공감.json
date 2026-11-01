@@ -1,0 +1,46 @@
+{
+  "title": "라면 물 양 예측 불가",
+  "cover": {
+    "image": null,
+    "lines": [
+      "라면 물 양",
+      "<r>매번 틀린다</r>"
+    ],
+    "badge": null,
+    "photo_query": "ramen noodle pot cooking"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "밥 없을 때 라면 끓이자! 하고 물을 확 부어. 근데 이상한데? 스프 풀었는데 물이 진짜 많이 잤어.",
+      "subtitle": "국물 바다 라면",
+      "photo_query": "ramen broth overflowing pot"
+    },
+    {
+      "image": null,
+      "narration": "어제는 물이 부족했으니까 이번엔 많이 넣자 했거든. 그런데 또 잔뜩 들어가버렸어. 라면 물 양이 매번 다른 건 왜지?",
+      "subtitle": "예측 불가능의 영역",
+      "photo_query": "confused person thinking noodle recipe"
+    },
+    {
+      "image": null,
+      "narration": "결국 국물이 줄어들 때까지 기다리거나, 국물 없이 비비면서 먹는 거지. 그냥 물을 정량 재서 끓이면 되는데 왜 자꾸 틀려?",
+      "subtitle": "라면은 손맛이다",
+      "photo_query": "ramen noodles stirring chopsticks"
+    },
+    {
+      "image": null,
+      "narration": "이런 공감 더 보고 싶으면 팔로우! 라면 물 양만 해도 세계 7대 미스터리다 진짜.",
+      "subtitle": "팔로우 고고",
+      "photo_query": "follow button like subscribe"
+    }
+  ],
+  "meta": {
+    "format": "음식공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T10:15:45.237433+00:00"
+  }
+}

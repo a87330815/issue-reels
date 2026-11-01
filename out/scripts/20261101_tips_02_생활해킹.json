@@ -1,0 +1,59 @@
+{
+  "title": "택배 반품할 때 손해 안 보는 3가지",
+  "cover": {
+    "image": null,
+    "lines": [
+      "택배 반품할 때",
+      "<r>손해 3만원</r>",
+      "줄이는 법"
+    ],
+    "badge": null,
+    "photo_query": "package return label"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "택배 반품할 때 모르면 손해 본다고? 우리 오늘 배워보자. 첫 번째, 반품 접수 전에 꼭 사진 찍어둬야 한다.",
+      "subtitle": "반품 물품 사진 찍기",
+      "photo_query": "photographing package contents"
+    },
+    {
+      "image": null,
+      "narration": "상자 안에 물품이 있는 상태로, 물품 상태·포장 상태를 모두 찍어두면 나중에 분실이나 손상 문제 생겨도 증거물이 된다. 분쟁 때 2주 단축된다.",
+      "subtitle": "증거사진 = 빠른 환불",
+      "photo_query": "unboxing verification photo"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 반품 운송장은 절대 버리지 말고 스크린샷 또는 사진으로 남겨둬라.",
+      "subtitle": "운송장번호 기록하기",
+      "photo_query": "shipping tracking number"
+    },
+    {
+      "image": null,
+      "narration": "운송장이 있어야 배송 추적이 되고, 물품이 손실됐을 때 배송사에 클레임을 걸 수 있다. 없으면 우리가 책임져야 한다.",
+      "subtitle": "추적번호 = 배송사 책임",
+      "photo_query": "tracking barcode record"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 반품 기한을 절대 늦게 하지 말고 최대한 빨리 반품 신청해야 한다. 보통 7일 이내인데, 이걸 지키면 환불 분쟁이 줄어든다.",
+      "subtitle": "기한 내 빠른 반품",
+      "photo_query": "calendar deadline marking"
+    },
+    {
+      "image": null,
+      "narration": "이 세 가지만 지키면 나중에 \"환불 안 됐어요\" 하는 상황을 90% 줄일 수 있다. 이런 생활팁 더 원하면 팔로우해주고 이번 영상 저장해두셈.",
+      "subtitle": "꿀팁 저장하기",
+      "photo_query": "satisfied customer saving content"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T10:16:07.639062+00:00"
+  }
+}

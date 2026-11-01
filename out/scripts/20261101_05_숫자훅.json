@@ -1,33 +1,45 @@
 {
-  "title": "Lyon OU vs RC Vannes 경기 분석",
+  "title": "콜오브듀티 이태원 참사 맵 삭제 논란",
   "cover": {
     "image": null,
     "lines": [
-      "Lyon 선수",
-      "<r>첫 경기</r>에서",
-      "완벽했는데"
+      "게임 하나가",
+      "<r>5년 전 참사</r>",
+      "다시 터졌다"
     ],
     "badge": null,
-    "photo_query": "french rugby player match celebration"
+    "photo_query": "video game controversy deletion"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. Lyon OU 경기 봤냐? 신인 선수가 첫 경기 출전했는데 거기서 완벽한 플레이를 펼쳤다. 근데 결말이 이상한 거다.",
-      "subtitle": "Lyon 신인 선수 첫 경기 완벽",
-      "photo_query": "rugby player first match debut"
+      "narration": "이거 모르고 지나가면 손해다. 콜오브듀티라는 게임에 이태원 참사를 연상하게 하는 맵이 들어갔다는 거다. 게임사가 뒤늦게 사과하고 전면 삭제 결정했다.",
+      "subtitle": "게임 내 이태원 참사 연상 맵 문제 발생",
+      "photo_query": "call of duty game map design"
     },
     {
       "image": null,
-      "narration": "경기 후반부로 가면서 뭔가 풀렸다. 팀 전체가 마치 악몽 같은 상황으로 빠져들었다.",
-      "subtitle": "후반부 극적 전개",
-      "photo_query": "rugby match end game tension"
+      "narration": "5년 전 있었던 그 참사. 우리 사회가 아물지 않은 상처인데, 게임 디자인에 그게 담겨 나왔다는 거다. 이용자들 사이에서 비판이 쏟아졌다.",
+      "subtitle": "사용자들의 비판 폭주",
+      "photo_query": "social media criticism reaction"
     },
     {
       "image": null,
-      "narration": "뛰어난 개인 플레이와 무너지는 팀 경기. 이게 바로 프로 스포츠의 현실이다. Google Trends에서 뜨고 있으니까 경기 영상 확인해봐라.",
-      "subtitle": "개인 vs 팀의 결과",
-      "photo_query": "rugby match strategic play analysis"
+      "narration": "게임사는 \"의도하지 않은 결과다. 머리 숙여 사과한다\"고 공식 입장을 냈다. 해당 맵을 게임에서 영구 삭제하기로 했다.",
+      "subtitle": "게임사 공식 사과 및 맵 삭제",
+      "photo_query": "official apology statement announcement"
+    },
+    {
+      "image": null,
+      "narration": "이런 일들이 생기는 이유가 뭘까. 게임 개발 과정에서 문화적 민감성 검토가 얼마나 중요한지 보여주는 사건이다. 우리가 조금 더 주의 깊게 봐야 할 부분이 있다는 거다.",
+      "subtitle": "문화적 민감성의 중요성",
+      "photo_query": "diverse game development team meeting"
+    },
+    {
+      "image": null,
+      "narration": "야야야. 이렇게 민감한 이슈를 제대로 알아야 다음에는 더 나아질 수 있다. 이슈에 대해 어떻게 생각하는지 댓글로 남겨달라. 팔로우도 잊지 말고.",
+      "subtitle": "의견 공유 및 팔로우 유도",
+      "photo_query": "community discussion comments feedback"
     }
   ],
   "meta": {
@@ -36,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-01T02:04:51.237839+00:00"
+    "generated_at": "2026-11-01T10:14:53.480399+00:00"
   }
 }

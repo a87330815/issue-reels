@@ -3,43 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "서초동",
+      "서초동에서",
       "<r>40.7억</r>",
-      "실제 거래됐다"
+      "떨어졌다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building seoul gangnam"
+    "photo_query": "Seoul Seocho district luxury apartment building"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서초동 서초그랑자이. 10월에 40억 7천만 원에 팔렸다. 100제곱미터 남짓한 아파트가.",
-      "subtitle": "서초그랑자이 100㎡ 40.7억",
-      "photo_query": "luxury apartment building entrance seoul"
+      "narration": "이거 모르고 지나가면 손해다. 서초동 최고가 아파트가 나왔다. 서초그랑자이 40.7억이다.",
+      "subtitle": "서초그랑자이 40.7억",
+      "photo_query": "luxury apartment Seoul real estate"
     },
     {
       "image": null,
-      "narration": "뭐라카더라. 같은 동네에도 가격이 천차만별이다. 서초센트럴아이파크는 22억, 같은 월에 거래됐다.",
-      "subtitle": "센트럴IPARK 80㎡ 22억",
-      "photo_query": "apartment price difference comparison"
+      "narration": "평수로는 100제곱미터다. 25층. 2021년 준공 건물이다. 아직도 새것이네.",
+      "subtitle": "100제곱미터 25층",
+      "photo_query": "modern apartment high floor windows"
     },
     {
       "image": null,
-      "narration": "오래된 아파트는 더 떨어진다. 삼환바우스 14억. 밀라텔쉐르빌은 3억 2천만 원. 같은 서초동인데 말이다.",
-      "subtitle": "밀라텔쉐르빌 32㎡ 3.25억",
-      "photo_query": "old vs new apartment comparison"
+      "narration": "비교를 해봤다. 같은 동네 다른 건물들은 뭐냐고? 센트럴아이파크는 22억. 삼환바우스는 13억이다.",
+      "subtitle": "다른 건물들은 절반 수준",
+      "photo_query": "apartment building comparison prices"
     },
     {
       "image": null,
-      "narration": "포인트는 이거다. 건물이 새울수록, 넓을수록, 층수가 높을수록 값이 확 튀어난다는 거. 서초동에서 투자하려면 이것까지 봐야 한다.",
-      "subtitle": "건축년도·면적·층수가 가격 결정",
-      "photo_query": "apartment building floor view height"
+      "narration": "그래. 서초동도 빌딩마다 천지 차이다. 최고가와 최저가 차이가 장난이 아니다.",
+      "subtitle": "서초동 아파트 편차 심함",
+      "photo_query": "Seoul apartments different sizes price range"
     },
     {
       "image": null,
-      "narration": "더 궁금하면 팔로우 해라. 매일 이런 실거래가 들고 올 기다.",
-      "subtitle": "쫌봐봐 채널 팔로우",
-      "photo_query": "notification bell subscribe button"
+      "narration": "내 집 가격이 어디쯤인지 알고 싶으면 팔로우하고 댓글 남겨라. 우리 같이 파헤쳐본다.",
+      "subtitle": "댓글로 아파트명 알려줘",
+      "photo_query": "person typing comment social media"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T02:04:58.520107+00:00"
+    "generated_at": "2026-11-01T10:14:59.985736+00:00"
   }
 }

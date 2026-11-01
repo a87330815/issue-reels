@@ -1,47 +1,36 @@
 {
-  "title": "한화생명 롤드컵 첫 경기",
+  "title": "ตรวจหวย",
   "cover": {
     "image": null,
+    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "한국 팀이",
-      "<r>1세트</r>",
-      "떨어졌다"
+      "방금 나온",
+      "<r>ตรวจหวย</r>",
+      "실화입니다"
     ],
-    "badge": null,
-    "photo_query": "esports gaming tournament stage lights"
+    "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 한화생명. 롤드컵 나갔어. 방금 첫 경기 결과 나왔다.",
-      "subtitle": "한화생명 롤드컵 진출",
-      "photo_query": "league of legends esports team"
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 'ตรวจหวย' 관련 트렌드 — ตรวจหวย 1/11/69 ผลสลากกินแบ่งรัฐบาล ตรวจลอตเตอรี่ 1 พ.ย. 69. 수치로 확인해보자.",
+      "subtitle": "'ตรวจหวย' 관련 트렌드 —"
     },
     {
       "image": null,
-      "narration": "1세트부터 중국 팀 BLG랑 붙었다. 뭐라카노. 치열했다. 거기서 아쉬운 결과가 나왔다.",
-      "subtitle": "첫 경기부터 강팀과 대결",
-      "photo_query": "esports match intense gaming competition"
-    },
-    {
-      "image": null,
-      "narration": "이거. 이제부터가 중요하다. 다음 경기 어떻게 나올지가 열쇠다.",
-      "subtitle": "남은 경기 집중력 필요",
-      "photo_query": "esports player focus concentration"
-    },
-    {
-      "image": null,
-      "narration": "롤드컵이 뭔지, 한화생명이 뭐 하는 팀인지 모르면 팔로우 눌러 봐라. 매일 알려 드린다.",
-      "subtitle": "팔로우해서 계속 봐라",
-      "photo_query": "esports community online gaming fans"
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "google_trends",
+    "source": "",
     "category": "당일 화제 이슈",
-    "attribution": "Google Trends",
+    "attribution": "",
     "chart": null,
-    "generated_at": "2026-11-01T02:05:18.523852+00:00"
+    "tone": "경상도",
+    "generated_at": "2026-11-01T10:15:20.125730+00:00"
   }
 }

@@ -1,0 +1,53 @@
+{
+  "title": "옷장 정리의 기준",
+  "cover": {
+    "image": null,
+    "lines": [
+      "안 입는 옷",
+      "<r>3개월 기준</r>",
+      "버려라"
+    ],
+    "badge": null,
+    "photo_query": "overflowing wardrobe closet"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "옷장이 터진다고? 이거 봐봐, 기준이 없으니까 자꾸 헷갈리지. 지금부터 단 하나만 기억해.",
+      "subtitle": "옷장 정리 기준 한 가지",
+      "photo_query": "woman looking confused at full wardrobe"
+    },
+    {
+      "image": null,
+      "narration": "최근 3개월 동안 안 입은 옷? 그건 앞으로도 안 입을 확률이 80% 넘는다. 왜냐면 계절이 바뀌어도 손이 안 간다는 건 뭔가 맞지 않다는 뜻이거든.",
+      "subtitle": "3개월 미착용 = 버릴 신호",
+      "photo_query": "calendar three months"
+    },
+    {
+      "image": null,
+      "narration": "옷장을 비우면 남은 옷이 대충 20장 정도. 이 정도면 매일 다른 옷을 입어도 한 달 돌아간다. 관리도 쉽고 뭘 입을지도 고민 없어진다.",
+      "subtitle": "최종: 20장이면 충분",
+      "photo_query": "organized minimal wardrobe hanging"
+    },
+    {
+      "image": null,
+      "narration": "버린 옷? 버리지 말고 팔아. 플리마켓이나 당근마켓에 올리면 만원대 옷도 팔린다. 그럼 옷장도 시원하고 용돈도 생기는 거다.",
+      "subtitle": "팔면 옷장 시원 + 용돈까지",
+      "photo_query": "selling clothes online secondhand"
+    },
+    {
+      "image": null,
+      "narration": "이런 꿀팁 더 보고 싶으면 팔로우 눌러. 다음엔 냉장고 정리법으로 돌아온다.",
+      "subtitle": "팔로우로 꿀팁 받기",
+      "photo_query": "follow button subscribe"
+    }
+  ],
+  "meta": {
+    "format": "살림팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T10:16:14.982111+00:00"
+  }
+}

@@ -4,42 +4,43 @@
     "image": null,
     "lines": [
       "송도동",
-      "<r>9억</r>대",
-      "거래 뜨고 있다"
+      "한 달에",
+      "<r>9억</r>",
+      "움직였다"
     ],
     "badge": null,
-    "photo_query": "incheon songdo district apartment complex modern"
+    "photo_query": "incheon songdo apartment complex modern buildings"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 송도동. 지난달 10건 거래가 떴다. 가격대 봐봐. 9억원대에서 시작한다.",
-      "subtitle": "송도동 10월 거래 10건",
-      "photo_query": "incheon songdo waterfront residential area"
+      "narration": "이거 모르고 지나가면 손해다. 송도동. 10월 한 달간 아파트 거래가 10건 터졌다. 거래액만 해도 총 9억 원대다.",
+      "subtitle": "송도동 10월 아파트 거래 10건",
+      "photo_query": "incheon songdo apartment buildings skyline"
     },
     {
       "image": null,
-      "narration": "가장 비싼 게 뭐냐고? 9억3천만원. 59제곱미터 소형 평형인데 이 값에 거래가 됐다. 진짜 기차다.",
-      "subtitle": "최고가: 9억3천만원",
+      "narration": "가장 비싼 게 뭔지 봐봐. 송도더샵퍼스트파크F14BL이다. 59제곱미터에 9억 3천 근처다.",
+      "subtitle": "최고가: 9억 3천만원",
       "photo_query": "luxury apartment interior modern design"
     },
     {
       "image": null,
-      "narration": "반대쪽은 6억5천만원부터. 상하로 3억 가까이 벌어져 있다. 평형이랑 층수가 그만큼 차이난다는 거. 제대로 봐야 한다.",
-      "subtitle": "최저가: 6억5천만원",
-      "photo_query": "apartment price comparison real estate listings"
+      "narration": "이거 봐봐. 가장 저렴한 곳도 6억 5천을 넘는다. 송도가 사실 만만한 동네가 아니라는 거다.",
+      "subtitle": "최저가: 6억 5천만원",
+      "photo_query": "apartment price chart real estate market"
     },
     {
       "image": null,
-      "narration": "근데 진짜 눈여겨볼 건 이거다. 송도동 신축 아파트들이 요즘 거래가 활발하다는 거. 투자자들도 눈 돌리고 있다는 신호다.",
-      "subtitle": "송도동 아파트 거래량 증가",
-      "photo_query": "real estate market demand investment"
+      "narration": "2010년부터 2020년 사이 건설된 단지들이 주를 이룬다. 준신축 매물이 움직이고 있다는 뜻이다.",
+      "subtitle": "준신축 단지 거래 활발",
+      "photo_query": "apartment building construction crane development"
     },
     {
       "image": null,
-      "narration": "송도동 거주자면 내 집값 추이 알아야지. 매달 데이터 올라온다. 팔로우 해두고 자주 봐라.",
-      "subtitle": "매달 거래 데이터 확인하기",
-      "photo_query": "real estate market monitoring data analysis"
+      "narration": "송도동 관심 있다면 이 데이터 봐둬라. 팔로우하고 다음 달 거래도 받아봐.",
+      "subtitle": "송도동 부동산 거래 정보",
+      "photo_query": "real estate agent showing apartment documents"
     }
   ],
   "meta": {
@@ -57,6 +58,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T02:04:33.367983+00:00"
+    "generated_at": "2026-11-01T10:14:30.730505+00:00"
   }
 }

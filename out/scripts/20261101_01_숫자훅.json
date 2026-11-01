@@ -3,43 +3,44 @@
   "cover": {
     "image": null,
     "lines": [
-      "반포동에",
+      "반포동",
       "<r>78억</r>",
-      "떴다"
+      "이 정도면",
+      "뭔가 있다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building seoul gangnam"
+    "photo_query": "luxury apartment high rise Seoul Han"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 32층 101제곱미터가 78억에 거래됐다. 이거 봐봐.",
-      "subtitle": "반포동 래미안원베일리 101㎡",
-      "photo_query": "seoul apartment luxury listing real estate"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 지난달 78억에 거래됐다. 32층짜리 아파트 한 채다.",
+      "subtitle": "반포동 래미안원베일리 78억 거래",
+      "photo_query": "seoul banpo lamian apartment building modern"
     },
     {
       "image": null,
-      "narration": "2023년 준공된 신축 아파트다 아이가. 벌써 3년 만에 값이 어떻게 움직였는지 보면 알 수 있다.",
-      "subtitle": "2023년 신축 아파트",
-      "photo_query": "new apartment building construction korea 2023"
+      "narration": "집의 크기는 102제곱미터. 사실 그리 크지 않다. 근데 이 가격이면 뭔가 있다는 얘기 아닌가.",
+      "subtitle": "102㎡ 규모의 아파트",
+      "photo_query": "apartment floor plan layout living room"
     },
     {
       "image": null,
-      "narration": "반포동은 서울에서 제일 핫한 지역이다. 강남의 심장. 여기 선수들이 치고 들어가는 가격 대역이 이 정도다.",
-      "subtitle": "서울 강남 반포동 상권",
-      "photo_query": "banpo gangnam seoul street buildings"
+      "narration": "2023년에 지은 새 건물이고. 강남 한복판, 한강이 한눈에 보이는 위치다. 이게 78억에 나왔다는 게.",
+      "subtitle": "강남 최고급 입지",
+      "photo_query": "Han River view Seoul apartments morning"
     },
     {
       "image": null,
-      "narration": "101제곱미터 아파트. 평수로 치면 30평대 중후반. 이 사이즈가 78억. 느껴지냐.",
-      "subtitle": "101㎡ 약 30평대 규모",
-      "photo_query": "apartment interior living room bedroom space"
+      "narration": "요즘 이런 위치 이 정도면 얼마나 나가는지 봐야 한다. 강남 집값 움직임이 여기서부터 시작된다.",
+      "subtitle": "강남 집값 트렌드 시작점",
+      "photo_query": "Seoul real estate market analysis chart"
     },
     {
       "image": null,
-      "narration": "강남 집값이 어디까지 올랐는지 보고 싶으면 우리 채널 팔로우 해라. 매주 실거래 데이터 터진다.",
-      "subtitle": "최신 실거래가 정보",
-      "photo_query": "real estate market chart graph data"
+      "narration": "쫌봐봐 채널에서 매달 들어오는 실거래 데이터. 강남 집값이 어디로 가는지 먼저 아는 건 당신 몫이다. 팔로우해라.",
+      "subtitle": "매달 실거래 분석",
+      "photo_query": "data analytics graph notification smartphone"
     }
   ],
   "meta": {
@@ -57,6 +58,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T02:04:26.194647+00:00"
+    "generated_at": "2026-11-01T10:14:24.003575+00:00"
   }
 }
