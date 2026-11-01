@@ -1,95 +1,95 @@
 {
-  "collected_at": "2026-10-31T18:01:28.654181+00:00",
+  "collected_at": "2026-11-01T02:03:49.093632+00:00",
   "items": [
     {
-      "keyword": "바이에른 대 도르트문트",
-      "traffic": "2000+",
-      "news_title": "&apos;김민재 선발! 요나탄 타는 벤치&apos; 콤파니의 선택은 韓 철기둥이었다...바이에른, 도르트문트와 분데스리가 1위 놓고 정면충돌",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "02b0c9b631922c7c"
-    },
-    {
-      "keyword": "미국 시간",
+      "keyword": "lyon",
       "traffic": "100+",
-      "news_title": "미국, 서머타임 내달 1일 해제…동부기준 韓과 시차 13→14시간",
+      "news_title": "Lyon OU - RC Vannes. Les tops et flops du match : Nicolàs Roger soigne sa première, une fin de match cauchemardesque",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "7812d8c75b11f1e1"
+      "key": "dcc69171d04abec2"
     },
     {
-      "keyword": "헐 시티 대 입스위치",
-      "traffic": "100+",
-      "news_title": "Hull City 2-2 Ipswich Town: Julio Enciso stunner salvages point for visitors",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "70bd0330d8f540d0"
-    },
-    {
-      "keyword": "크리스타 파이크",
-      "traffic": "200+",
-      "news_title": "&apos;독극물 사형&apos; 생존 美죄수 &quot;육체와 마음에 통증&quot;…재집행 거부",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "6de1a64e38d95c9a"
-    },
-    {
-      "keyword": "npl",
-      "traffic": "100+",
-      "news_title": "Waterlogged TU cricket ground (photos)",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "8b769a3e3c5f4199"
-    },
-    {
-      "keyword": "조현아",
-      "traffic": "500+",
-      "news_title": "‘17kg 감량’ 조현아, 턱선부터 다른 사람 됐네..운동복 셀카도 당당 “예뻐”",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "c7907d76a0f41fce"
-    },
-    {
-      "keyword": "jonas brothers",
-      "traffic": "200+",
-      "news_title": "Nick Jonas Says Former Disney CEO Bob Iger ‘Was Among the First to Reach Out’ When the Jonas Brothers Reunited in 2019",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "7e5113b566a7d108"
-    },
-    {
-      "keyword": "맨시티",
+      "keyword": "한화생명 e스포츠",
       "traffic": "1000+",
-      "news_title": "마레스카, “우리는 올바른 방향으로 가고 있다”",
+      "news_title": "[롤드컵] &apos;운명의 멸망전&apos; 첫 세트부터 대접전… 한화생명, 中 BLG에 아쉬운 1세트 덜미",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "b27da9ef0a6e1ff5"
+      "key": "64c4779d741b6231"
     },
     {
-      "keyword": "스완지 시티 대 블랙번",
+      "keyword": "사랑 이 온다",
+      "traffic": "2000+",
+      "news_title": "&apos;사랑이 온다&apos; 안희연, 하석진에 고백…27화 예고",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "283b6a46006af0a3"
+    },
+    {
+      "keyword": "골키퍼",
       "traffic": "200+",
-      "news_title": "Swansea City 4-0 Blackburn Rovers: Eustaquio, Opoku, Lissah and Stewart strike in emphatic win",
+      "news_title": "‘한국은 AG 금메달로 병역 혜택 받는데…’ 아시아 최고 GK는 군대 간다 ‘10경기 2실점’ 기록하던 중 이란군 입대",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "d4466ecc81689002"
+      "key": "8bdbc3f79097d873"
     },
     {
-      "keyword": "한화 blg",
-      "traffic": "500+",
-      "news_title": "[롤드컵] 추첨 운도 지독하게 없다…한화생명, 빌리빌리와 8강행 결정짓는 &apos;단두대 매치&apos;",
+      "keyword": "화재",
+      "traffic": "1000+",
+      "news_title": "울산소방본부, 겨울철 화재예방대책 추진…취약시설 안전관리 강화",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "놀라운 사건·화제",
+      "key": "b7215b5c44cdaf68"
+    },
+    {
+      "keyword": "정전",
+      "traffic": "200+",
+      "news_title": "거제서 전신주 파손…아파트 1천200여세대 한때 정전",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "ad96d33c4385d41b"
+      "key": "9c3e15e9ef5d3f3e"
+    },
+    {
+      "keyword": "자폭형 무인 항공기",
+      "traffic": "200+",
+      "news_title": "",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2b275e7aedb86a63"
+    },
+    {
+      "keyword": "이찬원",
+      "traffic": "500+",
+      "news_title": "이찬원 팬클럽, 생일 맞아 청각장애인 위해 3,445만원 후원",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "ea1be09f9cb37dd2"
+    },
+    {
+      "keyword": "gs건설",
+      "traffic": "100+",
+      "news_title": "역대 최대 영업이익 질주하던 에이피알…원화 강세에 꺾였다",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "91c1c264d6bad0e5"
+    },
+    {
+      "keyword": "테일러 프리츠",
+      "traffic": "100+",
+      "news_title": "Olivia Jade Reportedly Has a New Man in the Picture, &amp; It’s Not Taylor Fritz",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "a8119fd956c5242a"
     }
   ]
 }
