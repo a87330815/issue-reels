@@ -1,0 +1,53 @@
+{
+  "title": "충전기 자리싸움",
+  "cover": {
+    "image": null,
+    "lines": [
+      "충전기",
+      "<r>하나면</r>",
+      "족속싸움 난다"
+    ],
+    "badge": null,
+    "photo_query": "phone charging cable family table"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "엄마가 핸드폰 충전하고 있다. 이제 내 차례인 줄 알고 슬쩍 다가간다.",
+      "subtitle": "엄마 언제까지?",
+      "photo_query": "woman charging phone living room"
+    },
+    {
+      "image": null,
+      "narration": "아빠가 나타난다. \"아 내가 충전해야 하는데\" 눈치 싸움이 시작된다. 말은 안 하지만 시선이 다 표현한다.",
+      "subtitle": "침묵의 눈치 경쟁",
+      "photo_query": "father son standing waiting tension"
+    },
+    {
+      "image": null,
+      "narration": "결국 엄마가 뺀다. \"어 이거 내가 다 충전했어\" 하지만 다 안 찼다. 누군가 다시 꽂아야 한다.",
+      "subtitle": "반충전 상태 비상",
+      "photo_query": "phone battery low percentage charging"
+    },
+    {
+      "image": null,
+      "narration": "그 순간 누가 충전기를 집어 든다. 누가? 모두가 본다. 하지만 말이 없다. 오직 눈초리만 흐른다.",
+      "subtitle": "이거 누가 빼는 거냐",
+      "photo_query": "family members looking confused angry"
+    },
+    {
+      "image": null,
+      "narration": "결론: 이 집에선 충전기가 없다. 충전 시간표만 있다. 이런 거 더 보고 싶으면 팔로우 눌러봐!",
+      "subtitle": "족속 충전기 전쟁 완",
+      "photo_query": "family dinner table laughing together"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T14:39:02.149162+00:00"
+  }
+}

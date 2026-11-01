@@ -3,42 +3,42 @@
   "cover": {
     "image": null,
     "lines": [
-      "반포동",
+      "반포동 신축",
       "<r>평당 2.53억</r>",
-      "이게 현실입니다"
+      "봤나?"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building entrance korea"
+    "photo_query": "luxury apartment Seoul Banpo modern building"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 평당 2억 50 떨어졌다. 올해 10월에 나온 따끈따끈한 실거래가다.",
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 지난달에 올라온 실거래가 이거다. 평당 2억 5천만 원이다.",
       "subtitle": "반포동 래미안원베일리 평당 2.53억",
-      "photo_query": "apartment price real estate market korea"
+      "photo_query": "apartment transaction document price list"
     },
     {
       "image": null,
-      "narration": "같은 건물인데 32층은 7억 8천만 원이고. 7층은 5억 7천만 원이다. 층수 차이로 2억 1천만 원이 난다. 이거 봐봐.",
-      "subtitle": "같은 건물, 층수 차이 2억 1천만원",
-      "photo_query": "apartment high floor window view city"
+      "narration": "2023년 지은 신축이다. 32층 고층에서 나온 거다. 7.8억 원이 책정됐다.",
+      "subtitle": "지난달 거래 · 32층 고층",
+      "photo_query": "seoul high-rise apartment balcony city view"
     },
     {
       "image": null,
-      "narration": "2023년에 지었는데 벌써 이 가격이다. 신축 프리미엄이 얼마나 센지 보인다 아이가.",
-      "subtitle": "신축 건물 프리미엄",
-      "photo_query": "new apartment building construction korea"
+      "narration": "옆 단지 반포자이는? 2009년 건물인데 평당 5천3백만 원이다. 신축과 구축의 벽이 이 정도라니까.",
+      "subtitle": "반포자이(2009년) 평당 0.53억",
+      "photo_query": "seoul apartment building comparison old new"
     },
     {
       "image": null,
-      "narration": "같은 반포동 반포자이는 평당 5억 3천만 원. 2009년 건물인데 역전당했다. 위치가 전부라는 거다.",
-      "subtitle": "위치에 따라 평당 5억대 격차",
-      "photo_query": "seoul apartment neighborhood comparison"
+      "narration": "근데 이거. 같은 평형도 층수에 따라 확 달라진다. 101제곱미터인데 7층은 5.7억, 32층은 7.8억이다. 3층 차이만 2억이다.",
+      "subtitle": "같은 면적 · 층수차이로 2억 차이",
+      "photo_query": "apartment floor level window view daylight"
     },
     {
       "image": null,
-      "narration": "이 정보 모르면 매물 볼 때 판단이 못 선다. 지금 바로 팔로우해서 반포동 실시간 거래가를 자동으로 받아봐라.",
-      "subtitle": "매월 업데이트되는 실거래가 정보",
+      "narration": "반포 땅값이 어마해도 상황을 파악해야 나중에 손해 안 본다. 우리 채널 자주 봐라.",
+      "subtitle": "층수와 거래시기 · 다 다르다",
       "photo_query": "real estate market data analysis chart"
     }
   ],
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T10:15:13.684722+00:00"
+    "generated_at": "2026-11-01T14:38:33.599325+00:00"
   }
 }

@@ -1,36 +1,53 @@
 {
-  "title": "ตรวจหวย",
+  "title": "중산층 소득이 가장 많이 줄었다",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>ตรวจหวย</r>",
-      "실화입니다"
+      "중산층이",
+      "<r>가장</r>",
+      "많이 줄었다"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "middle class family budget calculator stressed"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'ตรวจหวย' 관련 트렌드 — ตรวจหวย 1/11/69 ผลสลากกินแบ่งรัฐบาล ตรวจลอตเตอรี่ 1 พ.ย. 69. 수치로 확인해보자.",
-      "subtitle": "'ตรวจหวย' 관련 트렌드 —"
+      "narration": "이거 모르고 지나가면 손해다. 지난해 소득 줄어든 걸 다들 알지. 근데 누가 제일 많이 줄었는지 아냐? 바로 중산층이다.",
+      "subtitle": "중산층 소득 감소 가장 커",
+      "photo_query": "income chart statistics decline"
     },
     {
       "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "저소득층도 줄었고 고소득층도 줄었지. 근데 중산층이 더 많이 떨어졌다니까. 왜 그럴까?",
+      "subtitle": "근로·사업소득 동반 하락",
+      "photo_query": "office worker tired computer desk"
+    },
+    {
+      "image": null,
+      "narration": "월급도 준다. 자영업도 안 된다. 이 둘 다 줄어드니까 중산층 타격이 커지는 거지. 양쪽에 맞은 셈이다.",
+      "subtitle": "저소득·고소득층보다 낙폭 큼",
+      "photo_query": "small business shop owner thinking"
+    },
+    {
+      "image": null,
+      "narration": "이제 중산층이 뭐 하나는 잘되겠지 싶던 게 없어진다. 살림이 빠듯해진다는 건데, 이거 한 번쯤 보고 가야 한다.",
+      "subtitle": "가계경제 악화 신호",
+      "photo_query": "family discussing household bills together"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 분석이 궁금하면 팔로우 눌러라. 매주 돈 이야기 같이 봐봐.",
+      "subtitle": "구독하고 경제 트렌드 놓치지 말기",
+      "photo_query": "notification bell subscribe button mobile"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "",
+    "source": "google_trends",
     "category": "당일 화제 이슈",
-    "attribution": "",
+    "attribution": "Google Trends",
     "chart": null,
-    "tone": "경상도",
-    "generated_at": "2026-11-01T10:15:20.125730+00:00"
+    "generated_at": "2026-11-01T14:38:41.092543+00:00"
   }
 }

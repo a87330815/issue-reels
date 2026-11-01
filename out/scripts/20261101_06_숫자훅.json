@@ -3,43 +3,37 @@
   "cover": {
     "image": null,
     "lines": [
-      "서초동에서",
+      "서초동에",
       "<r>40.7억</r>",
-      "떨어졌다"
+      "떴다"
     ],
     "badge": null,
-    "photo_query": "Seoul Seocho district luxury apartment building"
+    "photo_query": "Seoul Seocho luxury apartment building modern"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서초동 최고가 아파트가 나왔다. 서초그랑자이 40.7억이다.",
+      "narration": "이거 모르고 지나가면 손해다. 서초동에 40억 대 아파트가 나왔다. 서초그랑자이라고 하는데, 100제곱미터에 이 가격이다.",
       "subtitle": "서초그랑자이 40.7억",
-      "photo_query": "luxury apartment Seoul real estate"
+      "photo_query": "luxury apartment entrance lobby"
     },
     {
       "image": null,
-      "narration": "평수로는 100제곱미터다. 25층. 2021년 준공 건물이다. 아직도 새것이네.",
-      "subtitle": "100제곱미터 25층",
-      "photo_query": "modern apartment high floor windows"
+      "narration": "같은 지역에 이보다 한 참 낮은 가격대도 있다. 22억, 13억까지 떨어진다. 같은 동네인데 3배까지 차이 난다니까.",
+      "subtitle": "최저가 3천만원대",
+      "photo_query": "apartment price comparison chart"
     },
     {
       "image": null,
-      "narration": "비교를 해봤다. 같은 동네 다른 건물들은 뭐냐고? 센트럴아이파크는 22억. 삼환바우스는 13억이다.",
-      "subtitle": "다른 건물들은 절반 수준",
-      "photo_query": "apartment building comparison prices"
+      "narration": "뭐라카노. 신축도 있고 20년 넘은 것도 섞여 있다. 언제 지었는지, 몇 층인지 다 다르다. 서초동 갈 거면 단지마다 확인하고 봐야 한다.",
+      "subtitle": "신축부터 20년 건물까지",
+      "photo_query": "apartment building construction year comparison"
     },
     {
       "image": null,
-      "narration": "그래. 서초동도 빌딩마다 천지 차이다. 최고가와 최저가 차이가 장난이 아니다.",
-      "subtitle": "서초동 아파트 편차 심함",
-      "photo_query": "Seoul apartments different sizes price range"
-    },
-    {
-      "image": null,
-      "narration": "내 집 가격이 어디쯤인지 알고 싶으면 팔로우하고 댓글 남겨라. 우리 같이 파헤쳐본다.",
-      "subtitle": "댓글로 아파트명 알려줘",
-      "photo_query": "person typing comment social media"
+      "narration": "10월 실거래가니까 지금 시세는 또 달라져 있을 기다. 서초동 알아볼 사람들, 손에 잡혀야 댄다. 자세한 데이터는 우리 채널을 계속 따라와라.",
+      "subtitle": "지금 서초동 시세는?",
+      "photo_query": "seoul real estate market graph data"
     }
   ],
   "meta": {
@@ -57,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T10:14:59.985736+00:00"
+    "generated_at": "2026-11-01T14:38:19.113159+00:00"
   }
 }

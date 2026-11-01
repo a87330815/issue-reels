@@ -1,45 +1,45 @@
 {
-  "title": "반여동 아파트 실거래 10월",
+  "title": "반여동 10월 아파트 실거래 - 센텀KCC스위첸 6.4억",
   "cover": {
     "image": null,
     "lines": [
-      "반여동",
+      "반여동에서",
       "<r>6.4억</r>",
-      "최고가 떴다"
+      "이 가격이냐"
     ],
-    "badge": null,
-    "photo_query": "busan haeundae apartment building modern"
+    "badge": "2026.10",
+    "photo_query": "Busan Centum City apartment buildings"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반여동 아파트 시장. 지난달 최고가가 6억 4천만 원이다.",
-      "subtitle": "센텀KCC스위첸 6.4억",
-      "photo_query": "busan haeundae apartment complex entrance"
+      "narration": "이거 모르고 지나가면 손해다. 반여동 센텀KCC스위첸이 84제곱미터에 6억 4천만 원에 팔렸다.",
+      "subtitle": "센텀KCC스위첸 84㎡ 6.4억",
+      "photo_query": "luxury apartment living room interior"
     },
     {
       "image": null,
-      "narration": "84제곱미터 크기다. 신축에 가까운 2022년 건물이다. 16층이다.",
-      "subtitle": "84㎡ 신축 2022년 건물",
-      "photo_query": "modern apartment interior living room"
-    },
-    {
-      "image": null,
-      "narration": "메가센텀한화는 5억 6천만 원이다. 같은 크기인데 차이가 난다. 건물 나이가 2008년이거든.",
-      "subtitle": "메가센텀한화 5.6억 (2008년)",
+      "narration": "뭐라카더라. 같은 면적 옆 건물 메가센텀한화는 5억 6천만 원. 8천만 원 차이다.",
+      "subtitle": "메가센텀한화 84㎡ 5.6억",
       "photo_query": "apartment price comparison chart"
     },
     {
       "image": null,
-      "narration": "가장 싼 건 2천만 원대다. 같은 반여동이지만. 건물 나이 차이가 다가 아니다. 위치. 크기. 층수. 다 달라진다.",
-      "subtitle": "최저가 2천만원대 vs 최고가 6.4억",
-      "photo_query": "different apartment buildings comparison"
+      "narration": "어? 이건 신축이 다르냐고? 센텀KCC는 2022년생. 겨우 4년 됐다. 신축 프리미엄 맞네.",
+      "subtitle": "2022년 신축 vs 2008년 준신축",
+      "photo_query": "new apartment construction building"
     },
     {
       "image": null,
-      "narration": "반여동 아파트 고민 중이면. 이 데이터 꼭 보고 결정해라. 더 궁금하면 팔로우.",
-      "subtitle": "반여동 아파트 시장 정보",
-      "photo_query": "realtor showing apartment documents"
+      "narration": "반여동에서 이 정도 규모면 5억에서 6억 4천 사이. 너네 집은 어디에 걸려 있냐.",
+      "subtitle": "반여동 실거래 범위 2.01억~6.4억",
+      "photo_query": "real estate market analysis data"
+    },
+    {
+      "image": null,
+      "narration": "더 알고 싶으면 팔로우해라. 매주 지역별 실거래 최고가 갈켜줄 기다.",
+      "subtitle": "쫌봐봐와 함께 시세 잡아",
+      "photo_query": "follow subscribe button social media"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T10:15:06.477229+00:00"
+    "generated_at": "2026-11-01T14:38:26.197535+00:00"
   }
 }

@@ -1,39 +1,45 @@
 {
-  "title": "배터리 1%의 기적",
+  "title": "한국 지하철이 정확한 이유",
   "cover": {
     "image": null,
     "lines": [
-      "1%에서",
-      "<r>이렇게</r>",
-      "오래 가냐고?"
+      "한국 지하철",
+      "<r>1초 늦은 적</r>",
+      "없다고 들었는데"
     ],
     "badge": null,
-    "photo_query": null
+    "photo_query": "seoul subway train station clock"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "배터리 99%에서 90%까지 가는 데 한 30분 걸린다고 치자. 근데 1%에서 죽을 때까지는 진짜 한 시간도 간다니까. 이거 뭔 마법이냐고.",
-      "subtitle": "99→90%는 빠르고 1%는 오래 버틴다",
-      "photo_query": "smartphone battery drain fast"
+      "narration": "야야야, 한국 지하철이 평균 20초 정도밖에 안 늦는다 아이가. 세계에서 가장 정확하다니까.",
+      "subtitle": "20초 오차? 미친 정확성",
+      "photo_query": "train punctuality schedule display"
     },
     {
       "image": null,
-      "narration": "핸드폰이 1% 뜨면 마치 '아직 살아있다'는 신호 같은 거야. 화면을 아예 안 켜면, 배터리가 마치 시간을 멈춰버린 듯이 느껴진다니까.",
-      "subtitle": "1%에서의 신비한 버티기",
-      "photo_query": "phone low battery warning red screen"
+      "narration": "이게 왜냐면 말이야, 지하철 기사들이 하루에 몇십 번을 속도계 보면서 운전한다고 카더라. 밀리초 단위로.",
+      "subtitle": "기사의 손가락이 미세 조정",
+      "photo_query": "train driver controls speedometer"
     },
     {
       "image": null,
-      "narration": "그래서 집까지 남은 거리를 계산하면서 '이 정도면 유튜브는 못 보지만 길 찾기는 간다' 이렇게 기도하게 되는 거지. 1%의 주인공은 진짜 배터리 갱생자다.",
-      "subtitle": "1%로 버티는 사람들의 전략",
-      "photo_query": "navigation maps battery low"
+      "narration": "그래서 시간에 미쳐 있는 한국 사람들이 '아 지하철만 믿는다'면서 헐렁하게 나간다 거든. 시침 맞춰서.",
+      "subtitle": "한국인의 신뢰는 지하철",
+      "photo_query": "commuter checking watch on platform"
     },
     {
       "image": null,
-      "narration": "이런 공감 더 보고 싶으면 팔로우해 봐. 우리 같이 웃자고야.",
-      "subtitle": "팔로우 해줘 형!",
-      "photo_query": "follow button subscribe icon"
+      "narration": "근데 생각해보니 약속 시간에 자꾸 늦는 우리들이야, 지하철 덕분에 겨우 살아나는 거네.",
+      "subtitle": "지하철이 없었으면 우리 신용은?",
+      "photo_query": "people waiting on subway platform crowded"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 알고 싶으면 팔로우하고, 댓글로 너네 동네 지하철은 얼마나 늦는지 좀 해봐.",
+      "subtitle": "너네 지역 지하철은 몇 초?",
+      "photo_query": "subway map korea cities"
     }
   ],
   "meta": {
@@ -42,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-01T10:15:26.832644+00:00"
+    "generated_at": "2026-11-01T14:38:48.737747+00:00"
   }
 }

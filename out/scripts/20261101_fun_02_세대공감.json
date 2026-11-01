@@ -1,0 +1,53 @@
+{
+  "title": "카톡 읽씹 세대 전쟁",
+  "cover": {
+    "image": null,
+    "lines": [
+      "카톡 읽고",
+      "<r>답 안 하는 게</r>",
+      "예의라고?"
+    ],
+    "badge": null,
+    "photo_query": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "우리 부모님 세대는 카톡을 읽으면 무조건 답장을 한다. 답을 안 하면 무례라고 생각하는 거다.",
+      "subtitle": "예의가 곧 빠른 답장",
+      "photo_query": "older generation phone texting"
+    },
+    {
+      "image": null,
+      "narration": "근데 우리는? 카톡 받고 바로 답장하면 오히려 어색하다. 생각할 시간을 달라는 의미로 일단 읽씹을 한다.",
+      "subtitle": "깊이 있는 답변을 위한 시간",
+      "photo_query": "young person thinking phone"
+    },
+    {
+      "image": null,
+      "narration": "5분 뒤에 답장하면 '와 빠르네' 이러고, 30분 뒤에 하면 '아 바쁜가 보네' 이러고, 2시간이면 이미 다른 생각 중이다.",
+      "subtitle": "타이밍이 곧 감정표현",
+      "photo_query": "smartphone clock notification time"
+    },
+    {
+      "image": null,
+      "narration": "결국 같은 카톡인데 세대마다 예의가 다르다. 부모님한테는 빨리 답하고, 친구한테는 좀 있다가 답하는 게 진정한 예의다.",
+      "subtitle": "세대별 카톡 예의 코드",
+      "photo_query": "family messaging across generations"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 공감하고 싶으면 팔로우! 우리 함께 웃으면서 살자고.",
+      "subtitle": "팔로우해서 더 보기",
+      "photo_query": "follow button social media"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T14:38:55.230207+00:00"
+  }
+}

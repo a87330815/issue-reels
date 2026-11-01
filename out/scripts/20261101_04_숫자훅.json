@@ -1,45 +1,45 @@
 {
-  "title": "서울 아파트값 격차의 현실",
+  "title": "반포동 vs 덕암동, 같은 아파트인데 가격이 다르다?",
   "cover": {
     "image": null,
     "lines": [
-      "반포동은",
-      "<r>60억</r>",
-      "덕암동은 7천만"
+      "반포동 <r>60억</r>",
+      "덕암동 7천만원",
+      "같은 평수인데?"
     ],
     "badge": null,
-    "photo_query": "seoul apartment complex luxury district"
+    "photo_query": "seoul apartment building comparison luxury district"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 같은 서울인데 아파트값이 87배 차이 난다. 진짜 다른 나라다.",
-      "subtitle": "반포동 vs 덕암동 평균값",
-      "photo_query": "seoul neighborhood map apartment buildings"
+      "narration": "이거 모르고 지나가면 손해다. 똑같은 아파트라도 어디에 사느냐에 따라 가격이 9배까지 달라진다. 지금 바로 확인해야 한다.",
+      "subtitle": "위치만 다르면 가격 9배 차이",
+      "photo_query": "seoul district map navigation"
     },
     {
       "image": null,
-      "narration": "반포동. 강남 한복판이다. 래미안원베일리 한 채가 7억 8천에서 5억 7천. 이게 일반적이다.",
-      "subtitle": "반포동 평균 60억원대",
-      "photo_query": "luxury apartment building modern architecture"
+      "narration": "반포동. 최근 거래된 새 아파트들 보니 60억을 훌쩍 넘어간다. 가장 비싼 곳은 78억까지 나왔다.",
+      "subtitle": "반포동 신축아파트 60억대",
+      "photo_query": "korean luxury apartment lobby modern"
     },
     {
       "image": null,
-      "narration": "덕암동 보면. 같은 시기 거래된 아파트들인데 평균이 7천만원. 뭐라카더라도 현실이다.",
-      "subtitle": "덕암동 평균 7천만원",
-      "photo_query": "older apartment building residential area"
+      "narration": "그런데 이야기가 이상해진다. 덕암동은 똑같은 평수, 같은 신축인데 가격이 고작 7천만원대다. 반포동의 1/100 수준이다.",
+      "subtitle": "덕암동은 7천만원대",
+      "photo_query": "apartment building residential area korea"
     },
     {
       "image": null,
-      "narration": "이 차이. 위치가 전부다. 강남역 근처냐 아니냐. 학군이냐 아니냐. 개발 계획이 있냐 없냐.",
-      "subtitle": "위치와 개발 계획이 결정한다",
-      "photo_query": "seoul gangnam station area development"
+      "narration": "뭐가 다른가. 위치다. 강남 중심부냐 변두리냐. 지금 당신이 보는 아파트 가격도 이 기준으로 갈린다.",
+      "subtitle": "강남 중심부 vs 외곽",
+      "photo_query": "seoul gangnam district cityscape"
     },
     {
       "image": null,
-      "narration": "내 살 집을 고를 때. 가격만 보지 말고 지역을 봐라. 5년 뒤 값이 갈린다. 그래야 손해 안 본다. 더 알고 싶으면 팔로우해라.",
-      "subtitle": "지역 선택이 수십억을 결정한다",
-      "photo_query": "real estate agent showing apartment listing"
+      "narration": "내 집 값, 내 이웃 값 제대로 알고 사야 한다. 쫌봐봐 구독해서 놓치지 마라.",
+      "subtitle": "위치 확인이 곧 손해 예방",
+      "photo_query": "family home interior apartment window"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T10:14:45.092424+00:00"
+    "generated_at": "2026-11-01T14:38:05.600011+00:00"
   }
 }

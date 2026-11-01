@@ -1,45 +1,45 @@
 {
-  "title": "콜오브듀티 이태원 참사 맵 삭제 논란",
+  "title": "전국노래자랑 동작구 박서진",
   "cover": {
     "image": null,
     "lines": [
-      "게임 하나가",
-      "<r>5년 전 참사</r>",
-      "다시 터졌다"
+      "60년 전국노래자랑",
+      "오늘 <r>동작구</r>",
+      "박서진 편 방송"
     ],
     "badge": null,
-    "photo_query": "video game controversy deletion"
+    "photo_query": "korean karaoke stage singing microphone"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 콜오브듀티라는 게임에 이태원 참사를 연상하게 하는 맵이 들어갔다는 거다. 게임사가 뒤늦게 사과하고 전면 삭제 결정했다.",
-      "subtitle": "게임 내 이태원 참사 연상 맵 문제 발생",
-      "photo_query": "call of duty game map design"
+      "narration": "이거 모르고 지나가면 손해다. 전국노래자랑. 60년을 계속해온 프로그램 말이다. 오늘 동작구 편에서 박서진이 나온다고 카더라.",
+      "subtitle": "60년 계속된 전국노래자랑",
+      "photo_query": "vintage korean television broadcast studio"
     },
     {
       "image": null,
-      "narration": "5년 전 있었던 그 참사. 우리 사회가 아물지 않은 상처인데, 게임 디자인에 그게 담겨 나왔다는 거다. 이용자들 사이에서 비판이 쏟아졌다.",
-      "subtitle": "사용자들의 비판 폭주",
-      "photo_query": "social media criticism reaction"
+      "narration": "뭐라카노. 이 프로그램. 할머니부터 손자까지 다 본다. 그 정도로 국민 프로그램이다.",
+      "subtitle": "전국민이 보는 장수 프로그램",
+      "photo_query": "multi generational family watching television"
     },
     {
       "image": null,
-      "narration": "게임사는 \"의도하지 않은 결과다. 머리 숙여 사과한다\"고 공식 입장을 냈다. 해당 맵을 게임에서 영구 삭제하기로 했다.",
-      "subtitle": "게임사 공식 사과 및 맵 삭제",
-      "photo_query": "official apology statement announcement"
+      "narration": "동작구 편이 나왔다는 거. 당신 동네일 수도 있단 거다. 혹시 알고 있는 분 나왔는지 한번 봐라.",
+      "subtitle": "오늘 방송 당신 지역은?",
+      "photo_query": "seoul dongjak district neighborhood street"
     },
     {
       "image": null,
-      "narration": "이런 일들이 생기는 이유가 뭘까. 게임 개발 과정에서 문화적 민감성 검토가 얼마나 중요한지 보여주는 사건이다. 우리가 조금 더 주의 깊게 봐야 할 부분이 있다는 거다.",
-      "subtitle": "문화적 민감성의 중요성",
-      "photo_query": "diverse game development team meeting"
+      "narration": "박서진. 이 이름. 기억해두고 봐라. 어떤 사람이 무대에 올랐는지.",
+      "subtitle": "박서진 출연자 주목",
+      "photo_query": "karaoke singer performance stage lights"
     },
     {
       "image": null,
-      "narration": "야야야. 이렇게 민감한 이슈를 제대로 알아야 다음에는 더 나아질 수 있다. 이슈에 대해 어떻게 생각하는지 댓글로 남겨달라. 팔로우도 잊지 말고.",
-      "subtitle": "의견 공유 및 팔로우 유도",
-      "photo_query": "community discussion comments feedback"
+      "narration": "전국노래자랑. 매주 보는데 이번 주는 꼭 챙겨 봐야 한다. 당신 지역 이야기니까.",
+      "subtitle": "오늘 밤 전국노래자랑 필수 시청",
+      "photo_query": "korean television program live broadcast audience"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-01T10:14:53.480399+00:00"
+    "generated_at": "2026-11-01T14:38:12.456112+00:00"
   }
 }
