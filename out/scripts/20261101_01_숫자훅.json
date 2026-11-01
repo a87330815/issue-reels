@@ -1,0 +1,62 @@
+{
+  "title": "반포동 래미안원베일리 78억 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "반포동에",
+      "<r>78억</r>",
+      "떴다"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building seoul gangnam"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 32층 101제곱미터가 78억에 거래됐다. 이거 봐봐.",
+      "subtitle": "반포동 래미안원베일리 101㎡",
+      "photo_query": "seoul apartment luxury listing real estate"
+    },
+    {
+      "image": null,
+      "narration": "2023년 준공된 신축 아파트다 아이가. 벌써 3년 만에 값이 어떻게 움직였는지 보면 알 수 있다.",
+      "subtitle": "2023년 신축 아파트",
+      "photo_query": "new apartment building construction korea 2023"
+    },
+    {
+      "image": null,
+      "narration": "반포동은 서울에서 제일 핫한 지역이다. 강남의 심장. 여기 선수들이 치고 들어가는 가격 대역이 이 정도다.",
+      "subtitle": "서울 강남 반포동 상권",
+      "photo_query": "banpo gangnam seoul street buildings"
+    },
+    {
+      "image": null,
+      "narration": "101제곱미터 아파트. 평수로 치면 30평대 중후반. 이 사이즈가 78억. 느껴지냐.",
+      "subtitle": "101㎡ 약 30평대 규모",
+      "photo_query": "apartment interior living room bedroom space"
+    },
+    {
+      "image": null,
+      "narration": "강남 집값이 어디까지 올랐는지 보고 싶으면 우리 채널 팔로우 해라. 매주 실거래 데이터 터진다.",
+      "subtitle": "최신 실거래가 정보",
+      "photo_query": "real estate market chart graph data"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        78.0,
+        57.0,
+        51.0,
+        45.0,
+        40.7
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-01T02:04:26.194647+00:00"
+  }
+}

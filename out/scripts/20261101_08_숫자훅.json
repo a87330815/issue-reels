@@ -1,0 +1,62 @@
+{
+  "title": "반포동 래미안원베일리 평당 2.53억",
+  "cover": {
+    "image": null,
+    "lines": [
+      "반포동",
+      "<r>평당 2.53억</r>",
+      "이게 현실입니다"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building seoul gangnam"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리 평당 2.53억. 2023년 신축 아파트가 벌써 이 가격대다.",
+      "subtitle": "반포동 신축 평당 2.53억",
+      "photo_query": "new luxury apartment interior modern"
+    },
+    {
+      "image": null,
+      "narration": "같은 단지에도 층수가 다르면 달라진다. 32층은 7.8억, 7층은 5.7억. 층 하나 올라갈 때마다 억 단위로 차이 난다.",
+      "subtitle": "같은 단지, 층수로 2억 차이",
+      "photo_query": "apartment building high floor city view"
+    },
+    {
+      "image": null,
+      "narration": "반포자이는 평당 5.3억. 2009년 건축인데 신축보다 2배 비싸다. 강남은 아파트가 아니라 위치를 사는 거다.",
+      "subtitle": "같은 동네 구축 평당 5.3억",
+      "photo_query": "apartment building construction year comparison"
+    },
+    {
+      "image": null,
+      "narration": "신축이어도 위치면 가격이 엄청 달라진다. 도곡동은 평당 4.8억, 방배동은 평당 4.3억. 동네 차이가 8000만원이다.",
+      "subtitle": "동네만 달라도 평당 8천만원",
+      "photo_query": "seoul different districts neighborhood comparison map"
+    },
+    {
+      "image": null,
+      "narration": "강남권 아파트 사려면 이 정도는 알고 봐야 한다. 더 많은 데이터는 저 팔로우 해서 받아봐라.",
+      "subtitle": "강남 부동산, 자세히 알고 사세요",
+      "photo_query": "person apartment viewing documents calculator"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        2.53,
+        2.22,
+        1.75,
+        1.58,
+        1.42
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-01T02:05:13.043565+00:00"
+  }
+}

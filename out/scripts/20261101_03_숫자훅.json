@@ -1,0 +1,54 @@
+{
+  "title": "신축 아파트 vs 올드 아파트, 가격 차이 3배",
+  "cover": {
+    "image": null,
+    "lines": [
+      "신축은",
+      "<r>24억</r>",
+      "오래된 건",
+      "8억이다"
+    ],
+    "badge": null,
+    "photo_query": "old apartment building vs new modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 2020년 이후 지은 신축 아파트. 평균 24억 6천이다.",
+      "subtitle": "신축 아파트 평균 가격 24.6억",
+      "photo_query": "new apartment building construction site modern"
+    },
+    {
+      "image": null,
+      "narration": "근데 2005년 이전 건 평균 8억이라 아이가. 뭐라카노. 같은 면적인데 3배 차이다.",
+      "subtitle": "2005년 이전 아파트 평균 가격",
+      "photo_query": "old vintage apartment building residential area"
+    },
+    {
+      "image": null,
+      "narration": "신축은 신식 설비에 입주금도 적고. 근데 가격이 워. 오래된 건 저렴하지만 리모델링에 돈이 또 들어간다.",
+      "subtitle": "신축은 비싸고 오래된 건 저렴하지만",
+      "photo_query": "apartment interior renovation construction tools"
+    },
+    {
+      "image": null,
+      "narration": "결국 뭘 택하든 손잡이다. 자기 예산에 맞는 걸 고르는 수밖에. 이 정보 공유해라.",
+      "subtitle": "예산과 상황에 맞게 선택하기",
+      "photo_query": "family discussing house plans documents calculator"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        24.6,
+        8.0
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-01T02:04:39.462878+00:00"
+  }
+}

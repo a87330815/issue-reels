@@ -1,0 +1,53 @@
+{
+  "title": "장보기 전 이 습관 하나로 식비 30% 뚝!",
+  "cover": {
+    "image": null,
+    "lines": [
+      "장보기 전",
+      "<r>이것만 하면</r>",
+      "식비 30% 절약"
+    ],
+    "badge": null,
+    "photo_query": "grocery shopping list planning"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 매번 마트 가면 계획보다 훨씬 많이 사오지 않습니까? 그게 바로 식비 늘어나는 이유거든.",
+      "subtitle": "충동구매가 식비 낭비의 주범",
+      "photo_query": "shopping cart full groceries"
+    },
+    {
+      "image": null,
+      "narration": "마트 가기 전에 지난주에 뭘 먹었는지 딱 5분만 떠올려 보세요. 그리고 남은 반찬, 냉동실 뭐 있는지 확인하고 메모지에 딱 3가지만 써가는 거다.",
+      "subtitle": "지난주 식단 확인 → 남은 음식 체크 →",
+      "photo_query": "writing grocery list notepad"
+    },
+    {
+      "image": null,
+      "narration": "이렇게 하면 왜 줄어드냐면, 머리로는 필요한 것만 산다고 생각해도 눈에 띄면 사는데, 메모지 3개만 봐도 안 사게 된다니까.",
+      "subtitle": "제한된 리스트 = 충동구매 방지",
+      "photo_query": "comparing store items with list"
+    },
+    {
+      "image": null,
+      "narration": "월급이 200만 원이면 식비가 보통 40~50만 원인데, 이 방법으로 30% 줄면 12~15만 원을 살려낸다고 카더라. 진짜 해볼 가치 있지 않냐고.",
+      "subtitle": "월 12~15만원 절약 가능",
+      "photo_query": "money saving piggy bank"
+    },
+    {
+      "image": null,
+      "narration": "이런 식비 절약 꿀팁 더 보고 싶으면 팔로우 눌러 두세요!",
+      "subtitle": "팔로우하고 더 많은 팁 받기",
+      "photo_query": "follow button notification bell"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T02:06:03.395703+00:00"
+  }
+}

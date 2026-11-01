@@ -1,0 +1,62 @@
+{
+  "title": "송도동 10월 아파트 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "송도동",
+      "<r>9억</r>대",
+      "거래 뜨고 있다"
+    ],
+    "badge": null,
+    "photo_query": "incheon songdo district apartment complex modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 송도동. 지난달 10건 거래가 떴다. 가격대 봐봐. 9억원대에서 시작한다.",
+      "subtitle": "송도동 10월 거래 10건",
+      "photo_query": "incheon songdo waterfront residential area"
+    },
+    {
+      "image": null,
+      "narration": "가장 비싼 게 뭐냐고? 9억3천만원. 59제곱미터 소형 평형인데 이 값에 거래가 됐다. 진짜 기차다.",
+      "subtitle": "최고가: 9억3천만원",
+      "photo_query": "luxury apartment interior modern design"
+    },
+    {
+      "image": null,
+      "narration": "반대쪽은 6억5천만원부터. 상하로 3억 가까이 벌어져 있다. 평형이랑 층수가 그만큼 차이난다는 거. 제대로 봐야 한다.",
+      "subtitle": "최저가: 6억5천만원",
+      "photo_query": "apartment price comparison real estate listings"
+    },
+    {
+      "image": null,
+      "narration": "근데 진짜 눈여겨볼 건 이거다. 송도동 신축 아파트들이 요즘 거래가 활발하다는 거. 투자자들도 눈 돌리고 있다는 신호다.",
+      "subtitle": "송도동 아파트 거래량 증가",
+      "photo_query": "real estate market demand investment"
+    },
+    {
+      "image": null,
+      "narration": "송도동 거주자면 내 집값 추이 알아야지. 매달 데이터 올라온다. 팔로우 해두고 자주 봐라.",
+      "subtitle": "매달 거래 데이터 확인하기",
+      "photo_query": "real estate market monitoring data analysis"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        9.3,
+        7.5,
+        6.5,
+        7.2,
+        8.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-01T02:04:33.367983+00:00"
+  }
+}

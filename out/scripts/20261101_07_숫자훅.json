@@ -1,0 +1,62 @@
+{
+  "title": "반여동 10월 최고가 아파트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "반여동 최고가",
+      "<r>6.4억</r>",
+      "이게 기본입니다"
+    ],
+    "badge": null,
+    "photo_query": "busan centum city apartment buildings modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 반여동. 10월에 떨어진 거 봤나. 센텀KCC스위첸. 84제곱미터에 6.4억이다.",
+      "subtitle": "센텀KCC스위첸 84㎡ 6.4억",
+      "photo_query": "luxury apartment building entrance centum city"
+    },
+    {
+      "image": null,
+      "narration": "이게 뭐냐고? 반여동에서는 이게 최고가인 거다. 메가센텀한화꿈에그린도 5.6억. 다 비슷한 규모인데.",
+      "subtitle": "반여동 가격대 확인",
+      "photo_query": "apartment price comparison chart numbers"
+    },
+    {
+      "image": null,
+      "narration": "2022년 지은 신축이니까 당연하다 생각할 수도 있어. 근데 여기 요거 봐봐. 2001년, 1998년 된 건물도 2억, 1.9억대다.",
+      "subtitle": "오래된 건물 vs 신축 가격",
+      "photo_query": "old apartment building construction vintage"
+    },
+    {
+      "image": null,
+      "narration": "반여동 부동산 보는 사람들은 이 데이터로 시세를 재는 거다. 넌 모르고 지나가면 그게 손해인 거 아이가.",
+      "subtitle": "반여동 실거래가 확인",
+      "photo_query": "real estate agent office documents"
+    },
+    {
+      "image": null,
+      "narration": "우리 채널 팔로우해라. 매달 이런 데이터 다 퍼줄기다. 놓치지 말고 따라와.",
+      "subtitle": "더 알아보려면 팔로우",
+      "photo_query": "smartphone notification follow button"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        6.4,
+        5.6,
+        3.0,
+        2.0,
+        1.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-01T02:05:05.628256+00:00"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "title": "퇴근 후 침대의 마법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "퇴근하고",
+      "침대 누우면",
+      "<r>세상이 끝난다</r>"
+    ],
+    "badge": null,
+    "photo_query": "tired person lying on bed after"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야 퇴근하고 집 도착하는 그 순간 말이다. 현관문 열고 신발 벗는 것부터가 벌써 행복이지.",
+      "subtitle": "집에만 도착해도 반 이상 피로 해제",
+      "photo_query": "person entering home tired evening"
+    },
+    {
+      "image": null,
+      "narration": "근데 진짜 마법은 침대 누우는 그 찰나다. 몸이 매트리스에 닿는 순간 \"아아아아\" 나온다니까.",
+      "subtitle": "중력이 날 안아주는 기분",
+      "photo_query": "man lying on comfortable bed relaxing"
+    },
+    {
+      "image": null,
+      "narration": "핸드폰 들 힘도 없고, 밥 먹을 생각도 없고, 그냥 누워만 있어도 살이 녹아내리는 것 같아. 이게 돈 주고도 못 사는 쾌감이다.",
+      "subtitle": "침대 = 최고급 스파",
+      "photo_query": "peaceful person sleeping in bed"
+    },
+    {
+      "image": null,
+      "narration": "엄마가 \"밥 먹어라\" 하고 들어와도 못 들을 것 같은데? 이 순간만은 침대가 세상 전부 아이가.",
+      "subtitle": "침대 너 최고야",
+      "photo_query": "cozy bed with pillows blanket"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T02:05:43.576861+00:00"
+  }
+}

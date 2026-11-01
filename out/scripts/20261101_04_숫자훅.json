@@ -1,0 +1,62 @@
+{
+  "title": "서울 강남 아파트값 86배 차이",
+  "cover": {
+    "image": null,
+    "lines": [
+      "같은 서울인데",
+      "<r>86배</r>",
+      "차이 난다"
+    ],
+    "badge": null,
+    "photo_query": "seoul apartment buildings contrast rich poor"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 같은 서울 아파트인데 가격이 86배 차이 난다. 반포동은 60억. 덕암동은 7천만원. 뭐라카노.",
+      "subtitle": "반포동 평균 60억 vs 덕암동 7천만원",
+      "photo_query": "seoul gangnam district apartment comparison"
+    },
+    {
+      "image": null,
+      "narration": "반포동 래미안원베일리. 올해 10월에 7억 8천에 팔렸다. 32층 고층. 2023년 신축이다.",
+      "subtitle": "래미안원베일리 7억 8천만원",
+      "photo_query": "modern luxury apartment building high floor"
+    },
+    {
+      "image": null,
+      "narration": "같은 기간 덕암동 아파트는? 7천만원이다. 반포동의 1% 수준이다. 이건 뭐 다른 나라 같다.",
+      "subtitle": "같은 달, 다른 가격",
+      "photo_query": "old apartment building residential neighborhood korea"
+    },
+    {
+      "image": null,
+      "narration": "이거 바로 강남과 강남 아닌 곳의 격차다. 부동산은 위치가 전부라는 말이 맞다.",
+      "subtitle": "위치. 그게 전부다",
+      "photo_query": "seoul district map location importance"
+    },
+    {
+      "image": null,
+      "narration": "당신이 보는 부동산은? 댓글로 지역 알려줘라. 그래야 진짜 가치를 안다.",
+      "subtitle": "당신의 지역은 몇 배일까",
+      "photo_query": "people discussing real estate market numbers"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        60.0,
+        41.2,
+        26.6,
+        24.9,
+        24.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-01T02:04:46.296637+00:00"
+  }
+}

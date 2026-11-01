@@ -1,0 +1,41 @@
+{
+  "title": "Lyon OU vs RC Vannes 경기 분석",
+  "cover": {
+    "image": null,
+    "lines": [
+      "Lyon 선수",
+      "<r>첫 경기</r>에서",
+      "완벽했는데"
+    ],
+    "badge": null,
+    "photo_query": "french rugby player match celebration"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. Lyon OU 경기 봤냐? 신인 선수가 첫 경기 출전했는데 거기서 완벽한 플레이를 펼쳤다. 근데 결말이 이상한 거다.",
+      "subtitle": "Lyon 신인 선수 첫 경기 완벽",
+      "photo_query": "rugby player first match debut"
+    },
+    {
+      "image": null,
+      "narration": "경기 후반부로 가면서 뭔가 풀렸다. 팀 전체가 마치 악몽 같은 상황으로 빠져들었다.",
+      "subtitle": "후반부 극적 전개",
+      "photo_query": "rugby match end game tension"
+    },
+    {
+      "image": null,
+      "narration": "뛰어난 개인 플레이와 무너지는 팀 경기. 이게 바로 프로 스포츠의 현실이다. Google Trends에서 뜨고 있으니까 경기 영상 확인해봐라.",
+      "subtitle": "개인 vs 팀의 결과",
+      "photo_query": "rugby match strategic play analysis"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-01T02:04:51.237839+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "알뜰폰으로 바꾸면 월 3만 원 절약",
+  "cover": {
+    "image": null,
+    "lines": [
+      "알뜰폰으로",
+      "<r>월 3만원</r>",
+      "절약하는 법"
+    ],
+    "badge": null,
+    "photo_query": "mobile phone sim card"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "지금 쓰고 있는 통신사, 진짜 비싼 거 알고 있나? 알뜰폰으로 갈아타면 가능하다니까.",
+      "subtitle": "월 8만원 → 5만원 가능",
+      "photo_query": "smartphone monthly bill"
+    },
+    {
+      "image": null,
+      "narration": "기지국은 그대로 빌려 쓰는 거라 통화, 데이터 속도는 똑같다. 다만 마진만 적게 먹는 거지.",
+      "subtitle": "같은 네트워크, 저렴한 요금",
+      "photo_query": "cellular network tower"
+    },
+    {
+      "image": null,
+      "narration": "음성 통화 하루 5분, 문자 적게 쓰면 LTE 5GB에 월 2만원대. 유튜브, 인스타는 멈추지 말고.",
+      "subtitle": "데이터 5GB 월 2만원대",
+      "photo_query": "data plan smartphone usage"
+    },
+    {
+      "image": null,
+      "narration": "번호 이동은 10분이면 끝난다. 주민등록증 하나 들고 편의점 휴대폰판매점 가면 된다.",
+      "subtitle": "번호이동 10분, 심카드 교체",
+      "photo_query": "convenience store phone shop"
+    },
+    {
+      "image": null,
+      "narration": "이렇게만 해도 월 3만원 이상 아끼는 거지. 1년이면 36만원! 이런 꿀팁 더 알고 싶으면 팔로우해 봐.",
+      "subtitle": "연 36만원 절약 가능",
+      "photo_query": "saving money jar coins"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T02:05:55.668540+00:00"
+  }
+}

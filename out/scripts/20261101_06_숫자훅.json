@@ -1,0 +1,62 @@
+{
+  "title": "서초동 최고가 아파트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "서초동",
+      "<r>40.7억</r>",
+      "실제 거래됐다"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building seoul gangnam"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 서초동 서초그랑자이. 10월에 40억 7천만 원에 팔렸다. 100제곱미터 남짓한 아파트가.",
+      "subtitle": "서초그랑자이 100㎡ 40.7억",
+      "photo_query": "luxury apartment building entrance seoul"
+    },
+    {
+      "image": null,
+      "narration": "뭐라카더라. 같은 동네에도 가격이 천차만별이다. 서초센트럴아이파크는 22억, 같은 월에 거래됐다.",
+      "subtitle": "센트럴IPARK 80㎡ 22억",
+      "photo_query": "apartment price difference comparison"
+    },
+    {
+      "image": null,
+      "narration": "오래된 아파트는 더 떨어진다. 삼환바우스 14억. 밀라텔쉐르빌은 3억 2천만 원. 같은 서초동인데 말이다.",
+      "subtitle": "밀라텔쉐르빌 32㎡ 3.25억",
+      "photo_query": "old vs new apartment comparison"
+    },
+    {
+      "image": null,
+      "narration": "포인트는 이거다. 건물이 새울수록, 넓을수록, 층수가 높을수록 값이 확 튀어난다는 거. 서초동에서 투자하려면 이것까지 봐야 한다.",
+      "subtitle": "건축년도·면적·층수가 가격 결정",
+      "photo_query": "apartment building floor view height"
+    },
+    {
+      "image": null,
+      "narration": "더 궁금하면 팔로우 해라. 매일 이런 실거래가 들고 올 기다.",
+      "subtitle": "쫌봐봐 채널 팔로우",
+      "photo_query": "notification bell subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        40.7,
+        22.0,
+        13.9,
+        4.0,
+        3.2
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-01T02:04:58.520107+00:00"
+  }
+}
