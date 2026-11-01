@@ -1,45 +1,45 @@
 {
-  "title": "전국노래자랑 동작구 박서진",
+  "title": "음바페, 중국에서 외면받다",
   "cover": {
     "image": null,
     "lines": [
-      "60년 전국노래자랑",
-      "오늘 <r>동작구</r>",
-      "박서진 편 방송"
+      "중국에선",
+      "<r>음바페</r>",
+      "팔리지 않는다"
     ],
     "badge": null,
-    "photo_query": "korean karaoke stage singing microphone"
+    "photo_query": "kylian mbappe real madrid jersey"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 전국노래자랑. 60년을 계속해온 프로그램 말이다. 오늘 동작구 편에서 박서진이 나온다고 카더라.",
-      "subtitle": "60년 계속된 전국노래자랑",
-      "photo_query": "vintage korean television broadcast studio"
+      "narration": "이거 모르고 지나가면 손해다. 세계 최고 축구선수 음바페. 그런데 중국에선 상품이 아니라고 한다.",
+      "subtitle": "세계 최고 스타도 중국 시장은",
+      "photo_query": "football player celebrity commercial goods"
     },
     {
       "image": null,
-      "narration": "뭐라카노. 이 프로그램. 할머니부터 손자까지 다 본다. 그 정도로 국민 프로그램이다.",
-      "subtitle": "전국민이 보는 장수 프로그램",
-      "photo_query": "multi generational family watching television"
+      "narration": "중국 소비자들이 외국 스타 상품을 외면하는 추세가 나타났다. 국산 선호가 점점 강해지는 거다.",
+      "subtitle": "중국식 '소비 민족주의' 등장",
+      "photo_query": "chinese shopping mall store counter"
     },
     {
       "image": null,
-      "narration": "동작구 편이 나왔다는 거. 당신 동네일 수도 있단 거다. 혹시 알고 있는 분 나왔는지 한번 봐라.",
-      "subtitle": "오늘 방송 당신 지역은?",
-      "photo_query": "seoul dongjak district neighborhood street"
+      "narration": "글로벌 브랜드들도 중국 마케팅에서 현지 스타를 쓰기 시작했다. 해외 유명인은 메리트가 떨어지는 거다.",
+      "subtitle": "해외 스타 광고 수요 급감",
+      "photo_query": "brand marketing advertisement billboard"
     },
     {
       "image": null,
-      "narration": "박서진. 이 이름. 기억해두고 봐라. 어떤 사람이 무대에 올랐는지.",
-      "subtitle": "박서진 출연자 주목",
-      "photo_query": "karaoke singer performance stage lights"
+      "narration": "이제 아무리 유명해도 그 나라 시장이 받아주지 않으면 돈이 안 된다. 음바페도 예외가 아니라는 거다.",
+      "subtitle": "세계적 인기도 시장 벽 앞에선",
+      "photo_query": "international business market trends"
     },
     {
       "image": null,
-      "narration": "전국노래자랑. 매주 보는데 이번 주는 꼭 챙겨 봐야 한다. 당신 지역 이야기니까.",
-      "subtitle": "오늘 밤 전국노래자랑 필수 시청",
-      "photo_query": "korean television program live broadcast audience"
+      "narration": "이게 글로벌 비즈니스의 새로운 흐름이다. 더 알고 싶으면 팔로우해라.",
+      "subtitle": "Google Trends 화제",
+      "photo_query": "world map global business network"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-01T14:38:12.456112+00:00"
+    "generated_at": "2026-11-01T18:41:30.301867+00:00"
   }
 }

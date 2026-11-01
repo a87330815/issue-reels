@@ -1,51 +1,45 @@
 {
-  "title": "택배 반품할 때 손해 안 보는 3가지",
+  "title": "스마트폰 배터리 수명 2배 늘리는 충전 습관 3가지",
   "cover": {
     "image": null,
     "lines": [
-      "택배 반품할 때",
-      "<r>손해 3만원</r>",
-      "줄이는 법"
+      "배터리 수명",
+      "<r>2배</r> 늘리는",
+      "충전 습관 3가지"
     ],
     "badge": null,
-    "photo_query": "package return label"
+    "photo_query": "smartphone charging battery"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "택배 반품할 때 모르면 손해 본다고? 우리 오늘 배워보자. 첫 번째, 반품 접수 전에 꼭 사진 찍어둬야 한다.",
-      "subtitle": "반품 물품 사진 찍기",
-      "photo_query": "photographing package contents"
+      "narration": "야야야, 스마트폰 배터리 자꾸 빨리 떨어진다고? 충전 습관만 바꿔도 배터리 수명이 2배까지 늘어난다고 한다. 지금부터 알려줄게.",
+      "subtitle": "배터리 수명 2배 늘리기",
+      "photo_query": "smartphone battery health status"
     },
     {
       "image": null,
-      "narration": "상자 안에 물품이 있는 상태로, 물품 상태·포장 상태를 모두 찍어두면 나중에 분실이나 손상 문제 생겨도 증거물이 된다. 분쟁 때 2주 단축된다.",
-      "subtitle": "증거사진 = 빠른 환불",
-      "photo_query": "unboxing verification photo"
+      "narration": "첫 번째, 20~80% 사이에서만 충전하는 거다. 0%까지 방전했다가 100%까지 충전하면 배터리 화학 반응이 심해져서 손상돼. 매일 20~80% 사이에서 충전하면 배터리 사이클이 반으로 준다.",
+      "subtitle": "충전 범위: 20~80%",
+      "photo_query": "phone battery percentage charging"
     },
     {
       "image": null,
-      "narration": "두 번째, 반품 운송장은 절대 버리지 말고 스크린샷 또는 사진으로 남겨둬라.",
-      "subtitle": "운송장번호 기록하기",
-      "photo_query": "shipping tracking number"
+      "narration": "두 번째, 밤새 충전하지 말고 충전 끝나자마자 뺀다. 100% 상태로 8시간 이상 있으면 배터리가 화학 스트레스를 받아서 열화가 빨라진다. 새벽에 깨서 빼는 거 아니고, 아침에 90% 정도 되면 충전기에서 바로 분리해.",
+      "subtitle": "충전 완료 후 즉시 제거",
+      "photo_query": "unplugging phone charger cable"
     },
     {
       "image": null,
-      "narration": "운송장이 있어야 배송 추적이 되고, 물품이 손실됐을 때 배송사에 클레임을 걸 수 있다. 없으면 우리가 책임져야 한다.",
-      "subtitle": "추적번호 = 배송사 책임",
-      "photo_query": "tracking barcode record"
+      "narration": "세 번째, 충전할 때 핸드폰 온도를 낮춰라. 충전 중에 게임하거나 유튜브 보면 열이 올라가는데, 이게 배터리 손상의 최악의 적이다. 케이스 벗기고 어두운 곳에서 충전해. 이 3가지만 해도 배터리 교체 시기가 1년 반 더 미뤄진다고 해.",
+      "subtitle": "충전 중 발열 최소화",
+      "photo_query": "phone overheating temperature"
     },
     {
       "image": null,
-      "narration": "세 번째, 반품 기한을 절대 늦게 하지 말고 최대한 빨리 반품 신청해야 한다. 보통 7일 이내인데, 이걸 지키면 환불 분쟁이 줄어든다.",
-      "subtitle": "기한 내 빠른 반품",
-      "photo_query": "calendar deadline marking"
-    },
-    {
-      "image": null,
-      "narration": "이 세 가지만 지키면 나중에 \"환불 안 됐어요\" 하는 상황을 90% 줄일 수 있다. 이런 생활팁 더 원하면 팔로우해주고 이번 영상 저장해두셈.",
-      "subtitle": "꿀팁 저장하기",
-      "photo_query": "satisfied customer saving content"
+      "narration": "와 대박, 이 정도면 배터리 교체 비용도 아끼고 핸드폰도 오래 쓸 수 있지 않냐? 이런 생활 꿀팁 더 보고 싶으면 팔로우해.",
+      "subtitle": "배터리 교체 비용 절약",
+      "photo_query": "smartphone battery replacement cost"
     }
   ],
   "meta": {
@@ -54,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-01T10:16:07.639062+00:00"
+    "generated_at": "2026-11-01T18:42:48.907758+00:00"
   }
 }

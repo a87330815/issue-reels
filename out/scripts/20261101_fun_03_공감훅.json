@@ -1,46 +1,46 @@
 {
-  "title": "배달앱 30분 고민의 정체",
+  "title": "편의점 우산 사면 그날 비 그친다는 법칙",
   "cover": {
     "image": null,
     "lines": [
-      "배달앱에서",
-      "<r>30분 고민</r>",
-      "결국 항상",
-      "그 거 시키냐"
+      "편의점에서",
+      "<r>우산 사면</r>",
+      "그날 꼭",
+      "비가 그친다"
     ],
     "badge": null,
-    "photo_query": "delivery app scrolling phone screen"
+    "photo_query": "convenience store umbrella rainy day"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "배달앱 켜고 난 거 봐봐. 한국식 한 번 보고, 중식이 어떨까 봤다가, 또 일식이 궁금해서.",
-      "subtitle": "30분 고민의 시작",
-      "photo_query": "phone delivery app menu browsing"
+      "narration": "아 진짜다 아이가. 아침부터 미친 듯이 내린다. 우산은 언제 잃어먹었는지 없고.",
+      "subtitle": "하늘을 원망하며",
+      "photo_query": "heavy rain street dark clouds"
     },
     {
       "image": null,
-      "narration": "새로운 거 먹어볼까? 하면서 별점 보고, 리뷰 읽고, 사진 자세히 보고... 와 진짜 맛있어 보이는데?",
-      "subtitle": "새 메뉴 유혹",
-      "photo_query": "food delivery menu photos reviews"
+      "narration": "편의점 가서 3000원짜리 우산 하나 장만했다. 와 비싸네. 근데 이젠 괜찮지 뭐.",
+      "subtitle": "우산 구매 완료",
+      "photo_query": "convenience store checkout umbrella purchase"
     },
     {
       "image": null,
-      "narration": "근데 잠깐만. 이거 먹어본 적 없는데 맛없으면 어쩌지? 그냥 내가 알고 있는 거 시킬까?",
-      "subtitle": "갑자기 불안감 습격",
-      "photo_query": "worried person thinking hesitation"
+      "narration": "나가는 순간이다. 어? 비가 뚝 그쳤네? 진짜? 잠깐만... 햇빛도 나왔어?",
+      "subtitle": "역시 그 법칙",
+      "photo_query": "sudden sunshine after rain blue sky"
     },
     {
       "image": null,
-      "narration": "결국 맨날 시키던 그 식당, 그 메뉴를 눌렀다. 30분 뭐 한 거냐고? 모르겠다.",
-      "subtitle": "악수의 결말",
-      "photo_query": "person ordering food delivery app confirm"
+      "narration": "손에는 3000원짜리 우산, 하늘은 쩍 갈라져 있고. 이거 봐봐, 매번이다니까.",
+      "subtitle": "우산만 사면 끝",
+      "photo_query": "man holding umbrella sunny weather"
     },
     {
       "image": null,
-      "narration": "이런 거 더 공감되면 팔로우 눌러봐. 우리 함께 배달앱에서 살아가자.",
-      "subtitle": "공감하는 모두에게",
-      "photo_query": "friends laughing together eating"
+      "narration": "댓글에 \"나도 나도\" 달아놓고 우산을 잃어먹는 악순환. 이런 거 더 겪고 싶으면 팔로우.",
+      "subtitle": "그리고 우산은 또 분실",
+      "photo_query": "lost and found umbrella stand"
     }
   ],
   "meta": {
@@ -49,6 +49,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-01T02:05:37.423616+00:00"
+    "generated_at": "2026-11-01T18:42:20.425576+00:00"
   }
 }

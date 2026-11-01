@@ -1,0 +1,53 @@
+{
+  "title": "수박 고르기의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "수박 두드려서",
+      "<r>고르는데</r>",
+      "사실 다 같은 소리"
+    ],
+    "badge": null,
+    "photo_query": "selecting watermelon market"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "마트 가서 수박 앞에 섰다. 어른들처럼 손가락으로 톡톡톡 두드려본다.",
+      "subtitle": "톡톡톡... 이게 좋은 건가?",
+      "photo_query": "tapping watermelon finger"
+    },
+    {
+      "image": null,
+      "narration": "이건 좋은 소리, 이건 나쁜 소리라며 구분하는데... 사실 다 똑같이 들린다. 진짜다.",
+      "subtitle": "근데 왜 자신감은 대박일까",
+      "photo_query": "confused person vegetables store"
+    },
+    {
+      "image": null,
+      "narration": "알고 보니 전문가도 소리로만 100% 맞춘다는 게 거의 불가능하다고 한다. 색깔, 모양, 무게로 주로 고른단 거다.",
+      "subtitle": "우리가 쓸데없이 두드렸네",
+      "photo_query": "watermelon color ripeness check"
+    },
+    {
+      "image": null,
+      "narration": "그럼 뭐하나. 앞으로도 톡톡톡 두드리면서 전문가인 척 할 거다. 소리 안 들려도 \"어? 이거 좋은데?\" 하고.",
+      "subtitle": "일종의 의식 같은 거",
+      "photo_query": "man choosing produce confidently"
+    },
+    {
+      "image": null,
+      "narration": "이런 꿀팁들 더 보고 싶으면 팔로우 눌러라. 다음엔 계란도 한 번 해볼까?",
+      "subtitle": "쫌봐봐 팔로우 ♡",
+      "photo_query": "follow subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T18:42:27.572621+00:00"
+  }
+}

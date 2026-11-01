@@ -1,38 +1,39 @@
 {
-  "title": "엘리베이터 닫힘 버튼의 비밀",
+  "title": "비닐봉지 한 손 묶기",
   "cover": {
     "image": null,
     "lines": [
-      "엘리베이터 닫힘 버튼",
-      "<r>누르면 진짜 닫혀?</r>"
+      "비닐봉지",
+      "<r>한 손으로</r>",
+      "묶는 법 알면"
     ],
     "badge": null,
-    "photo_query": "elevator close button pressing"
+    "photo_query": "plastic bag knot hand"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 이거 봐봐. 엘리베이터 탈 때 누구나 한 번쯤 해봤지? 닫힘 버튼 계속 자지직 눌러보고. 근데 알고 보니 대부분 안 먹히더라.",
-      "subtitle": "닫힘 버튼은 착각",
-      "photo_query": "man pressing elevator button repeatedly"
+      "narration": "지금까지 두 손으로 애써 묶고 있었다? 이거 봐봐. 한 손으로 딱 묶이는 방법이 있다니까.",
+      "subtitle": "두 손으로 애써 묶던 나",
+      "photo_query": "hands tying plastic bag struggle"
     },
     {
       "image": null,
-      "narration": "건물주나 관리사들이 말하는데, 요즘 엘리베이터는 안전 규정상 닫힘 버튼 기능을 걸어둔다고 한다. 그래야 모두가 탈 수 있게.",
-      "subtitle": "규정상 기능 차단",
-      "photo_query": "elevator control panel signs"
+      "narration": "비닐봉지 손잡이 부분을 한쪽에서 잡고, 다른 쪽을 엄지손가락으로 밀어 올리면서 동시에 손가락으로 감싸면 된다더라.",
+      "subtitle": "한 손 기술 공개",
+      "photo_query": "single hand knot technique demonstration"
     },
     {
       "image": null,
-      "narration": "그럼 뭐 하는 버튼인가? 장애인이나 안내원이 쓰는 '우선 닫힘' 버튼일 수도, 아니면 진짜 고장 난 거 아닐까.",
-      "subtitle": "그래서 뭐 하는 거야?",
-      "photo_query": "confused person in elevator thinking"
+      "narration": "처음엔 어색하지만 한두 번 하다 보면 완벽하게 묶인다. 이게 진짜다. 장 본 후 비닐봉지 여러 개 묶을 때 꿀팁이 따로 없다.",
+      "subtitle": "습관 들면 대박",
+      "photo_query": "hands efficiently tying plastic bags"
     },
     {
       "image": null,
-      "narration": "다음부터 건물주나 관리사한테 물어봐 봐. 우리가 한 번쯤은 당했을 이런 쓸데없는 TMI, 더 알고 싶으면 팔로우하고 와.",
-      "subtitle": "팔로우하면 더 알아낸다",
-      "photo_query": "people talking information sharing"
+      "narration": "이제 이 방법으로 묶으면 뿌듯하다. 마치 내가 생활 고수가 된 기분 말야. 이런 꿀팁 더 알고 싶으면 팔로우해 봐.",
+      "subtitle": "생활 고수 되는 순간",
+      "photo_query": "satisfied person organizing bags kitchen"
     }
   ],
   "meta": {
@@ -41,6 +42,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-01T02:05:49.048330+00:00"
+    "generated_at": "2026-11-01T18:42:32.939169+00:00"
   }
 }

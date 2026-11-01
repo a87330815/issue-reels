@@ -1,45 +1,45 @@
 {
-  "title": "반포동 vs 덕암동, 같은 아파트인데 가격이 다르다?",
+  "title": "같은 서울인데 86배 차이",
   "cover": {
     "image": null,
     "lines": [
-      "반포동 <r>60억</r>",
-      "덕암동 7천만원",
-      "같은 평수인데?"
+      "같은 서울인데",
+      "<r>86배</r>",
+      "차이 난다"
     ],
     "badge": null,
-    "photo_query": "seoul apartment building comparison luxury district"
+    "photo_query": "seoul apartment buildings comparison luxury modern"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 똑같은 아파트라도 어디에 사느냐에 따라 가격이 9배까지 달라진다. 지금 바로 확인해야 한다.",
-      "subtitle": "위치만 다르면 가격 9배 차이",
-      "photo_query": "seoul district map navigation"
+      "narration": "이거 모르고 지나가면 손해다. 10월에 나온 서울 아파트 거래. 반포동 평균이 60억이다.",
+      "subtitle": "반포동 평균 60억",
+      "photo_query": "banpo seoul luxury apartments modern"
     },
     {
       "image": null,
-      "narration": "반포동. 최근 거래된 새 아파트들 보니 60억을 훌쩍 넘어간다. 가장 비싼 곳은 78억까지 나왔다.",
-      "subtitle": "반포동 신축아파트 60억대",
-      "photo_query": "korean luxury apartment lobby modern"
+      "narration": "그런데 같은 서울인데 덕암동은 0.7억이다. 야야야. 86배 차이난다.",
+      "subtitle": "덕암동 평균 0.7억",
+      "photo_query": "seoul residential area old apartment building"
     },
     {
       "image": null,
-      "narration": "그런데 이야기가 이상해진다. 덕암동은 똑같은 평수, 같은 신축인데 가격이 고작 7천만원대다. 반포동의 1/100 수준이다.",
-      "subtitle": "덕암동은 7천만원대",
-      "photo_query": "apartment building residential area korea"
+      "narration": "반포동 래미안원베일리는 32층짜리 78억이 나왔다. 대치동 선경은 51억. 거기서 나온다.",
+      "subtitle": "강남·서초 중심 거래",
+      "photo_query": "luxury apartment tower high floor view"
     },
     {
       "image": null,
-      "narration": "뭐가 다른가. 위치다. 강남 중심부냐 변두리냐. 지금 당신이 보는 아파트 가격도 이 기준으로 갈린다.",
-      "subtitle": "강남 중심부 vs 외곽",
-      "photo_query": "seoul gangnam district cityscape"
+      "narration": "같은 돈 가지고도 어디 사냐에 따라 인생이 달라진다. 이게 서울 부동산이다.",
+      "subtitle": "지역별 가격차 심각",
+      "photo_query": "seoul city skyline district neighborhoods"
     },
     {
       "image": null,
-      "narration": "내 집 값, 내 이웃 값 제대로 알고 사야 한다. 쫌봐봐 구독해서 놓치지 마라.",
-      "subtitle": "위치 확인이 곧 손해 예방",
-      "photo_query": "family home interior apartment window"
+      "narration": "더 자세한 거래 데이터는 쫌봐봐에서 확인해라. 팔로우 누르고 가.",
+      "subtitle": "공공데이터로 분석중",
+      "photo_query": "data analytics dashboard real estate"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T14:38:05.600011+00:00"
+    "generated_at": "2026-11-01T18:41:23.478629+00:00"
   }
 }

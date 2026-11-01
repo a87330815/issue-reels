@@ -1,45 +1,45 @@
 {
-  "title": "중산층 소득이 가장 많이 줄었다",
+  "title": "리버풀 vs 아르세날 프리미어리그 매치업",
   "cover": {
     "image": null,
     "lines": [
-      "중산층이",
-      "<r>가장</r>",
-      "많이 줄었다"
+      "이거 봐봐",
+      "<r>오늘 밤</r>",
+      "빅매치 터진다"
     ],
     "badge": null,
-    "photo_query": "middle class family budget calculator stressed"
+    "photo_query": "football stadium night match lights"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 지난해 소득 줄어든 걸 다들 알지. 근데 누가 제일 많이 줄었는지 아냐? 바로 중산층이다.",
-      "subtitle": "중산층 소득 감소 가장 커",
-      "photo_query": "income chart statistics decline"
+      "narration": "이거 모르고 지나가면 손해다. 오늘 밤 11시 30분. 리버풀이 아르세날과 만난다. 프리미어리그에서 가장 핫한 매치다.",
+      "subtitle": "리버풀 vs 아르세날 오늘 밤",
+      "photo_query": "premier league logo football"
     },
     {
       "image": null,
-      "narration": "저소득층도 줄었고 고소득층도 줄었지. 근데 중산층이 더 많이 떨어졌다니까. 왜 그럴까?",
-      "subtitle": "근로·사업소득 동반 하락",
-      "photo_query": "office worker tired computer desk"
+      "narration": "이 둘이 만나면? 항상 터진다. 슛 세례, 골 퍼레이드. 한눈을 팔 수 없는 경기다.",
+      "subtitle": "매 경기마다 골과 드라마",
+      "photo_query": "football match action players"
     },
     {
       "image": null,
-      "narration": "월급도 준다. 자영업도 안 된다. 이 둘 다 줄어드니까 중산층 타격이 커지는 거지. 양쪽에 맞은 셈이다.",
-      "subtitle": "저소득·고소득층보다 낙폭 큼",
-      "photo_query": "small business shop owner thinking"
+      "narration": "리버풀은 지금 리그 최고의 상승세다. 아르세날도 질 생각 없다. 둘 다 우승 노린다.",
+      "subtitle": "우승 후보들의 직접 대결",
+      "photo_query": "football players celebrating goal"
     },
     {
       "image": null,
-      "narration": "이제 중산층이 뭐 하나는 잘되겠지 싶던 게 없어진다. 살림이 빠듯해진다는 건데, 이거 한 번쯤 보고 가야 한다.",
-      "subtitle": "가계경제 악화 신호",
-      "photo_query": "family discussing household bills together"
+      "narration": "이 경기 결과가 시즌 판도를 바꾼다. 누가 앞으로 나갈지 결정되는 거다.",
+      "subtitle": "시즌을 가르는 한 판",
+      "photo_query": "football match tension intense"
     },
     {
       "image": null,
-      "narration": "더 자세한 분석이 궁금하면 팔로우 눌러라. 매주 돈 이야기 같이 봐봐.",
-      "subtitle": "구독하고 경제 트렌드 놓치지 말기",
-      "photo_query": "notification bell subscribe button mobile"
+      "narration": "놓치지 마라. 오늘 밤 11시 30분 생중계. 우리 채널 팔로우하면 실시간 업데이트 받는다.",
+      "subtitle": "팔로우하고 실시간 확인",
+      "photo_query": "live sports broadcast screen"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-01T14:38:41.092543+00:00"
+    "generated_at": "2026-11-01T18:41:59.071137+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "반여동 10월 아파트 실거래 - 센텀KCC스위첸 6.4억",
+  "title": "반여동 최고가 아파트",
   "cover": {
     "image": null,
     "lines": [
-      "반여동에서",
+      "반여동",
       "<r>6.4억</r>",
-      "이 가격이냐"
+      "이게 최고가다"
     ],
-    "badge": "2026.10",
-    "photo_query": "Busan Centum City apartment buildings"
+    "badge": null,
+    "photo_query": "busan haeundae apartment building modern"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반여동 센텀KCC스위첸이 84제곱미터에 6억 4천만 원에 팔렸다.",
-      "subtitle": "센텀KCC스위첸 84㎡ 6.4억",
-      "photo_query": "luxury apartment living room interior"
+      "narration": "이거 모르고 지나가면 손해다. 반여동 아파트 최고가가 6억4천만원이다. 센텀KCC스위첸. 새 건물이고 16층이더라.",
+      "subtitle": "반여동 최고가 6.4억",
+      "photo_query": "luxury apartment building entrance modern"
     },
     {
       "image": null,
-      "narration": "뭐라카더라. 같은 면적 옆 건물 메가센텀한화는 5억 6천만 원. 8천만 원 차이다.",
-      "subtitle": "메가센텀한화 84㎡ 5.6억",
-      "photo_query": "apartment price comparison chart"
+      "narration": "84제곱미터 크기 기준이다. 2026년 10월 거래다. 뭐라카더라. 이 가격대가 나왔다는 거.",
+      "subtitle": "84㎡ 기준 10월 거래",
+      "photo_query": "apartment floor plan layout diagram"
     },
     {
       "image": null,
-      "narration": "어? 이건 신축이 다르냐고? 센텀KCC는 2022년생. 겨우 4년 됐다. 신축 프리미엄 맞네.",
-      "subtitle": "2022년 신축 vs 2008년 준신축",
-      "photo_query": "new apartment construction building"
+      "narration": "두 번째가 5억6천만원. 메가센텀한와꿈에그린. 그 다음 3억, 2억 대로 내려간다.",
+      "subtitle": "2순위 5.6억, 3순위 3억",
+      "photo_query": "busan centum city skyline buildings"
     },
     {
       "image": null,
-      "narration": "반여동에서 이 정도 규모면 5억에서 6억 4천 사이. 너네 집은 어디에 걸려 있냐.",
-      "subtitle": "반여동 실거래 범위 2.01억~6.4억",
-      "photo_query": "real estate market analysis data"
+      "narration": "반여동이 요즘 뜨는 동네다 아이가. 새 건물들이 자꾸 올라오더라. 가격대도 달라진다.",
+      "subtitle": "신축 중심 가격대 형성",
+      "photo_query": "construction crane new apartment development"
     },
     {
       "image": null,
-      "narration": "더 알고 싶으면 팔로우해라. 매주 지역별 실거래 최고가 갈켜줄 기다.",
-      "subtitle": "쫌봐봐와 함께 시세 잡아",
-      "photo_query": "follow subscribe button social media"
+      "narration": "이 데이터 자주 업데이트된다. 우리 채널 팔로우해라. 다음 달 거래 정보도 먼저 본다.",
+      "subtitle": "매달 최신 거래 정보",
+      "photo_query": "apartment real estate data analysis chart"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T14:38:26.197535+00:00"
+    "generated_at": "2026-11-01T18:41:44.618285+00:00"
   }
 }

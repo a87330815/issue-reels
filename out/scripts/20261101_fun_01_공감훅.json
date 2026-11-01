@@ -1,45 +1,39 @@
 {
-  "title": "냉동실의 배신",
+  "title": "미용실의 '조금만'은 번역이 필요하다",
   "cover": {
     "image": null,
     "lines": [
-      "냉동실에",
-      "<r>숨겨둔</r>",
-      "내 아이스크림"
+      "'조금만",
+      "<r>다듬어주세요'</r>",
+      "하고 나온 내 머리"
     ],
     "badge": null,
-    "photo_query": "freezer ice cream hidden"
+    "photo_query": "salon mirror haircut surprise"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 나만 먹으려고 깊숙하게 숨겨둔 아이스크림. 그런데 며칠 뒤에 봤더니 없어졌다고?",
-      "subtitle": "누가 먹은 거야",
-      "photo_query": "freezer empty disappointment"
+      "narration": "미용사님한테 말한다. '조금만 다듬어주세요. 길이는 거의 유지하고요.' 고개 끄덕끄덕하시는데... 뭔가 불안한데.",
+      "subtitle": "조금만 다듬어주세요",
+      "photo_query": "hairdresser consultation client talking"
     },
     {
       "image": null,
-      "narration": "엄마한테 물어보니 \"그게 뭐가 있냐고, 나 몇 날 전에 먹었는데?\" 아 진짜.",
-      "subtitle": "엄마 미안해요",
-      "photo_query": "mother guilty face apologize"
+      "narration": "30분 뒤. 거울 앞에 섰을 때 느껴진 것. '어? 이게... 내 머리야?' 분명 조금만 했는데 왜 이렇게 달라 보여?",
+      "subtitle": "30분 뒤의 현실",
+      "photo_query": "woman shocked mirror haircut result"
     },
     {
       "image": null,
-      "narration": "그다음부턴 더 깊숙이 숨긴다. 라면 상자 안에, 냉동만두 아래에... 이거 전쟁이다.",
-      "subtitle": "냉동실 첩보전",
-      "photo_query": "freezer storage organization hiding"
+      "narration": "미용사님 입장에선 '조금'이 내 입장에선 '대박'이 되는 순간이다. 밴스도 달라지고, 레이어도 달라지고, 전체 인상이 딱 달라진다.",
+      "subtitle": "그 '조금'의 마법",
+      "photo_query": "before after hairstyle transformation"
     },
     {
       "image": null,
-      "narration": "근데 또 어느 날 보면 없어진다. 가족은 \"냉동실에 뭘 숨기냐고\" 이렇게 나온다.",
-      "subtitle": "세상 불공평하다",
-      "photo_query": "sad frustrated woman freezer"
-    },
-    {
-      "image": null,
-      "narration": "이런 거 더 공감하고 싶으면 팔로우 눌러주라. 냉동실 전쟁, 계속된다.",
-      "subtitle": "팔로우하면 다음편",
-      "photo_query": "follow subscribe button"
+      "narration": "근데 신기하지? 같은 말인데 상대방 기준으로 번역되는 거. 미용실의 '조금'은 처음부터 다른 언어였던 거다.",
+      "subtitle": "미용실 언어 차이",
+      "photo_query": "communication misunderstanding gesture"
     }
   ],
   "meta": {
@@ -48,6 +42,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-01T02:05:24.893625+00:00"
+    "generated_at": "2026-11-01T18:42:04.581927+00:00"
   }
 }

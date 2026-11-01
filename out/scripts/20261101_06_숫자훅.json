@@ -1,39 +1,45 @@
 {
-  "title": "서초동 최고가 아파트",
+  "title": "서초동 아파트값, 40억까지 떴다",
   "cover": {
     "image": null,
     "lines": [
-      "서초동에",
+      "서초동 최고가",
       "<r>40.7억</r>",
-      "떴다"
+      "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "Seoul Seocho luxury apartment building modern"
+    "photo_query": "seoul seocho district apartment building luxury"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서초동에 40억 대 아파트가 나왔다. 서초그랑자이라고 하는데, 100제곱미터에 이 가격이다.",
+      "narration": "이거 모르고 지나가면 손해다. 서초동. 지금 아파트값 얼마까지 나왔는지 아냐. 40억 7천만원이다. 와 대박.",
       "subtitle": "서초그랑자이 40.7억",
-      "photo_query": "luxury apartment entrance lobby"
+      "photo_query": "luxury apartment building glass facade"
     },
     {
       "image": null,
-      "narration": "같은 지역에 이보다 한 참 낮은 가격대도 있다. 22억, 13억까지 떨어진다. 같은 동네인데 3배까지 차이 난다니까.",
-      "subtitle": "최저가 3천만원대",
-      "photo_query": "apartment price comparison chart"
+      "narration": "같은 서초동인데 말이지. 한쪽은 22억에서 거래되고 있다. 차이가 18억이 넘는다. 같은 동네 맞냐 이거.",
+      "subtitle": "최저가 3천9백만원대",
+      "photo_query": "apartment building entrance residential area"
     },
     {
       "image": null,
-      "narration": "뭐라카노. 신축도 있고 20년 넘은 것도 섞여 있다. 언제 지었는지, 몇 층인지 다 다르다. 서초동 갈 거면 단지마다 확인하고 봐야 한다.",
-      "subtitle": "신축부터 20년 건물까지",
-      "photo_query": "apartment building construction year comparison"
+      "narration": "건축년도를 봐라. 최고가는 2021년 신축. 최저가는 2001년. 25년 차이다. 위치, 세대수, 평수 다 다르니까 당연하다 이거.",
+      "subtitle": "신축 vs 25년 된 건물",
+      "photo_query": "modern new building old residential construction"
     },
     {
       "image": null,
-      "narration": "10월 실거래가니까 지금 시세는 또 달라져 있을 기다. 서초동 알아볼 사람들, 손에 잡혀야 댄다. 자세한 데이터는 우리 채널을 계속 따라와라.",
-      "subtitle": "지금 서초동 시세는?",
-      "photo_query": "seoul real estate market graph data"
+      "narration": "서초동에서 집 사려고 하는 사람? 이 세 가지를 봐라. 평수, 건축년도, 어느 단지냐. 그게 가격을 좌우한다.",
+      "subtitle": "평수·년식·단지 체크",
+      "photo_query": "real estate property viewing apartment showroom"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 서초동 시세는 우리 채널에서 계속 추적한다. 쫌봐봐 팔로우해라.",
+      "subtitle": "최신 서초동 시세 확인",
+      "photo_query": "mobile phone map location apartment search"
     }
   ],
   "meta": {
@@ -51,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T14:38:19.113159+00:00"
+    "generated_at": "2026-11-01T18:41:37.798748+00:00"
   }
 }

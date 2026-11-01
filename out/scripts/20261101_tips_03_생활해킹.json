@@ -1,0 +1,53 @@
+{
+  "title": "택배 반품 손해 안 보는 꿀팁",
+  "cover": {
+    "image": null,
+    "lines": [
+      "택배 반품할 땐",
+      "<r>이 3가지</r>",
+      "꼭 확인하세요"
+    ],
+    "badge": null,
+    "photo_query": "package return delivery"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 택배 반품할 때 모르고 하면 돈이 새는 거 아십니까? 오늘은 진짜 써먹을 반품 꿀팁을 알려드린다.",
+      "subtitle": "반품 전 확인사항",
+      "photo_query": "package return label"
+    },
+    {
+      "image": null,
+      "narration": "첫째, 반품 운송료다. 편의점에서 반품 신청할 때 '판매자 부담'인지 '구매자 부담'인지 무조건 확인하게. 한 번에 3천 원에서 5천 원 차이난다.",
+      "subtitle": "운송료 부담 확인하기",
+      "photo_query": "convenience store shipping cost"
+    },
+    {
+      "image": null,
+      "narration": "둘째, 반품 기한을 절대 넘기지 말어. 대부분 구매 후 30일 이내인데, 21일만 넘어도 반품이 불가능한 상품도 있거든. 카톡에서 주문 상세로 바로 확인하고 3일 안에 처리해야 된다.",
+      "subtitle": "반품 기한 30일 내 처리",
+      "photo_query": "mobile phone order history"
+    },
+    {
+      "image": null,
+      "narration": "셋째, 반품 전에 상품 사진을 무조건 찍어둬. 배송 중에 손상됐을 수도 있고, 나중에 반품 거절당할 때 증거가 되거든. 박스, 상품, 택그까지 3장은 찍어라.",
+      "subtitle": "반품 전 상품 사진 촬영",
+      "photo_query": "damaged package photo evidence"
+    },
+    {
+      "image": null,
+      "narration": "이 세 가지만 기억하면 반품 할 때 헷갈릴 일도 없고, 돈 손해도 안 본다. 이런 꿀팁 더 보고 싶으면 팔로우 눌러주께.",
+      "subtitle": "손해 없는 반품 완성",
+      "photo_query": "successful delivery confirmation"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-01T18:42:56.568494+00:00"
+  }
+}

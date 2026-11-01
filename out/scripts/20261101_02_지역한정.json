@@ -4,42 +4,42 @@
     "image": null,
     "lines": [
       "송도동",
-      "<r>9억</r>대",
-      "이 정도면"
+      "<r>9억</r>",
+      "실제 나온 가격"
     ],
     "badge": null,
-    "photo_query": "incheon songdo apartment buildings waterfront"
+    "photo_query": "incheon songdo apartment complex modern buildings"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 송도동. 이달 들어 아파트 거래 딱 10건 났다. 근데 가격을 보면. 와 대박이다.",
+      "narration": "이거 모르고 지나가면 손해다. 송도동에 지난 달 10건 거래 떴는데. 9억까지 나왔다. 진짜 핫한 거다.",
       "subtitle": "송도동 10월 아파트 거래",
-      "photo_query": "incheon songdo apartment complex modern building"
+      "photo_query": "apartment transaction documents calculator"
     },
     {
       "image": null,
-      "narration": "최고가가 9억 3천만원이다. 최저가도 6억 5천만원. 다 비슷비슷하다 아이가.",
-      "subtitle": "9억 3천~6억 5천만원대",
-      "photo_query": "apartment price comparison document"
+      "narration": "더샵 퍼스트파크. 60제곱미터 규모인데 9억 3천을 찍었다. 29층 고층이 영향을 미친 건데. 이 가격대가 나온다는 건 시장이 따뜻하다는 신호다.",
+      "subtitle": "최고가 9억 3천만원",
+      "photo_query": "luxury apartment high floor city view"
     },
     {
       "image": null,
-      "narration": "면적도 보면. 60제곱미터부터 127제곱미터까지. 여러 사이즈가 한 달에 다 나온 거다.",
-      "subtitle": "60~127제곱미터 다양",
-      "photo_query": "apartment floor plan measurement"
+      "narration": "SK뷰도 7억 5천에 거래됐고. 롯데캐슬은 8억 8천. 대형평수 단지들이 움직이고 있다.",
+      "subtitle": "주요 단지별 거래 현황",
+      "photo_query": "songdo incheon skyline waterfront development"
     },
     {
       "image": null,
-      "narration": "송도동에서 집 구하는 사람들. 요즘 이 정도 거래량이면 선택지가 제한적이다. 빨리 움직여야 한다.",
-      "subtitle": "월 10건 거래량 체크",
-      "photo_query": "couple house hunting apartment viewing"
+      "narration": "송도 살펴보는 분들. 지난달 거래가 이 정도 나온다는 건. 수급이 괜찮다는 뜻이다. 체크해 둬라.",
+      "subtitle": "송도동 시장 체크 필수",
+      "photo_query": "korea real estate market analysis data"
     },
     {
       "image": null,
-      "narration": "송도동 실거래 데이터. 매달 업데이트 되니까. 쫌봐봐 팔로우해라. 다음 달 추세까지 먼저 본다.",
-      "subtitle": "매월 실거래 업데이트 확인",
-      "photo_query": "phone notification real estate data update"
+      "narration": "우리 채널에서 지역별 거래 소식을 제일 빨리 캐치한다. 팔로우하고 놓치지 말아라.",
+      "subtitle": "지역별 거래 정보 구독하기",
+      "photo_query": "social media follow subscribe notification"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T14:37:51.343685+00:00"
+    "generated_at": "2026-11-01T18:41:05.950036+00:00"
   }
 }

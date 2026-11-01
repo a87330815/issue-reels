@@ -3,37 +3,37 @@
   "cover": {
     "image": null,
     "lines": [
-      "반포동",
+      "반포동 신축",
       "<r>78억</r>",
-      "이게 현실인가"
+      "이게 현실이다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building seoul riverside"
+    "photo_query": "Seoul Banpo apartment luxury high-rise"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 강남 최고의 주거 지구. 거기 신축 아파트 한 채가 방금 거래됐다. 가격이 78억이다.",
-      "subtitle": "반포동 신축 아파트 78억 거래",
-      "photo_query": "seoul apartment real estate transaction"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안원베일리. 3년 전에 지어진 신축이 78억에 팔렸다. 요즘 강남 가격이 진짜 이렇다는 걸 보여주는 거다.",
+      "subtitle": "반포동 신축 78억 거래",
+      "photo_query": "Seoul Banpo luxury apartment building exterior"
     },
     {
       "image": null,
-      "narration": "이거. 2023년 지은 지 3년 된 건물이다. 래미안원베일리. 132층 강남의 최고급이다.",
-      "subtitle": "2023년 준공 신축 아파트",
-      "photo_query": "new apartment building construction completion ceremony"
+      "narration": "101제곱미터. 3룸 기준으로 봐도 엄청난 거다. 32층 고층이고 2023년 지어진 따끈따끈한 아파트가 이 가격이다.",
+      "subtitle": "101㎡ 32층 신축",
+      "photo_query": "modern apartment interior living room kitchen"
     },
     {
       "image": null,
-      "narration": "101제곱미터. 그러니까 30평 좀 넘는 아파트 한 채. 78억이다. 뭐라카노.",
-      "subtitle": "약 30평형 한 채 가격",
-      "photo_query": "apartment floor plan living room"
+      "narration": "강남 아파트는 지금 이 정도 수준에서 거래되고 있다. 내가 생각하는 강남 가격이랑 현실이 다를 수 있다는 거다. 확인하고 가라.",
+      "subtitle": "강남 신축 현시세",
+      "photo_query": "real estate market price chart graph"
     },
     {
       "image": null,
-      "narration": "강남권 부동산. 아직도 오를 거라고 봤던 사람들 많다. 이게 시장이 말하는 거다. 팔로우하고 놓치지 말아라.",
-      "subtitle": "강남 고가 주거지의 현실",
-      "photo_query": "seoul gangnam district skyline apartments"
+      "narration": "부동산 시장 움직임을 놓치고 싶지 않다면? 쫌봐봐 채널 팔로우 해라. 매일 새로운 거래 데이터가 올라온다.",
+      "subtitle": "매일 업데이트되는 거래 정보",
+      "photo_query": "real estate notification mobile phone app"
     }
   ],
   "meta": {
@@ -51,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-01T14:37:44.638276+00:00"
+    "generated_at": "2026-11-01T18:40:58.541550+00:00"
   }
 }

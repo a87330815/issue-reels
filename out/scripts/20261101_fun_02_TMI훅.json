@@ -1,44 +1,45 @@
 {
-  "title": "일요일 저녁부터 시작되는 월요병",
+  "title": "손가락 주름의 진짜 정체",
   "cover": {
     "image": null,
     "lines": [
-      "일요일 저녁",
-      "<r>월요병 시작</r>"
+      "물에 빠져 있으면",
+      "<y>손가락 주름</y>",
+      "왜 생기는지"
     ],
     "badge": null,
-    "photo_query": "Sunday evening anxiety stress"
+    "photo_query": "wrinkled fingers water bath"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "일요일 저녁 6시. 아직 월요일 아침까지 12시간이 남았는데 벌써 답답하더라고. 이거 알고 보니 과학적인 거더라.",
-      "subtitle": "Social Jetlag의 시작",
-      "photo_query": "Sunday evening couch phone sad"
+      "narration": "목욕할 때 손가락 봐봐. 자꾸 쭈글쭈글해지지 않냐. \"아 피부가 불어났나?\" 이렇게 생각하다 나온다.",
+      "subtitle": "물에 오래 있으면 손가락이 주름져",
+      "photo_query": "hands pruned wrinkled water"
     },
     {
       "image": null,
-      "narration": "우리 몸이 토일요일에 늦게 자고 늦게 일어나잖아. 그럼 생체시계가 완전히 밀려 버린다니까. 월요일 아침에 억지로 깨워지는 거지.",
-      "subtitle": "생체시계 리셋의 고통",
-      "photo_query": "sleep schedule disrupted circadian rhythm"
+      "narration": "근데 진짜 이유를 들으면 놀라 자빠질 수 있다. 이건 피부가 늘어난 게 아니라 신경 때문이라는 거다.",
+      "subtitle": "신경이 혈관을 수축시킨다고?",
+      "photo_query": "nerve wrinkled reaction"
     },
     {
       "image": null,
-      "narration": "그래서 일요일 저녁부터 이미 피로하고, 예민해지고, 무기력해지는 거다. 월요병이 월요일에 생기는 게 아니라 일요일부터 시작되는 거야.",
-      "subtitle": "금요일 마지막 퇴근 후부터 시작",
-      "photo_query": "monday morning alarm clock regret"
+      "narration": "물에 잠긴 손가락이 미끄러지지 말라고 우리 몸이 자동으로 신경을 작동시켜서 혈관을 조여버린다 카더라. 그게 주름이 되는 거다.",
+      "subtitle": "진화 과정에서 생긴 방어 메커니즘",
+      "photo_query": "evolution survival grip"
     },
     {
       "image": null,
-      "narration": "그래서 일요일 밤에 무조건 이전처럼 일찍 자려고 하는 거다. 안 그럼 월요일 아침이 진짜 지옥이 된다니까.",
-      "subtitle": "일요일 밤의 결연한 마음",
-      "photo_query": "bedtime routine discipline schedule"
+      "narration": "그래서 손가락 신경이 손상되면 물에 빠져도 주름이 안 생긴다더라. 와 이거 몰랐으면 쓸데없이 똑똑해지는 정보다.",
+      "subtitle": "신경 손상되면 안 생긴다고?",
+      "photo_query": "scientific discovery fact"
     },
     {
       "image": null,
-      "narration": "야, 이런 거 더 알고 싶으면 우리 채널 팔로우해봐. 쓸데없이 똑똑해지는 재미 있더라.",
-      "subtitle": "Follow 쫌봐봐",
-      "photo_query": "follow subscribe like notification"
+      "narration": "다음에 목욕할 때 손가락 주름 보면 \"야 우리 몸이 미끄러지지 말라고 저러고 있네\" 이렇게 생각해보면 된다. 쫌봐봐에서 또 다른 TMI를 기다려!",
+      "subtitle": "우리 몸은 똑똑하네",
+      "photo_query": "smart body science learning"
     }
   ],
   "meta": {
@@ -47,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-01T10:15:33.859690+00:00"
+    "generated_at": "2026-11-01T18:42:12.153663+00:00"
   }
 }
