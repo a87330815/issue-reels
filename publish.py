@@ -149,6 +149,27 @@ def check():
     except Exception as e:
         print(f"[경고] 한도 조회 실패: {e}")
 
+    # 디버그: 토큰 권한 확인
+    try:
+        import requests as _req
+        perm_url = f"https://graph.facebook.com/{VERSION}/me/permissions"
+        perm_r = _req.get(perm_url, headers={"Authorization": f"Bearer {TOKEN}"}, timeout=15)
+        perm_data = perm_r.json().get("data", [])
+        print(f"\n토큰 권한 ({len(perm_data)}개):")
+        for p in perm_data:
+            print(f"  {p.get('permission')}: {p.get('status')}")
+    except Exception as e:
+        print(f"[경고] 권한 조회 실패: {e}")
+
+    # 디버그: 앱 모드 확인
+    try:
+        app_url = f"https://graph.facebook.com/{VERSION}/1143191174807326"
+        app_r = _req.get(app_url, headers={"Authorization": f"Bearer {TOKEN}"},
+                         params={"fields": "id,name,link,category"}, timeout=15)
+        print(f"\n앱 정보: {app_r.json()}")
+    except Exception as e:
+        print(f"[경고] 앱 정보 조회 실패: {e}")
+
     print("\n설정 완료")
     return True
 
