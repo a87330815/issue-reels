@@ -223,10 +223,21 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     if not ok:
         raise RuntimeError(f"컨테이너 처리 실패: {why}")
 
-    res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
-    media_id = res["id"]
-    print(f"  발행 완료: {media_id}")
-    return media_id
+    # media_publish — 2207085 내부 오류 시 재시도 (Meta 서버 간헐적 장애 대응)
+    max_retries = 3
+    retry_delay = 60  # 초
+    for attempt in range(1, max_retries + 1):
+        try:
+            res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
+            media_id = res["id"]
+            print(f"  발행 완료: {media_id}")
+            return media_id
+        except RuntimeError as e:
+            if "2207085" in str(e) and attempt < max_retries:
+                print(f"  [재시도 {attempt}/{max_retries}] 2207085 내부 오류 — {retry_delay}초 후 재시도")
+                time.sleep(retry_delay)
+            else:
+                raise
 
 
 def insights(media_id):
