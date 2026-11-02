@@ -96,9 +96,6 @@ def api(method, path, **params):
 
     if "error" in body:
         err = body["error"]
-        # 디버그: 전체 에러 바디 출력
-        import json as _json
-        print(f"  [DEBUG] 전체 에러 응답: {scrub(_json.dumps(body, ensure_ascii=False))}")
         raise RuntimeError(
             f"[{err.get('code')}/{err.get('error_subcode','-')}] "
             f"{scrub(err.get('message', ''))}"
@@ -148,27 +145,6 @@ def check():
         print(f"발행 한도: 24시간 기준 {used}/{total}건 사용")
     except Exception as e:
         print(f"[경고] 한도 조회 실패: {e}")
-
-    # 디버그: 토큰 권한 확인
-    try:
-        import requests as _req
-        perm_url = f"https://graph.facebook.com/{VERSION}/me/permissions"
-        perm_r = _req.get(perm_url, headers={"Authorization": f"Bearer {TOKEN}"}, timeout=15)
-        perm_data = perm_r.json().get("data", [])
-        print(f"\n토큰 권한 ({len(perm_data)}개):")
-        for p in perm_data:
-            print(f"  {p.get('permission')}: {p.get('status')}")
-    except Exception as e:
-        print(f"[경고] 권한 조회 실패: {e}")
-
-    # 디버그: 앱 모드 확인
-    try:
-        app_url = f"https://graph.facebook.com/{VERSION}/1143191174807326"
-        app_r = _req.get(app_url, headers={"Authorization": f"Bearer {TOKEN}"},
-                         params={"fields": "id,name,link,category"}, timeout=15)
-        print(f"\n앱 정보: {app_r.json()}")
-    except Exception as e:
-        print(f"[경고] 앱 정보 조회 실패: {e}")
 
     print("\n설정 완료")
     return True
@@ -244,21 +220,10 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     if not ok:
         raise RuntimeError(f"컨테이너 처리 실패: {why}")
 
-    # media_publish — 2207085 내부 오류 시 재시도 (Meta 서버 간헐적 장애 대응)
-    max_retries = 3
-    retry_delay = 60  # 초
-    for attempt in range(1, max_retries + 1):
-        try:
-            res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
-            media_id = res["id"]
-            print(f"  발행 완료: {media_id}")
-            return media_id
-        except RuntimeError as e:
-            if "2207085" in str(e) and attempt < max_retries:
-                print(f"  [재시도 {attempt}/{max_retries}] 2207085 내부 오류 — {retry_delay}초 후 재시도")
-                time.sleep(retry_delay)
-            else:
-                raise
+    res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
+    media_id = res["id"]
+    print(f"  발행 완료: {media_id}")
+    return media_id
 
 
 def insights(media_id):
@@ -401,18 +366,6 @@ def main():
         if left <= 0:
             print("[중단] 24시간 발행 한도 소진")
             return 1
-
-    # 디버그: 토큰 권한 확인
-    try:
-        import requests as _req
-        perm_url = f"https://graph.facebook.com/{VERSION}/me/permissions"
-        perm_r = _req.get(perm_url, headers={"Authorization": f"Bearer {TOKEN}"}, timeout=15)
-        perm_data = perm_r.json().get("data", [])
-        print(f"토큰 권한 ({len(perm_data)}개):")
-        for p in perm_data:
-            print(f"  {p.get('permission')}: {p.get('status')}")
-    except Exception as e:
-        print(f"[경고] 권한 조회 실패: {e}")
 
     jobs = jobs[:min(args.limit, left)]
     print(f"발행 대상: {len(jobs)}건\n")
