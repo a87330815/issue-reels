@@ -219,7 +219,6 @@ jobs:
           # 토큰은 페이지 토큰이라 그 호스트에서 "Cannot parse access token"
           # 으로 거부된다. 저장소 변수가 있으면 그걸, 없으면 facebook 쪽을 쓴다.
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
-          IG_API_VERSION: "v21.0"
           DO_PUBLISH: ${{ steps.gate.outputs.publish }}
         run: |
           set -o pipefail
