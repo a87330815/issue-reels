@@ -1,45 +1,45 @@
 {
-  "title": "맛집 줄 서서 후회하는 그 순간",
+  "title": "편의점 우산 사면 그날 비 그친다는 법칙",
   "cover": {
     "image": null,
     "lines": [
-      "맛집 줄 섰는데",
-      "<r>이게 맞나</r>",
-      "싶은 거"
+      "편의점에서",
+      "<r>우산 사</r>면",
+      "그 날 비 그친다"
     ],
     "badge": null,
-    "photo_query": "restaurant queue waiting line people"
+    "photo_query": "convenience store umbrella checkout"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "오 이 집 진짜 유명하더라. 줄 설 가치가 있겠지. 스르르 줄을 선다.",
-      "subtitle": "기대감으로 가득 참",
-      "photo_query": "long queue restaurant entrance"
+      "narration": "아 진짜 비 개길 안 하네. 편의점 가서 우산 사야지.",
+      "subtitle": "결심하는 순간",
+      "photo_query": "rain convenience store entrance"
     },
     {
       "image": null,
-      "narration": "어? 근데 왜 이렇게 오래 기다려? 벌써 20분. 아직도 2팀이 남았다고? 이게 맞나 싶기 시작한다.",
-      "subtitle": "점점 의심이 시작됨",
-      "photo_query": "tired person waiting bored phone"
+      "narration": "3,000원 주고 우산 샀다. 야 이제 좀 쌕~ 할 거야.",
+      "subtitle": "우산 구매 완료",
+      "photo_query": "buying umbrella checkout counter"
     },
     {
       "image": null,
-      "narration": "그리고 드디어 앉았는데. 밥이 나왔어. 어? 양이 좀... 음... 한 입 먹어본다.",
-      "subtitle": "기대와 현실의 격차",
-      "photo_query": "small portion bowl rice disappointment"
+      "narration": "집 가는데 5분 뒤? 비가 뚝 그쳐 버렸다.",
+      "subtitle": "법칙 발동",
+      "photo_query": "clearing weather clouds breaking"
     },
     {
       "image": null,
-      "narration": "맛은 있는데 이거 위해 30분을 기다렸나? 아 맞다, 이게 바로 그 '맛집의 함정'이다.",
-      "subtitle": "깨달음의 순간",
-      "photo_query": "eating rice bowl unhappy facial expression"
+      "narration": "이제 이 우산 한 달 동안 안 쓸 거고, 다음에 쓸 때쯤 어디 갔는지 모를 거야.",
+      "subtitle": "우산의 운명",
+      "photo_query": "lost umbrella umbrella stand forgotten"
     },
     {
       "image": null,
-      "narration": "이런 감정을 나만 느낀 거 아니겠지? 댓글에서 봐봐. 너도 이런 거 많지 않냐? 팔로우 고고.",
+      "narration": "아 이거 진짜다 아이가. 맨날 이 거 반복되고 있어. 이런 거 더 보고 싶으면 팔로우!",
       "subtitle": "공감 유도",
-      "photo_query": "phone scrolling comments social media"
+      "photo_query": "frustrated person thinking disappointed"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T10:44:34.714799+00:00"
+    "generated_at": "2026-11-02T17:35:53.423614+00:00"
   }
 }

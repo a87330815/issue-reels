@@ -3,43 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "40㎡에",
+      "40제곱미터에",
       "<r>7.5억</r>",
-      "이게 정상가?"
+      "이게 정상입니까"
     ],
     "badge": null,
-    "photo_query": "small studio apartment floor plan"
+    "photo_query": "seoul apartment building modern high rise"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 마포 아현동. 작은 집 한 채가 7억 5천에 거래됐다. 40제곱미터 남짓한데.",
-      "subtitle": "40㎡ 7.5억원 거래",
-      "photo_query": "seoul mapo district apartment buildings"
+      "narration": "이거 모르고 지나가면 손해다. 마포 아현동. 신축 아파트 40제곱미터. 가격이 7억 5천만 원이다.",
+      "subtitle": "40㎡에 7.5억 거래",
+      "photo_query": "modern apartment interior compact studio"
     },
     {
       "image": null,
-      "narration": "이건 뭐냐 하면. 올해 10월에 나온 실거래가다. 22년 신축 건물이고 3층이다.",
-      "subtitle": "2023년 신축, 3층",
-      "photo_query": "modern apartment complex glass facade"
+      "narration": "야야야. 서울 평균 제곱미터당 가격이 얼마인지 아냐고. 이건 그걸 그냥 넘어간다.",
+      "subtitle": "제곱미터당 1,850만 원",
+      "photo_query": "calculator money korean won notes"
     },
     {
       "image": null,
-      "narration": "평당 가격으로 따져면 1억 8천만원. 서울 평균보다 훨씬 높다. 왜 이럴까.",
-      "subtitle": "평당 1.8억원",
-      "photo_query": "real estate market graph increase"
+      "narration": "2023년 신축인데 불과 3년 만에 이 정도가 나왔다. 서울 강남권이 아니라 마포다. 아이가.",
+      "subtitle": "2023년 신축, 3년 거래",
+      "photo_query": "new apartment construction building completion"
     },
     {
       "image": null,
-      "narration": "마포는 홍대, 신촌 가까우니까 작은 집도 프리미엄이 붙는다 아이가. 신축에 입지까지 좋으면 이 정도 나온다.",
-      "subtitle": "입지 프리미엄 반영",
-      "photo_query": "hongdae sinchon seoul neighborhoods"
+      "narration": "이런 거래가 계속 나오면 뭐가 된다 아이가. 전셋값도 올라간다. 월셋값도 올라간다.",
+      "subtitle": "전세·월세 상승 신호",
+      "photo_query": "apartment lease agreement documents pen"
     },
     {
       "image": null,
-      "narration": "당신도 이 지역에 눈여겨보고 있다면? 지금 확인해야 할 때다. 쫌봐봐 더 구독해라.",
-      "subtitle": "최신 실거래가 매일 업데이트",
-      "photo_query": "person using smartphone real estate app"
+      "narration": "내가 놓친 거래는 없나. 더 알아야 한다. 쫌봐봐 팔로우해라. 다음 주도 터진다.",
+      "subtitle": "매주 새로운 거래 분석",
+      "photo_query": "mobile phone scrolling social media"
     }
   ],
   "meta": {
@@ -53,6 +53,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-02T10:43:20.499493+00:00"
+    "generated_at": "2026-11-02T17:34:38.696273+00:00"
   }
 }

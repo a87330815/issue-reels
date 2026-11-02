@@ -1,45 +1,45 @@
 {
-  "title": "이미숙 주식 손실",
+  "title": "아이 파크 몰 용산 점 오픈런 대반전",
   "cover": {
     "image": null,
     "lines": [
-      "연예인도",
-      "<r>수억</r>",
-      "날릴 수 있다"
+      "밤새 기다린",
+      "수백 명이",
+      "<r>텅 비었다</r>"
     ],
     "badge": null,
-    "photo_query": "stock market chart decline red"
+    "photo_query": "empty shopping mall corridor"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 요즘 연예인들 주식으로 자산을 불리는데, 한 번 잘못 들어가면 어마어마한 손실을 본다.",
-      "subtitle": "연예인도 주식 손실",
-      "photo_query": "investor watching stock market phone"
+      "narration": "이거 모르고 지나가면 손해다. 아이 파크 몰 용산점. 밤을 새워 오픈런 나온 덕후들이 있었다. 침낭까지 챙겨와가지고.",
+      "subtitle": "침낭 챙긴 오픈런 대기",
+      "photo_query": "people waiting in line outside building"
     },
     {
       "image": null,
-      "narration": "이미숙 배우도 주식에 투자했다 상당한 손실을 입었다고 알려졌다. 집을 담보로 투자하는 일도 있다는데, 이정도면 위험한 거다.",
-      "subtitle": "개인 투자 위험성",
-      "photo_query": "house with financial documents"
+      "narration": "근데 문을 열었더니. 와. 이거. 텅 비었다 아이가. 기대하던 게 없더라는 거야.",
+      "subtitle": "예상과 현실의 괴리",
+      "photo_query": "empty retail store inside"
     },
     {
       "image": null,
-      "narration": "주식은 수익도 크지만 손실도 크다. 특히 대출을 받아서 투자하면 빚까지 질 수 있다.",
-      "subtitle": "빚까지 질 수 있어",
-      "photo_query": "person stressed financial documents debt"
+      "narration": "명품·카페·푸드코트까지. 다 일반적인 거더라. 뭔가 특별한 거 있을 줄 알았는데.",
+      "subtitle": "평범한 상점 구성",
+      "photo_query": "shopping mall stores food court"
     },
     {
       "image": null,
-      "narration": "돈을 벌려다 오히려 큰 자산을 날리는 경우들이 많다. 투자는 신중해야 한다.",
-      "subtitle": "투자는 신중하게",
-      "photo_query": "financial advisor consultation meeting"
+      "narration": "이거. SNS에서 기대감만 부풀었던 거다. 현실은 그냥 쇼핑몰이었어.",
+      "subtitle": "기대와 현실의 갭",
+      "photo_query": "social media shopping promotion"
     },
     {
       "image": null,
-      "narration": "저 사람들 돈도 많은데 이 지경이다. 우리는 더 조심해야 하지 않겠냐. 팔로우해서 금융 상식 챙겨라.",
-      "subtitle": "금융 지식이 필수다",
-      "photo_query": "person learning finance education online"
+      "narration": "쫌봐봐 채널이 더 필요하면 팔로우 눌러. 진짜 정보만 준다.",
+      "subtitle": "팔로우하고 확인해",
+      "photo_query": "follow button mobile phone screen"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-02T10:43:31.350433+00:00"
+    "generated_at": "2026-11-02T17:34:51.779350+00:00"
   }
 }

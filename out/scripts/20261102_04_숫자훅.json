@@ -3,37 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "아현동",
+      "마포 신축",
       "<r>평당 6천</r>",
       "이 정도면"
     ],
     "badge": null,
-    "photo_query": "seoul mapo district apartment complex modern"
+    "photo_query": "modern apartment building entrance lobby"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 마포 아현동. 2023년 신축인데 평당 6천이다. 서울 강남권 신축하고 비교하면 이게 뭐 하는 가격이겠냐.",
-      "subtitle": "마포푸르지오더센트럴 평당 6천만원",
-      "photo_query": "seoul apartment price tag listing"
+      "narration": "이거 모르고 지나가면 손해다. 마포푸르지오더센트럴. 2023년에 지어진 따끈따끈한 신축이다.",
+      "subtitle": "마포푸르지오더센트럴 신축아파트",
+      "photo_query": "new apartment building 2023 modern architecture"
     },
     {
       "image": null,
-      "narration": "아파트 전용 40제곱미터. 2023년에 완공됐고 최근에 7천5백 거래났다.",
-      "subtitle": "전용 40㎡ · 3층 · 2023년 준공",
-      "photo_query": "apartment interior living room modern design"
+      "narration": "평당 가격이 6천만원대. 아현동 신축 아파트 치고는 이 정도면 꽤 착한 수준이다.",
+      "subtitle": "평당 6천만원대",
+      "photo_query": "apartment price tag calculation numbers"
     },
     {
       "image": null,
-      "narration": "홍대 워킹까지 5분 거리다. 신축 저가. 이런 물건 정보 놓치지 마라.",
-      "subtitle": "홍대 도보권 · 신축 저가",
-      "photo_query": "hongdae seoul street night neon"
+      "narration": "40제곱미터 소형 평면이 7천 5백만원에 거래됐다. 신축이면서도 가격이 잡혔다는 건 이거. 시장이 인정한다는 뜻이다.",
+      "subtitle": "40㎡, 7500만원 거래",
+      "photo_query": "apartment floor plan layout small studio"
     },
     {
       "image": null,
-      "narration": "우리 채널에서 서울 전역 신축 실거래가 푼다. 팔로우해라.",
-      "subtitle": "서울 신축 실거래가 · 채널 팔로우",
-      "photo_query": "subscribe follow button notification bell"
+      "narration": "마포·아현동 신축을 노리던 분들은 이 수치를 봐라. 앞으로 분석에 써먹을 기준이 될 거다.",
+      "subtitle": "마포 신축 가격 기준점",
+      "photo_query": "real estate market analysis data chart"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 거래 데이터는 우리 계정에서 계속 올릴 테니까. 팔로우 해둬라.",
+      "subtitle": "실거래가 데이터 매일 업데이트",
+      "photo_query": "follow subscribe button notification"
     }
   ],
   "meta": {
@@ -47,6 +53,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-02T10:43:36.385363+00:00"
+    "generated_at": "2026-11-02T17:34:58.441756+00:00"
   }
 }

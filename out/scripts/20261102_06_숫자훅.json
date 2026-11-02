@@ -1,39 +1,45 @@
 {
-  "title": "육군 하사 사망 사건",
+  "title": "김태균·오승환 APBC 대표팀 합류",
   "cover": {
     "image": null,
     "lines": [
-      "전방 부대에서",
-      "<r>하사 1명</r>",
-      "사망 사고 발생"
+      "한국 야구계 <r>최강자</r>",
+      "도쿄돔에",
+      "뭉쳤다"
     ],
     "badge": null,
-    "photo_query": "military barracks corridor empty"
+    "photo_query": "tokyo dome baseball stadium night lights"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 강원도 철원 전방 부대에서 하사 1명이 외상을 입고 사망했다. 지금 군 당국이 사고 경위를 조사 중이다.",
-      "subtitle": "육군 전방 부대 하사 사망",
-      "photo_query": "military uniform rank insignia"
+      "narration": "이거 모르고 지나가면 손해다. 김태균. 오승환. 이 둘이 뭉쳤다. APBC 대표팀이다.",
+      "subtitle": "한국 야구 최강자 둘이 합류",
+      "photo_query": "professional baseball players on field"
     },
     {
       "image": null,
-      "narration": "현재까지 구체적인 사망 원인이나 경위는 공개되지 않았다. 군 수사팀이 사건을 정밀 조사하고 있는 상황이다.",
-      "subtitle": "사고 경위 조사 진행 중",
-      "photo_query": "investigation military documents"
+      "narration": "김태균은 삼성 라이온즈 레전드. 오승환은 빅리그 세이버 메트릭스 1위다. 이 둘이 도쿄돔에 간다.",
+      "subtitle": "삼성 레전드·빅리그 선수 집결",
+      "photo_query": "baseball players in asian all-star uniforms"
     },
     {
       "image": null,
-      "narration": "이런 사건이 터지면 국방부가 정식 브리핑을 진행한다. 앞으로 추가 발표가 나올 거다.",
-      "subtitle": "추가 발표 예정",
-      "photo_query": "korean military headquarters building"
+      "narration": "야. 대박. 한국 야구 팬들이 도쿄돔 응원 열기로 난리다. 이거 놓치면 뭐하냐.",
+      "subtitle": "도쿄돔 응원전 역사 쓸 준비",
+      "photo_query": "tokyo dome crowd cheering baseball game"
     },
     {
       "image": null,
-      "narration": "더 알아야 할 소식들이 계속 올라올 텐데. 우리 채널 팔로우해라. 놓칠 게 많다.",
-      "subtitle": "최신 소식 팔로우",
-      "photo_query": "news notification mobile phone screen"
+      "narration": "APBC야. 아시아 태평양 야구 챔피언십이다. 최고의 선수들이 국가대표로 나선다.",
+      "subtitle": "APBC는 아시아 최강 야구 무대",
+      "photo_query": "international baseball championship tournament"
+    },
+    {
+      "image": null,
+      "narration": "지금 놓치지 말고 팔로우해라. 한국 야구의 저력이 도쿄돔에서 터진다.",
+      "subtitle": "한국 야구의 저력 도쿄돔에서",
+      "photo_query": "korea flag waving stadium celebration"
     }
   ],
   "meta": {
@@ -42,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-02T10:43:49.637700+00:00"
+    "generated_at": "2026-11-02T17:35:11.722619+00:00"
   }
 }

@@ -1,47 +1,36 @@
 {
-  "title": "현대차 생산라인 또 멈춤…G80 신차 투입 갈등",
+  "title": "pakhtakor ",
   "cover": {
     "image": null,
+    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "또 멈췄다",
-      "현대차 생산라인",
-      "<r>인력 싸움</r>"
+      "이번 달",
+      "<r>pakhtakor</r>",
+      "거래 떴습니다"
     ],
-    "badge": null,
-    "photo_query": "car manufacturing assembly line production"
+    "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 현대차 생산라인이 또 멈췄다. G80 신차 투입하면서 인력 배치 갖고 노사가 충돌했거든.",
-      "subtitle": "현대차 생산라인 정지",
-      "photo_query": "factory production line workers assembly"
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 'pakhtakor đấu với al-nassr' 관련 트렌드 — Nhận định Pakhtakor vs Al Nassr: Ronaldo lại tỏa sáng?, 20h45 ngày 2/11/2026. 수치로 확인해보자.",
+      "subtitle": "'pakhtakor đấu với"
     },
     {
       "image": null,
-      "narration": "자동차 만드는 회사랑 일하는 사람들이 자꾸만 싸우면 뭐가 생기는가. 생산 차질. 납기 지연. 결국 소비자가 맞이한다.",
-      "subtitle": "노사 충돌 = 생산 지연",
-      "photo_query": "delayed delivery truck waiting schedule"
-    },
-    {
-      "image": null,
-      "narration": "새 모델 나올 때마다 이 문제가 반복된다. 인력을 어떻게 배치할지 둘이 합의를 못 하니까.",
-      "subtitle": "반복되는 갈등 구조",
-      "photo_query": "negotiation discussion meeting conflict resolution"
-    },
-    {
-      "image": null,
-      "narration": "신차 구매 예정이라면 이런 이슈 잘 알아둬라. 납기가 밀릴 수도 있다는 뜻이니까.",
-      "subtitle": "신차 구매 전 확인",
-      "photo_query": "new car dealership showroom purchase"
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "google_trends",
+    "source": "",
     "category": "당일 화제 이슈",
-    "attribution": "Google Trends",
+    "attribution": "",
     "chart": null,
-    "generated_at": "2026-11-02T10:44:08.684966+00:00"
+    "tone": "경상도",
+    "generated_at": "2026-11-02T17:35:28.440539+00:00"
   }
 }

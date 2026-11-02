@@ -1,45 +1,40 @@
 {
-  "title": "신영우·최민석 APBC 낙마",
+  "title": "알나스르 AFC 챔피언스리그 경기",
   "cover": {
     "image": null,
     "lines": [
-      "2명 동시에",
-      "<r>탈락</r>",
-      "팔꿈치 때문에"
+      "오늘 밤",
+      "<r>AFC</r>",
+      "챔피언스리그",
+      "뜬다"
     ],
     "badge": null,
-    "photo_query": "baseball pitcher elbow injury medical"
+    "photo_query": "AFC Champions League football match stadium"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. NC의 신영우, 두산의 최민석. 이 둘이 갑자기 APBC 대표팀에서 빠졌다. 이유가 뭐냐고? 팔꿈치 부상이다.",
-      "subtitle": "2명 동시에 팔꿈치 부상",
-      "photo_query": "baseball elbow injury mri scan"
+      "narration": "이거 모르고 지나가면 손해다. 오늘 밤 AFC 챔피언스리그 경기 있다. 파흐타코르 타슈켄트 대 알나스르. 중동 축구 팬들은 벌써 들썩인다.",
+      "subtitle": "AFC 챔피언스리그 생중계",
+      "photo_query": "football match live broadcast stadium lights"
     },
     {
       "image": null,
-      "narration": "APBC는 아시아·태평양 지역 최고 선수들이 모이는 대회다. 거기 나갈 수 있는 기회가 떨어진 거다.",
-      "subtitle": "APBC는 최고 선수들의 무대",
-      "photo_query": "asian pacific baseball championship tournament"
+      "narration": "알나스르는 사우디프로리그 강호다. 지난 시즌도 톱클래스 경기력을 보였다.",
+      "subtitle": "알나스르, 중동 강팀",
+      "photo_query": "saudi arabia football club players"
     },
     {
       "image": null,
-      "narration": "팔꿈치. 투수 입장에서 이거 한 번 나가면 복구가 오래 걸린다. 올시즌 남은 경기도 위험하다.",
-      "subtitle": "투수의 팔꿈치는 생명줄",
-      "photo_query": "professional baseball pitcher throwing motion"
+      "narration": "챔피언스리그는 아시아 최고 축구 무대다. 이 경기 뭐가 뜰지 궁금하면 오늘 밤 채널 켜두고 봐라.",
+      "subtitle": "아시아 최고 축구 무대",
+      "photo_query": "asian championship football tournament trophy"
     },
     {
       "image": null,
-      "narration": "신영우는 NC의 에이스고, 최민석은 두산의 핵심 선수다. 이 손실이 각 팀에 얼마나 크냐고? 말해 뭐 하나.",
-      "subtitle": "각 팀의 핵심이 동시 부상",
-      "photo_query": "korean baseball players professional league"
-    },
-    {
-      "image": null,
-      "narration": "팔로우하고 있으면 이런 소식 날아올 때마다 팀 상황이 한눈에 보인다. 쫌봐봐와 함께 해라.",
-      "subtitle": "야구 소식은 여기서 먼저",
-      "photo_query": "baseball fans watching live game stadium"
+      "narration": "더 자세한 경기 정보는 우리 계정 팔로우. 매일 떠오른 이슈들 먼저 알려준다.",
+      "subtitle": "팔로우 필수",
+      "photo_query": "sports news notification mobile phone"
     }
   ],
   "meta": {
@@ -48,6 +43,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-02T10:44:03.167965+00:00"
+    "generated_at": "2026-11-02T17:35:22.746606+00:00"
   }
 }

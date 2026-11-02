@@ -1,0 +1,53 @@
+{
+  "title": "국밥 한 그릇의 위력",
+  "cover": {
+    "image": null,
+    "lines": [
+      "국밥 한 그릇이면",
+      "<r>세상 다 가진</r>",
+      "기분이 드는 거"
+    ],
+    "badge": null,
+    "photo_query": "bowl rice soup comfort food"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아침에 일어났는데 뭔가 허허롭거든. 그냥 국밥집 가고 싶어진다 아이가.",
+      "subtitle": "뭔가 허할 때의 처방전",
+      "photo_query": "morning mood empty feeling"
+    },
+    {
+      "image": null,
+      "narration": "국밥 한 그릇 앞에 앉아 스푼으로 밥이랑 국을 퍼먹다 보면, 갑자기 세상에 불평 하나도 없어진다.",
+      "subtitle": "한 숟가락 한 숟가락의 마법",
+      "photo_query": "eating rice soup spoon bowl"
+    },
+    {
+      "image": null,
+      "narration": "그 국물까지 싹싹 마시고 나면 '아 이 정도면 충분하다' 이 느낌이 생긴다. 진짜다.",
+      "subtitle": "국물까지 마신 후의 평온함",
+      "photo_query": "empty bowl soup satisfied"
+    },
+    {
+      "image": null,
+      "narration": "비싼 밥도 많지만 국밥 한 그릇보다 마음을 채우는 밥은 없더라고.",
+      "subtitle": "역시 국밥이 최고다",
+      "photo_query": "traditional Korean rice soup restaurant"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 공감한다면 팔로우 한 번 눌러 주이소.",
+      "subtitle": "더 봅시다",
+      "photo_query": "follow button like heart"
+    }
+  ],
+  "meta": {
+    "format": "음식공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T17:35:47.844384+00:00"
+  }
+}

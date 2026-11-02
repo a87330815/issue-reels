@@ -1,38 +1,46 @@
 {
-  "title": "주차장의 악순환",
+  "title": "양말 짝이 사라지는 미스터리",
   "cover": {
     "image": null,
     "lines": [
-      "좋은 자리 찾다가",
-      "<r>결국 제일 멀리</r>"
+      "빨래 후",
+      "<r>양말 한 짝만</r>",
+      "없어진 적",
+      "없나요?"
     ],
     "badge": null,
-    "photo_query": "parking lot empty space car"
+    "photo_query": "missing sock laundry basket"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "마트 입구 근처 자리 있나 싶어서 맴돈다. 어? 저기 비었나? 아니다 경찰차다.",
-      "subtitle": "좋은 자리의 환상",
-      "photo_query": "parking lot searching car"
+      "narration": "빨래통에 양말 10켤레를 넣었는데... 나올 때는 19개다 아이가. 어디서 한 짝이 사라졌냐고.",
+      "subtitle": "빨래 후 양말 수가 안 맞음",
+      "photo_query": "laundry washing machine socks"
     },
     {
       "image": null,
-      "narration": "한 바퀴 더 돌아본다. 좀 멀어도 괜찮겠지 싶으면서. 그런데 그 자리도 없다. 또 없다.",
-      "subtitle": "욕심쟁이 드라이버",
-      "photo_query": "driving car parking lot circles"
+      "narration": "세탁기 안 어딘가에 숨어있을 줄 알아서 또 분해해보고, 드럼통 뒤에도 찾아보고, 빨래건조기에도 들어가본다. 근데 없더라.",
+      "subtitle": "찾아도 나타나지 않음",
+      "photo_query": "searching washing machine dryer"
     },
     {
       "image": null,
-      "narration": "결국 지하 3층까지 내려온다. 여기 있네! 세운다. 마트 들어가는데 엘리베이터, 에스컬레이터... 이미 피곤하다.",
-      "subtitle": "원점 복귀",
-      "photo_query": "basement parking level underground"
+      "narration": "결국 한 짝짜리 양말은 팬티 보관함 한구석에서 죽을 때까지 잠자고 있다. 언젠가는 친구와 짝을 이루길 기원하면서.",
+      "subtitle": "고아 양말이 탄생함",
+      "photo_query": "lonely single sock drawer"
     },
     {
       "image": null,
-      "narration": "다음엔 처음부터 여기 세우지 뭐 하면서 나간다. 하지만 다음 주에는 또 똑같이 한다.",
-      "subtitle": "반복되는 악순환",
-      "photo_query": "tired exhausted person walking tired"
+      "narration": "근데 이거 알아? 전 세계적으로 매년 125만 개의 양말이 빨래하다가 사라진대. 미스터리 해결 안 된 지 100년째다.",
+      "subtitle": "세계적 미스터리 현상",
+      "photo_query": "mystery socks missing laundry"
+    },
+    {
+      "image": null,
+      "narration": "혼자 아니라니까. 모두가 같은 고통 겪고 있다. 우리 함께 이 미스터리 풀자고. 구독하고 알림 켜!",
+      "subtitle": "함께하는 공감",
+      "photo_query": "comfort support together friends"
     }
   ],
   "meta": {
@@ -41,6 +49,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T10:44:40.080375+00:00"
+    "generated_at": "2026-11-02T17:36:00.826216+00:00"
   }
 }

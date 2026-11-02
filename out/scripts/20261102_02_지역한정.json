@@ -5,35 +5,41 @@
     "lines": [
       "아현동",
       "<r>7억5천</r>",
-      "단 1건뿐입니다"
+      "거래 딱 1건"
     ],
-    "badge": null,
-    "photo_query": "mapo seoul apartment building modern"
+    "badge": "10월",
+    "photo_query": "seoul mapo district apartment building entrance"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 아현동 아파트 시장. 요즘 거의 죽어있다.",
-      "subtitle": "아현동 10월 거래 1건",
-      "photo_query": "empty apartment hallway korean building"
+      "narration": "이거 모르고 지나가면 손해다. 아현동이요. 이번 달 아파트 거래가 겨우 1건이다. 7억5천만원짜리 신축 아파트.",
+      "subtitle": "아현동 1건 거래 확인",
+      "photo_query": "apartment transaction contract signing"
     },
     {
       "image": null,
-      "narration": "마포푸르지오더센트럴. 40제곱미터. 3층. 7억5천에 나간 거 봤다.",
-      "subtitle": "7억5천만원에 거래",
-      "photo_query": "luxury apartment interior living room korea"
+      "narration": "마포푸르지오더센트럴. 작년에 지어진 따끈따끈한 신축이다. 3층, 40제곱미터.",
+      "subtitle": "마포푸르지오더센트럴 신축",
+      "photo_query": "modern apartment building 2023 construction"
     },
     {
       "image": null,
-      "narration": "2023년 신축인데 거래는 단 1건이다. 시장이 얼어붙었다는 거지.",
-      "subtitle": "신축 아파트도 거래 부진",
-      "photo_query": "apartment sales office desk agent"
+      "narration": "거래가 딱 1건이라는 건 뭘 뜻하나. 사람들이 안 산다. 매물이 별로 없거나, 관심이 없거나.",
+      "subtitle": "거래 부진 신호",
+      "photo_query": "real estate market stagnation vacant apartment"
     },
     {
       "image": null,
-      "narration": "아현동에서 뭐 찾는다? 이거 봐야 한다. 거래 트렌드 알아야 한다.",
-      "subtitle": "지역 부동산 정보 확인 필수",
-      "photo_query": "real estate market chart analysis graph"
+      "narration": "아현동 아파트 사고팔 생각이면 이런 시장 움직임을 봐야 한다. 팔 때든 살 때든.",
+      "subtitle": "시장 흐름 확인 필수",
+      "photo_query": "apartment buying selling decision process"
+    },
+    {
+      "image": null,
+      "narration": "더 많은 지역 거래 데이터는 우리 채널에서 매달 쫌봐봐. 팔로우 해두면 놓치지 않는다.",
+      "subtitle": "매달 업데이트 구독",
+      "photo_query": "smartphone social media notification follow"
     }
   ],
   "meta": {
@@ -47,6 +53,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-02T10:43:24.773112+00:00"
+    "generated_at": "2026-11-02T17:34:45.230366+00:00"
   }
 }

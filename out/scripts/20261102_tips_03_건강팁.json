@@ -1,0 +1,53 @@
+{
+  "title": "스마트폰 눈 피로 30초 스트레칭",
+  "cover": {
+    "image": null,
+    "lines": [
+      "하루 5분만",
+      "<r>눈 피로 80% 줄인다</r>",
+      "스트레칭"
+    ],
+    "badge": null,
+    "photo_query": "eye strain relief exercise"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "스마트폰 보고 있으면 눈이 자꾸 침침하고 뻑뻑해지더라고? 그거 다 근육이 경직돼서 그런 거다.",
+      "subtitle": "눈 근육도 자주 풀어줘야 해",
+      "photo_query": "tired eyes smartphone fatigue"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째, 30초간 멀리 봐라. 창밖이든 건너편 벽이든 2미터 이상 멀리 있는 거 봐야 한다. 눈 초점 근육이 풀린다고.",
+      "subtitle": "30초 원거리 응시",
+      "photo_query": "looking far away window distance"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 눈을 동그랗게 움직여라. 위·아래·좌·우, 반대 방향도 10번씩. 이건 눈 주변 6개 근육을 한 번에 풀어주는 거다.",
+      "subtitle": "눈 원형 운동 10회",
+      "photo_query": "eye movement exercise rotation"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 따뜻한 물에 적신 핸드타올로 눈 위를 살포시 덮어둬라. 1분 정도면 혈액순환이 좋아져서 피로가 싹 내려간다.",
+      "subtitle": "온열 팩 1분",
+      "photo_query": "warm compress eye relief"
+    },
+    {
+      "image": null,
+      "narration": "이 셋을 하루에 3번, 점심·오후·저녁 때 5분씩 하면 진짜 눈이 편해진다. 저장해 뒀다가 한 번 해봐 봐! 더 유용한 꿀팁은 팔로우 고고!",
+      "subtitle": "하루 3회 총 5분 투자",
+      "photo_query": "eye care routine daily habit"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T17:36:23.541857+00:00"
+  }
+}

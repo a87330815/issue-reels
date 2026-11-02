@@ -1,45 +1,44 @@
 {
-  "title": "XRP 급락 속 자금 몰리는 이유",
+  "title": "김지영 조문 패션 논란",
   "cover": {
     "image": null,
     "lines": [
-      "가격은 떨어지는데",
-      "<r>돈은 몰린다</r>",
-      "XRP 이게 뭐냐"
+      "어제 유명인 조문 옷차림",
+      "<r>10만명</r>이 봤다"
     ],
     "badge": null,
-    "photo_query": "cryptocurrency market chart candlestick"
+    "photo_query": "formal black dress mourning attire"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. XRP가 요즘 말이지. 가격은 떨어지는데 투자 자금이 자꾸 들어온다는 거야. 이게 뭘 의미하는지 알아야 한다.",
-      "subtitle": "가격 하락 중에 자금 유입",
-      "photo_query": "down arrow cryptocurrency price chart"
+      "narration": "이거 모르고 지나가면 손해다. 어제 한 유명인의 조문 패션이 화제를 모았다. 시간이 갈수록 더 많은 사람들이 의견을 나누고 있다.",
+      "subtitle": "조문 패션 논란 확산 중",
+      "photo_query": "person in black formal clothing"
     },
     {
       "image": null,
-      "narration": "요즘 암호화폐 상품들, 특히 XRP 관련 ETF가 자금을 끌어모으고 있거든. 그게 뭐냐면. 가격이 싸질 때 기회라고 본 전문가들이 사들인다는 뜻이다.",
-      "subtitle": "ETF에 기관 자금 집중",
-      "photo_query": "ETF fund investment institutional money"
+      "narration": "조문식에 가는 옷차림. 뭐가 중요할까. 검은색. 소박함. 이게 기본이다.",
+      "subtitle": "조문식 기본 복장 룰",
+      "photo_query": "traditional korean funeral ceremony black attire"
     },
     {
       "image": null,
-      "narration": "프랭클린과 비트와이즈 같은 큰 회사들이 주도하고 있다. 이건 뭐다? 장기 전망을 믿는 거다. 단기 변동성은 무시하고.",
-      "subtitle": "Franklin, Bitwise 등 큰",
-      "photo_query": "investment company office building finance"
+      "narration": "그런데 요즘은 셀카, 명품 가방, 화려한 악세서리까지 들고 가는 사람들도 많다. 그럴 때마다 '예의가 부족하다'는 지적이 나온다.",
+      "subtitle": "논란이 되는 조문 패션들",
+      "photo_query": "luxury accessories designer bags"
     },
     {
       "image": null,
-      "narration": "즉 지금 이 상황을 어떻게 봐야 하냐면. 약세 속에서 강한 자들이 움직인다는 거야. 이건 시장의 신호다. 체크해 둬야 할 시점이다.",
-      "subtitle": "약세 속 기관 움직임 주목",
-      "photo_query": "investors meeting financial strategy analysis"
+      "narration": "결국 이건 패션 문제가 아니다. 고인을 존중하는 마음이 옷에 드러나느냐는 거다. 당신은 어떻게 생각하나.",
+      "subtitle": "패션이 아닌 예의의 문제",
+      "photo_query": "respectful ceremony moment silence"
     },
     {
       "image": null,
-      "narration": "암호화폐는 변수가 많으니까. 더 궁금하면 팔로우하고. 다음 트렌드 신호 놓치지 마라.",
-      "subtitle": "팔로우로 다음 신호 체크",
-      "photo_query": "digital trend analysis graph upward"
+      "narration": "이런 사회 이슈들. 매일 쫌봐봐에서 확인해라. 팔로우 고고.",
+      "subtitle": "매일의 화제, 여기서 본다",
+      "photo_query": "people discussing social media news"
     }
   ],
   "meta": {
@@ -48,6 +47,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-02T10:43:44.274851+00:00"
+    "generated_at": "2026-11-02T17:35:05.489126+00:00"
   }
 }
