@@ -99,6 +99,20 @@ def api(method, path, _retry=0, **params):
         code = err.get("code")
         subcode = err.get("error_subcode", "-")
         msg = scrub(err.get("message", ""))
+        user_title = err.get("error_user_title", "")
+        user_msg = err.get("error_user_msg", "")
+        fbtrace = err.get("fbtrace_id", "")
+        err_type = err.get("type", "")
+        detail = f"[{code}/{subcode}] {msg}"
+        if user_title:
+            detail += f" | title={user_title}"
+        if user_msg:
+            detail += f" | user_msg={user_msg}"
+        if fbtrace:
+            detail += f" | fbtrace={fbtrace}"
+        if err_type:
+            detail += f" | type={err_type}"
+        print(f"    ⚡ API 에러 상세: {detail}")
         # 플랫폼 내부 에러(-1)이면 재시도
         if code == -1 and _retry < 3:
             wait = 30 * (_retry + 1)
