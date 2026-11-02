@@ -1,0 +1,53 @@
+{
+  "title": "겨울 창문 결로 1분 해결법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "창문 물방울",
+      "<r>1분이면</r>",
+      "해결된다"
+    ],
+    "badge": null,
+    "photo_query": "window condensation water droplets"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 겨울만 되면 창문에 물이 줄줄 맺히지 않냐? 이 물방울 방치하면 곰팡이가 생기고 집이 곰팬다 아이가.",
+      "subtitle": "결로는 실내외 온도차 때문",
+      "photo_query": "window condensation frost"
+    },
+    {
+      "image": null,
+      "narration": "그럼 간단해. 아침에 5분만 투자해봐라. 세숫수건으로 창문을 닦고, 드라이기를 30초 정도 따뜻하게 불어준다.",
+      "subtitle": "닦기 + 드라이기 30초",
+      "photo_query": "drying window with hairdryer"
+    },
+    {
+      "image": null,
+      "narration": "하루에 1번, 딱 5분이면 된다. 왜냐고? 따뜻한 바람이 습기를 날려버려서 곰팡이 필 조건이 없어진다거든.",
+      "subtitle": "하루 5분 투자로 곰팡이 방지",
+      "photo_query": "clean window frame prevention"
+    },
+    {
+      "image": null,
+      "narration": "급하면 신문지나 키친타올로 물기만 닦아도 된다. 근데 드라이기까지 하면 진짜 쌍쌍하다.",
+      "subtitle": "신문지도 괜찮지만 드라이기가 최강",
+      "photo_query": "newspaper wiping window moisture"
+    },
+    {
+      "image": null,
+      "narration": "곰팡이 제거비 몇십만 원 들이기 전에 지금부터 5분씩 투자해봐라. 이런 꿀팁 더 보고 싶으면 팔로우!",
+      "subtitle": "곰팡이 방지 = 집값 보호",
+      "photo_query": "winter home maintenance tips"
+    }
+  ],
+  "meta": {
+    "format": "계절팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T02:20:44.146710+00:00"
+  }
+}

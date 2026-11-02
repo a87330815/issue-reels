@@ -1,0 +1,52 @@
+{
+  "title": "맛집 웨이팅의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "줄 서서 30분,",
+      "<r>후회하는 5분</r>"
+    ],
+    "badge": null,
+    "photo_query": "queue waiting restaurant line"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "\"오 이 식당 진짜 핫하네. 줄이 길어.\" 웨이팅 하면서 기대감에 부풀어 있다.",
+      "subtitle": "기대 100%",
+      "photo_query": "people waiting line restaurant excited"
+    },
+    {
+      "image": null,
+      "narration": "30분 기다렸다. 드디어 불린다. 자리에 앉는데... 왜 이렇게 좁냐고?",
+      "subtitle": "어? 뭔가 이상한데",
+      "photo_query": "crowded small restaurant table seated"
+    },
+    {
+      "image": null,
+      "narration": "음식 나왔다. 맛있긴 한데... 이 정도면 근처 맛집도 가능한데? 아 이게 맞나 싶은 그 느낌.",
+      "subtitle": "30분이 아까운 이유",
+      "photo_query": "plate food restaurant meal tasting"
+    },
+    {
+      "image": null,
+      "narration": "결국 깨닫게 된다. \"아, 우린 음식 맛보러 온 게 아니라 줄 서는 시간을 팔러 온 거네.\"",
+      "subtitle": "웨이팅이 디저트",
+      "photo_query": "disappointed diner meal experience"
+    },
+    {
+      "image": null,
+      "narration": "그 다음주. 또 다른 맛집 웨이팅 줄에 서 있는 나. 학습능력 제로다 이거 봐봐.",
+      "subtitle": "이런 콘텐츠 더 보고 싶으면 팔로우 ↗",
+      "photo_query": "person waiting line thinking regret"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T02:20:22.246116+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "누렇게 변한 흰 운동화 살리는 법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "누렇던 흰신발이",
+      "<r>30분 만에</r>",
+      "새것처럼"
+    ],
+    "badge": null,
+    "photo_query": "white sneaker yellowed dirty"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "운동화가 누렇게 변했지? 버리지 말고 이거 해봐. 집에 있는 재료 3가지면 된다니까.",
+      "subtitle": "흰 운동화 복원 프로젝트 시작",
+      "photo_query": "white shoes yellowing discolored"
+    },
+    {
+      "image": null,
+      "narration": "베이킹소다 2큰술에 물 한 컵, 그리고 레몬즙 한 스푼을 섞어. 페이스트 같은 게 나온다. 이걸 왜 쓰냐면 베이킹소다가 산화된 때를 중화시켜주거든.",
+      "subtitle": "베이킹소다+물+레몬즙 섞기",
+      "photo_query": "baking soda paste mixture bowl"
+    },
+    {
+      "image": null,
+      "narration": "오래된 칫솔로 신발 전체에 골고루 문질러. 특히 누렇게 변한 부분을 집중 공략해야 한다.",
+      "subtitle": "페이스트 칫솔로 문질러주기",
+      "photo_query": "cleaning white shoe toothbrush"
+    },
+    {
+      "image": null,
+      "narration": "그 다음 미온수로 헹굴고, 휴지로 톡톡 두드려 물기를 제거해. 자연건조 30분이면 끝이다.",
+      "subtitle": "미온수로 헹굴 후 자연건조",
+      "photo_query": "white sneaker rinsing water clean"
+    },
+    {
+      "image": null,
+      "narration": "야야야! 이 정도면 새 신발 사는 거랑 비교 안 되게 깨끗해진다. 신발 관리 꿀팁 더 알고 싶으면 팔로우해!",
+      "subtitle": "흰색 복원 완성, 새것처럼",
+      "photo_query": "white sneaker clean restored bright"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T02:20:36.806847+00:00"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "title": "옷 수명 2배로 늘리는 법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "니트 보풀·흰옷 때",
+      "<y>3분이면</y>",
+      "깔끔해진다"
+    ],
+    "badge": null,
+    "photo_query": "clothes care sweater lint"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "니트 보풀은 세탁 전에 먼저 처리해야 돼. 옷이 낡아 보이는 이유가 이거거든. 칼날 없는 면도기나 빗으로 톡톡 쓸어내면 되는데, 이게 정말 간단하다.",
+      "subtitle": "면도기로 가볍게 빗질",
+      "photo_query": "sweater pilling removal razor"
+    },
+    {
+      "image": null,
+      "narration": "흰옷의 누런 때는 산소계 표백제가 답이다. 미온수에 표백제 한 숟가락 풀고 옷을 30분~1시간 불려두면, 섬유 속 찍힌 때가 산화되면서 빠져나간다.",
+      "subtitle": "산소계 표백제 30분 불리기",
+      "photo_query": "white shirt soaking bleach"
+    },
+    {
+      "image": null,
+      "narration": "시간이 없으면 온수에 담근 후 양손으로 가볍게 주무르면서 5분만 해도 효과가 보인다. 염소 표백제보다 약하니까 색깔 있는 옷에도 써도 된다.",
+      "subtitle": "손으로 5분 주무르기",
+      "photo_query": "hands washing clothes gently"
+    },
+    {
+      "image": null,
+      "narration": "이 두 가지만 습관으로 하면 옷이 새 옷처럼 유지된다. 기본 옷 관리법으로 저장해두고, 더 필요한 살림 꿀팁은 계속 봐봐.",
+      "subtitle": "옷 수명 2배 연장",
+      "photo_query": "clean fresh clothes hanging"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T02:20:51.300205+00:00"
+  }
+}

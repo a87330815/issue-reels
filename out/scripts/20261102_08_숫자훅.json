@@ -1,0 +1,53 @@
+{
+  "title": "11월 T 멤버십 혜택",
+  "cover": {
+    "image": null,
+    "lines": [
+      "11월에",
+      "<r>최대 50%</r>",
+      "할인 받는 법"
+    ],
+    "badge": null,
+    "photo_query": "shopping discount sale receipt"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 11월 T 멤버십. 이번 달에 뭐가 터진다고 봐봐.",
+      "subtitle": "11월 T 멤버십 주요 혜택",
+      "photo_query": "loyalty card membership benefits"
+    },
+    {
+      "image": null,
+      "narration": "편의점, 카페, 외식 다 받는다. 최대 50% 할인까지 나온다고 한다.",
+      "subtitle": "최대 50% 할인 혜택",
+      "photo_query": "convenience store cashier transaction"
+    },
+    {
+      "image": null,
+      "narration": "특정 업종에서 포인트도 두 배, 세 배 샹샹 쌓인다. 뭐 하냐고. 카드만 긁으면 된다.",
+      "subtitle": "포인트 적립 2~3배 증가",
+      "photo_query": "credit card payment point rewards"
+    },
+    {
+      "image": null,
+      "narration": "근데 11월만이다. 이달이 지나면 혜택도 바뀐다고 봐봐. 지금이 기회다.",
+      "subtitle": "11월 한정 시즌 혜택",
+      "photo_query": "calendar november date marking"
+    },
+    {
+      "image": null,
+      "narration": "자세한 혜택은 앱에서 바로 확인해라. 따라와. 더 알아야 할 것 많다.",
+      "subtitle": "앱에서 전체 혜택 확인",
+      "photo_query": "smartphone app shopping interface"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-02T02:19:48.649903+00:00"
+  }
+}

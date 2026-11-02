@@ -1,0 +1,52 @@
+{
+  "title": "마포푸르지오더센트럴 평당 0.61억",
+  "cover": {
+    "image": null,
+    "lines": [
+      "아현동",
+      "<r>평당 6천</r>",
+      "이게 맞나요"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building modern design seoul"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 아현동 마포푸르지오더센트럴. 2023년 신축 아파트인데 평당이 0.61억이다.",
+      "subtitle": "신축인데 평당 0.61억",
+      "photo_query": "new apartment building entrance lobby"
+    },
+    {
+      "image": null,
+      "narration": "전용면적 40제곱미터 실제 거래가가 7천5백만 원이라는 뜻이다. 올해 10월에 나온 데이터다.",
+      "subtitle": "40㎡에 7,500만 원",
+      "photo_query": "small studio apartment interior bright"
+    },
+    {
+      "image": null,
+      "narration": "신축 아파트 평당이 보통 1억을 넘는데 이 정도면 진짜 저가다. 마포 동네 시세를 다시 봐야 한다.",
+      "subtitle": "신축 대비 저가 형성",
+      "photo_query": "seoul mapo district map location"
+    },
+    {
+      "image": null,
+      "narration": "투자든 거주든 이런 데이터를 놓치면 기회를 날린다. 우리 계정 팔로우해서 빠르게 받아봐라.",
+      "subtitle": "놓치면 안 되는 실거래 정보",
+      "photo_query": "real estate data chart analysis"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        0.61
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-02T02:19:23.600066+00:00"
+  }
+}

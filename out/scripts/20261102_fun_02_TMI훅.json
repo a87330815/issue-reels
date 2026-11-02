@@ -1,0 +1,52 @@
+{
+  "title": "일요일 저녁부터 시작되는 월요병",
+  "cover": {
+    "image": null,
+    "lines": [
+      "일요일 저녁부터",
+      "<r>월요병</r> 시작된다고?"
+    ],
+    "badge": null,
+    "photo_query": "sunday evening sad window"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "저건 진짜 과학이다. '선데이 스쿠프'라고 들어봤나? 일요일 저녁부터 시작되는 불안감 말이야.",
+      "subtitle": "일요일 저녁부터 이미 시작됨",
+      "photo_query": "person looking worried phone evening"
+    },
+    {
+      "image": null,
+      "narration": "신경과학자들이 밝혔는데, 우리 뇌가 주말 끝날 때쯤부터 스트레스 호르몬을 확 분비한다 아이가. 월요일이 아직 안 왔는데도!",
+      "subtitle": "뇌가 미리 준비하는 거다",
+      "photo_query": "brain stress hormones illustration"
+    },
+    {
+      "image": null,
+      "narration": "그래서 일요일 오후부터 무기력해지고, 저녁 먹을 때쯤 한숨 나오고, 자려고 누우면 내일 일 생각에 뜬눈으로 밤샌다.",
+      "subtitle": "일요일 오후부터 악순환 시작",
+      "photo_query": "person insomnia bed restless night"
+    },
+    {
+      "image": null,
+      "narration": "야야, 근데 이거 알면? 월요일 아침이 덜 끔찍해진다더라. 그냥 인지하는 것만 해도, 뭐 이런 건가 하면서 한발 물러서게 되니까.",
+      "subtitle": "알고 보면 대처 가능",
+      "photo_query": "person morning cup coffee calm"
+    },
+    {
+      "image": null,
+      "narration": "월요일도 결국 그냥 하루일 뿐이다. 이런 거 더 알고 싶으면 팔로우 해봐!",
+      "subtitle": "팔로우로 월요병 탈출",
+      "photo_query": "monday morning ready determined"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T02:20:09.067165+00:00"
+  }
+}

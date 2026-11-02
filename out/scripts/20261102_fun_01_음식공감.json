@@ -1,0 +1,52 @@
+{
+  "title": "국밥 한 그릇의 위력",
+  "cover": {
+    "image": null,
+    "lines": [
+      "국밥 한 그릇",
+      "<r>이면 충분하다</r>"
+    ],
+    "badge": null,
+    "photo_query": "korean soup rice bowl comfort food"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 요즘 스트레스 받고 혼자인 저녁. 뭐 먹을까 하다가 국밥 생각이 난다 아이가.",
+      "subtitle": "그 순간 세상이 변한다",
+      "photo_query": "stressed person thinking food"
+    },
+    {
+      "image": null,
+      "narration": "국밥 한 그릇 앞에 앉으면 진짜다. 밥도 푸석한 밥 아니고, 국물에 불은 밥이다. 그 밥 한 숟가락에 국물도 묻어나고.",
+      "subtitle": "밥부터가 다르다",
+      "photo_query": "korean gukbap rice soup steaming bowl"
+    },
+    {
+      "image": null,
+      "narration": "국물은 깊고 짠맛도 있고, 고기도 있고. 이 정도면 뭐하러 비싼 거 사 먹냐 이거지.",
+      "subtitle": "이 가성비면 대박",
+      "photo_query": "rich broth beef soup comfort meal"
+    },
+    {
+      "image": null,
+      "narration": "한 숟가락, 또 한 숟가락. 벌써 절반이다. 이 순간만큼은 정신도 들고, 마음도 따뜻해진다.",
+      "subtitle": "국밥의 마법이다",
+      "photo_query": "eating soup bowl peaceful moment"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우 해봐! 우리 또 만나자.",
+      "subtitle": "팔로우 고마워",
+      "photo_query": "korean restaurant interior cozy"
+    }
+  ],
+  "meta": {
+    "format": "음식공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T02:20:01.544299+00:00"
+  }
+}

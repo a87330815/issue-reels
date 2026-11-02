@@ -1,0 +1,52 @@
+{
+  "title": "서울 최신 아파트 실거래 - 마포푸르지오더센트럴 7.5억",
+  "cover": {
+    "image": null,
+    "lines": [
+      "신축 40㎡",
+      "<r>7.5억</r>",
+      "이게 시세다"
+    ],
+    "badge": null,
+    "photo_query": "modern apartment building lobby Seoul 2023"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 마포 아현동 신축 아파트. 40제곱미터 단위, 요즘 시세가 7억 5천만원이다.",
+      "subtitle": "40㎡ 7.5억원 실거래",
+      "photo_query": "apartment contract signing documents"
+    },
+    {
+      "image": null,
+      "narration": "마포푸르지오더센트럴. 2023년 지은 지 3년 미만 신축이다. 방금 10월에 나온 최신 거래다.",
+      "subtitle": "2023년 준공 최신 신축",
+      "photo_query": "new apartment building construction completion korea"
+    },
+    {
+      "image": null,
+      "narration": "서울 강남권 아니다. 마포다. 신촌·홍대 권역이다. 이 가격대면 알아두고 들어가야 된다.",
+      "subtitle": "마포 아현동 위치",
+      "photo_query": "Mapo district Seoul buildings street"
+    },
+    {
+      "image": null,
+      "narration": "소형 신축이 이 정도 가격이면, 지금 보유 중인 집 팔 타이밍인지 사기 타이밍인지 판단해야 한다. 데이터로 판단하는 게 중요하다.",
+      "subtitle": "최신 거래가 기준",
+      "photo_query": "family discussing real estate investment documents"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        7.5
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-02T02:19:03.677147+00:00"
+  }
+}

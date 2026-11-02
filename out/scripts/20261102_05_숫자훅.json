@@ -1,0 +1,53 @@
+{
+  "title": "스테프 커리 결장, 워리어스 vs 클리퍼스 경기력 좌우",
+  "cover": {
+    "image": null,
+    "lines": [
+      "커리 없인",
+      "<r>다르다</r>",
+      "워리어스"
+    ],
+    "badge": null,
+    "photo_query": "Steph Curry basketball Golden State Warriors"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 스테프 커리랑 드레이몬드 그린이 빠진다고? 워리어스 팬이라면 이 경기 봐야 한다.",
+      "subtitle": "커리·그린 결장 발표",
+      "photo_query": "basketball game injury report"
+    },
+    {
+      "image": null,
+      "narration": "커리 없는 워리어스는 다른 팀이다. 지난 시즌만 봐도 알 수 있다. 스코어링 리더가 빠진다 이거.",
+      "subtitle": "득점 핵심 선수 부재",
+      "photo_query": "basketball player shooting three pointer"
+    },
+    {
+      "image": null,
+      "narration": "클리퍼스는 지금이 기회다. 상대 최고의 플레이메이커가 없는 상황. 이번 경기 결과가 중요하다.",
+      "subtitle": "LA 클리퍼스 상승 기회",
+      "photo_query": "LA Clippers basketball team game"
+    },
+    {
+      "image": null,
+      "narration": "내일 경기 치열할 거다. 팬들은 관심 가져야 한다. 누가 주도권을 잡을지 봐야지.",
+      "subtitle": "경기력 판가름 나날",
+      "photo_query": "basketball arena crowd fans watching"
+    },
+    {
+      "image": null,
+      "narration": "이 경기 결과 꼭 봐라. 시즌 흐름을 바꿀 수 있다. 팔로우하고 다음 화도 봐라.",
+      "subtitle": "시즌 승패 좌우",
+      "photo_query": "basketball scoreboard final score"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-02T02:19:30.248802+00:00"
+  }
+}

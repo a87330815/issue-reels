@@ -1,0 +1,54 @@
+{
+  "title": "비닐봉지 한 손 묶기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "비닐봉지",
+      "<r>한 손으로</r>",
+      "묶는 법 알면",
+      "인생 달라진다"
+    ],
+    "badge": null,
+    "photo_query": "plastic bag knot tie"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "지금까지 비닐봉지를 묶을 때 두 손으로 꼬고 꼬고 또 꼬잖아. 근데 이게 진짜 비효율적이라고 카더라.",
+      "subtitle": "두 손으로 묶는 게 표준이라고?",
+      "photo_query": "hands tying plastic bag knot"
+    },
+    {
+      "image": null,
+      "narration": "한 손 엄지손가락이랑 검지로 봉지 귀를 잡고, 손목만 톡 꺾어주면 돼. 딱 한 번에 묶인다니까.",
+      "subtitle": "손목 한 번의 마법",
+      "photo_query": "hand wrist twist technique"
+    },
+    {
+      "image": null,
+      "narration": "처음엔 어색하지만 딱 3번 해보면 감각이 생겨. 그 다음부턴 신세계다 진짜.",
+      "subtitle": "3번만 해도 손에 든다",
+      "photo_query": "plastic bag successfully tied"
+    },
+    {
+      "image": null,
+      "narration": "이제 장보고 오면서 한 손으로 조물조물 묶고 다닐 수 있어. 마치 프로처럼.",
+      "subtitle": "일상이 업그레이드됨",
+      "photo_query": "woman grocery bags walking street"
+    },
+    {
+      "image": null,
+      "narration": "이런 꿀팁들 더 보고 싶으면 팔로우해 줄래? 우리 같이 인생 쉽게 살자니까.",
+      "subtitle": "팔로우 고마워!",
+      "photo_query": "subscribe follow button phone"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T02:20:29.034315+00:00"
+  }
+}
