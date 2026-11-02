@@ -1,0 +1,53 @@
+{
+  "title": "미용실 '조금만' 의 정의",
+  "cover": {
+    "image": null,
+    "lines": [
+      "'조금만",
+      "<r>다듬어주세요'</r>",
+      "하고 나온 결과"
+    ],
+    "badge": null,
+    "photo_query": "haircut salon mirror before after"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "미용실 들어가 거울 보면서 '어... 조금만 다듬어주세요' 이러지.",
+      "subtitle": "조금만 다듬어주세요",
+      "photo_query": "woman salon chair mirror consultation"
+    },
+    {
+      "image": null,
+      "narration": "그럼 디자이너는 '네, 편하게 앉아 계세요'라고 웃으면서 가위질 시작한다.",
+      "subtitle": "편한 마음으로 시작",
+      "photo_query": "hairdresser scissors cutting hair professional"
+    },
+    {
+      "image": null,
+      "narration": "30분 뒤 거울 봤는데... '이거 조금만이야?' 하면서 머리 휘휘 흔들게 되는 거 있지.",
+      "subtitle": "조금만이 아니었네",
+      "photo_query": "woman shocked surprised hair mirror reaction"
+    },
+    {
+      "image": null,
+      "narration": "사실 디자이너 입장에선 '조금'이 정말 '조금'인 거다. 우리가 생각하는 조금이랑 다르다고 카더라.",
+      "subtitle": "그들의 기준은 다르다",
+      "photo_query": "hairdresser professional scissors styling detail"
+    },
+    {
+      "image": null,
+      "narration": "그래서 다음번엔 구체적으로 '정말 살짝만 뒤로 말아주세요' 이러는데, 또 깜짝 놀라게 된다 거야.",
+      "subtitle": "매번 같은 반복",
+      "photo_query": "woman confused disappointed haircut feeling regret"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T10:44:14.260779+00:00"
+  }
+}

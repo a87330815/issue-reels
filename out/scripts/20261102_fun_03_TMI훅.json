@@ -1,0 +1,53 @@
+{
+  "title": "수박 고르기의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "수박 두드려서",
+      "<y>고르는 건</y>",
+      "다 같은 소리"
+    ],
+    "badge": null,
+    "photo_query": "watermelon tapping selecting market"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "마트에서 수박을 고르는데, 옆 아저씨랑 같이 두드려본다 이거야. 통통통 소리를 듣고 \"어 이건 덜 익은 거고\" \"이건 되게 잘 익은 거 같은데\" 하면서.",
+      "subtitle": "전문가처럼 고르는 척",
+      "photo_query": "man selecting watermelon market tapping"
+    },
+    {
+      "image": null,
+      "narration": "근데 생각해보니 손가락 크기도 다르고, 누르는 힘도 다르고, 수박 껍질 두께도 제각각이고... 아무리 들어도 전부 \"통\" 또는 \"둥\" 아닌가? 야야야 진짜 같은 소리다.",
+      "subtitle": "사실 구분 불가능",
+      "photo_query": "close up watermelon rind texture"
+    },
+    {
+      "image": null,
+      "narration": "알고 보니 수박 고르기는 소리로 판단하는 게 아니라 무게감, 색깔, 쨕진 부분 모양을 봐야 한다더라. 그럼 우리가 지금까지 뭐 한 거냐 이거지.",
+      "subtitle": "소리는 참고사항 아님",
+      "photo_query": "watermelon weight color spots yellow"
+    },
+    {
+      "image": null,
+      "narration": "그래도 마트 가면 계속 수박을 두드린다. 왜냐하면 두드리는 내 모습이 마치 \"난 과일 잘 고르는 사람\"처럼 보이기 때문이다. 그게 최고의 과일이라고 생각한다.",
+      "subtitle": "착각의 즐거움",
+      "photo_query": "confident woman selecting fruit market"
+    },
+    {
+      "image": null,
+      "narration": "이런 공감 더 보고 싶으면 팔로우 해봐. 쫌봐봐 채널에서 일상의 진실을 폭로한다니까.",
+      "subtitle": "팔로우해서 더 보기",
+      "photo_query": "follow subscribe button notification"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T10:44:28.492983+00:00"
+  }
+}

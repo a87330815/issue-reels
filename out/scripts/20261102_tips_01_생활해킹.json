@@ -1,45 +1,45 @@
 {
-  "title": "누렇게 변한 흰 운동화 살리는 법",
+  "title": "스마트폰 배터리 수명 2배 늘리는 충전 습관 3가지",
   "cover": {
     "image": null,
     "lines": [
-      "누렇던 흰신발이",
-      "<r>30분 만에</r>",
-      "새것처럼"
+      "배터리 수명",
+      "<r>2배 늘리는</r>",
+      "충전 습관 3가지"
     ],
     "badge": null,
-    "photo_query": "white sneaker yellowed dirty"
+    "photo_query": "smartphone charging cable"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "운동화가 누렇게 변했지? 버리지 말고 이거 해봐. 집에 있는 재료 3가지면 된다니까.",
-      "subtitle": "흰 운동화 복원 프로젝트 시작",
-      "photo_query": "white shoes yellowing discolored"
+      "narration": "야야야, 스마트폰 배터리 자꾸 빨리 떨어지지? 대부분 충전 습관이 문제라니까. 오늘 알려드릴 3가지만 지키면 배터리 수명이 진짜 2배까지 늘어난다고.",
+      "subtitle": "배터리 수명 2배 늘리기",
+      "photo_query": "phone battery health settings"
     },
     {
       "image": null,
-      "narration": "베이킹소다 2큰술에 물 한 컵, 그리고 레몬즙 한 스푼을 섞어. 페이스트 같은 게 나온다. 이걸 왜 쓰냐면 베이킹소다가 산화된 때를 중화시켜주거든.",
-      "subtitle": "베이킹소다+물+레몬즙 섞기",
-      "photo_query": "baking soda paste mixture bowl"
+      "narration": "첫 번째, 배터리가 20% 이하로 떨어질 때까지 기다렸다가 충전하지 마. 30~80% 범위에서만 자주 충전하는 거다. 이렇게 하면 화학 반응 손상이 적어서 배터리가 더 오래간다.",
+      "subtitle": "1️⃣ 30~80% 범위에서만 충전",
+      "photo_query": "battery percentage indicator"
     },
     {
       "image": null,
-      "narration": "오래된 칫솔로 신발 전체에 골고루 문질러. 특히 누렇게 변한 부분을 집중 공략해야 한다.",
-      "subtitle": "페이스트 칫솔로 문질러주기",
-      "photo_query": "cleaning white shoe toothbrush"
+      "narration": "두 번째, 밤새 충전하지 말어. 100%가 된 다음에도 계속 전기가 흘러서 배터리가 손상된다. 자기 전 1시간 정도만 충전하고 뽑아두는 게 낫다.",
+      "subtitle": "2️⃣ 100% 도달 후 뽑기",
+      "photo_query": "overnight phone charging"
     },
     {
       "image": null,
-      "narration": "그 다음 미온수로 헹굴고, 휴지로 톡톡 두드려 물기를 제거해. 자연건조 30분이면 끝이다.",
-      "subtitle": "미온수로 헹굴 후 자연건조",
-      "photo_query": "white sneaker rinsing water clean"
+      "narration": "세 번째, 급속 충전기 자주 쓰지 말아. 빨리 차긴 하는데 배터리한테 열 스트레스를 줘서 화학 반응을 빨리 죽인다. 여유 있을 땐 일반 충전기로 천천히.",
+      "subtitle": "3️⃣ 급속 충전기 자제하기",
+      "photo_query": "fast charger vs regular charger"
     },
     {
       "image": null,
-      "narration": "야야야! 이 정도면 새 신발 사는 거랑 비교 안 되게 깨끗해진다. 신발 관리 꿀팁 더 알고 싶으면 팔로우해!",
-      "subtitle": "흰색 복원 완성, 새것처럼",
-      "photo_query": "white sneaker clean restored bright"
+      "narration": "이 3가지 습관만 지키면 배터리 성능이 1년 후에도 80% 이상 유지된다니까, 꼭 해봐. 이런 꿀팁 더 보고 싶으면 팔로우해 둬.",
+      "subtitle": "1년 후에도 80% 유지",
+      "photo_query": "battery health percentage check"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T02:20:36.806847+00:00"
+    "generated_at": "2026-11-02T10:44:46.858691+00:00"
   }
 }

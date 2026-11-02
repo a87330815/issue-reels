@@ -1,44 +1,45 @@
 {
-  "title": "맛집 웨이팅의 진실",
+  "title": "맛집 줄 서서 후회하는 그 순간",
   "cover": {
     "image": null,
     "lines": [
-      "줄 서서 30분,",
-      "<r>후회하는 5분</r>"
+      "맛집 줄 섰는데",
+      "<r>이게 맞나</r>",
+      "싶은 거"
     ],
     "badge": null,
-    "photo_query": "queue waiting restaurant line"
+    "photo_query": "restaurant queue waiting line people"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "\"오 이 식당 진짜 핫하네. 줄이 길어.\" 웨이팅 하면서 기대감에 부풀어 있다.",
-      "subtitle": "기대 100%",
-      "photo_query": "people waiting line restaurant excited"
+      "narration": "오 이 집 진짜 유명하더라. 줄 설 가치가 있겠지. 스르르 줄을 선다.",
+      "subtitle": "기대감으로 가득 참",
+      "photo_query": "long queue restaurant entrance"
     },
     {
       "image": null,
-      "narration": "30분 기다렸다. 드디어 불린다. 자리에 앉는데... 왜 이렇게 좁냐고?",
-      "subtitle": "어? 뭔가 이상한데",
-      "photo_query": "crowded small restaurant table seated"
+      "narration": "어? 근데 왜 이렇게 오래 기다려? 벌써 20분. 아직도 2팀이 남았다고? 이게 맞나 싶기 시작한다.",
+      "subtitle": "점점 의심이 시작됨",
+      "photo_query": "tired person waiting bored phone"
     },
     {
       "image": null,
-      "narration": "음식 나왔다. 맛있긴 한데... 이 정도면 근처 맛집도 가능한데? 아 이게 맞나 싶은 그 느낌.",
-      "subtitle": "30분이 아까운 이유",
-      "photo_query": "plate food restaurant meal tasting"
+      "narration": "그리고 드디어 앉았는데. 밥이 나왔어. 어? 양이 좀... 음... 한 입 먹어본다.",
+      "subtitle": "기대와 현실의 격차",
+      "photo_query": "small portion bowl rice disappointment"
     },
     {
       "image": null,
-      "narration": "결국 깨닫게 된다. \"아, 우린 음식 맛보러 온 게 아니라 줄 서는 시간을 팔러 온 거네.\"",
-      "subtitle": "웨이팅이 디저트",
-      "photo_query": "disappointed diner meal experience"
+      "narration": "맛은 있는데 이거 위해 30분을 기다렸나? 아 맞다, 이게 바로 그 '맛집의 함정'이다.",
+      "subtitle": "깨달음의 순간",
+      "photo_query": "eating rice bowl unhappy facial expression"
     },
     {
       "image": null,
-      "narration": "그 다음주. 또 다른 맛집 웨이팅 줄에 서 있는 나. 학습능력 제로다 이거 봐봐.",
-      "subtitle": "이런 콘텐츠 더 보고 싶으면 팔로우 ↗",
-      "photo_query": "person waiting line thinking regret"
+      "narration": "이런 감정을 나만 느낀 거 아니겠지? 댓글에서 봐봐. 너도 이런 거 많지 않냐? 팔로우 고고.",
+      "subtitle": "공감 유도",
+      "photo_query": "phone scrolling comments social media"
     }
   ],
   "meta": {
@@ -47,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T02:20:22.246116+00:00"
+    "generated_at": "2026-11-02T10:44:34.714799+00:00"
   }
 }

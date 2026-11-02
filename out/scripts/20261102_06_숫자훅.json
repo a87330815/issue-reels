@@ -1,46 +1,39 @@
 {
-  "title": "영광군 영광사랑카드 혜택 확대",
+  "title": "육군 하사 사망 사건",
   "cover": {
     "image": null,
     "lines": [
-      "영광에서",
-      "밥 먹으면",
-      "<r>할인</r>",
-      "받는다"
+      "전방 부대에서",
+      "<r>하사 1명</r>",
+      "사망 사고 발생"
     ],
     "badge": null,
-    "photo_query": "korea local discount card payment"
+    "photo_query": "military barracks corridor empty"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 영광군에서 착한가격업소에서 밥 먹고 카드 쓸 때, 할인 받을 수 있게 한다.",
-      "subtitle": "영광사랑카드 혜택 확대",
-      "photo_query": "restaurant meal korea discount"
+      "narration": "이거 모르고 지나가면 손해다. 강원도 철원 전방 부대에서 하사 1명이 외상을 입고 사망했다. 지금 군 당국이 사고 경위를 조사 중이다.",
+      "subtitle": "육군 전방 부대 하사 사망",
+      "photo_query": "military uniform rank insignia"
     },
     {
       "image": null,
-      "narration": "영광사랑카드. 이게 뭐냐고? 지역에서 나눠주는 할인 카드다. 착한가격업소라는 게 있거든.",
-      "subtitle": "착한가격업소 이용 시",
-      "photo_query": "korea local business discount store"
+      "narration": "현재까지 구체적인 사망 원인이나 경위는 공개되지 않았다. 군 수사팀이 사건을 정밀 조사하고 있는 상황이다.",
+      "subtitle": "사고 경위 조사 진행 중",
+      "photo_query": "investigation military documents"
     },
     {
       "image": null,
-      "narration": "이번에 그 혜택을 더 늘렸다는 거다. 영광 사시는 분들, 확인해봐라.",
-      "subtitle": "놓치지 말고 챙기기",
-      "photo_query": "korea payment card benefits"
+      "narration": "이런 사건이 터지면 국방부가 정식 브리핑을 진행한다. 앞으로 추가 발표가 나올 거다.",
+      "subtitle": "추가 발표 예정",
+      "photo_query": "korean military headquarters building"
     },
     {
       "image": null,
-      "narration": "영광군민이거나 자주 가는 분이면, 이 카드 한 장이 생각보다 쏠쏠하다.",
-      "subtitle": "지역 주민 필수 카드",
-      "photo_query": "korea local community support card"
-    },
-    {
-      "image": null,
-      "narration": "더 자세한 혜택은 영광군청 홈페이지에서 확인하고, 저 팔로우 해라. 또 좋은 정보 가져올기다.",
-      "subtitle": "영광군청에서 확인하기",
-      "photo_query": "korea local government office"
+      "narration": "더 알아야 할 소식들이 계속 올라올 텐데. 우리 채널 팔로우해라. 놓칠 게 많다.",
+      "subtitle": "최신 소식 팔로우",
+      "photo_query": "news notification mobile phone screen"
     }
   ],
   "meta": {
@@ -49,6 +42,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-02T02:19:36.753391+00:00"
+    "generated_at": "2026-11-02T10:43:49.637700+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "스테프 커리 결장, 워리어스 vs 클리퍼스 경기력 좌우",
+  "title": "XRP 급락 속 자금 몰리는 이유",
   "cover": {
     "image": null,
     "lines": [
-      "커리 없인",
-      "<r>다르다</r>",
-      "워리어스"
+      "가격은 떨어지는데",
+      "<r>돈은 몰린다</r>",
+      "XRP 이게 뭐냐"
     ],
     "badge": null,
-    "photo_query": "Steph Curry basketball Golden State Warriors"
+    "photo_query": "cryptocurrency market chart candlestick"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 스테프 커리랑 드레이몬드 그린이 빠진다고? 워리어스 팬이라면 이 경기 봐야 한다.",
-      "subtitle": "커리·그린 결장 발표",
-      "photo_query": "basketball game injury report"
+      "narration": "이거 모르고 지나가면 손해다. XRP가 요즘 말이지. 가격은 떨어지는데 투자 자금이 자꾸 들어온다는 거야. 이게 뭘 의미하는지 알아야 한다.",
+      "subtitle": "가격 하락 중에 자금 유입",
+      "photo_query": "down arrow cryptocurrency price chart"
     },
     {
       "image": null,
-      "narration": "커리 없는 워리어스는 다른 팀이다. 지난 시즌만 봐도 알 수 있다. 스코어링 리더가 빠진다 이거.",
-      "subtitle": "득점 핵심 선수 부재",
-      "photo_query": "basketball player shooting three pointer"
+      "narration": "요즘 암호화폐 상품들, 특히 XRP 관련 ETF가 자금을 끌어모으고 있거든. 그게 뭐냐면. 가격이 싸질 때 기회라고 본 전문가들이 사들인다는 뜻이다.",
+      "subtitle": "ETF에 기관 자금 집중",
+      "photo_query": "ETF fund investment institutional money"
     },
     {
       "image": null,
-      "narration": "클리퍼스는 지금이 기회다. 상대 최고의 플레이메이커가 없는 상황. 이번 경기 결과가 중요하다.",
-      "subtitle": "LA 클리퍼스 상승 기회",
-      "photo_query": "LA Clippers basketball team game"
+      "narration": "프랭클린과 비트와이즈 같은 큰 회사들이 주도하고 있다. 이건 뭐다? 장기 전망을 믿는 거다. 단기 변동성은 무시하고.",
+      "subtitle": "Franklin, Bitwise 등 큰",
+      "photo_query": "investment company office building finance"
     },
     {
       "image": null,
-      "narration": "내일 경기 치열할 거다. 팬들은 관심 가져야 한다. 누가 주도권을 잡을지 봐야지.",
-      "subtitle": "경기력 판가름 나날",
-      "photo_query": "basketball arena crowd fans watching"
+      "narration": "즉 지금 이 상황을 어떻게 봐야 하냐면. 약세 속에서 강한 자들이 움직인다는 거야. 이건 시장의 신호다. 체크해 둬야 할 시점이다.",
+      "subtitle": "약세 속 기관 움직임 주목",
+      "photo_query": "investors meeting financial strategy analysis"
     },
     {
       "image": null,
-      "narration": "이 경기 결과 꼭 봐라. 시즌 흐름을 바꿀 수 있다. 팔로우하고 다음 화도 봐라.",
-      "subtitle": "시즌 승패 좌우",
-      "photo_query": "basketball scoreboard final score"
+      "narration": "암호화폐는 변수가 많으니까. 더 궁금하면 팔로우하고. 다음 트렌드 신호 놓치지 마라.",
+      "subtitle": "팔로우로 다음 신호 체크",
+      "photo_query": "digital trend analysis graph upward"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-02T02:19:30.248802+00:00"
+    "generated_at": "2026-11-02T10:43:44.274851+00:00"
   }
 }

@@ -1,39 +1,45 @@
 {
-  "title": "서울 최신 아파트 실거래 - 마포푸르지오더센트럴 7.5억",
+  "title": "마포푸르지오더센트럴 40㎡ 7.5억 거래",
   "cover": {
     "image": null,
     "lines": [
-      "신축 40㎡",
+      "40㎡에",
       "<r>7.5억</r>",
-      "이게 시세다"
+      "이게 정상가?"
     ],
     "badge": null,
-    "photo_query": "modern apartment building lobby Seoul 2023"
+    "photo_query": "small studio apartment floor plan"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 마포 아현동 신축 아파트. 40제곱미터 단위, 요즘 시세가 7억 5천만원이다.",
-      "subtitle": "40㎡ 7.5억원 실거래",
-      "photo_query": "apartment contract signing documents"
+      "narration": "이거 모르고 지나가면 손해다. 마포 아현동. 작은 집 한 채가 7억 5천에 거래됐다. 40제곱미터 남짓한데.",
+      "subtitle": "40㎡ 7.5억원 거래",
+      "photo_query": "seoul mapo district apartment buildings"
     },
     {
       "image": null,
-      "narration": "마포푸르지오더센트럴. 2023년 지은 지 3년 미만 신축이다. 방금 10월에 나온 최신 거래다.",
-      "subtitle": "2023년 준공 최신 신축",
-      "photo_query": "new apartment building construction completion korea"
+      "narration": "이건 뭐냐 하면. 올해 10월에 나온 실거래가다. 22년 신축 건물이고 3층이다.",
+      "subtitle": "2023년 신축, 3층",
+      "photo_query": "modern apartment complex glass facade"
     },
     {
       "image": null,
-      "narration": "서울 강남권 아니다. 마포다. 신촌·홍대 권역이다. 이 가격대면 알아두고 들어가야 된다.",
-      "subtitle": "마포 아현동 위치",
-      "photo_query": "Mapo district Seoul buildings street"
+      "narration": "평당 가격으로 따져면 1억 8천만원. 서울 평균보다 훨씬 높다. 왜 이럴까.",
+      "subtitle": "평당 1.8억원",
+      "photo_query": "real estate market graph increase"
     },
     {
       "image": null,
-      "narration": "소형 신축이 이 정도 가격이면, 지금 보유 중인 집 팔 타이밍인지 사기 타이밍인지 판단해야 한다. 데이터로 판단하는 게 중요하다.",
-      "subtitle": "최신 거래가 기준",
-      "photo_query": "family discussing real estate investment documents"
+      "narration": "마포는 홍대, 신촌 가까우니까 작은 집도 프리미엄이 붙는다 아이가. 신축에 입지까지 좋으면 이 정도 나온다.",
+      "subtitle": "입지 프리미엄 반영",
+      "photo_query": "hongdae sinchon seoul neighborhoods"
+    },
+    {
+      "image": null,
+      "narration": "당신도 이 지역에 눈여겨보고 있다면? 지금 확인해야 할 때다. 쫌봐봐 더 구독해라.",
+      "subtitle": "최신 실거래가 매일 업데이트",
+      "photo_query": "person using smartphone real estate app"
     }
   ],
   "meta": {
@@ -47,6 +53,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-02T02:19:03.677147+00:00"
+    "generated_at": "2026-11-02T10:43:20.499493+00:00"
   }
 }

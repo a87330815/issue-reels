@@ -1,45 +1,39 @@
 {
-  "title": "삼성증권 IPO 주관 1위",
+  "title": "현대차 생산라인 또 멈춤…G80 신차 투입 갈등",
   "cover": {
     "image": null,
     "lines": [
-      "올해 IPO",
-      "<r>1위</r>",
-      "삼성증권이다"
+      "또 멈췄다",
+      "현대차 생산라인",
+      "<r>인력 싸움</r>"
     ],
     "badge": null,
-    "photo_query": "stock market trading floor screens"
+    "photo_query": "car manufacturing assembly line production"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 올해 기업공개. 누가 주도하는지 알아야 투자처 고를 때 참고가 된다.",
-      "subtitle": "IPO 주관사 선택이 중요한 이유",
-      "photo_query": "business meeting corporate office"
+      "narration": "이거 모르고 지나가면 손해다. 현대차 생산라인이 또 멈췄다. G80 신차 투입하면서 인력 배치 갖고 노사가 충돌했거든.",
+      "subtitle": "현대차 생산라인 정지",
+      "photo_query": "factory production line workers assembly"
     },
     {
       "image": null,
-      "narration": "삼성증권이 올해 상반기부터 지금까지 IPO 주관에서 1위다. 다른 증권사들을 따돌렸다.",
-      "subtitle": "3분기 누적 기준 선두",
-      "photo_query": "first place trophy podium"
+      "narration": "자동차 만드는 회사랑 일하는 사람들이 자꾸만 싸우면 뭐가 생기는가. 생산 차질. 납기 지연. 결국 소비자가 맞이한다.",
+      "subtitle": "노사 충돌 = 생산 지연",
+      "photo_query": "delayed delivery truck waiting schedule"
     },
     {
       "image": null,
-      "narration": "주관사가 우수한 기업을 가려내는 능력이 있으면, 그들이 이끌어낸 IPO는 상장 후 성과가 다르다고 본다.",
-      "subtitle": "주관사의 안목이 중요",
-      "photo_query": "financial analyst reviewing documents"
+      "narration": "새 모델 나올 때마다 이 문제가 반복된다. 인력을 어떻게 배치할지 둘이 합의를 못 하니까.",
+      "subtitle": "반복되는 갈등 구조",
+      "photo_query": "negotiation discussion meeting conflict resolution"
     },
     {
       "image": null,
-      "narration": "투자할 때 어느 회사가 주관했는지 한 번 보고 결정하면, 성공 확률이 높아진다.",
-      "subtitle": "IPO 선택의 기준",
-      "photo_query": "investor checking phone stocks"
-    },
-    {
-      "image": null,
-      "narration": "삼성증권이 올해를 주도하는 만큼, 이들이 띄워주는 기업들은 눈 여겨봐야 한다. 팔로우 해두고 계속 확인해봐라.",
-      "subtitle": "주관사의 선택 집중하기",
-      "photo_query": "smartphone financial app notification"
+      "narration": "신차 구매 예정이라면 이런 이슈 잘 알아둬라. 납기가 밀릴 수도 있다는 뜻이니까.",
+      "subtitle": "신차 구매 전 확인",
+      "photo_query": "new car dealership showroom purchase"
     }
   ],
   "meta": {
@@ -48,6 +42,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-02T02:19:54.952583+00:00"
+    "generated_at": "2026-11-02T10:44:08.684966+00:00"
   }
 }

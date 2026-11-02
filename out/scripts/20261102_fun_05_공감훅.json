@@ -1,0 +1,46 @@
+{
+  "title": "주차장의 악순환",
+  "cover": {
+    "image": null,
+    "lines": [
+      "좋은 자리 찾다가",
+      "<r>결국 제일 멀리</r>"
+    ],
+    "badge": null,
+    "photo_query": "parking lot empty space car"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "마트 입구 근처 자리 있나 싶어서 맴돈다. 어? 저기 비었나? 아니다 경찰차다.",
+      "subtitle": "좋은 자리의 환상",
+      "photo_query": "parking lot searching car"
+    },
+    {
+      "image": null,
+      "narration": "한 바퀴 더 돌아본다. 좀 멀어도 괜찮겠지 싶으면서. 그런데 그 자리도 없다. 또 없다.",
+      "subtitle": "욕심쟁이 드라이버",
+      "photo_query": "driving car parking lot circles"
+    },
+    {
+      "image": null,
+      "narration": "결국 지하 3층까지 내려온다. 여기 있네! 세운다. 마트 들어가는데 엘리베이터, 에스컬레이터... 이미 피곤하다.",
+      "subtitle": "원점 복귀",
+      "photo_query": "basement parking level underground"
+    },
+    {
+      "image": null,
+      "narration": "다음엔 처음부터 여기 세우지 뭐 하면서 나간다. 하지만 다음 주에는 또 똑같이 한다.",
+      "subtitle": "반복되는 악순환",
+      "photo_query": "tired exhausted person walking tired"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-02T10:44:40.080375+00:00"
+  }
+}

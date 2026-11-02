@@ -1,45 +1,39 @@
 {
-  "title": "아현동 아파트 거래 1건 분석",
+  "title": "아현동 아파트 거래 1건",
   "cover": {
     "image": null,
     "lines": [
       "아현동",
-      "<r>이달 딱 1건</r>",
-      "거래 떴다"
+      "<r>7억5천</r>",
+      "단 1건뿐입니다"
     ],
-    "badge": "2026.10",
-    "photo_query": "seoul mapo district apartment building"
+    "badge": null,
+    "photo_query": "mapo seoul apartment building modern"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 아현동 아파트 시장이 거의 얼어붙었다. 이달 딱 1건만 거래됐다.",
-      "subtitle": "아현동 10월 아파트 거래",
-      "photo_query": "apartment complex mapo district seoul"
+      "narration": "이거 모르고 지나가면 손해다. 아현동 아파트 시장. 요즘 거의 죽어있다.",
+      "subtitle": "아현동 10월 거래 1건",
+      "photo_query": "empty apartment hallway korean building"
     },
     {
       "image": null,
-      "narration": "마포푸르지오더센트럴. 3층, 40제곱미터. 7억5천만원에 판 건데. 이거 신축 아파트다. 2023년 지어졌거든.",
-      "subtitle": "신축 단지도 움직임 거의 없다",
-      "photo_query": "new apartment building interior modern"
+      "narration": "마포푸르지오더센트럴. 40제곱미터. 3층. 7억5천에 나간 거 봤다.",
+      "subtitle": "7억5천만원에 거래",
+      "photo_query": "luxury apartment interior living room korea"
     },
     {
       "image": null,
-      "narration": "거래가 없다는 건 뭐냐. 시세를 찾기 어렵다는 뜻이다. 내 집 가격이 뭔지 모르고 산다는 거다.",
-      "subtitle": "거래 정보 부족 = 시세 파악 어려움",
-      "photo_query": "real estate price chart analysis"
+      "narration": "2023년 신축인데 거래는 단 1건이다. 시장이 얼어붙었다는 거지.",
+      "subtitle": "신축 아파트도 거래 부진",
+      "photo_query": "apartment sales office desk agent"
     },
     {
       "image": null,
-      "narration": "아현동 아파트 사고팔 생각 있으면. 지금이 정보 모으기 좋은 타이밍이다. 나중에는 더 돈 들인다.",
-      "subtitle": "지금부터 시세 정보 체크해라",
-      "photo_query": "real estate agent consultation meeting"
-    },
-    {
-      "image": null,
-      "narration": "더 자세한 지역별 거래 분석은 팔로우하고 확인해라. 쫌봐봐가 계속 업뎃한다.",
-      "subtitle": "매달 업데이트되는 거래 정보",
-      "photo_query": "smartphone real estate app notification"
+      "narration": "아현동에서 뭐 찾는다? 이거 봐야 한다. 거래 트렌드 알아야 한다.",
+      "subtitle": "지역 부동산 정보 확인 필수",
+      "photo_query": "real estate market chart analysis graph"
     }
   ],
   "meta": {
@@ -53,6 +47,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-02T02:19:10.938212+00:00"
+    "generated_at": "2026-11-02T10:43:24.773112+00:00"
   }
 }

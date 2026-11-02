@@ -1,36 +1,53 @@
 {
-  "title": "정의선",
+  "title": "이미숙 주식 손실",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "방금 나온",
-      "<r>정의선</r>",
-      "실화입니다"
+      "연예인도",
+      "<r>수억</r>",
+      "날릴 수 있다"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "stock market chart decline red"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. '정의선' 관련 트렌드 — 174만대 테슬라 잡는다…현대차·GM, &apos;2028년 자율주행 대전&apos;. 수치로 확인해보자.",
-      "subtitle": "'정의선' 관련 트렌드 — 174만대"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 연예인들 주식으로 자산을 불리는데, 한 번 잘못 들어가면 어마어마한 손실을 본다.",
+      "subtitle": "연예인도 주식 손실",
+      "photo_query": "investor watching stock market phone"
     },
     {
       "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "이미숙 배우도 주식에 투자했다 상당한 손실을 입었다고 알려졌다. 집을 담보로 투자하는 일도 있다는데, 이정도면 위험한 거다.",
+      "subtitle": "개인 투자 위험성",
+      "photo_query": "house with financial documents"
+    },
+    {
+      "image": null,
+      "narration": "주식은 수익도 크지만 손실도 크다. 특히 대출을 받아서 투자하면 빚까지 질 수 있다.",
+      "subtitle": "빚까지 질 수 있어",
+      "photo_query": "person stressed financial documents debt"
+    },
+    {
+      "image": null,
+      "narration": "돈을 벌려다 오히려 큰 자산을 날리는 경우들이 많다. 투자는 신중해야 한다.",
+      "subtitle": "투자는 신중하게",
+      "photo_query": "financial advisor consultation meeting"
+    },
+    {
+      "image": null,
+      "narration": "저 사람들 돈도 많은데 이 지경이다. 우리는 더 조심해야 하지 않겠냐. 팔로우해서 금융 상식 챙겨라.",
+      "subtitle": "금융 지식이 필수다",
+      "photo_query": "person learning finance education online"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "",
+    "source": "google_trends",
     "category": "당일 화제 이슈",
-    "attribution": "",
+    "attribution": "Google Trends",
     "chart": null,
-    "tone": "경상도",
-    "generated_at": "2026-11-02T02:19:17.836427+00:00"
+    "generated_at": "2026-11-02T10:43:31.350433+00:00"
   }
 }

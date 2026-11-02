@@ -1,53 +1,48 @@
 {
-  "title": "한남더힐 경매, 190억 대출금 못 갚으면 이렇게 된다",
+  "title": "64세 김장훈의 국민연금 예상액",
   "cover": {
     "image": null,
     "lines": [
-      "<r>190억</r>",
-      "대출금",
-      "경매 간다"
+      "64세에",
+      "국민연금",
+      "<r>이 정도</r>",
+      "받는다고?"
     ],
     "badge": null,
-    "photo_query": "luxury apartment auction hammer gavel"
+    "photo_query": "korean man surprised shocked expression"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서울 강남 한남더힐. 최고급 아파트인데 경매에 넘어갔다. 이거 뭔 일일까.",
-      "subtitle": "한남더힐 경매 진행",
-      "photo_query": "hannam the hill luxury apartment building"
+      "narration": "이거 모르고 지나가면 손해다. 연예인 김장훈이 국민연금 예상액 들었을 때 깜짝 놀랐다고 한다. 자기가 생각한 것보다 훨씬 많다는 거다.",
+      "subtitle": "유명인도 모를 만큼 국민연금",
+      "photo_query": "korean pension statement document"
     },
     {
       "image": null,
-      "narration": "원인은 대출금이다. 190억원대 대출을 받았는데 돈을 못 갚으니까 은행에서 경매를 신청한 거다.",
-      "subtitle": "대출금 미상환으로 경매",
-      "photo_query": "bank debt document loan papers"
+      "narration": "생각해봐라. 자기 돈을 30년 40년 넣었는데 정작 얼마 나올지 모르는 경우 많다. 그게 국민연금이다.",
+      "subtitle": "평생 납부해도 몰라",
+      "photo_query": "person checking financial documents calculator"
     },
     {
       "image": null,
-      "narration": "아무리 비싼 집이라도 대출금을 못 갚으면 남 것이 된다는 거다. 재산이 아니라 빚이 먼저다.",
-      "subtitle": "빚이 재산보다 우선",
-      "photo_query": "real estate auction legal court"
+      "narration": "야야야. 지금이 아니면 언제 확인하냐? 국민연금공단 홈페이지 들어가서 '예상수령액' 딱 한 번만 눌러봐라. 깜짝 놀랄기다.",
+      "subtitle": "예상수령액 한 번에 확인",
+      "photo_query": "computer screen typing search"
     },
     {
       "image": null,
-      "narration": "이 사건을 보면서 명심해야 할 게 있다. 대출 받을 때는 갚을 수 있을 때까지만 빌려라.",
-      "subtitle": "대출 위험 성공 사례",
-      "photo_query": "person reading loan contract carefully"
-    },
-    {
-      "image": null,
-      "narration": "더 자세한 부동산 현황을 알고 싶으면 팔로우해라. 쫌봐봐가 계속 터트린다.",
-      "subtitle": "팔로우 하고 따라가기",
-      "photo_query": "mobile phone social media follow button"
+      "narration": "너도 모르는 너의 연금. 팔로우하면 매달 알려줄게. 진짜다.",
+      "subtitle": "쫌봐봐 팔로우 필수",
+      "photo_query": "mobile phone notification bell icon"
     }
   ],
   "meta": {
     "format": "숫자훅",
     "source": "google_trends",
-    "category": "경제·부동산",
+    "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-02T02:19:43.549860+00:00"
+    "generated_at": "2026-11-02T10:43:55.846953+00:00"
   }
 }
