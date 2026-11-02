@@ -74,18 +74,18 @@ def scrub(text):
     return text.replace(TOKEN, "***") if TOKEN else text
 
 
-def api(method, path, **params):
-    """Graph API 호출. 토큰은 헤더로 보낸다 (URL에 실으면 로그에 남는다)."""
+def api(method, path, _retry=0, **params):
+    """Graph API 호출. 토큰은 파라미터로 보낸다."""
     import requests
 
     url = f"{BASE}/{path.lstrip('/')}"
-    headers = {"Authorization": f"Bearer {TOKEN}"}
+    params["access_token"] = TOKEN
 
     try:
         if method == "GET":
-            r = requests.get(url, params=params, headers=headers, timeout=30)
+            r = requests.get(url, params=params, timeout=30)
         else:
-            r = requests.post(url, data=params, headers=headers, timeout=60)
+            r = requests.post(url, data=params, timeout=60)
     except Exception as e:
         raise RuntimeError(f"{type(e).__name__}: {scrub(str(e))}") from None
 
@@ -96,10 +96,16 @@ def api(method, path, **params):
 
     if "error" in body:
         err = body["error"]
-        raise RuntimeError(
-            f"[{err.get('code')}/{err.get('error_subcode','-')}] "
-            f"{scrub(err.get('message', ''))}"
-        )
+        code = err.get("code")
+        subcode = err.get("error_subcode", "-")
+        msg = scrub(err.get("message", ""))
+        # 플랫폼 내부 에러(-1)이면 재시도
+        if code == -1 and _retry < 3:
+            wait = 30 * (_retry + 1)
+            print(f"    ⚠ 플랫폼 에러 (시도 {_retry+1}/3), {wait}초 후 재시도...")
+            time.sleep(wait)
+            return api(method, path, _retry=_retry + 1, **{k: v for k, v in params.items() if k != "access_token"})
+        raise RuntimeError(f"[{code}/{subcode}] {msg}")
     return body
 
 
@@ -170,7 +176,8 @@ def create_container(video_url, caption=None, cover_url=None, share_to_feed=True
         params["caption"] = caption
     if cover_url:
         params["cover_url"] = cover_url
-    params["share_to_feed"] = "true" if share_to_feed else "false"
+    if share_to_feed:
+        params["share_to_feed"] = "true"
 
     res = api("POST", f"{IG_ID}/media", **params)
     return res["id"]
