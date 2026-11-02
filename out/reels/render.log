@@ -1,22 +1,20 @@
-run 41374475617 2026-11-02T01:53:51Z
+run 41396711996 2026-11-02T05:55:11Z
 
 === 20261024_05_숫자훅 ===
   [cover] 'chelsea vs' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''chelsea vs spurs' 관련' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
@@ -34,14 +32,14 @@ run 41374475617 2026-11-02T01:53:51Z
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/3] [EL·발랄녀] 1.1초  chelsea vs...
-  TTS [2/3] [EL·발랄녀] 17.3초  이거 모르고 지나가면 손해다. 'chelsea vs...
-  TTS [3/3] [EL·발랄녀] 4.0초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
+  TTS [1/3] [EL·발랄녀] 1.4초  chelsea vs...
+  TTS [2/3] [EL·발랄녀] 15.3초  이거 모르고 지나가면 손해다. 'chelsea vs...
+  TTS [3/3] [EL·발랄녀] 4.1초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
 
 2) 영상 합성
   세그먼트 [1/10] 3.0초
-  세그먼트 [2/10] 18.1초
-  세그먼트 [3/10] 4.8초
+  세그먼트 [2/10] 16.1초
+  세그먼트 [3/10] 4.9초
   세그먼트 [4/10] 4.0초
   세그먼트 [5/10] 4.0초
   세그먼트 [6/10] 4.0초
@@ -51,13 +49,13 @@ run 41374475617 2026-11-02T01:53:51Z
   세그먼트 [10/10] 4.0초
 
   ✓ 릴스 완성: out/reels/20261024_05_숫자훅.mp4
-    길이: 50.4초  /  크기: 3.3MB
--rw-r--r-- 1 runner runner 3.4M Nov  2 01:54 out/reels/20261024_05_숫자훅.mp4
+    길이: 48.8초  /  크기: 2.9MB
+-rw-r--r-- 1 runner runner 2.9M Nov  2 05:56 out/reels/20261024_05_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=50.360272
+duration=48.760272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -66,7 +64,7 @@ duration=50.360272
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-02):
-  20261024_05_숫자훅.mp4  3.3MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-02/20261024_05.mp4
+  20261024_05_숫자훅.mp4  2.9MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-02/20261024_05.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -80,9 +78,9 @@ duration=50.360272
 ── 1/1  20261024_05_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-02/20261024_05.mp4
   캡션: chelsea vs
-  컨테이너: 17973654032973700
-      1초  IN_PROGRESS
-     33초  FINISHED
+  컨테이너: 17973703676973700
+      0초  IN_PROGRESS
+     54초  FINISHED
   [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
