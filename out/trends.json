@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-11-02T02:18:24.748893+00:00",
+  "collected_at": "2026-11-02T10:42:21.607869+00:00",
   "items": [
     {
-      "keyword": "정의선",
+      "keyword": "이미숙",
       "traffic": "200+",
-      "news_title": "174만대 테슬라 잡는다…현대차·GM, &apos;2028년 자율주행 대전&apos;",
+      "news_title": "&quot;집 다 날아갔다&quot;…이미숙, 주식 손실 얼마길래",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "3a7e795d31d87fc1"
+      "key": "91662138265961f8"
     },
     {
-      "keyword": "골든 스테이트 대 la 클리퍼스",
-      "traffic": "2000+",
-      "news_title": "Steph Curry, Draymond Green ruled out for front end of Warriors&apos; back-to-back",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "a74059d3f3677f68"
-    },
-    {
-      "keyword": "영광",
-      "traffic": "100+",
-      "news_title": "영광군, 착한가격업소 이용 시 영광사랑카드 혜택 확대",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ba0c9e096f74bdb6"
-    },
-    {
-      "keyword": "한남더힐 아파트",
+      "keyword": "xrp",
       "traffic": "1000+",
-      "news_title": "옥주현의 190억 한남더힐, 왜 경매에 넘어갔을까",
+      "news_title": "XRP ETF draws inflows despite sharp drop, led by Franklin and Bitwise",
       "snippet": "",
       "source_type": "google_trends",
-      "category": "경제·부동산",
-      "key": "643629404341c28f"
+      "category": "당일 화제 이슈",
+      "key": "8149429b939db286"
     },
     {
-      "keyword": "t 멤버십",
+      "keyword": "하사 사망",
+      "traffic": "500+",
+      "news_title": "[속보]육군 “강원도 철원 소재 전방 부대서 하사 1명 외상입고 사망”···사고 경위 조사 중",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "f297f9b71b60f651"
+    },
+    {
+      "keyword": "김장훈",
+      "traffic": "1000+",
+      "news_title": "&apos;64세&apos; 김장훈, 국민연금 예상액 듣고 깜짝 &quot;그렇게 많이 줘요?&quot;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "9ebf8ab43b7074e1"
+    },
+    {
+      "keyword": "신영우",
       "traffic": "200+",
-      "news_title": "늦가을의 특별한 즐거움, 11월 T 멤버십 혜택 총정리",
+      "news_title": "두산 최민석·NC 신영우, 팔꿈치 부상으로 APBC 대표팀 낙마",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "485781b1e8170394"
+      "key": "de61771cfe60ce19"
     },
     {
-      "keyword": "삼성증권",
-      "traffic": "100+",
-      "news_title": "삼성증권, 올해 IPO 주관 1위 노리나…3분기 누적 &apos;선두&apos; 올라",
+      "keyword": "현대 제네시스",
+      "traffic": "1000+",
+      "news_title": "현대차 생산라인 또 멈췄다…G80 신차 투입 인력 놓고 노사 충돌 - 머니투데이",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "092760ce00d014ba"
+      "key": "fd1b96437d61128b"
     },
     {
-      "keyword": "november",
-      "traffic": "100+",
-      "news_title": "First week of November weather forecast",
+      "keyword": "원익홀딩스",
+      "traffic": "500+",
+      "news_title": "원익홀딩스, 삼성 P5 투자 가시화 &apos;직수혜&apos;…&apos;휴머노이드 핵심&apos; 로봇핸드 성장성까지 &apos;주목&apos;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "982aa9d151715b54"
+      "key": "100981ffdd0f6d8f"
     },
     {
-      "keyword": "한국투자증권",
-      "traffic": "100+",
-      "news_title": "한투증권, MTS 업데이트…&quot;연금자산 통합조회·관심종목 개편&quot;",
+      "keyword": "홋카이도 닛폰햄 파이터스",
+      "traffic": "500+",
+      "news_title": "[니혼햄] 만나미 츄세이가 구단 최초의 &apos;리더&apos; 취임 &quot;모두가 긍정적으로 야구할 수 있는 상황을 만드는 것이 나의 일&quot; 대화를 중요시 | 퍼시픽 리그.com | 프로야구",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "e0d5b0d362bda3eb"
+      "key": "0b0fe8769da75dcf"
     },
     {
-      "keyword": "교도소",
-      "traffic": "2000+",
-      "news_title": "[속보] “세금으로 먹고 자는데?”…교도소·구치소 수용자에 민생지원금 ‘73억’ 지급",
+      "keyword": "박수현",
+      "traffic": "200+",
+      "news_title": "아침 7시, 동네 빵집 갔더니 “어디서 많이 본 사람인데”···도지사가 ‘첫 손님’ 된 이유",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "42f795b98dca021b"
-    },
-    {
-      "keyword": "뉴잉글랜드 대 인터 마이애미",
-      "traffic": "2000+",
-      "news_title": "Inter Miami name XI for New England trip, final away game of regular season",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "a3e5733859ddb3dc"
+      "key": "bc64bf3a61aabd9e"
     }
   ]
 }
