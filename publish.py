@@ -57,7 +57,7 @@ load_env()
 IG_ID = os.environ.get("IG_USER_ID", "")
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
 HOST = os.environ.get("IG_API_HOST", "graph.instagram.com")
-VERSION = os.environ.get("IG_API_VERSION", "v26.0")
+VERSION = os.environ.get("IG_API_VERSION", "v21.0")
 BASE = f"https://{HOST}/{VERSION}"
 
 # 처리 대기 — 공식 권장은 1분 간격 5분 이내지만,
@@ -227,10 +227,41 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     if not ok:
         raise RuntimeError(f"컨테이너 처리 실패: {why}")
 
-    res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
-    media_id = res["id"]
-    print(f"  발행 완료: {media_id}")
-    return media_id
+    # media_publish — 실패 시 다른 API 버전/호스트 조합으로 fallback
+    global BASE
+    original_base = BASE
+    combos = [
+        (HOST, VERSION),
+        ("graph.facebook.com", "v21.0"),
+        ("graph.facebook.com", "v19.0"),
+        ("graph.instagram.com", "v21.0"),
+        ("graph.facebook.com", "v26.0"),
+    ]
+    # 현재 설정을 맨 앞으로, 중복 제거
+    seen = set()
+    ordered = []
+    for h, v in combos:
+        key = (h, v)
+        if key not in seen:
+            seen.add(key)
+            ordered.append(key)
+
+    last_err = None
+    for i, (h, v) in enumerate(ordered):
+        BASE = f"https://{h}/{v}"
+        try:
+            res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
+            media_id = res["id"]
+            print(f"  발행 완료: {media_id}  (via {h}/{v})")
+            return media_id
+        except RuntimeError as e:
+            last_err = e
+            if i < len(ordered) - 1:
+                print(f"    media_publish 실패 ({h}/{v}): {e}")
+                print(f"    다음 조합으로 시도...")
+                time.sleep(5)
+    BASE = original_base
+    raise last_err
 
 
 def insights(media_id):
