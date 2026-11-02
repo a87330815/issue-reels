@@ -1,86 +1,77 @@
 {
-  "collected_at": "2026-11-02T17:33:54.933579+00:00",
+  "collected_at": "2026-11-02T22:31:12.703568+00:00",
   "items": [
     {
-      "keyword": "아이 파크 몰 용산 점",
+      "keyword": "thứ hạng của pakhtakor gặp al-nassr",
+      "traffic": "200+",
+      "news_title": "Video bóng đá Pakhtakor - Al Nassr: Đội Ronaldo thắng &quot;hủy diệt&quot; (Cúp C1 châu Á)",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "d7a5edb1ded844dd"
+    },
+    {
+      "keyword": "쌍둥이",
+      "traffic": "100+",
+      "news_title": "1년 만에 또 쌍둥이, 아들 넷…‘10만분의 1 기적’ 30대 부부 3억 받는다",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "f6c8856c5984c13f"
+    },
+    {
+      "keyword": "팔란티어 주가",
+      "traffic": "100+",
+      "news_title": "팔란티어 분기매출 20억 달러 첫 돌파…전년 대비 2배로 성장",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "경제·부동산",
+      "key": "c84b74458241dc3d"
+    },
+    {
+      "keyword": "건강보험",
+      "traffic": "200+",
+      "news_title": "국민건강보험공단, 제23차 건강보험 국제연수과정 개최",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "생활·지원금·제도",
+      "key": "0daa9b7b761c16ec"
+    },
+    {
+      "keyword": "임영웅",
+      "traffic": "100+",
+      "news_title": "[영웅신문] 임영웅, &apos;미워요 RE&apos; 202만 뷰 돌파 …2016년 첫 설렘→2026년 깊어진 목소리 &apos;감동의 10년&apos;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "a69a118997c6229b"
+    },
+    {
+      "keyword": "테슬라 모델 y",
       "traffic": "1000+",
-      "news_title": "침낭까지 챙겨와 &apos;오픈런&apos;…전국서 덕후 몰리더니 &apos;대반전&apos;",
+      "news_title": "자율주행 성큼…국내서 허용되나?",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "a661ea4a63ab48a3"
+      "key": "b1c030f007832b89"
     },
     {
-      "keyword": "김지영",
+      "keyword": "트레이드",
       "traffic": "500+",
-      "news_title": "김지영, 故 최불암 조문 패션에 “예의 아니다” 시끌",
+      "news_title": "구단 사상 최고 연봉 주고 잡았는데 트레이드 시킨다고? &apos;WS 눈물&apos; TB의 진짜 속셈은",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "2746e093ab007cc1"
+      "key": "428749eefa96e387"
     },
     {
-      "keyword": "김태균",
-      "traffic": "500+",
-      "news_title": "김태균·오승환 합류한 APBC 대표팀…도쿄돔 응원 열기도 달군다",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "18f2a4ee4047cc71"
-    },
-    {
-      "keyword": "손정범",
-      "traffic": "100+",
-      "news_title": "FC서울 손정범 “이렇게 빨리 태극마크 달 줄 몰랐다”",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "e439f86fcfa05911"
-    },
-    {
-      "keyword": "알나스르",
-      "traffic": "100+",
-      "news_title": "AFC 챔피언스 리그 파흐타코르 타슈켄트 대 알나스르 생중계 링크",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "37414f1aa6fd0e19"
-    },
-    {
-      "keyword": "pakhtakor đấu với al-nassr",
-      "traffic": "100+",
-      "news_title": "Nhận định Pakhtakor vs Al Nassr: Ronaldo lại tỏa sáng?, 20h45 ngày 2/11/2026",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "b2e6b330b488aab2"
-    },
-    {
-      "keyword": "한국 버추얼 휴먼 산업 협회",
+      "keyword": "머니투데이",
       "traffic": "200+",
-      "news_title": "국내 첫 버추얼 전문 시상식 열린다…‘버추얼 아이콘 어워즈’ 내년 2월 개최",
+      "news_title": "",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "8e737657a9184e27"
-    },
-    {
-      "keyword": "오라클",
-      "traffic": "100+",
-      "news_title": "오라클, 증자·회사채로 200억달러 조달 추진…AI 인프라 투자 박차",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ced09c83bce5600c"
-    },
-    {
-      "keyword": "한국철강",
-      "traffic": "200+",
-      "news_title": "[특징주] 비상장 전환 위한 공개매수 소식에…한국철강 23% 급등",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "542b0c67661c56b3"
+      "key": "ea7c9bb4f83192bb"
     }
   ]
 }
