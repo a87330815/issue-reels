@@ -402,6 +402,18 @@ def main():
             print("[중단] 24시간 발행 한도 소진")
             return 1
 
+    # 디버그: 토큰 권한 확인
+    try:
+        import requests as _req
+        perm_url = f"https://graph.facebook.com/{VERSION}/me/permissions"
+        perm_r = _req.get(perm_url, headers={"Authorization": f"Bearer {TOKEN}"}, timeout=15)
+        perm_data = perm_r.json().get("data", [])
+        print(f"토큰 권한 ({len(perm_data)}개):")
+        for p in perm_data:
+            print(f"  {p.get('permission')}: {p.get('status')}")
+    except Exception as e:
+        print(f"[경고] 권한 조회 실패: {e}")
+
     jobs = jobs[:min(args.limit, left)]
     print(f"발행 대상: {len(jobs)}건\n")
 
