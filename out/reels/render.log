@@ -1,22 +1,20 @@
-run 41418941872 2026-11-02T09:18:06Z
+run 41420968879 2026-11-02T09:29:29Z
 
 === 20261024_09_숫자훅 ===
   [cover] '황희찬' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''황희찬' 관련 트렌드 —' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
@@ -35,23 +33,23 @@ run 41418941872 2026-11-02T09:18:06Z
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
   TTS [1/3] [EL·발랄녀] 0.9초  황희찬...
-  TTS [2/3] [EL·발랄녀] 11.7초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
-  TTS [3/3] [EL·발랄녀] 4.2초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
+  TTS [2/3] [EL·발랄녀] 12.3초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
+  TTS [3/3] [EL·발랄녀] 5.0초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
 
 2) 영상 합성
   세그먼트 [1/4] 3.0초
-  세그먼트 [2/4] 12.5초
-  세그먼트 [3/4] 5.0초
+  세그먼트 [2/4] 13.1초
+  세그먼트 [3/4] 5.8초
   세그먼트 [4/4] 4.0초
 
   ✓ 릴스 완성: out/reels/20261024_09_숫자훅.mp4
-    길이: 20.7초  /  크기: 1.4MB
--rw-r--r-- 1 runner runner 1.4M Nov  2 09:18 out/reels/20261024_09_숫자훅.mp4
+    길이: 22.1초  /  크기: 1.4MB
+-rw-r--r-- 1 runner runner 1.5M Nov  2 09:30 out/reels/20261024_09_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=20.680272
+duration=22.120272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -82,14 +80,14 @@ duration=20.680272
 ── 1/1  20261024_09_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-02/20261024_09.mp4
   캡션: 황희찬
-  컨테이너: 17973742118973700
+  컨테이너: 17973744914973700
       0초  IN_PROGRESS
-     43초  FINISHED
-  [DEBUG] 전체 에러 응답: {"error": {"message": "Fatal", "type": "OAuthException", "code": -1, "error_subcode": 2207085, "is_transient": false, "error_user_title": "일반 내부 오류", "error_user_msg": "내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요.", "fbtrace_id": "AKp5PI47ZmeEe-BJgLCrK39"}}
+     52초  FINISHED
+  [DEBUG] 전체 에러 응답: {"error": {"message": "Fatal", "type": "OAuthException", "code": -1, "error_subcode": 2207085, "is_transient": false, "error_user_title": "일반 내부 오류", "error_user_msg": "내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요.", "fbtrace_id": "ADKrvW3ef4JH2_CUZH_gTtD"}}
   [재시도 1/3] 2207085 내부 오류 — 60초 후 재시도
-  [DEBUG] 전체 에러 응답: {"error": {"message": "Fatal", "type": "OAuthException", "code": -1, "error_subcode": 2207085, "is_transient": false, "error_user_title": "일반 내부 오류", "error_user_msg": "내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요.", "fbtrace_id": "A8C386KDHtv_qCHY2akWeK8"}}
+  [DEBUG] 전체 에러 응답: {"error": {"message": "Fatal", "type": "OAuthException", "code": -1, "error_subcode": 2207085, "is_transient": false, "error_user_title": "일반 내부 오류", "error_user_msg": "내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요.", "fbtrace_id": "AOe95xUxWcaHlnjKWQvQDkc"}}
   [재시도 2/3] 2207085 내부 오류 — 60초 후 재시도
-  [DEBUG] 전체 에러 응답: {"error": {"message": "Fatal", "type": "OAuthException", "code": -1, "error_subcode": 2207085, "is_transient": false, "error_user_title": "일반 내부 오류", "error_user_msg": "내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요.", "fbtrace_id": "ASWg8eRjLEA3VJ1SlCBAqJW"}}
+  [DEBUG] 전체 에러 응답: {"error": {"message": "Fatal", "type": "OAuthException", "code": -1, "error_subcode": 2207085, "is_transient": false, "error_user_title": "일반 내부 오류", "error_user_msg": "내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요.", "fbtrace_id": "A0kuP8xGZ28noZC4Mjko_ie"}}
   [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
