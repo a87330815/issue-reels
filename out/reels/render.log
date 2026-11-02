@@ -1,75 +1,57 @@
-run 41441491774 2026-11-02T12:03:22Z
+run 41513010999 2026-11-02T19:50:28Z
 
-=== 20261102_fun_01_음식공감 ===
-  [cover] '국밥 한 그릇의 위력' → "korean soup rice bowl comfort food"
-    [unsplash] 6건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+=== 20261024_09_숫자훅 ===
+  [cover] '황희찬' → "Korea city luxury apartment"
+    [unsplash] 0건 후보
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
-    Unsplash 6건 (적합도 필터 생략)
-    ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '그 순간 세상이 변한다' → "stressed person thinking food"
+    ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] ''황희찬' 관련 트렌드 —' → "Korea city luxury apartment"
+    [unsplash] 0건 후보
+    [openverse] 2건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Korea city luxury"
+    [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '밥부터가 다르다' → "korean gukbap rice soup steaming bowl"
-    [unsplash] 4건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 0건 후보
-    Unsplash 4건 (적합도 필터 생략)
+  [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '이 가성비면 대박' → "rich broth beef soup comfort meal"
-    [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 0건 후보
-    ↻ 재시도: "rich broth beef soup comfort"
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 0건 후보
-    Unsplash 11건 (적합도 필터 생략)
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '국밥의 마법이다' → "eating soup bowl peaceful moment"
-    [unsplash] 12건 후보
-    Unsplash 12건 (적합도 필터 생략)
-    ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '팔로우 고마워' → "korean restaurant interior cozy"
-    [unsplash] 12건 후보
-    Unsplash 12건 (적합도 필터 생략)
-    ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261102_fun_01_음식공감/photos.json
+  → 3/3장 저장, 매니페스트: out/photos/20261024_09_숫자훅/photos.json
 
-총 6/6장 수집
-  사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261102_fun_01_음식공감
-대본: out/scripts/20261102_fun_01_음식공감.json
-카드: out/cards_20261102_fun_01_음식공감 (7장)
+총 3/3장 수집
+  사진 3장 적용: cover, scene1, scene2
+카드뉴스 4장 생성 → out/cards_20261024_09_숫자훅
+대본: out/scripts/20261024_09_숫자훅.json
+카드: out/cards_20261024_09_숫자훅 (4장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 1.4초  국밥 한 그릇의 위력...
-  TTS [2/6] [EL·발랄녀] 5.3초  야야야, 요즘 스트레스 받고 혼자인 저녁. 뭐 먹을...
-  TTS [3/6] [EL·발랄녀] 8.8초  국밥 한 그릇 앞에 앉으면 진짜다. 밥도 푸석한 밥...
-  TTS [4/6] [EL·발랄녀] 5.6초  국물은 깊고 짠맛도 있고, 고기도 있고. 이 정도면...
-  TTS [5/6] [EL·발랄녀] 8.0초  한 숟가락, 또 한 숟가락. 벌써 절반이다. 이 순...
-  TTS [6/6] [EL·발랄녀] 3.3초  이런 거 더 보고 싶으면 팔로우 해봐! 우리 또 만...
+  TTS [1/3] [EL·발랄녀] 0.9초  황희찬...
+  TTS [2/3] [EL·발랄녀] 11.5초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
+  TTS [3/3] [EL·발랄녀] 4.4초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.0초
-  세그먼트 [2/7] 6.1초
-  세그먼트 [3/7] 9.6초
-  세그먼트 [4/7] 6.4초
-  세그먼트 [5/7] 8.8초
-  세그먼트 [6/7] 4.1초
-  세그먼트 [7/7] 4.0초
+  세그먼트 [1/4] 3.0초
+  세그먼트 [2/4] 12.3초
+  세그먼트 [3/4] 5.2초
+  세그먼트 [4/4] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261102_fun_01_음식공감.mp4
-    길이: 36.2초  /  크기: 1.7MB
--rw-r--r-- 1 runner runner 1.7M Nov  2 12:05 out/reels/20261102_fun_01_음식공감.mp4
+  ✓ 릴스 완성: out/reels/20261024_09_숫자훅.mp4
+    길이: 20.8초  /  크기: 1.4MB
+-rw-r--r-- 1 runner runner 1.4M Nov  2 19:51 out/reels/20261024_09_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=36.200272
+duration=20.760272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -78,7 +60,7 @@ duration=36.200272
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-02):
-  20261102_fun_01_음식공감.mp4  1.7MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-02/20261102_fun_01.mp4
+  20261024_09_숫자훅.mp4  1.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-02/20261024_09.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -89,40 +71,40 @@ duration=36.200272
 남은 발행 가능: 99건
 발행 대상: 1건
 
-── 1/1  20261102_fun_01_음식공감
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-02/20261102_fun_01.mp4
-  캡션: 국밥 한 그릇의 위력
-  컨테이너: 17973776813973700
+── 1/1  20261024_09_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-02/20261024_09.mp4
+  캡션: 황희찬
+  컨테이너: 17973884051973700
       0초  IN_PROGRESS
-     66초  FINISHED
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AOqwdWsw6oskCEG76zwe-TU | type=OAuthException
+     33초  FINISHED
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AC14AX-O6hscx3gqjFycsLb | type=OAuthException
     ⚠ 플랫폼 에러 (시도 1/3), 30초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=A03zfuGbqDW2xGmy6raXhdN | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=A8PtB5HnJJtb8ayNErxAZ-Y | type=OAuthException
     ⚠ 플랫폼 에러 (시도 2/3), 60초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AyLinGxZYloVi6gB7OciCWw | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=ANu1koBlzHDKWp6DYvQcBFb | type=OAuthException
     ⚠ 플랫폼 에러 (시도 3/3), 90초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AWzN1hmRxSCctNtRiLJylyN | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=ACIMInQUk4FBb6rdG2UbQD2 | type=OAuthException
     media_publish 실패 (graph.facebook.com/v21.0): [-1/2207085] Fatal
     다음 조합으로 시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AYoVcFiT05HjmRUMuiRj7PZ | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AgZpogBZDkZwCJ7R1YcphxR | type=OAuthException
     ⚠ 플랫폼 에러 (시도 1/3), 30초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AwN3BD1-xX9cV01VpR1K64Z | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=ARb0kJ2yWCQcCu3hxLhKCIg | type=OAuthException
     ⚠ 플랫폼 에러 (시도 2/3), 60초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AKnm5XZuMarVtvDuO6v-Nyn | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=Awun_YxP8F9PLBgN2P8HfiK | type=OAuthException
     ⚠ 플랫폼 에러 (시도 3/3), 90초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=APqW8WOqDGRRorXYx37M9gS | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AfMuSWFI32lWwSiWlKteH5q | type=OAuthException
     media_publish 실패 (graph.facebook.com/v19.0): [-1/2207085] Fatal
     다음 조합으로 시도...
-    ⚡ API 에러 상세: [190/-] Invalid OAuth access token - Cannot parse access token | fbtrace=AdimDiJ0Kyx02Z5XGsJqWkn | type=OAuthException
+    ⚡ API 에러 상세: [190/-] Invalid OAuth access token - Cannot parse access token | fbtrace=Al8IN1_9oxV2hjjBeEPr3se | type=OAuthException
     media_publish 실패 (graph.instagram.com/v21.0): [190/-] Invalid OAuth access token - Cannot parse access token
     다음 조합으로 시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AoZRjFGcj-zhDpItm6jXzND | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=Aq7_aO_KEEWi-_nBI3okI_x | type=OAuthException
     ⚠ 플랫폼 에러 (시도 1/3), 30초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AefuIIYPZClpZbTeoNfCxEf | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AeJHprDpqb14ibF4rYr1pAr | type=OAuthException
     ⚠ 플랫폼 에러 (시도 2/3), 60초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AkS1TqQthF6f5jmg3YvRUIo | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=ADybOuYILA50xn1pJTyw2XR | type=OAuthException
     ⚠ 플랫폼 에러 (시도 3/3), 90초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AJavXvhTQA8CVNM08Eia0i3 | type=OAuthException
+    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AbdDtm8t8xmZ93fz6ya2IVW | type=OAuthException
   [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
