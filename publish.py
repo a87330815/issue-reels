@@ -96,6 +96,9 @@ def api(method, path, **params):
 
     if "error" in body:
         err = body["error"]
+        # 디버그: 전체 에러 바디 출력
+        import json as _json
+        print(f"  [DEBUG] 전체 에러 응답: {scrub(_json.dumps(body, ensure_ascii=False))}")
         raise RuntimeError(
             f"[{err.get('code')}/{err.get('error_subcode','-')}] "
             f"{scrub(err.get('message', ''))}"
