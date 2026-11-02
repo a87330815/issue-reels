@@ -1,0 +1,53 @@
+{
+  "title": "건강보험 체크리스트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "건강보험",
+      "이것만 놓치면",
+      "<r>손해본다</r>"
+    ],
+    "badge": null,
+    "photo_query": "health insurance card documents korea"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 건강보험. 매달 내는 돈인데 제대로 쓰는 사람 별로 없다.",
+      "subtitle": "건강보험 활용법",
+      "photo_query": "person checking health insurance documents"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째. 예방 검진. 나이별로 무료다. 암 검진, 치매 검진까지 챙겨야 한다.",
+      "subtitle": "무료 예방 검진 챙기기",
+      "photo_query": "medical checkup screening appointment"
+    },
+    {
+      "image": null,
+      "narration": "두 번째. 난임 지원금. 시술비 최대 천만 원대 지원받는다. 이거 모르면 진짜 크다.",
+      "subtitle": "난임 치료비 지원 제도",
+      "photo_query": "hospital fertility treatment clinic"
+    },
+    {
+      "image": null,
+      "narration": "세 번째. 보험료 경감. 형편 어려우면 감면받을 수 있다. 신청만 하면 된다.",
+      "subtitle": "보험료 감면 신청 방법",
+      "photo_query": "korea health insurance reduced premium application"
+    },
+    {
+      "image": null,
+      "narration": "이거. 진짜 중요하다. 건강보험 공식 앱에서 다 확인해라. 팔로우해서 놓치지 마라.",
+      "subtitle": "건강보험공단 앱 확인하기",
+      "photo_query": "mobile app health insurance information screen"
+    }
+  ],
+  "meta": {
+    "format": "체크리스트",
+    "source": "google_trends",
+    "category": "생활·지원금·제도",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-02T22:34:19.375878+00:00"
+  }
+}

@@ -1,12 +1,11 @@
 {
-  "title": "pakhtakor ",
+  "title": "평당 1.4억",
   "cover": {
     "image": null,
     "photo_query": "Korea city luxury apartment",
     "lines": [
-      "이번 달",
-      "<r>pakhtakor</r>",
-      "거래 떴습니다"
+      "<r>평당 1.4억</r>",
+      "이거 실환가요"
     ],
     "badge": null
   },
@@ -14,8 +13,38 @@
     {
       "image": null,
       "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 'pakhtakor đấu với al-nassr' 관련 트렌드 — Nhận định Pakhtakor vs Al Nassr: Ronaldo lại tỏa sáng?, 20h45 ngày 2/11/2026. 수치로 확인해보자.",
-      "subtitle": "'pakhtakor đấu với"
+      "narration": "이거 모르고 지나가면 손해다. 대치동 은마 평당 1.37억 (전용 76.79㎡). 수치로 확인해보자.",
+      "subtitle": "대치동 평당 1.4억"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "대치동 은마, 전용 77㎡(23평) 10층이 31.9억원에 실거래 신고됐다카이. 평당 1.4억. 1979년 준공.",
+      "subtitle": "대치동 은마 31.9억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "같은 동네 은마도 주목할 만한다. 전용 77㎡(23평) 9층, 거래가 31.5억원. 평당 1.4억.",
+      "subtitle": "대치동 은마 31.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "은마 전용 77㎡(23평) 1층 — 30.4억원 거래. 평당 1.3억.",
+      "subtitle": "대치동 은마 30.4억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Seocho Seoul luxury high rise apartment",
+      "narration": "래미안 리더스원 전용 115㎡(35평) 9층 — 44.5억원 거래. 평당 1.3억.",
+      "subtitle": "서초동 래미안 리더스원 44.5억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 14.1억원까지 벌어졌다. 평균 33.9억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
     },
     {
       "image": null,
@@ -26,11 +55,20 @@
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "",
-    "category": "당일 화제 이슈",
-    "attribution": "",
-    "chart": null,
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        1.37,
+        1.36,
+        1.31,
+        1.28,
+        1.22
+      ],
+      "style": "bars"
+    },
     "tone": "경상도",
-    "generated_at": "2026-11-02T17:35:28.440539+00:00"
+    "generated_at": "2026-11-02T22:34:53.520419+00:00"
   }
 }

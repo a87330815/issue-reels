@@ -1,45 +1,45 @@
 {
-  "title": "스마트폰 배터리 수명 2배 늘리는 충전 습관 3가지",
+  "title": "옷 관리 생활해킹",
   "cover": {
     "image": null,
     "lines": [
-      "배터리 수명",
-      "<r>2배 늘리는</r>",
-      "충전 습관 3가지"
+      "니트 보풀·흰옷 때",
+      "<r>3가지만</r>",
+      "살려낸다"
     ],
     "badge": null,
-    "photo_query": "smartphone charging cable"
+    "photo_query": "sweater lint removal"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 스마트폰 배터리 자꾸 빨리 떨어지지? 대부분 충전 습관이 문제라니까. 오늘 알려드릴 3가지만 지키면 배터리 수명이 진짜 2배까지 늘어난다고.",
-      "subtitle": "배터리 수명 2배 늘리기",
-      "photo_query": "phone battery health settings"
+      "narration": "니트 보풀? 면도칼로 쓸어내면 된다. 약한 강도로 결 방향대로 밀면 5분 안에 깔끔해져.",
+      "subtitle": "면도칼로 결 따라 쓸어내기",
+      "photo_query": "razor blade sweater pilling"
     },
     {
       "image": null,
-      "narration": "첫 번째, 배터리가 20% 이하로 떨어질 때까지 기다렸다가 충전하지 마. 30~80% 범위에서만 자주 충전하는 거다. 이렇게 하면 화학 반응 손상이 적어서 배터리가 더 오래간다.",
-      "subtitle": "1️⃣ 30~80% 범위에서만 충전",
-      "photo_query": "battery percentage indicator"
+      "narration": "흰옷 누런 때는 산소계 표백제 뿌린 다음 하루 밤을 두면 된다. 염소 냄새 안 나고 옷 상하지도 않아.",
+      "subtitle": "산소계 표백제 하루밤 불리기",
+      "photo_query": "white shirt stain treatment soaking"
     },
     {
       "image": null,
-      "narration": "두 번째, 밤새 충전하지 말어. 100%가 된 다음에도 계속 전기가 흘러서 배터리가 손상된다. 자기 전 1시간 정도만 충전하고 뽑아두는 게 낫다.",
-      "subtitle": "2️⃣ 100% 도달 후 뽑기",
-      "photo_query": "overnight phone charging"
+      "narration": "검은 옷 색이 바래면? 검은색 양말을 함께 세탁하면 된다. 색이 옮아가서 다시 검어진다고.",
+      "subtitle": "검은 양말과 함께 세탁하기",
+      "photo_query": "black clothing laundry washing machine"
     },
     {
       "image": null,
-      "narration": "세 번째, 급속 충전기 자주 쓰지 말아. 빨리 차긴 하는데 배터리한테 열 스트레스를 줘서 화학 반응을 빨리 죽인다. 여유 있을 땐 일반 충전기로 천천히.",
-      "subtitle": "3️⃣ 급속 충전기 자제하기",
-      "photo_query": "fast charger vs regular charger"
+      "narration": "이 세 가지만 알면 옷이 5년은 더 입을 수 있다. 정말이다.",
+      "subtitle": "옷 오래 입는 비결",
+      "photo_query": "folded clothes closet organization"
     },
     {
       "image": null,
-      "narration": "이 3가지 습관만 지키면 배터리 성능이 1년 후에도 80% 이상 유지된다니까, 꼭 해봐. 이런 꿀팁 더 보고 싶으면 팔로우해 둬.",
-      "subtitle": "1년 후에도 80% 유지",
-      "photo_query": "battery health percentage check"
+      "narration": "이런 옷 관리 꿀팁 더 궁금하면 팔로우해 봐. 계속 올려줄 테니까.",
+      "subtitle": "쫌봐봐 팔로우하기",
+      "photo_query": "wardrobe care tips clothing"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T10:44:46.858691+00:00"
+    "generated_at": "2026-11-02T22:35:31.177256+00:00"
   }
 }

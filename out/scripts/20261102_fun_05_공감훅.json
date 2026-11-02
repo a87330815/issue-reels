@@ -1,46 +1,39 @@
 {
-  "title": "양말 짝이 사라지는 미스터리",
+  "title": "주차장에서의 악순환",
   "cover": {
     "image": null,
     "lines": [
-      "빨래 후",
-      "<r>양말 한 짝만</r>",
-      "없어진 적",
-      "없나요?"
+      "30분 돌다가",
+      "<r>제일 먼 데</r>",
+      "세우는 거 실화냐"
     ],
     "badge": null,
-    "photo_query": "missing sock laundry basket"
+    "photo_query": "parking lot car searching"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "빨래통에 양말 10켤레를 넣었는데... 나올 때는 19개다 아이가. 어디서 한 짝이 사라졌냐고.",
-      "subtitle": "빨래 후 양말 수가 안 맞음",
-      "photo_query": "laundry washing machine socks"
+      "narration": "마트 들어가기 전부터 시작된다. '오 저기 있네!' 하면서 차 몬다.",
+      "subtitle": "아 저기 있다!",
+      "photo_query": "empty parking space car"
     },
     {
       "image": null,
-      "narration": "세탁기 안 어딘가에 숨어있을 줄 알아서 또 분해해보고, 드럼통 뒤에도 찾아보고, 빨래건조기에도 들어가본다. 근데 없더라.",
-      "subtitle": "찾아도 나타나지 않음",
-      "photo_query": "searching washing machine dryer"
+      "narration": "근데 가까이 가니까 이미 차가 들어오고 있다. 야야야, 이게 뭐하는 짓이냐. 다시 돈다.",
+      "subtitle": "앗, 이미 있네",
+      "photo_query": "car parking lot full"
     },
     {
       "image": null,
-      "narration": "결국 한 짝짜리 양말은 팬티 보관함 한구석에서 죽을 때까지 잠자고 있다. 언젠가는 친구와 짝을 이루길 기원하면서.",
-      "subtitle": "고아 양말이 탄생함",
-      "photo_query": "lonely single sock drawer"
+      "narration": "이렇게 한 바퀴, 두 바퀴... 계속 도는데 없다. 그러다 결국 포기한다. 건물 저 끝 맨 구석.",
+      "subtitle": "30분 후... 포기",
+      "photo_query": "parking lot far away corner"
     },
     {
       "image": null,
-      "narration": "근데 이거 알아? 전 세계적으로 매년 125만 개의 양말이 빨래하다가 사라진대. 미스터리 해결 안 된 지 100년째다.",
-      "subtitle": "세계적 미스터리 현상",
-      "photo_query": "mystery socks missing laundry"
-    },
-    {
-      "image": null,
-      "narration": "혼자 아니라니까. 모두가 같은 고통 겪고 있다. 우리 함께 이 미스터리 풀자고. 구독하고 알림 켜!",
-      "subtitle": "함께하는 공감",
-      "photo_query": "comfort support together friends"
+      "narration": "그리고 생각한다. 차라리 처음부터 여기 왔으면 10분 단축했겠는데... 뭐 어때, 운동이라고 생각하자.",
+      "subtitle": "결국 제일 먼 데",
+      "photo_query": "person walking parking lot tired"
     }
   ],
   "meta": {
@@ -49,6 +42,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T17:36:00.826216+00:00"
+    "generated_at": "2026-11-02T22:35:24.266713+00:00"
   }
 }

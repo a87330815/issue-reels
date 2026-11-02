@@ -1,45 +1,45 @@
 {
-  "title": "마포푸르지오더센트럴 40㎡ 7.5억 거래",
+  "title": "서초동 래미안 리더스원 44.5억 거래",
   "cover": {
     "image": null,
     "lines": [
-      "40제곱미터에",
-      "<r>7.5억</r>",
-      "이게 정상입니까"
+      "서초동",
+      "<r>44.5억</r>",
+      "이게 현실이네"
     ],
     "badge": null,
-    "photo_query": "seoul apartment building modern high rise"
+    "photo_query": "luxury apartment building Seoul Seocho"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 마포 아현동. 신축 아파트 40제곱미터. 가격이 7억 5천만 원이다.",
-      "subtitle": "40㎡에 7.5억 거래",
-      "photo_query": "modern apartment interior compact studio"
+      "narration": "이거 모르고 지나가면 손해다. 서초동 래미안 리더스원. 114제곱미터 평수에 44억 5천이다. 9층짜리다.",
+      "subtitle": "서초동 래미안 리더스원 44.5억",
+      "photo_query": "modern apartment complex exterior building"
     },
     {
       "image": null,
-      "narration": "야야야. 서울 평균 제곱미터당 가격이 얼마인지 아냐고. 이건 그걸 그냥 넘어간다.",
-      "subtitle": "제곱미터당 1,850만 원",
-      "photo_query": "calculator money korean won notes"
+      "narration": "2020년 신축이니까 6년 된 건물이제. 근데 이 가격이다. 뭐라카노.",
+      "subtitle": "2020년 신축 래미안 리더스원",
+      "photo_query": "new construction apartment building modern design"
     },
     {
       "image": null,
-      "narration": "2023년 신축인데 불과 3년 만에 이 정도가 나왔다. 서울 강남권이 아니라 마포다. 아이가.",
-      "subtitle": "2023년 신축, 3년 거래",
-      "photo_query": "new apartment construction building completion"
+      "narration": "평당 38백만원대다. 서초동인데 이 정도 가격이면 진짜 핫한 주소 맞다.",
+      "subtitle": "평당 약 38백만원대",
+      "photo_query": "seoul real estate market price chart"
     },
     {
       "image": null,
-      "narration": "이런 거래가 계속 나오면 뭐가 된다 아이가. 전셋값도 올라간다. 월셋값도 올라간다.",
-      "subtitle": "전세·월세 상승 신호",
-      "photo_query": "apartment lease agreement documents pen"
+      "narration": "아파트 투자하는 사람들. 이런 거래 숫자 놓치면 트렌드 못 따라간다.",
+      "subtitle": "강남 고급주택 실거래 동향",
+      "photo_query": "apartment trading screen computer monitor"
     },
     {
       "image": null,
-      "narration": "내가 놓친 거래는 없나. 더 알아야 한다. 쫌봐봐 팔로우해라. 다음 주도 터진다.",
-      "subtitle": "매주 새로운 거래 분석",
-      "photo_query": "mobile phone scrolling social media"
+      "narration": "우리 채널 팔로우해라. 매일 이런 거래 소식 올라온다.",
+      "subtitle": "쫌봐봐에서 더 보기",
+      "photo_query": "mobile phone social media feed scrolling"
     }
   ],
   "meta": {
@@ -49,10 +49,14 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        7.5
+        44.5,
+        31.9,
+        31.5,
+        31.3,
+        30.4
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-02T17:34:38.696273+00:00"
+    "generated_at": "2026-11-02T22:33:58.600287+00:00"
   }
 }

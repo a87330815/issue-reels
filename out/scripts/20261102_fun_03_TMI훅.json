@@ -1,45 +1,45 @@
 {
-  "title": "수박 고르기의 진실",
+  "title": "배터리 1%의 신비로운 버티기",
   "cover": {
     "image": null,
     "lines": [
-      "수박 두드려서",
-      "<y>고르는 건</y>",
-      "다 같은 소리"
+      "1%에서",
+      "<r>더 오래 버티는 거</r>",
+      "왜지?"
     ],
     "badge": null,
-    "photo_query": "watermelon tapping selecting market"
+    "photo_query": "smartphone battery low percentage"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "마트에서 수박을 고르는데, 옆 아저씨랑 같이 두드려본다 이거야. 통통통 소리를 듣고 \"어 이건 덜 익은 거고\" \"이건 되게 잘 익은 거 같은데\" 하면서.",
-      "subtitle": "전문가처럼 고르는 척",
-      "photo_query": "man selecting watermelon market tapping"
+      "narration": "배터리 100에서 90까지? 아 진짜 빨라. 30초면 간다.",
+      "subtitle": "100→90 금방 떨어짐",
+      "photo_query": "phone charging battery indicator"
     },
     {
       "image": null,
-      "narration": "근데 생각해보니 손가락 크기도 다르고, 누르는 힘도 다르고, 수박 껍질 두께도 제각각이고... 아무리 들어도 전부 \"통\" 또는 \"둥\" 아닌가? 야야야 진짜 같은 소리다.",
-      "subtitle": "사실 구분 불가능",
-      "photo_query": "close up watermelon rind texture"
+      "narration": "근데 1%? 이거 아이가 진짜 신기하거든. 한 10분은 쌩쌩 간다니까.",
+      "subtitle": "1%는 왜 이렇게 오래?",
+      "photo_query": "low battery warning red"
     },
     {
       "image": null,
-      "narration": "알고 보니 수박 고르기는 소리로 판단하는 게 아니라 무게감, 색깔, 쨕진 부분 모양을 봐야 한다더라. 그럼 우리가 지금까지 뭐 한 거냐 이거지.",
-      "subtitle": "소리는 참고사항 아님",
-      "photo_query": "watermelon weight color spots yellow"
+      "narration": "알고 보니 배터리가 완전 방전되는 걸 피하려고, 1% 남은 상태에선 전력 공급을 조절한대. 마지막 발악 같은 거지.",
+      "subtitle": "배터리 자기방어 모드",
+      "photo_query": "battery technology power management"
     },
     {
       "image": null,
-      "narration": "그래도 마트 가면 계속 수박을 두드린다. 왜냐하면 두드리는 내 모습이 마치 \"난 과일 잘 고르는 사람\"처럼 보이기 때문이다. 그게 최고의 과일이라고 생각한다.",
-      "subtitle": "착각의 즐거움",
-      "photo_query": "confident woman selecting fruit market"
+      "narration": "그래서 1%에서 막 화면 어둡혀지고, 진동도 약해지고, 백그라운드 앱도 다 껐어. 그 상태에서 버티는 거라니까.",
+      "subtitle": "화면 어두워지고 진동 줄어듦",
+      "photo_query": "smartphone screen dimmed dark mode"
     },
     {
       "image": null,
-      "narration": "이런 공감 더 보고 싶으면 팔로우 해봐. 쫌봐봐 채널에서 일상의 진실을 폭로한다니까.",
-      "subtitle": "팔로우해서 더 보기",
-      "photo_query": "follow subscribe button notification"
+      "narration": "나만 그런 줄 알았는데, 다들 1%에서 기적 일어나길 기다리더라. 팔로우하면 이런 의외의 사실들 더 받아볼 수 있다이가.",
+      "subtitle": "우린 다 1% 신자들",
+      "photo_query": "people waiting with phone low battery"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T10:44:28.492983+00:00"
+    "generated_at": "2026-11-02T22:35:12.445248+00:00"
   }
 }

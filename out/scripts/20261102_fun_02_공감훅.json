@@ -1,45 +1,46 @@
 {
-  "title": "냉동실 아이스크림 실종사건",
+  "title": "택배 배송완료 문자 받고 문 앞에 없을 때",
   "cover": {
     "image": null,
     "lines": [
-      "냉동실에 숨겨둔",
-      "<r>그 아이스크림</r>",
-      "왜 자꾸 줄어?"
+      "배송완료",
+      "문자 받고",
+      "<r>문 앞 텅</r>",
+      "나만?"
     ],
     "badge": null,
-    "photo_query": null
+    "photo_query": "empty doorstep delivery package"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "분명 어제 사먹다가 반쯤 남겨둔 아이스크림이 있었는데. 오늘 보니 없어. 뭐 이런 일이 다 있냐고.",
-      "subtitle": "나만의 아이스크림인데",
-      "photo_query": "freezer ice cream missing"
+      "narration": "배송완료 문자 온 지 3분. 피식 웃으면서 문 열었어.",
+      "subtitle": "배송완료 문자",
+      "photo_query": "phone notification message alert"
     },
     {
       "image": null,
-      "narration": "가족들한테 물어봐도 다 모른대. '내가 먹었나?' 하다가 결국 CCTV처럼 냉동실 드나드는 걸 감시하게 된다니까.",
-      "subtitle": "범인이 뭐하는 놈이냐",
-      "photo_query": "family questioning suspicious"
+      "narration": "그런데 없어. 뭐가 없다고? 택배가 없어!",
+      "subtitle": "문 앞 아무것도 없음",
+      "photo_query": "empty apartment doorway hallway"
     },
     {
       "image": null,
-      "narration": "결국 이름까지 써 붙인다. '삼윤이 것' '엄마 것' 이렇게. 근데 또 없어진다고. 미치겠네.",
-      "subtitle": "명의 표시까지 해도",
-      "photo_query": "labeled frozen items marker"
+      "narration": "혹시 옆집? 아래층? 위층? 카메라 초점 맞출 때처럼 이리저리 헤맨다.",
+      "subtitle": "옆집 문 앞 두리번",
+      "photo_query": "confused person looking around hallway"
     },
     {
       "image": null,
-      "narration": "뭐 이래? 냉동실 도둑은 누구냐고 하다가, 결국 자기가 먹고 까먹었다는 걸 깨닫는다. 배신감 장난 아니네.",
-      "subtitle": "내가 범인이었다",
-      "photo_query": "person disappointed realization"
+      "narration": "결국 배송사 콜센터로 전화. '이거 배송완료 됐는데 못 봤어요' 이러고 있다.",
+      "subtitle": "통화 중인 손",
+      "photo_query": "person on phone customer service"
     },
     {
       "image": null,
-      "narration": "그래서 요즘은 제일 안 맛있는 아이스크림만 산다. 그럼 안 없어진다더라. 이거 봐봐, 이 정도 되면 전략이다.",
-      "subtitle": "이런 거 더 보고 팔로우",
-      "photo_query": "ice cream cart selection"
+      "narration": "이거 꼭 신기루 같지 않냐고. 이런 거 더 보고 싶으면 팔로우 눌러두고 가.",
+      "subtitle": "팔로우 해줘",
+      "photo_query": "frustrated tired person couch"
     }
   ],
   "meta": {
@@ -48,6 +49,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T10:44:20.292097+00:00"
+    "generated_at": "2026-11-02T22:35:05.778911+00:00"
   }
 }

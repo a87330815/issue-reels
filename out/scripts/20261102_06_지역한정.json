@@ -1,0 +1,62 @@
+{
+  "title": "명지동 아파트값 편차 5.9억",
+  "cover": {
+    "image": null,
+    "lines": [
+      "명지동",
+      "같은 면적 <r>5.9억</r>",
+      "차이 난다"
+    ],
+    "badge": null,
+    "photo_query": "myeongji dong incheon apartment buildings"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 명지동. 같은 84제곱미터인데 최고가 5억 9천만 원. 최저가 3억 2천만 원. 뭐라카노. 2억 7천만 원 차이다.",
+      "subtitle": "같은 면적 2억 7천만 원 차이",
+      "photo_query": "apartment price comparison real estate"
+    },
+    {
+      "image": null,
+      "narration": "더샵명지퍼스트월드. 2020년 준공. 이게 비싼 이유. 신축인 데다가 단지 급이 다르다 아이가.",
+      "subtitle": "신축 프리미엄 단지",
+      "photo_query": "luxury apartment complex korea"
+    },
+    {
+      "image": null,
+      "narration": "반면 명지두산위브포세이돈. 2013년 건물. 3억 4천만 원. 명지오션시티한신휴플러스. 2014년. 3억 2천만 원. 준공년도가 7년, 8년 차이 나니까 이 정도 벌어진다.",
+      "subtitle": "준공년도로 가격 결정",
+      "photo_query": "older apartment building korea residential"
+    },
+    {
+      "image": null,
+      "narration": "명지동 알고 사면 서로 다른 집이다. 새 것도 있고 낡은 것도 있고. 꼼꼼히 비교하고 결정해라.",
+      "subtitle": "명지동 단지별 차이 확인",
+      "photo_query": "apartment viewing real estate shopping"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 지역 데이터는 우리 채널에서 매일 올라온다. 팔로우해라.",
+      "subtitle": "매일 업데이트되는 실거래가",
+      "photo_query": "smartphone real estate app mobile"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        5.9,
+        5.7,
+        5.7,
+        3.4,
+        3.2
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-02T22:34:33.502685+00:00"
+  }
+}

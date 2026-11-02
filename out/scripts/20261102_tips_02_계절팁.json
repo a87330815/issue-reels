@@ -1,11 +1,11 @@
 {
-  "title": "겨울 창문 결로 1분 해결법",
+  "title": "겨울 창문 결로, 3분이면 끝",
   "cover": {
     "image": null,
     "lines": [
-      "창문 물방울",
-      "<r>1분이면</r>",
-      "해결된다"
+      "겨울 창문",
+      "<r>결로 3분</r>",
+      "해결법"
     ],
     "badge": null,
     "photo_query": "window condensation water droplets"
@@ -13,33 +13,33 @@
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 겨울만 되면 창문에 물이 줄줄 맺히지 않냐? 이 물방울 방치하면 곰팡이가 생기고 집이 곰팬다 아이가.",
-      "subtitle": "결로는 실내외 온도차 때문",
-      "photo_query": "window condensation frost"
+      "narration": "야야야, 겨울만 되면 창문에 물방울이 맺히지? 그거 방치하면 일주일 안에 곰팡이가 핀다.",
+      "subtitle": "결로 방치 = 곰팡이",
+      "photo_query": "moldy window frame mildew"
     },
     {
       "image": null,
-      "narration": "그럼 간단해. 아침에 5분만 투자해봐라. 세숫수건으로 창문을 닦고, 드라이기를 30초 정도 따뜻하게 불어준다.",
-      "subtitle": "닦기 + 드라이기 30초",
-      "photo_query": "drying window with hairdryer"
+      "narration": "근데 이거 봐봐. 찬바람이 불 때마다 10초씩, 하루에 딱 3번 해주면 된다. 신문지 한 장이면 충분하다.",
+      "subtitle": "신문지로 톡톡 닦기",
+      "photo_query": "newspaper wiping condensation"
     },
     {
       "image": null,
-      "narration": "하루에 1번, 딱 5분이면 된다. 왜냐고? 따뜻한 바람이 습기를 날려버려서 곰팡이 필 조건이 없어진다거든.",
-      "subtitle": "하루 5분 투자로 곰팡이 방지",
-      "photo_query": "clean window frame prevention"
+      "narration": "왜냐하면 신문지가 수분을 빨아들이거든. 수건보다 물이 더 빨리 마르고, 곰팡이가 자랄 틈을 없앤다.",
+      "subtitle": "신문지 = 흡수력 우수",
+      "photo_query": "newspaper absorbent material"
     },
     {
       "image": null,
-      "narration": "급하면 신문지나 키친타올로 물기만 닦아도 된다. 근데 드라이기까지 하면 진짜 쌍쌍하다.",
-      "subtitle": "신문지도 괜찮지만 드라이기가 최강",
-      "photo_query": "newspaper wiping window moisture"
+      "narration": "이것도 좋긴 한데, 영구 해결을 원하면? 창문 창틀에 제습제나 제습기를 하나 놓아두면 습도가 50% 이하로 유지된다.",
+      "subtitle": "제습제 + 환기 = 완벽",
+      "photo_query": "dehumidifier silica gel window"
     },
     {
       "image": null,
-      "narration": "곰팡이 제거비 몇십만 원 들이기 전에 지금부터 5분씩 투자해봐라. 이런 꿀팁 더 보고 싶으면 팔로우!",
-      "subtitle": "곰팡이 방지 = 집값 보호",
-      "photo_query": "winter home maintenance tips"
+      "narration": "자, 이런 겨울 생활 꿀팁 더 보고 싶으면 팔로우 꾸욱. 다음엔 더 신기한 거 가져올게.",
+      "subtitle": "팔로우 필수",
+      "photo_query": "subscribe notification bell"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-02T02:20:44.146710+00:00"
+    "generated_at": "2026-11-02T22:35:37.911606+00:00"
   }
 }
