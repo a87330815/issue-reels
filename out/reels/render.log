@@ -1,20 +1,22 @@
-run 41578988232 2026-11-03T04:36:13Z
+run 41579255224 2026-11-03T04:38:54Z
 
 === 20261024_09_숫자훅 ===
   [cover] '황희찬' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''황희찬' 관련 트렌드 —' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
@@ -32,24 +34,24 @@ run 41578988232 2026-11-03T04:36:13Z
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/3] [EL·발랄녀] 0.9초  황희찬...
-  TTS [2/3] [EL·발랄녀] 12.0초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
-  TTS [3/3] [EL·발랄녀] 4.2초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
+  TTS [1/3] [EL·발랄녀] 0.7초  황희찬...
+  TTS [2/3] [EL·발랄녀] 12.3초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
+  TTS [3/3] [EL·발랄녀] 4.0초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
 
 2) 영상 합성
   세그먼트 [1/4] 3.0초
-  세그먼트 [2/4] 12.8초
-  세그먼트 [3/4] 5.0초
+  세그먼트 [2/4] 13.1초
+  세그먼트 [3/4] 4.8초
   세그먼트 [4/4] 4.0초
 
   ✓ 릴스 완성: out/reels/20261024_09_숫자훅.mp4
-    길이: 21.1초  /  크기: 1.4MB
--rw-r--r-- 1 runner runner 1.4M Nov  3 04:37 out/reels/20261024_09_숫자훅.mp4
+    길이: 20.9초  /  크기: 1.4MB
+-rw-r--r-- 1 runner runner 1.4M Nov  3 04:39 out/reels/20261024_09_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=21.080272
+duration=20.920272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
