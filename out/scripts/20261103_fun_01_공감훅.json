@@ -1,0 +1,46 @@
+{
+  "title": "세탁기 주머니의 비밀",
+  "cover": {
+    "image": null,
+    "lines": [
+      "세탁기 주머니에서",
+      "<r>나오는 것들</r>"
+    ],
+    "badge": null,
+    "photo_query": "laundry mesh bag washing machine"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "세탁 끝나고 주머니 열어봤는데 와 진짜 이상하다. 분명히 양말 넣었는데 한 짝만 남아있고.",
+      "subtitle": "어딨어 양말",
+      "photo_query": "missing socks laundry basket"
+    },
+    {
+      "image": null,
+      "narration": "주머니 안쪽 구석을 보니까 헬스장 카드, 동전, 휴지 뭉치가 들어있는데. 내가 이거 다 넣은 거 맞나?",
+      "subtitle": "주머니가 요술 봉지다",
+      "photo_query": "coins wallet laundry items found"
+    },
+    {
+      "image": null,
+      "narration": "그래도 가장 무서운 건 따로 있다. 세탁 전에 주머니 없었던 게 나중에 튀어나온다 이거다.",
+      "subtitle": "이건 뭐지",
+      "photo_query": "lint coins debris washing machine filter"
+    },
+    {
+      "image": null,
+      "narration": "결론: 세탁기 주머니는 내 물건 보관함이 아니라 미스터리 박스다. 매번 오픈할 때마다 설레고 무섭다.",
+      "subtitle": "팔로우하면 생활의 미스터리 풀려",
+      "photo_query": "woman surprised laundry discovery"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T03:56:31.153176+00:00"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "title": "명지동 아파트값 실시간",
+  "cover": {
+    "image": null,
+    "lines": [
+      "명지동",
+      "<r>5.9억</r>",
+      "떴다"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building modern korean architecture"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 명지동 최고가 방금 떴는데. 더샵명지퍼스트월드 3단지. 5억9000만원이다.",
+      "subtitle": "명지동 최고가 5.9억",
+      "photo_query": "apartment price tag real estate market"
+    },
+    {
+      "image": null,
+      "narration": "같은 단지 2단지는? 5억7000만원 거기. 2000만원 차이다 아이가.",
+      "subtitle": "같은 단지도 가격이 다르다",
+      "photo_query": "apartment building floor levels windows comparison"
+    },
+    {
+      "image": null,
+      "narration": "근데 뭐라카더라. 명지오션시티 한신휴플러스는 3억2000만원. 같은 면적인데 가격이 딴판이다.",
+      "subtitle": "건축년도에 따라 1.8배 차이",
+      "photo_query": "old apartment building renovation outdated"
+    },
+    {
+      "image": null,
+      "narration": "명지동 살려고? 현황 확인 먼저 하고 구매 결정해라. 같은 면적도 단지·층에 따라 천지차이다.",
+      "subtitle": "명지동 아파트 실시간 시세",
+      "photo_query": "real estate agent contract signing documents"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        5.9,
+        5.7,
+        5.7,
+        3.4,
+        3.2
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-03T03:55:56.222170+00:00"
+  }
+}

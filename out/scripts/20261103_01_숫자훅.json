@@ -1,0 +1,56 @@
+{
+  "title": "서초동 래미안 리더스원 44.5억",
+  "cover": {
+    "image": null,
+    "lines": [
+      "서초동",
+      "<r>44.5억</r>",
+      "이게 평범합니다"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building Seoul Seocho"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 서초동 래미안 리더스원. 10월에 44억 5천만 원에 떴다. 114제곱미터. 평수로 따지면 34평 정도다.",
+      "subtitle": "서초동 래미안 리더스원 44.5억",
+      "photo_query": "luxury apartment building entrance Seoul"
+    },
+    {
+      "image": null,
+      "narration": "어? 이거 2020년에 지은 따끈따끈한 신축이다. 9층까지 올라간 거다. 그런데도 이 가격이라고?",
+      "subtitle": "2020년 신축, 9층",
+      "photo_query": "modern apartment building construction year"
+    },
+    {
+      "image": null,
+      "narration": "이거 봐봐. 서초동이 이 정도 수준까지 올라왔단 거다. 평당 3천만 원대 후반. 강남 핵심지구가 여기라 이런 거다.",
+      "subtitle": "강남 최고값 지구",
+      "photo_query": "Gangnam Seoul district map prestigious"
+    },
+    {
+      "image": null,
+      "narration": "지금 서초동 시장. 제대로 알아야 다음 수 읽을 수 있다. 이 추세 놓치지 말아라.",
+      "subtitle": "서초동 실거래 시장 현황",
+      "photo_query": "real estate market chart analysis"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        44.5,
+        31.9,
+        31.5,
+        31.3,
+        30.4
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-03T03:55:25.265587+00:00"
+  }
+}

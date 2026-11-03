@@ -1,0 +1,60 @@
+{
+  "title": "신축 vs 구축, 가격 차이 1.7배",
+  "cover": {
+    "image": null,
+    "lines": [
+      "다들 이렇게 아는데",
+      "신축이",
+      "<r>1.7배</r>",
+      "비싸다"
+    ],
+    "badge": null,
+    "photo_query": "new apartment construction vs old building"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 신축 아파트. 다들 비싸다고만 생각한다.",
+      "subtitle": "신축이 비싸다고 알고 있지?",
+      "photo_query": "modern luxury apartment building exterior glass"
+    },
+    {
+      "image": null,
+      "narration": "근데 실제론 어떻게 비싼가를 봐야 한다. 2020년 이후 신축. 평균 8억6천만원이다.",
+      "subtitle": "2020년 이후 신축: 8.6억",
+      "photo_query": "real estate price tag apartment cost"
+    },
+    {
+      "image": null,
+      "narration": "2005년 이전 구축은? 5억2천만원. 1.7배 비싼 거다. 야야야.",
+      "subtitle": "2005년 이전: 5.2억 (1.7배",
+      "photo_query": "older vintage apartment building residential area"
+    },
+    {
+      "image": null,
+      "narration": "신축이 비싼 건 맞다. 근데 이 정도 차이를 알고 집 사야 뭐가 아파도 뭐가 아파도 손해는 안 본다.",
+      "subtitle": "신축과 구축, 가격 차이 명확하다",
+      "photo_query": "apartment price comparison chart analysis"
+    },
+    {
+      "image": null,
+      "narration": "내 지갑과 라이프스타일에 맞는 선택. 이게 진짜 중요하다. 팔로우하고 다음 분석도 봐라.",
+      "subtitle": "당신의 선택이 최고의 결정이다",
+      "photo_query": "family planning home decision together"
+    }
+  ],
+  "meta": {
+    "format": "오해정정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        8.6,
+        5.2
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-03T03:55:38.691917+00:00"
+  }
+}

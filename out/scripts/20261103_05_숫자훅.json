@@ -1,0 +1,53 @@
+{
+  "title": "삼성 갤럭시Z폴드9 울트라, 뭐가 달라졌나",
+  "cover": {
+    "image": null,
+    "lines": [
+      "폴드폰 가격",
+      "<r>350만원대</r>",
+      "진짜입니까"
+    ],
+    "badge": null,
+    "photo_query": "samsung galaxy foldable phone display screen"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 삼성이 새로운 접히는 폰을 내놨는데. 가격이 장난 아니다.",
+      "subtitle": "갤럭시Z폴드9 울트라 출시",
+      "photo_query": "premium smartphone flagship release"
+    },
+    {
+      "image": null,
+      "narration": "350만원대에 육박한다. 일반 폴드폰보다 훨씬 비싸다 아이가.",
+      "subtitle": "가격 350만원대 후반",
+      "photo_query": "expensive luxury smartphone display price tag"
+    },
+    {
+      "image": null,
+      "narration": "뭐가 다르냐고? 화면이 더 크고. 배터리가 더 오래가고. 카메라 성능도 높아졌다.",
+      "subtitle": "더 큰 화면·긴 배터리·강한 카메라",
+      "photo_query": "smartphone camera lens quality comparison"
+    },
+    {
+      "image": null,
+      "narration": "근데 이거. 정말 필요한 업그레이드냐 아니냐. 그건 본인이 판단해야 한다.",
+      "subtitle": "필요성은 개인차",
+      "photo_query": "person thinking smartphone choice decision"
+    },
+    {
+      "image": null,
+      "narration": "새 폰 사기 전에 한 번 더 생각해봐라. 쫌봐봐 채널 팔로우하면 요런 정보 계속 받을 수 있다.",
+      "subtitle": "현명한 구매 결정을 위해",
+      "photo_query": "person researching smartphone comparison online"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-03T03:55:50.668418+00:00"
+  }
+}

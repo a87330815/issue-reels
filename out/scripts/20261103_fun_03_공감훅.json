@@ -1,0 +1,54 @@
+{
+  "title": "편의점 우산 사면 그날 비 그친다는 법칙",
+  "cover": {
+    "image": null,
+    "lines": [
+      "편의점서",
+      "<r>우산 사면</r>",
+      "그날",
+      "비 그친다"
+    ],
+    "badge": null,
+    "photo_query": "convenience store umbrella rain"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아 이 빌어먹을 비. 3일째 오네. 우산은 또 어디 뒀는지 모르고.",
+      "subtitle": "우산 없이 출근길",
+      "photo_query": "heavy rain umbrella lost"
+    },
+    {
+      "image": null,
+      "narration": "그래 편의점에서 우산 사자. 2천 원짜리 싼 거 하나. 지갑도 홀가분하고.",
+      "subtitle": "편의점 우산 구매",
+      "photo_query": "convenience store checkout umbrella"
+    },
+    {
+      "image": null,
+      "narration": "집 나와서 30초. 어? 비가... 언제 그쳤지? 구름도 빠졌네?",
+      "subtitle": "신기하게 비가 뚝",
+      "photo_query": "sky clearing rain stops suddenly"
+    },
+    {
+      "image": null,
+      "narration": "이 우산이야. 이 우산만 사면 신기하게 비가 그친다니까. 황당하지만 진짜다.",
+      "subtitle": "우산의 신기한 법칙",
+      "photo_query": "dry weather blue sky afternoon"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 공감되면 팔로우 해야지. 우리 함께 웃고 가자!",
+      "subtitle": "팔로우 부탁해요",
+      "photo_query": "follow button subscribe like"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T03:56:49.056763+00:00"
+  }
+}

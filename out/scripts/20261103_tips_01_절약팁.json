@@ -1,0 +1,53 @@
+{
+  "title": "장보기 전 5분이 식비 30% 줄인다",
+  "cover": {
+    "image": null,
+    "lines": [
+      "장보기 전",
+      "<r>5분만 하면</r>",
+      "식비 30% 절약"
+    ],
+    "badge": null,
+    "photo_query": "grocery list planning notepad"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 지금부터 알려줄 거 하나만 기억해. 장 보러 가기 전에 냉장고 확인하고 이번 주 밥 계획을 종이에 써야 한다.",
+      "subtitle": "냉장고 확인 → 주간 식단 작성",
+      "photo_query": "refrigerator open checking food"
+    },
+    {
+      "image": null,
+      "narration": "왜냐하면 계획 없이 가면 눈에 띄는 것만 사게 돼. 그래서 충동구매가 생기고 우리가 쓸 수 없는 음식들이 반복된다니까.",
+      "subtitle": "계획 없음 = 충동구매 40% 증가",
+      "photo_query": "shopping cart full impulse buying"
+    },
+    {
+      "image": null,
+      "narration": "이번 주에 뭘 먹을 건지 월-일요일까지 정해놓고, 그에 맞춰 필요한 재료만 리스트 만들어서 가. 그럼 쓸데없이 사는 게 없어진다.",
+      "subtitle": "월-일 식단 확정 후 필요 재료만 구매",
+      "photo_query": "meal planning calendar weekly menu"
+    },
+    {
+      "image": null,
+      "narration": "실제로 이거 하는 사람들은 한 달에 평균 3만~4만 원이 줄어든다고 카더라. 냉장고에 이미 있는 거 또 사지 않으니까.",
+      "subtitle": "월 식비 30% 절약 (가족 기준)",
+      "photo_query": "receipts money saving budget tracking"
+    },
+    {
+      "image": null,
+      "narration": "이런 생활 꿀팁들이 자꾸 필요하면 쫌봐봐 팔로우해. 매일 돈 버는 방법을 가져다줄 거니까.",
+      "subtitle": "쫌봐봐 팔로우하기",
+      "photo_query": "follow subscribe notification bell"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T03:56:57.164244+00:00"
+  }
+}

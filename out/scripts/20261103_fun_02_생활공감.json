@@ -1,0 +1,53 @@
+{
+  "title": "겨울 이불 밖은 위험지역",
+  "cover": {
+    "image": null,
+    "lines": [
+      "겨울 아침",
+      "<r>이불 밖</r>",
+      "= 위험지역"
+    ],
+    "badge": null,
+    "photo_query": "winter bed cold morning blanket"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "알람이 울린다. 근데 이불 밖 온도? 영하 5도. 이거 전쟁이다 아이가.",
+      "subtitle": "이불 안: 천국",
+      "photo_query": "warm bed cozy blanket morning"
+    },
+    {
+      "image": null,
+      "narration": "과학적 사실이다. 겨울 아침 이불 밖은 급격한 온도 변화로 자율신경계가 깨어난다. 심장이 철렁내린다고 카더라.",
+      "subtitle": "체온 11도 차이 = 생존 위협",
+      "photo_query": "thermometer cold temperature winter"
+    },
+    {
+      "image": null,
+      "narration": "그래서 뭐? 5분을 더 버틴다. 손가락이 얼어도 버틴다. 발가락도 버틴다.",
+      "subtitle": "이불의 마력",
+      "photo_query": "person hiding under blanket bed"
+    },
+    {
+      "image": null,
+      "narration": "결국 일어난다. 남은 체온 한 방울로 옷을 덮고 나가는데... 와 진짜 이거 사실이더라.",
+      "subtitle": "과학이 맞긴 맞았네",
+      "photo_query": "cold morning getting out of bed"
+    },
+    {
+      "image": null,
+      "narration": "이런 공감 더 보고 싶으면 팔로우 꼭 눌러. 우리 함께 버티자.",
+      "subtitle": "겨울은 생존이다",
+      "photo_query": "winter survival cozy indoor"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T03:56:37.052651+00:00"
+  }
+}
