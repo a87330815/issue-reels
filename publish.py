@@ -166,6 +166,35 @@ def check():
     except Exception as e:
         print(f"[경고] 한도 조회 실패: {e}")
 
+    # 토큰 권한 디버그 — media_publish 실패 원인 추적
+    try:
+        import requests
+        # debug_token은 앱 토큰 또는 같은 유저 토큰으로 호출
+        dbg = api("GET", "debug_token", input_token=TOKEN)
+        td = dbg.get("data", {})
+        scopes = td.get("scopes", [])
+        granular = td.get("granular_scopes", [])
+        app_id = td.get("app_id", "?")
+        expires = td.get("expires_at", 0)
+        is_valid = td.get("is_valid", "?")
+        print(f"\n🔑 토큰 디버그:")
+        print(f"  app_id: {app_id}")
+        print(f"  valid: {is_valid}")
+        print(f"  expires_at: {expires}")
+        print(f"  scopes: {scopes}")
+        print(f"  granular_scopes: {granular}")
+        # 핵심 권한 체크
+        needed = {"instagram_content_publish", "instagram_basic",
+                  "pages_read_engagement", "pages_show_list"}
+        have = set(scopes)
+        missing = needed - have
+        if missing:
+            print(f"  ⚠ 누락 권한: {missing}")
+        else:
+            print(f"  ✅ 필수 권한 모두 있음")
+    except Exception as e:
+        print(f"[경고] 토큰 디버그 실패: {e}")
+
     print("\n설정 완료")
     return True
 
