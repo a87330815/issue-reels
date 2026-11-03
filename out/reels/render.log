@@ -1,22 +1,20 @@
-run 41623126620 2026-11-03T10:58:07Z
+run 41683180735 2026-11-03T17:21:56Z
 
 === 20261024_09_숫자훅 ===
   [cover] '황희찬' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''황희찬' 관련 트렌드 —' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
   [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
@@ -35,23 +33,23 @@ run 41623126620 2026-11-03T10:58:07Z
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
   TTS [1/3] [EL·발랄녀] 0.7초  황희찬...
-  TTS [2/3] [EL·발랄녀] 11.7초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
-  TTS [3/3] [EL·발랄녀] 4.4초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
+  TTS [2/3] [EL·발랄녀] 12.1초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
+  TTS [3/3] [EL·발랄녀] 4.5초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
 
 2) 영상 합성
   세그먼트 [1/4] 3.0초
-  세그먼트 [2/4] 12.5초
-  세그먼트 [3/4] 5.2초
+  세그먼트 [2/4] 12.9초
+  세그먼트 [3/4] 5.3초
   세그먼트 [4/4] 4.0초
 
   ✓ 릴스 완성: out/reels/20261024_09_숫자훅.mp4
-    길이: 20.7초  /  크기: 1.1MB
--rw-r--r-- 1 runner runner 1.2M Nov  3 10:58 out/reels/20261024_09_숫자훅.mp4
+    길이: 21.2초  /  크기: 1.4MB
+-rw-r--r-- 1 runner runner 1.4M Nov  3 17:23 out/reels/20261024_09_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=20.680272
+duration=21.240272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -60,7 +58,7 @@ duration=20.680272
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-03):
-  20261024_09_숫자훅.mp4  1.1MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-03/20261024_09.mp4
+  20261024_09_숫자훅.mp4  1.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-03/20261024_09.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
