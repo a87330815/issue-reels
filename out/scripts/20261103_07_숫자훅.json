@@ -1,62 +1,47 @@
 {
-  "title": "삼계동 최고가 아파트",
+  "title": "바르셀로나 vs 애스턴 빌라 챔피언스리그",
   "cover": {
     "image": null,
     "lines": [
-      "삼계동에서",
-      "<r>3.8억</r>",
-      "나온 거 알아?"
+      "7년 만에",
+      "캄프 누에",
+      "<r>돌아온</r> 감독"
     ],
     "badge": null,
-    "photo_query": "korean apartment building modern construction"
+    "photo_query": "barcelona camp nou stadium"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 삼계동 최고가 아파트가 터졌다. 3.8억이다.",
-      "subtitle": "삼계동 최고가 3.8억",
-      "photo_query": "apartment price tag real estate sign"
+      "narration": "이거 모르고 지나가면 손해다. 바르셀로나 감독이 7년 만에 캄프 누 돌아왔다. 그런데 이번엔 상황이 다르다.",
+      "subtitle": "우나이 에메리 감독 복귀",
+      "photo_query": "football coach tactical board"
     },
     {
       "image": null,
-      "narration": "삼계한라비발디센텀시티. 84제곱미터 크기에 10월에 거래 성사됐다. 오 대박. 이 지역 평균보다 훨씬 비싼 거다.",
-      "subtitle": "삼계한라비발디센텀시티 84㎡",
-      "photo_query": "new apartment building entrance korea"
+      "narration": "예전에 여긴 악몽 같은 경험을 했다. 그때 뭔가 안 풀렸던 일들이 있었다고 한다. 하지만 지금은 다르다.",
+      "subtitle": "과거의 기억, 새로운 도전",
+      "photo_query": "sports coach returning comeback"
     },
     {
       "image": null,
-      "narration": "2021년에 지어진 따끈한 건물이거든. 위치도 좋고 신축이니 관심 있는 사람들이 많다 아이가.",
-      "subtitle": "2021년 신축 고급 단지",
-      "photo_query": "modern residential complex glass building"
+      "narration": "애스턴 빌라와의 챔피언스리그 경기. 이게 얼마나 중요한지 아냐고. 이번 매치업이 유럽 축구판에서 핫하다.",
+      "subtitle": "챔피언스리그 주목 경기",
+      "photo_query": "european football champions league match"
     },
     {
       "image": null,
-      "narration": "그 다음은 3.2억. 그 다음은 3.1억. 삼계동에 이만한 가격대가 떴다는 게 포인트다.",
-      "subtitle": "가격대 3.8억 → 3.2억 → 3.1억",
-      "photo_query": "apartment building skyline korea cityscape"
-    },
-    {
-      "image": null,
-      "narration": "삼계동 부동산 시장 움직임을 놓치지 마. 더 자세한 거래 정보는 우리 채널에서 계속 업데이트된다. 팔로우 해라.",
-      "subtitle": "삼계동 실거래가 계속 업데이트",
-      "photo_query": "real estate agent showing apartment listing"
+      "narration": "감독이 예전 악몽을 이겨내고 돌아온 무대. 여기서 뭘 보여줄지가 관건이다. 관심 있는 놈들은 경기 눈여겨봐라.",
+      "subtitle": "재도전의 시작",
+      "photo_query": "stadium crowd fans cheering"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        3.8,
-        3.2,
-        3.2,
-        2.6,
-        2.2
-      ],
-      "style": "bars"
-    },
-    "generated_at": "2026-11-03T03:56:03.024505+00:00"
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-03T20:24:15.232720+00:00"
   }
 }

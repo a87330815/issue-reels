@@ -1,45 +1,45 @@
 {
-  "title": "충전기 하나로 펼쳐지는 가족 눈치싸움",
+  "title": "장마철 빨래 집 차이",
   "cover": {
     "image": null,
     "lines": [
-      "충전기 하나",
-      "<r>남겨놓고 나가면</r>",
-      "범인 찾기 시작"
+      "장마철",
+      "<r>빨래 마르는 집</r>",
+      "vs 안 마르는 집"
     ],
     "badge": null,
-    "photo_query": "phone charger cable conflict"
+    "photo_query": "wet laundry hanging humid"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "아빠가 충전기 꽂고 나가. 그럼 엄마는 어디다? 거실에서 이미 기다리고 있지. 시간만 보고 있음.",
-      "subtitle": "눈치의 전쟁 시작",
-      "photo_query": "family living room waiting tension"
+      "narration": "안 마르는 집은 삼일을 매달아도 축축하다니까. 냄새도 나고 또 빨아야 되고.",
+      "subtitle": "3일 뒤에도 여전히 축축",
+      "photo_query": "damp clothes hanging basement"
     },
     {
       "image": null,
-      "narration": "\"아 근데 내 핸드폰도 배터리 없는데...\" 이래. 절대 아빠 것 뺀다고 못 함. 그럼 간신히 들어옴. 근데 막 빌빌거림.",
-      "subtitle": "간접적인 압박",
-      "photo_query": "woman checking phone battery low"
+      "narration": "그런데 어떤 집은 하루 만에 뽀송뽀송 마른다고? 그 차이가 뭔지 알아? 바로 에어컨 실외기 방향이라 카더라.",
+      "subtitle": "실외기 바람이 빨래 쪽으로?",
+      "photo_query": "air conditioner outdoor unit"
     },
     {
       "image": null,
-      "narration": "결국 누가 먼저 \"좋아 내가 충전할게\" 이 말을 하느냐가 문제야. 이기는 쪽이 졌다고 생각하지만서도 빼야 한단 말이지.",
-      "subtitle": "역설의 승리",
-      "photo_query": "phone charging dock socket outlet"
+      "narration": "동생 집은 베란다 에어컨 실외기 맞은편에 빨래 널었더니 반나절 만에 왠만한 건 마른다고 하더라.",
+      "subtitle": "에어컨 실외기 = 숨은 제습기",
+      "photo_query": "clothes drying fast air flow"
     },
     {
       "image": null,
-      "narration": "\"어? 충전기가 없네?\" 라고 하면 모두가 의심의 눈초리로 봐. 넌 들고 있지 않냐고. 서로의 핸드폰만 봐.",
-      "subtitle": "모두가 용의자",
-      "photo_query": "family members looking suspicious questioning"
+      "narration": "우리 집은 습기 많은 구석진 방이라 어쩔 수 없지만, 이거 알고 나니 참 답답하네. 선풍기라도 틀어야지.",
+      "subtitle": "그래서 우린 에어컨도 돌려",
+      "photo_query": "fan cooling laundry drying"
     },
     {
       "image": null,
-      "narration": "이런 집 특징? 충전기 2~3개 있어도 항상 \"충전기가 없다\"고 함. 이거 더 웃긴 일상 보고 싶으면 팔로우해.",
-      "subtitle": "충전기는 많은데",
-      "photo_query": "multiple phone chargers tangled cables"
+      "narration": "장마철 빨래 고민 많으시면 저 팔로우해 보세요. 이런 거 더 많아요.",
+      "subtitle": "쫌봐봐 팔로우 ♡",
+      "photo_query": "follow button subscribe"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T15:39:33.920409+00:00"
+    "generated_at": "2026-11-03T20:24:59.962306+00:00"
   }
 }

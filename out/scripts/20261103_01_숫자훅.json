@@ -1,39 +1,39 @@
 {
-  "title": "서초동 래미안 리더스원 44.5억 거래",
+  "title": "대치동 은마 35억 거래",
   "cover": {
     "image": null,
     "lines": [
-      "서초동에",
-      "<r>44.5억</r>",
-      "이 나왔다"
+      "대치동 은마",
+      "<r>35억</r>",
+      "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building Seoul Seocho"
+    "photo_query": "luxury apartment building entrance daichi seoul"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서초동 래미안 리더스원이 44억 5천만 원에 거래됐다. 이거 뭐라카노.",
-      "subtitle": "서초동 래미안 리더스원 44.5억",
-      "photo_query": "seoul real estate transaction contract signing"
+      "narration": "이거 모르고 지나가면 손해다. 대치동 은마. 84제곱미터짜리 중형 평수가 35억에 거래됐다.",
+      "subtitle": "은마 84㎡, 35억원 거래",
+      "photo_query": "apartment real estate transaction document"
     },
     {
       "image": null,
-      "narration": "114제곱미터, 9층. 2020년 준공한 신축 급의 아파트다. 평당 가격으로 따지면 3900만 원을 넘긴다.",
-      "subtitle": "114㎡ 9층 / 평당 3900만원",
-      "photo_query": "apartment floor plan measurement"
+      "narration": "이게 뭐냐고? 서울 강남 땅값이 얼마나 미쳤는지 보여주는 거다. 1979년에 지은 아파트 말이다.",
+      "subtitle": "건축 47년 된 건물",
+      "photo_query": "old apartment building korea 1970s"
     },
     {
       "image": null,
-      "narration": "서초동 강남 구간 중에서도 핫한 위치다. 이 급대의 아파트가 움직이면 시장이 움직인다는 신호다.",
-      "subtitle": "강남 핵심 구간 거래 신호",
-      "photo_query": "Gangnam Seoul district map location"
+      "narration": "중형 평수. 보통 집. 이게 35억이라니까. 당신 집값이 얼마인지 계산해보면 아연실색할기다.",
+      "subtitle": "강남 땅값의 현주소",
+      "photo_query": "calculator real estate pricing spreadsheet"
     },
     {
       "image": null,
-      "narration": "당신이 관심 두는 단지는 지금 어떻게 움직이고 있나. 팔로우해서 매주 체크해라.",
-      "subtitle": "주간 실거래가 팔로우하기",
-      "photo_query": "person checking mobile phone real estate"
+      "narration": "이런 거래 데이터. 매일 나온다. 팔로우해라. 당신 재산의 현주소를 제대로 알아야 한다.",
+      "subtitle": "매일 업데이트되는 실거래 정보",
+      "photo_query": "real estate market data analytics chart"
     }
   ],
   "meta": {
@@ -43,14 +43,14 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        44.5,
-        31.9,
-        31.5,
-        31.3,
-        30.4
+        35.3,
+        34.3,
+        34.0,
+        32.0,
+        32.0
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-03T15:38:19.116124+00:00"
+    "generated_at": "2026-11-03T20:23:36.395953+00:00"
   }
 }

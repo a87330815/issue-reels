@@ -1,45 +1,45 @@
 {
-  "title": "알뜰폰으로 바꾸면 월 3만 원 절약되는 이유",
+  "title": "대기전력 차단기로 월 1만 원 절약하기",
   "cover": {
     "image": null,
     "lines": [
-      "알뜰폰으로 바꾸면",
-      "<r>월 3만원</r>",
-      "아낀다"
+      "대기전력만 줄여도",
+      "<r>월 1만원</r>",
+      "절약된다"
     ],
     "badge": null,
-    "photo_query": "smartphone mobile phone plan"
+    "photo_query": "power strip standby mode"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "요즘 통신비가 얼마나 나와? 대부분 9만 원에서 12만 원 사이다. 근데 알뜰폰으로 바꾸면 5만 원대까지 확 떨어진다.",
-      "subtitle": "기존 통신사 vs 알뜰폰",
-      "photo_query": "phone bill receipt expensive"
+      "narration": "우리 집에서 쓰는 전기의 10%는 아무것도 안 하면서 새나간다고 아시냐고. TV, 에어컨, 냉장고 이런 가전들이 대기 상태에서도 계속 전기를 빨아먹는 거 말이다.",
+      "subtitle": "대기전력이 월 전기세의 10%",
+      "photo_query": "home appliances standby"
     },
     {
       "image": null,
-      "narration": "알뜰폰이 싼 이유는 기존 통신사 네트워크를 빌려쓰기 때문이다. 인프라 투자 비용이 없으니까 그대로 가격에 반영되는 거다.",
-      "subtitle": "알뜰폰은 기존망 임차료만",
-      "photo_query": "network infrastructure mobile tower"
+      "narration": "그럼 이제 해결책이다. 멀티탭에 전원 차단 스위치 있잖아. 자기 전에, 나갈 때 그냥 탁 눌러버리면 된다. TV 뒤, 컴퓨터 밑, 이런 데 있는 멀티탭들 말이다.",
+      "subtitle": "멀티탭 스위치로 한 번에 OFF",
+      "photo_query": "power strip switch off"
     },
     {
       "image": null,
-      "narration": "가장 현실적인 선택은 월 6GB, 통화료 무제한 상품이다. 대충 5천 원에서 1만 원 사이인데, 기존 통신사보다 최소 3만 원은 아낀다.",
-      "subtitle": "6GB + 통화무제한 월 5~1만원",
-      "photo_query": "data usage mobile phone settings"
+      "narration": "특히 요즘 같은 여름엔 에어컨 리모콘으로 끄지 말고, 뒷면 멀티탭 끄는 게 훨씬 효율적이다. 대기전력이 안 새니까.",
+      "subtitle": "에어컨은 멀티탭으로 완전히 OFF",
+      "photo_query": "air conditioner power outlet"
     },
     {
       "image": null,
-      "narration": "가입할 때 본인 확인만 하면 되고, 기존 번호 그대로 옮길 수도 있다. 약정도 없으니까 언제든 바꿀 수 있고.",
-      "subtitle": "본인확인만 하면 끝",
-      "photo_query": "mobile phone number transfer process"
+      "narration": "이거 딱 2주만 해봐봐. 전기 고지서 보면 깜짝 놀란다. 최소 월 1만 원은 줄어든다니까. 손가락 하나 까딱이는 것만으로도 말이다.",
+      "subtitle": "2주 만에 월 1만 원 절약",
+      "photo_query": "electricity bill savings"
     },
     {
       "image": null,
-      "narration": "1년만 해도 36만 원이 모인다. 이런 꿀팁 더 알고 싶으면 팔로우해 봐. 매주 돈 아끼는 방법 알려준다.",
-      "subtitle": "연간 36만원 절약 가능",
-      "photo_query": "saving money jar coins stack"
+      "narration": "이런 꿀팁들이 자꾸 보고 싶으면 팔로우 해버려. 우리 같이 돈 아껴보자고.",
+      "subtitle": "팔로우하고 꿀팁 더 받기",
+      "photo_query": "follow button social media"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T15:39:57.254349+00:00"
+    "generated_at": "2026-11-03T20:25:15.987863+00:00"
   }
 }

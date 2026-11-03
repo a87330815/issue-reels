@@ -1,0 +1,53 @@
+{
+  "title": "흰 운동화 새 신발처럼 되살리기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "누렇던 운동화",
+      "<r>30분만에</r>",
+      "새것처럼"
+    ],
+    "badge": null,
+    "photo_query": "white sneaker cleaning restoration"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 흰 운동화 누렇게 변했지? 그거 집에 있는 것들로 말끔히 복원할 수 있다 아이가.",
+      "subtitle": "묵은 때 제거의 시작",
+      "photo_query": "dirty white sneaker close-up"
+    },
+    {
+      "image": null,
+      "narration": "먼저 베이킹소다 2스푼에 물 1스푼 섞어서 페이스트 만들어. 칫솔로 신발 표면을 원형으로 문질러 줄래.",
+      "subtitle": "베이킹소다 + 물 = 효과적인 클리너",
+      "photo_query": "baking soda paste application shoe"
+    },
+    {
+      "image": null,
+      "narration": "5분 정도 놔두면 베이킹소다의 약산성이 때를 부드럽게 녹여낸다. 그다음에 물로 헹궈.",
+      "subtitle": "5분 자연 분해, 문지르지 말고 헹굼",
+      "photo_query": "rinsing white shoe water"
+    },
+    {
+      "image": null,
+      "narration": "아직도 노란 자국이 남았으면 이제 화이트 식초 한 숟가락을 물에 섞어서 스프레이 뿌려. 그 다음 다시 헹궈.",
+      "subtitle": "식초의 산성이 누런색 산화 제거",
+      "photo_query": "white vinegar spray bottle cleaning"
+    },
+    {
+      "image": null,
+      "narration": "통풍 좋은 곳에서 30분만 말려 봐. 완전 새것 같은 흰 운동화로 돌아온다 그거든. 이런 꿀팁 더 보고 싶으면 팔로우해!",
+      "subtitle": "30분 건조, 완전 복원 완료",
+      "photo_query": "white sneaker drying sunny window"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T20:25:07.777188+00:00"
+  }
+}

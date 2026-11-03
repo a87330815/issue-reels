@@ -1,0 +1,47 @@
+{
+  "title": "읽씹이 예의인 세대 vs 무례인 세대",
+  "cover": {
+    "image": null,
+    "lines": [
+      "카톡 읽고",
+      "<r>답 안 하기</r>",
+      "예의다 무례다"
+    ],
+    "badge": null,
+    "photo_query": "phone message notification"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "우리 세대는 이러다 아이가. 카톡 읽었으면 바로 답장하는 게 '상대방을 존중하는 거'라고 배웠다니까.",
+      "subtitle": "읽고 답 안 하면 미안해서 밤을 못 잔다",
+      "photo_query": "anxiety phone chat worry"
+    },
+    {
+      "image": null,
+      "narration": "그런데 요즘 세대는 딴 얘기다. '읽었다는 게 답장까지 할 의무는 아니지. 시간 될 때 답하지'라고 하더라고.",
+      "subtitle": "읽씹이 자유라고 생각한다",
+      "photo_query": "young person texting relaxed"
+    },
+    {
+      "image": null,
+      "narration": "사실 생각해 보니까 니들이 맞아. 우리가 너무 압박감 있게 산 거지. 그런데도 습관은 못 고쳐지더라니까.",
+      "subtitle": "결국 둘 다 맞다",
+      "photo_query": "person phone thinking smile"
+    },
+    {
+      "image": null,
+      "narration": "야야야, 이런 거 공감되냐? 그럼 팔로우해서 함께 웃자고야.",
+      "subtitle": "읽씹 밥 먹듯 한다면 공감",
+      "photo_query": "friends laughing together phone"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T20:24:40.797805+00:00"
+  }
+}

@@ -1,56 +1,47 @@
 {
-  "title": "같은 아파트인데 가격이 39배 차이 난다고?",
+  "title": "코리안더비 이강인 vs 김민재",
   "cover": {
     "image": null,
     "lines": [
-      "같은 아파트인데",
-      "<r>39배</r>",
-      "차이 난다?"
+      "한국인 2명이",
+      "<r>유럽 최강전</r>",
+      "부딪힌다"
     ],
     "badge": null,
-    "photo_query": "seoul apartment neighborhood comparison"
+    "photo_query": "soccer football match stadium night lights"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 같은 강남인데 동네 따라 아파트 가격이 완전 다르다.",
-      "subtitle": "같은 강남인데 가격 차이 39배",
-      "photo_query": "gangnam district seoul apartment buildings"
+      "narration": "이거 모르고 지나가면 손해다. 내일 밤. 유럽 챔피언스리그. 아틀레티코 마드리드 대 바이에른 뮌헨이 붙는다.",
+      "subtitle": "챔피언스리그 격돌",
+      "photo_query": "champions league trophy stadium"
     },
     {
       "image": null,
-      "narration": "삼성동은 한 채에 31억. 그런데 반송동은 8천만. 진짜 같은 서울이 맞나 싶다.",
-      "subtitle": "삼성동 31.3억 vs 반송동 0.8억",
-      "photo_query": "luxury apartment expensive neighborhood"
+      "narration": "근데 이거야. 대박이다. 한국 국가대표 이강인이 아틀레티코에서 뛰고. 김민재가 바이에른에서 뛴다.",
+      "subtitle": "이강인 vs 김민재",
+      "photo_query": "korean football players professional match"
     },
     {
       "image": null,
-      "narration": "이거다 아이가. 강남이 다 같은 강남이 아니라는 거. 동네 선택이 곧 자산 차이다.",
-      "subtitle": "동네 하나가 자산을 결정한다",
-      "photo_query": "real estate property investment documents"
+      "narration": "같은 한국인. 다른 팀. 유럽 최강의 무대에서 직접 맞붙는 거다. 이런 일. 진짜 드물다.",
+      "subtitle": "같은 나라, 다른 진영",
+      "photo_query": "football players rivalry competitive match"
     },
     {
       "image": null,
-      "narration": "내가 사는 곳, 살 곳 고를 때 이런 데이터 체크하고 가야 나중에 후회 안 한다.",
-      "subtitle": "데이터로 현명하게 선택하기",
-      "photo_query": "person analyzing market data on computer"
+      "narration": "아틀레티코는 스페인의 강호. 바이에른은 독일 최강. 내일 누가 이기나 봐봐. 코리안더비 놓치지 마라.",
+      "subtitle": "내일 밤, 반드시 봐야 할 경기",
+      "photo_query": "european football championship match tactical play"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        31.3,
-        31.3,
-        24.9,
-        23.5,
-        23.2
-      ],
-      "style": "bars"
-    },
-    "generated_at": "2026-11-03T15:38:38.079531+00:00"
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-03T20:23:56.153146+00:00"
   }
 }

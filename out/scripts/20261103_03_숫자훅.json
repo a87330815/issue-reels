@@ -1,0 +1,75 @@
+{
+  "title": "34억 차이",
+  "cover": {
+    "image": null,
+    "photo_query": "Korea city luxury apartment",
+    "lines": [
+      "방금 나온",
+      "<r>34억 차이</r>",
+      "실화입니다"
+    ],
+    "badge": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 대치동 평균 34.8억 vs 부곡동 평균 1.1억. 수치로 확인해보자.",
+      "subtitle": "대치동 vs 부곡동"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "대치동 은마, 전용 84㎡(26평) 8층이 35.3억원에 실거래 신고됐다카이. 평당 1.4억. 1979년 준공.",
+      "subtitle": "대치동 은마 35.3억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "같은 동네 은마도 주목할 만한다. 전용 84㎡(26평) 3층, 거래가 34.3억원. 평당 1.3억.",
+      "subtitle": "대치동 은마 34.3억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "강남 더샵 포레스트 전용 125㎡(38평) 8층 — 34.0억원 거래. 평당 9,022만원.",
+      "subtitle": "수서동 강남 더샵 포레스트 34.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "한라비발디 전용 125㎡(38평) 15층 — 32.0억원 거래. 평당 8,462만원.",
+      "subtitle": "도곡동 한라비발디 32.0억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 3.3억원까지 벌어졌다. 평균 33.5억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        34.8,
+        34.0,
+        32.0,
+        27.4,
+        26.8
+      ],
+      "style": "bars"
+    },
+    "tone": "경상도",
+    "generated_at": "2026-11-03T20:23:50.514559+00:00"
+  }
+}

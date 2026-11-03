@@ -1,63 +1,53 @@
 {
-  "title": "동춘동 최고가 아파트",
+  "title": "고소영 근황",
   "cover": {
     "image": null,
     "lines": [
-      "동춘동",
-      "최고가",
-      "<r>5.8억</r>",
-      "떴다"
+      "라디오 시작한",
+      "고소영",
+      "<r>유재석급</r> 반응"
     ],
     "badge": null,
-    "photo_query": "modern apartment complex building entrance"
+    "photo_query": "radio broadcast studio microphone"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 동춘동 아파트 시세 방금 나왔는데. 최고가가 5억 8천만 원이다.",
-      "subtitle": "동춘동 최고가 5.8억",
-      "photo_query": "apartment price tag number board"
+      "narration": "이거 모르고 지나가면 손해다. 고소영이가 라디오를 시작했데. 반응이 장난 아니라고 한다.",
+      "subtitle": "고소영 라디오 시작",
+      "photo_query": "korean radio host speaking"
     },
     {
       "image": null,
-      "narration": "연수서해그랑블에듀파크. 올해 지은 따끈따끈한 신축이다. 84제곱미터 기준으로 이 가격이 나왔다.",
-      "subtitle": "2024년 신축 단지",
-      "photo_query": "new apartment complex modern building"
+      "narration": "옛날에 TV 예능에서 나왔던 그 수준의 임팩트라고. 마치 유재석이가 나타났을 때 그 정도다 이거.",
+      "subtitle": "유재석급 반응",
+      "photo_query": "audience reaction excited shocked"
     },
     {
       "image": null,
-      "narration": "같은 동네 다른 아파트들 보면 5억 3천~5억 5천만 대다. 신축이면 당연히 비싼 거지. 근데 주목할 건 이거다.",
-      "subtitle": "신축 프리미엄 확실",
-      "photo_query": "apartment comparison price difference chart"
+      "narration": "요즘 라디오가 그렇게까지 화제가 되나 싶겠지만, 알고 보니 고소영이의 활동이 얼마나 오랜만인지 알면 납득된다.",
+      "subtitle": "오랜만의 활동",
+      "photo_query": "comeback return stage spotlight"
     },
     {
       "image": null,
-      "narration": "동춘동. 계속 주목해야 할 지역이다. 인천 연수구인데 신축이 자꾸 들어선다. 시세 트렌드를 따라가야 기회를 놓치지 않는다.",
-      "subtitle": "동춘동 신축 계속 증가",
-      "photo_query": "incheon yeonsu construction development area"
+      "narration": "그 정도면 팬들이 얼마나 기다렸는지 알 수 있다. 관심도 높고, 논의도 뜨거운 상황이다.",
+      "subtitle": "팬들의 반응",
+      "photo_query": "social media discussion comments"
     },
     {
       "image": null,
-      "narration": "당신의 지역은 이번 달 최고가가 얼마였나. 팔로우해서 계속 확인해라.",
-      "subtitle": "지역별 시세 팔로우하기",
-      "photo_query": "real estate market data analytics"
+      "narration": "이런 화제성, 우리 채널에서도 계속 놓치지 말고 따라가라. 팔로우 구독 잊지 마.",
+      "subtitle": "쫌봐봐 채널 구독",
+      "photo_query": "subscribe button notification bell"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        5.8,
-        5.8,
-        5.5,
-        5.3,
-        5.3
-      ],
-      "style": "bars"
-    },
-    "generated_at": "2026-11-03T15:39:02.290435+00:00"
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-03T20:24:21.465881+00:00"
   }
 }

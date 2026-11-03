@@ -1,45 +1,39 @@
 {
-  "title": "장볼 때 계산",
+  "title": "삼각김밥 뜯는 순서 전쟁",
   "cover": {
     "image": null,
     "lines": [
-      "필요한 거 3개",
-      "<r>사러 갔다가</r>",
-      "카트 가득"
+      "삼각김밥",
+      "<r>김 다 찢어본</r>",
+      "사람들"
     ],
     "badge": null,
-    "photo_query": "shopping cart full groceries"
+    "photo_query": "kimbap rice triangle convenience store"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "오늘은 정말 필요한 거만 사고 나가자. 마음 먹고 들어갔지.",
-      "subtitle": "다짐하고 들어감",
-      "photo_query": "supermarket entrance determination"
+      "narration": "편의점에서 따끈한 삼각김밥 집어 들고 뜯으려는데. 어? 어디를 뜯어야 되지?",
+      "subtitle": "김 어디서 뜯지?",
+      "photo_query": "hands holding triangle kimbap package"
     },
     {
       "image": null,
-      "narration": "우유 사다가 '어? 요거트 세일이네' 손 간다. 유자차 봤다고 또 손 간다.",
-      "subtitle": "충동구매의 시작",
-      "photo_query": "supermarket shelves discounted products"
+      "narration": "결국 그냥 한쪽을 막 뜯었다 아이가. 근데 이게 무조건 김이 찢어져 버린다니까.",
+      "subtitle": "아 김이 다 찢어졌다",
+      "photo_query": "torn seaweed rice triangle snack"
     },
     {
       "image": null,
-      "narration": "라면도 있고, 과자도 있고... 어느새 카트가 가득 찼어.",
-      "subtitle": "카트 변신",
-      "photo_query": "overflowing shopping cart checkout"
+      "narration": "알고 보니 옆에 작은 구멍을 뜯고 김을 빼내야 한대더라. 진짜 몰랐지만 알고 보니 이게 정답이더라.",
+      "subtitle": "정답은 옆의 구멍?",
+      "photo_query": "kimbap seaweed pull method correct way"
     },
     {
       "image": null,
-      "narration": "계산대에서 통장 잔액 확인한다. 와, 이거 실화냐.",
-      "subtitle": "현실 직면",
-      "photo_query": "cashier payment shocked expression"
-    },
-    {
-      "image": null,
-      "narration": "이런 거 더 보고 싶으면 팔로우해 봐. 매일 우리 일상이 여기 있다.",
-      "subtitle": "팔로우 유도",
-      "photo_query": "phone scrolling social media"
+      "narration": "지금도 편의점에서 삼각김밥 사 먹는데 매번 헤맨다. 나만 이렇게 하나?",
+      "subtitle": "매번 헷갈려",
+      "photo_query": "confused man convenience store snack aisle"
     }
   ],
   "meta": {
@@ -48,6 +42,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T15:39:26.595643+00:00"
+    "generated_at": "2026-11-03T20:24:52.937644+00:00"
   }
 }

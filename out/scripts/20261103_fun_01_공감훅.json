@@ -1,44 +1,45 @@
 {
-  "title": "세탁기 주머니의 신비로운 물건들",
+  "title": "점심메뉴 고민 시간이 업무시간보다 길다",
   "cover": {
     "image": null,
     "lines": [
-      "세탁기 주머니에서",
-      "<r>나오는 것들</r>"
+      "점심 뭐 먹을지",
+      "<r>고민하는 시간</r>",
+      "이게 제일 긴데?"
     ],
     "badge": null,
-    "photo_query": "laundry basket clothes washing"
+    "photo_query": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "세탁기 돌린 다음날. 아 맞다, 주머니 확인해야지 하면서 열어본다. 그럼 뭐가 나올까?",
-      "subtitle": "설마 또 있나",
-      "photo_query": "washing machine door open"
+      "narration": "10시 30분. 아직 2시간 남았는데 벌써 우리 뇌는 점심메뉴 모드다.",
+      "subtitle": "아직 할 일도 많잖아",
+      "photo_query": "office worker thinking desk clock"
     },
     {
       "image": null,
-      "narration": "동전이 수십 개. 어떻게 이렇게 많아? 바지 주머니에 넣었던 동전들이 우르르 떨어진다.",
-      "subtitle": "매번 깜빡해",
-      "photo_query": "coins pocket money loose change"
+      "narration": "\"어제 먹었으니까 오늘은 다른 거\", \"그런데 저 카페 줄이 또 길겠지\", \"혼자 먹기는 뭔가 낭만이 없고\"... 아이고 이게 진짜 업무다.",
+      "subtitle": "머릿속 메뉴판이 100개다",
+      "photo_query": "restaurant menu choices confusion"
     },
     {
       "image": null,
-      "narration": "그리고 나온다. 휴지 조각, 라벨, 심지어 핸드폰 세정지까지. 아 맞아, 이것도 넣고 빨았네.",
-      "subtitle": "이것도 들어갔나",
-      "photo_query": "tissue paper lint fabric softener"
+      "narration": "11시 50분. 드디어 팀장님이 \"뭐 먹을래?\" 한 마디. 그제야 결정하는 우리들.",
+      "subtitle": "30분 고민의 결정체",
+      "photo_query": "coworkers lunch decision talking"
     },
     {
       "image": null,
-      "narration": "어? 이건 뭐지? 처음 보는 버튼. 어느 옷에서 나온 건지도 모르겠고. 주머니는 보물창고다.",
-      "subtitle": "정체불명의 물건들",
-      "photo_query": "lost button unknown items lost and"
+      "narration": "그런데 진짜 요즘 깨달았다. 점심메뉴 고민이 제일 창의적인 일이더라. 뇌가 진짜 풀가동 된다.",
+      "subtitle": "점심이 최고의 업무다",
+      "photo_query": "office lunch break food"
     },
     {
       "image": null,
-      "narration": "이런 거 계속 보고 싶으면 팔로우! 우리 함께 세탁기 신비 풀어보자.",
-      "subtitle": "매번 새로운 발견",
-      "photo_query": "laundry washing machine surprise"
+      "narration": "이런 거 더 보고 싶으면 팔로우 눌러! 우리 함께 웃자고.",
+      "subtitle": "나만 이런 거 아니지?",
+      "photo_query": "follow like social media button"
     }
   ],
   "meta": {
@@ -47,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T15:39:15.956175+00:00"
+    "generated_at": "2026-11-03T20:24:35.252817+00:00"
   }
 }

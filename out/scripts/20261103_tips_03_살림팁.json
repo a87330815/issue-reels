@@ -1,45 +1,51 @@
 {
-  "title": "냉장고 칸별 정리법",
+  "title": "배수구 냄새 5분에 잡기",
   "cover": {
     "image": null,
     "lines": [
-      "냉장고 이렇게",
-      "<r>정리하면</r>",
-      "식재료 2배 오래"
+      "배수구 냄새는",
+      "<r>5분이면</r>",
+      "끝이다"
     ],
     "badge": null,
-    "photo_query": "organized refrigerator shelves"
+    "photo_query": "drain sink smell"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "냉장고 칸마다 온도가 다르다는 거 알지? 이거 제대로 알고 정리하면 식재료가 진짜 오래 간다.",
-      "subtitle": "칸별 온도 차이 최대 5도",
-      "photo_query": "refrigerator temperature zones"
+      "narration": "싱크대나 욕실서 자꾸 냄새 나지? 배수관 안에 음식물이랑 때가 쌓여서 그런 거다. 오늘 5분이면 싹 없앨 거 있어.",
+      "subtitle": "배수구 냄새의 원인",
+      "photo_query": "kitchen sink drain odor"
     },
     {
       "image": null,
-      "narration": "맨 위 선반은 3~4도로 가장 따뜻해. 여기엔 계란, 치즈, 소스류 넣어. 상할 우려가 적거든.",
-      "subtitle": "상단 선반: 계란·치즈·소스",
-      "photo_query": "eggs cheese sauce shelf"
+      "narration": "준비물은 베이킹소다 2스푼, 식초 1컵. 드라이기도 하나 있으면 좋아. 먼저 베이킹소다를 배수구에 부어 넣어.",
+      "subtitle": "베이킹소다 2스푼 넣기",
+      "photo_query": "baking soda pouring drain"
     },
     {
       "image": null,
-      "narration": "중간~아래 선반은 1~2도로 가장 차가워. 생선, 고기, 두부 같은 단백질은 여기 넣어야 5일은 더 간다.",
-      "subtitle": "하단 선반: 생선·고기·두부",
-      "photo_query": "raw meat fish tofu refrigerator"
+      "narration": "그 위에 식초를 확 부으면 '쉬익' 하면서 거품이 일어난다. 이 화학반응이 배관 안의 때랑 냄새를 분해해 버린다.",
+      "subtitle": "식초 부으면 거품 폭발",
+      "photo_query": "vinegar baking soda reaction foam"
     },
     {
       "image": null,
-      "narration": "문 쪽은 온도가 자주 올라갔다 내렸다 해. 우유, 음료수 정도만 넣고 반찬은 절대 금지다.",
-      "subtitle": "문 선반: 음료·우유만",
-      "photo_query": "refrigerator door milk bottles"
+      "narration": "3분 정도 놔뒀다가 드라이기로 따뜻한 바람을 30초 정도 쐬면, 거품이 배관 깊숙이까지 밀려 내려간다.",
+      "subtitle": "드라이기로 따뜻한 바람 쐬기",
+      "photo_query": "hair dryer drain vent"
     },
     {
       "image": null,
-      "narration": "야채실은 습도가 높아서 쌈채소, 버섯 같은 건 여기 넣으면 2주까지 신선하게 유지돼. 이제 냉장고 쓸 때 이거 기억해두고 정리해봐.",
-      "subtitle": "야채실: 쌈채·버섯",
-      "photo_query": "vegetable crisper drawer leafy greens"
+      "narration": "마지막에 뜨거운 물을 부으면 냄새 원인이 싹 씻겨 내려간다. 이 방법은 일주일에 한 번씩 하면 냄새가 안 난다.",
+      "subtitle": "뜨거운 물로 마무리 헹굼",
+      "photo_query": "hot water drain flush"
+    },
+    {
+      "image": null,
+      "narration": "화학약품 안 써도 되고, 돈도 거의 안 들고, 5분이면 끝난다. 이런 꿀팁 더 보고 싶으면 팔로우해.",
+      "subtitle": "일주일마다 한 번씩 시행",
+      "photo_query": "clean fresh kitchen sink"
     }
   ],
   "meta": {
@@ -48,6 +54,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T15:40:04.011592+00:00"
+    "generated_at": "2026-11-03T20:25:24.240569+00:00"
   }
 }
