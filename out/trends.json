@@ -1,77 +1,77 @@
 {
-  "collected_at": "2026-11-02T22:31:12.703568+00:00",
+  "collected_at": "2026-11-03T03:54:41.144687+00:00",
   "items": [
     {
-      "keyword": "thứ hạng của pakhtakor gặp al-nassr",
+      "keyword": "삼성 갤럭시 z 폴드 6",
       "traffic": "200+",
-      "news_title": "Video bóng đá Pakhtakor - Al Nassr: Đội Ronaldo thắng &quot;hủy diệt&quot; (Cúp C1 châu Á)",
+      "news_title": "삼성 갤럭시Z폴드9 울트라, 얼마나 달라지나",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "d7a5edb1ded844dd"
+      "key": "33f911595a22aaad"
     },
     {
-      "keyword": "쌍둥이",
-      "traffic": "100+",
-      "news_title": "1년 만에 또 쌍둥이, 아들 넷…‘10만분의 1 기적’ 30대 부부 3억 받는다",
+      "keyword": "김은중",
+      "traffic": "200+",
+      "news_title": "U-21 축구대표팀, 멕시코와 2연전 명단 발표‥&apos;김예건·김민수 포함&apos;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "f6c8856c5984c13f"
+      "key": "b2346ea9529c0a5e"
     },
     {
-      "keyword": "팔란티어 주가",
-      "traffic": "100+",
-      "news_title": "팔란티어 분기매출 20억 달러 첫 돌파…전년 대비 2배로 성장",
+      "keyword": "부동산 투자",
+      "traffic": "1000+",
+      "news_title": "&apos;125억 원 투자사기&apos; 유명 부동산 강사 구속 송치",
       "snippet": "",
       "source_type": "google_trends",
       "category": "경제·부동산",
-      "key": "c84b74458241dc3d"
+      "key": "cd52038604b54c2a"
     },
     {
-      "keyword": "건강보험",
-      "traffic": "200+",
-      "news_title": "국민건강보험공단, 제23차 건강보험 국제연수과정 개최",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "생활·지원금·제도",
-      "key": "0daa9b7b761c16ec"
-    },
-    {
-      "keyword": "임영웅",
-      "traffic": "100+",
-      "news_title": "[영웅신문] 임영웅, &apos;미워요 RE&apos; 202만 뷰 돌파 …2016년 첫 설렘→2026년 깊어진 목소리 &apos;감동의 10년&apos;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "a69a118997c6229b"
-    },
-    {
-      "keyword": "테슬라 모델 y",
+      "keyword": "유가증권",
       "traffic": "1000+",
-      "news_title": "자율주행 성큼…국내서 허용되나?",
+      "news_title": "코스피, 장 중 3%대 &apos;뚝&apos;… AI 수익성 우려에 美 기술주 급락 여파 - 머니투데이",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "경제·부동산",
+      "key": "e5668f0249447c53"
+    },
+    {
+      "keyword": "저기압",
+      "traffic": "2000+",
+      "news_title": "제31호 태풍 &apos;인파&apos; 심상찮은 진로 변화…한반도 영향 미칠까",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "b1c030f007832b89"
+      "key": "a49ad8243ce36b93"
     },
     {
-      "keyword": "트레이드",
-      "traffic": "500+",
-      "news_title": "구단 사상 최고 연봉 주고 잡았는데 트레이드 시킨다고? &apos;WS 눈물&apos; TB의 진짜 속셈은",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "428749eefa96e387"
-    },
-    {
-      "keyword": "머니투데이",
+      "keyword": "lg디스플레이",
       "traffic": "200+",
-      "news_title": "",
+      "news_title": "LG디스플레이, DMZ 두루미 서식지 조성 나선다",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "ea7c9bb4f83192bb"
+      "key": "95fc7e29d4aa0247"
+    },
+    {
+      "keyword": "춘천 마라톤",
+      "traffic": "200+",
+      "news_title": "금주·노카페인·턱걸이… 노력했지만 서브스리 실패",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "439f466de7c2b16a"
+    },
+    {
+      "keyword": "상속세",
+      "traffic": "5000+",
+      "news_title": "상속세 아끼려면? “집 팔아서 현금으로 주세요”",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "755e50ca2d9443e8"
     }
   ]
 }
