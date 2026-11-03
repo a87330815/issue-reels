@@ -209,6 +209,14 @@ jobs:
             | tee -a out/reels/render.log
           cat out/uploaded.json
 
+      - name: 토큰 권한 디버그
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
+        run: python -u publish.py --check
+
       - name: 5) 인스타 릴스 발행
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
         env:
