@@ -5,41 +5,41 @@
     "lines": [
       "대치동 은마",
       "<r>평당 1.37억</r>",
-      "이거 봐봐"
+      "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building Seoul Daechi-dong"
+    "photo_query": "luxury apartment daichi seoul gangnam"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 대치동 은마. 올 10월에 나온 실거래가다. 평당 1억 3천7백만원이다.",
-      "subtitle": "대치동 은마 실거래가 공개",
-      "photo_query": "apartment transaction contract documents"
+      "narration": "이거 모르고 지나가면 손해다. 대치동 은마 최신 거래가 나왔다. 평당 1억 3천만 원대다. 뭐라카노.",
+      "subtitle": "대치동 은마 평당 1.37억",
+      "photo_query": "apartment transaction price chart real estate"
     },
     {
       "image": null,
-      "narration": "76제곱미터가 3억 1천만원대. 가장 비싼 고층이 3억 1천9백만원이다. 낮은 층도 3억을 넘는다.",
-      "subtitle": "최고가 3.19억, 최저가 3.04억",
-      "photo_query": "apartment floor numbers high rise building"
+      "narration": "76제곱미터짜리가 3억 원대 후반에 거래됐다. 10층이 3억 1천만, 1층도 3억 원이다. 가격이 안 떨어진다.",
+      "subtitle": "76㎡ 3억~3.2억 대",
+      "photo_query": "apartment interior living room modern"
     },
     {
       "image": null,
-      "narration": "1979년 지은 오래된 건물이다. 그런데도 이 가격이다. 대치동 교육열이 어느 정도인지 알겠제.",
-      "subtitle": "47년생 건물, 여전한 명성",
-      "photo_query": "Seoul real estate price comparison luxury"
+      "narration": "여기 지을 때가 1979년이다. 거의 50년 된 건물인데 왜 이 가격일까. 위치. 대치동이기 때문이다.",
+      "subtitle": "준공 1979년 여전히 강세",
+      "photo_query": "seoul gangnam street daytime traffic busy"
     },
     {
       "image": null,
-      "narration": "요즘 집값 흐름을 보는데 중요한 데이터다. 강남권 시장이 어디로 가고 있는지, 이 숫자 하나가 말해준다.",
-      "subtitle": "강남 시장의 신호",
-      "photo_query": "seoul gangnam real estate market analysis"
+      "narration": "강남 3구에서 제일 비싼 동네는 어디인가. 대치. 그 대치동 상징 아파트가 은마다. 이 아파트 모르면 강남 부동산 절반을 모르는 거다.",
+      "subtitle": "강남 부동산의 중심",
+      "photo_query": "premium apartment complex buildings exterior morning"
     },
     {
       "image": null,
-      "narration": "공공데이터포털에서 방금 떴다. 최신 실거래가를 먼저 알려드리는 쫌봐봐. 팔로우해라.",
-      "subtitle": "공공데이터포털 국토교통부",
-      "photo_query": "real estate data notification follow"
+      "narration": "우리 계정 팔로우하면 이런 실시간 거래 데이터를 제일 먼저 본다. 준비하자.",
+      "subtitle": "팔로우 해서 놓치지 마",
+      "photo_query": "real estate news mobile phone notification"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-03T10:35:43.186867+00:00"
+    "generated_at": "2026-11-03T15:39:09.499685+00:00"
   }
 }

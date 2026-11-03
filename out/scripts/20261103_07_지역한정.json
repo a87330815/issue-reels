@@ -1,45 +1,45 @@
 {
-  "title": "삼계동 최고가 아파트",
+  "title": "삼계동 아파트 최고가",
   "cover": {
     "image": null,
     "lines": [
       "삼계동",
       "<r>3.8억</r>",
-      "이거 봐봐"
+      "이 정도면 뭐 사나"
     ],
     "badge": null,
-    "photo_query": "korean apartment building modern facade"
+    "photo_query": "apartment building modern construction korea"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 삼계동 아파트 최고가 떴다. 3.8억이다.",
-      "subtitle": "삼계동 최고가 3.8억",
-      "photo_query": "apartment price list real estate"
+      "narration": "이거 모르고 지나가면 손해다. 삼계동 아파트 시장 요즘 어떻게 굴러가는지 봤냐.",
+      "subtitle": "삼계동 최고가 공개",
+      "photo_query": "real estate market price chart"
     },
     {
       "image": null,
-      "narration": "삼계한라비발디센텀시티. 2021년에 지어진 따끈따끈한 신축이다.",
-      "subtitle": "2021년 신축 아파트",
-      "photo_query": "new apartment building construction completed"
+      "narration": "삼계한라비발디센텀시티. 85제곱미터에 3억 8천만 원이다. 2026년 10월이거든.",
+      "subtitle": "3.8억원 거래 성사",
+      "photo_query": "luxury apartment interior modern design"
     },
     {
       "image": null,
-      "narration": "84제곱미터. 3층. 2026년 10월 거래다. 이게 삼계동 톱이라카더라.",
-      "subtitle": "84㎡ 3층, 10월 거래",
-      "photo_query": "apartment floor plan layout korea"
+      "narration": "그 아래 아파트들? 3억 1천만부터 3억 2천만 대. 단지에 따라 천차만별이다.",
+      "subtitle": "단지별 가격 편차 큼",
+      "photo_query": "multiple apartment buildings residential complex"
     },
     {
       "image": null,
-      "narration": "다음 순위는 3.2억이니깐. 6천만 원 격차다. 그만큼 프리미엄이라는 거다.",
-      "subtitle": "최고가와 차순위 격차 6천만",
-      "photo_query": "apartment price comparison chart"
+      "narration": "삼계동서 살 생각이면 이 정도는 준비해야 한다는 거야. 요즘 시세 확인해 봐라.",
+      "subtitle": "삼계동 부동산 체크",
+      "photo_query": "couple looking at apartment documents"
     },
     {
       "image": null,
-      "narration": "삼계동 아파트 시장 정확하게 알고 싶으면, 팔로우 해라. 계속 떨어진다.",
-      "subtitle": "팔로우 해서 정보 받기",
-      "photo_query": "follow button notification bell"
+      "narration": "더 자세한 거래 데이터는 팔로우하고 다음 영상에서 봐라. 쫌봐봐 채널 구독해.",
+      "subtitle": "구독으로 놓치지 마세요",
+      "photo_query": "subscribe button notification bell"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-03T10:35:29.601224+00:00"
+    "generated_at": "2026-11-03T15:38:55.621106+00:00"
   }
 }

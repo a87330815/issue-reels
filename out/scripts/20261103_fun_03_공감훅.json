@@ -1,45 +1,45 @@
 {
-  "title": "미용실 조금만 다듬어달라는 게 왜 이렇게 되냐",
+  "title": "장볼 때 계산",
   "cover": {
     "image": null,
     "lines": [
-      "조금만",
-      "<r>다듬어주세요</r>",
-      "→ 완전 다른 헤어"
+      "필요한 거 3개",
+      "<r>사러 갔다가</r>",
+      "카트 가득"
     ],
     "badge": null,
-    "photo_query": "hair salon mirror reflection before after"
+    "photo_query": "shopping cart full groceries"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "미용사한테 말했다. '조금만 정리해주세요' 그래서 거울로 봤는데야.",
-      "subtitle": "어? 이게 조금만?",
-      "photo_query": "surprised woman mirror haircut"
+      "narration": "오늘은 정말 필요한 거만 사고 나가자. 마음 먹고 들어갔지.",
+      "subtitle": "다짐하고 들어감",
+      "photo_query": "supermarket entrance determination"
     },
     {
       "image": null,
-      "narration": "분명히 말했잖아. '손상된 끝부분만요' '너무 많이 깎지 말고요'. 그런데 옆머리가 쌩 날렸다.",
-      "subtitle": "내가 한 말이 전달 안 된 건가",
-      "photo_query": "hairdresser cutting hair scissors focus"
+      "narration": "우유 사다가 '어? 요거트 세일이네' 손 간다. 유자차 봤다고 또 손 간다.",
+      "subtitle": "충동구매의 시작",
+      "photo_query": "supermarket shelves discounted products"
     },
     {
       "image": null,
-      "narration": "미용사는 멀쩡하게 말한다. '아 이거 조금 정리한 거예요. 앞머리도 다듬었어요.' 우리는 다르게 본 거냐고.",
-      "subtitle": "미용사와 나의 '조금' 기준이 다르다",
-      "photo_query": "hairdresser consultation client talking"
+      "narration": "라면도 있고, 과자도 있고... 어느새 카트가 가득 찼어.",
+      "subtitle": "카트 변신",
+      "photo_query": "overflowing shopping cart checkout"
     },
     {
       "image": null,
-      "narration": "이거 뭐하는 거냐 싶으면서도 인정은 못 하고 '아...네. 잘 어울리네요' 한다. 속으로는 울고 있으면서.",
-      "subtitle": "왜 자꾸 이러는 거야",
-      "photo_query": "woman salon chair unhappy smile fake"
+      "narration": "계산대에서 통장 잔액 확인한다. 와, 이거 실화냐.",
+      "subtitle": "현실 직면",
+      "photo_query": "cashier payment shocked expression"
     },
     {
       "image": null,
-      "narration": "이런 거 더 공감하고 싶으면 팔로우! 미용실 가는 게 이제 무서워진다니까.",
-      "subtitle": "미용실 무섭다",
-      "photo_query": "worried woman thinking nervous expression"
+      "narration": "이런 거 더 보고 싶으면 팔로우해 봐. 매일 우리 일상이 여기 있다.",
+      "subtitle": "팔로우 유도",
+      "photo_query": "phone scrolling social media"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T10:36:10.404263+00:00"
+    "generated_at": "2026-11-03T15:39:26.595643+00:00"
   }
 }

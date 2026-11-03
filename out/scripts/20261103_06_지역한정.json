@@ -1,39 +1,45 @@
 {
-  "title": "명지동 아파트값, 같은 면적인데 이렇게 다르다고?",
+  "title": "명지동 아파트 시세",
   "cover": {
     "image": null,
     "lines": [
-      "명지동",
-      "같은 84㎡",
-      "<r>2.7억</r> 차이"
+      "명지동 같은 집도",
+      "<r>2.7배</r>",
+      "차이 난다"
     ],
     "badge": null,
-    "photo_query": "apartment building tower complex modern korea"
+    "photo_query": "apartment complex buildings comparison"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 명지동 84제곱미터. 같은 면적인데 말이야. 최고가가 5.9억이고 최저가가 3.2억이라고. 2.7억 차이다 아이가.",
-      "subtitle": "같은 면적 2.7억 차이",
-      "photo_query": "apartment price comparison tag real estate"
+      "narration": "이거 모르고 지나가면 손해다. 명지동. 같은 면적 85제곱미터인데 가격이 다 달라. 뭐라카노.",
+      "subtitle": "명지동 같은 면적 가격 편차",
+      "photo_query": "korea apartment market price comparison"
     },
     {
       "image": null,
-      "narration": "더샵명지퍼스트월드3단지. 여기가 최고가 5.9억이지. 건설된 지 6년 된 신축이다.",
-      "subtitle": "최고가: 더샵명지퍼스트월드3단지 5.9억",
-      "photo_query": "luxury apartment development complex modern"
+      "narration": "최고가 5억 9천. 더샵명지퍼스트월드 3단지다. 근데 3킬로 떨어진 명지오션시티는 3억 2천. 거의 2배다.",
+      "subtitle": "최고가 5.9억 vs 최저가 3.2억",
+      "photo_query": "luxury apartment building facade modern"
     },
     {
       "image": null,
-      "narration": "그런데 명지오션시티한신휴플러스는 3.2억이다. 같은 84제곱미터인데. 2014년 건설이니까 12년 묵은 건물이지. 신축이냐 노후냐가 가격을 이렇게 갈라놓는다고.",
-      "subtitle": "최저가: 명지오션시티한신휴플러스 3.2억",
-      "photo_query": "older apartment building aging residential complex"
+      "narration": "같은 연식이라도 달라. 2020년 신축 더샵은 5억대. 2013년 두산위브는 3억 4천. 7년 차이가 2억을 먹는다.",
+      "subtitle": "신축 vs 준노후 가격 격차",
+      "photo_query": "old apartment building renovation modern"
     },
     {
       "image": null,
-      "narration": "명지동에서 집 살 거면 이 데이터 꼭 봐라. 단지별로, 건설 시기별로 확인하고 결정해야 한다. 손해 안 본다.",
-      "subtitle": "명지동 최신 실거래가 꼭 확인하기",
-      "photo_query": "real estate agent reviewing apartment listings"
+      "narration": "명지동. 단지 선택이 곧 자산이다. 같은 돈을 들여도 어디 사느냐가 전부다.",
+      "subtitle": "단지별 위치·브랜드 영향 큼",
+      "photo_query": "apartment neighborhood cityscape view"
+    },
+    {
+      "image": null,
+      "narration": "명지동 아파트 시장. 자세히 봐야 산다. 우리 채널 팔로우해라. 다음엔 더 따끈한 데이터 가지고 온다.",
+      "subtitle": "명지동 부동산 정보 계속 추적",
+      "photo_query": "real estate market data analysis chart"
     }
   ],
   "meta": {
@@ -51,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-03T10:35:23.754150+00:00"
+    "generated_at": "2026-11-03T15:38:49.249290+00:00"
   }
 }

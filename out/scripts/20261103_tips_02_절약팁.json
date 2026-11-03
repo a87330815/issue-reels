@@ -1,0 +1,53 @@
+{
+  "title": "알뜰폰으로 바꾸면 월 3만 원 절약되는 이유",
+  "cover": {
+    "image": null,
+    "lines": [
+      "알뜰폰으로 바꾸면",
+      "<r>월 3만원</r>",
+      "아낀다"
+    ],
+    "badge": null,
+    "photo_query": "smartphone mobile phone plan"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "요즘 통신비가 얼마나 나와? 대부분 9만 원에서 12만 원 사이다. 근데 알뜰폰으로 바꾸면 5만 원대까지 확 떨어진다.",
+      "subtitle": "기존 통신사 vs 알뜰폰",
+      "photo_query": "phone bill receipt expensive"
+    },
+    {
+      "image": null,
+      "narration": "알뜰폰이 싼 이유는 기존 통신사 네트워크를 빌려쓰기 때문이다. 인프라 투자 비용이 없으니까 그대로 가격에 반영되는 거다.",
+      "subtitle": "알뜰폰은 기존망 임차료만",
+      "photo_query": "network infrastructure mobile tower"
+    },
+    {
+      "image": null,
+      "narration": "가장 현실적인 선택은 월 6GB, 통화료 무제한 상품이다. 대충 5천 원에서 1만 원 사이인데, 기존 통신사보다 최소 3만 원은 아낀다.",
+      "subtitle": "6GB + 통화무제한 월 5~1만원",
+      "photo_query": "data usage mobile phone settings"
+    },
+    {
+      "image": null,
+      "narration": "가입할 때 본인 확인만 하면 되고, 기존 번호 그대로 옮길 수도 있다. 약정도 없으니까 언제든 바꿀 수 있고.",
+      "subtitle": "본인확인만 하면 끝",
+      "photo_query": "mobile phone number transfer process"
+    },
+    {
+      "image": null,
+      "narration": "1년만 해도 36만 원이 모인다. 이런 꿀팁 더 알고 싶으면 팔로우해 봐. 매주 돈 아끼는 방법 알려준다.",
+      "subtitle": "연간 36만원 절약 가능",
+      "photo_query": "saving money jar coins stack"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T15:39:57.254349+00:00"
+  }
+}

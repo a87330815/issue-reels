@@ -1,53 +1,36 @@
 {
-  "title": "이명재 대표팀 깜짝 복귀",
+  "title": "최미나수",
   "cover": {
     "image": null,
+    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "월드컵 이후",
-      "<r>8개월 만에</r>",
-      "돌아왔다"
+      "이번 달",
+      "<r>최미나수</r>",
+      "거래 떴습니다"
     ],
-    "badge": null,
-    "photo_query": "korean soccer player jersey national team"
+    "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 이명재가 대표팀에 깜짝 복귀했다. 월드컵 이후 한 동안 마음을 다스리고 있었는데 급 출격했다고.",
-      "subtitle": "월드컵 후 8개월 만 복귀",
-      "photo_query": "korea national soccer team training field"
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. '최미나수' 관련 트렌드. 수치로 확인해보자.",
+      "subtitle": "'최미나수' 관련 트렌드"
     },
     {
       "image": null,
-      "narration": "뭐라카노, 선수가 뭐라고 했냐면. 처음엔 기대를 내려놓고 있었다고 한다. 그런데 마음을 편히 먹고 뛰니까 오히려 더 좋은 경기가 나왔다고.",
-      "subtitle": "기대 내려놓고 편한 마음으로",
-      "photo_query": "soccer player celebration field grass"
-    },
-    {
-      "image": null,
-      "narration": "가시와 레이솔이 대전과 경기하는데, 이런 선수들이 어떤 컨디션으로 뛰는지가 중요하다. 심리가 곧 경기력이니까.",
-      "subtitle": "심리 상태가 경기력 결정",
-      "photo_query": "K-league football match stadium crowd"
-    },
-    {
-      "image": null,
-      "narration": "야야야, 이게 왜 중요한가. 국가대표팀이라는 무거운 짐을 어떻게 풀어내느냐. 그게 선수의 진짜 가치를 보여준다고.",
-      "subtitle": "부담 극복이 진짜 경기력",
-      "photo_query": "soccer athlete determination focus close-up"
-    },
-    {
-      "image": null,
-      "narration": "지금 바로 경기를 보고 이명재의 복귀 경기력을 느껴봐라. 팔로우하고 계속 챙겨봐.",
-      "subtitle": "지금 경기 확인해 봐",
-      "photo_query": "live sports broadcast stadium screen"
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "google_trends",
+    "source": "",
     "category": "당일 화제 이슈",
-    "attribution": "Google Trends",
+    "attribution": "",
     "chart": null,
-    "generated_at": "2026-11-03T10:35:16.811033+00:00"
+    "tone": "경상도",
+    "generated_at": "2026-11-03T15:38:42.276818+00:00"
   }
 }

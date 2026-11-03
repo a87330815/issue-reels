@@ -1,45 +1,45 @@
 {
-  "title": "봄 미세먼지의 딜레마",
+  "title": "충전기 하나로 펼쳐지는 가족 눈치싸움",
   "cover": {
     "image": null,
     "lines": [
-      "창문 열까",
-      "<y>말까</y>",
-      "봄의 고민"
+      "충전기 하나",
+      "<r>남겨놓고 나가면</r>",
+      "범인 찾기 시작"
     ],
     "badge": null,
-    "photo_query": "window spring air quality"
+    "photo_query": "phone charger cable conflict"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "봄이다. 햇빛이 들어오고 싶다. 그런데 미세먼지 수치를 봤다.",
-      "subtitle": "공기질 앱 충격",
-      "photo_query": "smartphone air quality app red alert"
+      "narration": "아빠가 충전기 꽂고 나가. 그럼 엄마는 어디다? 거실에서 이미 기다리고 있지. 시간만 보고 있음.",
+      "subtitle": "눈치의 전쟁 시작",
+      "photo_query": "family living room waiting tension"
     },
     {
       "image": null,
-      "narration": "창문 안 열면 답답하고, 열면 미세먼지가 들어온다. 이게 뭔 딜레마냐.",
-      "subtitle": "둘 다 싫은데 뭘 하지",
-      "photo_query": "woman thinking window dilemma"
+      "narration": "\"아 근데 내 핸드폰도 배터리 없는데...\" 이래. 절대 아빠 것 뺀다고 못 함. 그럼 간신히 들어옴. 근데 막 빌빌거림.",
+      "subtitle": "간접적인 압박",
+      "photo_query": "woman checking phone battery low"
     },
     {
       "image": null,
-      "narration": "그럼 창문을 '슬쩍' 열기로 했다. 5센티 정도만. 미세먼지는 못 들어올 거 같고 공기는 통할 거 같은 그런 느낌으로.",
-      "subtitle": "5센티 작전 시작",
-      "photo_query": "window slightly open ventilation"
+      "narration": "결국 누가 먼저 \"좋아 내가 충전할게\" 이 말을 하느냐가 문제야. 이기는 쪽이 졌다고 생각하지만서도 빼야 한단 말이지.",
+      "subtitle": "역설의 승리",
+      "photo_query": "phone charging dock socket outlet"
     },
     {
       "image": null,
-      "narration": "근데 생각해보니 공기는 원자 크기인데 미세먼지도 입자잖아. 들어오는 건 다 들어온다 아이가.",
-      "subtitle": "결국 다 들어온다",
-      "photo_query": "dust particles air flow microscopic"
+      "narration": "\"어? 충전기가 없네?\" 라고 하면 모두가 의심의 눈초리로 봐. 넌 들고 있지 않냐고. 서로의 핸드폰만 봐.",
+      "subtitle": "모두가 용의자",
+      "photo_query": "family members looking suspicious questioning"
     },
     {
       "image": null,
-      "narration": "그래서 결론. 그냥 환기는 포기하고 공기청정기 돌린다. 이게 봄의 최선이다.",
-      "subtitle": "에어컨·히터와 함께 봄의 삼신기",
-      "photo_query": "air purifier running living room"
+      "narration": "이런 집 특징? 충전기 2~3개 있어도 항상 \"충전기가 없다\"고 함. 이거 더 웃긴 일상 보고 싶으면 팔로우해.",
+      "subtitle": "충전기는 많은데",
+      "photo_query": "multiple phone chargers tangled cables"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T10:36:17.050690+00:00"
+    "generated_at": "2026-11-03T15:39:33.920409+00:00"
   }
 }

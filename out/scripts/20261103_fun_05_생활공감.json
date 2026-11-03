@@ -1,0 +1,53 @@
+{
+  "title": "장마철 빨래 운명이 갈린다",
+  "cover": {
+    "image": null,
+    "lines": [
+      "장마철",
+      "<r>빨래 3일째</r>",
+      "아직도 축축해?"
+    ],
+    "badge": null,
+    "photo_query": "wet laundry drying indoors humidity"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "장마철 빨래. 어떤 집은 하루 만에 뽀송뽀송. 어떤 집은 3일째도 축축하다.",
+      "subtitle": "이 차이가 뭐길래",
+      "photo_query": "clothes line drying wet rain season"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째 비결, 환기다. 문을 열고 선풍기를 틀어놔야 한다. 습도가 높으면 아무리 햇빛이 좋아도 못 마른다.",
+      "subtitle": "선풍기는 필수",
+      "photo_query": "fan air circulation living room window"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 건조기나 에어컨 제습 기능. 이거 하나면 뽀송한 빨래가 된다. 근데 전기세 ㅠㅠ",
+      "subtitle": "건조기 vs 전기세의 전쟁",
+      "photo_query": "clothes dryer laundry room"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 빨래 간격. 자꾸 계속 빨면 습도만 올라간다. 한두 번에 몰아 빨고 확 말리는 게 낫다.",
+      "subtitle": "참는 게 답",
+      "photo_query": "laundry basket full clothes"
+    },
+    {
+      "image": null,
+      "narration": "이 팁들만 있어도 장마철이 덜 괴롭다. 너희 집은 뽀송한 편? 축축한 편? 댓글로 팔로우 하면서 얘기해봐!",
+      "subtitle": "따라해보고 댓글로 신고!",
+      "photo_query": "woman sniffing fresh clean laundry"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T15:39:40.976272+00:00"
+  }
+}

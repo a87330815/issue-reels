@@ -1,38 +1,39 @@
 {
-  "title": "신축 vs 구축, 가격 차이 깜짝 놀랐다",
+  "title": "신축 vs 구축 아파트값",
   "cover": {
     "image": null,
     "lines": [
-      "신축이 더 비싸다고?",
-      "<r>3.5억</r> 더 비싸다"
+      "신축이",
+      "더 비싼 거",
+      "아니다"
     ],
     "badge": null,
-    "photo_query": "new apartment building construction vs old"
+    "photo_query": "apartment building comparison new old"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 다들 신축이 비싼 줄 알지? 서울강남 데이터 봤는데 진짜 다르다.",
-      "subtitle": "신축 vs 구축 가격 차이",
-      "photo_query": "seoul gangnam apartment complex comparison"
+      "narration": "이거 모르고 지나가면 손해다. 다들 신축이 비싼 줄 아는데. 실제 거래 데이터 보니까 완전 다르더라. 신축 아파트 평균이 8억 6천만 원. 그럼 구축은? 5억 2천만 원. 차이가 크지 않냐고? 아니다 아이가.",
+      "subtitle": "신축 평균 8.6억",
+      "photo_query": "modern apartment building exterior"
     },
     {
       "image": null,
-      "narration": "2020년 이후 신축 평균 8억 6천만 원. 근데 2005년 이전 구축은 5억 2천만 원이다. 무려 3억 4천만 원 차이다.",
-      "subtitle": "신축 8.6억 vs 구축 5.2억",
-      "photo_query": "apartment price comparison chart numbers"
+      "narration": "근데 여기가 함정이다. 신축이 비싼 이유가 넓기 때문이다. 신축은 대부분 100제곱미터 이상. 구축은 그보다 작다.",
+      "subtitle": "신축은 더 넓음",
+      "photo_query": "spacious apartment interior bright"
     },
     {
       "image": null,
-      "narration": "똑같은 강남인데 같은 넓이라도 지어진 해가 다르면 가격이 확 달라진다. 신축은 신축대로, 구축은 구축대로 알아야 손해 안 본다.",
-      "subtitle": "같은 지역도 건축연도가 값을 좌우",
-      "photo_query": "real estate property investment decision"
+      "narration": "평당 가격으로 계산해봐라. 그럼 신축과 구축 차이가 거의 없다. 오히려 서울 핵심 지역 구축은 자산 가치가 장난 아니다.",
+      "subtitle": "평당가로 보면 비슷",
+      "photo_query": "seoul skyline han river view"
     },
     {
       "image": null,
-      "narration": "우리 계정 팔로우하면 요런 데이터 계속 받아본다. 부동산 거래할 때 이거 하나라도 알면 판단이 달라진다. 지금 따라와.",
-      "subtitle": "놓치지 말고 팔로우하기",
-      "photo_query": "mobile phone follow button notification"
+      "narration": "신축만 쳐다보지 말고. 좋은 구축을 찾아봐라. 저예산으로 좋은 지역 들어갈 확률이 훨씬 높다. 이 정보 알고 사는 사람이 차이다.",
+      "subtitle": "저예산 구축이 정답",
+      "photo_query": "man looking at apartment listing document"
     }
   ],
   "meta": {
@@ -47,6 +48,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-03T10:35:03.788113+00:00"
+    "generated_at": "2026-11-03T15:38:32.702775+00:00"
   }
 }

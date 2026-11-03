@@ -1,45 +1,46 @@
 {
-  "title": "동춘동 최고가 5.8억",
+  "title": "동춘동 최고가 아파트",
   "cover": {
     "image": null,
     "lines": [
       "동춘동",
+      "최고가",
       "<r>5.8억</r>",
-      "이게 최고가"
+      "떴다"
     ],
     "badge": null,
-    "photo_query": "incheon apartment complex modern building"
+    "photo_query": "modern apartment complex building entrance"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 동춘동 아파트 최고가가 5억 8천만 원이 됐다. 2024년 지은 새 건물인데 말이다.",
+      "narration": "이거 모르고 지나가면 손해다. 동춘동 아파트 시세 방금 나왔는데. 최고가가 5억 8천만 원이다.",
       "subtitle": "동춘동 최고가 5.8억",
-      "photo_query": "incheon apartment building entrance"
+      "photo_query": "apartment price tag number board"
     },
     {
       "image": null,
-      "narration": "연수서해그랑블에듀파크. 84제곱미터 기준으로 5억 8천만 원이다. 22층 고층까지 올라갔다.",
-      "subtitle": "연수서해그랑블 84㎡ 5.8억",
-      "photo_query": "apartment floor plan 84 square meter"
+      "narration": "연수서해그랑블에듀파크. 올해 지은 따끈따끈한 신축이다. 84제곱미터 기준으로 이 가격이 나왔다.",
+      "subtitle": "2024년 신축 단지",
+      "photo_query": "new apartment complex modern building"
     },
     {
       "image": null,
-      "narration": "같은 단지 14층은 5억 8천 2백. 고층이랑 가격 차이가 거의 없다는 건데. 이게 뭘 의미하는지 알지?",
-      "subtitle": "고층과 저층 차이 거의 없음",
-      "photo_query": "apartment high floor city view window"
+      "narration": "같은 동네 다른 아파트들 보면 5억 3천~5억 5천만 대다. 신축이면 당연히 비싼 거지. 근데 주목할 건 이거다.",
+      "subtitle": "신축 프리미엄 확실",
+      "photo_query": "apartment comparison price difference chart"
     },
     {
       "image": null,
-      "narration": "신축이라도 새 지을 때는 비싼데, 지나고 나면 이 정도 가격대에 떨어진다는 거다. 투자처로 본다면 리스크가 크다.",
-      "subtitle": "신축도 몇 년 뒤는 가격 조정",
-      "photo_query": "apartment price chart decline trend"
+      "narration": "동춘동. 계속 주목해야 할 지역이다. 인천 연수구인데 신축이 자꾸 들어선다. 시세 트렌드를 따라가야 기회를 놓치지 않는다.",
+      "subtitle": "동춘동 신축 계속 증가",
+      "photo_query": "incheon yeonsu construction development area"
     },
     {
       "image": null,
-      "narration": "동춘동 실거래가 궁금한 사람들. 이 영상 저장하고 팔로우해라. 더 자세한 지역 정보 계속 올린다.",
-      "subtitle": "동춘동 아파트 정보 팔로우",
-      "photo_query": "follow subscribe button notification"
+      "narration": "당신의 지역은 이번 달 최고가가 얼마였나. 팔로우해서 계속 확인해라.",
+      "subtitle": "지역별 시세 팔로우하기",
+      "photo_query": "real estate market data analytics"
     }
   ],
   "meta": {
@@ -57,6 +58,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-03T03:56:10.257317+00:00"
+    "generated_at": "2026-11-03T15:39:02.290435+00:00"
   }
 }

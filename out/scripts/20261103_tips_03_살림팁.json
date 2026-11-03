@@ -1,44 +1,45 @@
 {
-  "title": "배수구 냄새 5분 해결법",
+  "title": "냉장고 칸별 정리법",
   "cover": {
     "image": null,
     "lines": [
-      "배수구 냄새는",
-      "<r>5분이면</r> 끝"
+      "냉장고 이렇게",
+      "<r>정리하면</r>",
+      "식재료 2배 오래"
     ],
     "badge": null,
-    "photo_query": "sink drain odor"
+    "photo_query": "organized refrigerator shelves"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "싱크대랑 욕실 배수구에서 자꾸만 냄새 난다고? 이거 5분이면 싹 해결된다.",
-      "subtitle": "배수구 냄새의 원인",
-      "photo_query": "kitchen sink with drain"
+      "narration": "냉장고 칸마다 온도가 다르다는 거 알지? 이거 제대로 알고 정리하면 식재료가 진짜 오래 간다.",
+      "subtitle": "칸별 온도 차이 최대 5도",
+      "photo_query": "refrigerator temperature zones"
     },
     {
       "image": null,
-      "narration": "준비물은 베이킹소다 2스푼, 식초 반 컵. 이 두 개면 돼. 배수구에 베이킹소다를 먼저 부어라.",
-      "subtitle": "베이킹소다 2스푼 넣기",
-      "photo_query": "baking soda powder pouring"
+      "narration": "맨 위 선반은 3~4도로 가장 따뜻해. 여기엔 계란, 치즈, 소스류 넣어. 상할 우려가 적거든.",
+      "subtitle": "상단 선반: 계란·치즈·소스",
+      "photo_query": "eggs cheese sauce shelf"
     },
     {
       "image": null,
-      "narration": "그 다음 식초를 확 부어. 쏴악 하면서 거품이 올라온다. 이 거품이 배수관 안의 때랑 냄새 유발 박테리아를 씻어낸다.",
-      "subtitle": "식초 부어서 거품 반응",
-      "photo_query": "baking soda vinegar reaction bubbling"
+      "narration": "중간~아래 선반은 1~2도로 가장 차가워. 생선, 고기, 두부 같은 단백질은 여기 넣어야 5일은 더 간다.",
+      "subtitle": "하단 선반: 생선·고기·두부",
+      "photo_query": "raw meat fish tofu refrigerator"
     },
     {
       "image": null,
-      "narration": "3분 정도 놔두고 뜨거운 물을 후드득 부어라. 그럼 끝. 비용 200원, 시간 5분이면 냄새가 완전히 잡힌다.",
-      "subtitle": "뜨거운 물로 마무리",
-      "photo_query": "hot water pouring down drain"
+      "narration": "문 쪽은 온도가 자주 올라갔다 내렸다 해. 우유, 음료수 정도만 넣고 반찬은 절대 금지다.",
+      "subtitle": "문 선반: 음료·우유만",
+      "photo_query": "refrigerator door milk bottles"
     },
     {
       "image": null,
-      "narration": "이 방법을 한 달에 2번만 해도 배수구 냄새는 영원히 안 난다. 이런 생활 꿀팁 더 원하면 팔로우 꼭 눌러둬.",
-      "subtitle": "월 2회로 냄새 완벽 제거",
-      "photo_query": "clean fresh bathroom sink"
+      "narration": "야채실은 습도가 높아서 쌈채소, 버섯 같은 건 여기 넣으면 2주까지 신선하게 유지돼. 이제 냉장고 쓸 때 이거 기억해두고 정리해봐.",
+      "subtitle": "야채실: 쌈채·버섯",
+      "photo_query": "vegetable crisper drawer leafy greens"
     }
   ],
   "meta": {
@@ -47,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T10:36:39.171732+00:00"
+    "generated_at": "2026-11-03T15:40:04.011592+00:00"
   }
 }

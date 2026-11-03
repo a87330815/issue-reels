@@ -3,38 +3,37 @@
   "cover": {
     "image": null,
     "lines": [
-      "서초동",
+      "서초동에",
       "<r>44.5억</r>",
-      "이 정도면",
-      "뭐하는 집?"
+      "이 나왔다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building seoul gangnam"
+    "photo_query": "luxury apartment building Seoul Seocho"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서초동 래미안 리더스원. 114제곱미터 짜리가 44억 5천만 원에 팔렸다.",
-      "subtitle": "래미안 리더스원 44.5억 거래",
-      "photo_query": "apartment sale price tag real estate"
+      "narration": "이거 모르고 지나가면 손해다. 서초동 래미안 리더스원이 44억 5천만 원에 거래됐다. 이거 뭐라카노.",
+      "subtitle": "서초동 래미안 리더스원 44.5억",
+      "photo_query": "seoul real estate transaction contract signing"
     },
     {
       "image": null,
-      "narration": "뭐라카노. 평수로 치면 한 평에 1억 3천을 넘긴다는 거다. 이게 얼마나 세다고 생각하냐면.",
-      "subtitle": "한 평 1억 3천만 원대",
-      "photo_query": "korea apartment price comparison chart"
+      "narration": "114제곱미터, 9층. 2020년 준공한 신축 급의 아파트다. 평당 가격으로 따지면 3900만 원을 넘긴다.",
+      "subtitle": "114㎡ 9층 / 평당 3900만원",
+      "photo_query": "apartment floor plan measurement"
     },
     {
       "image": null,
-      "narration": "2020년 지어진 건 신축이고. 서초동이라는 위치. 거기다 9층까지. 이 조건이 모이니까 이 정도 가격이 나온다.",
-      "subtitle": "2020년 준공, 9층 위치",
-      "photo_query": "new apartment building high floor window"
+      "narration": "서초동 강남 구간 중에서도 핫한 위치다. 이 급대의 아파트가 움직이면 시장이 움직인다는 신호다.",
+      "subtitle": "강남 핵심 구간 거래 신호",
+      "photo_query": "Gangnam Seoul district map location"
     },
     {
       "image": null,
-      "narration": "강남 집값을 제일 먼저 알고 싶으면. 쫌봐봐를 팔로우해라. 매번 쌓이는 데이터로 트렌드를 읽어준다.",
-      "subtitle": "강남 아파트 거래가 실시간",
-      "photo_query": "real estate data analytics dashboard"
+      "narration": "당신이 관심 두는 단지는 지금 어떻게 움직이고 있나. 팔로우해서 매주 체크해라.",
+      "subtitle": "주간 실거래가 팔로우하기",
+      "photo_query": "person checking mobile phone real estate"
     }
   ],
   "meta": {
@@ -52,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-03T10:34:50.627706+00:00"
+    "generated_at": "2026-11-03T15:38:19.116124+00:00"
   }
 }
