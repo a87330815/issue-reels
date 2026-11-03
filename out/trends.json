@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-11-03T10:34:10.529833+00:00",
+  "collected_at": "2026-11-03T15:37:32.479296+00:00",
   "items": [
     {
-      "keyword": "가시와 레이솔 대 대전",
-      "traffic": "1000+",
-      "news_title": "&quot;월드컵 때만 생각하면 가슴 아파&quot; 대표팀 깜짝 복귀한 이명재 &quot;기대 내려놓고 있었는데, 마음 편히 플레이한 결과&quot;[인터뷰]",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "e6864e7a18d75336"
-    },
-    {
-      "keyword": "박세리",
-      "traffic": "200+",
-      "news_title": "박세리 &quot;첫째 주 숨막혀…1번 월급, 2번 세금&quot; 은퇴 후 &apos;이것&apos; 못 피해",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "0fd54b0d7aa0123d"
-    },
-    {
-      "keyword": "박경수",
-      "traffic": "200+",
-      "news_title": "&apos;목발투혼&apos; kt 박경수 코치, KS 1차전 시구 &quot;기쁨 안겨드리고파&quot;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "1f001ff7a00e47e0"
-    },
-    {
-      "keyword": "정하연",
-      "traffic": "200+",
-      "news_title": "&apos;사극 대가&apos; 정하연 작가 별세…&apos;왕과 비&apos;·&apos;명성황후&apos; 등 집필",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "f95032190b5702de"
-    },
-    {
-      "keyword": "전북 대 조호르 fc",
-      "traffic": "5000+",
-      "news_title": "&apos;모따+이탈로 최전방, 이승우 벤치대기&apos; 전북, 조호르전 베스트11 출격…조호르는 말레이시아 선수 단 2명 [오!쎈 전주]",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "f39f306e8075e774"
-    },
-    {
-      "keyword": "헤수스 데 미겔",
-      "traffic": "2000+",
-      "news_title": "&apos;골키퍼와 충돌→이송 중 심정지&apos; 스페인 공격수 끝내 사망…&quot;슬픔으로 가득 찬 이 감정을 조금이라도 덜어줄 수 있는 것은 아무것도 없다&quot;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "649e462a7f2aef09"
-    },
-    {
-      "keyword": "삼성 대 kt",
-      "traffic": "50000+",
-      "news_title": "잠시 뒤 한국시리즈 1차전...kt 대니엘·삼성 최원태 선발 대결",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "179b411779a4ea46"
-    },
-    {
-      "keyword": "청년기본소득",
+      "keyword": "최미나수",
       "traffic": "100+",
-      "news_title": "경기 ‘청년기본소득’ 성남·동두천·연천 불참, 고양 참여",
+      "news_title": "",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "25a0bcf3e4197247"
+      "key": "8d4b989ff2f29c6c"
     },
     {
-      "keyword": "지예은",
+      "keyword": "midterm elections 2026",
+      "traffic": "100+",
+      "news_title": "Live updates: 2026 US midterm elections and results",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "d6e03eb72950ea58"
+    },
+    {
+      "keyword": "한국항공우주산업",
       "traffic": "200+",
-      "news_title": "지예은, 청첩장 공개…신동엽 앞에서 &quot;사회는 유재석&quot; - 머니투데이",
+      "news_title": "KAI, 수출 호조에 3분기 매출 52% 증가…영업익도 32% 증가",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "2ba7ad8af4202e83"
+      "key": "9c25109142f22c95"
     },
     {
-      "keyword": "자동차 산업",
-      "traffic": "1000+",
-      "news_title": "국산 전기차 과반 무너지자…여야 &quot;생산세액공제에 포함해야&quot;",
+      "keyword": "small business",
+      "traffic": "200+",
+      "news_title": "‘In the trenches’: Wisconsin’s struggling small businesses could turn a Trump ally’s district blue",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "f081360b3b03bd00"
+      "key": "128a66f36726d9a7"
+    },
+    {
+      "keyword": "폰지 사기",
+      "traffic": "100+",
+      "news_title": "‘부동산 전문가’ 믿었는데…125억 가로챈 스타 강사",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "7da579c7fe643785"
+    },
+    {
+      "keyword": "이재현",
+      "traffic": "100+",
+      "news_title": "[사진]실점 위기 등판한 사토시, 한점 차 승부 이어가보자",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "49125479184ff129"
+    },
+    {
+      "keyword": "kbo",
+      "traffic": "1000+",
+      "news_title": "Samsung Lions 7-8 KT Wiz in Korean Series Game 1 — as it happened",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "06e0bb23716a3733"
+    },
+    {
+      "keyword": "내장산ic",
+      "traffic": "100+",
+      "news_title": "전북 도공, 호남고속道 내장산 IC~정읍IC 차로 부분통제",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "40b01f59c9e55fcc"
+    },
+    {
+      "keyword": "양도소득세",
+      "traffic": "1000+",
+      "news_title": "국세청, 주식 양도세 더 낸 4천687명에게 21억원 돌려줘",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "756059be283e4b75"
     }
   ]
 }
