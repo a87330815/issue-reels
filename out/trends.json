@@ -1,77 +1,95 @@
 {
-  "collected_at": "2026-11-03T03:54:41.144687+00:00",
+  "collected_at": "2026-11-03T10:34:10.529833+00:00",
   "items": [
     {
-      "keyword": "삼성 갤럭시 z 폴드 6",
-      "traffic": "200+",
-      "news_title": "삼성 갤럭시Z폴드9 울트라, 얼마나 달라지나",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "33f911595a22aaad"
-    },
-    {
-      "keyword": "김은중",
-      "traffic": "200+",
-      "news_title": "U-21 축구대표팀, 멕시코와 2연전 명단 발표‥&apos;김예건·김민수 포함&apos;",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "b2346ea9529c0a5e"
-    },
-    {
-      "keyword": "부동산 투자",
+      "keyword": "가시와 레이솔 대 대전",
       "traffic": "1000+",
-      "news_title": "&apos;125억 원 투자사기&apos; 유명 부동산 강사 구속 송치",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "경제·부동산",
-      "key": "cd52038604b54c2a"
-    },
-    {
-      "keyword": "유가증권",
-      "traffic": "1000+",
-      "news_title": "코스피, 장 중 3%대 &apos;뚝&apos;… AI 수익성 우려에 美 기술주 급락 여파 - 머니투데이",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "경제·부동산",
-      "key": "e5668f0249447c53"
-    },
-    {
-      "keyword": "저기압",
-      "traffic": "2000+",
-      "news_title": "제31호 태풍 &apos;인파&apos; 심상찮은 진로 변화…한반도 영향 미칠까",
+      "news_title": "&quot;월드컵 때만 생각하면 가슴 아파&quot; 대표팀 깜짝 복귀한 이명재 &quot;기대 내려놓고 있었는데, 마음 편히 플레이한 결과&quot;[인터뷰]",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "a49ad8243ce36b93"
+      "key": "e6864e7a18d75336"
     },
     {
-      "keyword": "lg디스플레이",
+      "keyword": "박세리",
       "traffic": "200+",
-      "news_title": "LG디스플레이, DMZ 두루미 서식지 조성 나선다",
+      "news_title": "박세리 &quot;첫째 주 숨막혀…1번 월급, 2번 세금&quot; 은퇴 후 &apos;이것&apos; 못 피해",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "95fc7e29d4aa0247"
+      "key": "0fd54b0d7aa0123d"
     },
     {
-      "keyword": "춘천 마라톤",
+      "keyword": "박경수",
       "traffic": "200+",
-      "news_title": "금주·노카페인·턱걸이… 노력했지만 서브스리 실패",
+      "news_title": "&apos;목발투혼&apos; kt 박경수 코치, KS 1차전 시구 &quot;기쁨 안겨드리고파&quot;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "439f466de7c2b16a"
+      "key": "1f001ff7a00e47e0"
     },
     {
-      "keyword": "상속세",
+      "keyword": "정하연",
+      "traffic": "200+",
+      "news_title": "&apos;사극 대가&apos; 정하연 작가 별세…&apos;왕과 비&apos;·&apos;명성황후&apos; 등 집필",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "f95032190b5702de"
+    },
+    {
+      "keyword": "전북 대 조호르 fc",
       "traffic": "5000+",
-      "news_title": "상속세 아끼려면? “집 팔아서 현금으로 주세요”",
+      "news_title": "&apos;모따+이탈로 최전방, 이승우 벤치대기&apos; 전북, 조호르전 베스트11 출격…조호르는 말레이시아 선수 단 2명 [오!쎈 전주]",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "755e50ca2d9443e8"
+      "key": "f39f306e8075e774"
+    },
+    {
+      "keyword": "헤수스 데 미겔",
+      "traffic": "2000+",
+      "news_title": "&apos;골키퍼와 충돌→이송 중 심정지&apos; 스페인 공격수 끝내 사망…&quot;슬픔으로 가득 찬 이 감정을 조금이라도 덜어줄 수 있는 것은 아무것도 없다&quot;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "649e462a7f2aef09"
+    },
+    {
+      "keyword": "삼성 대 kt",
+      "traffic": "50000+",
+      "news_title": "잠시 뒤 한국시리즈 1차전...kt 대니엘·삼성 최원태 선발 대결",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "179b411779a4ea46"
+    },
+    {
+      "keyword": "청년기본소득",
+      "traffic": "100+",
+      "news_title": "경기 ‘청년기본소득’ 성남·동두천·연천 불참, 고양 참여",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "25a0bcf3e4197247"
+    },
+    {
+      "keyword": "지예은",
+      "traffic": "200+",
+      "news_title": "지예은, 청첩장 공개…신동엽 앞에서 &quot;사회는 유재석&quot; - 머니투데이",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2ba7ad8af4202e83"
+    },
+    {
+      "keyword": "자동차 산업",
+      "traffic": "1000+",
+      "news_title": "국산 전기차 과반 무너지자…여야 &quot;생산세액공제에 포함해야&quot;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "f081360b3b03bd00"
     }
   ]
 }
