@@ -1,39 +1,39 @@
 {
-  "title": "강남 아파트값, 지역마다 39배 차이",
+  "title": "같은 서울인데 39배 차이",
   "cover": {
     "image": null,
     "lines": [
-      "강남 같은데",
-      "<r>39배</r>",
-      "차이난다"
+      "같은 서울",
+      "아파트값",
+      "<r>39배</r> 차이"
     ],
     "badge": null,
-    "photo_query": "seoul gangnam apartment buildings comparison"
+    "photo_query": "seoul apartment buildings contrast wealthy poor"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 같은 강남인데 아파트값이 39배 차이난다. 뭐라카노.",
-      "subtitle": "같은 강남 39배 차이",
-      "photo_query": "apartment price comparison chart"
+      "narration": "이거 모르고 지나가면 손해다. 지금 서울 집값 얘기 엄청 달라졌다. 삼성동이 뭐냐고? 평균 31억이다.",
+      "subtitle": "삼성동 평균 31억",
+      "photo_query": "luxury apartment building gangnam seoul"
     },
     {
       "image": null,
-      "narration": "삼성동이면 평균 31억. 요즘 나오는 매물들이다. 근데 반송동은 평균 8천만원이다.",
-      "subtitle": "삼성동 31억 vs 반송동 8천만",
-      "photo_query": "luxury apartment living room modern design"
+      "narration": "근데 반송동은 뭐냐 하면. 평균 8천만원이다. 이거. 진짜 크다.",
+      "subtitle": "반송동 평균 8천만원",
+      "photo_query": "residential apartment building korea suburban area"
     },
     {
       "image": null,
-      "narration": "같은 서울, 같은 강남권인데. 돈이 있으면 어디 살지 고민하지 말고, 돈이 없으면 지역을 잘 골라야 한다.",
-      "subtitle": "지역선택이 곧 자산",
-      "photo_query": "real estate agent showing apartment options"
+      "narration": "같은 서울에서 39배 차이 난다. 이게 현실이다. 돈이 있으면 가는 곳이 정해져 있다는 거다.",
+      "subtitle": "같은 도시, 39배 격차",
+      "photo_query": "seoul aerial cityscape districts neighborhoods"
     },
     {
       "image": null,
-      "narration": "이런 데이터들 매주 올라온다. 팔로우 해서 놓치지 말아라.",
-      "subtitle": "매주 업데이트, 팔로우하면 놓치지 않음",
-      "photo_query": "notification bell social media follow"
+      "narration": "앞으로 집 살 생각하면. 지역 선택이 다가 된다. 더 많은 수치들. 팔로우하면 매일 올린다.",
+      "subtitle": "지역에 따라 결판난다",
+      "photo_query": "people looking at apartment listings real"
     }
   ],
   "meta": {
@@ -51,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-03T03:55:44.178839+00:00"
+    "generated_at": "2026-11-03T10:35:09.383708+00:00"
   }
 }

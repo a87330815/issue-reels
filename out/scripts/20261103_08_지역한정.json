@@ -1,0 +1,62 @@
+{
+  "title": "동춘동 최고가 아파트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "동춘동 최고가",
+      "<r>5.8억</r>",
+      "2024년 신축"
+    ],
+    "badge": null,
+    "photo_query": "incheon apartment complex modern building"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 동춘동에서 제일 비싼 아파트 5.8억이다. 2024년에 지어진 따끈따끈한 신축다.",
+      "subtitle": "동춘동 최고가 5.8억",
+      "photo_query": "new apartment building construction completion"
+    },
+    {
+      "image": null,
+      "narration": "연수서해그랑블에듀파크라고 있다. 84제곱미터 크기인데 말이다. 22층에서 나온 거니까 한 번 보고 싶으면 언제 가봐라.",
+      "subtitle": "연수서해그랑블에듀파크",
+      "photo_query": "apartment building high floor view window"
+    },
+    {
+      "image": null,
+      "narration": "10월에 거래된 따끈따끈한 데이터다. 신축이니까 기숙사 근처? 학원가 근처? 뭐가 특별한지 한 번 살펴봐라.",
+      "subtitle": "2026년 10월 거래",
+      "photo_query": "korea real estate transaction documents"
+    },
+    {
+      "image": null,
+      "narration": "동춘동 아파트 시세. 이거 한 번 확인해두면 나중에 누가 물어봐도 딱 대답할 수 있다.",
+      "subtitle": "동춘동 상권 연동시세",
+      "photo_query": "apartment price comparison chart data"
+    },
+    {
+      "image": null,
+      "narration": "팔로우 해두면 인천 땅값부터 서울 재건축까지. 뭐든 먼저 받아본다. 이게 최고다.",
+      "subtitle": "쫌봐봐 채널 팔로우",
+      "photo_query": "smartphone notification follow button"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        5.8,
+        5.8,
+        5.5,
+        5.3,
+        5.3
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-03T10:35:36.073804+00:00"
+  }
+}

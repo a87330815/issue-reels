@@ -1,0 +1,63 @@
+{
+  "title": "송도동 11월 아파트 거래 분석",
+  "cover": {
+    "image": null,
+    "lines": [
+      "송도동",
+      "한 달에",
+      "<r>7억</r>대까지",
+      "올랐다"
+    ],
+    "badge": null,
+    "photo_query": "incheon songdo apartment buildings modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 송도동 아파트 시장. 한 달 사이에 진짜 달라졌다.",
+      "subtitle": "송도동 11월 거래 확인",
+      "photo_query": "apartment transaction document contract"
+    },
+    {
+      "image": null,
+      "narration": "송도SKVIEW는 71억 5천, 아메리칸타운 아이파크는 87억 7천. 신축 프리미엄들이 벌써 7~8억대다.",
+      "subtitle": "상위 거래가 7억대 중반",
+      "photo_query": "luxury apartment high floor modern design"
+    },
+    {
+      "image": null,
+      "narration": "중저가대는 어떰? e편한세상 58억 5천, 풍림아이원은 43억 5천. 선택지가 딱 나뉜다.",
+      "subtitle": "4~6억대 미드레인지도 형성",
+      "photo_query": "apartment complex neighborhood park"
+    },
+    {
+      "image": null,
+      "narration": "송도동 집 생각하고 있던 사람들. 11월 거래 흐름을 봐야 한다. 더 떨어질까, 아니면 더 오를까.",
+      "subtitle": "송도동 실거래 트렌드 확인",
+      "photo_query": "calculator real estate market analysis"
+    },
+    {
+      "image": null,
+      "narration": "송도동 아파트 시장. 자세한 거래 데이터는 채널에서 계속 따라가. 놓치면 후회한다.",
+      "subtitle": "매달 업데이트하니까 팔로우 해라",
+      "photo_query": "smartphone real estate app notification"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        7.2,
+        5.8,
+        6.2,
+        8.8,
+        4.3
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-03T10:34:57.383896+00:00"
+  }
+}

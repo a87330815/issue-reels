@@ -1,46 +1,45 @@
 {
-  "title": "편의점 우산 사면 그날 비 그친다는 법칙",
+  "title": "미용실 조금만 다듬어달라는 게 왜 이렇게 되냐",
   "cover": {
     "image": null,
     "lines": [
-      "편의점서",
-      "<r>우산 사면</r>",
-      "그날",
-      "비 그친다"
+      "조금만",
+      "<r>다듬어주세요</r>",
+      "→ 완전 다른 헤어"
     ],
     "badge": null,
-    "photo_query": "convenience store umbrella rain"
+    "photo_query": "hair salon mirror reflection before after"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "아 이 빌어먹을 비. 3일째 오네. 우산은 또 어디 뒀는지 모르고.",
-      "subtitle": "우산 없이 출근길",
-      "photo_query": "heavy rain umbrella lost"
+      "narration": "미용사한테 말했다. '조금만 정리해주세요' 그래서 거울로 봤는데야.",
+      "subtitle": "어? 이게 조금만?",
+      "photo_query": "surprised woman mirror haircut"
     },
     {
       "image": null,
-      "narration": "그래 편의점에서 우산 사자. 2천 원짜리 싼 거 하나. 지갑도 홀가분하고.",
-      "subtitle": "편의점 우산 구매",
-      "photo_query": "convenience store checkout umbrella"
+      "narration": "분명히 말했잖아. '손상된 끝부분만요' '너무 많이 깎지 말고요'. 그런데 옆머리가 쌩 날렸다.",
+      "subtitle": "내가 한 말이 전달 안 된 건가",
+      "photo_query": "hairdresser cutting hair scissors focus"
     },
     {
       "image": null,
-      "narration": "집 나와서 30초. 어? 비가... 언제 그쳤지? 구름도 빠졌네?",
-      "subtitle": "신기하게 비가 뚝",
-      "photo_query": "sky clearing rain stops suddenly"
+      "narration": "미용사는 멀쩡하게 말한다. '아 이거 조금 정리한 거예요. 앞머리도 다듬었어요.' 우리는 다르게 본 거냐고.",
+      "subtitle": "미용사와 나의 '조금' 기준이 다르다",
+      "photo_query": "hairdresser consultation client talking"
     },
     {
       "image": null,
-      "narration": "이 우산이야. 이 우산만 사면 신기하게 비가 그친다니까. 황당하지만 진짜다.",
-      "subtitle": "우산의 신기한 법칙",
-      "photo_query": "dry weather blue sky afternoon"
+      "narration": "이거 뭐하는 거냐 싶으면서도 인정은 못 하고 '아...네. 잘 어울리네요' 한다. 속으로는 울고 있으면서.",
+      "subtitle": "왜 자꾸 이러는 거야",
+      "photo_query": "woman salon chair unhappy smile fake"
     },
     {
       "image": null,
-      "narration": "이런 거 더 공감되면 팔로우 해야지. 우리 함께 웃고 가자!",
-      "subtitle": "팔로우 부탁해요",
-      "photo_query": "follow button subscribe like"
+      "narration": "이런 거 더 공감하고 싶으면 팔로우! 미용실 가는 게 이제 무서워진다니까.",
+      "subtitle": "미용실 무섭다",
+      "photo_query": "worried woman thinking nervous expression"
     }
   ],
   "meta": {
@@ -49,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T03:56:49.056763+00:00"
+    "generated_at": "2026-11-03T10:36:10.404263+00:00"
   }
 }

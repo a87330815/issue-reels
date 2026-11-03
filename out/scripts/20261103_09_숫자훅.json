@@ -1,56 +1,45 @@
 {
-  "title": "평당 1.4억",
+  "title": "대치동 은마 평당 1.37억",
   "cover": {
     "image": null,
-    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "<r>평당 1.4억</r>",
-      "이거 실환가요"
+      "대치동 은마",
+      "<r>평당 1.37억</r>",
+      "이거 봐봐"
     ],
-    "badge": null
+    "badge": null,
+    "photo_query": "luxury apartment building Seoul Daechi-dong"
   },
   "scenes": [
     {
       "image": null,
-      "photo_query": "Korea city luxury apartment",
-      "narration": "이거 모르고 지나가면 손해다. 대치동 은마 평당 1.37억 (전용 76.79㎡). 수치로 확인해보자.",
-      "subtitle": "대치동 평당 1.4억"
+      "narration": "이거 모르고 지나가면 손해다. 대치동 은마. 올 10월에 나온 실거래가다. 평당 1억 3천7백만원이다.",
+      "subtitle": "대치동 은마 실거래가 공개",
+      "photo_query": "apartment transaction contract documents"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "대치동 은마, 전용 77㎡(23평) 10층이 31.9억원에 실거래 신고됐다카이. 평당 1.4억. 1979년 준공.",
-      "subtitle": "대치동 은마 31.9억원"
+      "narration": "76제곱미터가 3억 1천만원대. 가장 비싼 고층이 3억 1천9백만원이다. 낮은 층도 3억을 넘는다.",
+      "subtitle": "최고가 3.19억, 최저가 3.04억",
+      "photo_query": "apartment floor numbers high rise building"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "같은 동네 은마도 주목할 만한다. 전용 77㎡(23평) 9층, 거래가 31.5억원. 평당 1.4억.",
-      "subtitle": "대치동 은마 31.5억원"
+      "narration": "1979년 지은 오래된 건물이다. 그런데도 이 가격이다. 대치동 교육열이 어느 정도인지 알겠제.",
+      "subtitle": "47년생 건물, 여전한 명성",
+      "photo_query": "Seoul real estate price comparison luxury"
     },
     {
       "image": null,
-      "photo_query": "Korea city luxury high rise apartment",
-      "narration": "은마 전용 77㎡(23평) 1층 — 30.4억원 거래. 평당 1.3억.",
-      "subtitle": "대치동 은마 30.4억원"
+      "narration": "요즘 집값 흐름을 보는데 중요한 데이터다. 강남권 시장이 어디로 가고 있는지, 이 숫자 하나가 말해준다.",
+      "subtitle": "강남 시장의 신호",
+      "photo_query": "seoul gangnam real estate market analysis"
     },
     {
       "image": null,
-      "photo_query": "Seocho Seoul luxury high rise apartment",
-      "narration": "래미안 리더스원 전용 115㎡(35평) 9층 — 44.5억원 거래. 평당 1.3억.",
-      "subtitle": "서초동 래미안 리더스원 44.5억원"
-    },
-    {
-      "image": null,
-      "photo_query": "real estate market price chart",
-      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 14.1억원까지 벌어졌다. 평균 33.9억원 수준이다.",
-      "subtitle": "이번에 확인된 5건의 거래에서 가격"
-    },
-    {
-      "image": null,
-      "photo_query": "follow subscribe social media phone",
-      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
-      "subtitle": "팔로우 · 매일 업데이트"
+      "narration": "공공데이터포털에서 방금 떴다. 최신 실거래가를 먼저 알려드리는 쫌봐봐. 팔로우해라.",
+      "subtitle": "공공데이터포털 국토교통부",
+      "photo_query": "real estate data notification follow"
     }
   ],
   "meta": {
@@ -68,7 +57,6 @@
       ],
       "style": "bars"
     },
-    "tone": "경상도",
-    "generated_at": "2026-11-03T03:56:16.991467+00:00"
+    "generated_at": "2026-11-03T10:35:43.186867+00:00"
   }
 }

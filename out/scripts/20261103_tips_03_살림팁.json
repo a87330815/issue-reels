@@ -1,0 +1,52 @@
+{
+  "title": "배수구 냄새 5분 해결법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배수구 냄새는",
+      "<r>5분이면</r> 끝"
+    ],
+    "badge": null,
+    "photo_query": "sink drain odor"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "싱크대랑 욕실 배수구에서 자꾸만 냄새 난다고? 이거 5분이면 싹 해결된다.",
+      "subtitle": "배수구 냄새의 원인",
+      "photo_query": "kitchen sink with drain"
+    },
+    {
+      "image": null,
+      "narration": "준비물은 베이킹소다 2스푼, 식초 반 컵. 이 두 개면 돼. 배수구에 베이킹소다를 먼저 부어라.",
+      "subtitle": "베이킹소다 2스푼 넣기",
+      "photo_query": "baking soda powder pouring"
+    },
+    {
+      "image": null,
+      "narration": "그 다음 식초를 확 부어. 쏴악 하면서 거품이 올라온다. 이 거품이 배수관 안의 때랑 냄새 유발 박테리아를 씻어낸다.",
+      "subtitle": "식초 부어서 거품 반응",
+      "photo_query": "baking soda vinegar reaction bubbling"
+    },
+    {
+      "image": null,
+      "narration": "3분 정도 놔두고 뜨거운 물을 후드득 부어라. 그럼 끝. 비용 200원, 시간 5분이면 냄새가 완전히 잡힌다.",
+      "subtitle": "뜨거운 물로 마무리",
+      "photo_query": "hot water pouring down drain"
+    },
+    {
+      "image": null,
+      "narration": "이 방법을 한 달에 2번만 해도 배수구 냄새는 영원히 안 난다. 이런 생활 꿀팁 더 원하면 팔로우 꼭 눌러둬.",
+      "subtitle": "월 2회로 냄새 완벽 제거",
+      "photo_query": "clean fresh bathroom sink"
+    }
+  ],
+  "meta": {
+    "format": "살림팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-03T10:36:39.171732+00:00"
+  }
+}

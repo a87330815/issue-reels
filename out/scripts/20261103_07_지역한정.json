@@ -1,0 +1,62 @@
+{
+  "title": "삼계동 최고가 아파트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "삼계동",
+      "<r>3.8억</r>",
+      "이거 봐봐"
+    ],
+    "badge": null,
+    "photo_query": "korean apartment building modern facade"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 삼계동 아파트 최고가 떴다. 3.8억이다.",
+      "subtitle": "삼계동 최고가 3.8억",
+      "photo_query": "apartment price list real estate"
+    },
+    {
+      "image": null,
+      "narration": "삼계한라비발디센텀시티. 2021년에 지어진 따끈따끈한 신축이다.",
+      "subtitle": "2021년 신축 아파트",
+      "photo_query": "new apartment building construction completed"
+    },
+    {
+      "image": null,
+      "narration": "84제곱미터. 3층. 2026년 10월 거래다. 이게 삼계동 톱이라카더라.",
+      "subtitle": "84㎡ 3층, 10월 거래",
+      "photo_query": "apartment floor plan layout korea"
+    },
+    {
+      "image": null,
+      "narration": "다음 순위는 3.2억이니깐. 6천만 원 격차다. 그만큼 프리미엄이라는 거다.",
+      "subtitle": "최고가와 차순위 격차 6천만",
+      "photo_query": "apartment price comparison chart"
+    },
+    {
+      "image": null,
+      "narration": "삼계동 아파트 시장 정확하게 알고 싶으면, 팔로우 해라. 계속 떨어진다.",
+      "subtitle": "팔로우 해서 정보 받기",
+      "photo_query": "follow button notification bell"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        3.8,
+        3.2,
+        3.2,
+        2.6,
+        2.2
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-03T10:35:29.601224+00:00"
+  }
+}

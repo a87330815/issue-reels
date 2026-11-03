@@ -1,45 +1,45 @@
 {
-  "title": "삼성 갤럭시Z폴드9 울트라, 뭐가 달라졌나",
+  "title": "이명재 대표팀 깜짝 복귀",
   "cover": {
     "image": null,
     "lines": [
-      "폴드폰 가격",
-      "<r>350만원대</r>",
-      "진짜입니까"
+      "월드컵 이후",
+      "<r>8개월 만에</r>",
+      "돌아왔다"
     ],
     "badge": null,
-    "photo_query": "samsung galaxy foldable phone display screen"
+    "photo_query": "korean soccer player jersey national team"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 삼성이 새로운 접히는 폰을 내놨는데. 가격이 장난 아니다.",
-      "subtitle": "갤럭시Z폴드9 울트라 출시",
-      "photo_query": "premium smartphone flagship release"
+      "narration": "이거 모르고 지나가면 손해다. 이명재가 대표팀에 깜짝 복귀했다. 월드컵 이후 한 동안 마음을 다스리고 있었는데 급 출격했다고.",
+      "subtitle": "월드컵 후 8개월 만 복귀",
+      "photo_query": "korea national soccer team training field"
     },
     {
       "image": null,
-      "narration": "350만원대에 육박한다. 일반 폴드폰보다 훨씬 비싸다 아이가.",
-      "subtitle": "가격 350만원대 후반",
-      "photo_query": "expensive luxury smartphone display price tag"
+      "narration": "뭐라카노, 선수가 뭐라고 했냐면. 처음엔 기대를 내려놓고 있었다고 한다. 그런데 마음을 편히 먹고 뛰니까 오히려 더 좋은 경기가 나왔다고.",
+      "subtitle": "기대 내려놓고 편한 마음으로",
+      "photo_query": "soccer player celebration field grass"
     },
     {
       "image": null,
-      "narration": "뭐가 다르냐고? 화면이 더 크고. 배터리가 더 오래가고. 카메라 성능도 높아졌다.",
-      "subtitle": "더 큰 화면·긴 배터리·강한 카메라",
-      "photo_query": "smartphone camera lens quality comparison"
+      "narration": "가시와 레이솔이 대전과 경기하는데, 이런 선수들이 어떤 컨디션으로 뛰는지가 중요하다. 심리가 곧 경기력이니까.",
+      "subtitle": "심리 상태가 경기력 결정",
+      "photo_query": "K-league football match stadium crowd"
     },
     {
       "image": null,
-      "narration": "근데 이거. 정말 필요한 업그레이드냐 아니냐. 그건 본인이 판단해야 한다.",
-      "subtitle": "필요성은 개인차",
-      "photo_query": "person thinking smartphone choice decision"
+      "narration": "야야야, 이게 왜 중요한가. 국가대표팀이라는 무거운 짐을 어떻게 풀어내느냐. 그게 선수의 진짜 가치를 보여준다고.",
+      "subtitle": "부담 극복이 진짜 경기력",
+      "photo_query": "soccer athlete determination focus close-up"
     },
     {
       "image": null,
-      "narration": "새 폰 사기 전에 한 번 더 생각해봐라. 쫌봐봐 채널 팔로우하면 요런 정보 계속 받을 수 있다.",
-      "subtitle": "현명한 구매 결정을 위해",
-      "photo_query": "person researching smartphone comparison online"
+      "narration": "지금 바로 경기를 보고 이명재의 복귀 경기력을 느껴봐라. 팔로우하고 계속 챙겨봐.",
+      "subtitle": "지금 경기 확인해 봐",
+      "photo_query": "live sports broadcast stadium screen"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-03T03:55:50.668418+00:00"
+    "generated_at": "2026-11-03T10:35:16.811033+00:00"
   }
 }

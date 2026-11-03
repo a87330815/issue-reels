@@ -1,45 +1,45 @@
 {
-  "title": "흰색 운동화 복원하기",
+  "title": "이사 준비할 때 버리기 아까운 물건 처리법",
   "cover": {
     "image": null,
     "lines": [
-      "묵은 운동화",
-      "<r>베이킹소다 한 스푼</r>",
-      "새것처럼!"
+      "이사할 때",
+      "<r>버리기 아까운 물건</r>",
+      "실제로 팔아보기"
     ],
     "badge": null,
-    "photo_query": "white sneaker cleaning"
+    "photo_query": "moving boxes household items"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야, 운동화 노래졌으제? 돈 들여서 새 신발 살 필요 없다. 집에 있는 것만으로 끝낸다.",
-      "subtitle": "집에 있는 재료로 시작",
-      "photo_query": "dirty white sneaker"
+      "narration": "이사할 때 제일 고민되는 게 뭐냐 하면, 써본 물건인데 버리기 아까운 거 있지? 와 이거 처리하는 방법 알려준다.",
+      "subtitle": "버리기 아까운 물건 3가지",
+      "photo_query": "household items moving clutter"
     },
     {
       "image": null,
-      "narration": "베이킹소다 한 스푼에 물 반 컵 섞어서 걸쭉한 페이스트를 만든다. 이게 분말이라서 표백 성분이 있거든.",
-      "subtitle": "베이킹소다+물=페이스트",
-      "photo_query": "baking soda paste mixing"
+      "narration": "첫 번째, 당신이 쓰던 옷이나 악세서리는 당근마켓·오늘의집 같은 중고 앱에 올려. 정상 물건이면 진짜 3~5일 안에 팔린다. 이유는 사람들이 저렴하게 사길 원하거든.",
+      "subtitle": "의류·악세서리: 중고앱 3~5일",
+      "photo_query": "secondhand clothing marketplace app"
     },
     {
       "image": null,
-      "narration": "칫솔로 신발 표면을 원형으로 2분 정도 문지른다. 때가 떨어져나가는 게 보인다.",
-      "subtitle": "칫솔로 2분 문지르기",
-      "photo_query": "brushing shoe with toothbrush"
+      "narration": "두 번째, 책이나 학용품·전자기기? 이건 당근마켓에 원가의 40~60% 정도로 올려. 사진 좋게 찍고 상태 자세히 써야 문의 많이 온다.",
+      "subtitle": "책·전자기기: 원가의 40~60%",
+      "photo_query": "used books electronics selling online"
     },
     {
       "image": null,
-      "narration": "미지근한 물로 헹군 다음 햇빛에 30분 말린다. 와, 처음처럼 하얀다.",
-      "subtitle": "헹굼 후 햇빛 30분",
-      "photo_query": "white sneaker drying sunlight"
+      "narration": "세 번째, 아예 팔리기 힘든 물건들은 지역 아동센터나 사회복지관에 기부하면 돼. 정말 써먹을 사람 있고, 세금감면도 받을 수 있다.",
+      "subtitle": "팔리기 힘든 물건: 기부센터",
+      "photo_query": "donation charity center boxes"
     },
     {
       "image": null,
-      "narration": "이런 생활 꿀팁 더 보고 싶으면 팔로우 눌러두고 가. 우리 다음 영상에서 또 봐봐!",
-      "subtitle": "팔로우 고고!",
-      "photo_query": "thumbs up gesture"
+      "narration": "이렇게 3가지 방법으로 하면 이사비 일부도 아끼고, 물건도 알맞은 사람 손에 가고, 깔끔하게 떠날 수 있다. 이런 꿀팁 더 보고 싶으면 팔로우.",
+      "subtitle": "효율적인 이사 준비 완료",
+      "photo_query": "moving day preparation successful"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-03T03:57:03.766037+00:00"
+    "generated_at": "2026-11-03T10:36:32.228968+00:00"
   }
 }
