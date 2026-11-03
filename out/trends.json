@@ -1,86 +1,95 @@
 {
-  "collected_at": "2026-11-03T15:37:32.479296+00:00",
+  "collected_at": "2026-11-03T20:21:42.305162+00:00",
   "items": [
     {
-      "keyword": "최미나수",
-      "traffic": "100+",
-      "news_title": "",
+      "keyword": "아틀레티코 대 바이에른",
+      "traffic": "5000+",
+      "news_title": "AT마드리드 이강인 vs 뮌헨 김민재…모레노 앞에서 &apos;코리안더비&apos;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "8d4b989ff2f29c6c"
+      "key": "55ac5ad915755ee3"
     },
     {
-      "keyword": "midterm elections 2026",
-      "traffic": "100+",
-      "news_title": "Live updates: 2026 US midterm elections and results",
+      "keyword": "맨유 대 로마",
+      "traffic": "2000+",
+      "news_title": "“맨유 왜 이렇게 못하는지 나도 모르겠어” 맨유 상대하는 적장도 이해가 안 된다...“다시 궤도에 오를 거야, 단 내일 경기 이후에”",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "d6e03eb72950ea58"
+      "key": "3c862db722d71133"
     },
     {
-      "keyword": "한국항공우주산업",
-      "traffic": "200+",
-      "news_title": "KAI, 수출 호조에 3분기 매출 52% 증가…영업익도 32% 증가",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "9c25109142f22c95"
-    },
-    {
-      "keyword": "small business",
-      "traffic": "200+",
-      "news_title": "‘In the trenches’: Wisconsin’s struggling small businesses could turn a Trump ally’s district blue",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "128a66f36726d9a7"
-    },
-    {
-      "keyword": "폰지 사기",
-      "traffic": "100+",
-      "news_title": "‘부동산 전문가’ 믿었는데…125억 가로챈 스타 강사",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "7da579c7fe643785"
-    },
-    {
-      "keyword": "이재현",
-      "traffic": "100+",
-      "news_title": "[사진]실점 위기 등판한 사토시, 한점 차 승부 이어가보자",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "49125479184ff129"
-    },
-    {
-      "keyword": "kbo",
+      "keyword": "바르셀로나 대 애스턴 빌라",
       "traffic": "1000+",
-      "news_title": "Samsung Lions 7-8 KT Wiz in Korean Series Game 1 — as it happened",
+      "news_title": "우나이 에메리 감독이 &apos;라 레몬타다&apos;의 악몽 이후 캄프 누로 복귀했다.",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "06e0bb23716a3733"
+      "key": "ebb7d288c598a214"
     },
     {
-      "keyword": "내장산ic",
+      "keyword": "고소영",
       "traffic": "100+",
-      "news_title": "전북 도공, 호남고속道 내장산 IC~정읍IC 차로 부분통제",
+      "news_title": "고소영, 과거 유재석급? &quot;&apos;유퀴즈&apos; 나오듯 내 라디오 나와&quot;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "40b01f59c9e55fcc"
+      "key": "13d214afe9f92e91"
     },
     {
-      "keyword": "양도소득세",
-      "traffic": "1000+",
-      "news_title": "국세청, 주식 양도세 더 낸 4천687명에게 21억원 돌려줘",
+      "keyword": "lpga",
+      "traffic": "100+",
+      "news_title": "Nelly Korda, Haeran Ryu ineligible for LPGA low scoring award. Who&apos;s next?",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "756059be283e4b75"
+      "key": "3752fbe7faa817b3"
+    },
+    {
+      "keyword": "성리",
+      "traffic": "200+",
+      "news_title": "[단독]가수 성리, 12월 20일 KBS 전국노래자랑 고창편 녹화 참여",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "948de59e8950cb66"
+    },
+    {
+      "keyword": "배추",
+      "traffic": "500+",
+      "news_title": "쪽파는 갈아엎고 배추는 풍작…김장물가 전망은?",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "ed49c8687d7f7cb4"
+    },
+    {
+      "keyword": "경기신용보증재단",
+      "traffic": "100+",
+      "news_title": "법인·공동대표도 이제 스마트폰으로…경기신보 ‘이지원’ 문턱 낮췄다",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "5b9346e4e5a86573"
+    },
+    {
+      "keyword": "grok",
+      "traffic": "100+",
+      "news_title": "Elon Musk Says Grok Bot Costs Were ‘Unsustainably High’ Amid Complaints Over Usage Limits",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "739bd02962924373"
+    },
+    {
+      "keyword": "텐즈",
+      "traffic": "500+",
+      "news_title": "라이엇 게임즈, &apos;2027 VCT 퍼시픽 킥오프&apos; 한국 공개 예선 일정 공개",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "be17b11371715359"
     }
   ]
 }
