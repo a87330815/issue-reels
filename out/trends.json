@@ -1,95 +1,86 @@
 {
-  "collected_at": "2026-11-04T02:59:47.281931+00:00",
+  "collected_at": "2026-11-04T10:38:40.645741+00:00",
   "items": [
     {
-      "keyword": "james talarico",
+      "keyword": "최원준",
       "traffic": "100+",
-      "news_title": "Texas U.S. Senate Election 2026 Live Results: James Talarico vs. Ken Paxton",
+      "news_title": "‘PS 타율 .167’ 디아즈, 데뷔 첫 3루타 폭발…삼성 선취점 이끌었다 [KS2]",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "b1b23ab37d99c059"
+      "key": "01a4912e7087f00a"
     },
     {
-      "keyword": "미국 대선",
+      "keyword": "samsung vs kt",
       "traffic": "100+",
-      "news_title": "미국 투표 현장에 주 방위군 배치...유권자 위축 논란",
+      "news_title": "Dried persimmons",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "a0a188e737a3da74"
+      "key": "7f8eae784d04aae0"
     },
     {
-      "keyword": "us midterm elections",
+      "keyword": "한국시리즈 중계",
       "traffic": "100+",
-      "news_title": "U.S. Midterm Elections Push Treasury Yields Higher: 10-Year at 4.96%, 30-Year at 5.33%",
+      "news_title": "&apos;오늘N&apos;-&apos;가족관계증명서&apos;, 오늘(4일) 결방…프로야구 한국시리즈 2차전 중계",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "8725e0ceed6cb757"
+      "key": "9c520e43efb8691f"
     },
     {
-      "keyword": "포스코",
-      "traffic": "1000+",
-      "news_title": "&apos;PBR 0.17배&apos; 현대제철, 밸류업 정책 발표 연기 : 네이버 블로그",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "890833b44f7ed66d"
-    },
-    {
-      "keyword": "서장훈",
-      "traffic": "5000+",
-      "news_title": "450억 빌딩 내놓은 서장훈이 방송서 건물주 저격한 이유",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "b903c51102c54d8e"
-    },
-    {
-      "keyword": "대도시 특례",
-      "traffic": "200+",
-      "news_title": "",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "ce922bfd27b37247"
-    },
-    {
-      "keyword": "로보월드",
+      "keyword": "뉴욕 마라톤",
       "traffic": "100+",
-      "news_title": "[로보월드 2026] 피지컬 AI 시대 조망…‘2026 로보월드’ 오늘 개막",
+      "news_title": "美 뉴욕서도 마라톤 20대 사망 &quot;하키선수도 했는데‥&quot; 애도·충격",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "ac6292517f3b7f5d"
+      "key": "2a07297e1853966d"
     },
     {
-      "keyword": "버거킹",
-      "traffic": "100+",
-      "news_title": "버거킹, 쯔란과 로제 소스 조합한 ‘쯔란로제 크리스퍼’ 2종 출시",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "56ae2bdc66f82855"
-    },
-    {
-      "keyword": "송중기",
-      "traffic": "20000+",
-      "news_title": "송중기 아들 키가 &apos;훌쩍&apos;...서울서 포착된 가족 - 머니투데이",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "d7ef0fcfc7dcfbd7"
-    },
-    {
-      "keyword": "2026 us election results",
+      "keyword": "포항 대 감바 오사카",
       "traffic": "2000+",
-      "news_title": "U.S. Senate Midterm Election Live Results 2026",
+      "news_title": "포항, 김성재 감독대행 체제로 시즌 마무리 예정…새 사령탑 선임 시간 갖는다",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "0e5c084eb5aac84e"
+      "key": "99a90a791df76f8a"
+    },
+    {
+      "keyword": "대장암",
+      "traffic": "100+",
+      "news_title": "대장암은 왜 젊은층에 더 치명적일까?",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "931ee134ab70b79b"
+    },
+    {
+      "keyword": "한우",
+      "traffic": "500+",
+      "news_title": "경주한우·축산물축제 성황리 마무리…지역 축산물 우수성 알려",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "062a8613237fc53a"
+    },
+    {
+      "keyword": "nvidia",
+      "traffic": "100+",
+      "news_title": "Nvidia China Clients to Get 1% of $70 Billion RTX Chips Ordered",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "05f5439f985187c9"
+    },
+    {
+      "keyword": "이영표",
+      "traffic": "500+",
+      "news_title": "아시안컵 내년 12월로 연기…‘임시 체제’ 한국, 시간 벌었다 [이런뉴스]",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "59493ed6929a5ebe"
     }
   ]
 }
