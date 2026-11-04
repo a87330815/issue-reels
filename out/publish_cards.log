@@ -102,3 +102,42 @@
 4) 발행
   발행 완료: media_id=17954577555271704
 발행 기록: out/published_cards.json
+
+대상: out/cards_20261024_09_숫자훅  (4장)
+대본: out/scripts/20261024_09_숫자훅.json
+
+--- 캡션 ---
+황희찬
+
+· '황희찬' 관련 트렌드 —
+
+저장해두고 필요할 때 꺼내 보세요.
+
+#당일화제이슈 #생활정보 #알아두면좋은정보 #정책정보 #꿀팁
+사진: (っ◔◡◔)っ Clement 🇰🇷 (Unsplash, Unsplash License) / Jean Carlo Emer (Unsplash, Unsplash License) / Berke Citak (Unsplash, Unsplash License)
+--- 캡션 끝 ---
+
+  [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
+  API 호스트 확정: graph.facebook.com
+남은 발행 가능: 100건
+
+1) 이미지 공개 호스팅
+  ✓ [1/4] 01_cover.jpg  584KB  200 application/octet-stream
+  ✓ [2/4] 02_scene.jpg  371KB  200 application/octet-stream
+  ✓ [3/4] 03_scene.jpg  119KB  200 application/octet-stream
+  ✓ [4/4] 04_outro.jpg  93KB  200 application/octet-stream
+
+2) 장별 컨테이너 생성
+  [1/4] 컨테이너 17974373615973700
+  [2/4] 컨테이너 17974373633973700
+  [3/4] 컨테이너 17974373654973700
+  [4/4] 컨테이너 17974373699973700
+
+3) 캐러셀 컨테이너 생성
+  캐러셀 17974373720973700
+      0초  IN_PROGRESS
+     11초  FINISHED
+
+4) 발행
+  발행 완료: media_id=17886635220512503
+발행 기록: out/published_cards.json
