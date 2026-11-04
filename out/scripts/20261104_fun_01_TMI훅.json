@@ -1,0 +1,47 @@
+{
+  "title": "자판기 잔돈의 비밀",
+  "cover": {
+    "image": null,
+    "lines": [
+      "자판기 잔돈",
+      "<r>규칙</r>이",
+      "있다고?"
+    ],
+    "badge": null,
+    "photo_query": "vending machine coin dispenser"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "자판기에서 음료 사고 잔돈 받을 때, 왜 동전이 자꾸만 나오나 했지? 알고 봤더니 기계마다 세팅이 다르다고.",
+      "subtitle": "자판기 동전 배출 설정",
+      "photo_query": "vending machine change coins falling"
+    },
+    {
+      "image": null,
+      "narration": "어떤 자판기는 500원, 100원씩 깔끔하게 나오고, 어떤 건 동전 폭탄을 쏟아내거든. 이건 기계 관리자가 설정한 거라니께.",
+      "subtitle": "관리자의 선택",
+      "photo_query": "coins different denominations scattered"
+    },
+    {
+      "image": null,
+      "narration": "동전 개수를 줄이려고 설정하는 곳도 있고, 잔돈을 많이 안 남기려고 하는 곳도 있고. 결국 그 자판기 주인의 맘이더라니까.",
+      "subtitle": "주인의 의도가 담긴 설정",
+      "photo_query": "vending machine maintenance setting"
+    },
+    {
+      "image": null,
+      "narration": "이제 자판기 앞에서 동전 폭탄 맞을 때 \"아, 이 사람이 이렇게 설정했구나\" 하면서 웃을 수 있다. 신세계지!",
+      "subtitle": "이제 알게 된 자판기의 진실",
+      "photo_query": "person surprised vending machine coins"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T20:38:16.722486+00:00"
+  }
+}

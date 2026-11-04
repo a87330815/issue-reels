@@ -1,46 +1,62 @@
 {
-  "title": "이요원 장녀 공개",
+  "title": "압구정동 현대14차 평당 1.98억",
   "cover": {
     "image": null,
     "lines": [
-      "<r>23살</r>에 첫째 낳고",
-      "지금 얼굴은"
+      "압구정동",
+      "현대14차",
+      "<r>평당 1.98억</r>"
     ],
     "badge": null,
-    "photo_query": "mother daughter similar faces mirror"
+    "photo_query": "gangnam seoul luxury apartment building entrance"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 이요원. 23살에 첫 출산했다 아이가. 그 딸이 이제 어른이 됐다.",
-      "subtitle": "23살에 첫 출산한 이요원",
-      "photo_query": "young mother holding baby portrait"
+      "narration": "이거 모르고 지나가면 손해다. 강남 압구정동 현대14차. 평당 1억 9,800만 원이다. 이게 뭔 돈인지 알겠냐고.",
+      "subtitle": "평당 1.98억 현대14차",
+      "photo_query": "korean apartment price tags real estate"
     },
     {
       "image": null,
-      "narration": "오늘 공개된 장녀. 어? 엄마 이요원이랑 판박이다. 미모 쏙 빼닮았다.",
-      "subtitle": "장녀 공개, 엄마와 똑같은 얼굴",
-      "photo_query": "elegant woman portrait beautiful features"
+      "narration": "지금 강남권에서 튀어나온 거래다. 10월에 84제곱미터 84억에 팔렸다. 6층이니까 낮은 층도 아니고.",
+      "subtitle": "84억원 10월 거래",
+      "photo_query": "seoul gangnam district high-rise apartments"
     },
     {
       "image": null,
-      "narration": "미국 명문대 졸업했다더라. 아빠는 연예인이고 엄마는 배우. 타고나고 키워지는 게 다르긴 다르다.",
-      "subtitle": "미국 명문대 졸업",
-      "photo_query": "university campus graduation ceremony"
+      "narration": "신반포자이는 평당 1억 7,700만 원. 반포써밋은 1억 5,300만 원이다. 현대14차가 얼마나 따뜻한지 보이냐고.",
+      "subtitle": "신반포·반포써밋과 비교",
+      "photo_query": "seoul apartment complex buildings comparison"
     },
     {
       "image": null,
-      "narration": "이요원 세대는 벌써 자식이 어른 나이가 되는 거. 세월 빠르다. 팔로우해서 더 봐봐.",
-      "subtitle": "세월 빠르다",
-      "photo_query": "family together generations happiness"
+      "narration": "1987년 준공인데 말이다. 나이 먹은 아파트가 신축보다 비싼 게 강남의 위력이다.",
+      "subtitle": "1987년 준공 아파트의 힘",
+      "photo_query": "vintage korean apartment building 1980s architecture"
+    },
+    {
+      "image": null,
+      "narration": "압구정동 입실렀으면 이 정도는 각오해야 된다. 팔로우해서 강남 시세 놓치지 말고 봐라.",
+      "subtitle": "강남 시세 계속 추적",
+      "photo_query": "seoul gangnam street prestige location"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "google_trends",
-    "category": "당일 화제 이슈",
-    "attribution": "Google Trends",
-    "chart": null,
-    "generated_at": "2026-11-04T16:17:01.626522+00:00"
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        1.98,
+        1.91,
+        1.77,
+        1.64,
+        1.41
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-04T20:37:57.730789+00:00"
   }
 }

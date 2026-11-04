@@ -1,45 +1,39 @@
 {
-  "title": "로보락 구독 서비스 출시",
+  "title": "챔피언스리그 슬라비아 프라하 vs 아스널",
   "cover": {
     "image": null,
     "lines": [
-      "로봇청소기",
-      "<r>월 9900원</r>",
-      "구독 시대 온다"
+      "아스널 팬이라면",
+      "이 경기 <r>놓치면</r>",
+      "후회한다"
     ],
     "badge": null,
-    "photo_query": "robot vacuum cleaner subscription service"
+    "photo_query": "champions league football match stadium"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 로보락이 로봇청소기 구독 서비스를 시작했다. 월 9900원이다.",
-      "subtitle": "로보락 구독 서비스 론칭",
-      "photo_query": "robotic vacuum subscription payment plan"
+      "narration": "이거 모르고 지나가면 손해다. 챔피언스리그 슬라비아 프라하 대 아스널. 유럽 축구팬들이 지금 다 잠 못 자고 있다.",
+      "subtitle": "챔피언스리그 명경기",
+      "photo_query": "european football championship arena lights"
     },
     {
       "image": null,
-      "narration": "지금까지는 수십만 원을 주고 사야 했다. 이제는 한 달에 만 원 안 돼서 쓸 수 있다 이거야.",
-      "subtitle": "고가 가전도 구독으로 간편하게",
-      "photo_query": "expensive home appliance purchase cost"
+      "narration": "아스널은 프리미어리그 강호다. 근데 슬라비아 프라하도 만만치 않다. 홈구장에서의 집중력. 이거 정말 무섭다.",
+      "subtitle": "양팀 모두 전력 집중",
+      "photo_query": "football players intense match moment"
     },
     {
       "image": null,
-      "narration": "관리도 편하다. AS랑 배터리 교체도 다 봐준다. 쓰다가 구독 취소하고 싶으면 반환하면 된다.",
-      "subtitle": "유지비·AS·교체까지 한 번에",
-      "photo_query": "robot vacuum maintenance battery replacement"
+      "narration": "이 경기 결과가 16강 진출을 좌우한다. 한 경기 한 경기가 팀의 운명이다.",
+      "subtitle": "16강 진출 판가름",
+      "photo_query": "soccer goal celebration passion"
     },
     {
       "image": null,
-      "narration": "가전 구독이 생활 트렌드가 되고 있다. 비싼 제품도 부담 없이 써본다는 뜻이다.",
-      "subtitle": "가전 시장의 구독 경쟁 심화",
-      "photo_query": "subscription service payment technology digital"
-    },
-    {
-      "image": null,
-      "narration": "로보락 구독, 이게 대세 될지 말지. 그 흐름을 우리가 먼저 캐치해야 한다. 채널 팔로우해라.",
-      "subtitle": "새로운 소비 트렌드를 먼저 알기",
-      "photo_query": "following trending content subscription culture"
+      "narration": "축구팬이면 지금 당장 경기 일정 확인해라. 놓치면 정말 아깝다.",
+      "subtitle": "경기 일정 확인 필수",
+      "photo_query": "football match schedule calendar time"
     }
   ],
   "meta": {
@@ -48,6 +42,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-04T16:17:08.265232+00:00"
+    "generated_at": "2026-11-04T20:38:03.056616+00:00"
   }
 }

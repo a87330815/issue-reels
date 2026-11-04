@@ -1,0 +1,62 @@
+{
+  "title": "침산동 최고가 아파트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "침산동",
+      "<r>5억8천</r>",
+      "올라왔다"
+    ],
+    "badge": null,
+    "photo_query": "korean apartment complex modern building"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 침산동 아파트 가격. 올해 10월부터 확 올라간다.",
+      "subtitle": "침산동 최고가 상승",
+      "photo_query": "apartment price increase chart graph"
+    },
+    {
+      "image": null,
+      "narration": "더샵프리미엘. 71제곱미터. 5억8천만원. 이게 침산동 최고가다. 신축 아파트다 보니 값이 다르다.",
+      "subtitle": "더샵프리미엘 5억8천만원",
+      "photo_query": "luxury apartment interior modern design"
+    },
+    {
+      "image": null,
+      "narration": "반대로 침산화성2는 20년 넘은 단지인데. 같은 85제곱미터도 2억. 3배 차이난다. 이 거든.",
+      "subtitle": "구형 아파트는 2억대",
+      "photo_query": "old apartment building exterior worn"
+    },
+    {
+      "image": null,
+      "narration": "침산동 사람들이 눈여겨봐야 할 데이터다. 이제 신축이면 5억 넘는다는 거. 장기 전세 구할 때는 더 신경 써라.",
+      "subtitle": "신축은 5억대 진입",
+      "photo_query": "korea real estate housing market"
+    },
+    {
+      "image": null,
+      "narration": "침산동 살고 있거나 장만하려는 사람들. 이 정보. 팔로우하고 더 받아봐라. 쫌봐봐에서 계속 업데이트한다.",
+      "subtitle": "침산동 부동산 정보 팔로우",
+      "photo_query": "person looking at house plans documents"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        5.8,
+        4.1,
+        4.1,
+        2.8,
+        2.0
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-04T20:37:50.889631+00:00"
+  }
+}

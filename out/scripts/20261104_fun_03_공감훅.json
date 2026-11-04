@@ -1,0 +1,53 @@
+{
+  "title": "냉동실 아이스크림 범인 찾기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "냉동실에",
+      "<r>숨겨둔</r>",
+      "아이스크림"
+    ],
+    "badge": null,
+    "photo_query": "hidden ice cream freezer"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 내가 좋아하는 아이스크림 사 와서 냉동실 뒤에 몰래 숨겨뒀다 이거야. 아무도 모를 거야.",
+      "subtitle": "몰래 숨긴 아이스크림",
+      "photo_query": "ice cream hidden freezer back"
+    },
+    {
+      "image": null,
+      "narration": "근데 이틀 뒤에 냉동실 열었더니... 없네? 어? 어? 누가 먹었어?",
+      "subtitle": "사라진 아이스크림",
+      "photo_query": "empty freezer shocked face"
+    },
+    {
+      "image": null,
+      "narration": "가족들한테 물어봐도 다 모른다고 하고. 와 진짜, 나한테 이러냐고.",
+      "subtitle": "범인은 누구일까",
+      "photo_query": "family dinner suspicious look"
+    },
+    {
+      "image": null,
+      "narration": "그 다음부턴 냉동실 카메라 달 생각까지 했어. 그냥 자기 이름 적어서 사면 되는 거 아니냐니까.",
+      "subtitle": "진짜 배신감",
+      "photo_query": "ice cream labeled name"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우 해봐! 쫌봐봐와 함께 공감 릴스 하자.",
+      "subtitle": "팔로우 고고",
+      "photo_query": "follow subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T20:38:28.615650+00:00"
+  }
+}

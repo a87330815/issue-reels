@@ -1,54 +1,35 @@
 {
-  "title": "유명인 이름 빌려 18억 사기",
+  "title": "เฟแนร์บาห์",
   "cover": {
     "image": null,
+    "photo_query": "Korea city luxury apartment",
     "lines": [
-      "아버지 이름만",
-      "팔아서",
-      "<r>18억</r>",
-      "먹튀했다"
+      "<r>เฟแนร์บาห์</r>",
+      "이거 실환가요"
     ],
-    "badge": null,
-    "photo_query": "fraudulent document forgery scam"
+    "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 유명인 아버지 이름을 팔아서 18억을 사기친 사건이 났다. 아들이 아버지의 이름만 내세우고 투자 명목으로 돈을 가져간 거다.",
-      "subtitle": "유명인 이름으로 18억 사기",
-      "photo_query": "courtroom trial verdict judge"
+      "photo_query": "Korea city luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 'เฟแนร์บาห์เช พบ ลิเวอร์พูล' 관련 트렌드 — โปรแกรมการแข่งขันแชมเปี้ยนส์ลีก: แมนเชสเตอร์ ซิตี้ เยือนไลป์ซิก, ลิเวอร์พูล และอาร์เซนอล มุ่งสู่ชัยชนะ. 수치로 확인해보자.",
+      "subtitle": "'เฟแนร์บาห์เช พบ"
     },
     {
       "image": null,
-      "narration": "피해자들은 뭔가 크 큰 사람 이름이니까 믿고 돈을 맡겼다. 그런데 그게 다 사라진 거다. 1심에서 징역 3년 6개월이 나왔다.",
-      "subtitle": "투자 명목으로 돈 회수 불가",
-      "photo_query": "money transfer financial fraud"
-    },
-    {
-      "image": null,
-      "narration": "이거 봐봐. 유명인과 가족이라고 해서 다 믿으면 안 된다. 항상 공식 통로를 통해 확인해야 된다.",
-      "subtitle": "유명인 명의 투자 반드시 확인",
-      "photo_query": "verification check document authentic"
-    },
-    {
-      "image": null,
-      "narration": "투자를 할 때 상대방이 실명이라고 해도 공식 기관에 먼저 물어봐라. 그게 제일 안전한 방법이다.",
-      "subtitle": "투자 전 반드시 공식 확인",
-      "photo_query": "phone call customer service verification"
-    },
-    {
-      "image": null,
-      "narration": "야야야. 이런 사건들 또 생길 수 있다. 쫌봐봐 채널 팔로우해서 최신 사기 수법을 먼저 알아봐라.",
-      "subtitle": "최신 사기 수법 먼저 알기",
-      "photo_query": "warning alert notification smartphone screen"
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "google_trends",
+    "source": "",
     "category": "당일 화제 이슈",
-    "attribution": "Google Trends",
+    "attribution": "",
     "chart": null,
-    "generated_at": "2026-11-04T16:16:44.746054+00:00"
+    "tone": "경상도",
+    "generated_at": "2026-11-04T20:37:37.282109+00:00"
   }
 }

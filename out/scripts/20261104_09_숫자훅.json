@@ -1,39 +1,45 @@
 {
-  "title": "이유리 새집 공개",
+  "title": "에코프로 투자 붐, 관련주 3곳에 55억",
   "cover": {
     "image": null,
     "lines": [
-      "전문가",
-      "<r>18명</r>이",
-      "15시간 투입"
+      "에코프로가",
+      "<r>55억</r>",
+      "뿌렸다"
     ],
     "badge": null,
-    "photo_query": "professional organizers moving boxes apartment"
+    "photo_query": "battery recycling technology factory"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 유명인 이사 현장이 화제다. 전문가 18명이 짐 정리하는데 15시간이 걸렸다.",
-      "subtitle": "전문가 18명, 15시간 투입",
-      "photo_query": "moving day team organizing boxes"
+      "narration": "이거 모르고 지나가면 손해다. 에코프로가 최근 관련 기업 3곳에 55억원을 투자로 연계했다. 배터리 재활용 시장이 이렇게 핫하단 거지.",
+      "subtitle": "에코프로, 관련기업 투자 55억",
+      "photo_query": "lithium battery recycling process"
     },
     {
       "image": null,
-      "narration": "와 대박. 보통 가정집 이사는 2~3시간이면 끝난다. 근데 15시간이다. 짐이 얼마나 많은 거냐는 거지.",
-      "subtitle": "일반 이사의 5배 이상 소요",
-      "photo_query": "apartment packed boxes furniture clutter"
+      "narration": "왜냐고? 전기차 시장이 커질수록 폐배터리 처리가 골칫거리 되는데. 에코프로가 이 기술을 가진 기업들을 지원하면서 시장 판이 다시 짜지는 중이다.",
+      "subtitle": "전기차 폐배터리 처리 시장 확대",
+      "photo_query": "electric vehicle charging station"
     },
     {
       "image": null,
-      "narration": "이유리가 새집 공개했는데 인테리어도 화제더라. 전문가들이 손댄 공간이라고 생각하면 된다.",
-      "subtitle": "공간 정리 서비스 접근",
-      "photo_query": "modern minimalist apartment interior design"
+      "narration": "여기서 중요한 건 이 3곳 기업들이다. 투자 받은 회사들은 이제 에코프로와 함께 성장 가능성이 높아졌단 말이야.",
+      "subtitle": "선정된 3개 지역기업 성장성 주목",
+      "photo_query": "startup company team meeting office"
     },
     {
       "image": null,
-      "narration": "이거. 시청자들 반응이 뜨겁다. 셀럽의 일상이 궁금한 거고, 전문 서비스 수준도 신기한 거야.",
-      "subtitle": "팔로워 관심 집중",
-      "photo_query": "before after home organization transformation"
+      "narration": "배터리 산업은 앞으로 20년이 성수기다. 지금 움직이는 회사들과 기업들을 체크해 두는 게 현명하다.",
+      "subtitle": "배터리 산업 2045년까지 성장",
+      "photo_query": "future technology green energy concept"
+    },
+    {
+      "image": null,
+      "narration": "이런 시장 흐름을 놓치지 말아라. 우리 채널에서 계속 챙겨줄 테니까. 구독 꼭 해라.",
+      "subtitle": "구독으로 시장 정보 받기",
+      "photo_query": "business news data analytics dashboard"
     }
   ],
   "meta": {
@@ -42,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-04T16:17:13.948147+00:00"
+    "generated_at": "2026-11-04T20:38:10.248111+00:00"
   }
 }
