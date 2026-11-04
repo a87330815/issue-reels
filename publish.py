@@ -276,8 +276,8 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     combos = [
         (HOST, VERSION),
         ("graph.facebook.com", "v21.0"),
-        ("graph.facebook.com", "v19.0"),
-        ("graph.instagram.com", "v21.0"),
+        
+        
         ("graph.facebook.com", "v26.0"),
     ]
     # 현재 설정을 맨 앞으로, 중복 제거
