@@ -1,86 +1,77 @@
 {
-  "collected_at": "2026-11-04T15:51:49.545737+00:00",
+  "collected_at": "2026-11-04T20:36:36.122582+00:00",
   "items": [
     {
-      "keyword": "사기",
-      "traffic": "200+",
-      "news_title": "부친 ‘태영호’ 이름 내세워 18억 사기…장남 1심 징역 3년 6개월",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "c91e618b9adbe9c6"
-    },
-    {
-      "keyword": "우규민",
-      "traffic": "5000+",
-      "news_title": "연장 12회 끝낸 건 실책... 삼성, 승부 원점으로 돌렸다",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "d8b2c2bf3d7af007"
-    },
-    {
-      "keyword": "이요원",
-      "traffic": "200+",
-      "news_title": "‘23세에 첫 출산’ 이요원, 미모 쏙 빼닮은 장녀 공개…美 명문대 졸업",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "a17ac0adf10b6622"
-    },
-    {
-      "keyword": "로보락",
+      "keyword": "เฟแนร์บาห์เช พบ ลิเวอร์พูล",
       "traffic": "100+",
-      "news_title": "로보락, 로봇청소기 구독 서비스 출시",
+      "news_title": "โปรแกรมการแข่งขันแชมเปี้ยนส์ลีก: แมนเชสเตอร์ ซิตี้ เยือนไลป์ซิก, ลิเวอร์พูล และอาร์เซนอล มุ่งสู่ชัยชนะ",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "3e154b90244a5112"
+      "key": "493dc27b7917d1d9"
     },
     {
-      "keyword": "이유리",
+      "keyword": "슬라비아 프라하 대 아스널",
+      "traffic": "1000+",
+      "news_title": "챔피언스 리그 슬라비아 프라하 대 아스날 경기 점수 예측",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "6621a01a8c84d5d9"
+    },
+    {
+      "keyword": "에코프로",
       "traffic": "200+",
-      "news_title": "이유리, 이사한 새집 최초 공개…“전문가 18명이 짐 정리, 15시간 걸렸다”",
+      "news_title": "특구재단, 에코프로와 오픈이노베이션 성과…지역기업 3곳에 55억원 투자 연계",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "de951a6439b50ebd"
+      "key": "3a48b4e41a7735f4"
     },
     {
-      "keyword": "수사",
-      "traffic": "2000+",
-      "news_title": "&apos;조작기소 특검법&apos; 속전속결 법사위 통과...오늘 본회의 처리 전망",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "9d7be6c5aca6800f"
-    },
-    {
-      "keyword": "박계범",
+      "keyword": "라이프치히 대 맨 시티",
       "traffic": "1000+",
-      "news_title": "이재현 &apos;한점 더 달아나자&apos;",
+      "news_title": "RB Leipzig vs Manchester City: UEFA Champions League stats &amp; head-to-head",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "c990c4c6b07f16aa"
+      "key": "3c3df84da5942822"
     },
     {
-      "keyword": "송해나",
+      "keyword": "김보연",
+      "traffic": "200+",
+      "news_title": "",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "40d8a092d7530e94"
+    },
+    {
+      "keyword": "강호동",
       "traffic": "100+",
-      "news_title": "송해나, 이승철 주선 소개팅 나간다…184㎝·축구마니아 스펙에 입꼬리 상승",
+      "news_title": "경찰, &apos;뇌물 수수 의혹&apos; 강호동 농협중앙회장 구속영장 신청",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "eddb98dd3a400128"
+      "key": "19784bceb524ca2d"
     },
     {
-      "keyword": "알렉산더 즈베레프",
-      "traffic": "1000+",
-      "news_title": "신네르·알카라스 양강 구도 균열 낸 츠베레프, 생애 첫 세계 1위 등극",
+      "keyword": "소유진",
+      "traffic": "200+",
+      "news_title": "‘백종원♥’ 소유진, 미술관 뺨치는 대저택 공개…고가 작품만 수십 점",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "5888d365955609d6"
+      "key": "cb1c1253b38907dd"
+    },
+    {
+      "keyword": "도깨비",
+      "traffic": "200+",
+      "news_title": "카카오게임즈 3분기 영업손실 263억원…적자 확대",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "42fbbcd988f04567"
     }
   ]
 }
