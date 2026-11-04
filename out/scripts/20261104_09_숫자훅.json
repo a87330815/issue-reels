@@ -1,0 +1,53 @@
+{
+  "title": "서장훈 450억 빌딩 파동",
+  "cover": {
+    "image": null,
+    "lines": [
+      "<r>450억</r> 빌딩 파는",
+      "연예인의 반전",
+      "충고"
+    ],
+    "badge": null,
+    "photo_query": "luxury building Seoul real estate"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 연예인이 450억짜리 건물을 내놨다. 이건 건물값 얘기가 아니다.",
+      "subtitle": "연예인의 450억 빌딩",
+      "photo_query": "high-rise office building exterior glass"
+    },
+    {
+      "image": null,
+      "narration": "방송에서 건물주들을 직접 저격했다. 건물 사고 있는 사람들이 뭘 놓치고 있냐는 거다.",
+      "subtitle": "건물주들에게 던진 경고",
+      "photo_query": "businessman thinking serious expression"
+    },
+    {
+      "image": null,
+      "narration": "금리, 관리비, 공실. 보이는 수익만 봤다가 나중에 후회한다는 얘기다.",
+      "subtitle": "알면서도 하는 실수들",
+      "photo_query": "financial documents spreadsheet analysis"
+    },
+    {
+      "image": null,
+      "narration": "연예인도 400억대 자산을 손에서 놨다. 이유가 뭘까. 지금 알아야 한다.",
+      "subtitle": "대규모 자산 매각 배경",
+      "photo_query": "real estate market crisis news"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 내용은 팔로우하고 확인해라. Google Trends.",
+      "subtitle": "지금 트렌드를 따라잡아",
+      "photo_query": "smartphone notification alert social media"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-04T03:01:26.151752+00:00"
+  }
+}

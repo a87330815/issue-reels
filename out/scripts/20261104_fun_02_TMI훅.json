@@ -1,0 +1,52 @@
+{
+  "title": "일요일 저녁부터 시작되는 월요병",
+  "cover": {
+    "image": null,
+    "lines": [
+      "일요일 저녁부터",
+      "<r>이미 월요병</r>"
+    ],
+    "badge": null,
+    "photo_query": "sunday evening anxiety couch"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 알면 쓸데없이 똑똑해진다고. 월요병? 아니다. 정식명칭은 '선데이 스쿱'이라고 하카더라.",
+      "subtitle": "일요일 저녁 우울함의 과학적 이름",
+      "photo_query": "sunset sunday evening window"
+    },
+    {
+      "image": null,
+      "narration": "일요일 저녁 6시만 되도 뭔가 답답하고, 밥도 안 내려가고, TV도 집중 안 돼. 이미 월요일이 불안으로 다가오는 거다.",
+      "subtitle": "일요일 6시, 벌써 월요일 생각",
+      "photo_query": "anxious man clock evening dinner"
+    },
+    {
+      "image": null,
+      "narration": "과학자들이 연구한 거 봤는데, 이건 심리 현상이 아니라 뇌의 스트레스 호르몬이 미리 올라가는 거다. 일요일 밤 일찍부터.",
+      "subtitle": "코르티솔이 벌써 솟아감",
+      "photo_query": "brain stress cortisol chemical"
+    },
+    {
+      "image": null,
+      "narration": "그래서 월요아침에 일어나는 게 아니라, 일요일 저녁부터 이미 시작된 거거든. 우리가 느끼는 그 답답함, 그게 선데이 스쿱이다.",
+      "subtitle": "월요병은 월요일이 아님",
+      "photo_query": "tired sunday night bed restless"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 알고 싶으면 팔로우 눌러. 다음엔 월요일 아침을 견디는 팁을 가져올게.",
+      "subtitle": "쫌봐봐 팔로우하고 가세요",
+      "photo_query": "follow button social media subscribe"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T03:01:40.967654+00:00"
+  }
+}

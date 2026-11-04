@@ -1,0 +1,53 @@
+{
+  "title": "장보기 전 5분이 식비 30% 줄인다",
+  "cover": {
+    "image": null,
+    "lines": [
+      "장보기 전",
+      "<r>5분만</r>",
+      "식비 30% 줄어"
+    ],
+    "badge": null,
+    "photo_query": "shopping list notepad pen"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 이거 봐봐. 냉장고 뜯기 전에 이거만 하면 돈이 줄줄 새는 거가 확 줄어든다고.",
+      "subtitle": "냉장고 정리가 첫 번째",
+      "photo_query": "open refrigerator organized"
+    },
+    {
+      "image": null,
+      "narration": "지금 뭐가 남았는지 5분만에 확인해. 반찬, 야채, 고기 다 봐. 그래야 중복으로 사는 거 안 된다.",
+      "subtitle": "남은 재료 목록 작성",
+      "photo_query": "checking fridge contents list"
+    },
+    {
+      "image": null,
+      "narration": "그 다음엔 이번 주 밥상을 생각하면서 뭐가 필요한지 딱 써 내는 거다. 장부에 적혀 있으니까 본의 아니게 '아 이건 사야겠다' 그런 거 없어.",
+      "subtitle": "필요한 것만 메모",
+      "photo_query": "writing shopping list grocery"
+    },
+    {
+      "image": null,
+      "narration": "이렇게만 해도 충동구매가 끝난다. 월 식비가 진짜 15만 원에서 10만 원대로 떨어져. 왜냐면 계획 없이 사는 게 가장 비싸기 때문이다.",
+      "subtitle": "월 5만 원 이상 절약",
+      "photo_query": "grocery store shopping cart checkout"
+    },
+    {
+      "image": null,
+      "narration": "이런 살림꿀팁 더 알고 싶으면 팔로우 눌러 봐. 매일 돈 아끼는 방법 알려준다고.",
+      "subtitle": "팔로우하고 매일 확인",
+      "photo_query": "happy woman saving money piggy bank"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T03:02:13.570725+00:00"
+  }
+}

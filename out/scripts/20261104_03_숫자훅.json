@@ -1,0 +1,63 @@
+{
+  "title": "대치동 vs 부곡동, 같은 아파트인데 가격이 31배?",
+  "cover": {
+    "image": null,
+    "lines": [
+      "같은 아파트",
+      "가격이",
+      "<r>31배</r>",
+      "차이난다"
+    ],
+    "badge": null,
+    "photo_query": "seoul apartment buildings comparison"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 서울 같은 아파트라도 어디 사느냐에 따라 가격이 완전 달라진다.",
+      "subtitle": "위치가 곧 자산이다",
+      "photo_query": "seoul map neighborhood districts"
+    },
+    {
+      "image": null,
+      "narration": "대치동 아파트 평균 34억 8천만원. 한번에 안 들어올 정도다.",
+      "subtitle": "대치동 평균 34억 8천만원",
+      "photo_query": "luxury apartment building gangnam seoul"
+    },
+    {
+      "image": null,
+      "narration": "그런데 부곡동 같은 아파트는 평균 1억 1천만원이다. 뭐라카더라. 같은 강남구인데 31배 차이다.",
+      "subtitle": "부곡동 평균 1억 1천만원",
+      "photo_query": "apartment building seoul neighborhood"
+    },
+    {
+      "image": null,
+      "narration": "학군. 브랜드. 역세권. 이 모든 게 집값에 빨려간다. 같은 돈이라도 어디 살지가 인생을 바꾼다.",
+      "subtitle": "위치 선택이 자산 선택이다",
+      "photo_query": "seoul school students parents visiting"
+    },
+    {
+      "image": null,
+      "narration": "다음 영상에서는 당신 동네 집값이 왜 그럴까. 그 비결을 파헤쳐본다. 팔로우해라.",
+      "subtitle": "팔로우로 동네 정보 먼저 받기",
+      "photo_query": "notification bell subscribe alert"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        34.8,
+        34.0,
+        32.0,
+        27.4,
+        26.8
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-04T03:00:45.501215+00:00"
+  }
+}

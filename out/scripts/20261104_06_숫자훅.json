@@ -1,0 +1,53 @@
+{
+  "title": "미국 대선 투표소 군 배치 논란",
+  "cover": {
+    "image": null,
+    "lines": [
+      "투표소마다",
+      "<r>방위군</r>이",
+      "나타났다"
+    ],
+    "badge": null,
+    "photo_query": "US election voting poll line citizens"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 미국 대선 투표가 한창인데. 투표소에 방위군이 배치됐다는 거야. 이게 뭐 하는 건데.",
+      "subtitle": "투표소에 방위군 배치",
+      "photo_query": "american voting booth election day"
+    },
+    {
+      "image": null,
+      "narration": "일부 주에서 투표 질서 유지한다고 군인들을 배치했다. 그런데 이게 역효과라는 거야. 유권자들이 위축된다고.",
+      "subtitle": "질서 유지 명목, 역효과 발생",
+      "photo_query": "military personnel official uniform standing"
+    },
+    {
+      "image": null,
+      "narration": "투표는 시민들의 기본권이거든. 이런 광경이 나타나면. 투표하기 겁난다고 느껴지는 거지. 민주주의에 영향을 미친다.",
+      "subtitle": "유권자 위축 우려 확대",
+      "photo_query": "concerned citizen voter worried expression"
+    },
+    {
+      "image": null,
+      "narration": "미국도 이렇게 투표 환경이 복잡해지고 있다. 우리나라 대선도 결국 투표 투명성과 신뢰가 핵심이다. 이거 기억해라.",
+      "subtitle": "민주주의 투표 환경 변화",
+      "photo_query": "voting rights democracy election process"
+    },
+    {
+      "image": null,
+      "narration": "쫌봐봐에서 매일 세계 이슈와 우리 일상을 연결해서 알려줘. 지금 바로 팔로우 해라. 그럼 다음 화제에서 봐.",
+      "subtitle": "매일 업데이트 팔로우하기",
+      "photo_query": "social media follow button notification"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-04T03:01:05.015098+00:00"
+  }
+}

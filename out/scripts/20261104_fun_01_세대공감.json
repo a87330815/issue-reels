@@ -1,0 +1,52 @@
+{
+  "title": "만 나이 통일됐는데 왜 자꾸 틀려?",
+  "cover": {
+    "image": null,
+    "lines": [
+      "만 나이 통일됐는데",
+      "<r>자꾸 헷갈린다</r>"
+    ],
+    "badge": null,
+    "photo_query": "calendar birthday confused"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "친구한테 '넌 몇 살이야?'라고 물었는데 '만 서른두 살'이라고 대답했어. 근데 자꾸만 내 머릿속으로 계산하게 되는 거야.",
+      "subtitle": "갑자기 수학 문제 풀기",
+      "photo_query": "person thinking confused arithmetic"
+    },
+    {
+      "image": null,
+      "narration": "올해 2025년이고, 저 친구가 1993년생이면... 어? 2025에서 1993을 빼면 32? 근데 생일이 안 지났으면 31? 아 맞다 만 나이다.",
+      "subtitle": "머릿속으로 계산 시작",
+      "photo_query": "thinking math brain calculation"
+    },
+    {
+      "image": null,
+      "narration": "이제 다 만 나이 쓰기로 했는데, 여전히 많은 사람들이 헷갈려하고 있어. '어라, 내 아들이 언제 스무 살이 되지?' 이러면서.",
+      "subtitle": "세대를 넘어 모두 헷갈림",
+      "photo_query": "family generations talking confused"
+    },
+    {
+      "image": null,
+      "narration": "그런데 가끔 병무청 같은 곳에선 여전히 다른 식으로 계산하는 곳들이 있다더라. 아 이게 정말 골칫거리네.",
+      "subtitle": "공식은 만 나이인데",
+      "photo_query": "official document government records"
+    },
+    {
+      "image": null,
+      "narration": "야야야, 이런 거 더 궁금하면 팔로우해. 우리 일상의 모든 '어?'를 풀어주는 채널이야.",
+      "subtitle": "더 재미있는 공감 기다려",
+      "photo_query": "follow subscribe notification bell"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T03:01:33.637489+00:00"
+  }
+}

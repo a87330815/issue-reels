@@ -1,0 +1,52 @@
+{
+  "title": "충전기 자리싸움",
+  "cover": {
+    "image": null,
+    "lines": [
+      "우리 집",
+      "<r>충전기 전쟁</r>"
+    ],
+    "badge": null,
+    "photo_query": "charging cable phone battery"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아빠가 충전기 꽂았다. 엄마가 본다. 아무 말 없이 본다.",
+      "subtitle": "눈치의 시작",
+      "photo_query": "father plugging charger serious face"
+    },
+    {
+      "image": null,
+      "narration": "\"어? 내 폰도 충전 돼야 하는데.\" 엄마가 작게 중얼거린다. 아빠는 못 들은 척한다.",
+      "subtitle": "간접표현의 기술",
+      "photo_query": "woman staring frustrated smartphone"
+    },
+    {
+      "image": null,
+      "narration": "결국 나가 충전기 뽑는다. 아빠는 \"아 잠깐!\" 엄마는 \"저기 내 거 있잖아\" 동시에 외친다.",
+      "subtitle": "그 순간의 절망",
+      "photo_query": "confused person pulling out power cable"
+    },
+    {
+      "image": null,
+      "narration": "결국 충전기는 \"누가 더 급한가\" 싸움이 된다. 우리 집의 불문율이다.",
+      "subtitle": "진정한 가정전쟁",
+      "photo_query": "family arguing living room phone"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우해 봐. 우리 집 실화들 계속 터진다.",
+      "subtitle": "다음 화도 기대해",
+      "photo_query": "family laugh together couch"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T03:01:59.226087+00:00"
+  }
+}

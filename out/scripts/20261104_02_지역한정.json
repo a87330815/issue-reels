@@ -1,0 +1,62 @@
+{
+  "title": "송도동 11월 아파트 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "송도동",
+      "<r>7억대</r>",
+      "이게 진짜 가격"
+    ],
+    "badge": null,
+    "photo_query": "incheon songdo apartment complex modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 송도동. 요즘 아파트 거래 뭐가 떴냐고? 7억 중반대다. 가격이 생각보다 높지 않냐고?",
+      "subtitle": "송도동 11월 거래",
+      "photo_query": "incheon songdo skyline bay area"
+    },
+    {
+      "image": null,
+      "narration": "이거 봐봐. 가장 비싼 게 9억 2천인데, 2023년 준공 신축이다. 그런데 지금 뭘 70, 80, 90으로 살 수 있다는 거야.",
+      "subtitle": "힐스테이트레이크송도 9억 2천",
+      "photo_query": "luxury apartment building construction new"
+    },
+    {
+      "image": null,
+      "narration": "평수는 어떻게 되냐고? 대부분 85제곱미터 언저리다. 즉 3룸급. 이 가격대에 이 평수면 너무 쌌다는 거다.",
+      "subtitle": "85제곱미터대 주요 거래",
+      "photo_query": "apartment floor plan layout design"
+    },
+    {
+      "image": null,
+      "narration": "지금 송도 들어갈 타이밍이라고? 그건 아니지만, 가격 범위만큼은 정확히 알아 두라고. 시세 오르기 전에.",
+      "subtitle": "7억~9억대 가격대 형성",
+      "photo_query": "real estate market price chart data"
+    },
+    {
+      "image": null,
+      "narration": "송도 살 거면 댓글로 꼬라박고 팔로우 눌러. 자세한 거래 건별로 또 알려줄기다.",
+      "subtitle": "더 자세한 송도 거래 정보",
+      "photo_query": "smartphone notification follow subscribe"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        7.7,
+        6.8,
+        5.3,
+        9.2,
+        7.0
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-04T03:00:38.695160+00:00"
+  }
+}

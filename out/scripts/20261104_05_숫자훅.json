@@ -1,0 +1,62 @@
+{
+  "title": "도곡렉슬 평당 1.61억",
+  "cover": {
+    "image": null,
+    "lines": [
+      "도곡동",
+      "<r>평당 1.61억</r>",
+      "이게 현실"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building gangnam seoul"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 도곡동 도곡렉슬. 평당 1억 6천만 원이다. 뭐라카노.",
+      "subtitle": "도곡동 도곡렉슬 평당가",
+      "photo_query": "apartment price listing contract signing"
+    },
+    {
+      "image": null,
+      "narration": "60평 정도면. 10억 가까이 된다는 거야. 2006년 지은 건데도.",
+      "subtitle": "60평 = 약 9.6억",
+      "photo_query": "real estate market chart increasing"
+    },
+    {
+      "image": null,
+      "narration": "같은 달에 팔린 래미안블레스티지는 평당 4천 떨어져. 개포동이지만.",
+      "subtitle": "개포동 더 싼 신축",
+      "photo_query": "apartment complex comparison location"
+    },
+    {
+      "image": null,
+      "narration": "강남 한 블록 차이가 평당 4천만 원. 이게 서울 집값 현실이다.",
+      "subtitle": "강남 한 블록 = 4천만원",
+      "photo_query": "seoul gangnam district street view"
+    },
+    {
+      "image": null,
+      "narration": "우리 채널 팔로우해라. 강남 집값 트렌드 계속 챙겨줄게.",
+      "subtitle": "쫌봐봐 팔로우",
+      "photo_query": "follow subscribe notification bell"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        1.61,
+        1.48,
+        1.45,
+        1.38,
+        1.34
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-04T03:00:57.625454+00:00"
+  }
+}

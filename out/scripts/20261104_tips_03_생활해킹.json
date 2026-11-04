@@ -1,0 +1,52 @@
+{
+  "title": "옷 관리 2가지 꿀팁",
+  "cover": {
+    "image": null,
+    "lines": [
+      "니트 보풀·흰옷 누런때",
+      "<y>5분이면 끝</y>"
+    ],
+    "badge": null,
+    "photo_query": "sweater care laundry"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 니트 입고 나면 보풀 엄청 나지? 이거 면도기로 쓱쓱 밀어보면 된다.",
+      "subtitle": "면도기로 보풀 제거",
+      "photo_query": "sweater pilling razor"
+    },
+    {
+      "image": null,
+      "narration": "옷을 평평하게 놓고, 낡은 일회용 면도기를 살짝 기울여서 톡톡 두드리듯 민다. 5분이면 끝난다. 섬유가 손상되지 않으니까 니트도 자주 해도 괜찮다.",
+      "subtitle": "살살 톡톡 문질러주기",
+      "photo_query": "razor sweater care technique"
+    },
+    {
+      "image": null,
+      "narration": "이제 흰옷의 누런때. 옥시클린 가루 한 숟가락에 미온수 섞어서 때난 부분에 붙여 두면, 한두 시간 뒤 얼룩이 말끔히 빠진다.",
+      "subtitle": "옥시클린 페이스트 팩",
+      "photo_query": "white shirt yellow stain oxiclean"
+    },
+    {
+      "image": null,
+      "narration": "산소 표백이라 색깔 옷도 손상 없고, 염소 냄새도 없다. 한 병에 3천 원대인데 1년을 써도 남는다.",
+      "subtitle": "저렴하고 오래 쓴다",
+      "photo_query": "laundry stain removal oxygen bleach"
+    },
+    {
+      "image": null,
+      "narration": "옷 관리 이렇게만 해도 단벌 의류도 오래오래 입을 수 있다. 더 많은 꿀팁 보려면 팔로우해 주이소~",
+      "subtitle": "팔로우로 더 보기",
+      "photo_query": "clean clothes hanging wardrobe"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T03:02:20.155266+00:00"
+  }
+}

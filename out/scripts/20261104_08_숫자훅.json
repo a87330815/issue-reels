@@ -1,0 +1,53 @@
+{
+  "title": "포스코 주가 충격, PBR 0.17배의 의미",
+  "cover": {
+    "image": null,
+    "lines": [
+      "주가가",
+      "<r>0.17배</r>",
+      "까지 내려갔다"
+    ],
+    "badge": null,
+    "photo_query": "steel factory industrial production Korea"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 포스코 주가가 PBR 0.17배까지 내려갔다. 뭐냐고? 기업이 가진 순자산보다 주가가 6분의 1 수준이라는 소리다.",
+      "subtitle": "PBR 0.17배란 무엇인가",
+      "photo_query": "stock market decline chart red"
+    },
+    {
+      "image": null,
+      "narration": "정상적인 기업이면 PBR이 0.8배에서 1.2배다. 그래야 투자자들이 산다. 그런데 포스코는 0.17배? 시장이 완전히 외면했다는 뜻이다.",
+      "subtitle": "정상 범위는 0.8~1.2배",
+      "photo_query": "financial analysis report spreadsheet"
+    },
+    {
+      "image": null,
+      "narration": "왜 이렇게까지 내려갔냐고? 글로벌 철강 수급이 안 좋아지니까다. 적자 걱정에 투자자들이 도망친 거야.",
+      "subtitle": "철강 시장 약세의 영향",
+      "photo_query": "industrial steel production crane machinery"
+    },
+    {
+      "image": null,
+      "narration": "포스코는 밸류업 정책으로 주가를 올리려 했는데, 이 모양이니까 자존심이 구겼을 거다. 시장이 버티는 동안 어떻게 나올지가 관건이다.",
+      "subtitle": "밸류업 정책 지속 여부 주목",
+      "photo_query": "business meeting conference room discussion"
+    },
+    {
+      "image": null,
+      "narration": "지금 이 상황. 포스코 투자자들은 초비상이다. 혹시 모르니 업데이트는 팔로우해서 챙겨봐라.",
+      "subtitle": "포스코 향후 주가 움직임 주목",
+      "photo_query": "smartphone stock trading app notification"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-04T03:01:20.071001+00:00"
+  }
+}

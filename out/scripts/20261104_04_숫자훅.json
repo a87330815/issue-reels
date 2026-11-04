@@ -1,0 +1,47 @@
+{
+  "title": "텍사스 상원선거 2026 - 탈라리코 vs 팩슨",
+  "cover": {
+    "image": null,
+    "lines": [
+      "2026년",
+      "텍사스 상원선거",
+      "<r>핵심</r>은 이것"
+    ],
+    "badge": null,
+    "photo_query": "texas state capitol building"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 2026년 텍사스 상원의원 선거. 지금부터 누가 나오는지 알아야 투표 준비한다.",
+      "subtitle": "2026 텍사스 상원선거",
+      "photo_query": "voting booth election day"
+    },
+    {
+      "image": null,
+      "narration": "탈라리코. 이 사람이 출마한다. 텍사스 정치에서 주목받는 인물이 움직인 것. 이미 뭔가 벌어지고 있다.",
+      "subtitle": "제임스 탈라리코 출마",
+      "photo_query": "political candidate campaign event"
+    },
+    {
+      "image": null,
+      "narration": "상대는 팩슨이다. 누가 이길지는 2026년까지의 싸움이지만. 지금부터 계속 주시해야 할 선거라는 얘기다.",
+      "subtitle": "탈라리코 vs 팩슨 대결",
+      "photo_query": "election campaign competition race"
+    },
+    {
+      "image": null,
+      "narration": "텍사스 상원선거는 미국 정치의 판도를 바꾼다. 한 번씩만 더 체크해두고 팔로우해라. 다음 소식도 빠르게 알려준다.",
+      "subtitle": "2년 뒤의 변화를 지금부터 준비",
+      "photo_query": "united states map texas state"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-04T03:00:51.626905+00:00"
+  }
+}
