@@ -26,7 +26,7 @@ TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
 APP_ID = os.environ.get("META_APP_ID", "1143191174807326")
 APP_SECRET = os.environ.get("META_APP_SECRET", "")
 HOST = os.environ.get("IG_API_HOST", "graph.facebook.com")
-VERSION = os.environ.get("IG_API_VERSION", "v21.0")
+VERSION = os.environ.get("IG_API_VERSION", "v26.0")
 
 BASE = f"https://{HOST}/{VERSION}"
 

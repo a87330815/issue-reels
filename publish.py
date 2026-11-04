@@ -57,7 +57,7 @@ load_env()
 IG_ID = os.environ.get("IG_USER_ID", "")
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
 HOST = os.environ.get("IG_API_HOST", "graph.instagram.com")
-VERSION = os.environ.get("IG_API_VERSION", "v21.0")
+VERSION = os.environ.get("IG_API_VERSION", "v26.0")
 BASE = f"https://{HOST}/{VERSION}"
 
 # 처리 대기 — 공식 권장은 1분 간격 5분 이내지만,
@@ -273,13 +273,10 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     # media_publish — 실패 시 다른 API 버전/호스트 조합으로 fallback
     global BASE
     original_base = BASE
-    combos = [
-        (HOST, VERSION),
-        ("graph.facebook.com", "v21.0"),
-        
-        
-        ("graph.facebook.com", "v26.0"),
-    ]
+    # 컨테이너 생성과 발행에 서로 다른 API 버전을 섞으면 Meta에서
+    # 원인 불명의 OAuthException(내부 서버 오류)을 반환할 수 있다.
+    # 한 실행에서는 설정된 단일 버전만 사용한다.
+    combos = [(HOST, VERSION)]
     # 현재 설정을 맨 앞으로, 중복 제거
     seen = set()
     ordered = []
