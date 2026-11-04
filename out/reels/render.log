@@ -1,12 +1,13 @@
-run 41820491397 2026-11-04T11:26:16Z
+run 41823399018 2026-11-04T11:45:26Z
 
 === 20261024_09_숫자훅 ===
   [cover] '황희찬' → "Korea city luxury apartment"
     [unsplash] 0건 후보
-    [openverse] 실패: 500 Server Error: Internal Server Error for url: https://api.openverse.org/v1/images/?q=Korea+city+luxury+apartment&license=cc0%2Cpdm%2Cby&page_size=12&mature=false
+    [openverse] 2건 후보
     [wikimedia] 0건 후보
     ↻ 재시도: "Korea city luxury"
     [unsplash] 12건 후보
+    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
   [scene1] ''황희찬' 관련 트렌드 —' → "Korea city luxury apartment"
@@ -32,25 +33,25 @@ run 41820491397 2026-11-04T11:26:16Z
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
-[TTS] ElevenLabs 엔진 사용
-  TTS [1/3] [EL·발랄녀] 1.0초  황희찬...
-  TTS [2/3] [EL·발랄녀] 11.7초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
-  TTS [3/3] [EL·발랄녀] 4.4초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
+[TTS] ELEVENLABS_API_KEY 미설정 → edge-tts 폴백
+  TTS [1/3] [발랄녀] 1.9초  황희찬...
+  TTS [2/3] [발랄녀] 11.9초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
+  TTS [3/3] [발랄녀] 5.3초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
 
 2) 영상 합성
   세그먼트 [1/4] 3.0초
-  세그먼트 [2/4] 12.5초
-  세그먼트 [3/4] 5.2초
+  세그먼트 [2/4] 12.7초
+  세그먼트 [3/4] 6.1초
   세그먼트 [4/4] 4.0초
 
   ✓ 릴스 완성: out/reels/20261024_09_숫자훅.mp4
-    길이: 20.9초  /  크기: 1.3MB
--rw-r--r-- 1 runner runner 1.3M Nov  4 11:27 out/reels/20261024_09_숫자훅.mp4
+    길이: 23.0초  /  크기: 1.4MB
+-rw-r--r-- 1 runner runner 1.5M Nov  4 11:45 out/reels/20261024_09_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=20.920272
+duration=23.000000
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -59,7 +60,7 @@ duration=20.920272
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-04):
-  20261024_09_숫자훅.mp4  1.3MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-04/20261024_09.mp4
+  20261024_09_숫자훅.mp4  1.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-04/20261024_09.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -67,22 +68,15 @@ duration=20.920272
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 100건
+남은 발행 가능: 99건
 발행 대상: 1건
 
 ── 1/1  20261024_09_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-04/20261024_09.mp4
   캡션: 황희찬
-  컨테이너: 17974371662973700
+  컨테이너: 17974374809973700
       0초  IN_PROGRESS
-     34초  FINISHED
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=A3payYJ71NFvUnSK4B5H0BG | type=OAuthException
-    ⚠ 플랫폼 에러 (시도 1/3), 30초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AMPHYAS3AX75l9NU2SeJ8gk | type=OAuthException
-    ⚠ 플랫폼 에러 (시도 2/3), 60초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AQBuK8HLXWB3y_-wDCzSoQn | type=OAuthException
-    ⚠ 플랫폼 에러 (시도 3/3), 90초 후 재시도...
-    ⚡ API 에러 상세: [-1/2207085] Fatal | title=일반 내부 오류 | user_msg=내부 서버 오류가 발생했습니다. 나중에 다시 시도해주세요. | fbtrace=AhtaglADPny2_gpFnt85DmH | type=OAuthException
+     87초  FINISHED
   [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
