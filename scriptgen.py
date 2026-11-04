@@ -938,6 +938,9 @@ def template_generate(angle):
     # 사투리 후처리 — 마무리 장면 제외한 나머지 (마무리는 위에서 직접 적용)
     for scene in scenes[:-1]:
         scene["narration"] = _to_dialect(scene["narration"])
+        # 화면 자막도 내레이션과 같은 말투로 맞춘다. 내레이션만 사투리이고
+        # 자막이 표준어로 남으면 영상 안에서 두 화자의 말투가 충돌한다.
+        scene["subtitle"] = _to_dialect(scene.get("subtitle", ""))
 
     # badge
     badge = None
