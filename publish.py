@@ -338,9 +338,13 @@ def main():
         with open(args.script, encoding="utf-8") as f:
             sc = json.load(f)
         caption = build_caption(sc)
+        # 발행 기록에 카테고리를 남긴다. queue_next.py가 주제 비율을 맞출 때
+        # 이 값을 센다. 없으면 대본을 다시 열어야 해서 여기서 함께 적는다.
+        category = (sc.get("meta") or {}).get("category", "")
         for j in jobs:
             if not j.get("caption"):
                 j["caption"] = caption
+            j["category"] = category
 
     # 한도 확인 — 인증이 필요하므로 드라이런에서 인증이 없으면 건너뛴다
     if args.dry_run and (not IG_ID or not TOKEN):
@@ -369,6 +373,10 @@ def main():
                     "media_id": media_id,
                     "published_at": datetime.now(timezone.utc).isoformat(),
                     "video_url": job["video_url"],
+                    # 계정을 옮기면 같은 대본을 새 계정에 다시 올려야 한다.
+                    # 어느 계정에 올린 기록인지 남겨 둬야 그 판정이 된다.
+                    "ig_id": IG_ID or "",
+                    "category": job.get("category", ""),
                     "insights": insights(media_id),
                 })
         except Exception as e:

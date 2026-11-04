@@ -1,7 +1,19 @@
-name: 자동 발행 (하루 3건)
+name: 자동 발행 (하루 3건 릴스)
 
-# 하루 3건을 시간 간격을 두고 올린다. 한 번에 몰아 올리면 노출이 분산되고
-# 피드가 도배돼 역효과가 난다.
+# 하루 3건을 시간 간격을 두고 릴스로 올린다. 한 번에 몰아 올리면 노출이
+# 분산되고 피드가 도배돼 역효과가 난다.
+#
+# 2026-10-29: 카드뉴스 캐러셀 발행에서 릴스 발행으로 바꿨다. 팔로워가 없는
+# 계정에서 캐러셀은 비팔로워에게 거의 노출되지 않아 묻힌다. 릴스만 탐색·
+# 릴스탭으로 밖에 나간다. 기준 문서의 "릴스 중심"으로 되돌린 것이기도 하다.
+# 카드뉴스는 팔로워가 붙을 때까지 게시하지 않는다 (카드 이미지는 릴스의
+# 화면 재료로만 쓴다).
+#
+# 큰 틀은 out/reels/20261027_12_숫자훅(나연 솔로 컴백)을 기준으로 삼는다.
+# 고정하는 것은 목소리다 — 발랄녀(ko-KR-SunHiNeural) 하나로 간다. 계정
+# 사운드가 대본마다 남녀로 흔들리면 같은 채널로 안 들린다.
+# 장면 수와 길이는 주제마다 다르게 둔다. 실거래가 묶음은 장면이 많고
+# 단건 이슈는 짧은 게 자연스러워서, 일률로 깎지 않고 대본을 그대로 쓴다.
 on:
   schedule:
     # 한국시간 기준 08:00 / 12:30 / 19:00 을 노린다 (UTC는 -9시간).
@@ -14,9 +26,13 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "드라이런 (발행하지 않고 대상만 확인)"
+        description: "드라이런 (발행하지 않고 렌더까지만)"
         type: boolean
         default: true
+      stem:
+        description: "대본 직접 지정 (비우면 대기열에서 비율에 맞게 고름)"
+        type: string
+        required: false
 
 permissions:
   contents: write
@@ -29,6 +45,8 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    # 렌더가 들어오면서 길어졌다. 멈춰도 러너를 오래 붙잡지 않게 끊는다.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -36,8 +54,9 @@ jobs:
         with:
           python-version: "3.11"
 
-      - run: pip install -q Pillow requests
-
+      # 스위치를 의존성 설치보다 앞에 둔다. 꺼져 있을 때 apt·ffmpeg 설치로
+      # 2분을 태우지 않는다.
+      #
       # 예약 발행은 사람이 보지 않는 사이에 계정에 글을 올린다. 멈출 방법이
       # 반드시 있어야 하므로 저장소 변수 AUTO_PUBLISH 를 off 로 두면 즉시
       # 선다. 기본값은 발행이다. 앞서 이 변수를 on 일 때만 올리게 두었더니,
@@ -63,60 +82,176 @@ jobs:
           fi
           echo "run=yes" >> "$GITHUB_OUTPUT"
 
+      # 어느 대본을 올릴지 먼저 정한다. 대기열이 비면 무거운 설치를 건너뛴다.
       - name: 대상 선정
         if: steps.gate.outputs.run == 'yes'
         id: pick
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
+          IN_STEM: ${{ inputs.stem }}
         run: |
           python -u queue_next.py --list
-          STEM="$(python -u queue_next.py)" || {
-            echo "::warning::대기열이 비었습니다 — 이번 슬롯은 건너뜁니다"
-            echo "stem=" >> "$GITHUB_OUTPUT"; exit 0
-          }
+          if [ -n "$IN_STEM" ]; then
+            STEM="$IN_STEM"
+            [ -f "out/scripts/${STEM}.json" ] \
+              || { echo "::error::대본이 없습니다: out/scripts/${STEM}.json"; exit 1; }
+          else
+            STEM="$(python -u queue_next.py)" || {
+              echo "::warning::대기열이 비었습니다 — 이번 슬롯은 건너뜁니다"
+              echo "stem=" >> "$GITHUB_OUTPUT"; exit 0
+            }
+          fi
           echo "stem=$STEM" >> "$GITHUB_OUTPUT"
           echo "이번 슬롯 대상: $STEM"
 
-      - name: 발행
+      - name: 의존성 설치
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
         env:
-          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_API_HOST: ${{ vars.IG_API_HOST }}
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          set -e
+          pip install -q Pillow numpy requests edge-tts
+          sudo apt-get update -qq || sudo apt-get update -qq
+          # 한글 폰트가 없으면 카드 생성이 통째로 죽는다. apt가 간헐적으로
+          # 실패하므로 두 번 시도하고, 그래도 없으면 직접 받아 설치한다.
+          for i in 1 2; do
+            sudo timeout 600 apt-get install -y -qq --no-install-recommends \
+              fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji && break
+            echo "::warning::폰트 apt 설치 실패 (시도 $i)"
+            sleep 5
+          done
+
+          if ! ls /usr/share/fonts/opentype/noto/NotoSansCJK-*.ttc >/dev/null 2>&1; then
+            echo "apt로 한글 폰트를 못 받았다 — 직접 내려받는다"
+            sudo mkdir -p /usr/share/fonts/opentype/noto
+            curl -fsSL -o /tmp/NotoSansCJK.ttc \
+              https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/Variable/OTC/NotoSansCJK-VF.otf.ttc
+            sudo install -m644 /tmp/NotoSansCJK.ttc \
+              /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+            sudo fc-cache -f >/dev/null 2>&1 || true
+          fi
+
+          # 폰트가 없으면 여기서 끊는다. 다음 단계에서 PIL 트레이스백으로
+          # 죽으면 원인이 폰트라는 걸 알아보기 어렵다.
+          ls /usr/share/fonts/opentype/noto/NotoSansCJK-*.ttc \
+            || { echo "::error::한글 폰트를 설치하지 못했습니다"; exit 1; }
+          sudo timeout 300 apt-get install -y -qq --no-install-recommends ffmpeg \
+            || echo "::warning::ffmpeg apt 설치 실패 — 정적 빌드로 넘어갑니다"
+
+          if ! command -v ffprobe >/dev/null; then
+            echo "ffprobe 없음 — 정적 빌드 설치"
+            curl -fsSL -o /tmp/ff.tar.xz \
+              https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+            mkdir -p /tmp/ff && tar -xJf /tmp/ff.tar.xz -C /tmp/ff --strip-components=1
+            sudo install -m755 /tmp/ff/ffmpeg /tmp/ff/ffprobe /usr/local/bin/
+          fi
+
+          command -v ffmpeg
+          command -v ffprobe
+
+      - name: 1) 사진 수집
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          STEM: ${{ steps.pick.outputs.stem }}
+        run: |
+          set -o pipefail
+          mkdir -p out/reels
+          echo "run ${{ github.run_id }} $(date -u +%FT%TZ)" > out/reels/render.log
+          python -u photos.py "out/scripts/${STEM}.json" 2>&1 \
+            | tee -a out/reels/render.log
+
+      - name: 2) 카드 생성 (릴스 화면 재료)
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
+          IG_HANDLE: ${{ vars.IG_HANDLE }}
+          IG_BRAND: ${{ vars.IG_BRAND }}
+        run: |
+          set -o pipefail
+          python -u cardnews.py "out/scripts/${STEM}.json" \
+            -o "out/cards_${STEM}" -p "out/photos/${STEM}" --reels 2>&1 \
+            | tee -a out/reels/render.log
+
+      # 음성은 기준 영상과 같은 발랄녀(ko-KR-SunHiNeural) 하나로 고정한다.
+      # 앞서 쓰던 "앵커,발랄녀"는 대본마다 남녀가 바뀌어 계정 사운드가
+      # 흔들렸다. 바꿀 일이 생기면 저장소 변수 REEL_PRESET 으로 덮는다.
+      - name: 3) 릴스 합성 (TTS)
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
+          PRESET: ${{ vars.REEL_PRESET || '발랄녀' }}
+        run: |
+          set -o pipefail
+          python -u render_reels.py "out/scripts/${STEM}.json" \
+            --cards "out/cards_${STEM}" --preset "$PRESET" --require-tts 2>&1 \
+            | tee -a out/reels/render.log
+          ls -lh "out/reels/${STEM}.mp4" | tee -a out/reels/render.log
+          ffprobe -hide_banner -v error \
+            -show_entries format=duration -show_entries stream=codec_name,width,height \
+            -of default=noprint_wrappers=1 "out/reels/${STEM}.mp4" \
+            | tee -a out/reels/render.log
+
+      # 인스타는 공개 URL에서 영상을 가져간다. 저장소 릴리스에 올려 URL을 만든다.
+      - name: 4) 스토리지 업로드
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
           MEDIA_REPO: ${{ secrets.MEDIA_REPO || vars.MEDIA_REPO || 'a87330815/issue-reels-media' }}
           MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
+        run: |
+          set -o pipefail
+          python -u upload.py "out/reels/${STEM}.mp4" 2>&1 \
+            | tee -a out/reels/render.log
+          cat out/uploaded.json
+
+      - name: 5) 인스타 릴스 발행
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        env:
           STEM: ${{ steps.pick.outputs.stem }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          # publish.py는 호스트 기본값이 graph.instagram.com인데 이 계정
+          # 토큰은 페이지 토큰이라 그 호스트에서 "Cannot parse access token"
+          # 으로 거부된다. 저장소 변수가 있으면 그걸, 없으면 facebook 쪽을 쓴다.
+          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
           DO_PUBLISH: ${{ steps.gate.outputs.publish }}
         run: |
           set -o pipefail
-          mkdir -p out
-          SCRIPT="out/scripts/${STEM}.json"
-          CARDS="out/cards_${STEM#news_}"
-          PHOTOS="out/photos/${STEM}"
-          FLAG=""
+          FLAG="--dry-run"
           if [ "$DO_PUBLISH" = "true" ]; then
-            FLAG="--publish"
+            FLAG=""
             echo "::warning::실제 발행 — $STEM 이(가) 계정에 올라갑니다"
           else
-            echo "드라이런 — 올리지 않습니다"
+            echo "드라이런 — 업로드까지만 하고 발행하지 않습니다"
           fi
-          python -u publish_cards.py "$CARDS" \
-            --script "$SCRIPT" --photos "$PHOTOS" \
-            $FLAG 2>&1 | tee -a out/publish_cards.log
+          python -u publish.py --script "out/scripts/${STEM}.json" \
+            --limit 1 $FLAG 2>&1 | tee -a out/reels/render.log
 
+      # mp4는 커밋하지 않는다. 하루 3건이면 한 해 1.6GB씩 불어난다.
+      # 영상은 미디어 저장소 릴리스에 있고 그게 인스타가 가져가는 주소다.
       - name: 발행 기록 커밋
         if: always() && steps.gate.outputs.run == 'yes'
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for p in out/publish_cards.log out/published_cards.json; do
+          for p in out/published.json out/uploaded.json out/reels/render.log; do
             [ -f "$p" ] && git add -f "$p" || true
           done
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
-          git commit -m "자동 발행 기록 $(date +%Y-%m-%d\ %H:%M)"
+          git commit -m "릴스 자동 발행 $(date +%Y-%m-%d\ %H:%M)"
           for i in 1 2 3; do
             git pull --rebase --autostash origin main && git push origin main && exit 0
             sleep 5
           done
           echo "::error::발행 기록 푸시 실패"; exit 1
+
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.pick.outputs.stem != ''
+        with:
+          name: reel-${{ steps.pick.outputs.stem }}
+          path: |
+            out/reels/render.log
+            out/reels/${{ steps.pick.outputs.stem }}.mp4
+          retention-days: 14
