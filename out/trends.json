@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-11-04T10:38:40.645741+00:00",
+  "collected_at": "2026-11-04T15:51:49.545737+00:00",
   "items": [
     {
-      "keyword": "최원준",
-      "traffic": "100+",
-      "news_title": "‘PS 타율 .167’ 디아즈, 데뷔 첫 3루타 폭발…삼성 선취점 이끌었다 [KS2]",
+      "keyword": "사기",
+      "traffic": "200+",
+      "news_title": "부친 ‘태영호’ 이름 내세워 18억 사기…장남 1심 징역 3년 6개월",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "01a4912e7087f00a"
+      "key": "c91e618b9adbe9c6"
     },
     {
-      "keyword": "samsung vs kt",
-      "traffic": "100+",
-      "news_title": "Dried persimmons",
+      "keyword": "우규민",
+      "traffic": "5000+",
+      "news_title": "연장 12회 끝낸 건 실책... 삼성, 승부 원점으로 돌렸다",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "7f8eae784d04aae0"
+      "key": "d8b2c2bf3d7af007"
     },
     {
-      "keyword": "한국시리즈 중계",
-      "traffic": "100+",
-      "news_title": "&apos;오늘N&apos;-&apos;가족관계증명서&apos;, 오늘(4일) 결방…프로야구 한국시리즈 2차전 중계",
+      "keyword": "이요원",
+      "traffic": "200+",
+      "news_title": "‘23세에 첫 출산’ 이요원, 미모 쏙 빼닮은 장녀 공개…美 명문대 졸업",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "9c520e43efb8691f"
+      "key": "a17ac0adf10b6622"
     },
     {
-      "keyword": "뉴욕 마라톤",
+      "keyword": "로보락",
       "traffic": "100+",
-      "news_title": "美 뉴욕서도 마라톤 20대 사망 &quot;하키선수도 했는데‥&quot; 애도·충격",
+      "news_title": "로보락, 로봇청소기 구독 서비스 출시",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "2a07297e1853966d"
+      "key": "3e154b90244a5112"
     },
     {
-      "keyword": "포항 대 감바 오사카",
+      "keyword": "이유리",
+      "traffic": "200+",
+      "news_title": "이유리, 이사한 새집 최초 공개…“전문가 18명이 짐 정리, 15시간 걸렸다”",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "de951a6439b50ebd"
+    },
+    {
+      "keyword": "수사",
       "traffic": "2000+",
-      "news_title": "포항, 김성재 감독대행 체제로 시즌 마무리 예정…새 사령탑 선임 시간 갖는다",
+      "news_title": "&apos;조작기소 특검법&apos; 속전속결 법사위 통과...오늘 본회의 처리 전망",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "99a90a791df76f8a"
+      "key": "9d7be6c5aca6800f"
     },
     {
-      "keyword": "대장암",
+      "keyword": "박계범",
+      "traffic": "1000+",
+      "news_title": "이재현 &apos;한점 더 달아나자&apos;",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "c990c4c6b07f16aa"
+    },
+    {
+      "keyword": "송해나",
       "traffic": "100+",
-      "news_title": "대장암은 왜 젊은층에 더 치명적일까?",
+      "news_title": "송해나, 이승철 주선 소개팅 나간다…184㎝·축구마니아 스펙에 입꼬리 상승",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "931ee134ab70b79b"
+      "key": "eddb98dd3a400128"
     },
     {
-      "keyword": "한우",
-      "traffic": "500+",
-      "news_title": "경주한우·축산물축제 성황리 마무리…지역 축산물 우수성 알려",
+      "keyword": "알렉산더 즈베레프",
+      "traffic": "1000+",
+      "news_title": "신네르·알카라스 양강 구도 균열 낸 츠베레프, 생애 첫 세계 1위 등극",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "062a8613237fc53a"
-    },
-    {
-      "keyword": "nvidia",
-      "traffic": "100+",
-      "news_title": "Nvidia China Clients to Get 1% of $70 Billion RTX Chips Ordered",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "05f5439f985187c9"
-    },
-    {
-      "keyword": "이영표",
-      "traffic": "500+",
-      "news_title": "아시안컵 내년 12월로 연기…‘임시 체제’ 한국, 시간 벌었다 [이런뉴스]",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "59493ed6929a5ebe"
+      "key": "5888d365955609d6"
     }
   ]
 }
