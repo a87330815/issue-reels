@@ -68,36 +68,6 @@ POLL_TIMEOUT = 600
 # 자체 안전 한도. 실제 한도는 content_publishing_limit가 알려준다.
 SELF_LIMIT = 10
 
-# 카드뉴스 발행 경로와 같은 방식으로 토큰이 실제로 받아들여지는 Graph
-# 호스트를 먼저 확정한다. 페이지 토큰은 graph.facebook.com, Instagram
-# 로그인 토큰은 graph.instagram.com을 사용할 수 있으므로 고정하지 않는다.
-API_HOSTS = ("graph.instagram.com", "graph.facebook.com")
-
-
-def _use_host(host):
-    global HOST, BASE
-    HOST = host
-    BASE = f"https://{host}/{VERSION}"
-
-
-def ensure_publish_endpoint():
-    """카드뉴스 발행 경로와 동일하게 API 호스트를 자동 확정한다."""
-    forced = os.environ.get("IG_API_HOST", "").strip()
-    if forced:
-        _use_host(forced)
-        return
-    if not TOKEN:
-        return
-    for host in API_HOSTS:
-        _use_host(host)
-        try:
-            api("GET", IG_ID, fields="id")
-            print(f"  API 호스트 확정: {host}")
-            return
-        except Exception as e:
-            print(f"  [{host}] 사용 불가: {e}")
-    raise RuntimeError("카드뉴스 발행 경로와 같은 API 호스트를 확정하지 못했습니다")
-
 
 def scrub(text):
     """에러 메시지에 토큰이 실려 나가는 것을 막는다."""
@@ -341,9 +311,6 @@ def main():
         # 드라이런은 발행 직전까지만 보는 것이므로 인증 없이도 끝까지 돌린다.
         # 인스타 설정 전에 앞 구간을 검증하려면 이게 돼야 한다.
         print("[알림] 인스타 인증 정보 미설정 — 드라이런이라 계속 진행합니다")
-
-    if IG_ID and TOKEN:
-        ensure_publish_endpoint()
 
     # 발행 대상 수집
     jobs = []
