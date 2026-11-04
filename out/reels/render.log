@@ -1,4 +1,4 @@
-run 41823399018 2026-11-04T11:45:26Z
+run 41825040570 2026-11-04T11:57:58Z
 
 === 20261024_09_숫자훅 ===
   [cover] '황희찬' → "Korea city luxury apartment"
@@ -46,7 +46,7 @@ run 41823399018 2026-11-04T11:45:26Z
 
   ✓ 릴스 완성: out/reels/20261024_09_숫자훅.mp4
     길이: 23.0초  /  크기: 1.4MB
--rw-r--r-- 1 runner runner 1.5M Nov  4 11:45 out/reels/20261024_09_숫자훅.mp4
+-rw-r--r-- 1 runner runner 1.5M Nov  4 11:58 out/reels/20261024_09_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
@@ -68,15 +68,17 @@ duration=23.000000
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
+  [graph.instagram.com] 사용 불가: [190/-] Invalid OAuth access token - Cannot parse access token
+  API 호스트 확정: graph.facebook.com
 남은 발행 가능: 99건
 발행 대상: 1건
 
 ── 1/1  20261024_09_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-04/20261024_09.mp4
   캡션: 황희찬
-  컨테이너: 17974374809973700
-      0초  IN_PROGRESS
-     87초  FINISHED
+  컨테이너: 17974378013973700
+      1초  IN_PROGRESS
+     34초  FINISHED
   [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
