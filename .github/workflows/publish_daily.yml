@@ -93,6 +93,7 @@ jobs:
           META_APP_ID: ${{ vars.META_APP_ID || '1143191174807326' }}
           META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION || 'v26.0' }}
         run: |
           pip install -q requests
           python -u refresh_token.py 2>&1 || echo "::warning::토큰 갱신 실패 — 기존 토큰으로 계속"
@@ -237,6 +238,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION || 'v26.0' }}
         run: python -u publish.py --check
 
       - name: 5) 인스타 릴스 발행
@@ -249,6 +251,7 @@ jobs:
           # 토큰은 페이지 토큰이라 그 호스트에서 "Cannot parse access token"
           # 으로 거부된다. 저장소 변수가 있으면 그걸, 없으면 facebook 쪽을 쓴다.
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION || 'v26.0' }}
           DO_PUBLISH: ${{ steps.gate.outputs.publish }}
         run: |
           set -o pipefail
