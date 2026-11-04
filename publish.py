@@ -381,6 +381,95 @@ def record(entries):
     print(f"\n발행 기록: {PUBLISHED}")
 
 
+def test_publish():
+    """media_publish 에러 2207085 진단 테스트.
+    1) 최근 미디어 목록 확인 (에러나도 게시됐는지 판단용)
+    2) 이미지 게시물 시도 (릴스 특정 문제인지 판별)
+    3) 릴스 media_publish 재시도 + 에러 후 미디어 목록 재확인
+    """
+    import requests
+    print("=" * 60)
+    print("🔬 media_publish 진단 테스트")
+    print("=" * 60)
+
+    # 1) 현재 최근 미디어 목록
+    print("\n[1/4] 최근 미디어 목록 확인...")
+    try:
+        recent = api("GET", f"{IG_ID}/media", fields="id,timestamp,media_type,caption", limit=5)
+        items = recent.get("data", [])
+        print(f"  최근 게시물 {len(items)}개:")
+        for it in items:
+            cap = (it.get("caption") or "")[:40]
+            print(f"    {it['id']} | {it.get('media_type')} | {it.get('timestamp','')} | {cap}")
+        before_ids = {it['id'] for it in items}
+    except Exception as e:
+        print(f"  미디어 목록 조회 실패: {e}")
+        before_ids = set()
+
+    # 2) 이미지 게시물 시도 (text만으로)
+    print("\n[2/4] 이미지 게시물 테스트...")
+    # 1x1 테스트 이미지 (공개 URL 필요)
+    test_image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/280px-PNG_transparency_demonstration_1.png"
+    try:
+        img_cid = api("POST", f"{IG_ID}/media",
+                       image_url=test_image_url,
+                       caption="[진단 테스트 - 삭제 예정]")
+        img_container_id = img_cid.get("id")
+        print(f"  이미지 컨테이너 생성: {img_container_id}")
+
+        # 이미지는 바로 FINISHED
+        time.sleep(3)
+        try:
+            img_pub = api("POST", f"{IG_ID}/media_publish", creation_id=img_container_id)
+            print(f"  ✅ 이미지 게시 성공! media_id={img_pub.get('id')}")
+            print(f"     → 계정 자체는 정상. 릴스 특정 문제일 가능성.")
+        except RuntimeError as e:
+            print(f"  ❌ 이미지 게시도 실패: {e}")
+            print(f"     → 계정 레벨 제한 확인됨 (2207085는 계정 restriction)")
+    except Exception as e:
+        print(f"  이미지 컨테이너 생성 실패: {e}")
+
+    # 3) 기존 실패한 컨테이너 재시도 (마지막 실패 컨테이너 ID)
+    print("\n[3/4] 기존 컨테이너 media_publish 재시도...")
+    last_cid = os.environ.get("TEST_CONTAINER_ID", "17973979964973700")
+    print(f"  컨테이너 ID: {last_cid}")
+    try:
+        # 먼저 상태 확인
+        status = api("GET", last_cid, fields="id,status_code,status")
+        print(f"  상태: {status}")
+    except Exception as e:
+        print(f"  컨테이너 상태 조회 실패: {e}")
+
+    try:
+        pub = api("POST", f"{IG_ID}/media_publish", creation_id=last_cid)
+        print(f"  ✅ 게시 성공! media_id={pub.get('id')}")
+    except RuntimeError as e:
+        print(f"  ❌ 게시 실패: {e}")
+
+    # 4) 게시 후 미디어 목록 재확인
+    print("\n[4/4] 미디어 목록 재확인 (에러에도 게시됐는지)...")
+    time.sleep(5)
+    try:
+        recent2 = api("GET", f"{IG_ID}/media", fields="id,timestamp,media_type,caption", limit=5)
+        items2 = recent2.get("data", [])
+        after_ids = {it['id'] for it in items2}
+        new_ids = after_ids - before_ids
+        if new_ids:
+            print(f"  🆕 새로 발견된 게시물: {new_ids}")
+            print(f"     → 에러 반환에도 불구하고 실제로 게시됨!")
+        else:
+            print(f"  새 게시물 없음 — 에러가 실제 실패")
+        for it in items2:
+            cap = (it.get("caption") or "")[:40]
+            print(f"    {it['id']} | {it.get('media_type')} | {it.get('timestamp','')} | {cap}")
+    except Exception as e:
+        print(f"  목록 재확인 실패: {e}")
+
+    print("\n" + "=" * 60)
+    print("진단 완료")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description="인스타그램 릴스 발행")
     ap.add_argument("--manifest", help="업로드 매니페스트 (upload.py 출력)")
@@ -389,12 +478,16 @@ def main():
     ap.add_argument("--caption", help="캡션")
     ap.add_argument("--script", help="대본 JSON — 캡션을 여기서 만든다")
     ap.add_argument("--check", action="store_true", help="설정만 점검")
+    ap.add_argument("--test-publish", action="store_true", help="media_publish 진단 테스트")
     ap.add_argument("--dry-run", action="store_true", help="발행 직전까지만")
     ap.add_argument("--limit", type=int, default=1, help="한 번에 발행할 최대 편수")
     args = ap.parse_args()
 
     if args.check:
         return 0 if check() else 1
+
+    if getattr(args, 'test_publish', False):
+        return test_publish()
 
     if not IG_ID or not TOKEN:
         if not args.dry_run:
