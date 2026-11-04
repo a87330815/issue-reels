@@ -84,6 +84,28 @@ jobs:
           fi
           echo "run=yes" >> "$GITHUB_OUTPUT"
 
+      # 토큰이 만료됐거나 곧 만료되면 자동 갱신한다.
+      - name: 토큰 상태 확인 및 자동 갱신
+        if: steps.gate.outputs.run == 'yes'
+        id: token
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          META_APP_ID: ${{ vars.META_APP_ID || '1143191174807326' }}
+          META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
+          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
+        run: |
+          pip install -q requests
+          python -u refresh_token.py 2>&1 || echo "::warning::토큰 갱신 실패 — 기존 토큰으로 계속"
+
+      - name: 갱신된 토큰으로 시크릿 업데이트
+        if: steps.gate.outputs.run == 'yes' && steps.token.outputs.token_refreshed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          NEW_TOKEN=$(cat /tmp/new_ig_token.txt)
+          gh secret set IG_ACCESS_TOKEN --body "$NEW_TOKEN"
+          echo "✅ IG_ACCESS_TOKEN 시크릿 자동 갱신 완료"
+
       # 어느 대본을 올릴지 먼저 정한다. 대기열이 비면 무거운 설치를 건너뛴다.
       - name: 대상 선정
         if: steps.gate.outputs.run == 'yes'
