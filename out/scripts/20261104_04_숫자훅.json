@@ -1,39 +1,46 @@
 {
-  "title": "텍사스 상원선거 2026 - 탈라리코 vs 팩슨",
+  "title": "유명인 이름 빌려 18억 사기",
   "cover": {
     "image": null,
     "lines": [
-      "2026년",
-      "텍사스 상원선거",
-      "<r>핵심</r>은 이것"
+      "아버지 이름만",
+      "팔아서",
+      "<r>18억</r>",
+      "먹튀했다"
     ],
     "badge": null,
-    "photo_query": "texas state capitol building"
+    "photo_query": "fraudulent document forgery scam"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 2026년 텍사스 상원의원 선거. 지금부터 누가 나오는지 알아야 투표 준비한다.",
-      "subtitle": "2026 텍사스 상원선거",
-      "photo_query": "voting booth election day"
+      "narration": "이거 모르고 지나가면 손해다. 유명인 아버지 이름을 팔아서 18억을 사기친 사건이 났다. 아들이 아버지의 이름만 내세우고 투자 명목으로 돈을 가져간 거다.",
+      "subtitle": "유명인 이름으로 18억 사기",
+      "photo_query": "courtroom trial verdict judge"
     },
     {
       "image": null,
-      "narration": "탈라리코. 이 사람이 출마한다. 텍사스 정치에서 주목받는 인물이 움직인 것. 이미 뭔가 벌어지고 있다.",
-      "subtitle": "제임스 탈라리코 출마",
-      "photo_query": "political candidate campaign event"
+      "narration": "피해자들은 뭔가 크 큰 사람 이름이니까 믿고 돈을 맡겼다. 그런데 그게 다 사라진 거다. 1심에서 징역 3년 6개월이 나왔다.",
+      "subtitle": "투자 명목으로 돈 회수 불가",
+      "photo_query": "money transfer financial fraud"
     },
     {
       "image": null,
-      "narration": "상대는 팩슨이다. 누가 이길지는 2026년까지의 싸움이지만. 지금부터 계속 주시해야 할 선거라는 얘기다.",
-      "subtitle": "탈라리코 vs 팩슨 대결",
-      "photo_query": "election campaign competition race"
+      "narration": "이거 봐봐. 유명인과 가족이라고 해서 다 믿으면 안 된다. 항상 공식 통로를 통해 확인해야 된다.",
+      "subtitle": "유명인 명의 투자 반드시 확인",
+      "photo_query": "verification check document authentic"
     },
     {
       "image": null,
-      "narration": "텍사스 상원선거는 미국 정치의 판도를 바꾼다. 한 번씩만 더 체크해두고 팔로우해라. 다음 소식도 빠르게 알려준다.",
-      "subtitle": "2년 뒤의 변화를 지금부터 준비",
-      "photo_query": "united states map texas state"
+      "narration": "투자를 할 때 상대방이 실명이라고 해도 공식 기관에 먼저 물어봐라. 그게 제일 안전한 방법이다.",
+      "subtitle": "투자 전 반드시 공식 확인",
+      "photo_query": "phone call customer service verification"
+    },
+    {
+      "image": null,
+      "narration": "야야야. 이런 사건들 또 생길 수 있다. 쫌봐봐 채널 팔로우해서 최신 사기 수법을 먼저 알아봐라.",
+      "subtitle": "최신 사기 수법 먼저 알기",
+      "photo_query": "warning alert notification smartphone screen"
     }
   ],
   "meta": {
@@ -42,6 +49,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-04T03:00:51.626905+00:00"
+    "generated_at": "2026-11-04T16:16:44.746054+00:00"
   }
 }

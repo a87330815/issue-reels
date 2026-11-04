@@ -3,43 +3,43 @@
   "cover": {
     "image": null,
     "lines": [
-      "도곡동",
+      "도곡렉슬",
       "<r>평당 1.61억</r>",
-      "이게 현실"
+      "이거 봐봐"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building gangnam seoul"
+    "photo_query": "luxury apartment building Seoul gangnam"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 도곡동 도곡렉슬. 평당 1억 6천만 원이다. 뭐라카노.",
-      "subtitle": "도곡동 도곡렉슬 평당가",
-      "photo_query": "apartment price listing contract signing"
+      "narration": "이거 모르고 지나가면 손해다. 도곡동 도곡렉슬. 얼마에 팔렸냐 하면 29억 3천만원이다. 전용 60평대 아파트 말이야.",
+      "subtitle": "도곡렉슬 평당 1.61억",
+      "photo_query": "apartment transaction contract signing"
     },
     {
       "image": null,
-      "narration": "60평 정도면. 10억 가까이 된다는 거야. 2006년 지은 건데도.",
-      "subtitle": "60평 = 약 9.6억",
-      "photo_query": "real estate market chart increasing"
+      "narration": "평당 계산해보면 1억 6천만원대가 된다. 요즘 강남 이 정도 물건이 이 가격이라니까. 진짜 뜨거운 시장이다.",
+      "subtitle": "평당 1억 6천만원대",
+      "photo_query": "real estate market graph chart"
     },
     {
       "image": null,
-      "narration": "같은 달에 팔린 래미안블레스티지는 평당 4천 떨어져. 개포동이지만.",
-      "subtitle": "개포동 더 싼 신축",
-      "photo_query": "apartment complex comparison location"
+      "narration": "같은 시기 개포동 래미안블레스티지는 평당 1억 4천 중반. 도곡동이 개포동보다 200만원 이상 비싼 거다.",
+      "subtitle": "지역별 평당 가격 격차",
+      "photo_query": "seoul gangnam district apartment comparison"
     },
     {
       "image": null,
-      "narration": "강남 한 블록 차이가 평당 4천만 원. 이게 서울 집값 현실이다.",
-      "subtitle": "강남 한 블록 = 4천만원",
-      "photo_query": "seoul gangnam district street view"
+      "narration": "2006년 지은 올드 빌딩이 이 가격이라는 게 포인트다. 강남 핫플레이스 도곡동의 위력이 얼마나 세달라는 거지.",
+      "subtitle": "2006년 건축 아파트도",
+      "photo_query": "old apartment building renovation seoul"
     },
     {
       "image": null,
-      "narration": "우리 채널 팔로우해라. 강남 집값 트렌드 계속 챙겨줄게.",
-      "subtitle": "쫌봐봐 팔로우",
-      "photo_query": "follow subscribe notification bell"
+      "narration": "강남 부동산 흐름을 놓치고 싶지 않으면 쫌봐봐 팔로우해라. 매주 따끈한 실거래가 데이터 올린다.",
+      "subtitle": "쫌봐봐 팔로우 필수",
+      "photo_query": "mobile phone social media follow button"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-04T03:00:57.625454+00:00"
+    "generated_at": "2026-11-04T16:16:51.906960+00:00"
   }
 }

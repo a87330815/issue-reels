@@ -1,46 +1,45 @@
 {
-  "title": "대치동 vs 부곡동, 같은 아파트인데 가격이 31배?",
+  "title": "대치동 vs 부곡동, 32배 차이",
   "cover": {
     "image": null,
     "lines": [
-      "같은 아파트",
-      "가격이",
-      "<r>31배</r>",
-      "차이난다"
+      "대치동 34억",
+      "부곡동 1억",
+      "<r>32배</r> 차이"
     ],
     "badge": null,
-    "photo_query": "seoul apartment buildings comparison"
+    "photo_query": "seoul luxury apartment complex modern building"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서울 같은 아파트라도 어디 사느냐에 따라 가격이 완전 달라진다.",
+      "narration": "이거 모르고 지나가면 손해다. 같은 서울인데 아파트 가격이 32배 난다고? 대치동 평균이 34억 8천이다. 부곡동은 1억 1천이다.",
+      "subtitle": "대치동 평균 34억 vs 부곡동 1억",
+      "photo_query": "apartment price comparison chart graph"
+    },
+    {
+      "image": null,
+      "narration": "대치동은 은마아파트만 해도 3억 5천을 호가한다. 명문 아파트는 가격도 다르게 움직이는 거다.",
+      "subtitle": "은마아파트 3억 5천만원대",
+      "photo_query": "luxury apartment building entrance nameplate"
+    },
+    {
+      "image": null,
+      "narration": "한 집의 차이가 아니다. 사는 동네 자체가 자산의 규모를 결정한다는 거다. 내가 지금 어디 사는지, 그게 중요하다.",
       "subtitle": "위치가 곧 자산이다",
-      "photo_query": "seoul map neighborhood districts"
+      "photo_query": "seoul neighborhood street view buildings"
     },
     {
       "image": null,
-      "narration": "대치동 아파트 평균 34억 8천만원. 한번에 안 들어올 정도다.",
-      "subtitle": "대치동 평균 34억 8천만원",
-      "photo_query": "luxury apartment building gangnam seoul"
+      "narration": "내 자산이 얼마나 될 수 있는지, 동네가 결정하는 것 같다. 이런 데이터를 알고 살아야 한다.",
+      "subtitle": "부동산은 정보다",
+      "photo_query": "family apartment living room window view"
     },
     {
       "image": null,
-      "narration": "그런데 부곡동 같은 아파트는 평균 1억 1천만원이다. 뭐라카더라. 같은 강남구인데 31배 차이다.",
-      "subtitle": "부곡동 평균 1억 1천만원",
-      "photo_query": "apartment building seoul neighborhood"
-    },
-    {
-      "image": null,
-      "narration": "학군. 브랜드. 역세권. 이 모든 게 집값에 빨려간다. 같은 돈이라도 어디 살지가 인생을 바꾼다.",
-      "subtitle": "위치 선택이 자산 선택이다",
-      "photo_query": "seoul school students parents visiting"
-    },
-    {
-      "image": null,
-      "narration": "다음 영상에서는 당신 동네 집값이 왜 그럴까. 그 비결을 파헤쳐본다. 팔로우해라.",
-      "subtitle": "팔로우로 동네 정보 먼저 받기",
-      "photo_query": "notification bell subscribe alert"
+      "narration": "우리 동네는 어디? 국토교통부 데이터로 확인해봐라. 그다음이 늦어도 괜찮다. 팔로우 눌러라.",
+      "subtitle": "데이터로 확인하기",
+      "photo_query": "person using smartphone checking real estate"
     }
   ],
   "meta": {
@@ -58,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-04T03:00:45.501215+00:00"
+    "generated_at": "2026-11-04T16:16:37.622543+00:00"
   }
 }

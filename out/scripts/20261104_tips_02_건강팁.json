@@ -1,0 +1,53 @@
+{
+  "title": "하루 2리터는 거짓말? 물 마시는 올바른 기준",
+  "cover": {
+    "image": null,
+    "lines": [
+      "2리터는 거짓",
+      "<r>체중의 3%</r>",
+      "마셔야 산다"
+    ],
+    "badge": null,
+    "photo_query": "drinking water glass"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야, 물 2리터 꼭 마셔야 한다고 했는데, 사실 이건 모든 사람에게 먹히는 얘기가 아니다. 자기 체중에 맞춰서 마셔야 한다.",
+      "subtitle": "체중별로 다른 물 섭취량",
+      "photo_query": "weight scale measurement"
+    },
+    {
+      "image": null,
+      "narration": "정확한 기준은 이거다. 자기 체중의 3%를 매일 마시는 게 딱 맞다. 50kg면 1.5리터, 70kg면 2.1리터, 100kg면 3리터 이렇게다.",
+      "subtitle": "몸무게 × 3% = 하루 물 섭취량",
+      "photo_query": "water intake calculation chart"
+    },
+    {
+      "image": null,
+      "narration": "근데 왜 체중으로 계산하냐고? 몸이 필요한 수분이 사람마다 다르거든. 몸무게가 무거울수록 수분 손실도 크다.",
+      "subtitle": "체중이 많을수록 더 필요함",
+      "photo_query": "sweating exercise hydration"
+    },
+    {
+      "image": null,
+      "narration": "한 가지 팁인데, 한 번에 다 마시지 말고 자꾸 나눠 마셔야 한다. 2시간마다 한 잔씩 이렇게 말이야. 한 번에 많이 마시면 신장에 부담 가거든.",
+      "subtitle": "2시간마다 한 잔씩",
+      "photo_query": "drinking water schedule reminder"
+    },
+    {
+      "image": null,
+      "narration": "이렇게 하루 종일 자기 체중에 맞춰서 물을 규칙적으로 마시면, 피부도 맑아지고 소화도 잘 되고 신진대사가 활발해진다니까. 이런 꿀팁 더 궁금하면 팔로우해 봐.",
+      "subtitle": "피부, 소화, 신진대사 개선",
+      "photo_query": "healthy glowing skin"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T16:18:05.065035+00:00"
+  }
+}

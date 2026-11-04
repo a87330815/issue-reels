@@ -5,41 +5,41 @@
     "lines": [
       "대치동 은마",
       "<r>35억</r>",
-      "이 정도면"
+      "이 가격 아세요?"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building entrance Seoul"
+    "photo_query": "seoul gangnam apartment luxury building"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 대치동 은마. 84제곱미터. 35억 거래 떴다. 이게 뭐라카노. 30년 지난 빌딩인데.",
-      "subtitle": "1979년 준공, 84㎡, 35억원",
-      "photo_query": "old apartment building 1970s construction korea"
+      "narration": "이거 모르고 지나가면 손해다. 대치동 은마. 84제곱미터가 35억원에 떴다. 이게 평당 얼마인지 아냐고?",
+      "subtitle": "대치동 은마 35억원 거래",
+      "photo_query": "apartment building entrance daytime"
     },
     {
       "image": null,
-      "narration": "여기가 뭔데? 대치동이다 아이가. 서울에서 손꼽는 강남 부자동네. 학원가도 유명하고.",
-      "subtitle": "대치동, 강남구 학원 밀집지역",
-      "photo_query": "kangnam district Seoul apartment residential area"
+      "narration": "평당 4천200만원이다. 이 가격. 지금 시장에서 뭘 의미하는지 봐라.",
+      "subtitle": "평당 4천200만원",
+      "photo_query": "calculator money korean won bills"
     },
     {
       "image": null,
-      "narration": "84제곱미터에 35억. 3.3제곱미터당 거의 1억 3천. 이 수치를 봐라. 지금 강남 부동산이 어디까지 올라왔는지 느껴지지 않나.",
-      "subtitle": "3.3㎡당 약 1억 3천만원",
-      "photo_query": "real estate price calculator money stacks"
+      "narration": "1979년식이다. 거의 50년 된 건물이 이 가격. 대치동 프리미엄이 이 정도란 거다.",
+      "subtitle": "건축연도 1979년",
+      "photo_query": "old apartment building exterior vintage"
     },
     {
       "image": null,
-      "narration": "30년 된 집. 그래도 이 가격. 이게 바로 강남 지역 프리미엄이다. 위치 장난 아니다.",
-      "subtitle": "위치가 가격을 만든다",
-      "photo_query": "seoul skyline gangnam district night view"
+      "narration": "8층. 중층인데도 이 가격이다. 요즘 강남 시장이 어떻게 돌아가는지 느껴지냐고?",
+      "subtitle": "8층 중층",
+      "photo_query": "apartment window view city skyline"
     },
     {
       "image": null,
-      "narration": "요즘 뜨는 신축 vs 대치동 구축. 거기서 어디 선택할지가 결국 투자 판단이 된다. 우리 채널에서는 이런 거래 데이터를 매일 들고 온다. 팔로우 해라.",
-      "subtitle": "실시간 거래 데이터로 투자 판단",
-      "photo_query": "apartment construction site new vs old"
+      "narration": "대치동에 뭐가 있는지, 왜 이렇게 비싼지 알고 싶으면? 팔로우해라. 매주 강남 시장 깨부실 데이터를 떨어뜨린다.",
+      "subtitle": "팔로우로 강남 부동산 데이터",
+      "photo_query": "real estate agent showing apartment to"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-04T03:00:31.099252+00:00"
+    "generated_at": "2026-11-04T16:16:24.396574+00:00"
   }
 }

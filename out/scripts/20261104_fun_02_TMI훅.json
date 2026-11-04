@@ -1,44 +1,45 @@
 {
-  "title": "일요일 저녁부터 시작되는 월요병",
+  "title": "엘리베이터 닫힘 버튼의 진실",
   "cover": {
     "image": null,
     "lines": [
-      "일요일 저녁부터",
-      "<r>이미 월요병</r>"
+      "엘리베이터",
+      "<y>닫힘 버튼</y>",
+      "작동 안 함"
     ],
     "badge": null,
-    "photo_query": "sunday evening anxiety couch"
+    "photo_query": "elevator close button pressed"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 알면 쓸데없이 똑똑해진다고. 월요병? 아니다. 정식명칭은 '선데이 스쿱'이라고 하카더라.",
-      "subtitle": "일요일 저녁 우울함의 과학적 이름",
-      "photo_query": "sunset sunday evening window"
+      "narration": "야 근데 말이야. 엘리베이터 닫힘 버튼 누르는 거 보면 뭔가 짜증 나지 않냐? 아무리 눌러도 안 닫히고.",
+      "subtitle": "누르고 또 누르고",
+      "photo_query": "person pushing elevator button frustrated"
     },
     {
       "image": null,
-      "narration": "일요일 저녁 6시만 되도 뭔가 답답하고, 밥도 안 내려가고, TV도 집중 안 돼. 이미 월요일이 불안으로 다가오는 거다.",
-      "subtitle": "일요일 6시, 벌써 월요일 생각",
-      "photo_query": "anxious man clock evening dinner"
+      "narration": "이거 알고 봤냐? 대부분 건물에서 닫힘 버튼을 의도적으로 비활성화시켜 놨다고 한다. 법규상 안전 이유 때문에.",
+      "subtitle": "의도적 비활성화 건물 多",
+      "photo_query": "elevator control panel buttons"
     },
     {
       "image": null,
-      "narration": "과학자들이 연구한 거 봤는데, 이건 심리 현상이 아니라 뇌의 스트레스 호르몬이 미리 올라가는 거다. 일요일 밤 일찍부터.",
-      "subtitle": "코르티솔이 벌써 솟아감",
-      "photo_query": "brain stress cortisol chemical"
+      "narration": "그럼 왜 버튼은 놔두냐고? 개인적 심리 안정? 아니 뭐 누르는 척이라도 해야 기다려지는 거지. 실제 기능 없이도.",
+      "subtitle": "심리 안정용 버튼",
+      "photo_query": "person waiting in elevator"
     },
     {
       "image": null,
-      "narration": "그래서 월요아침에 일어나는 게 아니라, 일요일 저녁부터 이미 시작된 거거든. 우리가 느끼는 그 답답함, 그게 선데이 스쿱이다.",
-      "subtitle": "월요병은 월요일이 아님",
-      "photo_query": "tired sunday night bed restless"
+      "narration": "그래서 너도 모르게 지금까지 빨간 손가락으로 허공에 버튼 누르고 있었단 말이다. 와 이거 좀 황당하지 않냐?",
+      "subtitle": "우리 다 속았다",
+      "photo_query": "hand pressing empty air gesture"
     },
     {
       "image": null,
-      "narration": "이런 거 더 알고 싶으면 팔로우 눌러. 다음엔 월요일 아침을 견디는 팁을 가져올게.",
-      "subtitle": "쫌봐봐 팔로우하고 가세요",
-      "photo_query": "follow button social media subscribe"
+      "narration": "이런 거 더 알고 싶으면 쫌봐봐 팔로우해 봐. 매일 이런 쓸데없이 똑똑해지는 거 올린다니까.",
+      "subtitle": "팔로우 구독 부탁",
+      "photo_query": "follow subscribe button social media"
     }
   ],
   "meta": {
@@ -47,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-04T03:01:40.967654+00:00"
+    "generated_at": "2026-11-04T16:17:28.190321+00:00"
   }
 }

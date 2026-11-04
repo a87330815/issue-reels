@@ -1,0 +1,54 @@
+{
+  "title": "손가락 주름의 진짜 정체",
+  "cover": {
+    "image": null,
+    "lines": [
+      "물에 불면",
+      "<r>손가락 주름</r>",
+      "왜 생기는지",
+      "알아?"
+    ],
+    "badge": null,
+    "photo_query": null
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "목욕할 때 손가락이 쭈글쭈글해지지? 근데 이거 그냥 불어난 거 아니다. 진짜 이유가 따로 있거든.",
+      "subtitle": "불어난 게 아니라고?",
+      "photo_query": "hands in bathwater wrinkled"
+    },
+    {
+      "image": null,
+      "narration": "물에 오래 있으면 피부 표면의 각질층이 수분을 흡수해서 팽창한다. 근데 손가락 가장자리 각질층은 더 얇아서 그 팽창이 주름으로 보이는 거야.",
+      "subtitle": "피부 각질층이 팽창한다",
+      "photo_query": "skin layers diagram moisture"
+    },
+    {
+      "image": null,
+      "narration": "와 대박이지? 그런데 더 신기한 게 있다. 이 주름은 손가락의 그립감을 높이려고 진화한 거라는 가설도 있다. 미끄러운 물속에서 물건을 더 잘 잡으라고.",
+      "subtitle": "미끄럼 방지 진화설?",
+      "photo_query": "hand grip wet objects"
+    },
+    {
+      "image": null,
+      "narration": "즉 우리 몸이 똑똑해서 자동으로 아 물에 있네 하고 주름을 만드는 거다. 신경 신호까지 타고 혈관도 수축한다니까.",
+      "subtitle": "몸이 자동으로 반응한다",
+      "photo_query": "nervous system reflex"
+    },
+    {
+      "image": null,
+      "narration": "다음엔 목욕하면서 손가락 주름 생길 때 '아 우리 몸 진짜 똑똑하네' 하면서 봐. 이런 거 더 알고 싶으면 팔로우해야 해.",
+      "subtitle": "몸의 신비로움",
+      "photo_query": "bathtub relaxation science"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T16:17:36.164860+00:00"
+  }
+}

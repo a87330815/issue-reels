@@ -1,45 +1,38 @@
 {
-  "title": "미국 중간선거가 금리를 올렸다",
+  "title": "이요원 장녀 공개",
   "cover": {
     "image": null,
     "lines": [
-      "미국 선거 결과",
-      "<r>금리 올랐다</r>",
-      "당신 통장도"
+      "<r>23살</r>에 첫째 낳고",
+      "지금 얼굴은"
     ],
     "badge": null,
-    "photo_query": "US election voting booth American flag"
+    "photo_query": "mother daughter similar faces mirror"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 미국 중간선거 결과가 나왔다. 그 순간 뭐가 됐냐고? 금리가 떡상했다.",
-      "subtitle": "중간선거 후 금리 급등",
-      "photo_query": "voting results election night America"
+      "narration": "이거 모르고 지나가면 손해다. 이요원. 23살에 첫 출산했다 아이가. 그 딸이 이제 어른이 됐다.",
+      "subtitle": "23살에 첫 출산한 이요원",
+      "photo_query": "young mother holding baby portrait"
     },
     {
       "image": null,
-      "narration": "10년물 국채 금리가 5% 근처까지 올라갔다. 30년물도 5% 넘었다. 이게 뭐가 문제냐고?",
-      "subtitle": "10년물 4.96%, 30년물 5.33%",
-      "photo_query": "financial chart upward trend bonds"
+      "narration": "오늘 공개된 장녀. 어? 엄마 이요원이랑 판박이다. 미모 쏙 빼닮았다.",
+      "subtitle": "장녀 공개, 엄마와 똑같은 얼굴",
+      "photo_query": "elegant woman portrait beautiful features"
     },
     {
       "image": null,
-      "narration": "미국 금리가 올라가면 달러가 강해진다. 달러가 강해지면 한국은행도 따라 금리를 올린다. 결국 당신 대출금리가 올라간다는 뜻이다.",
-      "subtitle": "금리 인상 체인 시작",
-      "photo_query": "credit card debt interest rate calculator"
+      "narration": "미국 명문대 졸업했다더라. 아빠는 연예인이고 엄마는 배우. 타고나고 키워지는 게 다르긴 다르다.",
+      "subtitle": "미국 명문대 졸업",
+      "photo_query": "university campus graduation ceremony"
     },
     {
       "image": null,
-      "narration": "지금 당신이 변동금리 대출을 갖고 있다면? 다음달부터 이자 폭탄이 터질 수 있다. 고정금리 전환을 진지하게 생각해야 할 시점이다.",
-      "subtitle": "변동금리 대출자 주의",
-      "photo_query": "mortgage documents signature home loan"
-    },
-    {
-      "image": null,
-      "narration": "이 정보 놓치면 진짜 손해다. 금융 뉴스, 앞으로도 쫌봐봐에서 놓치지 마시고. 팔로우 하나 해주시지 않겠습니까?",
-      "subtitle": "금리 변동 뉴스 계속 팔로우",
-      "photo_query": "notification bell smartphone news update"
+      "narration": "이요원 세대는 벌써 자식이 어른 나이가 되는 거. 세월 빠르다. 팔로우해서 더 봐봐.",
+      "subtitle": "세월 빠르다",
+      "photo_query": "family together generations happiness"
     }
   ],
   "meta": {
@@ -48,6 +41,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-04T03:01:12.680781+00:00"
+    "generated_at": "2026-11-04T16:17:01.626522+00:00"
   }
 }

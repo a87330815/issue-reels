@@ -1,45 +1,45 @@
 {
-  "title": "포스코 주가 충격, PBR 0.17배의 의미",
+  "title": "로보락 구독 서비스 출시",
   "cover": {
     "image": null,
     "lines": [
-      "주가가",
-      "<r>0.17배</r>",
-      "까지 내려갔다"
+      "로봇청소기",
+      "<r>월 9900원</r>",
+      "구독 시대 온다"
     ],
     "badge": null,
-    "photo_query": "steel factory industrial production Korea"
+    "photo_query": "robot vacuum cleaner subscription service"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 포스코 주가가 PBR 0.17배까지 내려갔다. 뭐냐고? 기업이 가진 순자산보다 주가가 6분의 1 수준이라는 소리다.",
-      "subtitle": "PBR 0.17배란 무엇인가",
-      "photo_query": "stock market decline chart red"
+      "narration": "이거 모르고 지나가면 손해다. 로보락이 로봇청소기 구독 서비스를 시작했다. 월 9900원이다.",
+      "subtitle": "로보락 구독 서비스 론칭",
+      "photo_query": "robotic vacuum subscription payment plan"
     },
     {
       "image": null,
-      "narration": "정상적인 기업이면 PBR이 0.8배에서 1.2배다. 그래야 투자자들이 산다. 그런데 포스코는 0.17배? 시장이 완전히 외면했다는 뜻이다.",
-      "subtitle": "정상 범위는 0.8~1.2배",
-      "photo_query": "financial analysis report spreadsheet"
+      "narration": "지금까지는 수십만 원을 주고 사야 했다. 이제는 한 달에 만 원 안 돼서 쓸 수 있다 이거야.",
+      "subtitle": "고가 가전도 구독으로 간편하게",
+      "photo_query": "expensive home appliance purchase cost"
     },
     {
       "image": null,
-      "narration": "왜 이렇게까지 내려갔냐고? 글로벌 철강 수급이 안 좋아지니까다. 적자 걱정에 투자자들이 도망친 거야.",
-      "subtitle": "철강 시장 약세의 영향",
-      "photo_query": "industrial steel production crane machinery"
+      "narration": "관리도 편하다. AS랑 배터리 교체도 다 봐준다. 쓰다가 구독 취소하고 싶으면 반환하면 된다.",
+      "subtitle": "유지비·AS·교체까지 한 번에",
+      "photo_query": "robot vacuum maintenance battery replacement"
     },
     {
       "image": null,
-      "narration": "포스코는 밸류업 정책으로 주가를 올리려 했는데, 이 모양이니까 자존심이 구겼을 거다. 시장이 버티는 동안 어떻게 나올지가 관건이다.",
-      "subtitle": "밸류업 정책 지속 여부 주목",
-      "photo_query": "business meeting conference room discussion"
+      "narration": "가전 구독이 생활 트렌드가 되고 있다. 비싼 제품도 부담 없이 써본다는 뜻이다.",
+      "subtitle": "가전 시장의 구독 경쟁 심화",
+      "photo_query": "subscription service payment technology digital"
     },
     {
       "image": null,
-      "narration": "지금 이 상황. 포스코 투자자들은 초비상이다. 혹시 모르니 업데이트는 팔로우해서 챙겨봐라.",
-      "subtitle": "포스코 향후 주가 움직임 주목",
-      "photo_query": "smartphone stock trading app notification"
+      "narration": "로보락 구독, 이게 대세 될지 말지. 그 흐름을 우리가 먼저 캐치해야 한다. 채널 팔로우해라.",
+      "subtitle": "새로운 소비 트렌드를 먼저 알기",
+      "photo_query": "following trending content subscription culture"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-04T03:01:20.071001+00:00"
+    "generated_at": "2026-11-04T16:17:08.265232+00:00"
   }
 }

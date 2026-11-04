@@ -1,0 +1,52 @@
+{
+  "title": "세탁기 주머니의 신비한 보물창고",
+  "cover": {
+    "image": null,
+    "lines": [
+      "세탁기 주머니에서",
+      "<r>나오는 것들</r>"
+    ],
+    "badge": null,
+    "photo_query": "washing machine mesh bag"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "세탁 끝나고 주머니를 열었는데 어? 들어간 거 이것뿐인데 왜 자꾸 나와? 이게 뭐지 하면서 꺼내다 보면...",
+      "subtitle": "어라, 뭐가 이렇게 많아?",
+      "photo_query": "laundry mesh bag opening clothes"
+    },
+    {
+      "image": null,
+      "narration": "양말 한 짝이 슬금슬금 나오고, 속옷 끈이 엉켜 있고, 동전은 또 왜 들어가 있어? 분명 주머니 밖이었는데.",
+      "subtitle": "동전은 어떻게 들어가?",
+      "photo_query": "coins socks tangled laundry"
+    },
+    {
+      "image": null,
+      "narration": "침대 밑에서 실종된 그 양말, 주머니 구석에서 발견되고. 세탁기 주머니는 내 물건들의 비밀 터널이다.",
+      "subtitle": "여기가 피노키오 뱃속이냐",
+      "photo_query": "missing socks found laundry"
+    },
+    {
+      "image": null,
+      "narration": "가끔 주머니에서 나온 물건이 내 거 아닌 걸 때도 있고. 아 진짜, 세탁기 주머니는 포켓몬 볼이다.",
+      "subtitle": "누구 거 튀어나올지 몰라",
+      "photo_query": "mystery laundry items surprise"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 웃기게 보고 싶으면 팔로우! 우리 일상의 소소한 대박들을 함께 찾아보자고.",
+      "subtitle": "팔로우하고 함께 웃어봐",
+      "photo_query": "happy laundry day folding clothes"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-04T16:17:20.906314+00:00"
+  }
+}
