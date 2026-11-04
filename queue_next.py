@@ -190,7 +190,10 @@ def queue(ig_id):
     """
     done = published_stems(ig_id)
     out = []
-    for path in sorted(glob.glob(os.path.join(SCRIPTS, "*.json"))):
+    # 새로 생성된 대본부터 사용한다. 오래된 대본을 오름차순으로 고르면
+    # 몇 주 전의 낡은 대본이 계속 먼저 선택되어 최신 릴스 포맷·사진 쿼리와
+    # 어긋나는 문제가 생긴다.
+    for path in sorted(glob.glob(os.path.join(SCRIPTS, "*.json")), reverse=True):
         stem = os.path.splitext(os.path.basename(path))[0]
         if stem in done:
             continue
