@@ -30,7 +30,7 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           META_APP_ID: ${{ vars.META_APP_ID || '1143191174807326' }}
           META_APP_SECRET: ${{ secrets.META_APP_SECRET }}
-          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
+          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.instagram.com' }}
           FORCE: ${{ inputs.force }}
         run: |
           FLAGS=""
