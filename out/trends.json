@@ -1,77 +1,86 @@
 {
-  "collected_at": "2026-11-04T20:36:36.122582+00:00",
+  "collected_at": "2026-11-05T03:25:18.139741+00:00",
   "items": [
     {
-      "keyword": "เฟแนร์บาห์เช พบ ลิเวอร์พูล",
+      "keyword": "장기 기증",
+      "traffic": "5000+",
+      "news_title": "아픈 언니 걱정하던 20대女 돌연 쓰러져…장기기증으로 8명에 새 삶",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "2158fd8b1b0c175b"
+    },
+    {
+      "keyword": "열차",
+      "traffic": "500+",
+      "news_title": "출근길 우이신설선 전 구간 열차 운행 지연…4시간여만에 정상화(종합)",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "710c9f8728db980d"
+    },
+    {
+      "keyword": "더현대 크리스마스",
+      "traffic": "200+",
+      "news_title": "신세계百, 명동 본점 크리스마스 영상 6일 공개…3D입체 연출",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "690e68439c0abe35"
+    },
+    {
+      "keyword": "광주광역시",
       "traffic": "100+",
-      "news_title": "โปรแกรมการแข่งขันแชมเปี้ยนส์ลีก: แมนเชสเตอร์ ซิตี้ เยือนไลป์ซิก, ลิเวอร์พูล และอาร์เซนอล มุ่งสู่ชัยชนะ",
+      "news_title": "&quot;주민은 무단 점유, 장애인 지원은 미달&quot; 복지행정 질타",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "493dc27b7917d1d9"
+      "key": "eb82a68b7a9f8ef5"
     },
     {
-      "keyword": "슬라비아 프라하 대 아스널",
-      "traffic": "1000+",
-      "news_title": "챔피언스 리그 슬라비아 프라하 대 아스날 경기 점수 예측",
+      "keyword": "김숙",
+      "traffic": "2000+",
+      "news_title": "김대호, 9세 연상 김숙과 동거설에 입 열었다",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "6621a01a8c84d5d9"
+      "key": "049b6a641e713a5e"
     },
     {
-      "keyword": "에코프로",
+      "keyword": "교통",
       "traffic": "200+",
-      "news_title": "특구재단, 에코프로와 오픈이노베이션 성과…지역기업 3곳에 55억원 투자 연계",
+      "news_title": "오산시의회, 화성시 정남면 덕절리 물류센터 관련 교통대책 마련 촉구",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "생활·지원금·제도",
+      "key": "0929ec2a142ded96"
+    },
+    {
+      "keyword": "아이폰",
+      "traffic": "500+",
+      "news_title": "삼성·애플, 폴더블폰 &apos;접는 기술&apos; 경쟁 붙었다",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "3a48b4e41a7735f4"
+      "key": "d52aba45e9a67a1f"
     },
     {
-      "keyword": "라이프치히 대 맨 시티",
-      "traffic": "1000+",
-      "news_title": "RB Leipzig vs Manchester City: UEFA Champions League stats &amp; head-to-head",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "3c3df84da5942822"
-    },
-    {
-      "keyword": "김보연",
+      "keyword": "레인보우로보틱스",
       "traffic": "200+",
-      "news_title": "",
+      "news_title": "레인보우로보틱스 &quot;양팔로봇, 57일 만에 개발…산업용 휴머노이드 확대&quot;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "40d8a092d7530e94"
+      "key": "77c48712ba60fe68"
     },
     {
-      "keyword": "강호동",
+      "keyword": "다문화 가정",
       "traffic": "100+",
-      "news_title": "경찰, &apos;뇌물 수수 의혹&apos; 강호동 농협중앙회장 구속영장 신청",
+      "news_title": "전체 혼인 8.1% 늘었는데 다문화 혼인은 감소…이혼은 1.4% 증가",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "19784bceb524ca2d"
-    },
-    {
-      "keyword": "소유진",
-      "traffic": "200+",
-      "news_title": "‘백종원♥’ 소유진, 미술관 뺨치는 대저택 공개…고가 작품만 수십 점",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "cb1c1253b38907dd"
-    },
-    {
-      "keyword": "도깨비",
-      "traffic": "200+",
-      "news_title": "카카오게임즈 3분기 영업손실 263억원…적자 확대",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "42fbbcd988f04567"
+      "key": "8cc42dedf0d3e1ff"
     }
   ]
 }
