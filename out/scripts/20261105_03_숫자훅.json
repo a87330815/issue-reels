@@ -1,11 +1,11 @@
 {
-  "title": "강남 아파트 가격 차이",
+  "title": "강남 아파트값 지역별 격차",
   "cover": {
     "image": null,
     "lines": [
       "같은 강남인데",
       "<r>61배</r>",
-      "차이 난다"
+      "차이 난다고?"
     ],
     "badge": null,
     "photo_query": "seoul gangnam apartment buildings comparison"
@@ -13,33 +13,33 @@
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 강남 아파트. 동네마다 가격이 어마어마하게 다르다.",
-      "subtitle": "같은 강남 다른 가격",
+      "narration": "이거 모르고 지나가면 손해다. 강남 아파트. 어디 사느냐에 따라 가격이 완전 다르다.",
+      "subtitle": "강남권 지역별 아파트 실거래가",
       "photo_query": "seoul gangnam district map neighborhoods"
     },
     {
       "image": null,
-      "narration": "잠원동 신반포자이. 84제곱미터에 49억. 한 평 거의 6천만이다.",
-      "subtitle": "잠원동 49억대",
-      "photo_query": "luxury apartment interior modern design"
+      "narration": "잠원동은 지금 49억대다. 84제곱미터에 49억이다. 신반포자이, 요즘 지었는데 벌써 이 가격이다.",
+      "subtitle": "잠원동: 평균 49억",
+      "photo_query": "luxury apartment building chamwon gangnam"
     },
     {
       "image": null,
-      "narration": "대치동 선경1차. 같은 강남인데 이쪽은 51억. 아니 이건 비슷한데?",
-      "subtitle": "대치동도 50억대",
-      "photo_query": "apartment building exterior 1980s construction"
+      "narration": "그런데 대화동은? 0.8억이다. 같은 강남인데 60배 차이다. 이거. 진짜 알고 사는 게 다르다.",
+      "subtitle": "대화동: 평균 0.8억 (61배 차이)",
+      "photo_query": "apartment building daehwa residential area"
     },
     {
       "image": null,
-      "narration": "아. 데이터 다시 봤다. 평균을 본 거다. 잠원동 평균 49억. 대화동은? 8천만이다.",
-      "subtitle": "평균으로 보면 61배 차이",
-      "photo_query": "real estate price comparison chart numbers"
+      "narration": "강남이라고 다 같은 게 아니라는 거다. 역세권, 학군, 개발 예정지. 이것들이 가격을 확 갈라놓는다.",
+      "subtitle": "입지에 따라 가격 결정",
+      "photo_query": "seoul real estate price difference location"
     },
     {
       "image": null,
-      "narration": "같은 강남권인데 이 정도 차이면. 어디를 봐야 할지 갈린다. 팔로우해서 강남 분석 놓치지 마라.",
-      "subtitle": "지역마다 다른 강남 시세",
-      "photo_query": "real estate agent office buildings seoul"
+      "narration": "지금 강남 아파트 볼 거면, 꼭 이 데이터 확인하고 움직여라. 그래야 손해 안 본다.",
+      "subtitle": "쫌봐봐가 했으니까",
+      "photo_query": "apartment hunting checking documents research"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-05T10:32:18.113667+00:00"
+    "generated_at": "2026-11-05T15:57:01.328528+00:00"
   }
 }

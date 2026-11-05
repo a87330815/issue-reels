@@ -8,38 +8,38 @@
       "6억~10억대"
     ],
     "badge": null,
-    "photo_query": "incheon songdo apartment complex modern"
+    "photo_query": "incheon songdo apartment complex modern buildings"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 송도동에서 지난달 아파트가 8건 거래됐다. 가격대를 봐라.",
+      "narration": "이거 모르고 지나가면 손해다. 송도동. 이번 달에 8건이 거래됐다. 뭐라카더라. 6억부터 10억까지. 살짝 내려간다고 봐야 하나.",
       "subtitle": "송도동 10월 거래 8건",
-      "photo_query": "apartment building entrance incheon"
+      "photo_query": "incheon songdo lakeside district aerial view"
     },
     {
       "image": null,
-      "narration": "가장 비싼 게 10억8천만 원. 가장 싼 게 6억7천만 원이다. 뭐라카더라, 겨우 4억 차이지만 같은 동네 맞나 싶을 정도다.",
-      "subtitle": "최고가 10.8억 vs 최저가 6.7억",
-      "photo_query": "korean apartment price tag real estate"
+      "narration": "가장 비싼 게 송도더샵파크애비뉴. 10억 8천. 2018년 신축이다. 38층 고층이고.",
+      "subtitle": "최고가: 송도더샵파크애비뉴 10.8억",
+      "photo_query": "luxury apartment building high floor window"
     },
     {
       "image": null,
-      "narration": "평수로 따지면 60평대부터 120평대까지 섞여 있다. 크기도 다르고 층수도 다르니까 당연히 가격도 달라지는 거다.",
-      "subtitle": "60~120평대 혼재 거래",
-      "photo_query": "apartment floor plan layout diagram"
+      "narration": "가장 싼 게 힐스테이트레이크송도 2차. 6억 7천. 2020년 건물이니까 낡지도 않았다.",
+      "subtitle": "최저가: 6.78억 (2020년 신축)",
+      "photo_query": "apartment building entrance lobby modern design"
     },
     {
       "image": null,
-      "narration": "건축년도도 2008년부터 2020년까지 휘황찬란하다. 오래된 건물이 싼 게 맞지만, 같은 신도시 아파트를 비교할 땐 건년도를 꼭 봐야 한다.",
-      "subtitle": "건축년도 2008~2020년",
-      "photo_query": "old versus new apartment building comparison"
+      "narration": "뭐 이 정도면. 송도는 여전히 인기다. 근데 거래가 줄면. 가격도 내려간다. 이거 봐봐.",
+      "subtitle": "거래 감소 = 가격 하락 신호",
+      "photo_query": "real estate market chart trend line"
     },
     {
       "image": null,
-      "narration": "송도동 아파트 투자 생각하고 있다면 이 수치들을 기억해라. 팔로우하면 매달 최신 거래 정보를 받을 수 있다.",
-      "subtitle": "팔로우해서 매달 체크하기",
-      "photo_query": "real estate investment planning documents"
+      "narration": "송도 아파트 생각하는 사람들 있으면. 지금 같은 데이터. 꼭 확인해야 한다. 더 알고 싶으면 팔로우해라.",
+      "subtitle": "송도동 실거래 데이터 확인하기",
+      "photo_query": "family looking at apartment listing tablet"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-05T10:32:12.424296+00:00"
+    "generated_at": "2026-11-05T15:56:54.483541+00:00"
   }
 }

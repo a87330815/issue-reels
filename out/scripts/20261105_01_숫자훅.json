@@ -1,45 +1,45 @@
 {
-  "title": "대치동 51억 아파트 거래",
+  "title": "대치동 선경1차 51억 거래",
   "cover": {
     "image": null,
     "lines": [
       "대치동",
       "<r>51억</r>",
-      "이게 현실"
+      "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "seoul gangnam apartment luxury building"
+    "photo_query": "luxury apartment building daichi seoul"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 대치동 선경1차. 지금 51억에 거래됐다. 이거 봐봐. 136제곱미터 아파트다.",
-      "subtitle": "대치동 선경1차 51억",
-      "photo_query": "apartment building entrance sign"
+      "narration": "이거 모르고 지나가면 손해다. 대치동 선경1차. 방금 51억에 거래됐다. 이거. 거의 10층짜리다.",
+      "subtitle": "대치동 선경1차 51억 거래",
+      "photo_query": "seoul gangnam district apartment complex"
     },
     {
       "image": null,
-      "narration": "1983년 지은 낡은 건물이거든. 40년 넘은 집이야. 근데 51억이다. 이게 대치동 현실이다.",
-      "subtitle": "건축 1983년 40년된 집",
-      "photo_query": "old apartment building construction year"
+      "narration": "136제곱미터. 3룸 정도 크기인데 말이다. 50억을 넘었다. 1제곱미터에 3,700만원대다.",
+      "subtitle": "136㎡에 51억원",
+      "photo_query": "apartment floor plan layout 3 bedroom"
     },
     {
       "image": null,
-      "narration": "평당으로 따지면 3700만원이다. 강남역 신축 아파트도 이 정도인데, 여기는 낡은 집이다.",
-      "subtitle": "평당 3700만원대",
-      "photo_query": "calculator real estate price calculation"
+      "narration": "건물이 1983년생이거든. 지은 지 40년 넘은 거다. 그래도 이 가격이다.",
+      "subtitle": "1983년 건축, 여전히 50억대",
+      "photo_query": "old apartment building renovation seoul"
     },
     {
       "image": null,
-      "narration": "대치동은 여전히 최고다. 이런 거래 정보 모르고 있으면 시장에서 뒤진다.",
-      "subtitle": "대치동 강세 계속",
-      "photo_query": "seoul gangnam real estate market trend"
+      "narration": "대치동이 뭔지 알겠지. 교육열의 성지. 학군으로 먹고사는 곳 아이가. 여기선 낡은 집도 비싸다.",
+      "subtitle": "교육열의 성지 대치동",
+      "photo_query": "korea school building entrance gate"
     },
     {
       "image": null,
-      "narration": "매달 새로운 거래 정보. 우리 채널 팔로우 해라. 손해 안 보려면.",
-      "subtitle": "매달 새로운 거래정보",
-      "photo_query": "follow subscribe notification bell icon"
+      "narration": "서울 집값 트렌드를 알려면 여기를 봐라. 이 채널 팔로우해라. 놓치는 거 없다.",
+      "subtitle": "서울 집값 트렌드는 여기서",
+      "photo_query": "person checking mobile phone apartment"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-05T10:32:05.195974+00:00"
+    "generated_at": "2026-11-05T15:56:47.193367+00:00"
   }
 }

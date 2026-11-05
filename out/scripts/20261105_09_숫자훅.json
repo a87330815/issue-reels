@@ -1,38 +1,39 @@
 {
-  "title": "세월호 추모 유네스코 기록",
+  "title": "G2 정글러 스큐몬드 떠난다",
   "cover": {
     "image": null,
     "lines": [
-      "<r>23만점</r>에 새겨진",
-      "4월의 기억"
+      "롤드컵 탈락한",
+      "G2, 정글러",
+      "<r>결별</r>"
     ],
     "badge": null,
-    "photo_query": "memorial candles yellow ribbons remembrance"
+    "photo_query": "esports gaming team player leaving"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 유네스코에 등재된 세월호 추모 기록물이 있다는 거. 23만 점 이상이라고.",
-      "subtitle": "23만 점의 기록물",
-      "photo_query": "digital archive documents records"
+      "narration": "이거 모르고 지나가면 손해다. 롤드컵 탈락한 G2가 정글러 스큐몬드와 결별한다고 했다. 유럽 최강팀이 뭐가 잘못된 건지 다들 궁금하다.",
+      "subtitle": "G2 스큐몬드 결별",
+      "photo_query": "esports league of legends player"
     },
     {
       "image": null,
-      "narration": "2014년 4월. 그 시간이 멈춘 채로 보존되어 있다. 노란 리본, 추모글, 사람들의 손으로 만든 기록들이다.",
-      "subtitle": "4월의 기억이 고스란히",
-      "photo_query": "yellow ribbon memorial tribute"
+      "narration": "스큐몬드는 G2의 핵심 정글러다. 근데 올해 롤드컵에서 조별리그에서 탈락했다. 유럽 대표팀이 이 정도면 뭔가 크게 안 맞아 떨어진 거지.",
+      "subtitle": "핵심 정글러의 퇴출",
+      "photo_query": "professional esports team players strategy"
     },
     {
       "image": null,
-      "narration": "개인 일기부터 사진, 영상까지. 국민 모두가 남긴 흔적이 세계 기록유산이 됐다는 게 뭔가 다르지 않나.",
-      "subtitle": "국민의 기억이 유산이 되다",
-      "photo_query": "people hands writing memorial notes"
+      "narration": "팀 구성이 흔들리면 다음 시즌은 더 힘들어진다. G2가 지금 어떤 선택을 하는지가 유럽 롤 전체의 판도를 바꿀 수 있다.",
+      "subtitle": "내년 시즌 G2의 선택",
+      "photo_query": "esports team rebuilding future season"
     },
     {
       "image": null,
-      "narration": "시간이 지나도 잊지 않겠다는 약속. 그게 유네스코에 박혔다. 이게 역사가 되는 거다.",
-      "subtitle": "잊지 않겠다는 약속",
-      "photo_query": "historical monument stone memorial plaque"
+      "narration": "롤드컵 탈락부터 정글러 결별까지. 요즘 유럽 팀이 왜 이러는지 궁금하면 팔로우해라. 쫌봐봐에서 계속 따라간다.",
+      "subtitle": "유럽 롤의 변화",
+      "photo_query": "esports world championship stadium crowd"
     }
   ],
   "meta": {
@@ -41,6 +42,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-05T10:32:56.526727+00:00"
+    "generated_at": "2026-11-05T15:57:42.132322+00:00"
   }
 }

@@ -1,0 +1,53 @@
+{
+  "title": "자는 자세만 바꿔도 허리 통증 줄어드는 이유",
+  "cover": {
+    "image": null,
+    "lines": [
+      "자세만 바꿔도",
+      "<r>허리 통증 50%</r>",
+      "줄어든다"
+    ],
+    "badge": null,
+    "photo_query": "person sleeping side position pillow"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 아침마다 허리가 뻐근하다고? 그건 자는 자세가 잘못된 거다. 오늘부터 바꿔보면 2주 안에 달라진다고 카더라.",
+      "subtitle": "허리 통증의 90%는 자세",
+      "photo_query": "back pain morning bed"
+    },
+    {
+      "image": null,
+      "narration": "먼저 옆으로 누우면서 무릎 사이에 베개를 끼워. 척추가 일직선이 되면서 허리에 가는 압력이 딱 풀린다.",
+      "subtitle": "옆으로 누워 베개 끼우기",
+      "photo_query": "side sleeping position with pillow between"
+    },
+    {
+      "image": null,
+      "narration": "그다음 목 아래에도 낮은 베개를 받쳐줘. 이렇게 하면 척추 전체가 바닥과 평행 상태가 되면서 근육이 쉬어진다.",
+      "subtitle": "목과 무릎 모두 지지",
+      "photo_query": "cervical pillow neck support sleeping"
+    },
+    {
+      "image": null,
+      "narration": "2주간 이 자세로 자면 허리 경직도가 40~50% 줄어든다. 척추가 편안하면 자동으로 근육 긴장이 풀리는 거야.",
+      "subtitle": "2주 후 통증 50% 감소",
+      "photo_query": "woman waking up refreshed morning"
+    },
+    {
+      "image": null,
+      "narration": "이런 생활 꿀팁 더 알고 싶으면 팔로우 눌러. 우리 함께 건강하게 자자고!",
+      "subtitle": "팔로우하고 건강해지기",
+      "photo_query": "follow subscribe button social media"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T15:58:37.254210+00:00"
+  }
+}

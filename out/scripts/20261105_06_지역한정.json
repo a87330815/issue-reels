@@ -1,45 +1,45 @@
 {
-  "title": "침산동 최고가 아파트",
+  "title": "침산동 아파트 실거래 10월·11월",
   "cover": {
     "image": null,
     "lines": [
       "침산동",
       "<r>5.8억</r>",
-      "실제 거래됐다"
+      "이게 최고가다"
     ],
     "badge": null,
-    "photo_query": "daegu apartment building modern complex"
+    "photo_query": "daegu apartment building modern construction"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 침산동 아파트 거래 막 났다. 최고가를 봤는데 뭐라카노.",
-      "subtitle": "침산동 최고가 5.8억",
-      "photo_query": "apartment price tag trading market"
+      "narration": "이거 모르고 지나가면 손해다. 침산동. 지난달부터 이달까지 뭐가 올라왔는지 봤냐.",
+      "subtitle": "침산동 최신 실거래",
+      "photo_query": "daegu cityscape neighborhood street"
     },
     {
       "image": null,
-      "narration": "더샵프리미엘. 71제곱미터짜리가 5억 8천. 2024년도에 지은 신축이다.",
+      "narration": "더샵프리미엘. 71제곱미터. 5억 8천만 원이다. 올해 지어진 신축인데 33층까지 팔렸다.",
       "subtitle": "더샵프리미엘 71㎡ 5.8억",
-      "photo_query": "luxury apartment interior modern design"
+      "photo_query": "luxury apartment building entrance modern"
     },
     {
       "image": null,
-      "narration": "그 다음이 명성푸르지오. 4억 1천. 100제곱미터가 넘는데 신축의 절반이다.",
-      "subtitle": "가격 편차 크다 진짜",
-      "photo_query": "korea apartment complex comparison"
+      "narration": "같은 건물 근처만 봐도 다르다 아이가. 명성푸르지오는 100제곱미터에 4억 1천. 침산화성파크드림은 60제곱미터에 4억 900만.",
+      "subtitle": "신축 vs 기존 건물 가격차",
+      "photo_query": "apartment buildings comparison row side by"
     },
     {
       "image": null,
-      "narration": "침산동에 지금 뭐가 일어나는 거냐. 신축이 나왔으니까 지역 전체가 요동이는 거다.",
-      "subtitle": "침산동 재개발 영향",
-      "photo_query": "seoul neighborhood apartment development construction"
+      "narration": "신축이 뜨는 지역이다. 이 트렌드. 지금 침산동 움직이는 사람들이 알고 있는 정보다.",
+      "subtitle": "신축 프리미엄 형성 중",
+      "photo_query": "construction crane apartment building development"
     },
     {
       "image": null,
-      "narration": "침산동 사는 분들, 침산동 빌 생각 있는 분들. 이 데이터 봐야 한다. 팔로우 해라. 매달 최신 거래 가 올린다.",
-      "subtitle": "지역 거래가 계속 공개",
-      "photo_query": "real estate market data analysis chart"
+      "narration": "우리 팔로우 해서. 매주 내려오는 실거래 첫 타자가 돼봐. 손해 안 본다.",
+      "subtitle": "구독하고 놓치지 말기",
+      "photo_query": "notification bell mobile phone screen"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-05T10:32:37.097383+00:00"
+    "generated_at": "2026-11-05T15:57:20.934895+00:00"
   }
 }

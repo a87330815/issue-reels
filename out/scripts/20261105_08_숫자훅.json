@@ -1,45 +1,45 @@
 {
-  "title": "나달, 레알 마드리드 구단주 길 닦다",
+  "title": "개미들이 몰려가는 ETF, 당신은 빠졌나",
   "cover": {
     "image": null,
     "lines": [
-      "테니스 황제가",
-      "<r>축구계</r>로",
-      "간다고?"
+      "개미들이",
+      "<r>미국주식</r>에",
+      "우르르다"
     ],
     "badge": null,
-    "photo_query": "rafael nadal tennis clay court champion"
+    "photo_query": "stock market trading screen numbers"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 테니스 레전드 라파엘 나달이가 레알 마드리드 구단 이사로 간다고 카더라.",
-      "subtitle": "나달, 축구계 입성",
-      "photo_query": "tennis legend retirement transition"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 개미들 돈 어디 쏟아붓는지 알냐. 미국 주식 펀드다. TIGER 미국S&P500 같은 데다가.",
+      "subtitle": "미국주식 펀드로 개미자금 급몰입",
+      "photo_query": "investment portfolio dashboard american stocks"
     },
     {
       "image": null,
-      "narration": "그런데 이게 뭐하는 짓이냐고? 나달이가 이사 된 후 회장까지 노린다는 얘기도 떠돈다.",
-      "subtitle": "회장직까지 노리는 것 아닌가",
-      "photo_query": "football club executive board meeting"
+      "narration": "국내 대장 펀드 KODEX200은 여전히 최고의 자리를 지키고 있다. 근데 개미들은 왜 미국으로 가는 걸까.",
+      "subtitle": "KODEX200 vs 미국S&P500",
+      "photo_query": "korea vs usa economy comparison"
     },
     {
       "image": null,
-      "narration": "20년을 테니스에만 판을 쳤던 선수가 갑자기 축구 구단 경영으로 방향을 튼다. 흙의 제왕이 이제 축구판을 흔들 건가.",
-      "subtitle": "스포츠 레전드의 새로운 도전",
-      "photo_query": "sports transition career change challenge"
+      "narration": "미국 지수가 올해 또 새로운 고점을 찍었다. 한국은 횡보인데. 개미들이 계산한 거다. 세계 최강 기업들이 모인 곳이 수익률이 다르다는 걸.",
+      "subtitle": "미국 지수 신고가, 한국은 횡보",
+      "photo_query": "stock chart uptrend growth performance"
     },
     {
       "image": null,
-      "narration": "선수 시절과 달리 경영진으로서는 어떤 모습을 보일지. 이게 축구계에 어떤 바람을 불지. 계속 지켜봐야겠다.",
-      "subtitle": "축구계의 변화를 주시하라",
-      "photo_query": "real madrid stadium architecture"
+      "narration": "ETF는 기업 하나 기웃거릴 필요 없다. 여러 종목을 한 번에 담는다. 미국도 마찬가지고 한국도 마찬가지다. 중요한 건 어디에 베팅하느냐다.",
+      "subtitle": "ETF로 쉽게 시작하는 분산투자",
+      "photo_query": "diversified portfolio multiple stocks coins"
     },
     {
       "image": null,
-      "narration": "트렌드는 빠르게 변한다. 다음 화제도 놓치지 말고 따라와라. 쫌봐봐 구독.",
-      "subtitle": "계속 팔로우해",
-      "photo_query": "social media notification follow"
+      "narration": "당신도 이 흐름에서 뒤떨어질까 봐 걱정되면 팔로우해라. 매일 달라지는 시장, 우리가 계속 지켜본다.",
+      "subtitle": "트렌드를 놓치지 말고 팔로우",
+      "photo_query": "notification alert smartphone financial app"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-05T10:32:50.730540+00:00"
+    "generated_at": "2026-11-05T15:57:35.682852+00:00"
   }
 }

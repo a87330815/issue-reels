@@ -1,0 +1,53 @@
+{
+  "title": "옷 관리 생활해킹",
+  "cover": {
+    "image": null,
+    "lines": [
+      "옷 관리 <r>3가지</r>",
+      "이것만 알면",
+      "옷값 반값"
+    ],
+    "badge": null,
+    "photo_query": "clothing care maintenance"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "니트 보풀이 왕창 생겼다? 그냥 면도기로 훓어내면 된다. 순한 방향으로 한 2~3번 정도면 새것처럼 된다.",
+      "subtitle": "면도기로 니트 보풀 제거",
+      "photo_query": "sweater pilling razor blade"
+    },
+    {
+      "image": null,
+      "narration": "흰옷 누런 때는 산소계 표백제를 써야 한다. 미온수에 옷을 담갔다가 표백제 한두 스푼 풀어서 2시간만 기다리면 새하얀 옷이 된다.",
+      "subtitle": "산소계 표백제 2시간 불리기",
+      "photo_query": "white clothes stain removal oxygen bleach"
+    },
+    {
+      "image": null,
+      "narration": "목 부분이 늘어났다? 세탁 후 다림질할 때 손으로 쬐그만하게 모양 내면서 말리면 원래대로 돌아온다. 습한 상태가 중요하거든.",
+      "subtitle": "따뜻한 바람 틀고 손으로 모양내기",
+      "photo_query": "shirt neckline stretching restoration"
+    },
+    {
+      "image": null,
+      "narration": "이 세 가지만 알아도 옷을 훨씬 오래 입을 수 있다. 새 옷 사듯이 관리하면 돈 아끼는 것 아니라 돈 버는 거다.",
+      "subtitle": "옷 관리로 오래 입기",
+      "photo_query": "wardrobe care folded clothes hangers"
+    },
+    {
+      "image": null,
+      "narration": "옷 관리 꿀팁 더 알고 싶으면 팔로우 해줘! 다음엔 더 신기한 거 가져올게.",
+      "subtitle": "팔로우 구독 클릭",
+      "photo_query": "social media follow button"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T15:58:30.406983+00:00"
+  }
+}

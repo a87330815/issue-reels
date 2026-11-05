@@ -1,0 +1,53 @@
+{
+  "title": "30초 손 씻기로 감기 예방률 50% 높이기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "30초 손 씻기면",
+      "<r>감기 예방률 50%</r>",
+      "올라간다니"
+    ],
+    "badge": null,
+    "photo_query": "hand washing sink water"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 손 씻기 이거 다 똑같은 줄 알았지? 아니다 아이가. 시간에 따라 효과가 확 달라진다.",
+      "subtitle": "손 씻기도 과학이다",
+      "photo_query": "washing hands under running water"
+    },
+    {
+      "image": null,
+      "narration": "10초? 그거 먼지만 씻어낸 거다. 30초를 봐봐. 손가락 사이, 손등, 손목까지 바이러스가 70~80% 없어진다.",
+      "subtitle": "30초: 70~80% 제거",
+      "photo_query": "hand wash scrubbing fingers palms"
+    },
+    {
+      "image": null,
+      "narration": "비결이 뭐냐 하면, 비누의 거품이 바이러스 껍질을 녹이는 데 정확히 30초가 필요하거든. 온수로 해야 더 잘 된다.",
+      "subtitle": "비누 거품이 바이러스 껍질을 녹임",
+      "photo_query": "soap bubbles hands warm water"
+    },
+    {
+      "image": null,
+      "narration": "그럼 이 습관 한 번만 들이면 감기 예방률이 50% 올라간다. 약도 필요 없고, 돈도 안 든다.",
+      "subtitle": "감기 예방률 50% 증가",
+      "photo_query": "healthy person no cold symptoms"
+    },
+    {
+      "image": null,
+      "narration": "밥 먹기 전, 집 들어올 때, 화장실 다녀온 후 — 이 세 번만 30초씩. 와 이거 진짜 된다 아이가. 이런 꿀팁 더 보고 싶으면 팔로우 고고고!",
+      "subtitle": "하루 3번, 30초씩만",
+      "photo_query": "daily routine hand washing moments"
+    }
+  ],
+  "meta": {
+    "format": "건강팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T15:58:23.756316+00:00"
+  }
+}
