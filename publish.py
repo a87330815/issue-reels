@@ -220,7 +220,22 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     if not ok:
         raise RuntimeError(f"컨테이너 처리 실패: {why}")
 
-    res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
+    # status_code가 FINISHED여도 Meta 내부 전파가 잠시 늦으면
+    # media_publish가 [-1/2207085] Fatal로 거절될 수 있다.
+    # 바로 재호출하지 않고 짧게 기다린 뒤 제한적으로 재시도한다.
+    last_error = None
+    for attempt, delay in enumerate((10, 20, 30), 1):
+        time.sleep(delay)
+        try:
+            res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
+            break
+        except RuntimeError as e:
+            last_error = e
+            if "2207085" not in str(e) or attempt == 3:
+                raise
+            print(f"    media_publish 재시도 {attempt}/3 — {e}")
+    else:
+        raise last_error or RuntimeError("media_publish 실패")
     media_id = res["id"]
     print(f"  발행 완료: {media_id}")
     return media_id
