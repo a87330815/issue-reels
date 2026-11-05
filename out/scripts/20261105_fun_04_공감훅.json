@@ -1,45 +1,44 @@
 {
-  "title": "점심 메뉴 고민",
+  "title": "양말 짝 실종 사건",
   "cover": {
     "image": null,
     "lines": [
-      "점심 메뉴",
-      "<r>고르는 데</r>",
-      "10분"
+      "빨래 끝나면",
+      "<r>양말이 사라진다</r>"
     ],
     "badge": null,
-    "photo_query": "office workers lunch decision"
+    "photo_query": "laundry socks missing dryer"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "아 뭐 먹지... 어제는 김밥 먹었고, 그저께는 김밥... 아니다 덮밥이었나?",
-      "subtitle": "점심 메뉴 고민 시작",
-      "photo_query": "man thinking confused office desk"
+      "narration": "빨래할 때 양말 짝이 통째로 사라지는 거 나만 그런 건가? 분명 20개를 집어넣었는데 나올 땐 19개다.",
+      "subtitle": "매번 한 짝이 종적불명",
+      "photo_query": "washing machine socks disappear"
     },
     {
       "image": null,
-      "narration": "쌀국수? 아니야 최근에 쌀국수 먹었는데... 아 그게 일주일 전이었나? 와 진짜 모르겠다.",
-      "subtitle": "기억도 안 나는 어제 점심",
-      "photo_query": "confused man phone scrolling menu"
+      "narration": "그래서 짝 없는 양말들이 서랍에 모여 있지 않나. \"언젠가 친구 양말이 나타날 거겠지\" 하면서 버리지도 못한다.",
+      "subtitle": "고아 양말 수집가 된 내 모습",
+      "photo_query": "drawer single orphan socks collection"
     },
     {
       "image": null,
-      "narration": "카톡 보니까 동료들도 '뭐 먹어?' 이러고 있네. 여기저기서 점심 뭐 먹을지가 업무보다 중요해졌다 아이가.",
-      "subtitle": "전사적 점심 고민 타임",
-      "photo_query": "coworkers chatting lunch time office"
+      "narration": "세탁기 뒷부분에 이상하게 붙어 있거나, 건조기 필터에 낀 거 보신 분? 그게 실제로 있다 카더라.",
+      "subtitle": "세탁기는 양말 무덤이다",
+      "photo_query": "washing machine filter stuck lint"
     },
     {
       "image": null,
-      "narration": "결국 맨날 그 가게 가고, 맨날 같은 거 사고, 맨날 '어 이게 뭐지?' 하면서 먹지.",
-      "subtitle": "결말은 항상 같음",
-      "photo_query": "man eating lunch restaurant"
+      "narration": "결국 아무것도 못 찾으니까 새 양말을 또 산다. 악순환이지만 이제 그냥 포기했다.",
+      "subtitle": "우주 어딘가로 떠난 양말",
+      "photo_query": "shopping socks store new pairs"
     },
     {
       "image": null,
-      "narration": "당신도 이렇지? 같은 고민 반복하면서 시간만 날리는 그 느낌. 쫌봐봐에서 더 봐봐!",
-      "subtitle": "팔로우하면 공감 릴스 더 많음",
-      "photo_query": "follow subscribe bell notification"
+      "narration": "이런 거 더 공감되면 팔로우해 봐. 우리 함께 양말 미스터리를 풀어보자.",
+      "subtitle": "나도 알고 싶은데?",
+      "photo_query": "confused frustrated laundry mystery"
     }
   ],
   "meta": {
@@ -48,6 +47,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-05T15:58:16.099788+00:00"
+    "generated_at": "2026-11-05T20:55:05.842061+00:00"
   }
 }

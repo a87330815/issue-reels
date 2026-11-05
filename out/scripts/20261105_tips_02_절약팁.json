@@ -1,45 +1,45 @@
 {
-  "title": "대기전력 잡으면 월 1만 원 절약",
+  "title": "교통비 반으로 줄이는 환승 할인 꿀팁",
   "cover": {
     "image": null,
     "lines": [
-      "대기전력만 잡아도",
-      "<r>월 1만원</r>",
+      "환승 30분 안에",
+      "<r>월 5만원</r>",
       "절약된다"
     ],
     "badge": null,
-    "photo_query": "power outlet switch off"
+    "photo_query": "public transportation card payment"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "우리 집 전기요금 왜 이렇게 나올까? 그건 멀티탭 때문이다. 콘센트에 꽂혀만 있어도 자꾸 전기를 먹는데, 이게 바로 대기전력이다.",
-      "subtitle": "대기전력이 전기료의 10%",
-      "photo_query": "smart power strip devices"
+      "narration": "야야야, 요즘 교통비 진짜 안 만만하지. 근데 이거 알고 있냐? 같은 거 타는데도 절약하는 방법이 있다고.",
+      "subtitle": "환승 30분 규칙",
+      "photo_query": "bus metro transfer ticket"
     },
     {
       "image": null,
-      "narration": "자, 이제 이거만 해봐. 안 쓰는 전자제품 플러그를 뽑고, 멀티탭의 스위치를 꺼 놓는 거다. TV, 에어컨, 세탁기 리모컨 받침대까지.",
-      "subtitle": "쓰지 않는 제품 플러그 뽑기",
-      "photo_query": "unplugging appliances cables"
+      "narration": "버스 탔다가 지하철 타갈 때, 꼭 30분 안에 타야 한다. 그럼 추가요금 없이 환승 할인이 먹힌다고. 한 번에 800원만 빠져나간다.",
+      "subtitle": "버스→지하철 800원",
+      "photo_query": "transportation transfer discount"
     },
     {
       "image": null,
-      "narration": "이렇게만 해도 한 달에 8~12시간 전기를 아낄 수 있다. 난방비까지 합치면 월 1만 원이 그냥 날아간다고 생각해봐.",
-      "subtitle": "하루 15분 정도의 작은 습관",
-      "photo_query": "electricity meter consumption reading"
+      "narration": "반대로 지하철에서 버스로도 같은 방식이다. 근데 50분 안에 타야 한다. 왜냐면 지하철이 버스보다 늦거든.",
+      "subtitle": "지하철→버스 50분",
+      "photo_query": "subway to bus transfer"
     },
     {
       "image": null,
-      "narration": "특히 겨울엔 더 심하다. 보일러 예열, 에어컨 대기전력까지 모두 합치면 진짜 엄청난 금액이다.",
-      "subtitle": "계절마다 대기전력 달라진다",
-      "photo_query": "winter heating appliance standby"
+      "narration": "이걸 매일 왕복으로 하면 월 5만 원이 줄어든다. 평일 20일 기준으로 하루에 2천5백원씩 아끼는 거지. 진짜 꿀팁이다.",
+      "subtitle": "월 5만원 절약",
+      "photo_query": "money savings wallet"
     },
     {
       "image": null,
-      "narration": "이런 꿀팁들 더 보고 싶으면 팔로우해 줘. 매달 절약할 수 있는 생활 팁을 계속 가져올 테니까!",
-      "subtitle": "팔로우하고 계속 따라와",
-      "photo_query": "saving money habit jar"
+      "narration": "이런 꿀팁들 더 보고 싶냐? 팔로우 눌러둬. 매일매일 살림 팁 가져다줄게.",
+      "subtitle": "팔로우 누르기!",
+      "photo_query": "follow subscribe button"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-05T10:33:41.897551+00:00"
+    "generated_at": "2026-11-05T20:55:26.165017+00:00"
   }
 }

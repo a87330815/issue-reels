@@ -1,46 +1,45 @@
 {
-  "title": "냉장고 칸별 정리법",
+  "title": "세탁기 곰팡이 냄새 5분에 날리는 법",
   "cover": {
     "image": null,
     "lines": [
-      "냉장고 이렇게",
-      "정리하면",
-      "<r>식재료 2배</r>",
-      "오래 간다"
+      "세탁기 냄새?",
+      "<r>5분에</r> 해결!",
+      "한 달 1회"
     ],
     "badge": null,
-    "photo_query": "organized refrigerator compartments"
+    "photo_query": "washing machine cleaning"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 냉장고 정리 제대로 아는 사람 많지 않더라고. 칸마다 온도가 다르다는 거 알아?",
-      "subtitle": "냉장고도 칸별로 온도 다름",
-      "photo_query": "refrigerator temperature zones"
+      "narration": "세탁기에서 쿠린내 난다고? 그거 곰팡이다. 습한 환경에 때가 끼면 곰팡이가 번식해서 냄새가 난다.",
+      "subtitle": "곰팡이가 냄새의 원인",
+      "photo_query": "moldy washing machine drum"
     },
     {
       "image": null,
-      "narration": "맨 위 칸은 가장 따뜻해. 여긴 반찬·소스 같은 거 보관하면 돼. 아래쪽 갈수록 차가우니까 생선·고기는 맨 아래 놔야 한다.",
-      "subtitle": "위: 반찬·소스 / 아래: 생선·고기",
-      "photo_query": "refrigerator shelves organization meat fish"
+      "narration": "약국에서 파는 산소계 표백제 한 컵을 세탁기에 붓고, 뜨거운 물로 고온 세척 코스를 돌려. 딱 5분이면 된다.",
+      "subtitle": "산소계 표백제 1컵 + 고온 세척",
+      "photo_query": "oxygen bleach powder pouring"
     },
     {
       "image": null,
-      "narration": "문 쪽은 가장 따뜻하니까 버터·달걀 같은 걸 여기 놔. 근데 야채는 절대 문에 놓지 마. 온도가 자주 변하거든. 야채실에만 놔야 <r>3배까지</r> 오래 간다고.",
-      "subtitle": "야채는 야채실 필수 — 3배 오래 감",
-      "photo_query": "vegetables in crisper drawer compartment"
+      "narration": "이거 했더니 신기하게 조금 전이랑 다르네. 곰팡이 포자를 산소계가 분해해 버리는 거거든.",
+      "subtitle": "산소 분자가 곰팡이 제거",
+      "photo_query": "clean washing machine inside"
     },
     {
       "image": null,
-      "narration": "그리고 밀폐용기에 담으면 습기도 조절되고 냄새도 안 새. 이렇게만 해도 한 주가 더 가는 거 느껴질 거야.",
-      "subtitle": "밀폐용기 사용 — 습기·냄새 차단",
-      "photo_query": "food storage containers organized"
+      "narration": "비용은 2,000원대면 충분하고, 한 달에 딱 한 번만 해도 냄새 안 난다.",
+      "subtitle": "월 2,000원, 월 1회 관리",
+      "photo_query": "affordable cleaning supplies budget"
     },
     {
       "image": null,
-      "narration": "이런 냉장고 정리 꿀팁 더 궁금하면 팔로우해 봐. 쫌봐봐에서 계속 알려줄 거야.",
-      "subtitle": "더 많은 살림팁 팔로우하기",
-      "photo_query": "organized clean refrigerator interior"
+      "narration": "야야야, 이런 살림 꿀팁 더 알고 싶으면 팔로우 눌러. 맨날 쏟아내니까.",
+      "subtitle": "팔로우하고 꿀팁 받기",
+      "photo_query": "follow button subscribe"
     }
   ],
   "meta": {
@@ -49,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-05T10:33:34.863268+00:00"
+    "generated_at": "2026-11-05T20:55:19.477292+00:00"
   }
 }

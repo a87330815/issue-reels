@@ -1,39 +1,46 @@
 {
-  "title": "G2 정글러 스큐몬드 떠난다",
+  "title": "유로파리그 바이어 레버쿠젠 vs 마르세유 경기 분석",
   "cover": {
     "image": null,
     "lines": [
-      "롤드컵 탈락한",
-      "G2, 정글러",
-      "<r>결별</r>"
+      "오늘 밤",
+      "유로파리그",
+      "<r>승리배당</r>",
+      "체크하셨나요"
     ],
     "badge": null,
-    "photo_query": "esports gaming team player leaving"
+    "photo_query": "european football match stadium night"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 롤드컵 탈락한 G2가 정글러 스큐몬드와 결별한다고 했다. 유럽 최강팀이 뭐가 잘못된 건지 다들 궁금하다.",
-      "subtitle": "G2 스큐몬드 결별",
-      "photo_query": "esports league of legends player"
+      "narration": "이거 모르고 지나가면 손해다. 오늘 밤 유로파리그 경기 있다. 바이어 레버쿠젠이 마르세유랑 붙는다.",
+      "subtitle": "유로파리그 오늘 경기",
+      "photo_query": "soccer players european league match"
     },
     {
       "image": null,
-      "narration": "스큐몬드는 G2의 핵심 정글러다. 근데 올해 롤드컵에서 조별리그에서 탈락했다. 유럽 대표팀이 이 정도면 뭔가 크게 안 맞아 떨어진 거지.",
-      "subtitle": "핵심 정글러의 퇴출",
-      "photo_query": "professional esports team players strategy"
+      "narration": "레버쿠젠 봐봐. 이 팀 올시즌 국내리그에서 무패다. 지난 시즌은 더 말할 것도 없고 유럽 무대에서도 강하다.",
+      "subtitle": "레버쿠젠 무패 행진 중",
+      "photo_query": "bayer leverkusen players celebrating victory"
     },
     {
       "image": null,
-      "narration": "팀 구성이 흔들리면 다음 시즌은 더 힘들어진다. G2가 지금 어떤 선택을 하는지가 유럽 롤 전체의 판도를 바꿀 수 있다.",
-      "subtitle": "내년 시즌 G2의 선택",
-      "photo_query": "esports team rebuilding future season"
+      "narration": "그럼 마르세유는? 프랑스 최강팀이다. 올 시즌 리그 1에서 상위권 싸움 중이거든. 유로파리그도 이 팀 진심이다.",
+      "subtitle": "마르세유 강팀의 자존심",
+      "photo_query": "marseille football club stadium france"
     },
     {
       "image": null,
-      "narration": "롤드컵 탈락부터 정글러 결별까지. 요즘 유럽 팀이 왜 이러는지 궁금하면 팔로우해라. 쫌봐봐에서 계속 따라간다.",
-      "subtitle": "유럽 롤의 변화",
-      "photo_query": "esports world championship stadium crowd"
+      "narration": "분석할 포인트 둘 다 공격력이다. 어느 팀이 슛 정확도로 이기냐. 이게 경기 판도를 좌우한다.",
+      "subtitle": "오늘의 승부 포인트",
+      "photo_query": "football players shooting scoring goal"
+    },
+    {
+      "image": null,
+      "narration": "스포츠 분석은 팔로우해야 빠르다. 경기 전후로 디테일한 분석 올린다. 팔로우 꾹 눌러라.",
+      "subtitle": "실시간 경기 분석 채널 팔로우",
+      "photo_query": "sports analysis live commentary broadcast"
     }
   ],
   "meta": {
@@ -42,6 +49,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-05T15:57:42.132322+00:00"
+    "generated_at": "2026-11-05T20:54:39.896352+00:00"
   }
 }

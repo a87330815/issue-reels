@@ -1,45 +1,44 @@
 {
-  "title": "장마철 빨래 운명의 갈림길",
+  "title": "장마철 빨래 운명의 차이",
   "cover": {
     "image": null,
     "lines": [
-      "장마철",
-      "빨래",
-      "<r>이게 갈린다</r>"
+      "사흘째",
+      "<r>안 마르는 빨래</r>"
     ],
     "badge": null,
-    "photo_query": "wet laundry hanging rainy season"
+    "photo_query": "wet clothes hanging rain"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야 빨래 널었는데 사흘째다 아이가. 아직도 축축한데 냄새까지 슬슬 난다.",
-      "subtitle": "사흘째 젖은 빨래",
-      "photo_query": "damp clothes humid apartment"
+      "narration": "장마철이면 빨래가 신경전이 된다. 어떤 집은 하루 만에 뽀송뽀송, 어떤 집은 사흘째 축축하다.",
+      "subtitle": "왜 이런 차이가 나는가",
+      "photo_query": "laundry hanging indoor humid"
     },
     {
       "image": null,
-      "narration": "근데 저쪽 집은 왜 하루 만에 뽀송하냐고? 비결이 뭐냐고?",
-      "subtitle": "같은 장마인데 왜",
-      "photo_query": "clean dry laundry window breeze"
+      "narration": "빨리 마르는 집의 비결? 에어컨 틀고, 제습기 켜고, 창문 열고. 공기 흐름이 다르다 이거다.",
+      "subtitle": "통풍이 모든 걸 바꾼다",
+      "photo_query": "air conditioner dehumidifier window open"
     },
     {
       "image": null,
-      "narration": "환풍기, 제습기, 선풍기를 3개 동시에 돌리는 거다 아이가. 그리고 햇빛 한 줄기 나오면 바로 베란다로.",
-      "subtitle": "3단 콤보 필수",
-      "photo_query": "fan dehumidifier ventilation laundry"
+      "narration": "반면 안 마르는 집? 습도 80% 넘고, 통풍 안 되는 방에 빨래만 자꾸 모여 있다. 그럼 안 마를 수밖에.",
+      "subtitle": "악순환의 시작",
+      "photo_query": "damp clothes piled indoor moisture"
     },
     {
       "image": null,
-      "narration": "우리도 다 알지만... 귀찮은 거지. 결국 3일차가 되니까 냄새로 빨아버린다.",
-      "subtitle": "알면서도 못하는 것",
-      "photo_query": "tired person laundry basket struggle"
+      "narration": "요즘은 건조기도 있지만, 결국 '바람의 힘'을 믿는 게 최고다. 습도가 적의다 이거지.",
+      "subtitle": "습도와의 전쟁",
+      "photo_query": "dry clothes windy outdoor sunshine"
     },
     {
       "image": null,
-      "narration": "이런 팁들 더 보고 싶으면 우리 팔로우 해봐. 장마 버티는 꿀팁들 계속 올린다.",
-      "subtitle": "쫌봐봐 팔로우하기",
-      "photo_query": "follow subscribe button click"
+      "narration": "이런 꿀팁 더 궁금하면 팔로우! 우리 함께 장마철 정복하자.",
+      "subtitle": "뽀송뽀송 빨래의 주인이 되기",
+      "photo_query": "fresh laundry hanging satisfied"
     }
   ],
   "meta": {
@@ -48,6 +47,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-05T15:57:48.727019+00:00"
+    "generated_at": "2026-11-05T20:54:46.332217+00:00"
   }
 }

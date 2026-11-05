@@ -1,53 +1,62 @@
 {
-  "title": "개미들이 몰려가는 ETF, 당신은 빠졌나",
+  "title": "반포동 래미안퍼스티지 평당 2억",
   "cover": {
     "image": null,
     "lines": [
-      "개미들이",
-      "<r>미국주식</r>에",
-      "우르르다"
+      "반포동",
+      "<r>평당 2억</r>",
+      "실화냐"
     ],
     "badge": null,
-    "photo_query": "stock market trading screen numbers"
+    "photo_query": "luxury apartment building gangnam seoul"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 요즘 개미들 돈 어디 쏟아붓는지 알냐. 미국 주식 펀드다. TIGER 미국S&P500 같은 데다가.",
-      "subtitle": "미국주식 펀드로 개미자금 급몰입",
-      "photo_query": "investment portfolio dashboard american stocks"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지. 10월에 5억 3천만 원에 거래됐다. 평당 2억 원이다.",
+      "subtitle": "반포동 래미안퍼스티지",
+      "photo_query": "seoul apartment price tag real estate"
     },
     {
       "image": null,
-      "narration": "국내 대장 펀드 KODEX200은 여전히 최고의 자리를 지키고 있다. 근데 개미들은 왜 미국으로 가는 걸까.",
-      "subtitle": "KODEX200 vs 미국S&P500",
-      "photo_query": "korea vs usa economy comparison"
+      "narration": "85평 남짓한 아파트치고. 이거. 진짜 비싼 거다. 평당 2억이면 서울에서도 톱급 지역이라는 거.",
+      "subtitle": "평당 2억 원대",
+      "photo_query": "apartment floor plan 85 square meters"
     },
     {
       "image": null,
-      "narration": "미국 지수가 올해 또 새로운 고점을 찍었다. 한국은 횡보인데. 개미들이 계산한 거다. 세계 최강 기업들이 모인 곳이 수익률이 다르다는 걸.",
-      "subtitle": "미국 지수 신고가, 한국은 횡보",
-      "photo_query": "stock chart uptrend growth performance"
+      "narration": "같은 달에 강남 시범한신은 평당 2억 8천. 정자동 한솔마을은 평당 3천. 지역이 지가를 결정한다는 거 봤지?",
+      "subtitle": "지역별 평당 가격 차이",
+      "photo_query": "seoul districts gangnam comparison map"
     },
     {
       "image": null,
-      "narration": "ETF는 기업 하나 기웃거릴 필요 없다. 여러 종목을 한 번에 담는다. 미국도 마찬가지고 한국도 마찬가지다. 중요한 건 어디에 베팅하느냐다.",
-      "subtitle": "ETF로 쉽게 시작하는 분산투자",
-      "photo_query": "diversified portfolio multiple stocks coins"
+      "narration": "반포동은 강남도심 핫플. 한강뷰. 교통. 다 갖춘 곳이다. 평당 2억. 이제 현실이다.",
+      "subtitle": "강남 핫플의 현주소",
+      "photo_query": "han river apartment view seoul evening"
     },
     {
       "image": null,
-      "narration": "당신도 이 흐름에서 뒤떨어질까 봐 걱정되면 팔로우해라. 매일 달라지는 시장, 우리가 계속 지켜본다.",
-      "subtitle": "트렌드를 놓치지 말고 팔로우",
-      "photo_query": "notification alert smartphone financial app"
+      "narration": "이런 빅데이터 정보. 우리 채널에서만 먼저 본다. 팔로우해 둬야 한다.",
+      "subtitle": "더 알아보기",
+      "photo_query": "real estate data analytics computer chart"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "google_trends",
-    "category": "당일 화제 이슈",
-    "attribution": "Google Trends",
-    "chart": null,
-    "generated_at": "2026-11-05T15:57:35.682852+00:00"
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        2.06,
+        1.44,
+        1.0,
+        0.98,
+        0.95
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-05T20:54:32.868453+00:00"
   }
 }
