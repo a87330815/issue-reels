@@ -1,4 +1,4 @@
-run 42013029284 2026-11-05T10:44:01Z
+run 42076238430 2026-11-05T17:37:01Z
 
 === 20261105_fun_05_공감훅 ===
   [cover] '컵라면 물 양의 두 가지 인생' → "instant noodle cup water line"
@@ -14,8 +14,10 @@ run 42013029284 2026-11-05T10:44:01Z
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene2 ← Unsplash (Unsplash License)
   [scene3] '선도 주관의 세계' → "cup noodle water line perspective angle"
-    [unsplash] 12건 후보
-    Unsplash 12건 (적합도 필터 생략)
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 11건 (적합도 필터 생략)
     ✓ scene3 ← Unsplash (Unsplash License)
   [scene4] '결말은 늘 같다' → "eating instant noodles satisfaction taste"
     [unsplash] 12건 후보
@@ -36,30 +38,30 @@ run 42013029284 2026-11-05T10:44:01Z
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 2.0초  컵라면 물 양의 두 가지 인생...
-  TTS [2/6] [EL·발랄녀] 5.8초  라면 끓일 때 저 선 딱 맞춰 넣는 사람 있잖아. ...
-  TTS [3/6] [EL·발랄녀] 8.8초  반대로 '에이 대충 이 정도면 되지' 하면서 막 넣...
-  TTS [4/6] [EL·발랄녀] 8.6초  그런데 진짜 알고 보니까 선은 사람마다 다르게 봐진...
-  TTS [5/6] [EL·발랄녀] 4.8초  결국 선 맞추는 거고 뭐고 다 소용없다는 뜻이다. ...
-  TTS [6/6] [EL·발랄녀] 5.0초  당신은 어느 파? 댓글로 선택해 봐. 이런 거 더 ...
+  TTS [1/6] [EL·발랄녀] 2.2초  컵라면 물 양의 두 가지 인생...
+  TTS [2/6] [EL·발랄녀] 6.2초  라면 끓일 때 저 선 딱 맞춰 넣는 사람 있잖아. ...
+  TTS [3/6] [EL·발랄녀] 9.1초  반대로 '에이 대충 이 정도면 되지' 하면서 막 넣...
+  TTS [4/6] [EL·발랄녀] 9.1초  그런데 진짜 알고 보니까 선은 사람마다 다르게 봐진...
+  TTS [5/6] [EL·발랄녀] 5.4초  결국 선 맞추는 거고 뭐고 다 소용없다는 뜻이다. ...
+  TTS [6/6] [EL·발랄녀] 5.3초  당신은 어느 파? 댓글로 선택해 봐. 이런 거 더 ...
 
 2) 영상 합성
   세그먼트 [1/7] 3.0초
-  세그먼트 [2/7] 6.6초
-  세그먼트 [3/7] 9.6초
-  세그먼트 [4/7] 9.4초
-  세그먼트 [5/7] 5.6초
-  세그먼트 [6/7] 5.8초
+  세그먼트 [2/7] 7.0초
+  세그먼트 [3/7] 9.9초
+  세그먼트 [4/7] 9.9초
+  세그먼트 [5/7] 6.2초
+  세그먼트 [6/7] 6.1초
   세그먼트 [7/7] 4.0초
 
   ✓ 릴스 완성: out/reels/20261105_fun_05_공감훅.mp4
-    길이: 38.7초  /  크기: 1.8MB
--rw-r--r-- 1 runner runner 1.9M Nov  5 10:44 out/reels/20261105_fun_05_공감훅.mp4
+    길이: 41.1초  /  크기: 1.9MB
+-rw-r--r-- 1 runner runner 1.9M Nov  5 17:37 out/reels/20261105_fun_05_공감훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=38.680272
+duration=41.080272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -68,7 +70,7 @@ duration=38.680272
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-05):
-  20261105_fun_05_공감훅.mp4  1.8MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-05/20261105_fun_05.mp4
+  20261105_fun_05_공감훅.mp4  1.9MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-05/20261105_fun_05.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -82,6 +84,6 @@ duration=38.680272
 ── 1/1  20261105_fun_05_공감훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-05/20261105_fun_05.mp4
   캡션: 컵라면 물 양의 두 가지 인생
-  [실패] [190/463] Error validating access token: Session has expired on Wednesday, 04-Nov-26 22:00:00 PST. The current time is Thursday, 05-Nov-26 02:45:02 PST.
+  [실패] [190/463] Error validating access token: Session has expired on Wednesday, 04-Nov-26 22:00:00 PST. The current time is Thursday, 05-Nov-26 09:38:00 PST.
 
 완료: 발행 0건 / 실패 1건
