@@ -14,9 +14,10 @@ jobs:
 
       - run: pip install requests
 
-      - name: 계정·토큰·발행 한도 진단
+      - name: 이미지·릴스 실제 게시 진단
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
-        run: python -u publish.py --check
+          TEST_CONTAINER_ID: ${{ vars.TEST_CONTAINER_ID || '17974658381973700' }}
+        run: python -u publish.py --test-publish

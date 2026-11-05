@@ -376,14 +376,16 @@ def build_video(card_files, tts_results, output_path, tmp_dir):
                    "-i", audio, "-t", f"{dur:.2f}",
                    "-filter_complex", vf, "-r", "30",
                    "-c:a", "aac", "-b:a", "128k", "-shortest",
-                   "-c:v", "libx264", "-preset", "fast", "-crf", "23", seg_path]
+                   "-c:v", "libx264", "-profile:v", "high", "-level:v", "4.0",
+                   "-pix_fmt", "yuv420p", "-preset", "fast", "-crf", "23", seg_path]
         else:
             cmd = ["ffmpeg", "-y", "-loop", "1", "-i", card,
                    "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
                    "-t", f"{dur:.2f}",
                    "-filter_complex", vf, "-r", "30",
                    "-c:a", "aac", "-shortest",
-                   "-c:v", "libx264", "-preset", "fast", "-crf", "23", seg_path]
+                   "-c:v", "libx264", "-profile:v", "high", "-level:v", "4.0",
+                   "-pix_fmt", "yuv420p", "-preset", "fast", "-crf", "23", seg_path]
 
         subprocess.run(cmd, capture_output=True, check=True)
         segments.append(seg_path)
@@ -396,7 +398,8 @@ def build_video(card_files, tts_results, output_path, tmp_dir):
             f.write(f"file '{s}'\n")
 
     cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", list_file,
-           "-c:v", "libx264", "-preset", "fast", "-crf", "23",
+           "-c:v", "libx264", "-profile:v", "high", "-level:v", "4.0",
+           "-pix_fmt", "yuv420p", "-preset", "fast", "-crf", "23",
            "-c:a", "aac", "-b:a", "128k",
            "-movflags", "+faststart",
            output_path]

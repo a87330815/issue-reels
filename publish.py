@@ -304,6 +304,40 @@ def record(entries):
     print(f"\n발행 기록: {PUBLISHED}")
 
 
+def test_publish():
+    """이미지 1건과 최근 실패한 릴스를 분리해 실제 API 발행 경로를 진단한다."""
+    print("[진단] 최근 미디어 확인")
+    before = api("GET", f"{IG_ID}/media", fields="id,timestamp,media_type,caption", limit=10)
+    before_ids = {x.get("id") for x in before.get("data", [])}
+
+    image_url = os.environ.get(
+        "TEST_IMAGE_URL",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/280px-PNG_transparency_demonstration_1.png",
+    )
+    print("[진단] 이미지 컨테이너 생성 및 게시")
+    try:
+        image = api("POST", f"{IG_ID}/media", image_url=image_url,
+                    caption="[진단 테스트] 확인 후 삭제 예정")
+        image_id = image["id"]
+        time.sleep(8)
+        print(f"  이미지 게시 결과: {api('POST', f'{IG_ID}/media_publish', creation_id=image_id).get('id')}")
+    except Exception as e:
+        print(f"  이미지 게시 실패: {e}")
+
+    failed_cid = os.environ.get("TEST_CONTAINER_ID", "17974658381973700")
+    print(f"[진단] 릴스 컨테이너 재게시: {failed_cid}")
+    try:
+        print(f"  상태: {api('GET', failed_cid, fields='status_code,status')}")
+        print(f"  릴스 게시 결과: {api('POST', f'{IG_ID}/media_publish', creation_id=failed_cid).get('id')}")
+    except Exception as e:
+        print(f"  릴스 게시 실패: {e}")
+
+    after = api("GET", f"{IG_ID}/media", fields="id,timestamp,media_type,caption", limit=10)
+    new_ids = [x.get("id") for x in after.get("data", []) if x.get("id") not in before_ids]
+    print(f"[진단] 새로 확인된 미디어: {new_ids or '없음'}")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description="인스타그램 릴스 발행")
     ap.add_argument("--manifest", help="업로드 매니페스트 (upload.py 출력)")
@@ -312,12 +346,19 @@ def main():
     ap.add_argument("--caption", help="캡션")
     ap.add_argument("--script", help="대본 JSON — 캡션을 여기서 만든다")
     ap.add_argument("--check", action="store_true", help="설정만 점검")
+    ap.add_argument("--test-publish", action="store_true", help="이미지·릴스 실제 게시 진단")
     ap.add_argument("--dry-run", action="store_true", help="발행 직전까지만")
     ap.add_argument("--limit", type=int, default=1, help="한 번에 발행할 최대 편수")
     args = ap.parse_args()
 
     if args.check:
         return 0 if check() else 1
+
+    if args.test_publish:
+        if not IG_ID or not TOKEN:
+            print("[중단] IG_USER_ID / IG_ACCESS_TOKEN 미설정")
+            return 1
+        return test_publish()
 
     if not IG_ID or not TOKEN:
         if not args.dry_run:
