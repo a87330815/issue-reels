@@ -1,0 +1,62 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "smartphone mobile phone SIM card",
+      "source": "Unsplash",
+      "creator": "Airalo",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/person-holding-smartphone-browsing-travel-app-36cLNK7lzg4"
+    },
+    {
+      "slot": "scene1",
+      "query": "phone bill receipt invoice",
+      "source": "Unsplash",
+      "creator": "Annie Spratt",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-receipt-sitting-on-top-of-a-wooden-table-recgFWxDO1Y"
+    },
+    {
+      "slot": "scene2",
+      "query": "mobile network tower signal",
+      "source": "Unsplash",
+      "creator": "Dušan veverkolog",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/red-and-grey-cell-site-8q-g0uY6jU8"
+    },
+    {
+      "slot": "scene3",
+      "query": "mobile phone comparing prices discount",
+      "source": "Unsplash",
+      "creator": "CardMapr.nl",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/person-holding-black-samsung-android-smartphone-hTUZW7E7krg"
+    },
+    {
+      "slot": "scene4",
+      "query": "smartphone screen data usage statistics",
+      "source": "Unsplash",
+      "creator": "Georgia de Lotz",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-person-holding-a-cell-phone-in-their-hand-Ebb8fe-NZtM"
+    },
+    {
+      "slot": "scene5",
+      "query": "happy man saving money satisfied",
+      "source": "Unsplash",
+      "creator": "Melissa Walker Horn",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/man-holding-clear-glass-jar-76HIoI5Ni1E"
+    }
+  ],
+  "wanted": 6,
+  "fetched_at": "2026-11-05T03:53:44Z"
+}
