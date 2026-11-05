@@ -56,7 +56,7 @@ load_env()
 
 IG_ID = os.environ.get("IG_USER_ID", "")
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
-HOST = os.environ.get("IG_API_HOST", "graph.instagram.com")
+HOST = os.environ.get("IG_API_HOST", "graph.facebook.com")
 VERSION = os.environ.get("IG_API_VERSION", "v26.0")
 BASE = f"https://{HOST}/{VERSION}"
 

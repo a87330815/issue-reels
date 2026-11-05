@@ -18,6 +18,6 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.instagram.com' }}
+          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
           TEST_CONTAINER_ID: ${{ vars.TEST_CONTAINER_ID || '17974658381973700' }}
         run: python -u publish.py --test-publish
