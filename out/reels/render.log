@@ -1,57 +1,84 @@
-run 41836289452 2026-11-04T13:15:15Z
+run 41957126480 2026-11-05T02:44:58Z
 
-=== 20261024_09_숫자훅 ===
-  [cover] '황희찬' → "Korea city luxury apartment"
+=== 20261104_fun_05_공감훅 ===
+  [cover] '삼각김밥 뜯는 순서 전쟁' → "onigiri triangle kimbap package"
     [unsplash] 0건 후보
-    [openverse] 2건 후보
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "Korea city luxury"
+    ↻ 재시도: "onigiri triangle kimbap"
     [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] ''황희찬' 관련 트렌드 —' → "Korea city luxury apartment"
-    [unsplash] 0건 후보
-    [openverse] 2건 후보
+  [scene1] '먹을 때마다 헷갈리는데' → "convenience store triangle rice ball shelf"
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "Korea city luxury"
-    [unsplash] 12건 후보
-    적합도 통과 0/2건 (Openverse/Wikimedia)
-    Unsplash 12건 (적합도 필터 생략)
+    Unsplash 11건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '팔로우 · 매일 업데이트' → "follow subscribe social media phone"
+  [scene2] '순서 하나 틀려도 망한다' → "hands tearing seaweed wrapper rice"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene2 ← Unsplash (Unsplash License)
-  → 3/3장 저장, 매니페스트: out/photos/20261024_09_숫자훅/photos.json
+  [scene3] '왜 자꾸 망가지냐고' → "torn seaweed pieces broken rice ball"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '어른도 못 뜯는다' → "eating triangle rice ball casual"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "eating triangle rice ball"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "eating triangle rice"
+    [unsplash] 0건 후보
+    [openverse] 실패: 500 Server Error: Internal Server Error for url: https://api.openverse.org/v1/images/?q=eating+triangle+rice&license=cc0%2Cpdm%2Cby&page_size=12&mature=false
+    [wikimedia] 1건 후보
+    ↻ 재시도: "eating triangle"
+    [unsplash] 12건 후보
+    적합도 통과 0/1건 (Openverse/Wikimedia)
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '팔로우는 필수인데요' → "follow button subscribe notification"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
+    ✓ scene5 ← Unsplash (Unsplash License)
+  → 6/6장 저장, 매니페스트: out/photos/20261104_fun_05_공감훅/photos.json
 
-총 3/3장 수집
-  사진 3장 적용: cover, scene1, scene2
-카드뉴스 4장 생성 → out/cards_20261024_09_숫자훅
-대본: out/scripts/20261024_09_숫자훅.json
-카드: out/cards_20261024_09_숫자훅 (4장)
+총 6/6장 수집
+  사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
+카드뉴스 7장 생성 → out/cards_20261104_fun_05_공감훅
+대본: out/scripts/20261104_fun_05_공감훅.json
+카드: out/cards_20261104_fun_05_공감훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/3] [EL·발랄녀] 0.9초  황희찬...
-  TTS [2/3] [EL·발랄녀] 12.7초  이거 모르고 지나가면 손해다. '황희찬' 관련 트렌...
-  TTS [3/3] [EL·발랄녀] 4.4초  오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 ...
+  TTS [1/6] [EL·발랄녀] 2.4초  삼각김밥 뜯는 순서 전쟁...
+  TTS [2/6] [EL·발랄녀] 5.4초  편의점 가서 삼각김밥 집어 드는 거 누구나 해봤지?...
+  TTS [3/6] [EL·발랄녀] 9.6초  위에 붙은 노란 줄부터 벗기는 사람, 아래 검은 테...
+  TTS [4/6] [EL·발랄녀] 7.8초  결국 남은 건 뜯긴 김 조각하고 밥. 그래도 먹긴 ...
+  TTS [5/6] [EL·발랄녀] 5.6초  어른이 돼서도 삼각김밥 제대로 뜯는 법을 몰라. 진...
+  TTS [6/6] [EL·발랄녀] 6.1초  이런 거 더 공감되면 팔로우 눌러줘. 우린 함께 삼...
 
 2) 영상 합성
-  세그먼트 [1/4] 3.0초
-  세그먼트 [2/4] 13.5초
-  세그먼트 [3/4] 5.2초
-  세그먼트 [4/4] 4.0초
+  세그먼트 [1/7] 3.2초
+  세그먼트 [2/7] 6.2초
+  세그먼트 [3/7] 10.4초
+  세그먼트 [4/7] 8.6초
+  세그먼트 [5/7] 6.4초
+  세그먼트 [6/7] 6.9초
+  세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261024_09_숫자훅.mp4
-    길이: 22.0초  /  크기: 1.2MB
--rw-r--r-- 1 runner runner 1.2M Nov  4 13:15 out/reels/20261024_09_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261104_fun_05_공감훅.mp4
+    길이: 40.8초  /  크기: 2.1MB
+-rw-r--r-- 1 runner runner 2.1M Nov  5 02:46 out/reels/20261104_fun_05_공감훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=21.960272
+duration=40.760272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -59,8 +86,8 @@ duration=21.960272
 
 설정 완료
 
-업로드 1건 (태그 reels-2026-11-04):
-  20261024_09_숫자훅.mp4  1.2MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-04/20261024_09.mp4
+업로드 1건 (태그 reels-2026-11-05):
+  20261104_fun_05_공감훅.mp4  2.1MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-05/20261104_fun_05.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -71,12 +98,12 @@ duration=21.960272
 남은 발행 가능: 99건
 발행 대상: 1건
 
-── 1/1  20261024_09_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-04/20261024_09.mp4
-  캡션: 황희찬
-  컨테이너: 17974395707973700
-      1초  IN_PROGRESS
-     33초  FINISHED
+── 1/1  20261104_fun_05_공감훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-05/20261104_fun_05.mp4
+  캡션: 삼각김밥 뜯는 순서 전쟁
+  컨테이너: 17974655543973700
+      0초  IN_PROGRESS
+     45초  FINISHED
   [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
