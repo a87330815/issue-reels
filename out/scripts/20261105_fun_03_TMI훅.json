@@ -1,0 +1,46 @@
+{
+  "title": "엘리베이터 닫힘 버튼의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "엘리베이터 닫힘 버튼",
+      "<r>누르면 닫혀?</r>"
+    ],
+    "badge": null,
+    "photo_query": "elevator door close button"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 엘리베이터 탈 때 닫힘 버튼 있지? 우리 계속 누르고 있잖아. '빨리 닫혀라' 하면서.",
+      "subtitle": "닫힘 버튼을 계속 누르는 사람",
+      "photo_query": "person pressing elevator button repeatedly"
+    },
+    {
+      "image": null,
+      "narration": "그런데 말이다. 대부분의 엘리베이터 닫힘 버튼은 사실 안 된다 카더라. 장애인 법규 때문에 버튼은 있는데 기능이 없다는 거야.",
+      "subtitle": "진짜 작동 안 한다고?",
+      "photo_query": "broken elevator button mechanism"
+    },
+    {
+      "image": null,
+      "narration": "응급 상황이나 특수한 경우에만 작동된다고 한다. 그럼 우리가 지금까지 뭘 누르고 있던 거야? 공기 누르고 있었네.",
+      "subtitle": "공기를 누르고 있었다",
+      "photo_query": "man confused frustrated"
+    },
+    {
+      "image": null,
+      "narration": "다음에 엘리베이터 탈 때 한 번 생각해 봐. '아, 이건 위로만 가는 버튼이구나' 하면서. 그래도 또 누르겠지만.",
+      "subtitle": "알면서도 또 누른다",
+      "photo_query": "elevator closing doors automatic"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T03:27:14.750026+00:00"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "title": "해운대 좌동 아파트 실거래가",
+  "cover": {
+    "image": null,
+    "lines": [
+      "해운대 좌동",
+      "<r>11.7억</r>",
+      "최고가 터졌다"
+    ],
+    "badge": null,
+    "photo_query": "Haeundae district Busan apartment complex"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 해운대 좌동에서 방금 11억 7천만 원에 팔린 아파트가 나왔다.",
+      "subtitle": "해운대 좌동 최고가 거래",
+      "photo_query": "apartment contract signing documents"
+    },
+    {
+      "image": null,
+      "narration": "128제곱미터 넓이에 2011년 지은 케이씨씨스위첸. 7층이다. 이거. 이 가격 보면 지역 시세를 잡을 수 있다.",
+      "subtitle": "128㎡, 2011년 준공, 7층",
+      "photo_query": "modern apartment building facade"
+    },
+    {
+      "image": null,
+      "narration": "같은 동에서 73평대는 7억 3천만 원대, 59평대는 3천만 원대. 자기 평수랑 비교해봐라.",
+      "subtitle": "평수별 거래가 폭 확인하기",
+      "photo_query": "apartment floor plans comparison"
+    },
+    {
+      "image": null,
+      "narration": "최근 10월, 11월 거래 데이터니까 지금 시세가 이 정도라고 봐도 된다. 팔 생각 있으면 이걸 기준으로 공인중개사를 찾아가거라.",
+      "subtitle": "2026년 10~11월 최신 거래",
+      "photo_query": "real estate agent office consultation"
+    },
+    {
+      "image": null,
+      "narration": "쫌봐봐 팔로우하면 부산 아파트 시세. 매주 업뎃으로 받을 수 있다. 손가락만 한 번.",
+      "subtitle": "팔로우 & 알림 설정",
+      "photo_query": "smartphone notification settings"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        11.7,
+        7.3,
+        5.0,
+        4.1,
+        3.8
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-05T03:26:28.977775+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "물류센터 교통대책 체크리스트",
+  "cover": {
+    "image": null,
+    "lines": [
+      "물류센터 때문에",
+      "교통 바뀐다",
+      "<y>확인해라</y>"
+    ],
+    "badge": null,
+    "photo_query": "logistics warehouse truck traffic road"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 화성 정남면에 큰 물류센터가 생기는데 교통이 좀 복잡해질 거다. 지역 사람들은 꼭 알아둬야 한다.",
+      "subtitle": "물류센터 건설로 교통 변화",
+      "photo_query": "construction site logistics center korea"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째. 대형 화물차 통행량이 늘어난다. 출퇴근 시간대에 특히 혼잡할 수 있다.",
+      "subtitle": "화물차 통행량 증가",
+      "photo_query": "heavy truck traffic congestion road"
+    },
+    {
+      "image": null,
+      "narration": "두 번째. 인근 도로 정체가 심해질 수 있다. 미리 우회 경로를 알아두는 게 좋다.",
+      "subtitle": "도로 정체 예상",
+      "photo_query": "traffic jam congestion highway korea"
+    },
+    {
+      "image": null,
+      "narration": "세 번째. 지자체가 교통대책을 준비 중이다. 신호등 개선이나 도로 확장 같은 걸 추진한다.",
+      "subtitle": "지자체 교통대책 추진",
+      "photo_query": "traffic light road improvement construction"
+    },
+    {
+      "image": null,
+      "narration": "네 번째. 지역 주민이라면 이웃 지역 소식도 팔로우해라. 더 많은 생활 정보가 있다.",
+      "subtitle": "지역 주민 필독",
+      "photo_query": "community neighborhood residents discussion"
+    }
+  ],
+  "meta": {
+    "format": "체크리스트",
+    "source": "google_trends",
+    "category": "생활·지원금·제도",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-05T03:26:15.515401+00:00"
+  }
+}

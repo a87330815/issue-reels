@@ -1,0 +1,53 @@
+{
+  "title": "삼각김밥 뜯는 법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "삼각김밥",
+      "<r>뜯는 순서</r>",
+      "틀려본 사람?"
+    ],
+    "badge": null,
+    "photo_query": "triangle kimbap convenience store"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "편의점 가서 따뜻한 삼각김밥 집어들었다. 야야야, 이거 뜯는 방법이 정해져 있다 알아?",
+      "subtitle": "삼각김밥의 비밀",
+      "photo_query": "kimbap wrapper detail"
+    },
+    {
+      "image": null,
+      "narration": "대부분 옆에 있는 띠 부분부터 뜯는데... 야, 그거 틀렸다! 그럼 김이 이렇게 우르르 찢어진다.",
+      "subtitle": "띠부터 뜯으면 끝장",
+      "photo_query": "torn seaweed wrapper ripped"
+    },
+    {
+      "image": null,
+      "narration": "정답은 맨 밑에 있는 뾰족한 모서리부터 뜯어야 한다! 거기부터 슉 잡아당기면 김이 깔끔하게 풀린다.",
+      "subtitle": "모서리가 정답",
+      "photo_query": "triangle kimbap opening bottom corner"
+    },
+    {
+      "image": null,
+      "narration": "지금까지 삼각김밥 뜯을 때마다 김 다 찢어졌던 사람? 이제 안다!",
+      "subtitle": "인생 팁 하나 받아가세요",
+      "photo_query": "happy eating kimbap satisfied"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우! 쫌봐봐에서 계속 깨달음을 줄게.",
+      "subtitle": "팔로우 눌러야지",
+      "photo_query": "subscribe follow button"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T03:27:02.066040+00:00"
+  }
+}

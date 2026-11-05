@@ -1,0 +1,62 @@
+{
+  "title": "강남 아파트값, 지역마다 60배 차이",
+  "cover": {
+    "image": null,
+    "lines": [
+      "강남인데",
+      "<r>60배</r>",
+      "차이난다?"
+    ],
+    "badge": null,
+    "photo_query": "seoul gangnam apartment complex comparison"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 강남 아파트 같은 면적인데 지역에 따라 가격이 60배 난다. 진짜다.",
+      "subtitle": "강남 지역별 아파트값 편차",
+      "photo_query": "seoul gangnam district map neighborhoods"
+    },
+    {
+      "image": null,
+      "narration": "잠원동은 49억. 대치동은 47억. 압구정동도 51억 수준이다.",
+      "subtitle": "잠원·대치·압구정 평균 50억대",
+      "photo_query": "luxury apartment building high rise"
+    },
+    {
+      "image": null,
+      "narration": "근데 말이야. 같은 강남권인데 대화동은 0.8억이다. 와 대박. 85제곱미터 남짓한데 800만원 수준이라 이거.",
+      "subtitle": "대화동은 0.8억 수준",
+      "photo_query": "old apartment building residential area"
+    },
+    {
+      "image": null,
+      "narration": "지역마다 60배 차이가 난다는 거. 같은 강남이라도 어디 사는가가 전부다.",
+      "subtitle": "같은 강남도 선택이 중요",
+      "photo_query": "apartment building exterior facade comparison"
+    },
+    {
+      "image": null,
+      "narration": "강남 아파트 시세, 우리 채널에서 매주 업데이트한다. 팔로우 해라.",
+      "subtitle": "팔로우하고 시세 확인하기",
+      "photo_query": "real estate mobile app phone screen"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        49.0,
+        46.7,
+        44.3,
+        36.0,
+        25.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-05T03:26:21.600243+00:00"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "장기기증으로 8명이 살아났다",
+  "cover": {
+    "image": null,
+    "lines": [
+      "한 명의 결정으로",
+      "<r>8명</r>이 살아났다"
+    ],
+    "badge": null,
+    "photo_query": "hospital medical team surgery room"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 갑자기 쓰러진 20대 여성이 있었다. 하지만 그 결정이 8명의 사람을 살렸다.",
+      "subtitle": "한 명의 결정이 8명을 살렸다",
+      "photo_query": "hospital patient emergency room"
+    },
+    {
+      "image": null,
+      "narration": "장기기증. 대수롭지 않게 생각하는데, 현실은 다르다. 신장, 간, 심장. 한 사람이 기증하면 여러 사람이 새 삶을 시작한다.",
+      "subtitle": "신장·간·심장 모두 기증 가능",
+      "photo_query": "organ donation medical consent form"
+    },
+    {
+      "image": null,
+      "narration": "딱 하나만 기억해라. 운전면허 갱신할 때, 건강검진할 때. 그 체크박스가 누군가의 내일을 바꾼다.",
+      "subtitle": "면허갱신·검진 때 기증 의사 표시",
+      "photo_query": "driver license renewal korea"
+    },
+    {
+      "image": null,
+      "narration": "야야야. 지금이 그때다. 너의 결정이 8명을 살릴 수 있다. 소중한 결정을 해봐라.",
+      "subtitle": "당신의 결정이 생명을 구한다",
+      "photo_query": "hope light helping hands together"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-05T03:26:48.867726+00:00"
+  }
+}

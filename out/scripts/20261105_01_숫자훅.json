@@ -1,0 +1,62 @@
+{
+  "title": "대치동 선경1차 51억 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "대치동 아파트",
+      "<r>51억</r>",
+      "이게 현실이다"
+    ],
+    "badge": null,
+    "photo_query": "Seoul gangnam luxury apartment complex"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 방금 터진 거래다. 대치동 선경1차. 51억이다.",
+      "subtitle": "대치동 선경1차 51억",
+      "photo_query": "luxury apartment building entrance driveway"
+    },
+    {
+      "image": null,
+      "narration": "84제곱미터 크기다. 그냥 보통 아파트 크기인데 5억이 넘는다 이거.",
+      "subtitle": "84제곱미터 × 51억",
+      "photo_query": "apartment interior living room modern design"
+    },
+    {
+      "image": null,
+      "narration": "1983년 지은 건물이다. 40년이 넘었다 아이가. 그런데도 이 가격이다.",
+      "subtitle": "40년 된 건물",
+      "photo_query": "vintage 1980s apartment building exterior aged"
+    },
+    {
+      "image": null,
+      "narration": "와. 대치동이 다르긴 하더라. 강남 강남이라 하는데 이게 실제 시장이다.",
+      "subtitle": "강남 최강 수요처",
+      "photo_query": "Seoul Daechi dong street buildings trees"
+    },
+    {
+      "image": null,
+      "narration": "쫌봐봐 채널 구독해라. 이런 거래 안 놓칠기다.",
+      "subtitle": "구독 필수",
+      "photo_query": "smartphone notifications real estate app"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        51.0,
+        51.0,
+        49.0,
+        46.8,
+        46.0
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-05T03:26:01.694757+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "우이신설선 열차 지연 사태",
+  "cover": {
+    "image": null,
+    "lines": [
+      "출근길 열차",
+      "<r>4시간</r>",
+      "멈췄다"
+    ],
+    "badge": null,
+    "photo_query": "seoul subway train platform commuters rush"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 오늘 아침 우이신설선 전 구간이 운행을 멈췄다. 4시간여를 그냥 서 있었다.",
+      "subtitle": "우이신설선 전 구간 운행 지연",
+      "photo_query": "train station delay announcement board"
+    },
+    {
+      "image": null,
+      "narration": "출근 시간이면 정신없는데 이거 걸렸다 하면 그냥 지옥이다. 탈 줄 알고 나갔는데 못 탄다.",
+      "subtitle": "아침 출근길 완전 마비",
+      "photo_query": "crowded subway platform waiting passengers"
+    },
+    {
+      "image": null,
+      "narration": "다행히 4시간 만에 정상화됐다. 근데 요점은 이거다. 늘 이런 일이 터진다.",
+      "subtitle": "4시간 후 정상 운행 재개",
+      "photo_query": "train moving on subway tracks"
+    },
+    {
+      "image": null,
+      "narration": "출퇴근길에 타는 노선이면 미리 알아둬야 한다. 날씨 안 좋을 땐 더 조심하고.",
+      "subtitle": "자주 이용한다면 꼭 확인하기",
+      "photo_query": "person checking mobile phone transit app"
+    },
+    {
+      "image": null,
+      "narration": "우이신설선 타는 분들, 이제 알았지? 더 알아야 할 정보 있으면 팔로우해라.",
+      "subtitle": "쫌봐봐에서 놓치지 말기",
+      "photo_query": "seoul metro map transit information"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-05T03:26:55.488533+00:00"
+  }
+}

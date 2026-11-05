@@ -1,0 +1,53 @@
+{
+  "title": "퇴근 후 침대의 마법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "퇴근하고",
+      "침대 누우면",
+      "<r>세상이 끝난다</r>"
+    ],
+    "badge": null,
+    "photo_query": "tired person lying on bed after"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "아 진짜. 퇴근하고 침대에 누우면 그 순간이 최고의 순간이거든. 맞지? 온몸이 풀려.",
+      "subtitle": "침대 위의 해방감",
+      "photo_query": "person lying bed relaxed evening"
+    },
+    {
+      "image": null,
+      "narration": "직장에선 한 시간도 앉아있기 힘든데, 침대 위에선 5시간도 모르고 누워있다니까. 와 대박.",
+      "subtitle": "침대 위의 시간은 특별해",
+      "photo_query": "person lying bed comfortable pillow"
+    },
+    {
+      "image": null,
+      "narration": "근데 진짜 신기한 게, 침대에 누우면 일어나야 할 이유가 하나도 안 보여. 밥도 안 먹고 싶고.",
+      "subtitle": "침대의 무한 흡수력",
+      "photo_query": "cozy bed blanket dark room"
+    },
+    {
+      "image": null,
+      "narration": "이거 아니냐. 내일 또 일어나야 되는데, 침대에만 누우면 '아 오늘 여기가 끝이구나' 이렇게 생각돼.",
+      "subtitle": "현실 도피의 시작",
+      "photo_query": "person bed thinking staring ceiling"
+    },
+    {
+      "image": null,
+      "narration": "침대야 미안. 넌 진짜 최고야. 이런 거 더 보고 싶으면 팔로우해 봐.",
+      "subtitle": "침대는 우리의 피난처",
+      "photo_query": "peaceful bedroom night light"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T03:27:20.986734+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "냉동실의 배신",
+  "cover": {
+    "image": null,
+    "lines": [
+      "숨겨둔",
+      "<r>아이스크림</r>",
+      "누가 먹었을 때"
+    ],
+    "badge": null,
+    "photo_query": "empty ice cream container freezer"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 내가 냉동실 제일 안쪽에 몰래 숨겨둔 아이스크림 있잖아. 근데 갑자기 생각나서 꺼내보니 없는 거야.",
+      "subtitle": "어? 여기 뭐가 없네?",
+      "photo_query": "shocked person opening freezer"
+    },
+    {
+      "image": null,
+      "narration": "용기만 남아 있지 않나. 숟가락 자국까지 남아 있다 이거야. 누가 먹었는지 다 보인다고.",
+      "subtitle": "숟가락 자국까지 있네",
+      "photo_query": "empty ice cream tub tracks spoon"
+    },
+    {
+      "image": null,
+      "narration": "가족한테 물어보니까 다들 모른대. 근데 이거 알지? 아이스크림은 혼자 먹으려고 숨길 때가 제일 맛있거든.",
+      "subtitle": "근데 이거 아는가? 숨길 때가 더 맛있어",
+      "photo_query": "family dinner table awkward silence"
+    },
+    {
+      "image": null,
+      "narration": "결국 범인은 못 찾고 나만 남겨진 용기를 들고 서 있네. 이 배신감... 이거 누가 아나?",
+      "subtitle": "진짜 누가 먹었냐고!",
+      "photo_query": "person holding empty container disappointed"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우해. 우리 집도 다 그런 거다 아이가.",
+      "subtitle": "너희 집도 그지?",
+      "photo_query": "follow subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T03:27:08.792674+00:00"
+  }
+}

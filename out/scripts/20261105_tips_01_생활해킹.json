@@ -1,0 +1,53 @@
+{
+  "title": "이사 준비 버리기 아까운 물건 처리법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "버리기 아까운 것",
+      "<r>3일 안에</r>",
+      "팔아버리자"
+    ],
+    "badge": null,
+    "photo_query": "moving boxes packing items"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이사 준비할 때 제일 힘든 게 뭐냐면, 아직 쓸 수 있는데 버릴 수 없는 물건들이 있잖아. 그럼 이렇게 처리해버려.",
+      "subtitle": "버리기 아까운 물건의 현실적 처리법",
+      "photo_query": "cluttered room moving day"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째, 당신 집에 남는 물건들을 폰으로 찍어서 당근마켓이나 번개장터에 올려. 3일 안에 대부분 팔린다고 카더라.",
+      "subtitle": "당근마켓·번개장터에 올린다",
+      "photo_query": "smartphone selling app used items"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 옷이나 책이 많으면 중고 전문점한테 한 번에 가져가. 시간을 아낄 수 있고 거기서 바로 돈을 받을 수 있다.",
+      "subtitle": "중고 전문점에 일괄 판매 (시간 절약)",
+      "photo_query": "second hand shop vintage clothes books"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 안 팔린 물건들은 헌옷 수거함이나 자선 단체에 기부해버려. 이건 이사 비용도 아낄 수 있고 남한테도 도움 되니까.",
+      "subtitle": "남은 물건은 기부 (이사비용 절감)",
+      "photo_query": "charity donation box clothing"
+    },
+    {
+      "image": null,
+      "narration": "이렇게 3단계로 처리하면 정말 깔끔하게 정리되고, 쓸데없는 물건들은 안 들고 가게 된다. 이런 이사 팁 더 보고 싶으면 팔로우해 봐.",
+      "subtitle": "깔끔한 이사 준비 완료",
+      "photo_query": "empty room after moving organized"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T03:27:43.448934+00:00"
+  }
+}

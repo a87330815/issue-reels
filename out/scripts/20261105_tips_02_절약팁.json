@@ -1,0 +1,53 @@
+{
+  "title": "알뜰폰으로 갈아타기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "알뜰폰으로",
+      "<r>월 3만 원</r>",
+      "절약하는 법"
+    ],
+    "badge": null,
+    "photo_query": "smartphone mobile phone SIM card"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "지금 쓰는 통신사 요금을 한 번 봐봐. 대부분 월 5~7만 원 나가지 아이가. 알뜰폰으로 바꾸면 월 2만 원대로 줄일 수 있다.",
+      "subtitle": "기존 통신사 vs 알뜰폰",
+      "photo_query": "phone bill receipt invoice"
+    },
+    {
+      "image": null,
+      "narration": "알뜰폰은 뭔가 하면, 대형 통신사 망을 빌려 쓰는 거거든. 통화 품질은 똑같고 중간다리 비용을 빼니까 싼 거다.",
+      "subtitle": "같은 망, 더 싼 가격",
+      "photo_query": "mobile network tower signal"
+    },
+    {
+      "image": null,
+      "narration": "알뜰폰 3사를 비교해봐. SK 알뜰폰(헬로모바일)은 월 1만 9천 원, LG 알뜰폰(모바일케이)은 월 2만 원, KT 알뜰폰(올레스튜디오)도 비슷해.",
+      "subtitle": "월 2만원대 요금제",
+      "photo_query": "mobile phone comparing prices discount"
+    },
+    {
+      "image": null,
+      "narration": "한 가지 팁인데, 데이터를 많이 안 쓰는 사람이라면 더 싸다. 데이터 2GB, 통화 200분이면 충분하면 월 1만 5천 원대도 있다고.",
+      "subtitle": "데이터 적으면 더 저렴",
+      "photo_query": "smartphone screen data usage statistics"
+    },
+    {
+      "image": null,
+      "narration": "이렇게 바꾸면 년 36만 원을 절약한다 아이가. 이런 꿀팁 더 보고 싶으면 팔로우해.",
+      "subtitle": "연 36만 원 절약",
+      "photo_query": "happy man saving money satisfied"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T03:27:50.914328+00:00"
+  }
+}
