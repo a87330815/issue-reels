@@ -1,45 +1,46 @@
 {
-  "title": "냉동실의 배신",
+  "title": "퇴근 후 침대의 법칙",
   "cover": {
     "image": null,
     "lines": [
-      "숨겨둔",
-      "<r>아이스크림</r>",
-      "누가 먹었을 때"
+      "퇴근하고",
+      "침대 누우면",
+      "<r>왜 이렇게</r>",
+      "행복한가"
     ],
     "badge": null,
-    "photo_query": "empty ice cream container freezer"
+    "photo_query": "tired person lying on bed relief"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 내가 냉동실 제일 안쪽에 몰래 숨겨둔 아이스크림 있잖아. 근데 갑자기 생각나서 꺼내보니 없는 거야.",
-      "subtitle": "어? 여기 뭐가 없네?",
-      "photo_query": "shocked person opening freezer"
+      "narration": "야야야, 퇴근하고 집 와서 침대에 누우면 진짜 뭔가 달라진다 이거야.",
+      "subtitle": "퇴근 후 침대 = 인생 최고의 순간",
+      "photo_query": "person entering bedroom home"
     },
     {
       "image": null,
-      "narration": "용기만 남아 있지 않나. 숟가락 자국까지 남아 있다 이거야. 누가 먹었는지 다 보인다고.",
-      "subtitle": "숟가락 자국까지 있네",
-      "photo_query": "empty ice cream tub tracks spoon"
+      "narration": "직장에선 의자에 앉아 있는데도 피곤하고, 집 와서 침대에 누우면 갑자기 세상이 끝난 것 같이 편하다니까.",
+      "subtitle": "같은 누움인데 왜 다르지?",
+      "photo_query": "woman relaxing bed comfort"
     },
     {
       "image": null,
-      "narration": "가족한테 물어보니까 다들 모른대. 근데 이거 알지? 아이스크림은 혼자 먹으려고 숨길 때가 제일 맛있거든.",
-      "subtitle": "근데 이거 아는가? 숨길 때가 더 맛있어",
-      "photo_query": "family dinner table awkward silence"
+      "narration": "낮에 누우면 미안한데, 퇴근 후 침대는 정당하거든. 이거 죄책감 없는 휴식이다 보면.",
+      "subtitle": "죄책감이 없어서 행복",
+      "photo_query": "cozy bed pillows afternoon light"
     },
     {
       "image": null,
-      "narration": "결국 범인은 못 찾고 나만 남겨진 용기를 들고 서 있네. 이 배신감... 이거 누가 아나?",
-      "subtitle": "진짜 누가 먹었냐고!",
-      "photo_query": "person holding empty container disappointed"
+      "narration": "그 침대 위에선 내가 왕이다. 밖의 모든 게 다 던져지고, 어둠과 포근함만 남는다.",
+      "subtitle": "침대 위에선 최고 권력자",
+      "photo_query": "man lying bed peaceful satisfied"
     },
     {
       "image": null,
-      "narration": "이런 거 더 보고 싶으면 팔로우해. 우리 집도 다 그런 거다 아이가.",
-      "subtitle": "너희 집도 그지?",
-      "photo_query": "follow subscribe button"
+      "narration": "이런 거 더 궁금하면 팔로우 해. 우린 매일 침대와 세상의 비밀을 풀어낸다고.",
+      "subtitle": "쫌봐봐와 함께",
+      "photo_query": "follow subscribe notification icon"
     }
   ],
   "meta": {
@@ -48,6 +49,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-05T03:27:08.792674+00:00"
+    "generated_at": "2026-11-05T10:33:08.098370+00:00"
   }
 }

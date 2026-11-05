@@ -1,62 +1,53 @@
 {
-  "title": "강남 아파트값, 지역마다 60배 차이",
+  "title": "삼성전자 DX노조 집회 - 보상체계 요구",
   "cover": {
     "image": null,
     "lines": [
-      "강남인데",
-      "<r>60배</r>",
-      "차이난다?"
+      "삼성도",
+      "<r>노조</r>",
+      "움직였다"
     ],
     "badge": null,
-    "photo_query": "seoul gangnam apartment complex comparison"
+    "photo_query": "workers union protest gathering korea"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 강남 아파트 같은 면적인데 지역에 따라 가격이 60배 난다. 진짜다.",
-      "subtitle": "강남 지역별 아파트값 편차",
-      "photo_query": "seoul gangnam district map neighborhoods"
+      "narration": "이거 모르고 지나가면 손해다. 삼성전자 반도체 부문 노조가 집회 나섰다. 공정한 보상을 달라는 거다.",
+      "subtitle": "삼성전자 DX노조 수원사업장",
+      "photo_query": "samsung semiconductor factory building"
     },
     {
       "image": null,
-      "narration": "잠원동은 49억. 대치동은 47억. 압구정동도 51억 수준이다.",
-      "subtitle": "잠원·대치·압구정 평균 50억대",
-      "photo_query": "luxury apartment building high rise"
+      "narration": "근데 이게 왜 중요한가. 삼성처럼 큰 회사도 임금·보상 문제로 이렇게 터진다는 뜻이다.",
+      "subtitle": "공정한 보상체계 요구",
+      "photo_query": "workers holding signs demands"
     },
     {
       "image": null,
-      "narration": "근데 말이야. 같은 강남권인데 대화동은 0.8억이다. 와 대박. 85제곱미터 남짓한데 800만원 수준이라 이거.",
-      "subtitle": "대화동은 0.8억 수준",
-      "photo_query": "old apartment building residential area"
+      "narration": "야야야. 이건 비단 삼성만 문제 아니다. 업계 전체에서 일하는 사람들 목소리가 커지는 거다.",
+      "subtitle": "노동 이슈 확산 중",
+      "photo_query": "labor movement workers solidarity"
     },
     {
       "image": null,
-      "narration": "지역마다 60배 차이가 난다는 거. 같은 강남이라도 어디 사는가가 전부다.",
-      "subtitle": "같은 강남도 선택이 중요",
-      "photo_query": "apartment building exterior facade comparison"
+      "narration": "앞으로 임금·복리 구조가 어떻게 바뀔지 눈여겨봐야 한다. 당신 회사도 영향받을 수 있다.",
+      "subtitle": "업계 변화의 신호",
+      "photo_query": "workplace discussion meeting negotiation"
     },
     {
       "image": null,
-      "narration": "강남 아파트 시세, 우리 채널에서 매주 업데이트한다. 팔로우 해라.",
-      "subtitle": "팔로우하고 시세 확인하기",
-      "photo_query": "real estate mobile app phone screen"
+      "narration": "더 자세한 노동 이슈와 경제뉴스는 우리 채널에서. 팔로우 해라.",
+      "subtitle": "쫌봐봐와 함께하기",
+      "photo_query": "mobile phone social media notification"
     }
   ],
   "meta": {
     "format": "숫자훅",
-    "source": "molit_apt_trade",
-    "category": "주거",
-    "attribution": "공공데이터포털 · 국토교통부",
-    "chart": {
-      "values": [
-        49.0,
-        46.7,
-        44.3,
-        36.0,
-        25.9
-      ],
-      "style": "bars"
-    },
-    "generated_at": "2026-11-05T03:26:21.600243+00:00"
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-05T10:32:23.368922+00:00"
   }
 }

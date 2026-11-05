@@ -1,45 +1,45 @@
 {
-  "title": "대치동 선경1차 51억 거래",
+  "title": "대치동 51억 아파트 거래",
   "cover": {
     "image": null,
     "lines": [
-      "대치동 아파트",
+      "대치동",
       "<r>51억</r>",
-      "이게 현실이다"
+      "이게 현실"
     ],
     "badge": null,
-    "photo_query": "Seoul gangnam luxury apartment complex"
+    "photo_query": "seoul gangnam apartment luxury building"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 방금 터진 거래다. 대치동 선경1차. 51억이다.",
+      "narration": "이거 모르고 지나가면 손해다. 대치동 선경1차. 지금 51억에 거래됐다. 이거 봐봐. 136제곱미터 아파트다.",
       "subtitle": "대치동 선경1차 51억",
-      "photo_query": "luxury apartment building entrance driveway"
+      "photo_query": "apartment building entrance sign"
     },
     {
       "image": null,
-      "narration": "84제곱미터 크기다. 그냥 보통 아파트 크기인데 5억이 넘는다 이거.",
-      "subtitle": "84제곱미터 × 51억",
-      "photo_query": "apartment interior living room modern design"
+      "narration": "1983년 지은 낡은 건물이거든. 40년 넘은 집이야. 근데 51억이다. 이게 대치동 현실이다.",
+      "subtitle": "건축 1983년 40년된 집",
+      "photo_query": "old apartment building construction year"
     },
     {
       "image": null,
-      "narration": "1983년 지은 건물이다. 40년이 넘었다 아이가. 그런데도 이 가격이다.",
-      "subtitle": "40년 된 건물",
-      "photo_query": "vintage 1980s apartment building exterior aged"
+      "narration": "평당으로 따지면 3700만원이다. 강남역 신축 아파트도 이 정도인데, 여기는 낡은 집이다.",
+      "subtitle": "평당 3700만원대",
+      "photo_query": "calculator real estate price calculation"
     },
     {
       "image": null,
-      "narration": "와. 대치동이 다르긴 하더라. 강남 강남이라 하는데 이게 실제 시장이다.",
-      "subtitle": "강남 최강 수요처",
-      "photo_query": "Seoul Daechi dong street buildings trees"
+      "narration": "대치동은 여전히 최고다. 이런 거래 정보 모르고 있으면 시장에서 뒤진다.",
+      "subtitle": "대치동 강세 계속",
+      "photo_query": "seoul gangnam real estate market trend"
     },
     {
       "image": null,
-      "narration": "쫌봐봐 채널 구독해라. 이런 거래 안 놓칠기다.",
-      "subtitle": "구독 필수",
-      "photo_query": "smartphone notifications real estate app"
+      "narration": "매달 새로운 거래 정보. 우리 채널 팔로우 해라. 손해 안 보려면.",
+      "subtitle": "매달 새로운 거래정보",
+      "photo_query": "follow subscribe notification bell icon"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-05T03:26:01.694757+00:00"
+    "generated_at": "2026-11-05T10:32:05.195974+00:00"
   }
 }

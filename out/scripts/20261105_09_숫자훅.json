@@ -1,45 +1,38 @@
 {
-  "title": "우이신설선 열차 지연 사태",
+  "title": "세월호 추모 유네스코 기록",
   "cover": {
     "image": null,
     "lines": [
-      "출근길 열차",
-      "<r>4시간</r>",
-      "멈췄다"
+      "<r>23만점</r>에 새겨진",
+      "4월의 기억"
     ],
     "badge": null,
-    "photo_query": "seoul subway train platform commuters rush"
+    "photo_query": "memorial candles yellow ribbons remembrance"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 오늘 아침 우이신설선 전 구간이 운행을 멈췄다. 4시간여를 그냥 서 있었다.",
-      "subtitle": "우이신설선 전 구간 운행 지연",
-      "photo_query": "train station delay announcement board"
+      "narration": "이거 모르고 지나가면 손해다. 유네스코에 등재된 세월호 추모 기록물이 있다는 거. 23만 점 이상이라고.",
+      "subtitle": "23만 점의 기록물",
+      "photo_query": "digital archive documents records"
     },
     {
       "image": null,
-      "narration": "출근 시간이면 정신없는데 이거 걸렸다 하면 그냥 지옥이다. 탈 줄 알고 나갔는데 못 탄다.",
-      "subtitle": "아침 출근길 완전 마비",
-      "photo_query": "crowded subway platform waiting passengers"
+      "narration": "2014년 4월. 그 시간이 멈춘 채로 보존되어 있다. 노란 리본, 추모글, 사람들의 손으로 만든 기록들이다.",
+      "subtitle": "4월의 기억이 고스란히",
+      "photo_query": "yellow ribbon memorial tribute"
     },
     {
       "image": null,
-      "narration": "다행히 4시간 만에 정상화됐다. 근데 요점은 이거다. 늘 이런 일이 터진다.",
-      "subtitle": "4시간 후 정상 운행 재개",
-      "photo_query": "train moving on subway tracks"
+      "narration": "개인 일기부터 사진, 영상까지. 국민 모두가 남긴 흔적이 세계 기록유산이 됐다는 게 뭔가 다르지 않나.",
+      "subtitle": "국민의 기억이 유산이 되다",
+      "photo_query": "people hands writing memorial notes"
     },
     {
       "image": null,
-      "narration": "출퇴근길에 타는 노선이면 미리 알아둬야 한다. 날씨 안 좋을 땐 더 조심하고.",
-      "subtitle": "자주 이용한다면 꼭 확인하기",
-      "photo_query": "person checking mobile phone transit app"
-    },
-    {
-      "image": null,
-      "narration": "우이신설선 타는 분들, 이제 알았지? 더 알아야 할 정보 있으면 팔로우해라.",
-      "subtitle": "쫌봐봐에서 놓치지 말기",
-      "photo_query": "seoul metro map transit information"
+      "narration": "시간이 지나도 잊지 않겠다는 약속. 그게 유네스코에 박혔다. 이게 역사가 되는 거다.",
+      "subtitle": "잊지 않겠다는 약속",
+      "photo_query": "historical monument stone memorial plaque"
     }
   ],
   "meta": {
@@ -48,6 +41,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-05T03:26:55.488533+00:00"
+    "generated_at": "2026-11-05T10:32:56.526727+00:00"
   }
 }

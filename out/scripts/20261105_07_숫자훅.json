@@ -1,45 +1,57 @@
 {
-  "title": "압구정동 현대14차 평당 1.98억",
+  "title": "평당 2.0억",
   "cover": {
     "image": null,
+    "photo_query": "Apgujeong Seoul luxury apartment",
     "lines": [
-      "압구정동",
-      "평당 <r>1.98억</r>",
-      "39년 된 집이"
+      "이번 달",
+      "<r>평당 2.0억</r>",
+      "거래 떴습니다"
     ],
-    "badge": null,
-    "photo_query": "seoul gangnam apartment building old construction"
+    "badge": null
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 1987년 지어진 압구정동 현대14차. 평당 1.98억이다. 요새 신축도 이 정도다.",
-      "subtitle": "39년 된 집 평당 1.98억",
-      "photo_query": "old apartment building Seoul gangnam district"
+      "photo_query": "Apgujeong Seoul luxury apartment",
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 현대14차(203,204,205,206동) 평당 1.98억 (전용 84.98㎡). 수치로 확인해보자.",
+      "subtitle": "압구정동 평당 2.0억"
     },
     {
       "image": null,
-      "narration": "비교해 봐라. 5년 전에 지어진 신반포자이는 평당 1.97억이다. 거의 같은데. 새 것이 더 싸다는 거야.",
-      "subtitle": "신축 신반포자이 평당 1.97억",
-      "photo_query": "modern luxury apartment building Seoul banpo"
+      "photo_query": "Apgujeong Seoul luxury high rise apartment",
+      "narration": "압구정동 현대14차(203,204,205,206동), 전용 85㎡(26평) 6층이 51.0억원에 실거래 신고됐다카이. 평당 2.0억. 1987년 준공.",
+      "subtitle": "압구정동"
     },
     {
       "image": null,
-      "narration": "이거 봐봐. 2018년식 반포써밋은 평당 1.47억이다. 같은 압구정·반포·대치권인데 이래도 깡패지.",
-      "subtitle": "같은 강남권 평당 1.47~1.59억",
-      "photo_query": "apartment price comparison chart real estate"
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "같은 동네 신반포자이도 주목할 만한다. 전용 85㎡(26평) 25층, 거래가 49.0억원. 평당 1.9억.",
+      "subtitle": "잠원동 신반포자이 49.0억원"
     },
     {
       "image": null,
-      "narration": "39년된 집이 최신식이랑 값이 같다는 건 뭐다? 그 땅값이 다다는 거다. 압구정은 그냥 위치빨이 장난 아니라는 거다.",
-      "subtitle": "위치 프리미엄 압구정동",
-      "photo_query": "Seoul Gangnam luxury district street view"
+      "photo_query": "Banpo Seoul luxury high rise apartment",
+      "narration": "반포써밋 전용 60㎡(18평) 13층 — 32.0억원 거래. 평당 1.8억.",
+      "subtitle": "반포동 반포써밋 32.0억원"
     },
     {
       "image": null,
-      "narration": "강남 실거래가 궁금하면 쫌봐봐 팔로우. 매주 진짜 거래값으로 때운다.",
-      "subtitle": "강남 아파트 실거래가 매주 업데이트",
-      "photo_query": "real estate trading data analysis apartment"
+      "photo_query": "Korea city luxury high rise apartment",
+      "narration": "래미안대치팰리스 전용 94㎡(29평) 16층 — 46.8억원 거래. 평당 1.6억.",
+      "subtitle": "대치동 래미안대치팰리스 46.8억원"
+    },
+    {
+      "image": null,
+      "photo_query": "real estate market price chart",
+      "narration": "이번에 확인된 5건의 거래에서 가격 차이가 19.0억원까지 벌어졌다. 평균 43.0억원 수준이다.",
+      "subtitle": "이번에 확인된 5건의 거래에서 가격"
+    },
+    {
+      "image": null,
+      "photo_query": "follow subscribe social media phone",
+      "narration": "오늘 내용이 도움이 됐다면 팔로우 해주이소. 매일 이슈 정리해드린다.",
+      "subtitle": "팔로우 · 매일 업데이트"
     }
   ],
   "meta": {
@@ -57,6 +69,7 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-05T03:26:43.135025+00:00"
+    "tone": "경상도",
+    "generated_at": "2026-11-05T10:32:43.763739+00:00"
   }
 }

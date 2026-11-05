@@ -1,45 +1,45 @@
 {
-  "title": "침산동 아파트 실거래 분석",
+  "title": "침산동 최고가 아파트",
   "cover": {
     "image": null,
     "lines": [
       "침산동",
       "<r>5.8억</r>",
-      "떴다"
+      "실제 거래됐다"
     ],
     "badge": null,
-    "photo_query": "Daegu apartment building exterior modern"
+    "photo_query": "daegu apartment building modern complex"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 침산동 아파트 시장 뒤바뀌고 있다. 방금 더샵프리미엘에 5억 8천만 원대 거래가 나왔거든.",
-      "subtitle": "더샵프리미엘 5.8억",
-      "photo_query": "luxury apartment building entrance"
+      "narration": "이거 모르고 지나가면 손해다. 침산동 아파트 거래 막 났다. 최고가를 봤는데 뭐라카노.",
+      "subtitle": "침산동 최고가 5.8억",
+      "photo_query": "apartment price tag trading market"
     },
     {
       "image": null,
-      "narration": "이거. 2024년에 지은 따끈따끈한 신축이다. 71제곱미터, 33층짜리. 침산동에서 이 정도 급은 처음이다.",
-      "subtitle": "2024년 신축, 71㎡, 33층",
-      "photo_query": "new apartment building construction completed"
+      "narration": "더샵프리미엘. 71제곱미터짜리가 5억 8천. 2024년도에 지은 신축이다.",
+      "subtitle": "더샵프리미엘 71㎡ 5.8억",
+      "photo_query": "luxury apartment interior modern design"
     },
     {
       "image": null,
-      "narration": "비교해봐라. 명성푸르지오는 4억 1천, 침산화성파크드림은 4억 900만이다. 2억이 넘게 차이 난다.",
-      "subtitle": "명성푸르지오 4.1억",
-      "photo_query": "apartment price comparison numbers"
+      "narration": "그 다음이 명성푸르지오. 4억 1천. 100제곱미터가 넘는데 신축의 절반이다.",
+      "subtitle": "가격 편차 크다 진짜",
+      "photo_query": "korea apartment complex comparison"
     },
     {
       "image": null,
-      "narration": "침산동이 고가 신축으로 올라가는 중이다. 지금이 아니면 못 본다. 침산동 시장이 뜨고 있다는 신호다.",
-      "subtitle": "침산동 고가 신축 시장 변화",
-      "photo_query": "seoul real estate market growth chart"
+      "narration": "침산동에 지금 뭐가 일어나는 거냐. 신축이 나왔으니까 지역 전체가 요동이는 거다.",
+      "subtitle": "침산동 재개발 영향",
+      "photo_query": "seoul neighborhood apartment development construction"
     },
     {
       "image": null,
-      "narration": "더 자세한 거래 동향은 팔로우해서 계속 봐라. 쫌봐봐에서 침산동 핫플레이스 정보를 놓치지 말고.",
-      "subtitle": "팔로우로 침산동 시장 정보 받기",
-      "photo_query": "smartphone mobile app notification"
+      "narration": "침산동 사는 분들, 침산동 빌 생각 있는 분들. 이 데이터 봐야 한다. 팔로우 해라. 매달 최신 거래 가 올린다.",
+      "subtitle": "지역 거래가 계속 공개",
+      "photo_query": "real estate market data analysis chart"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-05T03:26:35.957269+00:00"
+    "generated_at": "2026-11-05T10:32:37.097383+00:00"
   }
 }

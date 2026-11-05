@@ -1,0 +1,53 @@
+{
+  "title": "알뜰폰으로 바꿔서 월 3만 원 절약하기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "알뜰폰으로 바꾸면",
+      "<r>월 3만원</r>",
+      "절약된다"
+    ],
+    "badge": null,
+    "photo_query": "smartphone mobile phone savings"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "지금 쓰는 통신사, 기본료만 해도 5만 원대다 아이가. 알뜰폰으로 바꾸면 2만 원대로 뚝 떨어진다.",
+      "subtitle": "기본료 5만 원 → 2만 원",
+      "photo_query": "mobile phone bill statement"
+    },
+    {
+      "image": null,
+      "narration": "SKT, KT, LG 망을 빌려 쓰는 거니까 통신 품질은 똑같다. 마진만 덜 붙여서 싸울 수 있는 거지.",
+      "subtitle": "같은 망, 저렴한 가격",
+      "photo_query": "mobile network coverage map"
+    },
+    {
+      "image": null,
+      "narration": "알뜰폰 MVNO 중에서 쓸데없는 혜택 빼고, 통화·데이터만 하는 거 고르면 된다. 와이브로, 알뜰폰, SKY 같은 데다.",
+      "subtitle": "통화+데이터만 구성",
+      "photo_query": "smartphone plan comparison chart"
+    },
+    {
+      "image": null,
+      "narration": "기간제한도 없으니까 마음에 안 들면 언제든 바꿀 수 있다. 1년이면 36만 원이 남는다 아이가.",
+      "subtitle": "언제든 해지 가능",
+      "photo_query": "phone contract cancellation"
+    },
+    {
+      "image": null,
+      "narration": "이런 생활 꿀팁 더 알고 싶으면 팔로우 해라. 월급날이 조금이라도 여유로워진다.",
+      "subtitle": "더 많은 절약팁",
+      "photo_query": "saving money piggy bank"
+    }
+  ],
+  "meta": {
+    "format": "절약팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T10:33:48.400455+00:00"
+  }
+}

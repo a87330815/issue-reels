@@ -1,0 +1,52 @@
+{
+  "title": "만 나이 통일됐는데 왜 자꾸 헷갈리냐고",
+  "cover": {
+    "image": null,
+    "lines": [
+      "내가 몇 살이",
+      "<r>더라?</r>"
+    ],
+    "badge": null,
+    "photo_query": "confused man thinking age"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "\"올해 몇 살이세요?\" 하면 요즘은 만 나이로 답해야 한다. 그런데 말이지.",
+      "subtitle": "만 나이 통일되고도",
+      "photo_query": "conversation asking age"
+    },
+    {
+      "image": null,
+      "narration": "생일 안 지난 친구한테 \"어? 너 올해 스물여섯이냐?\" 하다가 \"아니 아직 스물다섯인데\"라고 들으면 또 혼란스럽다.",
+      "subtitle": "생일 기준이 자꾸 뒤바뀐다",
+      "photo_query": "birthday cake candles"
+    },
+    {
+      "image": null,
+      "narration": "\"아 맞다 이 친구는 생일 안 지났지\" 하고 빼기도 하고, 일본 드라마에서 나이 나오면 갑자기 계산기 나온다.",
+      "subtitle": "자동으로 -1 해버린다",
+      "photo_query": "calculator confused math"
+    },
+    {
+      "image": null,
+      "narration": "그리고 어르신들은 여전히 \"올해 열아홉네\" 이러신다. 통일된 지 벌써 몇 년 됐는데도.",
+      "subtitle": "세대 간 나이 언어 완전 다르다",
+      "photo_query": "elderly grandmother talking"
+    },
+    {
+      "image": null,
+      "narration": "이런 콘텐츠 더 보고 싶으면 팔로우! 쫌봐봐와 함께 일상의 \"아 맞다\" 찾으러 가자고.",
+      "subtitle": "만 나이 통일은 된 거 같은데",
+      "photo_query": "follow subscribe button"
+    }
+  ],
+  "meta": {
+    "format": "세대공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T10:33:20.327944+00:00"
+  }
+}

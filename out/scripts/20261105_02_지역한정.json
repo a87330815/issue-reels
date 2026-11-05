@@ -1,0 +1,62 @@
+{
+  "title": "송도동 10월 아파트 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "송도동",
+      "<r>8건</r> 거래",
+      "6억~10억대"
+    ],
+    "badge": null,
+    "photo_query": "incheon songdo apartment complex modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 송도동에서 지난달 아파트가 8건 거래됐다. 가격대를 봐라.",
+      "subtitle": "송도동 10월 거래 8건",
+      "photo_query": "apartment building entrance incheon"
+    },
+    {
+      "image": null,
+      "narration": "가장 비싼 게 10억8천만 원. 가장 싼 게 6억7천만 원이다. 뭐라카더라, 겨우 4억 차이지만 같은 동네 맞나 싶을 정도다.",
+      "subtitle": "최고가 10.8억 vs 최저가 6.7억",
+      "photo_query": "korean apartment price tag real estate"
+    },
+    {
+      "image": null,
+      "narration": "평수로 따지면 60평대부터 120평대까지 섞여 있다. 크기도 다르고 층수도 다르니까 당연히 가격도 달라지는 거다.",
+      "subtitle": "60~120평대 혼재 거래",
+      "photo_query": "apartment floor plan layout diagram"
+    },
+    {
+      "image": null,
+      "narration": "건축년도도 2008년부터 2020년까지 휘황찬란하다. 오래된 건물이 싼 게 맞지만, 같은 신도시 아파트를 비교할 땐 건년도를 꼭 봐야 한다.",
+      "subtitle": "건축년도 2008~2020년",
+      "photo_query": "old versus new apartment building comparison"
+    },
+    {
+      "image": null,
+      "narration": "송도동 아파트 투자 생각하고 있다면 이 수치들을 기억해라. 팔로우하면 매달 최신 거래 정보를 받을 수 있다.",
+      "subtitle": "팔로우해서 매달 체크하기",
+      "photo_query": "real estate investment planning documents"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        10.8,
+        6.8,
+        9.0,
+        8.0,
+        8.3
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-05T10:32:12.424296+00:00"
+  }
+}

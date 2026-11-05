@@ -1,0 +1,47 @@
+{
+  "title": "하품 전염의 과학",
+  "cover": {
+    "image": null,
+    "lines": [
+      "옆 사람 하품하면",
+      "<r>나도 따라</r>",
+      "하품 나는 거"
+    ],
+    "badge": null,
+    "photo_query": "yawning contagious office"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 이거 봐봐. 옆 사람이 하품하는데 자기도 모르게 따라 하품하게 되지 않냐고.",
+      "subtitle": "공감각 센서 작동",
+      "photo_query": "person yawning spreading"
+    },
+    {
+      "image": null,
+      "narration": "과학자들이 찾아낸 게, 하품은 단순한 피로 신호가 아니라 뇌의 공감 능력이 발동되는 거라고 카더라. 남의 감정에 반응하는 거 있지.",
+      "subtitle": "뇌가 공감하는 중",
+      "photo_query": "brain neurons connection empathy"
+    },
+    {
+      "image": null,
+      "narration": "그래서 친한 사람 하품에는 더 잘 따라하고, 아예 모르는 사람 하품에는 안 따라하기도 한다는 거야. 공감이 짙을수록 전염력 강하다고.",
+      "subtitle": "관계가 깊을수록 전염",
+      "photo_query": "close friends yawning together"
+    },
+    {
+      "image": null,
+      "narration": "지금 이 릴스 보면서 하품 나온 사람? 그거 공감 능력 좋은 거다 아이가. 자랑해도 된다.",
+      "subtitle": "당신은 공감왕",
+      "photo_query": "satisfied person watching screen"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T10:33:01.830786+00:00"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "title": "봄 미세먼지의 딜레마",
+  "cover": {
+    "image": null,
+    "lines": [
+      "창문 열까",
+      "<r>말까</r>"
+    ],
+    "badge": null,
+    "photo_query": "window spring dilemma confused"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "봄이 왔다고 좋아했는데 미세먼지 나쁨이 뜬다. 아 이게 뭐하는 짓인가.",
+      "subtitle": "봄인데 왜 이러냐",
+      "photo_query": "spring window closed curtain"
+    },
+    {
+      "image": null,
+      "narration": "답답해서 창문 열었다가 30분 후 코가 따끔거린다. 아 이미 늦었구나.",
+      "subtitle": "개복치 수준의 판단",
+      "photo_query": "air quality pollution particle dust"
+    },
+    {
+      "image": null,
+      "narration": "그럼 닫자고 닫았는데 실내 공기가 점점 답답해진다. 야 이것도 못 살겠네.",
+      "subtitle": "선택지가 둘 다 병",
+      "photo_query": "indoor stuffy air quality monitor"
+    },
+    {
+      "image": null,
+      "narration": "결국 공기청정기 돌리고 창문은 닫고 에어컨은 켜고... 전기료는 또 얼마일까?",
+      "subtitle": "다 되는데 돈만 빠진다",
+      "photo_query": "air purifier room device running"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 궁금하면 팔로우! 봄이 아니라 그냥 고통의 계절이지 뭐.",
+      "subtitle": "팔로우 하면 공감 더 늘어남",
+      "photo_query": "follow subscribe button social media"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-05T10:33:14.313461+00:00"
+  }
+}

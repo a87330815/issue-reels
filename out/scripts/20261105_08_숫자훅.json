@@ -1,38 +1,45 @@
 {
-  "title": "장기기증으로 8명이 살아났다",
+  "title": "나달, 레알 마드리드 구단주 길 닦다",
   "cover": {
     "image": null,
     "lines": [
-      "한 명의 결정으로",
-      "<r>8명</r>이 살아났다"
+      "테니스 황제가",
+      "<r>축구계</r>로",
+      "간다고?"
     ],
     "badge": null,
-    "photo_query": "hospital medical team surgery room"
+    "photo_query": "rafael nadal tennis clay court champion"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 갑자기 쓰러진 20대 여성이 있었다. 하지만 그 결정이 8명의 사람을 살렸다.",
-      "subtitle": "한 명의 결정이 8명을 살렸다",
-      "photo_query": "hospital patient emergency room"
+      "narration": "이거 모르고 지나가면 손해다. 테니스 레전드 라파엘 나달이가 레알 마드리드 구단 이사로 간다고 카더라.",
+      "subtitle": "나달, 축구계 입성",
+      "photo_query": "tennis legend retirement transition"
     },
     {
       "image": null,
-      "narration": "장기기증. 대수롭지 않게 생각하는데, 현실은 다르다. 신장, 간, 심장. 한 사람이 기증하면 여러 사람이 새 삶을 시작한다.",
-      "subtitle": "신장·간·심장 모두 기증 가능",
-      "photo_query": "organ donation medical consent form"
+      "narration": "그런데 이게 뭐하는 짓이냐고? 나달이가 이사 된 후 회장까지 노린다는 얘기도 떠돈다.",
+      "subtitle": "회장직까지 노리는 것 아닌가",
+      "photo_query": "football club executive board meeting"
     },
     {
       "image": null,
-      "narration": "딱 하나만 기억해라. 운전면허 갱신할 때, 건강검진할 때. 그 체크박스가 누군가의 내일을 바꾼다.",
-      "subtitle": "면허갱신·검진 때 기증 의사 표시",
-      "photo_query": "driver license renewal korea"
+      "narration": "20년을 테니스에만 판을 쳤던 선수가 갑자기 축구 구단 경영으로 방향을 튼다. 흙의 제왕이 이제 축구판을 흔들 건가.",
+      "subtitle": "스포츠 레전드의 새로운 도전",
+      "photo_query": "sports transition career change challenge"
     },
     {
       "image": null,
-      "narration": "야야야. 지금이 그때다. 너의 결정이 8명을 살릴 수 있다. 소중한 결정을 해봐라.",
-      "subtitle": "당신의 결정이 생명을 구한다",
-      "photo_query": "hope light helping hands together"
+      "narration": "선수 시절과 달리 경영진으로서는 어떤 모습을 보일지. 이게 축구계에 어떤 바람을 불지. 계속 지켜봐야겠다.",
+      "subtitle": "축구계의 변화를 주시하라",
+      "photo_query": "real madrid stadium architecture"
+    },
+    {
+      "image": null,
+      "narration": "트렌드는 빠르게 변한다. 다음 화제도 놓치지 말고 따라와라. 쫌봐봐 구독.",
+      "subtitle": "계속 팔로우해",
+      "photo_query": "social media notification follow"
     }
   ],
   "meta": {
@@ -41,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-05T03:26:48.867726+00:00"
+    "generated_at": "2026-11-05T10:32:50.730540+00:00"
   }
 }

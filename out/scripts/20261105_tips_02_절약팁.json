@@ -1,45 +1,45 @@
 {
-  "title": "알뜰폰으로 갈아타기",
+  "title": "대기전력 잡으면 월 1만 원 절약",
   "cover": {
     "image": null,
     "lines": [
-      "알뜰폰으로",
-      "<r>월 3만 원</r>",
-      "절약하는 법"
+      "대기전력만 잡아도",
+      "<r>월 1만원</r>",
+      "절약된다"
     ],
     "badge": null,
-    "photo_query": "smartphone mobile phone SIM card"
+    "photo_query": "power outlet switch off"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "지금 쓰는 통신사 요금을 한 번 봐봐. 대부분 월 5~7만 원 나가지 아이가. 알뜰폰으로 바꾸면 월 2만 원대로 줄일 수 있다.",
-      "subtitle": "기존 통신사 vs 알뜰폰",
-      "photo_query": "phone bill receipt invoice"
+      "narration": "우리 집 전기요금 왜 이렇게 나올까? 그건 멀티탭 때문이다. 콘센트에 꽂혀만 있어도 자꾸 전기를 먹는데, 이게 바로 대기전력이다.",
+      "subtitle": "대기전력이 전기료의 10%",
+      "photo_query": "smart power strip devices"
     },
     {
       "image": null,
-      "narration": "알뜰폰은 뭔가 하면, 대형 통신사 망을 빌려 쓰는 거거든. 통화 품질은 똑같고 중간다리 비용을 빼니까 싼 거다.",
-      "subtitle": "같은 망, 더 싼 가격",
-      "photo_query": "mobile network tower signal"
+      "narration": "자, 이제 이거만 해봐. 안 쓰는 전자제품 플러그를 뽑고, 멀티탭의 스위치를 꺼 놓는 거다. TV, 에어컨, 세탁기 리모컨 받침대까지.",
+      "subtitle": "쓰지 않는 제품 플러그 뽑기",
+      "photo_query": "unplugging appliances cables"
     },
     {
       "image": null,
-      "narration": "알뜰폰 3사를 비교해봐. SK 알뜰폰(헬로모바일)은 월 1만 9천 원, LG 알뜰폰(모바일케이)은 월 2만 원, KT 알뜰폰(올레스튜디오)도 비슷해.",
-      "subtitle": "월 2만원대 요금제",
-      "photo_query": "mobile phone comparing prices discount"
+      "narration": "이렇게만 해도 한 달에 8~12시간 전기를 아낄 수 있다. 난방비까지 합치면 월 1만 원이 그냥 날아간다고 생각해봐.",
+      "subtitle": "하루 15분 정도의 작은 습관",
+      "photo_query": "electricity meter consumption reading"
     },
     {
       "image": null,
-      "narration": "한 가지 팁인데, 데이터를 많이 안 쓰는 사람이라면 더 싸다. 데이터 2GB, 통화 200분이면 충분하면 월 1만 5천 원대도 있다고.",
-      "subtitle": "데이터 적으면 더 저렴",
-      "photo_query": "smartphone screen data usage statistics"
+      "narration": "특히 겨울엔 더 심하다. 보일러 예열, 에어컨 대기전력까지 모두 합치면 진짜 엄청난 금액이다.",
+      "subtitle": "계절마다 대기전력 달라진다",
+      "photo_query": "winter heating appliance standby"
     },
     {
       "image": null,
-      "narration": "이렇게 바꾸면 년 36만 원을 절약한다 아이가. 이런 꿀팁 더 보고 싶으면 팔로우해.",
-      "subtitle": "연 36만 원 절약",
-      "photo_query": "happy man saving money satisfied"
+      "narration": "이런 꿀팁들 더 보고 싶으면 팔로우해 줘. 매달 절약할 수 있는 생활 팁을 계속 가져올 테니까!",
+      "subtitle": "팔로우하고 계속 따라와",
+      "photo_query": "saving money habit jar"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-05T03:27:50.914328+00:00"
+    "generated_at": "2026-11-05T10:33:41.897551+00:00"
   }
 }

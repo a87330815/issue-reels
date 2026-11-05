@@ -1,45 +1,45 @@
 {
-  "title": "해운대 좌동 아파트 실거래가",
+  "title": "해운대 좌동 최고가 아파트 실거래",
   "cover": {
     "image": null,
     "lines": [
       "해운대 좌동",
       "<r>11.7억</r>",
-      "최고가 터졌다"
+      "이게 최고가다"
     ],
     "badge": null,
-    "photo_query": "Haeundae district Busan apartment complex"
+    "photo_query": "Busan Haeundae apartment complex modern building"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 해운대 좌동에서 방금 11억 7천만 원에 팔린 아파트가 나왔다.",
-      "subtitle": "해운대 좌동 최고가 거래",
-      "photo_query": "apartment contract signing documents"
+      "narration": "이거 모르고 지나가면 손해다. 해운대 좌동 아파트 시장이 요즘 어떻게 돌아가는지 봐라. 최고가가 11억 7천이다.",
+      "subtitle": "해운대 좌동 최고가 11.7억",
+      "photo_query": "Seoul real estate market apartment prices"
     },
     {
       "image": null,
-      "narration": "128제곱미터 넓이에 2011년 지은 케이씨씨스위첸. 7층이다. 이거. 이 가격 보면 지역 시세를 잡을 수 있다.",
-      "subtitle": "128㎡, 2011년 준공, 7층",
-      "photo_query": "modern apartment building facade"
+      "narration": "이거. 해운대케이씨씨스위첸이다. 128제곱미터짜리가 11억 7천에 팔렸다. 2011년 지은 건데 가격이 그대로네.",
+      "subtitle": "해운대케이씨씨스위첸 128㎡ 11.7억",
+      "photo_query": "luxury apartment building entrance modern design"
     },
     {
       "image": null,
-      "narration": "같은 동에서 73평대는 7억 3천만 원대, 59평대는 3천만 원대. 자기 평수랑 비교해봐라.",
-      "subtitle": "평수별 거래가 폭 확인하기",
-      "photo_query": "apartment floor plans comparison"
+      "narration": "그 밑에 신성아파트는 73억이다. 오래된 건물이라 가격이 팍 떨어진다. 차이가 4억 4천이다.",
+      "subtitle": "구건물은 가격이 확 떨어짐",
+      "photo_query": "older apartment building residential area korea"
     },
     {
       "image": null,
-      "narration": "최근 10월, 11월 거래 데이터니까 지금 시세가 이 정도라고 봐도 된다. 팔 생각 있으면 이걸 기준으로 공인중개사를 찾아가거라.",
-      "subtitle": "2026년 10~11월 최신 거래",
-      "photo_query": "real estate agent office consultation"
+      "narration": "작은 평형은 어때? 50억대다. 59제곱미터 작은 평수가 4천만원대다. 넓이 차이 많이 나는데 가격 차이는 생각보다 적다.",
+      "subtitle": "작은 평형 40~50억대",
+      "photo_query": "small apartment studio layout interior"
     },
     {
       "image": null,
-      "narration": "쫌봐봐 팔로우하면 부산 아파트 시세. 매주 업뎃으로 받을 수 있다. 손가락만 한 번.",
-      "subtitle": "팔로우 & 알림 설정",
-      "photo_query": "smartphone notification settings"
+      "narration": "좌동 아파트 사고팔 때 참고해라. 최신건물·넓은 평수가 값어치다. 더 자세한 시세 궁금하면 팔로우 해라.",
+      "subtitle": "해운대 좌동 아파트 시세",
+      "photo_query": "real estate agent showing apartment documents"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-05T03:26:28.977775+00:00"
+    "generated_at": "2026-11-05T10:32:30.686246+00:00"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "title": "강남 아파트 가격 차이",
+  "cover": {
+    "image": null,
+    "lines": [
+      "같은 강남인데",
+      "<r>61배</r>",
+      "차이 난다"
+    ],
+    "badge": null,
+    "photo_query": "seoul gangnam apartment buildings comparison"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 강남 아파트. 동네마다 가격이 어마어마하게 다르다.",
+      "subtitle": "같은 강남 다른 가격",
+      "photo_query": "seoul gangnam district map neighborhoods"
+    },
+    {
+      "image": null,
+      "narration": "잠원동 신반포자이. 84제곱미터에 49억. 한 평 거의 6천만이다.",
+      "subtitle": "잠원동 49억대",
+      "photo_query": "luxury apartment interior modern design"
+    },
+    {
+      "image": null,
+      "narration": "대치동 선경1차. 같은 강남인데 이쪽은 51억. 아니 이건 비슷한데?",
+      "subtitle": "대치동도 50억대",
+      "photo_query": "apartment building exterior 1980s construction"
+    },
+    {
+      "image": null,
+      "narration": "아. 데이터 다시 봤다. 평균을 본 거다. 잠원동 평균 49억. 대화동은? 8천만이다.",
+      "subtitle": "평균으로 보면 61배 차이",
+      "photo_query": "real estate price comparison chart numbers"
+    },
+    {
+      "image": null,
+      "narration": "같은 강남권인데 이 정도 차이면. 어디를 봐야 할지 갈린다. 팔로우해서 강남 분석 놓치지 마라.",
+      "subtitle": "지역마다 다른 강남 시세",
+      "photo_query": "real estate agent office buildings seoul"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        49.0,
+        46.7,
+        44.3,
+        36.0,
+        25.9
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-05T10:32:18.113667+00:00"
+  }
+}
