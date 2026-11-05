@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-11-05T03:25:18.139741+00:00",
+  "collected_at": "2026-11-05T10:31:16.677757+00:00",
   "items": [
     {
-      "keyword": "장기 기증",
-      "traffic": "5000+",
-      "news_title": "아픈 언니 걱정하던 20대女 돌연 쓰러져…장기기증으로 8명에 새 삶",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "2158fd8b1b0c175b"
-    },
-    {
-      "keyword": "열차",
+      "keyword": "노동조합",
       "traffic": "500+",
-      "news_title": "출근길 우이신설선 전 구간 열차 운행 지연…4시간여만에 정상화(종합)",
+      "news_title": "삼성전자 DX노조, 수원사업장 앞 집회…&apos;공정한 보상체계&apos; 요구",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "710c9f8728db980d"
+      "key": "f5cf323ce48bf6e5"
     },
     {
-      "keyword": "더현대 크리스마스",
+      "keyword": "라파엘 나달",
       "traffic": "200+",
-      "news_title": "신세계百, 명동 본점 크리스마스 영상 6일 공개…3D입체 연출",
+      "news_title": "‘흙신’ 나달, 레알 마드리드 구단 이사 된다…내친 김에 회장까지?",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "690e68439c0abe35"
+      "key": "f10294600357f8ff"
     },
     {
-      "keyword": "광주광역시",
-      "traffic": "100+",
-      "news_title": "&quot;주민은 무단 점유, 장애인 지원은 미달&quot; 복지행정 질타",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "eb82a68b7a9f8ef5"
-    },
-    {
-      "keyword": "김숙",
-      "traffic": "2000+",
-      "news_title": "김대호, 9세 연상 김숙과 동거설에 입 열었다",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "049b6a641e713a5e"
-    },
-    {
-      "keyword": "교통",
-      "traffic": "200+",
-      "news_title": "오산시의회, 화성시 정남면 덕절리 물류센터 관련 교통대책 마련 촉구",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "생활·지원금·제도",
-      "key": "0929ec2a142ded96"
-    },
-    {
-      "keyword": "아이폰",
+      "keyword": "유네스코",
       "traffic": "500+",
-      "news_title": "삼성·애플, 폴더블폰 &apos;접는 기술&apos; 경쟁 붙었다",
+      "news_title": "2014년 4월에 멈춘 시간·노란 리본…23만점 기록에 새긴 세월호",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "d52aba45e9a67a1f"
+      "key": "f68bcb6169e92451"
     },
     {
-      "keyword": "레인보우로보틱스",
+      "keyword": "외국인",
       "traffic": "200+",
-      "news_title": "레인보우로보틱스 &quot;양팔로봇, 57일 만에 개발…산업용 휴머노이드 확대&quot;",
+      "news_title": "40개국 글로벌 청년 하나로… 대전시, ‘2026 외국인 유학생 한마음 대회’ 개최",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "77c48712ba60fe68"
+      "key": "5bd804b76b111062"
     },
     {
-      "keyword": "다문화 가정",
-      "traffic": "100+",
-      "news_title": "전체 혼인 8.1% 늘었는데 다문화 혼인은 감소…이혼은 1.4% 증가",
+      "keyword": "하이닉스",
+      "traffic": "10000+",
+      "news_title": "5300선까지 하락한 코스피...미국 반도체주·외국인 향방 주목 - 머니투데이",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "8cc42dedf0d3e1ff"
+      "key": "d99015612b534b78"
+    },
+    {
+      "keyword": "어벤져스 둠스데이",
+      "traffic": "200+",
+      "news_title": "고조에서 세피로스까지: 어마어마한 라인업을 자랑하는 &apos;어벤져스: 두무스데이&apos; 일본어 더빙진",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "6a87712943b3999a"
+    },
+    {
+      "keyword": "장동민",
+      "traffic": "500+",
+      "news_title": "넷플릭스 ‘데블스 플랜: 데드 어게인’, 역대 우승자와 전략가 총집결…10일 두뇌 서바이벌 개막",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "c3625471620a6db2"
+    },
+    {
+      "keyword": "시험",
+      "traffic": "1000+",
+      "news_title": "서울시립대, 논술 시험에 스마트안경 쓴 수험생 2명 고소…업무방해 혐의",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "3fcc7bebc2b4b5b0"
+    },
+    {
+      "keyword": "이동국",
+      "traffic": "200+",
+      "news_title": "용인, 이동국 근태 논란 반박… “업무·성과 긍정적 평가… 활동 내역과 관련 자료로 판단 필요”",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "bc8968691777a3b3"
     }
   ]
 }
