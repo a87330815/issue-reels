@@ -224,7 +224,10 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     # media_publish가 [-1/2207085] Fatal로 거절될 수 있다.
     # 바로 재호출하지 않고 짧게 기다린 뒤 제한적으로 재시도한다.
     last_error = None
-    for attempt, delay in enumerate((10, 20, 30), 1):
+    # Meta가 컨테이너를 FINISHED로 표시한 직후에도 publish 계층의
+    # 내부 전파가 늦어 [-1/2207085] Fatal을 반환할 수 있다.
+    # 짧은 재시도로 끝내지 않고 충분히 기다린 뒤 재시도한다.
+    for attempt, delay in enumerate((30, 60, 120, 180, 240), 1):
         time.sleep(delay)
         try:
             res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
