@@ -1,45 +1,45 @@
 {
-  "title": "같은 서울인데 76배 차이",
+  "title": "압구정 vs 상봉, 132배 차이",
   "cover": {
     "image": null,
     "lines": [
-      "같은 서울인데",
-      "<r>76배</r>",
-      "차이 난다"
+      "압구정 66억",
+      "상봉 5천만",
+      "<r>132배</r> 차이"
     ],
     "badge": null,
-    "photo_query": "seoul apartment buildings comparison expensive cheap"
+    "photo_query": "seoul luxury apartment district vs residential"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 10월 서울 아파트 실거래가 봤냐. 반포동은 53억. 하대동은 0.7억이다.",
-      "subtitle": "반포동 53억 vs 하대동 0.7억",
-      "photo_query": "luxury apartment lobby modern interior"
+      "narration": "이거 모르고 지나가면 손해다. 같은 서울인데 아파트 값이 132배 난다. 이거. 진짜다.",
+      "subtitle": "압구정 66억 vs 상봉 5천만",
+      "photo_query": "apartment price comparison chart numbers"
     },
     {
       "image": null,
-      "narration": "같은 서울인데 76배 차이다. 뭐라카더라. 반포동 래미안퍼스티지는 84제곱미터에 53억. 같은 면적, 같은 신축에 가까운데 천지차이다.",
-      "subtitle": "래미안퍼스티지 84㎡ 53억",
-      "photo_query": "hangang river view apartment balcony seoul"
+      "narration": "압구정동은 지금 평균 66억이다. 강남역, 압구정역 근처에서 이 정도면 평범한 거다.",
+      "subtitle": "강남 중심부 66억대",
+      "photo_query": "gangnam seoul luxury apartments buildings"
     },
     {
       "image": null,
-      "narration": "하대동 한강밤섬자이는 169제곱미터, 더 크고 새것인데 33억이다. 절반도 안 된다.",
-      "subtitle": "한강밤섬자이 169㎡ 33억",
-      "photo_query": "apartment living room window view morning"
+      "narration": "반면 상봉동은 5천만원대다. 같은 서울인데 말이다. 치역 차이가 엄청나다.",
+      "subtitle": "동북권 5천만원대",
+      "photo_query": "residential apartment building outside gangnam"
     },
     {
       "image": null,
-      "narration": "강남 강북. 한강 근처 아닌 곳. 위치가 이 정도 차이를 만든다. 아파트 살 때 이거 모르면 진짜 크다.",
-      "subtitle": "위치가 가격을 결정한다",
-      "photo_query": "korea real estate price map location"
+      "narration": "이건 단순 비교가 아니다. 부동산에서 '어디 사느냐'가 얼마나 중요한지 보여주는 거다.",
+      "subtitle": "위치가 곧 자산이다",
+      "photo_query": "seoul map gangnam dongbuk regions"
     },
     {
       "image": null,
-      "narration": "10월 실거래가. 쫌봐봐 채널 팔로우해서 놓치지 말아라.",
-      "subtitle": "10월 서울 아파트 실거래",
-      "photo_query": "phone notification real estate data update"
+      "narration": "더 궁금한 데이터 있으면 팔로우 눌러라. 계속 주니까.",
+      "subtitle": "팔로우 눌러",
+      "photo_query": "follow button social media"
     }
   ],
   "meta": {
@@ -49,14 +49,14 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        53.0,
-        33.0,
-        23.6,
-        23.4,
-        22.4
+        66.0,
+        50.5,
+        40.0,
+        36.4,
+        32.0
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T15:29:34.807057+00:00"
+    "generated_at": "2026-11-06T20:10:48.995116+00:00"
   }
 }

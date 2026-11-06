@@ -1,0 +1,52 @@
+{
+  "title": "충전기 자리싸움",
+  "cover": {
+    "image": null,
+    "lines": [
+      "충전기 하나",
+      "<r>가족 싸움</r>"
+    ],
+    "badge": null,
+    "photo_query": "charging cable family conflict"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "엄마가 밥 먹으면서 충전기 꽂고 있고. 아빠는 옆에서 눈치 본다.",
+      "subtitle": "언제 빌까 기다리는 중",
+      "photo_query": "mother charging phone table dinner"
+    },
+    {
+      "image": null,
+      "narration": "형은 화장실가고, 동생은 소파에서 \"엄마 언제 끝나?\" 이러는데. 진짜 긴장 흐른다.",
+      "subtitle": "충전기 앞에 줄 서 있음",
+      "photo_query": "family waiting charging phone queue"
+    },
+    {
+      "image": null,
+      "narration": "마침내 엄마가 빼냈다. 그 순간 가족 셋이 동시에 일어나. 이거 봐봐, 진짜 원시인이다.",
+      "subtitle": "0.5초 안에 누가 집을 먹을지 결정",
+      "photo_query": "family rushing charging cable fight"
+    },
+    {
+      "image": null,
+      "narration": "결국 \"네거 빨리 하고 다음 사람에게 줘\" 이러는데, 누구도 \"다음\" 같은 건 없다.",
+      "subtitle": "영원히 다음은 오지 않는다",
+      "photo_query": "disappointed waiting person phone battery low"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 보고 싶으면 팔로우! 우리 집만 이런 거 아니라니까.",
+      "subtitle": "충전기 전쟁은 계속된다",
+      "photo_query": "family laugh together happy"
+    }
+  ],
+  "meta": {
+    "format": "생활공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T20:11:37.718795+00:00"
+  }
+}

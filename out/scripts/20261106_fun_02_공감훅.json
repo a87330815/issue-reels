@@ -1,45 +1,46 @@
 {
-  "title": "퇴근 후 침대의 행복",
+  "title": "퇴근 후 침대의 위력",
   "cover": {
     "image": null,
     "lines": [
-      "퇴근 후 침대에",
-      "<r>누우면</r>",
-      "세상이 끝나는 거 아니냐"
+      "퇴근하고",
+      "침대 누우면",
+      "<r>세상이</r>",
+      "끝나는 거 같은데"
     ],
     "badge": null,
-    "photo_query": "tired person lying on bed after"
+    "photo_query": "man lying bed after work tired"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "직장에서 나오는 그 순간. 침대가 있는 집까지 가는 길이 이렇게 길 수가 없지.",
-      "subtitle": "침대까지 남은 거리",
-      "photo_query": "commute tired office worker"
+      "narration": "야근에 회의에 을 받고 퇴근길 버스에서 한숨만 나온다. 근데 집 도착하는 순간부터 달라진다.",
+      "subtitle": "침대가 부른다",
+      "photo_query": "exhausted commute bus tired"
     },
     {
       "image": null,
-      "narration": "그리고 침대에 쓰러진다. 아 이거다. 이 느낌. 세상 모든 게 풀리는 순간이 온다.",
-      "subtitle": "침대 = 치유",
-      "photo_query": "man falling on bed exhausted relief"
+      "narration": "신발 벗고 바로 누우면? 아 이거야. 이 순간이 하루 중 가장 행복한 거 아니냐고. 세상 모든 게 사라진다.",
+      "subtitle": "모든 스트레스 정말로 사라짐",
+      "photo_query": "person lying bed comfortable relieved"
     },
     {
       "image": null,
-      "narration": "휴대폰도 내려놓고 천장 봤을 때 그 황홀함. 야, 이게 명상인가 싶을 정도다.",
-      "subtitle": "침대의 명상",
-      "photo_query": "person relaxing on bed ceiling view"
+      "narration": "핸드폰도 안 봐도 되고, 누가 건들 일도 없고, 침대 위에선 나만의 세상이 된다. 이게 진짜 삶이다.",
+      "subtitle": "침대 = 지상낙원",
+      "photo_query": "cozy bedroom lamp relaxing"
     },
     {
       "image": null,
-      "narration": "근데 여기서 깨어난다. 밥을 먹어야 하는 현실. 이때 드는 생각이 '아… 다시 누우고 싶다'이다.",
-      "subtitle": "침대 떠나기의 슬픔",
-      "photo_query": "person hesitating to leave comfortable bed"
+      "narration": "월급이고 뭐고 이 순간을 위해 일하는 거 아닐까 싶을 정도. 침대의 정체는 뭐냐 진짜.",
+      "subtitle": "침대 없이 산다고? 상상도 못 함",
+      "photo_query": "happiness peace in bed"
     },
     {
       "image": null,
-      "narration": "이런 거 더 공감하고 싶으면 팔로우! 우리 같이 침대 예찬론 펼쳐보자.",
-      "subtitle": "팔로우하고 침대 복귀!",
-      "photo_query": "follow subscribe notification bell"
+      "narration": "이런 거 공감하면 팔로우 꼭 해봐. 우리 같이 침대 극찬하자.",
+      "subtitle": "팔로우 GO",
+      "photo_query": "thumbs up bed comfort"
     }
   ],
   "meta": {
@@ -48,6 +49,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-06T15:30:24.348527+00:00"
+    "generated_at": "2026-11-06T20:11:44.619659+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "반포동 래미안퍼스티지 53억 거래",
+  "title": "압구정동 현대6차 66억 거래",
   "cover": {
     "image": null,
     "lines": [
-      "반포동",
-      "<r>53억</r>",
-      "이게 현실입니다"
+      "압구정동",
+      "<r>66억</r>",
+      "이게 기준이다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building banpo seoul"
+    "photo_query": "luxury apartment building seoul gangnam"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 강남 반포동. 거기 래미안퍼스티지 84제곱미터짜리가 53억에 팔렸다.",
-      "subtitle": "반포동 래미안퍼스티지 84㎡ 53억",
-      "photo_query": "seoul gangnam banpo district"
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 현대6차. 144제곱미터짜리가 66억에 팔렸다. 이게 뭐하는 거냐고? 이 단지. 강남 아파트값의 기준이 되는 곳이다.",
+      "subtitle": "압구정동 현대6차 66억",
+      "photo_query": "modern apartment complex 1970s korea"
     },
     {
       "image": null,
-      "narration": "2009년 지어진 건데. 지금 세수로 따지면 이 가격이다. 위치가 죽일 놈이라는 거지.",
-      "subtitle": "2009년 준공 오래된 단지",
-      "photo_query": "apartment lobby entrance elegant"
+      "narration": "144제곱미터면 평수로 치면 43평 정도다. 서울에서 가장 많이 거래되는 평수다. 이 기준으로 어디 살 수 있는지 비교해봐라.",
+      "subtitle": "144㎡ = 평당 약 4600만원",
+      "photo_query": "apartment floor plan layout residential"
     },
     {
       "image": null,
-      "narration": "평당 가격으로 나가면. 6천3백만원 대. 강남 톱티어다.",
-      "subtitle": "평당 6천3백만원대",
-      "photo_query": "calculator real estate price"
+      "narration": "강남역, 신논현역 근처? 이것보다 작거나 낡을 거다. 강남구 밖? 이 돈이면 훨씬 크고 새 건물을 살 수 있다.",
+      "subtitle": "강남의 기준값으로 쓰인다",
+      "photo_query": "gangnam station seoul street view"
     },
     {
       "image": null,
-      "narration": "반포동 프리미엄은 이게 다다. 강남역까지 걸어가는 거리. 학군. 거기 다 들어가 있다.",
-      "subtitle": "강남역 인근 프리미엄 지역",
-      "photo_query": "gangnam station seoul metro entrance"
+      "narration": "부동산 시장 움직임을 볼 때. 이 단지의 거래가가 올랐다 내렸다 하는 게 신호다. 전국 투자자들이 눈 여겨본다.",
+      "subtitle": "시장의 온도계",
+      "photo_query": "real estate market chart graph data"
     },
     {
       "image": null,
-      "narration": "너네 동네 실거래가도 궁금하면 댓글 남겨라. 같이 분석해본다.",
-      "subtitle": "당신 동네는 얼마일까?",
-      "photo_query": "neighborhood street korea residential"
+      "narration": "너네 집값이 뭐라고 불리는 이유? 많은 경우 이 거래가를 기준으로 환산되기 때문이다. 팔로우해라. 앞으로도 자꾸 튀어나올 거다.",
+      "subtitle": "팔로우하면 강남 기준값이 보인다",
+      "photo_query": "follow button social media smartphone screen"
     }
   ],
   "meta": {
@@ -49,14 +49,14 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        53.0,
-        33.0,
-        24.4,
-        23.8,
-        23.6
+        66.0,
+        54.2,
+        50.5,
+        38.2,
+        37.0
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T15:29:22.452929+00:00"
+    "generated_at": "2026-11-06T20:10:36.527430+00:00"
   }
 }

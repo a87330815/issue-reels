@@ -1,45 +1,45 @@
 {
-  "title": "선풍기 바람 맞고 '아~' 하는 것",
+  "title": "카톡 읽씹, 세대가 다르면 예의도 다르다",
   "cover": {
     "image": null,
     "lines": [
-      "선풍기 맞으면",
-      "<r>'아~'</r>",
-      "이건 한국인"
+      "카톡 읽고",
+      "<r>답 안 하는 게</r>",
+      "예의라니?"
     ],
     "badge": null,
-    "photo_query": "fan summer hot cool"
+    "photo_query": "smartphone chat message notification"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "엄마, 할머니 세대도 그랬고. 우리도 그렇고. 조카도 그런데... 선풍기 바람 맞으면 왜 자동으로 '아~' 나오냐 말이야.",
-      "subtitle": "선풍기 바람과 감탄사",
-      "photo_query": "woman fan summer breeze relief"
+      "narration": "엄마: \"아 얘가 또 읽고 답을 안 하네. 뭐 하는 거야?\" 딸: \"엄마, 바쁜데 지금 뭐해. 나중에 답할게.\" 엄마: \"뭐 바빠? 나 불안해 죽겠는데!\"",
+      "subtitle": "읽씹=무시로 받아들이는 세대",
+      "photo_query": "mother daughter phone conversation arguing"
     },
     {
       "image": null,
-      "narration": "에어컨? 아니지. 그냥 선풍기. 그 따뜻한 바람을 맞으면서 '아~ 시원하다' 하는 그 느낌 말이다.",
-      "subtitle": "선풍기 = 시원함의 상징",
-      "photo_query": "electric fan spinning white"
+      "narration": "근데 생각해보면 이게 그렇게 자연스러운 세대도 있다니까. \"오케이 읽었어. 답은 나중에.\" 이 문화가 들어온 거지.",
+      "subtitle": "답장 없음=시간 있을 때 연락하겠단 뜻",
+      "photo_query": "young people texting friends casual phone"
     },
     {
       "image": null,
-      "narration": "아이고 이거 보면... 대만 할아버지도 일본 할머니도 같은 표정으로 '아~' 한댔어. 에어컨 없던 시절의 유일한 구원인데, 그 감정이 몸에 밴 거지.",
-      "subtitle": "세대를 넘은 공통 DNA",
-      "photo_query": "multigenerational family fan nostalgia"
+      "narration": "근데 우리 세대는 \"읽음\"이라는 게 존재하지 않았거든. 문자는 온 게 보이는 대로 바로 답했어. 아니면 처음부터 안 읽은 척했어.",
+      "subtitle": "옛날엔 읽음 표시 자체가 없었다",
+      "photo_query": "flip phone old phone technology vintage"
     },
     {
       "image": null,
-      "narration": "지금도 마찬가지다. 에어컨 있어도 선풍기 맞으면 뭔가 더 편하고... 그 '아~'는 나온다. 정신적 시원함 같은 거네.",
-      "subtitle": "에어컨 있어도 선풍기",
-      "photo_query": "woman relaxing fan summer satisfaction"
+      "narration": "결국 이거는 기술 때문이다 아이가. 읽음 표시가 생기니까 심리 전쟁이 시작된 거지. \"봤으면 왜 연락이 없어?\" 이게 이제 폭탄이 된 거야.",
+      "subtitle": "읽음 표시가 모든 걸 망쳤다",
+      "photo_query": "read receipt message notification smartphone"
     },
     {
       "image": null,
-      "narration": "이런 거 더 보고 싶으면 팔로우하고, 댓글에 '나도 그래!' 남겨봐. 우린 같은 DNA를 가진 사람들이거든!",
-      "subtitle": "팔로우 유도",
-      "photo_query": "happy friends laughing together"
+      "narration": "이런 거 더 궁금하면 팔로우! 우리 세대 vs 요즘 세대의 갈등, 계속 풀어낼게.",
+      "subtitle": "세대 갈등은 기술에서 온다",
+      "photo_query": "different age groups together laughing"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-06T15:30:35.485754+00:00"
+    "generated_at": "2026-11-06T20:11:59.072434+00:00"
   }
 }

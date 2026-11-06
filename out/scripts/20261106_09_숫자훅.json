@@ -1,45 +1,45 @@
 {
-  "title": "삼성증권 한미약품 바이오혁신",
+  "title": "한화오션 노사분쟁 고공농성",
   "cover": {
     "image": null,
     "lines": [
-      "신약 개발",
-      "<r>300조</r>",
-      "시장 움직인다"
+      "크레인 위에서",
+      "<r>사흘째</r>",
+      "내려오지 않습니다"
     ],
     "badge": null,
-    "photo_query": "biotech pharmaceutical laboratory research microscope"
+    "photo_query": "construction crane industrial site worker"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 한미약품 바이오 혁신 행사. 거기서 뭐가 나왔냐 하면. 신약 개발 파이프라인이 확 늘어났다.",
-      "subtitle": "신약 개발 파이프라인 확대",
-      "photo_query": "biomedical innovation conference presentation"
+      "narration": "이거 모르고 지나가면 손해다. 한화오션 조선소에서 지금 뭔가 심각한 일이 벌어지고 있다. 크레인 위에서 누군가 고공농성을 하고 있다.",
+      "subtitle": "크레인 위 고공농성 발생",
+      "photo_query": "crane operator cabin high altitude"
     },
     {
       "image": null,
-      "narration": "삼성증권 같은 증권사들이 주목하는 거. 바이오 시장이 진짜 크거든. AI 헬스케어까지 들어오니까 더 커진다.",
-      "subtitle": "AI 헬스케어 신기술 도입",
-      "photo_query": "artificial intelligence healthcare medical technology"
+      "narration": "하청 노조원들이 올라갔다. 근로 조건 개선을 요구하며. 그런데 현장은 난리다. 생산직과 반장들이 '내려와 달라'고 외친다.",
+      "subtitle": "하청노조 vs 정규직 충돌",
+      "photo_query": "factory workers protest crowd"
     },
     {
       "image": null,
-      "narration": "글로벌 제약사들도 눈여겨본다 아이가. 신약 개발 성공률. 여기 올라가면 주가도 우르르 간다.",
-      "subtitle": "글로벌 진출 가능성 높아짐",
-      "photo_query": "stock market graph trading financial growth"
+      "narration": "왜 이래? 하청과 정규직의 임금·대우 격차 때문이다. 같은 일을 해도 받는 돈이 다르다. 이걸 두고 싸우는 거다.",
+      "subtitle": "하청 vs 정규직 대우 차이",
+      "photo_query": "shipyard construction industrial workers"
     },
     {
       "image": null,
-      "narration": "투자자들이 진짜 벼르고 있는 대목. 바이오 신약. 한 번 터지면 수십 배도 나온다.",
-      "subtitle": "신약 개발 성공 시 수익성 극대화",
-      "photo_query": "pharmaceutical company success milestone celebration"
+      "narration": "고공농성이 길어질수록 생산 일정이 밀린다. 회사 손실도 크고. 현장은 계속 팽팽하다.",
+      "subtitle": "생산 차질 우려",
+      "photo_query": "industrial manufacturing shipbuilding facility"
     },
     {
       "image": null,
-      "narration": "삼성증권에서 리포트 띄우기 전에. 지금 미리 알아두는 게 돈 버는 거다. 팔로우해라.",
-      "subtitle": "투자정보 사전 확인의 중요성",
-      "photo_query": "financial analysis research report documents"
+      "narration": "지금 이순간도 진행 중이다. 노사 협상이 풀릴 때까지. 이런 산업 분쟁 소식, 팔로우하면 더 빨리 캐치할 수 있다.",
+      "subtitle": "계속되는 노사 대립",
+      "photo_query": "negotiation meeting business discussion"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-06T15:30:12.096638+00:00"
+    "generated_at": "2026-11-06T20:11:31.143828+00:00"
   }
 }

@@ -1,45 +1,46 @@
 {
-  "title": "숲 여행 트렌드",
+  "title": "뉴진스 계약 논란, 실제 내용은",
   "cover": {
     "image": null,
     "lines": [
-      "요즘 사람들",
-      "<r>숲</r>으로",
-      "몰려간다"
+      "어 도어",
+      "<r>4년</r> 동안",
+      "뭐가 있었는지",
+      "알아야 한다"
     ],
     "badge": null,
-    "photo_query": "forest hiking trail morning light"
+    "photo_query": "contract document pen signing"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 요즘 한국 관광지 검색어 1위가 뭔지 아나. 바로 숲이다. 여행 가는 사람들 절반이 숲을 찾는다고 카더라.",
-      "subtitle": "숲 여행 검색 급증 중",
-      "photo_query": "korean forest dense trees sunlight"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 핫한 어 도어. 뉴진스 계약 논란이 터졌다. 4년간 계약 내용이 뭐였길래 이렇게 싸우는지 알아야 한다.",
+      "subtitle": "뉴진스 계약 논란 발발",
+      "photo_query": "contract dispute conflict negotiation"
     },
     {
       "image": null,
-      "narration": "왜일까. 도시에서 지친 사람들이 숲으로 가는 거지. 피톤치드 마시고. 새 소리 듣고. 그럼 스트레스 확 빠진다는 거다.",
-      "subtitle": "도시 피로에서 벗어나기",
-      "photo_query": "person walking forest path peaceful"
+      "narration": "핵심은 이거다. 소속사 대표가 계약서에 도장 하나를 못 찍었다. 그 도장이 뭐냐면 상위 회사 승인인데. 그런데 4년을 그렇게 일했다는 거다.",
+      "subtitle": "승인 없이 4년 활동",
+      "photo_query": "company approval stamp document"
     },
     {
       "image": null,
-      "narration": "전국 유명 숲 여행지들이 있다. 소백산. 지리산. 설악산. 이런 데들이 지금 인파로 붐빈다. 당일치기로도 가능하다.",
-      "subtitle": "전국 숲 여행지 인기",
-      "photo_query": "mountain forest landscape korea nature"
+      "narration": "쉽게 말해 정식으로 안 된 계약인데 계속 일하게 했다는 거다. 근데 상위사는 '우리 몰랐다'는 식이고. 아래는 '너네 책임이다'고 한다. 누가 봐도 엉망이다.",
+      "subtitle": "상위사 승인 누락 논란",
+      "photo_query": "office meeting disagreement tension"
     },
     {
       "image": null,
-      "narration": "가는 길도 요즘 쉬워졌다. 대중교통으로도 충분하고. 숲길 정보도 다 나온다. 이 기회에 한 번 가봐라.",
-      "subtitle": "정보와 교통 접근성 좋음",
-      "photo_query": "train station mountain access korea"
+      "narration": "이게 왜 중요하냐면 계약이 제대로 안 되면 가수들이 손해 본다는 거다. 보상, 수익배분, 독립 다 달라진다. 누가 책임 질 건지가 중요한 거다.",
+      "subtitle": "계약 효력 문제 심각",
+      "photo_query": "musicians performance stage contract rights"
     },
     {
       "image": null,
-      "narration": "당신도 숲 여행 하나쯤 계획해 봐라. 아래 팔로우하고. 여행지 정보 더 받아가. 쫌봐봐!",
-      "subtitle": "더 많은 여행 정보는 팔로우로",
-      "photo_query": "forest scenic viewpoint sunrise"
+      "narration": "야 이거. 연예계 계약이 이 정도면 얼마나 복잡한지 알 수 있다. 팔로우 해줘야 앞으로 이런 뉴스 놓치지 않는다.",
+      "subtitle": "계약 구조의 문제점",
+      "photo_query": "entertainment industry news updates"
     }
   ],
   "meta": {
@@ -48,6 +49,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-06T15:29:41.225649+00:00"
+    "generated_at": "2026-11-06T20:10:56.676142+00:00"
   }
 }

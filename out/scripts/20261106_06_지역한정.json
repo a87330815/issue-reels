@@ -1,45 +1,45 @@
 {
-  "title": "하대동 최고가 실거래",
+  "title": "우동 아파트 최고가 11.2억",
   "cover": {
     "image": null,
     "lines": [
-      "하대동",
-      "최고가 <r>1.2억</r>",
-      "임광 아파트"
+      "우동 아파트",
+      "최고가 <r>11.2억</r>",
+      "알고 계셨나요"
     ],
     "badge": null,
-    "photo_query": "old apartment building korea 1980s 1990s"
+    "photo_query": "busan haeundae apartment complex modern building"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 하대동 아파트 시장. 10월부터 11월까지 최신 거래 데이터 떴다.",
-      "subtitle": "하대동 최신 거래 데이터",
-      "photo_query": "real estate transaction document contract signing"
+      "narration": "이거 모르고 지나가면 손해다. 우동 아파트 시장. 지금 뭐가 떨어지는지 봤냐고.",
+      "subtitle": "우동 아파트 실거래 최고가",
+      "photo_query": "apartment living room window city view"
     },
     {
       "image": null,
-      "narration": "최고가는 임광. 59제곱미터에 1.2억이다. 1989년 건물인데 말이다.",
-      "subtitle": "임광: 59㎡, 1.2억 원",
-      "photo_query": "vintage apartment exterior korea 1989"
+      "narration": "해운대자이1단지. 85제곱미터짜리가 11.2억에 팔렸다. 지난달 말 거래다.",
+      "subtitle": "해운대자이 1단지 11.2억",
+      "photo_query": "luxury apartment interior modern design"
     },
     {
       "image": null,
-      "narration": "한보타워는 6300만, 하대한양은 5800만. 다 35제곱미터 이하로 작은 방들이다.",
-      "subtitle": "2순위: 한보타워 6,300만",
-      "photo_query": "small apartment room interior"
+      "narration": "같은 크기인데 다른 단지는 9.5억, 5.9억. 같은 우동인데 차이가 크지 않냐.",
+      "subtitle": "단지별 가격 편차 5억 이상",
+      "photo_query": "korean apartment buildings comparison different heights"
     },
     {
       "image": null,
-      "narration": "주공아파트도 두 건 나왔는데. 4900만에서 5000만. 낡은 1980년 건물이다.",
-      "subtitle": "주공아파트: 4,900~5,000만",
-      "photo_query": "public housing apartment complex korea"
+      "narration": "건축년도 때문일까. 위치 때문일까. 우동에서 아파트 살 거면 체크하고 가야 한다.",
+      "subtitle": "우동 거주자라면 필수 확인",
+      "photo_query": "family apartment hunting notebook checklist pen"
     },
     {
       "image": null,
-      "narration": "하대동. 가격대는 낮지만 건물 나이가 장난 아니다. 투자 생각 있으면 꼼꼼히 봐야 한다. 더 자세한 데이터는 팔로우하고 확인해라.",
-      "subtitle": "건물 나이 35년 이상",
-      "photo_query": "apartment inspection building condition assessment"
+      "narration": "우동 부동산 시장 동향. 날마다 달라진다. 팔로우하고 알림 받아라.",
+      "subtitle": "우동 아파트 시장 정보",
+      "photo_query": "real estate market data graph analysis"
     }
   ],
   "meta": {
@@ -49,14 +49,14 @@
     "attribution": "공공데이터포털 · 국토교통부",
     "chart": {
       "values": [
-        1.2,
-        0.6,
-        0.6,
-        0.5,
-        0.5
+        11.2,
+        9.5,
+        6.0,
+        2.7,
+        2.2
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T15:29:53.264051+00:00"
+    "generated_at": "2026-11-06T20:11:10.874979+00:00"
   }
 }

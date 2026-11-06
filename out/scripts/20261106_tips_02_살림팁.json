@@ -1,0 +1,53 @@
+{
+  "title": "배수구 냄새 5분에 잡는법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배수구 냄새",
+      "<r>5분만에</r>",
+      "싹 없애기"
+    ],
+    "badge": null,
+    "photo_query": "drain pipe sink"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "싱크대나 욕실에서 자꾸만 올라오는 그 냄새, 요즘이 제철이다 아이가. 오늘 5분이면 끝낸다.",
+      "subtitle": "배수구 냄새의 원인",
+      "photo_query": "kitchen sink drain"
+    },
+    {
+      "image": null,
+      "narration": "먼저 베이킹소다 3스푼을 배수구에 부어. 바로 물론 물론 붓지 말고.",
+      "subtitle": "베이킹소다 3스푼 투입",
+      "photo_query": "baking soda white powder"
+    },
+    {
+      "image": null,
+      "narration": "그 다음에 식초 반컵을 따르면 보글보글 거품이 올라온다. 이게 배수구 안에 낀 때랑 박테리아를 싹 녹여내는 거야.",
+      "subtitle": "식초 반컵 부으면 화학반응",
+      "photo_query": "vinegar pouring into drain"
+    },
+    {
+      "image": null,
+      "narration": "3분을 그냥 놔뒀다가 따뜻한 물을 주르르 부으면 끝. 이 조합이 효과 좋은 이유는 베이킹소다의 알칼리성이랑 식초의 산성이 만나서 오염물질을 분해하기 때문이다.",
+      "subtitle": "3분 후 따뜻한 물로 마무리",
+      "photo_query": "hot water pouring drain"
+    },
+    {
+      "image": null,
+      "narration": "한 달에 한 번만 해주면 냄새는 안 올라온다고 카더라. 이런 살림 꿀팁 더 보고 싶으면 팔로우 눌러야지.",
+      "subtitle": "월 1회 반복하면 완벽",
+      "photo_query": "clean fresh drain sink"
+    }
+  ],
+  "meta": {
+    "format": "살림팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T20:12:21.432760+00:00"
+  }
+}
