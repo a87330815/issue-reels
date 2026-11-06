@@ -13,6 +13,7 @@ import json
 import glob
 import os
 import random
+import re
 import subprocess
 import sys
 import tempfile
@@ -283,6 +284,25 @@ def _check_elevenlabs():
     return False
 
 
+_NATIVE_COUNTERS = {
+    "1": "한", "2": "두", "3": "세", "4": "네", "5": "다섯",
+    "6": "여섯", "7": "일곱", "8": "여덟", "9": "아홉", "10": "열",
+}
+_NATIVE_UNITS = "개|명|번|장|대|곳|마리|잔|살|가지|차례|라운드"
+
+
+def normalize_tts_numbers(text):
+    """단위 앞 숫자를 자연스러운 고유어 수사로 읽게 한다.
+
+    화면 자막과 원본 데이터는 숫자로 유지하고 TTS에 넘기는 문장만 바꾼다.
+    예: 3개→세 개, 2명→두 명, 4라운드→네 라운드.
+    """
+    def repl(match):
+        return f"{_NATIVE_COUNTERS[match.group(1)]} {match.group(2)}"
+    pattern = rf"(?<![0-9])({'|'.join(_NATIVE_COUNTERS)})(?:\s*)({_NATIVE_UNITS})(?![가-힣])"
+    return re.sub(pattern, repl, text)
+
+
 async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
                        preset=None, presets=None):
     """TTS 나레이션 mp3 생성. ElevenLabs 우선, 실패 시 edge-tts 폴백.
@@ -294,6 +314,7 @@ async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
 
     results = []
     for i, text in enumerate(texts):
+        text = normalize_tts_numbers(text)
         if not text.strip():
             results.append(None)
             continue
