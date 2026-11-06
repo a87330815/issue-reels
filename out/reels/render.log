@@ -1,67 +1,65 @@
-run 42076238430 2026-11-05T17:37:01Z
+run 42150763569 2026-11-06T02:31:28Z
 
-=== 20261105_fun_05_공감훅 ===
-  [cover] '컵라면 물 양의 두 가지 인생' → "instant noodle cup water line"
+=== 20261105_fun_05_생활공감 ===
+  [cover] '충전기 자리싸움' → "phone charger cable family"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '선 딱 맞추기파' → "cup noodles measuring water precise"
+  [scene1] '충전기 하나뿐인 집의 숨겨진 규칙' → "mother charging phone silence"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '대충파의 여유로움' → "pouring water cup noodles casual"
+  [scene2] '누가 먼저 뺄 권리가 있나?' → "family members phone battery low"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '선도 주관의 세계' → "cup noodle water line perspective angle"
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 11건 (적합도 필터 생략)
+  [scene3] '이건 집이 아니라 충전소다' → "multiple phones charging cables"
+    [unsplash] 12건 후보
+    Unsplash 12건 (적합도 필터 생략)
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '결말은 늘 같다' → "eating instant noodles satisfaction taste"
+  [scene4] '아 정말 이거 봐봐' → "searching lost phone charger"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '선파 vs 대충파' → "cup noodles cooking kitchen choice"
+  [scene5] '왜 새 걸 안 사냐고 물으면 안 된다' → "family laughing together home"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261105_fun_05_공감훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261105_fun_05_생활공감/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261105_fun_05_공감훅
-대본: out/scripts/20261105_fun_05_공감훅.json
-카드: out/cards_20261105_fun_05_공감훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261105_fun_05_생활공감
+대본: out/scripts/20261105_fun_05_생활공감.json
+카드: out/cards_20261105_fun_05_생활공감 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 2.2초  컵라면 물 양의 두 가지 인생...
-  TTS [2/6] [EL·발랄녀] 6.2초  라면 끓일 때 저 선 딱 맞춰 넣는 사람 있잖아. ...
-  TTS [3/6] [EL·발랄녀] 9.1초  반대로 '에이 대충 이 정도면 되지' 하면서 막 넣...
-  TTS [4/6] [EL·발랄녀] 9.1초  그런데 진짜 알고 보니까 선은 사람마다 다르게 봐진...
-  TTS [5/6] [EL·발랄녀] 5.4초  결국 선 맞추는 거고 뭐고 다 소용없다는 뜻이다. ...
-  TTS [6/6] [EL·발랄녀] 5.3초  당신은 어느 파? 댓글로 선택해 봐. 이런 거 더 ...
+  TTS [1/6] [EL·발랄녀] 1.2초  충전기 자리싸움...
+  TTS [2/6] [EL·발랄녀] 5.3초  엄마가 휴대폰 충전하고 있다. 그럼 나는 눈치 본다...
+  TTS [3/6] [EL·발랄녀] 7.3초  충전 30% 남은 내 휴대폰. 근데 아빠가 "내 거...
+  TTS [4/6] [EL·발랄녀] 5.3초  결국 거실 한 구석에 줄 서 있는 우리 가족 휴대폰...
+  TTS [5/6] [EL·발랄녀] 6.5초  그리고 충전기를 "누가 빌려갔지?" 하면서 찾는 3...
+  TTS [6/6] [EL·발랄녀] 9.8초  이런 집 맞지? 충전기 하나 더 사면 되잖아 해도,...
 
 2) 영상 합성
   세그먼트 [1/7] 3.0초
-  세그먼트 [2/7] 7.0초
-  세그먼트 [3/7] 9.9초
-  세그먼트 [4/7] 9.9초
-  세그먼트 [5/7] 6.2초
-  세그먼트 [6/7] 6.1초
+  세그먼트 [2/7] 6.1초
+  세그먼트 [3/7] 8.1초
+  세그먼트 [4/7] 6.1초
+  세그먼트 [5/7] 7.3초
+  세그먼트 [6/7] 10.6초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261105_fun_05_공감훅.mp4
-    길이: 41.1초  /  크기: 1.9MB
--rw-r--r-- 1 runner runner 1.9M Nov  5 17:37 out/reels/20261105_fun_05_공감훅.mp4
+  ✓ 릴스 완성: out/reels/20261105_fun_05_생활공감.mp4
+    길이: 39.2초  /  크기: 1.4MB
+-rw-r--r-- 1 runner runner 1.4M Nov  6 02:32 out/reels/20261105_fun_05_생활공감.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=41.080272
+duration=39.240272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -69,8 +67,8 @@ duration=41.080272
 
 설정 완료
 
-업로드 1건 (태그 reels-2026-11-05):
-  20261105_fun_05_공감훅.mp4  1.9MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-05/20261105_fun_05.mp4
+업로드 1건 (태그 reels-2026-11-06):
+  20261105_fun_05_생활공감.mp4  1.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-06/20261105_fun_05.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -81,9 +79,9 @@ duration=41.080272
 남은 발행 가능: 10건
 발행 대상: 1건
 
-── 1/1  20261105_fun_05_공감훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-05/20261105_fun_05.mp4
-  캡션: 컵라면 물 양의 두 가지 인생
-  [실패] [190/463] Error validating access token: Session has expired on Wednesday, 04-Nov-26 22:00:00 PST. The current time is Thursday, 05-Nov-26 09:38:00 PST.
+── 1/1  20261105_fun_05_생활공감
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-06/20261105_fun_05.mp4
+  캡션: 충전기 자리싸움
+  [실패] [190/463] Error validating access token: Session has expired on Wednesday, 04-Nov-26 22:00:00 PST. The current time is Thursday, 05-Nov-26 18:32:22 PST.
 
 완료: 발행 0건 / 실패 1건
