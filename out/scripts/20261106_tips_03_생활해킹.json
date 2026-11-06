@@ -1,0 +1,53 @@
+{
+  "title": "스마트폰 배터리 2년을 버티게 하는 충전법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배터리 수명",
+      "<r>2배 늘리는</r>",
+      "충전습관 3가지"
+    ],
+    "badge": null,
+    "photo_query": "smartphone battery charging"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "스마트폰 배터리, 1년도 못 가가지고 교체하는 사람 많지. 근데 이것만 바꿔도 2년을 간다고.",
+      "subtitle": "배터리 수명이 줄어드는 이유",
+      "photo_query": "phone battery degradation warning"
+    },
+    {
+      "image": null,
+      "narration": "첫 번째, 80% 이상 충전하지 말 것. 100%로 완충할 때마다 배터리 열화가 5배 빨라진다니까.",
+      "subtitle": "충전은 80%에서 멈춰라",
+      "photo_query": "smartphone battery level 80 percent"
+    },
+    {
+      "image": null,
+      "narration": "두 번째, 밤새 충전하지 말고 아침에 30분만 충전해라. 오래 고온에 노출되면 배터리 화학반응이 손상된다고.",
+      "subtitle": "밤샘 충전 절대 금지",
+      "photo_query": "alarm clock smartphone morning charging"
+    },
+    {
+      "image": null,
+      "narration": "세 번째, 20% 이상에서 충전 시작할 것. 0%까지 방전했다가 충전하면 셀 손상이 심하게 된다니까.",
+      "subtitle": "0% 완방전 피하기",
+      "photo_query": "phone battery indicator low power mode"
+    },
+    {
+      "image": null,
+      "narration": "이 세 가지만 지켜도 배터리 수명이 1년에서 2년으로 쑥 늘어난다. 이런 꿀팁 더 보고 싶으면 팔로우해봐.",
+      "subtitle": "배터리 2년 버티기 성공",
+      "photo_query": "healthy smartphone battery indicator full"
+    }
+  ],
+  "meta": {
+    "format": "생활해킹",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T03:23:35.536933+00:00"
+  }
+}

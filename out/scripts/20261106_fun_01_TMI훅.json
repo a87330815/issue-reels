@@ -1,0 +1,54 @@
+{
+  "title": "수박 고르기의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "수박 두드려서",
+      "<y>고르는데</y>",
+      "솔직히 다",
+      "같은 소리다"
+    ],
+    "badge": null,
+    "photo_query": "selecting watermelon at market"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "마트 가서 수박 앞에 서면 뭔가 진지해진다. 톡톡톡 두드려보고 귀 기울이는데...",
+      "subtitle": "과연 내가 뭘 듣는 건가",
+      "photo_query": "man tapping watermelon listening"
+    },
+    {
+      "image": null,
+      "narration": "솔직히 말하자면 어떤 수박을 두드려도 다 똑같은 소리다. 귀가 없는 한 분간을 못 듣는다니까.",
+      "subtitle": "심리학적 위로 행동일 뿐",
+      "photo_query": "different watermelons market display"
+    },
+    {
+      "image": null,
+      "narration": "어차피 육안으로 봐. 색깔 짙고, 배 부분 노란색, 흠집 없으면 된다. 이게 진짜 과학이다.",
+      "subtitle": "전문가들도 이렇게 고른다더라",
+      "photo_query": "watermelon color pattern close up"
+    },
+    {
+      "image": null,
+      "narration": "근데 우리는 계속 두드린다. 왜냐면... 뭔가 한 것 같은 느낌이 들거든.",
+      "subtitle": "그 느낌이 중요하지",
+      "photo_query": "person choosing fruit confidently smiling"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 더 알고 싶으면 팔로우해 봐. 생활 속 쓸데없지만 재밌는 진실들이 여기 있다.",
+      "subtitle": "팔로우 고마워",
+      "photo_query": "market shopping fruits vegetables"
+    }
+  ],
+  "meta": {
+    "format": "TMI훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T03:22:49.141810+00:00"
+  }
+}

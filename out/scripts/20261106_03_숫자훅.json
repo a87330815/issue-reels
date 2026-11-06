@@ -1,0 +1,62 @@
+{
+  "title": "같은 서울인데 75배 차이",
+  "cover": {
+    "image": null,
+    "lines": [
+      "같은 서울인데",
+      "<r>75배</r>",
+      "차이 난다"
+    ],
+    "badge": null,
+    "photo_query": "seoul apartment complex comparison luxury modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 서울 강남과 강북, 같은 도시인데 집값이 진짜 장난 아니다. 반포동은 평균 53억. 하대동은 0.7억. 75배다.",
+      "subtitle": "반포동 53억 vs 하대동 0.7억",
+      "photo_query": "seoul gangnam luxury apartment building facade"
+    },
+    {
+      "image": null,
+      "narration": "이거. 래미안퍼스티지는 13층, 84제곱미터에 5억 3천. 한강밤섬자이는 17층, 169제곱미터에 3억 3천. 층수도 높고 넓은데 왜 이렇게 싼가.",
+      "subtitle": "같은 강남, 위치에 따라 극과극",
+      "photo_query": "korea apartment price tag document calculator"
+    },
+    {
+      "image": null,
+      "narration": "위치다. 반포동은 강남의 중심. 한강변, 학군, 접근성. 모든 게 다르다. 같은 평수라도 동네 한 번 바뀌면 값이 십배 스무배 튀어오른다.",
+      "subtitle": "위치가 곧 자산이다",
+      "photo_query": "han river apartment view seoul cityscape"
+    },
+    {
+      "image": null,
+      "narration": "집 살 때 이거만 봐라. 강남권이라고 다 같은 강남이 아니다. 서현동, 논현동, 정자동. 다 2억대. 강남 중 강남을 아냐 아니냐, 그게 차이다.",
+      "subtitle": "강남도 위치 선택이 결정한다",
+      "photo_query": "seoul neighborhood map real estate market"
+    },
+    {
+      "image": null,
+      "narration": "요즘 집값 폭락장이라고? 이건 못 보고 사면 진짜 크게 후회한다. 우리 채널 팔로우하고 매달 데이터로 확인해봐라. 그게 똑똑한 집사기다.",
+      "subtitle": "위치 먼저 데이터로 확인하자",
+      "photo_query": "real estate agent office consultation meeting"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        53.0,
+        33.0,
+        23.6,
+        23.4,
+        22.4
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-06T03:22:01.673922+00:00"
+  }
+}

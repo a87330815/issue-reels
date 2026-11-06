@@ -1,0 +1,62 @@
+{
+  "title": "하대동 아파트 실거래 최고가",
+  "cover": {
+    "image": null,
+    "lines": [
+      "하대동 최고가",
+      "<r>1.2억</r>",
+      "임광입니다"
+    ],
+    "badge": null,
+    "photo_query": "korea apartment building 1980s older residential"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 하대동 아파트 시장. 지난달 최고가가 1억 2천만 원이 나왔다. 임광 59제곱미터.",
+      "subtitle": "하대동 최고가 1.2억원",
+      "photo_query": "apartment price chart graph increase"
+    },
+    {
+      "image": null,
+      "narration": "이거. 진짜 다른 단지랑 비교해봐라. 같은 달에 한보타워는 63백만 원. 거의 반값이다.",
+      "subtitle": "한보타워: 63백만원",
+      "photo_query": "korean apartment complex comparison buildings"
+    },
+    {
+      "image": null,
+      "narration": "하대동 물건들은 대부분 80년대 지은 오래된 건물들이카더라. 그런데 임광만 유독 높게 거래되고 있다.",
+      "subtitle": "1989년식 임광, 유독 강세",
+      "photo_query": "vintage 1980s apartment building korea old"
+    },
+    {
+      "image": null,
+      "narration": "평당 가격으로 보면 임광이 210만 원. 다른 곳들은 120~180만 원대다. 뭐가 다르냐. 이거 꼭 확인해봐야 한다.",
+      "subtitle": "임광 평당 210만원",
+      "photo_query": "apartment floor plan interior korea"
+    },
+    {
+      "image": null,
+      "narration": "하대동 부동산 움직임. 계속 팔로우해라. 더 자세한 데이터는 우리 채널에서 봐봐.",
+      "subtitle": "하대동 실거래 추적중",
+      "photo_query": "real estate market data information korea"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        1.2,
+        0.6,
+        0.6,
+        0.5,
+        0.5
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-06T03:22:22.024381+00:00"
+  }
+}

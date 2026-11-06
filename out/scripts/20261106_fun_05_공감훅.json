@@ -1,0 +1,52 @@
+{
+  "title": "맛집 웨이팅의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "줄 서서 30분",
+      "<r>기다렸는데</r>"
+    ],
+    "badge": null,
+    "photo_query": "people waiting line restaurant"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "오 이 집 진짜 유명하다더라. 줄까지 섰다. 이거 맛있어야 한다.",
+      "subtitle": "기대감 폭발",
+      "photo_query": "queue line restaurant entrance"
+    },
+    {
+      "image": null,
+      "narration": "30분 기다렸다. 드디어 자리다. 앉자마자 느껴지는데... 어? 이게 왜 이래?",
+      "subtitle": "현실과 기대의 괴리",
+      "photo_query": "disappointed diner looking at food"
+    },
+    {
+      "image": null,
+      "narration": "양도 작고, 맛도 그냥... 그럼 내가 왜 30분을 섰지? 이거 심리 효과 아닌가.",
+      "subtitle": "웨이팅이 맛을 만든다",
+      "photo_query": "small portion dish restaurant table"
+    },
+    {
+      "image": null,
+      "narration": "근데 생각해보니 맛있었어. 아니 진짜. 웨이팅이 없었으면 평범했을 거야.",
+      "subtitle": "웨이팅의 마법",
+      "photo_query": "satisfied customer eating delicious food"
+    },
+    {
+      "image": null,
+      "narration": "다음 주에 또 가야겠다. 이런 거 더 보고 싶으면 팔로우.",
+      "subtitle": "또 서는 운명",
+      "photo_query": "restaurant night busy crowd"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T03:23:14.662198+00:00"
+  }
+}

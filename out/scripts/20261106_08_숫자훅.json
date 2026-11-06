@@ -1,0 +1,62 @@
+{
+  "title": "반포동 래미안퍼스티지 평당 2억 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "반포동",
+      "<r>평당 2억</r>",
+      "이게 현실입니다"
+    ],
+    "badge": null,
+    "photo_query": "seoul gangnam banpo luxury apartment building"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지. 10월에 5억 3천만 원에 팔렸다. 뭐가 문제냐고? 평당 2억이다.",
+      "subtitle": "래미안퍼스티지 5억 3천만 원 거래",
+      "photo_query": "luxury apartment high rise banpo seoul"
+    },
+    {
+      "image": null,
+      "narration": "84제곱미터. 전용면적이 84제곱미터인데. 평당으로 치면 2억 원이라는 게 뭐라고 생각하냐고? 이거 서울 강남 끝판왕이다.",
+      "subtitle": "평당 2억 = 전국 톱 수준",
+      "photo_query": "expensive property price calculator document"
+    },
+    {
+      "image": null,
+      "narration": "같은 달 거래된 다른 단지들 봤냐고? 강남 한복판인데도 불구하고 이 수준이면 진짜 터무니없다.",
+      "subtitle": "같은 기간 대치·정자동 대비",
+      "photo_query": "real estate comparison analysis data"
+    },
+    {
+      "image": null,
+      "narration": "2009년 지어진 지 15년된 건물. 13층. 이 정도 위치면 앞으로 더 오를 수밖에 없다. 당신 동네는 어디냐고?",
+      "subtitle": "2009년 준공 강남 최고가 단지",
+      "photo_query": "seoul apartment building age 2009"
+    },
+    {
+      "image": null,
+      "narration": "이런 데이터 놓치면 시장 읽을 수 없다. 매주 공공데이터로 실거래가 한 번에 봐라. 쫌봐봐 팔로우해.",
+      "subtitle": "매주 실거래가 데이터 분석",
+      "photo_query": "follow subscribe button social media"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        2.06,
+        1.44,
+        1.0,
+        0.98,
+        0.95
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-06T03:22:36.137746+00:00"
+  }
+}

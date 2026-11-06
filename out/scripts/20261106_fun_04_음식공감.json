@@ -1,0 +1,53 @@
+{
+  "title": "라면 물양 도박",
+  "cover": {
+    "image": null,
+    "lines": [
+      "라면 물양",
+      "<r>눈대중</r>",
+      "하는 그 긴장감"
+    ],
+    "badge": null,
+    "photo_query": "instant ramen cooking pot water"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "밥 먹을 시간도 없이 라면을 끓인다. 물을 붓는데 멈춤. 이 정도면 됐나? 아니면 좀 더? 이 순간이 바로 도박이다.",
+      "subtitle": "눈대중의 순간",
+      "photo_query": "pouring water pot stove"
+    },
+    {
+      "image": null,
+      "narration": "물을 너무 많이 부으면 국물이 밍밍해진다. 건더기는 다 떠서 따라버리고 스프만 남는 그 안타까움. 야야야.",
+      "subtitle": "국물 많으면 국물맛",
+      "photo_query": "ramen broth soup noodles"
+    },
+    {
+      "image": null,
+      "narration": "반대로 물을 적게 부으면? 건더기만 자글거리다가 국물은 없다. 면을 씹을 때 스프가 남아 텁텁하고. 이것도 지옥이다.",
+      "subtitle": "국물 적으면 스프맛",
+      "photo_query": "instant noodles dry concentrated"
+    },
+    {
+      "image": null,
+      "narration": "결국 라면을 완벽하게 끓이는 건 운에 달려 있다. 몇 번을 끓여도 언제는 실수한다. 이게 우리가 겪는 라면 로또다.",
+      "subtitle": "매번 도박 같은 긴장",
+      "photo_query": "steaming hot ramen bowl perfect"
+    },
+    {
+      "image": null,
+      "narration": "이런 거 공감되면 팔로우해서 함께 라면 도박을 즐겨보자고야.",
+      "subtitle": "팔로우는 필수",
+      "photo_query": "eating ramen satisfied happy"
+    }
+  ],
+  "meta": {
+    "format": "음식공감",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T03:23:08.934520+00:00"
+  }
+}

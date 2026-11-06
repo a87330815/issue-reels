@@ -1,0 +1,47 @@
+{
+  "title": "황유민 토토 저팬 클래식 첫날 성적",
+  "cover": {
+    "image": null,
+    "lines": [
+      "황유민",
+      "<r>공동 7위</r>",
+      "LPGA 시작됐다"
+    ],
+    "badge": null,
+    "photo_query": "female golfer swinging golf course"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 황유민이 LPGA 토토 저팬 클래식 첫날에 공동 7위다. 선두랑 딱 2타 차이. 진짜 거기 문제없다.",
+      "subtitle": "황유민 공동 7위, 선두와 2타차",
+      "photo_query": "womens golf tournament scoreboard leaderboard"
+    },
+    {
+      "image": null,
+      "narration": "이거. 첫날부터 이 정도면 우승 노릴 수 있다는 거다. LPGA 투어에서 상위권에 붙어 있으면 끝까지 간다.",
+      "subtitle": "첫날부터 상위권 포지셔닝",
+      "photo_query": "golf player concentration focus tee"
+    },
+    {
+      "image": null,
+      "narration": "남은 라운드 3개다. 한 타 줄이고, 한 타 더 줄이면 우승까지 갈 수 있다. 황유민이 맞을 수 있다.",
+      "subtitle": "남은 3라운드가 관건",
+      "photo_query": "golfer putting green grass"
+    },
+    {
+      "image": null,
+      "narration": "우리나라 선수가 LPGA에서 벌이는 경기 놓치지 마라. 쫌봐봐 채널에서 계속 업데이트할 테니까.",
+      "subtitle": "LPGA 황유민 실시간 추적",
+      "photo_query": "korean flag sports victory celebration"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-06T03:22:41.984012+00:00"
+  }
+}

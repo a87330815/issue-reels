@@ -1,0 +1,53 @@
+{
+  "title": "미용실 '조금만' 다듬어달라는데",
+  "cover": {
+    "image": null,
+    "lines": [
+      "'조금만",
+      "<r>다듬어주세요'</r>",
+      "했는데"
+    ],
+    "badge": null,
+    "photo_query": "haircut salon mirror before after"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "미용실 의자에 앉자마자 나 한 마디. '조금만 정리해주세요. 손도 안 대고 그냥 다듬기만...'",
+      "subtitle": "조금만 다듬어주세요",
+      "photo_query": "hairdresser consultation client talk"
+    },
+    {
+      "image": null,
+      "narration": "근데 이게 뭐하는 짓이냐 이거. 내가 어제 한 스타일링이 완전 날아가 버렸다.",
+      "subtitle": "어제 셋팅이 다 날아감",
+      "photo_query": "woman shocked mirror disappointed hair"
+    },
+    {
+      "image": null,
+      "narration": "미용사님 말로는 '조금만'이 사람마다 다르대. 누구는 1cm, 누구는 5cm. 그게 '조금'이라고 봐봐.",
+      "subtitle": "미용사의 '조금'은 남달라",
+      "photo_query": "hairdresser cutting hair precision scissors"
+    },
+    {
+      "image": null,
+      "narration": "그 순간 깨닫는다. 내 '조금'과 미용사의 '조금'은 다른 우주의 말이구나.",
+      "subtitle": "'조금'의 기준이 다르다",
+      "photo_query": "woman thinking realization looking mirror"
+    },
+    {
+      "image": null,
+      "narration": "이제 알아. 다음에는 무조건 사진 가져가야겠다. 말로는 절대 안 된다니까.",
+      "subtitle": "사진이 정답이다",
+      "photo_query": "phone showing hairstyle photo reference"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T03:23:02.147282+00:00"
+  }
+}

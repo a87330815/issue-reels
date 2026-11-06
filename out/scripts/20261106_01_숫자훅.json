@@ -1,0 +1,57 @@
+{
+  "title": "반포동 래미안퍼스티지 53억 거래",
+  "cover": {
+    "image": null,
+    "lines": [
+      "반포동",
+      "<r>53억</r>",
+      "이 정도면",
+      "뭔가 있다"
+    ],
+    "badge": null,
+    "photo_query": "banpo district seoul apartment complex modern"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지. 84제곱미터짜리가 이번에 53억에 나갔다.",
+      "subtitle": "반포동 84평 53억 거래",
+      "photo_query": "luxury apartment interior modern living room"
+    },
+    {
+      "image": null,
+      "narration": "2009년 건축이라 15년 된 건물이다. 그런데 이 가격이다. 뭐라카노.",
+      "subtitle": "2009년 지은 15년 건물",
+      "photo_query": "apartment building facade 2000s construction"
+    },
+    {
+      "image": null,
+      "narration": "13층이니까 채광도 좋고. 반포동 입지 자체가 강하다는 거다.",
+      "subtitle": "13층 채광 우수",
+      "photo_query": "high floor apartment window city view"
+    },
+    {
+      "image": null,
+      "narration": "요즘 강남 구도심은 이렇게 움직인다. 따라잡고 싶으면 팔로우하고 가.",
+      "subtitle": "강남 구도심 시세 흐름",
+      "photo_query": "gangnam seoul real estate market data"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "주거",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        53.0,
+        33.0,
+        24.4,
+        23.8,
+        23.6
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-06T03:21:47.249915+00:00"
+  }
+}

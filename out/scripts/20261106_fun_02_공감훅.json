@@ -1,0 +1,53 @@
+{
+  "title": "배달앱 30분 고민의 법칙",
+  "cover": {
+    "image": null,
+    "lines": [
+      "배달앱",
+      "30분 고민하고",
+      "<r>결국 항상 그거</r>"
+    ],
+    "badge": null,
+    "photo_query": "delivery app scrolling phone"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야 뭐 먹을까 하면서 배달앱 켜는 거야. 이번엔 다른 거 시켜봐야겠다고 다짐한다.",
+      "subtitle": "뭘 시킬까 진지한 고민 시작",
+      "photo_query": "thinking man smartphone food choices"
+    },
+    {
+      "image": null,
+      "narration": "중국집, 피자, 치킨, 족발, 한식... 다 스크롤한다. 15분이 흘렀다. 아직 못 정했다.",
+      "subtitle": "앱을 누비는 30분 여정",
+      "photo_query": "app menu scrolling delivery food"
+    },
+    {
+      "image": null,
+      "narration": "\"이건 비싼데?\" \"이건 먹어본 건데?\" \"이건 배달 안 될까?\", 계속 고민한다.",
+      "subtitle": "합리화와 의심의 악순환",
+      "photo_query": "confused hesitant choosing options"
+    },
+    {
+      "image": null,
+      "narration": "결국 손가락은 항상 먹던 그 가게를 찾아간다. 아이고... 또 그거네.",
+      "subtitle": "손가락은 정직하다",
+      "photo_query": "ordering familiar favorite restaurant"
+    },
+    {
+      "image": null,
+      "narration": "매번 다르게 하겠다고 맹세하지만, 우린 안다. 다음 주도 또 그 가게일 거다. 쫌봐봐 팔로우하면 이런 공감 더 받을 수 있어!",
+      "subtitle": "반복되는 숙명",
+      "photo_query": "satisfied eating familiar food"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T03:22:55.901879+00:00"
+  }
+}
