@@ -1,20 +1,8 @@
 name: 카드뉴스 생성
 
-# 2026-10-29: 대본이 생길 때마다 자동으로 돌던 연결을 끊었다.
-# 팔로워가 없는 동안 카드뉴스는 게시하지 않기로 했고, 릴스는 발행 직전에
-# 필요한 카드만 그때 만든다(publish_daily.yml). 미리 전량 만들어 커밋하면
-# 쓰지도 않는 PNG로 저장소만 불어난다.
-# 팔로워가 붙어 카드뉴스를 다시 올리게 되면 아래 workflow_run을 되살린다.
+# 사진 필수 카드뉴스 생성. 배경음악은 릴스에서만 처리한다.
 on:
-  # workflow_run:
-  #   workflows: ["대본 생성"]
-  #   types: [completed]
   workflow_dispatch:
-    inputs:
-      skip_photos:
-        description: "사진 수집 건너뛰기 (그래디언트 배경만)"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -23,77 +11,48 @@ jobs:
   cards:
     if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: 한글 폰트 · 컬러 이모지 설치
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-color-emoji
-          ls /usr/share/fonts/opentype/noto/NotoSansCJK-*.ttc
-          ls /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
-
       - name: 의존성 설치
-        # opencv-python-headless: 매거진 레이아웃에서 얼굴 위치를 찾아
-        # 사진 밴드를 자를 때 쓴다. 없어도 기본 크롭으로 동작한다.
         run: pip install -q Pillow numpy requests opencv-python-headless
-
-      - name: 대본 내려받기
-        uses: actions/download-artifact@v4
-        with:
-          name: scripts
-          path: out/scripts/
-        continue-on-error: true
-
       - name: 대본 확인
-        id: scripts
         run: |
           mkdir -p out/scripts
           COUNT=$(ls out/scripts/*.json 2>/dev/null | wc -l)
+          if [ "$COUNT" -eq 0 ]; then echo "::error::대본이 없습니다"; exit 1; fi
           echo "대본 $COUNT 건"
-          if [ "$COUNT" -eq 0 ]; then
-            echo "대본이 없습니다. 저장소에 커밋된 대본을 사용합니다."
-            COUNT=$(ls out/scripts/*.json 2>/dev/null | wc -l)
-          fi
-          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
-
-      - name: 배경 사진 수집
-        if: ${{ inputs.skip_photos != true }}
+      - name: 배경 사진 수집 (필수)
         env:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
-        continue-on-error: true
         run: |
+          set -euo pipefail
           mkdir -p out/photos
-          # 러너 로그는 외부에서 받기 어려우므로 저장소로 함께 커밋해 진단에 쓴다
-          {
-            echo "run: ${{ github.run_id }}  $(date -u +%FT%TZ)"
-            echo "unsplash key: $([ -n "$UNSPLASH_ACCESS_KEY" ] && echo 있음 || echo 없음)"
-            echo
-          } > out/photos/collect.log
-          set -o pipefail
-          python -u photos.py out/scripts/*.json -o out/photos 2>&1 \
-            | tee -a out/photos/collect.log
-          echo "--- 수집된 파일 ---" | tee -a out/photos/collect.log
-          find out/photos -name '*.jpg' | sort | tee -a out/photos/collect.log
-
-      - name: 카드뉴스 생성
+          python -u photos.py out/scripts/*.json -o out/photos 2>&1 | tee out/photos/collect.log
+          COUNT=$(find out/photos -type f \( -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \) | wc -l)
+          if [ "$COUNT" -eq 0 ]; then echo "::error::사진 수집 결과가 없습니다. 그라데이션 배경으로 대체하지 않습니다."; exit 1; fi
+          echo "사진 $COUNT 장 수집 완료"
+      - name: 카드뉴스 생성 (사진 필수)
         env:
-          # 계정을 옮길 땐 저장소 Variables에서 이 둘만 바꾸면 된다
           IG_HANDLE: ${{ vars.IG_HANDLE }}
           IG_BRAND: ${{ vars.IG_BRAND }}
         run: |
+          set -euo pipefail
           for f in out/scripts/*.json; do
             stem=$(basename "$f" .json)
-            echo "=== $stem ==="
-            python cardnews.py "$f" -o "out/cards_${stem#news_}" -p "out/photos/$stem"
+            PHOTO_DIR="out/photos/$stem"
+            PHOTO_COUNT=$(find "$PHOTO_DIR" -type f \( -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \) 2>/dev/null | wc -l)
+            if [ "$PHOTO_COUNT" -eq 0 ]; then echo "::error::$stem 사진 없음 — 카드 생성을 중단합니다"; exit 1; fi
+            python -u cardnews.py "$f" -o "out/cards_${stem#news_}" -p "$PHOTO_DIR"
           done
-          echo "--- 생성 결과 ---"
           find out -name '*.png' -path '*cards*' | sort
-
       - name: 카드뉴스 업로드
         uses: actions/upload-artifact@v4
         with:
@@ -102,32 +61,13 @@ jobs:
             out/cards_*/**
             out/photos/**
           retention-days: 30
-
       - name: 커밋
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # out/는 .gitignore 대상이라 -f 필요. 글롭 대신 디렉터리로 지정해
-          # 일치하는 경로가 없을 때 add 전체가 실패하는 것을 막는다.
           git add -Af out
-
-          if git diff --cached --quiet; then
-            echo "변경 없음 — 커밋 생략"
-            exit 0
-          fi
-          git commit -m "카드뉴스 생성 $(date +%Y-%m-%d)"
-
-          # 실행 중 원격이 앞서갔을 수 있다. 리베이스 후 재시도하고,
-          # 끝내 실패하면 단계를 실패시켜 드러나게 한다 (이전엔 '|| echo'가 삼켰음).
-          for i in 1 2 3; do
-            if git pull --rebase --autostash origin main && git push origin main; then
-              echo "푸시 완료 (시도 $i)"
-              exit 0
-            fi
-            echo "푸시 재시도 $i"
-            sleep 5
-          done
-          echo "::error::카드뉴스 결과 푸시 실패"
-          exit 1
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "사진 필수 카드뉴스 생성 $(date +%Y-%m-%d)"
+          git pull --rebase --autostash origin main
+          git push origin main
