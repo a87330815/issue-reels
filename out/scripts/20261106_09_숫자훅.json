@@ -1,40 +1,45 @@
 {
-  "title": "스칼렛 조한슨, 배트맨 파트2 캐스팅 논란",
+  "title": "삼성증권 한미약품 바이오혁신",
   "cover": {
     "image": null,
     "lines": [
-      "<r>할리우드</r>",
-      "최고 배우들이",
-      "왜 이 역할",
-      "힘들어할까?"
+      "신약 개발",
+      "<r>300조</r>",
+      "시장 움직인다"
     ],
     "badge": null,
-    "photo_query": "batman movie film character dark"
+    "photo_query": "biotech pharmaceutical laboratory research microscope"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 배트맨 파트2 캐스팅이 논란이 됐다. 스칼렛 조한슨이 새 역할로 캐스팅됐는데, 본인이 직접 나서서 이 역할이 얼마나 어려웠는지 폭로한 거다.",
-      "subtitle": "배트맨 파트2 캐스팅 공개",
-      "photo_query": "scarlett johansson celebrity actress"
+      "narration": "이거 모르고 지나가면 손해다. 한미약품 바이오 혁신 행사. 거기서 뭐가 나왔냐 하면. 신약 개발 파이프라인이 확 늘어났다.",
+      "subtitle": "신약 개발 파이프라인 확대",
+      "photo_query": "biomedical innovation conference presentation"
     },
     {
       "image": null,
-      "narration": "할리우드 톱스타들도 고민하는 이유가 뭘까. 배트맨 유니버스는 독립적인 세계관으로 유명하다. 기존 할리우드 배우의 이미지를 완전히 벗어내야 한다는 거다.",
-      "subtitle": "배트맨 세계관의 강력함",
-      "photo_query": "batman universe dark gotham city"
+      "narration": "삼성증권 같은 증권사들이 주목하는 거. 바이오 시장이 진짜 크거든. AI 헬스케어까지 들어오니까 더 커진다.",
+      "subtitle": "AI 헬스케어 신기술 도입",
+      "photo_query": "artificial intelligence healthcare medical technology"
     },
     {
       "image": null,
-      "narration": "캐릭터를 새로 만드는 것처럼 접근해야 한다는 거다. 배우 본인의 스타일이 있어도 다 버려야 한다. 그래야 배트맨 세계에 녹아든다.",
-      "subtitle": "완전히 새로운 캐릭터 창조",
-      "photo_query": "actor character transformation makeup"
+      "narration": "글로벌 제약사들도 눈여겨본다 아이가. 신약 개발 성공률. 여기 올라가면 주가도 우르르 간다.",
+      "subtitle": "글로벌 진출 가능성 높아짐",
+      "photo_query": "stock market graph trading financial growth"
     },
     {
       "image": null,
-      "narration": "이게 왜 뉴스일까. 큰 영화 하나가 배우의 경력을 완전히 바꿀 수 있다는 거다. 톱스타도 심사숙고하는 선택이라는 뜻이다. 당신도 중대한 결정 앞에선 이렇게 고민해야 한다.",
-      "subtitle": "배우도 신중한 선택의 순간",
-      "photo_query": "movie set film production lights"
+      "narration": "투자자들이 진짜 벼르고 있는 대목. 바이오 신약. 한 번 터지면 수십 배도 나온다.",
+      "subtitle": "신약 개발 성공 시 수익성 극대화",
+      "photo_query": "pharmaceutical company success milestone celebration"
+    },
+    {
+      "image": null,
+      "narration": "삼성증권에서 리포트 띄우기 전에. 지금 미리 알아두는 게 돈 버는 거다. 팔로우해라.",
+      "subtitle": "투자정보 사전 확인의 중요성",
+      "photo_query": "financial analysis research report documents"
     }
   ],
   "meta": {
@@ -43,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-06T10:34:29.607173+00:00"
+    "generated_at": "2026-11-06T15:30:12.096638+00:00"
   }
 }

@@ -1,46 +1,45 @@
 {
-  "title": "수박 고르기의 진실",
+  "title": "월요일 아침",
   "cover": {
     "image": null,
     "lines": [
-      "수박 두드려서",
-      "<y>고르는데</y>",
-      "솔직히 다",
-      "같은 소리다"
+      "일요일 저녁부터",
+      "<r>월요병 시작</r>",
+      "된다 아이가"
     ],
     "badge": null,
-    "photo_query": "selecting watermelon at market"
+    "photo_query": "sunday evening couch anxiety"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "마트 가서 수박 앞에 서면 뭔가 진지해진다. 톡톡톡 두드려보고 귀 기울이는데...",
-      "subtitle": "과연 내가 뭘 듣는 건가",
-      "photo_query": "man tapping watermelon listening"
+      "narration": "일요일 저녁 6시만 되면 갑자기 불안감이 밀려온다. 아직 하루 반이 남았는데도.",
+      "subtitle": "일요병은 실제로 존재한다",
+      "photo_query": "person sitting nervous evening"
     },
     {
       "image": null,
-      "narration": "솔직히 말하자면 어떤 수박을 두드려도 다 똑같은 소리다. 귀가 없는 한 분간을 못 듣는다니까.",
-      "subtitle": "심리학적 위로 행동일 뿐",
-      "photo_query": "different watermelons market display"
+      "narration": "이거 학명이 있거든. '일요일 신경증(Sunday Neurosis)'이라고 카더라. 심리학에서 정식으로 나온 말이다.",
+      "subtitle": "과학이 인정한 월요병",
+      "photo_query": "calendar monday anxiety stress"
     },
     {
       "image": null,
-      "narration": "어차피 육안으로 봐. 색깔 짙고, 배 부분 노란색, 흠집 없으면 된다. 이게 진짜 과학이다.",
-      "subtitle": "전문가들도 이렇게 고른다더라",
-      "photo_query": "watermelon color pattern close up"
+      "narration": "일요일 저녁에 뇌가 이미 월요일 모드로 전환되면서 코르티솔이 올라간다고 한다. 자는 시간까지 짜증이 난다.",
+      "subtitle": "호르몬이 벌써 준비됨",
+      "photo_query": "person restless bed insomnia"
     },
     {
       "image": null,
-      "narration": "근데 우리는 계속 두드린다. 왜냐면... 뭔가 한 것 같은 느낌이 들거든.",
-      "subtitle": "그 느낌이 중요하지",
-      "photo_query": "person choosing fruit confidently smiling"
+      "narration": "그래서 월요일 아침이 되면 이미 지쳐 있다. 잠을 푹 잤어도 피곤하고, 밥이 입에 안 들어간다.",
+      "subtitle": "월요일 아침의 정체",
+      "photo_query": "tired morning breakfast avoidant"
     },
     {
       "image": null,
-      "narration": "이런 거 더 알고 싶으면 팔로우해 봐. 생활 속 쓸데없지만 재밌는 진실들이 여기 있다.",
-      "subtitle": "팔로우 고마워",
-      "photo_query": "market shopping fruits vegetables"
+      "narration": "이런 거 알면 쓸데없이 똑똑해지긴 한다. 그래도 월요일은 여전히 싫다. 팔로우하면 이런 지식 더 얻을 수 있어.",
+      "subtitle": "지식은 늘었는데 기분은 그대로",
+      "photo_query": "follow like subscribe button"
     }
   ],
   "meta": {
@@ -49,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-06T03:22:49.141810+00:00"
+    "generated_at": "2026-11-06T15:30:19.035499+00:00"
   }
 }

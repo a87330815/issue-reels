@@ -5,41 +5,41 @@
     "lines": [
       "같은 서울인데",
       "<r>76배</r>",
-      "차이난다"
+      "차이 난다"
     ],
     "badge": null,
-    "photo_query": "seoul apartment comparison luxury vs affordable"
+    "photo_query": "seoul apartment buildings comparison expensive cheap"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 서울 강남 반포동 아파트. 딱 한 채를 봐라. 53억이다.",
-      "subtitle": "반포동 평균 53억원",
-      "photo_query": "gangnam luxury apartment building facade"
+      "narration": "이거 모르고 지나가면 손해다. 10월 서울 아파트 실거래가 봤냐. 반포동은 53억. 하대동은 0.7억이다.",
+      "subtitle": "반포동 53억 vs 하대동 0.7억",
+      "photo_query": "luxury apartment lobby modern interior"
     },
     {
       "image": null,
-      "narration": "같은 서울 하대동. 평균이 0.7억이다. 야야야. 76배 차이다. 같은 도시 맞나?",
-      "subtitle": "하대동 평균 0.7억원 / 76배 차이",
-      "photo_query": "seoul affordable housing old apartment building"
+      "narration": "같은 서울인데 76배 차이다. 뭐라카더라. 반포동 래미안퍼스티지는 84제곱미터에 53억. 같은 면적, 같은 신축에 가까운데 천지차이다.",
+      "subtitle": "래미안퍼스티지 84㎡ 53억",
+      "photo_query": "hangang river view apartment balcony seoul"
     },
     {
       "image": null,
-      "narration": "반포동은 래미안퍼스티지 같은 신축 아파트가 우글우글하다. 하대동은 20년 된 아파트들이 많다.",
-      "subtitle": "반포: 신축 / 하대동: 노후 아파트",
-      "photo_query": "new modern apartment vs old residential"
+      "narration": "하대동 한강밤섬자이는 169제곱미터, 더 크고 새것인데 33억이다. 절반도 안 된다.",
+      "subtitle": "한강밤섬자이 169㎡ 33억",
+      "photo_query": "apartment living room window view morning"
     },
     {
       "image": null,
-      "narration": "강남과 강북 차이? 아니다. 같은 강남권인 강남구 안에서도 동네마다 이렇게 갈린다.",
-      "subtitle": "강남구 내 동네별 격차",
-      "photo_query": "korean neighborhood district comparison map"
+      "narration": "강남 강북. 한강 근처 아닌 곳. 위치가 이 정도 차이를 만든다. 아파트 살 때 이거 모르면 진짜 크다.",
+      "subtitle": "위치가 가격을 결정한다",
+      "photo_query": "korea real estate price map location"
     },
     {
       "image": null,
-      "narration": "내가 사는 곳이 어디냐에 따라 평생 자산이 달라진다 이 말이다. 우리 동네는 어디냐? 팔로우하고 다음 편에서 확인해봐라.",
-      "subtitle": "동네 선택이 자산을 결정한다",
-      "photo_query": "family looking at apartment neighborhood view"
+      "narration": "10월 실거래가. 쫌봐봐 채널 팔로우해서 놓치지 말아라.",
+      "subtitle": "10월 서울 아파트 실거래",
+      "photo_query": "phone notification real estate data update"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T10:33:50.850231+00:00"
+    "generated_at": "2026-11-06T15:29:34.807057+00:00"
   }
 }

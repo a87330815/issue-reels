@@ -1,45 +1,45 @@
 {
-  "title": "장보기 전 5분 습관으로 식비 30% 줄이기",
+  "title": "알뜰폰으로 바꾸면 월 3만 원 절약되는 이유",
   "cover": {
     "image": null,
     "lines": [
-      "장보기 전",
-      "<r>5분만 하면</r>",
-      "식비 30% 뚝!"
+      "알뜰폰으로",
+      "<r>월 3만원</r>",
+      "절약하기"
     ],
     "badge": null,
-    "photo_query": "grocery shopping list planning"
+    "photo_query": "mobile phone sim card switching"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "장 보러 가기 전에 딱 5분이면 된다. 냉장고를 열어봐라. 지금 뭐가 남아있는지 쭉 확인하는 거다.",
-      "subtitle": "냉장고 남은 재료 확인",
-      "photo_query": "open refrigerator checking food"
+      "narration": "지금 쓰는 통신비 얼마냐고? 보통 7~8만 원이 기본이제. 근데 알뜰폰으로 바꾸면 3~4만 원대로 뚝 떨어진다 아이가.",
+      "subtitle": "SKT·KT·LGU+ 자회사 알뜰폰 추천",
+      "photo_query": "phone bill statement expensive"
     },
     {
       "image": null,
-      "narration": "그 다음 오늘 저녁, 내일 저녁 뭘 먹을지 대충 정한다. 남은 재료를 먼저 써먹을 메뉴 말이야. 이렇게 하면 똑같은 걸 또 사는 실수가 없어진다.",
-      "subtitle": "2일치 식단 미리 정하기",
-      "photo_query": "meal planning notebook writing"
+      "narration": "방법은 간단하다. 헬로모바일, 알뜰폰 같은 알뜰폰 대리점 가서 기존 번호 이동 신청만 하면 된다. 5분이면 끝난다.",
+      "subtitle": "번호이동 신청 5분 소요",
+      "photo_query": "mobile phone store counter service"
     },
     {
       "image": null,
-      "narration": "그리고 장 가서 필요한 것만 산다. 냉장고에 있는 거랑 이미 계획한 메뉴니까 남는 음식도 안 생기고, 충동구매도 확 줄어든다.",
-      "subtitle": "계획된 목록만 구매",
-      "photo_query": "shopping cart with list items"
+      "narration": "기존 통신사는 자기네 인프라 많이 놔두니까 서비스료 더 받는데, 알뜰폰은 그 인프라 빌려 쓰는 거라 싸다고. 통신 품질은 똑같다.",
+      "subtitle": "인프라 공유로 비용 절감",
+      "photo_query": "mobile network tower infrastructure"
     },
     {
       "image": null,
-      "narration": "월급 300만 원이면 한 달에 30만 원을 그냥 버리던 사람들이 이것만 해도 10만 원은 챙긴다. 왜냐면 대부분 냉장고에 뭐가 있는지 모르니까 겹쳐서 사거든.",
-      "subtitle": "월 10만원 절약 효과",
-      "photo_query": "money savings coins calculator"
+      "narration": "그래서 지금 가입자들 보면 데이터 5GB, 통화 무제한에 3만 원대로 쓰고 있다. 1년이면 36만 원 절약이다.",
+      "subtitle": "연 36만 원 절약 효과",
+      "photo_query": "savings money accumulated coins"
     },
     {
       "image": null,
-      "narration": "이런 꿀팁들 더 보고 싶으면 팔로우 해주면 된다. 진짜 써먹을 만한 것들만 올린다니까!",
-      "subtitle": "팔로우로 더 많은 팁 받기",
-      "photo_query": "follow button hand pointing"
+      "narration": "이런 꿀팁 더 궁금하면 팔로우 고고. 매달 생활비 아끼는 방법들 자꾸자꾸 올려 드릴게.",
+      "subtitle": "팔로우 하나만 누르고 가세요",
+      "photo_query": "follow button social media"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-06T03:23:28.799225+00:00"
+    "generated_at": "2026-11-06T15:30:53.219293+00:00"
   }
 }

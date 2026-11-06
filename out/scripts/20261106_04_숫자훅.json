@@ -1,45 +1,45 @@
 {
-  "title": "한국시리즈 3차전 현장",
+  "title": "숲 여행 트렌드",
   "cover": {
     "image": null,
     "lines": [
-      "오늘 야구 티켓",
-      "다 떨어졌다",
-      "<r>3시간</r> 안에"
+      "요즘 사람들",
+      "<r>숲</r>으로",
+      "몰려간다"
     ],
     "badge": null,
-    "photo_query": "baseball stadium crowd tickets"
+    "photo_query": "forest hiking trail morning light"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 한국시리즈 3차전. 오늘 경기 표가 3시간 만에 매진됐다.",
-      "subtitle": "한국시리즈 3차전 표 3시간 만에 매진",
-      "photo_query": "sold out tickets sign stadium"
+      "narration": "이거 모르고 지나가면 손해다. 요즘 한국 관광지 검색어 1위가 뭔지 아나. 바로 숲이다. 여행 가는 사람들 절반이 숲을 찾는다고 카더라.",
+      "subtitle": "숲 여행 검색 급증 중",
+      "photo_query": "korean forest dense trees sunlight"
     },
     {
       "image": null,
-      "narration": "뭐가 이리 핫한고 싶겠지. 전설이 나온다. 이승엽. 유명한 그 선수. 시구를 한다.",
-      "subtitle": "전설의 선수 이승엽이 시구",
-      "photo_query": "baseball legend pitcher throwing ball"
+      "narration": "왜일까. 도시에서 지친 사람들이 숲으로 가는 거지. 피톤치드 마시고. 새 소리 듣고. 그럼 스트레스 확 빠진다는 거다.",
+      "subtitle": "도시 피로에서 벗어나기",
+      "photo_query": "person walking forest path peaceful"
     },
     {
       "image": null,
-      "narration": "거기에 국민 배우 김소현. 애국가를 부른다. 이런 무대. 연예인도 못 잡는다.",
-      "subtitle": "국민 배우가 애국가 무대",
-      "photo_query": "actress singing national anthem stadium"
+      "narration": "전국 유명 숲 여행지들이 있다. 소백산. 지리산. 설악산. 이런 데들이 지금 인파로 붐빈다. 당일치기로도 가능하다.",
+      "subtitle": "전국 숲 여행지 인기",
+      "photo_query": "mountain forest landscape korea nature"
     },
     {
       "image": null,
-      "narration": "야구팬들 지금 현장 가는 길이다. 남은 표? 없다. 티켓팅 놓친 거면. 실시간 중계. 챙겨놔라.",
-      "subtitle": "라이브 중계로 현장 감상",
-      "photo_query": "baseball game live broadcast television"
+      "narration": "가는 길도 요즘 쉬워졌다. 대중교통으로도 충분하고. 숲길 정보도 다 나온다. 이 기회에 한 번 가봐라.",
+      "subtitle": "정보와 교통 접근성 좋음",
+      "photo_query": "train station mountain access korea"
     },
     {
       "image": null,
-      "narration": "한국시리즈. 역대급 무대다. 팔로우하고. 다음 경기 정보 먼저 받아라.",
-      "subtitle": "한국시리즈 최신 소식 팔로우",
-      "photo_query": "korean baseball series championship game"
+      "narration": "당신도 숲 여행 하나쯤 계획해 봐라. 아래 팔로우하고. 여행지 정보 더 받아가. 쫌봐봐!",
+      "subtitle": "더 많은 여행 정보는 팔로우로",
+      "photo_query": "forest scenic viewpoint sunrise"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-06T10:33:57.197668+00:00"
+    "generated_at": "2026-11-06T15:29:41.225649+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "택배 반품할 때 손해 안 보는 꿀팁",
+  "title": "집에 있는 것만으로 운동화 하얀색 되살리기",
   "cover": {
     "image": null,
     "lines": [
-      "택배 반품",
-      "<r>반품비 0원</r>",
-      "만드는 법"
+      "묵은 운동화",
+      "<r>30분</r>이면",
+      "새것처럼"
     ],
     "badge": null,
-    "photo_query": "package return shipping label"
+    "photo_query": "dirty white sneaker before after"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "야야야, 택배 반품할 때 그냥 보내지 말고 이거 먼저 확인해봐라. 반품비가 얼마나 나오는지 아는 게 첫 번째다.",
-      "subtitle": "반품비 확인부터 시작",
-      "photo_query": "refund policy document online"
+      "narration": "묵은 운동화 봤을 때 그 답답함, 알지? 이거 집에 있는 것만으로 깔끔하게 살릴 수 있다.",
+      "subtitle": "운동화 흰색 복원 시작",
+      "photo_query": "worn white sneaker stained"
     },
     {
       "image": null,
-      "narration": "쇼핑몰에서 반품비를 부담한다고 했으면, 절대 우체국이나 편의점에서 직접 내지 말고 반품 송장을 받아야 한다. 이거 안 하면 나중에 반품비 안 나온다.",
-      "subtitle": "반품 송장 받기 필수",
-      "photo_query": "parcel return label QR code"
+      "narration": "베이킹소다 3큰술에 과산화수소(오래된 파스) 1큰술 섞어서 걸쭉한 페이스트 만들어. 솔직히 이게 오염 제거하는 황금 비율이다.",
+      "subtitle": "베이킹소다+과산화수소",
+      "photo_query": "baking soda paste mixture"
     },
     {
       "image": null,
-      "narration": "상품 사진을 찍고, 반품 사유도 정확하게 적어라. 손상 없음, 변심이라고 명시하면 나중에 반품비 분쟁이 안 생긴다.",
-      "subtitle": "상품 사진·사유 기록",
-      "photo_query": "smartphone photo damaged product"
+      "narration": "칫솔로 신발 표면을 부드럽게 문질러. 특히 노란 오염 부분을 집중적으로 30분 정도 하면 된다. 베이킹소다가 미세한 입자라 때를 떨어낼 때 천천히 가야 한다.",
+      "subtitle": "칫솔로 30분 부드럽게",
+      "photo_query": "cleaning sneaker with toothbrush"
     },
     {
       "image": null,
-      "narration": "배송 추적 번호를 따로 저장해두고, 반품 완료까지 최소 3일은 기다려야 환불이 들어온다. 급할 것 같으면 미리 알아두는 게 이득이다.",
-      "subtitle": "추적번호 저장 후 대기",
-      "photo_query": "tracking number receipt phone"
+      "narration": "미온수로 헹궈서 햇빛에 말려. 실크에 흐르는 물 정도 온도가 좋다. 뜨거운 물은 신발 손상될 수 있으니까 조심해야 한다.",
+      "subtitle": "미온수 헹굼 후 햇빛 건조",
+      "photo_query": "white sneaker rinsing water"
     },
     {
       "image": null,
-      "narration": "이런 택배 꿀팁을 더 알고 싶으면 팔로우하고, 반품할 때 헷갈리는 게 있으면 댓글 남겨봐라!",
-      "subtitle": "더 많은 생활 꿀팁 보기",
-      "photo_query": "subscribe button follow notification"
+      "narration": "와, 거짓말 아니고 진짜 새 신발처럼 살아난다. 이런 살림 꿀팁 더 보고 싶으면 팔로우 눌러줘.",
+      "subtitle": "하얀색 새것처럼 복원!",
+      "photo_query": "clean white sneaker restored"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-06T10:35:21.422096+00:00"
+    "generated_at": "2026-11-06T15:30:59.721975+00:00"
   }
 }

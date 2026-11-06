@@ -5,41 +5,41 @@
     "lines": [
       "반포동",
       "<r>53억</r>",
-      "이게 현실이다"
+      "이게 현실입니다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building seoul banpo"
+    "photo_query": "luxury apartment building banpo seoul"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지. 84제곱미터짜리가 53억이다. 13층이니까 좋은 층에다가.",
+      "narration": "이거 모르고 지나가면 손해다. 강남 반포동. 거기 래미안퍼스티지 84제곱미터짜리가 53억에 팔렸다.",
       "subtitle": "반포동 래미안퍼스티지 84㎡ 53억",
-      "photo_query": "apartment building entrance lobby"
+      "photo_query": "seoul gangnam banpo district"
     },
     {
       "image": null,
-      "narration": "2009년식인데 거기서 이 가격이다. 신축이 아니라니까 더 충격이지. 서울 강남권 시세가 어디까지 올라갔는지 보면 바로 느껴진다.",
-      "subtitle": "2009년 준공, 여전히 강한 가격대",
-      "photo_query": "seoul gangnam district apartment prices"
+      "narration": "2009년 지어진 건데. 지금 세수로 따지면 이 가격이다. 위치가 죽일 놈이라는 거지.",
+      "subtitle": "2009년 준공 오래된 단지",
+      "photo_query": "apartment lobby entrance elegant"
     },
     {
       "image": null,
-      "narration": "일반인이 접근하기란 거의 불가능한 수준이다. 이 가격대면 강남 어디를 봐도 비슷하다.",
-      "subtitle": "강남 중심부 시세 현황",
-      "photo_query": "seoul real estate market analysis"
+      "narration": "평당 가격으로 나가면. 6천3백만원 대. 강남 톱티어다.",
+      "subtitle": "평당 6천3백만원대",
+      "photo_query": "calculator real estate price"
     },
     {
       "image": null,
-      "narration": "지금 집을 사려고 생각하고 있다면 이 정도가 평균이라고 각오해야 한다는 뜻이다.",
-      "subtitle": "강남권 주택 매매가 현황",
-      "photo_query": "house hunting couple apartment viewing"
+      "narration": "반포동 프리미엄은 이게 다다. 강남역까지 걸어가는 거리. 학군. 거기 다 들어가 있다.",
+      "subtitle": "강남역 인근 프리미엄 지역",
+      "photo_query": "gangnam station seoul metro entrance"
     },
     {
       "image": null,
-      "narration": "더 자세한 실거래가 분석은 팔로우하고 계속 봐라. 다음 주도 좋은 거 가져올 기다.",
-      "subtitle": "더 많은 데이터 분석 계속됨",
-      "photo_query": "real estate data analysis chart"
+      "narration": "너네 동네 실거래가도 궁금하면 댓글 남겨라. 같이 분석해본다.",
+      "subtitle": "당신 동네는 얼마일까?",
+      "photo_query": "neighborhood street korea residential"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T10:33:38.113495+00:00"
+    "generated_at": "2026-11-06T15:29:22.452929+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "하대동 최고가 임광 1.2억",
+  "title": "하대동 최고가 실거래",
   "cover": {
     "image": null,
     "lines": [
       "하대동",
-      "<r>1.2억</r>",
-      "최고가 뜬다"
+      "최고가 <r>1.2억</r>",
+      "임광 아파트"
     ],
     "badge": null,
-    "photo_query": "old apartment building korea residential area"
+    "photo_query": "old apartment building korea 1980s 1990s"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 하대동. 방금 나온 최신 거래가. 임광이 1억 2천만 원에 팔렸다.",
-      "subtitle": "하대동 최고가 임광 1.2억",
-      "photo_query": "korea apartment trading chart data"
+      "narration": "이거 모르고 지나가면 손해다. 하대동 아파트 시장. 10월부터 11월까지 최신 거래 데이터 떴다.",
+      "subtitle": "하대동 최신 거래 데이터",
+      "photo_query": "real estate transaction document contract signing"
     },
     {
       "image": null,
-      "narration": "58제곱미터짜리다. 80년대 지은 건물인데 이 정도. 이게 시세다 아이가.",
-      "subtitle": "58제곱미터 1989년 건축",
-      "photo_query": "vintage korean apartment complex exterior"
+      "narration": "최고가는 임광. 59제곱미터에 1.2억이다. 1989년 건물인데 말이다.",
+      "subtitle": "임광: 59㎡, 1.2억 원",
+      "photo_query": "vintage apartment exterior korea 1989"
     },
     {
       "image": null,
-      "narration": "한보타워는 63백만 원. 하대한양은 58백만 원. 같은 동네인데 가격이 이렇게 난다.",
-      "subtitle": "한보타워 6.3억 vs 하대한양 5.8억",
-      "photo_query": "korea apartment price comparison buildings"
+      "narration": "한보타워는 6300만, 하대한양은 5800만. 다 35제곱미터 이하로 작은 방들이다.",
+      "subtitle": "2순위: 한보타워 6,300만",
+      "photo_query": "small apartment room interior"
     },
     {
       "image": null,
-      "narration": "거래 많고 시세도 고만고만한 지역. 투자보다는 거주 목적이 맞다 이거.",
-      "subtitle": "거주 목적 지역, 투자 주의",
-      "photo_query": "family moving into apartment korea"
+      "narration": "주공아파트도 두 건 나왔는데. 4900만에서 5000만. 낡은 1980년 건물이다.",
+      "subtitle": "주공아파트: 4,900~5,000만",
+      "photo_query": "public housing apartment complex korea"
     },
     {
       "image": null,
-      "narration": "하대동 집 사시거나 팔 생각이면, 이 숫자들 미리 봐야 한다. 쫌봐봐에서 계속 따라와라.",
-      "subtitle": "하대동 최신 거래가 확인하기",
-      "photo_query": "people viewing apartment listings online"
+      "narration": "하대동. 가격대는 낮지만 건물 나이가 장난 아니다. 투자 생각 있으면 꼼꼼히 봐야 한다. 더 자세한 데이터는 팔로우하고 확인해라.",
+      "subtitle": "건물 나이 35년 이상",
+      "photo_query": "apartment inspection building condition assessment"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T10:34:10.564355+00:00"
+    "generated_at": "2026-11-06T15:29:53.264051+00:00"
   }
 }

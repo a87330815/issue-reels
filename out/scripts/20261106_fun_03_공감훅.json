@@ -1,44 +1,45 @@
 {
-  "title": "세탁기 주머니의 진실",
+  "title": "삼각김밥 뜯는 법",
   "cover": {
     "image": null,
     "lines": [
-      "세탁기 주머니에서",
-      "<r>나오는 것들</r>"
+      "삼각김밥",
+      "<r>뜯는 순서</r>",
+      "틀렸다가"
     ],
     "badge": null,
-    "photo_query": "laundry bag washing machine"
+    "photo_query": "kimbap triangle convenience store"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "세탁 끝나고 주머니 열어보면 기대와 현실이 확 달라진다 이거 봐봐.",
-      "subtitle": "설레는 마음으로 열어보는 순간",
-      "photo_query": "hands opening mesh laundry bag"
+      "narration": "편의점 삼각김밥. 겉으로 보면 쉬워 보이지 않아? 근데 뜯는 순서가 중요하다니까.",
+      "subtitle": "그냥 뜯으면 되지",
+      "photo_query": "triangle kimbap package convenience store"
     },
     {
       "image": null,
-      "narration": "양말 한 짝, 또 한 짝... 어? 한 짝이 없다? 이게 어디 갔는데? 분명 넣을 때는 쌍으로 넣었는데.",
-      "subtitle": "짝 잃은 양말의 미스터리",
-      "photo_query": "single sock missing pair laundry"
+      "narration": "자, 이렇게 옆에 봉지 뜯듯이 뜯어버리면? 김이 다 찢어진다. 와 대박.",
+      "subtitle": "김 폭발",
+      "photo_query": "torn seaweed nori ripped broken"
     },
     {
       "image": null,
-      "narration": "그리고 왠 동전이? 휴지 조각? 나중에 뭐 했나 싶은 뭔가들이 한가득 나온다.",
-      "subtitle": "정체불명 물품들의 수집",
-      "photo_query": "coins tissues lint washing bag"
+      "narration": "정답은 위에 있는 라인을 따라 뜯어야 한다고 해. 알고 보니 거기가 점선이네.",
+      "subtitle": "위의 점선을 따라",
+      "photo_query": "dotted line package tear here"
     },
     {
       "image": null,
-      "narration": "근데 왜 자꾸 주머니를 안 쓸려고 하냐면... 이거 빨아도 계속 나오거든. 이게 일상이야.",
-      "subtitle": "반복되는 사이클의 숙명",
-      "photo_query": "laundry cycle washing machine inside"
+      "narration": "나만 모르고 있었나? 주변에 물어봤더니 다들 김 찢어봤대고.",
+      "subtitle": "나만 그렸나?",
+      "photo_query": "people eating kimbap surprised"
     },
     {
       "image": null,
-      "narration": "이런 거 더 있으면 저장 누르고, 공감 가면 팔로우해 봐. 우리 같이 웃자.",
-      "subtitle": "팔로우 유도",
-      "photo_query": "sharing content social media"
+      "narration": "이제 알았으니까 다음부턴 제대로 뜯어야지. 이런 거 더 알고 싶으면 팔로우 고고!",
+      "subtitle": "이제 완벽하게",
+      "photo_query": "perfectly opened triangle kimbap seaweed"
     }
   ],
   "meta": {
@@ -47,6 +48,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-06T10:34:49.029345+00:00"
+    "generated_at": "2026-11-06T15:30:29.426442+00:00"
   }
 }

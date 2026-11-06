@@ -1,39 +1,39 @@
 {
-  "title": "정자동 10월 아파트 거래",
+  "title": "정자동 최고가 아파트",
   "cover": {
     "image": null,
     "lines": [
       "정자동",
-      "<r>23.8억</r>",
-      "최고가 터졌다"
+      "<r>23억</r>",
+      "이 정도면"
     ],
     "badge": null,
-    "photo_query": "apartment living room view window"
+    "photo_query": "luxury apartment living room interior modern"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 정자동 로얄팰리스. 209제곱미터짜리가 23.8억에 팔렸다. 10월 최고가다.",
-      "subtitle": "로얄팰리스 209㎡ 23.8억",
-      "photo_query": "luxury apartment high floor balcony"
+      "narration": "이거 모르고 지나가면 손해다. 정자동 로얄팰리스. 23억 8천만 원이다. 2003년 지은 아파트인데 말이야.",
+      "subtitle": "정자동 최고가 아파트",
+      "photo_query": "apartment building facade 2000s construction korea"
     },
     {
       "image": null,
-      "narration": "같은 단지, 같은 시간. 가격대가 장난이 아니다. 18억대, 17억대까지. 넓이에 따라 5억 이상 차이 난다.",
-      "subtitle": "같은 지역도 넓이별로 5억 차이",
-      "photo_query": "apartment floor plan measurement tape"
+      "narration": "209제곱미터. 서울 강남 수준의 가격대다. 근데 정자동이라고? 이게 뭐하는 기똘이냐.",
+      "subtitle": "23층 209㎡ 면적",
+      "photo_query": "apartment size floor plan large spacious"
     },
     {
       "image": null,
-      "narration": "1994년부터 2004년식 아파트들인데, 지금 동네는 살아난다고 카더라. 투자 못 본 사람들, 나중에 후회하지 말고 데이터부터 봐라.",
-      "subtitle": "20년 된 아파트도 가격 쑥쑥",
-      "photo_query": "korean apartment complex exterior building"
+      "narration": "같은 동네 다른 아파트는 얼마일까. 정든마을은 18억 3천. 성원상떼뷰는 17억 9천. 로얄팰리스가 오지게 비싼 거다.",
+      "subtitle": "주변 아파트는 17억~18억대",
+      "photo_query": "apartment complex buildings multiple structures korea"
     },
     {
       "image": null,
-      "narration": "쫌봐봐 팔로우하면, 매달 이런 실시간 거래 데이터 먼저 본다. 손해 안 할 판단, 정보에서 나온다.",
-      "subtitle": "매달 최신 거래 정보는 여기서",
-      "photo_query": "mobile phone screen data statistics graph"
+      "narration": "2026년 10월 나온 실거래가다. 정자동에서 뭔가 들었으면 쫌봐봐 계정 팔로우. 손해 볼 정보 계속 올린다.",
+      "subtitle": "2026년 10월 실거래가",
+      "photo_query": "real estate transaction documents contract signing"
     }
   ],
   "meta": {
@@ -51,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T10:34:03.923015+00:00"
+    "generated_at": "2026-11-06T15:29:46.827170+00:00"
   }
 }
