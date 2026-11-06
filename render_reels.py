@@ -308,9 +308,22 @@ async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
 
         el_ok = False
         if use_el:
-            # ElevenLabs는 자체적으로 자연스러우므로 후처리 불필요
+            # ElevenLabs 원음의 음높이는 유지하고 재생 속도만 살짝 올린다.
             el_ok = _synth_elevenlabs(text, mp3)
             if el_ok:
+                speed = float(os.environ.get("ELEVENLABS_SPEED", "1.08"))
+                if abs(speed - 1.0) > 0.001:
+                    fast_mp3 = os.path.join(out_dir, f"narr_fast_{i:02d}.mp3")
+                    try:
+                        subprocess.run(
+                            ["ffmpeg", "-y", "-i", mp3, "-filter:a",
+                             f"atempo={speed:.3f}", "-c:a", "libmp3lame",
+                             "-q:a", "2", fast_mp3],
+                            capture_output=True, check=True,
+                        )
+                        os.replace(fast_mp3, mp3)
+                    except Exception as e:
+                        print(f"  [경고] ElevenLabs 속도 조정 실패: {e}")
                 tag = f" [EL]" if not cur else f" [EL·{cur}]"
             else:
                 print(f"  [폴백] ElevenLabs 실패 → edge-tts 시도")
