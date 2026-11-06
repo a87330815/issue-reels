@@ -42,15 +42,15 @@ PUBLISHED_CARDS = os.path.join(ROOT, "out", "published_cards.json")  # 카드뉴
 # 목표 비율 (합 100) — 2026-10-29 개편 2차: 연예/정치/세계경제 비중 확대
 # 이전: 화제·이슈 40 / 재미·공감 40 / 생활·꿀팁 15 / 경제·돈 5
 TARGET_RATIO = {
-    "화제·이슈":         20,
-    "재미·공감":         20,
-    "연예·화제":         15,
-    "정치·시사":         15,
-    "세계경제":          15,
-    "생활·꿀팁":         10,
-    "경제·돈":            5,
+    "연예·화제":         25,
+    "정치·시사":         25,
+    "세계경제":          25,
+    "경제·돈":            25,
     # "사회·뉴스":        0,   # 비율 0 — 편성 안 함
 }
+
+# 자동 게시 허용 분야. 생활꿀팁·정보·기타 주제는 대기열에서 제외한다.
+ALLOWED_CATEGORIES = {"연예·화제", "정치·시사", "세계경제", "경제·돈"}
 
 # 하루 최대 (카테고리가 반복되면 지루함)
 DAILY_LIMIT = {
@@ -199,6 +199,8 @@ def queue(ig_id):
             continue
         # test_trend_01 같은 시험용 대본이 실제 계정에 올라가면 안 된다.
         if stem.startswith("test_") or stem.startswith("sample_"):
+            continue
+        if load_script_meta(stem) not in ALLOWED_CATEGORIES:
             continue
         out.append(stem)
     return out
