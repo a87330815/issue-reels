@@ -152,6 +152,18 @@ jobs:
           command -v ffmpeg
           command -v ffprobe
 
+      - name: 대본 부산·경남 사투리 변환
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if python -c "import json,os; d=json.load(open('out/scripts/'+os.environ['STEM']+'.json',encoding='utf-8')); raise SystemExit(0 if d.get('meta',{}).get('dialect_applied') else 1)"; then
+            echo "이미 사투리 적용된 대본입니다"
+          else
+            python -u dialect.py "out/scripts/${STEM}.json"
+          fi
+
       - name: 1) 사진 수집
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
         env:
