@@ -298,7 +298,10 @@ jobs:
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
           git commit -m "릴스 자동 발행 $(date +%Y-%m-%d\ %H:%M)"
           for i in 1 2 3; do
-            git pull --rebase --autostash origin main && git push origin main && exit 0
+            if git pull --rebase --autostash origin main && git push origin main; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
             sleep 5
           done
           echo "::error::발행 기록 푸시 실패"; exit 1
