@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T04:28:20.541283+00:00",
+  "updated_at": "2026-11-06T05:16:08.709597+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -133,6 +133,17 @@
       "name": "20261106_fun_05_공감훅",
       "media_id": "18037982153848473",
       "published_at": "2026-11-06T04:28:20.218560+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-06/20261106_fun_05.mp4",
+      "ig_id": "17841459210979722",
+      "category": "재미·공감",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261106_fun_05_공감훅",
+      "media_id": "18057384659654575",
+      "published_at": "2026-11-06T05:16:08.528249+00:00",
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-06/20261106_fun_05.mp4",
       "ig_id": "17841459210979722",
       "category": "재미·공감",
