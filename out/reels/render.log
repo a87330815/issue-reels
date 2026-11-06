@@ -1,4 +1,4 @@
-run 42150763569 2026-11-06T02:31:28Z
+run 42153504611 2026-11-06T02:57:54Z
 
 === 20261105_fun_05_생활공감 ===
   [cover] '충전기 자리싸움' → "phone charger cable family"
@@ -36,30 +36,30 @@ run 42150763569 2026-11-06T02:31:28Z
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 1.2초  충전기 자리싸움...
+  TTS [1/6] [EL·발랄녀] 1.6초  충전기 자리싸움...
   TTS [2/6] [EL·발랄녀] 5.3초  엄마가 휴대폰 충전하고 있다. 그럼 나는 눈치 본다...
-  TTS [3/6] [EL·발랄녀] 7.3초  충전 30% 남은 내 휴대폰. 근데 아빠가 "내 거...
-  TTS [4/6] [EL·발랄녀] 5.3초  결국 거실 한 구석에 줄 서 있는 우리 가족 휴대폰...
+  TTS [3/6] [EL·발랄녀] 7.0초  충전 30% 남은 내 휴대폰. 근데 아빠가 "내 거...
+  TTS [4/6] [EL·발랄녀] 5.7초  결국 거실 한 구석에 줄 서 있는 우리 가족 휴대폰...
   TTS [5/6] [EL·발랄녀] 6.5초  그리고 충전기를 "누가 빌려갔지?" 하면서 찾는 3...
-  TTS [6/6] [EL·발랄녀] 9.8초  이런 집 맞지? 충전기 하나 더 사면 되잖아 해도,...
+  TTS [6/6] [EL·발랄녀] 9.7초  이런 집 맞지? 충전기 하나 더 사면 되잖아 해도,...
 
 2) 영상 합성
   세그먼트 [1/7] 3.0초
   세그먼트 [2/7] 6.1초
-  세그먼트 [3/7] 8.1초
-  세그먼트 [4/7] 6.1초
+  세그먼트 [3/7] 7.8초
+  세그먼트 [4/7] 6.5초
   세그먼트 [5/7] 7.3초
-  세그먼트 [6/7] 10.6초
+  세그먼트 [6/7] 10.5초
   세그먼트 [7/7] 4.0초
 
   ✓ 릴스 완성: out/reels/20261105_fun_05_생활공감.mp4
-    길이: 39.2초  /  크기: 1.4MB
--rw-r--r-- 1 runner runner 1.4M Nov  6 02:32 out/reels/20261105_fun_05_생활공감.mp4
+    길이: 39.6초  /  크기: 1.4MB
+-rw-r--r-- 1 runner runner 1.4M Nov  6 02:58 out/reels/20261105_fun_05_생활공감.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=39.240272
+duration=39.640272
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -76,12 +76,15 @@ duration=39.240272
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 10건
+남은 발행 가능: 100건
 발행 대상: 1건
 
 ── 1/1  20261105_fun_05_생활공감
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-06/20261105_fun_05.mp4
   캡션: 충전기 자리싸움
-  [실패] [190/463] Error validating access token: Session has expired on Wednesday, 04-Nov-26 22:00:00 PST. The current time is Thursday, 05-Nov-26 18:32:22 PST.
+  컨테이너: 17974969799973700
+      0초  IN_PROGRESS
+     53초  FINISHED
+  [실패] [-1/2207085] Fatal
 
 완료: 발행 0건 / 실패 1건
