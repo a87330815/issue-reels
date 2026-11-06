@@ -1,45 +1,44 @@
 {
-  "title": "미용실 '조금만' 다듬어달라는데",
+  "title": "세탁기 주머니의 진실",
   "cover": {
     "image": null,
     "lines": [
-      "'조금만",
-      "<r>다듬어주세요'</r>",
-      "했는데"
+      "세탁기 주머니에서",
+      "<r>나오는 것들</r>"
     ],
     "badge": null,
-    "photo_query": "haircut salon mirror before after"
+    "photo_query": "laundry bag washing machine"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "미용실 의자에 앉자마자 나 한 마디. '조금만 정리해주세요. 손도 안 대고 그냥 다듬기만...'",
-      "subtitle": "조금만 다듬어주세요",
-      "photo_query": "hairdresser consultation client talk"
+      "narration": "세탁 끝나고 주머니 열어보면 기대와 현실이 확 달라진다 이거 봐봐.",
+      "subtitle": "설레는 마음으로 열어보는 순간",
+      "photo_query": "hands opening mesh laundry bag"
     },
     {
       "image": null,
-      "narration": "근데 이게 뭐하는 짓이냐 이거. 내가 어제 한 스타일링이 완전 날아가 버렸다.",
-      "subtitle": "어제 셋팅이 다 날아감",
-      "photo_query": "woman shocked mirror disappointed hair"
+      "narration": "양말 한 짝, 또 한 짝... 어? 한 짝이 없다? 이게 어디 갔는데? 분명 넣을 때는 쌍으로 넣었는데.",
+      "subtitle": "짝 잃은 양말의 미스터리",
+      "photo_query": "single sock missing pair laundry"
     },
     {
       "image": null,
-      "narration": "미용사님 말로는 '조금만'이 사람마다 다르대. 누구는 1cm, 누구는 5cm. 그게 '조금'이라고 봐봐.",
-      "subtitle": "미용사의 '조금'은 남달라",
-      "photo_query": "hairdresser cutting hair precision scissors"
+      "narration": "그리고 왠 동전이? 휴지 조각? 나중에 뭐 했나 싶은 뭔가들이 한가득 나온다.",
+      "subtitle": "정체불명 물품들의 수집",
+      "photo_query": "coins tissues lint washing bag"
     },
     {
       "image": null,
-      "narration": "그 순간 깨닫는다. 내 '조금'과 미용사의 '조금'은 다른 우주의 말이구나.",
-      "subtitle": "'조금'의 기준이 다르다",
-      "photo_query": "woman thinking realization looking mirror"
+      "narration": "근데 왜 자꾸 주머니를 안 쓸려고 하냐면... 이거 빨아도 계속 나오거든. 이게 일상이야.",
+      "subtitle": "반복되는 사이클의 숙명",
+      "photo_query": "laundry cycle washing machine inside"
     },
     {
       "image": null,
-      "narration": "이제 알아. 다음에는 무조건 사진 가져가야겠다. 말로는 절대 안 된다니까.",
-      "subtitle": "사진이 정답이다",
-      "photo_query": "phone showing hairstyle photo reference"
+      "narration": "이런 거 더 있으면 저장 누르고, 공감 가면 팔로우해 봐. 우리 같이 웃자.",
+      "subtitle": "팔로우 유도",
+      "photo_query": "sharing content social media"
     }
   ],
   "meta": {
@@ -48,6 +47,6 @@
     "category": "재미·공감",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-06T03:23:02.147282+00:00"
+    "generated_at": "2026-11-06T10:34:49.029345+00:00"
   }
 }

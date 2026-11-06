@@ -1,0 +1,52 @@
+{
+  "title": "맛집 웨이팅의 진실",
+  "cover": {
+    "image": null,
+    "lines": [
+      "30분 기다렸는데",
+      "<r>왜 이 맛이지</r>"
+    ],
+    "badge": null,
+    "photo_query": "restaurant queue waiting line"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "맛집이라고 해서 30분을 기다렸어. SNS에 떴으니까 당연히 대박일 줄 알았지.",
+      "subtitle": "웨이팅 30분",
+      "photo_query": "people waiting restaurant entrance"
+    },
+    {
+      "image": null,
+      "narration": "드디어 앉혔는데… 음식이 나왔어. 비쥬얼은 좋네. 그래서 한 입.",
+      "subtitle": "기대감 MAX",
+      "photo_query": "food plating restaurant dish"
+    },
+    {
+      "image": null,
+      "narration": "어? 이게 왜 이 맛이야? 옆 테이블 사람들도 계속 쳐다봐. 나만 느끼는 게 아니라는 뜻이지.",
+      "subtitle": "뭔가 이상한데",
+      "photo_query": "confused eating facial expression"
+    },
+    {
+      "image": null,
+      "narration": "인스타그램 사진으로는 대박이었는데, 입으로 먹어보니 딱 그 정도 맛이더라. 사진빨이 정답이구나 싶었어.",
+      "subtitle": "사진 > 맛",
+      "photo_query": "instagram food photography aesthetic"
+    },
+    {
+      "image": null,
+      "narration": "이런 느낌 있으면 댓글에 '맞아'라고 남겨줘. 더 재밌는 일상 콘텐츠 봐보려면 팔로우 누르고 가~",
+      "subtitle": "공감이면 팔로우",
+      "photo_query": "follow button like subscribe"
+    }
+  ],
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T10:34:55.440701+00:00"
+  }
+}

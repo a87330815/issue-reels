@@ -1,5 +1,5 @@
 {
-  "title": "반여동 최고가 왕자 4.1억",
+  "title": "반여동 최고가 아파트",
   "cover": {
     "image": null,
     "lines": [
@@ -8,38 +8,32 @@
       "이게 최고가다"
     ],
     "badge": null,
-    "photo_query": "busan haeundae apartment district cityscape"
+    "photo_query": "busan apartment complex buildings modern"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반여동 아파트 최고가가 4억 1천만 원이라고 아냐?",
+      "narration": "이거 모르고 지나가면 손해다. 반여동 최고가 아파트가 올라왔다. 왕자 아파트. 65제곱미터에 4억 1천만원이다.",
       "subtitle": "반여동 최고가 4.1억",
-      "photo_query": "apartment price tag listing board"
+      "photo_query": "apartment price tag sale listing"
     },
     {
       "image": null,
-      "narration": "왕자 이라는 단지 있다. 65제곱미터에 4.1억. 2026년 10월에 나온 가격이다.",
-      "subtitle": "왕자 65㎡ 4.1억",
-      "photo_query": "apartment unit room entrance doorway"
+      "narration": "1979년 지은 건물인데 이 정도면? 꽤 잘 나온 거다. 요즘 새 건물들보다 비싼 이유를 알아야 한다.",
+      "subtitle": "건설년 1979년",
+      "photo_query": "older apartment building vintage korea"
     },
     {
       "image": null,
-      "narration": "그럼 다른 건물은 뭔가? 85제곱미터 센텀대림은 3.45억. 60제곱미터 더샵는 3.38억이다.",
-      "subtitle": "건물마다 천차만별",
-      "photo_query": "apartment building multiple towers comparison"
+      "narration": "5층이다. 저층이 프리미엄이 되는 동네. 반여동은 교통 접근성이 진짜 중요하다.",
+      "subtitle": "5층 저층 프리미엄",
+      "photo_query": "korean city apartment building entrance"
     },
     {
       "image": null,
-      "narration": "전국 평균이랑 비교하면 어떨까. 부산 반여동. 요즘 살 때 꼭 확인해야 한다.",
-      "subtitle": "이 가격대 확인하고 사세요",
-      "photo_query": "real estate agent showing apartment document"
-    },
-    {
-      "image": null,
-      "narration": "더 많은 지역 실거래가가 궁금하면 팔로우해. 매주 업데이트된다.",
-      "subtitle": "팔로우 누르고 받아보세요",
-      "photo_query": "mobile phone notification bell icon screen"
+      "narration": "센텀 신도시 근처라 앞으로도 가격 움직임이 클 것 같다. 반여동 시세. 지금 이거 체크해야 한다.",
+      "subtitle": "센텀 근처 시세 변동주의",
+      "photo_query": "centum city development busan district"
     }
   ],
   "meta": {
@@ -57,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T03:22:28.447164+00:00"
+    "generated_at": "2026-11-06T10:34:16.357967+00:00"
   }
 }

@@ -1,45 +1,45 @@
 {
-  "title": "반포동 래미안퍼스티지 평당 2억 거래",
+  "title": "반포동 래미안퍼스티지 평당 2억",
   "cover": {
     "image": null,
     "lines": [
       "반포동",
       "<r>평당 2억</r>",
-      "이게 현실입니다"
+      "이거 봐봐"
     ],
     "badge": null,
-    "photo_query": "seoul gangnam banpo luxury apartment building"
+    "photo_query": "luxury apartment banpo seoul han river"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지. 10월에 5억 3천만 원에 팔렸다. 뭐가 문제냐고? 평당 2억이다.",
-      "subtitle": "래미안퍼스티지 5억 3천만 원 거래",
-      "photo_query": "luxury apartment high rise banpo seoul"
+      "narration": "이거 모르고 지나가면 손해다. 반포동 래미안퍼스티지. 10월에 53억에 팔렸다.",
+      "subtitle": "반포동 래미안퍼스티지 53억",
+      "photo_query": "apartment building entrance luxury korea"
     },
     {
       "image": null,
-      "narration": "84제곱미터. 전용면적이 84제곱미터인데. 평당으로 치면 2억 원이라는 게 뭐라고 생각하냐고? 이거 서울 강남 끝판왕이다.",
-      "subtitle": "평당 2억 = 전국 톱 수준",
-      "photo_query": "expensive property price calculator document"
+      "narration": "평당 얼마 될까? 2억 6천. 이거. 진짜 수준이 다르다 아이가.",
+      "subtitle": "평당 2억 6천만원",
+      "photo_query": "real estate price tag document"
     },
     {
       "image": null,
-      "narration": "같은 달 거래된 다른 단지들 봤냐고? 강남 한복판인데도 불구하고 이 수준이면 진짜 터무니없다.",
-      "subtitle": "같은 기간 대치·정자동 대비",
-      "photo_query": "real estate comparison analysis data"
+      "narration": "강남 같은 데서도 평당 1억 8천에서 2억 사이인데. 반포는 지가가 다르다.",
+      "subtitle": "강남권 평당 1억 8천~2억",
+      "photo_query": "gangnam district apartment buildings aerial"
     },
     {
       "image": null,
-      "narration": "2009년 지어진 지 15년된 건물. 13층. 이 정도 위치면 앞으로 더 오를 수밖에 없다. 당신 동네는 어디냐고?",
-      "subtitle": "2009년 준공 강남 최고가 단지",
-      "photo_query": "seoul apartment building age 2009"
+      "narration": "이건 단순히 비싼 게 아니다. 반포 자리값. 한강뷰, 입지. 이게 먹히는 거다.",
+      "subtitle": "한강뷰 입지가 만드는 가격",
+      "photo_query": "han river view apartment window night"
     },
     {
       "image": null,
-      "narration": "이런 데이터 놓치면 시장 읽을 수 없다. 매주 공공데이터로 실거래가 한 번에 봐라. 쫌봐봐 팔로우해.",
-      "subtitle": "매주 실거래가 데이터 분석",
-      "photo_query": "follow subscribe button social media"
+      "narration": "우리 채널에서 매달 이런 실거래 데이터 터진다. 팔로우 해둬라.",
+      "subtitle": "매달 갱신되는 실거래 정보",
+      "photo_query": "real estate market data chart analysis"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T03:22:36.137746+00:00"
+    "generated_at": "2026-11-06T10:34:21.900609+00:00"
   }
 }

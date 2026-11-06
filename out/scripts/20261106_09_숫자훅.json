@@ -1,48 +1,48 @@
 {
-  "title": "황유민, 선두와 두 타 차이",
+  "title": "스칼렛 조한슨, 배트맨 파트2 캐스팅 논란",
   "cover": {
-    "image": "https://cdn.klpga.co.kr/PHOTOIMG/01541.png",
+    "image": null,
     "lines": [
-      "황유민",
-      "<r>공동 7위라예</r>",
-      "선두와 두 타 차이"
+      "<r>할리우드</r>",
+      "최고 배우들이",
+      "왜 이 역할",
+      "힘들어할까?"
     ],
     "badge": null,
-    "photo_query": "female Korean golfer swinging tournament golf course"
+    "photo_query": "batman movie film character dark"
   },
   "scenes": [
     {
-      "image": "https://cdn.klpga.co.kr/PHOTOIMG/01541.png",
-      "narration": "마, 황유민이 토토 저팬 클래식 첫날부터 공동 7위라예. 선두하고 딱 두 타 차이밖에 안 난다 아이가.",
-      "subtitle": "첫날 공동 7위라예",
-      "photo_query": "women golf tournament leaderboard seventh place"
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 배트맨 파트2 캐스팅이 논란이 됐다. 스칼렛 조한슨이 새 역할로 캐스팅됐는데, 본인이 직접 나서서 이 역할이 얼마나 어려웠는지 폭로한 거다.",
+      "subtitle": "배트맨 파트2 캐스팅 공개",
+      "photo_query": "scarlett johansson celebrity actress"
     },
     {
       "image": null,
-      "narration": "첫날부터 상위권에 단디 붙어 있다카이, 우승 경쟁에 이름 올린 기라. 두 타 차이면 한 홀에서도 뒤집을 수 있데이.",
-      "subtitle": "우승 경쟁 시작됐다",
-      "photo_query": "female golfer focused tee shot tournament"
+      "narration": "할리우드 톱스타들도 고민하는 이유가 뭘까. 배트맨 유니버스는 독립적인 세계관으로 유명하다. 기존 할리우드 배우의 이미지를 완전히 벗어내야 한다는 거다.",
+      "subtitle": "배트맨 세계관의 강력함",
+      "photo_query": "batman universe dark gotham city"
     },
     {
       "image": null,
-      "narration": "인자 남은 라운드는 세 번이다. 버디 하나씩 차곡차곡 줄이모 선두까지 퍼뜩 따라붙을 수 있다.",
-      "subtitle": "남은 세 라운드가 관건",
-      "photo_query": "female golfer putting green birdie tournament"
+      "narration": "캐릭터를 새로 만드는 것처럼 접근해야 한다는 거다. 배우 본인의 스타일이 있어도 다 버려야 한다. 그래야 배트맨 세계에 녹아든다.",
+      "subtitle": "완전히 새로운 캐릭터 창조",
+      "photo_query": "actor character transformation makeup"
     },
     {
       "image": null,
-      "narration": "우리 선수 우승 경쟁 놓치모 아깝다 아이가. 황유민 성적 계속 궁금하모 쫌봐봐 팔로우해두이소.",
-      "subtitle": "황유민 우승 경쟁 계속 본다",
-      "photo_query": "Korean female golfer celebration golf tournament"
+      "narration": "이게 왜 뉴스일까. 큰 영화 하나가 배우의 경력을 완전히 바꿀 수 있다는 거다. 톱스타도 심사숙고하는 선택이라는 뜻이다. 당신도 중대한 결정 앞에선 이렇게 고민해야 한다.",
+      "subtitle": "배우도 신중한 선택의 순간",
+      "photo_query": "movie set film production lights"
     }
   ],
   "meta": {
     "format": "숫자훅",
     "source": "google_trends",
     "category": "당일 화제 이슈",
-    "attribution": "Google Trends · 선수 사진 KLPGA 공식 프로필",
+    "attribution": "Google Trends",
     "chart": null,
-    "dialect_applied": true,
-    "generated_at": "2026-11-06T12:22:41.984012+09:00"
+    "generated_at": "2026-11-06T10:34:29.607173+00:00"
   }
 }

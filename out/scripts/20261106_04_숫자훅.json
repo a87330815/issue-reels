@@ -1,45 +1,45 @@
 {
-  "title": "광명시 5만석 돔구장 유치",
+  "title": "한국시리즈 3차전 현장",
   "cover": {
     "image": null,
     "lines": [
-      "광명에",
-      "<r>5만석</r>",
-      "돔구장 온다"
+      "오늘 야구 티켓",
+      "다 떨어졌다",
+      "<r>3시간</r> 안에"
     ],
     "badge": null,
-    "photo_query": "modern dome stadium architecture"
+    "photo_query": "baseball stadium crowd tickets"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 광명시에 5만석 규모의 돔구장이 들어온다 아이가. 야야야. 이게 뭐 하는 건지 알아야지.",
-      "subtitle": "5만석 돔구장 광명 유치",
-      "photo_query": "large stadium under construction site"
+      "narration": "이거 모르고 지나가면 손해다. 한국시리즈 3차전. 오늘 경기 표가 3시간 만에 매진됐다.",
+      "subtitle": "한국시리즈 3차전 표 3시간 만에 매진",
+      "photo_query": "sold out tickets sign stadium"
     },
     {
       "image": null,
-      "narration": "돔구장이면 날씨 상관없이 스포츠 경기하고 콘서트도 하고. 연중 365일 쓸 수 있다 거든.",
-      "subtitle": "연중 상시 이용 가능",
-      "photo_query": "indoor sports stadium concert venue"
+      "narration": "뭐가 이리 핫한고 싶겠지. 전설이 나온다. 이승엽. 유명한 그 선수. 시구를 한다.",
+      "subtitle": "전설의 선수 이승엽이 시구",
+      "photo_query": "baseball legend pitcher throwing ball"
     },
     {
       "image": null,
-      "narration": "광명시 일대 땅값 오르고. 일자리도 생기고. 지역 경제가 움직인다.",
-      "subtitle": "부동산·일자리·경제 활성화",
-      "photo_query": "real estate development neighborhood growth"
+      "narration": "거기에 국민 배우 김소현. 애국가를 부른다. 이런 무대. 연예인도 못 잡는다.",
+      "subtitle": "국민 배우가 애국가 무대",
+      "photo_query": "actress singing national anthem stadium"
     },
     {
       "image": null,
-      "narration": "광명뿐 아니라 인근 지역 사람들도 이용할 테니까. 지역 전체가 도움 받는다.",
-      "subtitle": "광역권 거점 역할",
-      "photo_query": "korean city transportation hub connection"
+      "narration": "야구팬들 지금 현장 가는 길이다. 남은 표? 없다. 티켓팅 놓친 거면. 실시간 중계. 챙겨놔라.",
+      "subtitle": "라이브 중계로 현장 감상",
+      "photo_query": "baseball game live broadcast television"
     },
     {
       "image": null,
-      "narration": "이런 대형 프로젝트. 앞으로 어떻게 진행되는지 팔로우하면 정보 앞서간다.",
-      "subtitle": "계속 업데이트 확인하기",
-      "photo_query": "news update notification mobile phone"
+      "narration": "한국시리즈. 역대급 무대다. 팔로우하고. 다음 경기 정보 먼저 받아라.",
+      "subtitle": "한국시리즈 최신 소식 팔로우",
+      "photo_query": "korean baseball series championship game"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "당일 화제 이슈",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-06T03:22:07.788658+00:00"
+    "generated_at": "2026-11-06T10:33:57.197668+00:00"
   }
 }

@@ -1,38 +1,44 @@
 {
-  "title": "송도동 11월 아파트 거래",
+  "title": "송도동 11월 아파트 거래 분석",
   "cover": {
     "image": null,
     "lines": [
       "송도동",
-      "<r>9억</r>대",
-      "이게 현재가다"
+      "<r>9억</r>",
+      "거래 나왔다"
     ],
     "badge": null,
-    "photo_query": "incheon songdo apartment complex modern"
+    "photo_query": "incheon songdo apartment complex modern buildings"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 송도동. 요즘 뭐 가격인지 알아? 9억대다.",
-      "subtitle": "송도동 최신 시세",
-      "photo_query": "apartment price tag transaction"
+      "narration": "이거 모르고 지나가면 손해다. 송도동에 이번 달 거래 떴다. 9억대부터 10억대까지. 요즘 송도 시세가 얼마인지 봐야 할 때다.",
+      "subtitle": "송도동 거래 현황",
+      "photo_query": "apartment listing price tag real estate"
     },
     {
       "image": null,
-      "narration": "이번 달 거래 났는데, 힐스테이트레이크송도 4차가 9억 9천 팔렸다. 99제곱미터. 최근 신축이라 단가가 높은 거다.",
-      "subtitle": "신축 단지 9억 9천",
-      "photo_query": "new apartment building construction completion"
+      "narration": "가장 비싼 게 힐스테이트레이크송도 4차다. 99제곱미터에 9억 9천. 신축이라 프리미엠 있는 거지.",
+      "subtitle": "힐스테이트레이크송도 4차",
+      "photo_query": "luxury apartment building entrance modern design"
     },
     {
       "image": null,
-      "narration": "글로벌캠퍼스푸르지오는 8억 4천. 좀 더 저 가격대로 찾는다면 50~60대 면적도 나온다. 발품 좀 팔면 뭐 있다는 얘기다.",
-      "subtitle": "선택지 많은 8억대",
-      "photo_query": "apartment buildings different sizes comparison"
+      "narration": "글로벌캠퍼스푸르지오는 8억 4천. 101제곱미터인데 42층이라 뷰가 좋을 거다.",
+      "subtitle": "글로벌캠퍼스 8억 4천",
+      "photo_query": "high floor apartment window city view"
     },
     {
       "image": null,
-      "narration": "송도동. 지금이 매물이 나오는 시기다. 관심 있으면 더 봐서 비교해야 한다.",
-      "subtitle": "지금 매물 확인하기",
+      "narration": "그 아래로는 6억대, 5억대까지 다 나왔다. 같은 송도도 건설사, 규모, 층수에 따라 얼마나 다른지 보이냐.",
+      "subtitle": "5억~9억 다양한 시세",
+      "photo_query": "apartment price range comparison documents"
+    },
+    {
+      "image": null,
+      "narration": "송도 아파트 찾는 중이면 이 데이터 확인하고 가라. 우리 채널 팔로우하면 매달 업데이트된다.",
+      "subtitle": "송도동 거래 정보 확인",
       "photo_query": "real estate agent showing apartment to"
     }
   ],
@@ -51,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T03:21:53.118081+00:00"
+    "generated_at": "2026-11-06T10:33:44.389093+00:00"
   }
 }

@@ -1,45 +1,39 @@
 {
-  "title": "정자동 로얄팰리스 23.8억",
+  "title": "정자동 10월 아파트 거래",
   "cover": {
     "image": null,
     "lines": [
-      "정자동에",
+      "정자동",
       "<r>23.8억</r>",
-      "떴다"
+      "최고가 터졌다"
     ],
     "badge": null,
-    "photo_query": "luxury apartment building modern korea"
+    "photo_query": "apartment living room view window"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 정자동 로얄팰리스. 10월에 23억 8천만 원에 팔렸다. 209제곱미터 대형 평면이 이 가격이다.",
-      "subtitle": "정자동 로얄팰리스 209㎡ 23.8억",
-      "photo_query": "luxury apartment living room bright window"
+      "narration": "이거 모르고 지나가면 손해다. 정자동 로얄팰리스. 209제곱미터짜리가 23.8억에 팔렸다. 10월 최고가다.",
+      "subtitle": "로얄팰리스 209㎡ 23.8억",
+      "photo_query": "luxury apartment high floor balcony"
     },
     {
       "image": null,
-      "narration": "같은 지역 다른 아파트들은? 183억, 179억, 146억. 보시다시피 가격대가 엄청 나뉜다.",
-      "subtitle": "같은 지역 아파트들\n가격 편차 크다",
-      "photo_query": "apartment buildings comparison different sizes"
+      "narration": "같은 단지, 같은 시간. 가격대가 장난이 아니다. 18억대, 17억대까지. 넓이에 따라 5억 이상 차이 난다.",
+      "subtitle": "같은 지역도 넓이별로 5억 차이",
+      "photo_query": "apartment floor plan measurement tape"
     },
     {
       "image": null,
-      "narration": "2003년생 23층. 20년 넘은 건물인데 이 가격을 유지하고 있다. 입지가 좋다는 뜻이다.",
-      "subtitle": "2003년 준공\n20년 건물의 가격",
-      "photo_query": "korea apartment building facade mature trees"
+      "narration": "1994년부터 2004년식 아파트들인데, 지금 동네는 살아난다고 카더라. 투자 못 본 사람들, 나중에 후회하지 말고 데이터부터 봐라.",
+      "subtitle": "20년 된 아파트도 가격 쑥쑥",
+      "photo_query": "korean apartment complex exterior building"
     },
     {
       "image": null,
-      "narration": "정자동 아파트 사이즈 차이 봐라. 209에서 49까지. 똑같은 동네인데 5배 차이다. 내가 찾는 게 어디냐에 따라 선택지가 완전 달라진다.",
-      "subtitle": "면적 차이 209㎡ vs 49㎡ 내",
-      "photo_query": "apartment floor plan different sizes layouts"
-    },
-    {
-      "image": null,
-      "narration": "정자동 실거래가 더 보고 싶으면 팔로우해라. 매달 최신 자료 올린다.",
-      "subtitle": "정자동 아파트\n매달 실거래가 확인",
-      "photo_query": "real estate data charts statistics tablet"
+      "narration": "쫌봐봐 팔로우하면, 매달 이런 실시간 거래 데이터 먼저 본다. 손해 안 할 판단, 정보에서 나온다.",
+      "subtitle": "매달 최신 거래 정보는 여기서",
+      "photo_query": "mobile phone screen data statistics graph"
     }
   ],
   "meta": {
@@ -57,6 +51,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T03:22:15.265748+00:00"
+    "generated_at": "2026-11-06T10:34:03.923015+00:00"
   }
 }

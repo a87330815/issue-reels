@@ -1,45 +1,45 @@
 {
-  "title": "스마트폰 배터리 2년을 버티게 하는 충전법",
+  "title": "택배 반품할 때 손해 안 보는 꿀팁",
   "cover": {
     "image": null,
     "lines": [
-      "배터리 수명",
-      "<r>2배 늘리는</r>",
-      "충전습관 3가지"
+      "택배 반품",
+      "<r>반품비 0원</r>",
+      "만드는 법"
     ],
     "badge": null,
-    "photo_query": "smartphone battery charging"
+    "photo_query": "package return shipping label"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "스마트폰 배터리, 1년도 못 가가지고 교체하는 사람 많지. 근데 이것만 바꿔도 2년을 간다고.",
-      "subtitle": "배터리 수명이 줄어드는 이유",
-      "photo_query": "phone battery degradation warning"
+      "narration": "야야야, 택배 반품할 때 그냥 보내지 말고 이거 먼저 확인해봐라. 반품비가 얼마나 나오는지 아는 게 첫 번째다.",
+      "subtitle": "반품비 확인부터 시작",
+      "photo_query": "refund policy document online"
     },
     {
       "image": null,
-      "narration": "첫 번째, 80% 이상 충전하지 말 것. 100%로 완충할 때마다 배터리 열화가 5배 빨라진다니까.",
-      "subtitle": "충전은 80%에서 멈춰라",
-      "photo_query": "smartphone battery level 80 percent"
+      "narration": "쇼핑몰에서 반품비를 부담한다고 했으면, 절대 우체국이나 편의점에서 직접 내지 말고 반품 송장을 받아야 한다. 이거 안 하면 나중에 반품비 안 나온다.",
+      "subtitle": "반품 송장 받기 필수",
+      "photo_query": "parcel return label QR code"
     },
     {
       "image": null,
-      "narration": "두 번째, 밤새 충전하지 말고 아침에 30분만 충전해라. 오래 고온에 노출되면 배터리 화학반응이 손상된다고.",
-      "subtitle": "밤샘 충전 절대 금지",
-      "photo_query": "alarm clock smartphone morning charging"
+      "narration": "상품 사진을 찍고, 반품 사유도 정확하게 적어라. 손상 없음, 변심이라고 명시하면 나중에 반품비 분쟁이 안 생긴다.",
+      "subtitle": "상품 사진·사유 기록",
+      "photo_query": "smartphone photo damaged product"
     },
     {
       "image": null,
-      "narration": "세 번째, 20% 이상에서 충전 시작할 것. 0%까지 방전했다가 충전하면 셀 손상이 심하게 된다니까.",
-      "subtitle": "0% 완방전 피하기",
-      "photo_query": "phone battery indicator low power mode"
+      "narration": "배송 추적 번호를 따로 저장해두고, 반품 완료까지 최소 3일은 기다려야 환불이 들어온다. 급할 것 같으면 미리 알아두는 게 이득이다.",
+      "subtitle": "추적번호 저장 후 대기",
+      "photo_query": "tracking number receipt phone"
     },
     {
       "image": null,
-      "narration": "이 세 가지만 지켜도 배터리 수명이 1년에서 2년으로 쑥 늘어난다. 이런 꿀팁 더 보고 싶으면 팔로우해봐.",
-      "subtitle": "배터리 2년 버티기 성공",
-      "photo_query": "healthy smartphone battery indicator full"
+      "narration": "이런 택배 꿀팁을 더 알고 싶으면 팔로우하고, 반품할 때 헷갈리는 게 있으면 댓글 남겨봐라!",
+      "subtitle": "더 많은 생활 꿀팁 보기",
+      "photo_query": "subscribe button follow notification"
     }
   ],
   "meta": {
@@ -48,6 +48,6 @@
     "category": "생활·꿀팁",
     "attribution": "자체 제작",
     "chart": null,
-    "generated_at": "2026-11-06T03:23:35.536933+00:00"
+    "generated_at": "2026-11-06T10:35:21.422096+00:00"
   }
 }

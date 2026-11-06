@@ -1,12 +1,52 @@
 {
-  "title": "맛집 웨이팅의 진실",
-  "cover": {"image": null, "lines": ["30분 줄 섰는데", "<r>이게 다가?</r>"], "badge": null, "photo_query": "long queue outside popular Korean restaurant entrance"},
+  "title": "냉동실 아이스크림 범인찾기",
+  "cover": {
+    "image": null,
+    "lines": [
+      "숨겨둔 아이스크림",
+      "<r>없어졌을 때</r>"
+    ],
+    "badge": null,
+    "photo_query": "freezer ice cream missing"
+  },
   "scenes": [
-    {"image": null, "narration": "마, 이 집 억수로 유명하다카더라. 줄이 골목 끝까지 섰데이. 이만치 기다렸으모 맛없기만 해봐라.", "subtitle": "골목 끝까지 선 줄", "photo_query": "crowded long queue outside popular restaurant street"},
-    {"image": null, "narration": "삼십 분을 뽀도시 버티고 드디어 앉았는데, 첫입 묵자마자 드는 생각이 딱 하나라. 어라, 이게 다가?", "subtitle": "첫입 먹고 든 생각", "photo_query": "disappointed diner tasting small restaurant dish"},
-    {"image": null, "narration": "양은 쪼매고 맛은 게심심하고, 가격은 또 와 이리 센데. 내가 밥을 묵으러 온 긴지 줄을 서러 온 긴지 모르겠다 아이가.", "subtitle": "양은 적고 가격은 세고", "photo_query": "tiny expensive food portion on restaurant plate"},
-    {"image": null, "narration": "근데 이상한 게, 기다린 시간이 아까버가 자꾸 맛있다꼬 우기게 된다. 하모, 삼십 분 섰는데 맛집 맞다, 이라면서 말이다.", "subtitle": "기다린 시간이 아까워서", "photo_query": "diner forcing satisfied smile after eating restaurant meal"},
-    {"image": null, "narration": "그러고 집에 와서는 다시 안 간다 카더니, 사진 보모 또 생각난다. 니도 이런 적 있나? 있으면 쫌봐봐 팔로우하고 같이 웃자.", "subtitle": "결국 또 생각나는 맛집", "photo_query": "person looking at restaurant food photo on smartphone at home"}
+    {
+      "image": null,
+      "narration": "냉동실 구석에 몰래 숨겨둔 아이스크림. 이건 나만의 것이다. 오늘따라 유독 먹고 싶은데...",
+      "subtitle": "냉동실 뒤죽박죽",
+      "photo_query": "messy freezer ice cream hidden"
+    },
+    {
+      "image": null,
+      "narration": "어? 어? 어라! 이게... 없네? 아까 분명히 여기 있었는데 뭐 이런 일이!",
+      "subtitle": "그 자리에 공기만",
+      "photo_query": "empty freezer space surprise"
+    },
+    {
+      "image": null,
+      "narration": "가족들 얼굴을 하나씩 보기 시작한다. 너냐? 넌가? 이 집에 범인이 있다.",
+      "subtitle": "의심의 눈빛",
+      "photo_query": "family members suspicious faces"
+    },
+    {
+      "image": null,
+      "narration": "다들 모르는 척한다. 그럼 아무도 안 먹은 건가? 아니면 누군가 먹고 모르는 척하는 건가?",
+      "subtitle": "진범은 누구일까",
+      "photo_query": "detective investigation mysterious"
+    },
+    {
+      "image": null,
+      "narration": "이 배신감. 이 허전함. 이 감정을 아세요? 당신도 당한 적 있잖아. 더 공감하고 싶으면 팔로우.",
+      "subtitle": "숨겨두기 전쟁",
+      "photo_query": "frustrated person empty hand"
+    }
   ],
-  "meta": {"format": "공감훅", "source": "fun_topics", "category": "재미·공감", "attribution": "자체 제작", "chart": null, "generated_at": "2026-11-06T03:23:14.662198+00:00"}
+  "meta": {
+    "format": "공감훅",
+    "source": "fun_topics",
+    "category": "재미·공감",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T10:35:00.925415+00:00"
+  }
 }

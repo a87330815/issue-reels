@@ -1,45 +1,45 @@
 {
-  "title": "하대동 아파트 실거래 최고가",
+  "title": "하대동 최고가 임광 1.2억",
   "cover": {
     "image": null,
     "lines": [
-      "하대동 최고가",
+      "하대동",
       "<r>1.2억</r>",
-      "임광입니다"
+      "최고가 뜬다"
     ],
     "badge": null,
-    "photo_query": "korea apartment building 1980s older residential"
+    "photo_query": "old apartment building korea residential area"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 손해다. 하대동 아파트 시장. 지난달 최고가가 1억 2천만 원이 나왔다. 임광 59제곱미터.",
-      "subtitle": "하대동 최고가 1.2억원",
-      "photo_query": "apartment price chart graph increase"
+      "narration": "이거 모르고 지나가면 손해다. 하대동. 방금 나온 최신 거래가. 임광이 1억 2천만 원에 팔렸다.",
+      "subtitle": "하대동 최고가 임광 1.2억",
+      "photo_query": "korea apartment trading chart data"
     },
     {
       "image": null,
-      "narration": "이거. 진짜 다른 단지랑 비교해봐라. 같은 달에 한보타워는 63백만 원. 거의 반값이다.",
-      "subtitle": "한보타워: 63백만원",
-      "photo_query": "korean apartment complex comparison buildings"
+      "narration": "58제곱미터짜리다. 80년대 지은 건물인데 이 정도. 이게 시세다 아이가.",
+      "subtitle": "58제곱미터 1989년 건축",
+      "photo_query": "vintage korean apartment complex exterior"
     },
     {
       "image": null,
-      "narration": "하대동 물건들은 대부분 80년대 지은 오래된 건물들이카더라. 그런데 임광만 유독 높게 거래되고 있다.",
-      "subtitle": "1989년식 임광, 유독 강세",
-      "photo_query": "vintage 1980s apartment building korea old"
+      "narration": "한보타워는 63백만 원. 하대한양은 58백만 원. 같은 동네인데 가격이 이렇게 난다.",
+      "subtitle": "한보타워 6.3억 vs 하대한양 5.8억",
+      "photo_query": "korea apartment price comparison buildings"
     },
     {
       "image": null,
-      "narration": "평당 가격으로 보면 임광이 210만 원. 다른 곳들은 120~180만 원대다. 뭐가 다르냐. 이거 꼭 확인해봐야 한다.",
-      "subtitle": "임광 평당 210만원",
-      "photo_query": "apartment floor plan interior korea"
+      "narration": "거래 많고 시세도 고만고만한 지역. 투자보다는 거주 목적이 맞다 이거.",
+      "subtitle": "거주 목적 지역, 투자 주의",
+      "photo_query": "family moving into apartment korea"
     },
     {
       "image": null,
-      "narration": "하대동 부동산 움직임. 계속 팔로우해라. 더 자세한 데이터는 우리 채널에서 봐봐.",
-      "subtitle": "하대동 실거래 추적중",
-      "photo_query": "real estate market data information korea"
+      "narration": "하대동 집 사시거나 팔 생각이면, 이 숫자들 미리 봐야 한다. 쫌봐봐에서 계속 따라와라.",
+      "subtitle": "하대동 최신 거래가 확인하기",
+      "photo_query": "people viewing apartment listings online"
     }
   ],
   "meta": {
@@ -57,6 +57,6 @@
       ],
       "style": "bars"
     },
-    "generated_at": "2026-11-06T03:22:22.024381+00:00"
+    "generated_at": "2026-11-06T10:34:10.564355+00:00"
   }
 }

@@ -1,0 +1,54 @@
+{
+  "title": "냉장고 칸별 정리법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "냉장고 이렇게",
+      "정리하면",
+      "<r>식재료 2배</r>",
+      "오래 간다"
+    ],
+    "badge": null,
+    "photo_query": "organized refrigerator compartments"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "야야야, 냉장고 정리 제대로 알려줄게. 온도가 다르니까 칸마다 넣는 게 달라야 한다.",
+      "subtitle": "냉장고는 칸마다 온도가 다르다",
+      "photo_query": "refrigerator temperature zones"
+    },
+    {
+      "image": null,
+      "narration": "맨 위 선반은 4도로 가장 따뜻하니까 치즈, 계란, 남은 반찬을 놔. 상하기 쉬운 것도 여기 가까이.",
+      "subtitle": "위쪽(4도): 계란, 치즈, 반찬",
+      "photo_query": "eggs cheese vegetables top shelf"
+    },
+    {
+      "image": null,
+      "narration": "중간 칸은 0도에 가깝다. 여기가 냉동실 바로 아래니까 고기, 생선, 두부 같은 단백질은 무조건 여기다. 신선함이 3주까지 간다.",
+      "subtitle": "중간(0도): 고기, 생선, 두부",
+      "photo_query": "raw meat fish tofu refrigerator shelf"
+    },
+    {
+      "image": null,
+      "narration": "아래 칸은 8도로 상대적으로 따뜻하니까 과일, 채소, 버터 같은 거 넣어. 물론 채소실이 있으면 거기 우선이고.",
+      "subtitle": "아래(8도): 과일, 채소, 버터",
+      "photo_query": "vegetables fruits butter bottom shelf"
+    },
+    {
+      "image": null,
+      "narration": "이렇게 하면 같은 냉장고인데도 식재료가 2배까지 오래 간다니까. 이런 꿀팁 더 많은 거 보려면 팔로우 꼭 해봐.",
+      "subtitle": "온도별 정리로 식재료 신선함 2배",
+      "photo_query": "organized fridge interior full view"
+    }
+  ],
+  "meta": {
+    "format": "살림팁",
+    "source": "tips_topics",
+    "category": "생활·꿀팁",
+    "attribution": "자체 제작",
+    "chart": null,
+    "generated_at": "2026-11-06T10:35:08.200553+00:00"
+  }
+}
