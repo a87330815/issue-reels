@@ -210,12 +210,51 @@ jobs:
             | tee -a out/reels/render.log
           cat out/uploaded.json
 
+      # Graph API 탐색기에서 발급한 사용자 장기토큰은 컨테이너 생성까지는
+      # 되지만 media_publish에서 2207085/Fatal이 날 수 있다. 연결된 Facebook
+      # 페이지의 영구 페이지 토큰을 골라 실제 발행에 사용한다.
+      - name: 페이지 장기토큰 선택
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        id: ig_token
+        env:
+          USER_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
+        run: |
+          python - <<'PY'
+          import os, requests
+          user_token = os.environ["USER_TOKEN"]
+          ig_id = os.environ["IG_USER_ID"]
+          r = requests.get(
+              "https://graph.facebook.com/v26.0/me/accounts",
+              params={
+                  "fields": "id,name,access_token,instagram_business_account",
+                  "limit": 100,
+                  "access_token": user_token,
+              },
+              timeout=30,
+          )
+          data = r.json()
+          if "error" in data:
+              raise SystemExit("페이지 토큰 조회 실패: " + data["error"].get("message", ""))
+          selected = None
+          for page in data.get("data", []):
+              instagram = page.get("instagram_business_account") or {}
+              if str(instagram.get("id", "")) == str(ig_id):
+                  selected = page.get("access_token")
+                  break
+          token = selected or user_token
+          print("페이지 토큰 사용" if selected else "기존 토큰 사용")
+          print("::add-mask::" + token)
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write("token=" + token + "\n")
+          PY
+
       - name: 5) 인스타 릴스 발행
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
         env:
           STEM: ${{ steps.pick.outputs.stem }}
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ steps.ig_token.outputs.token || secrets.IG_ACCESS_TOKEN }}
           # publish.py는 호스트 기본값이 graph.instagram.com인데 이 계정
           # 토큰은 페이지 토큰이라 그 호스트에서 "Cannot parse access token"
           # 으로 거부된다. 저장소 변수가 있으면 그걸, 없으면 facebook 쪽을 쓴다.
