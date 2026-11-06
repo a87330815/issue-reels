@@ -56,7 +56,7 @@ load_env()
 
 IG_ID = os.environ.get("IG_USER_ID", "")
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
-HOST = os.environ.get("IG_API_HOST", "graph.facebook.com")
+HOST = os.environ.get("IG_API_HOST", "graph.instagram.com")
 VERSION = os.environ.get("IG_API_VERSION", "v26.0")
 BASE = f"https://{HOST}/{VERSION}"
 
@@ -220,26 +220,7 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     if not ok:
         raise RuntimeError(f"컨테이너 처리 실패: {why}")
 
-    # status_code가 FINISHED여도 Meta 내부 전파가 잠시 늦으면
-    # media_publish가 [-1/2207085] Fatal로 거절될 수 있다.
-    # 바로 재호출하지 않고 짧게 기다린 뒤 제한적으로 재시도한다.
-    last_error = None
-    # Meta가 컨테이너를 FINISHED로 표시한 직후에도 publish 계층의
-    # 내부 전파가 늦어 [-1/2207085] Fatal을 반환할 수 있다.
-    # 짧은 재시도로 끝내지 않고 충분히 기다린 뒤 재시도한다.
-    delays = (30, 60, 120, 180, 240)
-    for attempt, delay in enumerate(delays, 1):
-        time.sleep(delay)
-        try:
-            res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
-            break
-        except RuntimeError as e:
-            last_error = e
-            if "2207085" not in str(e) or attempt == len(delays):
-                raise
-            print(f"    media_publish 재시도 {attempt}/{len(delays)} — {e}")
-    else:
-        raise last_error or RuntimeError("media_publish 실패")
+    res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
     media_id = res["id"]
     print(f"  발행 완료: {media_id}")
     return media_id
@@ -281,9 +262,20 @@ def build_caption(script):
     tags = ["#이슈", "#뉴스", "#정보"]
     cat = meta.get("category")
     if cat:
-        tags.insert(0, "#" + cat.replace("·", " #"))
+        # 카테고리를 태그로 쪼갠다. 가운뎃점과 공백 둘 다 끊어야 한다.
+        # "당일 화제 이슈"를 그대로 붙이면 인스타가 "#당일"까지만 태그로
+        # 읽고 "화제 이슈"는 맨 글자로 남는다.
+        for w in reversed(cat.replace("·", " ").split()):
+            tags.insert(0, "#" + w)
+    # 카테고리에서 쪼갠 태그가 기본 태그와 겹칠 수 있다
+    # ("당일 화제 이슈" → #이슈). 순서를 지키면서 중복만 지운다.
+    seen, uniq = set(), []
+    for t in tags:
+        if t not in seen:
+            seen.add(t)
+            uniq.append(t)
     lines.append("")
-    lines.append(" ".join(tags))
+    lines.append(" ".join(uniq))
 
     return "\n".join(lines)
 
@@ -308,40 +300,6 @@ def record(entries):
     print(f"\n발행 기록: {PUBLISHED}")
 
 
-def test_publish():
-    """이미지 1건과 최근 실패한 릴스를 분리해 실제 API 발행 경로를 진단한다."""
-    print("[진단] 최근 미디어 확인")
-    before = api("GET", f"{IG_ID}/media", fields="id,timestamp,media_type,caption", limit=10)
-    before_ids = {x.get("id") for x in before.get("data", [])}
-
-    image_url = os.environ.get(
-        "TEST_IMAGE_URL",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/280px-PNG_transparency_demonstration_1.png",
-    )
-    print("[진단] 이미지 컨테이너 생성 및 게시")
-    try:
-        image = api("POST", f"{IG_ID}/media", image_url=image_url,
-                    caption="[진단 테스트] 확인 후 삭제 예정")
-        image_id = image["id"]
-        time.sleep(8)
-        print(f"  이미지 게시 결과: {api('POST', f'{IG_ID}/media_publish', creation_id=image_id).get('id')}")
-    except Exception as e:
-        print(f"  이미지 게시 실패: {e}")
-
-    failed_cid = os.environ.get("TEST_CONTAINER_ID", "17974658381973700")
-    print(f"[진단] 릴스 컨테이너 재게시: {failed_cid}")
-    try:
-        print(f"  상태: {api('GET', failed_cid, fields='status_code,status')}")
-        print(f"  릴스 게시 결과: {api('POST', f'{IG_ID}/media_publish', creation_id=failed_cid).get('id')}")
-    except Exception as e:
-        print(f"  릴스 게시 실패: {e}")
-
-    after = api("GET", f"{IG_ID}/media", fields="id,timestamp,media_type,caption", limit=10)
-    new_ids = [x.get("id") for x in after.get("data", []) if x.get("id") not in before_ids]
-    print(f"[진단] 새로 확인된 미디어: {new_ids or '없음'}")
-    return 0
-
-
 def main():
     ap = argparse.ArgumentParser(description="인스타그램 릴스 발행")
     ap.add_argument("--manifest", help="업로드 매니페스트 (upload.py 출력)")
@@ -350,19 +308,12 @@ def main():
     ap.add_argument("--caption", help="캡션")
     ap.add_argument("--script", help="대본 JSON — 캡션을 여기서 만든다")
     ap.add_argument("--check", action="store_true", help="설정만 점검")
-    ap.add_argument("--test-publish", action="store_true", help="이미지·릴스 실제 게시 진단")
     ap.add_argument("--dry-run", action="store_true", help="발행 직전까지만")
     ap.add_argument("--limit", type=int, default=1, help="한 번에 발행할 최대 편수")
     args = ap.parse_args()
 
     if args.check:
         return 0 if check() else 1
-
-    if args.test_publish:
-        if not IG_ID or not TOKEN:
-            print("[중단] IG_USER_ID / IG_ACCESS_TOKEN 미설정")
-            return 1
-        return test_publish()
 
     if not IG_ID or not TOKEN:
         if not args.dry_run:
@@ -398,9 +349,13 @@ def main():
         with open(args.script, encoding="utf-8") as f:
             sc = json.load(f)
         caption = build_caption(sc)
+        # 발행 기록에 카테고리를 남긴다. queue_next.py가 주제 비율을 맞출 때
+        # 이 값을 센다. 없으면 대본을 다시 열어야 해서 여기서 함께 적는다.
+        category = (sc.get("meta") or {}).get("category", "")
         for j in jobs:
             if not j.get("caption"):
                 j["caption"] = caption
+            j["category"] = category
 
     # 한도 확인 — 인증이 필요하므로 드라이런에서 인증이 없으면 건너뛴다
     if args.dry_run and (not IG_ID or not TOKEN):
@@ -429,6 +384,10 @@ def main():
                     "media_id": media_id,
                     "published_at": datetime.now(timezone.utc).isoformat(),
                     "video_url": job["video_url"],
+                    # 계정을 옮기면 같은 대본을 새 계정에 다시 올려야 한다.
+                    # 어느 계정에 올린 기록인지 남겨 둬야 그 판정이 된다.
+                    "ig_id": IG_ID or "",
+                    "category": job.get("category", ""),
                     "insights": insights(media_id),
                 })
         except Exception as e:
