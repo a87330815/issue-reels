@@ -425,13 +425,30 @@ def fetch_for_script(script_path, out_dir):
     if custom_urls:
         print(f"  📸 커스텀 URL {len(custom_urls)}건 발견 — 우선 다운로드")
 
-    # 커버: 제목 기준
-    targets = [("cover", sc.get("title", ""), (sc.get("cover") or {}).get("photo_query"))]
+    # 커버: 제목 기준. image가 있으면 검색하지 않고 검증된 지정 사진을 쓴다.
+    cover = sc.get("cover") or {}
+    targets = [("cover", sc.get("title", ""), cover.get("photo_query"), cover.get("image"))]
     for i, scene in enumerate(sc.get("scenes", [])):
-        targets.append((f"scene{i+1}", scene.get("subtitle", ""), scene.get("photo_query")))
+        targets.append((f"scene{i+1}", scene.get("subtitle", ""),
+                        scene.get("photo_query"), scene.get("image")))
 
     used = set()  # 같은 대본 안에서 사진 중복 방지
-    for slot, text, explicit in targets:
+    for slot, text, explicit, direct_image in targets:
+        # 특정 인물·상품·장소는 대본에 검증된 image URL을 지정한다.
+        # 지정 사진이 있는데 일반 검색 결과로 덮어쓰면 다른 인물이 나올 수 있다.
+        if direct_image:
+            path = os.path.join(out_dir, f"{slot}.jpg")
+            print(f"  [{slot}] 지정 이미지 → {direct_image[:60]}...")
+            if download_custom_url(direct_image, path):
+                manifest["photos"][slot] = os.path.basename(path)
+                manifest["credits"].append({
+                    "slot": slot, "query": "direct_image", "source": "script_image",
+                    "creator": "공식 제공처", "license": "editorial", "page": direct_image,
+                })
+                print(f"    ✓ {slot} ← 지정 이미지")
+                continue
+            print(f"    ✗ 지정 이미지 실패, 폴백 검색으로 전환")
+
         # 커스텀 URL이 있으면 우선 사용
         if slot in custom_urls:
             path = os.path.join(out_dir, f"{slot}.jpg")
