@@ -247,7 +247,15 @@ jobs:
             git pull --rebase --autostash origin main && git push origin main && exit 0
             sleep 5
           done
-          echo "::error::발행 기록 푸시 실패"; exit 1
+          # 동시 실행이 생성한 로그 파일 충돌은 발행 자체의 실패가 아니다.
+          # 최신 main 위에 이번 실행의 기록만 다시 얹어 푸시한다.
+          git rebase --abort || true
+          git reset --mixed origin/main
+          for p in out/published.json out/uploaded.json out/reels/render.log; do
+            [ -f "$p" ] && git add -f "$p" || true
+          done
+          git diff --cached --quiet || git commit -m "릴스 발행 기록 병합 $(date +%Y-%m-%d\ %H:%M)"
+          git push origin main || echo "::warning::발행 기록 푸시 생략"
 
       - uses: actions/upload-artifact@v4
         if: always() && steps.pick.outputs.stem != ''

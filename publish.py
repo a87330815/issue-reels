@@ -227,16 +227,17 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     # Meta가 컨테이너를 FINISHED로 표시한 직후에도 publish 계층의
     # 내부 전파가 늦어 [-1/2207085] Fatal을 반환할 수 있다.
     # 짧은 재시도로 끝내지 않고 충분히 기다린 뒤 재시도한다.
-    for attempt, delay in enumerate((30, 60, 120, 180, 240), 1):
+    delays = (30, 60, 120, 180, 240)
+    for attempt, delay in enumerate(delays, 1):
         time.sleep(delay)
         try:
             res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
             break
         except RuntimeError as e:
             last_error = e
-            if "2207085" not in str(e) or attempt == 3:
+            if "2207085" not in str(e) or attempt == len(delays):
                 raise
-            print(f"    media_publish 재시도 {attempt}/3 — {e}")
+            print(f"    media_publish 재시도 {attempt}/{len(delays)} — {e}")
     else:
         raise last_error or RuntimeError("media_publish 실패")
     media_id = res["id"]
