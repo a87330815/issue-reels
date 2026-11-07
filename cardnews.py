@@ -904,6 +904,11 @@ def make_outro(sc, t, total):
 
 # ── 메인 ────────────────────────
 def generate(script_path, out_dir, photo_dir=None, layout="magazine"):
+    # 카드뉴스는 승인된 7장 양식을 고정한다. 실행마다 바뀌는 것은
+    # 사진과 대본뿐이며, classic 등 다른 레이아웃은 릴스 재료에만 허용한다.
+    if not REELS:
+        layout = "magazine"
+        print(f"고정 카드뉴스 템플릿: {CARD_TEMPLATE_ID}")
     with open(script_path, encoding="utf-8") as f:
         sc = json.load(f)
     os.makedirs(out_dir, exist_ok=True)
