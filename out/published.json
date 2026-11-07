@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T00:29:06.466924+00:00",
+  "updated_at": "2026-11-07T03:21:48.709587+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -180,6 +180,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261106_08.mp4",
       "ig_id": "17841459210979722",
       "category": "주거",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261107_09_숫자훅",
+      "media_id": "18133649107843954",
+      "published_at": "2026-11-07T03:21:48.489907+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_09.mp4",
+      "ig_id": "17841459210979722",
+      "category": "당일 화제 이슈",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
