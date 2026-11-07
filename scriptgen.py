@@ -966,6 +966,7 @@ def template_generate(angle):
             "image": None,
             "photo_query": _scene_image_keyword(angle, "intro"),
             "lines": cover_lines,
+            "summary": _to_dialect(angle.get("summary") or narration_intro),
             "badge": badge,
         },
         "scenes": scenes,
@@ -1571,6 +1572,7 @@ def llm_generate(angle, api_key, provider="anthropic"):
         "cover": {
             "image": None,
             "lines": lines,
+            "summary": result["cover"].get("summary") or result.get("summary") or "",
             "badge": result["cover"].get("badge"),
             "photo_query": _pq(result.get("cover", {})),
         },
