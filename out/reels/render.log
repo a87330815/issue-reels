@@ -1,7 +1,7 @@
-run 42333341803 2026-11-07T03:18:58Z
+run 42334085631 2026-11-07T03:28:33Z
 
 === 20261107_09_숫자훅 ===
-  [cover] '연쇄 폭탄 협박 사건' → "airport security evacuation emergency"
+  [cover] '항공사·방송국 동시 대피' → "airport security evacuation emergency"
     [unsplash] 11건 후보 (부적합 1건 제외)
     [openverse] 4건 후보
     [wikimedia] 3건 후보
@@ -28,13 +28,13 @@ run 42333341803 2026-11-07T03:18:58Z
     적합도 통과 4/24건 (Openverse/Wikimedia)
     Unsplash 9건 (적합도 필터 생략)
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '앞으로 상황 주목' → "breaking news alert television broadcast"
+  [scene4] '추가 소식 확인 중' → "breaking news alert television broadcast"
     [unsplash] 11건 후보 (부적합 1건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
     Unsplash 11건 (적합도 필터 생략)
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '팔로우 후 알림 켜기' → "smartphone notification alert icon"
+  [scene5] '팔로우하고 추가 소식 확인' → "smartphone notification alert icon"
     [unsplash] 12건 후보
     Unsplash 12건 (적합도 필터 생략)
     ✓ scene5 ← Unsplash (Unsplash License)
@@ -49,30 +49,30 @@ run 42333341803 2026-11-07T03:18:58Z
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 1.6초  연쇄 폭탄 협박 사건...
-  TTS [2/6] [EL·발랄녀] 7.1초  이거 모르고 지나가면 안 된다. 유럽에서 시방 뭔가...
-  TTS [3/6] [EL·발랄녀] 8.3초  연쇄 폭탄 협박이 들어왔다고카더라. 폴란드 항공사부...
-  TTS [4/6] [EL·발랄녀] 6.0초  시방 현지 경찰이 수사 중인데. 정확히 뭐가 목표인...
-  TTS [5/6] [EL·발랄녀] 6.1초  이런 사건들이 실제로 터지는 건 드물지만. 요즘 뉴...
-  TTS [6/6] [EL·발랄녀] 5.6초  쫌봐봐 채널에서 내내 추적할 테니. 팔로우해 둬라....
+  TTS [1/6] [EL·발랄녀] 1.9초  항공사·방송국 동시 대피...
+  TTS [2/6] [EL·발랄녀] 7.1초  이거 기냥 넘기면 안 된다아이가. 유럽에서 일이 크...
+  TTS [3/6] [EL·발랄녀] 6.6초  연쇄 폭탄 협박이 들어왔다카더라. 폴란드 항공사에서...
+  TTS [4/6] [EL·발랄녀] 7.7초  현지 경찰이 수사 중인데, 정확한 목표는 아직 확인...
+  TTS [5/6] [EL·발랄녀] 4.6초  현재 상황은 내내 바뀔 수 있데이. 추가 소식이 나...
+  TTS [6/6] [EL·발랄녀] 3.0초  쫌봐봐가 내내 확인해드릴 테니 팔로우해 두이소....
 
 2) 영상 합성
   세그먼트 [1/7] 3.0초
   세그먼트 [2/7] 7.9초
-  세그먼트 [3/7] 9.1초
-  세그먼트 [4/7] 6.8초
-  세그먼트 [5/7] 6.9초
-  세그먼트 [6/7] 6.4초
+  세그먼트 [3/7] 7.4초
+  세그먼트 [4/7] 8.5초
+  세그먼트 [5/7] 5.4초
+  세그먼트 [6/7] 3.8초
   세그먼트 [7/7] 4.0초
 
   ✓ 릴스 완성: out/reels/20261107_09_숫자훅.mp4
-    길이: 38.7초  /  크기: 1.4MB
--rw-r--r-- 1 runner runner 1.5M Nov  7 03:20 out/reels/20261107_09_숫자훅.mp4
+    길이: 35.0초  /  크기: 1.3MB
+-rw-r--r-- 1 runner runner 1.4M Nov  7 03:29 out/reels/20261107_09_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=38.730249
+duration=34.976281
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -81,7 +81,7 @@ duration=38.730249
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-07):
-  20261107_09_숫자훅.mp4  1.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_09.mp4
+  20261107_09_숫자훅.mp4  1.3MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_09.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -89,16 +89,16 @@ duration=38.730249
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 93건
+남은 발행 가능: 92건
 발행 대상: 1건
 
 ── 1/1  20261107_09_숫자훅
   영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_09.mp4
-  캡션: 연쇄 폭탄 협박 사건
-  컨테이너: 17975267786973700
+  캡션: 항공사·방송국 동시 대피
+  컨테이너: 17975271128973700
       0초  IN_PROGRESS
-     74초  FINISHED
-  발행 완료: 18133649107843954
+     32초  FINISHED
+  발행 완료: 18115596350125163
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
