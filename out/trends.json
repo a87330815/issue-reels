@@ -1,77 +1,86 @@
 {
-  "collected_at": "2026-11-07T09:45:55.401306+00:00",
+  "collected_at": "2026-11-07T15:05:39.790482+00:00",
   "items": [
     {
-      "keyword": "정철원",
+      "keyword": "도르트문트 대 엘버스베르크",
+      "traffic": "200+",
+      "news_title": "Confirmed lineups: Borussia Dortmund vs. SV Elversberg",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "d6ba01db4a7c4477"
+    },
+    {
+      "keyword": "라이프치히 대 아우크스부르크",
+      "traffic": "200+",
+      "news_title": "⚡ Kade shock for Leipzig! Augsburg&apos;s fast starters stun RB",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "bad9bfb65e08c43a"
+    },
+    {
+      "keyword": "리즈 유나이티드 대 토트넘 홋스퍼 fc 라인업",
       "traffic": "100+",
-      "news_title": "정철원, ‘러브캐처’ 김지연 가정폭력·외도 주장에 “사실관계 다투는 중”",
+      "news_title": "Roberto De Zerbi reaction: What did Spurs boss say after losing at Leeds?",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "8369b6d6a43b0a6c"
+      "key": "7013d7dbf928aa2c"
     },
     {
-      "keyword": "하희라",
+      "keyword": "마인츠 05 대 바이에른",
+      "traffic": "5000+",
+      "news_title": "“국가대표 은퇴해라!” 논란의 김민재, 마인츠전 예상 선발 명단 포함…이재성은 벤치 출발 전망, 코리안 더비 성사될까 - 머니투데이",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "56b195d9e79a1f14"
+    },
+    {
+      "keyword": "페드로 포로",
       "traffic": "500+",
-      "news_title": "&apos;살림남&apos;, 최수종은 러브레터...은지원은 변명레터 - 머니투데이",
+      "news_title": "‘월드컵 위너’ 포로, “가장 존경하는 선수는 쏘니”…손흥민 향한 진심",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "c4afd275dc221b60"
+      "key": "bb33d219279ddcef"
     },
     {
-      "keyword": "주권",
-      "traffic": "200+",
-      "news_title": "[박성진의 국방 B컷](69) 집속탄 사진에 흔들리는 한국과 김정은의 ‘사진 정치’",
+      "keyword": "ลีดส์ พบ สเปอร์ส",
+      "traffic": "100+",
+      "news_title": "การคาดการณ์ผลการแข่งขันระหว่างลีดส์กับท็อตแนม: จุดสนใจสำคัญในการลุ้นแย่งตำแหน่งสูงสุด",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "1cb5f8100ed0ae6b"
+      "key": "1cda808f74acace3"
     },
     {
-      "keyword": "나탈리 하프",
-      "traffic": "200+",
-      "news_title": "Trump Hands Natalie Harp New Deeply Personal Role",
+      "keyword": "검사",
+      "traffic": "500+",
+      "news_title": "&quot;대통령 탈옥법&quot; 국힘 장외집회‥&quot;진상 드러날까 두렵나&quot;",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "bb1b42a43de1a81d"
+      "key": "de0accd0c84de7b6"
     },
     {
-      "keyword": "김영철",
+      "keyword": "닥터x 하얀 마피아의 시대",
       "traffic": "1000+",
-      "news_title": "&quot;치킨 사 오겠다던 형, 그날 세상 떠나&quot;…김영철이 떠올린 35년 전 비극 - 머니투데이",
+      "news_title": "“이것이 제 선택입니다” 투표장을 등지고 생명을 살리겠다는 일념으로 수술실로 발걸음을 옮긴 손현주의 선택!",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "e2b712cd0b75f51c"
+      "key": "2f520f3cc52a17d7"
     },
     {
-      "keyword": "수원 kt 대 대구 한국가스공사",
-      "traffic": "500+",
-      "news_title": "",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "생활·지원금·제도",
-      "key": "5d9ff69433e53c28"
-    },
-    {
-      "keyword": "젠슨황",
-      "traffic": "2000+",
-      "news_title": "“젠슨 황 ‘中스파이 의혹’ 여성과 연인관계”…美정부 메모 파장",
+      "keyword": "persija jakarta vs persebaya",
+      "traffic": "200+",
+      "news_title": "Persija vs Persebaya Final Score 1-0: Macan Kemayoran Win Dramatically at JIS to Reclaim Top of the Table",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "a5b50ac6d2689b90"
-    },
-    {
-      "keyword": "맥도날드",
-      "traffic": "500+",
-      "news_title": "&quot;존박이 랩으로 주문했더니&quot;…맥도날드가 진짜 만든 &apos;이것&apos; [김소연의 얼굴전략]",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "cc2fa0195adb1a1e"
+      "key": "deccf033006a1579"
     }
   ]
 }
