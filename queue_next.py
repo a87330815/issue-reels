@@ -5,14 +5,20 @@ ROOT=os.path.dirname(os.path.abspath(__file__))
 SCRIPTS=os.path.join(ROOT,'out','scripts')
 PUBLISHED=os.path.join(ROOT,'out','published.json')
 ALLOWED_CATEGORIES={'연예','국내 정치','해외 정치','경제','해외연예'}
-CATEGORY_ALIAS={'정치':'국내 정치','정치·시사':'국내 정치','시사':'국내 정치','세계경제':'해외 정치','글로벌경제':'해외 정치','국제경제':'해외 정치','해외경제':'해외 정치','물가':'경제','주거':'경제','부동산':'경제','경제·부동산':'경제','경제·돈':'경제','연예·화제':'연예','엔터테인먼트':'연예'}
+CATEGORY_ALIAS={'정치':'국내 정치','정치·시사':'국내 정치','시사':'국내 정치','세계경제':'해외 정치','글로벌경제':'해외 정치','국제경제':'해외 정치','해외경제':'해외 정치','물가':'경제','경제·돈':'경제','연예·화제':'연예','엔터테인먼트':'연예'}
+BLOCKED_KEYWORDS={'생활꿀팁','꿀팁','일반 정보','아파트','부동산','실거래','분양','청약','주거'}
 TARGET_RATIO={c:20 for c in ALLOWED_CATEGORIES}
 
 def normalize_category(cat): return CATEGORY_ALIAS.get((cat or '').strip(),(cat or '').strip())
-def meta(stem):
+def load_script(stem):
     try:
-        with open(os.path.join(SCRIPTS,stem+'.json'),encoding='utf-8') as f: return normalize_category(json.load(f).get('meta',{}).get('category'))
-    except Exception: return ''
+        with open(os.path.join(SCRIPTS,stem+'.json'),encoding='utf-8') as f: return json.load(f)
+    except Exception: return {}
+def meta(stem): return normalize_category(load_script(stem).get('meta',{}).get('category'))
+def blocked(stem):
+    d=load_script(stem)
+    text=json.dumps(d,ensure_ascii=False)
+    return any(k in text for k in BLOCKED_KEYWORDS)
 def records():
     try:
         with open(PUBLISHED,encoding='utf-8') as f: return json.load(f).get('items',[]) or []
@@ -28,7 +34,7 @@ def queue():
     for p in sorted(glob.glob(os.path.join(SCRIPTS,'*.json')),reverse=True):
         s=os.path.splitext(os.path.basename(p))[0]
         if s in d or s.startswith(('test_','sample_')): continue
-        if meta(s) in ALLOWED_CATEGORIES: out.append(s)
+        if meta(s) in ALLOWED_CATEGORIES and not blocked(s): out.append(s)
     return out
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--list',action='store_true'); a=ap.parse_args(); q=queue()
