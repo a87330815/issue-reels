@@ -52,16 +52,23 @@ jobs:
           python scriptgen.py -n "${{ inputs.count || '9' }}" --trends out/trends.json
           python - <<'PY'
           import json, glob, os
-          allowed = {'연예','정치','경제','해외연예','물가','주거','세계경제','경제·돈'}
-          aliases = {'물가','주거','세계경제','경제·돈'}
+          allowed = {'연예','국내 정치','해외 정치','경제','해외연예'}
+          aliases = {
+              '정치':'국내 정치', '정치·시사':'국내 정치',
+              '세계경제':'해외 정치', '글로벌경제':'해외 정치',
+              '국제경제':'해외 정치', '해외경제':'해외 정치',
+              '물가':'경제', '주거':'경제', '부동산':'경제',
+              '경제·부동산':'경제', '경제·돈':'경제',
+          }
           for p in glob.glob('out/scripts/*.json'):
               with open(p, encoding='utf-8') as f: d=json.load(f)
-              c=d.get('meta',{}).get('category','')
+              meta=d.setdefault('meta',{})
+              c=meta.get('category','').strip()
+              if c in aliases:
+                  c=aliases[c]
+                  meta['category']=c
               if c not in allowed:
                   os.remove(p)
-              elif c in aliases:
-                  d.setdefault('meta',{})['category']='경제'
-                  with open(p,'w',encoding='utf-8') as f: json.dump(d,f,ensure_ascii=False,indent=2)
           PY
           ls -la out/scripts/
       - name: 대본 업로드
