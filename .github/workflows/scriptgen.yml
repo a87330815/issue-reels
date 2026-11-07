@@ -41,22 +41,12 @@ jobs:
           LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: |
           python scriptgen.py -n "${{ inputs.count || '9' }}" --trends out/trends.json
-          python - <<'PY'
-          import json, glob, os
-          allowed={'연예','국내 정치','해외 정치','경제','해외연예'}
-          aliases={'정치':'국내 정치','정치·시사':'국내 정치','세계경제':'해외 정치','글로벌경제':'해외 정치','국제경제':'해외 정치','해외경제':'해외 정치','물가':'경제','주거':'경제','부동산':'경제','경제·부동산':'경제','경제·돈':'경제','연예·화제':'연예','엔터테인먼트':'연예'}
-          banned=('아파트','부동산','실거래','분양','청약','전세','월세','주택','평당','단지','집값','주거','재건축','매매가')
-          for p in glob.glob('out/scripts/*.json'):
-              with open(p,encoding='utf-8') as f: d=json.load(f)
-              m=d.setdefault('meta',{}); c=aliases.get(str(m.get('category','')).strip(),str(m.get('category','')).strip())
-              text=json.dumps(d,ensure_ascii=False)
-              if c not in allowed or any(w in text for w in banned): os.remove(p); continue
-              m['category']=c
-              with open(p,'w',encoding='utf-8') as f: json.dump(d,f,ensure_ascii=False,indent=2)
-          files=glob.glob('out/scripts/*.json')
-          if not files: raise SystemExit('검증 통과 대본이 없습니다')
-          print('검증 통과:',len(files),'건')
-          for p in files: print(p)
+          python -c "import json,glob,os; A={'연예','국내 정치','해외 정치','경제','해외연예'}; X={'정치':'국내 정치','정치·시사':'국내 정치','세계경제':'해외 정치','글로벌경제':'해외 정치','국제경제':'해외 정치','해외경제':'해외 정치','물가':'경제','주거':'경제','부동산':'경제','경제·부동산':'경제','경제·돈':'경제','연예·화제':'연예','엔터테인먼트':'연예'}; B=('아파트','부동산','실거래','분양','청약','전세','월세','주택','평당','단지','집값','주거','재건축','매매가'); ps=glob.glob('out/scripts/*.json'); kept=[];
+for p in ps:
+ d=json.load(open(p,encoding='utf-8')); m=d.setdefault('meta',{}); c=X.get(str(m.get('category','')).strip(),str(m.get('category','')).strip()); t=json.dumps(d,ensure_ascii=False);
+ if c in A and not any(w in t for w in B): m['category']=c; json.dump(d,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=2); kept.append(p)
+ else: os.remove(p)
+print('검증 통과:',len(kept),'건'); raise SystemExit(0 if kept else 1)"
       - name: 대본 업로드
         uses: actions/upload-artifact@v4
         with:
@@ -65,11 +55,10 @@ jobs:
           retention-days: 30
       - name: 대본 커밋
         run: |
-          set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f out/scripts/
-          git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
-          git commit -m "검증된 허용 주제 대본 재생성 $(date +%Y-%m-%d\ %H:%M)"
+          git diff --cached --quiet && exit 0
+          git commit -m "검증된 허용 주제 대본 재생성"
           git pull --rebase --autostash origin main
           git push origin main
