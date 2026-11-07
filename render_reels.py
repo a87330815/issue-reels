@@ -25,7 +25,7 @@ DEFAULT_VOICE = "ko-KR-HyunsuMultilingualNeural"
 # 대안: ko-KR-InJoonNeural(남, 더 높음), ko-KR-SunHiNeural(여)
 # 기본 속도(6자/초)는 또박또박하지만 릴스로는 처진다. 20% 올려
 # 7.2자/초로 두면 이슈 전달에 맞는 속도가 되고 길이도 37초대로 줄어든다.
-DEFAULT_RATE = "+20%"
+DEFAULT_RATE = ""
 # 장면당 기본 표시 시간 (TTS 없을 때)
 DEFAULT_DURATION = 4.0
 # 커버·아웃트로 최소 표시 시간
