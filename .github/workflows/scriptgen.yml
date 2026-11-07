@@ -36,14 +36,24 @@ jobs:
           python scriptgen.py -n "${{ inputs.count || '9' }}" --trends out/trends.json
           python - <<'PY'
           import glob,json,os
-          banned=('아파트','부동산','실거래','분양','청약','전세','월세','주택','평당','단지','집값','주거','재건축','매매가')
+          allowed={'연예','국내 정치','해외 정치','경제','해외연예'}
+          banned=('생활꿀팁','생활·꿀팁','꿀팁','일반 정보','아파트','부동산','실거래','분양','청약','전세','월세','주택','평당','단지','집값','주거','재건축','매매가')
           kept=[]
           for p in glob.glob('out/scripts/*.json'):
               d=json.load(open(p,encoding='utf-8')); t=json.dumps(d,ensure_ascii=False)
-              if any(x in t for x in banned): os.remove(p)
+              category=(d.get('meta') or {}).get('category','').strip()
+              scenes=d.get('scenes') or []
+              source=(d.get('meta') or {}).get('attribution') or (d.get('meta') or {}).get('source')
+              reason=None
+              if category not in allowed: reason=f'허용 외 카테고리: {category}'
+              elif any(x in t for x in banned): reason='금지 주제 포함'
+              elif len(scenes)!=5: reason=f'본문 장면 {len(scenes)}개 (5개 필요)'
+              elif not source: reason='출처 없음'
+              if reason:
+                  print('제외:',os.path.basename(p),reason); os.remove(p)
               else: kept.append(p)
           print('검증 통과:',len(kept),'건')
-          if not kept: raise SystemExit('아파트·부동산·실거래 외 대본이 없습니다')
+          if not kept: raise SystemExit('허용 분야·5장 본문·출처 조건을 충족한 대본이 없습니다')
           PY
       - name: 대본 커밋
         run: |
@@ -51,5 +61,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f out/scripts/
           git diff --cached --quiet && exit 0
-          git commit -m "아파트 부동산 실거래만 제외"
+          git commit -m "허용 분야 5종·본문 5장·출처 검증 대본 생성"
           git push origin main
