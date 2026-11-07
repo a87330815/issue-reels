@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T03:30:28.937945+00:00",
+  "updated_at": "2026-11-07T06:04:33.754778+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -202,6 +202,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_09.mp4",
       "ig_id": "17841459210979722",
       "category": "해외 정치",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261107_14_기준금리동결",
+      "media_id": "18069207812790389",
+      "published_at": "2026-11-07T06:04:33.618155+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_14.mp4",
+      "ig_id": "17841459210979722",
+      "category": "경제",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
