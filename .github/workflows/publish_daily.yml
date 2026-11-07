@@ -37,6 +37,14 @@ on:
         description: "대본 직접 지정 (비우면 대기열에서 비율에 맞게 고름)"
         type: string
         required: false
+      post_format:
+        description: "수동 실행 형식 (예약 실행은 시간표 자동 적용)"
+        type: choice
+        options:
+          - auto
+          - reel
+          - cards
+        default: auto
 
 permissions:
   contents: write
@@ -183,7 +191,7 @@ jobs:
           STEM: ${{ steps.pick.outputs.stem }}
           IG_HANDLE: "@jjombwabwa"
           IG_BRAND: 쫌봐봐
-          POST_FORMAT: ${{ (github.event.schedule == '0 5 * * *' || github.event.schedule == '0 12 * * *') && 'cards' || 'reel' }}
+          POST_FORMAT: ${{ inputs.post_format == 'cards' && 'cards' || inputs.post_format == 'reel' && 'reel' || ((github.event.schedule == '0 5 * * *' || github.event.schedule == '0 12 * * *') && 'cards' || 'reel') }}
         run: |
           set -o pipefail
           MODE="--reels"
@@ -280,7 +288,7 @@ jobs:
           # 으로 거부된다. 저장소 변수가 있으면 그걸, 없으면 facebook 쪽을 쓴다.
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
           DO_PUBLISH: ${{ steps.gate.outputs.publish }}
-          POST_FORMAT: ${{ (github.event.schedule == '0 5 * * *' || github.event.schedule == '0 12 * * *') && 'cards' || 'reel' }}
+          POST_FORMAT: ${{ inputs.post_format == 'cards' && 'cards' || inputs.post_format == 'reel' && 'reel' || ((github.event.schedule == '0 5 * * *' || github.event.schedule == '0 12 * * *') && 'cards' || 'reel') }}
         run: |
           set -o pipefail
           FLAG="--dry-run"
