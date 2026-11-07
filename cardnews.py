@@ -574,7 +574,7 @@ def _draw_fixed_card(photo, subtitle, body, category, t):
     # 제목은 한 줄 고정, 핵심 표시(<r>/<y>)는 노란색
     title_marked = parse_marked(subtitle)
     size = 56
-    while size > 38:
+    while size > 28:
         sf = font(FONT_BLACK, size)
         if sum(d.textlength(seg, font=sf) for seg, _ in title_marked) <= W-120:
             break
