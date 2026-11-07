@@ -1,4 +1,4 @@
-run 42378349877 2026-11-07T13:45:31Z
+run 42379179932 2026-11-07T13:58:32Z
 
 === 20261107_14_기준금리동결 ===
   승인 기준본 사진 6장 사용 — 무료 검색으로 대체하지 않습니다
@@ -14,30 +14,30 @@ run 42378349877 2026-11-07T13:45:31Z
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 2.3초  기준금리 3.00% 동결...
-  TTS [2/6] [EL·발랄녀] 11.3초  물가가 크게 튀지는 않았지만 환율과 경기 흐름이 아...
-  TTS [3/6] [EL·발랄녀] 9.3초  원화 가치가 약해지면 수입 원자재와 에너지 가격이 ...
+  TTS [1/6] [EL·발랄녀] 2.4초  기준금리 3.00% 동결...
+  TTS [2/6] [EL·발랄녀] 11.2초  물가가 크게 튀지는 않았지만 환율과 경기 흐름이 아...
+  TTS [3/6] [EL·발랄녀] 8.9초  원화 가치가 약해지면 수입 원자재와 에너지 가격이 ...
   TTS [4/6] [EL·발랄녀] 11.2초  기준금리가 3.00%로 동결됐다고 대출금리가 즉시 ...
-  TTS [5/6] [EL·발랄녀] 9.8초  예금금리는 기준금리만 보고 결정되지 않습니데이. 은...
-  TTS [6/6] [EL·발랄녀] 9.7초  다음 결정까지 물가, 환율, 경기 지표를 같이 지켜...
+  TTS [5/6] [EL·발랄녀] 9.9초  예금금리는 기준금리만 보고 결정되지 않습니데이. 은...
+  TTS [6/6] [EL·발랄녀] 9.5초  다음 결정까지 물가, 환율, 경기 지표를 같이 지켜...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.1초
-  세그먼트 [2/7] 12.1초
-  세그먼트 [3/7] 10.1초
+  세그먼트 [1/7] 3.2초
+  세그먼트 [2/7] 12.0초
+  세그먼트 [3/7] 9.7초
   세그먼트 [4/7] 12.0초
-  세그먼트 [5/7] 10.6초
-  세그먼트 [6/7] 10.5초
+  세그먼트 [5/7] 10.7초
+  세그먼트 [6/7] 10.3초
   세그먼트 [7/7] 4.0초
 
   ✓ 릴스 완성: out/reels/20261107_14_기준금리동결.mp4
-    길이: 57.6초  /  크기: 3.0MB
--rw-r--r-- 1 runner runner 3.0M Nov  7 13:46 out/reels/20261107_14_기준금리동결.mp4
+    길이: 57.2초  /  크기: 3.0MB
+-rw-r--r-- 1 runner runner 3.0M Nov  7 13:59 out/reels/20261107_14_기준금리동결.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=57.602268
+duration=57.187279
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -54,3 +54,53 @@ duration=57.602268
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
+
+대상: out/cards_20261107_14_기준금리동결  (7장)
+대본: out/scripts/20261107_14_기준금리동결.json
+
+--- 캡션 ---
+기준금리 3.00% 동결
+
+· 왜 <y>동결</y>했나?
+· 환율이 <y>변수</y>입니데이
+· 대출금리는 <y>바로 안 내려갑니데이</y>
+· 예금금리도 <y>함께 봐야</y> 합니데이
+· 앞으로 <y>무엇을 볼까?</y>
+
+쫌봐봐 구독·좋아요 부탁드립니데이.
+
+출처: 한국은행
+
+#경제 #쫌봐봐 #연예 #국내정치 #해외정치 #경제 #해외연예
+사진: 쫌봐봐 (jjombwabwa-cardnews-7-v1, owned)
+--- 캡션 끝 ---
+
+남은 발행 가능: 95건
+
+1) 이미지 공개 호스팅
+  저장소가 비어 있어 README로 초기화합니다
+Traceback (most recent call last):
+  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 341, in <module>
+    main()
+  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 337, in main
+    run(a.card_dir, a.script, a.photos, a.publish)
+  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 274, in run
+    urls = host_images(files, tag)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 125, in host_images
+    url = U.gh_upload(jpg, tag)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/issue-reels/issue-reels/upload.py", line 177, in gh_upload
+    rel = gh_release(tag)
+          ^^^^^^^^^^^^^^^
+  File "/home/runner/work/issue-reels/issue-reels/upload.py", line 167, in gh_release
+    gh_ensure_initialized()
+  File "/home/runner/work/issue-reels/issue-reels/upload.py", line 131, in gh_ensure_initialized
+    gh("PUT", f"{GH_API}/repos/{MEDIA_REPO}/contents/README.md", MEDIA_TOKEN, json={
+  File "/home/runner/work/issue-reels/issue-reels/upload.py", line 94, in gh
+    raise RuntimeError(f"HTTP {r.status_code}: {scrub(r.text[:300])}")
+RuntimeError: HTTP 401: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
