@@ -197,7 +197,7 @@ jobs:
           MODE="--reels"
           if [ "$POST_FORMAT" = "cards" ]; then MODE=""; fi
           python -u cardnews.py "out/scripts/${STEM}.json" \
-            -o "out/cards_${STEM}" -p "out/photos/${STEM}" $MODE 2>&1 \
+            -o "out/cards_${STEM}" -p "out/photos/${STEM}" --layout magazine $MODE 2>&1 \
             | tee -a out/reels/render.log
           if [ "$POST_FORMAT" = "cards" ]; then
             COUNT=$(find "out/cards_${STEM}" -maxdepth 1 -name '*.png' | wc -l)
