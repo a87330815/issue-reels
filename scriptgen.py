@@ -1064,11 +1064,16 @@ LLM_SYSTEM = """당신은 이슈 릴스 계정의 대본 작가입니다.
 
 ## 사진 검색어 (photo_query)
 카드 배경으로 깔 사진을 무료 사진 사이트에서 찾는 데 쓰는 **영문 검색어**입니다.
-- 2~4개 영단어. 명사 위주 (예: "high speed train station", "tax documents calculator")
+- 2~8개 영단어. 명사 위주 (예: "Bank of Korea Seoul press conference")
 - 그 장면을 한 장의 사진으로 보여준다면 무엇이 찍혀 있을지를 쓰세요
 - 추상 개념(policy, benefit, increase)은 사진으로 안 찍힙니다. 눈에 보이는 사물·장소·행동으로 바꾸세요
 - 한국적 맥락이 중요하면 korea/korean을 넣으세요 (예: "korea train station platform")
 - 인물 얼굴이 크게 나오는 검색어는 피하세요
+- **경제·국내 정치 장면은 반드시 Korea/Korean/Seoul 또는 정확한 한국 기관명을 포함하세요**
+- 장면마다 서로 다른 사진 구도를 지정하세요. 같은 검색어를 반복하지 마세요
+- 경제 주제에서 외국 화폐, 가상화폐, 부동산 사진을 대체 이미지로 쓰지 마세요
+- 기준금리 기사라면 표지=한국은행, 이유=금통위·기자회견, 환율=원/달러,
+  대출=국내 은행 상담, 예금=국내 예금·저축, 정리=서울 금융가 순서로 구성하세요
 
 ## 응답 형식
 JSON만 출력하세요. 설명도 코드블록도 붙이지 마세요.
@@ -1551,12 +1556,12 @@ def llm_generate(angle, api_key, provider="anthropic"):
         attribution = first_item.get("attribution", "") if isinstance(first_item, dict) else ""
 
     def _pq(d):
-        """photo_query 정리 — 영문 2~6단어만 통과시킨다 (없으면 None → 키워드 매핑 폴백)."""
+        """photo_query 정리 — 영문 2~8단어만 통과시킨다 (없으면 None → 키워드 매핑 폴백)."""
         q = (d.get("photo_query") or "").strip()
-        if not q or not re.fullmatch(r"[A-Za-z0-9 ,'-]{3,60}", q):
+        if not q or not re.fullmatch(r"[A-Za-z0-9 ,'-]{3,100}", q):
             return None
         words = q.split()
-        return " ".join(words[:6]) if 2 <= len(words) else None
+        return " ".join(words[:8]) if 2 <= len(words) else None
 
     scenes = []
     for s in result.get("scenes", []):
@@ -1735,6 +1740,22 @@ def main():
         if len(script.get("scenes", [])) != 5:
             print(f"  [제외] 본문 장면은 정확히 5개여야 합니다: {len(script.get('scenes', []))}개")
             continue
+
+        # 카드뉴스 사진은 표지+본문 5장 모두 구체적인 서로 다른 검색어가 필수다.
+        photo_queries = [(script.get("cover") or {}).get("photo_query", "").strip()]
+        photo_queries += [(s.get("photo_query") or "").strip() for s in script.get("scenes", [])]
+        if any(not q for q in photo_queries):
+            print("  [제외] 표지 또는 본문에 photo_query가 없습니다")
+            continue
+        normalized_queries = [re.sub(r"[^a-z]+", " ", q.lower()).strip() for q in photo_queries]
+        if len(set(normalized_queries)) != len(normalized_queries):
+            print("  [제외] 카드뉴스 장면 사이에 중복 photo_query가 있습니다")
+            continue
+        if category in {"경제", "국내 정치"}:
+            korea_anchor = re.compile(r"\b(korea|korean|seoul|bank of korea|national assembly)\b", re.I)
+            if any(not korea_anchor.search(q) for q in photo_queries):
+                print("  [제외] 한국 경제·정치 사진 검색어에 한국 맥락이 빠졌습니다")
+                continue
 
         v = validate_cover(script["cover"]["lines"])
         if v is not True:

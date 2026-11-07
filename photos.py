@@ -29,6 +29,21 @@ CARD_W, CARD_H = 1080, 1350
 # ── 한국어 → 영문 검색어 매핑 ─────────────────
 # 소제목/제목에 아래 키가 포함되면 해당 영문 쿼리를 사용한다. 긴 키부터 매칭.
 KEYWORD_MAP = {
+    # 한국 경제 / 기준금리 — 승인된 7장 기준본의 장면 역할에 맞춘다.
+    "기준금리": "Bank of Korea Seoul monetary policy interest rate",
+    "금리 동결": "Bank of Korea monetary policy meeting Seoul",
+    "동결 이유": "Bank of Korea governor press conference monetary policy",
+    "동결": "Bank of Korea monetary policy meeting Seoul",
+    "한국은행": "Bank of Korea Seoul building governor press conference",
+    "환율 영향": "South Korean won US dollar exchange rate Seoul trading screen",
+    "환율": "South Korean won US dollar exchange rate Seoul",
+    "원달러": "South Korean won US dollar exchange rate",
+    "대출금리": "South Korea bank loan interest rate consultation",
+    "주택담보대출": "South Korea bank mortgage loan consultation",
+    "예금금리": "South Korea bank savings deposit interest rate smartphone",
+    "예금": "South Korea bank savings deposit interest rate",
+    "핵심 정리": "Seoul financial district skyline economy",
+    "시장 영향": "Seoul financial market trading screen economy",
     # 교통
     "KTX": "ktx high speed train station",
     "SRT": "high speed train platform",
@@ -91,10 +106,23 @@ CATEGORY_MAP = {
     "연예": "entertainment stage celebrity event",
     "국내 정치": "Korea government assembly press conference",
     "해외 정치": "world leaders international summit",
-    "경제": "financial news business economy",
+    "경제": "South Korea financial news Seoul economy",
     "해외연예": "international entertainment red carpet",
 }
 DEFAULT_QUERY = "city office desk modern"
+
+# 카테고리별로 절대 섞이면 안 되는 소재. 무료 이미지 검색이 넓은 쿼리를
+# 외국 화폐·가상자산·부동산 생활정보로 해석하는 문제를 차단한다.
+CATEGORY_BLOCK = {
+    "경제": re.compile(
+        r"(bitcoin|crypto|cryptocurrency|ethereum|blockchain|nft|"
+        r"india|indian|rupee|pakistan|peso|ruble|yuan|renminbi|"
+        r"apartment|real[ _-]?estate|property|house|housing)", re.I),
+}
+
+ECONOMY_REQUIRED = re.compile(
+    r"(korea|korean|seoul|bank|interest|rate|finance|financial|economy|"
+    r"exchange|currency|won|dollar|loan|deposit|saving|market|trading)", re.I)
 
 
 def build_query(text, category=""):
@@ -220,9 +248,16 @@ _BLOCK_RE = re.compile(
     r"corpse|autopsy|funeral|grave|cemetery|protest|riot|war|weapon|gun|rifle)",
     re.I)
 
-def _content_ok(cand):
+def _content_ok(cand, category=""):
     hay = " ".join(str(cand.get(k, "")) for k in ("title", "page", "url", "creator"))
-    return not _BLOCK_RE.search(hay)
+    if _BLOCK_RE.search(hay):
+        return False
+    blocked = CATEGORY_BLOCK.get(category)
+    if blocked and blocked.search(hay):
+        return False
+    if category == "경제" and not ECONOMY_REQUIRED.search(hay):
+        return False
+    return True
 
 
 # 검색어를 줄여가며 재시도하다 보면 "Korean" 한 단어까지 내려가고,
@@ -248,7 +283,7 @@ def relevance(cand, terms):
     return len(hit)
 
 
-def search_all(query, n=12):
+def search_all(query, n=12, category=""):
     """공급자를 순서대로 시도해 후보 목록을 만든다.
     앞 공급자 결과가 적으면 뒤 공급자 결과를 이어 붙여 중복 회피 여지를 남긴다.
     Unsplash 결과는 trusted=True로 표시해 적합도 필터를 건너뛴다."""
@@ -263,7 +298,7 @@ def search_all(query, n=12):
     for name, fn, trusted in providers:
         try:
             res = fn()
-            kept = [c for c in res if _content_ok(c)]
+            kept = [c for c in res if _content_ok(c, category)]
             dropped = len(res) - len(kept)
             print(f"    [{name}] {len(kept)}건 후보" + (f" (부적합 {dropped}건 제외)" if dropped else ""))
             for c in kept:
@@ -277,7 +312,7 @@ def search_all(query, n=12):
     return merged
 
 
-def search_with_fallback(query, n=12, min_needed=3):
+def search_with_fallback(query, n=12, min_needed=3, category=""):
     """무료 CC 풀은 어휘가 얕아 4단어짜리 구체적 검색어가 0건을 내기 쉽다.
     결과가 모자라면 뒤 단어부터 떼어내며 점점 넓은 검색어로 재시도한다."""
     words = query.split()
@@ -294,12 +329,12 @@ def search_with_fallback(query, n=12, min_needed=3):
         if k < len(words):
             print(f"    ↻ 재시도: \"{q}\"")
         seen = {x["url"] for x in out}
-        out.extend(c for c in search_all(q, n) if c["url"] not in seen)
+        out.extend(c for c in search_all(q, n, category) if c["url"] not in seen)
         if len(out) >= min_needed:
             break
 
-    # Unsplash 결과는 자체 검색 품질이 높으므로 적합도 필터 건너뜀.
-    # Openverse/Wikimedia 결과만 키워드 일치 필터 적용.
+    # 공급자와 무관하게 검색어 적합도를 확인한다. Unsplash도 넓은 경제
+    # 쿼리에서 가상화폐·외국 화폐를 돌려줄 수 있어 무조건 신뢰하지 않는다.
     trusted = [c for c in out if c.get("_trusted")]
     untrusted = [c for c in out if not c.get("_trusted")]
 
@@ -313,9 +348,12 @@ def search_with_fallback(query, n=12, min_needed=3):
     else:
         filtered = []
 
-    kept = trusted + filtered
+    trusted_scored = sorted(((relevance(c, terms), c) for c in trusted),
+                            key=lambda p: -p[0])
+    trusted_filtered = [c for s, c in trusted_scored if s >= 1]
+    kept = trusted_filtered + filtered
     if trusted:
-        print(f"    Unsplash {len(trusted)}건 (적합도 필터 생략)")
+        print(f"    Unsplash 적합도 통과 {len(trusted_filtered)}/{len(trusted)}건")
     if not kept:
         print(f"    ✗ 적합한 후보 없음 — 사진 없이 진행")
     return kept
@@ -469,7 +507,7 @@ def fetch_for_script(script_path, out_dir):
             print(f"    ✗ 커스텀 URL 실패, 폴백 검색으로 전환")
         q = explicit or build_query(text, category)
         print(f"  [{slot}] '{text}' → \"{q}\"")
-        cands = search_with_fallback(q)
+        cands = search_with_fallback(q, category=category)
         if not cands:
             # 너무 구체적인 뉴스 검색어가 0건이면 허용 카테고리의 넓은
             # 사진 풀에서 다시 찾는다. 사진 없는 카드 생성은 금지하되,
@@ -477,7 +515,7 @@ def fetch_for_script(script_path, out_dir):
             fallback_q = CATEGORY_MAP.get(category, DEFAULT_QUERY)
             if fallback_q != q:
                 print(f"    ↻ 카테고리 대체 검색: \"{fallback_q}\"")
-                cands = search_with_fallback(fallback_q)
+                cands = search_with_fallback(fallback_q, category=category)
         if not cands:
             print(f"    ✗ {slot}: 대체 검색까지 후보 없음")
             continue
