@@ -2,116 +2,69 @@ name: 대본 생성
 
 on:
   workflow_run:
-    # 이름이 정확히 같아야 걸린다. 수집 워크플로의 name은 "collect"이고
-    # 여기에 "수집"이라고 적혀 있어서 체인이 한 번도 이어지지 않았다.
     workflows: ["collect"]
     types: [completed]
   workflow_dispatch:
     inputs:
       count:
-        description: "생성할 대본 수 (버퍼용으로 넉넉히)"
+        description: "허용 주제 대본 수"
         type: string
         default: "9"
       fun_count:
-        description: "재미·공감 대본 수 (0이면 생략)"
+        description: "사용 안 함"
         type: string
-        default: "5"
+        default: "0"
       tips_count:
-        description: "생활·꿀팁 대본 수 (0이면 생략)"
+        description: "사용 안 함"
         type: string
-        default: "3"
-
-# 생성한 대본을 저장소에 커밋하므로 쓰기 권한이 필요하다.
-# 빠져 있으면 GITHUB_TOKEN이 읽기 전용이라 push가 거부된다.
+        default: "0"
 permissions:
   contents: write
-
 jobs:
   generate:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: 의존성 설치
         run: pip install PyYAML requests anthropic
-
-      # 수집 워크플로가 collected.json을 저장소에 커밋하므로 체크아웃만으로
-      # 이미 들어와 있다. 다른 런의 아티팩트는 run-id 없이는 집히지 않아
-      # 늘 조용히 실패했다. 남은 경우를 위해 아래 확인 단계가 직접 수집한다.
-      - name: 수집 데이터 확인
+      - name: 기존 대본 전체 삭제
+        run: rm -f out/scripts/*.json
+      - name: 새 자료 수집
         env:
-          # 폴백으로 직접 수집할 때 인증키가 없으면 그대로 빈손이 된다.
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
           KMA_APIHUB_KEY: ${{ secrets.KMA_APIHUB_KEY }}
           KOSIS_KEY: ${{ secrets.KOSIS_KEY }}
         run: |
-          if [ ! -f out/collected.json ]; then
-            echo "수집 데이터 없음 — 직접 수집 실행"
-            pip install -r requirements.txt
-            python collect.py || echo "수집 실패 (인증키 미설정일 수 있음)"
-          fi
-          if [ -f out/collected.json ]; then
-            echo "수집 데이터: $(python -c "import json; d=json.load(open('out/collected.json')); print(len(d.get('items',[])))") 건"
-          fi
-
-      - name: 대본 생성
+          pip install -r requirements.txt
+          python collect.py || true
+          python collect_trends.py || true
+      - name: 허용 주제 대본 생성
         env:
-          # 둘 중 설정된 쪽을 쓴다. 둘 다 있으면 LLM_PROVIDER로 고른다.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
-          COUNT: ${{ inputs.count || '9' }}
         run: |
-          # 해외 IP 차단이 간헐적이라 수집이 뚫린 날 며칠치를 만들어둔다.
-          # 하루 3건 발행이므로 9편이면 사흘치다.
-          # 트렌드 데이터가 없으면 직접 수집
-          if [ ! -f out/trends.json ]; then
-            echo "트렌드 데이터 없음 — 직접 수집"
-            python collect_trends.py || echo "트렌드 수집 실패 (비필수)"
-          fi
-          # --trends 옵션으로 트렌드 앵글도 포함
-          python scriptgen.py -n "${COUNT:-9}" --trends out/trends.json
-
-          # 재미·공감 대본 생성 (fun_topics.yml 기반)
-          FUN_COUNT="${{ inputs.fun_count || '5' }}"
-          if [ "${FUN_COUNT}" != "0" ]; then
-            echo "재미·공감 대본 ${FUN_COUNT}편 생성"
-            python scriptgen.py --fun -n "${FUN_COUNT}"
-          fi
-
-          # 생활·꿀팁 대본 생성 (tips_topics.yml 기반)
-          TIPS_COUNT="${{ inputs.tips_count || '3' }}"
-          if [ "${TIPS_COUNT}" != "0" ]; then
-            echo "생활·꿀팁 대본 ${TIPS_COUNT}편 생성"
-            python scriptgen.py --tips -n "${TIPS_COUNT}"
-          fi
+          python scriptgen.py -n "${{ inputs.count || '9' }}" --trends out/trends.json
+          python -c "import json,glob,os; allowed=('연예','정치','경제','해외연예'); [os.remove(p) for p in glob.glob('out/scripts/*.json') if not any(x in json.load(open(p,encoding='utf-8')).get('meta',{}).get('category','') for x in allowed)]"
           ls -la out/scripts/
-
       - name: 대본 업로드
         uses: actions/upload-artifact@v4
         with:
           name: scripts
           path: out/scripts/*.json
           retention-days: 30
-
       - name: 대본 커밋
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # out/ 은 .gitignore에 걸려 있어 -f 없이는 아무것도 담기지 않는다.
           git add -f out/scripts/
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
-          git commit -m "대본 생성 $(date +%Y-%m-%d\ %H:%M)"
-          # 다른 워크플로가 같은 브랜치에 밀어넣는 중일 수 있다.
-          for i in 1 2 3; do
-            git pull --rebase --autostash origin main && git push origin main && exit 0
-            sleep 5
-          done
-          echo "::error::대본 푸시 실패"; exit 1
+          git commit -m "허용 주제 대본 재수집 $(date +%Y-%m-%d\ %H:%M)"
+          git pull --rebase --autostash origin main
+          git push origin main
