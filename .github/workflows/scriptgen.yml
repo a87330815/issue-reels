@@ -1,5 +1,9 @@
 name: 대본 생성
 on:
+  schedule:
+    # KST 07:15, 13:15에 허용 분야 대본을 채워 다섯 발행 슬롯의 버퍼를 만든다.
+    - cron: "15 22 * * *"
+    - cron: "15 4 * * *"
   workflow_dispatch:
     inputs:
       count:

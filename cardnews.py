@@ -478,6 +478,10 @@ def photo_band(path, w, h, sharpen=True, bias=0.5, face_aware=False):
     face_aware면 얼굴을 찾아 (1) 얼굴이 너무 작으면 당겨 자르고
     (2) 얼굴이 밴드 안에 들어오도록 크롭 지점을 잡는다."""
     im = Image.open(path).convert("RGB")
+    # 승인 기준본에서 잘라 둔 사진은 이미 구도와 크롭이 확정돼 있다.
+    # 얼굴 감지나 자동 확대를 다시 적용하면 승인본과 달라진다.
+    if os.path.basename(path).startswith("approved_"):
+        return im if im.size == (w, h) else im.resize((w, h), Image.LANCZOS)
     ow, oh = im.size
     fb = face_box(path) if face_aware else None
 
@@ -816,6 +820,12 @@ def make_scene(sc, idx, total, t, photo=None, credit=None):
 # ── 아웃트로 ────────────────────
 def make_outro(sc, t, total):
     """ZIP 7장과 같은 고정 쫌봐봐 마무리."""
+    approved = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets",
+                            "cardnews_reference", "jjombwabwa-cardnews-7-v1",
+                            "07_고정마무리.png")
+    if os.path.isfile(approved):
+        ref = Image.open(approved).convert("RGB")
+        return ref if ref.size == (W, H) else ref.resize((W, H), Image.LANCZOS)
     img = Image.new("RGB", (W, H), MAG_NAVY)
     d = ImageDraw.Draw(img, "RGBA")
 

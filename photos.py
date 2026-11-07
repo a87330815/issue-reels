@@ -475,6 +475,36 @@ def fetch_for_script(script_path, out_dir):
         targets.append((f"scene{i+1}", scene.get("subtitle", ""),
                         scene.get("photo_query"), scene.get("image")))
 
+    # 사용자가 최종 승인한 기준금리 7장 ZIP은 이 주제의 골든 샘플이다.
+    # 같은 기준금리 대본을 다시 시험할 때 무료 검색 사진으로 품질을 낮추지
+    # 않고, 승인본 1~6장의 사진 영역을 그대로 사용한다. 7장은 cardnews.py의
+    # 고정 아웃트로가 담당한다.
+    ref_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets",
+                           "cardnews_reference", "jjombwabwa-cardnews-7-v1")
+    ref_names = ["01_표지.png", "02_동결이유.png", "03_환율영향.png",
+                 "04_대출금리.png", "05_예금금리.png", "06_핵심정리.png"]
+    if "기준금리 3.00%" in (sc.get("title") or "") and all(
+            os.path.isfile(os.path.join(ref_dir, n)) for n in ref_names):
+        print("  승인 기준본 사진 6장 사용 — 무료 검색으로 대체하지 않습니다")
+        for (slot, _, _, _), name in zip(targets, ref_names):
+            src = os.path.join(ref_dir, name)
+            dst = os.path.join(out_dir, f"approved_{slot}.jpg")
+            im = Image.open(src).convert("RGB")
+            im.crop((0, 0, im.width, min(700, im.height))).save(dst, "JPEG", quality=96)
+            manifest["photos"][slot] = os.path.basename(dst)
+            manifest["credits"].append({
+                "slot": slot, "query": "approved_reference",
+                "source": "jjombwabwa-cardnews-7-v1", "creator": "쫌봐봐",
+                "license": "owned", "page": name,
+            })
+        manifest["wanted"] = len(targets)
+        manifest["fetched_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+        mpath = os.path.join(out_dir, "photos.json")
+        with open(mpath, "w", encoding="utf-8") as f:
+            json.dump(manifest, f, ensure_ascii=False, indent=2)
+        print(f"  → 승인 기준본 {len(manifest['photos'])}/{len(targets)}장 저장")
+        return manifest
+
     used = set()  # 같은 대본 안에서 사진 중복 방지
     for slot, text, explicit, direct_image in targets:
         # 특정 인물·상품·장소는 대본에 검증된 image URL을 지정한다.

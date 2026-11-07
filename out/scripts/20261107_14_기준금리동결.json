@@ -1,1 +1,52 @@
-{"title":"기준금리 3.00% 동결","cover":{"image":null,"lines":["<r>기준금리 3.00%</r>","동결"],"badge":null,"photo_query":"Bank of Korea press conference interest rate news"},"scenes":[{"image":null,"narration":"한국은행이 기준금리를 3%로 그대로 뒀습니데이. 이번 결정이 우리 생활에 어떤 뜻인지 알아보입시더.","subtitle":"한국은행, 기준금리 동결","photo_query":"Bank of Korea press conference"},{"image":null,"narration":"물가가 크게 튀진 않았지만 환율하고 경기 흐름이 아직 불안합니데이. 금리를 올리기도, 확 내리기도 부담스러운 상황인 기라예.","subtitle":"왜 동결했나?","photo_query":"central bank economic briefing inflation currency chart"},{"image":null,"narration":"금리가 그대로면 대출금리도 당장 크게 움직이진 않을 가능성이 큽니데이. 그래도 환율이 흔들리면 수입물가는 오를 수 있습니데이.","subtitle":"시장에는 어떤 영향?","photo_query":"financial market currency exchange monitors"},{"image":null,"narration":"금리가 바뀐다 캐도 바로 체감되는 건 아닙니데이. 예금금리하고 대출금리는 은행별로 시간을 두고 반영됩니데이.","subtitle":"우리 생활에서 볼 점","photo_query":"household finance notebook smartphone calculator"},{"image":null,"narration":"일단 금리는 동결입니데이. 다음 결정 전까지 물가, 환율, 경기 지표를 같이 지켜봐야겠습니데이.","subtitle":"핵심 정리","photo_query":"Seoul financial district skyline dusk"}],"meta":{"format":"카드뉴스","source":"한국은행·연합뉴스","category":"경제","attribution":"한국은행·연합뉴스","chart":null,"tone":"부산·경남 사투리","dialect_applied":true,"generated_at":"2026-11-07T04:00:00+00:00"}}
+{
+  "title": "기준금리 3.00% 동결",
+  "cover": {
+    "image": null,
+    "lines": ["기준금리 3.00%,", "<y>이번에도 동결</y>"],
+    "summary": "한국은행이 기준금리를 3.00%로 유지했습니데이. 왜 금리를 그대로 둔 건지, 우리 생활에는 어떤 영향이 있는지 차근차근 알아보겠습니데이.",
+    "badge": null,
+    "photo_query": "Bank of Korea Seoul interest rate smartphone"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "물가가 크게 튀지는 않았지만 환율과 경기 흐름이 아직 불안합니데이. 금리를 내리면 원화 약세와 물가 부담이 커질 수 있고, 올리면 가계와 기업의 이자 부담이 더 커집니데이.",
+      "subtitle": "왜 <y>동결</y>했나?",
+      "photo_query": "Bank of Korea Seoul monetary policy meeting"
+    },
+    {
+      "image": null,
+      "narration": "원화 가치가 약해지면 수입 원자재와 에너지 가격이 오를 수 있습니데이. 환율이 안정되지 않은 상황에서 금리를 바로 내리기는 부담스러운 겁니데이.",
+      "subtitle": "환율이 <y>변수</y>입니데이",
+      "photo_query": "Seoul won dollar exchange rate trading room"
+    },
+    {
+      "image": null,
+      "narration": "기준금리가 3.00%로 동결됐다고 대출금리가 즉시 크게 바뀌는 건 아닙니데이. 은행 조달금리와 시장금리, 개인의 신용도에 따라 실제 금리는 다르게 움직입니데이.",
+      "subtitle": "대출금리는 <y>바로 안 내려갑니데이</y>",
+      "photo_query": "Korean bank mortgage loan consultation"
+    },
+    {
+      "image": null,
+      "narration": "예금금리는 기준금리만 보고 결정되지 않습니데이. 은행별 자금 사정과 경쟁 상황에 따라 달라질 수 있으니 만기와 우대조건을 함께 비교해야 합니데이.",
+      "subtitle": "예금금리도 <y>함께 봐야</y> 합니데이",
+      "photo_query": "Korean bank savings deposit rate comparison"
+    },
+    {
+      "image": null,
+      "narration": "다음 결정까지 물가, 환율, 경기 지표를 같이 지켜봐야 합니데이. 금리 인하가 빨라질지, 동결이 길어질지는 이 세 가지 흐름에 달려 있습니데이.",
+      "subtitle": "앞으로 <y>무엇을 볼까?</y>",
+      "photo_query": "Seoul economy inflation exchange rate report"
+    }
+  ],
+  "meta": {
+    "format": "카드뉴스",
+    "source": "한국은행",
+    "category": "경제",
+    "attribution": "한국은행",
+    "chart": null,
+    "tone": "부산·경남 사투리",
+    "dialect_applied": true,
+    "generated_at": "2026-11-07T04:00:00+00:00"
+  }
+}
