@@ -278,7 +278,7 @@ jobs:
           PY
 
       - name: 5) 인스타 릴스 발행
-        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true'
         env:
           STEM: ${{ steps.pick.outputs.stem }}
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
@@ -333,8 +333,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always() && steps.pick.outputs.stem != ''
         with:
-          name: reel-${{ steps.pick.outputs.stem }}
+          name: output-${{ steps.pick.outputs.stem }}
           path: |
             out/reels/render.log
             out/reels/${{ steps.pick.outputs.stem }}.mp4
+            out/cards_${{ steps.pick.outputs.stem }}/*.png
           retention-days: 14
