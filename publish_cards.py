@@ -43,9 +43,8 @@ def card_files(card_dir):
     files = sorted(glob.glob(os.path.join(card_dir, "*.png")))
     if not files:
         raise SystemExit(f"카드 이미지가 없습니다: {card_dir}")
-    if len(files) > MAX_ITEMS:
-        print(f"  경고: {len(files)}장 → 캐러셀 상한 {MAX_ITEMS}장까지만 올립니다")
-        files = files[:MAX_ITEMS]
+    if len(files) != 7:
+        raise SystemExit(f"카드뉴스는 정확히 7장이어야 합니다: {card_dir} ({len(files)}장)")
     return files
 
 
@@ -76,13 +75,13 @@ def build_caption(script):
         lines.extend(f"· {s}" for s in body[:5])
 
     lines.append("")
-    lines.append("저장해두고 필요할 때 꺼내 보세요.")
+    lines.append("쫌봐봐 구독·좋아요 부탁드립니데이.")
 
     if meta.get("attribution"):
         lines.append("")
         lines.append(f"출처: {meta['attribution']}")
 
-    tags = ["#생활정보", "#알아두면좋은정보", "#정책정보", "#꿀팁"]
+    tags = ["#쫌봐봐", "#연예", "#국내정치", "#해외정치", "#경제", "#해외연예"]
     cat = meta.get("category")
     if cat:
         tags.insert(0, "#" + cat.replace("·", "").replace(" ", ""))
