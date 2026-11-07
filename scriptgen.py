@@ -45,6 +45,9 @@ SCRIPT_DIR = os.path.join(ROOT, "out", "scripts")
 FUN_TOPICS = os.path.join(ROOT, "fun_topics.yml")
 TIPS_TOPICS = os.path.join(ROOT, "tips_topics.yml")
 
+ALLOWED_CATEGORIES = {"연예", "국내 정치", "해외 정치", "경제", "해외연예"}
+BLOCKED_KEYWORDS = {"생활꿀팁", "생활·꿀팁", "꿀팁", "아파트", "부동산", "실거래", "분양", "청약", "전세", "월세", "주택", "평당", "단지", "집값", "주거"}
+
 # ── 커버 제약 ──────────────────────────────────────────────
 MAX_COVER_CHARS = 24          # 커버 전체 글자 수
 MAX_COVER_LINES = 4           # 최대 줄 수
@@ -467,7 +470,7 @@ TEMPLATES = {
             lambda a: ["이번 달", f"<r>{hook_fit(a.get('hook',''))}</r>", "거래 떴습니다"],
         ],
         "narration_pattern": "이거 모르고 지나가면 손해다. {summary}. 수치로 확인해보자.",
-        "scene_count": 6,
+        "scene_count": 5,
     },
     "시행일훅": {
         "cover_pattern": [
@@ -475,7 +478,7 @@ TEMPLATES = {
             lambda a: ["다음 달부터", "<r>이게 바뀝니다</r>"],
         ],
         "narration_pattern": "이거 모르고 지나가면 손해다. {summary}. 시행일 전에 꼭 확인해라.",
-        "scene_count": 6,
+        "scene_count": 5,
     },
     "오해정정": {
         "cover_pattern": [
@@ -483,14 +486,14 @@ TEMPLATES = {
             lambda a: ["이거 반대로", "<y>알고 계셨죠</y>"],
         ],
         "narration_pattern": "이거 모르고 지나가면 손해다. {summary} 다들 잘못 알고 있다. 사실은 이렇다.",
-        "scene_count": 6,
+        "scene_count": 5,
     },
     "체크리스트": {
         "cover_pattern": [
             lambda a: ["반드시 확인", f"<r>{hook_fit(a.get('hook',''))}</r>"],
         ],
         "narration_pattern": "이거 모르고 지나가면 손해다. {summary} 꼭 체크해야 할 거 정리해봤다.",
-        "scene_count": 6,
+        "scene_count": 5,
     },
     "물가": {
         "cover_pattern": [
@@ -499,7 +502,7 @@ TEMPLATES = {
             lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "이거 실화입니다"],
         ],
         "narration_pattern": "이거 모르고 지나가면 손해다. {summary}. 소비자원 참가격 조사 결과다.",
-        "scene_count": 6,
+        "scene_count": 5,
     },
     # 실거래가는 그 동네 주민만 해당하는 정보가 아니라 누구나 보는 시세다.
     # "주민만 해당"은 사실과 어긋나고, 같은 문구가 연달아 나오면 피드가
@@ -513,7 +516,7 @@ TEMPLATES = {
             lambda a: [f"{hook_fit(a.get('hook',''))}", "<y>실거래가 공개</y>"],
         ],
         "narration_pattern": "이거 모르고 지나가면 손해다. {summary}. 국토부에 신고된 실거래 금액이다.",
-        "scene_count": 6,
+        "scene_count": 5,
     },
 }
 
@@ -1018,11 +1021,13 @@ LLM_SYSTEM = """당신은 이슈 릴스 계정의 대본 작가입니다.
 ## 내레이션
 - "~입니다/~습니다" 체. 반말 금지
 - 장면당 1~2문장. 짧게 끊으세요
-- 전체 **3~5장면**
+- 본문은 정확히 **5장면**. 표지와 고정 마무리를 더해 카드뉴스가 총 7장이 되게 하세요
 - 첫 장면 첫 문장은 반드시 **"이거 모르고 지나가면 손해다."**로 시작하세요 (사투리 그대로)
 - 첫 장면이 커버의 훅을 바로 받아야 합니다. 뜸 들이지 마세요
 - 수치는 읽기 쉽게: "230000만원"이 아니라 "23억원", "84.99제곱미터"가 아니라 "84제곱미터"
-- 마지막 장면은 항상 팔로우 유도
+- 마지막 다섯 번째 장면은 핵심 정리와 향후 관전점. 팔로우 유도는 별도 고정 마무리 페이지에서 처리합니다
+- 카테고리는 연예, 국내 정치, 해외 정치, 경제, 해외연예 중 하나만 사용하세요
+- 생활꿀팁·일반 정보·아파트·부동산·실거래 주제는 절대 생성하지 마세요
 
 ## 말투 — 양상국(개그맨) 스타일 경상도 사투리
 계정 이름이 "쫌봐봐"이고 개그맨 양상국처럼 에너지 넘치는 경상도 말투가 컨셉입니다.
@@ -1716,7 +1721,19 @@ def main():
             script = template_generate(angle)
             print("  ✓ 템플릿 생성 완료")
 
-        # 최종 검증
+        # 최종 검증 — 허용 분야·금지 주제·7장 구조
+        category = (script.get("meta") or {}).get("category", "").strip()
+        serialized = json.dumps(script, ensure_ascii=False)
+        if category not in ALLOWED_CATEGORIES:
+            print(f"  [제외] 허용하지 않는 카테고리: {category}")
+            continue
+        if any(word in serialized for word in BLOCKED_KEYWORDS):
+            print("  [제외] 생활꿀팁·정보·부동산 계열 금지어 포함")
+            continue
+        if len(script.get("scenes", [])) != 5:
+            print(f"  [제외] 본문 장면은 정확히 5개여야 합니다: {len(script.get('scenes', []))}개")
+            continue
+
         v = validate_cover(script["cover"]["lines"])
         if v is not True:
             print(f"  [오류] 커버 제약 위반: {v}")
