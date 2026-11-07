@@ -143,16 +143,16 @@ DARK  = (20, 20, 25)
 # 계정 말투가 경상도 사투리라, 이름만 사투리고 본문·안내가 표준어면
 # 간판과 속이 따로 논다. 고정 문구도 같은 말투로 맞춘다.
 # 핸들은 계정이 바뀔 수 있으므로 환경변수로 뺀다.
-HANDLE = os.environ.get("IG_HANDLE", "@richup_bm_sw")
+HANDLE = os.environ.get("IG_HANDLE", "@jjombwabwa")
 BRAND  = os.environ.get("IG_BRAND", "쫌봐봐")
 # 브랜드명은 띄어쓰기 없이 그대로 박는다. "쫌 봐봐"로 띄우면 평범한 말이 되고,
 # "쫌봐봐"로 붙여야 매 장마다 계정 이름이 그대로 각인된다.
 UI = {
     "swipe":    f"옆으로 {BRAND}",
-    "outro1":   "도움 됐으면",
-    "outro2":   "팔로우하고 저장해두이소",
-    "outro_s1": "세상 돌아가는 이야기",
-    "outro_s2": f"매일 {BRAND}",
+    "outro1":   BRAND,
+    "outro2":   "구독·좋아요 부탁드립니데이",
+    "outro_s1": "다음 소식도 빠르게",
+    "outro_s2": "전해드릴게예",
 }
 
 def get_t(cat):
@@ -427,8 +427,9 @@ def draw_big_emoji(draw, emoji, cx, cy, size):
 # ══════════════════════════════════════════════════════
 
 MAG_INK   = (17, 17, 17)         # 본문 먹색
-MAG_BAND  = (168, 240, 232)      # 형광펜 민트
-MAG_BAND2 = (255, 235, 59)       # 형광펜 옐로우 (커버 라벨)
+MAG_NAVY  = (5, 30, 72)          # 쫌봐봐 고정 남색
+MAG_BAND  = MAG_NAVY              # 소제목 남색 캡슐
+MAG_BAND2 = (255, 210, 45)        # 쫌봐봐 노란 포인트
 PHOTO_H   = 756                  # 본문 슬라이드 사진 밴드 높이
 
 _CASCADE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
@@ -637,7 +638,7 @@ def make_scene_mag(sc, idx, total, t, photo=None, credit=None):
         tw, th = bb_sub[2] - bb_sub[0], bb_sub[3] - bb_sub[1]
         rounded_rect(d, (cx - tw / 2 - 24, y - 6, cx + tw / 2 + 24, y + th + bb_sub[1] + 12),
                      14, MAG_BAND)
-        d.text((cx - tw / 2 - bb_sub[0], y), subtitle, font=sf, fill=MAG_INK)
+        d.text((cx - tw / 2 - bb_sub[0], y), subtitle, font=sf, fill=WHITE)
         y += th + 46
 
     for line in lines:
@@ -910,11 +911,22 @@ def generate(script_path, out_dir, photo_dir=None, layout="magazine"):
     scene_fn = make_scene_mag if layout == "magazine" else make_scene
     cat = sc.get("meta", {}).get("category", "")
     t = get_t(cat)
-    total = len(sc.get("scenes", [])) + 2
+    scene_count = len(sc.get("scenes", []))
+    if not REELS and scene_count != 5:
+        raise SystemExit(f"카드뉴스는 표지 1 + 본문 5 + 고정 마무리 1 = 7장이어야 합니다 (현재 본문 {scene_count}장)")
+    total = scene_count + 2
     pages = []
 
     photos = load_photos(photo_dir)
     credits = load_credits(photo_dir)
+    if not REELS:
+        required = ["cover"] + [f"scene{i}" for i in range(1, 6)]
+        missing = [slot for slot in required if slot not in photos]
+        if missing:
+            raise SystemExit("카드뉴스 사진 누락: " + ", ".join(missing))
+        real_paths = [os.path.realpath(photos[slot]) for slot in required]
+        if len(set(real_paths)) != len(real_paths):
+            raise SystemExit("카드뉴스에 같은 사진이 중복되었습니다 — 1~6장은 서로 다른 사진이어야 합니다")
     if photos:
         print(f"  사진 {len(photos)}장 적용: {', '.join(sorted(photos))}")
     elif photo_dir:
