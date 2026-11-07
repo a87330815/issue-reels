@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T11:16:56.513017+00:00",
+  "updated_at": "2026-11-07T00:29:06.466924+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -169,6 +169,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-06/20261106_tips_03.mp4",
       "ig_id": "17841459210979722",
       "category": "생활·꿀팁",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261106_08_숫자훅",
+      "media_id": "17980861433922119",
+      "published_at": "2026-11-07T00:29:06.352597+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261106_08.mp4",
+      "ig_id": "17841459210979722",
+      "category": "주거",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
