@@ -41,9 +41,8 @@ jobs:
           echo "사진 $COUNT 장 수집 완료"
       - name: 카드뉴스 생성 (사진 필수)
         env:
-          IG_HANDLE: ${{ vars.IG_HANDLE }}
-          IG_BRAND: 쫌봐봐
           IG_HANDLE: "@jjombwabwa"
+          IG_BRAND: 쫌봐봐
           CARDNEWS_TEMPLATE: jjombwabwa_v1
         run: |
           set -euo pipefail
