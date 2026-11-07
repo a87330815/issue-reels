@@ -51,7 +51,7 @@ jobs:
             PHOTO_DIR="out/photos/$stem"
             PHOTO_COUNT=$(find "$PHOTO_DIR" -type f \( -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \) 2>/dev/null | wc -l)
             if [ "$PHOTO_COUNT" -eq 0 ]; then echo "::error::$stem 사진 없음 — 카드 생성을 중단합니다"; exit 1; fi
-            python -u cardnews.py "$f" -o "out/cards_${stem#news_}" -p "$PHOTO_DIR"
+            python -u cardnews.py "$f" -o "out/cards_${stem#news_}" -p "$PHOTO_DIR" --layout magazine
           done
           for d in out/cards_*; do
             COUNT=$(find "$d" -maxdepth 1 -name '*.png' | wc -l)
