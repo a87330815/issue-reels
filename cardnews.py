@@ -430,7 +430,7 @@ MAG_INK   = (17, 17, 17)         # 본문 먹색
 MAG_NAVY  = (5, 30, 72)          # 쫌봐봐 고정 남색
 MAG_BAND  = MAG_NAVY              # 소제목 남색 캡슐
 MAG_BAND2 = (255, 210, 45)        # 쫌봐봐 노란 포인트
-PHOTO_H   = 756                  # 본문 슬라이드 사진 밴드 높이
+PHOTO_H   = 700                  # 본문 슬라이드 사진 밴드 높이
 
 _CASCADE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                              "assets", "cv", "haarcascade_frontalface_default.xml")
@@ -526,127 +526,90 @@ def highlight_text(d, text, cx, y, fnt, band_color, pad_x=22, pad_y=10, ink=MAG_
     d.text((cx - tw / 2 - bb[0], y - bb[1] + bb[1]), text, font=fnt, fill=ink)
     return th + pad_y * 2
 
-def make_cover_mag(sc, t, photo=None, credit=None):
-    """커버 — 사진 전면, 하단에 큰 제목. 사진을 가리지 않는다."""
+def _fixed_footer(d, category):
+    """ZIP 기준 하단 남색 띠와 채널 문구."""
+    d.rectangle((0, 1242, W, H), fill=MAG_NAVY)
+    label = f"{BRAND} {category or '뉴스'} 한입"
+    ff = font(FONT_BOLD, 30)
+    bb = d.textbbox((0, 0), label, font=ff)
+    tw = bb[2] - bb[0]
+    d.line((82, 1300, (W-tw)//2-36, 1300), fill=(225,235,248), width=2)
+    d.line(((W+tw)//2+36, 1300, W-82, 1300), fill=(225,235,248), width=2)
+    d.text(((W-tw)//2, 1277), label, font=ff, fill=WHITE)
+
+def _fit_fixed_body(d, body, max_w=930, max_h=350):
+    """흰 설명판 안에 ZIP처럼 굵고 큰 왼쪽 정렬 본문을 맞춘다."""
+    marked = parse_marked(body)
+    for size, lh in ((50, 71), (47, 67), (44, 63), (41, 59), (38, 55), (35, 51)):
+        bf = font(FONT_BLACK, size)
+        lines = wrap_marked(d, marked, bf, max_w)
+        if len(lines) * lh <= max_h:
+            return bf, lines, lh
+    return bf, lines, lh
+
+def _draw_fixed_card(photo, subtitle, body, category, t):
+    """승인 ZIP과 같은 사진/제목/본문 분리형 고정 카드."""
+    img = Image.new("RGB", (W, H), MAG_NAVY)
     if photo:
-        img = photo_band(photo, W, H).convert("RGB")
-        # 글자가 앉을 아래쪽만 어둡게. 위쪽 사진은 건드리지 않는다.
-        xs = np.linspace(0.0, 1.0, H)
-        ramp = np.clip((xs - 0.46) / 0.54, 0, 1) ** 1.35 * 205
-        alpha = np.repeat(ramp.astype(np.uint8)[:, None], W, axis=1)
-        tint = np.zeros((H, W, 3), dtype=np.uint8)
-        ov = Image.fromarray(np.dstack([tint, alpha]), mode="RGBA")
-        base = img.convert("RGBA")
-        base.alpha_composite(ov)
-        img = base.convert("RGB")
-    else:
-        img = gradient_bg_diagonal(t["grad1"], t["grad2"])
-
-    d = ImageDraw.Draw(img, "RGBA")
-    lines = sc.get("cover", {}).get("lines", [sc.get("title", "")])
-    cat = sc.get("meta", {}).get("category", "")
-
-    # 제목을 아래에서부터 쌓아 올린다 — 바닥 여백 고정
-    tf = font(FONT_BLACK, 92)
-    lh = 112
-    clean = [l.replace("<r>", "").replace("</r>", "").replace("<y>", "").replace("</y>", "")
-             for l in lines]
-    acc = ["<r>" in l or "<y>" in l for l in lines]
-    bottom = H - 128
-    top = bottom - len(clean) * lh
-
-    # 카테고리 라벨 — 제목 바로 위에 작은 형광 밴드
-    if cat:
-        lf = font(FONT_BOLD, 32)
-        highlight_text(d, cat, W // 2, top - 74, lf, MAG_BAND2, pad_x=20, pad_y=9)
-
-    y = top
-    for txt, is_acc in zip(clean, acc):
-        bb = d.textbbox((0, 0), txt, font=tf)
-        x = (W - (bb[2] - bb[0])) // 2 - bb[0]
-        d.text((x, y), txt, font=tf,
-               fill=t["accent"] if is_acc else WHITE,
-               stroke_width=7, stroke_fill=(0, 0, 0))
-        y += lh
-
-    # 브랜드 워드마크 — 좌상단에 작게. 사진을 가리지 않는다.
-    if BRAND:
-        bf = font(FONT_BLACK, 34)
-        d.text((48, 46), BRAND, font=bf, fill=WHITE,
-               stroke_width=5, stroke_fill=(0, 0, 0))
-
-    if not REELS:
-        sf = font(FONT_BOLD, 27)
-        swipe = UI["swipe"]
-        bb = d.textbbox((0, 0), swipe, font=sf)
-        sx = (W - (bb[2] - bb[0]) - 44) // 2
-        paste_emoji(img, "👉", sx + 16, H - 62, 32)
-        d = ImageDraw.Draw(img, "RGBA")
-        d.text((sx + 44, H - 76), swipe, font=sf, fill=WHITE,
-               stroke_width=4, stroke_fill=(0, 0, 0))
-    return img
-
-def make_scene_mag(sc, idx, total, t, photo=None, credit=None):
-    """본문 — 위는 사진 밴드, 아래는 흰 바탕에 검은 글씨."""
-    scene = sc["scenes"][idx]
-    img = Image.new("RGB", (W, H), (255, 255, 255))
-
-    if photo:
-        # 얼굴을 못 찾으면(옆모습·뒷모습) 위쪽을 남기는 쪽으로 기운다.
-        # 보도사진은 인물이 위쪽에 서 있어 중앙 크롭은 거의 항상 머리를 자른다.
         img.paste(photo_band(photo, W, PHOTO_H, bias=0.12, face_aware=True), (0, 0))
     else:
-        band = gradient_bg(t["grad1"], t["grad2"]).crop((0, 0, W, PHOTO_H))
-        img.paste(band, (0, 0))
+        img.paste(gradient_bg(t["grad1"], t["grad2"]).crop((0, 0, W, PHOTO_H)), (0, 0))
 
     d = ImageDraw.Draw(img, "RGBA")
+    # 흰 설명판과 겹쳐진 남색 제목 캡슐: ZIP 좌표 고정
+    rounded_rect(d, (0, 758, W, 1262), 46, (255, 255, 255, 255))
+    rounded_rect(d, (34, 674, W-34, 816), 70, MAG_NAVY)
+    d.rounded_rectangle((34, 674, W-34, 816), radius=70,
+                        outline=(255,255,255,255), width=3)
 
+    # 우상단 노란 강조 표시
+    for a, b in [((955,650),(968,615)), ((990,660),(1013,632)), ((1012,690),(1046,681))]:
+        d.line((a,b), fill=(255,205,0), width=13)
+
+    # 제목은 한 줄 고정, 핵심 표시(<r>/<y>)는 노란색
+    title_marked = parse_marked(subtitle)
+    size = 56
+    while size > 38:
+        sf = font(FONT_BLACK, size)
+        if sum(d.textlength(seg, font=sf) for seg, _ in title_marked) <= W-120:
+            break
+        size -= 2
+    center_marked(d, title_marked, W//2, 704, sf, WHITE, (255,220,0))
+
+    bf, lines, lh = _fit_fixed_body(d, body)
+    y = 852
+    for line in lines:
+        x = 72
+        for seg, mark in line:
+            d.text((x, y), seg, font=bf, fill=(245,190,0) if mark else (5,5,5))
+            x += d.textlength(seg, font=bf)
+        y += lh
+
+    _fixed_footer(d, category)
+    return img
+
+def make_cover_mag(sc, t, photo=None, credit=None):
+    """ZIP 1장: 사진+제목 캡슐+주제 소개문."""
+    cover = sc.get("cover") or {}
+    lines = cover.get("lines") or [sc.get("title", "")]
+    subtitle = " ".join(lines)
+    # 소개문을 별도 생성하도록 지원하고, 기존 대본은 첫 설명을 사용한다.
+    body = cover.get("summary") or cover.get("body")
+    if not body:
+        scenes = sc.get("scenes") or []
+        body = (scenes[0].get("narration") or scenes[0].get("body") or "") if scenes else ""
+    return _draw_fixed_card(photo, subtitle, body, sc.get("meta",{}).get("category",""), t)
+
+def make_scene_mag(sc, idx, total, t, photo=None, credit=None):
+    """ZIP 2~6장: 사진과 텍스트가 분리된 동일 고정 틀."""
+    scene = sc["scenes"][idx]
     body = scene.get("body", "")
     if not body:
-        narration = scene.get("narration", "")
-        body = (narration + " " if narration else "") + " ".join(scene.get("details", []))
-
-    subtitle = scene.get("subtitle", "")
-    cx = W // 2
-
-    # 소제목 — 형광펜 밴드. 길면 줄여서 한 줄에 맞춘다.
-    sf = bb_sub = None
-    if subtitle:
-        size = 44
-        while size > 30:
-            sf = font(FONT_BLACK, size)
-            if d.textlength(subtitle, font=sf) <= W - 150:
-                break
-            size -= 2
-        sf = font(FONT_BLACK, size)
-        bb_sub = d.textbbox((0, 0), subtitle, font=sf)
-
-    # 본문 — 검은 굵은 글씨, 중앙정렬. 흰 영역에 맞춰 크기를 자동 조절한다.
-    avail = H - PHOTO_H - 80
-    sub_h = (bb_sub[3] - bb_sub[1] + 46 + 18) if bb_sub else 0
-    for size, lh in ((48, 66), (45, 62), (42, 58), (39, 54), (36, 50), (33, 46)):
-        bf = font(FONT_BOLD, size)
-        lines = wrap_marked(d, parse_marked(body), bf, W - 130)
-        if sub_h + len(lines) * lh <= avail:
-            break
-
-    # 글 덩어리를 흰 영역 세로 중앙에 앉힌다 — 아래가 휑하게 비지 않도록
-    block_h = sub_h + len(lines) * lh
-    y = PHOTO_H + max(40, (H - PHOTO_H - block_h) // 2)
-
-    if subtitle:
-        tw, th = bb_sub[2] - bb_sub[0], bb_sub[3] - bb_sub[1]
-        rounded_rect(d, (cx - tw / 2 - 24, y - 6, cx + tw / 2 + 24, y + th + bb_sub[1] + 12),
-                     14, MAG_BAND)
-        d.text((cx - tw / 2 - bb_sub[0], y), subtitle, font=sf, fill=WHITE)
-        y += th + 46
-
-    for line in lines:
-        if y + lh > H - 30:
-            break
-        center_marked(d, line, cx, y, bf, MAG_INK, (210, 35, 45))
-        y += lh
-    return img
+        body = scene.get("narration", "")
+        if scene.get("details"):
+            body = (body + " " + " ".join(scene["details"])).strip()
+    return _draw_fixed_card(photo, scene.get("subtitle", ""), body,
+                            sc.get("meta",{}).get("category",""), t)
 
 # ── 커버 ────────────────────────
 def make_cover(sc, t, photo=None, credit=None):
@@ -851,55 +814,45 @@ def make_scene(sc, idx, total, t, photo=None, credit=None):
 
 # ── 아웃트로 ────────────────────
 def make_outro(sc, t, total):
-    img = gradient_bg(t["grad2"], t["grad1"])
-
-    layer, ld = overlay_layer()
-    draw_glow_circles(ld, seed=999)
-    cw, ch = 470, 94
-    handle_y = 905
-    rounded_rect(ld, ((W-cw)//2, handle_y, (W+cw)//2, handle_y+ch), 26, (0, 0, 0, 105))
-    img = composite(img, layer)
-
+    """ZIP 7장과 같은 고정 쫌봐봐 마무리."""
+    img = Image.new("RGB", (W, H), MAG_NAVY)
     d = ImageDraw.Draw(img, "RGBA")
 
-    # 큰 체크마크
-    cy, cr, cx = 290, 92, W//2
-    d.ellipse([cx-cr, cy-cr, cx+cr, cy+cr], fill=t["accent"])
-    d.line([(cx-42, cy+4), (cx-10, cy+36)], fill=t["tag_fg"], width=12)
-    d.line([(cx-10, cy+36), (cx+46, cy-28)], fill=t["tag_fg"], width=12)
+    # 고정 남색 배경 장식
+    for x in range(70, W-50, 22):
+        for y in range(95, H-70, 22):
+            if ((x//22)*7 + (y//22)*11) % 5 == 0:
+                d.ellipse((x, y, x+5, y+5), fill=(20,78,145,125))
+    d.polygon([(0,0),(150,0),(0,170)], fill=(12,57,118))
+    d.line((0,188,180,0), fill=(255,210,0), width=7)
+    d.polygon([(W,H),(W-165,H),(W,H-180)], fill=(12,57,118))
+    d.line((W-195,H,W,H-205), fill=(255,210,0), width=7)
+    d.line((240,72,W-125,72), fill=(255,210,0), width=4)
+    d.line((85,H-75,W-220,H-75), fill=(255,210,0), width=4)
 
-    y = cy + cr + 64
-    f1 = font(FONT_BLACK, 54)
-    for txt, col in [(UI["outro1"], WHITE), (UI["outro2"], t["accent"])]:
-        bb = d.textbbox((0,0), txt, font=f1)
-        d.text(((W-(bb[2]-bb[0]))//2, y), txt, font=f1, fill=col)
-        y += 80
+    # 브랜드명
+    brand_f = font(FONT_BLACK, 126)
+    bw = d.textlength(BRAND, font=brand_f)
+    bx = (W-bw)//2
+    split = max(1, len(BRAND)//2)
+    left, right = BRAND[:split], BRAND[split:]
+    d.text((bx, 382), left, font=brand_f, fill=WHITE)
+    d.text((bx+d.textlength(left,font=brand_f), 382), right, font=brand_f, fill=(255,215,0))
 
-    y += 24
-    f2 = font(FONT_MED, 32)
-    for txt in [UI["outro_s1"], UI["outro_s2"]]:
-        bb = d.textbbox((0,0), txt, font=f2)
-        d.text(((W-(bb[2]-bb[0]))//2, y), txt, font=f2, fill=(255, 255, 255, 210))
-        y += 50
+    hf = font(FONT_BOLD, 58)
+    hb = d.textbbox((0,0), HANDLE, font=hf)
+    d.text(((W-(hb[2]-hb[0]))//2, 625), HANDLE, font=hf, fill=WHITE)
 
-    # 핸들
-    hf = font(FONT_BOLD, 38)
-    handle = HANDLE
-    hb = d.textbbox((0,0), handle, font=hf)
-    d.text(((W-(hb[2]-hb[0]))//2, handle_y+24), handle, font=hf, fill=t["accent"])
+    rounded_rect(d, (58, 755, W-58, 908), 72, (255,215,0))
+    cf = font(FONT_BLACK, 52)
+    cta = "구독·좋아요 부탁드립니데이"
+    cb = d.textbbox((0,0), cta, font=cf)
+    d.text(((W-(cb[2]-cb[0]))//2, 793), cta, font=cf, fill=MAG_NAVY)
 
-    # CTA (이모지 + 텍스트 분리 렌더)
-    y = handle_y + ch + 62
-    labels = [("❤️", "좋아요"), ("💬", "댓글"), ("📌", "저장")]
-    sf = font(FONT_BOLD, 28)
-    for i, (em, lb) in enumerate(labels):
-        bb = d.textbbox((0,0), lb, font=sf)
-        lx = W//4*(i+1) - (bb[2]-bb[0] + 44)//2
-        paste_emoji(img, em, lx + 16, y + 18, 32)
-        d = ImageDraw.Draw(img, "RGBA")
-        d.text((lx + 44, y), lb, font=sf, fill=(255, 255, 255, 215))
-
-    dots(d, total, total, t)
+    sf = font(FONT_BLACK, 44)
+    msg = "다음 소식도 빠르게 전해드릴게예"
+    sb = d.textbbox((0,0), msg, font=sf)
+    d.text(((W-(sb[2]-sb[0]))//2, 975), msg, font=sf, fill=WHITE)
     return img
 
 # ── 메인 ────────────────────────
