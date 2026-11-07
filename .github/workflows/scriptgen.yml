@@ -1,39 +1,32 @@
 name: 대본 생성
 on:
-  workflow_run:
-    workflows: ["collect"]
-    types: [completed]
   workflow_dispatch:
     inputs:
       count:
-        description: "허용 주제 대본 수"
+        description: 생성할 대본 수
         type: string
         default: "9"
 permissions:
   contents: write
 jobs:
   generate:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: 의존성 설치
-        run: pip install PyYAML requests anthropic
-      - name: 기존 대본 전체 삭제
-        run: rm -f out/scripts/*.json
-      - name: 새 자료 수집
+      - run: pip install -r requirements.txt
+      - run: rm -f out/scripts/*.json
+      - name: 자료 수집
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
           KMA_APIHUB_KEY: ${{ secrets.KMA_APIHUB_KEY }}
           KOSIS_KEY: ${{ secrets.KOSIS_KEY }}
         run: |
-          pip install -r requirements.txt
           python collect.py || true
           python collect_trends.py || true
-      - name: 허용 주제와 금지 주제 검증
+      - name: 생성 및 검증
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -41,24 +34,22 @@ jobs:
           LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: |
           python scriptgen.py -n "${{ inputs.count || '9' }}" --trends out/trends.json
-          python -c "import json,glob,os; A={'연예','국내 정치','해외 정치','경제','해외연예'}; X={'정치':'국내 정치','정치·시사':'국내 정치','세계경제':'해외 정치','글로벌경제':'해외 정치','국제경제':'해외 정치','해외경제':'해외 정치','물가':'경제','주거':'경제','부동산':'경제','경제·부동산':'경제','경제·돈':'경제','연예·화제':'연예','엔터테인먼트':'연예'}; B=('아파트','부동산','실거래','분양','청약','전세','월세','주택','평당','단지','집값','주거','재건축','매매가'); ps=glob.glob('out/scripts/*.json'); kept=[];
-for p in ps:
- d=json.load(open(p,encoding='utf-8')); m=d.setdefault('meta',{}); c=X.get(str(m.get('category','')).strip(),str(m.get('category','')).strip()); t=json.dumps(d,ensure_ascii=False);
- if c in A and not any(w in t for w in B): m['category']=c; json.dump(d,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=2); kept.append(p)
- else: os.remove(p)
-print('검증 통과:',len(kept),'건'); raise SystemExit(0 if kept else 1)"
-      - name: 대본 업로드
-        uses: actions/upload-artifact@v4
-        with:
-          name: scripts
-          path: out/scripts/*.json
-          retention-days: 30
+          python - <<'PY'
+          import glob,json,os
+          banned=('아파트','부동산','실거래','분양','청약','전세','월세','주택','평당','단지','집값','주거','재건축','매매가')
+          kept=[]
+          for p in glob.glob('out/scripts/*.json'):
+              d=json.load(open(p,encoding='utf-8')); t=json.dumps(d,ensure_ascii=False)
+              if any(x in t for x in banned): os.remove(p)
+              else: kept.append(p)
+          print('검증 통과:',len(kept),'건')
+          if not kept: raise SystemExit('아파트·부동산·실거래 외 대본이 없습니다')
+          PY
       - name: 대본 커밋
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f out/scripts/
           git diff --cached --quiet && exit 0
-          git commit -m "검증된 허용 주제 대본 재생성"
-          git pull --rebase --autostash origin main
+          git commit -m "아파트 부동산 실거래만 제외"
           git push origin main
