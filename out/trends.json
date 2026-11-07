@@ -1,95 +1,77 @@
 {
-  "collected_at": "2026-11-07T02:40:04.739730+00:00",
+  "collected_at": "2026-11-07T09:45:55.401306+00:00",
   "items": [
     {
-      "keyword": "보험",
-      "traffic": "1000+",
-      "news_title": "“혼자 늙는 것도 서러운데, 다 가져가야만 했냐”…고령 1인가구 보험료 ‘쑥’",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "151895499e897929"
-    },
-    {
-      "keyword": "지스타",
-      "traffic": "200+",
-      "news_title": "[유미&apos;s 픽] &quot;게임쇼까지 파고든 AI&quot;…뤼튼·NC AI, 지스타서 존재감 키운다",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "e5f9c751c4d9e057"
-    },
-    {
-      "keyword": "이주승",
+      "keyword": "정철원",
       "traffic": "100+",
-      "news_title": "이주승, 영화감독으로 승승장구 &quot;상금 1억 우승 이어 영화제 심사위원&quot; - 머니투데이",
+      "news_title": "정철원, ‘러브캐처’ 김지연 가정폭력·외도 주장에 “사실관계 다투는 중”",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "655680b8c22042ed"
+      "key": "8369b6d6a43b0a6c"
     },
     {
-      "keyword": "수도권제2순환고속도로",
+      "keyword": "하희라",
+      "traffic": "500+",
+      "news_title": "&apos;살림남&apos;, 최수종은 러브레터...은지원은 변명레터 - 머니투데이",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "c4afd275dc221b60"
+    },
+    {
+      "keyword": "주권",
       "traffic": "200+",
-      "news_title": "한강 아래 첫 도로터널 김포방향 굴진…국내 최대 TBM 적용",
+      "news_title": "[박성진의 국방 B컷](69) 집속탄 사진에 흔들리는 한국과 김정은의 ‘사진 정치’",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "1cb5f8100ed0ae6b"
+    },
+    {
+      "keyword": "나탈리 하프",
+      "traffic": "200+",
+      "news_title": "Trump Hands Natalie Harp New Deeply Personal Role",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "bb1b42a43de1a81d"
+    },
+    {
+      "keyword": "김영철",
+      "traffic": "1000+",
+      "news_title": "&quot;치킨 사 오겠다던 형, 그날 세상 떠나&quot;…김영철이 떠올린 35년 전 비극 - 머니투데이",
+      "snippet": "",
+      "source_type": "google_trends",
+      "category": "당일 화제 이슈",
+      "key": "e2b712cd0b75f51c"
+    },
+    {
+      "keyword": "수원 kt 대 대구 한국가스공사",
+      "traffic": "500+",
+      "news_title": "",
       "snippet": "",
       "source_type": "google_trends",
       "category": "생활·지원금·제도",
-      "key": "b0b1add6cb3ad382"
+      "key": "5d9ff69433e53c28"
     },
     {
-      "keyword": "클리블랜드 대 필라데피아",
-      "traffic": "1000+",
-      "news_title": "Thunder 124-116 Cavaliers (Nov 4, 2026) Game Recap",
+      "keyword": "젠슨황",
+      "traffic": "2000+",
+      "news_title": "“젠슨 황 ‘中스파이 의혹’ 여성과 연인관계”…美정부 메모 파장",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "9612c11290c43440"
+      "key": "a5b50ac6d2689b90"
     },
     {
-      "keyword": "조명우",
+      "keyword": "맥도날드",
       "traffic": "500+",
-      "news_title": "‘세계1위’ 조명우, ‘베트남1번’ 트란퀴옛치엔과 16강서 격돌…허정한-호프만, 김행직-레가즈피[양구3쿠션월드컵]",
+      "news_title": "&quot;존박이 랩으로 주문했더니&quot;…맥도날드가 진짜 만든 &apos;이것&apos; [김소연의 얼굴전략]",
       "snippet": "",
       "source_type": "google_trends",
       "category": "당일 화제 이슈",
-      "key": "87cc2147b601380f"
-    },
-    {
-      "keyword": "신세계백화점",
-      "traffic": "200+",
-      "news_title": "11월 초에 크리스마스 경쟁...백화점, 연말 대목 총력전",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "3f0cd8ff4e8136ed"
-    },
-    {
-      "keyword": "집",
-      "traffic": "500+",
-      "news_title": "5억짜리 집, 8천만 원에 &apos;내 집&apos;으로...가능하다",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "934f9d188f6e3e33"
-    },
-    {
-      "keyword": "폭탄",
-      "traffic": "100+",
-      "news_title": "여객기 다음은 방송국?…연쇄 폭탄 협박에 유럽 언론사까지 대피",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "d7c9c6be83da8abb"
-    },
-    {
-      "keyword": "주차장",
-      "traffic": "500+",
-      "news_title": "[현장 속 의정활동] 수원 일월호수공영주차장 준공…180면 확보해 주차난 해소 기대",
-      "snippet": "",
-      "source_type": "google_trends",
-      "category": "당일 화제 이슈",
-      "key": "00d7eb2fb28ba43f"
+      "key": "cc2fa0195adb1a1e"
     }
   ]
 }
