@@ -1,4 +1,4 @@
-run 42367957271 2026-11-07T11:24:18Z
+run 42368121907 2026-11-07T11:26:18Z
 
 === 20261107_14_기준금리동결 ===
   [cover] '기준금리 3.00% 동결' → "Bank of Korea press conference interest rate news"
@@ -38,10 +38,52 @@ run 42367957271 2026-11-07T11:24:18Z
   → 6/6장 저장, 매니페스트: out/photos/20261107_14_기준금리동결/photos.json
 
 총 6/6장 수집
-Traceback (most recent call last):
-  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 922, in <module>
-    generate(a.script, a.out, a.photos, a.layout)
-  File "/home/runner/work/issue-reels/issue-reels/cardnews.py", line 864, in generate
-    print(f"고정 카드뉴스 템플릿: {CARD_TEMPLATE_ID}")
-                                   ^^^^^^^^^^^^^^^^
-NameError: name 'CARD_TEMPLATE_ID' is not defined
+고정 카드뉴스 템플릿: jjombwabwa-cardnews-7-v1
+  사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
+카드뉴스 7장 생성 → out/cards_20261107_14_기준금리동결
+대본: out/scripts/20261107_14_기준금리동결.json
+카드: out/cards_20261107_14_기준금리동결 (7장)
+음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
+
+1) TTS 생성
+[TTS] ElevenLabs 엔진 사용
+  TTS [1/6] [EL·발랄녀] 2.4초  기준금리 3.00% 동결...
+  TTS [2/6] [EL·발랄녀] 6.3초  한국은행이 기준금리를 3%로 그대로 뒀습니데이. 이...
+  TTS [3/6] [EL·발랄녀] 8.4초  물가가 크게 튀진 않았지만 환율하고 경기 흐름이 아...
+  TTS [4/6] [EL·발랄녀] 8.4초  금리가 그대로면 대출금리도 당장 크게 움직이진 않을...
+  TTS [5/6] [EL·발랄녀] 7.5초  금리가 바뀐다 캐도 바로 체감되는 건 아닙니데이. ...
+  TTS [6/6] [EL·발랄녀] 6.8초  일단 금리는 동결입니데이. 다음 결정 전까지 물가,...
+
+2) 영상 합성
+  세그먼트 [1/7] 3.2초
+  세그먼트 [2/7] 7.1초
+  세그먼트 [3/7] 9.2초
+  세그먼트 [4/7] 9.2초
+  세그먼트 [5/7] 8.3초
+  세그먼트 [6/7] 7.6초
+  세그먼트 [7/7] 4.0초
+
+  ✓ 릴스 완성: out/reels/20261107_14_기준금리동결.mp4
+    길이: 43.8초  /  크기: 1.8MB
+-rw-r--r-- 1 runner runner 1.9M Nov  7 11:27 out/reels/20261107_14_기준금리동결.mp4
+codec_name=h264
+width=1080
+height=1920
+codec_name=aac
+duration=43.800272
+저장소 백엔드: GitHub Release
+  미디어 저장소  a87330815/issue-reels-media
+  토큰           설정됨
+  저장소 확인    a87330815/issue-reels-media (공개)
+
+설정 완료
+
+업로드 1건 (태그 reels-2026-11-07):
+  20261107_14_기준금리동결.mp4  1.8MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_14.mp4
+
+공개 접근 확인:
+  OK  video_url: 200 application/octet-stream
+
+매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
+
+완료: 성공 1건 / 실패 0건
