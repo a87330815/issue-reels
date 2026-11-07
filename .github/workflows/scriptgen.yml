@@ -50,7 +50,19 @@ jobs:
           LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: |
           python scriptgen.py -n "${{ inputs.count || '9' }}" --trends out/trends.json
-          python -c "import json,glob,os; keep=('연예','정치','경제','해외연예','물가','주거','세계경제','경제·돈'); [os.remove(p) for p in glob.glob('out/scripts/*.json') if json.load(open(p,encoding='utf-8')).get('meta',{}).get('category','') not in keep]; [json.dump(dict((lambda d: (d.update({'meta':dict(d.get('meta',{}),category='경제')}) or d)(json.load(open(p,encoding='utf-8')))),ensure_ascii=False,indent=2),open(p,'w',encoding='utf-8')) for p in glob.glob('out/scripts/*.json') if json.load(open(p,encoding='utf-8')).get('meta',{}).get('category','') in ('물가','주거','세계경제','경제·돈')]"
+          python - <<'PY'
+          import json, glob, os
+          allowed = {'연예','정치','경제','해외연예','물가','주거','세계경제','경제·돈'}
+          aliases = {'물가','주거','세계경제','경제·돈'}
+          for p in glob.glob('out/scripts/*.json'):
+              with open(p, encoding='utf-8') as f: d=json.load(f)
+              c=d.get('meta',{}).get('category','')
+              if c not in allowed:
+                  os.remove(p)
+              elif c in aliases:
+                  d.setdefault('meta',{})['category']='경제'
+                  with open(p,'w',encoding='utf-8') as f: json.dump(d,f,ensure_ascii=False,indent=2)
+          PY
           ls -la out/scripts/
       - name: 대본 업로드
         uses: actions/upload-artifact@v4
