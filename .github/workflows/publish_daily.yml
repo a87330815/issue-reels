@@ -182,12 +182,20 @@ jobs:
         env:
           STEM: ${{ steps.pick.outputs.stem }}
           IG_HANDLE: ${{ vars.IG_HANDLE }}
-          IG_BRAND: ${{ vars.IG_BRAND }}
+          IG_BRAND: 쫌봐봐
+          IG_HANDLE: "@jjombwabwa"
+          POST_FORMAT: ${{ (github.event.schedule == '0 5 * * *' || github.event.schedule == '0 12 * * *') && 'cards' || 'reel' }}
         run: |
           set -o pipefail
+          MODE="--reels"
+          if [ "$POST_FORMAT" = "cards" ]; then MODE=""; fi
           python -u cardnews.py "out/scripts/${STEM}.json" \
-            -o "out/cards_${STEM}" -p "out/photos/${STEM}" --reels 2>&1 \
+            -o "out/cards_${STEM}" -p "out/photos/${STEM}" $MODE 2>&1 \
             | tee -a out/reels/render.log
+          if [ "$POST_FORMAT" = "cards" ]; then
+            COUNT=$(find "out/cards_${STEM}" -maxdepth 1 -name '*.png' | wc -l)
+            [ "$COUNT" -eq 7 ] || { echo "::error::카드뉴스는 7장이어야 합니다 ($COUNT장)"; exit 1; }
+          fi
 
       # 음성은 기준 영상과 같은 발랄녀(ko-KR-SunHiNeural) 하나로 고정한다.
       # 앞서 쓰던 "앵커,발랄녀"는 대본마다 남녀가 바뀌어 계정 사운드가
@@ -285,7 +293,9 @@ jobs:
           fi
           if [ "$POST_FORMAT" = "cards" ]; then
             echo "카드뉴스 발행 슬롯 — $STEM"
-            python -u publish_cards.py "out/cards_${STEM}" --script "out/scripts/${STEM}.json" --photos "out/photos/${STEM}" --publish 2>&1 | tee -a out/reels/render.log
+            CARD_FLAG=""
+            if [ "$DO_PUBLISH" = "true" ]; then CARD_FLAG="--publish"; fi
+            python -u publish_cards.py "out/cards_${STEM}" --script "out/scripts/${STEM}.json" --photos "out/photos/${STEM}" $CARD_FLAG 2>&1 | tee -a out/reels/render.log
           else
             python -u publish.py --script "out/scripts/${STEM}.json" \
               --limit 1 $FLAG 2>&1 | tee -a out/reels/render.log
