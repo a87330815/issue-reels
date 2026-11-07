@@ -88,6 +88,11 @@ CATEGORY_MAP = {
     "돈": "money finance calculator",
     "주거": "apartment building residential",
     "안전": "safety emergency warning",
+    "연예": "entertainment stage celebrity event",
+    "국내 정치": "Korea government assembly press conference",
+    "해외 정치": "world leaders international summit",
+    "경제": "financial news business economy",
+    "해외연예": "international entertainment red carpet",
 }
 DEFAULT_QUERY = "city office desk modern"
 
@@ -466,7 +471,15 @@ def fetch_for_script(script_path, out_dir):
         print(f"  [{slot}] '{text}' → \"{q}\"")
         cands = search_with_fallback(q)
         if not cands:
-            print(f"    ✗ {slot}: 후보 없음")
+            # 너무 구체적인 뉴스 검색어가 0건이면 허용 카테고리의 넓은
+            # 사진 풀에서 다시 찾는다. 사진 없는 카드 생성은 금지하되,
+            # 부동산·생활정보 같은 다른 주제로 빠지지는 않게 한다.
+            fallback_q = CATEGORY_MAP.get(category, DEFAULT_QUERY)
+            if fallback_q != q:
+                print(f"    ↻ 카테고리 대체 검색: \"{fallback_q}\"")
+                cands = search_with_fallback(fallback_q)
+        if not cands:
+            print(f"    ✗ {slot}: 대체 검색까지 후보 없음")
             continue
         path = os.path.join(out_dir, f"{slot}.jpg")
         meta = download_photo(cands, path, used=used)
