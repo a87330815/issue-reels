@@ -1,53 +1,50 @@
 {
-  "title": "연쇄 폭탄 협박 사건",
+  "title": "항공사·방송국 동시 대피",
   "cover": {
     "image": null,
-    "lines": [
-      "유럽서",
-      "<r>항공사·방송국</r>",
-      "동시 대피"
-    ],
+    "lines": ["<r>항공사·방송국</r>", "동시 대피"],
     "badge": null,
     "photo_query": "airport security evacuation emergency"
   },
   "scenes": [
     {
       "image": null,
-      "narration": "이거 모르고 지나가면 안 된다. 유럽에서 지금 뭔가 크다 일어나고 있다. 항공사하고 방송국이 동시에 대피했다.",
+      "narration": "이거 그냥 넘기면 안 된다 아이가. 유럽에서 일이 크게 터졌다. 항공사하고 방송국이 동시에 대피했다.",
       "subtitle": "항공사·방송국 동시 대피",
       "photo_query": "news broadcast studio control room"
     },
     {
       "image": null,
-      "narration": "연쇄 폭탄 협박이 들어왔다고 한다. 폴란드 항공사부터 시작해서. 여러 나라 방송국까지 번졌다.",
+      "narration": "연쇄 폭탄 협박이 들어왔다카더라. 폴란드 항공사에서 시작해 여러 나라 방송국까지 번졌다.",
       "subtitle": "폴란드·벨기에·프랑스 등",
       "photo_query": "airplane cockpit view sky"
     },
     {
       "image": null,
-      "narration": "지금 현지 경찰이 수사 중인데. 정확히 뭐가 목표인지는 아직 안 나왔다. 협박 차원인지 뭔지.",
+      "narration": "현지 경찰이 수사 중인데, 정확한 목표는 아직 확인되지 않았다. 협박인지 실제 위험인지 살펴보는 중이다.",
       "subtitle": "경찰 수사 진행 중",
       "photo_query": "police investigation security officers"
     },
     {
       "image": null,
-      "narration": "이런 사건들이 실제로 터지는 건 드물지만. 요즘 뉴스에선 자꾸 터진다. 상황 봐야 한다.",
-      "subtitle": "앞으로 상황 주목",
+      "narration": "현재 상황은 계속 바뀔 수 있다. 추가 소식이 나오면 바로 전해드리겠다 아이가.",
+      "subtitle": "추가 소식 확인 중",
       "photo_query": "breaking news alert television broadcast"
     },
     {
       "image": null,
-      "narration": "쫌봐봐 채널에서 계속 추적할 테니. 팔로우해 둬라. 이런 속보들 놓치면 안 된다.",
-      "subtitle": "팔로우 후 알림 켜기",
+      "narration": "쫌봐봐가 계속 확인해드릴 테니 팔로우해 두이소.",
+      "subtitle": "팔로우하고 추가 소식 확인",
       "photo_query": "smartphone notification alert icon"
     }
   ],
   "meta": {
     "format": "숫자훅",
     "source": "google_trends",
-    "category": "당일 화제 이슈",
+    "category": "해외 정치",
     "attribution": "Google Trends",
     "chart": null,
-    "generated_at": "2026-11-07T01:31:50.452133+00:00"
+    "tone": "부산·경남 사투리",
+    "generated_at": "2026-11-07T03:30:00+00:00"
   }
 }
