@@ -42,7 +42,9 @@ jobs:
       - name: 카드뉴스 생성 (사진 필수)
         env:
           IG_HANDLE: ${{ vars.IG_HANDLE }}
-          IG_BRAND: ${{ vars.IG_BRAND }}
+          IG_BRAND: 쫌봐봐
+          IG_HANDLE: "@jjombwabwa"
+          CARDNEWS_TEMPLATE: jjombwabwa_v1
         run: |
           set -euo pipefail
           for f in out/scripts/*.json; do
@@ -51,6 +53,10 @@ jobs:
             PHOTO_COUNT=$(find "$PHOTO_DIR" -type f \( -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \) 2>/dev/null | wc -l)
             if [ "$PHOTO_COUNT" -eq 0 ]; then echo "::error::$stem 사진 없음 — 카드 생성을 중단합니다"; exit 1; fi
             python -u cardnews.py "$f" -o "out/cards_${stem#news_}" -p "$PHOTO_DIR"
+          done
+          for d in out/cards_*; do
+            COUNT=$(find "$d" -maxdepth 1 -name '*.png' | wc -l)
+            [ "$COUNT" -eq 7 ] || { echo "::error::$d 카드 수가 7장이 아닙니다 ($COUNT장)"; exit 1; }
           done
           find out -name '*.png' -path '*cards*' | sort
       - name: 카드뉴스 업로드
