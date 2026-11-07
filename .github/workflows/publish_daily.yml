@@ -181,9 +181,8 @@ jobs:
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
         env:
           STEM: ${{ steps.pick.outputs.stem }}
-          IG_HANDLE: ${{ vars.IG_HANDLE }}
-          IG_BRAND: 쫌봐봐
           IG_HANDLE: "@jjombwabwa"
+          IG_BRAND: 쫌봐봐
           POST_FORMAT: ${{ (github.event.schedule == '0 5 * * *' || github.event.schedule == '0 12 * * *') && 'cards' || 'reel' }}
         run: |
           set -o pipefail
