@@ -11,6 +11,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 
 W, H = 1080, 1350
+CARD_TEMPLATE_ID = "jjombwabwa-cardnews-7-v1"
 
 def _pick_font(*names):
     """설치 위치가 배포판마다 달라서 후보 경로를 순서대로 탐색한다.
