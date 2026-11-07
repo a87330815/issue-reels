@@ -1,0 +1,62 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "korean residential apartment building exterior",
+      "source": "Unsplash",
+      "creator": "WooSang Lee",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-very-tall-building-with-lots-of-windows-RSuP39oXrZA"
+    },
+    {
+      "slot": "scene1",
+      "query": "house price tag money calculator",
+      "source": "Unsplash",
+      "creator": "Ben Wicks",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-calculator-sitting-on-top-of-a-white-table-LK4sk81TZh8"
+    },
+    {
+      "slot": "scene2",
+      "query": "korean auction house real estate",
+      "source": "Unsplash",
+      "creator": "Jisoo Park",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-building-with-a-wooden-door-and-steps-leading-up-to-it-DtMIdRvnHzI"
+    },
+    {
+      "slot": "scene3",
+      "query": "document checklist property inspection",
+      "source": "Unsplash",
+      "creator": "Leon Seibert",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/person-writing-on-white-form-paper-9i5eqBarv-k"
+    },
+    {
+      "slot": "scene4",
+      "query": "real estate agent meeting documents",
+      "source": "Unsplash",
+      "creator": "Fotógrafo Samuel Cruz",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/couple-signing-marriage-certificate-with-officiant-present-dfFsFHpDrIc"
+    },
+    {
+      "slot": "scene5",
+      "query": "smartphone real estate app screen",
+      "source": "Unsplash",
+      "creator": "charlesdeluvio",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/person-holding-iphone-on-table-p0Sn8X2htRs"
+    }
+  ],
+  "wanted": 6,
+  "fetched_at": "2026-11-07T05:17:06Z"
+}

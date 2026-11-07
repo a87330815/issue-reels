@@ -1,0 +1,53 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "Bank of Korea press conference interest rate news",
+      "source": "Unsplash",
+      "creator": "minho jeong",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-picture-of-a-korean-currency-bill-TFIXbQAv6ag"
+    },
+    {
+      "slot": "scene2",
+      "query": "central bank economic briefing inflation currency chart",
+      "source": "Unsplash",
+      "creator": "Avinash Kumar",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/white-and-yellow-printer-paper-FPer9_79vSc"
+    },
+    {
+      "slot": "scene3",
+      "query": "financial market currency exchange monitors",
+      "source": "Unsplash",
+      "creator": "Behnam Norouzi",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/black-flat-screen-computer-monitor-mp11_hrQXf8"
+    },
+    {
+      "slot": "scene4",
+      "query": "household finance notebook smartphone calculator",
+      "source": "Unsplash",
+      "creator": "Behnam Norouzi",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-calculator-on-a-table-wBKWM-DLhzg"
+    },
+    {
+      "slot": "scene5",
+      "query": "Seoul financial district skyline dusk",
+      "source": "Unsplash",
+      "creator": "Ethan Brooke",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-a-city-at-night-from-the-top-of-a-hill-hMdoZTri5A8"
+    }
+  ],
+  "wanted": 6,
+  "fetched_at": "2026-11-07T05:17:26Z"
+}

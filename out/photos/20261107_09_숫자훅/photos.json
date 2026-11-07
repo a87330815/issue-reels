@@ -1,0 +1,62 @@
+{
+  "photos": {
+    "cover": "cover.jpg",
+    "scene1": "scene1.jpg",
+    "scene2": "scene2.jpg",
+    "scene3": "scene3.jpg",
+    "scene4": "scene4.jpg",
+    "scene5": "scene5.jpg"
+  },
+  "credits": [
+    {
+      "slot": "cover",
+      "query": "airport security evacuation emergency",
+      "source": "Unsplash",
+      "creator": "Rayner Simpson",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/selective-focus-photography-of-man-wearing-black-top-IdXShaU_UiA"
+    },
+    {
+      "slot": "scene1",
+      "query": "news broadcast studio control room",
+      "source": "rawpixel",
+      "creator": "libraryofcongress",
+      "license": "CC0",
+      "page": "https://www.rawpixel.com/image/6858613/photo-image-art-vintage-technology"
+    },
+    {
+      "slot": "scene2",
+      "query": "airplane cockpit view sky",
+      "source": "Unsplash",
+      "creator": "Fabio Romano",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-view-of-the-cockpit-of-an-airplane-from-the-inside-6E3BVc2ks98"
+    },
+    {
+      "slot": "scene3",
+      "query": "police investigation security officers",
+      "source": "Unsplash",
+      "creator": "LOGAN WEAVER | @LGNWVR",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/man-in-black-helmet-and-black-helmet-standing-near-glass-window-UhK0L9q_Mj0"
+    },
+    {
+      "slot": "scene4",
+      "query": "breaking news alert television broadcast",
+      "source": "Unsplash",
+      "creator": "Mika Baumeister",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-lit-up-stage-with-a-stage-and-a-stage-with-lights-08oiZfn6-tA"
+    },
+    {
+      "slot": "scene5",
+      "query": "smartphone notification alert icon",
+      "source": "Unsplash",
+      "creator": "Vince Picipo",
+      "license": "Unsplash License",
+      "page": "https://unsplash.com/photos/a-black-cell-phone-6xIt_pRIQqg"
+    }
+  ],
+  "wanted": 6,
+  "fetched_at": "2026-11-07T05:17:18Z"
+}
