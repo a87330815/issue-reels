@@ -303,7 +303,7 @@ def normalize_tts_numbers(text):
     return re.sub(pattern, repl, text)
 
 
-async def generate_tts(texts, voice, out_dir, style=True, rate=DEFAULT_RATE,
+async def generate_tts(texts, voice, out_dir, style=True, rate=,
                        preset=None, presets=None):
     """TTS 나레이션 mp3 생성. ElevenLabs 우선, 실패 시 edge-tts 폴백.
 
