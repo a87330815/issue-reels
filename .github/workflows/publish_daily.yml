@@ -310,6 +310,10 @@ jobs:
           # 토큰은 페이지 토큰이라 그 호스트에서 "Cannot parse access token"
           # 으로 거부된다. 저장소 변수가 있으면 그걸, 없으면 facebook 쪽을 쓴다.
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
+          # 카드뉴스 이미지도 미디어 저장소 Release에 올려 공개 URL을 만든다.
+          # 영상 업로드 단계와 동일한 저장소·토큰을 반드시 전달해야 한다.
+          MEDIA_REPO: ${{ secrets.MEDIA_REPO || vars.MEDIA_REPO || 'a87330815/issue-reels-media' }}
+          MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
           DO_PUBLISH: ${{ steps.gate.outputs.publish }}
           POST_FORMAT: ${{ inputs.post_format == 'cards' && 'cards' || inputs.post_format == 'reel' && 'reel' || ((github.event.schedule == '0 5 * * *' || github.event.schedule == '0 12 * * *') && 'cards' || 'reel') }}
         run: |
