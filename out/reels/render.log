@@ -1,4 +1,4 @@
-run 42354448796 2026-11-07T08:13:23Z
+run 42354731123 2026-11-07T08:16:52Z
 
 === 20261107_14_기준금리동결 ===
   [cover] '기준금리 3.00% 동결' → "Bank of Korea press conference interest rate news"
@@ -47,29 +47,29 @@ run 42354448796 2026-11-07T08:13:23Z
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
   TTS [1/6] [EL·발랄녀] 2.4초  기준금리 3.00% 동결...
-  TTS [2/6] [EL·발랄녀] 6.7초  한국은행이 기준금리를 3%로 그대로 뒀습니데이. 이...
-  TTS [3/6] [EL·발랄녀] 8.3초  물가가 크게 튀진 않았지만 환율하고 경기 흐름이 아...
-  TTS [4/6] [EL·발랄녀] 9.1초  금리가 그대로면 대출금리도 당장 크게 움직이진 않을...
-  TTS [5/6] [EL·발랄녀] 6.8초  금리가 바뀐다 캐도 바로 체감되는 건 아닙니데이. ...
-  TTS [6/6] [EL·발랄녀] 6.6초  일단 금리는 동결입니데이. 다음 결정 전까지 물가,...
+  TTS [2/6] [EL·발랄녀] 6.6초  한국은행이 기준금리를 3%로 그대로 뒀습니데이. 이...
+  TTS [3/6] [EL·발랄녀] 8.2초  물가가 크게 튀진 않았지만 환율하고 경기 흐름이 아...
+  TTS [4/6] [EL·발랄녀] 8.4초  금리가 그대로면 대출금리도 당장 크게 움직이진 않을...
+  TTS [5/6] [EL·발랄녀] 7.0초  금리가 바뀐다 캐도 바로 체감되는 건 아닙니데이. ...
+  TTS [6/6] [EL·발랄녀] 6.5초  일단 금리는 동결입니데이. 다음 결정 전까지 물가,...
 
 2) 영상 합성
   세그먼트 [1/7] 3.2초
-  세그먼트 [2/7] 7.5초
-  세그먼트 [3/7] 9.1초
-  세그먼트 [4/7] 9.9초
-  세그먼트 [5/7] 7.6초
-  세그먼트 [6/7] 7.4초
+  세그먼트 [2/7] 7.4초
+  세그먼트 [3/7] 9.0초
+  세그먼트 [4/7] 9.2초
+  세그먼트 [5/7] 7.8초
+  세그먼트 [6/7] 7.3초
   세그먼트 [7/7] 4.0초
 
   ✓ 릴스 완성: out/reels/20261107_14_기준금리동결.mp4
-    길이: 43.9초  /  크기: 1.8MB
--rw-r--r-- 1 runner runner 1.8M Nov  7 08:14 out/reels/20261107_14_기준금리동결.mp4
+    길이: 43.1초  /  크기: 1.7MB
+-rw-r--r-- 1 runner runner 1.8M Nov  7 08:17 out/reels/20261107_14_기준금리동결.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=43.914286
+duration=43.089274
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -78,7 +78,7 @@ duration=43.914286
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-07):
-  20261107_14_기준금리동결.mp4  1.8MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_14.mp4
+  20261107_14_기준금리동결.mp4  1.7MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-07/20261107_14.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -86,53 +86,3 @@ duration=43.914286
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-
-대상: out/cards_20261107_14_기준금리동결  (7장)
-대본: out/scripts/20261107_14_기준금리동결.json
-
---- 캡션 ---
-기준금리 3.00% 동결
-
-· 한국은행, 기준금리 동결
-· 왜 동결했나?
-· 시장에는 어떤 영향?
-· 우리 생활에서 볼 점
-· 핵심 정리
-
-쫌봐봐 구독·좋아요 부탁드립니데이.
-
-출처: 한국은행·연합뉴스
-
-#경제 #쫌봐봐 #연예 #국내정치 #해외정치 #경제 #해외연예
-사진: minho jeong (Unsplash, Unsplash License) / Annie Spratt (Unsplash, Unsplash License) / Avinash Kumar (Unsplash, Unsplash License) / Behnam Norouzi (Unsplash, Unsplash License) / Ethan Brooke (Unsplash, Unsplash License)
---- 캡션 끝 ---
-
-남은 발행 가능: 94건
-
-1) 이미지 공개 호스팅
-  저장소가 비어 있어 README로 초기화합니다
-Traceback (most recent call last):
-  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 341, in <module>
-    main()
-  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 337, in main
-    run(a.card_dir, a.script, a.photos, a.publish)
-  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 274, in run
-    urls = host_images(files, tag)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/issue-reels/issue-reels/publish_cards.py", line 125, in host_images
-    url = U.gh_upload(jpg, tag)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/issue-reels/issue-reels/upload.py", line 177, in gh_upload
-    rel = gh_release(tag)
-          ^^^^^^^^^^^^^^^
-  File "/home/runner/work/issue-reels/issue-reels/upload.py", line 167, in gh_release
-    gh_ensure_initialized()
-  File "/home/runner/work/issue-reels/issue-reels/upload.py", line 131, in gh_ensure_initialized
-    gh("PUT", f"{GH_API}/repos/{MEDIA_REPO}/contents/README.md", MEDIA_TOKEN, json={
-  File "/home/runner/work/issue-reels/issue-reels/upload.py", line 94, in gh
-    raise RuntimeError(f"HTTP {r.status_code}: {scrub(r.text[:300])}")
-RuntimeError: HTTP 401: {
-  "message": "Bad credentials",
-  "documentation_url": "https://docs.github.com/rest",
-  "status": "401"
-}
