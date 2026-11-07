@@ -1,0 +1,53 @@
+{
+  "title": "5억 집을 8천만 원에 사는 방법",
+  "cover": {
+    "image": null,
+    "lines": [
+      "5억 집을",
+      "<r>8천만 원</r>에",
+      "산다고?"
+    ],
+    "badge": null,
+    "photo_query": "korean residential apartment building exterior"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 요즘 집 사는 방법 완전 달라졌다. 5억짜리 집을 8천만 원에 살 수 있는 길이 있다니까.",
+      "subtitle": "5억 집을 8천만 원에",
+      "photo_query": "house price tag money calculator"
+    },
+    {
+      "image": null,
+      "narration": "뭐냐고? 이거다. 경매다. 일반 시장가보다 한참 낮은 가격에 나오는 집들이 있다. 은행 강제 경매, 채무자 자진 경매 이런 식으로.",
+      "subtitle": "경매로 싼값에",
+      "photo_query": "korean auction house real estate"
+    },
+    {
+      "image": null,
+      "narration": "근데 조심해야 한다. 낮은 가격만 보고 덤비면 큰코다. 대출 상황, 임차인 정보, 하자 여부 이런 거 다 봐야 한다.",
+      "subtitle": "이것 안 보면 위험하다",
+      "photo_query": "document checklist property inspection"
+    },
+    {
+      "image": null,
+      "narration": "그리고 경매는 입찰부터 낙찰까지 시간이 꽤 걸린다. 인내심 있는 사람, 준비 꼼꼼한 사람한테 기회다.",
+      "subtitle": "철저한 준비가 필수",
+      "photo_query": "real estate agent meeting documents"
+    },
+    {
+      "image": null,
+      "narration": "집 못 구하고 있는 분들, 경매도 한번 들여다봐라. 전문가 상담받고 천천히 공부하면서 접근해야 한다. 더 알고 싶으면 팔로우해라.",
+      "subtitle": "팔로우 하고 더 배워봐",
+      "photo_query": "smartphone real estate app screen"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "google_trends",
+    "category": "당일 화제 이슈",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-07T01:31:16.845399+00:00"
+  }
+}
