@@ -1,5 +1,4 @@
 name: 대본 생성
-
 on:
   workflow_run:
     workflows: ["collect"]
@@ -10,14 +9,6 @@ on:
         description: "허용 주제 대본 수"
         type: string
         default: "9"
-      fun_count:
-        description: "사용 안 함"
-        type: string
-        default: "0"
-      tips_count:
-        description: "사용 안 함"
-        type: string
-        default: "0"
 permissions:
   contents: write
 jobs:
@@ -42,7 +33,7 @@ jobs:
           pip install -r requirements.txt
           python collect.py || true
           python collect_trends.py || true
-      - name: 허용 주제 대본 생성
+      - name: 허용 주제와 금지 주제 검증
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -52,25 +43,20 @@ jobs:
           python scriptgen.py -n "${{ inputs.count || '9' }}" --trends out/trends.json
           python - <<'PY'
           import json, glob, os
-          allowed = {'연예','국내 정치','해외 정치','경제','해외연예'}
-          aliases = {
-              '정치':'국내 정치', '정치·시사':'국내 정치',
-              '세계경제':'해외 정치', '글로벌경제':'해외 정치',
-              '국제경제':'해외 정치', '해외경제':'해외 정치',
-              '물가':'경제', '주거':'경제', '부동산':'경제',
-              '경제·부동산':'경제', '경제·돈':'경제',
-          }
+          allowed={'연예','국내 정치','해외 정치','경제','해외연예'}
+          aliases={'정치':'국내 정치','정치·시사':'국내 정치','세계경제':'해외 정치','글로벌경제':'해외 정치','국제경제':'해외 정치','해외경제':'해외 정치','물가':'경제','주거':'경제','부동산':'경제','경제·부동산':'경제','경제·돈':'경제','연예·화제':'연예','엔터테인먼트':'연예'}
+          banned=('아파트','부동산','실거래','분양','청약','전세','월세','주택','평당','단지','집값','주거','재건축','매매가')
           for p in glob.glob('out/scripts/*.json'):
-              with open(p, encoding='utf-8') as f: d=json.load(f)
-              meta=d.setdefault('meta',{})
-              c=meta.get('category','').strip()
-              if c in aliases:
-                  c=aliases[c]
-                  meta['category']=c
-              if c not in allowed:
-                  os.remove(p)
-          PY
-          ls -la out/scripts/
+              with open(p,encoding='utf-8') as f: d=json.load(f)
+              m=d.setdefault('meta',{}); c=aliases.get(str(m.get('category','')).strip(),str(m.get('category','')).strip())
+              text=json.dumps(d,ensure_ascii=False)
+              if c not in allowed or any(w in text for w in banned): os.remove(p); continue
+              m['category']=c
+              with open(p,'w',encoding='utf-8') as f: json.dump(d,f,ensure_ascii=False,indent=2)
+          files=glob.glob('out/scripts/*.json')
+          if not files: raise SystemExit('검증 통과 대본이 없습니다')
+          print('검증 통과:',len(files),'건')
+          for p in files: print(p)
       - name: 대본 업로드
         uses: actions/upload-artifact@v4
         with:
@@ -84,6 +70,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f out/scripts/
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
-          git commit -m "허용 주제 대본 재수집 $(date +%Y-%m-%d\ %H:%M)"
+          git commit -m "검증된 허용 주제 대본 재생성 $(date +%Y-%m-%d\ %H:%M)"
           git pull --rebase --autostash origin main
           git push origin main
