@@ -1,0 +1,62 @@
+{
+  "title": "송도동 11월 아파트 거래 분석",
+  "cover": {
+    "image": null,
+    "lines": [
+      "송도동",
+      "<r>12억</r>",
+      "거래 났다"
+    ],
+    "badge": null,
+    "photo_query": "incheon songdo apartment complex modern buildings"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 송도동이요. 지난달 아파트 거래 나왔다. 12억 원짜리 신축부터 5천만 원대까지. 다양한 물건들이 떴다.",
+      "subtitle": "송도동 11월 거래 현황",
+      "photo_query": "incheon songdo waterfront development"
+    },
+    {
+      "image": null,
+      "narration": "가장 비싼 건 더샵송도프라임뷰20BL이다. 23층 12억 원. 2022년 지은 따끈따끈한 신축이지. 107제곱미터 규모였다.",
+      "subtitle": "더샵송도프라임뷰 12억",
+      "photo_query": "luxury apartment high floor view"
+    },
+    {
+      "image": null,
+      "narration": "반대쪽 끝은 성지리벨루스. 5천만 원대다. 2006년 낡은 건물이니까 당연하지. 같은 지역인데 가격 차이가 크긴 하다.",
+      "subtitle": "2006년 건물 5천만 원대",
+      "photo_query": "older apartment building renovation needed"
+    },
+    {
+      "image": null,
+      "narration": "이번 달 거래는 6건. 많지도 적지도 않은 수다. 송도는 계속 새 아파트가 올라온다. 근데 어디 사야 할지 고민되지 않냐.",
+      "subtitle": "신축 vs 중고 선택의 기로",
+      "photo_query": "apartment comparison calculator decision"
+    },
+    {
+      "image": null,
+      "narration": "우리 채널에서 계속 송도동 거래 데이터 올린다. 구독해두면 실시간으로 볼 수 있다. 팔로우 해라.",
+      "subtitle": "송도동 거래 실시간 확인",
+      "photo_query": "real estate market data analysis charts"
+    }
+  ],
+  "meta": {
+    "format": "지역한정",
+    "source": "molit_apt_trade",
+    "category": "경제",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        12.0,
+        5.0,
+        5.8,
+        5.8,
+        8.6
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-07T00:48:29.843052+00:00"
+  }
+}

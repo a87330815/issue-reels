@@ -1,0 +1,56 @@
+{
+  "title": "압구정 vs 상봉, 132배 차이",
+  "cover": {
+    "image": null,
+    "lines": [
+      "같은 서울인데",
+      "<r>132배</r>",
+      "차이 난다고?"
+    ],
+    "badge": null,
+    "photo_query": "seoul apartment complex neighborhood comparison"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 아파트 평균값 봤냐. 66억이다. 66억.",
+      "subtitle": "압구정동 평균 66억원",
+      "photo_query": "luxury apartment building seoul gangnam"
+    },
+    {
+      "image": null,
+      "narration": "그런데 상봉동은? 0.5억이다. 야야야. 같은 서울인데 132배 차이다.",
+      "subtitle": "상봉동 평균 0.5억원",
+      "photo_query": "apartment building residential area korea"
+    },
+    {
+      "image": null,
+      "narration": "이게 지역 가치 차이라니까. 투자하려면 이거 아는 게 기본이다.",
+      "subtitle": "지역별 아파트 실거래가",
+      "photo_query": "seoul real estate market analysis data"
+    },
+    {
+      "image": null,
+      "narration": "우리 지역은 어떨까. 더 알고 싶으면 팔로우해라. 매주 새로운 데이터 들고 온다.",
+      "subtitle": "공공데이터로 알아보는 수도권",
+      "photo_query": "phone scrolling real estate information"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "경제",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        66.0,
+        50.5,
+        40.0,
+        36.4,
+        32.0
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-07T00:48:35.034941+00:00"
+  }
+}

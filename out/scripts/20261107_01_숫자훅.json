@@ -1,0 +1,62 @@
+{
+  "title": "압구정 현대6차 66억 거래, 이게 뭐하는 짓인가",
+  "cover": {
+    "image": null,
+    "lines": [
+      "압구정 현대6차",
+      "<r>66억</r>",
+      "이 정도면"
+    ],
+    "badge": null,
+    "photo_query": "luxury apartment building Seoul Gangnam"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "이거 모르고 지나가면 손해다. 압구정동 현대6차. 11월에 66억에 나갔다. 1978년 준공된 아파트 말이다.",
+      "subtitle": "압구정 현대6차 66억 거래",
+      "photo_query": "apartment building entrance 1978 modern"
+    },
+    {
+      "image": null,
+      "narration": "평수로 따지면 144제곱미터. 넉넉한 크기다. 이 가격이면 뭔가 떨어졌다는 신호거든.",
+      "subtitle": "144제곱미터 / 66억원",
+      "photo_query": "real estate price comparison chart"
+    },
+    {
+      "image": null,
+      "narration": "압구정동은 서울에서 손꼽히는 강남 프리미엄 지역이다. 그런데 여기서 이 정도 가격대가 나온다는 건, 건물 나이가 얼마나 영향을 미치는지 보여주는 거다.",
+      "subtitle": "강남 프리미엄 지역의 현실",
+      "photo_query": "Seoul Gangnam district luxury buildings"
+    },
+    {
+      "image": null,
+      "narration": "앞으로 아파트 선택할 때. 입지만 봐선 안 된다. 건축연도가 얼마나 중요한지 이제 안다.",
+      "subtitle": "입지 + 건축연도 함께 봐야 함",
+      "photo_query": "apartment building age comparison old new"
+    },
+    {
+      "image": null,
+      "narration": "더 자세한 실거래가. 우리 채널 팔로우 해라. 놓치는 게 크다.",
+      "subtitle": "실거래가 데이터 매일 업데이트",
+      "photo_query": "real estate data analysis laptop"
+    }
+  ],
+  "meta": {
+    "format": "숫자훅",
+    "source": "molit_apt_trade",
+    "category": "경제",
+    "attribution": "공공데이터포털 · 국토교통부",
+    "chart": {
+      "values": [
+        66.0,
+        54.2,
+        50.5,
+        38.2,
+        37.0
+      ],
+      "style": "bars"
+    },
+    "generated_at": "2026-11-07T00:48:23.410503+00:00"
+  }
+}
