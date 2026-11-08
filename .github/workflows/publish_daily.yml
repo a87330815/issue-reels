@@ -196,7 +196,7 @@ jobs:
           python -u photos.py "out/scripts/${STEM}.json" 2>&1 \
             | tee -a out/reels/render.log
 
-      - name: 2) 카드 생성 (릴스 화면 재료)
+      - name: 2) 릴스 장면 생성 (기존 릴스 방식)
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
         env:
           STEM: ${{ steps.pick.outputs.stem }}
@@ -207,7 +207,7 @@ jobs:
           set -o pipefail
           MODE="--reels"
           LAYOUT="magazine"
-          # 릴스는 황유민 릴스 게시 당시의 magazine 레이아웃만 사용한다.
+          # 릴스는 황유민 릴스 게시 당시의 magazine 레이아웃만 사용한다. 카드뉴스로 게시하지 않는다.
           python -u cardnews.py "out/scripts/${STEM}.json" \
             -o "out/cards_${STEM}" -p "out/photos/${STEM}" --layout "$LAYOUT" $MODE 2>&1 \
             | tee -a out/reels/render.log
