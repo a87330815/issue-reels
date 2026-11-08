@@ -597,9 +597,8 @@ def make_cover_mag(sc, t, photo=None, credit=None):
     """ZIP 1장: 사진+제목 캡슐+주제 소개문."""
     cover = sc.get("cover") or {}
     lines = cover.get("lines") or [sc.get("title", "")]
-    title = (sc.get("title") or "").strip()
-    subtitle = title if title else " ".join(lines)
-    # 표지는 제목을 먼저 보여주고, 본문에는 첫 장면의 강한 훅을 사용한다.
+    subtitle = " ".join(lines)
+    # 카드뉴스는 별도 제목 페이지 없이 첫 내용 카드부터 시작한다.
     body = cover.get("summary") or cover.get("body")
     if not body:
         scenes = sc.get("scenes") or []
