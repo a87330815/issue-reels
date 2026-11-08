@@ -6,7 +6,9 @@ from urllib.parse import urlparse
 import requests
 import xml.etree.ElementTree as ET
 
-BLOCKED_ISSUES = re.compile(r"(4명의\s*엄마|엄마만\s*4명|결혼지옥|오은영\s*리포트)", re.I)\n\nFEEDS = {
+BLOCKED_ISSUES = re.compile(r"(4명의\s*엄마|엄마만\s*4명|결혼지옥|오은영\s*리포트)", re.I)
+
+FEEDS = {
     "국내 정치": [
         ("대통령실", "https://www.president.go.kr/rss"),
         ("국회", "https://www.assembly.go.kr/portal/rss/rss.do"),
