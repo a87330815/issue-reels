@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""최근 이슈 RSS 수집기. 공공데이터와 아파트 데이터는 사용하지 않는다."""
+"""최근 이슈 RSS 수집기."""
 import argparse, hashlib, html, json, os, re
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
