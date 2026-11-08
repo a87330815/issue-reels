@@ -24,7 +24,6 @@ on:
     # 정시를 피해 앞당긴다 (GitHub Actions 큐 혼잡 회피).
     - cron: "0 23 * * *"     # KST 08:00
     - cron: "30 2 * * *"     # KST 11:30
-    - cron: "0 5 * * *"      # KST 14:00 (카드뉴스)
     - cron: "30 9 * * *"     # KST 18:30
   workflow_dispatch:
     inputs:
