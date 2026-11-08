@@ -9,7 +9,8 @@ permissions:
 
 jobs:
   cards:
-    if: ${{ github.event_name == 'workflow_dispatch' }}
+    if: ${{ false }}
+    # 카드뉴스는 현재 운영하지 않는다.
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
