@@ -104,17 +104,14 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
-          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-          KMA_APIHUB_KEY: ${{ secrets.KMA_APIHUB_KEY }}
-          KOSIS_KEY: ${{ secrets.KOSIS_KEY }}
         run: |
           [ -n "$IN_STEM" ] && { echo "지정 대본 사용 — 보충 생략"; exit 0; }
           python -u queue_next.py >/dev/null 2>&1 && { echo "대기열 있음"; exit 0; }
           echo "대기열 0건 — 허용 분야 대본을 즉시 생성합니다"
           pip install -q -r requirements.txt
-          python -u collect.py || true
-          python -u collect_trends.py || true
-          python -u scriptgen.py -n 5 --trends out/trends.json
+          echo "공공데이터 수집 및 자동 대본 생성은 비활성화되어 있습니다"
+          echo "대기열에 기존 승인 대본이 없습니다"
+          exit 1
 
       # 어느 대본을 올릴지 먼저 정한다. 자동 보충 뒤에도 비어 있으면 실패로
       # 표시해 조용히 성공 처리되는 일을 막는다.
