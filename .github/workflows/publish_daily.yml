@@ -1,4 +1,4 @@
-name: 자동 발행 (하루 5건 릴스·카드뉴스 혼합)
+name: 릴스 자동 발행
 
 # 하루 4건을 시간 간격을 두고 릴스로 올린다. 한 번에 몰아 올리면 노출이
 # 분산되고 피드가 도배돼 역효과가 난다.
@@ -16,7 +16,7 @@ name: 자동 발행 (하루 5건 릴스·카드뉴스 혼합)
 # 단건 이슈는 짧은 게 자연스러워서, 일률로 깎지 않고 대본을 그대로 쓴다.
 # ── 2026-10-29 발행 재개 ──────────────────────────────────────────────
 # 허용 분야: 연예·국내 정치·해외 정치·경제·해외연예. 생활꿀팁·정보는 제외.
-# 하루 5건 · 08:00/11:30/14:00/18:30/21:00 KST. 14:00·21:00은 카드뉴스, 나머지는 릴스.
+# 하루 3건 · 08:00/11:30/18:30 KST. 이 워크플로우는 릴스만 담당한다.
 # 끌 때: 저장소 변수 AUTO_PUBLISH=off 또는 schedule 블록 주석 처리.
 on:
   schedule:
@@ -26,7 +26,6 @@ on:
     - cron: "30 2 * * *"     # KST 11:30
     - cron: "0 5 * * *"      # KST 14:00 (카드뉴스)
     - cron: "30 9 * * *"     # KST 18:30
-    - cron: "0 12 * * *"     # KST 21:00 (카드뉴스)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -37,15 +36,6 @@ on:
         description: "대본 직접 지정 (비우면 대기열에서 비율에 맞게 고름)"
         type: string
         required: false
-      post_format:
-        description: "수동 실행 형식 (예약 실행은 시간표 자동 적용)"
-        type: choice
-        options:
-          - auto
-          - reel
-          - cards
-        default: auto
-
 permissions:
   contents: write
 
@@ -218,8 +208,7 @@ jobs:
           set -o pipefail
           MODE="--reels"
           LAYOUT="magazine"
-          if [ "$POST_FORMAT" = "cards" ]; then MODE=""; LAYOUT="magazine"; fi
-          # 기존 게시물과 동일한 magazine 레이아웃을 사용한다.
+          # 릴스는 황유민 릴스 게시 당시의 magazine 레이아웃만 사용한다.
           python -u cardnews.py "out/scripts/${STEM}.json" \
             -o "out/cards_${STEM}" -p "out/photos/${STEM}" --layout "$LAYOUT" $MODE 2>&1 \
             | tee -a out/reels/render.log
@@ -326,15 +315,8 @@ jobs:
           else
             echo "드라이런 — 업로드까지만 하고 발행하지 않습니다"
           fi
-          if [ "$POST_FORMAT" = "cards" ]; then
-            echo "카드뉴스 발행 슬롯 — $STEM"
-            CARD_FLAG=""
-            if [ "$DO_PUBLISH" = "true" ]; then CARD_FLAG="--publish"; fi
-            python -u publish_cards.py "out/cards_${STEM}" --script "out/scripts/${STEM}.json" --photos "out/photos/${STEM}" $CARD_FLAG 2>&1 | tee -a out/reels/render.log
-          else
-            python -u publish.py --script "out/scripts/${STEM}.json" \
-              --limit 1 $FLAG 2>&1 | tee -a out/reels/render.log
-          fi
+          python -u publish.py --script "out/scripts/${STEM}.json" \
+            --limit 1 $FLAG 2>&1 | tee -a out/reels/render.log
 
       # mp4는 커밋하지 않는다. 하루 3건이면 한 해 1.6GB씩 불어난다.
       # 영상은 미디어 저장소 릴리스에 있고 그게 인스타가 가져가는 주소다.
