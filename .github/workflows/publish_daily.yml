@@ -217,9 +217,11 @@ jobs:
         run: |
           set -o pipefail
           MODE="--reels"
-          if [ "$POST_FORMAT" = "cards" ]; then MODE=""; fi
+          LAYOUT="classic"
+          if [ "$POST_FORMAT" = "cards" ]; then MODE=""; LAYOUT="magazine"; fi
+          # 릴스는 기존 classic 스타일, 카드뉴스만 새 magazine 스타일을 사용한다.
           python -u cardnews.py "out/scripts/${STEM}.json" \
-            -o "out/cards_${STEM}" -p "out/photos/${STEM}" --layout magazine $MODE 2>&1 \
+            -o "out/cards_${STEM}" -p "out/photos/${STEM}" --layout "$LAYOUT" $MODE 2>&1 \
             | tee -a out/reels/render.log
           if [ "$POST_FORMAT" = "cards" ]; then
             COUNT=$(find "out/cards_${STEM}" -maxdepth 1 -name '*.png' | wc -l)
