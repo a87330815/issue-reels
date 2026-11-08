@@ -1,0 +1,933 @@
+# -*- coding: utf-8 -*-
+"""
+cardnews.py — 인스타그램 카드뉴스 생성기 v5
+
+1080x1350 (4:5) 카드뉴스
+- 강렬한 그래디언트 배경 + 큰 이모지 아이콘
+- 굵고 큰 텍스트 + 눈에 띄는 색상 조합
+"""
+import argparse, json, math, os, re, sys, random
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
+
+W, H = 1080, 1350
+CARD_TEMPLATE_ID = "jjombwabwa-cardnews-7-v1"
+
+def _pick_font(*names):
+    """설치 위치가 배포판마다 달라서 후보 경로를 순서대로 탐색한다.
+    못 찾으면 fc-match 로 시스템 전체를 탐색한다."""
+    import subprocess, glob as _glob
+    roots = ["/usr/share/fonts/opentype/noto", "/usr/share/fonts/truetype/noto",
+             "/usr/share/fonts/opentype", "/usr/share/fonts/truetype",
+             "/usr/local/share/fonts", os.path.expanduser("~/.fonts")]
+    for n in names:
+        if os.path.isabs(n) and os.path.exists(n):
+            return n
+        for r in roots:
+            p = os.path.join(r, n)
+            if os.path.exists(p):
+                return p
+        # 하위 디렉터리까지 재귀 탐색
+        for r in ["/usr/share/fonts", "/usr/local/share/fonts"]:
+            for p in _glob.glob(os.path.join(r, "**", n), recursive=True):
+                if os.path.exists(p):
+                    return p
+    # fc-match 로 Noto Sans CJK 계열 폴백
+    try:
+        r = subprocess.run(["fc-match", "-f", "%{file}", "Noto Sans CJK KR"],
+                           capture_output=True, text=True, timeout=5)
+        if r.returncode == 0 and r.stdout.strip() and os.path.exists(r.stdout.strip()):
+            return r.stdout.strip()
+    except Exception:
+        pass
+    return None
+
+FONT_BLACK = _pick_font("NotoSansCJK-Black.ttc", "NotoSansCJKkr-Black.otf", "NotoSansCJK-Bold.ttc")
+FONT_BOLD  = _pick_font("NotoSansCJK-Bold.ttc", "NotoSansCJKkr-Bold.otf")
+FONT_MED   = _pick_font("NotoSansCJK-Medium.ttc", "NotoSansCJKkr-Medium.otf", "NotoSansCJK-Regular.ttc")
+FONT_REG   = _pick_font("NotoSansCJK-Regular.ttc", "NotoSansCJKkr-Regular.otf")
+FONT_EMOJI = _pick_font("NotoColorEmoji.ttf")
+
+_missing = [n for n, v in [("Black", FONT_BLACK), ("Bold", FONT_BOLD),
+                           ("Medium", FONT_MED), ("Regular", FONT_REG)] if not v]
+if _missing:
+    sys.exit("한글 폰트를 찾을 수 없습니다 (%s). "
+             "apt-get install fonts-noto-cjk fonts-noto-cjk-extra 로 설치하세요."
+             % ", ".join(_missing))
+
+def font(path, size):
+    return ImageFont.truetype(path, size, index=1)
+
+_emoji_cache = {}
+
+def render_emoji(emoji, size):
+    """컬러 이모지를 RGBA 이미지로 렌더링 (NotoColorEmoji는 109px 고정 → 리사이즈)"""
+    if not FONT_EMOJI:
+        return None
+    key = (emoji, size)
+    if key in _emoji_cache:
+        return _emoji_cache[key]
+    try:
+        ef = ImageFont.truetype(FONT_EMOJI, 109)
+        tmp = Image.new("RGBA", (180, 180), (0, 0, 0, 0))
+        td = ImageDraw.Draw(tmp)
+        td.text((20, 20), emoji, font=ef, embedded_color=True)
+        bb = tmp.getbbox()
+        if not bb:
+            return None
+        cropped = tmp.crop(bb)
+        ratio = size / max(cropped.width, cropped.height)
+        out = cropped.resize(
+            (max(1, int(cropped.width * ratio)), max(1, int(cropped.height * ratio))),
+            Image.LANCZOS,
+        )
+        _emoji_cache[key] = out
+        return out
+    except Exception:
+        return None
+
+def paste_emoji(img, emoji, cx, cy, size, opacity=255):
+    """이모지를 이미지 중앙 좌표에 붙이기"""
+    em = render_emoji(emoji, size)
+    if em is None:
+        return
+    if opacity < 255:
+        em = em.copy()
+        alpha = em.getchannel("A").point(lambda v: int(v * opacity / 255))
+        em.putalpha(alpha)
+    img.paste(em, (int(cx - em.width // 2), int(cy - em.height // 2)), em)
+
+# ── 비비드 테마 ────────────────────
+THEMES = {
+    "교통": {
+        "grad1": (0, 82, 212),    "grad2": (67, 198, 255),
+        "accent": (255, 220, 0),  "accent2": (255, 140, 0),
+        "tag_bg": (255, 220, 0),  "tag_fg": (0, 60, 150),
+        "emojis": ["🚄","📅","💺","📱","🚆","🛤️"],
+    },
+    "생활": {
+        "grad1": (131, 58, 180),  "grad2": (253, 29, 29),
+        "accent": (255, 255, 100),"accent2": (255, 200, 50),
+        "tag_bg": (255, 255, 100),"tag_fg": (100, 30, 140),
+        "emojis": ["🚫","💰","📢","🎫","🎵","🎤"],
+    },
+    "돈·물가": {
+        "grad1": (15, 82, 56),    "grad2": (44, 160, 28),
+        "accent": (255, 230, 50), "accent2": (255, 180, 0),
+        "tag_bg": (255, 230, 50), "tag_fg": (10, 70, 40),
+        "emojis": ["💵","🧾","🏦","✅","💰","📊"],
+    },
+    "주거": {
+        "grad1": (30, 60, 120),   "grad2": (0, 172, 238),
+        "accent": (255, 200, 50), "accent2": (255, 150, 0),
+        "tag_bg": (255, 200, 50), "tag_fg": (20, 50, 100),
+        "emojis": ["🏠","📋","🔑","💡","🏗️","📐"],
+    },
+    "안전": {
+        "grad1": (180, 20, 30),   "grad2": (255, 100, 50),
+        "accent": (255, 255, 100),"accent2": (255, 220, 0),
+        "tag_bg": (255, 255, 100),"tag_fg": (150, 10, 20),
+        "emojis": ["🚨","⚠️","🛡️","📞","🆘","🔒"],
+    },
+}
+DEF_THEME = {
+    "grad1": (30, 60, 180),   "grad2": (0, 200, 200),
+    "accent": (255, 220, 50), "accent2": (255, 160, 0),
+    "tag_bg": (255, 220, 50), "tag_fg": (20, 50, 140),
+    "emojis": ["📌","💡","✨","📋","🔍","📊"],
+}
+
+WHITE = (255, 255, 255)
+DARK  = (20, 20, 25)
+
+# ── 고정 문구 ──────────────────────
+# 계정 말투가 경상도 사투리라, 이름만 사투리고 본문·안내가 표준어면
+# 간판과 속이 따로 논다. 고정 문구도 같은 말투로 맞춘다.
+# 핸들은 계정이 바뀔 수 있으므로 환경변수로 뺀다.
+HANDLE = os.environ.get("IG_HANDLE", "@jjombwabwa")
+BRAND  = os.environ.get("IG_BRAND", "쫌봐봐")
+# 브랜드명은 띄어쓰기 없이 그대로 박는다. "쫌 봐봐"로 띄우면 평범한 말이 되고,
+# "쫌봐봐"로 붙여야 매 장마다 계정 이름이 그대로 각인된다.
+UI = {
+    "swipe":    f"옆으로 {BRAND}",
+    "outro1":   BRAND,
+    "outro2":   "구독·좋아요 부탁드립니데이",
+    "outro_s1": "다음 소식도 빠르게",
+    "outro_s2": "전해드릴게예",
+}
+
+def get_t(cat):
+    return THEMES.get(cat, DEF_THEME)
+
+# ── 유틸 ────────────────────────
+def rounded_rect(draw, xy, r, fill):
+    """네이티브 rounded_rectangle 사용 (모서리 이중 블렌딩 아티팩트 없음)"""
+    x0, y0, x1, y1 = (int(v) for v in xy)
+    r = int(min(r, (x1-x0)//2, (y1-y0)//2))
+    draw.rounded_rectangle([x0, y0, x1, y1], radius=max(0, r), fill=fill)
+
+def overlay_layer():
+    """반투명 도형을 그릴 별도 RGBA 레이어 생성"""
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    return layer, ImageDraw.Draw(layer)
+
+def composite(img, layer):
+    """RGBA 레이어를 RGB 베이스에 1회 합성 (이중 블렌딩 방지)"""
+    base = img.convert("RGBA")
+    base.alpha_composite(layer)
+    return base.convert("RGB")
+
+def gradient_bg(c1, c2, direction="vertical"):
+    """강렬한 그래디언트 배경 생성"""
+    arr = np.zeros((H, W, 3), dtype=np.uint8)
+    for i in range(H):
+        t = i / H
+        # ease-in-out for smoother gradient
+        t2 = t * t * (3 - 2 * t)
+        for c in range(3):
+            arr[i, :, c] = int(c1[c] * (1 - t2) + c2[c] * t2)
+    return Image.fromarray(arr)
+
+def load_photos(photo_dir):
+    """photos.json 매니페스트를 읽어 슬롯→경로 매핑 반환."""
+    if not photo_dir:
+        return {}
+    mpath = os.path.join(photo_dir, "photos.json")
+    if not os.path.exists(mpath):
+        return {}
+    try:
+        with open(mpath, encoding="utf-8") as f:
+            man = json.load(f)
+    except Exception:
+        return {}
+    out = {}
+    for slot, fname in (man.get("photos") or {}).items():
+        p = os.path.join(photo_dir, fname)
+        if os.path.exists(p):
+            out[slot] = p
+    return out
+
+def load_credits(photo_dir):
+    """슬롯 → 사진 출처 문구. CC BY 계열은 표기가 라이선스 조건이라 카드에 찍는다."""
+    if not photo_dir:
+        return {}
+    mpath = os.path.join(photo_dir, "photos.json")
+    if not os.path.exists(mpath):
+        return {}
+    try:
+        with open(mpath, encoding="utf-8") as f:
+            man = json.load(f)
+    except Exception:
+        return {}
+    out = {}
+    for c in (man.get("credits") or []):
+        lic = (c.get("license") or "").strip()
+        creator = (c.get("creator") or "").strip()
+        src = (c.get("source") or "").strip()
+        # 퍼블릭도메인/CC0는 표기 의무가 없어 생략 (화면을 깨끗하게)
+        if re.match(r"^(public domain|pd|cc0|pdm|no restrictions)", lic, re.I):
+            continue
+        # 뉴스 기사 보도사진은 카드 하단에 출처 줄을 따로 찍지 않는다
+        if src == "news_article":
+            continue
+        parts = [p for p in (creator, src, lic) if p]
+        if parts:
+            out[c.get("slot", "")] = "사진 " + " / ".join(parts)
+    return out
+
+def photo_bg(path, t, darken_top=70, darken_bottom=215, blur=0):
+    """사진을 풀블리드 배경으로 깔고, 아래로 갈수록 진해지는 어두운 그래디언트를 덮는다.
+    텍스트 가독성을 확보하면서 사진이 그대로 보이게 한다.
+    blur를 주면 배경이 차분해져 적합도가 낮은 사진도 덜 튄다."""
+    im = Image.open(path).convert("RGB")
+    if im.size != (W, H):
+        # cover 크롭 (photos.py에서 이미 맞춰 오지만 방어적으로)
+        sr, dr = im.width/im.height, W/H
+        if sr > dr:
+            nh, nw = H, max(W, int(round(H*sr)))
+        else:
+            nw, nh = W, max(H, int(round(W/sr)))
+        im = im.resize((nw, nh), Image.LANCZOS)
+        im = im.crop(((nw-W)//2, (nh-H)//2, (nw-W)//2+W, (nh-H)//2+H))
+
+    if blur:
+        im = im.filter(ImageFilter.GaussianBlur(blur))
+    else:
+        # 무료 소스는 해상도가 낮아 1080x1350으로 확대하면 물러진다.
+        # 언샤프 마스크로 윤곽을 살려 선명하게 보이게 한다.
+        im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=125, threshold=3))
+
+    # 채도·대비를 올려 색을 또렷하게
+    im = ImageEnhance.Color(im).enhance(1.12)
+    im = ImageEnhance.Contrast(im).enhance(1.12)
+    im = ImageEnhance.Sharpness(im).enhance(1.3)
+
+    # 세로 어두움 그래디언트 (위는 약하게, 아래로 갈수록 강하게)
+    xs = np.linspace(0.0, 1.0, H)
+    ease = xs ** 1.6
+    ramp = (darken_top + (darken_bottom - darken_top) * ease).astype(np.uint8)
+    alpha = np.repeat(ramp[:, None], W, axis=1)
+
+    # 테마 색조를 살짝 섞은 어두운 오버레이
+    tint = np.zeros((H, W, 3), dtype=np.uint8)
+    base = tuple(int(v*0.35) for v in t["grad1"])
+    for c in range(3):
+        tint[:, :, c] = base[c]
+
+    ov = np.dstack([tint, alpha])
+    overlay = Image.fromarray(ov, mode="RGBA")
+    out = im.convert("RGBA")
+    out.alpha_composite(overlay)
+    return out.convert("RGB")
+
+def gradient_bg_diagonal(c1, c2):
+    """대각선 그래디언트"""
+    arr = np.zeros((H, W, 3), dtype=np.uint8)
+    for i in range(H):
+        for j in range(W):
+            t = (i/H * 0.6 + j/W * 0.4)
+            t = min(1.0, max(0.0, t))
+            t2 = t * t * (3 - 2 * t)
+            for c in range(3):
+                arr[i, j, c] = int(c1[c] * (1-t2) + c2[c] * t2)
+    return Image.fromarray(arr)
+
+def draw_glow_circles(ld, seed=0):
+    """오버레이 레이어에 빛나는 원형 장식 그리기"""
+    rng = random.Random(seed)
+    for _ in range(rng.randint(4, 8)):
+        cx = rng.randint(0, W)
+        cy = rng.randint(0, H)
+        r = rng.randint(80, 300)
+        alpha = rng.randint(14, 34)
+        ld.ellipse([cx-r, cy-r, cx+r, cy+r], fill=(255, 255, 255, alpha))
+
+def wrap_char(draw, text, fnt, max_w):
+    lines, cur = [], ""
+    for ch in text:
+        test = cur + ch
+        if draw.textbbox((0,0), test, font=fnt)[2] > max_w and cur:
+            lines.append(cur)
+            cur = ch
+        else:
+            cur = test
+    if cur:
+        lines.append(cur)
+    return lines
+
+# ── 본문 강조 마크업 ──────────────────
+# 본문에 <y>…</y> 를 쓰면 그 구간만 포인트 컬러로 찍어 핵심 수치가 먼저 읽히게 한다.
+_MARK_RE = re.compile(r"<(/?)([yr])>")
+
+def parse_marked(text):
+    """'<y>1800만원</y>까지' → [('1800만원', True), ('까지', False)]"""
+    runs, buf, on = [], "", False
+    pos = 0
+    for m in _MARK_RE.finditer(text or ""):
+        buf += text[pos:m.start()]
+        closing = m.group(1) == "/"
+        if (not closing) != on:
+            if buf:
+                runs.append((buf, on))
+                buf = ""
+            on = not closing
+        pos = m.end()
+    buf += (text or "")[pos:]
+    if buf:
+        runs.append((buf, on))
+    return runs
+
+# 숫자·영문은 한 덩어리로 묶어 줄 끝에서 쪼개지지 않게 한다.
+# 숫자 뒤에 붙는 한글 단위까지 포함해 "10만원", "12월", "2개월"이 통째로 넘어가게 한다.
+_TOKEN_RE = re.compile(
+    r"[0-9][0-9,.·]*%?[가-힣]*|[A-Za-z][A-Za-z.'-]*|.", re.S)
+
+def wrap_marked(draw, runs, fnt, max_w):
+    """강조 구간을 유지한 채 줄바꿈. 줄마다 [(조각, 강조여부)] 반환."""
+    lines, cur, cur_w = [], [], 0
+    for txt, mark in runs:
+        for tok in _TOKEN_RE.findall(txt):
+            tw = draw.textlength(tok, font=fnt)
+            if cur_w + tw > max_w and cur:
+                lines.append(cur)
+                cur, cur_w = [], 0
+                if tok == " ":      # 줄머리 공백은 버린다
+                    continue
+            if cur and cur[-1][1] == mark:
+                cur[-1] = (cur[-1][0] + tok, mark)
+            else:
+                cur.append((tok, mark))
+            cur_w += tw
+    if cur:
+        lines.append(cur)
+    return lines
+
+def draw_marked_line(draw, line, x, y, fnt, normal, accent):
+    """한 줄을 강조 구간별 색으로 이어 그린다."""
+    for seg, mark in line:
+        draw.text((x, y), seg, font=fnt, fill=accent if mark else normal)
+        x += draw.textlength(seg, font=fnt)
+
+def wrap_words(draw, text, fnt, max_w):
+    words = text.split()
+    lines, cur = [], ""
+    for w in words:
+        test = f"{cur} {w}".strip()
+        if draw.textbbox((0,0), test, font=fnt)[2] > max_w and cur:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = test
+    if cur:
+        lines.append(cur)
+    return lines
+
+def text_center_white(draw, text, y, fnt, max_w=W-120):
+    lines = wrap_words(draw, text, fnt, max_w)
+    lh = fnt.size + 16
+    for l in lines:
+        bb = draw.textbbox((0,0), l, font=fnt)
+        draw.text(((W-(bb[2]-bb[0]))/2, y), l, font=fnt, fill=WHITE)
+        y += lh
+    return y
+
+# 릴스 모드. 영상에서는 넘겨볼 수 없으니 캐러셀용 안내(스와이프 문구·
+# 페이지 점)를 그리지 않는다.
+REELS = False
+
+def dots(draw, cur, total, t):
+    if REELS:
+        return
+    r = 7
+    gap = 18
+    tw = total * r*2 + (total-1)*gap
+    sx = (W-tw)/2
+    y = H - 45
+    for i in range(total):
+        cx = sx + i*(r*2+gap) + r
+        fill = t["accent"] if i+1 == cur else (255, 255, 255, 100)
+        draw.ellipse([cx-r, y-r, cx+r, y+r], fill=fill)
+
+def draw_big_emoji(draw, emoji, cx, cy, size):
+    """이모지를 큰 텍스트로 그리기"""
+    try:
+        ef = font(FONT_BLACK, size)
+        bb = draw.textbbox((0, 0), emoji, font=ef)
+        ew, eh = bb[2]-bb[0], bb[3]-bb[1]
+        draw.text((cx - ew//2, cy - eh//2), emoji, font=ef, fill=WHITE)
+    except:
+        pass
+
+# ══════════════════════════════════════════════════════
+# 매거진 레이아웃 (이슈 매거진 스타일)
+#
+# 기존 레이아웃은 사진을 어둡게 덮고 그 위에 흰 글씨를 얹는다. 피드에서
+# 축소돼 보일 때 사진도 글자도 함께 죽는 구조다. 매거진 레이아웃은 둘을
+# 분리한다 — 위는 사진만, 아래는 흰 바탕에 검은 글씨. 사진은 보정 없이
+# 밝게 두고, 글자는 최대 대비로 읽힌다.
+# ══════════════════════════════════════════════════════
+
+MAG_INK   = (17, 17, 17)         # 본문 먹색
+MAG_NAVY  = (5, 30, 72)          # 쫌봐봐 고정 남색
+MAG_BAND  = MAG_NAVY              # 소제목 남색 캡슐
+MAG_BAND2 = (255, 210, 45)        # 쫌봐봐 노란 포인트
+PHOTO_H   = 700                  # 본문 슬라이드 사진 밴드 높이
+
+_CASCADE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "assets", "cv", "haarcascade_frontalface_default.xml")
+_cascade = None
+_face_cache = {}
+
+def face_box(path):
+    """가장 큰 얼굴의 (중심x, 중심y, 높이)를 원본 대비 0~1 비율로 돌려준다.
+    못 찾으면 None. 보도사진을 가로 밴드로 자를 때 얼굴이 잘리거나 너무 작게
+    나오는 걸 막는 용도라, 실패해도 치명적이지 않다 — 호출부가 기본값으로 넘어간다."""
+    if path in _face_cache:
+        return _face_cache[path]
+    result = None
+    try:
+        global _cascade
+        import cv2
+        if _cascade is None:
+            if not os.path.exists(_CASCADE_PATH):
+                _face_cache[path] = None
+                return None
+            _cascade = cv2.CascadeClassifier(_CASCADE_PATH)
+        img = cv2.imread(path)
+        if img is not None:
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            faces = _cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5,
+                                              minSize=(40, 40))
+            if len(faces):
+                x, y, fw, fh = max(faces, key=lambda f: f[2] * f[3])
+                oh, ow = img.shape[0], img.shape[1]
+                result = ((x + fw / 2) / ow, (y + fh / 2) / oh, fh / oh)
+    except Exception:
+        result = None
+    _face_cache[path] = result
+    return result
+
+# 얼굴이 밴드 높이의 이 비율은 되도록 당겨 자른다. 전신 샷을 그대로 쓰면
+# 피드에서 인물이 누군지 안 보여 카드가 밋밋해진다.
+FACE_TARGET = 0.30
+FACE_MAX_ZOOM = 2.3      # 원본 해상도가 버티는 선까지만. 넘으면 뭉개진다.
+FACE_ANCHOR = 0.40       # 얼굴 중심이 밴드에서 차지할 세로 위치
+
+def photo_band(path, w, h, sharpen=True, bias=0.5, face_aware=False):
+    """사진을 w×h로 크롭. 어둡게 덮지 않고 밝기를 그대로 둔다.
+    face_aware면 얼굴을 찾아 (1) 얼굴이 너무 작으면 당겨 자르고
+    (2) 얼굴이 밴드 안에 들어오도록 크롭 지점을 잡는다."""
+    im = Image.open(path).convert("RGB")
+    # 승인 기준본에서 잘라 둔 사진은 이미 구도와 크롭이 확정돼 있다.
+    # 얼굴 감지나 자동 확대를 다시 적용하면 승인본과 달라진다.
+    if os.path.basename(path).startswith("approved_"):
+        return im if im.size == (w, h) else im.resize((w, h), Image.LANCZOS)
+    ow, oh = im.size
+    fb = face_box(path) if face_aware else None
+
+    # 기본 배율 — 밴드를 꽉 채우는 cover 스케일
+    s = max(w / ow, h / oh)
+
+    if fb:
+        fcx, fcy, fh_r = fb
+        face_px = fh_r * oh
+        want = (FACE_TARGET * h) / face_px      # 얼굴을 목표 크기로 만드는 배율
+        s = max(s, min(want, s * FACE_MAX_ZOOM))
+
+    nw, nh = max(w, int(round(ow * s))), max(h, int(round(oh * s)))
+    im = im.resize((nw, nh), Image.LANCZOS)
+
+    if fb:
+        fcx, fcy, _ = fb
+        left = int(round(fcx * nw - w / 2))
+        top = int(round(fcy * nh - h * FACE_ANCHOR))
+    else:
+        left = (nw - w) // 2
+        top = int(round((nh - h) * bias))
+    left = max(0, min(nw - w, left))
+    top = max(0, min(nh - h, top))
+    im = im.crop((left, top, left + w, top + h))
+    if sharpen:
+        im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=120, threshold=3))
+    im = ImageEnhance.Color(im).enhance(1.06)
+    im = ImageEnhance.Contrast(im).enhance(1.05)
+    return im
+
+def center_marked(draw, line, cy_x, y, fnt, normal, accent):
+    """강조 구간을 유지한 채 한 줄을 중앙정렬로 그린다."""
+    total = sum(draw.textlength(seg, font=fnt) for seg, _ in line)
+    x = cy_x - total / 2
+    for seg, mark in line:
+        draw.text((x, y), seg, font=fnt, fill=accent if mark else normal)
+        x += draw.textlength(seg, font=fnt)
+
+def highlight_text(d, text, cx, y, fnt, band_color, pad_x=22, pad_y=10, ink=MAG_INK):
+    """형광펜으로 그은 듯한 밴드를 깔고 그 위에 검은 글씨를 올린다."""
+    bb = d.textbbox((0, 0), text, font=fnt)
+    tw, th = bb[2] - bb[0], bb[3] - bb[1]
+    x0 = cx - tw / 2 - pad_x
+    x1 = cx + tw / 2 + pad_x
+    rounded_rect(d, (x0, y - pad_y, x1, y + th + bb[1] + pad_y), 12, band_color)
+    d.text((cx - tw / 2 - bb[0], y - bb[1] + bb[1]), text, font=fnt, fill=ink)
+    return th + pad_y * 2
+
+def _fixed_footer(d, category):
+    """ZIP 기준 하단 남색 띠와 채널 문구."""
+    d.rectangle((0, 1242, W, H), fill=MAG_NAVY)
+    label = f"{BRAND} {category or '뉴스'} 한입"
+    ff = font(FONT_BOLD, 30)
+    bb = d.textbbox((0, 0), label, font=ff)
+    tw = bb[2] - bb[0]
+    d.line((82, 1300, (W-tw)//2-36, 1300), fill=(225,235,248), width=2)
+    d.line(((W+tw)//2+36, 1300, W-82, 1300), fill=(225,235,248), width=2)
+    d.text(((W-tw)//2, 1277), label, font=ff, fill=WHITE)
+
+def _fit_fixed_body(d, body, max_w=930, max_h=350):
+    """흰 설명판 안에 ZIP처럼 굵고 큰 왼쪽 정렬 본문을 맞춘다."""
+    marked = parse_marked(body)
+    for size, lh in ((50, 71), (47, 67), (44, 63), (41, 59), (38, 55), (35, 51)):
+        bf = font(FONT_BLACK, size)
+        lines = wrap_marked(d, marked, bf, max_w)
+        if len(lines) * lh <= max_h:
+            return bf, lines, lh
+    return bf, lines, lh
+
+def _draw_fixed_card(photo, subtitle, body, category, t):
+    """승인 ZIP과 같은 사진/제목/본문 분리형 고정 카드."""
+    img = Image.new("RGB", (W, H), MAG_NAVY)
+    if photo:
+        img.paste(photo_band(photo, W, PHOTO_H, bias=0.12, face_aware=True), (0, 0))
+    else:
+        img.paste(gradient_bg(t["grad1"], t["grad2"]).crop((0, 0, W, PHOTO_H)), (0, 0))
+
+    d = ImageDraw.Draw(img, "RGBA")
+    # 흰 설명판과 겹쳐진 남색 제목 캡슐: ZIP 좌표 고정
+    rounded_rect(d, (0, 758, W, 1262), 46, (255, 255, 255, 255))
+    rounded_rect(d, (34, 674, W-34, 816), 70, MAG_NAVY)
+    d.rounded_rectangle((34, 674, W-34, 816), radius=70,
+                        outline=(255,255,255,255), width=3)
+
+    # 우상단 노란 강조 표시
+    for a, b in [((955,650),(968,615)), ((990,660),(1013,632)), ((1012,690),(1046,681))]:
+        d.line((a,b), fill=(255,205,0), width=13)
+
+    # 제목은 한 줄 고정, 핵심 표시(<r>/<y>)는 노란색
+    title_marked = parse_marked(subtitle)
+    size = 56
+    while size > 28:
+        sf = font(FONT_BLACK, size)
+        if sum(d.textlength(seg, font=sf) for seg, _ in title_marked) <= W-120:
+            break
+        size -= 2
+    center_marked(d, title_marked, W//2, 704, sf, WHITE, (255,220,0))
+
+    bf, lines, lh = _fit_fixed_body(d, body)
+    y = 852
+    for line in lines:
+        x = 72
+        for seg, mark in line:
+            d.text((x, y), seg, font=bf, fill=(245,190,0) if mark else (5,5,5))
+            x += d.textlength(seg, font=bf)
+        y += lh
+
+    _fixed_footer(d, category)
+    return img
+
+def make_cover_mag(sc, t, photo=None, credit=None):
+    """ZIP 1장: 사진+제목 캡슐+주제 소개문."""
+    cover = sc.get("cover") or {}
+    lines = cover.get("lines") or [sc.get("title", "")]
+    subtitle = " ".join(lines)
+    # 카드뉴스는 별도 제목 페이지 없이 첫 내용 카드부터 시작한다.
+    body = cover.get("summary") or cover.get("body")
+    if not body:
+        scenes = sc.get("scenes") or []
+        body = (scenes[0].get("narration") or scenes[0].get("body") or "") if scenes else ""
+    return _draw_fixed_card(photo, subtitle, body, sc.get("meta",{}).get("category",""), t)
+
+def make_scene_mag(sc, idx, total, t, photo=None, credit=None):
+    """ZIP 2~6장: 사진과 텍스트가 분리된 동일 고정 틀."""
+    scene = sc["scenes"][idx]
+    body = scene.get("body", "")
+    if not body:
+        body = scene.get("narration", "")
+        if scene.get("details"):
+            body = (body + " " + " ".join(scene["details"])).strip()
+    return _draw_fixed_card(photo, scene.get("subtitle", ""), body,
+                            sc.get("meta",{}).get("category",""), t)
+
+# ── 커버 ────────────────────────
+def make_cover(sc, t, photo=None, credit=None):
+    if photo:
+        # 커버는 사진을 가장 잘 보여주는 자리. 전체를 어둡게 덮는 대신
+        # 제목에 부드러운 그림자를 깔아 대비를 확보한다 (아래 shadow 레이어)
+        img = photo_bg(photo, t, darken_top=30, darken_bottom=190)
+    else:
+        img = gradient_bg_diagonal(t["grad1"], t["grad2"])
+        layer, ld = overlay_layer()
+        draw_glow_circles(ld, seed=42)
+        img = composite(img, layer)
+
+    # 이모지 붙이기 (사진 배경일 땐 조금 작게)
+    main_emoji = t.get("emojis", ["📌"])[0]
+    paste_emoji(img, main_emoji, W//2, 300, 150 if photo else 190)
+
+    # 3단계: 불투명 요소 직접 그리기
+    d = ImageDraw.Draw(img, "RGBA")
+    cat = sc.get("meta", {}).get("category", "")
+    lines = sc.get("cover", {}).get("lines", [sc.get("title", "")])
+
+    # 브랜드 워드마크 — 캐러셀 첫 장마다 계정 이름을 각인시킨다
+    if BRAND:
+        bf = font(FONT_BLACK, 38)
+        bb = d.textbbox((0,0), BRAND, font=bf)
+        bx = (W-(bb[2]-bb[0]))//2
+        if photo:
+            d.text((bx, 62), BRAND, font=bf, fill=t["accent"],
+                   stroke_width=4, stroke_fill=(0, 0, 0))
+        else:
+            d.text((bx+2, 65), BRAND, font=bf, fill=(0, 0, 0, 80))
+            d.text((bx, 62), BRAND, font=bf, fill=t["accent"])
+
+    # 상단 카테고리 뱃지
+    if cat:
+        tf = font(FONT_BOLD, 30)
+        bb = d.textbbox((0,0), cat, font=tf)
+        tw, th = bb[2]-bb[0]+56, bb[3]-bb[1]+30
+        bx = (W-tw)//2
+        by = 136
+        rounded_rect(d, (bx, by, bx+tw, by+th), 25, t["tag_bg"])
+        d.text((bx+28, by+9), cat, font=tf, fill=t["tag_fg"])
+
+    # 메인 타이틀 — 매우 큰 텍스트
+    # 사진을 밝게 두기 위해, 전체 농도를 올리는 대신 글자 뒤에만
+    # 부드러운 그림자를 깔아 어떤 배경에서도 읽히게 한다.
+    tf_big = font(FONT_BLACK, 94)
+    title_y = 480
+    placed = []
+    for line in lines:
+        clean = line.replace("<r>","").replace("</r>","").replace("<y>","").replace("</y>","")
+        is_acc = "<r>" in line or "<y>" in line
+        bb = d.textbbox((0,0), clean, font=tf_big)
+        placed.append(((W-(bb[2]-bb[0]))//2, title_y, clean, is_acc))
+        title_y += 116
+
+    if photo:
+        sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        sd = ImageDraw.Draw(sh)
+        for x, yy, clean, _ in placed:
+            sd.text((x, yy + 6), clean, font=tf_big, fill=(0, 0, 0, 190))
+        sh = sh.filter(ImageFilter.GaussianBlur(14))
+        img = composite(img, sh)
+        d = ImageDraw.Draw(img, "RGBA")
+
+    # 외곽선: 사진이 밝거나 포인트 컬러와 색이 겹쳐도 글자가 묻히지 않게 한다
+    stroke = dict(stroke_width=5, stroke_fill=(0, 0, 0)) if photo else {}
+    for x, yy, clean, is_acc in placed:
+        d.text((x, yy), clean, font=tf_big,
+               fill=t["accent"] if is_acc else WHITE, **stroke)
+    y = title_y
+
+    # 부제
+    sub = sc.get("title", "")
+    if sub:
+        sf = font(FONT_MED, 38)
+        y += 26
+        bb = d.textbbox((0,0), sub, font=sf)
+        d.text(((W-(bb[2]-bb[0]))//2, y), sub, font=sf, fill=(255, 255, 255, 215))
+
+    # 하단 구분선
+    d.line([(W*0.25, H-180), (W*0.75, H-180)], fill=(255, 255, 255, 90), width=2)
+
+    # 출처 (+ 사진 크레딧)
+    attr = sc.get("meta", {}).get("attribution", "")
+    if attr:
+        af = font(FONT_REG, 22)
+        txt = f"출처: {attr}"
+        bb = d.textbbox((0,0), txt, font=af)
+        d.text(((W-(bb[2]-bb[0]))//2, H-145), txt, font=af, fill=(255, 255, 255, 150))
+    if credit:
+        cf = font(FONT_REG, 16)
+        bb = d.textbbox((0,0), credit, font=cf)
+        d.text(((W-(bb[2]-bb[0]))//2, H-118), credit, font=cf, fill=(255, 255, 255, 110))
+
+    # 스와이프 안내 (이모지 + 텍스트 분리 렌더)
+    if not REELS:
+        sf = font(FONT_BOLD, 28)
+        swipe = UI["swipe"]
+        bb = d.textbbox((0,0), swipe, font=sf)
+        sx = (W - (bb[2]-bb[0]) - 46)//2
+        paste_emoji(img, "👉", sx + 17, H-82, 34)
+        d = ImageDraw.Draw(img, "RGBA")
+        d.text((sx + 46, H-95), swipe, font=sf, fill=t["accent"])
+
+    dots(d, 1, len(sc.get("scenes", []))+2, t)
+    return img
+
+# ── 본문 슬라이드 ────────────────
+def make_scene(sc, idx, total, t, photo=None, credit=None):
+    scene = sc["scenes"][idx]
+
+    if photo:
+        # 본문 글자는 아래 카드 안에 들어가므로 사진 자체는 어둡게 할 이유가 없다.
+        # 블러를 빼고 농도를 낮춰 사진이 선명하게 보이게 한다.
+        img = photo_bg(photo, t, darken_top=30, darken_bottom=150, blur=0)
+    else:
+        # 슬라이드마다 색조를 살짝 변형
+        r = random.Random(idx * 31 + 7)
+        shift = r.randint(-20, 20)
+        c1 = tuple(max(0, min(255, v + shift)) for v in t["grad1"])
+        c2 = tuple(max(0, min(255, v - shift)) for v in t["grad2"])
+        img = gradient_bg(c1, c2)
+
+    # 본문 준비 (카드 높이 계산용)
+    body = scene.get("body", "")
+    if not body:
+        narration = scene.get("narration", "")
+        body = (narration + " " if narration else "") + " ".join(scene.get("details", []))
+
+    measure = ImageDraw.Draw(img)
+    # 한눈에 들어오게: 본문을 키우고 핵심 수치는 포인트 컬러로 분리
+    body_f = font(FONT_MED, 46)
+    subtitle = scene.get("subtitle", "")
+    tag_f = font(FONT_BOLD, 42)
+
+    card_margin = 50
+    body_max_w = W - card_margin*2 - 90
+    body_lh = 70
+    body_lines = wrap_marked(measure, parse_marked(body), body_f, body_max_w)
+
+    tag_bb = measure.textbbox((0,0), subtitle, font=tag_f)
+    tag_w = tag_bb[2]-tag_bb[0] + 56
+    tag_h = tag_bb[3]-tag_bb[1] + 30
+
+    # 카드 높이를 내용에 맞춰 계산 → 하단은 항상 H-80에 고정, 상단을 역산
+    content_h = 40 + tag_h + 38 + len(body_lines)*body_lh + 20 + 46
+    card_bottom = H - 80
+    card_y = max(400, card_bottom - content_h)
+
+    # 1단계: 반투명 요소(장식 + 숫자 + 카드)를 한 레이어에 그려 1회 합성
+    layer, ld = overlay_layer()
+    if not photo:
+        draw_glow_circles(ld, seed=idx*17 + 3)
+
+    num = f"{idx+1:02d}"
+    nf = font(FONT_BLACK, 300)
+    nb = ld.textbbox((0,0), num, font=nf)
+    ld.text((W - (nb[2]-nb[0]) - 40, 10), num, font=nf,
+            fill=(255, 255, 255, 60 if photo else 46))
+
+    # 배경을 밝게 둔 만큼 카드는 더 진하게 깔아 본문 대비를 지킨다
+    card_alpha = 195 if photo else 115
+    rounded_rect(ld, (card_margin, card_y, W-card_margin, card_bottom), 32, (0, 0, 0, card_alpha))
+    img = composite(img, layer)
+
+    # 2단계: 상단 큰 이모지
+    emoji = scene.get("emoji", "")
+    if emoji:
+        paste_emoji(img, emoji, W//2 - 70, card_y//2 + 30, 190 if photo else 240)
+
+    # 3단계: 불투명 요소
+    d = ImageDraw.Draw(img, "RGBA")
+
+    tag_x = card_margin + 45
+    tag_y = card_y + 40
+    rounded_rect(d, (tag_x, tag_y, tag_x+tag_w, tag_y+tag_h), 16, t["tag_bg"])
+    d.text((tag_x+28, tag_y+9), subtitle, font=tag_f, fill=t["tag_fg"])
+
+    body_x = card_margin + 45
+    body_y = tag_y + tag_h + 38
+    for line in body_lines:
+        if body_y > card_bottom - 70:
+            break
+        draw_marked_line(d, line, body_x, body_y, body_f, WHITE, t["accent"])
+        body_y += body_lh
+
+    # 출처 (+ 사진 크레딧)
+    attr = sc.get("meta", {}).get("attribution", "")
+    if attr:
+        af = font(FONT_REG, 20)
+        d.text((card_margin+45, card_bottom-38), f"출처: {attr}", font=af, fill=(255, 255, 255, 135))
+    if credit:
+        cf = font(FONT_REG, 15)
+        bb = d.textbbox((0,0), credit, font=cf)
+        d.text((W - card_margin - 45 - (bb[2]-bb[0]), card_bottom-34), credit,
+               font=cf, fill=(255, 255, 255, 100))
+
+    dots(d, idx+2, total, t)
+    return img
+
+# ── 아웃트로 ────────────────────
+def make_outro(sc, t, total):
+    """ZIP 7장과 같은 고정 쫌봐봐 마무리."""
+    approved = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets",
+                            "cardnews_reference", "jjombwabwa-cardnews-7-v1",
+                            "07_고정마무리.png")
+    if os.path.isfile(approved):
+        ref = Image.open(approved).convert("RGB")
+        return ref if ref.size == (W, H) else ref.resize((W, H), Image.LANCZOS)
+    img = Image.new("RGB", (W, H), MAG_NAVY)
+    d = ImageDraw.Draw(img, "RGBA")
+
+    # 고정 남색 배경 장식
+    for x in range(70, W-50, 22):
+        for y in range(95, H-70, 22):
+            if ((x//22)*7 + (y//22)*11) % 5 == 0:
+                d.ellipse((x, y, x+5, y+5), fill=(20,78,145,125))
+    d.polygon([(0,0),(150,0),(0,170)], fill=(12,57,118))
+    d.line((0,188,180,0), fill=(255,210,0), width=7)
+    d.polygon([(W,H),(W-165,H),(W,H-180)], fill=(12,57,118))
+    d.line((W-195,H,W,H-205), fill=(255,210,0), width=7)
+    d.line((240,72,W-125,72), fill=(255,210,0), width=4)
+    d.line((85,H-75,W-220,H-75), fill=(255,210,0), width=4)
+
+    # 브랜드명
+    brand_f = font(FONT_BLACK, 126)
+    bw = d.textlength(BRAND, font=brand_f)
+    bx = (W-bw)//2
+    split = max(1, len(BRAND)//2)
+    left, right = BRAND[:split], BRAND[split:]
+    d.text((bx, 382), left, font=brand_f, fill=WHITE)
+    d.text((bx+d.textlength(left,font=brand_f), 382), right, font=brand_f, fill=(255,215,0))
+
+    hf = font(FONT_BOLD, 58)
+    hb = d.textbbox((0,0), HANDLE, font=hf)
+    d.text(((W-(hb[2]-hb[0]))//2, 625), HANDLE, font=hf, fill=WHITE)
+
+    rounded_rect(d, (58, 755, W-58, 908), 72, (255,215,0))
+    cf = font(FONT_BLACK, 52)
+    cta = "구독·좋아요 부탁드립니데이"
+    cb = d.textbbox((0,0), cta, font=cf)
+    d.text(((W-(cb[2]-cb[0]))//2, 793), cta, font=cf, fill=MAG_NAVY)
+
+    sf = font(FONT_BLACK, 44)
+    msg = "다음 소식도 빠르게 전해드릴게예"
+    sb = d.textbbox((0,0), msg, font=sf)
+    d.text(((W-(sb[2]-sb[0]))//2, 975), msg, font=sf, fill=WHITE)
+    return img
+
+# ── 메인 ────────────────────────
+def generate(script_path, out_dir, photo_dir=None, layout="magazine"):
+    # 카드뉴스는 승인된 7장 양식을 고정한다. 실행마다 바뀌는 것은
+    # 사진과 대본뿐이며, classic 등 다른 레이아웃은 릴스 재료에만 허용한다.
+    if not REELS:
+        layout = "magazine"
+        print(f"고정 카드뉴스 템플릿: {CARD_TEMPLATE_ID}")
+    with open(script_path, encoding="utf-8") as f:
+        sc = json.load(f)
+    os.makedirs(out_dir, exist_ok=True)
+    cover_fn = make_cover_mag if layout == "magazine" else make_cover
+    scene_fn = make_scene_mag if layout == "magazine" else make_scene
+    cat = sc.get("meta", {}).get("category", "")
+    t = get_t(cat)
+    scene_count = len(sc.get("scenes", []))
+    if not REELS and scene_count != 5:
+        raise SystemExit(f"카드뉴스는 표지 1 + 본문 5 + 고정 마무리 1 = 7장이어야 합니다 (현재 본문 {scene_count}장)")
+    total = scene_count + 2
+    pages = []
+
+    photos = load_photos(photo_dir)
+    credits = load_credits(photo_dir)
+    if not REELS:
+        required = ["cover"] + [f"scene{i}" for i in range(1, 6)]
+        missing = [slot for slot in required if slot not in photos]
+        if missing:
+            raise SystemExit("카드뉴스 사진 누락: " + ", ".join(missing))
+        real_paths = [os.path.realpath(photos[slot]) for slot in required]
+        if len(set(real_paths)) != len(real_paths):
+            raise SystemExit("카드뉴스에 같은 사진이 중복되었습니다 — 1~6장은 서로 다른 사진이어야 합니다")
+    if photos:
+        print(f"  사진 {len(photos)}장 적용: {', '.join(sorted(photos))}")
+    elif photo_dir:
+        print("  사진 없음 — 그래디언트 배경으로 생성")
+
+    p = os.path.join(out_dir, "01_cover.png")
+    cover_fn(sc, t, photos.get("cover"), credits.get("cover")).save(p, quality=95)
+    pages.append(p)
+
+    for i in range(len(sc.get("scenes", []))):
+        slot = f"scene{i+1}"
+        p = os.path.join(out_dir, f"{i+2:02d}_scene.png")
+        scene_fn(sc, i, total, t, photos.get(slot), credits.get(slot)).save(p, quality=95)
+        pages.append(p)
+
+    p = os.path.join(out_dir, f"{total:02d}_outro.png")
+    make_outro(sc, t, total).save(p, quality=95)
+    pages.append(p)
+
+    print(f"카드뉴스 {len(pages)}장 생성 → {out_dir}")
+    return pages
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser()
+    ap.add_argument("script")
+    ap.add_argument("-o", "--out", default="out/cards")
+    ap.add_argument("-p", "--photos", default=None,
+                    help="photos.json이 있는 사진 디렉터리 (없으면 그래디언트 배경)")
+    ap.add_argument("--reels", action="store_true",
+                    help="릴스용. 스와이프 안내와 페이지 점을 빼고 그린다")
+    ap.add_argument("--layout", choices=["magazine", "classic"], default="magazine",
+                    help="magazine=사진 밴드+흰 바탕 검은 글씨 (기본), classic=기존 어두운 오버레이")
+    a = ap.parse_args()
+    REELS = a.reels
+    generate(a.script, a.out, a.photos, a.layout)
