@@ -45,7 +45,7 @@ SCRIPT_DIR = os.path.join(ROOT, "out", "scripts")
 FUN_TOPICS = os.path.join(ROOT, "fun_topics.yml")
 TIPS_TOPICS = os.path.join(ROOT, "tips_topics.yml")
 
-ALLOWED_CATEGORIES = {"연예", "국내 정치", "해외 정치", "경제", "해외연예"}
+ALLOWED_CATEGORIES = {"연예", "국내 정치", "해외 정치", "해외연예"}
 BLOCKED_KEYWORDS = {"생활꿀팁", "생활·꿀팁", "꿀팁", "아파트", "부동산", "실거래", "분양", "청약", "전세", "월세", "주택", "평당", "단지", "집값", "주거"}
 
 # ── 커버 제약 ──────────────────────────────────────────────
