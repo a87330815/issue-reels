@@ -1,77 +1,87 @@
-run 42438009784 2026-11-08T02:20:54Z
+run 42438571772 2026-11-08T02:28:35Z
 
-=== 20261108_03_숫자훅 ===
-  [cover] '오은영 리포트-결혼지옥, SOS 부부의 엄마 트라우마' → "MBC broadcast studio interview setting"
-    [unsplash] 9건 후보 (부적합 3건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 3/9건
-    ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '4명의 엄마에게 미움받은 과거' → "korea television drama therapy counseling scene"
+=== 20261108_02_숫자훅 ===
+  [cover] '마이클 잭슨 유산 분쟁' → "Michael Jackson memorial statue fans"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 4/12건
+    Unsplash 적합도 통과 5/12건
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] '마이클 잭슨 딸의 유산 청원' → "celebrity estate inheritance legal documents"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 2/12건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '9개월간 이어진 극심한 가정 문제' → "couple conflict serious conversation close-up"
-    [unsplash] 10건 후보 (부적합 2건 제외)
+  [scene2] '8000억 원 규모의 신탁 이동 요청' → "lawyer briefcase courtroom legal papers"
+    [unsplash] 1건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 0/10건
-    ✗ 적합한 후보 없음 — 사진 없이 진행
-    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
+    ↻ 재시도: "lawyer briefcase courtroom legal"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "lawyer briefcase courtroom"
+    [unsplash] 1건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "lawyer briefcase"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 5/14건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '개인 자산 관리 목적의 신탁 이전' → "bank trust fund wealth management documents"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 6/12건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '4명의 모성, 마카 냉담했다' → "family tree generations mothers childhood memory"
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '연간 수백억 원의 지속적 수익' → "royalty streaming music revenue chart"
     [unsplash] 11건 후보 (부적합 1건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 8/11건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '어린 시절 상처의 악순환' → "psychologist analysis counseling session Korea"
-    [unsplash] 11건 후보
+    Unsplash 적합도 통과 2/11건
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '유산 분쟁의 향후 전개 주목' → "courtroom judge gavel legal decision"
+    [unsplash] 1건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 1/11건
-    ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '용서와 이해로 가는 길' → "couple holding hands hope reconciliation recovery"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 12/12건
+    ↻ 재시도: "courtroom judge gavel legal"
+    [unsplash] 3건 후보
+    [openverse] 4건 후보
+    [wikimedia] 1건 후보
+    적합도 통과 0/5건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 1/4건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261108_03_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261108_02_숫자훅/photos.json
 
 총 6/6장 수집
+고정 카드뉴스 템플릿: jjombwabwa-cardnews-7-v1
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261108_03_숫자훅
-대본: out/scripts/20261108_03_숫자훅.json
-카드: out/cards_20261108_03_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261108_02_숫자훅
+대본: out/scripts/20261108_02_숫자훅.json
+카드: out/cards_20261108_02_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 4.1초  오은영 리포트-결혼지옥, SOS 부부의 엄마 트라우...
-  TTS [2/6] [EL·발랄녀] 9.9초  이거 모르고 지나가면 손해다. 오은영 리포트-결혼지...
-  TTS [3/6] [EL·발랄녀] 8.1초  지난주 방송에서는 남편이 아이를 구해 달라고 울부짖...
-  TTS [4/6] [EL·발랄녀] 10.4초  아내가 고백한다아이가. 엄마만 4명이었데이. 친엄마...
-  TTS [5/6] [EL·발랄녀] 9.0초  심리 전문가 오은영이 진단한다아이가. 이건 단순 성...
-  TTS [6/6] [EL·발랄녀] 9.8초  시방 이 부부가 우째 될지는 서로를 얼마나 이해하고...
+  TTS [1/6] [EL·발랄녀] 1.4초  마이클 잭슨 유산 분쟁...
+  TTS [2/6] [EL·발랄녀] 7.0초  이거 모르고 지나가면 손해다. 팝의 황제 마이클 잭...
+  TTS [3/6] [EL·발랄녀] 7.3초  딸 패리스 잭슨이가. 무려 6억 달러. 한화로 80...
+  TTS [4/6] [EL·발랄녀] 7.5초  와 가악중에? 패리스는 자신의 상속분을 따로 관리하...
+  TTS [5/6] [EL·발랄녀] 6.3초  마이클 잭슨 유산은 지금도 매년 수백억 원씩 벌고 ...
+  TTS [6/6] [EL·발랄녀] 6.8초  패리스 잭슨. 자신의 몫을 제대로 챙기려는 거다. ...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.9초
-  세그먼트 [2/7] 10.7초
-  세그먼트 [3/7] 8.9초
-  세그먼트 [4/7] 11.2초
-  세그먼트 [5/7] 9.8초
-  세그먼트 [6/7] 10.6초
+  세그먼트 [1/7] 3.0초
+  세그먼트 [2/7] 7.8초
+  세그먼트 [3/7] 8.1초
+  세그먼트 [4/7] 8.3초
+  세그먼트 [5/7] 7.1초
+  세그먼트 [6/7] 7.6초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261108_03_숫자훅.mp4
-    길이: 55.3초  /  크기: 2.7MB
--rw-r--r-- 1 runner runner 2.7M Nov  8 02:22 out/reels/20261108_03_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261108_02_숫자훅.mp4
+    길이: 40.3초  /  크기: 1.8MB
+-rw-r--r-- 1 runner runner 1.9M Nov  8 02:29 out/reels/20261108_02_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=55.349274
+duration=40.330295
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -80,7 +90,7 @@ duration=55.349274
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-08):
-  20261108_03_숫자훅.mp4  2.7MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-08/20261108_03.mp4
+  20261108_02_숫자훅.mp4  1.8MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-08/20261108_02.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
