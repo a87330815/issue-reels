@@ -109,9 +109,11 @@ jobs:
           python -u queue_next.py >/dev/null 2>&1 && { echo "대기열 있음"; exit 0; }
           echo "대기열 0건 — 허용 분야 대본을 즉시 생성합니다"
           pip install -q -r requirements.txt
-          echo "공공데이터 수집 및 자동 대본 생성은 비활성화되어 있습니다"
-          echo "대기열에 기존 승인 대본이 없습니다"
-          exit 1
+          echo "공공데이터 없이 최근 24시간 이슈 RSS를 수집합니다"
+          pip install -q requests
+          python -u collect_issues.py --hours 24 --limit 5
+          python -u collect_trends.py
+          python -u scriptgen.py -n 5 --trends out/trends.json
 
       # 어느 대본을 올릴지 먼저 정한다. 자동 보충 뒤에도 비어 있으면 실패로
       # 표시해 조용히 성공 처리되는 일을 막는다.
