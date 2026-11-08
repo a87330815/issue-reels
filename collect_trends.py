@@ -244,7 +244,7 @@ def main():
     filtered = [item for item in filtered if item.get("category") in allowed]
     seen = load_seen_trends()
     new_items = [item for item in filtered if item["key"] not in seen]
-    new_items.sort(key=lambda item: (item.get("source_type") != "rss_issue", item.get("category", ""), item.get("keyword", "")))
+    new_items.sort(key=lambda item: (0 if item.get("source_type") == "google_trends" and item.get("news_title") else 1, 0 if item.get("source_type") == "rss_issue" else 1, item.get("category", ""), item.get("keyword", "")))
 
     if args.list:
         print(f"\n전체 {len(raw)}건 → 중복제거 {len(deduped)}건 → 필터통과 {len(filtered)}건 → 신규 {len(new_items)}건 (제외 {excluded}건)")
