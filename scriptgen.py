@@ -152,12 +152,8 @@ def analyze_price(items):
 
 
 def extract_angles(items):
-    """모든 소스에서 스토리 앵글을 모은다."""
-    angles = []
-    angles.extend(analyze_apt_trade(items))
-    angles.extend(analyze_price(items))
-    # 소스 추가 시 여기에 analyze_xxx 추가
-    return angles
+    """RSS 이슈만 사용한다. 레거시 데이터 분석기는 호출하지 않는다."""
+    return []
 
 
 def load_trends(path=None):
@@ -189,7 +185,6 @@ def trends_to_angles(trend_items):
         # 카테고리별 포맷 매핑
         fmt_map = {
             "생활·지원금·제도": "체크리스트",
-            "경제·부동산": "숫자훅",
             "놀라운 사건·화제": "오해정정",
             "당일 화제 이슈": "숫자훅",
         }
