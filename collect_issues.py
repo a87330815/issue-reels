@@ -16,7 +16,7 @@ FEEDS = {
         ("AP", "https://apnews.com/rss"),
         ("BBC", "https://feeds.bbci.co.uk/news/world/rss.xml"),
     ],
-    "국내 연예": [
+    "연예": [
         ("연예뉴스", "https://www.sportsseoul.com/rss/entertainment"),
         ("방송뉴스", "https://www.tvreport.co.kr/feed"),
     ],
