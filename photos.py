@@ -29,6 +29,8 @@ CARD_W, CARD_H = 1080, 1350
 # ── 한국어 → 영문 검색어 매핑 ─────────────────
 # 소제목/제목에 아래 키가 포함되면 해당 영문 쿼리를 사용한다. 긴 키부터 매칭.
 KEYWORD_MAP = {
+    "마이클 잭슨": "Michael Jackson official portrait concert performance Neverland estate",
+    "마이클잭슨": "Michael Jackson official portrait concert performance Neverland estate",
     # 한국 경제 / 기준금리 — 승인된 7장 기준본의 장면 역할에 맞춘다.
     "기준금리": "Bank of Korea Seoul monetary policy interest rate",
     "금리 동결": "Bank of Korea monetary policy meeting Seoul",
