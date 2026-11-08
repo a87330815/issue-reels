@@ -130,6 +130,10 @@ ECONOMY_REQUIRED = re.compile(
 def build_query(text, category=""):
     """소제목/제목에서 영문 검색어를 뽑는다."""
     t = text or ""
+    if "마이클 잭슨" in t or "마이클잭슨" in t:
+        if "딸" in t or "daughter" in t:
+            return "Michael Jackson daughter Paris Jackson portrait family estate"
+        return "Michael Jackson official portrait concert performance Neverland estate"
     # 긴 키워드 우선 매칭 (부분 문자열 충돌 방지)
     for k in sorted(KEYWORD_MAP, key=len, reverse=True):
         if k in t:
