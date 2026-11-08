@@ -62,6 +62,32 @@ def read_feed(category, source, url, cutoff):
                     "source":source,"source_type":"rss"})
     return out
 
+
+def read_top_news(cutoff):
+    """Google News Korea의 실시간 주요뉴스를 추가로 수집한다."""
+    url = "https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko"
+    try:
+        r = requests.get(url, timeout=20, headers={"User-Agent":"Mozilla/5.0 issue-reels/2.0"})
+        r.raise_for_status(); root = ET.fromstring(r.content)
+    except Exception as e:
+        print(f"[경고] Google News 주요뉴스: {e}"); return []
+    out=[]
+    for item in root.findall(".//item"):
+        title=text(item.findtext("title")); link=text(item.findtext("link"))
+        date=parse_date(item.findtext("pubDate"))
+        if not title or not link or not date or date < cutoff: continue
+        # 주제 키워드로만 분야를 분류하고 나머지는 화제 이슈로 보낸다.
+        if re.search(r"대통령|국회|정당|선거|후보|의원|탄핵", title): cat="국내 정치"
+        elif re.search(r"트럼프|미국|중국|러시아|우크라이나|이스라엘|백악관|유럽", title): cat="해외 정치"
+        elif re.search(r"배우|가수|아이돌|드라마|영화|방송|열애|컴백|콘서트|연예", title): cat="연예"
+        else: cat="해외 연예" if re.search(r"할리우드|그래미|빌보드|넷플릭스|디즈니", title) else "연예"
+        source = (item.findtext("source") or "Google News").strip()
+        out.append({"title":title,"summary":text(item.findtext("description"))[:1000],"url":link,
+                    "published_at":date.isoformat(),"category":cat,"source":source,
+                    "source_type":"google_news_top"})
+    print(f"Google News 실시간 주요뉴스: {len(out)}건")
+    return out
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--hours",type=int,default=24)
@@ -69,6 +95,7 @@ def main():
     args=ap.parse_args()
     cutoff=datetime.now(timezone.utc)-timedelta(hours=args.hours)
     all_items=[]
+    all_items.extend(read_top_news(cutoff))
     for cat, feeds in FEEDS.items():
         for source,url in feeds:
             all_items.extend(read_feed(cat,source,url,cutoff))
