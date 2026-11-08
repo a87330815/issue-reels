@@ -191,6 +191,23 @@ def main():
     raw = []
     raw.extend(fetch_google_trends_kr())
     raw.extend(fetch_naver_datalab())
+    # 최근 24시간 RSS 이슈를 트렌드 후보에 합친다.
+    collected_path = os.path.join(OUT_DIR, "collected.json")
+    if os.path.exists(collected_path):
+        try:
+            with open(collected_path, encoding="utf-8") as f:
+                for it in json.load(f).get("items", []):
+                    raw.append({
+                        "keyword": it.get("title", ""),
+                        "traffic": "",
+                        "news_title": it.get("title", ""),
+                        "snippet": it.get("summary", ""),
+                        "source_type": "rss_issue",
+                        "category": it.get("category", "당일 화제 이슈"),
+                        "url": it.get("url", ""),
+                    })
+        except Exception as e:
+            print(f"  [경고] RSS 후보 병합 실패: {e}")
 
     if not raw:
         print("\n[경고] 트렌드 수집 결과 0건")
@@ -217,7 +234,7 @@ def main():
 
     # 4. 카테고리 분류
     for item in filtered:
-        item["category"] = classify_category(
+        item["category"] = item.get("category") or classify_category(
             item["keyword"], item.get("snippet", "")
         )
         item["key"] = trend_key(item["keyword"])
