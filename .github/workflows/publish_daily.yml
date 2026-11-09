@@ -206,8 +206,8 @@ jobs:
         run: |
           set -o pipefail
           MODE="--reels"
-          LAYOUT="magazine"
-          # 릴스는 황유민 릴스 게시 당시의 magazine 레이아웃만 사용한다. 카드뉴스로 게시하지 않는다.
+          LAYOUT="classic"
+          # 릴스는 황유민 릴스 게시 당시의 classic 레이아웃만 사용한다. 카드뉴스로 게시하지 않는다.
           python -u cardnews.py "out/scripts/${STEM}.json" \
             -o "out/cards_${STEM}" -p "out/photos/${STEM}" --layout "$LAYOUT" $MODE 2>&1 \
             | tee -a out/reels/render.log
