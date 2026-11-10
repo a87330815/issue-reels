@@ -1,67 +1,81 @@
-run 42756631839 2026-11-10T04:35:55Z
+run 42797409224 2026-11-10T10:22:02Z
 
-=== 20261110_04_숫자훅 ===
-  [cover] '남궁민♥진아름, 출산 3개월 만의 놀라운 변화' → "mother postpartum recovery happy birthday celebration"
+=== 20261110_01_숫자훅 ===
+  [cover] 'ENA 드라마 연애박사, 종영 앞두고 자체 최고 시청률 경신' → "Korean drama emotional scene actors farewell"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 0/12건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 6/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '남궁민♥진아름, 출산 3개월 근황' → "korean actress model postpartum period recovery"
-    [unsplash] 11건 후보 (부적합 1건 제외)
+  [scene1] '드라마 연애박사 자체 최고 경신' → "Korean television drama broadcast set studio"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 7/12건
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '11회 2.9% 역대 최고 시청률' → "Korea television ratings statistics chart"
+    [unsplash] 2건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 1/11건
-    ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '출산 후 첫 생일 공개' → "woman birthday cake celebration happy moment"
+    ↻ 재시도: "Korea television ratings statistics"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 12/12건
+    Unsplash 적합도 통과 8/14건
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '"애 엄마 맞아?"' → "postpartum mother fitness recovery body transformation"
+  [scene3] '감정의 절정, 시청자 공감대 형성' → "Korean actor emotional crying scene drama"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 3/12건
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '빠른 일상 복귀' → "mother with newborn baby family happiness"
+  [scene4] '막바로 반전이 시청자 몰려' → "Korean drama finale ending credits"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 11/12건
+    Unsplash 적합도 통과 0/12건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 6/12건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '새로운 가족의 시작' → "korean celebrity couple family newborn baby joy"
+  [scene5] '최종회 시청률 경쟁 예상' → "Korean drama television broadcast finale episode"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 12/12건
+    Unsplash 적합도 통과 0/12건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 6/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261110_04_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261110_01_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261110_04_숫자훅
-대본: out/scripts/20261110_04_숫자훅.json
-카드: out/cards_20261110_04_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261110_01_숫자훅
+대본: out/scripts/20261110_01_숫자훅.json
+카드: out/cards_20261110_01_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 2.9초  남궁민♥진아름, 출산 3개월 만의 놀라운 변화...
-  TTS [2/6] [EL·발랄녀] 8.1초  이거 모르고 지나가모 손해라아이가. 배우 남궁민의 ...
-  TTS [3/6] [EL·발랄녀] 7.4초  지난 9일 진아름이 자신의 계정을 통해 생일을 맞아...
-  TTS [4/6] [EL·발랄녀] 8.5초  공개된 사진에서 진아름의 모습은 수시껀 많은 사람들...
-  TTS [5/6] [EL·발랄녀] 7.9초  모델 출신답게 관리하고 있는 모습을 보여줬는데, 얄...
-  TTS [6/6] [EL·발랄녀] 8.0초  남궁민과 진아름 부부는 인자 세 식구가 되어 새로운...
+  TTS [1/6] [EL·발랄녀] 3.9초  ENA 드라마 연애박사, 종영 앞두고 자체 최고 시...
+  TTS [2/6] [EL·발랄녀] 7.1초  이거 모르고 지나가모 손해라아이가. ENA 월화드라...
+  TTS [3/6] [EL·발랄녀] 7.9초  지난 9일에 방송된 11회가 닐슨코리아 기준 2.9...
+  TTS [4/6] [EL·발랄녀] 8.4초  이별의 아픔을 견디던 주인공이 극적인 순간을 맞이했...
+  TTS [5/6] [EL·발랄녀] 6.2초  종영을 1회 남긴 이 시점에서 최고 시청률을 기록한...
+  TTS [6/6] [EL·발랄녀] 7.3초  다음 주 종영회가 이 성과를 이어갈 수 있을지 봐야...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.7초
-  세그먼트 [2/7] 8.9초
-  세그먼트 [3/7] 8.2초
-  세그먼트 [4/7] 9.3초
-  세그먼트 [5/7] 8.7초
-  세그먼트 [6/7] 8.8초
+  세그먼트 [1/7] 4.7초
+  세그먼트 [2/7] 7.9초
+  세그먼트 [3/7] 8.7초
+  세그먼트 [4/7] 9.2초
+  세그먼트 [5/7] 7.0초
+  세그먼트 [6/7] 8.1초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261110_04_숫자훅.mp4
-    길이: 46.9초  /  크기: 2.6MB
--rw-r--r-- 1 runner runner 2.6M Nov 10 04:37 out/reels/20261110_04_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261110_01_숫자훅.mp4
+    길이: 44.9초  /  크기: 2.7MB
+-rw-r--r-- 1 runner runner 2.7M Nov 10 10:23 out/reels/20261110_01_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=46.854308
+duration=44.887279
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -70,7 +84,7 @@ duration=46.854308
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-10):
-  20261110_04_숫자훅.mp4  2.6MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-10/20261110_04.mp4
+  20261110_01_숫자훅.mp4  2.7MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-10/20261110_01.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -81,13 +95,13 @@ duration=46.854308
 남은 발행 가능: 98건
 발행 대상: 1건
 
-── 1/1  20261110_04_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-10/20261110_04.mp4
-  캡션: 남궁민♥진아름, 출산 3개월 만의 놀라운 변화
-  컨테이너: 17976291386973700
+── 1/1  20261110_01_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-10/20261110_01.mp4
+  캡션: ENA 드라마 연애박사, 종영 앞두고 자체 최고 시청률 경신
+  컨테이너: 17976375992973700
       0초  IN_PROGRESS
-     84초  FINISHED
-  발행 완료: 18141309214651607
+     31초  FINISHED
+  발행 완료: 17929719060432408
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
