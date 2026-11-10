@@ -59,6 +59,16 @@ jobs:
           print('검증 통과:',len(kept),'건')
           if not kept: raise SystemExit('허용 분야·5장 본문·출처 조건을 충족한 대본이 없습니다')
           PY
+      - name: 사투리 변환 (dialect.py)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: |
+          for f in out/scripts/*.json; do
+            [ -f "$f" ] || continue
+            echo "변환: $(basename "$f")"
+            python dialect.py "$f"
+          done
       - name: 대본 커밋
         run: |
           git config user.name "github-actions[bot]"
