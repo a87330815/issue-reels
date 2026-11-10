@@ -201,6 +201,15 @@ VOCAB = {
     "쑤시다": "우리하다",
 }
 
+def _bnida(m):
+    """받침 ㅂ + "니다." → 받침 ㄴ + "다." (드립니다 → 드린다)"""
+    ch = m.group(1)
+    code = ord(ch) - 0xAC00
+    if 0 <= code < 11172 and code % 28 == 17:      # 종성이 ㅂ일 때만
+        return chr(0xAC00 + code - 17 + 4) + "다."  # ㅂ(17) → ㄴ(4)
+    return m.group(0)
+
+
 # ── 어미 규칙 ────────────────────────────────────────────────────────
 # 정규식 → 치환. 긴 것부터 적용해야 짧은 규칙이 먼저 먹지 않는다.
 ENDINGS = [
@@ -259,6 +268,11 @@ ENDINGS = [
     (r"하지 마십시오\.", "하지 마이소."),
     (r"하지 마세요\.", "하지 마이소."),
     (r"하지 마라\.", "하지 마래이."),
+    # 위 세 줄은 "하지 마~"만 받는다. "서두르지 마십시오"처럼 다른 용언이
+    # 오면 표준어로 남았다. 일반형을 뒤에 둬서 나머지를 받는다. (2026-11-10)
+    (r"지 마십시오\.", "지 마이소."),
+    (r"지 마세요\.", "지 마이소."),
+    (r"지 마라\.", "지 마래이."),
     (r"오세요\.", "오이소."),          # 경남 높임 명령은 ~이소
     (r"가세요\.", "가이소."),
     (r"하세요\.", "하이소."),
@@ -275,6 +289,10 @@ ENDINGS = [
     (r"한다\.", "한다 아이가."),
     (r"있다\.", "있데이."),
     (r"됐다\.", "됐데이."),
+    # "정리해드립니다 / 갑니다 / 옵니다"처럼 받침 ㅂ에 "니다"가 붙은 꼴이
+    # 위 규칙들에서 빠져 표준어로 남았다. ㅂ을 ㄴ으로 바꿔 반말로 푼다.
+    # 드립니다 → 드린다, 갑니다 → 간다. (2026-11-10 추가)
+    (r"([가-힣])니다\.", lambda m: _bnida(m)),
     # 이미 "~나? ~가? ~노? ~는교?"로 끝났으면 그대로 둔다. 안 그러면
     # "했는교?"가 "했는교노?"가 된다. ~노는 의문사가 있는 물음에만 쓴다.
     (r"(?<![나가노교까고예])\?$", "노?"),
@@ -382,20 +400,55 @@ DIALECT_SYSTEM = """너는 부산·경남 토박이다. 주어진 표준어 문�
 
 
 def _call_anthropic(api_key, prompt, model=None):
+    """사투리 변환을 LLM에 맡긴다.
+
+    2026-11-10 수정. 그 전까지 이 함수는 응답의 content[0]에서 곧바로
+    ["text"]를 꺼냈다. 그 자리에 text 블록이 아닌 것이 오면 KeyError가 나고,
+    convert()가 그걸 삼켜 "LLM 변환 실패 ('text')"만 찍고 규칙 변환으로
+    넘어갔다. 11월 9일 발행분까지 매 실행이 이 경로로 떨어져서
+    DIALECT_SYSTEM이 한 번도 쓰이지 않았다. 이제 text 블록을 찾아서 쓰고,
+    없으면 응답 본문을 그대로 로그에 남긴다. 기본 모델도 scriptgen.py가
+    실제로 쓰는 것과 같은 값으로 맞췄다.
+    """
     import requests as req
+    model_id = model or os.environ.get("LLM_MODEL", "") or "claude-haiku-4-5"
     resp = req.post(
         "https://api.anthropic.com/v1/messages",
         headers={"x-api-key": api_key,
                  "anthropic-version": "2023-06-01",
                  "content-type": "application/json"},
-        json={"model": model or os.environ.get("LLM_MODEL", "claude-haiku-5-5"),
+        json={"model": model_id,
               "max_tokens": 2048,
               "system": DIALECT_SYSTEM,
               "messages": [{"role": "user", "content": prompt}]},
         timeout=90,
     )
-    resp.raise_for_status()
-    return resp.json()["content"][0]["text"].strip()
+    if not resp.ok:
+        raise RuntimeError(f"{resp.status_code} {resp.reason}: {resp.text[:500]}")
+    body = resp.json()
+    for block in body.get("content", []):
+        if isinstance(block, dict) and block.get("type") == "text":
+            return block.get("text", "").strip()
+    raise RuntimeError(f"text 블록이 없다 (model={model_id}): "
+                       f"{json.dumps(body, ensure_ascii=False)[:500]}")
+
+
+def vocab_reference(limit=None):
+    """VOCAB을 LLM 프롬프트에 넣을 참고 목록으로 만든다.
+
+    2026-11-10 추가. 그 전까지 VOCAB은 rule_convert()에서만 쓰였다.
+    API 키가 있을 때는 LLM이 사전을 못 보니, 매일 사전에 넣은 어휘가
+    실제 대본에 반영되지 않았다. 사투리는 어미보다 어휘에서 드러나므로
+    사전을 프롬프트로 같이 넘긴다. 같은 사투리에 표준어가 여러 개
+    달려 있으면(매우·아주·엄청 → 억수로) 하나로 묶어 짧게 적는다.
+    """
+    merged = {}
+    for std, dia in VOCAB.items():
+        merged.setdefault(dia, []).append(std)
+    items = [f"{dia}({'·'.join(stds[:3])})" for dia, stds in merged.items()]
+    if limit:
+        items = items[:limit]
+    return ", ".join(items)
 
 
 def _extract_json(text):
@@ -533,7 +586,11 @@ def convert(script, api_key=None):
     targets = collect_targets(script)
 
     if api_key:
-        prompt = ("아래 JSON의 모든 텍스트를 경상도 사투리로 고쳐 써라.\n"
+        prompt = ("아래 JSON의 모든 텍스트를 부산·경남 사투리로 고쳐 써라.\n"
+                  "어미만 바꾸지 말고 어휘까지 바꿔라. 아래 사전을 참고해서,\n"
+                  "문맥에 맞는 말이 있으면 적극적으로 갈아 끼워라. 다만 사전에\n"
+                  "있다고 억지로 끼워 넣지는 마라.\n\n"
+                  "[부산·경남 어휘 사전]\n" + vocab_reference() + "\n\n"
                   "같은 구조의 JSON으로만 답해라.\n\n"
                   + json.dumps(targets, ensure_ascii=False, indent=2))
         try:
@@ -541,7 +598,11 @@ def convert(script, api_key=None):
             print("  ✓ LLM 사투리 변환 완료")
             return apply_result(script, converted)
         except Exception as e:
+            # 실패가 조용히 묻히면 사투리 없이 발행된다. 2026-11-09까지
+            # 그렇게 나갔으니, GitHub Actions 요약에 뜨도록 경고를 남긴다.
             print(f"  ✗ LLM 변환 실패 ({e}) → 규칙 변환으로 전환")
+            print("::warning::사투리 LLM 변환이 실패해 규칙 변환으로 대체됐습니다. "
+                  "어미 규칙과 어휘 사전이 거의 반영되지 않습니다.")
 
     print("  · 규칙 기반 변환 (LLM 없음 — 품질이 낮습니다)")
     cover = script.get("cover", {}).get("lines", [])
