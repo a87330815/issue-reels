@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T20:02:48.498514+00:00",
+  "updated_at": "2026-11-10T04:39:04.192854+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -266,6 +266,17 @@
       "media_id": "18123381115944207",
       "published_at": "2026-11-09T20:02:48.352389+00:00",
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-09/20261109_01.mp4",
+      "ig_id": "17841459210979722",
+      "category": "연예",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261110_04_숫자훅",
+      "media_id": "18141309214651607",
+      "published_at": "2026-11-10T04:39:04.056827+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-10/20261110_04.mp4",
       "ig_id": "17841459210979722",
       "category": "연예",
       "insights": {
