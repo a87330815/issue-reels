@@ -1,90 +1,90 @@
-run 42997578323 2026-11-11T09:45:19Z
+run 43067729723 2026-11-11T17:25:42Z
 
-=== 20261111_03_숫자훅 ===
-  [cover] '카일리 제너, 전 가사도우미에 4번째 고소' → "luxury mansion interior hallway"
+=== 20261111_02_숫자훅 ===
+  [cover] '손흥민의 리더십 노하우, 정우영이 공개한 아시안컵 대기 시간 관리법' → "Son Heung-min Asian Cup training field Korea"
+    [unsplash] 0건 후보
+    [openverse] 실패: 504 Server Error: Gateway Timeout for url: https://api.openverse.org/v1/images/?q=Son+Heung-min+Asian+Cup+training+field+Korea&license=cc0%2Cpdm%2Cby&page_size=12&mature=false
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Son Heung-min Asian Cup training field"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 10/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '카일리 제너, 법정 분쟁' → "young woman businessman professional portrait"
-    [unsplash] 7건 후보
+  [scene1] '손흥민 리더십 공개' → "Son Heung-min Korea football captain leadership"
+    [unsplash] 3건 후보 (부적합 1건 제외)
     [openverse] 0건 후보
-    [wikimedia] 1건 후보
-    적합도 통과 0/1건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 5/7건
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 3/3건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '전 직원들의 고소 잇따라' → "lawsuit court gavel legal dispute"
+  [scene2] '대기 시간 관리가 핵심' → "football team players waiting stadium preparation"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 6/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '심리 관리가 승패를 결정' → "Korean football players team discussion tactical meeting"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 8/12건
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '정우영이 증언한 리더십' → "Korean national football team locker room team spirit"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 3/12건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '부당 대우 주장' → "mansion closet storage room interior"
-    [unsplash] 6건 후보 (부적합 4건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 2/6건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '직원 대우 논란' → "employer employee workplace conflict discussion"
-    [unsplash] 8건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 0/8건
-    ✗ 적합한 후보 없음 — 사진 없이 진행
-    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 6/12건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '직장 문화의 투명성 필요' → "diversity workplace respect professional environment"
+  [scene5] '우승팀의 리더십 문화' → "Korea football captain armband locker room atmosphere"
     [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "diversity workplace respect professional"
+    ↻ 재시도: "Korea football captain armband locker room"
     [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    ↻ 재시도: "diversity workplace respect"
+    ↻ 재시도: "Korea football captain armband locker"
     [unsplash] 0건 후보
-    [openverse] 5건 후보
-    [wikimedia] 6건 후보
-    적합도 통과 0/11건 (Openverse/Wikimedia)
-    ✗ 적합한 후보 없음 — 사진 없이 진행
-    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 6/12건
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Korea football captain armband"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Korea football captain"
+    [unsplash] 2건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 7건 후보
+    적합도 통과 0/7건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 2/2건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261111_03_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261111_02_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261111_03_숫자훅
-대본: out/scripts/20261111_03_숫자훅.json
-카드: out/cards_20261111_03_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261111_02_숫자훅
+대본: out/scripts/20261111_02_숫자훅.json
+카드: out/cards_20261111_02_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 2.8초  카일리 제너, 전 가사도우미에 4번째 고소...
-  TTS [2/6] [EL·발랄녀] 7.1초  이거 모르고 지나가모 손해다. 티모시 샬라메 여자친...
-  TTS [3/6] [EL·발랄녀] 4.4초  전 가사도우미가 그걸 고소했데이. 이번이가 벌써 네...
-  TTS [4/6] [EL·발랄녀] 5.1초  고소 내용은 심각하데이. 옷장에 가두기, 조롱 따위...
-  TTS [5/6] [EL·발랄녀] 6.2초  부의 상징으로 보이는 셀럽도 직원과 맺는 관계에서는...
-  TTS [6/6] [EL·발랄녀] 8.7초  요즘 수시껀 계속되는 고소들은 직장 안에서 처우 문...
+  TTS [1/6] [EL·발랄녀] 4.2초  손흥민의 리더십 노하우, 정우영이 공개한 아시안컵 ...
+  TTS [2/6] [EL·발랄녀] 6.7초  이거 모르고 지나가모 손해라아이가. 손흥민이 리더십...
+  TTS [3/6] [EL·발랄녀] 7.0초  아시안컵이 연기되는 상황에서도 선수들 시간을 우째 ...
+  TTS [4/6] [EL·발랄녀] 10.2초  기냥 훈련만 하는 기 아니라, 선수들 심리 상태글고...
+  TTS [5/6] [EL·발랄녀] 8.0초  정우영이가 손흥민이 팀 분위기를 우째 유지하는지 직...
+  TTS [6/6] [EL·발랄녀] 7.5초  투명하고 일관된 리더십으로 선수들을 이끌어가는 손흥...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.6초
-  세그먼트 [2/7] 7.9초
-  세그먼트 [3/7] 5.2초
-  세그먼트 [4/7] 5.9초
-  세그먼트 [5/7] 7.0초
-  세그먼트 [6/7] 9.5초
+  세그먼트 [1/7] 5.0초
+  세그먼트 [2/7] 7.5초
+  세그먼트 [3/7] 7.8초
+  세그먼트 [4/7] 11.0초
+  세그먼트 [5/7] 8.8초
+  세그먼트 [6/7] 8.3초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261111_03_숫자훅.mp4
-    길이: 38.5초  /  크기: 2.4MB
--rw-r--r-- 1 runner runner 2.5M Nov 11 09:46 out/reels/20261111_03_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261111_02_숫자훅.mp4
+    길이: 47.6초  /  크기: 2.6MB
+-rw-r--r-- 1 runner runner 2.6M Nov 11 17:27 out/reels/20261111_02_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=38.459297
+duration=47.569252
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -93,7 +93,7 @@ duration=38.459297
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-11):
-  20261111_03_숫자훅.mp4  2.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-11/20261111_03.mp4
+  20261111_02_숫자훅.mp4  2.6MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-11/20261111_02.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -104,13 +104,13 @@ duration=38.459297
 남은 발행 가능: 98건
 발행 대상: 1건
 
-── 1/1  20261111_03_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-11/20261111_03.mp4
-  캡션: 카일리 제너, 전 가사도우미에 4번째 고소
-  컨테이너: 17976741086973700
+── 1/1  20261111_02_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-11/20261111_02.mp4
+  캡션: 손흥민의 리더십 노하우, 정우영이 공개한 아시안컵 대기 시간 관리법
+  컨테이너: 17976879506973700
       0초  IN_PROGRESS
      31초  FINISHED
-  발행 완료: 17971237007965854
+  발행 완료: 18141110173648535
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
