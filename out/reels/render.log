@@ -1,75 +1,72 @@
-run 43197056355 2026-11-12T10:06:02Z
+run 43272222083 2026-11-12T17:44:04Z
 
-=== 20261112_03_숫자훅 ===
-  [cover] '임윤아, 소시 멤버 향한 우정 공개 효리수 애정 고백' → "Girls Generation SNSD members stage performance"
+=== 20261112_02_숫자훅 ===
+  [cover] '현생모드퀸지현 이지현, 싱글맘으로 미용실 퇴사' → "single mother working stress tired daycare"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 9/12건
+    Unsplash 적합도 통과 4/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '임윤아 소시 멤버 애정 고백' → "Lim Yoona interview speaking"
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Lim Yoona interview"
+  [scene1] '싱글맘 유튜버 미용실 때려치아삐라' → "woman beauty salon cutting hair"
+    [unsplash] 8건 후보
+    [openverse] 실패: 504 Server Error: Gateway Timeout for url: https://api.openverse.org/v1/images/?q=woman+beauty+salon+cutting+hair&license=cc0%2Cpdm%2Cby&page_size=12&mature=false
+    [wikimedia] 2건 후보
+    적합도 통과 1/2건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 6/8건
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '얼라들 케어 현실적으로 안 돼' → "mother children daycare pickup school"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 5/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '일과 육아 양립 안 돼' → "working mother juggling balance schedule"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 0/12건
     ✗ 적합한 후보 없음 — 사진 없이 진행
     ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 6/12건
-    ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '요즘 즐겨 듣는 노래가 머냐는 질문' → "woman listening music headphones"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 12/12건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '효리수 노래만 계속 생각난다' → "Hyoyeon Yuri Sooyoung unit group"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 1/12건
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '데뷔 15년 후에도 변하지 않은 우정' → "female friendship long lasting bonds"
+  [scene4] '심리적 부담 억수로 심했던 날들' → "woman stressed overwhelmed emotional burnout"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 1/12건
+    Unsplash 적합도 통과 11/12건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '변하지 않는 소시만의 억수로 끈끈한 유대' → "close friends embracing together warmth"
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 실패: 504 Server Error: Gateway Timeout for url: https://api.openverse.org/v1/images/?q=close+friends+embracing+together+warmth&license=cc0%2Cpdm%2Cby&page_size=12&mature=false
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 3/11건
+  [scene5] '싱글맘 일과 양육의 현실' → "single parent family support community"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 5/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261112_03_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261112_02_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261112_03_숫자훅
-대본: out/scripts/20261112_03_숫자훅.json
-카드: out/cards_20261112_03_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261112_02_숫자훅
+대본: out/scripts/20261112_02_숫자훅.json
+카드: out/cards_20261112_02_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 3.6초  임윤아, 소시 멤버 향한 우정 공개 효리수 애정 고...
-  TTS [2/6] [EL·발랄녀] 6.8초  이거 모르고 지나가모 손해다. 임윤아가 요즘 인터뷰...
-  TTS [3/6] [EL·발랄녀] 5.0초  지난 10일 공개된 영상에서 임윤아는 요즘 자주 듣...
-  TTS [4/6] [EL·발랄녀] 8.5초  그럼 임윤아는 "효리수 노래만 자꾸 생각난다"고 답...
-  TTS [5/6] [EL·발랄녀] 5.5초  데뷔 15년이 지난 인자도 팀 멤버들의 음악이 임윤...
-  TTS [6/6] [EL·발랄녀] 6.1초  멤버들 사이의 이런 참말로 깊은 우정하고 애정이 소...
+  TTS [1/6] [EL·발랄녀] 3.6초  현생모드퀸지현 이지현, 싱글맘으로 미용실 퇴사...
+  TTS [2/6] [EL·발랄녀] 4.5초  이거 모르고 지나가모 손해인기라. 유튜버 이지현이 ...
+  TTS [3/6] [EL·발랄녀] 5.8초  현생모드퀸지현으로 알려진 그가 눈물을 흘리면서 밝힌...
+  TTS [4/6] [EL·발랄녀] 5.3초  싱글맘으로 얼라 둘을 키우면서 고정적인 미용실 일과...
+  TTS [5/6] [EL·발랄녀] 3.8초  "하늘이 무너질 기라고 느껴지는 날이 많았다"고 그...
+  TTS [6/6] [EL·발랄녀] 6.8초  마카 싱글맘들이 경제 활동과 육아 사이에서 애먹고 ...
 
 2) 영상 합성
   세그먼트 [1/7] 4.4초
-  세그먼트 [2/7] 7.6초
-  세그먼트 [3/7] 5.8초
-  세그먼트 [4/7] 9.3초
-  세그먼트 [5/7] 6.3초
-  세그먼트 [6/7] 6.9초
+  세그먼트 [2/7] 5.3초
+  세그먼트 [3/7] 6.6초
+  세그먼트 [4/7] 6.1초
+  세그먼트 [5/7] 4.6초
+  세그먼트 [6/7] 7.6초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261112_03_숫자훅.mp4
-    길이: 39.5초  /  크기: 2.2MB
--rw-r--r-- 1 runner runner 2.3M Nov 12 10:07 out/reels/20261112_03_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261112_02_숫자훅.mp4
+    길이: 33.9초  /  크기: 2.0MB
+-rw-r--r-- 1 runner runner 2.0M Nov 12 17:45 out/reels/20261112_02_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=39.508277
+duration=33.865261
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -78,7 +75,7 @@ duration=39.508277
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-12):
-  20261112_03_숫자훅.mp4  2.2MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-12/20261112_03.mp4
+  20261112_02_숫자훅.mp4  2.0MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-12/20261112_02.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -89,13 +86,13 @@ duration=39.508277
 남은 발행 가능: 98건
 발행 대상: 1건
 
-── 1/1  20261112_03_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-12/20261112_03.mp4
-  캡션: 임윤아, 소시 멤버 향한 우정 공개 효리수 애정 고백
-  컨테이너: 17977088420973700
+── 1/1  20261112_02_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-12/20261112_02.mp4
+  캡션: 현생모드퀸지현 이지현, 싱글맘으로 미용실 퇴사
+  컨테이너: 17977229903973700
       0초  IN_PROGRESS
-     52초  FINISHED
-  발행 완료: 17896300707615521
+     53초  FINISHED
+  발행 완료: 18114288359188119
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
