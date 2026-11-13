@@ -1,72 +1,94 @@
-run 43272222083 2026-11-12T17:44:04Z
+run 43358297811 2026-11-13T03:22:07Z
 
-=== 20261112_02_숫자훅 ===
-  [cover] '현생모드퀸지현 이지현, 싱글맘으로 미용실 퇴사' → "single mother working stress tired daycare"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 4/12건
+=== 20261113_04_숫자훅 ===
+  [cover] '유퀴즈 젠슨 황, 세 번째 불륜 스캔들 후 엔비디아 CEO 사임' → "Nvidia headquarters Silicon Valley office building"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Nvidia headquarters Silicon Valley office"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Nvidia headquarters Silicon Valley"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Nvidia headquarters Silicon"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Nvidia headquarters"
+    [unsplash] 1건 후보
+    [openverse] 4건 후보
+    [wikimedia] 3건 후보
+    적합도 통과 0/7건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 1/1건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '싱글맘 유튜버 미용실 때려치아삐라' → "woman beauty salon cutting hair"
-    [unsplash] 8건 후보
-    [openverse] 실패: 504 Server Error: Gateway Timeout for url: https://api.openverse.org/v1/images/?q=woman+beauty+salon+cutting+hair&license=cc0%2Cpdm%2Cby&page_size=12&mature=false
-    [wikimedia] 2건 후보
-    적합도 통과 1/2건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 6/8건
+  [scene1] '엔비디아 CEO 젠슨 황 사임' → "Jensen Huang conference presentation stage"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 7/12건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '얼라들 케어 현실적으로 안 돼' → "mother children daycare pickup school"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 5/12건
+  [scene2] '유퀴즈에서 보여준 애정' → "You Quiz on the Block tvN Korean TV"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "You Quiz on the Block tvN Korean"
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 7/11건
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '일과 육아 양립 안 돼' → "working mother juggling balance schedule"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 0/12건
-    ✗ 적합한 후보 없음 — 사진 없이 진행
-    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 6/12건
+  [scene3] '연이은 불륜 의혹 세 건' → "person reading news on mobile phone desk"
+    [unsplash] 9건 후보 (부적합 3건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 9/9건
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '심리적 부담 억수로 심했던 날들' → "woman stressed overwhelmed emotional burnout"
+  [scene4] 'AI 칩 기업 최고 자리 공석' → "artificial intelligence computer chips technology"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 11/12건
+    Unsplash 적합도 통과 8/12건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '싱글맘 일과 양육의 현실' → "single parent family support community"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 5/12건
+  [scene5] '이미지와 현실의 괴리' → "corporate leadership transition new management"
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 1/11건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261112_02_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261113_04_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261112_02_숫자훅
-대본: out/scripts/20261112_02_숫자훅.json
-카드: out/cards_20261112_02_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261113_04_숫자훅
+대본: out/scripts/20261113_04_숫자훅.json
+카드: out/cards_20261113_04_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 3.6초  현생모드퀸지현 이지현, 싱글맘으로 미용실 퇴사...
-  TTS [2/6] [EL·발랄녀] 4.5초  이거 모르고 지나가모 손해인기라. 유튜버 이지현이 ...
-  TTS [3/6] [EL·발랄녀] 5.8초  현생모드퀸지현으로 알려진 그가 눈물을 흘리면서 밝힌...
-  TTS [4/6] [EL·발랄녀] 5.3초  싱글맘으로 얼라 둘을 키우면서 고정적인 미용실 일과...
-  TTS [5/6] [EL·발랄녀] 3.8초  "하늘이 무너질 기라고 느껴지는 날이 많았다"고 그...
-  TTS [6/6] [EL·발랄녀] 6.8초  마카 싱글맘들이 경제 활동과 육아 사이에서 애먹고 ...
+  TTS [1/6] [EL·발랄녀] 4.1초  유퀴즈 젠슨 황, 세 번째 불륜 스캔들 후 엔비디아...
+  TTS [2/6] [EL·발랄녀] 7.4초  이거 모르고 지나가모 손해라아이가. 최근에 엔비디아...
+  TTS [3/6] [EL·발랄녀] 7.5초  불과 5개월 전마 그거 출연해 아내한테 애정을 드러...
+  TTS [4/6] [EL·발랄녀] 8.2초  그런데 잇따른 불륜 의혹이 터져나왔다아이가. 첫 번...
+  TTS [5/6] [EL·발랄녀] 8.4초  세계 최대 AI칩 기업의 수장이 개인 윤리 문제땜새...
+  TTS [6/6] [EL·발랄녀] 9.1초  미디어에 비친 이미지하고 실제 행동의 괴리가 어느 ...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.4초
-  세그먼트 [2/7] 5.3초
-  세그먼트 [3/7] 6.6초
-  세그먼트 [4/7] 6.1초
-  세그먼트 [5/7] 4.6초
-  세그먼트 [6/7] 7.6초
+  세그먼트 [1/7] 4.9초
+  세그먼트 [2/7] 8.2초
+  세그먼트 [3/7] 8.3초
+  세그먼트 [4/7] 9.0초
+  세그먼트 [5/7] 9.2초
+  세그먼트 [6/7] 9.9초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261112_02_숫자훅.mp4
-    길이: 33.9초  /  크기: 2.0MB
--rw-r--r-- 1 runner runner 2.0M Nov 12 17:45 out/reels/20261112_02_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261113_04_숫자훅.mp4
+    길이: 48.8초  /  크기: 2.4MB
+-rw-r--r-- 1 runner runner 2.5M Nov 13 03:23 out/reels/20261113_04_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=33.865261
+duration=48.753265
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -74,8 +96,8 @@ duration=33.865261
 
 설정 완료
 
-업로드 1건 (태그 reels-2026-11-12):
-  20261112_02_숫자훅.mp4  2.0MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-12/20261112_02.mp4
+업로드 1건 (태그 reels-2026-11-13):
+  20261113_04_숫자훅.mp4  2.4MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-13/20261113_04.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -83,16 +105,16 @@ duration=33.865261
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 98건
+남은 발행 가능: 97건
 발행 대상: 1건
 
-── 1/1  20261112_02_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-12/20261112_02.mp4
-  캡션: 현생모드퀸지현 이지현, 싱글맘으로 미용실 퇴사
-  컨테이너: 17977229903973700
+── 1/1  20261113_04_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-13/20261113_04.mp4
+  캡션: 유퀴즈 젠슨 황, 세 번째 불륜 스캔들 후 엔비디아 CEO 사임
+  컨테이너: 17977355750973700
       0초  IN_PROGRESS
-     53초  FINISHED
-  발행 완료: 18114288359188119
+     31초  FINISHED
+  발행 완료: 18405091654206156
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
