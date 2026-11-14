@@ -281,6 +281,8 @@ def build_caption(script):
     lines.append("")
     lines.append("📩 이거 알아야 할 사람한테 보내주세요!")
     lines.append("💾 저장해두면 나중에 또 찾게 됩니다")
+    lines.append("")
+    lines.append("👇 댓글에 \"정보\" 쓰면 DM으로 더 알려드려요!")
 
     tags = ["#이슈", "#뉴스", "#정보"]
     cat = meta.get("category")
