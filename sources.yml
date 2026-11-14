@@ -1,0 +1,118 @@
+# sources.yml — 공공데이터 API 소스 정의
+# license: 1 = 공공누리 제1유형 (상업적 이용·변형 가능, 출처표시 필수)
+# license: open = 별도 공공누리 없이 상업적 활용 허용 (출처표시 필수)
+# license: unknown = 미확인 → 게이트에서 폐기
+
+# ── 한국소비자원 참가격 ──────────────────────────────────────────────
+price_daily_necessities:
+  name: 한국소비자원_생필품 가격 정보
+  provider: 한국소비자원
+  base_url: https://apis.data.go.kr/B551919/ProductPriceInfoService
+  endpoint: getProductPriceInfoSvc
+  key_env: DATA_GO_KR_KEY
+  license: open          # data.go.kr 이용허락범위 제한 없음
+  attribution: 공공데이터포털 · 한국소비자원
+  category: 물가
+  params:
+    numOfRows: 100
+    pageNo: 1
+  # goodId 목록 — 국민 관심 생필품
+  goods:
+    - { id: "246", name: "돼지고기 삼겹살" }
+    - { id: "224", name: "서울우유 흰우유" }
+    - { id: "553", name: "신라면 5개입" }
+    - { id: "302", name: "배추" }
+    - { id: "935", name: "대파" }
+    - { id: "237", name: "삼양라면 5개입" }
+    - { id: "269", name: "계란 30개" }
+    - { id: "286", name: "쌀 20kg" }
+  # XML 응답의 태그명 → 내부 필드 매핑
+  # 참가격은 <item> 대신 <iros.openapi.service.vo.goodPriceVO> 사용
+  xml_item_tag: "iros.openapi.service.vo.goodPriceVO"
+  field_map:
+    goodName: product_name       # 상품명
+    goodPrice: price             # 판매가격 (원)
+    goodInspectDay: inspect_date # 조사일 (YYYYMMDD)
+    entpName: retailer           # 판매업소명
+    entpAreaName: area           # 판매업소 지역
+    goodUnit: unit               # 단위 (g, mL 등)
+    goodGroupName: group_name    # 상품군명
+    saleYn: on_sale              # 세일여부 (Y/N)
+    onePlusOneYn: bogo           # 원플러스원 여부
+
+# ── 국토교통부 아파트 실거래가 ────────────────────────────────────────
+molit_apt_trade:
+  name: 국토교통부_아파트매매 실거래 상세 자료
+  provider: 국토교통부
+  base_url: https://apis.data.go.kr/1613000/RTMSDataSvcAptTradeDev
+  endpoint: getRTMSDataSvcAptTradeDev
+  key_env: DATA_GO_KR_KEY
+  license: 1
+  attribution: 공공데이터포털 · 국토교통부
+  category: 주거
+  params:
+    numOfRows: 100
+    pageNo: 1
+  # 주요 지역코드
+  regions:
+    - { code: "11110", name: "서울 종로구" }
+    - { code: "11140", name: "서울 중구" }
+    - { code: "11680", name: "서울 강남구" }
+    - { code: "11740", name: "서울 강동구" }
+    - { code: "41135", name: "수원 영통구" }
+    - { code: "48250", name: "김해시" }
+  field_map:
+    aptNm: apt
+    aptDong: dong
+    dealAmount: amount
+    excluUseAr: area
+    floor: floor
+    buildYear: build_year
+    dealYear: deal_year
+    dealMonth: deal_month
+    dealDay: deal_day
+    dealingGbn: deal_type
+
+# ── 기상청 단기예보 ──────────────────────────────────────────────────
+kma_forecast:
+  name: 기상청_단기예보
+  provider: 기상청
+  base_url: https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0
+  endpoint: getVilageFcst
+  key_env: DATA_GO_KR_KEY
+  license: 1              # 공공누리 제1유형 확인완료
+  attribution: 공공데이터포털 · 기상청
+  category: 안전·건강
+  params:
+    numOfRows: 1000
+    pageNo: 1
+    dataType: JSON
+  # 주요 관측지점 (nx, ny 격자좌표)
+  stations:
+    - { nx: 60, ny: 127, name: "서울" }
+    - { nx: 98, ny: 76, name: "부산" }
+    - { nx: 67, ny: 100, name: "대전" }
+    - { nx: 89, ny: 90, name: "대구" }
+  field_map:
+    fcstDate: forecast_date
+    fcstTime: forecast_time
+    category: weather_category  # TMP, POP, SKY 등
+    fcstValue: value
+
+# ── 통계청 KOSIS ─────────────────────────────────────────────────────
+kosis_stats:
+  name: 통계청_KOSIS 통계정보
+  provider: 통계청
+  base_url: https://kosis.kr/openapi/Param/statisticsParameterData.do
+  endpoint: ""
+  key_env: KOSIS_API_KEY
+  license: open            # 국내통계 상업적 활용 가능, 출처표시 필수
+  attribution: 통계청 KOSIS
+  category: 통계
+  note: "국제통계·북한통계는 비상업적 목적만 가능 — 국내통계만 사용"
+  params:
+    method: getList
+    apiKey: ""             # 런타임에 key_env로 대체
+    itmId: "ALL"
+    format: json
+    jsonVD: Y

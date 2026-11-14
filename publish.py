@@ -241,6 +241,8 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
 
     media_id = res["id"]
     print(f"  발행 완료: {media_id}")
+    print(f"  ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요")
+    print(f"     → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가")
     return media_id
 
 
