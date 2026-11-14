@@ -1,83 +1,72 @@
-run 43471809663 2026-11-13T17:22:36Z
+run 43549194402 2026-11-14T03:00:59Z
 
-=== 20261113_02_숫자훅 ===
-  [cover] 'AMD Radeon RX 9070 XT 게이밍 성능 벤치마크' → "gaming PC graphics card performance benchmark"
+=== 20261114_03_숫자훅 ===
+  [cover] '우즈·한지민 메니에르병 투병 고백, 연예인들 사이 확산' → "person experiencing dizziness vertigo symptoms"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 4/12건
+    Unsplash 적합도 통과 1/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '최신 그래픽카드 150 FPS 달성' → "AMD Radeon graphics card specifications"
+  [scene1] '우즈, 팬 플랫폼 라이브에서 청력 고민' → "microphone recording studio broadcast"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 6/12건
+    Unsplash 적합도 통과 10/12건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] 'Apex Legends 신경망 렌더링' → "Apex Legends gameplay action scene"
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Apex Legends gameplay action"
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Apex Legends gameplay"
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "Apex Legends"
-    [unsplash] 0건 후보
-    [openverse] 실패: 504 Server Error: Gateway Timeout for url: https://api.openverse.org/v1/images/?q=Apex+Legends&license=cc0%2Cpdm%2Cby&page_size=12&mature=false
-    [wikimedia] 7건 후보
-    적합도 통과 5/7건 (Openverse/Wikimedia)
-    ✓ scene2 ← Wikimedia Commons (Public domain)
-  [scene3] 'AI 기반 렌더링 기술' → "neural rendering technology AI graphics"
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 2/11건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '고주사율의 게이밍 장점' → "esports gaming monitor high refresh rate"
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 4/11건
-    ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] 'AI 기술이 게이밍을 바꿨다' → "gaming technology innovation future"
+  [scene2] '어지럼증·난청 동반하는 메니에르병' → "ear anatomy medical diagram hearing"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 3/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '한지민도 메니에르병 투병 중' → "actress portrait press conference Korea"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 2/12건
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '완치 약물 없는 만성질환으로 관리 필수' → "medical consultation doctor patient clinic"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 4/12건
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '증상 있으면 조기 진단·치료 중요' → "hospital waiting area clinic reception"
+    [unsplash] 2건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "hospital waiting area clinic"
+    [unsplash] 2건 후보
+    [openverse] 3건 후보
+    [wikimedia] 8건 후보
+    적합도 통과 5/11건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 4/4건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261113_02_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261114_03_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261113_02_숫자훅
-대본: out/scripts/20261113_02_숫자훅.json
-카드: out/cards_20261113_02_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261114_03_숫자훅
+대본: out/scripts/20261114_03_숫자훅.json
+카드: out/cards_20261114_03_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 4.1초  AMD Radeon RX 9070 XT 게이밍 성능...
-  TTS [2/6] [EL·발랄녀] 8.9초  이거 모르고 지나가모 손해라아이가. AMD의 최신 ...
-  TTS [3/6] [EL·발랄녀] 5.6초  Apex Legends라는 인기 게임에서 신경망 렌...
-  TTS [4/6] [EL·발랄녀] 7.6초  신경망 렌더링은 인공지능이 게임 이미지를 똑띠이 처...
-  TTS [5/6] [EL·발랄녀] 6.3초  고주사율은 게이머한테 대단한기라. 반응 속도가 쎄기...
-  TTS [6/6] [EL·발랄녀] 8.4초  AMD의 새 칩셋이 이 정도 성능을 낼 수 있게 된...
+  TTS [1/6] [EL·발랄녀] 3.8초  우즈·한지민 메니에르병 투병 고백, 연예인들 사이 ...
+  TTS [2/6] [EL·발랄녀] 8.2초  이거 모르고 지나가모 손해라아이가. 가수 우즈가 요...
+  TTS [3/6] [EL·발랄녀] 8.4초  우즈는 귀가 안 좋고 음감도 떨어진다면서 메니에르병...
+  TTS [4/6] [EL·발랄녀] 7.6초  우즈뿐만 아니라 배우 한지민도 같은 질환으로 투병 ...
+  TTS [5/6] [EL·발랄녀] 7.5초  메니에르병은 가악중에 어지러워 일상생활이 에려워질 ...
+  TTS [6/6] [EL·발랄녀] 7.6초  연예인들의 공개 고백으로 메니에르병 인식이 올라가는...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.9초
-  세그먼트 [2/7] 9.7초
-  세그먼트 [3/7] 6.4초
+  세그먼트 [1/7] 4.6초
+  세그먼트 [2/7] 9.0초
+  세그먼트 [3/7] 9.2초
   세그먼트 [4/7] 8.4초
-  세그먼트 [5/7] 7.1초
-  세그먼트 [6/7] 9.2초
+  세그먼트 [5/7] 8.3초
+  세그먼트 [6/7] 8.4초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261113_02_숫자훅.mp4
-    길이: 44.9초  /  크기: 2.0MB
--rw-r--r-- 1 runner runner 2.1M Nov 13 17:24 out/reels/20261113_02_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261114_03_숫자훅.mp4
+    길이: 47.1초  /  크기: 2.5MB
+-rw-r--r-- 1 runner runner 2.5M Nov 14 03:02 out/reels/20261114_03_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=44.899274
+duration=47.131247
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -85,8 +74,8 @@ duration=44.899274
 
 설정 완료
 
-업로드 1건 (태그 reels-2026-11-13):
-  20261113_02_숫자훅.mp4  2.0MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-13/20261113_02.mp4
+업로드 1건 (태그 reels-2026-11-14):
+  20261114_03_숫자훅.mp4  2.5MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-14/20261114_03.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -97,13 +86,13 @@ duration=44.899274
 남은 발행 가능: 97건
 발행 대상: 1건
 
-── 1/1  20261113_02_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-13/20261113_02.mp4
-  캡션: AMD Radeon RX 9070 XT 게이밍 성능 벤치마크
-  컨테이너: 17977587644973700
+── 1/1  20261114_03_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-14/20261114_03.mp4
+  캡션: 우즈·한지민 메니에르병 투병 고백, 연예인들 사이 확산
+  컨테이너: 17977712879973700
       0초  IN_PROGRESS
-    103초  FINISHED
-  발행 완료: 18119995502104073
+     31초  FINISHED
+  발행 완료: 17986040294898227
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
