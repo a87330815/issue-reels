@@ -279,6 +279,16 @@ def build_caption(script):
         lines.append("")
         lines.append(f"출처: {meta['attribution']}")
 
+    # 자연어 키워드 — 해시태그 대신 검색 발견성을 높인다 (2026 알고리즘)
+    # LLM이 meta.keywords 를 넣어주면 그대로, 없으면 title에서 추출
+    keywords = meta.get("keywords") or []
+    if not keywords and title:
+        # title에서 조사·접미사 제거 없이 그대로 자연어 한 줄
+        keywords = [title]
+    if keywords:
+        lines.append("")
+        lines.append(" ".join(keywords))
+
     # DM 공유 & 저장 유도 CTA
     lines.append("")
     lines.append("📩 이거 알아야 할 사람한테 보내주세요!")
@@ -286,23 +296,20 @@ def build_caption(script):
     lines.append("")
     lines.append("👇 댓글에 \"정보\" 쓰면 DM으로 더 알려드려요!")
 
-    tags = ["#이슈", "#뉴스", "#정보"]
+    # 해시태그는 3~5개만 (2026: 해시태그 팔로우 폐지, 키워드 검색 중심)
     cat = meta.get("category")
+    tags = []
     if cat:
-        # 카테고리를 태그로 쪼갠다. 가운뎃점과 공백 둘 다 끊어야 한다.
-        # "당일 화제 이슈"를 그대로 붙이면 인스타가 "#당일"까지만 태그로
-        # 읽고 "화제 이슈"는 맨 글자로 남는다.
-        for w in reversed(cat.replace("·", " ").split()):
-            tags.insert(0, "#" + w)
-    # 카테고리에서 쪼갠 태그가 기본 태그와 겹칠 수 있다
-    # ("당일 화제 이슈" → #이슈). 순서를 지키면서 중복만 지운다.
+        for w in cat.replace("·", " ").split():
+            tags.append("#" + w)
+    tags.extend(["#이슈", "#뉴스"])
     seen, uniq = set(), []
     for t in tags:
         if t not in seen:
             seen.add(t)
             uniq.append(t)
     lines.append("")
-    lines.append(" ".join(uniq))
+    lines.append(" ".join(uniq[:5]))
 
     return "\n".join(lines)
 
