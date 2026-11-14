@@ -50,10 +50,17 @@ def card_images(card_dir):
 
 
 def narrations(script):
-    """대본에서 나레이션 텍스트 추출. 커버는 제목, 아웃트로는 고정 멘트."""
+    """대본에서 나레이션 텍스트 추출. 커버는 커버 lines(훅), 아웃트로는 고정 멘트."""
     texts = []
-    # 커버
-    texts.append(script.get("title", ""))
+    # 커버 — cover.lines가 있으면 그걸 TTS로 읽는다 (카드에 보이는 훅과 동일).
+    # 태그(<r>...</r> 등)는 제거해서 순수 텍스트만 넘긴다.
+    cover = script.get("cover", {})
+    cover_lines = cover.get("lines", [])
+    if cover_lines:
+        clean = re.sub(r"</?[a-z]+>", "", " ".join(cover_lines))
+        texts.append(clean.strip())
+    else:
+        texts.append(script.get("title", ""))
     # 본문 장면
     for sc in script.get("scenes", []):
         texts.append(sc.get("narration", sc.get("subtitle", "")))
@@ -405,10 +412,17 @@ def build_video(card_files, tts_results, output_path, tmp_dir):
               f"[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p")
 
         # 이미지를 9:16(1080x1920)에 맞춤
+        # 장면 전환 시 음성 끊김 방지: 오디오 끝에 짧은 페이드아웃 + 무음 패딩.
+        # 모든 세그먼트 오디오를 44100Hz 스테레오로 통일해야 concat에서 안 끊긴다.
         if audio:
+            # 오디오 필터: 끝 150ms 페이드아웃 → 44100Hz 스테레오 통일 → 끝에 0.3초 무음 패딩
+            af = "afade=t=out:st={fade_st:.3f}:d=0.15,aresample=44100,apad=pad_dur=0.3".format(
+                fade_st=max(0, tts_results[i]["duration"] - 0.15))
             cmd = ["ffmpeg", "-y", "-loop", "1", "-i", card,
                    "-i", audio, "-t", f"{dur:.2f}",
-                   "-filter_complex", vf, "-r", "30",
+                   "-filter_complex", vf,
+                   "-af", af, "-ac", "2",
+                   "-r", "30",
                    "-c:a", "aac", "-b:a", "128k", "-shortest",
                    "-c:v", "libx264", "-profile:v", "high", "-level:v", "4.0",
                    "-pix_fmt", "yuv420p", "-preset", "fast", "-crf", "23", seg_path]
@@ -417,7 +431,7 @@ def build_video(card_files, tts_results, output_path, tmp_dir):
                    "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
                    "-t", f"{dur:.2f}",
                    "-filter_complex", vf, "-r", "30",
-                   "-c:a", "aac", "-shortest",
+                   "-c:a", "aac", "-ac", "2", "-shortest",
                    "-c:v", "libx264", "-profile:v", "high", "-level:v", "4.0",
                    "-pix_fmt", "yuv420p", "-preset", "fast", "-crf", "23", seg_path]
 
@@ -434,7 +448,7 @@ def build_video(card_files, tts_results, output_path, tmp_dir):
     cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", list_file,
            "-c:v", "libx264", "-profile:v", "high", "-level:v", "4.0",
            "-pix_fmt", "yuv420p", "-preset", "fast", "-crf", "23",
-           "-c:a", "aac", "-b:a", "128k",
+           "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
            "-movflags", "+faststart",
            output_path]
     subprocess.run(cmd, capture_output=True, check=True)
