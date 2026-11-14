@@ -277,6 +277,11 @@ def build_caption(script):
         lines.append("")
         lines.append(f"출처: {meta['attribution']}")
 
+    # DM 공유 & 저장 유도 CTA
+    lines.append("")
+    lines.append("📩 이거 알아야 할 사람한테 보내주세요!")
+    lines.append("💾 저장해두면 나중에 또 찾게 됩니다")
+
     tags = ["#이슈", "#뉴스", "#정보"]
     cat = meta.get("category")
     if cat:
