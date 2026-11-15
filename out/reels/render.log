@@ -1,73 +1,107 @@
-run 43668062559 2026-11-15T02:31:55Z
+run 43700704805 2026-11-15T09:46:23Z
 
-=== 20261115_03_숫자훅 ===
-  [cover] '나르샤 환절기 피부 고백, 광나는 피부의 진실' → "woman skincare routine morning bathroom mirror"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 12/12건
-    ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '연예인도 피부 난리' → "dry cracked skin texture close up"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 7/12건
-    ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '환절기 피부 대난리' → "autumn weather leaves falling windy day"
+=== 20261115_04_숫자훅 ===
+  [cover] '정이랑 안면도 2억 오션뷰 별장 공개' → "luxury oceanview house seaside Korea"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "luxury oceanview house seaside"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 9/12건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '반짝이는 피부 비결' → "makeup cosmetics foundation brush application"
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] '정이랑 별장 공개' → "korean actor comedian media interview"
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 2/11건
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '2억대 오션뷰 세컨드 하우스' → "oceanfront property Korea west coast"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "oceanfront property Korea west"
+    [unsplash] 1건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "oceanfront property Korea"
+    [unsplash] 1건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "oceanfront property"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 11/12건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '수분 관리가 첫걸음' → "moisturizer cream product skincare routine"
+    Unsplash 적합도 통과 0/14건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 6/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '강남 출신의 감각' → "luxury home interior design modern"
     [unsplash] 10건 후보 (부적합 2건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 6/10건
+    [openverse] 12건 후보
+    [wikimedia] 1건 후보
+    적합도 통과 1/13건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 7/10건
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '가족 휴양지로 활용 중' → "family gathering vacation house Korea"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 4/12건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '진짜는 꾸준한 관리' → "woman skincare hydration toner essence product"
-    [unsplash] 6건 후보 (부적합 1건 제외)
+  [scene5] '유명인 별장 트렌드' → "Anmyeodo island coastal landscape sunset"
+    [unsplash] 0건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 0/6건
+    ↻ 재시도: "Anmyeodo island coastal landscape"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Anmyeodo island coastal"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Anmyeodo island"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
     ✗ 적합한 후보 없음 — 사진 없이 진행
     ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 6/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261115_03_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261115_04_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261115_03_숫자훅
-대본: out/scripts/20261115_03_숫자훅.json
-카드: out/cards_20261115_03_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261115_04_숫자훅
+대본: out/scripts/20261115_04_숫자훅.json
+카드: out/cards_20261115_04_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 3.4초  나르샤가 고백한 피부 진짜 이야기 다 화장 덕분이라...
-  TTS [2/6] [EL·발랄녀] 10.0초  이거 모르고 넘어가면 손해다아이가. 연예인 나르샤가...
-  TTS [3/6] [EL·발랄녀] 9.0초  요즘 날씨가 수렀어지면서 환절기 피부 문제가 디게 ...
-  TTS [4/6] [EL·발랄녀] 9.6초  흔히 생각하는 광나는 피부 비결은 참말로 화장품이고...
-  TTS [5/6] [EL·발랄녀] 7.0초  실제로 많은 사람들이 광나는 피부를 목표로 삼지만,...
-  TTS [6/6] [EL·발랄녀] 7.9초  환절기에는 기초 제품만으로는 부족하데이. 나르샤처럼...
+  TTS [1/6] [EL·발랄녀] 3.1초  정이랑 2억 오션뷰 별장 공개됐데이...
+  TTS [2/6] [EL·발랄녀] 6.9초  이거 모르고 지나가모 손해라아이가. 배우면서 코미디...
+  TTS [3/6] [EL·발랄녀] 4.7초  안면도에 있는 이 집은 오션뷰가 특징이라예. 2억대...
+  TTS [4/6] [EL·발랄녀] 5.3초  강남 출신이라고 알려진 정이랑이가 선택한 휴양지인 ...
+  TTS [5/6] [EL·발랄녀] 8.2초  요새 방송에서 가족이라고 이리 와서 갯벌 체험도 즐...
+  TTS [6/6] [EL·발랄녀] 8.2초  유명인들 사이에서 안면도는 요근래 떠오르는 휴양지라...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.2초
-  세그먼트 [2/7] 10.8초
-  세그먼트 [3/7] 9.8초
-  세그먼트 [4/7] 10.4초
-  세그먼트 [5/7] 7.8초
-  세그먼트 [6/7] 8.7초
+  세그먼트 [1/7] 3.9초
+  세그먼트 [2/7] 7.7초
+  세그먼트 [3/7] 5.5초
+  세그먼트 [4/7] 6.1초
+  세그먼트 [5/7] 9.0초
+  세그먼트 [6/7] 9.0초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261115_03_숫자훅.mp4
-    길이: 52.8초  /  크기: 3.7MB
--rw-r--r-- 1 runner runner 3.8M Nov 15 02:33 out/reels/20261115_03_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261115_04_숫자훅.mp4
+    길이: 42.3초  /  크기: 3.2MB
+-rw-r--r-- 1 runner runner 3.2M Nov 15 09:47 out/reels/20261115_04_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=52.777279
+duration=42.331247
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -76,7 +110,7 @@ duration=52.777279
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-15):
-  20261115_03_숫자훅.mp4  3.7MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-15/20261115_03.mp4
+  20261115_04_숫자훅.mp4  3.2MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-15/20261115_04.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -84,16 +118,16 @@ duration=52.777279
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 97건
+남은 발행 가능: 98건
 발행 대상: 1건
 
-── 1/1  20261115_03_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-15/20261115_03.mp4
-  캡션: 나르샤 환절기 피부 고백, 광나는 피부의 진실
-  컨테이너: 17978074472973700
+── 1/1  20261115_04_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-15/20261115_04.mp4
+  캡션: 정이랑 안면도 2억 오션뷰 별장 공개
+  컨테이너: 17978175761973700
       0초  IN_PROGRESS
-     51초  FINISHED
-  발행 완료: 18156249406492730
+     31초  FINISHED
+  발행 완료: 18120092675024089
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
 
