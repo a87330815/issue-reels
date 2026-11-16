@@ -27,7 +27,7 @@ jobs:
 
       - name: 인사이트 수집
         env:
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: |
           python insights.py --limit ${{ github.event.inputs.limit || '50' }}
