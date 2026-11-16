@@ -1,72 +1,82 @@
-run 43793496847 2026-11-16T02:41:29Z
+run 43845062618 2026-11-16T10:03:22Z
 
-=== 20261116_05_숫자훅 ===
-  [cover] '나는 솔로 옥순, 마운자로 부작용 이겨낸 9kg 감량' → "woman before after weight loss transformation"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 9/12건
-    ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '나는 솔로 31기 옥순의 다이어트 고백' → "korean television solo dating show"
-    [unsplash] 11건 후보 (부적합 1건 제외)
+=== 20261116_04_숫자훅 ===
+  [cover] '주디 덴치가 추천한 차기 제임스 본드, 의외의 인물' → "James Bond movie poster classic spy thriller"
+    [unsplash] 1건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 1/11건
-    ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '허리디스크 후 65kg까지 증가' → "woman back pain office sitting posture"
+    ↻ 재시도: "James Bond movie poster classic spy"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 12/12건
+    Unsplash 적합도 통과 6/13건
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] '주디 덴치의 선택' → "Judi Dench actress portrait elegant"
+    [unsplash] 0건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    ↻ 재시도: "Judi Dench actress portrait"
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 2건 후보
+    [wikimedia] 0건 후보
+    적합도 통과 1/2건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 3/11건
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '유명 배우들 제치고' → "Hollywood casting directors meeting discussion"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 0/12건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "entertainment stage celebrity event"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 6/12건
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '마운자로 부작용 견디고 진행' → "weight loss medication injection pen healthcare"
+  [scene3] '미지의 신인 추천' → "young actor auditioning stage lights dramatic"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 4/12건
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '팬들의 반응 뜨거워' → "movie fans social media discussion online community"
     [unsplash] 4건 후보
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 2/4건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '<r>9kg</r> 감량 성공, 세상의 변화' → "woman fit healthy lifestyle exercise gym"
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 10건 후보
-    [wikimedia] 0건 후보
-    적합도 통과 1/10건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 11/11건
+    Unsplash 적합도 통과 1/4건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '다이어트는 자신감 회복의 시작' → "confident woman mirror reflection self esteem"
+  [scene5] '캐스팅 운명은?' → "movie premiere red carpet event announcement"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 12/12건
+    Unsplash 적합도 통과 8/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261116_05_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261116_04_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261116_05_숫자훅
-대본: out/scripts/20261116_05_숫자훅.json
-카드: out/cards_20261116_05_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261116_04_숫자훅
+대본: out/scripts/20261116_04_숫자훅.json
+카드: out/cards_20261116_04_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 3.3초  마운자로 부작용 견디고 9kg 감량한 옥순의 고백...
-  TTS [2/6] [EL·발랄녀] 8.5초  이거 모르고 지나가모 손해다. 나는 솔로 31기 옥...
-  TTS [3/6] [EL·발랄녀] 6.5초  옥순이가 허리디스크 이후 체중이 65kg까지 불어났...
-  TTS [4/6] [EL·발랄녀] 6.9초  체중 감량을 할라꼬 마운자로를 써이지만, 부작용을 ...
-  TTS [5/6] [EL·발랄녀] 7.0초  결국 <r>9kg</r>을 감량하며 목표에 성공했어...
-  TTS [6/6] [EL·발랄녀] 7.9초  겉모습의 변화만큼이나 심리적 변화도 대단했다카더라....
+  TTS [1/6] [EL·발랄녀] 2.0초  주디 덴치가 제임스 본드로 선택한 배우...
+  TTS [2/6] [EL·발랄녀] 5.3초  이거 모르고 지나가모 손해라아이가. 007 시리즈의...
+  TTS [3/6] [EL·발랄녀] 7.0초  조쉬 오코너, 칼럼 터너 같은 유명 배우들이 후보로...
+  TTS [4/6] [EL·발랄녀] 4.7초  덴치는 '아직 이름을 들어보지 못한 젊은 배우'가 ...
+  TTS [5/6] [EL·발랄녀] 6.4초  전설적인 배우의 조언은 그냥 의견이 아이라기라. 하...
+  TTS [6/6] [EL·발랄녀] 7.6초  차기 본드 캐스팅은 영화사와 팬들의 최대 관심사라아...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.1초
-  세그먼트 [2/7] 9.3초
-  세그먼트 [3/7] 7.3초
-  세그먼트 [4/7] 7.7초
-  세그먼트 [5/7] 7.8초
-  세그먼트 [6/7] 8.7초
+  세그먼트 [1/7] 3.0초
+  세그먼트 [2/7] 6.1초
+  세그먼트 [3/7] 7.8초
+  세그먼트 [4/7] 5.5초
+  세그먼트 [5/7] 7.2초
+  세그먼트 [6/7] 8.4초
   세그먼트 [7/7] 4.0초
 
-  ✓ 릴스 완성: out/reels/20261116_05_숫자훅.mp4
-    길이: 45.9초  /  크기: 2.5MB
--rw-r--r-- 1 runner runner 2.5M Nov 16 02:42 out/reels/20261116_05_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261116_04_숫자훅.mp4
+    길이: 38.9초  /  크기: 1.9MB
+-rw-r--r-- 1 runner runner 2.0M Nov 16 10:04 out/reels/20261116_04_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=45.884286
+duration=38.855283
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -75,7 +85,7 @@ duration=45.884286
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-16):
-  20261116_05_숫자훅.mp4  2.5MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-16/20261116_05.mp4
+  20261116_04_숫자훅.mp4  1.9MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-16/20261116_04.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -83,19 +93,3 @@ duration=45.884286
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 98건
-발행 대상: 1건
-
-── 1/1  20261116_05_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-16/20261116_05.mp4
-  캡션: 나는 솔로 옥순, 마운자로 부작용 이겨낸 9kg 감량
-  컨테이너: 17978449700973700
-      0초  IN_PROGRESS
-     51초  FINISHED
-  발행 완료: 18100849340448106
-  ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
-     → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
-
-
-발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
-완료: 발행 1건 / 실패 0건
