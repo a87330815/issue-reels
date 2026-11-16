@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T16:36:22.648610+00:00",
+  "updated_at": "2026-11-16T02:44:06.813448+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -455,6 +455,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-15/20261115_02.mp4",
       "ig_id": "17841459210979722",
       "category": "국내 정치",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261116_05_숫자훅",
+      "media_id": "18100849340448106",
+      "published_at": "2026-11-16T02:44:06.709652+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-16/20261116_05.mp4",
+      "ig_id": "17841459210979722",
+      "category": "연예",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
