@@ -43,9 +43,33 @@ _load_env()
 
 IG_ID = os.environ.get("IG_USER_ID", "")
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "")
-HOST = os.environ.get("IG_API_HOST", "graph.instagram.com")
+HOST = os.environ.get("IG_API_HOST", "graph.facebook.com")
 VERSION = os.environ.get("IG_API_VERSION", "v26.0")
 BASE = f"https://{HOST}/{VERSION}"
+
+
+def _resolve_page_token():
+    """사용자 토큰이면 페이지 토큰으로 변환. 이미 페이지 토큰이면 그대로 반환."""
+    global TOKEN, BASE
+    if not TOKEN:
+        return
+    import requests
+    # me/accounts 호출 — 사용자 토큰이면 페이지 목록 반환, 페이지 토큰이면 빈 목록
+    try:
+        r = requests.get(
+            f"{BASE}/me/accounts",
+            headers={"Authorization": f"Bearer {TOKEN}"},
+            timeout=15,
+        )
+        data = r.json()
+        pages = data.get("data", [])
+        if pages:
+            TOKEN = pages[0]["access_token"]
+            print(f"  [토큰] 사용자→페이지 토큰 변환 완료 (페이지: {pages[0].get('name', '?')})")
+        else:
+            print("  [토큰] 이미 페이지 토큰이거나 페이지 없음 — 그대로 사용")
+    except Exception as e:
+        print(f"  [토큰] 변환 시도 실패({e}) — 기존 토큰 사용")
 
 
 def scrub(text):
@@ -191,6 +215,9 @@ def append_rows(rows):
 def collect(limit=50):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     already = load_existing_ids()
+
+    # 사용자 토큰이면 페이지 토큰으로 자동 변환
+    _resolve_page_token()
 
     print(f"미디어 목록 조회 (최대 {limit}개)...")
     media_list = fetch_media_list(limit)
