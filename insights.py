@@ -77,21 +77,26 @@ def api(method, path, **params):
 
 
 # ── 미디어 목록 가져오기 ─────────────────────────────────────
-def check_insights_permission():
-    """instagram_manage_insights 권한이 있는지 확인."""
+def check_insights_permission(sample_media_id=None):
+    """인사이트 API를 실제 호출해서 권한 확인. me/permissions는 페이지토큰에서 부정확."""
+    if not sample_media_id:
+        # 샘플 미디어가 없으면 일단 시도
+        print("  [인사이트] 샘플 미디어 없음 — 개별 호출 시 확인")
+        return True
     try:
-        res = api("GET", "me/permissions")
-        perms = {p["permission"] for p in res.get("data", []) if p.get("status") == "granted"}
-        has_insights = "instagram_manage_insights" in perms or "instagram_business_manage_insights" in perms
-        has_pages = "pages_read_engagement" in perms
-        if not has_insights:
-            print("  [권한 없음] instagram_manage_insights — 인사이트(도달·저장·공유) 수집 불가")
-            print("  → developers.facebook.com → 앱 → 권한 → instagram_manage_insights 추가 필요")
-        if not has_pages:
-            print("  [권한 없음] pages_read_engagement")
-        return has_insights
-    except Exception:
-        return True  # 확인 실패 시 일단 시도
+        res = api("GET", f"{sample_media_id}/insights", metric="reach")
+        # 정상 응답이면 권한 있음
+        print("  [인사이트] ✓ 권한 확인됨 (실제 API 호출 성공)")
+        return True
+    except RuntimeError as e:
+        err = str(e)
+        if "10" in err or "permission" in err.lower() or "not authorized" in err.lower():
+            print(f"  [인사이트] ✗ 권한 없음 — 기본 지표만 수집")
+            print(f"    → {err[:120]}")
+            return False
+        # 다른 에러(미디어 타입 미지원 등)는 권한 문제가 아님
+        print(f"  [인사이트] 확인 불확실({err[:80]}) — 개별 호출 시 재시도")
+        return True
 
 
 def fetch_media_list(limit=50):
@@ -187,11 +192,14 @@ def collect(limit=50):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     already = load_existing_ids()
 
-    has_insights_perm = check_insights_permission()
-
     print(f"미디어 목록 조회 (최대 {limit}개)...")
     media_list = fetch_media_list(limit)
     print(f"  {len(media_list)}개 미디어 발견")
+
+    # 실제 VIDEO/REELS 미디어로 인사이트 권한 확인
+    sample_video = next((m for m in media_list if m.get("media_type") in ("VIDEO", "REELS")), None)
+    sample_id = sample_video["id"] if sample_video else None
+    has_insights_perm = check_insights_permission(sample_id)
 
     rows = []
     for m in media_list:
