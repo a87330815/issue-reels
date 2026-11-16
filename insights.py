@@ -77,6 +77,23 @@ def api(method, path, **params):
 
 
 # ── 미디어 목록 가져오기 ─────────────────────────────────────
+def check_insights_permission():
+    """instagram_manage_insights 권한이 있는지 확인."""
+    try:
+        res = api("GET", "me/permissions")
+        perms = {p["permission"] for p in res.get("data", []) if p.get("status") == "granted"}
+        has_insights = "instagram_manage_insights" in perms or "instagram_business_manage_insights" in perms
+        has_pages = "pages_read_engagement" in perms
+        if not has_insights:
+            print("  [권한 없음] instagram_manage_insights — 인사이트(도달·저장·공유) 수집 불가")
+            print("  → developers.facebook.com → 앱 → 권한 → instagram_manage_insights 추가 필요")
+        if not has_pages:
+            print("  [권한 없음] pages_read_engagement")
+        return has_insights
+    except Exception:
+        return True  # 확인 실패 시 일단 시도
+
+
 def fetch_media_list(limit=50):
     """최근 미디어 목록. 페이징으로 limit개까지 수집."""
     items = []
@@ -170,6 +187,8 @@ def collect(limit=50):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     already = load_existing_ids()
 
+    has_insights_perm = check_insights_permission()
+
     print(f"미디어 목록 조회 (최대 {limit}개)...")
     media_list = fetch_media_list(limit)
     print(f"  {len(media_list)}개 미디어 발견")
@@ -184,12 +203,15 @@ def collect(limit=50):
         mtype = m.get("media_type", "")
         caption = (m.get("caption") or "")[:60].replace("\n", " ")
 
-        # 인사이트 조회 (릴스/비디오만)
+        # 인사이트 조회 (릴스/비디오만, 권한 있을 때)
         ins = {}
-        if mtype in ("VIDEO", "REELS"):
+        if mtype in ("VIDEO", "REELS") and has_insights_perm:
             ins = fetch_insights(mid, mtype)
             if "error" in ins:
-                print(f"  [경고] {mid}: {ins['error']}")
+                # 첫 번째 오류만 출력
+                if not hasattr(collect, '_insight_err_shown'):
+                    print(f"  [경고] 인사이트 권한 부족 — 기본 지표만 수집")
+                    collect._insight_err_shown = True
                 ins = {}
 
         row = {
