@@ -64,6 +64,33 @@ jobs:
               f.write("token=" + token + "\n")
           PY
 
+      - name: 토큰 권한 디버그
+        env:
+          USER_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          PAGE_TOKEN: ${{ steps.ig_token.outputs.token || secrets.IG_ACCESS_TOKEN }}
+          APP_ID: "1143191174807326"
+        run: |
+          python - <<'PY'
+          import os, requests
+          ut = os.environ["USER_TOKEN"]
+          pt = os.environ["PAGE_TOKEN"]
+          app_id = os.environ["APP_ID"]
+          # 유저 토큰 디버그
+          r = requests.get(f"https://graph.facebook.com/v26.0/debug_token",
+              params={"input_token": ut, "access_token": f"{app_id}|{ut}"},
+              timeout=30)
+          d = r.json().get("data", {})
+          print(f"[유저토큰] scopes: {d.get('scopes', [])}")
+          print(f"[유저토큰] granular_scopes: {[g.get('permission') for g in d.get('granular_scopes', [])]}")
+          # 페이지 토큰 디버그
+          r2 = requests.get(f"https://graph.facebook.com/v26.0/debug_token",
+              params={"input_token": pt, "access_token": f"{app_id}|{ut}"},
+              timeout=30)
+          d2 = r2.json().get("data", {})
+          print(f"[페이지토큰] scopes: {d2.get('scopes', [])}")
+          print(f"[페이지토큰] granular_scopes: {[g.get('permission') for g in d2.get('granular_scopes', [])]}")
+          PY
+
       - name: 인사이트 수집
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
