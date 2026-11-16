@@ -25,10 +25,46 @@ jobs:
 
       - run: pip install requests
 
+      - name: 페이지 토큰 조회
+        id: ig_token
+        env:
+          USER_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
+        run: |
+          python - <<'PY'
+          import os, requests
+          user_token = os.environ["USER_TOKEN"]
+          ig_id = os.environ["IG_USER_ID"]
+          r = requests.get(
+              "https://graph.facebook.com/v26.0/me/accounts",
+              params={
+                  "fields": "id,name,access_token,instagram_business_account",
+                  "limit": 100,
+                  "access_token": user_token,
+              },
+              timeout=30,
+          )
+          data = r.json()
+          if "error" in data:
+              raise SystemExit("페이지 토큰 조회 실패: " + data["error"].get("message", ""))
+          selected = None
+          for page in data.get("data", []):
+              instagram = page.get("instagram_business_account") or {}
+              if str(instagram.get("id", "")) == str(ig_id):
+                  selected = page.get("access_token")
+                  break
+          token = selected or user_token
+          print("페이지 토큰 사용" if selected else "기존 토큰 사용")
+          print("::add-mask::" + token)
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write("token=" + token + "\n")
+          PY
+
       - name: 인사이트 수집
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || vars.IG_USER_ID }}
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_ACCESS_TOKEN: ${{ steps.ig_token.outputs.token || secrets.IG_ACCESS_TOKEN }}
+          IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
         run: |
           python insights.py --limit ${{ github.event.inputs.limit || '50' }}
 
