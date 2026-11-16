@@ -9,6 +9,10 @@ on:
       limit:
         description: "수집할 최대 미디어 수"
         default: "50"
+      force:
+        description: "오늘 데이터 삭제 후 재수집"
+        type: boolean
+        default: false
 
 jobs:
   collect:
@@ -66,7 +70,7 @@ jobs:
           IG_ACCESS_TOKEN: ${{ steps.ig_token.outputs.token || secrets.IG_ACCESS_TOKEN }}
           IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
         run: |
-          python insights.py --limit ${{ github.event.inputs.limit || '50' }}
+          python insights.py --limit ${{ github.event.inputs.limit || '50' }} ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
       - name: CSV 커밋
         run: |

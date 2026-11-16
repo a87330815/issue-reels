@@ -264,7 +264,18 @@ def main():
     ap = argparse.ArgumentParser(description="인스타그램 릴스 인사이트 수집")
     ap.add_argument("--limit", type=int, default=50, help="수집할 최대 미디어 수")
     ap.add_argument("--check", action="store_true", help="설정 점검만")
+    ap.add_argument("--force", action="store_true", help="오늘 데이터 삭제 후 재수집")
     args = ap.parse_args()
+
+    if args.force and os.path.exists(CSV_PATH):
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        import io
+        with open(CSV_PATH, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        kept = [lines[0]] + [l for l in lines[1:] if not l.startswith(today)]
+        with open(CSV_PATH, "w", encoding="utf-8") as f:
+            f.writelines(kept)
+        print(f"[force] 오늘({today}) 데이터 삭제 완료 ({len(lines)-len(kept)}건)")
 
     if args.check:
         sys.exit(0 if check() else 1)
