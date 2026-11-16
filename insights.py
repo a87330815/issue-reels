@@ -156,7 +156,7 @@ def fetch_media_list(limit=50):
 def fetch_insights(media_id, media_type="VIDEO"):
     """릴스/비디오 인사이트. 이미지는 지원 메트릭이 다르다."""
     # 릴스(REELS/VIDEO)용 메트릭
-    metrics = "reach,saved,shares,plays,total_interactions"
+    metrics = "reach,saved,shares,views,total_interactions"
     try:
         res = api("GET", f"{media_id}/insights", metric=metrics)
         out = {}
@@ -182,7 +182,7 @@ CSV_FIELDS = [
     "reach",
     "saved",
     "shares",
-    "plays",
+    "views",
     "total_interactions",
 ]
 
@@ -261,13 +261,13 @@ def collect(limit=50):
             "reach": ins.get("reach", ""),
             "saved": ins.get("saved", ""),
             "shares": ins.get("shares", ""),
-            "plays": ins.get("plays", ""),
+            "views": ins.get("views", ""),
             "total_interactions": ins.get("total_interactions", ""),
         }
         rows.append(row)
-        plays = ins.get("plays", "?")
+        views = ins.get("views", "?")
         reach = ins.get("reach", "?")
-        print(f"  ✓ {mid} | {mtype} | 조회 {plays} | 도달 {reach} | 좋아요 {m.get('like_count',0)}")
+        print(f"  ✓ {mid} | {mtype} | 조회 {views} | 도달 {reach} | 좋아요 {m.get('like_count',0)}")
 
     if rows:
         append_rows(rows)
