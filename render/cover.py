@@ -157,6 +157,18 @@ def draw_cover(bg, lines, align="bottom", line_gap=1.18, badge=None):
             x += draw.textlength(text, font=font)
         y += lh
 
+    # 채널명 워터마크 (상단 세이프존 안, 반투명 흰색)
+    wm_text = "쫌봐봐"
+    wm_font = _font(42)
+    wm_w = draw.textlength(wm_text, font=wm_font)
+    wm_x = W - SAFE_SIDE - int(wm_w)
+    wm_y = SAFE_TOP - 80  # 인스타 상단 UI 아래
+    draw.text(
+        (wm_x, wm_y), wm_text, font=wm_font,
+        fill=(255, 255, 255, 200),
+        stroke_width=2, stroke_fill=(0, 0, 0),
+    )
+
     return img
 
 

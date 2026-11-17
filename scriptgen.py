@@ -109,6 +109,17 @@ def short_subtitle(text, limit=22):
     return out or text[:limit]
 
 
+_CATEGORY_BADGE = {
+    "연예": "연예 이슈", "해외연예": "해외 연예",
+    "국내 정치": "정치", "해외 정치": "해외 정치",
+    "경제": "경제", "이슈": "화제",
+}
+
+def _category_badge(cat):
+    """카테고리에 맞는 커버 뱃지 텍스트. 없으면 None."""
+    return _CATEGORY_BADGE.get(cat)
+
+
 def cover_char_count(lines):
     """커버 라인 리스트의 총 글자 수 (태그 제외)."""
     return sum(len(strip_markup(l)) for l in lines)
@@ -711,10 +722,12 @@ def template_generate(angle):
     # 사투리는 여기서 입히지 않는다. 발행 직전 dialect.py가 대본 전체를
     # 한 번에 고쳐 쓴다 (내레이션·자막·커버 모두).
 
-    # badge
+    # badge — 시행일이면 날짜, 아니면 카테고리 라벨
     badge = None
     if fmt == "시행일훅":
         badge = angle.get("data", {}).get("date_label")
+    if not badge:
+        badge = _category_badge(angle.get("category", ""))
 
     # 소스 정보
     all_items = angle.get("items", [])
@@ -1392,7 +1405,7 @@ def llm_generate(angle, api_key, provider="anthropic"):
             "image": None,
             "lines": lines,
             "summary": result["cover"].get("summary") or result.get("summary") or "",
-            "badge": result["cover"].get("badge"),
+            "badge": result["cover"].get("badge") or _category_badge(category),
             "photo_query": _pq(result.get("cover", {})),
         },
         "scenes": scenes,
