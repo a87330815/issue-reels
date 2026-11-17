@@ -9,10 +9,7 @@ API 키 없이 동작한다.
 LLM에 넘겨 "사실만 뽑아 완전히 새 문장으로" 대본을 생성한다.
 
 카테고리 자동 분류:
-  - 당일 화제 이슈 (40%)
-  - 생활·지원금·제도 (25%)
-  - 놀라운 사건·화제 (15%)
-  - 경제·부동산 (20%) ← 기존 collect.py가 담당, 여기선 안 건드림
+  - 재테크 / 저축·투자 / 보험·연금 / 세금·절약 / 돈습관 / 경제상식
 
 사용:
   python collect_trends.py              # 트렌드 수집 → out/trends.json
@@ -209,7 +206,7 @@ def main():
                         "news_title": it.get("title", ""),
                         "snippet": it.get("summary", ""),
                         "source_type": "rss_issue",
-                        "category": it.get("category", "당일 화제 이슈"),
+                        "category": it.get("category", "경제상식"),
                         "url": it.get("url", ""),
                     })
         except Exception as e:

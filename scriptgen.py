@@ -200,7 +200,7 @@ def trends_to_angles(trend_items):
     angles = []
     for item in trend_items:
         keyword = item["keyword"]
-        category = item.get("category", "당일 화제 이슈")
+        category = item.get("category", "경제상식")
         snippet = item.get("snippet", "")
         news_title = item.get("news_title", "")
 
@@ -758,7 +758,7 @@ def template_generate(angle):
         source_id, category, attribution = "", "", ""
 
     return {
-        "title": angle.get("hook", "이슈"),
+        "title": angle.get("hook", "재테크"),
         "cover": {
             "image": None,
             "photo_query": _scene_image_keyword(angle, "intro"),
@@ -1170,7 +1170,7 @@ def fun_topics_to_angles(seeds):
     angles = []
     for seed in seeds:
         angles.append({
-            "type": seed.get("format", "공감훅"),
+            "type": seed.get("format", "돈공감"),
             "hook": seed.get("angle", seed["topic"]),
             "summary": seed.get("angle", seed["topic"]),
             "short": seed["topic"],
@@ -1188,7 +1188,7 @@ def _build_fun_prompt(angle):
     """돈습관·공감 주제 기반 LLM 프롬프트를 생성한다."""
     topic = angle.get("fun_topic", angle.get("hook", ""))
     hint = angle.get("fun_angle", "")
-    fmt = angle.get("type", "공감훅")
+    fmt = angle.get("type", "돈공감")
 
     return f"""아래 주제로 **돈습관·공감** 릴스 대본 1편을 써주세요.
 
@@ -1294,7 +1294,7 @@ def _build_trend_prompt(angle):
     keyword = angle.get("trend_keyword", angle.get("hook", ""))
     snippet = angle.get("trend_snippet", "")
     news_title = angle.get("trend_news_title", "")
-    category = angle.get("category", "당일 화제 이슈")
+    category = angle.get("category", "경제상식")
 
     context_parts = [f"키워드: {keyword}"]
     if news_title:
@@ -1393,7 +1393,7 @@ def llm_generate(angle, api_key, provider="anthropic"):
         attribution = "자체 제작"
     elif angle.get("trend_keyword"):
         source_id = "google_trends"
-        category = angle.get("category", "당일 화제 이슈")
+        category = angle.get("category", "경제상식")
         attribution = "Google Trends"
     else:
         first_item = angle.get("items", [{}])[0] if angle.get("items") else {}
@@ -1419,7 +1419,7 @@ def llm_generate(angle, api_key, provider="anthropic"):
         })
 
     return {
-        "title": result.get("title", angle.get("hook", "이슈")),
+        "title": result.get("title", angle.get("hook", "재테크")),
         "cover": {
             "image": None,
             "lines": lines,

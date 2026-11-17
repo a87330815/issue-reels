@@ -4,9 +4,9 @@ from collections import Counter
 ROOT=os.path.dirname(os.path.abspath(__file__))
 SCRIPTS=os.path.join(ROOT,'out','scripts')
 PUBLISHED=os.path.join(ROOT,'out','published.json')
-ALLOWED_CATEGORIES={'연예','국내 정치','해외 정치','경제','해외연예'}
-CATEGORY_ALIAS={'정치':'국내 정치','정치·시사':'국내 정치','시사':'국내 정치','세계경제':'해외 정치','글로벌경제':'해외 정치','국제경제':'해외 정치','해외경제':'해외 정치','물가':'경제','경제·돈':'경제','연예·화제':'연예','엔터테인먼트':'연예'}
-BLOCKED_KEYWORDS={'생활꿀팁','꿀팁','일반 정보','아파트','부동산','실거래','분양','청약','주거'}
+ALLOWED_CATEGORIES={'재테크','저축·투자','보험·연금','세금·절약','돈습관','경제상식'}
+CATEGORY_ALIAS={'경제':'경제상식','경제·돈':'경제상식','물가':'경제상식','금융':'저축·투자','투자':'저축·투자','적금':'저축·투자','보험':'보험·연금','연금':'보험·연금','세금':'세금·절약','절약':'세금·절약','돈관리':'돈습관','월급':'돈습관','가계부':'돈습관'}
+BLOCKED_KEYWORDS={'연예','아이돌','정치','국회','대통령','스포츠','축구','야구','부동산','아파트','분양','청약','전세','월세','주택','집값'}
 TARGET_RATIO={c:20 for c in ALLOWED_CATEGORIES}
 
 def normalize_category(cat): return CATEGORY_ALIAS.get((cat or '').strip(),(cat or '').strip())

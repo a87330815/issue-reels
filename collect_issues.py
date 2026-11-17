@@ -1,31 +1,34 @@
 # -*- coding: utf-8 -*-
-"""최근 이슈 RSS 수집기."""
+"""재테크·돈 정보 RSS 수집기."""
 import argparse, hashlib, html, json, os, re
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 import requests
 import xml.etree.ElementTree as ET
 
-BLOCKED_ISSUES = re.compile(r"(4명의\s*엄마|엄마만\s*4명|결혼지옥|오은영\s*리포트)", re.I)
+# 연예·정치·스포츠·부동산 관련은 제외
+EXCLUDE_RE = re.compile(
+    r"(연예|아이돌|정치|국회|대통령|스포츠|축구|야구|부동산|아파트|분양|청약|전세|월세|주택|집값)"
+)
 
 FEEDS = {
-    "국내 정치": [
-        ("대통령실", "https://www.president.go.kr/rss"),
-        ("국회", "https://www.assembly.go.kr/portal/rss/rss.do"),
+    "재테크": [
+        ("한경 재테크", "https://www.hankyung.com/feed/finance"),
+        ("매경 재테크", "https://www.mk.co.kr/rss/50200011/"),
     ],
-    "해외 정치": [
-        ("Reuters", "https://feeds.reuters.com/reuters/worldNews"),
-        ("AP", "https://apnews.com/rss"),
-        ("BBC", "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    "저축·투자": [
+        ("한경 증권", "https://www.hankyung.com/feed/stock"),
+        ("매경 증권", "https://www.mk.co.kr/rss/50200009/"),
     ],
-    "연예": [
-        ("연예뉴스", "https://www.sportsseoul.com/rss/entertainment"),
-        ("방송뉴스", "https://www.tvreport.co.kr/feed"),
+    "보험·연금": [
+        ("보험신보", "https://www.insweek.co.kr/rss/allArticle.xml"),
     ],
-    "해외 연예": [
-        ("Variety", "https://variety.com/feed/"),
-        ("Deadline", "https://deadline.com/feed/"),
-        ("Billboard", "https://www.billboard.com/feed/"),
+    "세금·절약": [
+        ("한경 세금", "https://www.hankyung.com/feed/economy"),
+        ("매경 경제", "https://www.mk.co.kr/rss/50100030/"),
+    ],
+    "경제상식": [
+        ("KBS경제", "https://world.kbs.co.kr/rss/rss_news.htm?lang=k&id=Ec"),
     ],
 }
 
@@ -56,6 +59,7 @@ def read_feed(category, source, url, cutoff):
         link=text(item.findtext("link"))
         date=parse_date(item.findtext("pubDate") or item.findtext("{http://purl.org/dc/elements/1.1/}date"))
         if not title or not link or not date or date < cutoff: continue
+        if EXCLUDE_RE.search(title): continue
         desc=text(item.findtext("description"))
         out.append({"title":title,"summary":desc[:1000],"url":link,
                     "published_at":date.isoformat(),"category":category,
@@ -64,28 +68,31 @@ def read_feed(category, source, url, cutoff):
 
 
 def read_top_news(cutoff):
-    """Google News Korea의 실시간 주요뉴스를 추가로 수집한다."""
-    url = "https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko"
+    """Google News Korea 경제·재테크 뉴스를 수집한다."""
+    url = "https://news.google.com/rss/search?q=재테크+절약+세금+투자+연금&hl=ko&gl=KR&ceid=KR:ko"
     try:
         r = requests.get(url, timeout=20, headers={"User-Agent":"Mozilla/5.0 issue-reels/2.0"})
         r.raise_for_status(); root = ET.fromstring(r.content)
     except Exception as e:
-        print(f"[경고] Google News 주요뉴스: {e}"); return []
+        print(f"[경고] Google News 경제뉴스: {e}"); return []
     out=[]
     for item in root.findall(".//item"):
         title=text(item.findtext("title")); link=text(item.findtext("link"))
         date=parse_date(item.findtext("pubDate"))
         if not title or not link or not date or date < cutoff: continue
-        # 주제 키워드로만 분야를 분류하고 나머지는 화제 이슈로 보낸다.
-        if re.search(r"대통령|국회|정당|선거|후보|의원|탄핵", title): cat="국내 정치"
-        elif re.search(r"트럼프|미국|중국|러시아|우크라이나|이스라엘|백악관|유럽", title): cat="해외 정치"
-        elif re.search(r"배우|가수|아이돌|드라마|영화|방송|열애|컴백|콘서트|연예", title): cat="연예"
-        else: cat="해외 연예" if re.search(r"할리우드|그래미|빌보드|넷플릭스|디즈니", title) else "연예"
+        if EXCLUDE_RE.search(title): continue
+        # 키워드로 세부 카테고리 분류
+        if re.search(r"적금|예금|주식|ETF|펀드|채권|배당|금리|증권|투자", title): cat="저축·투자"
+        elif re.search(r"보험|실손|연금|퇴직연금|국민연금", title): cat="보험·연금"
+        elif re.search(r"세금|연말정산|공제|절약|할인|환급", title): cat="세금·절약"
+        elif re.search(r"재테크|자산|수익률|포트폴리오", title): cat="재테크"
+        elif re.search(r"월급|가계부|소비|돈관리|저축습관", title): cat="돈습관"
+        else: cat="경제상식"
         source = (item.findtext("source") or "Google News").strip()
         out.append({"title":title,"summary":text(item.findtext("description"))[:1000],"url":link,
                     "published_at":date.isoformat(),"category":cat,"source":source,
-                    "source_type":"google_news_top"})
-    print(f"Google News 실시간 주요뉴스: {len(out)}건")
+                    "source_type":"google_news_finance"})
+    print(f"Google News 경제뉴스: {len(out)}건")
     return out
 
 def main():

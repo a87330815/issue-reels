@@ -110,11 +110,12 @@ CATEGORY_MAP = {
     "돈": "money finance calculator",
     "주거": "apartment building residential",
     "안전": "safety emergency warning",
-    "연예": "entertainment stage celebrity event",
-    "국내 정치": "Korea government assembly press conference",
-    "해외 정치": "world leaders international summit",
-    "경제": "South Korea financial news Seoul economy",
-    "해외연예": "international entertainment red carpet",
+    "재테크": "money savings investment planning desk",
+    "저축·투자": "stock chart investment portfolio finance",
+    "보험·연금": "retirement pension insurance document",
+    "세금·절약": "tax calculator receipt savings piggybank",
+    "돈습관": "wallet money budgeting paycheck",
+    "경제상식": "South Korea financial news Seoul economy",
 }
 DEFAULT_QUERY = "city office desk modern"
 

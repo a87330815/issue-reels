@@ -93,13 +93,13 @@ def build_script(top3):
     scenes.append({
         "image": None,
         "photo_query": "subscribe follow bell notification",
-        "narration": "다음 주에는 어떤 이슈가 TOP에 오를지 궁금하면 팔로우 눌러주이소. 매일 올려드립니다.",
+        "narration": "다음 주에는 어떤 돈 정보가 TOP에 오를지 궁금하면 팔로우 눌러주이소. 매일 올려드립니다.",
         "subtitle": "팔로우 · 알림 설정",
     })
 
     script = {
         "title": f"이번 주 쫌봐봐 TOP 3 ({today})",
-        "category": "이슈",
+        "category": "재테크",
         "cover": {
             "hook": "이번 주\n가장 많이 본\nTOP 3",
             "badge": "주간 TOP 3",
