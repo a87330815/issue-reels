@@ -34,6 +34,9 @@ MIN_COVER_SEC = 2.5
 FADE_MS = 300
 # 출력 해상도 (9:16 세로 릴스)
 W, H = 1080, 1920
+# BGM 설정
+BGM_DIR = os.path.join(os.path.dirname(__file__), "assets", "bgm")
+BGM_VOLUME = 0.08  # TTS 대비 BGM 볼륨 (0.08 = -22dB 정도, 나레이션 방해 안 됨)
 
 
 def load_script(path):
@@ -389,7 +392,52 @@ def get_duration(media_path):
     return float(r.stdout.strip()) if r.stdout.strip() else DEFAULT_DURATION
 
 
-def build_video(card_files, tts_results, output_path, tmp_dir):
+def _pick_bgm():
+    """assets/bgm/ 에서 mp3/wav 하나를 랜덤 선택. 없으면 None."""
+    if not os.path.isdir(BGM_DIR):
+        return None
+    files = [f for f in os.listdir(BGM_DIR)
+             if f.lower().endswith((".mp3", ".wav", ".m4a", ".ogg"))]
+    return os.path.join(BGM_DIR, random.choice(files)) if files else None
+
+
+def _mix_bgm(video_path, bgm_path, tmp_dir):
+    """완성된 영상에 BGM을 낮은 볼륨으로 믹싱. 페이드인/아웃 포함."""
+    total_dur = get_duration(video_path)
+    fade_out_start = max(0, total_dur - 2.0)
+    mixed = os.path.join(tmp_dir, "mixed_bgm.mp4")
+
+    # BGM: 볼륨 낮추기 + 영상 길이에 맞춰 자르기 + 페이드인 1초 + 페이드아웃 2초
+    af_bgm = (f"volume={BGM_VOLUME},"
+              f"afade=t=in:st=0:d=1.0,"
+              f"afade=t=out:st={fade_out_start:.2f}:d=2.0,"
+              f"aresample=44100")
+
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", video_path,       # 0: 원본 영상 (TTS 오디오 포함)
+        "-stream_loop", "-1",   # BGM 반복 재생
+        "-i", bgm_path,         # 1: BGM
+        "-filter_complex",
+        f"[1:a]{af_bgm}[bgm];"
+        f"[0:a][bgm]amix=inputs=2:duration=first:dropout_transition=2[aout]",
+        "-map", "0:v", "-map", "[aout]",
+        "-c:v", "copy",         # 영상은 재인코딩 불필요
+        "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+        "-movflags", "+faststart",
+        "-shortest", mixed
+    ]
+    result = subprocess.run(cmd, capture_output=True)
+    if result.returncode == 0:
+        os.replace(mixed, video_path)
+        print(f"  ♪ BGM 믹싱 완료: {os.path.basename(bgm_path)}")
+        return True
+    else:
+        print(f"  ⚠ BGM 믹싱 실패 (영상은 그대로 유지): {result.stderr[:200]}")
+        return False
+
+
+def build_video(card_files, tts_results, output_path, tmp_dir, bgm=True):
     """카드 이미지 + TTS 오디오 → 세로 릴스 mp4."""
     segments = []
 
@@ -453,6 +501,14 @@ def build_video(card_files, tts_results, output_path, tmp_dir):
            output_path]
     subprocess.run(cmd, capture_output=True, check=True)
 
+    # BGM 믹싱
+    if bgm:
+        bgm_file = _pick_bgm()
+        if bgm_file:
+            _mix_bgm(output_path, bgm_file, tmp_dir)
+        else:
+            print("  ♪ BGM 없음 — assets/bgm/ 에 mp3/wav 추가 시 자동 적용")
+
     total_dur = get_duration(output_path)
     size_mb = os.path.getsize(output_path) / 1024 / 1024
     print(f"\n  ✓ 릴스 완성: {output_path}")
@@ -477,6 +533,8 @@ def main():
     ap.add_argument("--list-presets", action="store_true",
                     help="프리셋 목록만 출력하고 끝낸다")
     ap.add_argument("--no-tts", action="store_true", help="TTS 없이 무음 영상")
+    ap.add_argument("--no-bgm", action="store_true",
+                    help="배경음악(BGM) 없이 TTS만으로 영상 생성")
     ap.add_argument("--no-style", action="store_true",
                     help="양상국 스타일 후처리 없이 원본 TTS 사용")
     ap.add_argument("--require-tts", action="store_true",
@@ -552,7 +610,7 @@ def main():
 
         # 영상 합성
         print(f"\n{'2' if not a.no_tts else '1'}) 영상 합성")
-        build_video(cards, tts_results, output, tmp)
+        build_video(cards, tts_results, output, tmp, bgm=not a.no_bgm)
 
 
 if __name__ == "__main__":
