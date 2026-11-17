@@ -72,11 +72,14 @@ jobs:
         run: |
           python insights.py --limit ${{ github.event.inputs.limit || '50' }} ${{ github.event.inputs.force == 'true' && '--force' || '' }}
 
-      - name: CSV 커밋
+      - name: 주간 리포트 생성
+        run: python insights_report.py --days 7
+
+      - name: 결과 커밋
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/insights.csv
+          git add data/insights.csv data/weekly_report.md data/perf_hints.json
           git diff --cached --quiet && echo "변경 없음" && exit 0
-          git commit -m "📊 인사이트 수집 $(date -u +%Y-%m-%d)"
+          git commit -m "📊 인사이트 수집 + 주간 리포트 $(date -u +%Y-%m-%d)"
           git push
