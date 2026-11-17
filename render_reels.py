@@ -23,13 +23,13 @@ import tempfile
 # InJoon을 성우 목소리로 골랐다가 오히려 높아졌다.
 DEFAULT_VOICE = "ko-KR-HyunsuMultilingualNeural"
 # 대안: ko-KR-InJoonNeural(남, 더 높음), ko-KR-SunHiNeural(여)
-# 기본 속도(6자/초)는 또박또박하지만 릴스로는 처진다. 20% 올려
-# 7.2자/초로 두면 이슈 전달에 맞는 속도가 되고 길이도 37초대로 줄어든다.
-DEFAULT_RATE = "+15%"
+# 릴스 최적 길이는 25~35초. TTS를 25% 빠르게 하고 여유 패딩을 줄인다.
+# 기본 속도(6자/초) × 1.25 = 7.5자/초. 이슈 전달에 맞는 속도.
+DEFAULT_RATE = "+25%"
 # 장면당 기본 표시 시간 (TTS 없을 때)
-DEFAULT_DURATION = 4.0
+DEFAULT_DURATION = 3.5
 # 커버·아웃트로 최소 표시 시간
-MIN_COVER_SEC = 3.0
+MIN_COVER_SEC = 2.5
 # 페이드 전환
 FADE_MS = 300
 # 출력 해상도 (9:16 세로 릴스)
@@ -396,7 +396,7 @@ def build_video(card_files, tts_results, output_path, tmp_dir):
     for i, card in enumerate(card_files):
         # 각 장면의 표시 시간 결정
         if tts_results and i < len(tts_results) and tts_results[i]:
-            dur = max(tts_results[i]["duration"] + 0.8, MIN_COVER_SEC)
+            dur = max(tts_results[i]["duration"] + 0.5, MIN_COVER_SEC)
             audio = tts_results[i]["path"]
         else:
             dur = DEFAULT_DURATION
