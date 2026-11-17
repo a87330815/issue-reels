@@ -1576,11 +1576,19 @@ def main():
 
         # 최종 검증 — 허용 분야·금지 주제·7장 구조
         category = (script.get("meta") or {}).get("category", "").strip()
-        serialized = json.dumps(script, ensure_ascii=False)
         if category not in ALLOWED_CATEGORIES:
             print(f"  [제외] 허용하지 않는 카테고리: {category}")
             continue
-        if any(word in serialized for word in BLOCKED_KEYWORDS):
+        # 금지어 검사: 나레이션·커버 텍스트만 대상 (뉴스 출처·사진 쿼리 제외)
+        _text_parts = []
+        for sc in script.get("scenes", []):
+            _text_parts.append(sc.get("narration", ""))
+            _text_parts.append(sc.get("text", ""))
+        cover = script.get("cover") or {}
+        _text_parts.extend(cover.get("lines", []))
+        _text_parts.append(cover.get("subtitle", ""))
+        _check_text = " ".join(_text_parts)
+        if any(word in _check_text for word in BLOCKED_KEYWORDS):
             print("  [제외] 연예·정치·스포츠·부동산 계열 금지어 포함")
             continue
         if len(script.get("scenes", [])) != 5:

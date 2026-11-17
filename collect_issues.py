@@ -13,21 +13,23 @@ EXCLUDE_RE = re.compile(
 
 FEEDS = {
     "재테크": [
-        ("한경 재테크", "https://www.hankyung.com/feed/finance"),
+        ("Google 재테크", "https://news.google.com/rss/search?q=재테크+투자+저축&hl=ko&gl=KR&ceid=KR:ko"),
         ("매경 재테크", "https://www.mk.co.kr/rss/50200011/"),
     ],
     "저축·투자": [
-        ("한경 증권", "https://www.hankyung.com/feed/stock"),
+        ("Google 증권", "https://news.google.com/rss/search?q=주식+ETF+적금+투자&hl=ko&gl=KR&ceid=KR:ko"),
         ("매경 증권", "https://www.mk.co.kr/rss/50200009/"),
     ],
     "보험·연금": [
+        ("Google 보험연금", "https://news.google.com/rss/search?q=보험+연금+실손보험&hl=ko&gl=KR&ceid=KR:ko"),
         ("보험신보", "https://www.insweek.co.kr/rss/allArticle.xml"),
     ],
     "세금·절약": [
-        ("한경 세금", "https://www.hankyung.com/feed/economy"),
+        ("Google 세금절약", "https://news.google.com/rss/search?q=세금+연말정산+절약&hl=ko&gl=KR&ceid=KR:ko"),
         ("매경 경제", "https://www.mk.co.kr/rss/50100030/"),
     ],
     "경제상식": [
+        ("Google 경제상식", "https://news.google.com/rss/search?q=경제상식+금리+환율+물가&hl=ko&gl=KR&ceid=KR:ko"),
         ("KBS경제", "https://world.kbs.co.kr/rss/rss_news.htm?lang=k&id=Ec"),
     ],
 }
