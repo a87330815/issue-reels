@@ -35,6 +35,7 @@ import argparse
 import hashlib
 import json
 import os
+import random
 import re
 import sys
 from datetime import datetime, timezone
@@ -187,6 +188,8 @@ def trends_to_angles(trend_items):
             "생활·지원금·제도": "체크리스트",
             "놀라운 사건·화제": "오해정정",
             "당일 화제 이슈": "숫자훅",
+            "연예·화제": "숫자훅",
+            "해외연예": "숫자훅",
         }
         fmt = fmt_map.get(category, "숫자훅")
 
@@ -196,7 +199,7 @@ def trends_to_angles(trend_items):
 
         angles.append({
             "type": fmt,
-            "hook": keyword[:10],
+            "hook": keyword,  # hook_fit()이 커버 생성 시 적절히 자른다
             "summary": summary,
             "source": "google_trends",
             "category": category,
@@ -216,51 +219,100 @@ def trends_to_angles(trend_items):
 #  템플릿 모드 — 규칙 기반 대본 생성
 # ═══════════════════════════════════════════════════════════
 
+# ── 카테고리별 내레이션 오프너 (첫 장면 첫 문장) ────────────
+# "이거 모르고 지나가면 손해다"만 쓰면 피드가 복사본처럼 보인다.
+# 카테고리에 따라 다른 오프너를 랜덤 선택한다.
+NARRATION_OPENERS = {
+    "default": [
+        "이거 모르고 지나가면 손해다.",
+        "이거 그냥 넘어가면 나중에 후회한다.",
+        "지금 안 보면 나만 모르고 지나간다.",
+    ],
+    "연예·화제": [
+        "이거 지금 난리 났다.",
+        "실시간으로 터졌다.",
+        "댓글이 폭발하고 있다.",
+        "이거 보고 다들 놀라고 있다.",
+    ],
+    "국내 정치": [
+        "이거 모르고 지나가면 손해다.",
+        "지금 안 보면 나만 모르고 지나간다.",
+        "이게 왜 중요한지 한 번에 정리해준다.",
+    ],
+    "경제": [
+        "이거 모르고 지나가면 손해다.",
+        "지금 안 보면 나중에 후회한다.",
+        "당장 내 지갑에 영향 가는 얘기다.",
+    ],
+    "해외연예": [
+        "이거 지금 전 세계가 난리다.",
+        "해외에서 실시간 터졌다.",
+        "이거 보고 전 세계가 충격받았다.",
+    ],
+    "해외 정치": [
+        "이거 모르고 지나가면 손해다.",
+        "지금 세계가 뒤집어졌다.",
+    ],
+}
+
+
+def _pick_opener(category="default"):
+    """카테고리에 맞는 내레이션 오프너를 랜덤 선택한다."""
+    openers = NARRATION_OPENERS.get(category, NARRATION_OPENERS["default"])
+    return random.choice(openers)
+
+
 TEMPLATES = {
     "숫자훅": {
         "cover_pattern": [
             lambda a: ["방금 나온", f"<r>{hook_fit(a.get('hook',''))}</r>", "실화입니다"],
             lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "이거 실환가요"],
             lambda a: ["이번 달", f"<r>{hook_fit(a.get('hook',''))}</r>", "거래 떴습니다"],
+            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "이게 말이 되나"],
+            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "숫자 보고 놀랐다"],
+            lambda a: ["지금 확인 안 하면", f"<r>{hook_fit(a.get('hook',''))}</r>"],
         ],
-        "narration_pattern": "이거 모르고 지나가면 손해다. {summary}. 수치로 확인해보자.",
+        "narration_pattern": "{opener} {summary}. 수치로 확인해보자.",
         "scene_count": 5,
     },
     "시행일훅": {
         "cover_pattern": [
             lambda a: ["이거 안 하면", f"<r>과태료 나옵니다</r>"],
             lambda a: ["다음 달부터", "<r>이게 바뀝니다</r>"],
+            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "곧 시작됩니다"],
+            lambda a: ["마감 임박", f"<r>{hook_fit(a.get('hook',''))}</r>"],
         ],
-        "narration_pattern": "이거 모르고 지나가면 손해다. {summary}. 시행일 전에 꼭 확인해라.",
+        "narration_pattern": "{opener} {summary}. 시행일 전에 꼭 확인해라.",
         "scene_count": 5,
     },
     "오해정정": {
         "cover_pattern": [
             lambda a: [f"{hook_fit(a.get('hook',''))}", "<y>다 틀렸습니다</y>"],
             lambda a: ["이거 반대로", "<y>알고 계셨죠</y>"],
+            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "진실은 이겁니다"],
+            lambda a: ["다들 속고 있다", f"<y>{hook_fit(a.get('hook',''))}</y>"],
         ],
-        "narration_pattern": "이거 모르고 지나가면 손해다. {summary} 다들 잘못 알고 있다. 사실은 이렇다.",
+        "narration_pattern": "{opener} {summary} 다들 잘못 알고 있다. 사실은 이렇다.",
         "scene_count": 5,
     },
     "체크리스트": {
         "cover_pattern": [
             lambda a: ["반드시 확인", f"<r>{hook_fit(a.get('hook',''))}</r>"],
+            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "놓치면 손해다"],
+            lambda a: ["이거 다 확인했나", f"<r>{hook_fit(a.get('hook',''))}</r>"],
         ],
-        "narration_pattern": "이거 모르고 지나가면 손해다. {summary} 꼭 체크해야 할 거 정리해봤다.",
+        "narration_pattern": "{opener} {summary} 꼭 체크해야 할 거 정리해봤다.",
         "scene_count": 5,
     },
     "물가": {
         "cover_pattern": [
             lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "어디서 사야 할까"],
             lambda a: ["장보기 전에", f"<r>{hook_fit(a.get('hook',''))}</r>", "확인하세요"],
-            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "이거 실화입니다"],
+            lambda a: [f"<r>{hook_fit(a.get('hook',''))}</r>", "가격이 미쳤다"],
         ],
-        "narration_pattern": "이거 모르고 지나가면 손해다. {summary}. 소비자원 참가격 조사 결과다.",
+        "narration_pattern": "{opener} {summary}. 소비자원 참가격 조사 결과다.",
         "scene_count": 5,
     },
-    # 실거래가는 그 동네 주민만 해당하는 정보가 아니라 누구나 보는 시세다.
-    # "주민만 해당"은 사실과 어긋나고, 같은 문구가 연달아 나오면 피드가
-    # 복사본처럼 보인다. 동네 이름이 들어간 문구를 여러 개 두고 돌려 쓴다.
     "지역한정": {
         "cover_pattern": [
             lambda a: [f"{hook_fit(a.get('hook',''))}", "<y>얼마에 팔렸나</y>"],
@@ -269,7 +321,7 @@ TEMPLATES = {
             lambda a: ["이 동네 지금", f"<r>{hook_fit(a.get('hook',''))}</r>"],
             lambda a: [f"{hook_fit(a.get('hook',''))}", "<y>실거래가 공개</y>"],
         ],
-        "narration_pattern": "이거 모르고 지나가면 손해다. {summary}. 국토부에 신고된 실거래 금액이다.",
+        "narration_pattern": "{opener} {summary}. 국토부에 신고된 실거래 금액이다.",
         "scene_count": 5,
     },
 }
@@ -590,7 +642,8 @@ def template_generate(angle):
         hook_short = hook_fit(angle.get("hook", "확인하세요"), 12)
         cover_lines = [f"<r>{hook_short}</r>"]
 
-    # 내레이션
+    # 내레이션 — 카테고리에 맞는 오프너 선택
+    angle.setdefault("opener", _pick_opener(angle.get("category", "default")))
     narration_intro = tpl["narration_pattern"].format(**angle)
 
     # 장면 구성
@@ -697,6 +750,10 @@ LLM_SYSTEM = """당신은 이슈 릴스 계정의 대본 작가입니다.
 좋은 훅 — 손해 볼 것 같아서 멈추게 함:
   "이거 모르면 1년에 7만원 날립니다"
   "<r>23억</r> 실화입니다"
+좋은 훅 — 호기심·충격으로 멈추게 함 (연예·화제):
+  "<r>임혁필</r> 딸이 결국"
+  "<r>환승연애</r> 그 커플 근황"
+  "이거 보고 <r>난리</r> 났다"
 
 원칙:
 - **커버 첫 줄에 인물명·프로그램명·사건명을 반드시 넣으세요.** 누구/무엇에 대한 이야기인지 첫눈에 보여야 합니다
@@ -726,7 +783,11 @@ LLM_SYSTEM = """당신은 이슈 릴스 계정의 대본 작가입니다.
 - "~입니다/~습니다" 체. 반말 금지
 - 장면당 1~2문장. 짧게 끊으세요
 - 본문은 정확히 **5장면**. 표지와 고정 마무리를 더해 카드뉴스가 총 7장이 되게 하세요
-- 첫 장면 첫 문장은 반드시 **"이거 모르고 지나가면 손해다."**로 시작하세요 (계정 고정 훅이라 이 문장만 그대로 둡니다)
+- 첫 장면 첫 문장은 아래 오프너 중 카테고리에 맞는 것을 하나 고르세요:
+  - 경제/제도/생활: "이거 모르고 지나가면 손해다." "이거 그냥 넘어가면 나중에 후회한다." "지금 안 보면 나만 모르고 지나간다."
+  - 연예/화제: "이거 지금 난리 났다." "실시간으로 터졌다." "댓글이 폭발하고 있다." "이거 보고 다들 놀라고 있다."
+  - 해외연예: "이거 지금 전 세계가 난리다." "해외에서 실시간 터졌다."
+  매번 같은 오프너를 쓰지 마세요. 카테고리 안에서 돌려 쓰세요.
 - 첫 장면이 커버의 훅을 바로 받아야 합니다. 뜸 들이지 마세요
 - 커버만 읽어도 주제를 알 수 있어야 합니다. "4명의 엄마", "8000억"처럼 대상이 빠진 모호한 문구만 단독으로 쓰지 마세요
 - JSON의 title은 반드시 고유명사와 사건을 포함한 설명형 제목으로 작성하세요. 예: "마이클 잭슨 딸의 8000억 유산 소송"
@@ -1217,8 +1278,11 @@ def _build_trend_prompt(angle):
 4. 사진은 직접 촬영한 것만 사용합니다. photo_query에 영문 키워드를 넣어주세요
 5. 출처 표시: "Google Trends"
 
-커버는 24자 이내입니다. 이 키워드를 보고 사람들이 무엇을 알아야 한다고 느낄지,
-무엇을 놓치고 있다고 느낄지에서 출발하세요.
+커버는 24자 이내입니다. 카테고리에 따라 훅의 톤을 다르게 하세요:
+- 경제/제도: "돈·시간·손해"에 연결. 사람들이 무엇을 놓치고 있는지.
+- 연예/화제/해외연예: "호기심·충격·근황". 인물명을 첫 줄에 넣고, 궁금해서 멈추게.
+- 정치: "핵심 쟁점·영향". 무엇이 바뀌는지 단정적으로.
+인물명·프로그램명이 있으면 반드시 커버 첫 줄에 넣으세요.
 
 6. 커버 또는 첫 장면에 "오늘", "방금", "X월 X일" 같은 시간 앵커를 넣으세요
 7. meta 안에 "keywords" 배열(자연어 검색 키워드 3~5개)을 넣으세요. "#" 없이 순수 자연어로."""
