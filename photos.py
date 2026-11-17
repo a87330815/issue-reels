@@ -26,6 +26,11 @@ UA = "issue-reels-cardnews/1.0 (https://github.com/a87330815/issue-reels)"
 TIMEOUT = 20
 CARD_W, CARD_H = 1080, 1350
 
+# ── 네이버 이미지 검색 — NAVER API HUB (최우선 소스) ──────────
+# https://naverapihub.apigw.ntruss.com  (2026-07 이후 신규 발급처)
+NAVER_CLIENT_ID = os.environ.get("NAVER_CLIENT_ID", "").strip()
+NAVER_CLIENT_SECRET = os.environ.get("NAVER_CLIENT_SECRET", "").strip()
+
 # ── 한국어 → 영문 검색어 매핑 ─────────────────
 # 소제목/제목에 아래 키가 포함되면 해당 영문 쿼리를 사용한다. 긴 키부터 매칭.
 KEYWORD_MAP = {
@@ -142,6 +147,35 @@ def build_query(text, category=""):
 
 
 # ── 공급자별 검색 ────────────────────────────
+def search_naver(query_kr, n=10):
+    """네이버 이미지 검색 — 한국어 그대로 검색, 인물·장소·상품 정확도 높음."""
+    if not NAVER_CLIENT_ID or not NAVER_CLIENT_SECRET:
+        return []
+    url = "https://naverapihub.apigw.ntruss.com/search/v1/image"
+    headers = {
+        "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
+        "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET,
+        "User-Agent": UA,
+    }
+    params = {"query": query_kr, "display": n, "sort": "sim", "filter": "large"}
+    r = requests.get(url, headers=headers, params=params, timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for it in r.json().get("items", []):
+        link = it.get("link", "")
+        if not link:
+            continue
+        out.append({
+            "url": link,
+            "title": re.sub(r"<.*?>", "", it.get("title", "")),
+            "source": "Naver",
+            "creator": it.get("sizeheight", ""),
+            "license": "editorial",
+            "page": it.get("sourceUrl") or link,
+        })
+    return out
+
+
 def search_unsplash(query, key, n=8):
     """Unsplash — 상업적 이용 자유, 출처표기 의무 없음."""
     url = "https://api.unsplash.com/search/photos"
@@ -289,12 +323,15 @@ def relevance(cand, terms):
     return len(hit)
 
 
-def search_all(query, n=12, category=""):
+def search_all(query, n=12, category="", query_kr=""):
     """공급자를 순서대로 시도해 후보 목록을 만든다.
     앞 공급자 결과가 적으면 뒤 공급자 결과를 이어 붙여 중복 회피 여지를 남긴다.
-    Unsplash 결과는 trusted=True로 표시해 적합도 필터를 건너뛴다."""
+    네이버(한국어)를 최우선으로, Unsplash/Openverse(영문)를 폴백으로 사용한다."""
     key = os.environ.get("UNSPLASH_ACCESS_KEY", "").strip()
     providers = []
+    # 네이버: 한국어 원문으로 검색 → 인물/장소/상품 정확도 높음
+    if query_kr and NAVER_CLIENT_ID:
+        providers.append(("naver", lambda: search_naver(query_kr, n), True))
     if key:
         providers.append(("unsplash", lambda: search_unsplash(query, key, n), True))
     providers.append(("openverse", lambda: search_openverse(query, n), False))
@@ -312,15 +349,16 @@ def search_all(query, n=12, category=""):
             merged.extend(kept)
         except Exception as e:
             print(f"    [{name}] 실패: {e}")
-        # 충분히 모였고 선두 공급자(유료키)면 더 찾지 않는다
-        if len(merged) >= n and name == "unsplash":
+        # 충분히 모였고 선두 공급자면 더 찾지 않는다
+        if len(merged) >= n and name in ("naver", "unsplash"):
             break
     return merged
 
 
-def search_with_fallback(query, n=12, min_needed=3, category=""):
+def search_with_fallback(query, n=12, min_needed=3, category="", query_kr=""):
     """무료 CC 풀은 어휘가 얕아 4단어짜리 구체적 검색어가 0건을 내기 쉽다.
-    결과가 모자라면 뒤 단어부터 떼어내며 점점 넓은 검색어로 재시도한다."""
+    결과가 모자라면 뒤 단어부터 떼어내며 점점 넓은 검색어로 재시도한다.
+    query_kr이 있으면 네이버에 한국어 원문으로 검색한다."""
     words = query.split()
     terms = _terms(query)
     # 낱말 하나까지 줄이면 주제를 잃는다. 최소 두 낱말은 남긴다.
@@ -335,7 +373,7 @@ def search_with_fallback(query, n=12, min_needed=3, category=""):
         if k < len(words):
             print(f"    ↻ 재시도: \"{q}\"")
         seen = {x["url"] for x in out}
-        out.extend(c for c in search_all(q, n, category) if c["url"] not in seen)
+        out.extend(c for c in search_all(q, n, category, query_kr=query_kr) if c["url"] not in seen)
         if len(out) >= min_needed:
             break
 
@@ -542,8 +580,10 @@ def fetch_for_script(script_path, out_dir):
                 continue
             print(f"    ✗ 커스텀 URL 실패, 폴백 검색으로 전환")
         q = explicit or build_query(text, category)
-        print(f"  [{slot}] '{text}' → \"{q}\"")
-        cands = search_with_fallback(q, category=category)
+        # 네이버에는 한국어 원문(소제목)을 그대로 보내 인물/장소/상품 정확도를 높인다
+        kr = text.strip() if text else ""
+        print(f"  [{slot}] '{text}' → \"{q}\"" + (f"  (네이버: \"{kr}\")" if kr else ""))
+        cands = search_with_fallback(q, category=category, query_kr=kr)
         if not cands:
             # 너무 구체적인 뉴스 검색어가 0건이면 허용 카테고리의 넓은
             # 사진 풀에서 다시 찾는다. 사진 없는 카드 생성은 금지하되,
