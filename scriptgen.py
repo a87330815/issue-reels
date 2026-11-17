@@ -1605,11 +1605,7 @@ def main():
         if len(set(normalized_queries)) != len(normalized_queries):
             print("  [제외] 카드뉴스 장면 사이에 중복 photo_query가 있습니다")
             continue
-        if category in {"재테크", "저축·투자", "보험·연금", "세금·절약", "경제상식"}:
-            korea_anchor = re.compile(r"\b(korea|korean|seoul|bank of korea|national assembly)\b", re.I)
-            if any(not korea_anchor.search(q) for q in photo_queries):
-                print("  [제외] 한국 경제·정치 사진 검색어에 한국 맥락이 빠졌습니다")
-                continue
+        # 한국 맥락 검증은 재테크 니치에서 글로벌 투자 주제를 불필요하게 차단하므로 제거
 
         v = validate_cover(script["cover"]["lines"])
         if v is not True:

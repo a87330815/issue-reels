@@ -65,7 +65,7 @@ def classify_category(title, snippet=""):
         for p in patterns:
             if re.search(p, text):
                 return cat
-    return "경제상식"  # 기본값 — 재테크 니치에 맞는 폴백
+    return None  # 매칭 안 되면 재테크 무관 → 제외 대상
 
 
 def is_excluded(title, snippet=""):
