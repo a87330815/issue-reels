@@ -243,7 +243,58 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
     print(f"  발행 완료: {media_id}")
     print(f"  ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요")
     print(f"     → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가")
+
+    # 스토리에 릴스 자동 공유
+    if not dry_run:
+        try:
+            share_to_story(media_id)
+        except Exception as e:
+            print(f"  ⚠️  스토리 공유 실패 (무시): {e}")
+
     return media_id
+
+
+def share_to_story(media_id):
+    """발행된 릴스를 스토리에 공유.
+
+    Instagram Graph API로 STORIES 컨테이너를 만들어 릴스 permalink을
+    스토리에 첨부한다. 실패해도 릴스 발행에는 영향 없음.
+    """
+    # 릴스 permalink 조회
+    info = api("GET", media_id, fields="permalink,shortcode")
+    permalink = info.get("permalink", "")
+    if not permalink:
+        print("  스토리 공유 스킵 — permalink 없음")
+        return
+
+    # 스토리용 이미지 (릴스 썸네일을 재활용)
+    thumb = info.get("thumbnail_url") or info.get("media_url")
+
+    # 스토리 컨테이너 생성 — 릴스 링크 스티커 포함
+    # Note: Graph API의 stories 발행은 image_url 필수
+    # 릴스 썸네일이 없으면 스킵
+    if not thumb:
+        print("  스토리 공유 스킵 — 썸네일 URL 없음")
+        return
+
+    try:
+        container = api(
+            "POST", f"{IG_ID}/media",
+            media_type="STORIES",
+            image_url=thumb,
+            # link 스티커로 릴스 연결
+            link=permalink,
+        )
+        cid = container.get("id")
+        if not cid:
+            print("  스토리 컨테이너 생성 실패")
+            return
+
+        time.sleep(5)
+        api("POST", f"{IG_ID}/media_publish", creation_id=cid)
+        print(f"  📱 스토리 공유 완료")
+    except Exception as e:
+        print(f"  스토리 발행 실패: {e}")
 
 
 def insights(media_id):
