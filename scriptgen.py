@@ -45,6 +45,16 @@ COLLECTED = os.path.join(ROOT, "out", "collected.json")
 SCRIPT_DIR = os.path.join(ROOT, "out", "scripts")
 FUN_TOPICS = os.path.join(ROOT, "fun_topics.yml")
 TIPS_TOPICS = os.path.join(ROOT, "tips_topics.yml")
+PERF_HINTS = os.path.join(ROOT, "data", "perf_hints.json")
+
+
+def load_perf_hints():
+    """성과 힌트 로드. 없으면 빈 dict."""
+    try:
+        with open(PERF_HINTS, encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
 
 ALLOWED_CATEGORIES = {"연예", "국내 정치", "해외 정치", "경제", "해외연예", "이슈"}
 BLOCKED_KEYWORDS = {"생활꿀팁", "생활·꿀팁", "꿀팁", "아파트", "부동산", "실거래", "분양", "청약", "전세", "월세", "주택", "평당", "단지", "집값", "주거"}
@@ -764,6 +774,7 @@ def template_generate(angle):
             "attribution": attribution,
             "chart": angle.get("chart"),
             "tone": "경상도",
+            "perf_hints": load_perf_hints(),
             "generated_at": datetime.now(timezone.utc).isoformat(),
         },
     }
@@ -1351,6 +1362,17 @@ def llm_generate(angle, api_key, provider="anthropic"):
 
 커버는 24자 이내입니다. 이 수치를 보고 사람들이 무엇을 손해 본다고 느낄지,
 또는 무엇을 놓치고 있다고 느낄지에서 출발하세요."""
+
+    # 성과 힌트를 프롬프트에 주입
+    hints = load_perf_hints()
+    if hints.get("avg_views") and hints.get("top_captions"):
+        perf_ctx = (
+            f"\n\n[성과 참고] 최근 평균 조회수 {hints['avg_views']}회, "
+            f"인게이지먼트율 {hints.get('avg_engagement_rate', 0)}%. "
+            f"잘 된 콘텐츠: {', '.join(hints['top_captions'][:3])}. "
+            f"이 패턴을 참고해 더 자극적인 훅을 만드세요."
+        )
+        prompt += perf_ctx
 
     system = TIPS_LLM_SYSTEM if is_tips else (FUN_LLM_SYSTEM if is_fun else LLM_SYSTEM)
     if provider == "openai":
