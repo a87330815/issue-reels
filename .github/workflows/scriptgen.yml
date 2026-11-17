@@ -40,8 +40,8 @@ jobs:
           python scriptgen.py -n "${{ inputs.count || '9' }}" --trends out/trends.json
           python - <<'PY'
           import glob,json,os
-          allowed={'연예','국내 정치','해외 정치','경제','해외연예'}
-          banned=('생활꿀팁','생활·꿀팁','꿀팁','일반 정보','아파트','부동산','실거래','분양','청약','전세','월세','주택','평당','단지','집값','주거','재건축','매매가')
+          allowed={'재테크','저축·투자','보험·연금','세금·절약','돈습관','경제상식'}
+          banned=('연예','아이돌','정치','국회','대통령','스포츠','축구','야구','부동산','아파트','분양','청약','전세','월세','주택','집값')
           kept=[]
           for p in glob.glob('out/scripts/*.json'):
               d=json.load(open(p,encoding='utf-8')); t=json.dumps(d,ensure_ascii=False)
