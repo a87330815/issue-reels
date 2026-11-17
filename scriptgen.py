@@ -174,7 +174,7 @@ def analyze_price(items):
 
 
 def extract_angles(items):
-    """RSS 이슈만 사용한다. 레거시 데이터 분석기는 호출하지 않는다."""
+    """RSS 뉴스만 사용한다. 레거시 데이터 분석기는 호출하지 않는다."""
     return []
 
 

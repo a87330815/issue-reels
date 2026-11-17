@@ -161,7 +161,7 @@ def _draw_cta(img, accent):
 
     # 팔로우
     text1 = "팔로우 하면"
-    text2 = "매일 이슈 정리"
+    text2 = "매일 돈 정보 정리"
     text3 = "해드립니다"
 
     y = H // 2 - 160

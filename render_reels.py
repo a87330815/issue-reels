@@ -24,7 +24,7 @@ import tempfile
 DEFAULT_VOICE = "ko-KR-HyunsuMultilingualNeural"
 # 대안: ko-KR-InJoonNeural(남, 더 높음), ko-KR-SunHiNeural(여)
 # 릴스 최적 길이는 25~35초. TTS를 25% 빠르게 하고 여유 패딩을 줄인다.
-# 기본 속도(6자/초) × 1.25 = 7.5자/초. 이슈 전달에 맞는 속도.
+# 기본 속도(6자/초) × 1.25 = 7.5자/초. 정보 전달에 맞는 속도.
 DEFAULT_RATE = "+25%"
 # 장면당 기본 표시 시간 (TTS 없을 때)
 DEFAULT_DURATION = 3.5
@@ -104,11 +104,11 @@ FEMALE_VOICES = {"ko-KR-SunHiNeural"}
 # 목소리는 피치를 올려도 "빨라진 낭독"이 될 뿐 캐릭터가 되지 않는다.
 # 그쪽이 필요하면 감정 표현을 지원하는 유료 엔진을 써야 한다.
 PRESETS = {
-    "이슈남": {   # 현재 기본값. 또렷하고 빠른 이슈 전달
+    "이슈남": {   # 현재 기본값. 또렷하고 빠른 정보 전달
         "voice": "ko-KR-HyunsuMultilingualNeural", "pitch": 0.88, "rate": "+20%",
         "eq": ("equalizer=f=120:t=h:w=100:g=2.5,equalizer=f=300:t=h:w=200:g=1.5,"
                "equalizer=f=1000:t=h:w=600:g=-1.5,equalizer=f=4000:t=h:w=1500:g=2,"),
-        "desc": "또렷하고 빠른 남성 — 이슈 전달용 (기본)",
+        "desc": "또렷하고 빠른 남성 — 정보 전달용 (기본)",
     },
     "다큐": {     # TV 다큐멘터리 내레이션. 낮고 느리게
         "voice": "ko-KR-HyunsuMultilingualNeural", "pitch": 0.80, "rate": "-5%",
@@ -138,7 +138,7 @@ PRESETS = {
         "voice": "ko-KR-SunHiNeural", "pitch": 1.06, "rate": "+25%",
         "eq": ("equalizer=f=400:t=h:w=300:g=1,equalizer=f=3000:t=h:w=1500:g=2,"
                "equalizer=f=8000:t=h:w=2500:g=2,"),
-        "desc": "밝고 빠른 여성 리포터 — 가벼운 이슈용",
+        "desc": "밝고 빠른 여성 리포터 — 가벼운 정보용",
     },
     "캐릭터": {   # 만화풍. 한계가 뚜렷하니 샘플로 판단할 것
         "voice": "ko-KR-SunHiNeural", "pitch": 1.18, "rate": "+30%",
@@ -186,7 +186,7 @@ def scene_presets(pool, stem, count, alternate):
     """장면마다 쓸 프리셋을 정한다.
 
     alternate면 목록을 번갈아 돌려 한 영상 안에서 목소리가 교대한다.
-    두 사람이 주고받는 느낌이 나서 이슈 전달에 리듬이 생긴다.
+    두 사람이 주고받는 느낌이 나서 정보 전달에 리듬이 생긴다.
     아니면 영상 전체가 한 목소리다.
     """
     if not pool:

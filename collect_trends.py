@@ -194,7 +194,7 @@ def main():
     raw = []
     raw.extend(fetch_google_trends_kr())
     raw.extend(fetch_naver_datalab())
-    # 최근 24시간 RSS 이슈를 트렌드 후보에 합친다.
+    # 최근 24시간 RSS 뉴스를 트렌드 후보에 합친다.
     collected_path = os.path.join(OUT_DIR, "collected.json")
     if os.path.exists(collected_path):
         try:
@@ -242,8 +242,8 @@ def main():
         )
         item["key"] = trend_key(item["keyword"])
 
-    # 5. 허용 분야만 남기고 RSS 이슈를 우선한다.
-    allowed = {"연예", "국내 정치", "해외 정치", "해외연예"}
+    # 5. 허용 분야만 남기고 RSS 뉴스를 우선한다.
+    allowed = {"재테크", "저축·투자", "보험·연금", "세금·절약", "돈습관", "경제상식"}
     filtered = [item for item in filtered if item.get("category") in allowed]
     seen = load_seen_trends()
     new_items = [item for item in filtered if item["key"] not in seen]
