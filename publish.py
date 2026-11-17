@@ -296,13 +296,21 @@ def build_caption(script):
     lines.append("")
     lines.append("👇 댓글에 \"정보\" 쓰면 DM으로 더 알려드려요!")
 
-    # 해시태그는 3~5개만 (2026: 해시태그 팔로우 폐지, 키워드 검색 중심)
-    cat = meta.get("category")
-    tags = []
-    if cat:
-        for w in cat.replace("·", " ").split():
-            tags.append("#" + w)
-    tags.extend(["#이슈", "#뉴스"])
+    # 해시태그 — 카테고리별 최적화 (2026: 키워드 검색 중심, 3~5개)
+    cat = meta.get("category", "")
+    _CATEGORY_TAGS = {
+        "연예":       ["#연예", "#이슈", "#쫌봐봐"],
+        "해외연예":   ["#해외연예", "#이슈", "#쫌봐봐"],
+        "국내 정치":  ["#정치", "#이슈", "#시사"],
+        "해외 정치":  ["#해외", "#이슈", "#시사"],
+        "경제":       ["#경제", "#이슈", "#돈"],
+        "연예·화제":  ["#연예", "#화제", "#쫌봐봐"],
+    }
+    tags = _CATEGORY_TAGS.get(cat, ["#이슈", "#뉴스", "#쫌봐봐"])
+    # 트렌드 키워드가 있으면 해시태그로 추가
+    kw = meta.get("trend_keyword", "")
+    if kw and len(kw) <= 10:
+        tags.insert(0, f"#{kw.replace(' ', '')}")
     seen, uniq = set(), []
     for t in tags:
         if t not in seen:
