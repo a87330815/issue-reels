@@ -1,74 +1,75 @@
-run 44288525727 2026-11-18T10:48:08Z
+run 44360727014 2026-11-18T17:39:13Z
 
-=== 20261118_04_숫자훅 ===
-  [cover] '회계사 연봉은 올라가는데 일자리는 줄어든다고?' → "accounting ledger calculator financial documents korean"  (네이버: "회계사 연봉은 올라가는데 일자리는 줄어든다고?")
+=== 20261118_02_숫자훅 ===
+  [cover] '밥값 벌면 바로 판다…ETF 단타로 4조 움직였다' → "trading screen stock chart korean investor"  (네이버: "밥값 벌면 바로 판다…ETF 단타로 4조 움직였다")
+    [unsplash] 2건 후보
+    [openverse] 0건 후보
+    [wikimedia] 1건 후보
+    적합도 통과 0/1건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 0/2건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "money savings investment planning desk"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 5/12건
+    Unsplash 적합도 통과 8/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '회계사 채용 3년 내내 깝아드는 중' → "job market decline chart arrow down statistics"  (네이버: "회계사 채용 3년 내내 깝아드는 중")
+  [scene1] 'ETF 당일매매 1년새 4배 이상 불어났다아이가' → "stock trading numbers growth chart"  (네이버: "ETF 당일매매 1년새 4배 이상 불어났다아이가")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 8/12건
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '장기 투자 상품이 단타 도구로' → "smartphone trading app screen notification"  (네이버: "장기 투자 상품이 단타 도구로")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 6/12건
-    ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '수습처 못 찾은 회계사 늘어난다' → "accountant working desk computer financial analysis"  (네이버: "수습처 못 찾은 회계사 늘어난다")
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 실패: HTTPSConnectionPool(host='api.openverse.org', port=443): Read timed out. (read timeout=20)
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 9/11건
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] 'AI가 업무 자동화를 쌔리 하고 있다' → "artificial intelligence automation office technology"  (네이버: "AI가 업무 자동화를 쌔리 하고 있다")
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 10건 후보
-    [wikimedia] 0건 후보
-    적합도 통과 0/10건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 1/11건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '전문성 있는 일자리는 여전히 필요하다' → "professional accountant meeting client consultation"  (네이버: "전문성 있는 일자리는 여전히 필요하다")
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 1건 후보
-    [wikimedia] 0건 후보
-    적합도 통과 0/1건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 1/11건
-    ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '지금부터 실무 경험을 쌓아 둬야 한다' → "young professional learning internship training skills"  (네이버: "지금부터 실무 경험을 쌓아 둬야 한다")
+  [scene3] '빈번한 거래 = 수수료 누적 + 손실' → "wallet money loss down arrow decrease"  (네이버: "빈번한 거래 = 수수료 누적 + 손실")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 1/12건
+    Unsplash 적합도 통과 8/12건
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '단타 성공률은 메대로 낮다아이가' → "investor stress frustrated face analysis chart"  (네이버: "단타 성공률은 메대로 낮다아이가")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 4/12건
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '흔들리지 않는 투자가 이기는 투자' → "piggy bank steady growth graph stable"  (네이버: "흔들리지 않는 투자가 이기는 투자")
+    [unsplash] 7건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 5/7건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261118_04_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261118_02_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261118_04_숫자훅
-대본: out/scripts/20261118_04_숫자훅.json
-카드: out/cards_20261118_04_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261118_02_숫자훅
+대본: out/scripts/20261118_02_숫자훅.json
+카드: out/cards_20261118_02_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 2.3초  회계사 채용 3년 내내 깝아들고 있다아이가...
-  TTS [2/6] [EL·발랄녀] 7.7초  시방 안 하면 10년 뒤에 후회한다아이가. 내년 공...
-  TTS [3/6] [EL·발랄녀] 6.8초  와 이런 일이 생기는 걸까노. 첫째로, 이미 나온 ...
-  TTS [4/6] [EL·발랄녀] 6.8초  둘째로, AI가 세무·회계 일을 빨리빨리 자동화해 ...
-  TTS [5/6] [EL·발랄녀] 7.5초  "그럼 회계사 따면 안 되는 거 아닌가?" 아니다아...
-  TTS [6/6] [EL·발랄녀] 20.4초  근데 인자는 "시험만 붙으면 된다" 그런 시절이 아...
+  TTS [1/6] [EL·발랄녀] 3.6초  날마다 사고팔고 4조원 ETF 단타 난리났다...
+  TTS [2/6] [EL·발랄녀] 7.9초  인자 증시에서 제일 빨리 커지는 거래가 있이더라. ...
+  TTS [3/6] [EL·발랄녀] 8.0초  원래 ETF는 오래 보유하면서 꾸준히 수익을 노리는...
+  TTS [4/6] [EL·발랄녀] 7.9초  문제는 여기인기라. 날마다 작은 수익을 노리다 보니...
+  TTS [5/6] [EL·발랄녀] 10.1초  통계를 보면 단기 매매자의 70% 이상이 실패한다카...
+  TTS [6/6] [EL·발랄녀] 18.6초  빨리 번 돈을 꿈꾸는 거는 자연스럽지예. 근데 ET...
 
 2) 영상 합성
-  세그먼트 [1/7] 2.8초
-  세그먼트 [2/7] 8.2초
-  세그먼트 [3/7] 7.3초
-  세그먼트 [4/7] 7.3초
-  세그먼트 [5/7] 8.0초
-  세그먼트 [6/7] 20.9초
+  세그먼트 [1/7] 4.1초
+  세그먼트 [2/7] 8.4초
+  세그먼트 [3/7] 8.5초
+  세그먼트 [4/7] 8.4초
+  세그먼트 [5/7] 10.6초
+  세그먼트 [6/7] 19.1초
   세그먼트 [7/7] 3.5초
-  ♪ BGM 믹싱 완료: lofi_chill_01.mp3
+  ♪ BGM 믹싱 완료: ambient_news_02.mp3
 
-  ✓ 릴스 완성: out/reels/20261118_04_숫자훅.mp4
-    길이: 56.8초  /  크기: 2.8MB
--rw-r--r-- 1 runner runner 2.8M Nov 18 10:50 out/reels/20261118_04_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261118_02_숫자훅.mp4
+    길이: 61.5초  /  크기: 3.0MB
+-rw-r--r-- 1 runner runner 3.0M Nov 18 17:41 out/reels/20261118_02_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=56.766341
+duration=61.499002
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
@@ -77,7 +78,7 @@ duration=56.766341
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-18):
-  20261118_04_숫자훅.mp4  2.8MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-18/20261118_04.mp4
+  20261118_02_숫자훅.mp4  3.0MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-18/20261118_02.mp4
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -88,13 +89,13 @@ duration=56.766341
 남은 발행 가능: 97건
 발행 대상: 1건
 
-── 1/1  20261118_04_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-18/20261118_04.mp4
-  캡션: 회계사 연봉은 올라가는데 일자리는 줄어든다고?
-  컨테이너: 17979272459973700
+── 1/1  20261118_02_숫자훅
+  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-18/20261118_02.mp4
+  캡션: 밥값 벌면 바로 판다…ETF 단타로 4조 움직였다
+  컨테이너: 17979383156973700
       0초  IN_PROGRESS
-     40초  FINISHED
-  발행 완료: 18112709075627406
+     51초  FINISHED
+  발행 완료: 17920484502461816
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
   스토리 공유 스킵 — 썸네일 URL 없음
