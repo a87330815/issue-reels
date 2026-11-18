@@ -117,6 +117,8 @@ jobs:
       # 진단에 쓰도록 레포로 함께 커밋한다 (cards.yml과 같은 방식).
       - name: 1) 사진 수집
         env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           STEM: ${{ steps.pick.outputs.stem }}
         run: |

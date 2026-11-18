@@ -189,6 +189,8 @@ jobs:
       - name: 1) 사진 수집
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != ''
         env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           STEM: ${{ steps.pick.outputs.stem }}
         run: |
