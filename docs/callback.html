@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jjombwabwa - TikTok OAuth Callback</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #1a1a2e; color: #fff; }
+        .container { text-align: center; padding: 2rem; max-width: 600px; }
+        h1 { color: #e94560; }
+        .code-box { background: #16213e; border: 1px solid #e94560; border-radius: 8px; padding: 1rem; margin: 1rem 0; word-break: break-all; font-family: monospace; font-size: 14px; }
+        .label { color: #aaa; font-size: 12px; margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 jjombwabwa</h1>
+        <p>TikTok Authorization</p>
+        <div id="result"></div>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        const error = params.get('error');
+        const resultDiv = document.getElementById('result');
+
+        if (code) {
+            resultDiv.innerHTML = `
+                <p style="color:#4ecca3">✅ Authorization successful!</p>
+                <div class="label">Authorization Code:</div>
+                <div class="code-box">${code}</div>
+                <p style="color:#aaa;font-size:13px">Copy this code and use it to get your access token.</p>
+            `;
+        } else if (error) {
+            resultDiv.innerHTML = `
+                <p style="color:#e94560">❌ Authorization failed</p>
+                <div class="code-box">Error: ${error}<br>${params.get('error_description') || ''}</div>
+            `;
+        } else {
+            resultDiv.innerHTML = `<p style="color:#aaa">Waiting for TikTok authorization...</p>`;
+        }
+    </script>
+</body>
+</html>
