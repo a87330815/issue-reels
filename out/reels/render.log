@@ -1,105 +1,82 @@
-run 44360727014 2026-11-18T17:39:13Z
+run 44454465859 2026-11-19T03:54:44Z
 
-=== 20261118_02_숫자훅 ===
-  [cover] '밥값 벌면 바로 판다…ETF 단타로 4조 움직였다' → "trading screen stock chart korean investor"  (네이버: "밥값 벌면 바로 판다…ETF 단타로 4조 움직였다")
-    [unsplash] 2건 후보
-    [openverse] 0건 후보
-    [wikimedia] 1건 후보
-    적합도 통과 0/1건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 0/2건
-    ✗ 적합한 후보 없음 — 사진 없이 진행
-    ↻ 카테고리 대체 검색: "money savings investment planning desk"
+=== 20261119_04_숫자훅 ===
+  [cover] 'PEF 투자자가 꼭 알아야 할 것' → "investment portfolio data analytics growth chart"  (네이버: "PEF 투자자가 꼭 알아야 할 것")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 8/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] 'ETF 당일매매 1년새 4배 이상 불어났다아이가' → "stock trading numbers growth chart"  (네이버: "ETF 당일매매 1년새 4배 이상 불어났다아이가")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 8/12건
+  [scene1] '규모 큰 펀드가 수익이 큰 건 안 그라노' → "fund manager reviewing financial data documents"  (네이버: "규모 큰 펀드가 수익이 큰 건 안 그라노")
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 3건 후보
+    적합도 통과 0/3건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 3/11건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '장기 투자 상품이 단타 도구로' → "smartphone trading app screen notification"  (네이버: "장기 투자 상품이 단타 도구로")
+  [scene2] '수익률은 데이터에서 나온다카이' → "AI artificial intelligence data processing technology"  (네이버: "수익률은 데이터에서 나온다카이")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 6/12건
+    Unsplash 적합도 통과 3/12건
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '빈번한 거래 = 수수료 누적 + 손실' → "wallet money loss down arrow decrease"  (네이버: "빈번한 거래 = 수수료 누적 + 손실")
+  [scene3] '데이터 잘 다루는 펀드가 수익도 더 많다데이' → "computer screen financial analysis earnings growth statistics"  (네이버: "데이터 잘 다루는 펀드가 수익도 더 많다데이")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 8/12건
+    Unsplash 적합도 통과 9/12건
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '단타 성공률은 메대로 낮다아이가' → "investor stress frustrated face analysis chart"  (네이버: "단타 성공률은 메대로 낮다아이가")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 4/12건
-    ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '흔들리지 않는 투자가 이기는 투자' → "piggy bank steady growth graph stable"  (네이버: "흔들리지 않는 투자가 이기는 투자")
-    [unsplash] 7건 후보 (부적합 1건 제외)
+  [scene4] 'PEF 선택 체크리스트: 데이터팀' → "checklist business strategy planning clipboard"  (네이버: "PEF 선택 체크리스트: 데이터팀")
+    [unsplash] 11건 후보 (부적합 1건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 5/7건
+    Unsplash 적합도 통과 4/11건
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '규모 아닌 데이터, 인자 꼭 확인하세요' → "mobile phone investment app checking portfolio analysis"  (네이버: "규모 아닌 데이터, 인자 꼭 확인하세요")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 12/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261118_02_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261119_04_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261118_02_숫자훅
-대본: out/scripts/20261118_02_숫자훅.json
-카드: out/cards_20261118_02_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261119_04_숫자훅
+대본: out/scripts/20261119_04_숫자훅.json
+카드: out/cards_20261119_04_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 3.6초  날마다 사고팔고 4조원 ETF 단타 난리났다...
-  TTS [2/6] [EL·발랄녀] 7.9초  인자 증시에서 제일 빨리 커지는 거래가 있이더라. ...
-  TTS [3/6] [EL·발랄녀] 8.0초  원래 ETF는 오래 보유하면서 꾸준히 수익을 노리는...
-  TTS [4/6] [EL·발랄녀] 7.9초  문제는 여기인기라. 날마다 작은 수익을 노리다 보니...
-  TTS [5/6] [EL·발랄녀] 10.1초  통계를 보면 단기 매매자의 70% 이상이 실패한다카...
-  TTS [6/6] [EL·발랄녀] 18.6초  빨리 번 돈을 꿈꾸는 거는 자연스럽지예. 근데 ET...
+  TTS [1/6] [EL·발랄녀] 2.6초  PEF 고르는디 규모 봐서는 망한다아이가...
+  TTS [2/6] [EL·발랄녀] 8.1초  시방 PEF 투자를 고르실 때 머 먼저 보나이가. ...
+  TTS [3/6] [EL·발랄녀] 8.9초  투자 성과는 운용자산(AUM) 크기가 아니라 그 돈...
+  TTS [4/6] [EL·발랄녀] 10.0초  AI 시대가 오모서 데이터 분석 능력이 있는 펀드하...
+  TTS [5/6] [EL·발랄녀] 11.1초  그럼 머 확인해야 할꺼노. 첫째 펀드사가 AI·데이...
+  TTS [6/6] [EL·발랄녀] 11.9초  규모만 크모 안 된다는 것, 인자 아셨제. 낭중에 ...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.1초
-  세그먼트 [2/7] 8.4초
-  세그먼트 [3/7] 8.5초
-  세그먼트 [4/7] 8.4초
-  세그먼트 [5/7] 10.6초
-  세그먼트 [6/7] 19.1초
+  세그먼트 [1/7] 3.1초
+  세그먼트 [2/7] 8.6초
+  세그먼트 [3/7] 9.4초
+  세그먼트 [4/7] 10.5초
+  세그먼트 [5/7] 11.6초
+  세그먼트 [6/7] 12.4초
   세그먼트 [7/7] 3.5초
-  ♪ BGM 믹싱 완료: ambient_news_02.mp3
+  ♪ BGM 믹싱 완료: soft_electronic_03.mp3
 
-  ✓ 릴스 완성: out/reels/20261118_02_숫자훅.mp4
-    길이: 61.5초  /  크기: 3.0MB
--rw-r--r-- 1 runner runner 3.0M Nov 18 17:41 out/reels/20261118_02_숫자훅.mp4
+  ✓ 릴스 완성: out/reels/20261119_04_숫자훅.mp4
+    길이: 57.9초  /  크기: 3.4MB
+
+3) 커버 썸네일 생성
+  ✓ 커버 썸네일: out/reels/20261119_04_숫자훅.jpg
+-rw-r--r-- 1 runner runner 3.4M Nov 19 03:56 out/reels/20261119_04_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=61.499002
+duration=57.893991
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels-media
   토큰           설정됨
-  저장소 확인    a87330815/issue-reels-media (공개)
 
-설정 완료
+[실패] 저장소 접근: HTTP 401: {
+  "message": "Bad credentials",
+  "documentation_url": "https://docs.github.com/rest",
+  "status": "401"
+}
 
-업로드 1건 (태그 reels-2026-11-18):
-  20261118_02_숫자훅.mp4  3.0MB  →  https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-18/20261118_02.mp4
-
-공개 접근 확인:
-  OK  video_url: 200 application/octet-stream
-
-매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
-
-완료: 성공 1건 / 실패 0건
-남은 발행 가능: 97건
-발행 대상: 1건
-
-── 1/1  20261118_02_숫자훅
-  영상: https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-18/20261118_02.mp4
-  캡션: 밥값 벌면 바로 판다…ETF 단타로 4조 움직였다
-  컨테이너: 17979383156973700
-      0초  IN_PROGRESS
-     51초  FINISHED
-  발행 완료: 17920484502461816
-  ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
-     → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
-  스토리 공유 스킵 — 썸네일 URL 없음
-
-
-발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
-완료: 발행 1건 / 실패 0건
+[중단] 저장소 설정이 끝나야 업로드할 수 있습니다
