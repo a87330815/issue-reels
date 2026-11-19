@@ -250,7 +250,13 @@ jobs:
           MEDIA_TOKEN: ${{ secrets.MEDIA_TOKEN }}
         run: |
           set -o pipefail
-          python -u upload.py "out/reels/${STEM}.mp4" 2>&1 \
+          # 커버 썸네일이 있으면 함께 업로드
+          COVER_ARG=""
+          if [ -f "out/reels/${STEM}.jpg" ]; then
+            COVER_ARG="--cover out/reels/${STEM}.jpg"
+            echo "커버 썸네일 발견: out/reels/${STEM}.jpg"
+          fi
+          python -u upload.py "out/reels/${STEM}.mp4" $COVER_ARG 2>&1 \
             | tee -a out/reels/render.log
           cat out/uploaded.json
 

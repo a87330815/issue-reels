@@ -163,7 +163,8 @@ def quota_left():
         return SELF_LIMIT
 
 
-def create_container(video_url, caption=None, cover_url=None, share_to_feed=True):
+def create_container(video_url, caption=None, cover_url=None,
+                     share_to_feed=True, location_id=None):
     """릴스 컨테이너를 만든다. 반환값은 컨테이너 ID."""
     params = {"media_type": "REELS", "video_url": video_url}
     if caption:
@@ -171,6 +172,8 @@ def create_container(video_url, caption=None, cover_url=None, share_to_feed=True
     if cover_url:
         params["cover_url"] = cover_url
     params["share_to_feed"] = "true" if share_to_feed else "false"
+    if location_id:
+        params["location_id"] = location_id
 
     res = api("POST", f"{IG_ID}/media", **params)
     return res["id"]
@@ -200,7 +203,8 @@ def wait_ready(container_id, timeout=POLL_TIMEOUT):
     return False, f"타임아웃 ({timeout}초)"
 
 
-def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
+def publish_one(video_url, caption=None, cover_url=None, dry_run=False,
+                location_id=None):
     """영상 1편을 발행한다. 반환값은 미디어 ID 또는 None."""
     print(f"  영상: {video_url}")
     if cover_url:
@@ -213,7 +217,8 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False):
         print("  [드라이런] 컨테이너 생성하지 않음")
         return None
 
-    cid = create_container(video_url, caption, cover_url)
+    cid = create_container(video_url, caption, cover_url,
+                           location_id=location_id)
     print(f"  컨테이너: {cid}")
 
     ok, why = wait_ready(cid)
@@ -347,28 +352,31 @@ def build_caption(script):
     lines.append("")
     lines.append("👇 댓글에 \"정보\" 쓰면 DM으로 더 알려드려요!")
 
-    # 해시태그 — 카테고리별 최적화 (2026: 키워드 검색 중심, 3~5개)
+    # 해시태그 — 카테고리별 최적화 + 도달 확장용 중소형 태그 혼합
     cat = meta.get("category", "")
     _CATEGORY_TAGS = {
-        "재테크":     ["#재테크", "#돈공부", "#쫌봐봐"],
-        "저축·투자":  ["#투자", "#적금", "#재테크"],
-        "보험·연금":  ["#보험", "#연금", "#재테크"],
-        "세금·절약":  ["#절약", "#세금팁", "#재테크"],
-        "돈습관":     ["#돈습관", "#월급", "#쫌봐봐"],
-        "경제상식":   ["#경제", "#경제상식", "#돈공부"],
+        "재테크":     ["#재테크", "#돈공부", "#재테크초보", "#돈모으기"],
+        "저축·투자":  ["#투자", "#적금", "#재테크", "#주식초보"],
+        "보험·연금":  ["#보험", "#연금", "#보험리모델링", "#노후준비"],
+        "세금·절약":  ["#절약", "#세금팁", "#재테크", "#가계부"],
+        "돈습관":     ["#돈습관", "#월급관리", "#돈모으기", "#재테크초보"],
+        "경제상식":   ["#경제", "#경제상식", "#돈공부", "#재테크"],
     }
-    tags = _CATEGORY_TAGS.get(cat, ["#재테크", "#돈공부", "#쫌봐봐"])
+    tags = _CATEGORY_TAGS.get(cat, ["#재테크", "#돈공부", "#돈모으기"])
     # 트렌드 키워드가 있으면 해시태그로 추가
     kw = meta.get("trend_keyword", "")
     if kw and len(kw) <= 10:
         tags.insert(0, f"#{kw.replace(' ', '')}")
+    # 브랜드 + 도달 확장 태그
+    tags.append("#쫌봐봐")
+    tags.append("#돈스타그램")
     seen, uniq = set(), []
     for t in tags:
         if t not in seen:
             seen.add(t)
             uniq.append(t)
     lines.append("")
-    lines.append(" ".join(uniq[:5]))
+    lines.append(" ".join(uniq[:8]))
 
     return "\n".join(lines)
 

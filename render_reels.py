@@ -454,10 +454,24 @@ def build_video(card_files, tts_results, output_path, tmp_dir, bgm=True):
 
         # 4:5 카드를 9:16에 넣으면 위아래가 크게 빈다. 같은 이미지를 꽉 채워
         # 블러 처리한 뒤 배경으로 깔고, 그 위에 원본 카드를 얹는다.
-        vf = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,"
-              f"crop={W}:{H},gblur=sigma=28,eq=brightness=-0.12[bg];"
-              f"[0:v]scale={W}:-1[fg];"
-              f"[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p")
+        if i == 0:
+            # ── 커버 훅: 줌인 모션 ──
+            # 정적 이미지 대신 1.0→1.08x 줌인으로 첫 1초 시선 고정
+            # scale을 시간에 따라 키운 뒤 crop으로 중앙 잘라내기
+            zoom = 0.08
+            vf = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,"
+                  f"crop={W}:{H},gblur=sigma=28,eq=brightness=-0.12[bg];"
+                  f"[0:v]scale={W}:-1[fg];"
+                  f"[bg][fg]overlay=(W-w)/2:(H-h)/2,"
+                  f"scale=w='trunc(({W}*(1+t/{dur:.2f}*{zoom}))/2)*2'"
+                  f":h='trunc(({H}*(1+t/{dur:.2f}*{zoom}))/2)*2'"
+                  f":eval=frame,"
+                  f"crop={W}:{H},format=yuv420p")
+        else:
+            vf = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,"
+                  f"crop={W}:{H},gblur=sigma=28,eq=brightness=-0.12[bg];"
+                  f"[0:v]scale={W}:-1[fg];"
+                  f"[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p")
 
         # 이미지를 9:16(1080x1920)에 맞춤
         # 장면 전환 시 음성 끊김 방지: 오디오 끝에 짧은 페이드아웃 + 무음 패딩.
@@ -516,6 +530,147 @@ def build_video(card_files, tts_results, output_path, tmp_dir, bgm=True):
     return output_path
 
 
+def generate_thumbnail(script, card_dir, output_path):
+    """릴스 커버 썸네일(9:16) 자동 생성 — CTR 최적화 v2.
+
+    탐색탭 클릭률을 높이기 위한 설계 원칙:
+    - 3~5단어 볼드 헤드라인 (작은 화면에서도 즉시 읽힘)
+    - 숫자/금액은 노란색 강조 (재테크 니치 시선 끌기)
+    - 핵심 콘텐츠는 중앙 1080×1080 안전영역 (그리드 크롭 대응)
+    - 요소 최소화: 이모지·카테고리 뱃지 제거, 텍스트에 집중
+    - 고대비 배경 (어두운 배경 + 밝은 텍스트)
+    upload.py --batch 모드가 같은 이름 .jpg를 커버로 인식한다.
+    """
+    try:
+        from PIL import Image, ImageDraw, ImageFont, ImageFilter
+        from cardnews import (font, FONT_BLACK, FONT_BOLD, FONT_MED,
+                              THEMES, DEF_THEME, BRAND,
+                              draw_glow_circles, wrap_char)
+    except ImportError as e:
+        print(f"  [알림] 썸네일 생성 스킵 — {e}")
+        return None
+
+    TW, TH = 1080, 1920  # 9:16
+    cat = script.get("meta", {}).get("category", "")
+    t = THEMES.get(cat, DEF_THEME)
+
+    # ── 배경: 어두운 그래디언트 (텍스트 대비 확보) ──
+    import numpy as np
+    c1 = np.array(t["grad1"], dtype=np.float64) * 0.35
+    c2 = np.array(t["grad2"], dtype=np.float64) * 0.25
+    arr = np.zeros((TH, TW, 3), dtype=np.uint8)
+    for y in range(TH):
+        ratio = y / TH
+        arr[y] = (c1 * (1 - ratio) + c2 * ratio).astype(np.uint8)
+    img = Image.fromarray(arr)
+
+    # 글로우 서클로 배경에 깊이감
+    layer = Image.new("RGBA", (TW, TH), (0, 0, 0, 0))
+    ld = ImageDraw.Draw(layer)
+    draw_glow_circles(ld, seed=42)
+    base = img.convert("RGBA")
+    base.alpha_composite(layer)
+    img = base.convert("RGB")
+
+    d = ImageDraw.Draw(img, "RGBA")
+
+    # ── 그리드 안전영역 (중앙 1080×1080: y=420~1500) ──
+    SAFE_TOP, SAFE_BOT = 420, 1500
+
+    # ── 상단 브랜드 (안전영역 상단, 작게) ──
+    if BRAND:
+        bf = font(FONT_BOLD, 38)
+        bb = d.textbbox((0, 0), BRAND, font=bf)
+        bx = (TW - (bb[2] - bb[0])) // 2
+        d.text((bx, SAFE_TOP + 30), BRAND, font=bf,
+               fill=(255, 255, 255, 180),
+               stroke_width=2, stroke_fill=(0, 0, 0, 100))
+
+    # ── 메인 타이틀 (크고 굵게, 안전영역 중앙) ──
+    cover = script.get("cover", {})
+    lines = cover.get("lines", [script.get("title", "")])
+
+    # <em> 태그에서 강조 텍스트 추출
+    highlight_words = set()
+    clean_lines = []
+    for line in lines:
+        for m in re.finditer(r"<em>(.*?)</em>", line):
+            highlight_words.add(m.group(1).strip())
+        clean = re.sub(r"</?[a-z]+>", "", line).strip()
+        if clean:
+            clean_lines.append(clean)
+
+    # 숫자/금액 패턴도 자동 강조
+    num_pattern = re.compile(r'\d[\d,]*\s*(?:억|만|천|조|원|%|배)')
+
+    tf_big = font(FONT_BLACK, 100)
+    max_w = TW - 160  # 좌우 80px 여백
+
+    all_wrapped = []
+    for cl in clean_lines:
+        wrapped = wrap_char(d, cl, tf_big, max_w)
+        all_wrapped.extend(wrapped)
+
+    # 최대 4줄 (가독성)
+    if len(all_wrapped) > 4:
+        all_wrapped = all_wrapped[:4]
+
+    # 중앙 배치
+    line_h = 125
+    total_text_h = len(all_wrapped) * line_h
+    text_center_y = (SAFE_TOP + SAFE_BOT) // 2
+    start_y = text_center_y - total_text_h // 2 + 30
+
+    # 텍스트 뒤 반투명 패널 (텍스트 영역만 감싸기)
+    pad_x, pad_y = 50, 40
+    max_line_w = 0
+    for wl in all_wrapped:
+        bb = d.textbbox((0, 0), wl, font=tf_big)
+        max_line_w = max(max_line_w, bb[2] - bb[0])
+    panel_w = min(max_line_w + pad_x * 2, TW - 60)
+    panel_h = total_text_h + pad_y * 2
+    panel_x = (TW - panel_w) // 2
+    panel_y = start_y - pad_y
+    d.rounded_rectangle(
+        [panel_x, panel_y, panel_x + panel_w, panel_y + panel_h],
+        radius=32, fill=(0, 0, 0, 140)
+    )
+
+    # 텍스트 렌더링 (숫자/금액/강조 → 노란색, 나머지 → 흰색)
+    accent = t.get("accent", (255, 230, 0))
+    for i, wline in enumerate(all_wrapped):
+        y = start_y + i * line_h
+        bb = d.textbbox((0, 0), wline, font=tf_big)
+        x = (TW - (bb[2] - bb[0])) // 2
+
+        is_highlight = bool(num_pattern.search(wline))
+        if not is_highlight:
+            for hw in highlight_words:
+                if hw in wline:
+                    is_highlight = True
+                    break
+
+        fill = accent if is_highlight else (255, 255, 255)
+        d.text((x + 3, y + 3), wline, font=tf_big, fill=(0, 0, 0, 200))
+        d.text((x, y), wline, font=tf_big, fill=fill,
+               stroke_width=1, stroke_fill=(0, 0, 0, 120))
+
+    # ── 하단 워터마크 (안전영역 하단) ──
+    if BRAND:
+        wm_f = font(FONT_MED, 28)
+        wm_text = f"@{BRAND}"
+        bb = d.textbbox((0, 0), wm_text, font=wm_f)
+        wx = (TW - (bb[2] - bb[0])) // 2
+        d.text((wx, SAFE_BOT - 50), wm_text, font=wm_f,
+               fill=(255, 255, 255, 120))
+
+    # 저장
+    img = img.convert("RGB")
+    img.save(output_path, "JPEG", quality=92)
+    print(f"  ✓ 커버 썸네일: {output_path}")
+    return output_path
+
+
 def main():
     ap = argparse.ArgumentParser(description="카드뉴스 → 릴스 영상 합성")
     ap.add_argument("script", nargs="?", help="대본 JSON")
@@ -535,6 +690,8 @@ def main():
     ap.add_argument("--no-tts", action="store_true", help="TTS 없이 무음 영상")
     ap.add_argument("--no-bgm", action="store_true",
                     help="배경음악(BGM) 없이 TTS만으로 영상 생성")
+    ap.add_argument("--no-cover", action="store_true",
+                    help="릴스 커버 썸네일(JPG) 생성 건너뜀")
     ap.add_argument("--no-style", action="store_true",
                     help="양상국 스타일 후처리 없이 원본 TTS 사용")
     ap.add_argument("--require-tts", action="store_true",
@@ -611,6 +768,12 @@ def main():
         # 영상 합성
         print(f"\n{'2' if not a.no_tts else '1'}) 영상 합성")
         build_video(cards, tts_results, output, tmp, bgm=not a.no_bgm)
+
+    # 커버 썸네일 생성 (영상과 같은 이름 .jpg → upload.py --batch 자동 인식)
+    if not a.no_cover:
+        thumb_path = os.path.splitext(output)[0] + ".jpg"
+        print(f"\n{'3' if not a.no_tts else '2'}) 커버 썸네일 생성")
+        generate_thumbnail(script, card_dir, thumb_path)
 
 
 if __name__ == "__main__":
