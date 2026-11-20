@@ -327,7 +327,23 @@ jobs:
           python -u publish.py --script "out/scripts/${STEM}.json" \
             --limit 1 $FLAG 2>&1 | tee -a out/reels/render.log
 
-      - name: 6) 틱톡 발행
+      # 인스타 발행 성공 후 같은 공개 영상 URL을 Facebook 페이지에도 올린다.
+      # 실패해도 이미 완료된 인스타 발행에는 영향을 주지 않는다.
+      - name: 6) 페이스북 릴스 동시 발행
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true'
+        continue-on-error: true
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN || secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID || vars.FB_PAGE_ID || '1277209758815845' }}
+          UPLOAD_MANIFEST: out/uploaded.json
+        run: |
+          set -o pipefail
+          echo "Facebook 쫌봐봐 페이지에 같은 릴스를 발행합니다"
+          python -u publish_facebook.py --script "out/scripts/${STEM}.json" 2>&1 \
+            | tee -a out/reels/render.log
+
+      - name: 7) 틱톡 발행
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true'
         continue-on-error: true
         env:
