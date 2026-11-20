@@ -102,7 +102,9 @@ def tt_api(path, body=None):
 
 
 def check():
-    """계정·토큰 점검 + 크리에이터 정보 조회."""
+    """계정·토큰 점검. 기본 프로필 조회 후 Direct Post 권한을 별도 확인한다."""
+    import requests
+
     print("틱톡 발행 설정:")
     print(f"  업로드 방식    {UPLOAD_METHOD}")
     print(f"  OPEN_ID       {OPEN_ID[:8] + '...' if OPEN_ID else '(미설정)'}")
@@ -110,35 +112,46 @@ def check():
 
     if not TOKEN or not OPEN_ID:
         print("\n[미설정] TIKTOK_ACCESS_TOKEN, TIKTOK_OPEN_ID")
-        print("\n발급 순서:")
-        print("  1. developers.tiktok.com → 앱 등록")
-        print("  2. Content Posting API 제품 추가 + Direct Post 활성화")
-        print("  3. video.publish 스코프 승인 신청")
-        print("  4. OAuth 2.0 로그인으로 access_token + open_id 획득")
-        print("  5. (선택) 앱 감사(audit) 신청 → 공개 발행 가능")
-        print("  6. GitHub Secrets에 등록")
         return False
 
+    # user.info.basic으로 OAuth 계정 연결 자체를 확인한다.
+    try:
+        r = requests.get(
+            f"{API_BASE}/user/info/",
+            params={"fields": "open_id,display_name,avatar_url"},
+            headers={"Authorization": f"Bearer {TOKEN}"},
+            timeout=60,
+        )
+        resp = r.json()
+        err = resp.get("error", {})
+        if err.get("code", "ok") != "ok":
+            raise RuntimeError(
+                f"[{err.get('code')}] {scrub(err.get('message', ''))} "
+                f"(log_id={err.get('log_id', '-')})"
+            )
+        user = resp.get("data", {}).get("user", {})
+        if user.get("open_id") != OPEN_ID:
+            raise RuntimeError("발급 토큰의 open_id가 GitHub Secret과 일치하지 않습니다")
+        print("\n✅ OAuth 계정 연결 확인")
+        print(f"  계정           {user.get('display_name', '?')}")
+    except Exception as e:
+        print(f"\n[실패] 기본 프로필 조회: {e}")
+        return False
+
+    # Direct Post(video.publish)는 앱 심사 전에는 승인되지 않을 수 있다.
     try:
         resp = tt_api("post/publish/creator_info/query/")
         data = resp.get("data", {})
-        print(f"\n크리에이터 확인:")
-        print(f"  닉네임         {data.get('creator_nickname', '?')}")
-        print(f"  아바타          {data.get('creator_avatar_url', '-')[:50]}...")
         privs = data.get("privacy_level_options", [])
+        print("\n✅ Direct Post 권한 확인")
         print(f"  공개 옵션       {', '.join(privs)}")
-        duet = data.get("duet_disabled", False)
-        stitch = data.get("stitch_disabled", False)
-        comment = data.get("comment_disabled", False)
-        print(f"  제한            duet={duet} stitch={stitch} comment={comment}")
-        if "PUBLIC_TO_EVERYONE" in privs:
-            print("\n✅ 공개 발행 가능 (앱 감사 완료)")
-        else:
-            print("\n⚠️  공개 발행 불가 — 앱 감사 필요 또는 계정 제한")
-            print("   SELF_ONLY로 발행 후 앱에서 수동 공개 전환 필요")
     except Exception as e:
-        print(f"\n[실패] 크리에이터 조회: {e}")
-        return False
+        if "scope_not_authorized" in str(e):
+            print("\n⚠️  현재 video.upload(초안 업로드)만 연결됨")
+            print("   video.publish는 TikTok 앱 심사 승인 후 사용 가능")
+        else:
+            print(f"\n[실패] 크리에이터 조회: {e}")
+            return False
 
     print("\n설정 완료")
     return True
