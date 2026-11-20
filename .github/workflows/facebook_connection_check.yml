@@ -1,0 +1,134 @@
+name: 페이스북 릴스 연결 점검
+
+# 실제 게시 없이 Facebook 페이지 연결과 권한만 확인한다.
+# 기존 Instagram 릴스 발행 워크플로와 완전히 분리되어 있다.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-facebook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Facebook 페이지 연결·권한 점검
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN || secrets.IG_ACCESS_TOKEN }}
+          EXPECTED_PAGE_ID: ${{ secrets.FB_PAGE_ID || vars.FB_PAGE_ID || '1277209758815845' }}
+          EXPECTED_PAGE_NAME: 쫌봐봐
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.parse
+          import urllib.request
+          import urllib.error
+
+          API = "https://graph.facebook.com/v26.0"
+          token = os.environ.get("META_ACCESS_TOKEN", "").strip()
+          expected_id = os.environ.get("EXPECTED_PAGE_ID", "").strip()
+          expected_name = os.environ.get("EXPECTED_PAGE_NAME", "쫌봐봐").strip()
+
+          if not token:
+              print("::error::FB_ACCESS_TOKEN 또는 IG_ACCESS_TOKEN 시크릿이 없습니다.")
+              sys.exit(1)
+
+          print("::add-mask::" + token)
+
+          def get(path, **params):
+              params["access_token"] = token
+              url = API + "/" + path.lstrip("/") + "?" + urllib.parse.urlencode(params)
+              try:
+                  with urllib.request.urlopen(url, timeout=30) as r:
+                      return json.load(r)
+              except urllib.error.HTTPError as e:
+                  try:
+                      detail = json.load(e)
+                  except Exception:
+                      detail = {"error": {"message": str(e)}}
+                  return detail
+
+          # 사용자 토큰이면 /me/accounts에서 연결 페이지를 찾는다.
+          accounts = get(
+              "me/accounts",
+              fields="id,name,category,tasks,access_token,instagram_business_account",
+              limit=100,
+          )
+
+          pages = accounts.get("data", []) if isinstance(accounts, dict) else []
+          selected = None
+          for page in pages:
+              if expected_id and str(page.get("id")) == expected_id:
+                  selected = page
+                  break
+              if page.get("name") == expected_name:
+                  selected = page
+                  break
+
+          # 저장된 값이 이미 페이지 토큰인 경우 /me/accounts가 비어 있을 수 있다.
+          if selected is None:
+              me = get("me", fields="id,name,category,username,link")
+              if "error" not in me and (
+                  (expected_id and str(me.get("id")) == expected_id)
+                  or me.get("name") == expected_name
+              ):
+                  selected = me
+
+          if selected is None:
+              message = accounts.get("error", {}).get("message", "연결 페이지를 찾지 못했습니다.")
+              print("::error::쫌봐봐 페이지 확인 실패: " + message)
+              sys.exit(1)
+
+          page_id = str(selected.get("id", ""))
+          page_token = selected.get("access_token") or token
+          print("::add-mask::" + page_token)
+
+          def page_get(path, **params):
+              params["access_token"] = page_token
+              url = API + "/" + path.lstrip("/") + "?" + urllib.parse.urlencode(params)
+              try:
+                  with urllib.request.urlopen(url, timeout=30) as r:
+                      return json.load(r)
+              except urllib.error.HTTPError as e:
+                  try:
+                      return json.load(e)
+                  except Exception:
+                      return {"error": {"message": str(e)}}
+
+          details = page_get(
+              page_id,
+              fields="id,name,username,link,category,instagram_business_account",
+          )
+          if "error" in details:
+              print("::error::페이지 상세 조회 실패: " + details["error"].get("message", ""))
+              sys.exit(1)
+
+          if expected_id and page_id != expected_id:
+              print(f"::error::페이지 ID 불일치: 기대 {expected_id}, 확인 {page_id}")
+              sys.exit(1)
+          if details.get("name") != expected_name:
+              print(f"::error::페이지 이름 불일치: {details.get('name')}")
+              sys.exit(1)
+
+          tasks = set(selected.get("tasks") or [])
+          publish_ok = "CREATE_CONTENT" in tasks or not tasks
+          ig = details.get("instagram_business_account") or selected.get("instagram_business_account")
+
+          print("Facebook 페이지 연결 성공")
+          print("페이지 이름:", details.get("name"))
+          print("사용자 이름:", "@" + details.get("username", "(미확인)"))
+          print("페이지 ID:", page_id)
+          print("Instagram 연결:", "확인됨" if ig else "페이지 응답에서 미확인")
+          print("콘텐츠 생성 권한:", "확인됨" if publish_ok else "확인 필요")
+          if tasks:
+              print("페이지 작업 권한:", ", ".join(sorted(tasks)))
+
+          if not publish_ok:
+              print("::error::CREATE_CONTENT 권한이 없습니다.")
+              sys.exit(1)
+
+          print("연결 점검 완료 — 실제 게시 요청은 보내지 않았습니다.")
+          PY
