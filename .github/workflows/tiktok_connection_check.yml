@@ -1,0 +1,29 @@
+name: 틱톡 연결 점검
+
+# 실제 게시 없이 TikTok OAuth 토큰과 크리에이터 권한만 확인한다.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-tiktok:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install -q requests
+
+      - name: 틱톡 계정·권한 점검
+        env:
+          TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
+          TIKTOK_OPEN_ID: ${{ secrets.TIKTOK_OPEN_ID }}
+          TIKTOK_UPLOAD_METHOD: pull
+        run: python -u publish_tiktok.py --check
