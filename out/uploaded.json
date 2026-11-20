@@ -1,10 +1,11 @@
 {
-  "uploaded_at": "2026-11-18T17:41:23.959852+00:00",
+  "uploaded_at": "2026-11-20T05:13:54.561601+00:00",
   "backend": "github",
   "items": [
     {
-      "name": "20261118_02_숫자훅",
-      "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-18/20261118_02.mp4"
+      "name": "20261120_04_체크리스트",
+      "video_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_04.mp4",
+      "cover_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_04.jpg"
     }
   ]
 }

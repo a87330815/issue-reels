@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T17:42:43.134353+00:00",
+  "updated_at": "2026-11-20T05:14:52.640170+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -532,6 +532,17 @@
       "video_url": "https://github.com/a87330815/issue-reels-media/releases/download/reels-2026-11-18/20261118_02.mp4",
       "ig_id": "17841459210979722",
       "category": "재테크",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261120_04_체크리스트",
+      "media_id": "18029480660873042",
+      "published_at": "2026-11-20T05:14:52.548724+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_04.mp4",
+      "ig_id": "17841459210979722",
+      "category": "보험·연금",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
