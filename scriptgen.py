@@ -154,8 +154,8 @@ def load_collected(path=COLLECTED):
         data = json.load(f)
     items = data.get("items", [])
     if not items:
-        print("[오류] 수집된 항목이 0건")
-        sys.exit(1)
+        print("[알림] 수집된 항목이 0건 — 트렌드 데이터로 대체")
+        return []
     print(f"수집 데이터 로드: {len(items)}건 ({data.get('collected_at', '?')})")
     return items
 
