@@ -1,88 +1,75 @@
-run 44720288847 2026-11-20T10:35:36Z
+run 44782479374 2026-11-20T17:23:30Z
 
-=== 20261120_02_숫자훅 ===
-  [cover] '비트코인·금값 동반 추락, 당신의 자산은 안전한가' → "bitcoin ethereum cryptocurrency chart decline crisis"  (네이버: "비트코인·금값 동반 추락, 당신의 자산은 안전한가")
+=== 20261120_04_숫자훅 ===
+  [cover] 'AI 투자 열풍에서 빠져나가는 돈들' → "stock market graph falling red candlestick chart"  (네이버: "AI 투자 열풍에서 빠져나가는 돈들")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 4/12건
+    Unsplash 적합도 통과 7/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '미국 금리인상 우려로 모든 자산 동반' → "federal reserve interest rate policy documents"  (네이버: "미국 금리인상 우려로 모든 자산 동반")
-    [unsplash] 1건 후보
-    [openverse] 0건 후보
-    [wikimedia] 1건 후보
-    ↻ 재시도: "federal reserve interest rate policy"
+  [scene1] 'AI 주식 열풍에서 균열 생겼다' → "semiconductor chip manufacturing technology"  (네이버: "AI 주식 열풍에서 균열 생겼다")
     [unsplash] 12건 후보
-    적합도 통과 0/1건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 0/13건
+    Unsplash 적합도 통과 3/12건
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] 'AI 기업 규제 우려 → 투자심사 디게 까끄로워진다' → "government regulation compliance documents official"  (네이버: "AI 기업 규제 우려 → 투자심사 디게 까끄로워진다")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 2/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '금리인상 더하기 규제 우려 같은 것 = 이중고' → "interest rate increase economic pressure financial stress"  (네이버: "금리인상 더하기 규제 우려 같은 것 = 이중고")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 0/12건
     ✗ 적합한 후보 없음 — 사진 없이 진행
     ↻ 카테고리 대체 검색: "money savings investment planning desk"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 8/12건
-    ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '비트코인 절반 이상 하락 투자자들 손실' → "bitcoin price chart red downward trend trading screen"  (네이버: "비트코인 절반 이상 하락 투자자들 손실")
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "bitcoin price chart red downward trend trading"
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '지금 확인해야 할 거: 나의 집중도' → "investment portfolio diversification checking balance"  (네이버: "지금 확인해야 할 거: 나의 집중도")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 7/12건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '금값 14개월 최저 안전자산도 피하지' → "gold bullion bars investment safe haven precious metals"  (네이버: "금값 14개월 최저 안전자산도 피하지")
+    Unsplash 적합도 통과 3/12건
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '한 종목 비중이 20% 넘어간다? 위험신호다' → "risk management financial planning checklist"  (네이버: "한 종목 비중이 20% 넘어간다? 위험신호다")
     [unsplash] 11건 후보 (부적합 1건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 11/11건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '한 가지 자산에만
-집중하면 위험' → "portfolio diversification investment allocation strategy chart"  (네이버: "한 가지 자산에만
-집중하면 위험")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 5/12건
-    ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '패닉셀링 금지
-본래 계획 지키기가 답' → "investor reviewing portfolio financial plan long term strategy"  (네이버: "패닉셀링 금지
-본래 계획 지키기가 답")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 7/12건
+    Unsplash 적합도 통과 1/11건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261120_02_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261120_04_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261120_02_숫자훅
-대본: out/scripts/20261120_02_숫자훅.json
-카드: out/cards_20261120_02_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261120_04_숫자훅
+대본: out/scripts/20261120_04_숫자훅.json
+카드: out/cards_20261120_04_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 4.4초  비트코인 8300만원대 안전자산까지 널찠다 떨어졌다...
-  TTS [2/6] [EL·발랄녀] 9.0초  지난주 미국 금리인상 가능성이 나왔으면서 비트코인부...
-  TTS [3/6] [EL·발랄녀] 6.0초  비트코인은 8300만원대까지 내려앚았카더라. 지난해...
-  TTS [4/6] [EL·발랄녀] 9.0초  더 충격적인 건 금값이라아이가. 안전자산 취급받는 ...
-  TTS [5/6] [EL·발랄녀] 9.4초  투자의 첫 원칙은 계란을 한 바구니에만 담지 않는기...
-  TTS [6/6] [EL·발랄녀] 12.4초  시방 중요한 건 패닉셀링하지 않는 거라예. 본인의 ...
+  TTS [1/6] [EL·발랄녀] 2.8초  AI 주식 사던 사람들 요즈음 손해보고 있다아이가...
+  TTS [2/6] [EL·발랄녀] 6.2초  지난주부터 반도체 주가가 디게 떨어지는 중이라예. ...
+  TTS [3/6] [EL·발랄녀] 7.3초  앤트로픽 같은 AI 기업들이 기업공개를 준비하니까 ...
+  TTS [4/6] [EL·발랄녀] 8.3초  문제는 여기라아이가. 미국 기준금리 추가 인상될 끼...
+  TTS [5/6] [EL·발랄녀] 9.3초  결국 한두 종목에만 돈을 몰아주는 포트폴리오는 에럽...
+  TTS [6/6] [EL·발랄녀] 8.2초  한 분야에만 돈 걸어 노는 거는 투자가 아이라 도박...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.9초
-  세그먼트 [2/7] 9.5초
-  세그먼트 [3/7] 6.5초
-  세그먼트 [4/7] 9.5초
-  세그먼트 [5/7] 9.9초
-  세그먼트 [6/7] 12.9초
+  세그먼트 [1/7] 3.3초
+  세그먼트 [2/7] 6.7초
+  세그먼트 [3/7] 7.8초
+  세그먼트 [4/7] 8.8초
+  세그먼트 [5/7] 9.8초
+  세그먼트 [6/7] 8.7초
   세그먼트 [7/7] 3.5초
-  ♪ BGM 믹싱 완료: ambient_news_02.mp3
+  ♪ BGM 믹싱 완료: lofi_chill_01.mp3
 
-  ✓ 릴스 완성: out/reels/20261120_02_숫자훅.mp4
-    길이: 55.6초  /  크기: 3.8MB
+  ✓ 릴스 완성: out/reels/20261120_04_숫자훅.mp4
+    길이: 47.5초  /  크기: 2.8MB
 
 3) 커버 썸네일 생성
-  ✓ 커버 썸네일: out/reels/20261120_02_숫자훅.jpg
--rw-r--r-- 1 runner runner 3.9M Nov 20 10:37 out/reels/20261120_02_숫자훅.mp4
+  ✓ 커버 썸네일: out/reels/20261120_04_숫자훅.jpg
+-rw-r--r-- 1 runner runner 2.9M Nov 20 17:24 out/reels/20261120_04_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=55.561995
+duration=47.499675
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels
   토큰           설정됨
@@ -91,8 +78,8 @@ duration=55.561995
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-20):
-  20261120_02_숫자훅.mp4  3.8MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_02.mp4
-  20261120_02_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_02.jpg
+  20261120_04_숫자훅.mp4  2.8MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_04.mp4
+  20261120_04_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_04.jpg
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -104,13 +91,30 @@ duration=55.561995
 남은 발행 가능: 99건
 발행 대상: 1건
 
-── 1/1  20261120_02_숫자훅
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_02.mp4
-  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_02.jpg
-  캡션: 비트코인·금값 동반 추락, 당신의 자산은 안전한가
-  컨테이너: 17979817661973700
+── 1/1  20261120_04_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_04.mp4
+  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_04.jpg
+  캡션: AI 투자 열풍에서 빠져나가는 돈들
+  컨테이너: 17979915635973700
       0초  IN_PROGRESS
      51초  FINISHED
-  [실패] [2/-] An unexpected error has occurred. Please retry your request later.
+  발행 완료: 18136877050823142
+  ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
+     → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
+  스토리 공유 스킵 — 썸네일 URL 없음
+
+
+발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
+완료: 발행 1건 / 실패 0건
+::add-mask::EAAQPueZCifx4BTPTiWZAZASMO6TGjoRZAQ9Kbv7WmIkk1ZBJvmipKxo2A6eGfLAQywva8zomxbgOPMVz6t94AFfPvdZAkAtis3vei1WxNm962dVVTOXo2nxuSDMk5S3Pk0lBY6dCGWQDstXz18DjZBzJb8ANEHWr2ZBmXzMzxsc2L9ZBXFy7Gp96iyiZAZAijRTbRsL2b9R
+::error::Graph API 오류 [100]: (#100) Tried accessing nonexisting field (accounts)
+발행 대상: 1건
+
+── 1/1  20261120_04_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-20/20261120_04.mp4
+  제목: AI 투자 열풍에서 빠져나가는 돈들
+  ⚠️  공개 발행 불가 — SELF_ONLY로 발행 (앱에서 수동 공개)
+  방식: PULL_FROM_URL
+  [실패] [scope_not_authorized] The user did not authorize the scope required for completing this request. (log_id=20261121012600B98848889891FE01BDAF)
 
 완료: 발행 0건 / 실패 1건
