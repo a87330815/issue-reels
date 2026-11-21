@@ -468,10 +468,17 @@ def build_video(card_files, tts_results, output_path, tmp_dir, bgm=True):
                   f":eval=frame,"
                   f"crop={W}:{H},format=yuv420p")
         else:
+            # 본문 카드도 천천히 확대한다. 정지 화면처럼 보이지 않도록
+            # 장면 끝까지 6% 움직이되, 자막이 잘리지 않도록 중앙에서 확대한다.
+            zoom = 0.06
             vf = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,"
                   f"crop={W}:{H},gblur=sigma=28,eq=brightness=-0.12[bg];"
                   f"[0:v]scale={W}:-1[fg];"
-                  f"[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p")
+                  f"[bg][fg]overlay=(W-w)/2:(H-h)/2,"
+                  f"scale=w='trunc(({W}*(1+t/{dur:.2f}*{zoom}))/2)*2'"
+                  f":h='trunc(({H}*(1+t/{dur:.2f}*{zoom}))/2)*2'"
+                  f":eval=frame,"
+                  f"crop={W}:{H},format=yuv420p")
 
         # 이미지를 9:16(1080x1920)에 맞춤
         # 장면 전환 시 음성 끊김 방지: 오디오 끝에 짧은 페이드아웃 + 무음 패딩.
@@ -514,6 +521,15 @@ def build_video(card_files, tts_results, output_path, tmp_dir, bgm=True):
            "-movflags", "+faststart",
            output_path]
     subprocess.run(cmd, capture_output=True, check=True)
+
+    # 발행 전에 완성본에 재생 가능한 영상·음성 스트림이 있는지 확인한다.
+    streams = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "stream=codec_type",
+         "-of", "csv=p=0", output_path],
+        capture_output=True, text=True, check=True,
+    ).stdout.splitlines()
+    if "video" not in streams or (tts_results and "audio" not in streams):
+        raise RuntimeError(f"완성 영상 스트림 누락: {streams}")
 
     # BGM 믹싱
     if bgm:
