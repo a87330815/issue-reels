@@ -35,7 +35,17 @@ def graph(method, path, token=None, **params):
 
 
 def page_token():
-    """사용자 토큰과 페이지 토큰을 모두 지원한다."""
+    """사용자 토큰과 페이지 토큰을 모두 지원한다.
+
+    페이지 토큰으로 /me/accounts를 호출하면 Graph API가 accounts 필드를
+    지원하지 않아 오류 100을 반환한다. 먼저 /me로 토큰 주체를 확인하고,
+    사용자 토큰일 때만 /me/accounts에서 대상 페이지 토큰을 찾는다.
+    """
+    me = graph("GET", "me", fields="id,name")
+    if str(me.get("id")) == str(PAGE_ID):
+        print(f"페이지 토큰 확인: {me.get('name', PAGE_ID)}")
+        return TOKEN
+
     accounts = graph(
         "GET",
         "me/accounts",
@@ -47,12 +57,9 @@ def page_token():
             tasks = set(page.get("tasks") or [])
             if tasks and "CREATE_CONTENT" not in tasks:
                 fail("쫌봐봐 페이지에 CREATE_CONTENT 권한이 없습니다.")
+            print(f"사용자 토큰에서 페이지 토큰 선택: {page.get('name', PAGE_ID)}")
             return page.get("access_token") or TOKEN
 
-    # 이미 페이지 토큰이면 /me/accounts가 비어 있을 수 있다.
-    me = graph("GET", "me", fields="id,name")
-    if str(me.get("id")) == str(PAGE_ID):
-        return TOKEN
     fail("액세스 토큰에서 쫌봐봐 페이지를 찾지 못했습니다.")
 
 
