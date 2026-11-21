@@ -29,7 +29,6 @@ OUT_DIR = os.path.join(ROOT, "out")
 
 # 재테크·돈 정보 외 주제는 제외한다.
 EXCLUDE_PATTERNS = [
-    r"(연예|아이돌|걸그룹|보이그룹|드라마|예능|컴백|열애)",
     r"(정치|국회|대통령|여당|야당|민주당|국민의힘|탄핵|선거|의원)",
     r"(스포츠|축구|야구|농구|K리그|EPL|올림픽|월드컵|프로야구)",
     r"(부동산|아파트|분양|청약|전세|월세|주택|집값)",
@@ -51,6 +50,8 @@ CATEGORY_RULES = {
         r"(절약|할인|포인트|캐시백|환급|무료|무이자|카드혜택|통신비|구독료)",
     ],
     "돈습관": [r"(월급|가계부|소비|지출|돈관리|통장|카드값|저축습관|재무|용돈|빚|대출상환)"],
+    # 인물 자체의 사생활·가십이 아니라 돈·직업·소비·인생 관점으로 재해석한다.
+    "인물화제": [r"(배우|가수|방송인|연예인|아이돌|모델|개그맨|코미디언|아나운서|유튜버|크리에이터|셰프|감독|작가|근황|화제)"],
     "경제상식": [
         r"(경제|물가|인플레이션|디플레이션|기준금리|한국은행|GDP|환율|무역|수출|수입)",
         r"(금융|은행|신용|신용점수|대출|담보|금융감독원|예금자보호)",
@@ -226,7 +227,7 @@ def main():
         seen_keywords.add(kw)
         deduped.append(item)
 
-    # 3. 프로젝트 기준 필터 (정치·연예·스포츠 제외)
+    # 3. 프로젝트 기준 필터 (정치·스포츠·부동산 제외)
     filtered = []
     excluded = 0
     for item in deduped:
@@ -243,11 +244,15 @@ def main():
         item["key"] = trend_key(item["keyword"])
 
     # 5. 허용 분야만 남기고 RSS 뉴스를 우선한다.
-    allowed = {"재테크", "저축·투자", "보험·연금", "세금·절약", "돈습관", "경제상식"}
+    allowed = {"재테크", "저축·투자", "보험·연금", "세금·절약", "돈습관", "경제상식", "인물화제"}
     filtered = [item for item in filtered if item.get("category") in allowed]
     seen = load_seen_trends()
     new_items = [item for item in filtered if item["key"] not in seen]
     new_items.sort(key=lambda item: (0 if item.get("source_type") == "google_trends" and item.get("news_title") else (1 if item.get("source_type") == "google_news_top" else 2), 0 if item.get("news_title") else 1, item.get("category", ""), item.get("keyword", "")))
+    # 5편 생성 기준 인물 화제는 최대 1편(20%). 나머지는 돈·경제·생활 정보로 유지한다.
+    people_items = [item for item in new_items if item.get("category") == "인물화제"]
+    core_items = [item for item in new_items if item.get("category") != "인물화제"]
+    new_items = core_items[:4] + people_items[:1] + core_items[4:] + people_items[1:]
 
     if args.list:
         print(f"\n전체 {len(raw)}건 → 중복제거 {len(deduped)}건 → 필터통과 {len(filtered)}건 → 신규 {len(new_items)}건 (제외 {excluded}건)")
