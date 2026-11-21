@@ -19,6 +19,9 @@ name: 릴스 자동 발행
 # 하루 3건 · 08:00/12:00/18:00 KST. 이 워크플로우는 릴스만 담당한다.
 # 끌 때: 저장소 변수 AUTO_PUBLISH=off 또는 schedule 블록 주석 처리.
 on:
+  push:
+    paths:
+      - "trigger.txt"
   schedule:
     # 하루 3건 · KST 08:00/12:00/18:00 편성. UTC = KST - 9.
     # 인사이트 데이터 기준 12시대(164)·11시대(162) 조회수가 가장 높고
@@ -76,7 +79,7 @@ jobs:
             echo "run=no" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          if [ "$EVENT" = "schedule" ]; then
+          if [ "$EVENT" = "schedule" ] || [ "$EVENT" = "push" ]; then
             echo "publish=true" >> "$GITHUB_OUTPUT"
           elif [ "$DRY_RUN" = "true" ]; then
             echo "publish=false" >> "$GITHUB_OUTPUT"
@@ -330,7 +333,7 @@ jobs:
       # 인스타 발행 성공 후 같은 공개 영상 URL을 Facebook 페이지에도 올린다.
       # 실패해도 이미 완료된 인스타 발행에는 영향을 주지 않는다.
       - name: 6) 페이스북 릴스 동시 발행
-        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true'
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true' && github.event_name != 'push'
         continue-on-error: true
         env:
           STEM: ${{ steps.pick.outputs.stem }}
@@ -344,7 +347,7 @@ jobs:
             | tee -a out/reels/render.log
 
       - name: 7) 틱톡 발행
-        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true'
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true' && github.event_name != 'push'
         continue-on-error: true
         env:
           STEM: ${{ steps.pick.outputs.stem }}
