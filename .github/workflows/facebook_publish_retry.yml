@@ -1,0 +1,33 @@
+name: 페이스북 릴스 재발행
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".facebook_retry_trigger"
+
+permissions:
+  contents: read
+
+jobs:
+  publish-facebook:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: 의존성 설치
+        run: pip install -q requests
+      - name: 최신 릴스 페이스북 발행
+        env:
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN || secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID || vars.FB_PAGE_ID || '1277209758815845' }}
+          UPLOAD_MANIFEST: out/uploaded.json
+        run: |
+          STEM="$(python - <<'PY'
+          import json
+          d=json.load(open('out/uploaded.json', encoding='utf-8'))
+          print(d['items'][0]['name'])
+          PY
+          )"
+          echo "페이스북 재발행 대상: $STEM"
+          python -u publish_facebook.py --script "out/scripts/${STEM}.json"
