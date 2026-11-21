@@ -116,6 +116,7 @@ CATEGORY_MAP = {
     "세금·절약": "tax calculator receipt savings piggybank",
     "돈습관": "wallet money budgeting paycheck",
     "경제상식": "South Korea financial news Seoul economy",
+    "인물화제": "Korean public figure portrait career interview",
 }
 DEFAULT_QUERY = "city office desk modern"
 
@@ -330,13 +331,21 @@ def search_all(query, n=12, category="", query_kr=""):
     네이버(한국어)를 최우선으로, Unsplash/Openverse(영문)를 폴백으로 사용한다."""
     key = os.environ.get("UNSPLASH_ACCESS_KEY", "").strip()
     providers = []
-    # 네이버: 한국어 원문으로 검색 → 인물/장소/상품 정확도 높음
-    if query_kr and NAVER_CLIENT_ID:
-        providers.append(("naver", lambda: search_naver(query_kr, n), True))
-    if key:
-        providers.append(("unsplash", lambda: search_unsplash(query, key, n), True))
-    providers.append(("openverse", lambda: search_openverse(query, n), False))
-    providers.append(("wikimedia", lambda: search_wikimedia(query, n), False))
+    # 인물 화제는 수익화·저작권 안전을 위해 네이버 기사사진(editorial)을 쓰지 않는다.
+    # Commons/Openverse의 허용 라이선스와 Unsplash만 사용한다.
+    if category == "인물화제":
+        providers.append(("wikimedia", lambda: search_wikimedia(query, n), False))
+        providers.append(("openverse", lambda: search_openverse(query, n), False))
+        if key:
+            providers.append(("unsplash", lambda: search_unsplash(query, key, n), True))
+    else:
+        # 네이버: 한국어 원문으로 검색 → 인물/장소/상품 정확도 높음
+        if query_kr and NAVER_CLIENT_ID:
+            providers.append(("naver", lambda: search_naver(query_kr, n), True))
+        if key:
+            providers.append(("unsplash", lambda: search_unsplash(query, key, n), True))
+        providers.append(("openverse", lambda: search_openverse(query, n), False))
+        providers.append(("wikimedia", lambda: search_wikimedia(query, n), False))
 
     merged = []
     for name, fn, trusted in providers:
