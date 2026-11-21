@@ -551,6 +551,26 @@ def generate_thumbnail(script, card_dir, output_path):
         return None
 
     TW, TH = 1080, 1920  # 9:16
+
+    # 피드 표지가 영상 0초 화면과 다르면 플랫폼 그리드에서 모든 릴스가
+    # 같은 템플릿처럼 보인다. 별도 그래픽 표지를 만들지 말고 첫 번째 카드
+    # (사진+제목)를 영상과 똑같이 9:16으로 합성해 커버로 사용한다.
+    first_cards = card_images(card_dir)
+    if first_cards:
+        from PIL import ImageEnhance, ImageOps
+        src = Image.open(first_cards[0]).convert("RGB")
+        bg = ImageOps.fit(src, (TW, TH), method=Image.Resampling.LANCZOS)
+        bg = bg.filter(ImageFilter.GaussianBlur(28))
+        bg = ImageEnhance.Brightness(bg).enhance(0.72)
+
+        fg = src.copy()
+        fg.thumbnail((TW, TH), Image.Resampling.LANCZOS)
+        canvas = bg.copy()
+        canvas.paste(fg, ((TW - fg.width) // 2, (TH - fg.height) // 2))
+        canvas.save(output_path, "JPEG", quality=94)
+        print(f"  ✓ 첫 장면 사진 커버: {output_path}")
+        return output_path
+
     cat = script.get("meta", {}).get("category", "")
     t = THEMES.get(cat, DEF_THEME)
 
