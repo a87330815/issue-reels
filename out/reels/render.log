@@ -1,78 +1,69 @@
-run 45012044854 2026-11-22T10:23:24Z
+run 45045195783 2026-11-22T16:43:04Z
 
-=== 20261122_02_비교분석 ===
-  [cover] '로봇주가 반도체 장비주를 이기는 이유' → "industrial robot factory automation production line"  (네이버: "로봇주가 반도체 장비주를 이기는 이유")
-    [unsplash] 6건 후보
-    [openverse] 1건 후보
-    [wikimedia] 0건 후보
-    적합도 통과 0/1건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 2/6건
-    ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '로봇주가 반도체 장비주를 앞질르는 중' → "stock market graph rising upward trend chart"  (네이버: "로봇주가 반도체 장비주를 앞질르는 중")
+=== 20261122_03_숫자훅 ===
+  [cover] '증시 폭락할 때 정부가 쓰는 비상카드' → "Korean stock market chart red decline emergency"  (네이버: "증시 폭락할 때 정부가 쓰는 비상카드")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 7/12건
+    Unsplash 적합도 통과 5/12건
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] '증안펀드란 증권시장안정펀드' → "government financial emergency response policy"  (네이버: "증안펀드란 증권시장안정펀드")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 1/12건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '반도체 장비: 수요 감소, 주가 하락' → "semiconductor chip manufacturing equipment factory"  (네이버: "반도체 장비: 수요 감소, 주가 하락")
+  [scene2] '1단계 급락 2단계 외국인 이탈' → "stock market indices falling arrows panic selling"  (네이버: "1단계 급락 2단계 외국인 이탈")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 8/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '정부 매입 = 주가 바닥 신호' → "investor buying opportunity stock market recovery"  (네이버: "정부 매입 = 주가 바닥 신호")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 9/12건
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '포트폴리오 점검 체크리스트' → "portfolio review investment strategy planning"  (네이버: "포트폴리오 점검 체크리스트")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 2/12건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '로봇주: 산업 전반에서 수요 증가 중' → "humanoid robot medical automation logistics warehouse"  (네이버: "로봇주: 산업 전반에서 수요 증가 중")
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "humanoid robot medical automation logistics"
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 11/12건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '약세 산업에서 성장 산업으로 자금 이동' → "investment portfolio allocation pie chart distribution"  (네이버: "약세 산업에서 성장 산업으로 자금 이동")
-    [unsplash] 6건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 1/6건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '버블과 성장의 차이를 구분해야 할 때' → "investor analyzing stock market data computer screen"  (네이버: "버블과 성장의 차이를 구분해야 할 때")
+  [scene5] '불안할 때가 기회다' → "calm investor strategy notebook financial planning"  (네이버: "불안할 때가 기회다")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 12/12건
+    Unsplash 적합도 통과 5/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261122_02_비교분석/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261122_03_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261122_02_비교분석
-대본: out/scripts/20261122_02_비교분석.json
-카드: out/cards_20261122_02_비교분석 (7장)
+카드뉴스 7장 생성 → out/cards_20261122_03_숫자훅
+대본: out/scripts/20261122_03_숫자훅.json
+카드: out/cards_20261122_03_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 3.4초  반도체 장비주는 널찌고 있다아이가 로봇주는 솟구른다...
-  TTS [2/6] [EL·발랄녀] 7.3초  시방 코스닥이 흔들리는디 로봇주만 계속 올라가고 있...
-  TTS [3/6] [EL·발랄녀] 6.6초  반도체 장비주는 AI 버블이 꺼지모서 함께 내려앉아...
-  TTS [4/6] [EL·발랄녀] 8.4초  근데 로봇주는 제조업 자동화, 물류, 의료용 로봇까...
-  TTS [5/6] [EL·발랄녀] 6.8초  투자자들이 한 번 내려간 산업 대신 미래 성장성이 ...
-  TTS [6/6] [EL·발랄녀] 8.7초  시방 코스닥 포트폴리오를 새롭게 꾸려이려면 버블 주...
+  TTS [1/6] [EL·발랄녀] 3.1초  증시 급락할 때 정부가 직접 주식을 사들인다...
+  TTS [2/6] [EL·발랄녀] 9.1초  시방 증안펀드 준비 작업이 돌아가고 있데이. 증권시...
+  TTS [3/6] [EL·발랄녀] 8.3초  작동 조건은 명확한기라. 첫째, 코스피가 하루에 급...
+  TTS [4/6] [EL·발랄녀] 9.0초  이거 와 중요한가 하는기다. 정부가 나서서 주식을 ...
+  TTS [5/6] [EL·발랄녀] 7.4초  시방 준비 중이라는 건 언제든 발동될 수 있다는 뜻...
+  TTS [6/6] [EL·발랄녀] 10.7초  결국 이거라예. 시장 불안은 계획 맨키로 투자하는 ...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.9초
-  세그먼트 [2/7] 7.8초
-  세그먼트 [3/7] 7.1초
-  세그먼트 [4/7] 8.9초
-  세그먼트 [5/7] 7.3초
-  세그먼트 [6/7] 9.2초
+  세그먼트 [1/7] 3.6초
+  세그먼트 [2/7] 9.6초
+  세그먼트 [3/7] 8.8초
+  세그먼트 [4/7] 9.5초
+  세그먼트 [5/7] 7.9초
+  세그먼트 [6/7] 11.2초
   세그먼트 [7/7] 3.5초
-  ♪ BGM 믹싱 완료: ambient_news_02.mp3
+  ♪ BGM 믹싱 완료: lofi_chill_01.mp3
 
-  ✓ 릴스 완성: out/reels/20261122_02_비교분석.mp4
-    길이: 46.6초  /  크기: 9.4MB
+  ✓ 릴스 완성: out/reels/20261122_03_숫자훅.mp4
+    길이: 52.9초  /  크기: 10.5MB
 
 3) 커버 썸네일 생성
-  ✓ 첫 장면 사진 커버: out/reels/20261122_02_비교분석.jpg
--rw-r--r-- 1 runner runner 9.4M Nov 22 10:25 out/reels/20261122_02_비교분석.mp4
+  ✓ 첫 장면 사진 커버: out/reels/20261122_03_숫자훅.jpg
+-rw-r--r-- 1 runner runner 11M Nov 22 16:45 out/reels/20261122_03_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=46.633008
+duration=52.933008
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels
   토큰           설정됨
@@ -81,8 +72,8 @@ duration=46.633008
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-22):
-  20261122_02_비교분석.mp4  9.4MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_02.mp4
-  20261122_02_비교분석.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_02.jpg
+  20261122_03_숫자훅.mp4  10.5MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_03.mp4
+  20261122_03_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_03.jpg
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -94,14 +85,14 @@ duration=46.633008
 남은 발행 가능: 98건
 발행 대상: 1건
 
-── 1/1  20261122_02_비교분석
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_02.mp4
-  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_02.jpg
-  캡션: 로봇주가 반도체 장비주를 이기는 이유
-  컨테이너: 17980333094973700
+── 1/1  20261122_03_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_03.mp4
+  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_03.jpg
+  캡션: 증시 폭락할 때 정부가 쓰는 비상카드
+  컨테이너: 17980409156973700
       0초  IN_PROGRESS
-     31초  FINISHED
-  발행 완료: 18123811801953244
+     73초  FINISHED
+  발행 완료: 18135761435502882
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
   스토리 공유 스킵 — 썸네일 URL 없음
@@ -110,14 +101,14 @@ duration=46.633008
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
 완료: 발행 1건 / 실패 0건
 ::add-mask::EAAQPueZCifx4BTLC9lSh8DCWLimqaLIPlZB7N3ZCNliPlsk17m6Fw4OEKIrTHTqYBh9qMDyea63h2sZArtB8ALqZCf2Pf6s5rhQ4GraORxKI9gPBnj3TvT0ZCbElZAYdbHlVK7k86N2mhPJ5tZALcZAa42Grjan7914zUbHlg7v16LlbFlpkdd59BDZBQCZCw9T7r4z3ZAphfcNggQA63msP6ZCEitMIvmP6NnCYWnCgpZCZBGk0ZBEZD
-::error::Graph API 오류 [190]: Error validating access token: Session has expired on Saturday, 21-Nov-26 00:00:00 PST. The current time is Sunday, 22-Nov-26 02:26:08 PST.
+::error::Graph API 오류 [190]: Error validating access token: Session has expired on Saturday, 21-Nov-26 00:00:00 PST. The current time is Sunday, 22-Nov-26 08:46:54 PST.
 발행 대상: 1건
 
-── 1/1  20261122_02_비교분석
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_02.mp4
-  제목: 로봇주가 반도체 장비주를 이기는 이유
+── 1/1  20261122_03_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-22/20261122_03.mp4
+  제목: 증시 폭락할 때 정부가 쓰는 비상카드
   ⚠️  공개 발행 불가 — SELF_ONLY로 발행 (앱에서 수동 공개)
   방식: PULL_FROM_URL
-  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=20261122182609F22DB1BC1DAA5169580E)
+  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=202611230046545713B227D2D0BF80D5EC)
 
 완료: 발행 0건 / 실패 1건
