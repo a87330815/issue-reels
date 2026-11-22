@@ -1,0 +1,42 @@
+{
+  "title": "이번 주 쫌봐봐 TOP 3 (11월 23일)",
+  "category": "재테크",
+  "cover": {
+    "hook": "이번 주\n가장 많이 본\nTOP 3",
+    "badge": "주간 TOP 3",
+    "sub": "11월 23일 기준"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "photo_query": "trending fire news",
+      "narration": "이번 주 가장 많이 본 영상 세 개 모아왔습니다.",
+      "subtitle": "🔥 주간 TOP 3"
+    },
+    {
+      "image": null,
+      "photo_query": "원현주 남편 불륜설 26일 만에 SN",
+      "narration": "1위. 원현주 남편 불륜설 26일 만에 SNS 복귀  · 26일 만에 SNS 복귀 · 불륜설 직후. 조회수 1.7천회를 기록했습니다.",
+      "subtitle": "🥇 1위 — 조회 1.7천"
+    },
+    {
+      "image": null,
+      "photo_query": "AI 버블 꺼지니 구리값 16% 추락",
+      "narration": "2위. AI 버블 꺼지니 구리값 16% 추락…당신의 포트폴리오는?  · AI 투자 지연 → 구리. 조회수 1.2천회를 기록했습니다.",
+      "subtitle": "🥈 2위 — 조회 1.2천"
+    },
+    {
+      "image": null,
+      "photo_query": "기술주 대폭락, 당신의 ETF는 안전",
+      "narration": "3위. 기술주 대폭락, 당신의 ETF는 안전한가  · 나스닥 5.3% 널찠다 기술주 중심 팔아치기. 조회수 373회를 기록했습니다.",
+      "subtitle": "🥉 3위 — 조회 373"
+    },
+    {
+      "image": null,
+      "photo_query": "subscribe follow bell notification",
+      "narration": "다음 주에는 어떤 돈 정보가 TOP에 오를지 궁금하면 팔로우 눌러주이소. 매일 올려드립니다.",
+      "subtitle": "팔로우 · 알림 설정"
+    }
+  ],
+  "source": "weekly_top3"
+}
