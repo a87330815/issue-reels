@@ -4,7 +4,7 @@
     "image": null,
     "lines": [
       "증권사 해킹으로",
-      "<r>8천명</r> 정보 샐았다아이가",
+      "<r>8천명</r> 정보 유출됐다 아이가",
       "니 계좌는"
     ],
     "summary": "",
@@ -14,7 +14,7 @@
   "scenes": [
     {
       "image": null,
-      "narration": "지난주 증권가에서 해킹 사고가 터졌다카더라. 8천 명 이상의 개인 정보가 샐았다아이가. 혹시 니도 그중 한 명일 끼다.",
+      "narration": "지난주 증권가에서 해킹 사고가 터졌다카더라. 8천 명 이상의 개인 정보가 유출됐다 아이가. 혹시 니도 그중 한 명일 끼다.",
       "subtitle": "증권사 개인정보 유출 사건 터졌다",
       "photo_query": "smartphone security breach alert notification"
     },
@@ -32,7 +32,7 @@
     },
     {
       "image": null,
-      "narration": "셋째, 신용 모니터링을 신청해라. 개인정보가 샐았다 뒤 몇 주일 내에 사기가 일어나는 경우가 많데이. 신용조회기관에 연락해서 최소 3개월 모니터링을 활성화해라.",
+      "narration": "셋째, 신용 모니터링을 신청해라. 개인정보가 유출됐다 뒤 몇 주일 내에 사기가 일어나는 경우가 많데이. 신용조회기관에 연락해서 최소 3개월 모니터링을 활성화해라.",
       "subtitle": "3단계: 신용 모니터링 신청하라",
       "photo_query": "credit monitoring alert financial security"
     },
