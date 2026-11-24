@@ -1,15 +1,70 @@
 {
-  "generated_at": "2026-11-24T01:57:51+00:00",
-  "avg_views": 193,
-  "avg_engagement_rate": 1.82,
+  "generated_at": "2026-11-24T23:41:55+00:00",
+  "avg_views": 205,
+  "avg_engagement_rate": 1.68,
   "best_hours_kst": [
     21,
-    18,
-    11
+    15,
+    18
   ],
   "top_captions": [
     "원현주 남편 불륜설 26일 만에 SNS 복귀  · 26일 만에 SNS 복",
     "AI 버블 꺼지니 구리값 16% 추락…당신의 포트폴리오는?  · AI 투",
-    "기술주 대폭락, 당신의 ETF는 안전한가  · 나스닥 5.3% 널찠다 기"
+    "내년 금리 3.5%면 적금이 뜬다…근데 환율은?  · 금리 3.5% vs"
+  ],
+  "follower_growth": {
+    "available": true,
+    "username": "jjombwabwa",
+    "start_followers": 1225,
+    "end_followers": 1225,
+    "net_followers": 0,
+    "growth_rate": 0.0,
+    "snapshot_count": 1
+  },
+  "best_categories": [
+    {
+      "name": "재테크",
+      "count": 12,
+      "avg_views": 324,
+      "save_rate": 0.08,
+      "share_rate": 0.0
+    },
+    {
+      "name": "경제상식",
+      "count": 1,
+      "avg_views": 300,
+      "save_rate": 0.0,
+      "share_rate": 0.0
+    },
+    {
+      "name": "연예",
+      "count": 20,
+      "avg_views": 261,
+      "save_rate": 0.0,
+      "share_rate": 0.17
+    }
+  ],
+  "best_formats": [
+    {
+      "name": "숫자훅",
+      "count": 38,
+      "avg_views": 264,
+      "save_rate": 0.04,
+      "share_rate": 0.09
+    },
+    {
+      "name": "생활해킹",
+      "count": 1,
+      "avg_views": 154,
+      "save_rate": 0.0,
+      "share_rate": 0.0
+    },
+    {
+      "name": "연예",
+      "count": 2,
+      "avg_views": 152,
+      "save_rate": 0.0,
+      "share_rate": 0.0
+    }
   ]
 }
