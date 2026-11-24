@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-11-24T13:25:38.023849+09:00",
+  "analysis_priority": [
+    "views",
+    "saves",
+    "shares",
+    "followers_growth",
+    "best_category",
+    "best_format"
+  ],
+  "accounts": [
+    {
+      "id": "jjombwabwa",
+      "name": "쫌봐봐",
+      "repository": "a87330815/issue-reels",
+      "status": "active",
+      "avg_views": 193,
+      "avg_engagement_rate": 1.82,
+      "followers_growth": 0,
+      "best_hours_kst": [
+        21,
+        18,
+        11
+      ],
+      "best_categories": [],
+      "best_formats": [],
+      "top_captions": [
+        "원현주 남편 불륜설 26일 만에 SNS 복귀  · 26일 만에 SNS 복",
+        "AI 버블 꺼지니 구리값 16% 추락…당신의 포트폴리오는?  · AI 투",
+        "기술주 대폭락, 당신의 ETF는 안전한가  · 나스닥 5.3% 널찠다 기"
+      ],
+      "snapshot_available": false,
+      "generated_at": "2026-11-24T01:57:51+00:00"
+    },
+    {
+      "id": "richup",
+      "name": "굿리치 리치업지점",
+      "repository": "a87330815/richup-insurance-reels",
+      "status": "waiting",
+      "avg_views": 0,
+      "avg_engagement_rate": 0,
+      "followers_growth": 0,
+      "best_hours_kst": [],
+      "best_categories": [],
+      "best_formats": [],
+      "top_captions": [],
+      "snapshot_available": false,
+      "generated_at": ""
+    }
+  ]
+}
