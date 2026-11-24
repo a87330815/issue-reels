@@ -1,0 +1,40 @@
+name: 대표 지시 자동 접수
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  intake:
+    if: ${{ !github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 대표 지시를 부서 큐로 분배
+        env:
+          INSTRUCTION: ${{ github.event.issue.title }}
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          python company/dispatch.py "${INSTRUCTION}
+
+${BODY}" --account company
+      - name: 큐 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add company/queue company/state.json
+          git diff --cached --quiet || git commit -m "ops: intake executive instruction"
+          git push
+      - name: 접수 완료 표시
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --body "대표 지시를 접수했습니다. 관련 부서 worker가 병렬 처리합니다. 결과는 비서실장 통합보고에 반영됩니다."
+          gh issue edit "${{ github.event.issue.number }}" --add-label "agent:queued" || true
