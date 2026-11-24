@@ -73,6 +73,27 @@ def check():
     return True
 
 
+def metadata_from_script(path):
+    with open(path, encoding="utf-8") as f:
+        script = json.load(f)
+    title = (script.get("title") or "쫌봐봐 쇼츠").strip()
+    subtitles = [
+        s.get("subtitle", "").strip()
+        for s in script.get("scenes", [])
+        if s.get("subtitle")
+    ]
+    lines = [title]
+    lines.extend(
+        s for s in subtitles[:4]
+        if "프로필" not in s and "팔로우" not in s
+    )
+    attribution = (script.get("meta") or {}).get("attribution")
+    if attribution:
+        lines.append(f"출처: {attribution}")
+    lines.extend(["", "유용했다면 저장하고 공유해 주세요.", "#쫌봐봐 #쇼츠 #shorts"])
+    return title, "\n".join(lines).strip()
+
+
 def upload(video, title, description="", privacy="private", category="22"):
     from googleapiclient.http import MediaFileUpload
     if not os.path.isfile(video):
@@ -98,11 +119,16 @@ def upload(video, title, description="", privacy="private", category="22"):
         status, response = req.next_chunk()
         if status:
             print(f"업로드 {int(status.progress() * 100)}%")
-    print(json.dumps({
+    result = {
         "video_id": response.get("id"),
         "url": f"https://youtu.be/{response.get('id')}",
         "privacy": privacy,
-    }, ensure_ascii=False, indent=2))
+        "title": title[:100],
+    }
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    os.makedirs("out", exist_ok=True)
+    with open("out/published_youtube.json", "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
     return response
 
 
@@ -112,6 +138,7 @@ def main():
     p.add_argument("--video")
     p.add_argument("--title")
     p.add_argument("--description", default="")
+    p.add_argument("--script", help="제목·설명을 만들 대본 JSON")
     p.add_argument("--privacy", default="private",
                    choices=["private", "unlisted", "public"])
     args = p.parse_args()
@@ -119,9 +146,15 @@ def main():
         if args.check:
             check()
         else:
-            if not args.video or not args.title:
-                p.error("--video와 --title이 필요합니다")
-            upload(args.video, args.title, args.description, args.privacy)
+            title = args.title
+            description = args.description
+            if args.script:
+                script_title, script_description = metadata_from_script(args.script)
+                title = title or script_title
+                description = description or script_description
+            if not args.video or not title:
+                p.error("--video와 --title 또는 --script가 필요합니다")
+            upload(args.video, title, description, args.privacy)
     except Exception as e:
         print(f"[오류] {e}")
         sys.exit(1)
