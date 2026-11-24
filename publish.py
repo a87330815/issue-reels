@@ -37,6 +37,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(ROOT, "out")
 MANIFEST = os.path.join(OUT_DIR, "uploaded.json")
 PUBLISHED = os.path.join(OUT_DIR, "published.json")
+STORY_PUBLISHED = os.path.join(OUT_DIR, "published_instagram_story.json")
 
 
 def load_env():
@@ -252,54 +253,50 @@ def publish_one(video_url, caption=None, cover_url=None, dry_run=False,
     # 스토리에 릴스 자동 공유
     if not dry_run:
         try:
-            share_to_story(media_id)
+            share_to_story(video_url)
         except Exception as e:
             print(f"  ⚠️  스토리 공유 실패 (무시): {e}")
 
     return media_id
 
 
-def share_to_story(media_id):
-    """발행된 릴스를 스토리에 공유.
+def share_to_story(video_url):
+    """공개 MP4 URL을 Instagram 스토리로 발행한다."""
+    print("  인스타그램 스토리 컨테이너 생성")
+    container = api(
+        "POST",
+        f"{IG_ID}/media",
+        media_type="STORIES",
+        video_url=video_url,
+    )
+    cid = container.get("id")
+    if not cid:
+        raise RuntimeError(f"스토리 컨테이너 생성 실패: {container}")
 
-    Instagram Graph API로 STORIES 컨테이너를 만들어 릴스 permalink을
-    스토리에 첨부한다. 실패해도 릴스 발행에는 영향 없음.
-    """
-    # 릴스 permalink 조회
-    info = api("GET", media_id, fields="permalink,shortcode")
-    permalink = info.get("permalink", "")
-    if not permalink:
-        print("  스토리 공유 스킵 — permalink 없음")
-        return
+    print(f"  스토리 컨테이너: {cid}")
+    ok, why = wait_ready(cid)
+    if not ok:
+        raise RuntimeError(f"스토리 처리 실패: {why}")
 
-    # 스토리용 이미지 (릴스 썸네일을 재활용)
-    thumb = info.get("thumbnail_url") or info.get("media_url")
+    time.sleep(10)
+    res = api("POST", f"{IG_ID}/media_publish", creation_id=cid)
+    media_id = res.get("id")
+    if not media_id:
+        raise RuntimeError(f"스토리 발행 실패: {res}")
 
-    # 스토리 컨테이너 생성 — 릴스 링크 스티커 포함
-    # Note: Graph API의 stories 발행은 image_url 필수
-    # 릴스 썸네일이 없으면 스킵
-    if not thumb:
-        print("  스토리 공유 스킵 — 썸네일 URL 없음")
-        return
+    result = {
+        "success": True,
+        "media_id": media_id,
+        "ig_id": IG_ID,
+        "video_url": video_url,
+        "published_at": datetime.now(timezone.utc).isoformat(),
+    }
+    os.makedirs(OUT_DIR, exist_ok=True)
+    with open(STORY_PUBLISHED, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
 
-    try:
-        container = api(
-            "POST", f"{IG_ID}/media",
-            media_type="STORIES",
-            image_url=thumb,
-            # link 스티커로 릴스 연결
-            link=permalink,
-        )
-        cid = container.get("id")
-        if not cid:
-            print("  스토리 컨테이너 생성 실패")
-            return
-
-        time.sleep(5)
-        api("POST", f"{IG_ID}/media_publish", creation_id=cid)
-        print(f"  📱 스토리 공유 완료")
-    except Exception as e:
-        print(f"  스토리 발행 실패: {e}")
+    print(f"  📱 인스타그램 스토리 발행 완료: {media_id}")
+    return media_id
 
 
 def insights(media_id):
@@ -410,6 +407,11 @@ def main():
     ap.add_argument("--caption", help="캡션")
     ap.add_argument("--script", help="대본 JSON — 캡션을 여기서 만든다")
     ap.add_argument("--check", action="store_true", help="설정만 점검")
+    ap.add_argument(
+        "--story-only",
+        action="store_true",
+        help="릴스는 건너뛰고 Instagram 스토리만 발행",
+    )
     ap.add_argument("--dry-run", action="store_true", help="발행 직전까지만")
     ap.add_argument("--limit", type=int, default=1, help="한 번에 발행할 최대 편수")
     args = ap.parse_args()
@@ -476,10 +478,13 @@ def main():
     for i, job in enumerate(jobs):
         print(f"── {i+1}/{len(jobs)}  {job['name']}")
         try:
-            media_id = publish_one(
-                job["video_url"], job.get("caption"),
-                job.get("cover_url"), dry_run=args.dry_run,
-            )
+            if args.story_only:
+                media_id = share_to_story(job["video_url"])
+            else:
+                media_id = publish_one(
+                    job["video_url"], job.get("caption"),
+                    job.get("cover_url"), dry_run=args.dry_run,
+                )
             if media_id:
                 results.append({
                     "name": job["name"],
@@ -497,7 +502,7 @@ def main():
             failed += 1
         print()
 
-    if results:
+    if results and not args.story_only:
         record(results)
 
     print(f"완료: 발행 {len(results)}건 / 실패 {failed}건")
