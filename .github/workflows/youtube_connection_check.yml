@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - ".github/workflows/youtube_connection_check.yml"
+      - "publish_youtube.py"
   workflow_dispatch:
     inputs:
       mode:
