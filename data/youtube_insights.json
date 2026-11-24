@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-11-24T05:49:43.811272+00:00",
+  "channel": {
+    "channel_id": "UCLtQFtfFE1KE7Ed5pVCbscQ",
+    "title": "쫌봐봐",
+    "subscribers": 0,
+    "videos": 0,
+    "views": 0
+  },
+  "recent_videos": [
+    {
+      "video_id": "97LaqkidW4Y",
+      "title": "쫌봐봐 YouTube 연결 비공개 테스트",
+      "published_at": "2026-11-24T05:43:25Z",
+      "privacy": "private",
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "video_id": "ieh4UmuiYEs",
+      "title": "성욱 최의 생방송",
+      "published_at": "2016-09-13T00:13:01Z",
+      "privacy": "private",
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "video_id": "MNIkKbjus7c",
+      "title": "성욱 최의 생방송",
+      "published_at": "2016-08-11T14:44:05Z",
+      "privacy": "private",
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    }
+  ]
+}
