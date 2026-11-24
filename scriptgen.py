@@ -1616,8 +1616,8 @@ def main():
             continue
 
         # 카드뉴스 사진은 표지+본문 5장 모두 구체적인 서로 다른 검색어가 필수다.
-        photo_queries = [(script.get("cover") or {}).get("photo_query", "").strip()]
-        photo_queries += [(s.get("photo_query") or "").strip() for s in script.get("scenes", [])]
+        photo_queries = [str((script.get("cover") or {}).get("photo_query") or "").strip()]
+        photo_queries += [str(s.get("photo_query") or "").strip() for s in script.get("scenes", [])]
         if any(not q for q in photo_queries):
             print("  [제외] 표지 또는 본문에 photo_query가 없습니다")
             continue
