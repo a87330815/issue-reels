@@ -1,19 +1,28 @@
 {
-  "generated_at": "2026-11-24T05:49:43.811272+00:00",
+  "generated_at": "2026-11-24T23:57:34.571667+00:00",
   "channel": {
     "channel_id": "UCLtQFtfFE1KE7Ed5pVCbscQ",
     "title": "쫌봐봐",
-    "subscribers": 0,
-    "videos": 0,
+    "subscribers": 1,
+    "videos": 1,
     "views": 0
   },
   "recent_videos": [
+    {
+      "video_id": "LJNEsZNPU70",
+      "title": "당신의 랩어카운트, 손실 만회하려고 위험 종목에 몰아주고 있진 않습니까",
+      "published_at": "2026-11-24T19:52:44Z",
+      "privacy": "public",
+      "views": 220,
+      "likes": 1,
+      "comments": 0
+    },
     {
       "video_id": "97LaqkidW4Y",
       "title": "쫌봐봐 YouTube 연결 비공개 테스트",
       "published_at": "2026-11-24T05:43:25Z",
       "privacy": "private",
-      "views": 0,
+      "views": 3,
       "likes": 0,
       "comments": 0
     },
