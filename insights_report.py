@@ -25,6 +25,7 @@ from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CSV_PATH = os.path.join(ROOT, "data", "insights.csv")
+ACCOUNT_CSV_PATH = os.path.join(ROOT, "data", "account_insights.csv")
 REPORT_PATH = os.path.join(ROOT, "data", "weekly_report.md")
 HINTS_PATH = os.path.join(ROOT, "data", "perf_hints.json")
 
@@ -57,6 +58,44 @@ def _int(v):
         return int(v)
     except (ValueError, TypeError):
         return 0
+
+
+def load_account_growth(days=7):
+    """최근 N일 계정 스냅샷으로 팔로워 순증가를 계산한다."""
+    if not os.path.exists(ACCOUNT_CSV_PATH):
+        return {"available": False}
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+    snapshots = []
+    with open(ACCOUNT_CSV_PATH, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            try:
+                collected = datetime.fromisoformat(
+                    (row.get("collected_at") or "").replace("Z", "+00:00")
+                )
+            except ValueError:
+                continue
+            if collected >= cutoff:
+                snapshots.append((collected, row))
+
+    if not snapshots:
+        return {"available": False}
+    snapshots.sort(key=lambda x: x[0])
+    first = snapshots[0][1]
+    last = snapshots[-1][1]
+    start = _int(first.get("followers_count"))
+    end = _int(last.get("followers_count"))
+    net = end - start
+    rate = round(net / start * 100, 2) if start else 0
+    return {
+        "available": True,
+        "username": last.get("username", ""),
+        "start_followers": start,
+        "end_followers": end,
+        "net_followers": net,
+        "growth_rate": rate,
+        "snapshot_count": len(snapshots),
+    }
 
 
 def analyze(rows):
@@ -151,6 +190,16 @@ def build_report(analysis, days):
         f"",
         f"분석 대상: **{analysis['count']}개** 릴스",
         f"",
+        f"## 계정 성장",
+        (
+            f"- 팔로워: **{analysis['account_growth']['start_followers']:,} → "
+            f"{analysis['account_growth']['end_followers']:,}** "
+            f"({analysis['account_growth']['net_followers']:+,}, "
+            f"{analysis['account_growth']['growth_rate']:+.2f}%)"
+            if analysis.get("account_growth", {}).get("available")
+            else "- 팔로워 성장: 스냅샷 누적 후 표시"
+        ),
+        f"",
         f"## 핵심 지표",
         f"| 지표 | 합계 | 평균 |",
         f"|------|------|------|",
@@ -201,6 +250,7 @@ def build_hints(analysis):
         "avg_engagement_rate": analysis.get("engagement_rate", 0),
         "best_hours_kst": analysis.get("best_hours_kst", []),
         "top_captions": [t["caption"] for t in analysis.get("top3", [])],
+        "follower_growth": analysis.get("account_growth", {}),
     }
 
 
@@ -212,6 +262,7 @@ def main():
 
     rows = load_rows(args.days)
     result = analyze(rows)
+    result["account_growth"] = load_account_growth(args.days)
 
     if args.json:
         print(json.dumps(build_hints(result), ensure_ascii=False, indent=2))
