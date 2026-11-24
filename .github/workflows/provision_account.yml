@@ -1,0 +1,53 @@
+name: 신규 고객 계정 온보딩
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "계정명"
+        required: true
+        type: string
+      topic:
+        description: "운영 주제"
+        required: true
+        type: string
+      audience:
+        description: "타깃 시청자"
+        required: true
+        type: string
+      platforms:
+        description: "플랫폼(쉼표 구분)"
+        required: false
+        default: "instagram,facebook,youtube,tiktok"
+        type: string
+      ratio:
+        description: "주제 비율(예: 이슈:40,공감:40,꿀팁:20)"
+        required: false
+        type: string
+      goal:
+        description: "목표(쉼표 구분)"
+        required: false
+        default: "조회수,저장,공유,팔로워"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  provision:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 계정 설정 생성
+        run: |
+          python company/provision_account.py             --name "${{ inputs.name }}"             --topic "${{ inputs.topic }}"             --audience "${{ inputs.audience }}"             --platforms "${{ inputs.platforms }}"             --ratio "${{ inputs.ratio }}"             --goal "${{ inputs.goal }}"
+      - name: 온보딩 설정 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add company/accounts
+          git commit -m "feat: provision account ${{ inputs.name }}" || true
+          git push
