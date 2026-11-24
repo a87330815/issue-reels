@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Media Company · 운영허브</title>
+<style>
+:root{--bg:#07111f;--panel:#0e1b2e;--panel2:#13243a;--line:#243750;--gold:#d8b35a;--text:#f4f6fb;--muted:#9eb0c7;--ok:#40d68b;--bad:#ff6b78;--warn:#ffca5c}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(145deg,#050b14,#0a1728 55%,#08111e);color:var(--text);font-family:Pretendard,"Noto Sans KR",system-ui,sans-serif}
+.wrap{max-width:1440px;margin:auto;padding:28px}.top{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:24px}
+.brand small{color:var(--gold);letter-spacing:.18em}.brand h1{margin:7px 0 4px;font-size:30px}.brand p{margin:0;color:var(--muted)}
+.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:10px 14px;border-radius:10px;text-decoration:none;cursor:pointer}.btn.primary{background:var(--gold);color:#10151c;border-color:var(--gold);font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{background:rgba(14,27,46,.92);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 40px #0004}
+.kpi{grid-column:span 3}.account{grid-column:span 6}.wide{grid-column:span 8}.side{grid-column:span 4}.full{grid-column:1/-1}
+.label{color:var(--muted);font-size:13px}.value{font-size:30px;font-weight:850;margin-top:8px}.delta{font-size:13px;margin-top:6px}.ok{color:var(--ok)}.bad{color:var(--bad)}.warn{color:var(--warn)}
+.head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}.head h2,.head h3{margin:0}.badge{padding:5px 9px;border-radius:999px;background:#1d334f;color:var(--muted);font-size:12px}.badge.live{background:#113d31;color:var(--ok)}
+.platforms{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.platform{padding:11px;border-radius:11px;background:#0a1626;border:1px solid var(--line);font-size:13px}.platform b{display:block;margin-bottom:5px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin-right:6px}.dot.on{background:var(--ok)}.dot.off{background:var(--bad)}.dot.wait{background:var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:600}
+pre.report{white-space:pre-wrap;margin:0;color:#dce7f5;line-height:1.65;font:13px/1.65 Pretendard,"Noto Sans KR",sans-serif;max-height:430px;overflow:auto}
+.error{padding:12px;border:1px solid #7a3040;background:#351724;border-radius:10px;color:#ffadb5}.empty{color:var(--muted);padding:20px 0}
+footer{color:var(--muted);font-size:12px;margin-top:22px;text-align:right}
+@media(max-width:900px){.kpi,.account,.wide,.side{grid-column:1/-1}.platforms{grid-template-columns:repeat(2,1fr)}.top{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body><div class="wrap">
+<header class="top">
+ <div class="brand"><small>AI MULTI-MEDIA COMPANY</small><h1>콘텐츠 성장 운영허브</h1><p>쫌봐봐 · 굿리치 리치업지점 · 멀티플랫폼 통합관리</p></div>
+ <div class="actions"><button class="btn primary" onclick="loadAll()">새로고침</button><a class="btn" href="https://github.com/a87330815/issue-reels/actions" target="_blank">쫌봐봐 자동화</a><a class="btn" href="https://github.com/a87330815/richup-insurance-reels/actions" target="_blank">리치업 자동화</a></div>
+</header>
+<section class="grid">
+ <article class="card kpi"><div class="label">운영 계정</div><div class="value">2</div><div class="delta">실증 계정</div></article>
+ <article class="card kpi"><div class="label">연결 플랫폼</div><div class="value">2<span style="font-size:15px;color:var(--muted)"> / 4</span></div><div class="delta warn">YouTube·TikTok 준비</div></article>
+ <article class="card kpi"><div class="label">쫌봐봐 평균 조회</div><div class="value" id="jAvg">—</div><div class="delta" id="jGrowth">데이터 불러오는 중</div></article>
+ <article class="card kpi"><div class="label">리치업 평균 조회</div><div class="value" id="rAvg">—</div><div class="delta" id="rGrowth">첫 수집 대기</div></article>
+
+ <article class="card account">
+  <div class="head"><h2>쫌봐봐</h2><span class="badge live">운영 중</span></div>
+  <div class="platforms">
+   <div class="platform"><b>Instagram</b><span class="dot on"></span>연결</div>
+   <div class="platform"><b>Facebook</b><span class="dot on"></span>분리 연동</div>
+   <div class="platform"><b>YouTube</b><span class="dot wait"></span>연결 예정</div>
+   <div class="platform"><b>TikTok</b><span class="dot off"></span>권한 필요</div>
+  </div>
+ </article>
+ <article class="card account">
+  <div class="head"><h2>굿리치 리치업지점</h2><span class="badge">실증 준비</span></div>
+  <div class="platforms">
+   <div class="platform"><b>Instagram</b><span class="dot on"></span>연결</div>
+   <div class="platform"><b>Facebook</b><span class="dot wait"></span>확인 예정</div>
+   <div class="platform"><b>YouTube</b><span class="dot wait"></span>연결 예정</div>
+   <div class="platform"><b>TikTok</b><span class="dot wait"></span>연결 예정</div>
+  </div>
+ </article>
+
+ <article class="card wide">
+  <div class="head"><h3>계정별 성과</h3><span class="badge" id="updated">갱신 중</span></div>
+  <table><thead><tr><th>계정</th><th>평균 조회</th><th>반응률</th><th>팔로워 증감</th><th>추천 시간</th></tr></thead>
+  <tbody id="scoreRows"><tr><td colspan="5" class="empty">데이터 불러오는 중</td></tr></tbody></table>
+ </article>
+ <article class="card side">
+  <div class="head"><h3>자동화 상태</h3></div>
+  <table><tbody id="runRows"><tr><td class="empty">점검 중</td></tr></tbody></table>
+ </article>
+
+ <article class="card full">
+  <div class="head"><h3>최근 주간보고</h3><span class="badge">자동 생성</span></div>
+  <div class="grid">
+   <div style="grid-column:span 6"><div class="label" style="margin-bottom:10px">쫌봐봐</div><pre class="report" id="jReport">불러오는 중</pre></div>
+   <div style="grid-column:span 6"><div class="label" style="margin-bottom:10px">리치업지점</div><pre class="report" id="rReport">첫 데이터 수집 후 표시됩니다.</pre></div>
+  </div>
+ </article>
+</section>
+<footer>읽기 전용 내부 운영허브 · 자동 새로고침 5분</footer>
+</div>
+<script>
+const RAW="https://raw.githubusercontent.com/a87330815/";
+const API="https://api.github.com/repos/a87330815/";
+async function getText(url){const r=await fetch(url,{cache:"no-store"});if(!r.ok)throw new Error(r.status+" "+r.statusText);return r.text()}
+async function getJson(url){const r=await fetch(url,{cache:"no-store"});if(!r.ok)throw new Error(r.status+" "+r.statusText);return r.json()}
+function esc(s){return String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+function growthText(g){if(!g||!g.available)return "누적 대기";return (g.net_followers>=0?"+":"")+g.net_followers+"명"}
+async function account(repo,key){
+ let hints=null,report="";
+ try{hints=await getJson(RAW+repo+"/main/data/perf_hints.json")}catch(e){}
+ try{report=await getText(RAW+repo+"/main/data/weekly_report.md")}catch(e){}
+ document.getElementById(key+"Avg").textContent=hints?.avg_views?.toLocaleString?.()||"—";
+ document.getElementById(key+"Growth").textContent=hints?("반응률 "+(hints.avg_engagement_rate||0)+"% · 팔로워 "+growthText(hints.follower_growth)):"첫 수집 대기";
+ document.getElementById(key+"Report").textContent=report||"첫 데이터 수집 후 표시됩니다.";
+ return {name:key==="j"?"쫌봐봐":"리치업지점",hints};
+}
+async function runs(repo,label){
+ try{
+  const d=await getJson(API+repo+"/actions/runs?per_page=5");
+  const useful=d.workflow_runs.filter(x=>!x.name.includes("pages build")).slice(0,3);
+  return useful.map(x=>({label,name:x.name,status:x.conclusion||x.status,url:x.html_url}));
+ }catch(e){return [{label,name:"조회 실패",status:"failure",url:"#"}]}
+}
+async function loadAll(){
+ document.getElementById("updated").textContent="갱신 중";
+ const [j,r,jruns,rruns]=await Promise.all([
+  account("issue-reels","j"),account("richup-insurance-reels","r"),
+  runs("issue-reels","쫌봐봐"),runs("richup-insurance-reels","리치업")
+ ]);
+ const rows=[j,r].map(x=>{
+  const h=x.hints||{},g=h.follower_growth||{};
+  return `<tr><td><b>${esc(x.name)}</b></td><td>${Number(h.avg_views||0).toLocaleString()}</td><td>${esc(h.avg_engagement_rate||0)}%</td><td>${esc(growthText(g))}</td><td>${esc((h.best_hours_kst||[]).map(v=>v+"시").join(", ")||"—")}</td></tr>`
+ }).join("");
+ document.getElementById("scoreRows").innerHTML=rows;
+ const all=[...jruns,...rruns];
+ document.getElementById("runRows").innerHTML=all.map(x=>{
+  const cls=x.status==="success"?"ok":x.status==="failure"?"bad":"warn";
+  return `<tr><td>${esc(x.label)}<br><a href="${esc(x.url)}" target="_blank" style="color:#dce7f5">${esc(x.name)}</a></td><td class="${cls}">${esc(x.status)}</td></tr>`
+ }).join("");
+ document.getElementById("updated").textContent=new Date().toLocaleString("ko-KR");
+}
+loadAll();setInterval(loadAll,300000);
+</script></body></html>
