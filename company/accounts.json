@@ -1,0 +1,51 @@
+{
+  "company": "AI 콘텐츠 자동화 회사",
+  "timezone": "Asia/Seoul",
+  "accounts": [
+    {
+      "id": "jjombwabwa",
+      "name": "쫌봐봐",
+      "repository": "a87330815/issue-reels",
+      "brand_type": "대중형 이슈·정보·공감",
+      "goal": ["조회수", "공유", "저장", "팔로워", "수익화"],
+      "topic_ratio": {
+        "화제·이슈": 40,
+        "재미·공감": 40,
+        "생활·꿀팁": 15,
+        "경제·돈": 5,
+        "일반 사회뉴스": 0
+      },
+      "topic_ratio_locked": true,
+      "platforms": ["instagram", "facebook", "youtube", "tiktok"]
+    },
+    {
+      "id": "richup",
+      "name": "굿리치 리치업지점",
+      "repository": "a87330815/richup-insurance-reels",
+      "brand_type": "보험정보·지점 브랜딩·리쿠르팅",
+      "goal": ["신뢰 형성", "상담 문의", "설계사 채용", "조직 브랜딩"],
+      "brand": {
+        "philosophy": "보험은 상품이 아니라 분석입니다",
+        "slogan": "신뢰로 함께 | 가치로 성장 | 미래로 동행",
+        "colors": ["navy", "real gold"]
+      },
+      "platforms": ["instagram", "facebook", "youtube", "tiktok"],
+      "approval_required": [
+        "특정 상품",
+        "보험료",
+        "수익률",
+        "환급률",
+        "보장금액",
+        "가입 가능 여부"
+      ]
+    }
+  ],
+  "analysis_priority": [
+    "views",
+    "saves",
+    "shares",
+    "followers_growth",
+    "best_category",
+    "best_format"
+  ]
+}
