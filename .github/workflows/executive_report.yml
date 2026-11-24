@@ -1,0 +1,29 @@
+name: 비서실장 통합보고
+
+on:
+  workflow_run:
+    workflows: ["부서 worker 병렬 실행"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  aggregate:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion != 'cancelled' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 부서 결과 집계
+        run: python company/aggregate_results.py
+      - name: 통합보고 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add company/executive_report.json company/executive_report.md
+          git diff --cached --quiet || git commit -m "ops: aggregate department worker report"
+          git push
