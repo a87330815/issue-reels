@@ -1,14 +1,7 @@
 # -*- coding: utf-8 -*-
-"""AI 콘텐츠 자동화 회사 비서실장 오케스트레이터.
-
-한 번의 대표 지시를 부서별 작업 카드로 분해하고,
-각 부서 worker가 독립적으로 처리할 수 있는 큐 파일을 만든다.
-실제 게시·삭제·결제·계약은 approval_required로 남긴다.
-"""
+"""대표 지시를 계정별·부서별 작업 카드로 분배한다."""
 import argparse
 import json
-import os
-import re
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -27,10 +20,8 @@ DEPARTMENTS = {
 }
 
 def choose_departments(text):
-    found = []
-    for dept, words in DEPARTMENTS.items():
-        if any(word.lower() in text.lower() for word in words):
-            found.append(dept)
+    found = [dept for dept, words in DEPARTMENTS.items()
+             if any(word.lower() in text.lower() for word in words)]
     return found or ["마케팅팀", "경영관리팀"]
 
 def resolve_account(text, requested):
@@ -42,51 +33,49 @@ def resolve_account(text, requested):
     return "unassigned"
 
 def approval_flags(text):
-    flags = []
-    for word in ["게시", "발행", "삭제", "광고비", "결제", "계약", "발송"]:
-        if word in text:
-            flags.append(word)
-    return flags
+    return [word for word in ["게시", "발행", "삭제", "광고비", "결제", "계약", "발송"] if word in text]
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("instruction")
     ap.add_argument("--account", default="unassigned")
     args = ap.parse_args()
-
+    account = resolve_account(args.instruction, args.account)
     now = datetime.now(timezone.utc)
     job_id = f"job-{now:%Y%m%d%H%M%S}-{uuid.uuid4().hex[:6]}"
     departments = choose_departments(args.instruction)
     approvals = approval_flags(args.instruction)
+    if account == "unassigned":
+        approvals.append("계정 지정")
     jobs = []
     for dept in departments:
         card = {
             "job_id": job_id,
             "department": dept,
             "instruction": args.instruction,
-            "account": account,\n            "account_status": "identified" if account != "unassigned" else "needs_account_selection",
-            "status": "queued",
-            "approval_required": (approvals if dept == "마케팅팀" else []) + (["계정 지정"] if account == "unassigned" else []),
+            "account": account,
+            "account_status": "identified" if account != "unassigned" else "needs_account_selection",
+            "status": "queued" if account != "unassigned" else "needs_account_selection",
+            "approval_required": approvals if dept == "마케팅팀" else (["계정 지정"] if account == "unassigned" else []),
             "created_at": now.isoformat(),
         }
         path = QUEUE / dept
         path.mkdir(parents=True, exist_ok=True)
-        with open(path / f"{job_id}.json", "w", encoding="utf-8") as f:
-            json.dump(card, f, ensure_ascii=False, indent=2)
+        (path / f"{job_id}.json").write_text(json.dumps(card, ensure_ascii=False, indent=2), encoding="utf-8")
         jobs.append(card)
-
     state = {
         "job_id": job_id,
         "instruction": args.instruction,
+        "account": account,
+        "account_status": "identified" if account != "unassigned" else "needs_account_selection",
         "departments": departments,
         "approval_required": approvals,
-        "status": "queued",
+        "status": "queued" if account != "unassigned" else "needs_account_selection",
         "created_at": now.isoformat(),
         "jobs": jobs,
     }
     STATE.parent.mkdir(parents=True, exist_ok=True)
-    with open(STATE, "w", encoding="utf-8") as f:
-        json.dump(state, f, ensure_ascii=False, indent=2)
+    STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(state, ensure_ascii=False, indent=2))
 
 if __name__ == "__main__":
