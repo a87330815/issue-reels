@@ -1,0 +1,36 @@
+name: YouTube 비공개 업로드 테스트
+
+on:
+  push:
+    paths:
+      - "company/youtube_private_test.trigger"
+
+permissions:
+  contents: read
+
+jobs:
+  private-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install -q google-api-python-client google-auth google-auth-oauthlib
+
+      - name: 테스트 영상 다운로드
+        run: |
+          curl -fL --retry 3             "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-23/20261123_03.mp4"             -o youtube_private_test.mp4
+          test -s youtube_private_test.mp4
+
+      - name: YouTube 비공개 업로드
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          python publish_youtube.py             --video youtube_private_test.mp4             --title "쫌봐봐 YouTube 연결 비공개 테스트"             --description "자동발행 연결 확인용 비공개 테스트입니다."             --privacy private
