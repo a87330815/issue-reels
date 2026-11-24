@@ -1,6 +1,9 @@
 name: YouTube Shorts 연결 점검
 
 on:
+  push:
+    paths:
+      - ".github/workflows/youtube_connection_check.yml"
   workflow_dispatch:
     inputs:
       mode:
@@ -28,7 +31,7 @@ jobs:
       - name: 의존성 설치
         run: pip install -q google-api-python-client google-auth google-auth-oauthlib
       - name: 채널 연결 확인
-        if: inputs.mode == 'check'
+        if: github.event_name == 'push' || inputs.mode == 'check'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
