@@ -26,8 +26,34 @@ from datetime import datetime, timedelta, timezone
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CSV_PATH = os.path.join(ROOT, "data", "insights.csv")
 ACCOUNT_CSV_PATH = os.path.join(ROOT, "data", "account_insights.csv")
+PUBLISHED_PATH = os.path.join(ROOT, "out", "published.json")
 REPORT_PATH = os.path.join(ROOT, "data", "weekly_report.md")
 HINTS_PATH = os.path.join(ROOT, "data", "perf_hints.json")
+
+
+def load_published_metadata():
+    """발행 기록의 카테고리·포맷을 media_id 기준으로 읽는다."""
+    if not os.path.exists(PUBLISHED_PATH):
+        return {}
+    try:
+        with open(PUBLISHED_PATH, encoding="utf-8") as f:
+            items = json.load(f).get("items", [])
+    except (OSError, json.JSONDecodeError):
+        return {}
+    meta = {}
+    for item in items:
+        media_id = str(item.get("media_id") or "")
+        if not media_id:
+            continue
+        name = item.get("name") or ""
+        parts = name.split("_")
+        fmt = parts[-1] if len(parts) >= 3 else "미분류"
+        meta[media_id] = {
+            "category": item.get("category") or "미분류",
+            "format": fmt,
+            "content_name": name,
+        }
+    return meta
 
 
 def load_rows(days=7):
@@ -50,7 +76,14 @@ def load_rows(days=7):
             if not existing or row["collected_at"] > existing["collected_at"]:
                 rows_by_id[mid] = row
 
-    return list(rows_by_id.values())
+    rows = list(rows_by_id.values())
+    published = load_published_metadata()
+    for row in rows:
+        meta = published.get(str(row.get("media_id") or ""), {})
+        row["_category"] = meta.get("category", "미분류")
+        row["_format"] = meta.get("format", "미분류")
+        row["_content_name"] = meta.get("content_name", "")
+    return rows
 
 
 def _int(v):
@@ -96,6 +129,26 @@ def load_account_growth(days=7):
         "growth_rate": rate,
         "snapshot_count": len(snapshots),
     }
+
+
+def _group_performance(rows, field):
+    groups = defaultdict(list)
+    for row in rows:
+        groups[row.get(field) or "미분류"].append(row)
+    result = []
+    for name, items in groups.items():
+        views = sum(_int(x.get("views")) for x in items)
+        reach = sum(_int(x.get("reach")) for x in items)
+        saves = sum(_int(x.get("saved")) for x in items)
+        shares = sum(_int(x.get("shares")) for x in items)
+        result.append({
+            "name": name,
+            "count": len(items),
+            "avg_views": round(views / len(items)) if items else 0,
+            "save_rate": round(saves / reach * 100, 2) if reach else 0,
+            "share_rate": round(shares / reach * 100, 2) if reach else 0,
+        })
+    return sorted(result, key=lambda x: (x["avg_views"], x["share_rate"]), reverse=True)
 
 
 def analyze(rows):
@@ -177,6 +230,8 @@ def analyze(rows):
         "best_hours_kst": [h for h, _ in best_hours],
         "top3": top3,
         "bottom3": bottom3,
+        "category_performance": _group_performance(rows, "_category"),
+        "format_performance": _group_performance(rows, "_format"),
     }
 
 
@@ -211,6 +266,26 @@ def build_report(analysis, days):
         f"| 인게이지먼트율 | — | {analysis['engagement_rate']}% |",
         f"",
     ]
+
+    if analysis.get("category_performance"):
+        lines += ["## 주제별 성과", "| 주제 | 게시물 | 평균 조회 | 저장률 | 공유율 |",
+                  "|------|------:|----------:|-------:|-------:|"]
+        for item in analysis["category_performance"]:
+            lines.append(
+                f"| {item['name']} | {item['count']} | {item['avg_views']:,} | "
+                f"{item['save_rate']}% | {item['share_rate']}% |"
+            )
+        lines.append("")
+
+    if analysis.get("format_performance"):
+        lines += ["## 제작 형식별 성과", "| 형식 | 게시물 | 평균 조회 | 저장률 | 공유율 |",
+                  "|------|------:|----------:|-------:|-------:|"]
+        for item in analysis["format_performance"]:
+            lines.append(
+                f"| {item['name']} | {item['count']} | {item['avg_views']:,} | "
+                f"{item['save_rate']}% | {item['share_rate']}% |"
+            )
+        lines.append("")
 
     if analysis.get("best_hours_kst"):
         hours_str = ", ".join(f"{h}시" for h in analysis["best_hours_kst"])
@@ -251,6 +326,8 @@ def build_hints(analysis):
         "best_hours_kst": analysis.get("best_hours_kst", []),
         "top_captions": [t["caption"] for t in analysis.get("top3", [])],
         "follower_growth": analysis.get("account_growth", {}),
+        "best_categories": analysis.get("category_performance", [])[:3],
+        "best_formats": analysis.get("format_performance", [])[:3],
     }
 
 
