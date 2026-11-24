@@ -1,0 +1,42 @@
+name: YouTube 일일 성과수집
+
+on:
+  push:
+    paths:
+      - "youtube_insights.py"
+      - ".github/workflows/youtube_insights.yml"
+  schedule:
+    - cron: "20 15 * * *" # 매일 00:20 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-daily-insights
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 의존성 설치
+        run: pip install -q google-api-python-client google-auth
+      - name: YouTube 성과수집
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python -u youtube_insights.py
+      - name: 결과 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/youtube_insights.json
+          git diff --cached --quiet || git commit -m "data: update YouTube insights"
+          git push
