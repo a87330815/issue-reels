@@ -5,6 +5,8 @@ on:
     paths:
       - "company/queue/**"
       - "company/worker.py"
+      - "company/aggregate_results.py"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -36,3 +38,28 @@ jobs:
           name: result-${{ matrix.department }}
           path: company/results/${{ matrix.department }}.json
           if-no-files-found: ignore
+
+  aggregate:
+    needs: worker
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 부서 결과 다운로드
+        uses: actions/download-artifact@v4
+        with:
+          pattern: result-*
+          path: company/results
+          merge-multiple: true
+      - name: 통합보고 생성
+        run: python company/aggregate_results.py
+      - name: 통합보고 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add company/executive_report.json company/executive_report.md
+          git diff --cached --quiet || git commit -m "ops: aggregate department worker report"
+          git push
