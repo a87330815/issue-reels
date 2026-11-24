@@ -133,25 +133,24 @@ def publish(video_url, description, token):
         description=description,
     )
 
-    # 처리 결과가 바로 안 보일 수 있어 짧게 상태를 확인한다.
-    for _ in range(12):
-        status = graph(
-            "GET",
-            video_id,
-            token=token,
-            fields="status,permalink_url",
-        )
-        processing = (status.get("status") or {}).get("video_status")
-        if processing in ("ready", "published", "complete"):
-            break
-        if processing in ("error", "expired"):
-            fail(f"페이스북 릴스 처리 실패: {status}")
-        time.sleep(5)
+    # finish 성공이 공식 발행 접수 결과다. 일부 페이지 토큰은 발행 후
+    # video_id 단건 조회 권한이 없어 GET 시 오류 100을 반환하므로, 그 조회를
+    # 발행 실패로 오판하지 않는다.
+    if not finish.get("success", False):
+        fail(f"페이스북 릴스 발행 접수 실패: {finish}")
 
-    print("페이스북 릴스 발행 완료")
-    print("video_id:", video_id)
-    if finish.get("post_id"):
-        print("post_id:", finish["post_id"])
+    result = {
+        "success": True,
+        "video_id": video_id,
+        "post_id": finish.get("post_id"),
+        "page_id": PAGE_ID,
+    }
+    os.makedirs("out", exist_ok=True)
+    with open("out/published_facebook.json", "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+
+    print("페이스북 릴스 발행 접수 완료")
+    print(json.dumps(result, ensure_ascii=False, indent=2))
     return video_id
 
 
