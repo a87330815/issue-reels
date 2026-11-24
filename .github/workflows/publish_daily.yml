@@ -138,7 +138,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           set -e
-          pip install -q Pillow numpy requests edge-tts elevenlabs
+          pip install -q Pillow numpy requests edge-tts elevenlabs google-api-python-client google-auth google-auth-oauthlib
           sudo apt-get update -qq || sudo apt-get update -qq
           # 한글 폰트가 없으면 카드 생성이 통째로 죽는다. apt가 간헐적으로
           # 실패하므로 두 번 시도하고, 그래도 없으면 직접 받아 설치한다.
@@ -346,7 +346,25 @@ jobs:
           python -u publish_facebook.py --script "out/scripts/${STEM}.json" 2>&1 \
             | tee -a out/reels/render.log
 
-      - name: 7) 틱톡 발행
+      # 인스타에 게시한 같은 세로 영상을 YouTube Shorts에 공개 게시한다.
+      # 유튜브 실패가 인스타·페이스북 발행 결과를 되돌리지는 않는다.
+      - name: 7) 유튜브 쇼츠 동시 발행
+        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true' && github.event_name != 'push'
+        continue-on-error: true
+        env:
+          STEM: ${{ steps.pick.outputs.stem }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          set -o pipefail
+          echo "YouTube 쫌봐봐 채널에 같은 영상을 공개 쇼츠로 발행합니다"
+          python -u publish_youtube.py \
+            --video "out/reels/${STEM}.mp4" \
+            --script "out/scripts/${STEM}.json" \
+            --privacy public 2>&1 | tee -a out/reels/render.log
+
+      - name: 8) 틱톡 발행
         if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true' && github.event_name != 'push'
         continue-on-error: true
         env:
@@ -374,7 +392,7 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for p in out/published.json out/published_cards.json out/published_tiktok.json out/uploaded.json out/reels/render.log; do
+          for p in out/published.json out/published_cards.json out/published_facebook.json out/published_youtube.json out/published_tiktok.json out/uploaded.json out/reels/render.log; do
             [ -f "$p" ] && git add -f "$p" || true
           done
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
