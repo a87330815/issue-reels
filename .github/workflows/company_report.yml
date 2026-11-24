@@ -1,6 +1,11 @@
 name: 회사 통합 성과보고
 
 on:
+  push:
+    paths:
+      - "company/**"
+      - "company_report.py"
+      - ".github/workflows/company_report.yml"
   schedule:
     - cron: "30 15 * * *" # 매일 00:30 KST
   workflow_dispatch:
