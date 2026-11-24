@@ -33,6 +33,14 @@ def choose_departments(text):
             found.append(dept)
     return found or ["마케팅팀", "경영관리팀"]
 
+def resolve_account(text, requested):
+    normalized = text.lower()
+    if requested in {"jjombwabwa", "쫌봐봐"} or "쫌봐봐" in text or "jjombwabwa" in normalized:
+        return "jjombwabwa"
+    if requested in {"richup", "굿리치", "굿리치 리치업지점", "리치업지점"} or "리치업" in text or "굿리치" in text or "richup" in normalized:
+        return "richup"
+    return "unassigned"
+
 def approval_flags(text):
     flags = []
     for word in ["게시", "발행", "삭제", "광고비", "결제", "계약", "발송"]:
@@ -43,7 +51,7 @@ def approval_flags(text):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("instruction")
-    ap.add_argument("--account", default="company")
+    ap.add_argument("--account", default="unassigned")
     args = ap.parse_args()
 
     now = datetime.now(timezone.utc)
@@ -56,9 +64,9 @@ def main():
             "job_id": job_id,
             "department": dept,
             "instruction": args.instruction,
-            "account": args.account,
+            "account": account,\n            "account_status": "identified" if account != "unassigned" else "needs_account_selection",
             "status": "queued",
-            "approval_required": approvals if dept == "마케팅팀" else [],
+            "approval_required": (approvals if dept == "마케팅팀" else []) + (["계정 지정"] if account == "unassigned" else []),
             "created_at": now.isoformat(),
         }
         path = QUEUE / dept
