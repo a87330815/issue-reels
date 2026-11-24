@@ -1,0 +1,52 @@
+name: YouTube Shorts 연결 점검
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check 또는 private_upload"
+        type: choice
+        options: [check, private_upload]
+        default: check
+      video_path:
+        description: "비공개 테스트 영상 경로"
+        type: string
+        required: false
+      title:
+        description: "비공개 테스트 제목"
+        type: string
+        required: false
+
+jobs:
+  youtube:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 의존성 설치
+        run: pip install -q google-api-python-client google-auth google-auth-oauthlib
+      - name: 채널 연결 확인
+        if: inputs.mode == 'check'
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python publish_youtube.py --check
+      - name: 비공개 업로드 안전검사
+        if: inputs.mode == 'private_upload'
+        run: |
+          [ -n "${{ inputs.video_path }}" ] || { echo "::error::video_path 필요"; exit 1; }
+          [ -f "${{ inputs.video_path }}" ] || { echo "::error::영상 파일 없음"; exit 1; }
+      - name: YouTube 비공개 테스트 업로드
+        if: inputs.mode == 'private_upload'
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          python publish_youtube.py \
+            --video "${{ inputs.video_path }}" \
+            --title "${{ inputs.title || 'AI 미디어 비공개 테스트' }}" \
+            --privacy private
