@@ -1,0 +1,38 @@
+name: 부서 worker 병렬 실행
+
+on:
+  push:
+    paths:
+      - "company/queue/**"
+      - "company/worker.py"
+
+permissions:
+  contents: write
+
+jobs:
+  worker:
+    strategy:
+      fail-fast: false
+      matrix:
+        department:
+          - 고객관리팀
+          - 보험분석팀
+          - 영업지원팀
+          - 조직운영팀
+          - 교육제작팀
+          - 마케팅팀
+          - 경영관리팀
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 부서 큐 처리
+        run: python company/worker.py "${{ matrix.department }}"
+      - name: 결과 아티팩트
+        uses: actions/upload-artifact@v4
+        with:
+          name: result-${{ matrix.department }}
+          path: company/results/${{ matrix.department }}.json
+          if-no-files-found: ignore
