@@ -1,0 +1,35 @@
+name: 비서실장 업무지시 분배
+
+on:
+  workflow_dispatch:
+    inputs:
+      instruction:
+        description: "대표의 업무지시"
+        required: true
+        type: string
+      account:
+        description: "대상 계정 또는 회사 전체"
+        required: false
+        default: company
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 부서별 작업 큐 생성
+        run: python company/dispatch.py "${{ inputs.instruction }}" --account "${{ inputs.account }}"
+      - name: 지시 큐 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add company/queue company/state.json
+          git diff --cached --quiet || git commit -m "ops: dispatch representative instruction"
+          git push
