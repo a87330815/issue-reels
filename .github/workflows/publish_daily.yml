@@ -392,7 +392,7 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for p in out/published.json out/published_cards.json out/published_facebook.json out/published_youtube.json out/published_tiktok.json out/uploaded.json out/reels/render.log; do
+          for p in out/published.json out/published_cards.json out/published_facebook.json out/published_facebook_story.json out/published_youtube.json out/published_tiktok.json out/uploaded.json out/reels/render.log; do
             [ -f "$p" ] && git add -f "$p" || true
           done
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
