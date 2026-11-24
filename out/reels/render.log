@@ -1,73 +1,85 @@
-run 45398455509 2026-11-24T12:59:06Z
+run 45473329983 2026-11-24T19:47:14Z
 
-=== 20261124_04_숫자훅 ===
-  [cover] '랩어카운트에서 돈 잃는 사람들' → "stock market trading floor loss chart red"  (네이버: "랩어카운트에서 돈 잃는 사람들")
+=== 20261124_03_숫자훅 ===
+  [cover] '당신의 랩어카운트, 손실 만회하려고 위험 종목에 몰아주고 있진 않습니까' → "stock market loss charts red numbers investment"  (네이버: "당신의 랩어카운트, 손실 만회하려고 위험 종목에 몰아주고 있진 않습니까")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 9/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '랩어카운트 운용 과정의 문제' → "wealth management advisor meeting client desk"  (네이버: "랩어카운트 운용 과정의 문제")
-    [unsplash] 3건 후보
+  [scene1] '손실 만회할라고 고위험 종목에 집중 투자' → "financial advisor meeting client investment consultation"  (네이버: "손실 만회할라고 고위험 종목에 집중 투자")
+    [unsplash] 10건 후보 (부적합 2건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 3/3건
+    Unsplash 적합도 통과 1/10건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '무자격 운용, 집중 투자의 위험' → "financial document audit compliance checklist"  (네이버: "무자격 운용, 집중 투자의 위험")
+  [scene2] '자격 없는 직원이 고객 자산 관리하는 경우도 있고' → "unauthorized person documents paperwork finance"  (네이버: "자격 없는 직원이 고객 자산 관리하는 경우도 있고")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 4/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '확인할 체크리스트 첫째, 둘째' → "checklist document verification compliance check"  (네이버: "확인할 체크리스트 첫째, 둘째")
     [unsplash] 11건 후보 (부적합 1건 제외)
     [openverse] 0건 후보
     [wikimedia] 0건 후보
-    Unsplash 적합도 통과 3/11건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '지금 확인해야 할 3가지' → "portfolio diversification pie chart analysis"  (네이버: "지금 확인해야 할 3가지")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 4/12건
+    Unsplash 적합도 통과 2/11건
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '지금 바로 계좌 점검하기' → "smartphone banking app account statement check"  (네이버: "지금 바로 계좌 점검하기")
+  [scene4] '확인 항목 셋째 : 종목 편중도 봐야지' → "portfolio diversification pie chart asset allocation"  (네이버: "확인 항목 셋째 : 종목 편중도 봐야지")
+    [unsplash] 6건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 0/6건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "money savings investment planning desk"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 8/12건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '당신의 돈을 지키세요' → "secure bank vault protection money safety"  (네이버: "당신의 돈을 지키세요")
+  [scene5] '자격·수익률·포트폴리오 반드시 확인하이소' → "korean investor reviewing financial statements seriously"  (네이버: "자격·수익률·포트폴리오 반드시 확인하이소")
+    [unsplash] 10건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 0/10건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "money savings investment planning desk"
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 4/12건
+    Unsplash 적합도 통과 8/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261124_04_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261124_03_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261124_04_숫자훅
-대본: out/scripts/20261124_04_숫자훅.json
-카드: out/cards_20261124_04_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261124_03_숫자훅
+대본: out/scripts/20261124_03_숫자훅.json
+카드: out/cards_20261124_03_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 2.6초  손해 메우려고 더 큰 베팅하는 증권사들...
-  TTS [2/6] [EL·발랄녀] 8.0초  지금 랩어카운트에 맡긴 돈이 있다면 보이소. 일부 ...
-  TTS [3/6] [EL·발랄녀] 9.6초  금감원이 최근 적발한 사례는 대단히 심각하데이. 무...
-  TTS [4/6] [EL·발랄녀] 11.1초  니 랩어카운트를 점검해야 할 세 가지가 있소. 첫째...
-  TTS [5/6] [EL·발랄녀] 9.6초  증권사도 안주 내부통제를 강화하는 중이라예. 근데 ...
-  TTS [6/6] [EL·발랄녀] 12.0초  랩어카운트는 편하지만, 니 돈이라예. 손해 메우는 ...
+  TTS [1/6] [EL·발랄녀] 3.4초  손실 만회할라꼬 위험한 종목에 쏟아주는 증권사...
+  TTS [2/6] [EL·발랄녀] 10.1초  지난주 금감원이 까무러치겠단 사실을 적발했데이. 일...
+  TTS [3/6] [EL·발랄녀] 9.5초  문제는 더 심각하다아이가. 운용 자격이 없는 직원이...
+  TTS [4/6] [EL·발랄녀] 13.6초  랩어카운트를 맡긴 고객이라면 이것들을 꼭 확인하이소...
+  TTS [5/6] [EL·발랄녀] 12.2초  셋째, 포트폴리오가 특정 종목에 편중되어 있진 않은...
+  TTS [6/6] [EL·발랄녀] 11.2초  랩어카운트는 편하긴 한데, 당신 돈을 맡기는 만큼 ...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.1초
-  세그먼트 [2/7] 8.5초
-  세그먼트 [3/7] 10.1초
-  세그먼트 [4/7] 11.6초
-  세그먼트 [5/7] 10.1초
-  세그먼트 [6/7] 12.5초
+  세그먼트 [1/7] 3.9초
+  세그먼트 [2/7] 10.6초
+  세그먼트 [3/7] 10.0초
+  세그먼트 [4/7] 14.1초
+  세그먼트 [5/7] 12.7초
+  세그먼트 [6/7] 11.7초
   세그먼트 [7/7] 3.5초
   ♪ BGM 믹싱 완료: ambient_news_02.mp3
 
-  ✓ 릴스 완성: out/reels/20261124_04_숫자훅.mp4
-    길이: 58.3초  /  크기: 10.9MB
+  ✓ 릴스 완성: out/reels/20261124_03_숫자훅.mp4
+    길이: 65.3초  /  크기: 12.0MB
 
 3) 커버 썸네일 생성
-  ✓ 첫 장면 사진 커버: out/reels/20261124_04_숫자훅.jpg
--rw-r--r-- 1 runner runner 11M Nov 24 13:01 out/reels/20261124_04_숫자훅.mp4
+  ✓ 첫 장면 사진 커버: out/reels/20261124_03_숫자훅.jpg
+-rw-r--r-- 1 runner runner 12M Nov 24 19:49 out/reels/20261124_03_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=58.260000
+duration=65.299675
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels
   토큰           설정됨
@@ -76,8 +88,8 @@ duration=58.260000
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-24):
-  20261124_04_숫자훅.mp4  10.9MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.mp4
-  20261124_04_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.jpg
+  20261124_03_숫자훅.mp4  12.0MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_03.mp4
+  20261124_03_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_03.jpg
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -86,20 +98,24 @@ duration=58.260000
 매니페스트: /home/runner/work/issue-reels/issue-reels/out/uploaded.json
 
 완료: 성공 1건 / 실패 0건
-남은 발행 가능: 99건
+남은 발행 가능: 97건
 발행 대상: 1건
 
-── 1/1  20261124_04_숫자훅
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.mp4
-  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.jpg
-  캡션: 랩어카운트에서 돈 잃는 사람들
-  컨테이너: 17980843172973700
+── 1/1  20261124_03_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_03.mp4
+  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_03.jpg
+  캡션: 당신의 랩어카운트, 손실 만회하려고 위험 종목에 몰아주고 있진 않습니까
+  컨테이너: 17980918670973700
       0초  IN_PROGRESS
-     41초  FINISHED
-  발행 완료: 18135495041497679
+     72초  FINISHED
+  발행 완료: 18099732839130293
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
-  스토리 공유 스킵 — 썸네일 URL 없음
+  인스타그램 스토리 컨테이너 생성
+  스토리 컨테이너: 17980919066973700
+      0초  IN_PROGRESS
+     31초  ERROR
+  ⚠️  스토리 공유 실패 (무시): 스토리 처리 실패: Error: Media upload has failed with error code 2207082
 
 
 발행 기록: /home/runner/work/issue-reels/issue-reels/out/published.json
@@ -107,14 +123,32 @@ duration=58.260000
 ::add-mask::EAAQPueZCifx4BTAVciTS7y9GhyobbzpP3Wq8PLLkUl2xZCgASzBOKFAT3nVosgHfHmQXdKhYmiJqLlKNn79RaXBVJWIUWCex7uL4VJnW9qftHyDE9yHu2acAIsK1BSqlSpJaRQDytwupA8xngaFh00ZCKbAiuICM0Mtst9Xzz0OP4ZALU7fmllH4WM1TUhpZB6quFfTfm
 페이지 토큰 확인: 쫌봐봐
 ::add-mask::EAAQPueZCifx4BTAVciTS7y9GhyobbzpP3Wq8PLLkUl2xZCgASzBOKFAT3nVosgHfHmQXdKhYmiJqLlKNn79RaXBVJWIUWCex7uL4VJnW9qftHyDE9yHu2acAIsK1BSqlSpJaRQDytwupA8xngaFh00ZCKbAiuICM0Mtst9Xzz0OP4ZALU7fmllH4WM1TUhpZB6quFfTfm
-::error::Graph API 오류 [100]: Unsupported get request. Object with ID '1536597415190834' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api
+페이스북 릴스 발행 접수 완료
+{
+  "success": true,
+  "video_id": "975756381959878",
+  "post_id": "122125693089484991",
+  "page_id": "1277209758815845"
+}
+페이스북 스토리 발행 접수 완료
+{
+  "success": true,
+  "video_id": "1475113388153907",
+  "page_id": "1277209758815845"
+}
+{
+  "video_id": "LJNEsZNPU70",
+  "url": "https://youtu.be/LJNEsZNPU70",
+  "privacy": "public",
+  "title": "당신의 랩어카운트, 손실 만회하려고 위험 종목에 몰아주고 있진 않습니까"
+}
 발행 대상: 1건
 
-── 1/1  20261124_04_숫자훅
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.mp4
-  제목: 랩어카운트에서 돈 잃는 사람들
+── 1/1  20261124_03_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_03.mp4
+  제목: 당신의 랩어카운트, 손실 만회하려고 위험 종목에 몰아주고 있진 않습니까
   ⚠️  공개 발행 불가 — SELF_ONLY로 발행 (앱에서 수동 공개)
   방식: PULL_FROM_URL
-  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=202611242102348CE80F50424541C08BFE)
+  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=202611250352265A3C3B3E08D1511300EF)
 
 완료: 발행 0건 / 실패 1건
