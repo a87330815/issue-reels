@@ -24,6 +24,7 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(ROOT, "data")
 CSV_PATH = os.path.join(OUT_DIR, "insights.csv")
+ACCOUNT_CSV_PATH = os.path.join(OUT_DIR, "account_insights.csv")
 
 
 # ── publish.py의 api() 재사용 ──────────────────────────────────
@@ -211,6 +212,49 @@ def append_rows(rows):
         writer.writerows(rows)
 
 
+ACCOUNT_FIELDS = [
+    "collected_at", "ig_user_id", "username", "followers_count", "media_count",
+]
+
+
+def append_account_snapshot(now):
+    """계정 팔로워·게시물 수를 하루 1회 누적 저장한다."""
+    today = now[:10]
+    if os.path.exists(ACCOUNT_CSV_PATH):
+        with open(ACCOUNT_CSV_PATH, encoding="utf-8") as f:
+            if any((row.get("collected_at") or "").startswith(today)
+                   for row in csv.DictReader(f)):
+                print("  [계정] 오늘 팔로워 스냅샷 이미 수집됨")
+                return
+    try:
+        account = api(
+            "GET", IG_ID,
+            fields="id,username,followers_count,media_count",
+        )
+    except RuntimeError as e:
+        print(f"  [계정] 팔로워 스냅샷 수집 실패: {e}")
+        return
+
+    os.makedirs(OUT_DIR, exist_ok=True)
+    write_header = not os.path.exists(ACCOUNT_CSV_PATH)
+    with open(ACCOUNT_CSV_PATH, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=ACCOUNT_FIELDS)
+        if write_header:
+            writer.writeheader()
+        writer.writerow({
+            "collected_at": now,
+            "ig_user_id": account.get("id", IG_ID),
+            "username": account.get("username", ""),
+            "followers_count": account.get("followers_count", ""),
+            "media_count": account.get("media_count", ""),
+        })
+    print(
+        f"  [계정] @{account.get('username', '?')} | "
+        f"팔로워 {account.get('followers_count', '?')} | "
+        f"게시물 {account.get('media_count', '?')}"
+    )
+
+
 # ── 메인 ─────────────────────────────────────────────────────
 def collect(limit=50):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -218,6 +262,7 @@ def collect(limit=50):
 
     # 사용자 토큰이면 페이지 토큰으로 자동 변환
     _resolve_page_token()
+    append_account_snapshot(now)
 
     print(f"미디어 목록 조회 (최대 {limit}개)...")
     media_list = fetch_media_list(limit)
