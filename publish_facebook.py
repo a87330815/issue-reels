@@ -154,9 +154,63 @@ def publish(video_url, description, token):
     return video_id
 
 
+def publish_story(video_url, token):
+    """같은 세로 영상을 Facebook 페이지 스토리로 발행한다."""
+    start = graph(
+        "POST",
+        f"{PAGE_ID}/video_stories",
+        token=token,
+        upload_phase="start",
+    )
+    video_id = str(start.get("video_id") or "")
+    upload_url = start.get("upload_url")
+    if not video_id or not upload_url:
+        fail(f"스토리 업로드 세션 생성 실패: {start}")
+
+    headers = {
+        "Authorization": f"OAuth {token}",
+        "file_url": video_url,
+    }
+    r = requests.post(upload_url, headers=headers, timeout=120)
+    try:
+        uploaded = r.json()
+    except ValueError:
+        fail(f"스토리 영상 전달 응답 오류: HTTP {r.status_code} {r.text[:200]}")
+    if r.status_code >= 400 or not uploaded.get("success", False):
+        fail(f"스토리 영상 전달 실패: {uploaded}")
+
+    finish = graph(
+        "POST",
+        f"{PAGE_ID}/video_stories",
+        token=token,
+        upload_phase="finish",
+        video_id=video_id,
+    )
+    if not finish.get("success", False):
+        fail(f"페이스북 스토리 발행 접수 실패: {finish}")
+
+    result = {
+        "success": True,
+        "video_id": video_id,
+        "page_id": PAGE_ID,
+    }
+    os.makedirs("out", exist_ok=True)
+    with open("out/published_facebook_story.json", "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+
+    print("페이스북 스토리 발행 접수 완료")
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return video_id
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--script", help="캡션을 만들 대본 JSON")
+    ap.add_argument(
+        "--story-only",
+        action="store_true",
+        help="릴스는 건너뛰고 Facebook 페이지 스토리만 발행",
+    )
     args = ap.parse_args()
 
     if not TOKEN:
@@ -166,8 +220,19 @@ def main():
     print("::add-mask::" + token)
 
     item = load_target()
+    if args.story_only:
+        publish_story(item["video_url"], token)
+        return
+
     description = caption_from_script(args.script)
     publish(item["video_url"], description, token)
+
+    # 릴스 성공 후 같은 세로 영상을 페이지 스토리에도 올린다.
+    # 스토리 실패는 이미 발행된 릴스를 되돌리지 않는다.
+    try:
+        publish_story(item["video_url"], token)
+    except SystemExit:
+        print("::warning::페이스북 스토리 발행 실패 — 릴스 발행은 유지합니다.")
 
 
 if __name__ == "__main__":
