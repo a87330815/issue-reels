@@ -1,69 +1,73 @@
-run 45341206794 2026-11-24T06:34:25Z
+run 45398455509 2026-11-24T12:59:06Z
 
-=== 20261124_02_숫자훅 ===
-  [cover] '내년 금리 3.5%면 적금이 뜬다…근데 환율은?' → "korean won exchange rate dollar bills currency"  (네이버: "내년 금리 3.5%면 적금이 뜬다…근데 환율은?")
+=== 20261124_04_숫자훅 ===
+  [cover] '랩어카운트에서 돈 잃는 사람들' → "stock market trading floor loss chart red"  (네이버: "랩어카운트에서 돈 잃는 사람들")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 11/12건
+    Unsplash 적합도 통과 9/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '금리 3.5% vs 환율 1280원' → "bank interest rate chart korean economic forecast"  (네이버: "금리 3.5% vs 환율 1280원")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 2/12건
+  [scene1] '랩어카운트 운용 과정의 문제' → "wealth management advisor meeting client desk"  (네이버: "랩어카운트 운용 과정의 문제")
+    [unsplash] 3건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 3/3건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '적금금리 2% → 3% 대로 상승' → "savings account passbook interest rate increase"  (네이버: "적금금리 2% → 3% 대로 상승")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 1/12건
+  [scene2] '무자격 운용, 집중 투자의 위험' → "financial document audit compliance checklist"  (네이버: "무자격 운용, 집중 투자의 위험")
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 3/11건
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '환율 상승 = 수입품값 인상' → "korean won weakening currency exchange rate trading"  (네이버: "환율 상승 = 수입품값 인상")
+  [scene3] '지금 확인해야 할 3가지' → "portfolio diversification pie chart analysis"  (네이버: "지금 확인해야 할 3가지")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 3/12건
+    Unsplash 적합도 통과 4/12건
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '금리↑ 하지만 인플레↑' → "inflation economic pressure budget planning financial stress"  (네이버: "금리↑ 하지만 인플레↑")
+  [scene4] '지금 바로 계좌 점검하기' → "smartphone banking app account statement check"  (네이버: "지금 바로 계좌 점검하기")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 3/12건
+    Unsplash 적합도 통과 8/12건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '적금 + 헤지자산 조합이 답' → "diversified investment portfolio stocks bonds real estate"  (네이버: "적금 + 헤지자산 조합이 답")
+  [scene5] '당신의 돈을 지키세요' → "secure bank vault protection money safety"  (네이버: "당신의 돈을 지키세요")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 5/12건
+    Unsplash 적합도 통과 4/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261124_02_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261124_04_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261124_02_숫자훅
-대본: out/scripts/20261124_02_숫자훅.json
-카드: out/cards_20261124_02_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261124_04_숫자훅
+대본: out/scripts/20261124_04_숫자훅.json
+카드: out/cards_20261124_04_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 4.1초  내년 금리 3.5% 근데 환율은 1280원이라고?...
-  TTS [2/6] [EL·발랄녀] 8.1초  골드만삭스가 방금 내년 한국 갱제 전망을 발표했다아...
-  TTS [3/6] [EL·발랄녀] 8.5초  금리 3.5%면 적금 금리도 올라간다카더라. 지금 ...
-  TTS [4/6] [EL·발랄녀] 13.6초  그래가 여기서 주의할 점이 있데이. 환율이 1280...
-  TTS [5/6] [EL·발랄녀] 7.5초  정리하모 내년은 '금리는 올라가는데 돈의 값은 떨어...
-  TTS [6/6] [EL·발랄녀] 9.4초  현금 적금보다는 외화 자산, 실물자산, 배당주 같은...
+  TTS [1/6] [EL·발랄녀] 2.6초  손해 메우려고 더 큰 베팅하는 증권사들...
+  TTS [2/6] [EL·발랄녀] 8.0초  지금 랩어카운트에 맡긴 돈이 있다면 보이소. 일부 ...
+  TTS [3/6] [EL·발랄녀] 9.6초  금감원이 최근 적발한 사례는 대단히 심각하데이. 무...
+  TTS [4/6] [EL·발랄녀] 11.1초  니 랩어카운트를 점검해야 할 세 가지가 있소. 첫째...
+  TTS [5/6] [EL·발랄녀] 9.6초  증권사도 안주 내부통제를 강화하는 중이라예. 근데 ...
+  TTS [6/6] [EL·발랄녀] 12.0초  랩어카운트는 편하지만, 니 돈이라예. 손해 메우는 ...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.6초
-  세그먼트 [2/7] 8.6초
-  세그먼트 [3/7] 9.0초
-  세그먼트 [4/7] 14.1초
-  세그먼트 [5/7] 8.0초
-  세그먼트 [6/7] 9.9초
+  세그먼트 [1/7] 3.1초
+  세그먼트 [2/7] 8.5초
+  세그먼트 [3/7] 10.1초
+  세그먼트 [4/7] 11.6초
+  세그먼트 [5/7] 10.1초
+  세그먼트 [6/7] 12.5초
   세그먼트 [7/7] 3.5초
-  ♪ BGM 믹싱 완료: soft_electronic_03.mp3
+  ♪ BGM 믹싱 완료: ambient_news_02.mp3
 
-  ✓ 릴스 완성: out/reels/20261124_02_숫자훅.mp4
-    길이: 56.5초  /  크기: 10.9MB
+  ✓ 릴스 완성: out/reels/20261124_04_숫자훅.mp4
+    길이: 58.3초  /  크기: 10.9MB
 
 3) 커버 썸네일 생성
-  ✓ 첫 장면 사진 커버: out/reels/20261124_02_숫자훅.jpg
--rw-r--r-- 1 runner runner 11M Nov 24 06:36 out/reels/20261124_02_숫자훅.mp4
+  ✓ 첫 장면 사진 커버: out/reels/20261124_04_숫자훅.jpg
+-rw-r--r-- 1 runner runner 11M Nov 24 13:01 out/reels/20261124_04_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=56.530000
+duration=58.260000
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels
   토큰           설정됨
@@ -72,8 +76,8 @@ duration=56.530000
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-24):
-  20261124_02_숫자훅.mp4  10.9MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_02.mp4
-  20261124_02_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_02.jpg
+  20261124_04_숫자훅.mp4  10.9MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.mp4
+  20261124_04_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.jpg
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -85,14 +89,14 @@ duration=56.530000
 남은 발행 가능: 99건
 발행 대상: 1건
 
-── 1/1  20261124_02_숫자훅
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_02.mp4
-  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_02.jpg
-  캡션: 내년 금리 3.5%면 적금이 뜬다…근데 환율은?
-  컨테이너: 17980776935973700
+── 1/1  20261124_04_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.mp4
+  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.jpg
+  캡션: 랩어카운트에서 돈 잃는 사람들
+  컨테이너: 17980843172973700
       0초  IN_PROGRESS
-     94초  FINISHED
-  발행 완료: 18120759905047355
+     41초  FINISHED
+  발행 완료: 18135495041497679
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
   스토리 공유 스킵 — 썸네일 URL 없음
@@ -103,16 +107,14 @@ duration=56.530000
 ::add-mask::EAAQPueZCifx4BTAVciTS7y9GhyobbzpP3Wq8PLLkUl2xZCgASzBOKFAT3nVosgHfHmQXdKhYmiJqLlKNn79RaXBVJWIUWCex7uL4VJnW9qftHyDE9yHu2acAIsK1BSqlSpJaRQDytwupA8xngaFh00ZCKbAiuICM0Mtst9Xzz0OP4ZALU7fmllH4WM1TUhpZB6quFfTfm
 페이지 토큰 확인: 쫌봐봐
 ::add-mask::EAAQPueZCifx4BTAVciTS7y9GhyobbzpP3Wq8PLLkUl2xZCgASzBOKFAT3nVosgHfHmQXdKhYmiJqLlKNn79RaXBVJWIUWCex7uL4VJnW9qftHyDE9yHu2acAIsK1BSqlSpJaRQDytwupA8xngaFh00ZCKbAiuICM0Mtst9Xzz0OP4ZALU7fmllH4WM1TUhpZB6quFfTfm
-페이스북 릴스 발행 완료
-video_id: 4685477931740729
-post_id: 122125524297484991
+::error::Graph API 오류 [100]: Unsupported get request. Object with ID '1536597415190834' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api
 발행 대상: 1건
 
-── 1/1  20261124_02_숫자훅
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_02.mp4
-  제목: 내년 금리 3.5%면 적금이 뜬다…근데 환율은?
+── 1/1  20261124_04_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-24/20261124_04.mp4
+  제목: 랩어카운트에서 돈 잃는 사람들
   ⚠️  공개 발행 불가 — SELF_ONLY로 발행 (앱에서 수동 공개)
   방식: PULL_FROM_URL
-  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=2026112414394718F0817A272218D2ADBA)
+  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=202611242102348CE80F50424541C08BFE)
 
 완료: 발행 0건 / 실패 1건
