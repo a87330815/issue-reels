@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T04:18:36.820448+00:00",
+  "updated_at": "2026-11-25T05:10:25.502527+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -686,6 +686,17 @@
       "video_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_03.mp4",
       "ig_id": "17841459210979722",
       "category": "재테크",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261125_01_비교분석",
+      "media_id": "18378313978209149",
+      "published_at": "2026-11-25T05:10:25.381584+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_01.mp4",
+      "ig_id": "17841459210979722",
+      "category": "저축·투자",
       "insights": {
         "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
       }
