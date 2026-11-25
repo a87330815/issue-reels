@@ -1,0 +1,73 @@
+name: 페이스북·유튜브 수동 교차게시
+on:
+  push:
+    paths:
+      - "manual_crosspost_trigger.txt"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: manual-crosspost
+  cancel-in-progress: false
+jobs:
+  crosspost:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      STEM: 20261125_03_숫자훅
+      VIDEO_URL: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_03.mp4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 준비
+        run: |
+          pip install -q requests google-api-python-client google-auth google-auth-oauthlib
+          mkdir -p out/reels out/scripts
+          curl -fL --retry 3 "$VIDEO_URL" -o "out/reels/$STEM.mp4"
+          python - <<'PY'
+          import json, os
+          stem=os.environ["STEM"]
+          data={
+            "title":"AI에 일자리 빼앗기는 직업",
+            "scenes":[
+              {"subtitle":"AI가 먼저 바꾸는 직업"},
+              {"subtitle":"반복 업무부터 줄어든다"},
+              {"subtitle":"소득 격차가 더 벌어진다"},
+              {"subtitle":"지금 필요한 건 전환 준비"}
+            ],
+            "meta":{"category":"재테크","attribution":"Google Trends"}
+          }
+          with open(f"out/scripts/{stem}.json","w",encoding="utf-8") as f:
+            json.dump(data,f,ensure_ascii=False,indent=2)
+          PY
+          python - <<'PY'
+          import json, os
+          stem=os.environ["STEM"]; url=os.environ["VIDEO_URL"]
+          with open("out/uploaded.json","w",encoding="utf-8") as f:
+            json.dump({"items":[{"name":stem,"video_url":url}]},f,ensure_ascii=False,indent=2)
+          PY
+      - name: 페이스북 릴스 게시
+        env:
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN || secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID || vars.FB_PAGE_ID || '1277209758815845' }}
+          UPLOAD_MANIFEST: out/uploaded.json
+        run: python -u publish_facebook.py --script "out/scripts/$STEM.json"
+      - name: 유튜브 쇼츠 게시
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          python -u publish_youtube.py --video "out/reels/$STEM.mp4" --script "out/scripts/$STEM.json" --privacy public
+      - name: 발행 기록 저장
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f out/published_facebook.json out/published_youtube.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "페이스북·유튜브 수동 교차게시 기록"
+          git pull --rebase --autostash origin main
+          git push origin main
