@@ -1,75 +1,73 @@
-run 45551056947 2026-11-25T05:05:47Z
+run 45607376605 2026-11-25T11:47:43Z
 
-=== 20261125_01_비교분석 ===
-  [cover] '적금 vs 채권, 연 4% 이상이면 채권이 답' → "korean won bills bond certificate savings account comparison"  (네이버: "적금 vs 채권, 연 4% 이상이면 채권이 답")
+=== 20261125_05_숫자훅 ===
+  [cover] '글로벌 펀드매니저가 주목한 한국 종목' → "stock market graph upward growth korean"  (네이버: "글로벌 펀드매니저가 주목한 한국 종목")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 5/12건
+    Unsplash 적합도 통과 0/12건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "money savings investment planning desk"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 8/12건
     ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '적금 대 채권 둘 다 갠찮은데 와' → "piggy bank bond investment document korean financial planning"  (네이버: "적금 대 채권 둘 다 갠찮은데 와")
-    [unsplash] 7건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 5/7건
+  [scene1] '글로벌 유망주로 선정된 한국주' → "international investment conference global managers"  (네이버: "글로벌 유망주로 선정된 한국주")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 1/12건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '적금 연 3% = 실제 수익 약 2.4%' → "tax calculation korean won finance deduction"  (네이버: "적금 연 3% = 실제 수익 약 2.4%")
+  [scene2] '3분기 매출 13.7% 성장' → "financial results quarterly earnings chart increase"  (네이버: "3분기 매출 13.7% 성장")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 4/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '외국인 투자자의 시선 = 기회 신호' → "investor analysis research portfolio management"  (네이버: "외국인 투자자의 시선 = 기회 신호")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 6/12건
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '글로벌 인정 → 기관 주목 → 평가 상향' → "buying stocks investment growth positive momentum"  (네이버: "글로벌 인정 → 기관 주목 → 평가 상향")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 5/12건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '채권 연 4% 이상이모 적금보다 세후' → "bond certificate yield rate korean investment returns chart"  (네이버: "채권 연 4% 이상이모 적금보다 세후")
-    [unsplash] 4건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 2/4건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '채권의 리스크 1. 발행사 신용도 2.' → "risk assessment financial stability credit rating document"  (네이버: "채권의 리스크 1. 발행사 신용도 2.")
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 4/11건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '지금 절대 적금만 하모 안 돼 채권' → "portfolio diversification savings and investment planning korean"  (네이버: "지금 절대 적금만 하모 안 돼 채권")
+  [scene5] '글로벌 투자 흐름, 놓치지 마이소' → "smartphone investment app notification alert trading"  (네이버: "글로벌 투자 흐름, 놓치지 마이소")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 2/12건
+    Unsplash 적합도 통과 8/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261125_01_비교분석/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261125_05_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261125_01_비교분석
-대본: out/scripts/20261125_01_비교분석.json
-카드: out/cards_20261125_01_비교분석 (7장)
+카드뉴스 7장 생성 → out/cards_20261125_05_숫자훅
+대본: out/scripts/20261125_05_숫자훅.json
+카드: out/cards_20261125_05_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 2.5초  적금만 하모 손해 채권이 더 크다아이가...
-  TTS [2/6] [EL·발랄녀] 6.6초  안주 안 하모 10년 뒤에 후회한다카더라. 적금이랑...
-  TTS [3/6] [EL·발랄녀] 11.1초  적금은 금리가 고정되고 세금을 내야 된다카이. 연 ...
-  TTS [4/6] [EL·발랄녀] 9.7초  채권은 딴기라. 채권에서 받는 이자는 세금이 훨씬 ...
-  TTS [5/6] [EL·발랄녀] 10.2초  채권도 위험이 있다카이. 발행사가 망할 수 있지라....
-  TTS [6/6] [EL·발랄녀] 16.4초  결론이다카더라. 금리가 3% 이상인 요즘, 적금만 ...
+  TTS [1/6] [EL·발랄녀] 3.4초  외국인 투자자들이 주목하는 한국주 안자가 사인이라...
+  TTS [2/6] [EL·발랄녀] 9.0초  지난주 글로벌 펀드매니저들이 모인 투자 콘퍼런스에서...
+  TTS [3/6] [EL·발랄녀] 9.9초  그 종목의 최근 3분기 실적을 봐라예. 매출이 전년...
+  TTS [4/6] [EL·발랄녀] 10.3초  외국인 투자자와 글로벌 펀드가 주목하는 종목을 놓친...
+  TTS [5/6] [EL·발랄녀] 11.1초  한국 기업이 글로벌 무대에서 인정받으모 뒤따르는 건...
+  TTS [6/6] [EL·발랄녀] 13.1초  이런 신호를 무시하고 기존 보유 종목만 붙들고 있으...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.0초
-  세그먼트 [2/7] 7.1초
-  세그먼트 [3/7] 11.6초
-  세그먼트 [4/7] 10.2초
-  세그먼트 [5/7] 10.7초
-  세그먼트 [6/7] 16.9초
+  세그먼트 [1/7] 3.9초
+  세그먼트 [2/7] 9.5초
+  세그먼트 [3/7] 10.4초
+  세그먼트 [4/7] 10.8초
+  세그먼트 [5/7] 11.6초
+  세그먼트 [6/7] 13.6초
   세그먼트 [7/7] 3.5초
   ♪ BGM 믹싱 완료: ambient_news_02.mp3
 
-  ✓ 릴스 완성: out/reels/20261125_01_비교분석.mp4
-    길이: 61.9초  /  크기: 11.4MB
+  ✓ 릴스 완성: out/reels/20261125_05_숫자훅.mp4
+    길이: 62.1초  /  크기: 12.8MB
 
 3) 커버 썸네일 생성
-  ✓ 첫 장면 사진 커버: out/reels/20261125_01_비교분석.jpg
--rw-r--r-- 1 runner runner 12M Nov 25 05:08 out/reels/20261125_01_비교분석.mp4
+  ✓ 첫 장면 사진 커버: out/reels/20261125_05_숫자훅.jpg
+-rw-r--r-- 1 runner runner 13M Nov 25 11:49 out/reels/20261125_05_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=61.933008
+duration=62.123991
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels
   토큰           설정됨
@@ -78,8 +76,8 @@ duration=61.933008
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-25):
-  20261125_01_비교분석.mp4  11.4MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_01.mp4
-  20261125_01_비교분석.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_01.jpg
+  20261125_05_숫자훅.mp4  12.8MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_05.mp4
+  20261125_05_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_05.jpg
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -91,20 +89,20 @@ duration=61.933008
 남은 발행 가능: 94건
 발행 대상: 1건
 
-── 1/1  20261125_01_비교분석
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_01.mp4
-  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_01.jpg
-  캡션: 적금 vs 채권, 연 4% 이상이면 채권이 답
-  컨테이너: 17980991945973700
+── 1/1  20261125_05_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_05.mp4
+  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_05.jpg
+  캡션: 글로벌 펀드매니저가 주목한 한국 종목
+  컨테이너: 17981045582973700
       0초  IN_PROGRESS
-     52초  FINISHED
-  발행 완료: 18378313978209149
+     42초  FINISHED
+  발행 완료: 18133363105874691
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
   인스타그램 스토리 컨테이너 생성
-  스토리 컨테이너: 17980992050973700
+  스토리 컨테이너: 17981045930973700
       0초  IN_PROGRESS
-     31초  FINISHED
+     94초  FINISHED
   ⚠️  스토리 공유 실패 (무시): [-1/2207032] Fatal
 
 
@@ -116,29 +114,29 @@ duration=61.933008
 페이스북 릴스 발행 접수 완료
 {
   "success": true,
-  "video_id": "1142174188218885",
-  "post_id": "122125760043484991",
+  "video_id": "1688376899558946",
+  "post_id": "122125826205484991",
   "page_id": "1277209758815845"
 }
 페이스북 스토리 발행 접수 완료
 {
   "success": true,
-  "video_id": "4516476825329665",
+  "video_id": "1766546337741799",
   "page_id": "1277209758815845"
 }
 {
-  "video_id": "W98lfBA6y8M",
-  "url": "https://youtu.be/W98lfBA6y8M",
+  "video_id": "mM_vEtVjD_4",
+  "url": "https://youtu.be/mM_vEtVjD_4",
   "privacy": "public",
-  "title": "적금 vs 채권, 연 4% 이상이면 채권이 답"
+  "title": "글로벌 펀드매니저가 주목한 한국 종목"
 }
 발행 대상: 1건
 
-── 1/1  20261125_01_비교분석
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_01.mp4
-  제목: 적금 vs 채권, 연 4% 이상이면 채권이 답
+── 1/1  20261125_05_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_05.mp4
+  제목: 글로벌 펀드매니저가 주목한 한국 종목
   ⚠️  공개 발행 불가 — SELF_ONLY로 발행 (앱에서 수동 공개)
   방식: PULL_FROM_URL
-  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=2026112513104769B7C7830D1BF66E2D9E)
+  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=202611251953293391503429CE47C68138)
 
 완료: 발행 0건 / 실패 1건
