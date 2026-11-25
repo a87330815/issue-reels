@@ -1,0 +1,54 @@
+{
+  "title": "적금 vs 채권, 연 4% 이상이면 채권이 답",
+  "cover": {
+    "image": null,
+    "lines": [
+      "적금만 하모",
+      "<r>손해</r>",
+      "채권이 더 크다아이가"
+    ],
+    "summary": "",
+    "badge": "투자",
+    "photo_query": "korean won bills bond certificate savings account comparison"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "안주 안 하모 10년 뒤에 후회한다카더라. 적금이랑 채권, 같은 돈을 넣어도 돌려받는 거 완전히 다른기라.",
+      "subtitle": "적금 vs 채권 둘 다 안전한데 와",
+      "photo_query": "piggy bank bond investment document korean financial planning"
+    },
+    {
+      "image": null,
+      "narration": "적금은 금리가 고정되고 세금을 내야 된다카이. 연 3% 적금이라카더라도 실제 손에 들어오는 건 약 2.4%다아이가. 세금 15.4%가 떨어져나가거든.",
+      "subtitle": "적금 연 3% = 실제 수익 약 2.4%",
+      "photo_query": "tax calculation korean won finance deduction"
+    },
+    {
+      "image": null,
+      "narration": "채권은 딴기라. 채권에서 받는 이자는 세금이 훨씬 쪼매다카더라. 같은 돈이라면 채권이 더 많은 돈을 주는데. 이 차이, 10년이모 수백만 원이다아이가.",
+      "subtitle": "채권 연 4% 이상이모 적금보다 세후",
+      "photo_query": "bond certificate yield rate korean investment returns chart"
+    },
+    {
+      "image": null,
+      "narration": "채권도 위험이 있다카이. 발행사가 망할 수 있지라. 그래가 국채나 신용도 높은 회사채부터 시작해래이. 금리 인상할 땐 가격이 널찌는 수 있다는 거 잊지 마래이.",
+      "subtitle": "채권의 리스크 1. 발행사 신용도 2.",
+      "photo_query": "risk assessment financial stability credit rating document"
+    },
+    {
+      "image": null,
+      "narration": "결론이다카더라. 금리가 3% 이상인 요즘, 적금만 고집하모 인플레이션에 밀린다아이가. 적금이랑 채권을 섞어가지고 운용하모 세후 수익을 2~3% 더 올릴 수 있는기라. 이 전략 저장해두구로 나중에 꼭 써먹어야 된다카더라.",
+      "subtitle": "지금 절대 적금만 하모 안 돼 채권",
+      "photo_query": "portfolio diversification savings and investment planning korean"
+    }
+  ],
+  "meta": {
+    "format": "비교분석",
+    "source": "google_trends",
+    "category": "저축·투자",
+    "attribution": "Google Trends",
+    "chart": null,
+    "generated_at": "2026-11-25T04:55:07.055369+00:00"
+  }
+}
