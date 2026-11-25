@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T08:58:34.436693+09:00",
+  "generated_at": "2026-11-26T08:43:00.814967+09:00",
   "analysis_priority": [
     "views",
     "saves",
@@ -14,44 +14,44 @@
       "name": "쫌봐봐",
       "repository": "a87330815/issue-reels",
       "status": "active",
-      "avg_views": 205,
-      "avg_engagement_rate": 1.68,
+      "avg_views": 243,
+      "avg_engagement_rate": 1.37,
       "followers_growth": 0,
       "best_hours_kst": [
         21,
-        15,
-        18
+        18,
+        15
       ],
       "best_categories": [
         {
+          "name": "연예",
+          "count": 20,
+          "avg_views": 385,
+          "save_rate": 0.0,
+          "share_rate": 0.11
+        },
+        {
           "name": "재테크",
-          "count": 12,
-          "avg_views": 324,
-          "save_rate": 0.08,
-          "share_rate": 0.0
+          "count": 13,
+          "avg_views": 322,
+          "save_rate": 0.1,
+          "share_rate": 0.03
         },
         {
           "name": "경제상식",
           "count": 1,
-          "avg_views": 300,
+          "avg_views": 301,
           "save_rate": 0.0,
           "share_rate": 0.0
-        },
-        {
-          "name": "연예",
-          "count": 20,
-          "avg_views": 261,
-          "save_rate": 0.0,
-          "share_rate": 0.17
         }
       ],
       "best_formats": [
         {
           "name": "숫자훅",
-          "count": 38,
-          "avg_views": 264,
+          "count": 39,
+          "avg_views": 328,
           "save_rate": 0.04,
-          "share_rate": 0.09
+          "share_rate": 0.08
         },
         {
           "name": "생활해킹",
@@ -74,7 +74,7 @@
         "내년 금리 3.5%면 적금이 뜬다…근데 환율은?  · 금리 3.5% vs"
       ],
       "snapshot_available": false,
-      "generated_at": "2026-11-24T23:41:55+00:00"
+      "generated_at": "2026-11-25T23:25:33+00:00"
     },
     {
       "id": "richup",
