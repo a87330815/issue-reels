@@ -1382,6 +1382,16 @@ def llm_generate(angle, api_key, provider="anthropic"):
             f"이 패턴을 참고해 더 자극적인 훅을 만드세요."
         )
         prompt += perf_ctx
+    prompt += """
+    
+[조회수 개선 편집 규칙]
+- 첫 2초 또는 커버 첫 줄에 검증 가능한 숫자·비율·금액·변화폭을 우선 배치하세요.
+- 제목은 '변화/충격 숫자 + 내 돈에 미치는 영향' 구조를 우선합니다.
+- 적금 vs 채권, 금리 vs 환율처럼 두 선택지를 비교하는 구성을 우선합니다.
+- 마지막 장면은 시청자가 자기 상황을 점검할 수 있는 질문으로 끝냅니다.
+- 숫자와 단위는 원자료와 정확히 일치해야 하며, 추정·과장은 금지합니다.
+- 콘텐츠는 경제·돈 100% 범위(재테크·저축·투자·보험·연금·세금·절약·돈습관·경제상식)만 사용합니다.
+"""
 
     system = TIPS_LLM_SYSTEM if is_tips else (FUN_LLM_SYSTEM if is_fun else LLM_SYSTEM)
     if provider == "openai":
