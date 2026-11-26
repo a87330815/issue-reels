@@ -1,13 +1,31 @@
 {
-  "generated_at": "2026-11-25T23:42:16.758379+00:00",
+  "generated_at": "2026-11-26T23:55:04.805794+00:00",
   "channel": {
     "channel_id": "UCLtQFtfFE1KE7Ed5pVCbscQ",
     "title": "쫌봐봐",
-    "subscribers": 1,
-    "videos": 4,
-    "views": 341
+    "subscribers": 2,
+    "videos": 6,
+    "views": 407
   },
   "recent_videos": [
+    {
+      "video_id": "6JiSJ0Ds_XE",
+      "title": "금리 올렸는데 은행주가 떨어지는 진짜 이유",
+      "published_at": "2026-11-26T18:47:54Z",
+      "privacy": "public",
+      "views": 915,
+      "likes": 4,
+      "comments": 0
+    },
+    {
+      "video_id": "UbbPpZWSUUM",
+      "title": "주식 사는 사람 필독",
+      "published_at": "2026-11-26T11:41:46Z",
+      "privacy": "public",
+      "views": 207,
+      "likes": 0,
+      "comments": 0
+    },
     {
       "video_id": "3ubN2tRhTH4",
       "title": "실손보험금 받으면 의료비 공제 날린다",
@@ -22,7 +40,7 @@
       "title": "적금 vs 채권, 연 4% 이상이면 채권이 답",
       "published_at": "2026-11-25T05:11:11Z",
       "privacy": "public",
-      "views": 68,
+      "views": 77,
       "likes": 0,
       "comments": 0
     },
@@ -31,7 +49,7 @@
       "title": "AI에 일자리 빼앗기는 직업",
       "published_at": "2026-11-25T04:25:46Z",
       "privacy": "public",
-      "views": 14,
+      "views": 16,
       "likes": 0,
       "comments": 0
     },
@@ -40,7 +58,7 @@
       "title": "당신의 랩어카운트, 손실 만회하려고 위험 종목에 몰아주고 있진 않습니까",
       "published_at": "2026-11-24T19:52:44Z",
       "privacy": "public",
-      "views": 268,
+      "views": 269,
       "likes": 1,
       "comments": 0
     },
