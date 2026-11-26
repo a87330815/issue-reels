@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T18:58:48.939988+00:00",
+  "updated_at": "2026-11-26T04:50:49.497742+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -717,6 +717,17 @@
       "media_id": "17905784883373389",
       "published_at": "2026-11-25T18:58:48.849178+00:00",
       "video_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-25/20261125_02.mp4",
+      "ig_id": "17841459210979722",
+      "category": "보험·연금",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261126_04_체크리스트",
+      "media_id": "18119454029030801",
+      "published_at": "2026-11-26T04:50:49.346304+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_04.mp4",
       "ig_id": "17841459210979722",
       "category": "보험·연금",
       "insights": {
