@@ -1,77 +1,77 @@
-run 45755843638 2026-11-26T04:46:34Z
+run 45811272394 2026-11-26T11:36:20Z
 
-=== 20261126_04_체크리스트 ===
-  [cover] '실손보험금 받으면 의료비 공제 날아간다' → "health insurance claim medical receipt documentation"  (네이버: "실손보험금 받으면 의료비 공제 날아간다")
+=== 20261126_03_숫자훅 ===
+  [cover] '주식 사는 사람 필독' → "stock certificate merger acquisition contract"  (네이버: "주식 사는 사람 필독")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 2/12건
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] '공개매수 심사 강화의 의미' → "korean investor checking stock portfolio on tablet"  (네이버: "공개매수 심사 강화의 의미")
+    [unsplash] 3건 후보
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 0/3건
+    ✗ 적합한 후보 없음 — 사진 없이 진행
+    ↻ 카테고리 대체 검색: "money savings investment planning desk"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 8/12건
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '공개매수란 머 하는 건가' → "business takeover negotiation documents"  (네이버: "공개매수란 머 하는 건가")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 4/12건
+    ✓ scene2 ← Unsplash (Unsplash License)
+  [scene3] '심사 강화의 세 가지 기준' → "checklist business requirements document verification"  (네이버: "심사 강화의 세 가지 기준")
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 2/11건
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '주주 입장의 변화' → "investor analyzing financial data with magnifying glass"  (네이버: "주주 입장의 변화")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 6/12건
-    ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '실손보험금 받으믄 의료비 공제 불가' → "insurance policy document with medical bills calculator"  (네이버: "실손보험금 받으믄 의료비 공제 불가")
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 8/11건
-    ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '1. 보험금 받은 의료비 = 공제 제외' → "korean medical insurance card hospital receipt"  (네이버: "1. 보험금 받은 의료비 = 공제 제외")
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "korean medical insurance card hospital"
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '지금부터 할 행동' → "person reading financial news on smartphone"  (네이버: "지금부터 할 행동")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 10/12건
-    ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '2. 보험료는 O, 의료비 공제는 X' → "tax return form medical expense deduction calculation"  (네이버: "2. 보험료는 O, 의료비 공제는 X")
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 4/11건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '3. 보험금 제외 부분만 공제' → "medical expenses breakdown insurance coverage gap"  (네이버: "3. 보험금 제외 부분만 공제")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 7/12건
-    ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '보험금 vs 공제, 먼저 계산하세요' → "financial planning tax strategy year-end settlement"  (네이버: "보험금 vs 공제, 먼저 계산하세요")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 7/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261126_04_체크리스트/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261126_03_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261126_04_체크리스트
-대본: out/scripts/20261126_04_체크리스트.json
-카드: out/cards_20261126_04_체크리스트 (7장)
+카드뉴스 7장 생성 → out/cards_20261126_03_숫자훅
+대본: out/scripts/20261126_03_숫자훅.json
+카드: out/cards_20261126_03_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 3.2초  실손보험금 받으믄 의료비 공제 못 받습니다아이가...
-  TTS [2/6] [EL·발랄녀] 10.3초  지금 이 순간에도 많은 사람들이 실손보험금을 받으면...
-  TTS [3/6] [EL·발랄녀] 8.1초  첫째, 실손보험금을 받은 의료비는 연말정산에서 의료...
-  TTS [4/6] [EL·발랄녀] 12.7초  둘째, 보험료 공제는 가능하데이. 의료비 공제는 못...
-  TTS [5/6] [EL·발랄녀] 10.7초  셋째, 보험금을 받지 않은 의료비만 공제 대상이라카...
-  TTS [6/6] [EL·발랄녀] 13.4초  올해 의료비가 많았다면 실손보험금 청구 전에 먼저 ...
+  TTS [1/6] [EL·발랄녀] 2.9초  M&A 주식 심사 강하니까 손해 볼 수 있다아이가...
+  TTS [2/6] [EL·발랄녀] 9.9초  지금 주식을 사고 있다면 꼭 알아야 할 변화가 생겼...
+  TTS [3/6] [EL·발랄녀] 12.9초  공개매수라 하면 대주주가 일반주주의 주식을 사들이는...
+  TTS [4/6] [EL·발랄녀] 15.4초  이제 금감원이 더 디게 엄격하게 체크한다카이. 첫째...
+  TTS [5/6] [EL·발랄녀] 14.2초  결국 여러분이 얻는 건 투명성이다아이가. 공개매수 ...
+  TTS [6/6] [EL·발랄녀] 13.9초  공개매수 공시가 떴을 땐 이제 습관을 바꿔보세요. ...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.7초
-  세그먼트 [2/7] 10.8초
-  세그먼트 [3/7] 8.6초
-  세그먼트 [4/7] 13.2초
-  세그먼트 [5/7] 11.2초
-  세그먼트 [6/7] 13.9초
+  세그먼트 [1/7] 3.4초
+  세그먼트 [2/7] 10.4초
+  세그먼트 [3/7] 13.4초
+  세그먼트 [4/7] 15.9초
+  세그먼트 [5/7] 14.7초
+  세그먼트 [6/7] 14.4초
   세그먼트 [7/7] 3.5초
-  ♪ BGM 믹싱 완료: lofi_chill_01.mp3
+  ♪ BGM 믹싱 완료: ambient_news_02.mp3
 
-  ✓ 릴스 완성: out/reels/20261126_04_체크리스트.mp4
-    길이: 63.8초  /  크기: 15.8MB
+  ✓ 릴스 완성: out/reels/20261126_03_숫자훅.mp4
+    길이: 74.6초  /  크기: 12.7MB
 
 3) 커버 썸네일 생성
-  ✓ 첫 장면 사진 커버: out/reels/20261126_04_체크리스트.jpg
--rw-r--r-- 1 runner runner 16M Nov 26 04:48 out/reels/20261126_04_체크리스트.mp4
+  ✓ 첫 장면 사진 커버: out/reels/20261126_03_숫자훅.jpg
+-rw-r--r-- 1 runner runner 13M Nov 26 11:38 out/reels/20261126_03_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=63.790000
+duration=74.566341
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels
   토큰           설정됨
@@ -80,8 +80,8 @@ duration=63.790000
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-26):
-  20261126_04_체크리스트.mp4  15.8MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_04.mp4
-  20261126_04_체크리스트.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_04.jpg
+  20261126_03_숫자훅.mp4  12.7MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_03.mp4
+  20261126_03_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_03.jpg
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -93,18 +93,18 @@ duration=63.790000
 남은 발행 가능: 97건
 발행 대상: 1건
 
-── 1/1  20261126_04_체크리스트
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_04.mp4
-  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_04.jpg
-  캡션: 실손보험금 받으면 의료비 공제 날아간다
-  컨테이너: 17981210939973700
+── 1/1  20261126_03_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_03.mp4
+  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_03.jpg
+  캡션: 주식 사는 사람 필독
+  컨테이너: 17981288888973700
       0초  IN_PROGRESS
-     51초  FINISHED
-  발행 완료: 18119454029030801
+     72초  FINISHED
+  발행 완료: 18140282596654738
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
   인스타그램 스토리 컨테이너 생성
-  스토리 컨테이너: 17981210975973700
+  스토리 컨테이너: 17981289428973700
       0초  IN_PROGRESS
      52초  FINISHED
   ⚠️  스토리 공유 실패 (무시): [-1/2207032] Fatal
@@ -118,29 +118,19 @@ duration=63.790000
 페이스북 릴스 발행 접수 완료
 {
   "success": true,
-  "video_id": "1123761013844270",
-  "post_id": "122125967439484991",
+  "video_id": "1186566213718225",
+  "post_id": "122126033475484991",
   "page_id": "1277209758815845"
 }
 페이스북 스토리 발행 접수 완료
 {
   "success": true,
-  "video_id": "1133279662651182",
+  "video_id": "1622805299597306",
   "page_id": "1277209758815845"
 }
 {
-  "video_id": "qbU9aOir_8I",
-  "url": "https://youtu.be/qbU9aOir_8I",
+  "video_id": "UbbPpZWSUUM",
+  "url": "https://youtu.be/UbbPpZWSUUM",
   "privacy": "public",
-  "title": "실손보험금 받으면 의료비 공제 날아간다"
+  "title": "주식 사는 사람 필독"
 }
-발행 대상: 1건
-
-── 1/1  20261126_04_체크리스트
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_04.mp4
-  제목: 실손보험금 받으면 의료비 공제 날아간다
-  ⚠️  공개 발행 불가 — SELF_ONLY로 발행 (앱에서 수동 공개)
-  방식: PULL_FROM_URL
-  [실패] [access_token_invalid] The access token is invalid or not found in the request. (log_id=20261126125111B681ACCC63F368A94F04)
-
-완료: 발행 0건 / 실패 1건
