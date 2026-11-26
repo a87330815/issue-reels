@@ -1,18 +1,18 @@
 # AI 콘텐츠 자동화 회사 일일 성과보고
 
-- 기준시각: 2026-11-26 08:43 KST
+- 기준시각: 2026-11-27 08:55 KST
 - 분석 우선순위: 조회수 → 저장 → 공유 → 팔로워 증가 → 우수 주제/형식
 
 | 계정 | 상태 | 평균 조회수 | 참여율 | 팔로워 증감 | 최고 시간(KST) |
 |---|---:|---:|---:|---:|---|
-| 쫌봐봐 | active | 243 | 1.37% | +0 | 21, 18, 15 |
+| 쫌봐봐 | active | 243 | 1.36% | +0 | 21, 18, 15 |
 | 굿리치 리치업지점 | waiting | 0 | 0.00% | +0 | 수집 중 |
 
 ## 계정별 성과가 좋은 콘텐츠 유형
 
 ### 쫌봐봐
-- 우수 주제: {'name': '연예', 'count': 20, 'avg_views': 385, 'save_rate': 0.0, 'share_rate': 0.11}, {'name': '재테크', 'count': 13, 'avg_views': 322, 'save_rate': 0.1, 'share_rate': 0.03}, {'name': '경제상식', 'count': 1, 'avg_views': 301, 'save_rate': 0.0, 'share_rate': 0.0}
-- 우수 형식: {'name': '숫자훅', 'count': 39, 'avg_views': 328, 'save_rate': 0.04, 'share_rate': 0.08}, {'name': '생활해킹', 'count': 1, 'avg_views': 154, 'save_rate': 0.0, 'share_rate': 0.0}, {'name': '연예', 'count': 2, 'avg_views': 152, 'save_rate': 0.0, 'share_rate': 0.0}
+- 우수 주제: {'name': '연예', 'count': 20, 'avg_views': 386, 'save_rate': 0.0, 'share_rate': 0.11}, {'name': '경제상식', 'count': 1, 'avg_views': 301, 'save_rate': 0.0, 'share_rate': 0.0}, {'name': '재테크', 'count': 15, 'avg_views': 300, 'save_rate': 0.1, 'share_rate': 0.02}
+- 우수 형식: {'name': '숫자훅', 'count': 41, 'avg_views': 320, 'save_rate': 0.04, 'share_rate': 0.08}, {'name': '체크리스트', 'count': 2, 'avg_views': 184, 'save_rate': 0.61, 'share_rate': 0.0}, {'name': '생활해킹', 'count': 1, 'avg_views': 154, 'save_rate': 0.0, 'share_rate': 0.0}
 - 상위 콘텐츠: 원현주 남편 불륜설 26일 만에 SNS 복귀  · 26일 만에 SNS 복 / AI 버블 꺼지니 구리값 16% 추락…당신의 포트폴리오는?  · AI 투 / 내년 금리 3.5%면 적금이 뜬다…근데 환율은?  · 금리 3.5% vs
 
 ### 굿리치 리치업지점

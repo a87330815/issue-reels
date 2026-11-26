@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T08:43:00.814967+09:00",
+  "generated_at": "2026-11-27T08:55:44.876743+09:00",
   "analysis_priority": [
     "views",
     "saves",
@@ -15,7 +15,7 @@
       "repository": "a87330815/issue-reels",
       "status": "active",
       "avg_views": 243,
-      "avg_engagement_rate": 1.37,
+      "avg_engagement_rate": 1.36,
       "followers_growth": 0,
       "best_hours_kst": [
         21,
@@ -26,16 +26,9 @@
         {
           "name": "연예",
           "count": 20,
-          "avg_views": 385,
+          "avg_views": 386,
           "save_rate": 0.0,
           "share_rate": 0.11
-        },
-        {
-          "name": "재테크",
-          "count": 13,
-          "avg_views": 322,
-          "save_rate": 0.1,
-          "share_rate": 0.03
         },
         {
           "name": "경제상식",
@@ -43,27 +36,34 @@
           "avg_views": 301,
           "save_rate": 0.0,
           "share_rate": 0.0
+        },
+        {
+          "name": "재테크",
+          "count": 15,
+          "avg_views": 300,
+          "save_rate": 0.1,
+          "share_rate": 0.02
         }
       ],
       "best_formats": [
         {
           "name": "숫자훅",
-          "count": 39,
-          "avg_views": 328,
+          "count": 41,
+          "avg_views": 320,
           "save_rate": 0.04,
           "share_rate": 0.08
+        },
+        {
+          "name": "체크리스트",
+          "count": 2,
+          "avg_views": 184,
+          "save_rate": 0.61,
+          "share_rate": 0.0
         },
         {
           "name": "생활해킹",
           "count": 1,
           "avg_views": 154,
-          "save_rate": 0.0,
-          "share_rate": 0.0
-        },
-        {
-          "name": "연예",
-          "count": 2,
-          "avg_views": 152,
           "save_rate": 0.0,
           "share_rate": 0.0
         }
@@ -74,7 +74,7 @@
         "내년 금리 3.5%면 적금이 뜬다…근데 환율은?  · 금리 3.5% vs"
       ],
       "snapshot_available": false,
-      "generated_at": "2026-11-25T23:25:33+00:00"
+      "generated_at": "2026-11-26T23:25:59+00:00"
     },
     {
       "id": "richup",
