@@ -364,25 +364,6 @@ jobs:
             --script "out/scripts/${STEM}.json" \
             --privacy public 2>&1 | tee -a out/reels/render.log
 
-      - name: 8) 틱톡 발행
-        if: steps.gate.outputs.run == 'yes' && steps.pick.outputs.stem != '' && steps.gate.outputs.publish == 'true'
-        continue-on-error: true
-        env:
-          STEM: ${{ steps.pick.outputs.stem }}
-          TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
-          TIKTOK_OPEN_ID: ${{ secrets.TIKTOK_OPEN_ID }}
-          TIKTOK_UPLOAD_METHOD: pull
-          DO_PUBLISH: ${{ steps.gate.outputs.publish }}
-        run: |
-          set -o pipefail
-          if [ -z "$TIKTOK_ACCESS_TOKEN" ]; then
-            echo "틱톡 미설정 — 건너뜀"
-            exit 0
-          fi
-          FLAG="--dry-run"
-          if [ "$DO_PUBLISH" = "true" ]; then FLAG=""; fi
-          python -u publish_tiktok.py --script "out/scripts/${STEM}.json" \
-            --limit 1 $FLAG 2>&1 | tee -a out/reels/render.log
 
       # mp4는 커밋하지 않는다. 하루 3건이면 한 해 1.6GB씩 불어난다.
       # 영상은 미디어 저장소 릴리스에 있고 그게 인스타가 가져가는 주소다.
@@ -392,7 +373,7 @@ jobs:
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for p in out/published.json out/published_cards.json out/published_facebook.json out/published_facebook_story.json out/published_instagram_story.json out/published_youtube.json out/published_tiktok.json out/uploaded.json out/reels/render.log; do
+          for p in out/published.json out/published_cards.json out/published_facebook.json out/published_youtube.json out/uploaded.json out/reels/render.log; do
             [ -f "$p" ] && git add -f "$p" || true
           done
           git diff --cached --quiet && { echo "커밋할 변경 없음"; exit 0; }
