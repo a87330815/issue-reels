@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T11:41:04.624909+00:00",
+  "updated_at": "2026-11-26T18:47:06.840884+00:00",
   "items": [
     {
       "name": "20261028_01_숫자훅",
@@ -739,6 +739,17 @@
       "media_id": "18140282596654738",
       "published_at": "2026-11-26T11:41:04.472758+00:00",
       "video_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_03.mp4",
+      "ig_id": "17841459210979722",
+      "category": "재테크",
+      "insights": {
+        "error": "[100/-] (#100) For field 'insights': The parameter metric is required"
+      }
+    },
+    {
+      "name": "20261126_02_숫자훅",
+      "media_id": "18423417028083046",
+      "published_at": "2026-11-26T18:47:06.716220+00:00",
+      "video_url": "https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-26/20261126_02.mp4",
       "ig_id": "17841459210979722",
       "category": "재테크",
       "insights": {
