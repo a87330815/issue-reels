@@ -85,27 +85,6 @@ jobs:
           python -u publish.py --script "$SCRIPT" --limit 1 $FLAG 2>&1 \
             | tee -a out/publish_reel.log
 
-      - name: 틱톡 발행
-        if: always()
-        continue-on-error: true
-        env:
-          TIKTOK_ACCESS_TOKEN: ${{ secrets.TIKTOK_ACCESS_TOKEN }}
-          TIKTOK_OPEN_ID: ${{ secrets.TIKTOK_OPEN_ID }}
-          TIKTOK_UPLOAD_METHOD: pull
-          PUBLISH_INPUT: ${{ inputs.publish }}
-        run: |
-          set -o pipefail
-          # 틱톡 토큰 미설정 시 건너뜀
-          if [ -z "$TIKTOK_ACCESS_TOKEN" ]; then
-            echo "틱톡 미설정 — 건너뜀"
-            exit 0
-          fi
-          FLAG="--dry-run"
-          if [ "$PUBLISH_INPUT" = "true" ]; then
-            FLAG=""
-          fi
-          python -u publish_tiktok.py --script "$SCRIPT" --limit 1 $FLAG 2>&1 \
-            | tee -a out/publish_reel.log
 
       # 러너 로그는 이 환경에서 받기 어려워 저장소로 남긴다.
       - name: 발행 기록 커밋
