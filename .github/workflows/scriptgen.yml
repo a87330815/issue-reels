@@ -69,6 +69,14 @@ jobs:
             echo "변환: $(basename "$f")"
             python dialect.py "$f"
           done
+      - name: 최종 한글·사투리 검수 (proofread.py)
+        run: |
+          set -e
+          for f in out/scripts/*.json; do
+            [ -f "$f" ] || continue
+            python proofread.py "$f"
+          done
+
       - name: 대본 커밋
         run: |
           git config user.name "github-actions[bot]"
