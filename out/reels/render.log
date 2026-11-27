@@ -1,73 +1,69 @@
-run 45940943842 2026-11-27T04:38:38Z
+run 45990512082 2026-11-27T11:28:32Z
 
-=== 20261127_03_숫자훅 ===
-  [cover] 'K패션 주가 올라도 내 지갑은?' → "korean fashion retail store shopping bags clothes"  (네이버: "K패션 주가 올라도 내 지갑은?")
+=== 20261127_05_숫자훅 ===
+  [cover] '1년 만에 48% 오른 ETF, 지금이 사실 매수 타이밍' → "stock market graph growth korean won investment"  (네이버: "1년 만에 48% 오른 ETF, 지금이 사실 매수 타이밍")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 5/12건
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] '1년 수익률 48%의 ETF가 현재' → "etf investment tracking index chart growth"  (네이버: "1년 수익률 48%의 ETF가 현재")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 7/12건
+    ✓ scene1 ← Unsplash (Unsplash License)
+  [scene2] '올라간 가격이 오히려 저평가라는 역설' → "investor analyzing market data computer screen notebook"  (네이버: "올라간 가격이 오히려 저평가라는 역설")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 11/12건
-    ✓ cover ← Unsplash (Unsplash License)
-  [scene1] 'K패션 성장 67%, 주식만 올라간다' → "stock market graph upward trend business growth"  (네이버: "K패션 성장 67%, 주식만 올라간다")
-    [unsplash] 4건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 2/4건
-    ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '성장의 경로는 셋' → "three arrows choices decision path forward"  (네이버: "성장의 경로는 셋")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 8/12건
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '주식 없으면 나와는 무관' → "wallet empty hands financial disconnect"  (네이버: "주식 없으면 나와는 무관")
+  [scene3] '기초자산 저평가 + 환율 유리 + 심리적' → "discount sale stacked coins money savings concept"  (네이버: "기초자산 저평가 + 환율 유리 + 심리적")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 10/12건
     ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '주식·ETF·혜택 중 선택' → "smartphone investment app trading platform"  (네이버: "주식·ETF·혜택 중 선택")
+  [scene4] '1단계: 기초자산 저평가 2단계: 환율' → "checklist business planning strategy notebook pen"  (네이버: "1단계: 기초자산 저평가 2단계: 환율")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 7/12건
+    Unsplash 적합도 통과 11/12건
     ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '성장의 주인공은 누구인가' → "business owner investor vs customer consumer comparison"  (네이버: "성장의 주인공은 누구인가")
-    [unsplash] 11건 후보 (부적합 1건 제외)
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    Unsplash 적합도 통과 2/11건
+  [scene5] '올라간 가격 ≠ 비싼 가격. 저장 필수' → "portfolio diversification investment planning documents"  (네이버: "올라간 가격 ≠ 비싼 가격. 저장 필수")
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 6/12건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261127_03_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261127_05_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261127_03_숫자훅
-대본: out/scripts/20261127_03_숫자훅.json
-카드: out/cards_20261127_03_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261127_05_숫자훅
+대본: out/scripts/20261127_05_숫자훅.json
+카드: out/cards_20261127_05_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 4.4초  K패션 영업익 67% 치솟았다 근데 주식만 올라간다...
-  TTS [2/6] [EL·발랄녀] 11.0초  지난 3분기 무신사는 역대 최대 매출을 기록했다카더...
-  TTS [3/6] [EL·발랄녀] 8.4초  패션 플랫폼의 성장은 보통 세 가지 경로로 나타난다...
-  TTS [4/6] [EL·발랄녀] 9.0초  주식을 안 보유했다믄, 니가 받는 건 사실 없다아이...
-  TTS [5/6] [EL·발랄녀] 15.0초  하모 우짜야 할라꼬. 첫째, 해당 기업 주식으로 성...
-  TTS [6/6] [EL·발랄녀] 16.3초  결론은 이거다아이가. 좋은 뉴스가 모든 사람에게 같...
+  TTS [1/6] [EL·발랄녀] 3.0초  1년에 48% 올라간 ETF가 지금 싸다고?...
+  TTS [2/6] [EL·발랄녀] 10.9초  지금 이 ETF가 뜨고 있다아이가. 작년카마 올해까...
+  TTS [3/6] [EL·발랄녀] 9.6초  많은 개인투자자들이 벌써 올라간 상품을 뒤늦게 살라...
+  TTS [4/6] [EL·발랄녀] 10.8초  이유는 간단합니다. 같은 가격대의 경쟁 상품들카마 ...
+  TTS [5/6] [EL·발랄녀] 13.3초  먼저, 기초자산 자체가 싼기라. 둘째, 환율이 투자...
+  TTS [6/6] [EL·발랄녀] 9.6초  올라간 거 같지만, 같은 자산 대비 여전히 싼다는 ...
 
 2) 영상 합성
-  세그먼트 [1/7] 4.9초
-  세그먼트 [2/7] 11.5초
-  세그먼트 [3/7] 8.9초
-  세그먼트 [4/7] 9.5초
-  세그먼트 [5/7] 15.5초
-  세그먼트 [6/7] 16.8초
+  세그먼트 [1/7] 3.5초
+  세그먼트 [2/7] 11.4초
+  세그먼트 [3/7] 10.1초
+  세그먼트 [4/7] 11.3초
+  세그먼트 [5/7] 13.8초
+  세그먼트 [6/7] 10.1초
   세그먼트 [7/7] 3.5초
-  ♪ BGM 믹싱 완료: soft_electronic_03.mp3
+  ♪ BGM 믹싱 완료: lofi_chill_01.mp3
 
-  ✓ 릴스 완성: out/reels/20261127_03_숫자훅.mp4
-    길이: 69.5초  /  크기: 23.0MB
+  ✓ 릴스 완성: out/reels/20261127_05_숫자훅.mp4
+    길이: 62.4초  /  크기: 11.5MB
 
 3) 커버 썸네일 생성
-  ✓ 첫 장면 사진 커버: out/reels/20261127_03_숫자훅.jpg
--rw-r--r-- 1 runner runner 23M Nov 27 04:41 out/reels/20261127_03_숫자훅.mp4
+  ✓ 첫 장면 사진 커버: out/reels/20261127_05_숫자훅.jpg
+-rw-r--r-- 1 runner runner 12M Nov 27 11:30 out/reels/20261127_05_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=69.523991
+duration=62.399675
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels
   토큰           설정됨
@@ -76,8 +72,8 @@ duration=69.523991
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-27):
-  20261127_03_숫자훅.mp4  23.0MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-27/20261127_03.mp4
-  20261127_03_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-27/20261127_03.jpg
+  20261127_05_숫자훅.mp4  11.5MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-27/20261127_05.mp4
+  20261127_05_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-27/20261127_05.jpg
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -89,20 +85,20 @@ duration=69.523991
 남은 발행 가능: 96건
 발행 대상: 1건
 
-── 1/1  20261127_03_숫자훅
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-27/20261127_03.mp4
-  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-27/20261127_03.jpg
-  캡션: K패션 주가 올라도 내 지갑은?
-  컨테이너: 17981430614973700
+── 1/1  20261127_05_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-27/20261127_05.mp4
+  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-27/20261127_05.jpg
+  캡션: 1년 만에 48% 오른 ETF, 지금이 사실 매수 타이밍
+  컨테이너: 17981487008973700
       0초  IN_PROGRESS
-     52초  FINISHED
-  발행 완료: 17980657469932732
+     61초  FINISHED
+  발행 완료: 18488026597114895
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
   인스타그램 스토리 컨테이너 생성
-  스토리 컨테이너: 17981430812973700
+  스토리 컨테이너: 17981487233973700
       0초  IN_PROGRESS
-     52초  FINISHED
+     41초  FINISHED
   ⚠️  스토리 공유 실패 (무시): [-1/2207032] Fatal
 
 
@@ -114,19 +110,19 @@ duration=69.523991
 페이스북 릴스 발행 접수 완료
 {
   "success": true,
-  "video_id": "29424238377188496",
-  "post_id": "122126215125484991",
+  "video_id": "1461732272068225",
+  "post_id": "122126283891484991",
   "page_id": "1277209758815845"
 }
 페이스북 스토리 발행 접수 완료
 {
   "success": true,
-  "video_id": "29250421524600641",
+  "video_id": "1856369079115165",
   "page_id": "1277209758815845"
 }
 {
-  "video_id": "xvA_xRZMkUU",
-  "url": "https://youtu.be/xvA_xRZMkUU",
+  "video_id": "LM63TlqiHZc",
+  "url": "https://youtu.be/LM63TlqiHZc",
   "privacy": "public",
-  "title": "K패션 주가 올라도 내 지갑은?"
+  "title": "1년 만에 48% 오른 ETF, 지금이 사실 매수 타이밍"
 }
