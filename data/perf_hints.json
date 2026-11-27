@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-26T23:25:59+00:00",
-  "avg_views": 243,
-  "avg_engagement_rate": 1.36,
+  "generated_at": "2026-11-27T23:05:06+00:00",
+  "avg_views": 247,
+  "avg_engagement_rate": 1.32,
   "best_hours_kst": [
     21,
-    18,
-    15
+    15,
+    18
   ],
   "top_captions": [
     "원현주 남편 불륜설 26일 만에 SNS 복귀  · 26일 만에 SNS 복",
@@ -16,18 +16,18 @@
     "available": true,
     "username": "jjombwabwa",
     "start_followers": 1225,
-    "end_followers": 1220,
-    "net_followers": -5,
-    "growth_rate": -0.41,
-    "snapshot_count": 3
+    "end_followers": 1223,
+    "net_followers": -2,
+    "growth_rate": -0.16,
+    "snapshot_count": 4
   },
   "best_categories": [
     {
       "name": "연예",
       "count": 20,
-      "avg_views": 386,
+      "avg_views": 387,
       "save_rate": 0.0,
-      "share_rate": 0.11
+      "share_rate": 0.13
     },
     {
       "name": "경제상식",
@@ -38,25 +38,25 @@
     },
     {
       "name": "재테크",
-      "count": 15,
-      "avg_views": 300,
-      "save_rate": 0.1,
+      "count": 18,
+      "avg_views": 289,
+      "save_rate": 0.08,
       "share_rate": 0.02
     }
   ],
   "best_formats": [
     {
       "name": "숫자훅",
-      "count": 41,
-      "avg_views": 320,
+      "count": 44,
+      "avg_views": 315,
       "save_rate": 0.04,
       "share_rate": 0.08
     },
     {
       "name": "체크리스트",
       "count": 2,
-      "avg_views": 184,
-      "save_rate": 0.61,
+      "avg_views": 185,
+      "save_rate": 0.6,
       "share_rate": 0.0
     },
     {
