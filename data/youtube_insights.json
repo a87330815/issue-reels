@@ -1,19 +1,46 @@
 {
-  "generated_at": "2026-11-26T23:55:04.805794+00:00",
+  "generated_at": "2026-11-27T23:33:58.438287+00:00",
   "channel": {
     "channel_id": "UCLtQFtfFE1KE7Ed5pVCbscQ",
     "title": "쫌봐봐",
-    "subscribers": 2,
-    "videos": 6,
-    "views": 407
+    "subscribers": 3,
+    "videos": 9,
+    "views": 1790
   },
   "recent_videos": [
+    {
+      "video_id": "wcQCe9kB4-E",
+      "title": "1년에 48% 수익난 ETF, 지금이 담을 때",
+      "published_at": "2026-11-27T18:36:15Z",
+      "privacy": "public",
+      "views": 1139,
+      "likes": 3,
+      "comments": 0
+    },
+    {
+      "video_id": "LM63TlqiHZc",
+      "title": "1년 만에 48% 오른 ETF, 지금이 사실 매수 타이밍",
+      "published_at": "2026-11-27T11:34:01Z",
+      "privacy": "public",
+      "views": 856,
+      "likes": 1,
+      "comments": 0
+    },
+    {
+      "video_id": "xvA_xRZMkUU",
+      "title": "K패션 주가 올라도 내 지갑은?",
+      "published_at": "2026-11-27T04:45:10Z",
+      "privacy": "public",
+      "views": 66,
+      "likes": 1,
+      "comments": 0
+    },
     {
       "video_id": "6JiSJ0Ds_XE",
       "title": "금리 올렸는데 은행주가 떨어지는 진짜 이유",
       "published_at": "2026-11-26T18:47:54Z",
       "privacy": "public",
-      "views": 915,
+      "views": 1167,
       "likes": 4,
       "comments": 0
     },
@@ -31,7 +58,7 @@
       "title": "실손보험금 받으면 의료비 공제 날린다",
       "published_at": "2026-11-25T18:59:50Z",
       "privacy": "public",
-      "views": 1,
+      "views": 14,
       "likes": 0,
       "comments": 0
     },
@@ -40,7 +67,7 @@
       "title": "적금 vs 채권, 연 4% 이상이면 채권이 답",
       "published_at": "2026-11-25T05:11:11Z",
       "privacy": "public",
-      "views": 77,
+      "views": 79,
       "likes": 0,
       "comments": 0
     },
