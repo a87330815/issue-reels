@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T08:55:44.876743+09:00",
+  "generated_at": "2026-11-28T08:36:35.567162+09:00",
   "analysis_priority": [
     "views",
     "saves",
@@ -14,21 +14,21 @@
       "name": "쫌봐봐",
       "repository": "a87330815/issue-reels",
       "status": "active",
-      "avg_views": 243,
-      "avg_engagement_rate": 1.36,
+      "avg_views": 247,
+      "avg_engagement_rate": 1.32,
       "followers_growth": 0,
       "best_hours_kst": [
         21,
-        18,
-        15
+        15,
+        18
       ],
       "best_categories": [
         {
           "name": "연예",
           "count": 20,
-          "avg_views": 386,
+          "avg_views": 387,
           "save_rate": 0.0,
-          "share_rate": 0.11
+          "share_rate": 0.13
         },
         {
           "name": "경제상식",
@@ -39,25 +39,25 @@
         },
         {
           "name": "재테크",
-          "count": 15,
-          "avg_views": 300,
-          "save_rate": 0.1,
+          "count": 18,
+          "avg_views": 289,
+          "save_rate": 0.08,
           "share_rate": 0.02
         }
       ],
       "best_formats": [
         {
           "name": "숫자훅",
-          "count": 41,
-          "avg_views": 320,
+          "count": 44,
+          "avg_views": 315,
           "save_rate": 0.04,
           "share_rate": 0.08
         },
         {
           "name": "체크리스트",
           "count": 2,
-          "avg_views": 184,
-          "save_rate": 0.61,
+          "avg_views": 185,
+          "save_rate": 0.6,
           "share_rate": 0.0
         },
         {
@@ -74,7 +74,7 @@
         "내년 금리 3.5%면 적금이 뜬다…근데 환율은?  · 금리 3.5% vs"
       ],
       "snapshot_available": false,
-      "generated_at": "2026-11-26T23:25:59+00:00"
+      "generated_at": "2026-11-27T23:05:06+00:00"
     },
     {
       "id": "richup",
