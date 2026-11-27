@@ -1,0 +1,49 @@
+{
+  "title": "월급날 통장에 잠깐 들른 돈",
+  "cover": {
+    "image": null,
+    "lines": [
+      "월급 들어온 지",
+      "<r>하루 만에</r>",
+      "잔액 실화?"
+    ],
+    "summary": "",
+    "badge": "공감",
+    "photo_query": "salary payday mobile banking balance Korean won"
+  },
+  "scenes": [
+    {
+      "image": null,
+      "narration": "월급날 아침에는 통장 잔액을 보고 잠깐 부자가 된 기분이 듭니다.",
+      "subtitle": "월급날 아침, 잠깐 부자",
+      "photo_query": "happy person checking smartphone bank account payday"
+    },
+    {
+      "image": null,
+      "narration": "그런데 카드값이 빠지고, 월세와 공과금도 차례대로 인사하죠.",
+      "subtitle": "카드값·월세·공과금 등장",
+      "photo_query": "phone payment notification bills calendar expenses"
+    },
+    {
+      "image": null,
+      "narration": "하루 만에 잔액을 다시 보면, 제 돈이 아니라 통장을 잠깐 구경한 돈 같습니다.",
+      "subtitle": "통장에 잠깐 들른 돈",
+      "photo_query": "surprised person looking at empty wallet smartphone"
+    },
+    {
+      "image": null,
+      "narration": "여러분의 월급은 통장에 며칠 동안 머무르나요? 댓글로 알려주세요.",
+      "subtitle": "월급은 며칠 머무르나요?",
+      "photo_query": "calendar payday discussion question smartphone"
+    }
+  ],
+  "meta": {
+    "format": "돈공감",
+    "source": "original",
+    "category": "돈습관",
+    "attribution": "쫌봐봐 자체 기획",
+    "generated_at": "2026-11-27T15:00:00+09:00",
+    "preview_only": true,
+    "dialect_applied": true
+  }
+}
