@@ -30,7 +30,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: render-reel
+  group: render-reel-preview-20261127
   cancel-in-progress: false
 
 jobs:
