@@ -1,90 +1,82 @@
-run 46107134290 2026-11-28T04:23:22Z
+run 46137383159 2026-11-28T10:57:44Z
 
-=== 20261128_04_숫자훅 ===
-  [cover] '주가 60% 떨어졌는데 대기업은 왜 자사주를 샀을까' → "stock market crash korean company investment"  (네이버: "주가 60% 떨어졌는데 대기업은 왜 자사주를 샀을까")
+=== 20261128_02_숫자훅 ===
+  [cover] '증시 급락 중 이 종목만 30% 올랐다' → "stock market graph rising arrow korean won"  (네이버: "증시 급락 중 이 종목만 30% 올랐다")
     [unsplash] 0건 후보
     [openverse] 0건 후보
-    [wikimedia] 1건 후보
-    ↻ 재시도: "stock market crash korean company"
-    [unsplash] 11건 후보 (부적합 1건 제외)
+    [wikimedia] 0건 후보
+    ↻ 재시도: "stock market graph rising arrow korean"
+    [unsplash] 12건 후보
+    Unsplash 적합도 통과 4/12건
+    ✓ cover ← Unsplash (Unsplash License)
+  [scene1] '증시 약세 속 단일 종목 30% 상승' → "korean investor watching stock chart phone"  (네이버: "증시 약세 속 단일 종목 30% 상승")
+    [unsplash] 3건 후보 (부적합 1건 제외)
     [openverse] 0건 후보
     [wikimedia] 1건 후보
     적합도 통과 0/1건 (Openverse/Wikimedia)
-    Unsplash 적합도 통과 2/11건
-    ✓ cover ← Unsplash (Unsplash License)
-  [scene1] '주가 폭락 중 자사주 대량 매수' → "korean stock exchange trading floor charts"  (네이버: "주가 폭락 중 자사주 대량 매수")
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "korean stock exchange trading floor"
-    [unsplash] 0건 후보
-    [openverse] 0건 후보
-    [wikimedia] 0건 후보
-    ↻ 재시도: "korean stock exchange trading"
-    [unsplash] 0건 후보
-    [openverse] 2건 후보
-    [wikimedia] 2건 후보
-    적합도 통과 0/4건 (Openverse/Wikimedia)
+    Unsplash 적합도 통과 0/3건
     ✗ 적합한 후보 없음 — 사진 없이 진행
     ↻ 카테고리 대체 검색: "money savings investment planning desk"
     [unsplash] 12건 후보
     Unsplash 적합도 통과 8/12건
     ✓ scene1 ← Unsplash (Unsplash License)
-  [scene2] '자사주 매입의 원리' → "business strategy stock buyback concept"  (네이버: "자사주 매입의 원리")
+  [scene2] '시장 약세 중 오르는 종목 3가지 신호' → "portfolio diversification investment strategy notebook"  (네이버: "시장 약세 중 오르는 종목 3가지 신호")
     [unsplash] 12건 후보
-    Unsplash 적합도 통과 5/12건
+    Unsplash 적합도 통과 4/12건
     ✓ scene2 ← Unsplash (Unsplash License)
-  [scene3] '주가 저점이 매수 신호' → "buying opportunity low price investment timing"  (네이버: "주가 저점이 매수 신호")
-    [unsplash] 12건 후보
-    Unsplash 적합도 통과 1/12건
-    ✓ scene3 ← Unsplash (Unsplash License)
-  [scene4] '경영진의 선택에 주목하기' → "investor analyzing market data decision making"  (네이버: "경영진의 선택에 주목하기")
+  [scene3] '상승 배경: 협력사 강화, 국제 행사' → "technology conference CES robots innovation"  (네이버: "상승 배경: 협력사 강화, 국제 행사")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 8/12건
-    ✓ scene4 ← Unsplash (Unsplash License)
-  [scene5] '당신의 투자 원칙은?' → "personal finance planning portfolio review"  (네이버: "당신의 투자 원칙은?")
+    ✓ scene3 ← Unsplash (Unsplash License)
+  [scene4] '약세장 포트폴리오 재점검 필요' → "balanced portfolio allocation stocks diversify"  (네이버: "약세장 포트폴리오 재점검 필요")
     [unsplash] 12건 후보
     Unsplash 적합도 통과 3/12건
+    ✓ scene4 ← Unsplash (Unsplash License)
+  [scene5] '지금 당신의 포트폴리오는 어떤가요' → "personal finance check portfolio review document"  (네이버: "지금 당신의 포트폴리오는 어떤가요")
+    [unsplash] 11건 후보 (부적합 1건 제외)
+    [openverse] 0건 후보
+    [wikimedia] 0건 후보
+    Unsplash 적합도 통과 5/11건
     ✓ scene5 ← Unsplash (Unsplash License)
-  → 6/6장 저장, 매니페스트: out/photos/20261128_04_숫자훅/photos.json
+  → 6/6장 저장, 매니페스트: out/photos/20261128_02_숫자훅/photos.json
 
 총 6/6장 수집
   사진 6장 적용: cover, scene1, scene2, scene3, scene4, scene5
-카드뉴스 7장 생성 → out/cards_20261128_04_숫자훅
-대본: out/scripts/20261128_04_숫자훅.json
-카드: out/cards_20261128_04_숫자훅 (7장)
+카드뉴스 7장 생성 → out/cards_20261128_02_숫자훅
+대본: out/scripts/20261128_02_숫자훅.json
+카드: out/cards_20261128_02_숫자훅 (7장)
 음성: ko-KR-SunHiNeural (속도 +25%, 프리셋 발랄녀)
 
 1) TTS 생성
 [TTS] ElevenLabs 엔진 사용
-  TTS [1/6] [EL·발랄녀] 3.2초  주가 60% 폭락 대기업은 자사주를 샀다...
-  TTS [2/6] [EL·발랄녀] 10.8초  지난달 SK하이닉스는 하루 자사주 매수 주문을 35...
-  TTS [3/6] [EL·발랄녀] 9.4초  자사주 매입이 먼 짓일까예? 회사가 자기 주식을 시...
-  TTS [4/6] [EL·발랄녀] 8.6초  주가가 떨어졌을 때 자사주를 사는 건 싼값에 사서 ...
-  TTS [5/6] [EL·발랄녀] 11.8초  개인 투자자들이 배워야 할 점이 있다아이가. 대기업...
-  TTS [6/6] [EL·발랄녀] 14.2초  당신의 포트폴리오는 어떤가예? 주가가 떨어졌을 때 ...
+  TTS [1/6] [EL·발랄녀] 2.7초  증시 떨어질 때 이 종목은 30% 뛰었다...
+  TTS [2/6] [EL·발랄녀] 9.4초  지난달 증시가 흔들리는 와중에도 한 종목이 30% ...
+  TTS [3/6] [EL·발랄녀] 15.1초  첫째, 시장이 떨어질 때 올라가는 종목들이 있다아이...
+  TTS [4/6] [EL·발랄녀] 14.8초  로봇, 반도체, 바이오처럼 성장 테마 중심으로 쏠림...
+  TTS [5/6] [EL·발랄녀] 11.5초  증시가 출렁일 때 대형주만 고집하면 오히려 손해를 ...
+  TTS [6/6] [EL·발랄녀] 14.4초  본인의 포트폴리오에 성장 테마가 얼매나 들어있는지 ...
 
 2) 영상 합성
-  세그먼트 [1/7] 3.7초
-  세그먼트 [2/7] 11.3초
-  세그먼트 [3/7] 9.9초
-  세그먼트 [4/7] 9.1초
-  세그먼트 [5/7] 12.3초
-  세그먼트 [6/7] 14.7초
+  세그먼트 [1/7] 3.2초
+  세그먼트 [2/7] 9.9초
+  세그먼트 [3/7] 15.6초
+  세그먼트 [4/7] 15.3초
+  세그먼트 [5/7] 12.0초
+  세그먼트 [6/7] 14.9초
   세그먼트 [7/7] 3.5초
   ♪ BGM 믹싱 완료: lofi_chill_01.mp3
 
-  ✓ 릴스 완성: out/reels/20261128_04_숫자훅.mp4
-    길이: 63.4초  /  크기: 11.7MB
+  ✓ 릴스 완성: out/reels/20261128_02_숫자훅.mp4
+    길이: 73.2초  /  크기: 12.5MB
 
 3) 커버 썸네일 생성
-  ✓ 첫 장면 사진 커버: out/reels/20261128_04_숫자훅.jpg
--rw-r--r-- 1 runner runner 12M Nov 28 04:25 out/reels/20261128_04_숫자훅.mp4
+  ✓ 첫 장면 사진 커버: out/reels/20261128_02_숫자훅.jpg
+-rw-r--r-- 1 runner runner 13M Nov 28 10:59 out/reels/20261128_02_숫자훅.mp4
 codec_name=h264
 width=1080
 height=1920
 codec_name=aac
-duration=63.357007
+duration=73.166341
 저장소 백엔드: GitHub Release
   미디어 저장소  a87330815/issue-reels
   토큰           설정됨
@@ -93,8 +85,8 @@ duration=63.357007
 설정 완료
 
 업로드 1건 (태그 reels-2026-11-28):
-  20261128_04_숫자훅.mp4  11.7MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-28/20261128_04.mp4
-  20261128_04_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-28/20261128_04.jpg
+  20261128_02_숫자훅.mp4  12.5MB  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-28/20261128_02.mp4
+  20261128_02_숫자훅.jpg  →  https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-28/20261128_02.jpg
 
 공개 접근 확인:
   OK  video_url: 200 application/octet-stream
@@ -106,20 +98,20 @@ duration=63.357007
 남은 발행 가능: 96건
 발행 대상: 1건
 
-── 1/1  20261128_04_숫자훅
-  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-28/20261128_04.mp4
-  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-28/20261128_04.jpg
-  캡션: 주가 60% 떨어졌는데 대기업은 왜 자사주를 샀을까
-  컨테이너: 17981632688973700
+── 1/1  20261128_02_숫자훅
+  영상: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-28/20261128_02.mp4
+  커버: https://github.com/a87330815/issue-reels/releases/download/reels-2026-11-28/20261128_02.jpg
+  캡션: 증시 급락 중 이 종목만 30% 올랐다
+  컨테이너: 17981687690973700
       0초  IN_PROGRESS
-     42초  FINISHED
-  발행 완료: 18117550682139642
+     51초  FINISHED
+  발행 완료: 17918453880557521
   ⚠️  ManyChat Free: 새 릴스에 '정보' 키워드 자동화를 수동 추가하세요
      → https://manychat.com → Automation → 게시물 선택에 이 릴스 추가
   인스타그램 스토리 컨테이너 생성
-  스토리 컨테이너: 17981633141973700
+  스토리 컨테이너: 17981688173973700
       0초  IN_PROGRESS
-     32초  FINISHED
+     51초  FINISHED
   ⚠️  스토리 공유 실패 (무시): [-1/2207032] Fatal
 
 
@@ -131,19 +123,19 @@ duration=63.357007
 페이스북 릴스 발행 접수 완료
 {
   "success": true,
-  "video_id": "3788663317948235",
-  "post_id": "122126421297484991",
+  "video_id": "29786945124269613",
+  "post_id": "122126475435484991",
   "page_id": "1277209758815845"
 }
 페이스북 스토리 발행 접수 완료
 {
   "success": true,
-  "video_id": "1891284628712642",
+  "video_id": "1145177454821283",
   "page_id": "1277209758815845"
 }
 {
-  "video_id": "RoM6fctDFnI",
-  "url": "https://youtu.be/RoM6fctDFnI",
+  "video_id": "Bx4MwAkvLGE",
+  "url": "https://youtu.be/Bx4MwAkvLGE",
   "privacy": "public",
-  "title": "주가 60% 떨어졌는데 대기업은 왜 자사주를 샀을까"
+  "title": "증시 급락 중 이 종목만 30% 올랐다"
 }
